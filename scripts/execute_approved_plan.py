@@ -139,6 +139,7 @@ def build(client, cid: str, name: str, actions: list[dict]) -> tuple[list, list[
         return ops, log
 
     if name == "ENABLE":
+        raise SystemExit("ENABLE is disabled in the generic plan executor.")
         st = client.enums.AdGroupAdStatusEnum.ENABLED
         for a in actions:
             op = new_op()
@@ -298,9 +299,23 @@ def main() -> int:
     ap.add_argument("--subplan", required=True, choices=SUBPLANS)
     ap.add_argument("--fingerprint", required=True)
     ap.add_argument("--out", required=True)
-    ap.add_argument("--validate-only", action="store_true")
+    mode = ap.add_mutually_exclusive_group()
+    mode.add_argument("--validate-only", action="store_true")
+    mode.add_argument("--execute", action="store_true")
+    ap.add_argument("--client", help="Required for live execution")
+    ap.add_argument("--work-order", help="Required for live execution")
     args = ap.parse_args()
 
+    if args.subplan == "ENABLE":
+        print("REFUSED: ENABLE requires a separate human-approved procedure, not implemented.")
+        return 1
+    if args.execute:
+        print("REFUSED: Production execution remains disabled until independent approval "
+              "verification and protected credential separation are implemented.")
+        return 1
+    if not args.validate_only:
+        print("DRY RUN: no API requests are made. Use --validate-only for API validation.")
+        return 0
     plan = load_yaml(args.plan)["change_plan"]
     cid = plan["target"]["child_customer_id"]
     actions = (plan["subplans"].get(args.subplan) or {}).get("actions") or []
