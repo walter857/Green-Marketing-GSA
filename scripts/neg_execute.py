@@ -127,6 +127,9 @@ def main() -> int:
         print("  {:<20} {:>6} objects across {} campaigns   fp={}".format(
             key, sub["object_count"], sub["scope_count"], sub["fingerprint"]))
     print("  TOTAL OPERATIONS: {}".format(total))
+    if args.execute:
+        print("REFUSED: legacy negative-keyword writes are disabled pending independent authorization.")
+        return 1
     if not args.execute:
         print("\nDRY RUN. Re-run with --execute to apply.")
         return 0

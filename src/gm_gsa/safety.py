@@ -28,6 +28,7 @@ def canonical_plan_bytes(plan: dict[str, Any]) -> bytes:
 
 
 def approval_code(plan: dict[str, Any], length: int = 12) -> str:
+    """Content fingerprint only. NEVER evidence of independent human approval."""
     return hashlib.sha256(canonical_plan_bytes(plan)).hexdigest()[:length].upper()
 
 
@@ -107,3 +108,16 @@ def assert_create_paused_approved(
     for campaign in plan.get("campaigns", []):
         if campaign.get("status") != "PAUSED":
             raise SafetyError("All campaigns must be PAUSED for create-paused mode.")
+
+
+def require_independent_execution_authorization(*, plan: dict[str, Any], operation: str) -> None:
+    """Fail closed until an independent trusted approval/identity service is deployed.
+
+    A CLI flag, YAML field or plan hash cannot authorize real writes. The eventual
+    verifier must bind an authenticated approver, canonical plan SHA-256, exact
+    customer ID, service, operation set, expiry and single-use nonce to a trusted
+    approval record held outside the agent execution environment.
+    """
+    raise SafetyError(
+        f"Production {operation} blocked: no independent approval authority is configured."
+    )

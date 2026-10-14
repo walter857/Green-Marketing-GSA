@@ -38,8 +38,10 @@ def main() -> int:
         print("Client profile does not authorize create-paused operations.")
         return 1
     if not args.execute:
-        print("Dry run only. Add --execute after reviewing the exact plan.")
+        print("Dry run only. Production publishing is disabled pending independent approval.")
         return 0
+    print("REFUSED: independent approval and protected execution infrastructure are not configured.")
+    return 1
 
     load_dotenv_if_available(ROOT / ".env")
     google_client = load_google_ads_client()

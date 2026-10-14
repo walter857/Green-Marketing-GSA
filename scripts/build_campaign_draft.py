@@ -29,13 +29,16 @@ def main() -> int:
     work_order = load_yaml(args.work_order)
     assert_valid_work_order(work_order, profile_document)
     profile = profile_document["client"]
+    exact_service = work_order["work_order"]["service"]["exact_primary_service"]
+    if work_order["work_order"]["task"]["mode"] not in ("draft", "create-paused"):
+        raise ValueError("Campaign drafts require a draft or create-paused work order.")
     draft = copy.deepcopy(load_yaml(args.brief))
     ads = profile["google_ads"]
     draft["target"] = {
         "child_customer_id": str(ads["child_customer_id"]),
         "exact_child_account_name": ads["exact_child_account_name"],
         "vertical": profile["vertical"],
-        "exact_primary_service": profile["primary_service"],
+        "exact_primary_service": exact_service,
     }
 
     service_area = profile.get("service_area") or {}

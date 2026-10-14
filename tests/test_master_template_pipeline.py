@@ -904,11 +904,29 @@ class ForbiddenOperationTests(PipelineTestCase):
             self.assertIn(expected, forbidden)
 
     def test_no_script_can_reach_a_document_copy_outside_the_pipeline(self):
+        import ast
+
         for path in (ROOT / "scripts").rglob("*.py"):
             text = path.read_text(encoding="utf-8")
-            self.assertNotIn(
-                ".copy(", text, f"{path.name} must delegate copying to master_template"
-            )
+            tree = ast.parse(text, filename=str(path))
+            for node in ast.walk(tree):
+                if not isinstance(node, ast.Call):
+                    continue
+                method = node.func
+                if not isinstance(method, ast.Attribute) or method.attr != "copy":
+                    continue
+                # Google Drive's document copy is drive.files().copy(...), not
+                # Pillow's img.copy() or Python's copy.copy(...).
+                receiver = method.value
+                is_drive_copy = (
+                    isinstance(receiver, ast.Call)
+                    and isinstance(receiver.func, ast.Attribute)
+                    and receiver.func.attr == "files"
+                )
+                self.assertFalse(
+                    is_drive_copy,
+                    f"{path.name} must delegate Drive copying to master_template",
+                )
 
     def test_a_folder_named_like_the_master_is_refused(self):
         settings = make_settings(root_folder_name=MASTER_TEMPLATE_NAME)
