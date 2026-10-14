@@ -110,3 +110,11 @@
 - Initial Green Marketing Google Search Ads operating system.
 - Added paused-by-default API publisher, plan fingerprint approval, account discovery by `- live`, BOFU/SKAG policies, prompts, intake templates, and preserved source documents.
 - Updated offline-conversion guidance for the post-June 15, 2026 Data Manager API requirement.
+
+### Security hardening (unreleased)
+
+- Denied generic plan execution without explicit mode and denied all live writes pending independent authorization; blocked generic ENABLE.
+- Disabled primary publisher and legacy negative executor write paths pending independent approval and credential isolation.
+- Central YAML reader now rejects duplicate keys, and campaign drafts select the work-order service.
+- Added no-credential security regression tests, AST write-surface inventory and pull-request CI.
+- Remaining high risk: historical client-specific executors can call Google Ads SDK mutation methods directly; must quarantine before any production deployment.
