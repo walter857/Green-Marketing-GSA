@@ -232,3 +232,7 @@ For every landing-page request, read `LANDING_PAGE_CONTENT_WORKFLOW.md` from the
 ## Definition of done
 
 A workflow is complete only when the work order identifies the exact account and service, the intended output exists, all required fields pass validation, external changes were read back, unrelated resources were unchanged, and the user receives a concise QA report with next actions.
+
+## Production safety override
+
+Google Ads writes are suspended until an independent approval authority and isolated write-credential runner are deployed and all historical direct-mutation scripts are controlled. No agent may manufacture its own approval; SHA-256 fingerprints indicate integrity only. The generic ENABLE flow is blocked. Never execute legacy write scripts with production credentials. Identity, account, service, work order and authorized operation mismatches require immediate stop.
