@@ -1,0 +1,1986 @@
+{
+ "plan_name": "AMB-1002-NEG-EXACT-1",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "approval_class": "negative-keywords",
+ "work_order": "work-orders/work-order-search-terms-sept-oct-2026-10-02.yaml",
+ "match_type": "EXACT only",
+ "scope": "campaign level",
+ "no_phrase_or_broad": true,
+ "no_shared_or_account_list_change": true,
+ "nothing_removed": true,
+ "note": "EXACT negatives block only the full query (casing/misspellings included per Google); longer, reordered, plural or synonym queries remain eligible. No savings are forecast.",
+ "operations": [
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24132507744",
+   "campaign": "Search | NonBrand | Boiler Services | Central MD | BOFU | 2026-09",
+   "text": "do plumbers do boilers",
+   "display": "[do plumbers do boilers]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "info",
+   "reason": "research question",
+   "confidence": "medium",
+   "observed": "2026-09-24..2026-09-24",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718047"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "a c repair near me",
+   "display": "[a c repair near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "ac service and repair near me",
+   "display": "[ac service and repair near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "ac service near me",
+   "display": "[ac service near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-10-01",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "ac unit repair near me",
+   "display": "[ac unit repair near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "air conditioner repair annapolis",
+   "display": "[air conditioner repair annapolis]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "air conditioner repair company",
+   "display": "[air conditioner repair company]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "air conditioner repair near me",
+   "display": "[air conditioner repair near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "air conditioner service near me",
+   "display": "[air conditioner service near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "air conditioner servicing near me",
+   "display": "[air conditioner servicing near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "air conditioning service near me",
+   "display": "[air conditioning service near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "air conditioning servicing near me",
+   "display": "[air conditioning servicing near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "commercial air conditioner repair",
+   "display": "[commercial air conditioner repair]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "fix air conditioner near me",
+   "display": "[fix air conditioner near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "fix air conditioning near me",
+   "display": "[fix air conditioning near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "home air conditioner repair",
+   "display": "[home air conditioner repair]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "home air conditioner repair near me",
+   "display": "[home air conditioner repair near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "repair air conditioner near me",
+   "display": "[repair air conditioner near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "repair air conditioning near me",
+   "display": "[repair air conditioning near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "24 hour heating repair",
+   "display": "[24 hour heating repair]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "availability",
+   "reason": "requests availability outside Mon-Fri 08-16, which Ambient does not offer",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "199797580706"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "24 hour hvac repair near me",
+   "display": "[24 hour hvac repair near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "availability",
+   "reason": "requests availability outside Mon-Fri 08-16, which Ambient does not offer",
+   "confidence": "medium",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "24 hour hvac service near me",
+   "display": "[24 hour hvac service near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "availability",
+   "reason": "requests availability outside Mon-Fri 08-16, which Ambient does not offer",
+   "confidence": "medium",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "allpro hvac",
+   "display": "[allpro hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "b&d hvac",
+   "display": "[b&d hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "bnb heating and cooling",
+   "display": "[bnb heating and cooling]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-25..2026-09-25",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "booths hvac",
+   "display": "[booths hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 39.15,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "carroll mechanical columbia md",
+   "display": "[carroll mechanical columbia md]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "coastal heat and air",
+   "display": "[coastal heat and air]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "coastal hvac annapolis",
+   "display": "[coastal hvac annapolis]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-25..2026-10-01",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "cold comfort hvac rockville md",
+   "display": "[cold comfort hvac rockville md]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "dodge heating and air",
+   "display": "[dodge heating and air]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-25..2026-09-29",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "falcon hvac",
+   "display": "[falcon hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "frosty heating and air conditioning",
+   "display": "[frosty heating and air conditioning]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "go ecco climate control",
+   "display": "[go ecco climate control]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "grove hvac maryland",
+   "display": "[grove hvac maryland]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "harbor point heating and air",
+   "display": "[harbor point heating and air]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "home team heating and cooling",
+   "display": "[home team heating and cooling]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "honest air mt airy",
+   "display": "[honest air mt airy]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "hope plumbing heating and cooling",
+   "display": "[hope plumbing heating and cooling]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "howard mechanical hvac",
+   "display": "[howard mechanical hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "jiffy hvac",
+   "display": "[jiffy hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "joey taylor hvac",
+   "display": "[joey taylor hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "maryland mechanical heating & cooling",
+   "display": "[maryland mechanical heating & cooling]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "max air heating & a c inc",
+   "display": "[max air heating & a c inc]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-25..2026-09-25",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "moon air elkton",
+   "display": "[moon air elkton]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 8,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "ocean air hvac",
+   "display": "[ocean air hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "powell and turner hvac",
+   "display": "[powell and turner hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-25..2026-09-25",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "s f jones heating and cooling",
+   "display": "[s f jones heating and cooling]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 3,
+   "clicks": 1,
+   "cost": 23.7,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "smock heating & air",
+   "display": "[smock heating & air]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "southern maryland heating and air waldorf md",
+   "display": "[southern maryland heating and air waldorf md]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "stanton hvac",
+   "display": "[stanton hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "stivers hvac inc",
+   "display": "[stivers hvac inc]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "triple eee hvac",
+   "display": "[triple eee hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "vito hvac",
+   "display": "[vito hvac]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "xzavier hvac solutions llc baltimore reviews",
+   "display": "[xzavier hvac solutions llc baltimore reviews]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "competitor",
+   "reason": "another HVAC company's name (navigational)",
+   "confidence": "high",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "energylogic waste oil heater service",
+   "display": "[energylogic waste oil heater service]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "oil",
+   "reason": "oil-fired equipment; Oil OUT of advertising scope (owner 2026-09-21)",
+   "confidence": "high",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "heating oil furnace service",
+   "display": "[heating oil furnace service]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "oil",
+   "reason": "oil-fired equipment; Oil OUT of advertising scope (owner 2026-09-21)",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "199797580706"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "oil burner service near me",
+   "display": "[oil burner service near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "oil",
+   "reason": "oil-fired equipment; Oil OUT of advertising scope (owner 2026-09-21)",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "oil furnace cleaning service near me",
+   "display": "[oil furnace cleaning service near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "oil",
+   "reason": "oil-fired equipment; Oil OUT of advertising scope (owner 2026-09-21)",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "199797580706"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "oil furnace companies near me",
+   "display": "[oil furnace companies near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "oil",
+   "reason": "oil-fired equipment; Oil OUT of advertising scope (owner 2026-09-21)",
+   "confidence": "high",
+   "observed": "2026-09-25..2026-09-25",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "199797580706"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "oil heater service",
+   "display": "[oil heater service]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "oil",
+   "reason": "oil-fired equipment; Oil OUT of advertising scope (owner 2026-09-21)",
+   "confidence": "high",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "pellet stove repair in my area",
+   "display": "[pellet stove repair in my area]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "pellet_stove",
+   "reason": "solid-fuel stove; not an approved service",
+   "confidence": "high",
+   "observed": "2026-09-25..2026-09-25",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "pellet stove repair near me",
+   "display": "[pellet stove repair near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "pellet_stove",
+   "reason": "solid-fuel stove; not an approved service",
+   "confidence": "high",
+   "observed": "2026-09-23..2026-09-29",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "pellet stove service near me",
+   "display": "[pellet stove service near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "pellet_stove",
+   "reason": "solid-fuel stove; not an approved service",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "text": "webasto heater repair near me",
+   "display": "[webasto heater repair near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "vehicle",
+   "reason": "vehicle / RV / marine equipment, not a home system",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "text": "central air installation near me",
+   "display": "[central air installation near me]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "air conditioning only; cooling PAUSED by owner 2026-09-21",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717967"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "text": "how much does it cost to get central air installed",
+   "display": "[how much does it cost to get central air installed]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "ac",
+   "reason": "central AC installation price; cooling paused by owner",
+   "confidence": "medium",
+   "observed": "2026-09-24..2026-09-24",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717967"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "text": "100k btu furnace",
+   "display": "[100k btu furnace]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717767"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "text": "75000 btu gas furnace",
+   "display": "[75000 btu gas furnace]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717767"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "text": "80 000 btu gas furnace",
+   "display": "[80 000 btu gas furnace]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717767"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "text": "gd9s800804bn",
+   "display": "[gd9s800804bn]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717767"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "text": "gr9s800804bn",
+   "display": "[gr9s800804bn]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717767"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "text": "r801ca100521msa",
+   "display": "[r801ca100521msa]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717767"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "text": "w801t0754a17uhsnas",
+   "display": "[w801t0754a17uhsnas]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717767"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "campaign": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "text": "25sca530a003",
+   "display": "[25sca530a003]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717487"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "campaign": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "text": "aoh 36u3t24p",
+   "display": "[aoh 36u3t24p]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717487"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "campaign": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "text": "bova36hdn1m20g",
+   "display": "[bova36hdn1m20g]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717487"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "campaign": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "text": "bova36rtbm20s",
+   "display": "[bova36rtbm20s]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717487"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "campaign": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "text": "gszb403010",
+   "display": "[gszb403010]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717487"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "campaign": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "text": "ml14kp1 024",
+   "display": "[ml14kp1 024]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717487"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "campaign": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "text": "rd18ay36ajvca",
+   "display": "[rd18ay36ajvca]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-09-28..2026-09-28",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129717487"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "suntouch heated floor thermostat",
+   "display": "[suntouch heated floor thermostat]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "floor_heat",
+   "reason": "electric floor-heating product / thermostat, not an Ambient service on record",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "can i change a thermostat myself",
+   "display": "[can i change a thermostat myself]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "info",
+   "reason": "research question with no hire signal",
+   "confidence": "medium",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "4pu49",
+   "display": "[4pu49]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "5184570aj",
+   "display": "[5184570aj]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "91873",
+   "display": "[91873]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare part/model number lookup",
+   "confidence": "medium",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "thermostat 701",
+   "display": "[thermostat 701]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "model",
+   "reason": "bare model / part / capacity lookup (product or spec shopping), no service-buying word",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "7 day programmable thermostat",
+   "display": "[7 day programmable thermostat]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "thermostat_diy",
+   "reason": "thermostat product shopping",
+   "confidence": "medium",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "aube thermostat",
+   "display": "[aube thermostat]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "thermostat_diy",
+   "reason": "thermostat brand/product shopping",
+   "confidence": "medium",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "google home thermostat setup",
+   "display": "[google home thermostat setup]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "thermostat_diy",
+   "reason": "thermostat setup (DIY)",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718967"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "honeywell focus pro s200 wifi setup",
+   "display": "[honeywell focus pro s200 wifi setup]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "thermostat_diy",
+   "reason": "thermostat Wi-Fi setup (DIY)",
+   "confidence": "high",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718967"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "installing a programmable thermostat",
+   "display": "[installing a programmable thermostat]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "thermostat_diy",
+   "reason": "DIY how-to phrasing",
+   "confidence": "medium",
+   "observed": "2026-09-29..2026-09-29",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "nest thermostat installation wiring",
+   "display": "[nest thermostat installation wiring]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "thermostat_diy",
+   "reason": "DIY wiring lookup; protects 'nest thermostat installation'",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718967"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "round non programmable thermostat with 1h single stage heating",
+   "display": "[round non programmable thermostat with 1h single stage heating]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "thermostat_diy",
+   "reason": "thermostat product spec shopping",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "single stage thermostat",
+   "display": "[single stage thermostat]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "thermostat_diy",
+   "reason": "thermostat product spec shopping",
+   "confidence": "medium",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 13.86,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "vivint thermostat programming",
+   "display": "[vivint thermostat programming]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "thermostat_diy",
+   "reason": "security-system thermostat programming (DIY)",
+   "confidence": "high",
+   "observed": "2026-09-30..2026-09-30",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 16.13,
+   "ad_groups": [
+    "204129718967"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "text": "replacement dometic thermostat",
+   "display": "[replacement dometic thermostat]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "vehicle",
+   "reason": "vehicle / RV / marine equipment, not a home system",
+   "confidence": "high",
+   "observed": "2026-10-01..2026-10-01",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129718927"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24274160783",
+   "campaign": "Search | NonBrand | Geothermal Heat Pump | Central MD | BOFU | 2026-09",
+   "text": "what is geothermal heating",
+   "display": "[what is geothermal heating]",
+   "match": "EXACT",
+   "scope": "campaign",
+   "bucket": "info",
+   "reason": "research question with no hire signal",
+   "confidence": "medium",
+   "observed": "2026-09-24..2026-09-24",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "ad_groups": [
+    "204129719007"
+   ],
+   "conflict_check": "none: blocks only this full query; longer buyer queries stay eligible"
+  }
+ ],
+ "operation_count": 98,
+ "by_campaign": {
+  "24132507744": 1,
+  "24257819463": 64,
+  "24257819466": 9,
+  "24268690038": 7,
+  "24268690041": 16,
+  "24274160783": 1
+ },
+ "fingerprint": "D6ABF60771C3"
+}

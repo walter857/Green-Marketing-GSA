@@ -1,0 +1,637 @@
+# VOID 2026-08-26 - fingerprint F453AD249497
+# Bundled create-paused resources (which need readback QA and a separate enable approval) with negative keywords (which go live the moment they are created).
+
+change_plan:
+  plan_id: PLAN-E
+  plan_title: Create paused - Pressure Washing Near Me and House Washing Near Me
+  approval_type: CREATE_PAUSED
+  priority: P1
+  approval_status: VOID - DO NOT APPROVE
+  execution_status: VOID - DO NOT EXECUTE
+  recommended_approval_order: 5
+  ads_mutation_count: 16
+  requires_separate_enable_approval: true
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  ownership_rule: 'Both new SKAGs are created in campaign 24145053510 (Power Washing #2), which
+    already owns the pressure / house / soft washing family. Campaign 24103511039 owns the power
+    washing family. Assigning each intent to exactly one campaign is what stops the two campaigns
+    bidding against each other on one query. Neither SKAG is created in both campaigns.'
+  skag_1:
+    ad_group_name: Pressure Washing Near Me
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    canonical_intent: Homeowner looking to hire a pressure washing service nearby
+    keywords:
+    - text: pressure washing near me
+      match_type: PHRASE
+    - text: pressure washing near me
+      match_type: EXACT
+    final_url: https://offer.softwindli.com/residential-pressure-washing/
+    landing_page_h1: Residential Pressure Washing In Islip, West Islip & Dix Hills, NY
+    landing_page_verified:
+      http_status: 200
+      forms: 2
+      tel: (631) 502-7946
+      gclid_preserved: true
+    planner_demand:
+      avg_monthly_searches: 70
+      competition: HIGH
+      top_of_page_low: 8.75
+      top_of_page_high: 24.53
+    why_not_already_covered: No live keyword in either campaign contains "pressure" as a head
+      term, and no paused ad group contains the exact text "pressure washing near me". The paused
+      legacy "Pressure & Power Washing" group holds pressure washing service / company / contractor
+      / estimate / quote / long island, but a PHRASE keyword "pressure washing service" does
+      not match "pressure washing near me" - the word "service" is absent from the query. The
+      gap is real.
+    account_evidence_this_matters: 'The account already RECEIVES this demand, through close
+      variants routed into power washing ad groups showing power washing copy. The result is
+      measurable: search terms using "pressure wash" phrasing have produced 15 impressions and
+      ZERO clicks - a 0% CTR - while "power wash" phrasing runs 7.25%. Eleven of those fifteen
+      impressions were served by a power-washing ad group. This is a copy-match failure, not
+      merely a coverage gap, and a dedicated SKAG is the fix.'
+  skag_2:
+    ad_group_name: House Washing Near Me
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    canonical_intent: Homeowner looking to hire exterior house washing nearby
+    keywords:
+    - text: house washing near me
+      match_type: PHRASE
+    - text: house washing near me
+      match_type: EXACT
+    final_url: https://offer.softwindli.com/house-washing-company/
+    landing_page_h1: House Washing Company In Islip, West Islip & Dix Hills, NY
+    landing_page_verified:
+      http_status: 200
+      forms: 2
+      tel: (631) 502-7946
+      gclid_preserved: true
+      house_washing_mentions: 24
+    planner_demand:
+      avg_monthly_searches: 40
+      competition: MEDIUM
+      top_of_page_low: 10.46
+      top_of_page_high: 32.09
+    why_not_already_covered: 'Honest answer: the text "house washing near me" DOES exist in
+      paused inventory - inside the legacy "Soft & House Washing" ad group. It is not absent,
+      it is badly contained. That group holds 14 keyword texts spanning house washing, soft
+      washing and long island variants, carries only ONE RSA against the two-RSA SOP, and points
+      at the generic /power-washing-soft-washing/ page rather than the far better matched /house-washing-company/
+      page whose H1 names the service and all three cities. PLAN-D rejects enabling that container.
+      Extracting its single valuable text into a clean SKAG with two purpose-written RSAs and
+      the correct landing page is the structurally correct alternative, and it is why this SKAG
+      is proposed despite the text existing in paused inventory.'
+    audit_correction_reference: This is the 40/month bucket the 2026-08-25 audit mistakenly
+      attributed to the ad group "House Washing Company Near Me". See PLAN-D audit_correction.
+  rsa_validation:
+    validator: scripts/softwind_validate_plan_e_rsas.py
+    result: ALL PLAN-E RSA VALIDATION PASSED
+    checks: 15 headlines and 4 descriptions per ad; longest headline 29; longest description
+      86; no duplicate asset within an ad; display paths within 15 characters; sibling headline
+      overlap 1 of 15 (7%) and that single shared headline is the intentionally pinned HEADLINE_1
+      variant; every headline and description screened against a banned-claims filter covering
+      licensing, insurance, guarantees, years in business, ratings, review counts, prices, discounts,
+      same-day and 24/7 promises, and out-of-scope services.
+    verified_claim_vocabulary_only: pressure washing, power washing, soft washing, house washing,
+      residential, siding, trim, fences, driveways, patios, walkways, pavers, concrete, surface-specific
+      method selection, Islip, West Islip, Dix Hills, Long Island, free quote / free estimate,
+      (631) 502-7946, local.
+  rsas:
+  - ad_group: Pressure Washing Near Me
+    rsa: 1
+    final_url: https://offer.softwindli.com/residential-pressure-washing/
+    path1: pressure-wash
+    path2: free-quote
+    headlines:
+    - text: Pressure Washing Near You
+      len: 25
+      pinned: HEADLINE_1
+    - text: Local Pressure Washing
+      len: 22
+      pinned: HEADLINE_1
+    - text: Pressure Washing In Islip
+      len: 25
+    - text: Long Island Pressure Wash
+      len: 25
+    - text: Free Pressure Washing Quote
+      len: 27
+    - text: Residential Pressure Wash
+      len: 25
+    - text: Driveways, Patios & Siding
+      len: 26
+    - text: Pavers, Concrete & Walkways
+      len: 27
+    - text: Method Matched To Surface
+      len: 25
+    - text: Soft Washing For Siding
+      len: 23
+    - text: Serving Islip & West Islip
+      len: 26
+    - text: Pressure Washing Dix Hills
+      len: 26
+    - text: Call (631) 502-7946
+      len: 19
+    - text: Request Your Free Quote
+      len: 23
+    - text: Softwind Pressure Washing
+      len: 25
+    descriptions:
+    - text: Local pressure washing for driveways, patios, pavers and siding. Request a free
+        quote.
+      len: 86
+    - text: The washing method is chosen for the surface, from hard concrete to delicate siding.
+      len: 83
+    - text: Serving Islip, West Islip and Dix Hills homeowners. Free quote, no obligation.
+      len: 78
+    - text: Pressure washing near you on Long Island. Call (631) 502-7946 or request a quote.
+      len: 81
+  - ad_group: Pressure Washing Near Me
+    rsa: 2
+    final_url: https://offer.softwindli.com/residential-pressure-washing/
+    path1: pressure-wash
+    path2: islip
+    headlines:
+    - text: Pressure Washing Near You
+      len: 25
+      pinned: HEADLINE_1
+    - text: Exterior Washing Near You
+      len: 25
+      pinned: HEADLINE_1
+    - text: Right Pressure, Right Surface
+      len: 29
+    - text: Low-Pressure Siding Washing
+      len: 27
+    - text: Driveway And Patio Washing
+      len: 26
+    - text: Paver And Concrete Washing
+      len: 26
+    - text: Walkway And Fence Washing
+      len: 25
+    - text: Cleaner Home Exteriors
+      len: 22
+    - text: Free Quote On Your Project
+      len: 26
+    - text: Tell Us What Needs Cleaning
+      len: 27
+    - text: Islip Pressure Washing
+      len: 22
+    - text: West Islip Pressure Wash
+      len: 24
+    - text: Dix Hills Pressure Wash
+      len: 23
+    - text: Local Long Island Team
+      len: 22
+    - text: Softwind Exterior Washing
+      len: 25
+    descriptions:
+    - text: We match the washing method to the material, so siding is treated gently.
+      len: 72
+    - text: Driveways, patios, walkways, pavers and concrete washed and refreshed.
+      len: 69
+    - text: Tell us what needs cleaning and where. We will send you a free quote.
+      len: 68
+    - text: Residential pressure washing for Long Island homes. Free quote available.
+      len: 72
+  - ad_group: House Washing Near Me
+    rsa: 1
+    final_url: https://offer.softwindli.com/house-washing-company/
+    path1: house-washing
+    path2: free-quote
+    headlines:
+    - text: House Washing Near You
+      len: 22
+      pinned: HEADLINE_1
+    - text: Local House Washing
+      len: 19
+      pinned: HEADLINE_1
+    - text: House Washing In Islip
+      len: 22
+    - text: Long Island House Washing
+      len: 25
+    - text: Free House Washing Quote
+      len: 24
+    - text: Siding, Trim And Fences
+      len: 23
+    - text: Gentle Low-Pressure Wash
+      len: 24
+    - text: Soft Washing For Siding
+      len: 23
+    - text: Remove Algae And Mildew
+      len: 23
+    - text: Serving Islip & West Islip
+      len: 26
+    - text: House Washing Dix Hills
+      len: 23
+    - text: Call (631) 502-7946
+      len: 19
+    - text: Request Your Free Quote
+      len: 23
+    - text: Cleaner Home Exterior
+      len: 21
+    - text: Softwind House Washing
+      len: 22
+    descriptions:
+    - text: House washing for siding, trim and fences. Request a free quote today.
+      len: 69
+    - text: A gentler low-pressure approach for materials that need careful handling.
+      len: 72
+    - text: Serving Islip, West Islip and Dix Hills homeowners. Free quote, no obligation.
+      len: 78
+    - text: House washing near you on Long Island. Call (631) 502-7946 or request a quote.
+      len: 78
+  - ad_group: House Washing Near Me
+    rsa: 2
+    final_url: https://offer.softwindli.com/house-washing-company/
+    path1: house-washing
+    path2: islip
+    headlines:
+    - text: House Washing Near You
+      len: 22
+      pinned: HEADLINE_1
+    - text: House Washing Company
+      len: 21
+      pinned: HEADLINE_1
+    - text: Soft Wash For Your Siding
+      len: 25
+    - text: Algae, Mildew And Pollen
+      len: 24
+    - text: Trim, Fences And Siding
+      len: 23
+    - text: Method Chosen For Material
+      len: 26
+    - text: Cleaner Curb Appeal
+      len: 19
+    - text: Free Exterior Cleaning Quote
+      len: 28
+    - text: Tell Us What Needs Washing
+      len: 26
+    - text: Islip House Washing
+      len: 19
+    - text: West Islip House Washing
+      len: 24
+    - text: Dix Hills House Washing
+      len: 23
+    - text: Local Long Island Team
+      len: 22
+    - text: Request A Free Estimate
+      len: 23
+    - text: Softwind Exterior Care
+      len: 22
+    descriptions:
+    - text: We choose the washing method around your siding, trim and exterior surfaces.
+      len: 75
+    - text: Lower-pressure cleaning for surfaces that should not take aggressive force.
+      len: 74
+    - text: Tell us what needs washing and where. We will send you a free quote.
+      len: 67
+    - text: House washing for Long Island homes. Free quote at (631) 502-7946.
+      len: 65
+  cross_campaign_check:
+  - keyword: pressure washing near me
+    campaign_a_24103511039_coverage: NONE. No live or paused keyword text matches.
+    campaign_b_24145053510_coverage: NONE today. Proposed here.
+    currently_enabled_duplicate: false
+    paused_duplicate: false
+    search_term_overlap: Terms "pressure washing near me" (4 impressions) and "pressure washing
+      service near me" (3 impressions) currently route into campaign A's Power Washing Services
+      Near Me via close variant, at 0% CTR. After this SKAG exists and is enabled, Google should
+      prefer the closer match in campaign B. Campaign A will lose those low-value impressions
+      - which is the intended outcome, since they convert to clicks at 0% today.
+    landing_page_overlap: /residential-pressure-washing/ is already the Final URL of the live
+      Residential Pressure Washing Near Me ad group in the SAME campaign B. Intra-campaign page
+      sharing is acceptable; Google resolves one auction by Ad Rank within a campaign. Cross-campaign
+      sharing is what must be avoided.
+    recommended_ownership: campaign 24145053510 (Power Washing
+    residual_overlap_risk: MEDIUM against the live "residential pressure washing near me" SKAG
+      in the same campaign, since both contain "pressure washing near me" as a substring. Intra-campaign,
+      so it fragments data slightly but does not create two-campaign competition. Accepted.
+  - keyword: house washing near me
+    campaign_a_24103511039_coverage: PAUSED only - inside legacy Soft & House Washing (205713509744).
+      Stays paused.
+    campaign_b_24145053510_coverage: PAUSED only - inside legacy Soft & House Washing (198082078943).
+      Stays paused.
+    currently_enabled_duplicate: false
+    paused_duplicate: true
+    paused_duplicate_note: MUST remain paused in BOTH campaigns. If either legacy container
+      were ever enabled while this SKAG is live, the account would compete with itself on this
+      exact text. PLAN-D already rejects enabling them.
+    search_term_overlap: Historical term "house exterior power washing" (2 impressions) routed
+      into campaign A's Power Washing Services Near Me. Low value, 0 clicks.
+    landing_page_overlap: /house-washing-company/ would be shared with the ad group proposed
+      for enablement in PLAN-D, in the SAME campaign B. Intra-campaign, acceptable.
+    recommended_ownership: campaign 24145053510 (Power Washing
+    interaction_with_plan_d: PLAN-D enables "House Washing Company Near Me" ([house washing
+      company near me]) and this SKAG adds [house washing near me]. Different texts, same campaign,
+      same landing page. Google will pick the closer match per query. This is normal SKAG behaviour,
+      not cannibalisation. If both are approved, expect the shorter text to take most volume.
+  negatives:
+    rationale: Three negatives only. Green Marketing policy forbids auto-negativing near me,
+      quote, estimate, cost, price, pricing, best, hire, local and emergency, and NONE of those
+      appear here. Every term below is an out-of-scope SERVICE, not a buyer-intent modifier.
+    terms:
+    - text: roof cleaning
+      match_type: PHRASE
+      level: CAMPAIGN
+      applies_to:
+      - 24103511039
+      - 24145053510
+    - text: roof washing
+      match_type: PHRASE
+      level: CAMPAIGN
+      applies_to:
+      - 24103511039
+      - 24145053510
+    - text: house cleaning
+      match_type: PHRASE
+      level: CAMPAIGN
+      applies_to:
+      - 24103511039
+      - 24145053510
+    evidence:
+      roof: '"roof washing near me" 2 impressions and "slate roof cleaning near me" 1 impression.
+        Roof cleaning is explicitly excluded from this work order''s approved service scope.'
+      house_cleaning: '"house cleaning services near me" 1 impression. Reads as interior maid
+        service, a different industry entirely.'
+    interaction_with_plan_d: These negatives materially de-risk PLAN-D. Both out-of-scope queries
+      above arrived through the House Washing Company Near Me PHRASE keyword. If PLAN-D is approved,
+      these should be approved with it.
+    explicitly_not_proposed_as_negatives: The cost-research cluster - average cost to power
+      wash a house, powerwash cost, cost to power wash, price to powerwash house, how much is
+      powerwashing a house - carries 36% of all account spend across 2 clicks with no lead.
+      It remains WATCH, not NEGATIVE. Two clicks prove nothing, agency policy protects cost
+      terms, and these convert in this vertical.
+    separate_observation_not_in_this_plan: The existing campaign negative "how to" is at BROAD
+      match, so it blocks any query containing both "how" and "to" - including "how much does
+      it cost TO power wash a house". Narrowing it to PHRASE is a real improvement but is a
+      change to an existing negative rather than an addition, so it is recorded here and deliberately
+      excluded from this plan's action list.
+  actions:
+  - action_id: P1-E01
+    priority: P1
+    resource_type: AD_GROUP
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW ad_group 'Pressure Washing Near Me'
+    current_value: does not exist
+    proposed_value:
+      name: Pressure Washing Near Me
+      status: PAUSED
+      type: SEARCH_STANDARD
+      cpc_bid_micros: 24000000
+    why: 70 local searches/month at $8.75-$24.53 with no live or paused keyword covering the
+      text; 15 impressions of pressure-phrasing demand currently convert at 0% CTR because they
+      are served power-washing copy.
+    evidence: keyword-planner-2026-08-25.json; metrics-2026-08-25.json search_terms; demand-model-2026-08-25.json
+    expected_effect: Creates the container. No delivery until a separate ENABLE approval.
+    risk: LOW. Created paused; cannot serve.
+    rollback: Remove the ad group. Nothing else references it.
+    approval_required: YES - create-paused approval tied to this fingerprint.
+    object_count: 1
+  - action_id: P1-E02
+    priority: P1
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: NEW from P1-E01
+    resource_id: NEW keywords x2
+    current_value: does not exist
+    proposed_value:
+    - text: pressure washing near me
+      match_type: PHRASE
+      status: ENABLED
+    - text: pressure washing near me
+      match_type: EXACT
+      status: ENABLED
+    why: Phrase + Exact per Green Marketing default. No Broad Match.
+    evidence: config/agency.yaml search_defaults.match_types
+    expected_effect: No delivery while the parent ad group is paused.
+    risk: LOW.
+    rollback: Remove both criteria.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: P1-E03
+    priority: P1
+    resource_type: AD_GROUP_AD
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: NEW from P1-E01
+    resource_id: NEW RSAs x2
+    current_value: does not exist
+    proposed_value: Two RSAs as drafted under rsas[] - 15 headlines and 4 descriptions each,
+      HEADLINE_1 pinned to two interchangeable near-you variants, Final URL /residential-pressure-washing/
+    why: Two distinct RSAs per ad group per SOP. HEADLINE_1 is pinned so the searched service
+      always appears first - directly targeting the Below Average expected-CTR and ad-relevance
+      components seen on the account's existing keywords.
+    evidence: scripts/softwind_validate_plan_e_rsas.py - ALL PLAN-E RSA VALIDATION PASSED
+    expected_effect: No delivery while paused.
+    risk: LOW.
+    rollback: Remove both ads.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: P1-E04
+    priority: P1
+    resource_type: AD_GROUP
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW ad_group 'House Washing Near Me'
+    current_value: does not exist
+    proposed_value:
+      name: House Washing Near Me
+      status: PAUSED
+      type: SEARCH_STANDARD
+      cpc_bid_micros: 24000000
+    why: 40 local searches/month at $10.46-$32.09. The text exists only inside a rejected 14-text
+      legacy container pointing at a generic page; this extracts it into a clean SKAG on the
+      correctly matched page.
+    evidence: paused-inventory-ranking-2026-08-25.json; landing-pages-paused-skags-2026-08-25.json
+    expected_effect: Creates the container. No delivery until separate ENABLE approval.
+    risk: LOW.
+    rollback: Remove the ad group.
+    approval_required: 'YES'
+    object_count: 1
+  - action_id: P1-E05
+    priority: P1
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: NEW from P1-E04
+    resource_id: NEW keywords x2
+    current_value: does not exist
+    proposed_value:
+    - text: house washing near me
+      match_type: PHRASE
+      status: ENABLED
+    - text: house washing near me
+      match_type: EXACT
+      status: ENABLED
+    why: Phrase + Exact per Green Marketing default. No Broad Match.
+    evidence: config/agency.yaml search_defaults.match_types
+    expected_effect: No delivery while the parent ad group is paused.
+    risk: LOW.
+    rollback: Remove both criteria.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: P1-E06
+    priority: P1
+    resource_type: AD_GROUP_AD
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: NEW from P1-E04
+    resource_id: NEW RSAs x2
+    current_value: does not exist
+    proposed_value: Two RSAs as drafted under rsas[] - Final URL /house-washing-company/
+    why: Two distinct RSAs per ad group per SOP, matched to a page whose H1 names the service
+      and all three cities.
+    evidence: scripts/softwind_validate_plan_e_rsas.py
+    expected_effect: No delivery while paused.
+    risk: LOW.
+    rollback: Remove both ads.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: P1-E07
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: NEW negative keywords x3
+    current_value: 47 campaign negatives; none blocks roof or interior house cleaning
+    proposed_value:
+    - text: roof cleaning
+      match_type: PHRASE
+      negative: true
+    - text: roof washing
+      match_type: PHRASE
+      negative: true
+    - text: house cleaning
+      match_type: PHRASE
+      negative: true
+    why: Out-of-scope services observed in live search terms. Roof cleaning is excluded from
+      this work order; house cleaning is interior maid service.
+    evidence: 2026-08-25-search-term-verdicts.csv - 3 NEGATIVE CANDIDATE rows
+    expected_effect: Blocks a small number of out-of-scope impressions. No in-scope buyer demand
+      is suppressed.
+    risk: LOW. 'house cleaning' PHRASE will not block 'house washing' - different words.
+    rollback: Remove the three criteria.
+    approval_required: 'YES'
+    object_count: 3
+  - action_id: P1-E08
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW negative keywords x3
+    current_value: 47 campaign negatives, identical to campaign A
+    proposed_value:
+    - text: roof cleaning
+      match_type: PHRASE
+      negative: true
+    - text: roof washing
+      match_type: PHRASE
+      negative: true
+    - text: house cleaning
+      match_type: PHRASE
+      negative: true
+    why: Same three out-of-scope services. Campaign B is where PLAN-D enables House Washing
+      Company Near Me, the ad group whose PHRASE keyword produced both out-of-scope queries.
+    evidence: Same as P1-E07; plus PLAN-D risk_mitigation.
+    expected_effect: De-risks PLAN-D.
+    risk: LOW.
+    rollback: Remove the three criteria.
+    approval_required: 'YES'
+    object_count: 3
+  candidates_researched_and_rejected:
+  - keyword: pressure washing services near me
+    verdict: DEFER TO SEPTEMBER
+    reason: Semantically very close to the proposed pressure washing near me SKAG. Adding both
+      into a ~26 impression/day pool would split one intent across two ad groups. Revisit once
+      the first SKAG has data.
+  - keyword: pressure washing company near me
+    verdict: DEFER TO SEPTEMBER
+    reason: 10/month at LOW competition. Real intent, too little volume to justify a fourth
+      container this month.
+  - keyword: paver cleaning near me
+    verdict: DEFER
+    reason: 40/month at $5.05-$15.18 and in scope as CLEANING - but paver SEALING is explicitly
+      out of scope for this work order and the term family is contaminated with chemical-product
+      intent (zep, krud kutter, artisan paver cleaner). Needs a SERP intent check before proposal.
+  - keyword: power washing
+    verdict: DO NOT ADD
+    reason: 480/month but the low top-of-page bid collapses to $0.57 and the bucket groups with
+      'power pressure washer'. In this account it produced 14 impressions and 0 clicks.
+  - keyword: pressure washing
+    verdict: DO NOT ADD
+    reason: 260/month, $0.30 low bid. Same equipment contamination.
+  - keyword: power washing cost
+    verdict: DO NOT ADD
+    reason: $0.31 low top-of-page signals research intent. Monitor as a search term instead.
+  - keyword: pressure washer / best pressure washer / pressure washer rental
+    verdict: DO NOT ADD
+    reason: Equipment and retail intent. Already blocked by existing negatives.
+  - keyword: local pressure washing / house power washing near me / driveway power washing near
+      me / concrete power washing near me / patio power washing near me / soft washing company
+      near me
+    verdict: DEFER
+    reason: Either below the Planner reporting threshold in this geo or already covered by a
+      live SKAG's close variants. None justifies a new container this month.
+  post_creation_requirements:
+  - 'READBACK QA: re-read every created resource from the API and compare against this plan
+    before any enable is proposed.'
+  - 'SEPARATE ENABLE APPROVAL: creation does not authorise delivery. Enabling these two ad groups
+    is a second approval with its own fingerprint.'
+  - The three negatives in P1-E07 and P1-E08 take effect immediately on creation - they are
+    not paused resources. That is intended.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 2
+    keywords_enabled: 0
+    keywords_created_paused: 4
+    rsas_created_paused: 4
+    ads_changed: 0
+    negatives_added: 6
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 16
+    note: '16 objects across 8 actions: 2 ad groups + 4 keywords + 4 RSAs + 6 negative criteria.'
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  void_status:
+    state: VOID
+    voided_on: '2026-08-26'
+    fingerprint_voided: F453AD249497
+    replaced_by:
+    - PLAN-E1
+    - PLAN-E2
+    reason: Bundled create-paused resources (which need readback QA and a separate enable approval)
+      with negative keywords (which go live the moment they are created).

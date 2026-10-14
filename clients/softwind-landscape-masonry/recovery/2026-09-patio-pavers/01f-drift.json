@@ -1,0 +1,111 @@
+{
+  "compared_at": "2026-09-03T23:53:21.360390-04:00",
+  "baseline_1": "2026-09-03T18:14:13.987015-04:00",
+  "baseline_2": "2026-09-03T23:53:21.360390-04:00",
+  "differences": [
+    {
+      "what": "cpc_bid_ceiling",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "baseline_1": null,
+      "baseline_2": 16.0
+    },
+    {
+      "what": "budget_amount",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "baseline_1": 33.0,
+      "baseline_2": 24.0
+    },
+    {
+      "what": "final_url_suffix",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "baseline_1": null,
+      "baseline_2": "utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}&utm_matchtype={matchtype}&utm_device={device}"
+    },
+    {
+      "what": "cpc_bid_ceiling",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "baseline_1": null,
+      "baseline_2": 18.0
+    },
+    {
+      "what": "budget_amount",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "baseline_1": 33.0,
+      "baseline_2": 32.0
+    },
+    {
+      "what": "final_url_suffix",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "baseline_1": null,
+      "baseline_2": "utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}&utm_matchtype={matchtype}&utm_device={device}"
+    },
+    {
+      "what": "keyword status",
+      "key": "196134824089~297075223566",
+      "text": "asphalt contractor near me",
+      "baseline_1": "ENABLED",
+      "baseline_2": "PAUSED"
+    },
+    {
+      "what": "keyword status",
+      "key": "196134824089~298883953673",
+      "text": "local asphalt paving companies",
+      "baseline_1": "ENABLED",
+      "baseline_2": "PAUSED"
+    },
+    {
+      "what": "keyword status",
+      "key": "196134824089~300588535183",
+      "text": "asphalt services near me",
+      "baseline_1": "ENABLED",
+      "baseline_2": "PAUSED"
+    },
+    {
+      "what": "keyword status",
+      "key": "196134824089~303329780817",
+      "text": "local asphalt paving contractors",
+      "baseline_1": "ENABLED",
+      "baseline_2": "PAUSED"
+    },
+    {
+      "what": "keyword status",
+      "key": "196134824089~309567954442",
+      "text": "asphalt paving services near me",
+      "baseline_1": "ENABLED",
+      "baseline_2": "PAUSED"
+    },
+    {
+      "what": "keyword status",
+      "key": "196134824089~356532888916",
+      "text": "asphalt and paving companies near me",
+      "baseline_1": "ENABLED",
+      "baseline_2": "PAUSED"
+    },
+    {
+      "what": "keyword status",
+      "key": "196134824089~543919818878",
+      "text": "local asphalt companies near me",
+      "baseline_1": "ENABLED",
+      "baseline_2": "PAUSED"
+    },
+    {
+      "what": "campaign negative count",
+      "baseline_1": 1675,
+      "baseline_2": 1771
+    },
+    {
+      "what": "conversion primary_for_goal",
+      "id": "7461619140",
+      "name": "Softwind Submit lead form",
+      "baseline_1": true,
+      "baseline_2": false
+    }
+  ],
+  "verdict": "DRIFT DETECTED"
+}

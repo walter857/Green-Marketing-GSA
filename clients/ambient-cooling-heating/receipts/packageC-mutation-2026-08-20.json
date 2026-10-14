@@ -1,0 +1,136 @@
+{
+ "executed_utc": "2026-08-20T15:29:49.907254Z",
+ "completed_utc": "2026-08-20T15:29:50.199518Z",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "approved_fingerprint": "C6C3DFFC9BD5AF9B",
+ "package": "PACKAGE C - protective campaign schedule",
+ "execution_shape": "GoogleAdsService.Mutate, 30 mutate_operations, partial_failure=false, validate_only=false",
+ "operations_sent": 30,
+ "responses_returned": 30,
+ "schedule_applied": [
+  {
+   "day_of_week": "MONDAY",
+   "start_hour": 8,
+   "end_hour": 20
+  },
+  {
+   "day_of_week": "TUESDAY",
+   "start_hour": 8,
+   "end_hour": 20
+  },
+  {
+   "day_of_week": "WEDNESDAY",
+   "start_hour": 8,
+   "end_hour": 20
+  },
+  {
+   "day_of_week": "THURSDAY",
+   "start_hour": 8,
+   "end_hour": 20
+  },
+  {
+   "day_of_week": "FRIDAY",
+   "start_hour": 8,
+   "end_hour": 20
+  },
+  {
+   "day_of_week": "SATURDAY",
+   "start_hour": 8,
+   "end_hour": 13
+  }
+ ],
+ "campaigns": [
+  "24132507741",
+  "24132507744",
+  "24132507747",
+  "24132507750",
+  "24132507753"
+ ],
+ "returned_resource_names": [
+  "customers/2401959466/campaignCriteria/24132507741~303280",
+  "customers/2401959466/campaignCriteria/24132507741~313280",
+  "customers/2401959466/campaignCriteria/24132507741~323280",
+  "customers/2401959466/campaignCriteria/24132507741~333280",
+  "customers/2401959466/campaignCriteria/24132507741~343280",
+  "customers/2401959466/campaignCriteria/24132507741~353252",
+  "customers/2401959466/campaignCriteria/24132507744~303280",
+  "customers/2401959466/campaignCriteria/24132507744~313280",
+  "customers/2401959466/campaignCriteria/24132507744~323280",
+  "customers/2401959466/campaignCriteria/24132507744~333280",
+  "customers/2401959466/campaignCriteria/24132507744~343280",
+  "customers/2401959466/campaignCriteria/24132507744~353252",
+  "customers/2401959466/campaignCriteria/24132507747~303280",
+  "customers/2401959466/campaignCriteria/24132507747~313280",
+  "customers/2401959466/campaignCriteria/24132507747~323280",
+  "customers/2401959466/campaignCriteria/24132507747~333280",
+  "customers/2401959466/campaignCriteria/24132507747~343280",
+  "customers/2401959466/campaignCriteria/24132507747~353252",
+  "customers/2401959466/campaignCriteria/24132507750~303280",
+  "customers/2401959466/campaignCriteria/24132507750~313280",
+  "customers/2401959466/campaignCriteria/24132507750~323280",
+  "customers/2401959466/campaignCriteria/24132507750~333280",
+  "customers/2401959466/campaignCriteria/24132507750~343280",
+  "customers/2401959466/campaignCriteria/24132507750~353252",
+  "customers/2401959466/campaignCriteria/24132507753~303280",
+  "customers/2401959466/campaignCriteria/24132507753~313280",
+  "customers/2401959466/campaignCriteria/24132507753~323280",
+  "customers/2401959466/campaignCriteria/24132507753~333280",
+  "customers/2401959466/campaignCriteria/24132507753~343280",
+  "customers/2401959466/campaignCriteria/24132507753~353252"
+ ],
+ "pre_write_counts": {
+  "campaigns": 23,
+  "ad_groups": 68,
+  "ads": 113,
+  "keywords": 6968,
+  "campaign_assets": 271,
+  "conversion_actions": 16,
+  "ip_blocks": 2796,
+  "campaign_criteria": 13780
+ },
+ "pre_write_state": {
+  "ad_schedule_on_five": 0,
+  "ad_schedule_account_wide": 109,
+  "call_asset_schedule": [
+   [
+    "FRIDAY",
+    8,
+    20
+   ],
+   [
+    "MONDAY",
+    8,
+    20
+   ],
+   [
+    "SATURDAY",
+    8,
+    13
+   ],
+   [
+    "THURSDAY",
+    8,
+    20
+   ],
+   [
+    "TUESDAY",
+    8,
+    20
+   ],
+   [
+    "WEDNESDAY",
+    8,
+    20
+   ]
+  ],
+  "budgets_micros": {
+   "24132507741": 141450000,
+   "24132507744": 42760000,
+   "24132507747": 138160000,
+   "24132507750": 78950000,
+   "24132507753": 26320000
+  }
+ },
+ "preflight_gates": "15/15 pass"
+}

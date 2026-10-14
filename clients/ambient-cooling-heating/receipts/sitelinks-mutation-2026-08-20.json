@@ -1,0 +1,379 @@
+{
+ "executed_utc": "2026-08-20T19:03:25.814993Z",
+ "completed_utc": "2026-08-20T19:03:26.283776Z",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "approved_fingerprint": "FFD4FC4647539998",
+ "package": "P1 sitelinks to offer subdomain",
+ "execution_shape": "GoogleAdsService.Mutate, 33 mutate_operations, partial_failure=false, validate_only=false",
+ "operations_sent": 33,
+ "responses_returned": 33,
+ "new_sitelink_asset_ids": [
+  "410638280061",
+  "410465469923",
+  "410638276380",
+  "410638280067",
+  "410638278156"
+ ],
+ "returned": [
+  {
+   "type": "asset_result",
+   "resource_name": "customers/2401959466/assets/410638280061"
+  },
+  {
+   "type": "asset_result",
+   "resource_name": "customers/2401959466/assets/410465469923"
+  },
+  {
+   "type": "asset_result",
+   "resource_name": "customers/2401959466/assets/410638276380"
+  },
+  {
+   "type": "asset_result",
+   "resource_name": "customers/2401959466/assets/410638280067"
+  },
+  {
+   "type": "asset_result",
+   "resource_name": "customers/2401959466/assets/410638278156"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507741~410465469923~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507741~410638276380~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507741~410638280067~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507741~410638278156~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507744~410638280061~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507744~410638276380~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507744~410638280067~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507744~410638278156~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507747~410638280061~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507747~410465469923~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507747~410638280067~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507747~410638278156~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507750~410638280061~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507750~410465469923~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507750~410638276380~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507750~410638278156~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507753~410638280061~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507753~410465469923~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507753~410638276380~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507753~410638280067~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507747~407494735425~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507741~407319490556~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507744~407319490571~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507747~407418567061~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507750~407418567061~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507753~407418567061~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507744~407494691220~SITELINK"
+  },
+  {
+   "type": "campaign_asset_result",
+   "resource_name": "customers/2401959466/campaignAssets/24132507753~407494691220~SITELINK"
+  }
+ ],
+ "state_before": {
+  "24132507741": [
+   {
+    "asset_id": "407319490556",
+    "text": "AC Repair Service",
+    "urls": [
+     "https://ambientcoolingandheating.com/services/cooling-services/air-conditioner-repair/"
+    ]
+   },
+   {
+    "asset_id": "407319490559",
+    "text": "Customer Reviews",
+    "urls": [
+     "https://ambientcoolingandheating.com/reviews/"
+    ]
+   },
+   {
+    "asset_id": "407319490562",
+    "text": "View Our Work",
+    "urls": [
+     "https://ambientcoolingandheating.com/our-work/"
+    ]
+   },
+   {
+    "asset_id": "407418567058",
+    "text": "Contact Ambient",
+    "urls": [
+     "https://ambientcoolingandheating.com/contact-us/"
+    ]
+   },
+   {
+    "asset_id": "407494691217",
+    "text": "Service Areas",
+    "urls": [
+     "https://ambientcoolingandheating.com/service-areas/"
+    ]
+   }
+  ],
+  "24132507744": [
+   {
+    "asset_id": "407319490559",
+    "text": "Customer Reviews",
+    "urls": [
+     "https://ambientcoolingandheating.com/reviews/"
+    ]
+   },
+   {
+    "asset_id": "407319490562",
+    "text": "View Our Work",
+    "urls": [
+     "https://ambientcoolingandheating.com/our-work/"
+    ]
+   },
+   {
+    "asset_id": "407319490571",
+    "text": "Boiler Repair",
+    "urls": [
+     "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/"
+    ]
+   },
+   {
+    "asset_id": "407418567058",
+    "text": "Contact Ambient",
+    "urls": [
+     "https://ambientcoolingandheating.com/contact-us/"
+    ]
+   },
+   {
+    "asset_id": "407494691217",
+    "text": "Service Areas",
+    "urls": [
+     "https://ambientcoolingandheating.com/service-areas/"
+    ]
+   },
+   {
+    "asset_id": "407494691220",
+    "text": "Heating Services",
+    "urls": [
+     "https://ambientcoolingandheating.com/services/heating-services/"
+    ]
+   }
+  ],
+  "24132507747": [
+   {
+    "asset_id": "407319490559",
+    "text": "Customer Reviews",
+    "urls": [
+     "https://ambientcoolingandheating.com/reviews/"
+    ]
+   },
+   {
+    "asset_id": "407319490562",
+    "text": "View Our Work",
+    "urls": [
+     "https://ambientcoolingandheating.com/our-work/"
+    ]
+   },
+   {
+    "asset_id": "407418567058",
+    "text": "Contact Ambient",
+    "urls": [
+     "https://ambientcoolingandheating.com/contact-us/"
+    ]
+   },
+   {
+    "asset_id": "407418567061",
+    "text": "HVAC Services",
+    "urls": [
+     "https://ambientcoolingandheating.com/services/hvac/"
+    ]
+   },
+   {
+    "asset_id": "407494691217",
+    "text": "Service Areas",
+    "urls": [
+     "https://ambientcoolingandheating.com/service-areas/"
+    ]
+   },
+   {
+    "asset_id": "407494735425",
+    "text": "AC Installation",
+    "urls": [
+     "https://ambientcoolingandheating.com/services/cooling-services/ac-installation/"
+    ]
+   }
+  ],
+  "24132507750": [
+   {
+    "asset_id": "407319490559",
+    "text": "Customer Reviews",
+    "urls": [
+     "https://ambientcoolingandheating.com/reviews/"
+    ]
+   },
+   {
+    "asset_id": "407319490562",
+    "text": "View Our Work",
+    "urls": [
+     "https://ambientcoolingandheating.com/our-work/"
+    ]
+   },
+   {
+    "asset_id": "407418567058",
+    "text": "Contact Ambient",
+    "urls": [
+     "https://ambientcoolingandheating.com/contact-us/"
+    ]
+   },
+   {
+    "asset_id": "407418567061",
+    "text": "HVAC Services",
+    "urls": [
+     "https://ambientcoolingandheating.com/services/hvac/"
+    ]
+   },
+   {
+    "asset_id": "407494691217",
+    "text": "Service Areas",
+    "urls": [
+     "https://ambientcoolingandheating.com/service-areas/"
+    ]
+   }
+  ],
+  "24132507753": [
+   {
+    "asset_id": "407319490559",
+    "text": "Customer Reviews",
+    "urls": [
+     "https://ambientcoolingandheating.com/reviews/"
+    ]
+   },
+   {
+    "asset_id": "407319490562",
+    "text": "View Our Work",
+    "urls": [
+     "https://ambientcoolingandheating.com/our-work/"
+    ]
+   },
+   {
+    "asset_id": "407418567058",
+    "text": "Contact Ambient",
+    "urls": [
+     "https://ambientcoolingandheating.com/contact-us/"
+    ]
+   },
+   {
+    "asset_id": "407418567061",
+    "text": "HVAC Services",
+    "urls": [
+     "https://ambientcoolingandheating.com/services/hvac/"
+    ]
+   },
+   {
+    "asset_id": "407494691217",
+    "text": "Service Areas",
+    "urls": [
+     "https://ambientcoolingandheating.com/service-areas/"
+    ]
+   },
+   {
+    "asset_id": "407494691220",
+    "text": "Heating Services",
+    "urls": [
+     "https://ambientcoolingandheating.com/services/heating-services/"
+    ]
+   }
+  ]
+ },
+ "pre_write_counts": {
+  "campaign_assets": 271,
+  "campaigns": 23,
+  "ads": 113,
+  "keywords": 6968,
+  "conversion_actions": 16,
+  "campaign_criteria": 13810,
+  "ad_schedule": 139,
+  "ip_blocks": 2796,
+  "customer_assets": 1
+ },
+ "pre_write_budgets": {
+  "24132507741": 141450000,
+  "24132507744": 42760000,
+  "24132507747": 138160000,
+  "24132507750": 78950000,
+  "24132507753": 26320000
+ },
+ "preflight_gates": "22/22"
+}

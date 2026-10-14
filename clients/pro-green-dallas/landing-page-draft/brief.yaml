@@ -1,0 +1,168 @@
+# LOCAL DRAFT — NOT DEPLOYED.
+# Completed from templates/landing-page/brief.template.yaml
+# Authoritative spec: clients/pro-green-dallas/canonical-landing-page-developer-handoff.md
+
+client: Pro Green Landscape Solutions
+service: sprinkler and irrigation repair
+canonical_keyword: sprinkler repair
+market_language: en
+final_url: https://offer.progreenlandscapesolutions.com/sprinkler-irrigation-repair/
+
+# Base number that must render in page source. WhatConverts DNI replaces it at runtime
+# with an available website-pool number. NEVER hard-code the pool number (214) 301-4622.
+# NEVER render (214) 301-3385 here - that number belongs to Google Ads call asset 89872541418.
+phone_display: "(214) 300-9564"
+phone_e164: "+12143009564"
+
+form_webhook_env_key: CRM_WEBHOOK_URL
+thank_you_path: /sprinkler-irrigation-repair/thank-you
+
+verified_claims:
+  usps:
+    - Licensed and insured
+    - Free estimates
+    - 18-point check
+    - Customer satisfaction guarantee
+  offers:
+    # The 10% OFF promotion is EXPIRED and prohibited. Do not reinstate.
+    - "Same-Day Service May Be Available."
+  licenses:
+    - Licensed and insured
+  warranties:
+    - Customer satisfaction guarantee
+  rating: null            # not verified - do not add aggregateRating schema
+  review_count: null      # not verified
+  years_in_business: null # not verified
+
+service_area:
+  primary_city: Dallas
+  additional_locations:
+    - Fort Worth
+    - Frisco
+    - Irving
+    - Arlington
+    - Plano
+    - Allen
+    - University Park
+    - Grand Prairie
+    - Richardson
+    - Preston Hollow
+    - Highland Park
+    - Lakewood
+    - Farmers Branch
+    - Balch Springs
+    - Duncanville
+    - Coppell
+    - Grapevine
+    - Vickery Meadow
+
+# Only these service-area pages are verified and linkable. Do not fabricate the rest.
+verified_service_area_pages:
+  - /dfw/service-areas/dallas/
+  - /dfw/service-areas/fort-worth/
+  - /dfw/service-areas/frisco/
+  - /dfw/service-areas/irving/
+  - /dfw/service-areas/arlington/
+  - /dfw/service-areas/plano/
+  - /dfw/service-areas/allen/
+  - /dfw/service-areas/university-park/
+  - /dfw/service-areas/grand-prairie/
+  - /dfw/service-areas/richardson/
+  - /dfw/service-areas/preston-hollow/
+
+services_in_scope:
+  - sprinkler repair
+  - irrigation repair
+  - sprinkler head repair
+  - valve repair
+
+services_excluded:
+  - new irrigation system installation
+  - irrigation system design
+  - winterization
+  - general landscaping
+
+structure:
+  - top_cta_bar
+  - hero
+  - problem_and_outcome
+  - service_scope
+  - proof_gallery
+  - eighteen_point_check
+  - process
+  - service_area
+  - faq
+  - final_cta
+  - footer
+
+form_fields:
+  - name
+  - phone
+  - email
+  - service_address_or_zip
+  - project_details
+
+hidden_attribution_fields:
+  - lead_id
+  - gclid
+  - gbraid
+  - wbraid
+  - utm_source
+  - utm_medium
+  - utm_campaign
+  - utm_term
+  - utm_content
+  - utm_id
+  - landing_url
+  - referrer_url
+  - original_source
+  - consent_state
+
+attribution_persistence:
+  cookie_domain: .progreenlandscapesolutions.com
+  cookie_days: 90            # exceeds the 60-day click window on 7717433751 / 7717433754
+  first_touch_wins: true     # never overwrite a click ID with a later empty value
+
+tracking:
+  deploy:
+    gtm_container: GTM-NZSMS9RB
+    google_ads_conversion_id: AW-11237210508
+    ga4_measurement_id: G-5JMRW1LBMF
+    whatconverts_profile: "107007"
+  do_not_deploy:
+    - GTM-54Q4TVXF          # ownership unverified; suspected Austin
+    - AW-11240766632        # not this account's conversion ID
+    - G-MHX199EBNJ          # second GA4 property
+    - facebook_pixel_1455418062885315
+    - nextdoor_pixel_440513cd-3237-4a70-9ca7-0e129ce37252
+    - __awcc                # phone-swap tag - would compete with WhatConverts DNI
+    - nelio_ab_testing      # page must not participate in any experiment
+  no_deferred_measurement: true   # tags must fire without user interaction
+
+images:
+  hero:
+    required: true
+    subject: Technician repairing a sprinkler head in a DFW residential lawn
+    aspect_ratio: "16:9"
+  proof_1:
+    required: true
+    subject: Before and after of a repaired zone or sprinkler head
+    aspect_ratio: "4:3"
+  proof_2:
+    required: true
+    subject: Valve box or leak repair in progress
+    aspect_ratio: "4:3"
+  process_or_team:
+    required: false
+    subject: Branded vehicle or technician with diagnostic equipment
+    aspect_ratio: "3:2"
+  logo:
+    required: true
+    subject: Current approved Pro Green Landscape Solutions logo
+    note: Confirm the version with the client before reuse
+
+performance:
+  lcp_seconds_max: 2.5
+  cls_max: 0.1
+  inp_ms_max: 200
+  mobile_priority: true    # 100% of current campaign traffic is mobile

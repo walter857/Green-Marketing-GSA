@@ -1,0 +1,32 @@
+{
+ "fails": [],
+ "packages": {
+  "AMB-0909C-BUD-1": {
+   "fingerprint": "A7118436590B",
+   "ops": 2,
+   "class": "reversible-budget-change"
+  },
+  "AMB-0909C-CPC-INST-2": {
+   "fingerprint": "5D57E0EF3B70",
+   "ops": 1,
+   "class": "reversible-setting-change-UNVERIFIED-TEST"
+  },
+  "AMB-0909C-NEG-SAVAGE": {
+   "fingerprint": "10F76004E1B6",
+   "ops": 5,
+   "class": "DESTRUCTIVE-removal"
+  },
+  "AMB-0909C-NEG-COMMERCIAL": {
+   "fingerprint": "9F88FEE76803",
+   "ops": 1,
+   "class": "DESTRUCTIVE-removal-ACCOUNT-LEVEL"
+  },
+  "AMB-0909C-COMP-1": {
+   "fingerprint": "D434D6F41747",
+   "ops": 3,
+   "class": "reversible-addition"
+  }
+ },
+ "new_operations_total": 12,
+ "approval_block_total": 14
+}

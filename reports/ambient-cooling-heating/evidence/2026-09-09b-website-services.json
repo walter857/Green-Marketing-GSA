@@ -1,0 +1,646 @@
+{
+ "generated_local": "2026-09-09T17:56:34.161413-04:00",
+ "method": "Playwright Chromium, JS enabled, GET only",
+ "pages": {
+  "https://ambientcoolingandheating.com/": {
+   "status": 200,
+   "title": "HVAC, AC Repair, Heating in Severn, Severna Park & Columbia, MD",
+   "h1": [
+    "HVAC, AIR CONDITIONER REPAIR & HEATING SERVICES IN SEVERN, SEVERNA PARK & COLUMBIA, MD"
+   ],
+   "h2": [
+    "Why Choose Us",
+    "Our Services",
+    "Areas We Serve",
+    "What Customers Say",
+    "BLOG",
+    "Contact Us",
+    "Areas We Serve"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "dehumidifier": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "commercial": true,
+    "maintenance": true,
+    "indoor air quality": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "residential"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 14347,
+   "internal_service_links": [
+    "https://ambientcoolingandheating.com/",
+    "https://ambientcoolingandheating.com/ac-installation-sizing-technical-risks-for-severn-homes/",
+    "https://ambientcoolingandheating.com/author/backendadmin/",
+    "https://ambientcoolingandheating.com/blogs/",
+    "https://ambientcoolingandheating.com/category/ac-installation/",
+    "https://ambientcoolingandheating.com/category/air-conditioner-repair/",
+    "https://ambientcoolingandheating.com/category/commercial-hvac/",
+    "https://ambientcoolingandheating.com/category/condominium-hvac/",
+    "https://ambientcoolingandheating.com/category/heat-pumps/",
+    "https://ambientcoolingandheating.com/category/heating-maintenance/",
+    "https://ambientcoolingandheating.com/category/hvac/",
+    "https://ambientcoolingandheating.com/category/indoor-air-quality/",
+    "https://ambientcoolingandheating.com/category/mini-splits/",
+    "https://ambientcoolingandheating.com/category/pool-room-dehumidifier/",
+    "https://ambientcoolingandheating.com/commercial-hvac-planning-for-maryland-beps-compliance-basics/",
+    "https://ambientcoolingandheating.com/condominium-hvac-signs-to-watch-before-summer-heat/",
+    "https://ambientcoolingandheating.com/contact-us/",
+    "https://ambientcoolingandheating.com/expert-hvac-filter-timing-for-comfortable-homes/",
+    "https://ambientcoolingandheating.com/expert-mini-splits-water-leak-clues/",
+    "https://ambientcoolingandheating.com/helpful-severna-park-heat-pumps-guide-when-temps-drop/",
+    "https://ambientcoolingandheating.com/indoor-pool-moisture-guide-for-dehumidifier-setup-for-better-comfort/",
+    "https://ambientcoolingandheating.com/our-work/",
+    "https://ambientcoolingandheating.com/privacy-policy/",
+    "https://ambientcoolingandheating.com/project-planner/",
+    "https://ambientcoolingandheating.com/reviews/",
+    "https://ambientcoolingandheating.com/service-areas/",
+    "https://ambientcoolingandheating.com/service-areas/annapolis/",
+    "https://ambientcoolingandheating.com/service-areas/arbutus/",
+    "https://ambientcoolingandheating.com/service-areas/arnold/",
+    "https://ambientcoolingandheating.com/service-areas/bowie/",
+    "https://ambientcoolingandheating.com/service-areas/catonsville/",
+    "https://ambientcoolingandheating.com/service-areas/columbia/",
+    "https://ambientcoolingandheating.com/service-areas/crofton/",
+    "https://ambientcoolingandheating.com/service-areas/davidsonville/",
+    "https://ambientcoolingandheating.com/service-areas/elkridge/",
+    "https://ambientcoolingandheating.com/service-areas/ellicott-city/",
+    "https://ambientcoolingandheating.com/service-areas/ferndale/",
+    "https://ambientcoolingandheating.com/service-areas/glen-burnie/",
+    "https://ambientcoolingandheating.com/service-areas/odenton/",
+    "https://ambientcoolingandheating.com/service-areas/parole/",
+    "https://ambientcoolingandheating.com/service-areas/pasadena/",
+    "https://ambientcoolingandheating.com/service-areas/severn/",
+    "https://ambientcoolingandheating.com/service-areas/severna-park/",
+    "https://ambientcoolingandheating.com/services/",
+    "https://ambientcoolingandheating.com/services/cooling-services/",
+    "https://ambientcoolingandheating.com/services/cooling-services/ac-installation/",
+    "https://ambientcoolingandheating.com/services/cooling-services/air-conditioner-repair/",
+    "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+    "https://ambientcoolingandheating.com/services/heating-services/",
+    "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+    "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+    "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+    "https://ambientcoolingandheating.com/services/heating-services/oil-furnace-installations/",
+    "https://ambientcoolingandheating.com/services/heating-services/oil-replacement/",
+    "https://ambientcoolingandheating.com/services/heating-services/tankless-water-heaters/",
+    "https://ambientcoolingandheating.com/services/hvac/",
+    "https://ambientcoolingandheating.com/services/hvac/air-conditioner-repair/",
+    "https://ambientcoolingandheating.com/services/hvac/air-filtration/",
+    "https://ambientcoolingandheating.com/services/hvac/condominium-hvac/",
+    "https://ambientcoolingandheating.com/services/hvac/desert-air-pool-hvac/",
+    "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+    "https://ambientcoolingandheating.com/services/indoor-air-quality/",
+    "https://ambientcoolingandheating.com/services/indoor-air-quality/air-filtration/",
+    "https://ambientcoolingandheating.com/services/indoor-air-quality/drying-dehumidification-services/",
+    "https://ambientcoolingandheating.com/severna-park-heating-maintenance-checks-before-fall/",
+    "https://ambientcoolingandheating.com/sneaky-hvac-problems-that-you-should-prevent-from-happening/",
+    "https://ambientcoolingandheating.com/spotting-air-conditioner-repair-warning-signs-in-maryland/",
+    "https://ambientcoolingandheating.com/terms-and-conditions/",
+    "https://ambientcoolingandheating.com/vital-indoor-air-quality-wins-for-a-better-ventilation/",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/04/ambient-home-tankless-water-heaters-coumbia-1.png",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/04/ambient-home-tankless-water-heaters-crofron-1.png",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/04/ambient-home-tankless-water-heaters-ellicott-city-1.png",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/04/ambient-home-tankless-water-heaters-pasadena-1.png",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/04/ambient-home-tankless-water-heaters-severn-1.png",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/04/ambient-home-tankless-water-heaters-severna-park-1.png",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/05/ambient-home-hvac-annapolis-e1714737376724.jpg",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/05/ambient-home-hvac-columbia.png",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/05/ambient-home-hvac-crofton-e1714737434459.jpg",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/05/ambient-home-mini-splits-crofton-e1714737344349.jpg",
+    "https://ambientcoolingandheating.com/wp-content/uploads/2024/05/ambient-mini-splits-columbia-e1714737404763.jpg",
+    "https://ambientcoolingandheating.com/zoned-comfort-with-ductless-mini-splits-in-maryland/"
+   ]
+  },
+  "https://ambientcoolingandheating.com/services/": {
+   "status": 202,
+   "title": "Services - Ambient Cooling & Heating",
+   "h1": [
+    "Services\nBringing Back Quality and Honesty - One Job at A Time."
+   ],
+   "h2": [
+    "Discover What We Can Do For You!"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "maintenance": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential",
+    "indoor air quality"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 6480
+  },
+  "https://ambientcoolingandheating.com/services/heating-services/": {
+   "status": 200,
+   "title": "Severn, Severna Park, and Columbia Heating Services",
+   "h1": [
+    "Heating Services in Severn, Severna Park & Columbia, MD"
+   ],
+   "h2": [
+    "Heating Services from Professionals You Can Trust",
+    "Comprehensive Heating Services and Maintenance Plans",
+    "Energy-Efficient Solutions and Heating Services",
+    "Scheduling Your Heating Services Consultation with Ambient",
+    "Conclusion",
+    "FAQ\u2019s",
+    "SERVICES",
+    "SERVICE AREAS"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "thermostat": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "maintenance": true
+   },
+   "services_absent": [
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential",
+    "indoor air quality"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 10787
+  },
+  "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/": {
+   "status": 200,
+   "title": "Furnace Repair in Severn, Severna Park, Columbia, MD",
+   "h1": [
+    "Furnace Repair in Severn, Severna Park & Columbia, MD"
+   ],
+   "h2": [
+    "Timely Furnace Repair and Maintenance Services",
+    "Trusted Furnace Repair and Replacement",
+    "Professional Solutions for Maryland Homes and Businesses",
+    "Consult Ambient in Severn, Severna Park, and Columbia",
+    "Conclusion",
+    "FAQ\u2019s",
+    "SERVICES",
+    "SERVICE AREAS"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "commercial": true,
+    "residential": true,
+    "maintenance": true,
+    "indoor air quality": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "dehumidifier"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 10475
+  },
+  "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/": {
+   "status": 200,
+   "title": "Boiler Repair in Severn, Severna Park, and Columbia, MD",
+   "h1": [
+    "Boiler Repair in Severn, Severna Park & Columbia, MD"
+   ],
+   "h2": [
+    "Expert Boiler Repair to Get You Back in Business",
+    "Home Boiler Repair for Severn, Severna Park, and Columbia",
+    "Professional Services, Advanced Techniques",
+    "Comprehensive Consultations for Maryland Residents",
+    "Conclusion",
+    "FAQ\u2019s",
+    "SERVICES",
+    "SERVICE AREAS"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "maintenance": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential",
+    "indoor air quality"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 10682
+  },
+  "https://ambientcoolingandheating.com/services/heating-services/tankless-water-heaters/": {
+   "status": 200,
+   "title": "Tankless Water Heaters in Severn, Severna Park, Columbia, MD",
+   "h1": [
+    "Tankless Water Heaters in Severn, Severna Park & Columbia, MD"
+   ],
+   "h2": [
+    "Why Choose Tankless Water Heaters",
+    "Energy Efficiency and Cost Savings for Severn",
+    "Expert Installation and Maintenance for Tankless Water Heaters",
+    "Consult Ambient for Quality Services in Maryland",
+    "Conclusion",
+    "FAQ\u2019s",
+    "SERVICES",
+    "SERVICE AREAS"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "maintenance": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential",
+    "indoor air quality"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 11067
+  },
+  "https://ambientcoolingandheating.com/services/heating-services/oil-replacement/": {
+   "status": 200,
+   "title": "Optimum Oil Replacement in Severn, Severna Park & Columbia MD",
+   "h1": [
+    "Outstanding Oil Replacement In Severn, Severna Park & Columbia, MD"
+   ],
+   "h2": [
+    "Summary",
+    "Innovative Oil Replacement In Severn, Severna Park & Columbia MD",
+    "Resilient Oil Replacement In Severn, Severna Park & Columbia MD",
+    "Authentic Oil Replacement In Severn, Severna Park & Columbia MD",
+    "Conclusion",
+    "FAQ\u2019s",
+    "SERVICES",
+    "SERVICE AREAS"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "indoor air quality": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential",
+    "maintenance"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 16890
+  },
+  "https://ambientcoolingandheating.com/services/heating-services/oil-furnace-installations/": {
+   "status": 200,
+   "title": "Oil Furnace Installations in Severn, Severna Park, & Columbia MD",
+   "h1": [
+    "Spectacular Oil Furnace Installations In Severn, Severna Park & Columbia, MD"
+   ],
+   "h2": [
+    "Summary",
+    "Remarkable Oil Furnace Installations In Severn, Severna Park & Columbia MD",
+    "Innovative Oil Furnace Installations In Severn, Severna Park & Columbia MD",
+    "Stellar Oil Furnace Installations In Severn, Severna Park & Columbia MD",
+    "Conclusion",
+    "FAQ\u2019s",
+    "SERVICES",
+    "SERVICE AREAS"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "thermostat": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true
+   },
+   "services_absent": [
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential",
+    "maintenance",
+    "indoor air quality"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 16468
+  },
+  "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/": {
+   "status": 200,
+   "title": "Heat Pumps in Severn, Severna Park, and Columbia, MD",
+   "h1": [
+    "Heat Pumps in Severn, Severna Park & Columbia, MD"
+   ],
+   "h2": [
+    "Comprehensive Heat Pump Installation Services",
+    "Expert Maintenance for Optimal Performance",
+    "Reliable Heat Pumps for Severn Homes and Businesses",
+    "Efficiency, Upgrades, and More",
+    "Conclusion",
+    "FAQ\u2019s",
+    "SERVICES",
+    "SERVICE AREAS"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "maintenance": true,
+    "indoor air quality": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 11291
+  },
+  "https://ambientcoolingandheating.com/services/cooling-services/": {
+   "status": 200,
+   "title": "Services - Ambient Cooling & Heating",
+   "h1": [
+    "Services\nBringing Back Quality and Honesty - One Job at A Time."
+   ],
+   "h2": [
+    "Discover What We Can Do For You!"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "maintenance": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential",
+    "indoor air quality"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 6480
+  },
+  "https://ambientcoolingandheating.com/services/cooling-services/air-conditioner-repair/": {
+   "status": 200,
+   "title": "Air Conditioner Repair in Severn, Severna Park, Columbia",
+   "h1": [
+    "Air Conditioner Repair in Severn, Severna Park & Columbia, MD"
+   ],
+   "h2": [
+    "Air Conditioner Repair with a Comprehensive Diagnosis",
+    "Get to Know Our Skilled AC Repair Technicians",
+    "Trust Ambient for Timely Air Conditioner Repair Services",
+    "Experience Our Commitment to Customer Satisfaction",
+    "Conclusion",
+    "FAQ\u2019s",
+    "SERVICES",
+    "SERVICE AREAS"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "thermostat": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true
+   },
+   "services_absent": [
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential",
+    "maintenance",
+    "indoor air quality"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 11003
+  },
+  "https://ambientcoolingandheating.com/services/cooling-services/ac-installation/": {
+   "status": 200,
+   "title": "AC Installation in Severn, Severna Park, and Columbia, MD",
+   "h1": [
+    "AC INSTALLATION IN Severn, Severna Park & Columbia, MD"
+   ],
+   "h2": [
+    "Expert AC Installation Services for Maryland Residents",
+    "Customized Cooling Solutions to Meet Your Needs",
+    "Energy-Efficient AC Installation for Optimal Indoor Comfort",
+    "Why Choose Ambient for AC Installation Services",
+    "Conclusion",
+    "FAQ\u2019s",
+    "SERVICES",
+    "SERVICE AREAS"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "maintenance": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential",
+    "indoor air quality"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 10761
+  },
+  "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/": {
+   "status": 200,
+   "title": "Mini Splits in Severn, Severna Park, and Columbia, MD",
+   "h1": [
+    "Mini Splits in Severn, Severna Park & Columbia, MD"
+   ],
+   "h2": [
+    "Efficient Mini Splits for Sustainable Indoor Environments",
+    "Comprehensive Installation and Maintenance Services",
+    "Guaranteed Professionalism and Customer Satisfaction",
+    "Thorough Consultations by Reputable Experts",
+    "Conclusion",
+    "FAQ\u2019s",
+    "SERVICES",
+    "SERVICE AREAS"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "maintenance": true,
+    "indoor air quality": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 10672
+  },
+  "https://ambientcoolingandheating.com/services/indoor-air-quality/": {
+   "status": 200,
+   "title": "Services - Ambient Cooling & Heating",
+   "h1": [
+    "Services\nBringing Back Quality and Honesty - One Job at A Time."
+   ],
+   "h2": [
+    "Discover What We Can Do For You!"
+   ],
+   "services_mentioned": {
+    "air duct cleaning": true,
+    "ductwork": true,
+    "geothermal": true,
+    "mini split / ductless": true,
+    "boiler": true,
+    "furnace": true,
+    "heat pump": true,
+    "tankless water heater": true,
+    "maintenance": true
+   },
+   "services_absent": [
+    "thermostat",
+    "humidifier",
+    "dehumidifier",
+    "commercial",
+    "residential",
+    "indoor air quality"
+   ],
+   "manufacturers_mentioned": {
+    "york": true
+   },
+   "text_len": 6480
+  }
+ },
+ "services_union": [
+  "air duct cleaning",
+  "boiler",
+  "commercial",
+  "dehumidifier",
+  "ductwork",
+  "furnace",
+  "geothermal",
+  "heat pump",
+  "indoor air quality",
+  "maintenance",
+  "mini split / ductless",
+  "residential",
+  "tankless water heater",
+  "thermostat"
+ ],
+ "manufacturers_union": [
+  "york"
+ ]
+}

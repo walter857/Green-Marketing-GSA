@@ -1,0 +1,113 @@
+{
+ "plan": "AMB-1002-GEO-CREATE-1",
+ "fingerprint": "B7B7A99EA739",
+ "started_local": "2026-10-02T07:01:06.355363-04:00",
+ "created": [
+  {
+   "type": "AD_GROUP_AD",
+   "resource": "customers/2401959466/adGroupAds/204129719007~826785945725",
+   "label": "RSA A - service and location led",
+   "policy": {
+    "approval": "UNKNOWN",
+    "review": "REVIEW_IN_PROGRESS"
+   }
+  },
+  {
+   "type": "AD_GROUP_AD",
+   "resource": "customers/2401959466/adGroupAds/204129719007~826785945728",
+   "label": "RSA B - planning led",
+   "policy": {
+    "approval": "UNKNOWN",
+    "review": "REVIEW_IN_PROGRESS"
+   }
+  }
+ ],
+ "updated": [
+  {
+   "type": "AD_GROUP_ASSET",
+   "resource": "customers/2401959466/adGroupAssets/204129719007~290641223062~SITELINK",
+   "status": "PAUSED"
+  }
+ ],
+ "status": "EXECUTED",
+ "finished_local": "2026-10-02T07:01:08.053085-04:00",
+ "sibling_resources_excluded_from_baseline": {
+  "ads": [
+   "826702584886",
+   "826702584889"
+  ],
+  "keywords": [
+   "204129717047~4213560696"
+  ]
+ },
+ "readback": [
+  {
+   "check": "ad 826785945725 status PAUSED",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945725 ad group 204129719007",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945725 final URL",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945725 no mobile URL / tracking template / suffix",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945725 15 headlines + pins",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945725 4 descriptions + pins",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945725 paths",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945728 status PAUSED",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945728 ad group 204129719007",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945728 final URL",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945728 no mobile URL / tracking template / suffix",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945728 15 headlines + pins",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945728 4 descriptions + pins",
+   "pass": true
+  },
+  {
+   "check": "ad 826785945728 paths",
+   "pass": true
+  },
+  {
+   "check": "asset link 204129719007~290641223062~SITELINK PAUSED",
+   "pass": true
+  },
+  {
+   "check": "unrelated-resource baseline unchanged",
+   "pass": true
+  },
+  {
+   "check": "nothing ENABLED by this plan",
+   "pass": true
+  }
+ ]
+}

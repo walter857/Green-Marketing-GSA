@@ -1,0 +1,1 @@
+Read `CLAUDE.md` and `prompts/00-onboard-client.md`. Start the Green Marketing client gate. Ask for the exact Google Ads child account name, the 10-digit child customer ID, and the exact service. Do not do client work until all three are present in a validated work order.

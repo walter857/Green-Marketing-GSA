@@ -1,0 +1,182 @@
+{
+ "executed_utc": "2026-08-18T19:17:43.409078Z",
+ "customer_id": "2401959466",
+ "approved_fingerprint": "5026CAD20F45F581",
+ "depends_on": "0BCC73A397580856",
+ "operations": 12,
+ "paused": [
+  "820900825434",
+  "820900825437",
+  "820944944368",
+  "820944944371",
+  "820900825428",
+  "820900825431"
+ ],
+ "enabled": [
+  "821319509197",
+  "821319509200",
+  "821319509203",
+  "821319509206",
+  "821319509209",
+  "821319509212"
+ ],
+ "update_mask": [
+  "status"
+ ],
+ "partial_failure": false,
+ "returned_resource_names": [
+  "customers/2401959466/adGroupAds/202339087634~820900825434",
+  "customers/2401959466/adGroupAds/202339087634~820900825437",
+  "customers/2401959466/adGroupAds/200159223798~820944944368",
+  "customers/2401959466/adGroupAds/200159223798~820944944371",
+  "customers/2401959466/adGroupAds/202339087594~820900825428",
+  "customers/2401959466/adGroupAds/202339087594~820900825431",
+  "customers/2401959466/adGroupAds/202339087634~821319509197",
+  "customers/2401959466/adGroupAds/202339087634~821319509200",
+  "customers/2401959466/adGroupAds/200159223798~821319509203",
+  "customers/2401959466/adGroupAds/200159223798~821319509206",
+  "customers/2401959466/adGroupAds/202339087594~821319509209",
+  "customers/2401959466/adGroupAds/202339087594~821319509212"
+ ],
+ "gates": {
+  "swap_fingerprint_reproduces": true,
+  "rsa_fingerprint_reproduces": true,
+  "identity": true,
+  "originals_exist": true,
+  "originals_enabled": true,
+  "originals_disapproved": true,
+  "replacements_exist": true,
+  "replacements_paused": true,
+  "replacements_approved": true,
+  "replacements_no_bad_topics": true,
+  "replacements_no_bad_assets": true,
+  "replacements_match_rsa_fingerprint": true,
+  "ad_group_composition_2_plus_2": true,
+  "twelve_op_request_validates": true
+ },
+ "pre_write": {
+  "captured_utc": "2026-08-18T19:17:36.444471Z",
+  "counts": {
+   "ads_all_statuses": 113,
+   "ad_schedule_criteria": 139,
+   "campaign_criteria_non_removed": 13810,
+   "keywords_non_removed": 6968,
+   "conversion_actions": 23,
+   "shared_sets": 17,
+   "shared_criteria": 7015,
+   "campaign_assets_non_removed": 271,
+   "ad_groups_non_removed": 68,
+   "campaigns_non_removed": 23
+  },
+  "state_before": {
+   "820944944368": {
+    "ad_group_id": "200159223798",
+    "status": "ENABLED",
+    "approval": "DISAPPROVED",
+    "topics": [
+     "CONSUMER_FINANCE"
+    ],
+    "fp_match": null
+   },
+   "820944944371": {
+    "ad_group_id": "200159223798",
+    "status": "ENABLED",
+    "approval": "DISAPPROVED",
+    "topics": [
+     "CONSUMER_FINANCE"
+    ],
+    "fp_match": null
+   },
+   "821319509203": {
+    "ad_group_id": "200159223798",
+    "status": "PAUSED",
+    "approval": "APPROVED",
+    "topics": [],
+    "fp_match": true
+   },
+   "821319509206": {
+    "ad_group_id": "200159223798",
+    "status": "PAUSED",
+    "approval": "APPROVED",
+    "topics": [],
+    "fp_match": true
+   },
+   "820900825428": {
+    "ad_group_id": "202339087594",
+    "status": "ENABLED",
+    "approval": "DISAPPROVED",
+    "topics": [
+     "CONSUMER_FINANCE"
+    ],
+    "fp_match": null
+   },
+   "820900825431": {
+    "ad_group_id": "202339087594",
+    "status": "ENABLED",
+    "approval": "DISAPPROVED",
+    "topics": [
+     "CONSUMER_FINANCE"
+    ],
+    "fp_match": null
+   },
+   "821319509209": {
+    "ad_group_id": "202339087594",
+    "status": "PAUSED",
+    "approval": "APPROVED",
+    "topics": [],
+    "fp_match": true
+   },
+   "821319509212": {
+    "ad_group_id": "202339087594",
+    "status": "PAUSED",
+    "approval": "APPROVED",
+    "topics": [],
+    "fp_match": true
+   },
+   "820900825434": {
+    "ad_group_id": "202339087634",
+    "status": "ENABLED",
+    "approval": "DISAPPROVED",
+    "topics": [
+     "CONSUMER_FINANCE"
+    ],
+    "fp_match": null
+   },
+   "820900825437": {
+    "ad_group_id": "202339087634",
+    "status": "ENABLED",
+    "approval": "DISAPPROVED",
+    "topics": [
+     "CONSUMER_FINANCE"
+    ],
+    "fp_match": null
+   },
+   "821319509197": {
+    "ad_group_id": "202339087634",
+    "status": "PAUSED",
+    "approval": "APPROVED",
+    "topics": [],
+    "fp_match": true
+   },
+   "821319509200": {
+    "ad_group_id": "202339087634",
+    "status": "PAUSED",
+    "approval": "APPROVED",
+    "topics": [],
+    "fp_match": true
+   }
+  },
+  "manager_links": [
+   {
+    "manager": "customers/2815082755",
+    "link_id": "345789060",
+    "status": "ACTIVE"
+   },
+   {
+    "manager": "customers/3373711342",
+    "link_id": "314965183",
+    "status": "ACTIVE"
+   }
+  ]
+ }
+}

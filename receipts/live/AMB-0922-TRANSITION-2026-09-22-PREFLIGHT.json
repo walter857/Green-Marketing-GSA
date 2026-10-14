@@ -1,0 +1,39 @@
+{
+ "started": "2026-09-21T12:20:30.364280-04:00",
+ "customer_id": "2401959466",
+ "mcc_never_written": "3373711342",
+ "stages": [
+  {
+   "stage": "A",
+   "when": "2026-09-21T12:20:41.968290-04:00",
+   "dry": true
+  },
+  {
+   "stage": "B",
+   "when": "2026-09-21T12:20:43.836651-04:00",
+   "dry": true
+  },
+  {
+   "stage": "C",
+   "when": "2026-09-21T12:20:47.086070-04:00",
+   "dry": true
+  }
+ ],
+ "committed": {},
+ "mode": "PREFLIGHT validate_only",
+ "preflight_failures": [
+  "A13 campaign asset links (10): (<_InactiveRpcError of RPC that terminated with:\n\tstatus = StatusCode.INVALID_ARGUMENT\n\tdetails = \"Request contains an invalid argument.\"\n\tdebug_error_string = \"INVALID_ARGUMENT:Request contains an invalid argument.\"\n>, <_InactiveRpcError of RPC that terminated with:\n\tstatus = StatusCode.INVALID_ARGUMENT\n\tdetails = \"Request contains an invalid argument.\"\n\tdebug_error_string = \"INVALID_ARGUMENT:Req"
+ ],
+ "ads_not_enabled_because_disapproved": [
+  {
+   "ad_id": "820900825428",
+   "ad_group": "SKAG | Gas Boiler Repair",
+   "why": "DISAPPROVED - not enabled"
+  },
+  {
+   "ad_id": "820900825431",
+   "ad_group": "SKAG | Gas Boiler Repair",
+   "why": "DISAPPROVED - not enabled"
+  }
+ ]
+}

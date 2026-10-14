@@ -1,0 +1,47 @@
+{
+ "default": {
+  "count": 28,
+  "by_type_tracking_source": {
+   "Text Message|+14022567520|LSA Traffic|LSA Traffic": 6,
+   "Web Form|None|None|(direct)": 2,
+   "Text Message|+14023832673|GBP Traffic|GBP Traffic": 3,
+   "Phone Call|+14022567520|LSA Traffic|LSA Traffic": 10,
+   "Phone Call|+14023832673|GBP Traffic|GBP Traffic": 7
+  },
+  "web_forms": [
+   [
+    "2026-09-28T19:01",
+    "(direct)",
+    "(none)",
+    "Not Set",
+    "Repeat"
+   ],
+   [
+    "2026-09-28T17:41",
+    "(direct)",
+    "(none)",
+    "Not Set",
+    "Unique"
+   ]
+  ],
+  "leads_on_402_526_5754": []
+ },
+ "duplicate": {
+  "count": 6,
+  "by_type_tracking_source": {
+   "Text Message|+14022567520|LSA Traffic|LSA Traffic": 2,
+   "Phone Call|+14023832673|GBP Traffic|GBP Traffic": 2,
+   "Phone Call|+14022567520|LSA Traffic|LSA Traffic": 2
+  },
+  "web_forms": [],
+  "leads_on_402_526_5754": []
+ },
+ "spam": {
+  "count": 13,
+  "by_type_tracking_source": {
+   "Phone Call|+14023832673|GBP Traffic|GBP Traffic": 13
+  },
+  "web_forms": [],
+  "leads_on_402_526_5754": []
+ }
+}

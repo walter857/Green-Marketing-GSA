@@ -1,0 +1,402 @@
+{
+  "slug": "softwind-power-washing",
+  "customer_id": "1521725229",
+  "account_name": "Softwind Power Washing - Live",
+  "fence_reason": "hardscape / masonry / landscape build intent belongs to 2429758629",
+  "owner_instruction": "2026-08-28 mutual exclusion between the two Softwind accounts",
+  "match_type": "PHRASE",
+  "placement": "campaign level",
+  "negatives": [
+    {
+      "text": "paver sealing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver seal",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "sealing pavers",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "seal pavers",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver sealer",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "sealing paver patio",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "patio sealing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "concrete sealing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "sealcoating",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "seal coating",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver installer",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "install pavers",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "pavers installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver contractor",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver patio installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver patio cost",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "patio installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "patio installer",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "install patio",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "patio contractor",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "patio builder",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "build a patio",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "new patio",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "patio construction",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "patio design",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver design",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "brick patio installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "hardscape",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "hardscaping",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "retaining wall",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "retaining walls",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "walkway installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "driveway installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "driveway pavers",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver driveway",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver walkway",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "stamped concrete",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "concrete patio installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "outdoor kitchen",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "fire pit",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "firepit",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "pergola",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "outdoor living",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "pool deck installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "stone patio",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "flagstone patio",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "masonry",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "mason contractor",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "brick work",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "brickwork",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "brick repair",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "brick pointing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "repointing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "stone work",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "stonework",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "chimney repair",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "block wall",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "stucco",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "landscaping",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "landscaper",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "landscape design",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "landscape installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "landscape contractor",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "lawn care",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "lawn mowing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "lawn service",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "sod installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "mulch delivery",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "tree service",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "garden design",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "irrigation installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "sprinkler installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "grading",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "excavation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "drainage installation",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "artificial turf",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    }
+  ],
+  "held_back": [],
+  "per_campaign_objects": 77,
+  "live_campaigns": 2,
+  "total_objects": 154,
+  "status": "READY",
+  "fingerprint": "3D9EE4AEBCCD"
+}

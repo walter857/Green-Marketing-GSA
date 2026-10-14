@@ -1,0 +1,74 @@
+{
+  "operation": "landing_page_revision",
+  "date": "2026-08-14",
+  "documents_edited_in_place": [
+    {
+      "doc_id": "1Ic-c56wZzeLAYAJ2olnXeWZM4_cmJg0toFFyNNALTQM",
+      "edits": 17,
+      "requests": 34
+    },
+    {
+      "doc_id": "1HjZZ3Wrqc15T0qoFntagktRTQz4pWngaJi4XulYat-E",
+      "edits": 17,
+      "requests": 34
+    }
+  ],
+  "documents_created": 0,
+  "folders_created": 0,
+  "reviews": [
+    {
+      "reviewer_name": "CHELLY",
+      "exact_text": "If I could leave 10 stars, I would! EKG Lawn Services LLC is AMAZING! My lawn looks great! The grass is cut at a PERFECT height; all the dead plants have been removed. I could not be happier. I can't wait to see what it will look like come summertime. I am so very glad that I did my research and located this company!",
+      "star_rating_displayed": "5 (★★★★★)",
+      "source_url": "https://ekglawn.com/reviews/",
+      "retrieval_date": "2026-08-14",
+      "retrieval_method": "domain-restricted search over the official ekglawn.com site; direct HTTPS fetch of ekglawn.com is refused by this execution environment (ECONNREFUSED)",
+      "verbatim_confirmation_required_at_publication_qa": true
+    },
+    {
+      "reviewer_name": "DONNA, W.",
+      "exact_text": "This company is honest and fair. Last year I was seeking a lawn care company on whom I could depend while traveling. Eric and his staff have been excellent. They provide timely updates on my lawn's health and keep it looking its best.",
+      "star_rating_displayed": "5 (★★★★★)",
+      "source_url": "https://ekglawn.com/reviews/",
+      "retrieval_date": "2026-08-14",
+      "retrieval_method": "domain-restricted search over the official ekglawn.com site; direct HTTPS fetch of ekglawn.com is refused by this execution environment (ECONNREFUSED)",
+      "verbatim_confirmation_required_at_publication_qa": true
+    },
+    {
+      "reviewer_name": "RANDALL, L.",
+      "exact_text": "I've been using EKG Lawn Services for several years. They always do a great job at a fair price. The work is meticulous and well done. I give them my highest personal recommendation.",
+      "star_rating_displayed": "5 (★★★★★)",
+      "source_url": "https://ekglawn.com/reviews/",
+      "retrieval_date": "2026-08-14",
+      "retrieval_method": "domain-restricted search over the official ekglawn.com site; direct HTTPS fetch of ekglawn.com is refused by this execution environment (ECONNREFUSED)",
+      "verbatim_confirmation_required_at_publication_qa": true
+    }
+  ],
+  "image_suggestions_per_document": 9,
+  "local_artifact_hashes_after_sync": {
+    "lawn-aeration-content.md": "a4f5ade0621eb8347ea3a9b45837dfc8f7fac4d65cb81f6708aef4910b40f208",
+    "aeration-overseeding-content.md": "6d026f5c657fe0a5d0e78a509c1f320175602b4cf4d05f0919f1381c3be8e9b5",
+    "image-and-review-provenance-manifest.md": "ca35f267d66d9af250f9d68fb6c003490f942bda3dd905a530e237fafcbb8317"
+  },
+  "google_doc_content_hashes": {
+    "lawn_aeration": "4ea5ed4696cb025e4c8b5eaba4afecbf4f01d056f20a728e54ca5f1079b607f8",
+    "aeration_overseeding": "adc3490cad5f8c4fd30a8e3e464b036497595ec57d01f203991d75809603b82d"
+  },
+  "validation": {
+    "paragraphs": 177,
+    "style_sequence_preserved": true,
+    "bullets": 13,
+    "tables": 0,
+    "tabs": 1,
+    "image_positions": 9,
+    "review_positions": 3,
+    "logo_positions": 2,
+    "developer_todo_occurrences": 0,
+    "image_suggestions_per_doc": 9,
+    "reviews_per_doc": 3,
+    "source_client_residue": 0,
+    "public_provenance_notes": 0,
+    "duplicate_documents_created": 0,
+    "master_template_modified": false
+  }
+}

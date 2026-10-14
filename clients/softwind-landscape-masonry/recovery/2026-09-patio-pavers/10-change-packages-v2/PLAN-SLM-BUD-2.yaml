@@ -1,0 +1,96 @@
+change_plan:
+  plan_name: PLAN-SLM-BUD-2
+  plan_version: 2
+  generated_at: '2026-09-03T20:10:43.051619-04:00'
+  target:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: '2429758629'
+    manager_customer_id: '3373711342'
+    currency: USD
+    time_zone: America/New_York
+    exact_service: patio construction (Patio) and paver installation (Pavers)
+    identity_receipt: clients/softwind-landscape-masonry/snapshots/identity-gate-2026-09-03-1959.json
+    baseline_snapshot: recovery/2026-09-patio-pavers/01e-baseline-2.json
+    baseline_evidence_sha256_short: 3D9E3199DD183E79
+  subplan_used: BUDGET
+  subplans:
+    STATUS:
+      actions: &id001 []
+      empty_reason: not part of this package
+    BUDGET:
+      actions:
+      - action_id: BUD-01
+        operation: SET_CAMPAIGN_BUDGET_AMOUNT
+        resource_type: campaign_budget
+        resource_id: '15309303030'
+        resource_name: Patio daily budget
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        current_state: amount_micros = 33000000 ($33.00/day)
+        proposed_state: amount_micros = 24000000 ($24.00/day)
+        rollback_state: amount_micros = 33000000 ($33.00/day)
+        object_count: 1
+        budget_explicitly_shared: false
+        budget_reference_count: 1
+        evidence: sole campaign on this budget; reference_count=1, shared=False
+      - action_id: BUD-02
+        operation: SET_CAMPAIGN_BUDGET_AMOUNT
+        resource_type: campaign_budget
+        resource_id: '15314089588'
+        resource_name: Pavers daily budget
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        current_state: amount_micros = 33000000 ($33.00/day)
+        proposed_state: amount_micros = 32000000 ($32.00/day)
+        rollback_state: amount_micros = 33000000 ($33.00/day)
+        object_count: 1
+        budget_explicitly_shared: false
+        budget_reference_count: 1
+        evidence: sole campaign on this budget; reference_count=1, shared=False
+    EXISTING_RESOURCES:
+      actions: *id001
+      empty_reason: not part of this package
+    CONVERSIONS:
+      actions: *id001
+      empty_reason: not part of this package
+    CREATE_PAUSED:
+      actions: *id001
+      empty_reason: not part of this package
+    SITE_OR_TRACKING:
+      actions: *id001
+      empty_reason: not part of this package
+    ENABLE:
+      actions: *id001
+      empty_reason: not part of this package
+  summary: Bring projected September spend under the $2,000 account cap.
+  account_wide_pacing:
+    account_mtd_spend: 248.36
+    today: '2026-09-03'
+    remaining_days_excluding_today: 27
+    remaining_budget: 1751.64
+    remaining_daily_allowance: 64.88
+    enabled_campaign_count: 2
+    enabled_campaign_ids:
+    - '23484806108'
+    - '23489296528'
+    paused_campaign_count: 4
+    paused_campaign_mtd_spend: 0.0
+    any_shared_budget: false
+    current_enabled_daily_total: 66.0
+    proposed_enabled_daily_total: 56.0
+    projection_current: 2030.36
+    projection_proposed: 1760.36
+    projection_at_complete_day_run_rate: 1946.12
+    headroom_at_proposed: 239.64
+    worst_case_if_all_six_enabled_at_current_budgets: 4190.36
+    projection_method: Account MTD read FROM customer for 2026-09-01..today, plus the summed daily budget
+      of every ENABLED campaign times the days remaining AFTER today. Today's spend is already inside
+      MTD and is still incomplete, so today is not double counted.
+  cap_check: 'PASS. Projected $1760.36 against a $2,000.00 hard cap, leaving $239.64 of headroom for Maximize
+    Clicks overdelivery. The projection covers EVERY enabled campaign in 2429758629: there are exactly
+    2, Patio and Pavers, and the four paused campaigns have spent $0.00 month to date.'
+  shared_budget_risk: NONE. Every budget in the account has explicitly_shared=false and reference_count=1,
+    so no other campaign draws on either budget.
+  supersedes: PLAN-SLM-BUD-1 fingerprint D82341B7238E (OBSOLETE, same values, wrong file shape)
+  dependencies: []
+  fingerprint: BB9869E17E37

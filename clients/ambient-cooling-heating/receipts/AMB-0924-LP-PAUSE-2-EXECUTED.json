@@ -1,0 +1,86 @@
+{
+ "plan": "AMB-0924-LP-PAUSE-2",
+ "fingerprint": "1ACEA26A07EF",
+ "started_local": "2026-09-24T17:53:51.605741-04:00",
+ "committed": {
+  "ad_groups_paused": [
+   "customers/2401959466/adGroups/204129719007",
+   "customers/2401959466/adGroups/204129717727",
+   "customers/2401959466/adGroups/199797580746",
+   "customers/2401959466/adGroups/204129718447",
+   "customers/2401959466/adGroups/204129718527",
+   "customers/2401959466/adGroups/204129718487",
+   "customers/2401959466/adGroups/204129718727",
+   "customers/2401959466/adGroups/204129718687"
+  ],
+  "sitelink_links_paused": [
+   "customers/2401959466/campaignAssets/24132507744~407319490559~SITELINK",
+   "customers/2401959466/campaignAssets/24132507747~407319490559~SITELINK",
+   "customers/2401959466/campaignAssets/24132507744~407319490562~SITELINK",
+   "customers/2401959466/campaignAssets/24132507747~407319490562~SITELINK",
+   "customers/2401959466/campaignAssets/24132507744~407418567058~SITELINK",
+   "customers/2401959466/campaignAssets/24132507747~407418567058~SITELINK",
+   "customers/2401959466/campaignAssets/24132507744~407494691217~SITELINK",
+   "customers/2401959466/campaignAssets/24132507747~407494691217~SITELINK",
+   "customers/2401959466/campaignAssets/24132507744~410638280061~SITELINK",
+   "customers/2401959466/campaignAssets/24132507747~410638280061~SITELINK",
+   "customers/2401959466/campaignAssets/24268690038~422477374559~SITELINK",
+   "customers/2401959466/campaignAssets/24268690041~422477374559~SITELINK",
+   "customers/2401959466/campaignAssets/24274160783~422477374559~SITELINK",
+   "customers/2401959466/campaignAssets/24279798229~422477374559~SITELINK",
+   "customers/2401959466/campaignAssets/24268690038~422577771382~SITELINK",
+   "customers/2401959466/campaignAssets/24268690041~422577771382~SITELINK",
+   "customers/2401959466/campaignAssets/24274160783~422577771382~SITELINK",
+   "customers/2401959466/campaignAssets/24279798229~422577771382~SITELINK",
+   "customers/2401959466/campaignAssets/24268690038~422577777457~SITELINK",
+   "customers/2401959466/campaignAssets/24268690041~422577777457~SITELINK",
+   "customers/2401959466/campaignAssets/24274160783~422577777457~SITELINK",
+   "customers/2401959466/campaignAssets/24279798229~422577777457~SITELINK"
+  ]
+ },
+ "stages": [
+  {
+   "label": "PAUSE-1 ad groups",
+   "ops": 8,
+   "results": [
+    "customers/2401959466/adGroups/204129719007",
+    "customers/2401959466/adGroups/204129717727",
+    "customers/2401959466/adGroups/199797580746",
+    "customers/2401959466/adGroups/204129718447",
+    "customers/2401959466/adGroups/204129718527",
+    "customers/2401959466/adGroups/204129718487",
+    "customers/2401959466/adGroups/204129718727",
+    "customers/2401959466/adGroups/204129718687"
+   ]
+  },
+  {
+   "label": "PAUSE-2 sitelink links",
+   "ops": 22,
+   "results": [
+    "customers/2401959466/campaignAssets/24132507744~407319490559~SITELINK",
+    "customers/2401959466/campaignAssets/24132507747~407319490559~SITELINK",
+    "customers/2401959466/campaignAssets/24132507744~407319490562~SITELINK",
+    "customers/2401959466/campaignAssets/24132507747~407319490562~SITELINK",
+    "customers/2401959466/campaignAssets/24132507744~407418567058~SITELINK",
+    "customers/2401959466/campaignAssets/24132507747~407418567058~SITELINK",
+    "customers/2401959466/campaignAssets/24132507744~407494691217~SITELINK",
+    "customers/2401959466/campaignAssets/24132507747~407494691217~SITELINK",
+    "customers/2401959466/campaignAssets/24132507744~410638280061~SITELINK",
+    "customers/2401959466/campaignAssets/24132507747~410638280061~SITELINK",
+    "customers/2401959466/campaignAssets/24268690038~422477374559~SITELINK",
+    "customers/2401959466/campaignAssets/24268690041~422477374559~SITELINK",
+    "customers/2401959466/campaignAssets/24274160783~422477374559~SITELINK",
+    "customers/2401959466/campaignAssets/24279798229~422477374559~SITELINK",
+    "customers/2401959466/campaignAssets/24268690038~422577771382~SITELINK",
+    "customers/2401959466/campaignAssets/24268690041~422577771382~SITELINK",
+    "customers/2401959466/campaignAssets/24274160783~422577771382~SITELINK",
+    "customers/2401959466/campaignAssets/24279798229~422577771382~SITELINK",
+    "customers/2401959466/campaignAssets/24268690038~422577777457~SITELINK",
+    "customers/2401959466/campaignAssets/24268690041~422577777457~SITELINK",
+    "customers/2401959466/campaignAssets/24274160783~422577777457~SITELINK",
+    "customers/2401959466/campaignAssets/24279798229~422577777457~SITELINK"
+   ]
+  }
+ ],
+ "finished_local": "2026-09-24T17:53:52.557524-04:00"
+}

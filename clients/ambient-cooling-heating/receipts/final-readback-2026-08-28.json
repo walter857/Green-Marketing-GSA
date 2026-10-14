@@ -1,0 +1,296 @@
+{
+ "stage": "FINAL READBACK",
+ "customer_id": "2401959466",
+ "run_local": "2026-08-27T19:29:44.183041-04:00",
+ "baseline_source": "receipts/preflight-approved-2026-08-28.json",
+ "checks": {},
+ "identity": {
+  "customer_id": "2401959466",
+  "descriptive_name": "Ambient Cooling - Live",
+  "currency": "USD",
+  "time_zone": "America/New_York",
+  "manager": false,
+  "test_account": false,
+  "status": "ENABLED",
+  "auto_tagging_enabled": true,
+  "tracking_url_template": "https://monitor.clickcease.com/tracker/tracker.aspx?id=Y6qzID4E9cPYCj&adpos={adposition}&locphisical={loc_physical_ms}&locinterest={loc_interest_ms}&adgrp={adgroupid}&kw={keyword}&nw={network}&url={lpurl}&cpn={campaignid}&device={device}&ccpturl=offer.ambientcoolingandheating.com&pl={placement}",
+  "final_url_suffix": "",
+  "conversion_tracking_id": "11155434808",
+  "conversion_tracking_status": "CONVERSION_TRACKING_MANAGED_BY_SELF",
+  "optimization_score": 0.7843765,
+  "manager_links": {
+   "2815082755": "ACTIVE",
+   "3373711342": "ACTIVE"
+  },
+  "checks": {
+   "descriptive_name == 'Ambient Cooling - Live'": true,
+   "customer.id == 2401959466": true,
+   "not a manager account": true,
+   "not a test account": true,
+   "time_zone == America/New_York": true,
+   "currency_code == USD": true,
+   "Green Marketing manager 3373711342 ACTIVE": true,
+   "ClickCease manager 2815082755 ACTIVE": true
+  },
+  "checked_local": "2026-08-27T19:29:46.477902-04:00"
+ },
+ "hvac_installation_negatives": [
+  {
+   "criterion_id": "149260703",
+   "text": "bluedot",
+   "match": "PHRASE",
+   "negative": true,
+   "status": "ENABLED",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~149260703"
+  },
+  {
+   "criterion_id": "801509855",
+   "text": "blauch",
+   "match": "PHRASE",
+   "negative": true,
+   "status": "ENABLED",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~801509855"
+  },
+  {
+   "criterion_id": "2437152438",
+   "text": "michael and sons",
+   "match": "PHRASE",
+   "negative": true,
+   "status": "ENABLED",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~2437152438"
+  },
+  {
+   "criterion_id": "299839338603",
+   "text": "croppmetcalfe",
+   "match": "PHRASE",
+   "negative": true,
+   "status": "ENABLED",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~299839338603"
+  },
+  {
+   "criterion_id": "302549263138",
+   "text": "michael & sons",
+   "match": "PHRASE",
+   "negative": true,
+   "status": "ENABLED",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~302549263138"
+  },
+  {
+   "criterion_id": "304510676052",
+   "text": "hugee",
+   "match": "PHRASE",
+   "negative": true,
+   "status": "ENABLED",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~304510676052"
+  },
+  {
+   "criterion_id": "2489735546094",
+   "text": "armbridge",
+   "match": "PHRASE",
+   "negative": true,
+   "status": "ENABLED",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~2489735546094"
+  }
+ ],
+ "ac_repair_negatives": [
+  {
+   "criterion_id": "10000390",
+   "text": "auto",
+   "match": "BROAD",
+   "negative": true,
+   "status": "ENABLED"
+  },
+  {
+   "criterion_id": "10008241",
+   "text": "car",
+   "match": "BROAD",
+   "negative": true,
+   "status": "ENABLED"
+  },
+  {
+   "criterion_id": "10008471",
+   "text": "automotive",
+   "match": "BROAD",
+   "negative": true,
+   "status": "ENABLED"
+  },
+  {
+   "criterion_id": "10019071",
+   "text": "boat",
+   "match": "BROAD",
+   "negative": true,
+   "status": "ENABLED"
+  }
+ ],
+ "account_list_members_after": 58,
+ "all_campaign_negatives_after": [
+  [
+   "24132507741",
+   "auto"
+  ],
+  [
+   "24132507741",
+   "automotive"
+  ],
+  [
+   "24132507741",
+   "boat"
+  ],
+  [
+   "24132507741",
+   "car"
+  ],
+  [
+   "24132507747",
+   "armbridge"
+  ],
+  [
+   "24132507747",
+   "blauch"
+  ],
+  [
+   "24132507747",
+   "bluedot"
+  ],
+  [
+   "24132507747",
+   "croppmetcalfe"
+  ],
+  [
+   "24132507747",
+   "hugee"
+  ],
+  [
+   "24132507747",
+   "michael & sons"
+  ],
+  [
+   "24132507747",
+   "michael and sons"
+  ]
+ ],
+ "keywords_after": [
+  {
+   "campaign": "AC Repair",
+   "text": "ac repair near me",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign": "AC Repair",
+   "text": "ac repair near me",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "text": "gas boiler repair",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "text": "gas boiler repair",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "text": "hvac installers",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "text": "hvac installers",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "text": "hvac repair near me",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "text": "hvac repair near me",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "text": "hvac replacement near me",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "text": "hvac replacement near me",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  }
+ ],
+ "structural_after": {
+  "campaigns": 23,
+  "ad_groups_on_five": 5,
+  "ads_on_five": 20,
+  "positive_keywords": 10,
+  "budgets": {
+   "15787409435": 141450000,
+   "15787409438": 42760000,
+   "15787409441": 176150000,
+   "15787409444": 78950000,
+   "15787409447": 26320000
+  },
+  "cpc_ceilings": [
+   0
+  ],
+  "excluded_asset_set_types": [
+   []
+  ],
+  "ip_exclusions": 2796,
+  "ad_schedule_rows": 30,
+  "location_criteria": 375,
+  "conversion_actions": 16,
+  "wc_lead_include_in_conversions": [
+   false
+  ],
+  "sitelink_associations": 40,
+  "campaign_shared_sets_on_five": 0,
+  "location_asset_set_status": [
+   "ENABLED"
+  ],
+  "manager_links": {
+   "2815082755": "ACTIVE",
+   "3373711342": "ACTIVE"
+  }
+ },
+ "void_markers": {
+  "ACE80A09AC134C85": {
+   "void": true,
+   "do_not_execute": true
+  },
+  "EE6CFAD6667A95A1": {
+   "void": true,
+   "do_not_execute": true
+  },
+  "C3038EDD9E621944": {
+   "void": true,
+   "do_not_execute": true
+  }
+ },
+ "change_events_today": [],
+ "failed_checks": [],
+ "result": "PASS"
+}

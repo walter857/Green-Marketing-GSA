@@ -1,0 +1,56 @@
+{
+  "subplan": "STATUS",
+  "fingerprint": "B7A11B246D74",
+  "customer_id": "2429758629",
+  "exact_child_account_name": "Softwind Landscape & Masonry - Live",
+  "mode": "LIVE WRITE",
+  "executed_at_utc": "2026-09-04T03:07:40.494061+00:00",
+  "approved_actions": 7,
+  "approved_objects": 7,
+  "api_operations": 7,
+  "partial_failure": false,
+  "results": [
+    {
+      "index": 0,
+      "type": "ad_group_criterion_result",
+      "resource_name": "customers/2429758629/adGroupCriteria/196134824089~543919818878",
+      "log": "KW-01 PAUSE keyword 196134824089~543919818878 'local asphalt companies near me' [PHRASE] in Paver Installation Near Me (Pharse)"
+    },
+    {
+      "index": 1,
+      "type": "ad_group_criterion_result",
+      "resource_name": "customers/2429758629/adGroupCriteria/196134824089~297075223566",
+      "log": "KW-02 PAUSE keyword 196134824089~297075223566 'asphalt contractor near me' [PHRASE] in Paver Installation Near Me (Pharse)"
+    },
+    {
+      "index": 2,
+      "type": "ad_group_criterion_result",
+      "resource_name": "customers/2429758629/adGroupCriteria/196134824089~309567954442",
+      "log": "KW-03 PAUSE keyword 196134824089~309567954442 'asphalt paving services near me' [PHRASE] in Paver Installation Near Me (Pharse)"
+    },
+    {
+      "index": 3,
+      "type": "ad_group_criterion_result",
+      "resource_name": "customers/2429758629/adGroupCriteria/196134824089~300588535183",
+      "log": "KW-04 PAUSE keyword 196134824089~300588535183 'asphalt services near me' [PHRASE] in Paver Installation Near Me (Pharse)"
+    },
+    {
+      "index": 4,
+      "type": "ad_group_criterion_result",
+      "resource_name": "customers/2429758629/adGroupCriteria/196134824089~298883953673",
+      "log": "KW-05 PAUSE keyword 196134824089~298883953673 'local asphalt paving companies' [PHRASE] in Paver Installation Near Me (Pharse)"
+    },
+    {
+      "index": 5,
+      "type": "ad_group_criterion_result",
+      "resource_name": "customers/2429758629/adGroupCriteria/196134824089~303329780817",
+      "log": "KW-06 PAUSE keyword 196134824089~303329780817 'local asphalt paving contractors' [PHRASE] in Paver Installation Near Me (Pharse)"
+    },
+    {
+      "index": 6,
+      "type": "ad_group_criterion_result",
+      "resource_name": "customers/2429758629/adGroupCriteria/196134824089~356532888916",
+      "log": "KW-07 PAUSE keyword 196134824089~356532888916 'asphalt and paving companies near me' [PHRASE] in Paver Installation Near Me (Pharse)"
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "generated_account_local": "2026-08-26T18:00:53.995224-04:00",
+  "snapshot_used": "2026-08-26 16:01:33 America/New_York",
+  "target": {
+    "exact_child_account_name": "Softwind Power Washing - Live",
+    "child_customer_id": "1521725229",
+    "exact_service": "Power Washing",
+    "manager_customer_id": "3373711342"
+  },
+  "fingerprint_function": "gm_gsa.safety.approval_code (SHA-256, first 12 hex, upper)",
+  "fingerprint_storage": "Fingerprints are RECOMPUTED from each plan file every time this manifest is built. They are deliberately NOT stored inside the plan YAML. Any hand-edit to a plan action therefore changes its fingerprint and invalidates a prior approval, which is the intended safety property.",
+  "note": "A fingerprint identifies an exact plan. It does NOT grant permission. Only plans with status ACTIVE and at least one action carry an approval command.",
+  "status_definitions": {
+    "ACTIVE": "Approvable now. Has actions and a valid fingerprint.",
+    "EXECUTED_READ_ONLY": "Read-only, already run. No approval applicable.",
+    "EXECUTED": "Approved, executed and verified by readback QA. Closed.",
+    "BLOCKED": "Drafted and fingerprinted but blocked on an external answer.",
+    "SEPTEMBER": "Valid but deliberately outside the August path.",
+    "HOLD": "Valid, fingerprint preserved, deliberately not approved now.",
+    "SUPERSEDED": "Displaced in order by a newer plan. NOT void; actions unchanged.",
+    "VOID": "Retired. Fingerprint must never be approved. File moved to superseded/."
+  },
+  "reconciliation": {
+    "plan_files_in_approvable_directory": 17,
+    "plans_categorised": 17,
+    "categories_sum_equals_plan_count": true,
+    "each_plan_appears_in_exactly_one_category": true,
+    "void_register_entries": 9,
+    "void_files_moved_out_of_approvable_directory": 9,
+    "total_actions": 190,
+    "total_objects": 256,
+    "total_ads_mutations": 248,
+    "approvable_now_count": 5,
+    "approvable_now_mutations": 28
+  },
+  "by_status": {
+    "ACTIVE": [
+      "PLAN-A2",
+      "PLAN-A3",
+      "PLAN-E2A",
+      "PLAN-H",
+      "PLAN-I2A-E"
+    ],
+    "BLOCKED": [
+      "PLAN-I3"
+    ],
+    "EXECUTED": [
+      "PLAN-I1C",
+      "PLAN-J2A",
+      "PLAN-J2B"
+    ],
+    "EXECUTED_READ_ONLY": [
+      "PLAN-A1"
+    ],
+    "HOLD": [
+      "PLAN-B",
+      "PLAN-G"
+    ],
+    "SEPTEMBER": [
+      "PLAN-I5"
+    ],
+    "SUPERSEDED": [
+      "PLAN-C",
+      "PLAN-D",
+      "PLAN-E1",
+      "PLAN-I1B"
+    ]
+  },
+  "void_register": [
+    {
+      "plan_id": "PLAN-A",
+      "fingerprint": "701E8E5ED639",
+      "voided_on": "2026-08-26",
+      "replaced_by": [
+        "PLAN-A1",
+        "PLAN-A2",
+        "PLAN-A3"
+      ],
+      "reason": "Bundled a read-only inspection with a form test and a phone test."
+    },
+    {
+      "plan_id": "PLAN-E",
+      "fingerprint": "F453AD249497",
+      "voided_on": "2026-08-26",
+      "replaced_by": [
+        "PLAN-E1",
+        "PLAN-E2"
+      ],
+      "reason": "Bundled create-paused resources with negatives that go live on creation."
+    },
+    {
+      "plan_id": "PLAN-I2",
+      "fingerprint": "6AF733F709E2",
+      "voided_on": "2026-08-26",
+      "replaced_by": [
+        "PLAN-I2A-E"
+      ],
+      "reason": "62-keyword SKAG-integrity audit: both legacy ad groups carry multiple canonical intents (4 and 2)."
+    },
+    {
+      "plan_id": "PLAN-I2A-C",
+      "fingerprint": "D50CDC94927C",
+      "voided_on": "2026-08-26",
+      "replaced_by": [],
+      "reason": "All four SKAGs failed the corrected incrementality test. Modern Phrase Match matches meaning, so Planner volume is not incremental. Enabled keywords already match every one of these query spaces, and NO query in account history has ever contained 'long island'."
+    },
+    {
+      "plan_id": "PLAN-I2A-EN",
+      "fingerprint": "9ABDF6DDE3F4",
+      "voided_on": "2026-08-26",
+      "replaced_by": [],
+      "reason": "Enables the output of PLAN-I2A-C, which is void."
+    },
+    {
+      "plan_id": "PLAN-E2",
+      "fingerprint": "09E91EA674C8",
+      "voided_on": "2026-08-26",
+      "replaced_by": [
+        "PLAN-E2A"
+      ],
+      "reason": "PHRASE 'house cleaning' too broad; narrowed to EXACT."
+    },
+    {
+      "plan_id": "PLAN-I1",
+      "fingerprint": "9308DFCF8741",
+      "voided_on": "2026-08-26",
+      "replaced_by": [
+        "PLAN-I1B"
+      ],
+      "reason": "Split derived from a 10:02 snapshot and PLAN-I2's demand assumptions."
+    },
+    {
+      "plan_id": "PLAN-I1A",
+      "fingerprint": "5B9BCFA06FD5",
+      "voided_on": "2026-08-26",
+      "replaced_by": [
+        "PLAN-I1B"
+      ],
+      "reason": "Actions-empty no-op; inputs now resolved so it is replaced by I1B."
+    },
+    {
+      "plan_id": "PLAN-J",
+      "fingerprint": "B42EAD386795",
+      "voided_on": "2026-08-26",
+      "replaced_by": [
+        "PLAN-J2A",
+        "PLAN-J2B"
+      ],
+      "reason": "SOURCE MISMATCH - built from the 16-location geo-union analysis because the client-approved CSV was not available to that run. The approved source is 'Location report (2).csv', which carries 75 New York rows resolving to 72 net-new targets, not 8. Also wrongly combined positive targeting with the Connecticut exclusion in a single fingerprint."
+    }
+  ],
+  "plans": [
+    {
+      "plan_id": "PLAN-B",
+      "plan_title": "Max CPC bid limit on both Maximize Clicks campaigns",
+      "file": "2026-08-25-plan-b-bidding.yaml",
+      "status": "HOLD",
+      "priority": "-",
+      "approval_order": null,
+      "note": "HOLD_UNTIL_MONTH_END_RESCUE_IS_RESOLVED",
+      "approval_type": "BIDDING",
+      "fingerprint": "F80E8D398811",
+      "action_count": 2,
+      "object_count": 2,
+      "ads_mutation_count": 2,
+      "approval_status_in_file": "NOT APPROVED - HOLD_UNTIL_MONTH_END_RESCUE_IS_RESOLVED",
+      "requires_separate_enable_approval": false,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status HOLD"
+    },
+    {
+      "plan_id": "PLAN-C",
+      "plan_title": "Campaign ad schedule to 24/7 for form capture",
+      "file": "2026-08-25-plan-c-schedule.yaml",
+      "status": "SUPERSEDED",
+      "priority": "R3",
+      "approval_order": null,
+      "note": "Superseded in order by PLAN-I3, not void",
+      "approval_type": "DELIVERY_SCHEDULE",
+      "fingerprint": "9E18503B5BEA",
+      "action_count": 4,
+      "object_count": 26,
+      "ads_mutation_count": 26,
+      "approval_status_in_file": "NOT APPROVED - BLOCKED",
+      "requires_separate_enable_approval": false,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status SUPERSEDED"
+    },
+    {
+      "plan_id": "PLAN-D",
+      "plan_title": "Enable House Washing Company Near Me in campaign 24145053510",
+      "file": "2026-08-25-plan-d-enable-existing-skags.yaml",
+      "status": "SUPERSEDED",
+      "priority": "R5",
+      "approval_order": null,
+      "note": "Superseded in order by PLAN-I2A-E, not void",
+      "approval_type": "ENABLE_EXISTING_RESOURCES",
+      "fingerprint": "F61C9F287B82",
+      "action_count": 1,
+      "object_count": 1,
+      "ads_mutation_count": 1,
+      "approval_status_in_file": "NOT APPROVED",
+      "requires_separate_enable_approval": true,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status SUPERSEDED"
+    },
+    {
+      "plan_id": "PLAN-G",
+      "plan_title": "Resolve duplicate ad group now, defer full consolidation",
+      "file": "2026-08-25-plan-g-campaign-consolidation.yaml",
+      "status": "HOLD",
+      "priority": "R6",
+      "approval_order": null,
+      "note": "HOLD FOR SEPTEMBER",
+      "approval_type": "CAMPAIGN_STRUCTURE",
+      "fingerprint": "EC35724753AE",
+      "action_count": 1,
+      "object_count": 1,
+      "ads_mutation_count": 1,
+      "approval_status_in_file": "NOT APPROVED - HOLD FOR SEPTEMBER",
+      "requires_separate_enable_approval": false,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status HOLD"
+    },
+    {
+      "plan_id": "PLAN-H",
+      "plan_title": "Replace main-site sitelinks with tracked offer-subdomain service sitelinks",
+      "file": "2026-08-25-plan-h-sitelink-destinations.yaml",
+      "status": "ACTIVE",
+      "priority": "R6",
+      "approval_order": 2,
+      "note": "Call-attribution / sitelink repair",
+      "approval_type": "ASSETS",
+      "fingerprint": "1D63EC1EB68D",
+      "action_count": 5,
+      "object_count": 21,
+      "ads_mutation_count": 21,
+      "approval_status_in_file": "NOT APPROVED",
+      "requires_separate_enable_approval": false,
+      "approvable_now": true,
+      "approval_phrase": "APPROVE PLAN-H 1D63EC1EB68D FOR 1521725229"
+    },
+    {
+      "plan_id": "PLAN-A1",
+      "plan_title": "Read-only conversion tracking inspection",
+      "file": "2026-08-26-plan-a1-readonly-conversion-inspection.yaml",
+      "status": "EXECUTED_READ_ONLY",
+      "priority": "R0",
+      "approval_order": null,
+      "note": "Read-only inspection, executed 2026-08-26. No approval needed.",
+      "approval_type": "READ_ONLY_INSPECTION",
+      "fingerprint": "3BC504362185",
+      "action_count": 6,
+      "object_count": 6,
+      "ads_mutation_count": 0,
+      "approval_status_in_file": "NOT APPROVED",
+      "requires_separate_enable_approval": false,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status EXECUTED_READ_ONLY"
+    },
+    {
+      "plan_id": "PLAN-A2",
+      "plan_title": "Controlled single form-submission conversion test",
+      "file": "2026-08-26-plan-a2-controlled-form-test.yaml",
+      "status": "ACTIVE",
+      "priority": "R0",
+      "approval_order": 1,
+      "note": "Controlled form test",
+      "approval_type": "CONTROLLED_LIVE_TEST_FORM",
+      "fingerprint": "3B30BD017E0C",
+      "action_count": 1,
+      "object_count": 1,
+      "ads_mutation_count": 0,
+      "approval_status_in_file": "NOT APPROVED",
+      "requires_separate_enable_approval": false,
+      "approvable_now": true,
+      "approval_phrase": "APPROVE PLAN-A2 3B30BD017E0C FOR 1521725229"
+    },
+    {
+      "plan_id": "PLAN-A3",
+      "plan_title": "Controlled single phone-call conversion test",
+      "file": "2026-08-26-plan-a3-controlled-phone-test.yaml",
+      "status": "ACTIVE",
+      "priority": "R0",
+      "approval_order": 5,
+      "note": "Controlled phone test",
+      "approval_type": "CONTROLLED_LIVE_TEST_CALL",
+      "fingerprint": "5D9681D3FBFE",
+      "action_count": 1,
+      "object_count": 1,
+      "ads_mutation_count": 0,
+      "approval_status_in_file": "NOT APPROVED",
+      "requires_separate_enable_approval": false,
+      "approvable_now": true,
+      "approval_phrase": "APPROVE PLAN-A3 5D9681D3FBFE FOR 1521725229"
+    },
+    {
+      "plan_id": "PLAN-E1",
+      "plan_title": "Create paused - Pressure Washing Near Me and House Washing Near Me",
+      "file": "2026-08-26-plan-e1-create-paused-skags.yaml",
+      "status": "SUPERSEDED",
+      "priority": "R5",
+      "approval_order": null,
+      "note": "Superseded by PLAN-I5, not void",
+      "approval_type": "CREATE_PAUSED",
+      "fingerprint": "40385B68584E",
+      "action_count": 6,
+      "object_count": 10,
+      "ads_mutation_count": 10,
+      "approval_status_in_file": "NOT APPROVED",
+      "requires_separate_enable_approval": true,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status SUPERSEDED"
+    },
+    {
+      "plan_id": "PLAN-E2A",
+      "plan_title": "Revised out-of-scope negatives - house cleaning narrowed to Exact",
+      "file": "2026-08-26-plan-e2a-revised-negatives.yaml",
+      "status": "ACTIVE",
+      "priority": "R2",
+      "approval_order": 3,
+      "note": "Revised out-of-scope negatives",
+      "approval_type": "LIVE_NEGATIVE_KEYWORDS",
+      "fingerprint": "E5CD04117D5B",
+      "action_count": 6,
+      "object_count": 6,
+      "ads_mutation_count": 6,
+      "approval_status_in_file": "NOT APPROVED",
+      "requires_separate_enable_approval": false,
+      "approvable_now": true,
+      "approval_phrase": "APPROVE PLAN-E2A E5CD04117D5B FOR 1521725229"
+    },
+    {
+      "plan_id": "PLAN-I1B",
+      "plan_title": "August budget headroom on fresh 2026-08-26 16:01 pacing",
+      "file": "2026-08-26-plan-i1b-budget-fresh-pacing.yaml",
+      "status": "SUPERSEDED",
+      "priority": "R1",
+      "approval_order": null,
+      "note": "Superseded by PLAN-I1C, not void",
+      "approval_type": "BUDGET",
+      "fingerprint": "6AC969E8C486",
+      "action_count": 2,
+      "object_count": 2,
+      "ads_mutation_count": 2,
+      "approval_status_in_file": "NOT APPROVED",
+      "requires_separate_enable_approval": false,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status SUPERSEDED"
+    },
+    {
+      "plan_id": "PLAN-I1C",
+      "plan_title": "August budget headroom after full geo expansion",
+      "file": "2026-08-26-plan-i1c-budget-after-full-geo.yaml",
+      "status": "EXECUTED",
+      "priority": "R1",
+      "approval_order": null,
+      "note": "EXECUTED 2026-08-26 18:00 ET. Campaign A $41.11 -> $333.33, QA passed.",
+      "approval_type": "BUDGET",
+      "fingerprint": "8CC6CABFC74F",
+      "action_count": 1,
+      "object_count": 1,
+      "ads_mutation_count": 1,
+      "approval_status_in_file": "APPROVED - executed",
+      "requires_separate_enable_approval": false,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status EXECUTED"
+    },
+    {
+      "plan_id": "PLAN-I2A-E",
+      "plan_title": "Enable the one correct existing paused SKAG",
+      "file": "2026-08-26-plan-i2a-e-enable-existing-skag.yaml",
+      "status": "ACTIVE",
+      "priority": "R5",
+      "approval_order": 4,
+      "note": "Enable the one correct existing paused SKAG",
+      "approval_type": "ENABLE_EXISTING_RESOURCES",
+      "fingerprint": "A4BD7AE8F4DF",
+      "action_count": 1,
+      "object_count": 1,
+      "ads_mutation_count": 1,
+      "approval_status_in_file": "NOT APPROVED",
+      "requires_separate_enable_approval": true,
+      "approvable_now": true,
+      "approval_phrase": "APPROVE PLAN-I2A-E A4BD7AE8F4DF FOR 1521725229"
+    },
+    {
+      "plan_id": "PLAN-I3",
+      "plan_title": "Ad schedule expansion - three costed scenarios",
+      "file": "2026-08-26-plan-i3-schedule-expansion.yaml",
+      "status": "BLOCKED",
+      "priority": "R3",
+      "approval_order": null,
+      "note": "Schedule - blocked on SCHED-Q1..Q6",
+      "approval_type": "DELIVERY_SCHEDULE",
+      "fingerprint": "7AE33D2F16C5",
+      "action_count": 4,
+      "object_count": 26,
+      "ads_mutation_count": 26,
+      "approval_status_in_file": "NOT APPROVED - BLOCKED",
+      "requires_separate_enable_approval": false,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status BLOCKED"
+    },
+    {
+      "plan_id": "PLAN-I5",
+      "plan_title": "Create paused - Pressure Washing Near Me (single SKAG)",
+      "file": "2026-08-26-plan-i5-create-paused-expansion.yaml",
+      "status": "SEPTEMBER",
+      "priority": "R5",
+      "approval_order": null,
+      "note": "Routing fix, zero incremental impressions - not in the August path",
+      "approval_type": "CREATE_PAUSED",
+      "fingerprint": "A63D86DB3602",
+      "action_count": 3,
+      "object_count": 5,
+      "ads_mutation_count": 5,
+      "approval_status_in_file": "NOT APPROVED",
+      "requires_separate_enable_approval": true,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status SEPTEMBER"
+    },
+    {
+      "plan_id": "PLAN-J2A",
+      "plan_title": "Client-approved New York geo expansion",
+      "file": "2026-08-26-plan-j2a-approved-ny-geo.yaml",
+      "status": "EXECUTED",
+      "priority": "R4",
+      "approval_order": null,
+      "note": "EXECUTED 2026-08-26 17:49 ET. 144 criteria created, 0 removed, QA passed.",
+      "approval_type": "LIVE_LOCATION_CRITERIA_POSITIVE",
+      "fingerprint": "529FE7F9386D",
+      "action_count": 144,
+      "object_count": 144,
+      "ads_mutation_count": 144,
+      "approval_status_in_file": "APPROVED - executed",
+      "requires_separate_enable_approval": false,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status EXECUTED"
+    },
+    {
+      "plan_id": "PLAN-J2B",
+      "plan_title": "Connecticut exclusion",
+      "file": "2026-08-26-plan-j2b-connecticut-exclusion.yaml",
+      "status": "EXECUTED",
+      "priority": "R4",
+      "approval_order": null,
+      "note": "EXECUTED 2026-08-26 17:56 ET. 2 exclusions created, 0 removed, QA passed.",
+      "approval_type": "LIVE_LOCATION_CRITERIA_NEGATIVE",
+      "fingerprint": "2A53E12D68F0",
+      "action_count": 2,
+      "object_count": 2,
+      "ads_mutation_count": 2,
+      "approval_status_in_file": "APPROVED - executed",
+      "requires_separate_enable_approval": false,
+      "approvable_now": false,
+      "approval_phrase": "NOT APPROVABLE - status EXECUTED"
+    }
+  ],
+  "recommended_approval_order": [
+    {
+      "order": 1,
+      "plan_id": "PLAN-A2",
+      "priority": "R0",
+      "fingerprint": "3B30BD017E0C",
+      "mutations": 0,
+      "approval_phrase": "APPROVE PLAN-A2 3B30BD017E0C FOR 1521725229"
+    },
+    {
+      "order": 2,
+      "plan_id": "PLAN-H",
+      "priority": "R6",
+      "fingerprint": "1D63EC1EB68D",
+      "mutations": 21,
+      "approval_phrase": "APPROVE PLAN-H 1D63EC1EB68D FOR 1521725229"
+    },
+    {
+      "order": 3,
+      "plan_id": "PLAN-E2A",
+      "priority": "R2",
+      "fingerprint": "E5CD04117D5B",
+      "mutations": 6,
+      "approval_phrase": "APPROVE PLAN-E2A E5CD04117D5B FOR 1521725229"
+    },
+    {
+      "order": 4,
+      "plan_id": "PLAN-I2A-E",
+      "priority": "R5",
+      "fingerprint": "A4BD7AE8F4DF",
+      "mutations": 1,
+      "approval_phrase": "APPROVE PLAN-I2A-E A4BD7AE8F4DF FOR 1521725229"
+    },
+    {
+      "order": 5,
+      "plan_id": "PLAN-A3",
+      "priority": "R0",
+      "fingerprint": "5D9681D3FBFE",
+      "mutations": 0,
+      "approval_phrase": "APPROVE PLAN-A3 5D9681D3FBFE FOR 1521725229"
+    }
+  ],
+  "approval_order_rationale": {
+    "1_PLAN-J2A": "Supplies the demand. MUST precede the budget: raising spend first, with no new demand to buy, makes uncapped Maximize Clicks bid UP on the current thin pool.",
+    "2_PLAN-J2B": "Separate fingerprint, separate approval. Exclusions are a different risk class from positive targeting and must not ride along on one approval.",
+    "3_PLAN-I1C": "Budget headroom, executed only AFTER PLAN-J2A readback QA passes and a fresh post-geo snapshot is taken.",
+    "4_PLAN-A2": "Lead-protection queue. Zero Google Ads mutations; answers whether the new spend is measurable at all.",
+    "5_PLAN-H": "Lead-protection queue. Repairs sitelink call leakage so leads bought with the new budget are actually attributed.",
+    "6_PLAN-E2A": "Deliberately AFTER geo and budget. Roof-cleaning scope is still unresolved and must not delay delivery work.",
+    "7_PLAN-I2A-E": "Adds qualified reach on an existing, already-QA-verified paused SKAG.",
+    "8_PLAN-A3": "Must run AFTER PLAN-H so the phone test exercises the corrected, tracked number."
+  },
+  "zero_external_changes_confirmed": true,
+  "no_form_submitted": true,
+  "no_call_placed": true
+}

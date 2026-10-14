@@ -1,0 +1,1 @@
+Read `CLAUDE.md` and `prompts/08-clean-search-terms.md`. Require a validated work order with the exact child account name, 10-digit child customer ID, and exact service. Produce the KEEP/WATCH/NEGATIVE verdict table for that service and wait for term-level approval before adding negatives.

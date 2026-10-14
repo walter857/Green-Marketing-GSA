@@ -1,0 +1,2232 @@
+{
+ "run": "2026-09-10 EXECUTION",
+ "started_local": "2026-09-10T00:37:35.961989-04:00",
+ "identity": {
+  "customer_id": "2401959466",
+  "descriptive_name": "Ambient Cooling - Live",
+  "currency": "USD",
+  "time_zone": "America/New_York",
+  "manager": false,
+  "test_account": false,
+  "status": "ENABLED",
+  "auto_tagging_enabled": true,
+  "tracking_url_template": "https://monitor.clickcease.com/tracker/tracker.aspx?id=Y6qzID4E9cPYCj&adpos={adposition}&locphisical={loc_physical_ms}&locinterest={loc_interest_ms}&adgrp={adgroupid}&kw={keyword}&nw={network}&url={lpurl}&cpn={campaignid}&device={device}&ccpturl=offer.ambientcoolingandheating.com&pl={placement}",
+  "final_url_suffix": "",
+  "conversion_tracking_id": "11155434808",
+  "google_ads_conversion_customer": "customers/2401959466",
+  "conversion_tracking_status": "CONVERSION_TRACKING_MANAGED_BY_SELF",
+  "optimization_score": 0.7406144,
+  "manager_links": {
+   "2815082755": "ACTIVE",
+   "3373711342": "ACTIVE"
+  },
+  "checks": {
+   "descriptive_name == 'Ambient Cooling - Live'": true,
+   "customer.id == 2401959466": true,
+   "not a manager account": true,
+   "not a test account": true,
+   "time_zone == America/New_York": true,
+   "currency_code == USD": true,
+   "Green Marketing manager 3373711342 ACTIVE": true,
+   "ClickCease manager 2815082755 ACTIVE": true
+  },
+  "checked_local": "2026-09-10T00:37:38.040621-04:00"
+ },
+ "today_partial": null,
+ "last_settled": "2026-09-09",
+ "snapshot_file": "clients\\ambient-cooling-heating\\snapshots\\before-state-2026-09-10.json",
+ "change_events_since_0909": [
+  {
+   "ts": "2026-09-09 14:20:51.169919",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507753~372618909963",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507753"
+  },
+  {
+   "ts": "2026-09-09 14:20:21.947423",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507750~300893047895",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507750"
+  },
+  {
+   "ts": "2026-09-09 14:20:21.947423",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507750~3938586441",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507750"
+  },
+  {
+   "ts": "2026-09-09 14:20:21.947423",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507750~3883699166",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507750"
+  },
+  {
+   "ts": "2026-09-09 14:20:21.947423",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507750~30464742581",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507750"
+  },
+  {
+   "ts": "2026-09-09 14:20:21.947423",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507750~1839849420",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507750"
+  },
+  {
+   "ts": "2026-09-09 14:20:21.947423",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507750~2429938074145",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507750"
+  },
+  {
+   "ts": "2026-09-09 14:19:53.226415",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507741~3938586441",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507741"
+  },
+  {
+   "ts": "2026-09-09 14:19:53.226415",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507741~3883699166",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507741"
+  },
+  {
+   "ts": "2026-09-09 14:19:53.226415",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507741~390485708563",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507741"
+  },
+  {
+   "ts": "2026-09-09 14:19:53.226415",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507741~1653129078899",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507741"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~528013229168",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~514969535672",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~300893047895",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2500091357011",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~979968595094",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1593650606615",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2413407568763",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~300449003749",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~3938586441",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~448961303222",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~3883699166",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~839336092707",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1485534174402",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~884813757746",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~47015681850",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~335931496769",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~300226824610",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~328119282130",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~298651529973",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1318782674047",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~320763085166",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~297933792233",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~766149607",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~30464742581",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~813232601982",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~329960828398",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~416121508007",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2297766808499",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2519374296477",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~438250134386",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~386617777916",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2497450674624",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1654582221321",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~107546439",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~864189466989",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~380096738784",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2185283011154",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~726737980233",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2442266897683",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2500091357171",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2456014663088",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~471468746149",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2500091365651",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1208713027137",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2434995982295",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~340968057058",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2500091365811",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~334100533320",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2447512981864",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1187595414429",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~319860851",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~400847337502",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2277278187026",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1282572592050",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~771943159577",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~317615486626",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~320763086126",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~298065791022",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~4090132717",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~335040206305",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~308925367908",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1463624044226",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~981317793810",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~561606064792",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~370124779398",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~12310416824",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1642852756",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~572062866846",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2487828883638",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2475456738",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~356580191235",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2299352037102",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~823246875537",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~5986590693",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~858971631745",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~4768279081",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1638878173803",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~680946404565",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~313641468909",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2500091357211",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~814258551508",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~369959919048",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~851774191144",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1211125364634",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~335562921583",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1074880877752",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2439627469323",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~300481837629",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~381962488498",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2399444761659",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~476582363024",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~908346771038",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1839849420",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~737819126395",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1187179328290",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1415136288455",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2427462106783",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~453834843081",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2467115558153",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~342343211972",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~401964172525",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~322558211014",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~910358389649",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~474408084454",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~55807954504",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~474408086574",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2437734025106",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~303627546919",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2467146613602",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1642057700819",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~2479969028308",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~435386992302",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~523973586436",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  },
+  {
+   "ts": "2026-09-09 14:19:18.176479",
+   "type": "CAMPAIGN_CRITERION",
+   "rn": "customers/2401959466/campaignCriteria/24132507747~1605982636749",
+   "client_type": "GOOGLE_ADS_WEB_CLIENT",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "CREATE",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "campaign": "24132507747"
+  }
+ ],
+ "package_classification": {
+  "AMB-0909C-BUD-1": {
+   "fingerprint": "A7118436590B",
+   "recomputed": "A7118436590B",
+   "exact": true,
+   "ops": 2,
+   "status": "UNEXECUTED_AND_EXACT",
+   "notes": [],
+   "class": "reversible-budget-change"
+  },
+  "AMB-0909C-COMP-1": {
+   "fingerprint": "D434D6F41747",
+   "recomputed": "D434D6F41747",
+   "exact": true,
+   "ops": 3,
+   "status": "UNEXECUTED_AND_EXACT",
+   "notes": [],
+   "class": "reversible-addition"
+  },
+  "AMB-0909-ADS-1": {
+   "fingerprint": "11A79347A296",
+   "recomputed": "11A79347A296",
+   "exact": true,
+   "ops": 2,
+   "status": "UNEXECUTED_AND_EXACT",
+   "notes": [],
+   "class": "reversible-status-change"
+  },
+  "AMB-0909C-NEG-SAVAGE": {
+   "fingerprint": "10F76004E1B6",
+   "recomputed": "10F76004E1B6",
+   "exact": true,
+   "ops": 5,
+   "status": "UNEXECUTED_AND_EXACT",
+   "notes": [],
+   "class": "DESTRUCTIVE-removal"
+  },
+  "AMB-0909C-NEG-COMMERCIAL": {
+   "fingerprint": "9F88FEE76803",
+   "recomputed": "9F88FEE76803",
+   "exact": true,
+   "ops": 1,
+   "status": "UNEXECUTED_AND_EXACT",
+   "notes": [],
+   "class": "DESTRUCTIVE-removal-ACCOUNT-LEVEL"
+  },
+  "AMB-0909C-CPC-INST-2": {
+   "fingerprint": "5D57E0EF3B70",
+   "recomputed": "5D57E0EF3B70",
+   "exact": true,
+   "ops": 1,
+   "status": "UNEXECUTED_AND_EXACT",
+   "notes": [],
+   "class": "reversible-setting-change-UNVERIFIED-TEST"
+  }
+ },
+ "do_not_execute": [
+  "752BF95EBD7C",
+  "DE376F91F449",
+  "05FBCBD34B4A",
+  "18143479027D",
+  "46C39C6B7091",
+  "D448BFDE4650",
+  "23BE8FF0F24C",
+  "CE289F3508A2",
+  "A435FA09AC97"
+ ]
+}

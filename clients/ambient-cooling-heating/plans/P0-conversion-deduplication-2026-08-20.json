@@ -1,0 +1,135 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-G-conversion-deduplication",
+ "version": "2026-08-20",
+ "priority": "P0",
+ "run_class": "READ + DRAFT + VALIDATE-ONLY. No mutation performed.",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "problem": "Six conversion actions are Primary AND included in the conversions metric, and four of them overlap in pairs on the same underlying lead event. Any future move to Maximize Conversions would bid on double-counted data.",
+ "current_primary_and_counted": [
+  {
+   "id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "type": "WEBPAGE",
+   "category": "SUBMIT_LEAD_FORM",
+   "all_time": 71,
+   "verdict": "KEEP PRIMARY - the strongest form signal"
+  },
+  {
+   "id": "6885576934",
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "type": "WEBSITE_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "all_time": 23,
+   "verdict": "KEEP PRIMARY - a connected call, stronger than a click"
+  },
+  {
+   "id": "1068114183",
+   "name": "Calls from ads",
+   "type": "AD_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "all_time": 237,
+   "verdict": "KEEP PRIMARY - call placed from the ad itself, no overlap with the website actions"
+  },
+  {
+   "id": "6498555481",
+   "name": "Visit Thank you page - Submit Form",
+   "all_time": 3,
+   "verdict": "DEMOTE to secondary"
+  },
+  {
+   "id": "6498555484",
+   "name": "Call BTN Click",
+   "all_time": 34,
+   "verdict": "DEMOTE to secondary"
+  },
+  {
+   "id": "7643656075",
+   "name": "WC Calls",
+   "all_time": 0,
+   "verdict": "DEMOTE to secondary"
+  },
+  {
+   "id": "7643656486",
+   "name": "WC Lead",
+   "all_time": 0,
+   "verdict": "DEMOTE to secondary"
+  }
+ ],
+ "demotions": [
+  {
+   "id": "6498555481",
+   "name": "Visit Thank you page - Submit Form",
+   "reason": "Duplicates 6885463625 'Ambient Cooling - LP -Submit Lead Forms'. Both are WEBPAGE / SUBMIT_LEAD_FORM / WEBSITE origin / biddable / ONE_PER_CLICK. One fires on submit, the other on the thank-you page view, so a single lead can register twice. All-time volume 3 versus 71, so 6885463625 is clearly the primary signal.",
+   "operation": "update conversion_action.primary_for_goal = false",
+   "resource_name": "customers/2401959466/conversionActions/6498555481"
+  },
+  {
+   "id": "6498555484",
+   "name": "Call BTN Click",
+   "reason": "Duplicates 6885576934 'Ambient Cooling - Lp - Phone call leads'. A single tap on the landing-page phone button can fire the WEBPAGE click action AND the WEBSITE_CALL action, and both are biddable. Keeping the WEBSITE_CALL action primary preserves the stronger signal, because it represents a connected call rather than a click.",
+   "operation": "update conversion_action.primary_for_goal = false",
+   "resource_name": "customers/2401959466/conversionActions/6498555484"
+  },
+  {
+   "id": "7643656075",
+   "name": "WC Calls",
+   "reason": "UPLOAD_CALLS, primary and included in the conversions metric, but has recorded ZERO conversions all-time. If WhatConverts uploads are ever switched on it would fire alongside 6885576934 and 1068114183 for the same call. Demote until a deduplication key is confirmed.",
+   "operation": "update conversion_action.primary_for_goal = false",
+   "resource_name": "customers/2401959466/conversionActions/7643656075"
+  },
+  {
+   "id": "7643656486",
+   "name": "WC Lead",
+   "reason": "UPLOAD_CLICKS, primary and included in the conversions metric, but has recorded ZERO conversions all-time. If WhatConverts uploads are switched on it would fire alongside 6885463625 for the same form submission. Demote until a deduplication key is confirmed.",
+   "operation": "update conversion_action.primary_for_goal = false",
+   "resource_name": "customers/2401959466/conversionActions/7643656486"
+  }
+ ],
+ "proposed_primary_set": [
+  "6885463625 Ambient Cooling - LP -Submit Lead Forms (form lead)",
+  "6885576934 Ambient Cooling - Lp - Phone call leads (qualified website call)",
+  "1068114183 Calls from ads (call from the ad)"
+ ],
+ "alignment_with_agency_policy": "config policy requires primary bidding conversions to be separated from secondary diagnostics, and the standard lead-service set to be form lead, qualified call and a qualified or closed-won offline outcome. The proposed primary set is exactly form lead plus two non-overlapping call signals.",
+ "whatconverts_and_gtm": "BOTH KEPT. GTM-PQTPQ436 and WhatConverts profile 105803 are confirmed live on all five landing pages and are not touched. The two WhatConverts upload actions stay ENABLED; only their primary_for_goal flag changes, so no data is lost and they can be promoted the moment deduplication is confirmed.",
+ "does_google_ads_have_what_bidding_needs": {
+  "today": "Not relevant to bidding right now. All five campaigns run TARGET_SPEND (Maximize Clicks), which does not use conversion data at all.",
+  "for_a_future_move_to_conversion_bidding": "Not yet. Only 2 primary conversions have been recorded across the five campaigns since launch. Conversion-based bidding needs materially more volume, and it needs to be counting each lead once, which is what this package fixes.",
+  "biggest_measurement_gap": "The Gravity Forms submission carries no gclid or UTM hidden field, so the CRM receives the lead without the click identifier. WhatConverts captures the click IDs in its own cookies, but the form post does not. That is a website change, not a Google Ads change, and is listed in the landing-page work below."
+ },
+ "mutation_counts": {
+  "creates": 0,
+  "updates": 4,
+  "removals": 0,
+  "total_mutations": 4,
+  "conversion_actions_disabled": 0,
+  "conversion_actions_deleted": 0,
+  "tags_touched": 0,
+  "gtm_touched": 0,
+  "whatconverts_touched": 0
+ },
+ "expected_benefit": "Each lead is counted once. Reported conversion volume becomes trustworthy, which is the precondition for any future move to conversion-based bidding and for a defensible target CPL.",
+ "risk": "LOW and fully reversible. Demoting to secondary keeps the action ENABLED and keeps recording data; it only stops it counting in the primary conversions metric and in bidding. Historical data is unaffected. Note that reported conversion totals will step down, because the double counting stops.",
+ "rollback_plan": "Set primary_for_goal = true again on the same four actions. 4 mutations, immediate, no data loss.",
+ "readback_verification": [
+  "ASSERT the four demoted actions return primary_for_goal = false and status ENABLED.",
+  "ASSERT 6885463625, 6885576934 and 1068114183 still return primary_for_goal = true.",
+  "ASSERT conversion_action count is still 16 and none was disabled or removed.",
+  "ASSERT customer_conversion_goal rows still include SUBMIT_LEAD_FORM/WEBSITE and PHONE_CALL_LEAD/WEBSITE and PHONE_CALL_LEAD/CALL_FROM_ADS as biddable."
+ ],
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 4,
+  "errors": 0
+ },
+ "plan_fingerprint": "011EA574B826F45B",
+ "VOID": true,
+ "VOID_ON": "2026-08-20",
+ "VOID_REASON": "Evidence was wrong. Day-level analysis shows ZERO same-day co-firing and non-intersecting active windows for both pairs, so the actions are not duplicates. Superseded by 24243FC484DDAF64."
+}

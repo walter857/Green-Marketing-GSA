@@ -1,0 +1,2777 @@
+change_plan:
+  plan_name: PLAN-SLM-NEG-2
+  plan_version: 2
+  generated_at: '2026-09-03T20:10:43.057469-04:00'
+  target:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: '2429758629'
+    manager_customer_id: '3373711342'
+    currency: USD
+    time_zone: America/New_York
+    exact_service: patio construction (Patio) and paver installation (Pavers)
+    identity_receipt: clients/softwind-landscape-masonry/snapshots/identity-gate-2026-09-03-1959.json
+    baseline_snapshot: recovery/2026-09-patio-pavers/01e-baseline-2.json
+    baseline_evidence_sha256_short: 3D9E3199DD183E79
+  subplan_used: EXISTING_RESOURCES
+  subplans:
+    STATUS:
+      actions: &id001 []
+      empty_reason: not part of this package
+    BUDGET:
+      actions: *id001
+      empty_reason: not part of this package
+    EXISTING_RESOURCES:
+      actions:
+      - action_id: NEG-001
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: asphalt
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: asphalt
+        authority: USER-2026-09-03 recovery prompt lists asphalt paving/repair/blacktop as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'asphalt'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-002
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: blacktop
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: asphalt
+        authority: USER-2026-09-03 recovery prompt lists asphalt paving/repair/blacktop as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'blacktop'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 1
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: blacktop patio
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-003
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: macadam
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: asphalt
+        authority: USER-2026-09-03 recovery prompt lists asphalt paving/repair/blacktop as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'macadam'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-004
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: tar and chip
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: asphalt
+        authority: USER-2026-09-03 recovery prompt lists asphalt paving/repair/blacktop as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'tar and chip'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-005
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: house washing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: cleaning
+        authority: OWNER-2026-08-28 cross-account scope fence; cleaning belongs to 1521725229
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'house washing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-006
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: patio washing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: cleaning
+        authority: OWNER-2026-08-28 cross-account scope fence; cleaning belongs to 1521725229
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio washing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-007
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: power washing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: cleaning
+        authority: OWNER-2026-08-28 cross-account scope fence; cleaning belongs to 1521725229
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'power washing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-008
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: pressure washing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: cleaning
+        authority: OWNER-2026-08-28 cross-account scope fence; cleaning belongs to 1521725229
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'pressure washing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-009
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: soft washing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: cleaning
+        authority: OWNER-2026-08-28 cross-account scope fence; cleaning belongs to 1521725229
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'soft washing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-010
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: composite deck
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'composite deck'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-011
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: deck builder
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'deck builder'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 3
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: deck builder long island|deck builder near me|trex deck builder near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-012
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: decking
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'decking'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 4
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: are pavers cheaper than decking|decking over brick paving|decking companies
+          near me|no maintenance decking farmingdale
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-013
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: trex
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'trex'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 6
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: trex deck companies near me|trex deck vs paver patio|trex installers near
+          me|trex deck builders near me|trex deck builder near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-014
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: wood deck
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'wood deck'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-015
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: apprentice
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: employment_intent
+        family: employment
+        authority: Not a buyer intent. Conservative agency default; no service claim involved
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'apprentice'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-016
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: patio enclosure
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio enclosure'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 3
+        blocks_cost: 16.8
+        blocks_clicks: 2
+        blocks_conversions: 0.0
+        source_search_terms: backyard patio enclosure|patio enclosure companies near me|patio enclosure
+          kits walls only
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-017
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: patio enclosures
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio enclosures'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 7
+        blocks_cost: 14.24
+        blocks_clicks: 1
+        blocks_conversions: 0.0
+        source_search_terms: patio enclosures near me|patio enclosures long island|aluminium patio enclosures|custom
+          patio enclosures|patio enclosures myrtle beach
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-018
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: screen room
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'screen room'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-019
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: screened in patio
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'screened in patio'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 1
+        blocks_cost: 8.79
+        blocks_clicks: 1
+        blocks_conversions: 0.0
+        source_search_terms: screened in patio installers near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-020
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: screened patio
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'screened patio'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 2
+        blocks_cost: 8.78
+        blocks_clicks: 1
+        blocks_conversions: 0.0
+        source_search_terms: screened patio installation|screened patio contractors near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-021
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: sunroom
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'sunroom'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-022
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: paver mold
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: diy_information_and_materials_intent
+        family: equipment
+        authority: Equipment rental and DIY casting are not a service this account sells
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver mold'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-023
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: paver molds
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: diy_information_and_materials_intent
+        family: equipment
+        authority: Equipment rental and DIY casting are not a service this account sells
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver molds'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-024
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: plate compactor
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: diy_information_and_materials_intent
+        family: equipment
+        authority: Equipment rental and DIY casting are not a service this account sells
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'plate compactor'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-025
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: awning
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'awning'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 2
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: patio awning companies near me|patio awning company near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-026
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: canopy
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'canopy'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-027
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: covered patio
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'covered patio'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 7
+        blocks_cost: 48.22
+        blocks_clicks: 4
+        blocks_conversions: 0.0
+        source_search_terms: covered patio attached to house|covered patio attached to house contractors|covered
+          patio builders near me|covered patio contractors near me|building a covered patio attached to
+          house
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-028
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: gazebo
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'gazebo'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 8
+        blocks_cost: 24.65
+        blocks_clicks: 3
+        blocks_conversions: 0.0
+        source_search_terms: install gazebo on pavers|gazebo company near me|gazebo builders near me|installing
+          gazebo on pavers|gazebo construction near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-029
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: patio awning
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio awning'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 2
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: patio awning companies near me|patio awning company near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-030
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: patio cover
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio cover'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 9
+        blocks_cost: 9.31
+        blocks_clicks: 2
+        blocks_conversions: 0.0
+        source_search_terms: aluminum patio cover installers near me|patio cover attached to house|patio
+          cover installers near me|brick patio cover|building a patio cover
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-031
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: patio roof
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio roof'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 1
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: gable patio roof
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-032
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: pergola
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'pergola'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 26
+        blocks_cost: 63.32
+        blocks_clicks: 7
+        blocks_conversions: 0.0
+        source_search_terms: pergola builders near me|pergola installation near me|mirador pergola installers
+          near me|pergola contractors|custom pergola near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-033
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: patio restoration
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio restoration'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-034
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: paver re sanding
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver re sanding'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-035
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: paver releveling
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver releveling'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-036
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: paver resanding
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver resanding'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-037
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: paver restoration
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver restoration'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 2
+        blocks_cost: 13.0
+        blocks_clicks: 1
+        blocks_conversions: 0.0
+        source_search_terms: paver restoration near me|paver restoration long island
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-038
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: polymeric sand
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'polymeric sand'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-039
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: paver calculator
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: diy_information_and_materials_intent
+        family: retail-diy
+        authority: USER-2026-09-03 lists material-only/retail paver sales and DIY instruction as out of
+          scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver calculator'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-040
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: seal coat
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealcoating
+        authority: USER-2026-09-03 lists sealcoating and tar-and-chip as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'seal coat'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-041
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: seal coating
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealcoating
+        authority: USER-2026-09-03 lists sealcoating and tar-and-chip as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'seal coating'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-042
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: sealcoat
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealcoating
+        authority: USER-2026-09-03 lists sealcoating and tar-and-chip as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'sealcoat'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-043
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: sealcoating
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealcoating
+        authority: USER-2026-09-03 lists sealcoating and tar-and-chip as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'sealcoating'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-044
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: concrete sealing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'concrete sealing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-045
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: patio sealing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio sealing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-046
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: paver sealer
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver sealer'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-047
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: sealant
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'sealant'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-048
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: sealing service
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'sealing service'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-049
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        negative_text: stone sealer
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'stone sealer'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 83
+        protected_terms_tested: 642
+        existing_negatives_tested: 1452
+        dependency: none
+      - action_id: NEG-050
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: asphalt
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: asphalt
+        authority: USER-2026-09-03 recovery prompt lists asphalt paving/repair/blacktop as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'asphalt'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 61
+        blocks_cost: 117.88
+        blocks_clicks: 5
+        blocks_conversions: 1.0
+        source_search_terms: asphalt contractors near me|asphalt sealer near me|asphalt driveway contractors
+          near me|asphalt companies near me|stamped asphalt near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: PLAN-SLM-KW-2
+      - action_id: NEG-051
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: blacktop
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: asphalt
+        authority: USER-2026-09-03 recovery prompt lists asphalt paving/repair/blacktop as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'blacktop'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 30
+        blocks_cost: 24.51
+        blocks_clicks: 2
+        blocks_conversions: 0.0
+        source_search_terms: blacktop sealing near me|blacktop driveway contractors|blacktop companies|blacktop
+          company near me|blacktop driveway companies near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-052
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: macadam
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: asphalt
+        authority: USER-2026-09-03 recovery prompt lists asphalt paving/repair/blacktop as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'macadam'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-053
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: tar and chip
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: asphalt
+        authority: USER-2026-09-03 recovery prompt lists asphalt paving/repair/blacktop as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'tar and chip'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 2
+        blocks_cost: 27.38
+        blocks_clicks: 2
+        blocks_conversions: 0.0
+        source_search_terms: tar and chip driveway contractors near me|tar and chip contractors near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-054
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: house washing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: cleaning
+        authority: OWNER-2026-08-28 cross-account scope fence; cleaning belongs to 1521725229
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'house washing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-055
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: patio washing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: cleaning
+        authority: OWNER-2026-08-28 cross-account scope fence; cleaning belongs to 1521725229
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio washing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-056
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: power washing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: cleaning
+        authority: OWNER-2026-08-28 cross-account scope fence; cleaning belongs to 1521725229
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'power washing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 1
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: paver power washing and sealing near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-057
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: pressure washing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: cleaning
+        authority: OWNER-2026-08-28 cross-account scope fence; cleaning belongs to 1521725229
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'pressure washing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-058
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: soft washing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: cleaning
+        authority: OWNER-2026-08-28 cross-account scope fence; cleaning belongs to 1521725229
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'soft washing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-059
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: composite deck
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'composite deck'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-060
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: deck builder
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'deck builder'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-061
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: deck contractor
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'deck contractor'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-062
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: decking
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'decking'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-063
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: trex
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'trex'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-064
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: wood deck
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: deck-structure
+        authority: USER-2026-09-03 lists decks as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'wood deck'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-065
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: apprentice
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: employment_intent
+        family: employment
+        authority: Not a buyer intent. Conservative agency default; no service claim involved
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'apprentice'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-066
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: patio enclosure
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio enclosure'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-067
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: patio enclosures
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio enclosures'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-068
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: screen room
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'screen room'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-069
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: screened in patio
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'screened in patio'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-070
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: screened patio
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'screened patio'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-071
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: sunroom
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: enclosure
+        authority: USER-2026-09-03 lists patio enclosures and screened patios as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'sunroom'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-072
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: paver mold
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: diy_information_and_materials_intent
+        family: equipment
+        authority: Equipment rental and DIY casting are not a service this account sells
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver mold'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-073
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: paver molds
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: diy_information_and_materials_intent
+        family: equipment
+        authority: Equipment rental and DIY casting are not a service this account sells
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver molds'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-074
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: plate compactor
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: diy_information_and_materials_intent
+        family: equipment
+        authority: Equipment rental and DIY casting are not a service this account sells
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'plate compactor'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-075
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: awning
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'awning'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-076
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: canopy
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'canopy'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-077
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: covered patio
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'covered patio'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-078
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: gazebo
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'gazebo'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-079
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: patio awning
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio awning'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-080
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: patio roof
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: patio-cover
+        authority: USER-2026-09-03 lists patio covers, roofs, pergolas and gazebos as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio roof'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-081
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: patio restoration
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio restoration'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 1
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: paver patio restoration near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-082
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: paver leveling
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver leveling'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-083
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: paver releveling
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver releveling'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-084
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: paver resanding
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver resanding'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-085
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: paver restoration
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver restoration'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 1
+        blocks_cost: 8.36
+        blocks_clicks: 2
+        blocks_conversions: 0.0
+        source_search_terms: paver restoration near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-086
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: polymeric sand
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: restoration
+        authority: USER-2026-09-03 lists paver restoration, resanding and leveling as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'polymeric sand'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 1
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: polymeric sand installers near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-087
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: paver calculator
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: diy_information_and_materials_intent
+        family: retail-diy
+        authority: USER-2026-09-03 lists material-only/retail paver sales and DIY instruction as out of
+          scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver calculator'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-088
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: seal coat
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealcoating
+        authority: USER-2026-09-03 lists sealcoating and tar-and-chip as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'seal coat'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 3
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: seal coat companies near me|seal coat company near me|seal coat near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-089
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: seal coating
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealcoating
+        authority: USER-2026-09-03 lists sealcoating and tar-and-chip as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'seal coating'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 9
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: blacktop seal coating near me|driveway seal coating companies near me|driveway
+          seal coating near me|seal coating asphalt near me|seal coating companies near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-090
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: sealcoat
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealcoating
+        authority: USER-2026-09-03 lists sealcoating and tar-and-chip as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'sealcoat'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 2
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: sealcoat companies near me|driveway sealcoat near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-091
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: sealcoating
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealcoating
+        authority: USER-2026-09-03 lists sealcoating and tar-and-chip as out of scope
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'sealcoating'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 15
+        blocks_cost: 117.29
+        blocks_clicks: 5
+        blocks_conversions: 1.0
+        source_search_terms: residential sealcoating near me|sealcoating near me|sealcoating driveways
+          near me|residential driveway sealcoating near me|driveway sealcoating near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-092
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: concrete sealing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'concrete sealing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-093
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: driveway sealing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'driveway sealing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 6
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: driveway sealing near me|driveway sealing companies near me|residential driveway
+          sealing companies near me|asphalt driveway sealing near me|blacktop driveway sealing companies
+          near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-094
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: patio sealing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'patio sealing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-095
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: paver sealer
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver sealer'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 1
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: paver sealer company near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-096
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: paver sealing
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'paver sealing'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 4
+        blocks_cost: 13.73
+        blocks_clicks: 1
+        blocks_conversions: 1.0
+        source_search_terms: paver sealing services near me|brick paver sealing near me|paver sealing
+          near me|paver sealing companies near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-097
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: sealant
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'sealant'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 2
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: driveway sealant near me|asphalt sealant near me
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-098
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: sealing service
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'sealing service'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+      - action_id: NEG-099
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        negative_text: stone sealer
+        match_type: PHRASE
+        level: CAMPAIGN
+        classification: high_confidence_wrong_service
+        family: sealing
+        authority: USER-2026-09-03 lists paver sealing as out of scope for these work orders; this account
+          runs a separate PAUSED Paver Sealing campaign (23914857298)
+        current_state: no such negative on this campaign
+        proposed_state: campaign negative PHRASE 'stone sealer'
+        rollback_state: remove this campaign_criterion
+        object_count: 1
+        blocks_terms: 0
+        blocks_cost: 0.0
+        blocks_clicks: 0
+        blocks_conversions: 0.0
+        source_search_terms: ''
+        collision_test: PASS - 0 own keywords, 0 protected terms, not redundant
+        keywords_tested: 78
+        protected_terms_tested: 602
+        existing_negatives_tested: 1448
+        dependency: none
+    CONVERSIONS:
+      actions: *id001
+      empty_reason: not part of this package
+    CREATE_PAUSED:
+      actions: *id001
+      empty_reason: not part of this package
+    SITE_OR_TRACKING:
+      actions: *id001
+      empty_reason: not part of this package
+    ENABLE:
+      actions: *id001
+      empty_reason: not part of this package
+  summary: Create 99 campaign-level PHRASE negatives on Patio and Pavers for confirmed wrong-service,
+    employment and DIY/materials intent.
+  object_count: 99
+  reduced_from_v1: 'PLAN-SLM-NEG-1 proposed 154. 49 of those were REDUNDANT: an existing BROAD negative
+    already blocks every query the proposed PHRASE negative would block, because a BROAD negative fires
+    whenever all of its words appear. The v1 redundancy check only compared PHRASE to PHRASE and missed
+    this entirely. 6 more were moved to a non-executable annex pending SLM-Q9.'
+  classification_counts:
+    high_confidence_wrong_service: 89
+    employment_intent: 2
+    diy_information_and_materials_intent: 8
+  coverage:
+    Patio:
+      wrong_service_terms: 102
+      covered_terms: 81
+      wrong_service_cost: 234.01
+      covered_cost: 207.11
+      covered_clicks: 22
+      covered_conversions: 0.0
+      coverage_pct: 88.5
+    Pavers:
+      wrong_service_terms: 161
+      covered_terms: 131
+      wrong_service_cost: 331.78
+      covered_cost: 309.15
+      covered_clicks: 17
+      covered_conversions: 3.0
+      coverage_pct: 93.2
+  annex_not_executable: 06d-negative-annex-nonexecutable.csv
+  rejected_with_reasons: 06b-negative-rejected-v2.csv
+  supersedes: PLAN-SLM-NEG-1 fingerprint 0895911A8133 (OBSOLETE, 154 rows, 49 redundant)
+  dependencies:
+  - PLAN-SLM-KW-2 must execute and read back FIRST. One negative ('asphalt' PHRASE on Pavers) collides
+    with the seven keywords that plan pauses. Google's validate_only does NOT catch this - only the local
+    collision test does.
+  fingerprint: 2CD5644B5504

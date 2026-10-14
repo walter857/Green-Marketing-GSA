@@ -1,0 +1,1 @@
+Read `CLAUDE.md` and `prompts/02-audit-account.md`. Require and validate the exact child account name, 10-digit child customer ID, and exact service. Then run a fresh read-only audit. Do not implement fixes.

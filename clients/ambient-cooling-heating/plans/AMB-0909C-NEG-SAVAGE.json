@@ -1,0 +1,190 @@
+{
+ "plan_name": "AMB-0909C-NEG-SAVAGE",
+ "approval_class": "DESTRUCTIVE-removal",
+ "generated_local": "2026-09-09T23:54:15.476300-04:00",
+ "supersedes": "part of AMB-0909B-NEG-A (18143479027D) - SUPERSEDED, DO_NOT_EXECUTE",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "AC Repair",
+  "related_services": [
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "summary": "Remove PHRASE negative 'savage' from all five campaigns. 5 operations. Savage, Maryland is proven to be an ENABLED positive location target on every one.",
+ "object_count": 5,
+ "partial_failure": false,
+ "atomic": true,
+ "operations": [
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~138360213",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "138360213",
+   "match_type": "PHRASE",
+   "negative_text": "savage",
+   "current_state": "negative KEYWORD [PHRASE] 'savage' ENABLED",
+   "proposed_state": "REMOVED",
+   "reason": "geoTargetConstants/1018704 'Savage,Savage,Maryland,United States' is an ENABLED, non-negative positive LOCATION criterion on this campaign. The PHRASE negative blocks every query naming that targeted place. Verified against the 22,500-probe service-by-place grid: 300 of 300 Savage probes blocked, and it was the only negative responsible.",
+   "conflict_tests": {
+    "active_keywords": "clear - the 10 live positives contain no 'savage' token",
+    "converting_terms_account_wide_all_time": "clear - 0 of 304 contain 'savage'",
+    "targeted_locations": "RESTORES one - Savage MD, geoTargetConstants/1018704",
+    "bofu_probes": "clear - removal unblocks, never blocks",
+    "observed_search_terms": "0 rows since launch, which is the expected consequence of the negative suppressing them before reporting"
+   },
+   "rollback": "re-create campaign negative 'savage' [PHRASE] on campaign 24132507741",
+   "risk": "LOW - restores a targeted location",
+   "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+  },
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~138360213",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "138360213",
+   "match_type": "PHRASE",
+   "negative_text": "savage",
+   "current_state": "negative KEYWORD [PHRASE] 'savage' ENABLED",
+   "proposed_state": "REMOVED",
+   "reason": "geoTargetConstants/1018704 'Savage,Savage,Maryland,United States' is an ENABLED, non-negative positive LOCATION criterion on this campaign. The PHRASE negative blocks every query naming that targeted place. Verified against the 22,500-probe service-by-place grid: 300 of 300 Savage probes blocked, and it was the only negative responsible.",
+   "conflict_tests": {
+    "active_keywords": "clear - the 10 live positives contain no 'savage' token",
+    "converting_terms_account_wide_all_time": "clear - 0 of 304 contain 'savage'",
+    "targeted_locations": "RESTORES one - Savage MD, geoTargetConstants/1018704",
+    "bofu_probes": "clear - removal unblocks, never blocks",
+    "observed_search_terms": "0 rows since launch, which is the expected consequence of the negative suppressing them before reporting"
+   },
+   "rollback": "re-create campaign negative 'savage' [PHRASE] on campaign 24132507744",
+   "risk": "LOW - restores a targeted location",
+   "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+  },
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~138360213",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "138360213",
+   "match_type": "PHRASE",
+   "negative_text": "savage",
+   "current_state": "negative KEYWORD [PHRASE] 'savage' ENABLED",
+   "proposed_state": "REMOVED",
+   "reason": "geoTargetConstants/1018704 'Savage,Savage,Maryland,United States' is an ENABLED, non-negative positive LOCATION criterion on this campaign. The PHRASE negative blocks every query naming that targeted place. Verified against the 22,500-probe service-by-place grid: 300 of 300 Savage probes blocked, and it was the only negative responsible.",
+   "conflict_tests": {
+    "active_keywords": "clear - the 10 live positives contain no 'savage' token",
+    "converting_terms_account_wide_all_time": "clear - 0 of 304 contain 'savage'",
+    "targeted_locations": "RESTORES one - Savage MD, geoTargetConstants/1018704",
+    "bofu_probes": "clear - removal unblocks, never blocks",
+    "observed_search_terms": "0 rows since launch, which is the expected consequence of the negative suppressing them before reporting"
+   },
+   "rollback": "re-create campaign negative 'savage' [PHRASE] on campaign 24132507747",
+   "risk": "LOW - restores a targeted location",
+   "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+  },
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~138360213",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "138360213",
+   "match_type": "PHRASE",
+   "negative_text": "savage",
+   "current_state": "negative KEYWORD [PHRASE] 'savage' ENABLED",
+   "proposed_state": "REMOVED",
+   "reason": "geoTargetConstants/1018704 'Savage,Savage,Maryland,United States' is an ENABLED, non-negative positive LOCATION criterion on this campaign. The PHRASE negative blocks every query naming that targeted place. Verified against the 22,500-probe service-by-place grid: 300 of 300 Savage probes blocked, and it was the only negative responsible.",
+   "conflict_tests": {
+    "active_keywords": "clear - the 10 live positives contain no 'savage' token",
+    "converting_terms_account_wide_all_time": "clear - 0 of 304 contain 'savage'",
+    "targeted_locations": "RESTORES one - Savage MD, geoTargetConstants/1018704",
+    "bofu_probes": "clear - removal unblocks, never blocks",
+    "observed_search_terms": "0 rows since launch, which is the expected consequence of the negative suppressing them before reporting"
+   },
+   "rollback": "re-create campaign negative 'savage' [PHRASE] on campaign 24132507750",
+   "risk": "LOW - restores a targeted location",
+   "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+  },
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~138360213",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "138360213",
+   "match_type": "PHRASE",
+   "negative_text": "savage",
+   "current_state": "negative KEYWORD [PHRASE] 'savage' ENABLED",
+   "proposed_state": "REMOVED",
+   "reason": "geoTargetConstants/1018704 'Savage,Savage,Maryland,United States' is an ENABLED, non-negative positive LOCATION criterion on this campaign. The PHRASE negative blocks every query naming that targeted place. Verified against the 22,500-probe service-by-place grid: 300 of 300 Savage probes blocked, and it was the only negative responsible.",
+   "conflict_tests": {
+    "active_keywords": "clear - the 10 live positives contain no 'savage' token",
+    "converting_terms_account_wide_all_time": "clear - 0 of 304 contain 'savage'",
+    "targeted_locations": "RESTORES one - Savage MD, geoTargetConstants/1018704",
+    "bofu_probes": "clear - removal unblocks, never blocks",
+    "observed_search_terms": "0 rows since launch, which is the expected consequence of the negative suppressing them before reporting"
+   },
+   "rollback": "re-create campaign negative 'savage' [PHRASE] on campaign 24132507753",
+   "risk": "LOW - restores a targeted location",
+   "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+  }
+ ],
+ "notes": {
+  "supersedes": "part of AMB-0909B-NEG-A (18143479027D) - SUPERSEDED, DO_NOT_EXECUTE",
+  "split_note": "The correction brief asked for a 10-operation NEG-CORE combining 'savage' and 'licensed'. The 'licensed' half could not clear its required proof and is held separately. See the report.",
+  "proof_savage_targeted": {
+   "rows": [
+    {
+     "campaign": "AC Repair",
+     "criterion_id": "1018704",
+     "status": "ENABLED",
+     "negative": false,
+     "geo_id": "1018704"
+    },
+    {
+     "campaign": "Gas Boiler Repair",
+     "criterion_id": "1018704",
+     "status": "ENABLED",
+     "negative": false,
+     "geo_id": "1018704"
+    },
+    {
+     "campaign": "HVAC Installation",
+     "criterion_id": "1018704",
+     "status": "ENABLED",
+     "negative": false,
+     "geo_id": "1018704"
+    },
+    {
+     "campaign": "HVAC Repair",
+     "criterion_id": "1018704",
+     "status": "ENABLED",
+     "negative": false,
+     "geo_id": "1018704"
+    },
+    {
+     "campaign": "HVAC Replacement",
+     "criterion_id": "1018704",
+     "status": "ENABLED",
+     "negative": false,
+     "geo_id": "1018704"
+    }
+   ],
+   "proven": true
+  },
+  "geo_constant": {
+   "canonical": "Savage,Savage,Maryland,United States",
+   "type": "Neighborhood",
+   "status": "ENABLED"
+  }
+ },
+ "fingerprint": "10F76004E1B6"
+}

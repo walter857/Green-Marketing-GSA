@@ -1,0 +1,27 @@
+{
+ "run_local": "2026-08-27T19:01:07.530844-04:00",
+ "customer_id": "2401959466",
+ "mutations": 0,
+ "results": {
+  "A-1 competitor negatives (7)": {
+   "status": "VALIDATE_OK",
+   "operations": 7,
+   "results_returned": 0
+  },
+  "A-2 vehicle protection (1)": {
+   "status": "VALIDATE_OK",
+   "operations": 1,
+   "results_returned": 0
+  },
+  "D-1 remove hanover (1)": {
+   "status": "VALIDATE_OK",
+   "operations": 1,
+   "results_returned": 0
+  },
+  "D-2 equipment-brand removals (7)": {
+   "status": "VALIDATE_OK",
+   "operations": 7,
+   "results_returned": 0
+  }
+ }
+}

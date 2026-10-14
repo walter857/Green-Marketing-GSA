@@ -1,0 +1,21 @@
+{
+ "verification_run": "2026-08-21 08:05-08:12 America/New_York",
+ "mutations_performed": 0,
+ "identity": "PASS - Ambient Cooling - Live / 2401959466 / America/New_York / USD / not manager / not test",
+ "manager_links": {
+  "3373711342": "ACTIVE",
+  "2815082755": "ACTIVE"
+ },
+ "concurrency": "No live process targets 2401959466",
+ "drift": "NONE - all 11 inventory counts and all 5 budgets match the master report",
+ "conversion_readback": "PASS - 3 Primary, 4 Secondary, all 7 ENABLED, counting/attribution/lookback/call-duration/value/goals unchanged",
+ "rsa_policy": "BOTH APPROVED + REVIEWED, zero policy topics, byte-identical, no pins, no truncation",
+ "pacing_checkpoint": "NOT REACHED at run time (08:05 ET vs 11:35 ET). Budget line withheld.",
+ "packages": {
+  "D441DEFC58EB5643": "READY - validate OK, gates pass",
+  "44145A2CE26A811B": "READY - supersedes E6D25322E35F3E62 (VOID)",
+  "5DA7527B19276C0D": "HELD - awaiting post-11:35 checkpoint",
+  "93A9DF4AA19675E8": "NOT DEPLOYABLE - specification only",
+  "E6D25322E35F3E62": "VOID - negated commercial boiler against landing-page evidence"
+ }
+}

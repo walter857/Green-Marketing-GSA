@@ -1,0 +1,57 @@
+resource_type,final_group,resource_id,live_name,current_state,proposed_state,action,keyword_text,match_type,final_url,in_plan
+AD_GROUP,Power Washing,202870585390,Power Washing Near Me,ENABLED,UNCHANGED (reuse),REUSE EXISTING,,,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,NO
+AD_GROUP,Pressure Washing,202870585870,Residential Pressure Washing Near Me,PAUSED,UNCHANGED (reuse),REUSE EXISTING,,,https://offer.softwindli.com/residential-pressure-washing/,NO
+AD_GROUP,House Washing,202870585910,House Washing Company Near Me,PAUSED,UNCHANGED (reuse),REUSE EXISTING,,,https://offer.softwindli.com/house-washing-company/,NO
+AD_GROUP,Soft Washing,202870586310,Soft House Washing Near Me,PAUSED,UNCHANGED (reuse),REUSE EXISTING,,,https://offer.softwindli.com/soft-house-washing/,NO
+AD_GROUP,Driveway Pressure Washing,202870586110,Driveway Pressure Washing Near Me,PAUSED,UNCHANGED (reuse),REUSE EXISTING,,,https://offer.softwindli.com/driveway-pressure-washing/,NO
+AD_GROUP,Patio Pressure Washing,202870586150,Patio Pressure Washing Near Me,PAUSED,UNCHANGED (reuse),REUSE EXISTING,,,https://offer.softwindli.com/patio-power-washing/,NO
+KEYWORD,Power Washing,202870585390,,ENABLED,UNCHANGED,REUSE EXISTING,power washing near me,PHRASE,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,NO
+KEYWORD,Power Washing,202870585390,,ENABLED,UNCHANGED,REUSE EXISTING,power washing near me,EXACT,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,NO
+KEYWORD,Pressure Washing,202870585870,,ENABLED,UNCHANGED,REUSE EXISTING,residential pressure washing near me,PHRASE,https://offer.softwindli.com/residential-pressure-washing/,NO
+KEYWORD,Pressure Washing,202870585870,,ENABLED,UNCHANGED,REUSE EXISTING,residential pressure washing near me,EXACT,https://offer.softwindli.com/residential-pressure-washing/,NO
+KEYWORD,Soft Washing,202870586310,,ENABLED,UNCHANGED,REUSE EXISTING,soft house washing near me,PHRASE,https://offer.softwindli.com/soft-house-washing/,NO
+KEYWORD,Soft Washing,202870586310,,ENABLED,UNCHANGED,REUSE EXISTING,soft house washing near me,EXACT,https://offer.softwindli.com/soft-house-washing/,NO
+KEYWORD,Driveway Pressure Washing,202870586110,,ENABLED,UNCHANGED,REUSE EXISTING,driveway pressure washing near me,PHRASE,https://offer.softwindli.com/driveway-pressure-washing/,NO
+KEYWORD,Driveway Pressure Washing,202870586110,,ENABLED,UNCHANGED,REUSE EXISTING,driveway pressure washing near me,EXACT,https://offer.softwindli.com/driveway-pressure-washing/,NO
+KEYWORD,Patio Pressure Washing,202870586150,,ENABLED,UNCHANGED,REUSE EXISTING,patio pressure washing near me,PHRASE,https://offer.softwindli.com/patio-power-washing/,NO
+KEYWORD,Patio Pressure Washing,202870586150,,ENABLED,UNCHANGED,REUSE EXISTING,patio pressure washing near me,EXACT,https://offer.softwindli.com/patio-power-washing/,NO
+KEYWORD,Power Washing,202870585390,,DOES NOT EXIST,PAUSED,CREATE PAUSED,power washing,PHRASE,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,YES
+KEYWORD,Power Washing,202870585390,,DOES NOT EXIST,PAUSED,CREATE PAUSED,power washing,EXACT,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,YES
+KEYWORD,Power Washing,202870585390,,DOES NOT EXIST,PAUSED,CREATE PAUSED,power washing service,PHRASE,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,YES
+KEYWORD,Power Washing,202870585390,,DOES NOT EXIST,PAUSED,CREATE PAUSED,power washing service,EXACT,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,YES
+KEYWORD,Power Washing,202870585390,,DOES NOT EXIST,PAUSED,CREATE PAUSED,power washing services near me,PHRASE,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,YES
+KEYWORD,Power Washing,202870585390,,DOES NOT EXIST,PAUSED,CREATE PAUSED,power washing services near me,EXACT,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,YES
+KEYWORD,Power Washing,202870585390,,DOES NOT EXIST,PAUSED,CREATE PAUSED,power washing company near me,PHRASE,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,YES
+KEYWORD,Power Washing,202870585390,,DOES NOT EXIST,PAUSED,CREATE PAUSED,power washing company near me,EXACT,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,YES
+KEYWORD,Pressure Washing,202870585870,,DOES NOT EXIST,PAUSED,CREATE PAUSED,pressure washing,PHRASE,https://offer.softwindli.com/residential-pressure-washing/,YES
+KEYWORD,Pressure Washing,202870585870,,DOES NOT EXIST,PAUSED,CREATE PAUSED,pressure washing,EXACT,https://offer.softwindli.com/residential-pressure-washing/,YES
+KEYWORD,Pressure Washing,202870585870,,DOES NOT EXIST,PAUSED,CREATE PAUSED,pressure washing near me,PHRASE,https://offer.softwindli.com/residential-pressure-washing/,YES
+KEYWORD,Pressure Washing,202870585870,,DOES NOT EXIST,PAUSED,CREATE PAUSED,pressure washing near me,EXACT,https://offer.softwindli.com/residential-pressure-washing/,YES
+KEYWORD,House Washing,202870585910,,DOES NOT EXIST,PAUSED,CREATE PAUSED,house washing near me,PHRASE,https://offer.softwindli.com/house-washing-company/,YES
+KEYWORD,House Washing,202870585910,,DOES NOT EXIST,PAUSED,CREATE PAUSED,house washing near me,EXACT,https://offer.softwindli.com/house-washing-company/,YES
+KEYWORD,House Washing,202870585910,,DOES NOT EXIST,PAUSED,CREATE PAUSED,house pressure washing near me,PHRASE,https://offer.softwindli.com/house-washing-company/,YES
+KEYWORD,House Washing,202870585910,,DOES NOT EXIST,PAUSED,CREATE PAUSED,house pressure washing near me,EXACT,https://offer.softwindli.com/house-washing-company/,YES
+KEYWORD,House Washing,202870585910,,DOES NOT EXIST,PAUSED,CREATE PAUSED,house power washing near me,PHRASE,https://offer.softwindli.com/house-washing-company/,YES
+KEYWORD,House Washing,202870585910,,DOES NOT EXIST,PAUSED,CREATE PAUSED,house power washing near me,EXACT,https://offer.softwindli.com/house-washing-company/,YES
+KEYWORD,House Washing,202870585910,,DOES NOT EXIST,PAUSED,CREATE PAUSED,exterior house washing near me,PHRASE,https://offer.softwindli.com/house-washing-company/,YES
+KEYWORD,House Washing,202870585910,,DOES NOT EXIST,PAUSED,CREATE PAUSED,exterior house washing near me,EXACT,https://offer.softwindli.com/house-washing-company/,YES
+KEYWORD,Soft Washing,202870586310,,DOES NOT EXIST,PAUSED,CREATE PAUSED,soft washing near me,PHRASE,https://offer.softwindli.com/soft-house-washing/,YES
+KEYWORD,Soft Washing,202870586310,,DOES NOT EXIST,PAUSED,CREATE PAUSED,soft washing near me,EXACT,https://offer.softwindli.com/soft-house-washing/,YES
+KEYWORD,Driveway Pressure Washing,202870586110,,DOES NOT EXIST,PAUSED,CREATE PAUSED,driveway power washing near me,PHRASE,https://offer.softwindli.com/driveway-pressure-washing/,YES
+KEYWORD,Driveway Pressure Washing,202870586110,,DOES NOT EXIST,PAUSED,CREATE PAUSED,driveway power washing near me,EXACT,https://offer.softwindli.com/driveway-pressure-washing/,YES
+KEYWORD,Patio Pressure Washing,202870586150,,DOES NOT EXIST,PAUSED,CREATE PAUSED,patio power washing near me,PHRASE,https://offer.softwindli.com/patio-power-washing/,YES
+KEYWORD,Patio Pressure Washing,202870586150,,DOES NOT EXIST,PAUSED,CREATE PAUSED,patio power washing near me,EXACT,https://offer.softwindli.com/patio-power-washing/,YES
+KEYWORD,Patio Pressure Washing,202870586150,,DOES NOT EXIST,PAUSED,CREATE PAUSED,concrete pressure washing near me,PHRASE,https://offer.softwindli.com/patio-power-washing/,YES
+KEYWORD,Patio Pressure Washing,202870586150,,DOES NOT EXIST,PAUSED,CREATE PAUSED,concrete pressure washing near me,EXACT,https://offer.softwindli.com/patio-power-washing/,YES
+RSA,Power Washing,202870585390,RSA 1,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,YES
+RSA,Power Washing,202870585390,RSA 2,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/,YES
+RSA,Pressure Washing,202870585870,RSA 1,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/residential-pressure-washing/,YES
+RSA,Pressure Washing,202870585870,RSA 2,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/residential-pressure-washing/,YES
+RSA,House Washing,202870585910,RSA 1,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/house-washing-company/,YES
+RSA,House Washing,202870585910,RSA 2,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/house-washing-company/,YES
+RSA,Soft Washing,202870586310,RSA 1,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/soft-house-washing/,YES
+RSA,Soft Washing,202870586310,RSA 2,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/soft-house-washing/,YES
+RSA,Driveway Pressure Washing,202870586110,RSA 1,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/driveway-pressure-washing/,YES
+RSA,Driveway Pressure Washing,202870586110,RSA 2,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/driveway-pressure-washing/,YES
+RSA,Patio Pressure Washing,202870586150,RSA 1,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/patio-power-washing/,YES
+RSA,Patio Pressure Washing,202870586150,RSA 2,DOES NOT EXIST,PAUSED,CREATE PAUSED,,,https://offer.softwindli.com/patio-power-washing/,YES

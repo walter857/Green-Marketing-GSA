@@ -1,0 +1,61 @@
+{
+ "generated_local": "2026-08-27T19:01:52.147362-04:00",
+ "customer_id": "2401959466",
+ "window_settled": "2026-08-01..2026-08-26",
+ "note": "Platform = what Google Ads reports. Adjusted = platform minus the WC Lead conversion of 2026-08-20, which predates the 2026-08-21 Plan B fix and is a historical reporting artifact. NEITHER number is a count of qualified leads; WhatConverts access is unavailable.",
+ "account": {
+  "cost": 4820.12,
+  "platform_primary_conversions": 6.0,
+  "wc_lead_historical_artifact": 1.0,
+  "adjusted_primary_conversions": 5.0,
+  "platform_cpl": 803.35,
+  "adjusted_cpl": 964.02
+ },
+ "campaigns": {
+  "AC Repair": {
+   "cost": 1719.33,
+   "clicks": 19,
+   "platform_primary_conversions": 3.0,
+   "wc_lead_historical_artifact": 0.0,
+   "adjusted_primary_conversions": 3.0,
+   "platform_cpl": 573.11,
+   "adjusted_cpl": 573.11
+  },
+  "Gas Boiler Repair": {
+   "cost": 0.0,
+   "clicks": 0,
+   "platform_primary_conversions": 0.0,
+   "wc_lead_historical_artifact": 0.0,
+   "adjusted_primary_conversions": 0.0,
+   "platform_cpl": null,
+   "adjusted_cpl": null
+  },
+  "HVAC Installation": {
+   "cost": 1987.98,
+   "clicks": 79,
+   "platform_primary_conversions": 0.0,
+   "wc_lead_historical_artifact": 0.0,
+   "adjusted_primary_conversions": 0.0,
+   "platform_cpl": null,
+   "adjusted_cpl": null
+  },
+  "HVAC Repair": {
+   "cost": 1010.98,
+   "clicks": 12,
+   "platform_primary_conversions": 3.0,
+   "wc_lead_historical_artifact": 1.0,
+   "adjusted_primary_conversions": 2.0,
+   "platform_cpl": 336.99,
+   "adjusted_cpl": 505.49
+  },
+  "HVAC Replacement": {
+   "cost": 101.83,
+   "clicks": 3,
+   "platform_primary_conversions": 0.0,
+   "wc_lead_historical_artifact": 0.0,
+   "adjusted_primary_conversions": 0.0,
+   "platform_cpl": null,
+   "adjusted_cpl": null
+  }
+ }
+}

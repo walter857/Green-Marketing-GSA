@@ -1,0 +1,142 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-24",
+ "plan_name": "AMB-0924-NEG-THERMO-1",
+ "approval_class": "negative-keyword-move",
+ "order": "adds first (one mutate), then the two account-level removals",
+ "why": "Account-level BROAD [thermostat]/[thermostats] block every keyword of the approved thermostat services (124 reachable probes). The same exclusion is re-created at campaign level on every other enabled heating campaign and the three paused cooling campaigns, so no other ad group starts matching thermostat searches. A one-word PHRASE negative blocks exactly what a one-word BROAD negative blocks.",
+ "reversible": "re-add the two account-level negatives",
+ "serving_effect_today": "none: Thermostat Services 24268690041 stays PAUSED until ENABLE",
+ "operations": [
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24132507744",
+   "text": "thermostat",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24132507744",
+   "text": "thermostats",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24274160783",
+   "text": "thermostat",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24274160783",
+   "text": "thermostats",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24132507747",
+   "text": "thermostat",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24132507747",
+   "text": "thermostats",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24268690038",
+   "text": "thermostat",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24268690038",
+   "text": "thermostats",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24257819466",
+   "text": "thermostats",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24257819463",
+   "text": "thermostats",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24279798229",
+   "text": "thermostat",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24279798229",
+   "text": "thermostats",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24132507741",
+   "text": "thermostat",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24132507741",
+   "text": "thermostats",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24132507750",
+   "text": "thermostat",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24132507750",
+   "text": "thermostats",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24132507753",
+   "text": "thermostat",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE",
+   "campaign_id": "24132507753",
+   "text": "thermostats",
+   "match": "PHRASE"
+  },
+  {
+   "op": "REMOVE_ACCOUNT_LEVEL_NEGATIVE",
+   "shared_set_id": "11252984411",
+   "criterion_id": "10624201",
+   "text": "thermostat",
+   "match": "BROAD"
+  },
+  {
+   "op": "REMOVE_ACCOUNT_LEVEL_NEGATIVE",
+   "shared_set_id": "11252984411",
+   "criterion_id": "10624211",
+   "text": "thermostats",
+   "match": "BROAD"
+  }
+ ],
+ "operation_count": 20,
+ "preflight": {
+  "NEG add campaign PHRASE negatives": "VALIDATED 18",
+  "NEG remove account-level thermostat": "VALIDATED 2"
+ },
+ "fingerprint": "27A2CBA6A008"
+}

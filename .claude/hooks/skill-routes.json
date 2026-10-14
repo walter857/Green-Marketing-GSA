@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "max_routes": 3,
+  "max_support": 4,
+  "precedence": "Supporting skills are reference only (CLAUDE.md source priority item 5): they never override the work order, client facts, account data, agency policy, the approval workflow, or the safety rules.",
+  "external_skills": ["dataviz"],
+  "routes": [
+    {
+      "id": "onboard",
+      "patterns": ["\\bonboard", "new client", "client intake", "\\bintake\\b", "work[- ]order", "client gate"],
+      "primary": ["gsa-onboard"],
+      "support": [],
+      "note": "Collect the exact child account name, 10-digit child customer ID, and exact service before anything else."
+    },
+    {
+      "id": "discover-services",
+      "patterns": ["discover (the )?services", "service discovery", "what services", "which services", "services (they|the client|it) (offer|provide)"],
+      "primary": ["gsa-discover-services"],
+      "support": [],
+      "note": "Service examples are research prompts, not proof the client offers a service."
+    },
+    {
+      "id": "audit",
+      "patterns": ["\\baudit", "health ?check", "account review", "review (the|this|my|their) (account|campaigns?)", "\\bdiagnos", "(drop|decline|dip|fell|falling|down) in (leads|conversions|calls|clicks|impressions)", "(leads|conversions|calls|clicks|impressions) (dropped|declined|fell|are down|went down)", "not converting", "low (lead|conversion) volume"],
+      "primary": ["gsa-audit"],
+      "support": ["google-skills:google-ads-api-account-diagnostics", "google-ads-full:google-ads-audit", "google-ads-full:google-ads-analysis"],
+      "note": "Take a fresh read-only snapshot first. google-ads-full:google-ads-audit scores Broad, PMax, and Display coverage; agency policy (Search, Phrase + Exact) wins."
+    },
+    {
+      "id": "keywords",
+      "patterns": ["keyword (research|list|plan|ideas|themes?)", "\\bskags?\\b", "match types?", "new keywords?", "add keywords?", "keyword planner", "search volume", "campaign (structure|architecture|build)", "build (a |the |new )?campaign", "new campaign", "ad groups?"],
+      "primary": ["gsa-build-campaign"],
+      "support": ["all-skills:keyword-research"],
+      "note": "all-skills:keyword-research pairs Broad Match with Smart Bidding; the agency default is BOFU Phrase + Exact with no Broad without explicit approval. Keyword Planner synonyms share one volume bucket; never sum them."
+    },
+    {
+      "id": "ad-copy",
+      "patterns": ["\\brsas?\\b", "responsive search ads?", "ad copy", "headlines?", "\\bad text", "sitelinks?", "callouts?", "structured snippets?", "ad assets?", "ad strength"],
+      "primary": ["gsa-build-campaign"],
+      "support": ["all-skills:ad-copy-generation"],
+      "note": "Two RSAs per ad group tailored to the keyword and landing page; verified claims only; 30/90 character limits; optimize for qualified leads, not Ad Strength."
+    },
+    {
+      "id": "negatives",
+      "patterns": ["negative (keywords?|list)", "\\bnegatives\\b", "search terms?", "search[- ]term report", "wasted spend", "irrelevant (queries|clicks|traffic|searches)", "block (queries|terms|searches)"],
+      "primary": ["gsa-clean-negatives"],
+      "support": ["google-ads-full:google-ads-analysis"],
+      "note": "Keep raw search terms out of context (aggregates only). Intent-check every negative; never auto-negative near me, quote, price, pricing, cost, best, hire, local, or emergency."
+    },
+    {
+      "id": "conversions",
+      "patterns": ["conversion (tracking|actions?|goals?|setup|values?|isolation)", "track(ing)? (calls|forms|leads|phone)", "\\bgtm\\b", "tag manager", "\\bgclid", "\\bgbraid", "\\bwbraid", "whatconverts", "call tracking", "\\bcrm\\b", "closed[- ]won", "(primary|secondary) conversions?", "\\bdni\\b"],
+      "primary": ["gsa-conversions"],
+      "support": ["all-skills:conversion-tracking"],
+      "note": "Separate primary bidding conversions from secondary diagnostics; dedupe by lead or transaction ID; read all goal layers before proposing a conversion mutation."
+    },
+    {
+      "id": "offline-conversions",
+      "patterns": ["offline conversions?", "data manager", "upload (conversions|leads|calls)", "conversion uploads?", "enhanced conversions", "import conversions"],
+      "primary": ["gsa-conversions"],
+      "support": ["google-skills:data-manager-api-event-ingestion", "google-skills:data-manager-api-setup"],
+      "note": "New offline-conversion integrations use the Data Manager API; use the legacy Google Ads upload path only after confirming developer-token eligibility. Never print lead PII."
+    },
+    {
+      "id": "landing-page",
+      "patterns": ["landing pages?", "\\blps?\\b", "page copy", "hero (section|headline)", "above the fold", "\\bcro\\b", "conversion rate optimi", "thank[- ]you page", "wordpress", "page template", "page speed"],
+      "primary": ["gsa-build-landing-page"],
+      "support": ["all-skills:landing-page-audit"],
+      "note": "Read LANDING_PAGE_CONTENT_WORKFLOW.md completely first. Visual and tracking QA need a real browser; curl and WebFetch can receive a captcha stub."
+    },
+    {
+      "id": "budget-bids",
+      "patterns": ["\\bbudgets?\\b", "\\bbids?\\b", "\\bbidding\\b", "\\bcpcs?\\b", "maximi[sz]e (clicks|conversions)", "target (cpa|roas)", "\\bt(cpa|roas)\\b", "\\bpacing\\b", "(over|under)spend", "forecast", "\\bcpl\\b", "\\bcpql\\b", "\\bcac\\b", "\\broas\\b", "break[- ]even", "cost per (lead|acquisition|conversion|qualified)", "\\bprofit"],
+      "primary": ["green-marketing-gsa"],
+      "support": ["google-ads-full:google-ads-math", "all-skills:budget-optimization"],
+      "note": "Monthly spend = daily x 30.4. Split CPC stats by ceiling regime and by converting vs non-converting clicks before judging a cap. Budget changes need separate approval."
+    },
+    {
+      "id": "quality-score",
+      "patterns": ["quality score", "\\bqs\\b", "ad rank", "expected ctr", "ad relevance", "landing page experience", "impression share", "\\blost is\\b"],
+      "primary": [],
+      "support": ["all-skills:quality-score-optimization", "google-skills:google-ads-api-account-diagnostics"],
+      "note": "Establish whether Quality Score indicts the landing page or the bid before proposing a bid change."
+    },
+    {
+      "id": "competitors",
+      "patterns": ["competitors?", "competitive", "auction insights?", "overlap rate", "outranking", "share of voice"],
+      "primary": [],
+      "support": ["all-skills:competitor-analysis"],
+      "note": "Every competitor claim must quote a sourced search result in context; never write plausible domains."
+    },
+    {
+      "id": "pmax",
+      "patterns": ["performance max", "\\bpmax\\b", "asset groups?"],
+      "primary": ["green-marketing-gsa"],
+      "support": ["all-skills:pmax-optimization"],
+      "note": "Performance Max is not an agency default and needs explicit approval. Choose PMax services by the typical per-job revenue of services the client offers."
+    },
+    {
+      "id": "remarketing",
+      "patterns": ["remarketing", "retargeting", "\\brlsa\\b", "in-market", "similar (audiences|segments)", "audience (targeting|segments?|lists?)"],
+      "primary": ["green-marketing-gsa"],
+      "support": ["all-skills:remarketing-strategy"],
+      "note": "Remarketing needs its own audience, consent, budget, and measurement plan; no cold Display by default."
+    },
+    {
+      "id": "customer-match",
+      "patterns": ["customer match", "upload (an )?audience", "audience (upload|ingestion)", "customer list"],
+      "primary": ["green-marketing-gsa"],
+      "support": ["google-skills:data-manager-api-audience-ingestion"],
+      "note": "Customer data uploads need consent confirmation and approval; never print or log customer PII."
+    },
+    {
+      "id": "lsa",
+      "patterns": ["local services ads?", "\\blsa\\b", "google guaranteed", "google screened"],
+      "primary": ["green-marketing-gsa"],
+      "support": [],
+      "note": "Keep LSA, standard Search, and Maps work as separate plans with separate requirements."
+    },
+    {
+      "id": "ga4-reporting",
+      "patterns": ["\\bga4\\b", "google analytics", "analytics (property|data|reports?)"],
+      "primary": [],
+      "support": ["google-skills:google-analytics-data-api-basics"],
+      "note": "Use the GA4 Data API read-only."
+    },
+    {
+      "id": "ga4-admin",
+      "patterns": ["custom dimensions?", "data streams?", "key events?", "ga4 (setup|config|admin)", "analytics admin"],
+      "primary": [],
+      "support": ["google-skills:google-analytics-admin-api-basics"],
+      "note": "GA4 configuration changes are external writes and need explicit approval."
+    },
+    {
+      "id": "ads-api",
+      "patterns": ["google ads api", "\\bgaql\\b", "client library", "developer token", "login[-_ ]customer[-_ ]id", "user_permission_denied", "developer_token_not_approved", "field[_ ]mask", "mutate (error|failed|failure)", "api version"],
+      "primary": [],
+      "support": ["google-skills:retrieving-developer-knowledge"],
+      "note": "Verify fields against current official docs; if the Developer Knowledge lookup fails on credentials, fall back to WebFetch on developers.google.com. validate_only burns the same mutate quota as a real write."
+    },
+    {
+      "id": "ads-mcp",
+      "patterns": ["google[- ]ads[- ]mcp", "mcp server.*google ads", "google ads.*\\bmcp\\b"],
+      "primary": [],
+      "support": ["google-skills:google-ads-api-mcp-setup"],
+      "note": "Use Google's official server only. Never configure the itallstartedwithaidea google-ads-mcp server: its generic_mutate tool bypasses the client gate. Adding an MCP server needs explicit approval."
+    },
+    {
+      "id": "reporting",
+      "patterns": ["(client|owner|monthly|weekly|performance|profit) reports?", "\\breporting\\b", "dashboards?", "\\bcharts?\\b", "\\bgraphs?\\b", "visuali[sz]", "(weekly|monthly) (update|summary|recap)"],
+      "primary": ["green-marketing-gsa"],
+      "support": ["dataviz"],
+      "note": "Show spend, leads, qualified leads, sales, revenue, gross profit, CPL, CPQL, CAC, ROAS, and profit after ad spend; state formulas and missing costs. Divide spend averages by calendar days. Never publish owner reports as shareable pages."
+    },
+    {
+      "id": "debugging",
+      "patterns": ["traceback", "stack ?trace", "\\bpytest\\b", "fail(ing|ed)? tests?", "tests? (fail|failing|broke|broken)", "\\bdebug", "\\b(key|type|value|attribute|import|name)error\\b", "\\bexception\\b", "\\bbug\\b", "\\bcrash"],
+      "primary": [],
+      "support": ["all-skills:systematic-debugging"],
+      "note": "Reproduce and find the root cause before fixing. Run tests with the project venv."
+    },
+    {
+      "id": "code-change",
+      "patterns": ["write (a |the )?tests?", "unit tests?", "add (a |an )?(validator|script|function|module|test)", "new validator", "\\brefactor", "\\btdd\\b"],
+      "primary": [],
+      "support": ["all-skills:test-driven-development"],
+      "note": "Match repo idioms. Validate gm_gsa changes by direct import; the CLI exits 0 silently."
+    },
+    {
+      "id": "decision",
+      "patterns": ["should (we|i)\\b", "\\brecommend", "what do you (think|suggest)", "which (option|approach|strategy|is better)", "trade-?offs?", "\\bdecide\\b", "\\bdecision", "\\bstrategy\\b", "prioriti[sz]", "what (would|should) you do"],
+      "primary": [],
+      "support": [],
+      "note": "Before recommending, search the client's work order, plans, and memory for settled or EXCLUDED decisions. Score options with the CLAUDE.md decision standard (qualified-lead impact, intent, conversion evidence, measurement reliability, budget efficiency, landing-page fit, risk, reversibility) and give one recommendation, not a menu."
+    }
+  ]
+}

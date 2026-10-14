@@ -1,0 +1,516 @@
+{
+ "generated": "2026-08-27",
+ "supersedes": "receipts/fingerprint-manifest-2026-08-22b.json",
+ "note": "Rebuilt from the plan files on disk. The 2026-08-22b manifest omitted DEVELOPER-HANDOFF-ADDENDUM-C-2026-08-22.json, so the ledger and the directory disagreed. Never execute on a fingerprint that does not reproduce from its file.",
+ "plan_files_on_disk": 50,
+ "added_since_prior_manifest": [
+  "AMBIENT-CONSOLIDATED-2026-08-27.json",
+  "AMBIENT-CONV-1-2026-08-27.json",
+  "AMBIENT-DEL-1-2026-08-27.json",
+  "DEVELOPER-HANDOFF-ADDENDUM-C-2026-08-22.json"
+ ],
+ "in_prior_manifest_but_missing_on_disk": [],
+ "do_not_execute": [
+  "011EA574B826F45B",
+  "12E7572A25B9AFF0",
+  "18AA929B46A83104",
+  "1A0737BCFD1B980D",
+  "24243FC484DDAF64",
+  "44145A2CE26A811B",
+  "5DA7527B19276C0D",
+  "6A2DE7A6589CA2B7",
+  "80868F985D33B756",
+  "86EEAE3CB04B73AD",
+  "93A1EA55973F7A94",
+  "E6D25322E35F3E62",
+  "EF9FBA55926545F2",
+  "F6B00478EC422BCD"
+ ],
+ "awaiting_approval_2026_08_27": {
+  "AMBIENT-CONSOLIDATED-2026-08-27.json": "ACE80A09AC134C85",
+  "AMBIENT-CONV-1-2026-08-27.json": "EE6CFAD6667A95A1",
+  "AMBIENT-DEL-1-2026-08-27.json": "C3038EDD9E621944"
+ },
+ "still_blocked": {
+  "KEYWORD-GAS-BOILER-STAGE1-EXACT-2026-08-21-v2.json": {
+   "fingerprint": "3D823A10CB3C0B25",
+   "status": "APPROVED BUT STILL BLOCKED",
+   "reverified": "2026-08-27 in a real JS browser, desktop and mobile",
+   "detail": "offer.ambientcoolingandheating.com/gas-boiler-repair/ still renders 'Your HVAC Replacement in 3 Simple Steps'"
+  },
+  "LANDING-PAGE-PRODUCTION-DEPLOYMENT-2026-08-21.json": {
+   "fingerprint": "93A9DF4AA19675E8",
+   "status": "APPROVED BUT STILL BLOCKED",
+   "detail": "no website source, staging, backup or deployment authority in this environment"
+  }
+ },
+ "executed_do_not_re_execute": {
+  "BUDGET-STAGE1-HVAC-INSTALLATION-2026-08-21-v2.json": {
+   "fingerprint": "BFB9FD367F639CA4",
+   "executed": "2026-08-22 01:23 ET",
+   "reverified_2026_08_27": "budget 15787409441 = 176150000 micros"
+  },
+  "NEGATIVES-AUTOMOTIVE-AC-REPAIR-2026-08-22.json": {
+   "fingerprint": "EACEC7CBAE85FF2B",
+   "executed": "2026-08-22 09:36 ET",
+   "reverified_2026_08_27": "criterion ids 10008241 car, 10000390 auto, 10019071 boat, all ENABLED BROAD negatives on campaign 24132507741"
+  },
+  "HVAC-REPAIR-RSA-SWAP-2026-08-21.json": {
+   "fingerprint": "D441DEFC58EB5643",
+   "executed": "2026-08-21 08:36 ET",
+   "reverified_2026_08_27": "ads 821714108336 and 821714108339 ENABLED APPROVED; 820900825560 and 820900825563 PAUSED"
+  }
+ },
+ "plans": [
+  {
+   "file": "AMBIENT-CONSOLIDATED-2026-08-27.json",
+   "fingerprint_in_file": "ACE80A09AC134C85",
+   "approved_fingerprint": "ACE80A09AC134C85",
+   "void": false,
+   "status": "NEW 2026-08-27 - awaiting approval",
+   "file_sha256": "e23ac29137add1266b69356e50527ad2140896ef73ad09d30d65c694935ab6a5",
+   "in_prior_manifest": false
+  },
+  {
+   "file": "AMBIENT-CONV-1-2026-08-27.json",
+   "fingerprint_in_file": "EE6CFAD6667A95A1",
+   "approved_fingerprint": "EE6CFAD6667A95A1",
+   "void": false,
+   "status": "NEW 2026-08-27 - awaiting approval",
+   "file_sha256": "3f2fbd7564e1e7733ee76f8a156464a9224df1ef98e409169c7efea07ce05a0b",
+   "in_prior_manifest": false
+  },
+  {
+   "file": "AMBIENT-DEL-1-2026-08-27.json",
+   "fingerprint_in_file": "C3038EDD9E621944",
+   "approved_fingerprint": "C3038EDD9E621944",
+   "void": false,
+   "status": "NEW 2026-08-27 - awaiting approval",
+   "file_sha256": "f1724c425f282787c44d11f3dd4ad153b0c464a7b810d3ded32bbecdfde5d89a",
+   "in_prior_manifest": false
+  },
+  {
+   "file": "BUDGET-STAGE1-HVAC-INSTALLATION-2026-08-21-v2.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "BFB9FD367F639CA4",
+   "void": false,
+   "status": "EXECUTED 2026-08-22 01:23 ET, readback PASS. Do not re-execute.",
+   "file_sha256": "9778a05450b170934f7b960231cba24ac1de2d9d0c84cf128c9c7f4207a108c6",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "BUDGET-STAGE1-HVAC-INSTALLATION-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "5DA7527B19276C0D",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "1df2cc5407cb0f38868469b912950755b8081145788b1c613bf8110e1a98a759",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "DEVELOPER-HANDOFF-ADDENDUM-B-2026-08-22.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "7A28BBF93AF27F8D",
+   "void": false,
+   "status": "DOCUMENTATION ONLY - no Google Ads mutation",
+   "file_sha256": "54475331d41b37f332eefb0856d0b36cbd1ea47a7fff4a8e0d8db2c4b0127c5e",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "DEVELOPER-HANDOFF-ADDENDUM-C-2026-08-22.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "",
+   "void": false,
+   "status": "unclassified",
+   "file_sha256": "70d48dd5fd5449614ede35482470386de3517284874c2093f3b06d34f6b8c532",
+   "in_prior_manifest": false
+  },
+  {
+   "file": "DEVELOPER-HANDOFF-landing-pages-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "9EE19C066DC29D57",
+   "void": false,
+   "status": "DOCUMENTATION ONLY - no Google Ads mutation",
+   "file_sha256": "43345a695236503f50e5b5aa56766e2435da9fa55ba52dc4856aca10bfee4183",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "HVAC-REPAIR-RSA-SWAP-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "D441DEFC58EB5643",
+   "void": false,
+   "status": "EXECUTED 2026-08-21 08:36 ET. HVAC Repair RSA swap.",
+   "file_sha256": "592b871822708e37c9e9bfd60e1ed01507b8e6e53f7d7d57ef2ecec4009a570b",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "KEYWORD-GAS-BOILER-EXPANSION-2026-08-21-v2.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "44145A2CE26A811B",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "e0b0e7bce606f91ed8147804d452e9751dd90b7caf6bac470af66a32590452a3",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "KEYWORD-GAS-BOILER-EXPANSION-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "E6D25322E35F3E62",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "a0bde906f1ba555cc8681e2ee8e8c6a673b1fbd961a65f959faa5afde7f44632",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "KEYWORD-GAS-BOILER-STAGE1-EXACT-2026-08-21-v2.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "3D823A10CB3C0B25",
+   "void": false,
+   "status": "APPROVED BUT BLOCKED. Gas Boiler landing-page H2 defect still live as at 2026-08-22 09:40 ET. Do not execute until the page passes.",
+   "file_sha256": "21a1f01be5602c6e32631a33c471dd25099e200c21306f29778119f88c33578c",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "KEYWORD-GAS-BOILER-STAGE1-EXACT-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "1A0737BCFD1B980D",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "71c3ac93e1d55bbbffdce173df0fef0b11cf073b1b8bd02f93f40e4411355d94",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "LANDING-PAGE-PRODUCTION-DEPLOYMENT-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "93A9DF4AA19675E8",
+   "void": false,
+   "status": "APPROVED BUT BLOCKED. No website source, staging, backup or deploy authority in this environment. Handoff only.",
+   "file_sha256": "13db8e5724e39691da6a8f3c8778ba00a2ad7cac707a864fcd6c972c84cf5bf7",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "LP1-landing-page-remediation-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "56813A733CBA555A",
+   "void": false,
+   "status": "DOCUMENTATION ONLY - no Google Ads mutation",
+   "file_sha256": "b70201521141a4c7ce9a22a32fd7f892fa9521dbdd928602270404257c00d2e1",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "LP2-landing-page-implementation-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "F6B00478EC422BCD",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "7d5b81c2db8f44381697aadf18906e64e33918742c9fb685c56052fd5b0d7ed4",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "LP3-landing-page-corrected-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "C99270C413C34431",
+   "void": false,
+   "status": "DOCUMENTATION ONLY - no Google Ads mutation",
+   "file_sha256": "5cd1cfcf92d27ebdbf269737e83326f33d82a64b031ae55c6d02d6292d4e7b70",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "LP4-implementation-plan-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "4A5BB56E2F15A5D2",
+   "void": false,
+   "status": "DOCUMENTATION ONLY - no Google Ads mutation",
+   "file_sha256": "3b062f6c013012fd7981c1d95b0272027fecbf5ca0703252dad11c7307290255",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "NEGATIVES-AUTOMOTIVE-AC-REPAIR-2026-08-22.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "EACEC7CBAE85FF2B",
+   "void": false,
+   "status": "EXECUTED 2026-08-22 09:36 ET, readback PASS. Do not re-execute.",
+   "file_sha256": "3db7f9f30fc31877f2415efecd7e5221dd2e17685977a219cb084e9727d37120",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "P0-conversion-deduplication-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "011EA574B826F45B",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "2bc96f861d30b1caba066f797a3121576393cdb85781bd030dd2fd1df08036c0",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "P0-primary-conversion-set-cleanup-2026-08-20-v2.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "24243FC484DDAF64",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "12a27c27196c3fe6b2c74f2e36b5dff8899fc9974e63f15b0e5b618288a050a1",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "P0-remove-unverified-callouts-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "A21587057F5C113E",
+   "void": false,
+   "status": "EXECUTED 2026-08-20 15:01 ET. Unverified callouts removed.",
+   "file_sha256": "8dc9e538530179e82653d7b67a2160adb35c03a4f5d3facab20736509be4d4cc",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "P1-hvac-repair-rsas-diversified-2026-08-20-v3.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "1D964296F5C7CE79",
+   "void": false,
+   "status": "EXECUTED 2026-08-21 00:12 ET. HVAC Repair replacement RSAs.",
+   "file_sha256": "b682a69459217c16cd2a5b3d7586f3621461a64edcc2f40721103a8a7e7d4bcc",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "P1-hvac-repair-rsas-paused-2026-08-20-v2.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "86EEAE3CB04B73AD",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "f1304ed6d8c374b678472ed405ec1f1b3fb7a43e5df5fe833cd623fc18196d6b",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "P1-replacement-rsas-paused-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "18AA929B46A83104",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "f7ed47f52a8cffb60405f18eb8b794fbf9f4f4b9970b371810fb207fc2971dc2",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "P1-sitelinks-to-offer-subdomain-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "FFD4FC4647539998",
+   "void": false,
+   "status": "EXECUTED 2026-08-20 15:03 ET. Offer-subdomain sitelinks.",
+   "file_sha256": "515795c0cc9b217834b6190ea4b8c1f1cae6465914bb94efbd60b1a0a93aecdb",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "PLAN-A-conversion-whatconverts-qualified-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "EC6687D08385287E",
+   "void": false,
+   "status": "DOCUMENTATION ONLY - no Google Ads mutation",
+   "file_sha256": "457a1c2e9e8c931d2f3343f2b1d369027bc8e7b64daa77311e546e66f30c9a8d",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "PLAN-B-conversion-whatconverts-raw-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "03F125C189679E35",
+   "void": false,
+   "status": "EXECUTED 2026-08-21 00:09 ET. Conversion Plan B.",
+   "file_sha256": "5468d27b854cbb943852c5bf5afe3d470b13db6d498b2aaab5f34bc2a4993f6b",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "account-level-negative-cleanup-2026-08-18-v2.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "972EA0FC242137B0",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "6e087b89dd884cd6150bbf936893c125a94e6b0da9e4ed3ea98330da5176b98a",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "account-level-negative-cleanup-2026-08-18-v3.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "769F1C3332D88103",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "6b5c5571cb3cafd5d8c69933745952432ad58b96aee2b5d9badafe9a4be29c14",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "account-level-negative-cleanup-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "BC24DF875FCA1CDD",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "05806129e54f106dd1bcca670aa01fc6dc4e7e6d19383f6a7c5d55143b2c00c8",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "ad-schedule-24-7-only-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "6A2DE7A6589CA2B7",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "a52fe070c38b207db55b60207e50551737b7ae6b8178e7e345b47297b0b4c32a",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "august-budget-pacing-package-2026-08-19.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "EF9FBA55926545F2",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "456e05898ca7d8f0f11fd15fc9a15dd5d2ff5e75b141fe8f5229492774b2df4a",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "august-budget-staged-package-2026-08-19-v2.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "93A1EA55973F7A94",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "f31faf6b4bb36e88f65db71596d9c581580fa6060c7ff82c23e910e174dfe0d9",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "campaign-configuration-package-2026-08-18-v2.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "50701AE742FCDEEB",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "5eff011f50840ca5db4d19c815f37f80dbc81d60558385f21ad73312edbad5ab",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "campaign-configuration-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "3094F3F31663517F",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "b1024601b407702b50e2074d4f19a58fd9a2b13b50000f915c27fd077b713fa9",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "conversion-goal-package-2026-08-18-v2.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "F066F8D4FD642AD8",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "eee0e7e1d32dff3ded2651c9309ac3af54995d258c219da997dc0a38c3fcdf40",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "conversion-goal-package-2026-08-18-v3.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "14235B4F2AB57EA1",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "bc62af6983a203e598fa8ace7ba9780706a9c66c1675ccee47cb2975d3e9a602",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "conversion-goal-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "FDE2966C4695C96C",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "73ffa3cc468dea4259718d52ab54cf0dba26ce5264fbb73e91a6ffc13330c55f",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "delivery-and-call-schedule-package-2026-08-19.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "44D14DA4714BB6E8",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "eadd17ac847ee6fcc9248ae5d96775b7a8e062dff6ed4e384ef6a00460767a68",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "landing-page-remediation-package-2026-08-18-v2.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "1ACC048F5CA530D8",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "c04fa1639e9d2eb4e611f101a12d233a03acdc0d4751b341dc3880d90e413906",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "landing-page-remediation-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "BA865C2A697C5296",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "d7c260b46de5efc8bccc2d2bc307435b99980af78370c60ff55db2b328973c12",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "negative-keyword-approval-package-2026-08-17.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "12E7572A25B9AFF0",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "23ddff67df1bef50411f21971726eaec463a88c81a65a0f8b3b32dd66a8ead7d",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "negative-keyword-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "E0D26EF2943B941D",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "b095b5b589d60f9e80802379b361f7be6caec3f2e5c6d4e07e4ddc32269a49e5",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "protective-campaign-schedule-package-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "C6C3DFFC9BD5AF9B",
+   "void": false,
+   "status": "EXECUTED 2026-08-20 11:29 ET. Delivery schedule in force.",
+   "file_sha256": "a76d99279706a78d6809855ac487499929669ba64f0c93cdc5ecda7171924738",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "rsa-enablement-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "80868F985D33B756",
+   "void": true,
+   "status": "VOID - never execute",
+   "file_sha256": "c4017bd3c26ae2c3b100bfdf73c2322ce6ad8f95a3d13fa2b3897778a85c0845",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "rsa-partial-enable-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "EBBD339D6773D41F",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "5841ca0e052391a456bedecacd170bc402f982f28a8a14172d6e82f2d6426585",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "rsa-replacement-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "0BCC73A397580856",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "efec7ef58393fd50a324ca677cf37c2df89bd36af2a2f8367fe6a76c8e58bd4d",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "rsa-swap-in-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "5026CAD20F45F581",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "944b34d89fd9b14b54f9c01571a59b22335cd1264a1292a92dbf90f07cf26d0b",
+   "in_prior_manifest": true
+  },
+  {
+   "file": "sitelinks-only-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "approved_fingerprint": "EAEF0D02B1C68E1F",
+   "void": false,
+   "status": "superseded or historical - not scheduled for execution",
+   "file_sha256": "318bf48702e96f9419c371c86d3ffb12bd08e439b83dc667cd1420a353b00df9",
+   "in_prior_manifest": true
+  }
+ ]
+}

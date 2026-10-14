@@ -1,0 +1,29 @@
+# Read-only service discovery.
+#
+# Use this document only to answer one question: which services does this live
+# child account already advertise? It authorizes reads and nothing else.
+#
+# Do not add a service, vertical, scope_approval, or plan here. Those belong in
+# work-order.yaml after the user confirms the exact service.
+
+service_discovery:
+  client_slug: replace-me
+  business_name: ""
+  account:
+    exact_child_account_name: ""
+    child_customer_id: ""
+    manager_customer_id: ""
+    manager_account_name: ""
+  task:
+    type: service-discovery
+    mode: read
+    request: "Discover the advertised services before requesting an exact service."
+  authorization:
+    read_only_service_discovery: true
+    approved_by: ""
+    granted_on: ""
+    notes: ""
+  landing_pages:
+    fetch: true
+    max_pages: 8
+    allowed_hosts: []

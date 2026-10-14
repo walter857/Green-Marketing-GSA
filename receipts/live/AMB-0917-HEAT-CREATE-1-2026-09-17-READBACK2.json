@@ -1,0 +1,215 @@
+{
+ "plan": "AMB-0917-HEAT-CREATE-1",
+ "when": "2026-09-17T18:19:46.202321-04:00",
+ "read_only": true,
+ "external_writes": 0,
+ "assertions": [
+  {
+   "check": "REPAIR AI Max OFF",
+   "result": "PASS",
+   "detail": "False"
+  },
+  {
+   "check": "REPAIR AI Max bundling UNSPECIFIED",
+   "result": "PASS",
+   "detail": "UNSPECIFIED"
+  },
+  {
+   "check": "REPAIR broad-match keyword setting not opted in",
+   "result": "PASS",
+   "detail": "UNSPECIFIED"
+  },
+  {
+   "check": "REPAIR no asset automation opted in (Final URL expansion + auto-created assets)",
+   "result": "PASS",
+   "detail": "{'TEXT_ASSET_AUTOMATION': 'OPTED_OUT'}"
+  },
+  {
+   "check": "REPAIR no optimization goal types set",
+   "result": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "REPAIR primary_status PAUSED (cannot serve)",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "INSTALL AI Max OFF",
+   "result": "PASS",
+   "detail": "False"
+  },
+  {
+   "check": "INSTALL AI Max bundling UNSPECIFIED",
+   "result": "PASS",
+   "detail": "UNSPECIFIED"
+  },
+  {
+   "check": "INSTALL broad-match keyword setting not opted in",
+   "result": "PASS",
+   "detail": "UNSPECIFIED"
+  },
+  {
+   "check": "INSTALL no asset automation opted in (Final URL expansion + auto-created assets)",
+   "result": "PASS",
+   "detail": "{'TEXT_ASSET_AUTOMATION': 'OPTED_OUT'}"
+  },
+  {
+   "check": "INSTALL no optimization goal types set",
+   "result": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "INSTALL primary_status PAUSED (cannot serve)",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "SKAG | Furnace Repair primary_status not ELIGIBLE",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "SKAG | Furnace Repair status PAUSED",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "SKAG | Mini Split Installation primary_status not ELIGIBLE",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "SKAG | Mini Split Installation status PAUSED",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "18 keywords read back",
+   "result": "PASS",
+   "detail": "18"
+  },
+  {
+   "check": "no keyword DISAPPROVED",
+   "result": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "no keyword RARELY_SERVED (low search volume)",
+   "result": "PASS",
+   "detail": "['ELIGIBLE']"
+  },
+  {
+   "check": "4 RSAs read back",
+   "result": "PASS",
+   "detail": "4"
+  },
+  {
+   "check": "  RSA 825056834769 not DISAPPROVED",
+   "result": "PASS",
+   "detail": "UNKNOWN"
+  },
+  {
+   "check": "  RSA 825056834769 no destination policy topic",
+   "result": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "  RSA 825056834772 not DISAPPROVED",
+   "result": "PASS",
+   "detail": "UNKNOWN"
+  },
+  {
+   "check": "  RSA 825056834772 no destination policy topic",
+   "result": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "  RSA 825056834775 not DISAPPROVED",
+   "result": "PASS",
+   "detail": "UNKNOWN"
+  },
+  {
+   "check": "  RSA 825056834775 no destination policy topic",
+   "result": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "  RSA 825056834778 not DISAPPROVED",
+   "result": "PASS",
+   "detail": "UNKNOWN"
+  },
+  {
+   "check": "  RSA 825056834778 no destination policy topic",
+   "result": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "exactly one campaign named 'Search | NonBrand | Heating Repair | Central M...'",
+   "result": "PASS",
+   "detail": "1"
+  },
+  {
+   "check": "exactly one campaign named 'Search | NonBrand | Heating Installation | Cen...'",
+   "result": "PASS",
+   "detail": "1"
+  },
+  {
+   "check": "exactly one ad group named 'SKAG | Furnace Repair'",
+   "result": "PASS",
+   "detail": "1"
+  },
+  {
+   "check": "exactly one ad group named 'SKAG | Mini Split Installation'",
+   "result": "PASS",
+   "detail": "1"
+  },
+  {
+   "check": "the aborted first attempt left no orphaned budget (4 pre-existing orphans untouched)",
+   "result": "PASS",
+   "detail": "{}"
+  },
+  {
+   "check": "both plan budgets are attached, not orphaned",
+   "result": "PASS",
+   "detail": "['13433692985', '14810347898', '15044731597', '15466378777']"
+  }
+ ],
+ "keyword_approval_status": {
+  "UNDER_REVIEW": 18
+ },
+ "keyword_system_serving_status": [
+  "ELIGIBLE"
+ ],
+ "rsa_policy": [
+  {
+   "id": "825056834769",
+   "approval": "UNKNOWN",
+   "review": "REVIEW_IN_PROGRESS",
+   "topics": []
+  },
+  {
+   "id": "825056834772",
+   "approval": "UNKNOWN",
+   "review": "REVIEW_IN_PROGRESS",
+   "topics": []
+  },
+  {
+   "id": "825056834775",
+   "approval": "UNKNOWN",
+   "review": "REVIEW_IN_PROGRESS",
+   "topics": []
+  },
+  {
+   "id": "825056834778",
+   "approval": "UNKNOWN",
+   "review": "REVIEW_IN_PROGRESS",
+   "topics": []
+  }
+ ],
+ "summary": {
+  "pass": 34,
+  "fail": 0,
+  "total": 34
+ }
+}

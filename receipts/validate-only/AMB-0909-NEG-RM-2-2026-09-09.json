@@ -1,0 +1,43 @@
+{
+ "plan_name": "AMB-0909-NEG-RM-2",
+ "fingerprint": "A435FA09AC97",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "validate_only": true,
+ "partial_failure": false,
+ "operation_count": 18,
+ "operations_log": [
+  "REMOVE account-level negative [BROAD] 'al' (customers/2401959466/sharedCriteria/11252984411~10290751)",
+  "REMOVE account-level negative [BROAD] 'amana' (customers/2401959466/sharedCriteria/11252984411~10239666)",
+  "REMOVE account-level negative [BROAD] 'american' (customers/2401959466/sharedCriteria/11252984411~10058461)",
+  "REMOVE account-level negative [BROAD] 'armstrong' (customers/2401959466/sharedCriteria/11252984411~11196456)",
+  "REMOVE account-level negative [BROAD] 'bosch' (customers/2401959466/sharedCriteria/11252984411~10060921)",
+  "REMOVE account-level negative [BROAD] 'bryant' (customers/2401959466/sharedCriteria/11252984411~12405291)",
+  "REMOVE account-level negative [BROAD] 'carrier' (customers/2401959466/sharedCriteria/11252984411~10278361)",
+  "REMOVE account-level negative [BROAD] 'commercial' (customers/2401959466/sharedCriteria/11252984411~10061081)",
+  "REMOVE account-level negative [BROAD] 'daikin' (customers/2401959466/sharedCriteria/11252984411~10574272)",
+  "REMOVE account-level negative [BROAD] 'goodman' (customers/2401959466/sharedCriteria/11252984411~12341233)",
+  "REMOVE account-level negative [BROAD] 'lennox' (customers/2401959466/sharedCriteria/11252984411~10889141)",
+  "REMOVE account-level negative [BROAD] 'mitsubishi' (customers/2401959466/sharedCriteria/11252984411~10034531)",
+  "REMOVE account-level negative [BROAD] 'mr' (customers/2401959466/sharedCriteria/11252984411~10315936)",
+  "REMOVE account-level negative [BROAD] 'rheem' (customers/2401959466/sharedCriteria/11252984411~10889241)",
+  "REMOVE account-level negative [BROAD] 'ruud' (customers/2401959466/sharedCriteria/11252984411~12341163)",
+  "REMOVE account-level negative [BROAD] 'thermostat' (customers/2401959466/sharedCriteria/11252984411~10624201)",
+  "REMOVE account-level negative [BROAD] 'thermostats' (customers/2401959466/sharedCriteria/11252984411~10624211)",
+  "REMOVE account-level negative [BROAD] 'trane' (customers/2401959466/sharedCriteria/11252984411~10889151)"
+ ],
+ "identity": {
+  "descriptive_name == 'Ambient Cooling - Live'": true,
+  "customer.id == 2401959466": true,
+  "not a manager account": true,
+  "not a test account": true,
+  "time_zone == America/New_York": true,
+  "currency_code == USD": true,
+  "Green Marketing manager 3373711342 ACTIVE": true,
+  "ClickCease manager 2815082755 ACTIVE": true
+ },
+ "started_local": "2026-09-09T15:02:34.735287-04:00",
+ "status": "VALIDATED_OK",
+ "results_returned": 0,
+ "finished_local": "2026-09-09T15:02:35.166274-04:00"
+}

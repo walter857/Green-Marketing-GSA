@@ -1,0 +1,173 @@
+{
+ "source_file": "C:\\Users\\walte\\Downloads\\Ambient Searched Terms.csv",
+ "sha256": "fe0c8e950e33c1ded9e4b1f179ac268f2e50f77c3beaf3216e130fa9144707ef",
+ "report_name": "Search terms report",
+ "date_range": "\"July 15, 2026 - September 9, 2026\"",
+ "parsed_rows": 992,
+ "displayed_rows": 988,
+ "google_total_rows": 4,
+ "google_total": {
+  "clicks": 103.0,
+  "impressions": 3019.0,
+  "cost": 6078.96,
+  "conversions": 12.0
+ },
+ "sum_of_displayed": {
+  "clicks": 103.0,
+  "impressions": 3020.0,
+  "cost": 6078.96,
+  "conversions": 12.0
+ },
+ "by_campaign": {
+  "Search | NonBrand | AC Repair | Central MD | B": {
+   "rows": 200,
+   "clicks": 24.0,
+   "impr": 580.0,
+   "cost": 2686.12,
+   "conv": 5.0
+  },
+  "Search | NonBrand | HVAC Installation | Centra": {
+   "rows": 592,
+   "clicks": 52.0,
+   "impr": 1410.0,
+   "cost": 1498.3400000000004,
+   "conv": 3.0
+  },
+  "Search | NonBrand | HVAC Repair | Central MD |": {
+   "rows": 163,
+   "clicks": 25.0,
+   "impr": 901.0,
+   "cost": 1816.59,
+   "conv": 4.0
+  },
+  "Search | NonBrand | HVAC Replacement | Central": {
+   "rows": 30,
+   "clicks": 2.0,
+   "impr": 116.0,
+   "cost": 77.91,
+   "conv": 0.0
+  },
+  "Search | NonBrand | Gas Boiler Repair | Centra": {
+   "rows": 3,
+   "clicks": 0.0,
+   "impr": 13.0,
+   "cost": 0.0,
+   "conv": 0.0
+  }
+ },
+ "query_text_geography": {
+  "maryland_named": {
+   "rows": 99,
+   "clicks": 6.0,
+   "cost": 158.45
+  },
+  "no_place_named": {
+   "rows": 827,
+   "clicks": 90.0,
+   "cost": 5515.259999999999
+  },
+  "non_maryland_named": {
+   "virginia": {
+    "rows": 11,
+    "clicks": 1.0,
+    "impr": 16.0,
+    "cost": 24.5
+   },
+   "new york": {
+    "rows": 2,
+    "clicks": 0.0,
+    "impr": 2.0,
+    "cost": 0.0
+   },
+   "indiana": {
+    "rows": 5,
+    "clicks": 2.0,
+    "impr": 8.0,
+    "cost": 283.84
+   },
+   "colorado": {
+    "rows": 3,
+    "clicks": 1.0,
+    "impr": 6.0,
+    "cost": 29.36
+   },
+   "washington dc": {
+    "rows": 7,
+    "clicks": 0.0,
+    "impr": 12.0,
+    "cost": 0.0
+   },
+   "texas": {
+    "rows": 4,
+    "clicks": 0.0,
+    "impr": 5.0,
+    "cost": 0.0
+   },
+   "pennsylvania": {
+    "rows": 4,
+    "clicks": 0.0,
+    "impr": 7.0,
+    "cost": 0.0
+   },
+   "north carolina": {
+    "rows": 5,
+    "clicks": 0.0,
+    "impr": 6.0,
+    "cost": 0.0
+   },
+   "tennessee": {
+    "rows": 2,
+    "clicks": 0.0,
+    "impr": 4.0,
+    "cost": 0.0
+   },
+   "florida": {
+    "rows": 7,
+    "clicks": 0.0,
+    "impr": 8.0,
+    "cost": 0.0
+   },
+   "new jersey": {
+    "rows": 3,
+    "clicks": 1.0,
+    "impr": 4.0,
+    "cost": 20.71
+   },
+   "nevada": {
+    "rows": 1,
+    "clicks": 0.0,
+    "impr": 1.0,
+    "cost": 0.0
+   },
+   "ohio": {
+    "rows": 1,
+    "clicks": 0.0,
+    "impr": 1.0,
+    "cost": 0.0
+   },
+   "delaware": {
+    "rows": 5,
+    "clicks": 2.0,
+    "impr": 8.0,
+    "cost": 46.84
+   },
+   "california": {
+    "rows": 1,
+    "clicks": 0.0,
+    "impr": 1.0,
+    "cost": 0.0
+   },
+   "south carolina": {
+    "rows": 1,
+    "clicks": 0.0,
+    "impr": 1.0,
+    "cost": 0.0
+   }
+  },
+  "non_maryland_totals": {
+   "rows": 62,
+   "clicks": 7.0,
+   "cost": 405.25
+  }
+ }
+}

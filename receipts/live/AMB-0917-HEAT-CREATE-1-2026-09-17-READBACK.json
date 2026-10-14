@@ -1,0 +1,738 @@
+{
+ "plan": "AMB-0917-HEAT-CREATE-1",
+ "when": "2026-09-17T18:17:14.147264-04:00",
+ "read_only": true,
+ "external_writes": 0,
+ "assertions": [
+  {
+   "check": "2 budgets returned",
+   "result": "PASS",
+   "detail": "2"
+  },
+  {
+   "check": "budget REPAIR name is the plan name or the platform-synced campaign name",
+   "result": "PASS",
+   "detail": "Search | NonBrand | Heating Repair | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "budget REPAIR amount $55.0/day",
+   "result": "PASS",
+   "detail": "$55.00"
+  },
+  {
+   "check": "budget REPAIR not shared",
+   "result": "PASS",
+   "detail": "False"
+  },
+  {
+   "check": "budget REPAIR STANDARD delivery",
+   "result": "PASS",
+   "detail": "STANDARD"
+  },
+  {
+   "check": "budget REPAIR reference_count == 1 (one campaign, no orphan/dupe)",
+   "result": "PASS",
+   "detail": "1"
+  },
+  {
+   "check": "budget INSTALL name is the plan name or the platform-synced campaign name",
+   "result": "PASS",
+   "detail": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "budget INSTALL amount $35.0/day",
+   "result": "PASS",
+   "detail": "$35.00"
+  },
+  {
+   "check": "budget INSTALL not shared",
+   "result": "PASS",
+   "detail": "False"
+  },
+  {
+   "check": "budget INSTALL STANDARD delivery",
+   "result": "PASS",
+   "detail": "STANDARD"
+  },
+  {
+   "check": "budget INSTALL reference_count == 1 (one campaign, no orphan/dupe)",
+   "result": "PASS",
+   "detail": "1"
+  },
+  {
+   "check": "2 campaigns returned",
+   "result": "PASS",
+   "detail": "2"
+  },
+  {
+   "check": "campaign REPAIR name",
+   "result": "PASS",
+   "detail": "Search | NonBrand | Heating Repair | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "campaign REPAIR STATUS=PAUSED",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "campaign REPAIR channel SEARCH",
+   "result": "PASS",
+   "detail": "SEARCH"
+  },
+  {
+   "check": "campaign REPAIR bidding TARGET_SPEND",
+   "result": "PASS",
+   "detail": "TARGET_SPEND"
+  },
+  {
+   "check": "campaign REPAIR CPC ceiling $38.0",
+   "result": "PASS",
+   "detail": "$38.00"
+  },
+  {
+   "check": "campaign REPAIR bound to its own budget",
+   "result": "PASS",
+   "detail": "customers/2401959466/campaignBudgets/15885327972"
+  },
+  {
+   "check": "campaign REPAIR Google Search ON",
+   "result": "PASS",
+   "detail": "True"
+  },
+  {
+   "check": "campaign REPAIR Search Partners OFF",
+   "result": "PASS",
+   "detail": "False"
+  },
+  {
+   "check": "campaign REPAIR Display OFF",
+   "result": "PASS",
+   "detail": "False"
+  },
+  {
+   "check": "campaign REPAIR partner search OFF",
+   "result": "PASS",
+   "detail": "False"
+  },
+  {
+   "check": "campaign REPAIR positive geo PRESENCE",
+   "result": "PASS",
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "campaign REPAIR negative geo PRESENCE",
+   "result": "PASS",
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "campaign REPAIR EU political declaration",
+   "result": "PASS",
+   "detail": "DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING"
+  },
+  {
+   "check": "campaign REPAIR primary_status PAUSED (not delivering)",
+   "result": "PASS",
+   "detail": "PAUSED reasons=['CAMPAIGN_PAUSED', 'BIDDING_STRATEGY_LEARNING'] (serving_status=SERVING, informational only)"
+  },
+  {
+   "check": "campaign INSTALL name",
+   "result": "PASS",
+   "detail": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "campaign INSTALL STATUS=PAUSED",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "campaign INSTALL channel SEARCH",
+   "result": "PASS",
+   "detail": "SEARCH"
+  },
+  {
+   "check": "campaign INSTALL bidding TARGET_SPEND",
+   "result": "PASS",
+   "detail": "TARGET_SPEND"
+  },
+  {
+   "check": "campaign INSTALL CPC ceiling $24.0",
+   "result": "PASS",
+   "detail": "$24.00"
+  },
+  {
+   "check": "campaign INSTALL bound to its own budget",
+   "result": "PASS",
+   "detail": "customers/2401959466/campaignBudgets/15885327975"
+  },
+  {
+   "check": "campaign INSTALL Google Search ON",
+   "result": "PASS",
+   "detail": "True"
+  },
+  {
+   "check": "campaign INSTALL Search Partners OFF",
+   "result": "PASS",
+   "detail": "False"
+  },
+  {
+   "check": "campaign INSTALL Display OFF",
+   "result": "PASS",
+   "detail": "False"
+  },
+  {
+   "check": "campaign INSTALL partner search OFF",
+   "result": "PASS",
+   "detail": "False"
+  },
+  {
+   "check": "campaign INSTALL positive geo PRESENCE",
+   "result": "PASS",
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "campaign INSTALL negative geo PRESENCE",
+   "result": "PASS",
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "campaign INSTALL EU political declaration",
+   "result": "PASS",
+   "detail": "DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING"
+  },
+  {
+   "check": "campaign INSTALL primary_status PAUSED (not delivering)",
+   "result": "PASS",
+   "detail": "PAUSED reasons=['CAMPAIGN_PAUSED', 'BIDDING_STRATEGY_LEARNING'] (serving_status=SERVING, informational only)"
+  },
+  {
+   "check": "REPAIR 75 location criteria",
+   "result": "PASS",
+   "detail": "75"
+  },
+  {
+   "check": "REPAIR geo set matches the snapshot exactly",
+   "result": "PASS",
+   "detail": "missing=[] extra=[]"
+  },
+  {
+   "check": "REPAIR 6 ad-schedule rows",
+   "result": "PASS",
+   "detail": "6"
+  },
+  {
+   "check": "REPAIR schedule matches the snapshot exactly",
+   "result": "PASS",
+   "detail": "[('FRIDAY', 8, 20), ('MONDAY', 8, 20), ('SATURDAY', 8, 13), ('THURSDAY', 8, 20), ('TUESDAY', 8, 20), ('WEDNESDAY', 8, 20)]"
+  },
+  {
+   "check": "REPAIR 24 campaign negatives",
+   "result": "PASS",
+   "detail": "24 vs 24"
+  },
+  {
+   "check": "REPAIR negative set matches the plan exactly",
+   "result": "PASS",
+   "detail": "missing=[] extra=[]"
+  },
+  {
+   "check": "REPAIR every keyword criterion is NEGATIVE",
+   "result": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "INSTALL 75 location criteria",
+   "result": "PASS",
+   "detail": "75"
+  },
+  {
+   "check": "INSTALL geo set matches the snapshot exactly",
+   "result": "PASS",
+   "detail": "missing=[] extra=[]"
+  },
+  {
+   "check": "INSTALL 6 ad-schedule rows",
+   "result": "PASS",
+   "detail": "6"
+  },
+  {
+   "check": "INSTALL schedule matches the snapshot exactly",
+   "result": "PASS",
+   "detail": "[('FRIDAY', 8, 20), ('MONDAY', 8, 20), ('SATURDAY', 8, 13), ('THURSDAY', 8, 20), ('TUESDAY', 8, 20), ('WEDNESDAY', 8, 20)]"
+  },
+  {
+   "check": "INSTALL 23 campaign negatives",
+   "result": "PASS",
+   "detail": "23 vs 23"
+  },
+  {
+   "check": "INSTALL negative set matches the plan exactly",
+   "result": "PASS",
+   "detail": "missing=[] extra=[]"
+  },
+  {
+   "check": "INSTALL every keyword criterion is NEGATIVE",
+   "result": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "2 ad groups returned",
+   "result": "PASS",
+   "detail": "2"
+  },
+  {
+   "check": "ad group present: SKAG | Furnace Repair",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "SKAG | Furnace Repair STATUS=PAUSED",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "SKAG | Furnace Repair type SEARCH_STANDARD",
+   "result": "PASS",
+   "detail": "SEARCH_STANDARD"
+  },
+  {
+   "check": "SKAG | Furnace Repair cpc bid $38.0",
+   "result": "PASS",
+   "detail": "$38.00"
+  },
+  {
+   "check": "SKAG | Furnace Repair in campaign REPAIR",
+   "result": "PASS",
+   "detail": "24257819463"
+  },
+  {
+   "check": "ad group present: SKAG | Mini Split Installation",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "SKAG | Mini Split Installation STATUS=PAUSED",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "SKAG | Mini Split Installation type SEARCH_STANDARD",
+   "result": "PASS",
+   "detail": "SEARCH_STANDARD"
+  },
+  {
+   "check": "SKAG | Mini Split Installation cpc bid $24.0",
+   "result": "PASS",
+   "detail": "$24.00"
+  },
+  {
+   "check": "SKAG | Mini Split Installation in campaign INSTALL",
+   "result": "PASS",
+   "detail": "24257819466"
+  },
+  {
+   "check": "SKAG | Furnace Repair 10 keywords",
+   "result": "PASS",
+   "detail": "10 vs 10"
+  },
+  {
+   "check": "SKAG | Furnace Repair keyword+match set matches the plan exactly",
+   "result": "PASS",
+   "detail": "missing=[]"
+  },
+  {
+   "check": "SKAG | Furnace Repair every keyword PAUSED",
+   "result": "PASS",
+   "detail": "['PAUSED']"
+  },
+  {
+   "check": "SKAG | Furnace Repair no keyword created as negative",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "SKAG | Mini Split Installation 8 keywords",
+   "result": "PASS",
+   "detail": "8 vs 8"
+  },
+  {
+   "check": "SKAG | Mini Split Installation keyword+match set matches the plan exactly",
+   "result": "PASS",
+   "detail": "missing=[]"
+  },
+  {
+   "check": "SKAG | Mini Split Installation every keyword PAUSED",
+   "result": "PASS",
+   "detail": "['PAUSED']"
+  },
+  {
+   "check": "SKAG | Mini Split Installation no keyword created as negative",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "18 keywords total",
+   "result": "PASS",
+   "detail": "18"
+  },
+  {
+   "check": "RSA matched in live account: SKAG | Furnace Repair / RSA A - service-first, 3 pinned op",
+   "result": "PASS",
+   "detail": "1 candidates"
+  },
+  {
+   "check": "  RSA 825056834769 STATUS=PAUSED",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "  RSA 825056834769 type RESPONSIVE_SEARCH_AD",
+   "result": "PASS",
+   "detail": "RESPONSIVE_SEARCH_AD"
+  },
+  {
+   "check": "  RSA 825056834769 final URL",
+   "result": "PASS",
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/']"
+  },
+  {
+   "check": "  RSA 825056834769 paths /furnace/repair",
+   "result": "PASS",
+   "detail": "/furnace/repair"
+  },
+  {
+   "check": "  RSA 825056834769 14 headlines",
+   "result": "PASS",
+   "detail": "14"
+  },
+  {
+   "check": "  RSA 825056834769 3 headlines pinned to H1",
+   "result": "PASS",
+   "detail": "3"
+  },
+  {
+   "check": "  RSA 825056834769 descriptions match",
+   "result": "PASS",
+   "detail": "['Furnace repair for homes and businesses in Severn, Severna Park and Columbia.']"
+  },
+  {
+   "check": "  RSA 825056834769 policy not DISAPPROVED",
+   "result": "PASS",
+   "detail": "UNKNOWN"
+  },
+  {
+   "check": "RSA matched in live account: SKAG | Furnace Repair / RSA B - symptom-led, unpinned",
+   "result": "PASS",
+   "detail": "1 candidates"
+  },
+  {
+   "check": "  RSA 825056834772 STATUS=PAUSED",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "  RSA 825056834772 type RESPONSIVE_SEARCH_AD",
+   "result": "PASS",
+   "detail": "RESPONSIVE_SEARCH_AD"
+  },
+  {
+   "check": "  RSA 825056834772 final URL",
+   "result": "PASS",
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/']"
+  },
+  {
+   "check": "  RSA 825056834772 paths /furnace/repair",
+   "result": "PASS",
+   "detail": "/furnace/repair"
+  },
+  {
+   "check": "  RSA 825056834772 15 headlines",
+   "result": "PASS",
+   "detail": "15"
+  },
+  {
+   "check": "  RSA 825056834772 3 headlines pinned to H1",
+   "result": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "  RSA 825056834772 descriptions match",
+   "result": "PASS",
+   "detail": "['Furnace trouble in Severn, Severna Park or Columbia? Our technicians can help.']"
+  },
+  {
+   "check": "  RSA 825056834772 policy not DISAPPROVED",
+   "result": "PASS",
+   "detail": "UNKNOWN"
+  },
+  {
+   "check": "RSA matched in live account: SKAG | Mini Split Installation / RSA A - service-first, 3 pinned op",
+   "result": "PASS",
+   "detail": "1 candidates"
+  },
+  {
+   "check": "  RSA 825056834775 STATUS=PAUSED",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "  RSA 825056834775 type RESPONSIVE_SEARCH_AD",
+   "result": "PASS",
+   "detail": "RESPONSIVE_SEARCH_AD"
+  },
+  {
+   "check": "  RSA 825056834775 final URL",
+   "result": "PASS",
+   "detail": "['https://ambientcoolingandheating.com/services/cooling-services/mini-splits/']"
+  },
+  {
+   "check": "  RSA 825056834775 paths /mini-splits/installation",
+   "result": "PASS",
+   "detail": "/mini-splits/installation"
+  },
+  {
+   "check": "  RSA 825056834775 14 headlines",
+   "result": "PASS",
+   "detail": "14"
+  },
+  {
+   "check": "  RSA 825056834775 3 headlines pinned to H1",
+   "result": "PASS",
+   "detail": "3"
+  },
+  {
+   "check": "  RSA 825056834775 descriptions match",
+   "result": "PASS",
+   "detail": "['Ductless mini split installation for Central Maryland homes and businesses.']"
+  },
+  {
+   "check": "  RSA 825056834775 policy not DISAPPROVED",
+   "result": "PASS",
+   "detail": "UNKNOWN"
+  },
+  {
+   "check": "RSA matched in live account: SKAG | Mini Split Installation / RSA B - application-led, unpinned",
+   "result": "PASS",
+   "detail": "1 candidates"
+  },
+  {
+   "check": "  RSA 825056834778 STATUS=PAUSED",
+   "result": "PASS",
+   "detail": "PAUSED"
+  },
+  {
+   "check": "  RSA 825056834778 type RESPONSIVE_SEARCH_AD",
+   "result": "PASS",
+   "detail": "RESPONSIVE_SEARCH_AD"
+  },
+  {
+   "check": "  RSA 825056834778 final URL",
+   "result": "PASS",
+   "detail": "['https://ambientcoolingandheating.com/services/cooling-services/mini-splits/']"
+  },
+  {
+   "check": "  RSA 825056834778 paths /mini-splits/installation",
+   "result": "PASS",
+   "detail": "/mini-splits/installation"
+  },
+  {
+   "check": "  RSA 825056834778 15 headlines",
+   "result": "PASS",
+   "detail": "15"
+  },
+  {
+   "check": "  RSA 825056834778 3 headlines pinned to H1",
+   "result": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "  RSA 825056834778 descriptions match",
+   "result": "PASS",
+   "detail": "['Mini splits bring comfort to rooms and additions that ductwork cannot reach.']"
+  },
+  {
+   "check": "  RSA 825056834778 policy not DISAPPROVED",
+   "result": "PASS",
+   "detail": "UNKNOWN"
+  },
+  {
+   "check": "4 RSAs in the plan, 4 read back",
+   "result": "PASS",
+   "detail": "plan=4 live=4"
+  },
+  {
+   "check": "9 assets returned",
+   "result": "PASS",
+   "detail": "9"
+  },
+  {
+   "check": "5 callouts match the plan exactly",
+   "result": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "1 structured snippet",
+   "result": "PASS",
+   "detail": "1"
+  },
+  {
+   "check": "snippet header 'Services'",
+   "result": "PASS",
+   "detail": "Services"
+  },
+  {
+   "check": "snippet values match the plan",
+   "result": "PASS",
+   "detail": "['Furnace Repair', 'Mini Split Installation', 'Boiler Repair', 'Heating Maintenance', 'Ductless Systems']"
+  },
+  {
+   "check": "3 sitelinks",
+   "result": "PASS",
+   "detail": "['Furnace Repair', 'Heating Services', 'Mini Splits']"
+  },
+  {
+   "check": "sitelink 'Furnace Repair' present",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "  sitelink 'Furnace Repair' descriptions",
+   "result": "PASS",
+   "detail": "Diagnosis and repair for gas"
+  },
+  {
+   "check": "  sitelink 'Furnace Repair' URL",
+   "result": "PASS",
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/']"
+  },
+  {
+   "check": "sitelink 'Mini Splits' present",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "  sitelink 'Mini Splits' descriptions",
+   "result": "PASS",
+   "detail": "Ductless comfort for rooms"
+  },
+  {
+   "check": "  sitelink 'Mini Splits' URL",
+   "result": "PASS",
+   "detail": "['https://ambientcoolingandheating.com/services/cooling-services/mini-splits/']"
+  },
+  {
+   "check": "sitelink 'Heating Services' present",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "  sitelink 'Heating Services' descriptions",
+   "result": "PASS",
+   "detail": "See the full range of Ambient"
+  },
+  {
+   "check": "  sitelink 'Heating Services' URL",
+   "result": "PASS",
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/']"
+  },
+  {
+   "check": "REPAIR 11 asset links",
+   "result": "PASS",
+   "detail": "11"
+  },
+  {
+   "check": "REPAIR every asset link PAUSED",
+   "result": "PASS",
+   "detail": "['PAUSED']"
+  },
+  {
+   "check": "REPAIR field types 5 CALLOUT / 3 SITELINK / 1 SNIPPET / CALL / BUSINESS_NAME",
+   "result": "PASS",
+   "detail": "['BUSINESS_NAME', 'CALL', 'CALLOUT', 'CALLOUT', 'CALLOUT', 'CALLOUT', 'CALLOUT', 'SITELINK', 'SITELINK', 'SITELINK', 'STRUCTURED_SNIPPET']"
+  },
+  {
+   "check": "REPAIR reuses existing call asset 407995613637 (no new call asset)",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "REPAIR reuses existing business name asset 80516971145",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "INSTALL 11 asset links",
+   "result": "PASS",
+   "detail": "11"
+  },
+  {
+   "check": "INSTALL every asset link PAUSED",
+   "result": "PASS",
+   "detail": "['PAUSED']"
+  },
+  {
+   "check": "INSTALL field types 5 CALLOUT / 3 SITELINK / 1 SNIPPET / CALL / BUSINESS_NAME",
+   "result": "PASS",
+   "detail": "['BUSINESS_NAME', 'CALL', 'CALLOUT', 'CALLOUT', 'CALLOUT', 'CALLOUT', 'CALLOUT', 'SITELINK', 'SITELINK', 'SITELINK', 'STRUCTURED_SNIPPET']"
+  },
+  {
+   "check": "INSTALL reuses existing call asset 407995613637 (no new call asset)",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "INSTALL reuses existing business name asset 80516971145",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "22 campaign asset links total",
+   "result": "PASS",
+   "detail": "22"
+  },
+  {
+   "check": "all 23 live pre-existing campaigns unchanged (status + daily budget + CPC ceiling)",
+   "result": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "the 10 already-REMOVED campaigns were not resurrected",
+   "result": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "live non-removed campaign count = 23 pre-existing + 2 new",
+   "result": "PASS",
+   "detail": "25 vs 23+2"
+  },
+  {
+   "check": "enabled campaign count unchanged at 5",
+   "result": "PASS",
+   "detail": "5"
+  },
+  {
+   "check": "neither new campaign is ENABLED",
+   "result": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "combined ENABLED daily spend unchanged at $421.55",
+   "result": "PASS",
+   "detail": "$421.55"
+  },
+  {
+   "check": "non-removed conversion action count unchanged at 16 (14 ENABLED + 2 HIDDEN)",
+   "result": "PASS",
+   "detail": "16"
+  },
+  {
+   "check": "primary-for-goal set unchanged (10 actions), none added or removed",
+   "result": "PASS",
+   "detail": "[]"
+  }
+ ],
+ "summary": {
+  "pass": 145,
+  "fail": 0,
+  "total": 145
+ }
+}

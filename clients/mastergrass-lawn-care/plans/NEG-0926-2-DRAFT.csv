@@ -1,0 +1,442 @@
+target,text,match_type,layer,category_or_guard
+SHARED,job,PHRASE,F,jobs_careers
+SHARED,jobs,PHRASE,F,jobs_careers
+SHARED,career,PHRASE,F,jobs_careers
+SHARED,careers,PHRASE,F,jobs_careers
+SHARED,hiring,PHRASE,F,jobs_careers
+SHARED,salary,PHRASE,F,jobs_careers
+SHARED,salaries,PHRASE,F,jobs_careers
+SHARED,wage,PHRASE,F,jobs_careers
+SHARED,wages,PHRASE,F,jobs_careers
+SHARED,employment,PHRASE,F,jobs_careers
+SHARED,resume,PHRASE,F,jobs_careers
+SHARED,internship,PHRASE,F,jobs_careers
+SHARED,apprentice,PHRASE,F,jobs_careers
+SHARED,apprenticeship,PHRASE,F,jobs_careers
+SHARED,help wanted,PHRASE,F,jobs_careers
+SHARED,now hiring,PHRASE,F,jobs_careers
+SHARED,indeed,PHRASE,F,jobs_careers
+SHARED,glassdoor,PHRASE,F,jobs_careers
+SHARED,ziprecruiter,PHRASE,F,jobs_careers
+SHARED,school,PHRASE,F,training_licensing
+SHARED,schools,PHRASE,F,training_licensing
+SHARED,course,PHRASE,F,training_licensing
+SHARED,courses,PHRASE,F,training_licensing
+SHARED,class,PHRASE,F,training_licensing
+SHARED,classes,PHRASE,F,training_licensing
+SHARED,degree,PHRASE,F,training_licensing
+SHARED,certification,PHRASE,F,training_licensing
+SHARED,certificate,PHRASE,F,training_licensing
+SHARED,training,PHRASE,F,training_licensing
+SHARED,license,PHRASE,F,training_licensing
+SHARED,license requirements,PHRASE,F,training_licensing
+SHARED,license exam,PHRASE,F,training_licensing
+SHARED,software,PHRASE,F,business_b2b
+SHARED,app,PHRASE,F,business_b2b
+SHARED,apps,PHRASE,F,business_b2b
+SHARED,template,PHRASE,F,business_b2b
+SHARED,templates,PHRASE,F,business_b2b
+SHARED,invoice,PHRASE,F,business_b2b
+SHARED,marketing,PHRASE,F,business_b2b
+SHARED,seo,PHRASE,F,business_b2b
+SHARED,franchise,PHRASE,F,business_b2b
+SHARED,llc,PHRASE,F,business_b2b
+SHARED,logo,PHRASE,F,business_b2b
+SHARED,insurance,PHRASE,F,business_b2b
+SHARED,wholesale,PHRASE,F,business_b2b
+SHARED,supplier,PHRASE,F,business_b2b
+SHARED,suppliers,PHRASE,F,business_b2b
+SHARED,supply,PHRASE,F,business_b2b
+SHARED,supplies,PHRASE,F,business_b2b
+SHARED,business plan,PHRASE,F,business_b2b
+SHARED,business for sale,PHRASE,F,business_b2b
+SHARED,for sale,PHRASE,F,business_b2b
+SHARED,name ideas,PHRASE,F,business_b2b
+SHARED,business names,PHRASE,F,business_b2b
+SHARED,landscaping leads,PHRASE,F,business_b2b
+SHARED,lawn care leads,PHRASE,F,business_b2b
+SHARED,bid sheet,PHRASE,F,business_b2b
+SHARED,diy,PHRASE,F,diy_informational
+SHARED,do it yourself,PHRASE,F,diy_informational
+SHARED,how to,PHRASE,F,diy_informational
+SHARED,how do,PHRASE,F,diy_informational
+SHARED,how deep,PHRASE,F,diy_informational
+SHARED,how long,PHRASE,F,diy_informational
+SHARED,how wide,PHRASE,F,diy_informational
+SHARED,what is,PHRASE,F,diy_informational
+SHARED,what does,PHRASE,F,diy_informational
+SHARED,definition,PHRASE,F,diy_informational
+SHARED,meaning,PHRASE,F,diy_informational
+SHARED,vs,PHRASE,F,diy_informational
+SHARED,versus,PHRASE,F,diy_informational
+SHARED,diagram,PHRASE,F,diy_informational
+SHARED,drawing,PHRASE,F,diy_informational
+SHARED,sketch,PHRASE,F,diy_informational
+SHARED,pdf,PHRASE,F,diy_informational
+SHARED,video,PHRASE,F,diy_informational
+SHARED,videos,PHRASE,F,diy_informational
+SHARED,youtube,PHRASE,F,diy_informational
+SHARED,reddit,PHRASE,F,diy_informational
+SHARED,pinterest,PHRASE,F,diy_informational
+SHARED,ideas,PHRASE,F,diy_informational
+SHARED,pictures,PHRASE,F,diy_informational
+SHARED,photos,PHRASE,F,diy_informational
+SHARED,images,PHRASE,F,diy_informational
+SHARED,inspiration,PHRASE,F,diy_informational
+SHARED,examples,PHRASE,F,diy_informational
+SHARED,calculator,PHRASE,F,diy_informational
+SHARED,wikipedia,PHRASE,F,diy_informational
+SHARED,quizlet,PHRASE,F,diy_informational
+SHARED,meme,PHRASE,F,diy_informational
+SHARED,game,PHRASE,F,diy_informational
+SHARED,minecraft,PHRASE,F,diy_informational
+SHARED,sims,PHRASE,F,diy_informational
+SHARED,animal crossing,PHRASE,F,diy_informational
+SHARED,coloring,PHRASE,F,diy_informational
+SHARED,clipart,PHRASE,F,diy_informational
+SHARED,png,PHRASE,F,diy_informational
+SHARED,svg,PHRASE,F,diy_informational
+SHARED,cartoon,PHRASE,F,diy_informational
+SHARED,home depot,PHRASE,F,retail_brands
+SHARED,lowes,PHRASE,F,retail_brands
+SHARED,lowe's,PHRASE,F,retail_brands
+SHARED,menards,PHRASE,F,retail_brands
+SHARED,amazon,PHRASE,F,retail_brands
+SHARED,walmart,PHRASE,F,retail_brands
+SHARED,costco,PHRASE,F,retail_brands
+SHARED,tractor supply,PHRASE,F,retail_brands
+SHARED,harbor freight,PHRASE,F,retail_brands
+SHARED,kit,PHRASE,F,retail_brands
+SHARED,kits,PHRASE,F,retail_brands
+SHARED,buy,PHRASE,F,retail_brands
+SHARED,purchase,PHRASE,F,retail_brands
+SHARED,rental,PHRASE,F,equipment_rental
+SHARED,rentals,PHRASE,F,equipment_rental
+SHARED,excavator,PHRASE,F,equipment_rental
+SHARED,skid steer,PHRASE,F,equipment_rental
+SHARED,bobcat,PHRASE,F,equipment_rental
+SHARED,trencher,PHRASE,F,equipment_rental
+SHARED,tractor,PHRASE,F,equipment_rental
+SHARED,mini excavator,PHRASE,F,equipment_rental
+SHARED,tiller,PHRASE,F,equipment_rental
+SHARED,rototiller,PHRASE,F,equipment_rental
+SHARED,sod cutter,PHRASE,F,equipment_rental
+SHARED,plate compactor,PHRASE,F,equipment_rental
+SHARED,compactor,PHRASE,F,equipment_rental
+SHARED,leveler,PHRASE,F,equipment_rental
+SHARED,rake,PHRASE,F,equipment_rental
+SHARED,lawn roller,PHRASE,F,equipment_rental
+SHARED,attachment,PHRASE,F,equipment_rental
+SHARED,topsoil delivery,PHRASE,F,materials_buyer
+SHARED,dirt delivery,PHRASE,F,materials_buyer
+SHARED,bulk,PHRASE,F,materials_buyer
+SHARED,pallet,PHRASE,F,materials_buyer
+SHARED,per ton,PHRASE,F,materials_buyer
+SHARED,by the ton,PHRASE,F,materials_buyer
+SHARED,cubic yard,PHRASE,F,materials_buyer
+SHARED,cubic yards,PHRASE,F,materials_buyer
+SHARED,by the yard,PHRASE,F,materials_buyer
+SHARED,perforated,PHRASE,F,drainage_products_diy
+SHARED,pvc,PHRASE,F,drainage_products_diy
+SHARED,corrugated,PHRASE,F,drainage_products_diy
+SHARED,sock,PHRASE,F,drainage_products_diy
+SHARED,grate,PHRASE,F,drainage_products_diy
+SHARED,cleanout,PHRASE,F,drainage_products_diy
+SHARED,nds,PHRASE,F,drainage_products_diy
+SHARED,ez drain,PHRASE,F,drainage_products_diy
+SHARED,flexdrain,PHRASE,F,drainage_products_diy
+SHARED,flex drain,PHRASE,F,drainage_products_diy
+SHARED,rain barrel,PHRASE,F,drainage_products_diy
+SHARED,basement waterproofing,PHRASE,F,other_trades
+SHARED,basement finishing,PHRASE,F,other_trades
+SHARED,basement remodel,PHRASE,F,other_trades
+SHARED,interior,PHRASE,F,other_trades
+SHARED,crawl space encapsulation,PHRASE,F,other_trades
+SHARED,waterproofing,PHRASE,F,other_trades
+SHARED,foundation repair,PHRASE,F,other_trades
+SHARED,septic,PHRASE,F,other_trades
+SHARED,leach field,PHRASE,F,other_trades
+SHARED,sewer,PHRASE,F,other_trades
+SHARED,plumber,PHRASE,F,other_trades
+SHARED,plumbing,PHRASE,F,other_trades
+SHARED,floor drain,PHRASE,F,other_trades
+SHARED,shower,PHRASE,F,other_trades
+SHARED,sink,PHRASE,F,other_trades
+SHARED,tub,PHRASE,F,other_trades
+SHARED,toilet,PHRASE,F,other_trades
+SHARED,roofing,PHRASE,F,other_trades
+SHARED,roofer,PHRASE,F,other_trades
+SHARED,roof repair,PHRASE,F,other_trades
+SHARED,gutter cleaning,PHRASE,F,other_trades
+SHARED,gutter guard,PHRASE,F,other_trades
+SHARED,gutter guards,PHRASE,F,other_trades
+SHARED,siding,PHRASE,F,other_trades
+SHARED,windows,PHRASE,F,other_trades
+SHARED,hvac,PHRASE,F,other_trades
+SHARED,air conditioner,PHRASE,F,other_trades
+SHARED,condensate,PHRASE,F,other_trades
+SHARED,electrician,PHRASE,F,other_trades
+SHARED,pest control,PHRASE,F,other_trades
+SHARED,mosquito,PHRASE,F,other_trades
+SHARED,pressure washing,PHRASE,F,other_trades
+SHARED,power washing,PHRASE,F,other_trades
+SHARED,window cleaning,PHRASE,F,other_trades
+SHARED,snow plowing,PHRASE,F,other_trades
+SHARED,holiday lights,PHRASE,F,other_trades
+SHARED,fence installation,PHRASE,F,other_trades
+SHARED,fence company,PHRASE,F,other_trades
+SHARED,fence repair,PHRASE,F,other_trades
+SHARED,fencing,PHRASE,F,other_trades
+SHARED,deck builder,PHRASE,F,other_trades
+SHARED,deck staining,PHRASE,F,other_trades
+SHARED,sealcoating,PHRASE,F,other_trades
+SHARED,concrete leveling,PHRASE,F,other_trades
+SHARED,mudjacking,PHRASE,F,other_trades
+SHARED,foam jacking,PHRASE,F,other_trades
+SHARED,slab jacking,PHRASE,F,other_trades
+REJECT,stamped,PHRASE,F,other_trades:blocks_keep_term
+SHARED,pool builder,PHRASE,F,other_trades
+SHARED,pool builders,PHRASE,F,other_trades
+SHARED,hot tub,PHRASE,F,other_trades
+SHARED,screened,PHRASE,F,other_trades
+SHARED,screen room,PHRASE,F,other_trades
+SHARED,enclosed,PHRASE,F,other_trades
+SHARED,enclosure,PHRASE,F,other_trades
+SHARED,sunroom,PHRASE,F,other_trades
+SHARED,arborist,PHRASE,F,other_trades
+SHARED,land clearing,PHRASE,F,other_trades
+SHARED,brush clearing,PHRASE,F,other_trades
+SHARED,indoor,PHRASE,F,other_trades
+SHARED,artificial turf,PHRASE,F,other_trades
+SHARED,synthetic turf,PHRASE,F,other_trades
+SHARED,artificial grass,PHRASE,F,other_trades
+SHARED,farm,PHRASE,F,farm_tiling
+SHARED,field tile,PHRASE,F,farm_tiling
+SHARED,tiling,PHRASE,F,farm_tiling
+SHARED,tile plow,PHRASE,F,farm_tiling
+SHARED,ag drainage,PHRASE,F,farm_tiling
+SHARED,agricultural,PHRASE,F,farm_tiling
+SHARED,tree service,PHRASE,F,lawn_tree_services
+SHARED,tree services,PHRASE,F,lawn_tree_services
+SHARED,tree cutting,PHRASE,F,lawn_tree_services
+SHARED,stump,PHRASE,F,lawn_tree_services
+SHARED,stump grinding,PHRASE,F,lawn_tree_services
+SHARED,hedge trimming,PHRASE,F,lawn_tree_services
+SHARED,bush trimming,PHRASE,F,lawn_tree_services
+SHARED,weed killer,PHRASE,F,lawn_tree_services
+SHARED,weed spray,PHRASE,F,lawn_tree_services
+SHARED,mower,PHRASE,F,lawn_tree_services
+SHARED,aeration,PHRASE,F,lawn_tree_services
+SHARED,overseeding,PHRASE,F,lawn_tree_services
+SHARED,fertilization,PHRASE,F,lawn_tree_services
+SHARED,fertilizer,PHRASE,F,lawn_tree_services
+REJECT,maintenance,PHRASE,F,lawn_tree_services:blocks_keep_term
+SHARED,irrigation,PHRASE,F,lawn_tree_services
+SHARED,sprinkler,PHRASE,F,lawn_tree_services
+SHARED,sprinklers,PHRASE,F,lawn_tree_services
+SHARED,snow removal,PHRASE,F,lawn_tree_services
+SHARED,leaf removal,PHRASE,F,lawn_tree_services
+SHARED,christmas lights,PHRASE,F,lawn_tree_services
+SHARED,lawyer,PHRASE,F,legal_municipal
+SHARED,attorney,PHRASE,F,legal_municipal
+SHARED,law,PHRASE,F,legal_municipal
+SHARED,laws,PHRASE,F,legal_municipal
+SHARED,legal,PHRASE,F,legal_municipal
+SHARED,sue,PHRASE,F,legal_municipal
+SHARED,lawsuit,PHRASE,F,legal_municipal
+SHARED,regulations,PHRASE,F,legal_municipal
+SHARED,ordinance,PHRASE,F,legal_municipal
+SHARED,permit,PHRASE,F,legal_municipal
+SHARED,permits,PHRASE,F,legal_municipal
+SHARED,public works,PHRASE,F,legal_municipal
+SHARED,municipal,PHRASE,F,legal_municipal
+SHARED,dnr,PHRASE,F,legal_municipal
+SHARED,storm sewer,PHRASE,F,legal_municipal
+SHARED,highway,PHRASE,F,legal_municipal
+SHARED,government,PHRASE,F,legal_municipal
+SHARED,cedar rapids,PHRASE,F,out_of_area
+SHARED,iowa city,PHRASE,F,out_of_area
+SHARED,davenport,PHRASE,F,out_of_area
+SHARED,sioux city,PHRASE,F,out_of_area
+SHARED,waterloo,PHRASE,F,out_of_area
+SHARED,cedar falls,PHRASE,F,out_of_area
+SHARED,council bluffs,PHRASE,F,out_of_area
+SHARED,dubuque,PHRASE,F,out_of_area
+SHARED,mason city,PHRASE,F,out_of_area
+SHARED,fort dodge,PHRASE,F,out_of_area
+SHARED,ottumwa,PHRASE,F,out_of_area
+SHARED,burlington,PHRASE,F,out_of_area
+SHARED,muscatine,PHRASE,F,out_of_area
+SHARED,omaha,PHRASE,F,out_of_area
+SHARED,minneapolis,PHRASE,F,out_of_area
+SHARED,st paul,PHRASE,F,out_of_area
+SHARED,saint paul,PHRASE,F,out_of_area
+SHARED,kansas city,PHRASE,F,out_of_area
+SHARED,chicago,PHRASE,F,out_of_area
+SHARED,sioux falls,PHRASE,F,out_of_area
+REJECT,quad cities,PHRASE,F,out_of_area:blocks_keep_term
+SHARED,moline,PHRASE,F,out_of_area
+SHARED,dallas,PHRASE,F,out_of_area
+SHARED,dfw,PHRASE,F,out_of_area
+SHARED,houston,PHRASE,F,out_of_area
+SHARED,phoenix,PHRASE,F,out_of_area
+SHARED,denver,PHRASE,F,out_of_area
+SHARED,las vegas,PHRASE,F,out_of_area
+SHARED,florida,PHRASE,F,out_of_area
+SHARED,texas,PHRASE,F,out_of_area
+SHARED,california,PHRASE,F,out_of_area
+SHARED,arizona,PHRASE,F,out_of_area
+SHARED,colorado,PHRASE,F,out_of_area
+SHARED,illinois,PHRASE,F,out_of_area
+SHARED,minnesota,PHRASE,F,out_of_area
+SHARED,missouri,PHRASE,F,out_of_area
+SHARED,nebraska,PHRASE,F,out_of_area
+SHARED,wisconsin,PHRASE,F,out_of_area
+SHARED,south dakota,PHRASE,F,out_of_area
+SHARED,north dakota,PHRASE,F,out_of_area
+SHARED,kansas,PHRASE,F,out_of_area
+SHARED,oklahoma,PHRASE,F,out_of_area
+SHARED,georgia,PHRASE,F,out_of_area
+SHARED,ohio,PHRASE,F,out_of_area
+SHARED,michigan,PHRASE,F,out_of_area
+SHARED,diamond pro straight face,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,decorative concrete near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,driveway repair near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,sump installation near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,blacktop driveway near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,natural stone steps near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,driveway installation near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,catch basin installation near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,residential asphalt paving near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,brick sidewalk installation,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,driveway gravel installation near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,cobblestone driveway,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,tc custom curbing,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,gravel driveway installation near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,curbing business near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,deck over concrete steps,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,concrete decorative curbing,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,curved sidewalk to front door,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,resin sidewalk,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,sloped gravel path,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,concrete curbing companies near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,aggregate pier installation,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,regravel driveway cost,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,versetta stone installation,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,resin driveway,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,concrete step replacement near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,flagstone pool surround,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,sidewalk repair near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,custom concrete near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,deck contractors near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,best driveway paving near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,driveway replacement near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,decorative concrete contractors near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,gravel road repair companies near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,best concrete driveway companies near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,bluestone steps near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,concrete resurfacing near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,stone path near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,deck builder near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,deck companies near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,sidewalk installation near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,stone contractors near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,asphalt paving,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,asphalt paving des moines iowa,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,norris asphalt paving,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,des moines asphalt,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,driveway contractors near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,mike cleck paving,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,asphalt contractors near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,asphalt companies near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,solo bonfire,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,chiminea near me,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,outdoor gas flame,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,buy fire pit near me,PHRASE,H,EQUIPMENT_RETAIL
+SHARED,fire cooking pit,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,versa lock block,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,rockwood cottage stone,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,recon block,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,belgard blocks,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,keystone compac iii,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,belgard diamond pro block,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,belgard diamond pro stone cut,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,clifton straight block,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,macwall,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,ucara modular system,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,melville belgard,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,versa lok blocks,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,mechanically stabilized earth,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,versa lock stone,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,rosetta outcropping,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,free standing outdoor kitchen cabinets,PHRASE,H,FREE_GRANT_ASSISTANCE
+SHARED,weatherstrong outdoor cabinets,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,outdoor composite cabinets,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,grass shack des moines,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,greener alternative,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,kingdom keepers ames,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,tapper turf,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,smittys fort dodge,PHRASE,H,GEO_OUT_OF_AREA
+SHARED,naturescape des moines,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,manscapes des moines,EXACT,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,cut grass near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,yard services near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,yard cleaning services near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,gardening company near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,rototilling services near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,rototilling service near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,french drain system diagram,PHRASE,H,DIY_INFORMATIONAL
+SHARED,how do french drains work,PHRASE,H,DIY_INFORMATIONAL
+SHARED,pop up emitter installation,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,sump pump installation near me,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,ground leveler,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,how do i level my yard,PHRASE,H,DIY_INFORMATIONAL
+SHARED,sloping soil away from foundation,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,soil leveler,PHRASE,H,OUT_OF_SCOPE_NO_CORE_SERVICE
+SHARED,lawn oxygen ankeny,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,tree spade service near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,tree transplanting near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,lawn aerating near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,lawn love contact number,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,lawn love phone number,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,ripke lawn,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,weed pulling companies near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,people who mow lawns near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,weed services near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,tree pruning near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,lawn tilling service near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,shrub trimming near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,lawn seeding services near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,grass seeding company near me,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+SHARED,lawn drag mat,EXACT,H2,OTHER_MASTER_GRASS_SERVICE
+CAMPAIGN:23914692658,french drain,PHRASE,X,cross:ok
+CAMPAIGN:23914692658,french drains,PHRASE,X,cross:ok
+CAMPAIGN:23914692658,drainage,PHRASE,X,cross:ok
+CAMPAIGN:23914692658,grading,PHRASE,X,cross:ok
+CAMPAIGN:23914692658,regrading,PHRASE,X,cross:ok
+CAMPAIGN:23914692658,yard leveling,PHRASE,X,cross:ok
+CAMPAIGN:23914692658,mulch,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,patio,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,patios,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,paver,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,pavers,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,retaining wall,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,retaining walls,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,fire pit,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,fire pits,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,firepit,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,outdoor kitchen,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,outdoor kitchens,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,hardscaping,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,hardscape,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,mulch,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,sod,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,lawn care,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,lawn service,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,mowing,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,landscaping company,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,landscaping companies,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,landscaping services,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,landscape design,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,flower bed,PHRASE,X,cross:ok
+CAMPAIGN:PMAX,flower beds,PHRASE,X,cross:ok

@@ -1,0 +1,209 @@
+# #############################################################################
+# ##  SUPERSEDED - DO NOT EXECUTE. Replaced by APG-0917-GTM-F (DB9391A883A7). ##
+# ##  Fingerprint FC0E0B156F60 must not be approved or executed.              ##
+# ##  Reason: the Google Ads Calls from Website tag and its landing-page       ##
+# ##  trigger are removed entirely, not held.                                  ##
+# #############################################################################
+# =============================================================================
+# APG-0917-GTM-D  --  unpublished GTM workspace specification
+# =============================================================================
+# STATUS: NOT BUILDABLE YET. GTM-M545Z8T2 is installed on zero pages and both
+# target URLs return 404. Published now so the build is fully specified and can
+# execute the moment the developer finishes.
+#
+# This plan does NOT authorize publication. Submit and Publish require their own
+# separate fingerprinted approval after Preview and Tag Assistant QA.
+# =============================================================================
+plan_id: APG-0917-GTM-D
+plan_kind: gtm_workspace
+generated: "2026-09-17"
+
+container:
+  account_id: "6377231045"
+  container_id: "264326944"
+  public_id: "GTM-M545Z8T2"
+  name: "Apogee Lawns"
+  domain: "apogeelawns.com"
+  type: Web
+  observed_2026_09_16:
+    tags: 0
+    triggers: 0
+    built_in_variables_enabled: 0
+    user_defined_variables: 0
+    workspace_changes: 0
+    pending_changes: {modified: 0, added: 0, deleted: 0}
+    container_quality: "No Recent Data - no data has been received from your tag"
+    default_workspace_id: "2"
+
+ads_destination:
+  id: "AW-18453077620"
+  proven_three_ways:
+    - "customer.conversion_tracking_setting.conversion_tracking_id = 18453077620"
+    - "customer.remarketing_setting.google_global_site_tag contains AW-18453077620"
+    - "conversion action 7772803337 tag snippet send_to = AW-18453077620/KOL7CImirvocEPS8jt9E"
+  never_derived_from_customer_id: true
+
+conversion_labels_from_stage_a:
+  form_lead:
+    action_id: "7772803337"
+    send_to: "AW-18453077620/KOL7CImirvocEPS8jt9E"
+    conversion_id: "18453077620"
+    conversion_label: "KOL7CImirvocEPS8jt9E"
+  website_call:
+    action_id: "7773043879"
+    send_to: "AW-18453077620/lp3jCKf5vPocEPS8jt9E"
+    conversion_id: "18453077620"
+    conversion_label: "lp3jCKf5vPocEPS8jt9E"
+  calls_from_ads:
+    action_id: "7773013199"
+    gtm_tag: NONE
+    reason: "Calls from ads are configured in Google Ads. They never get a GTM tag."
+
+workspace:
+  name: "APG | Permanent Lights PPC | 2026-09"
+  folder: "Google Ads | Permanent Lights"
+  isolation_rule: >-
+    The container currently has 0 pending changes, so a clean isolated workspace is
+    available. If that is no longer true at build time, STOP and report rather than
+    mixing changes with someone else's work.
+
+# -----------------------------------------------------------------------------
+built_in_variables_to_enable:
+  # The container has ZERO built-in variables enabled today. Every trigger below
+  # depends on these, so enabling them is step one.
+  - Page URL
+  - Page Hostname
+  - Page Path
+  - Referrer
+count: 4
+
+user_defined_variables:
+  - name: "DLV | lead_id"
+    type: "Data Layer Variable"
+    data_layer_variable_name: "lead_id"
+    version: 2
+    purpose: "transaction ID for form-lead deduplication"
+    note: >-
+      Only usable if the developer exposes a real unique non-PII lead ID on the
+      thank-you page data layer. If they cannot, this variable is NOT created and the
+      form tag ships without a transaction ID, with the deduplication limitation
+      documented rather than faked.
+count_user_defined: 1
+
+tags:
+  - ordinal: 1
+    name: "Google tag | AW-18453077620 | All Pages"
+    type: "Google tag (googtag)"
+    tag_id: "AW-18453077620"
+    trigger: "Initialization - All Pages"
+    rationale: >-
+      No equivalent implementation exists anywhere on the site (verified: 0 GTM, 0 gtag,
+      0 dataLayer, 0 AW ids across 5 pages and all 17 enqueued JS files), so exactly one
+      sitewide Google tag is required.
+    conversion_linker: NOT_CREATED
+    conversion_linker_reason: >-
+      The Google tag with an Ads destination performs conversion linking itself. A
+      separate Conversion Linker tag would be redundant. Only add one if the audited
+      implementation ends up lacking a sitewide Google tag.
+
+  - ordinal: 2
+    name: "Google Ads | Lead | Permanent Lights Thank You"
+    type: "Google Ads Conversion Tracking"
+    conversion_id: "18453077620"
+    conversion_label: "KOL7CImirvocEPS8jt9E"
+    trigger: "TR | Custom Event | apg_permanent_lights_lead"
+    transaction_id: "{{DLV | lead_id}}"
+    transaction_id_conditional: "omit entirely if the developer cannot expose a real lead ID"
+    fire_once: "Once per event"
+    must_not_fire_on:
+      - "ordinary landing-page view"
+      - "form start"
+      - "validation error"
+      - "abandoned form"
+      - "spam or reCAPTCHA rejection"
+      - "failed server-side submission"
+      - "direct thank-you-page visit with no valid success state"
+      - "any unrelated form on the site"
+
+  - ordinal: 3
+    name: "Google Ads | Call | Permanent Lights Website | 60s"
+    type: "Google Ads Calls from Website Conversion"
+    conversion_id: "18453077620"
+    conversion_label: "lp3jCKf5vPocEPS8jt9E"
+    phone_number: "402-526-5754"
+    trigger: "TR | Page View | Permanent Lights Landing Page"
+    status: HELD_DO_NOT_BUILD
+    held_reason: >-
+      402-526-5754 is a WhatConverts tracking number. This tag performs Google Forwarding
+      Number replacement on the same displayed number WhatConverts DNI would swap. Two
+      swappers on one element race, and the loser silently records nothing. The
+      recommendation in DNI-CONFLICT-DECISION-2026-09-16.md is that WhatConverts owns call
+      measurement and this tag is never built. Build it ONLY if the owner decides
+      otherwise AND a tested sequencing architecture passes Preview.
+
+triggers:
+  - name: "TR | Custom Event | apg_permanent_lights_lead"
+    type: "Custom Event"
+    event_name: "apg_permanent_lights_lead"
+    conditions:
+      - "Page Hostname equals apogeelawns.com"
+      - "Page Path matches RegEx ^/thank-you/permanent-christmas-lights/?$"
+    regex_note: >-
+      Anchored at both ends with only an optional trailing slash. Deliberately NOT
+      'Page URL contains thank-you', which would fire on any thank-you page for any
+      service.
+  - name: "TR | Page View | Permanent Lights Landing Page"
+    type: "Page View"
+    conditions:
+      - "Page Hostname equals apogeelawns.com"
+      - "Page Path matches RegEx ^/permanent-christmas-lights-lincoln-ne/?$"
+    status: HELD_WITH_TAG_3
+  - name: "Initialization - All Pages"
+    type: "Built-in Initialization trigger"
+
+object_counts_if_built:
+  built_in_variables_enabled: 4
+  user_defined_variables_created: 1
+  tags_created: 2          # tag 3 is HELD
+  triggers_created: 1      # trigger 2 is HELD with tag 3; Initialization is built-in
+  folders_created: 1
+  workspaces_created: 1
+  versions_published: 0    # publication is a SEPARATE approval
+  TOTAL_WORKSPACE_OBJECTS: 9
+
+preflight_before_build:
+  - "GTM-M545Z8T2 returns in Tag Assistant on the landing page AND the thank-you page"
+  - "https://apogeelawns.com/permanent-christmas-lights-lincoln-ne/ returns 200"
+  - "https://apogeelawns.com/thank-you/permanent-christmas-lights/ returns 200"
+  - "a real test submission reaches the thank-you URL; a deliberate validation failure does NOT"
+  - "the dataLayer push fires with a real non-PII lead_id, or the developer confirms it cannot"
+  - "the DNI ownership decision is settled (blocks tag 3 only)"
+  - "container still has 0 pending changes, so the workspace is cleanly isolated"
+
+preview_test_matrix:
+  - "standard site page - Google tag fires once, no conversion tag"
+  - "PPC landing page - Google tag fires once"
+  - "empty form submission - no conversion"
+  - "invalid form submission - no conversion"
+  - "successful labelled test lead - conversion fires exactly once"
+  - "thank-you redirect carries a valid success state"
+  - "direct thank-you visit with no success state - NO conversion"
+  - "thank-you refresh - same lead_id, deduplicated by transaction ID"
+  - "back-button navigation - no extra conversion"
+  - "mobile form submission"
+  - "mobile click-to-call behaviour"
+  - "a page outside the PPC funnel - no conversion tag"
+  - "granted and denied consent states, if a CMP exists (none today)"
+
+publication:
+  status: NOT_AUTHORIZED_BY_THIS_PLAN
+  requires: "a separate fingerprinted plan and the exact approval APPROVE APG TRACKING PUBLISH <fingerprint>"
+  version_name_when_approved: "Apogee | Google Ads Lead Tracking | 2026-09"
+
+consent_and_pii:
+  consent_platform_detected: NONE
+  rules:
+    - "do not invent consent defaults or install a CMP"
+    - "do not accept Customer Data Terms (accepted_customer_data_terms is false and stays false)"
+    - "do not configure enhanced conversions in this phase"
+    - "no name, email, phone, ZIP or project note in any URL, event parameter or data layer value"

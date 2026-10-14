@@ -1,0 +1,110 @@
+{
+  "checkpoint": "PGA-NEG-R2",
+  "client_slug": "pro-green-austin",
+  "exact_child_account_name": "Pro Green - Austin - Live",
+  "child_customer_id": "7380491929",
+  "exact_service": "outdoor design & build",
+  "vertical": "hardscaping",
+  "run_date": "2026-08-22",
+  "account_timezone": "America/New_York",
+  "task": "READ + AUDIT + DRAFT + VALIDATE-ONLY campaign-level negative-keyword package",
+  "last_completed_phase": "P8_VALIDATE_ONLY_AND_POST_READ_COMPLETE",
+  "phases": [
+    {"id": "P0", "name": "Project instructions and client files read", "status": "COMPLETE"},
+    {"id": "P1", "name": "Work-order and setup validators", "status": "COMPLETE",
+     "result": "validate_work_order PASS, verify_setup PASS"},
+    {"id": "P2", "name": "Fresh read-only identity gate and account read", "status": "COMPLETE",
+     "result": "Pro Green - Austin - Live | 7380491929 | manager=false | test=false | USD | America/New_York; 0 read errors"},
+    {"id": "P3", "name": "Corpus reconciliation and adjudication", "status": "COMPLETE",
+     "result": "349 rows, 307 distinct terms, $555.45, 25 clicks, 0 conversions; source == verdict on all 8 measures"},
+    {"id": "P4", "name": "Competitor and service verification", "status": "COMPLETE",
+     "result": "24 prior candidates re-evaluated, 20 retained, 4 rejected, 7 new phrases verified, 76 brand-shaped queries reported unverified"},
+    {"id": "P5", "name": "Campaign-negative plan built", "status": "COMPLETE",
+     "result": "34 unique phrases x 2 campaigns = 68 objects, 0 skipped"},
+    {"id": "P6", "name": "Validators and tests", "status": "COMPLETE",
+     "result": "55/55 plan checks PASS; 372 unit tests PASS"},
+    {"id": "P7", "name": "Fingerprints issued", "status": "COMPLETE",
+     "result": "MASTER 063EE720BAF3, EXISTING_RESOURCES 628D3E61A9C2"},
+    {"id": "P8", "name": "Server-side validate-only and post-read", "status": "COMPLETE",
+     "result": "68 operations validated, partial_failure=false, nothing written; post-read confirms 0 of 68 exist live"},
+    {"id": "P9", "name": "Approval gate", "status": "AWAITING_APPROVAL",
+     "blocking": "Explicit approval of EXISTING_RESOURCES 628D3E61A9C2 is required before any live write."}
+  ],
+  "external_write_occurred": false,
+  "external_write_evidence": "clients/pro-green-austin/snapshots/post-validate-check-2026-08-22.json -> NO_EXTERNAL_CHANGES_MADE = true",
+  "proposed_object_count": 68,
+  "proposed_action_count": 68,
+  "unique_candidate_phrases": 34,
+  "fingerprints": {
+    "MASTER": "063EE720BAF3",
+    "EXISTING_RESOURCES": "628D3E61A9C2",
+    "void": {
+      "MASTER": "2D87A5249784",
+      "EXISTING_RESOURCES": "4EEF81C7F2F5",
+      "note": "Permanently void. Never approved, never executed. No external change is authorized under either code."
+    }
+  },
+  "files_created": [
+    "clients/pro-green-austin/snapshots/negatives-fresh-read-2026-08-22.json",
+    "clients/pro-green-austin/snapshots/post-validate-check-2026-08-22.json",
+    "clients/pro-green-austin/plans/campaign-negatives-2026-08-22.json",
+    "clients/pro-green-austin/receipts/validate-campaign-negatives-2026-08-22.json",
+    "artifacts/pro-green-austin/2026-08-18_full-audit/24_search_term_verdicts_mtd_v2.csv",
+    "artifacts/pro-green-austin/2026-08-18_full-audit/25_candidate_reconciliation.json",
+    "artifacts/pro-green-austin/2026-08-18_full-audit/25_candidate_reconciliation_report.md",
+    "artifacts/pro-green-austin/2026-08-18_full-audit/26_campaign_negative_plan.yaml",
+    "artifacts/pro-green-austin/2026-08-18_full-audit/27_campaign_negative_plan.csv",
+    "artifacts/pro-green-austin/2026-08-18_full-audit/28_expert_audit_summary.md",
+    "artifacts/pro-green-austin/2026-08-18_full-audit/29_validate_only_receipt.md",
+    "artifacts/pro-green-austin/2026-08-18_full-audit/30_resume_checkpoint.json",
+    "artifacts/pro-green-austin/2026-08-18_full-audit/31_artifact_index.md"
+  ],
+  "scripts_created_or_modified": [
+    "scripts/pga_negatives_read.py",
+    "scripts/pga_probe.py",
+    "scripts/pga_probe_negatives.py",
+    "scripts/pga_probe_conflicts.py",
+    "scripts/pga_corpus_explore.py",
+    "scripts/pga_decisions_2026_08_22.py",
+    "scripts/pga_build_negative_plan.py",
+    "scripts/pga_emit_plan_yaml.py",
+    "scripts/pga_emit_reports.py",
+    "scripts/pga_post_validate_check.py",
+    "scripts/validate_negative_plan.py",
+    "tests/test_negative_plan_validator.py"
+  ],
+  "script_repairs": [
+    {
+      "script": "scripts/pga_negatives_read.py",
+      "defect": "change_event.changed_resource is not a selectable field in the Google Ads API",
+      "fix": "replaced with change_event.change_resource_name plus change_event.new_resource",
+      "verified": "re-ran the full read; 116 change events returned, 0 read errors"
+    },
+    {
+      "script": "scripts/classify_search_terms_mtd.py (previous round, superseded not edited)",
+      "defect": "aggregated source rows to one row per (term, ad group) pair and dropped rows whose campaign was not ENABLED, so the CSV held 325 of 349 rows",
+      "fix": "superseded by scripts/pga_build_negative_plan.py, which emits one CSV row per source row and asserts row, term, impression, click, cost and conversion equality against the API",
+      "verified": "349 == 349 on all eight reconciliation measures"
+    },
+    {
+      "script": "scripts/pga_emit_reports.py",
+      "defect": "campaign names containing pipes broke markdown table cells; prior-versus-new competitor split used loose substring matching and over-counted new phrases as 9 instead of 7",
+      "fix": "added a cell() escaper and an explicit from_prior() mapping",
+      "verified": "20 retained + 7 new = 27 competitor phrases, matching the plan"
+    }
+  ],
+  "validators_completed": [
+    "scripts/validate_work_order.py -> PASS",
+    "scripts/verify_setup.py -> PASS",
+    "scripts/validate_location_targets.py -> all 24 targets RESOLVED",
+    "scripts/validate_negative_plan.py -> 55/55 PASS",
+    "scripts/plan_fingerprint.py -> reproducible, neither code void",
+    "PYTHONPATH=src python -m unittest discover -s tests -> 372 tests OK"
+  ],
+  "next_safe_step": "Wait for the user to approve EXISTING_RESOURCES 628D3E61A9C2. On approval, re-run scripts/pga_negatives_read.py for a drift check, re-run scripts/validate_negative_plan.py, then run scripts/execute_approved_plan.py --subplan EXISTING_RESOURCES --fingerprint 628D3E61A9C2 WITHOUT --validate-only, then re-run scripts/pga_post_validate_check.py to read the 68 created criteria back. Do not enable, delete, or touch any other resource.",
+  "do_not_repeat": [
+    "Phase 1 remediation (executed 2026-08-19)",
+    "Phase 2 RSA create-paused and enable (executed 2026-08-20; 48 ENABLED RSAs, 2 per ad group)",
+    "The voided round-1 ad-group negative plan"
+  ]
+}

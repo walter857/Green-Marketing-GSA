@@ -1,0 +1,106 @@
+{
+ "september_scenarios": {
+  "A. Do nothing (ceilings stay as the owner set them)": {
+   "daily_rate": 11.27,
+   "projected_month_end": 1508.8,
+   "vs_cap": 11491.2,
+   "note": "AC Repair, HVAC Installation, HVAC Replacement and Gas Boiler have taken zero clicks since 2026-09-05. Only HVAC Repair squeezes an occasional click under $25."
+  },
+  "B. AMB-0909-CPC-1 only (Installation $65, Repair $60)": {
+   "daily_rate": 186.0,
+   "projected_month_end": 5352.77,
+   "vs_cap": 7647.23,
+   "note": "HVAC Installation returns to roughly its pre-ceiling $138.78/day (its ceiling stops binding at $65) and HVAC Repair returns to about 52% of its $90.80/day, the modelled click survival at a $60 cap. AC Repair stays dark by design."
+  },
+  "C. B + AC Repair ceiling raised to $130": {
+   "daily_rate": 273.18,
+   "projected_month_end": 7270.86,
+   "vs_cap": 5729.14,
+   "note": "Adds AC Repair back at the modelled 60% click survival of its $145.31/day pre-ceiling rate. NOT RECOMMENDED: modelled CPA at that cap is $281.19 against a $150 max CPQL."
+  },
+  "D. Pre-ceiling behaviour fully restored (no caps at all)": {
+   "daily_rate": 382.15,
+   "projected_month_end": 9668.19,
+   "vs_cap": 3331.81,
+   "note": "The 2026-08-14..09-03 run rate. Reference point only."
+  }
+ },
+ "september_mtd_settled": {
+  "AC Repair": {
+   "impressions": 363,
+   "clicks": 5,
+   "cost": 534.28,
+   "conversions": 1.0,
+   "all_conversions": 2.0
+  },
+  "Gas Boiler Repair": {
+   "impressions": 25,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "HVAC Installation": {
+   "impressions": 405,
+   "clicks": 9,
+   "cost": 439.8,
+   "conversions": 3.0,
+   "all_conversions": 16.0
+  },
+  "HVAC Repair": {
+   "impressions": 121,
+   "clicks": 6,
+   "cost": 286.78,
+   "conversions": 0.0,
+   "all_conversions": 7.0
+  },
+  "HVAC Replacement": {
+   "impressions": 98,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  }
+ },
+ "lead_forecast_scenario_B": {
+  "HVAC Installation": {
+   "spend": 3053.16,
+   "clicks": 110.9,
+   "raw_primary_leads": 5.4,
+   "raw_cpa": 569.01
+  },
+  "HVAC Repair": {
+   "spend": 1038.75,
+   "clicks": 28.5,
+   "raw_primary_leads": 4.6,
+   "raw_cpa": 227.94
+  }
+ },
+ "unchanged_proof": {
+  "campaign_count_non_removed": 23,
+  "enabled_campaigns": 5,
+  "campaign_negatives_enabled_on_five": 6160,
+  "geo_targets_on_five": 375,
+  "ad_schedules_on_five": 30,
+  "ip_blocks_account": 2796,
+  "shared_sets": 17,
+  "conversion_actions_non_removed": 16,
+  "descriptive_name": "Ambient Cooling - Live",
+  "tracking_url_template_present": true,
+  "tracking_url_template_is_clickcease": true,
+  "manager_links": {
+   "2815082755": "ACTIVE",
+   "3373711342": "ACTIVE"
+  },
+  "five_budgets": {
+   "15787409435": 141.45,
+   "15787409438": 42.76,
+   "15787409441": 176.15,
+   "15787409444": 78.95,
+   "15787409447": 26.32
+  },
+  "checked_local": "2026-09-09T15:10:59.746601-04:00",
+  "read_only_run": true,
+  "mutations_executed": 0
+ }
+}

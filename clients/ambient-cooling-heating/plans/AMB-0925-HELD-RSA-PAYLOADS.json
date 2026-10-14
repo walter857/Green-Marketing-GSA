@@ -1,0 +1,127 @@
+{
+ "plan_name": "AMB-0925-HELD-RSA-PAYLOADS",
+ "built_local": "2026-09-25",
+ "submitted": false,
+ "payloads": {
+  "204129719007": {
+   "ad_group": "SKAG | Geothermal Heat Pump",
+   "final_url": "https://offer.ambientcoolingandheating.com/geothermal-heat-pump/",
+   "path1": "Geothermal",
+   "path2": "Heat-Pump",
+   "gate": "publish /geothermal-heat-pump/ from the Drive package; page QA must pass",
+   "rsas": [
+    {
+     "h": [
+      "Geothermal Heat Pump",
+      "Geothermal Heat Pump Service",
+      "Geothermal HVAC Central MD",
+      "Severn Geothermal Service",
+      "Columbia Geothermal Heating",
+      "Severna Park Geothermal",
+      "Ground Source Heat Pump",
+      "Discuss Your Geothermal System",
+      "Request a Free Quote",
+      "Trained HVAC Technicians",
+      "Geothermal System Review",
+      "Talk To A Technician",
+      "Central Maryland Service",
+      "Clear Service Options",
+      "Geothermal Heating Help"
+     ],
+     "d": [
+      "Geothermal heat pump service for homes in Severn, Severna Park and Columbia, MD.",
+      "Trained technicians review your geothermal system and explain the options clearly.",
+      "Request a free quote from Ambient Cooling and Heating.",
+      "Call Mon-Fri, 8 a.m. to 4 p.m., or request your quote online."
+     ]
+    },
+    {
+     "h": [
+      "Geothermal System Problems?",
+      "Geothermal Not Heating?",
+      "Geothermal Heat Pump Help",
+      "Book A Geothermal Visit",
+      "Geothermal Service Near You",
+      "Severn Geothermal Heat Pump",
+      "Columbia Geothermal Service",
+      "Anne Arundel Geothermal",
+      "Geothermal Specialists",
+      "Request Geothermal Service",
+      "Clear Repair Options",
+      "Talk To A Technician",
+      "Free Geothermal Quote",
+      "Central Maryland Geothermal",
+      "Plan Your Geothermal Project"
+     ],
+     "d": [
+      "Changes in noise, cycling or comfort? Request a geothermal system review.",
+      "We discuss your current setup and walk you through the options clearly.",
+      "Geothermal heat pump service across Central Maryland from Ambient Cooling and Heating.",
+      "Request a free geothermal quote online or call Mon-Fri, 8 a.m. to 4 p.m."
+     ]
+    }
+   ]
+  },
+  "204129718247": {
+   "ad_group": "SKAG | Boiler Installation",
+   "final_url": "https://offer.ambientcoolingandheating.com/boiler-installation/",
+   "path1": "Boiler",
+   "path2": "Installation",
+   "gate": "developer D2: /boiler-installation/ must carry installation content (H1 + every H2)",
+   "rsas": [
+    {
+     "h": [
+      "Boiler Installation",
+      "Boiler Installation Severn",
+      "Severna Park Boiler Install",
+      "Columbia Boiler Installation",
+      "New Boiler Installation",
+      "Boiler Installation Near You",
+      "Request a Free Quote",
+      "Trained HVAC Technicians",
+      "Central Maryland Boilers",
+      "Plan Your New Boiler",
+      "Boiler Installation Quote",
+      "Talk To A Technician",
+      "Clear Installation Options",
+      "Maryland Boiler Installs",
+      "Boiler Install Central MD"
+     ],
+     "d": [
+      "Boiler installation for homes in Severn, Severna Park and Columbia, Maryland.",
+      "Trained technicians assess your home and explain boiler installation options clearly.",
+      "Request a free boiler installation quote from Ambient Cooling and Heating.",
+      "Call Mon-Fri, 8 a.m. to 4 p.m., or request your free quote online."
+     ]
+    },
+    {
+     "h": [
+      "Need A New Boiler?",
+      "Replace An Old Boiler",
+      "New Boiler Installation",
+      "Boiler Installation Quote",
+      "Boiler Install Near You",
+      "Severn Boiler Installation",
+      "Columbia Boiler Install",
+      "Anne Arundel Boilers",
+      "Boiler Installation Team",
+      "Request Boiler Installation",
+      "Clear Installation Options",
+      "Talk To A Technician",
+      "Free Installation Quote",
+      "Central Maryland Boiler",
+      "Plan Your Boiler Project"
+     ],
+     "d": [
+      "Planning a new boiler? Request a free installation quote today.",
+      "We assess your heating needs and walk you through the installation options.",
+      "Boiler installation across Central Maryland from Ambient Cooling and Heating.",
+      "Request a free boiler quote online or call Mon-Fri, 8 a.m. to 4 p.m."
+     ]
+    }
+   ]
+  }
+ },
+ "errors": [],
+ "fingerprint": "E2C499045DFD"
+}

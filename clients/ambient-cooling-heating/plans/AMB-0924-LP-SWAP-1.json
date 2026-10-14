@@ -1,0 +1,124 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-24",
+ "authorized_by": "owner instruction 2026-09-24 (this run)",
+ "supersedes": "AMB-0924-LP-ENABLE-2B D787B42AA8E6 (never executed)",
+ "plan_name": "AMB-0924-LP-SWAP-1",
+ "approval_class": "enable+pause (interim swap)",
+ "operations": [
+  {
+   "op": "PAUSE_OLD_RSA",
+   "ad_group_id": "199797580706",
+   "ad_id": "825056834769",
+   "impr_30d": 0
+  },
+  {
+   "op": "PAUSE_OLD_RSA",
+   "ad_group_id": "204129717247",
+   "ad_id": "825585199601",
+   "impr_30d": 0
+  },
+  {
+   "op": "PAUSE_OLD_RSA",
+   "ad_group_id": "204129717287",
+   "ad_id": "825585199607",
+   "impr_30d": 0
+  },
+  {
+   "op": "PAUSE_OLD_RSA",
+   "ad_group_id": "204129717007",
+   "ad_id": "825585199595",
+   "impr_30d": 9
+  },
+  {
+   "op": "PAUSE_OLD_RSA",
+   "ad_group_id": "204129717767",
+   "ad_id": "825585199622",
+   "impr_30d": 1
+  },
+  {
+   "op": "PAUSE_OLD_RSA",
+   "ad_group_id": "204129718047",
+   "ad_id": "825585199643",
+   "impr_30d": 0
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "199797580706",
+   "ad_id": "825863405484",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "199797580706",
+   "ad_id": "825863405487",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "204129717247",
+   "ad_id": "825863405490",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "204129717247",
+   "ad_id": "825863405493",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "204129717287",
+   "ad_id": "825863405496",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "204129717287",
+   "ad_id": "825863405499",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "204129717007",
+   "ad_id": "825863405502",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "204129717007",
+   "ad_id": "825863405505",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "204129717767",
+   "ad_id": "825863405508",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "204129717767",
+   "ad_id": "825863405511",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "204129718047",
+   "ad_id": "825863405514",
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+  },
+  {
+   "op": "ENABLE_RSA_COPY",
+   "ad_group_id": "204129718047",
+   "ad_id": "825863405517",
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+  }
+ ],
+ "order": "pause first (3-enabled-RSA cap)",
+ "preflight": "VALIDATED 18",
+ "operation_count": 18,
+ "fingerprint": "FE8D77752100"
+}

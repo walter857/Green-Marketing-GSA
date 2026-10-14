@@ -1,0 +1,452 @@
+{
+ "captured_utc": "2026-08-20T02:21:55.892485Z",
+ "approved_fingerprint": "44D14DA4714BB6E8",
+ "ad_schedule_on_five": 0,
+ "ad_schedule_elsewhere": 109,
+ "criterion_type_counts": {
+  "24132507741": {
+   "LANGUAGE": 1,
+   "DEVICE": 3,
+   "LOCATION": 75
+  },
+  "24132507744": {
+   "LANGUAGE": 1,
+   "DEVICE": 3,
+   "LOCATION": 75
+  },
+  "24132507747": {
+   "LANGUAGE": 1,
+   "DEVICE": 3,
+   "LOCATION": 75
+  },
+  "24132507750": {
+   "LANGUAGE": 1,
+   "DEVICE": 3,
+   "LOCATION": 75
+  },
+  "24132507753": {
+   "LANGUAGE": 1,
+   "DEVICE": 3,
+   "LOCATION": 75
+  }
+ },
+ "call_asset_after": {
+  "phone": "(410)705-6354",
+  "country": "US",
+  "reporting": "USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION",
+  "conv_action": "customers/2401959466/conversionActions/179",
+  "approval": "UNSPECIFIED",
+  "schedule": [
+   {
+    "day_of_week": "MONDAY",
+    "start_hour": 8,
+    "start_minute": "ZERO",
+    "end_hour": 20,
+    "end_minute": "ZERO"
+   },
+   {
+    "day_of_week": "TUESDAY",
+    "start_hour": 8,
+    "start_minute": "ZERO",
+    "end_hour": 20,
+    "end_minute": "ZERO"
+   },
+   {
+    "day_of_week": "WEDNESDAY",
+    "start_hour": 8,
+    "start_minute": "ZERO",
+    "end_hour": 20,
+    "end_minute": "ZERO"
+   },
+   {
+    "day_of_week": "THURSDAY",
+    "start_hour": 8,
+    "start_minute": "ZERO",
+    "end_hour": 20,
+    "end_minute": "ZERO"
+   },
+   {
+    "day_of_week": "FRIDAY",
+    "start_hour": 8,
+    "start_minute": "ZERO",
+    "end_hour": 20,
+    "end_minute": "ZERO"
+   },
+   {
+    "day_of_week": "SATURDAY",
+    "start_hour": 8,
+    "start_minute": "ZERO",
+    "end_hour": 13,
+    "end_minute": "ZERO"
+   }
+  ],
+  "review_status": "REVIEW_IN_PROGRESS",
+  "policy_topics": []
+ },
+ "call_asset_links_after": {
+  "80497290055": [
+   {
+    "campaign_id": "23123745500",
+    "status": "ENABLED",
+    "primary": "ELIGIBLE",
+    "reasons": []
+   },
+   {
+    "campaign_id": "23143116432",
+    "status": "ENABLED",
+    "primary": "ELIGIBLE",
+    "reasons": []
+   },
+   {
+    "campaign_id": "23152954036",
+    "status": "ENABLED",
+    "primary": "ELIGIBLE",
+    "reasons": []
+   },
+   {
+    "campaign_id": "23167679179",
+    "status": "ENABLED",
+    "primary": "ELIGIBLE",
+    "reasons": []
+   }
+  ],
+  "98498198415": [
+   {
+    "campaign_id": "20513589817",
+    "status": "ENABLED",
+    "primary": "ELIGIBLE",
+    "reasons": []
+   },
+   {
+    "campaign_id": "21884027719",
+    "status": "ENABLED",
+    "primary": "ELIGIBLE",
+    "reasons": []
+   },
+   {
+    "campaign_id": "22379067302",
+    "status": "ENABLED",
+    "primary": "ELIGIBLE",
+    "reasons": []
+   },
+   {
+    "campaign_id": "22855140165",
+    "status": "ENABLED",
+    "primary": "ELIGIBLE",
+    "reasons": []
+   }
+  ],
+  "343054924787": [
+   {
+    "campaign_id": "23700217819",
+    "status": "ENABLED",
+    "primary": "ELIGIBLE",
+    "reasons": []
+   }
+  ],
+  "407995613637": [
+   {
+    "campaign_id": "24132507741",
+    "status": "ENABLED",
+    "primary": "PENDING",
+    "reasons": [
+     "ASSET_UNDER_REVIEW"
+    ]
+   },
+   {
+    "campaign_id": "24132507744",
+    "status": "ENABLED",
+    "primary": "PENDING",
+    "reasons": [
+     "ASSET_UNDER_REVIEW"
+    ]
+   },
+   {
+    "campaign_id": "24132507747",
+    "status": "ENABLED",
+    "primary": "PENDING",
+    "reasons": [
+     "ASSET_UNDER_REVIEW"
+    ]
+   },
+   {
+    "campaign_id": "24132507750",
+    "status": "ENABLED",
+    "primary": "PENDING",
+    "reasons": [
+     "ASSET_UNDER_REVIEW"
+    ]
+   },
+   {
+    "campaign_id": "24132507753",
+    "status": "ENABLED",
+    "primary": "PENDING",
+    "reasons": [
+     "ASSET_UNDER_REVIEW"
+    ]
+   }
+  ]
+ },
+ "call_asset_link_pending_review": [
+  "24132507741",
+  "24132507744",
+  "24132507747",
+  "24132507750",
+  "24132507753"
+ ],
+ "all_call_assets_after": {
+  "80497290055": {
+   "phone": "(410) 415-9517",
+   "rows": 0
+  },
+  "98498198415": {
+   "phone": "(410) 415-9517",
+   "rows": 7
+  },
+  "343054924787": {
+   "phone": "(410) 705-6354",
+   "rows": 0
+  },
+  "369249814267": {
+   "phone": "4107056354",
+   "rows": 7
+  },
+  "407995613637": {
+   "phone": "(410)705-6354",
+   "rows": 6
+  }
+ },
+ "campaigns_after": {
+  "24132507741": {
+   "name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "status": "ENABLED",
+   "serving": "SERVING",
+   "bidding": "TARGET_SPEND",
+   "cpc_ceiling": 0,
+   "search": true,
+   "partners": false,
+   "display": false,
+   "geo": "PRESENCE",
+   "budget_micros": 141450000
+  },
+  "24132507744": {
+   "name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "status": "ENABLED",
+   "serving": "SERVING",
+   "bidding": "TARGET_SPEND",
+   "cpc_ceiling": 0,
+   "search": true,
+   "partners": false,
+   "display": false,
+   "geo": "PRESENCE",
+   "budget_micros": 42760000
+  },
+  "24132507747": {
+   "name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "status": "ENABLED",
+   "serving": "SERVING",
+   "bidding": "TARGET_SPEND",
+   "cpc_ceiling": 0,
+   "search": true,
+   "partners": false,
+   "display": false,
+   "geo": "PRESENCE",
+   "budget_micros": 138160000
+  },
+  "24132507750": {
+   "name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+   "status": "ENABLED",
+   "serving": "SERVING",
+   "bidding": "TARGET_SPEND",
+   "cpc_ceiling": 0,
+   "search": true,
+   "partners": false,
+   "display": false,
+   "geo": "PRESENCE",
+   "budget_micros": 78950000
+  },
+  "24132507753": {
+   "name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "status": "ENABLED",
+   "serving": "SERVING",
+   "bidding": "TARGET_SPEND",
+   "cpc_ceiling": 0,
+   "search": true,
+   "partners": false,
+   "display": false,
+   "geo": "PRESENCE",
+   "budget_micros": 26320000
+  }
+ },
+ "counts_after": {
+  "campaigns_non_removed": 23,
+  "ad_groups_non_removed": 68,
+  "ads_non_removed": 113,
+  "campaign_assets_non_removed": 271,
+  "conversion_actions": 16
+ },
+ "keywords_after": 6968,
+ "campaign_criteria_after": 13780,
+ "manager_links_after": {
+  "2815082755": "ACTIVE",
+  "3373711342": "ACTIVE"
+ },
+ "checks": [
+  {
+   "check": "AD_SCHEDULE criteria on the five is now ZERO -> campaigns deliver 24/7",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "exactly 109 AD_SCHEDULE criteria remain on legacy campaigns",
+   "pass": true,
+   "detail": "109"
+  },
+  {
+   "check": "legacy AD_SCHEDULE spread across 19 campaigns, untouched",
+   "pass": true,
+   "detail": "19"
+  },
+  {
+   "check": "per-campaign criterion counts are LANGUAGE 1 / DEVICE 3 / LOCATION 75 / AD_SCHEDULE 0",
+   "pass": true,
+   "detail": "{\"24132507741\": {\"LANGUAGE\": 1, \"DEVICE\": 3, \"LOCATION\": 75}, \"24132507744\": {\"LANGUAGE\": 1, \"DEVICE\": 3, \"LOCATION\": 75}, \"24132507747\": {\"LANGUAGE\": 1, \"DEVICE\": 3, \"LOCATION\": 75}, \"24132507750\": {\"LANGUAGE\": 1, \"DEVICE\": 3, \"LOCATION\": 75}, \"24132507753\": {\"LANGUAGE\": 1, \"DEVICE\": 3, \"LOCATION\": 75}}"
+  },
+  {
+   "check": "call asset carries exactly 6 schedule rows",
+   "pass": true,
+   "detail": "6"
+  },
+  {
+   "check": "Mon-Fri 08:00-20:00 and Sat 08:00-13:00 exactly",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 20), ('MONDAY', 8, 20), ('SATURDAY', 8, 13), ('THURSDAY', 8, 20), ('TUESDAY', 8, 20), ('WEDNESDAY', 8, 20)]"
+  },
+  {
+   "check": "every start_minute and end_minute is ZERO",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "SUNDAY is ABSENT from the call-asset schedule",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "phone number unchanged (410)705-6354",
+   "pass": true,
+   "detail": "(410)705-6354"
+  },
+  {
+   "check": "country code unchanged US",
+   "pass": true,
+   "detail": "US"
+  },
+  {
+   "check": "call conversion reporting state unchanged",
+   "pass": true,
+   "detail": "USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION"
+  },
+  {
+   "check": "call conversion action unchanged",
+   "pass": true,
+   "detail": "customers/2401959466/conversionActions/179"
+  },
+  {
+   "check": "call asset carries NO policy topic entries and is not DISAPPROVED",
+   "pass": true,
+   "detail": "approval=UNSPECIFIED review=REVIEW_IN_PROGRESS topics=[]"
+  },
+  {
+   "check": "call asset review state is APPROVED or a normal post-edit re-review",
+   "pass": true,
+   "detail": "approval=UNSPECIFIED review=REVIEW_IN_PROGRESS"
+  },
+  {
+   "check": "call asset still linked to exactly the five, no sixth campaign",
+   "pass": true,
+   "detail": "['24132507741', '24132507744', '24132507747', '24132507750', '24132507753']"
+  },
+  {
+   "check": "all five call-asset links are ENABLED",
+   "pass": true,
+   "detail": "[{'campaign_id': '24132507741', 'status': 'ENABLED', 'primary': 'PENDING', 'reasons': ['ASSET_UNDER_REVIEW']}, {'campaign_id': '24132507744', 'status': 'ENABLED', 'primary': 'PENDING', 'reasons': ['ASSET_UNDER_REVIEW']}, {'campaign_id': '24132507747', 'status': 'ENABLED', 'primary': 'PENDING', 'reasons': ['ASSET_UNDER_REVIEW']}, {'campaign_id': '24132507750', 'status': 'ENABLED', 'primary': 'PENDI"
+  },
+  {
+   "check": "call-asset link primary_status is ELIGIBLE, or PENDING only for ASSET_UNDER_REVIEW",
+   "pass": true,
+   "detail": "[{'campaign_id': '24132507741', 'status': 'ENABLED', 'primary': 'PENDING', 'reasons': ['ASSET_UNDER_REVIEW']}, {'campaign_id': '24132507744', 'status': 'ENABLED', 'primary': 'PENDING', 'reasons': ['ASSET_UNDER_REVIEW']}, {'campaign_id': '24132507747', 'status': 'ENABLED', 'primary': 'PENDING', 'reasons': ['ASSET_UNDER_REVIEW']}, {'campaign_id': '24132507750', 'status': 'ENABLED', 'primary': 'PENDI"
+  },
+  {
+   "check": "no other CALL asset became active on the five",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "legacy call assets unchanged (343054924787:0, 80497290055:0, 98498198415:7, 369249814267:7)",
+   "pass": true,
+   "detail": "{\"80497290055\": {\"phone\": \"(410) 415-9517\", \"rows\": 0}, \"98498198415\": {\"phone\": \"(410) 415-9517\", \"rows\": 7}, \"343054924787\": {\"phone\": \"(410) 705-6354\", \"rows\": 0}, \"369249814267\": {\"phone\": \"4107056354\", \"rows\": 7}, \"407995613637\": {\"phone\": \"(410)705-6354\", \"rows\": 6}}"
+  },
+  {
+   "check": "all five still ENABLED and SERVING",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "bidding still TARGET_SPEND with cpc ceiling 0 on all five",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "networks unchanged: search on, partners off, display off",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "location option still PRESENCE on all five",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "budgets UNCHANGED - Package B was not applied",
+   "pass": true,
+   "detail": "{\"24132507741\": 141450000, \"24132507744\": 42760000, \"24132507747\": 138160000, \"24132507750\": 78950000, \"24132507753\": 26320000}"
+  },
+  {
+   "check": "6 replacement RSAs still ENABLED + APPROVED",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "6 original RSAs still PAUSED + DISAPPROVED",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "campaign / ad group / ad / campaign_asset / conversion_action counts unchanged",
+   "pass": true,
+   "detail": "after={'campaigns_non_removed': 23, 'ad_groups_non_removed': 68, 'ads_non_removed': 113, 'campaign_assets_non_removed': 271, 'conversion_actions': 16} baseline={'campaigns_non_removed': 23, 'ad_groups_non_removed': 68, 'ads_non_removed': 113, 'campaign_assets_non_removed': 271, 'conversion_actions': 16}"
+  },
+  {
+   "check": "keyword count unchanged at 6968",
+   "pass": true,
+   "detail": "6968"
+  },
+  {
+   "check": "campaign_criterion count fell by exactly 30 (13810 -> 13780)",
+   "pass": true,
+   "detail": "13780"
+  },
+  {
+   "check": "both manager links still ACTIVE",
+   "pass": true,
+   "detail": "{'2815082755': 'ACTIVE', '3373711342': 'ACTIVE'}"
+  },
+  {
+   "check": "account tracking template (ClickCease) unchanged",
+   "pass": true,
+   "detail": ""
+  }
+ ],
+ "all_pass": true
+}

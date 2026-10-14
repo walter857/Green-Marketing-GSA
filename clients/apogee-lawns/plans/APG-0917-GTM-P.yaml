@@ -1,0 +1,339 @@
+# =============================================================================
+# APG-0917-GTM-P  --  form-trigger hardening + website-call tag, draft only
+# =============================================================================
+# Delta plan. Covers ONLY what GTM-K (2871DD2A5227) deliberately excluded, plus
+# one hardening change to an object GTM-K already built.
+#
+# GTM-K is EXECUTED and is not re-run. This plan touches 2 existing objects and
+# creates 2 new ones. It creates NO container version and publishes NOTHING.
+# =============================================================================
+plan_id: APG-0917-GTM-P
+plan_kind: gtm_workspace_delta
+supersedes: []
+generated: "2026-09-17"
+classification: draft
+
+target:
+  exact_child_account_name: "Apogee Lawns LLC - Live"
+  child_customer_id: "8164626278"
+  vertical: similar-local-service
+  exact_primary_service: Permanent Christmas light installation
+  gtm_account_id: "6377231045"
+  gtm_container_id: "264326944"
+  gtm_container_public_id: "GTM-M545Z8T2"
+  gtm_workspace_id: "3"
+  gtm_workspace_name: "Apogee | PPC Tracking | 2026-09"
+  gtm_folder: "Google Ads | Permanent Lights"
+  signed_in_as: "access@greenmarketingfl.com"
+
+publication_boundary:
+  container_versions_to_create: 0
+  publishes: 0
+  submit_button_used: false
+  default_workspace_2_touched: false
+  live_container_after_this_plan: "Empty Container is Live - 0 tags, 0 triggers, 0 variables"
+  statement: >-
+    Every object below is built in workspace 3 and left as a workspace change. Nothing
+    reaches the live container. Publication is separately gated, see publication_gate.
+
+# =============================================================================
+# WhatConverts DNI determination -- the question Walter asked, now ANSWERED
+# =============================================================================
+whatconverts_dni_determination:
+  status: RESOLVED_BY_STATIC_ANALYSIS_NO_SIGN_IN_PERFORMED
+  method: >-
+    The profile script s.ksrndkehqnwntyxlhgto.com/174313.js?ver=7.1 was fetched
+    unauthenticated over HTTPS and decompressed locally, 59,555 bytes. No WhatConverts
+    sign-in, no credentials, no cookies and no purchase were involved.
+  profile_id: "174313"
+  whatconverts_account: "119788"
+  verdict: WHATCONVERTS_IS_ACTIVELY_REPLACING_THE_NUMBER
+  verdict_plain_english: >-
+    Option 2, with a qualification that matters. WhatConverts number replacement is ON
+    and runs on every page of offer.apogeelawns.com. It is NOT leaving the number alone.
+    But the replacement pool holds exactly ONE number, and the page is already hard-coded
+    to that same number, so the swap produces no visible change. The mechanism is live
+    even though the rendered digits never move.
+  decisive_evidence:
+    config_line: 'var keyword_tracking_list = [["233469","default","default","","","","0","0","0","","0","0"]];'
+    field_decode:
+      index_0_tracking_id: "233469"
+      index_1_source: "default"
+      index_2_medium: "default"
+      index_3_campaign_filter: ""
+      index_4_content_filter: ""
+      index_5_keyword_filter: ""
+      index_6_exclude_direct: "0"
+      index_7_exclude_organic: "0"
+      index_8_exclude_cpc: "0"
+      index_9_swap_pages: ""
+      index_10_dynamic_mode: "0"
+      index_11_dynamic_destination: "0"
+    branch_taken: >-
+      In keyword_target(), index 9 is empty so the swap_pages page restriction is skipped
+      entirely, meaning ALL pages qualify. The entry then matches the
+      source == "default" && medium == "default" branch, and because indexes 6, 7 and 8
+      are all "0" the entry is pushed into active_keyword_list UNCONDITIONALLY, for every
+      visitor, on every page, regardless of source or medium.
+    pool_size: 1
+    pool_size_meaning: >-
+      index 10 is "0", so wc_dynamic_mode stays 0. There is no per-session number pool
+      and no rotation. One tracking number serves all traffic.
+    page_evidence:
+      offer_apogeelawns_com: >-
+        The paid host hard-codes 402-526-5754 five times in visible text, plus
+        tel:402-526-5754 twice and tel:+14025265754 once. That IS the WhatConverts
+        tracking number, so old_number and new_number coincide.
+      apogeelawns_com: >-
+        The main site hard-codes 402-202-7261, the direct receptionist line, and is a
+        different host that this campaign does not use.
+      no_swap_opt_out_markers: 0
+      no_swap_opt_out_meaning: >-
+        The WhatConverts replace_number() walker skips any element carrying the CSS class
+        "no-swap". That class appears zero times on offer.apogeelawns.com, so no element
+        on the paid page is protected from replacement.
+  why_it_matters_for_the_google_tag:
+    conflict: REAL_AND_UNRESOLVED
+    mechanism: >-
+      Google's Calls from Website tag performs its own number replacement, swapping the
+      page number for a Google forwarding number. WhatConverts re-applies its own
+      replacement from a 10-second setInterval and from its DOM walker. Both target the
+      same unprotected nodes. Whichever writes last wins, per render, non-deterministically.
+    consequences_if_published_today:
+      - "A visitor may see a Google forwarding number, a WhatConverts number, or one then the other."
+      - "Calls that land on the Google number are invisible to WhatConverts, so the client's lead system of record loses them."
+      - "Calls that land on the WhatConverts number never reach conversion action 7773043879, which stays permanently empty."
+      - "Split measurement across two systems with no shared key means neither report is trustworthy."
+    therefore: >-
+      The tag is BUILT as Walter instructed, and is NOT published. See publication_gate.
+
+publication_gate:
+  state: BLOCKED
+  blocking_reason: "WhatConverts number replacement is active and unrestricted on offer.apogeelawns.com."
+  unblock_requires_one_of:
+    - option: A
+      label: WHATCONVERTS_KEEPS_WEBSITE_CALLS
+      recommended: true
+      what_happens: >-
+        The Google website-call tag is never published. It stays in workspace 3 as
+        documentation of the decision, or is deleted. Conversion action 7773043879 stays
+        SECONDARY and stays non-biddable, exactly as CONV-J left it. Website calls are
+        brought into Google Ads later, if wanted, through the WhatConverts Google Ads
+        integration as an offline import, which does not touch the page at all.
+      owner_work_required: none
+      risk: "Website calls are absent from Google Ads reporting until an offline import is configured."
+    - option: B
+      label: GOOGLE_OWNS_THE_PAID_PAGE
+      recommended: false
+      what_happens: >-
+        WhatConverts is configured to exclude offer.apogeelawns.com from replacement,
+        using the profile's swap-pages restriction, index 9 of the tracking entry, which
+        is currently empty. Once index 9 is confirmed non-empty and excludes that host,
+        the Google tag is published and Google owns website-call measurement.
+      owner_work_required: >-
+        A signed-in change inside the WhatConverts UI. Claude will not sign in to
+        WhatConverts and will not make that change.
+      verification_before_publishing: >-
+        Re-fetch 174313.js and confirm index 9 of the 233469 entry now restricts swapping
+        away from the paid host. Do not publish on a verbal assurance.
+      risk: "Website calls disappear from WhatConverts, which is the client's lead system of record."
+  do_not_publish_until: "Walter selects A or B in writing, and for B the re-fetch verification passes."
+
+# =============================================================================
+preconditions:
+  - "GTM-K 2871DD2A5227 is EXECUTED and workspace 3 shows Workspace Changes == 5"
+  - "Variable 'DLV | lead_id' exists with id 4, type Data Layer Variable, key lead_id, Version 2"
+  - "Trigger 'TR | Custom Event | apg_permanent_lights_lead' exists with exactly 2 conditions"
+  - "Tag 'Google tag | AW-18453077620 | All Pages' exists with id 6"
+  - "Tag 'Google Ads | Lead | Permanent Lights Thank You' exists with id 7"
+  - "No tag, trigger or variable referencing website calls exists in workspace 3"
+  - "Container versions == 0 and published versions == 0 excluding the container's own Version 1 'Empty Container'"
+
+# =============================================================================
+objects:
+
+  - ordinal: 1
+    object_type: variable
+    operation: update
+    existing_id: "4"
+    name: "DLV | lead_id"
+    change:
+      set_default_value: {from: unchecked, to: checked}
+      default_value: {from: "<none>", to: ""}
+    everything_else_unchanged:
+      type: Data Layer Variable
+      data_layer_variable_name: "lead_id"
+      data_layer_version: "Version 2"
+      folder: "Google Ads | Permanent Lights"
+    why: >-
+      This is what makes ordinal 2 actually work. With no default value a missing lead_id
+      resolves to undefined, and GTM stringifies undefined before evaluating a regex
+      predicate, so the literal text "undefined" would satisfy "matches RegEx .+" and the
+      hardening would silently pass on exactly the broken case it exists to catch. Pinning
+      the default to an empty string makes the gate deterministic: no lead_id means empty
+      string, empty string does not match .+, the trigger does not fire.
+    side_effect_on_tag_7: >-
+      Tag 'Google Ads | Lead | Permanent Lights Thank You' uses {{DLV | lead_id}} as its
+      Transaction ID. After this change a missing lead_id sends an empty Transaction ID
+      instead of the string "undefined". That is strictly better and invents no value.
+    fallback_if_gtm_rejects_an_empty_default: >-
+      If the GTM UI refuses to save an empty default value, do NOT invent a placeholder.
+      Leave the variable untouched and instead use RegEx ^(?!undefined$).+ in ordinal 2.
+      Record the deviation in the receipt.
+
+  - ordinal: 2
+    object_type: trigger
+    operation: update
+    name: "TR | Custom Event | apg_permanent_lights_lead"
+    trigger_type: Custom Event
+    event_name: "apg_permanent_lights_lead"
+    use_regex_matching: false
+    fires_on: Some Custom Events
+    conditions_before:
+      - "Page Hostname equals offer.apogeelawns.com"
+      - "Page Path matches RegEx ^/thank-you/permanent-christmas-lights/?$"
+    conditions_after:
+      - "Page Hostname equals offer.apogeelawns.com"
+      - "Page Path matches RegEx ^/thank-you/permanent-christmas-lights/?$"
+      - "{{DLV | lead_id}} matches RegEx .+"
+    change: "ADD condition 3 only. Conditions 1 and 2 are not edited."
+    condition_3_exact:
+      variable: "{{DLV | lead_id}}"
+      operator: "matches RegEx"
+      value: ".+"
+    why: >-
+      Requested by Walter. Without it the conversion fires on any dataLayer push carrying
+      the right event name on the right path, even when the form produced no lead id,
+      which is the signature of a replayed page, a cached thank-you, or a push fired
+      before the server confirmed the lead. With it, a conversion requires a real lead id,
+      which is also the deduplication key already wired into the Transaction ID.
+    known_consequence:
+      severity: EXPECTED_AND_INTENDED
+      detail: >-
+        This makes lead_id mandatory. Until the developer pushes a real non-PII lead_id,
+        the conversion tag will not fire AT ALL, where previously it would have fired with
+        an empty Transaction ID. That is the point of the hardening, not a regression. It
+        does raise the developer dependency from "needed for deduplication" to "needed for
+        any conversion to be recorded", and the handoff must say so.
+    pii_check: >-
+      lead_id must be an opaque non-PII identifier. No name, email, phone, ZIP or project
+      note may be placed in it. This plan does not create any variable that could carry PII.
+    folder: "Google Ads | Permanent Lights"
+
+  - ordinal: 3
+    object_type: trigger
+    operation: create
+    name: "TR | Page View | Permanent Lights LP"
+    trigger_type: Page View
+    fires_on: Some Page Views
+    conditions:
+      - "Page Hostname equals offer.apogeelawns.com"
+      - "Page Path matches RegEx ^/permanent-christmas-lights-lincoln-ne/?$"
+    folder: "Google Ads | Permanent Lights"
+    why: >-
+      Scopes the website-call tag to the single paid landing page, which is the only page
+      this campaign sends traffic to. Restricting it there keeps the number-replacement
+      footprint as small as possible, which directly limits the WhatConverts collision
+      surface documented above.
+    why_page_view_not_dom_ready: >-
+      Specified by Walter as a Page View trigger. Google's Calls from Website tag installs
+      its own DOM observer, so it does not need to wait for DOM Ready.
+    regex_note: >-
+      Anchored at both ends with only an optional trailing slash. Deliberately NOT
+      "Page URL contains christmas", which would fire on unrelated pages.
+    live_url_state: >-
+      https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/ currently
+      returns HTTP 404. Walter accepted the temporary 404 for CAMP-I. The trigger is
+      built against the agreed final slug and will start matching when the developer
+      publishes the page.
+
+  - ordinal: 4
+    object_type: tag
+    operation: create
+    name: "Google Ads | Call | Permanent Lights Website"
+    tag_type: "Google Ads Call Tracking"
+    tag_type_note: "The GTM template for Calls from Website, not the Conversion Tracking template."
+    fields:
+      conversion_id: "18453077620"
+      conversion_label: "lp3jCKf5vPocEPS8jt9E"
+      phone_conversion_number: "402-526-5754"
+      phone_conversion_number_source: >-
+        The exact string rendered on offer.apogeelawns.com. Google replaces only the
+        number it is told to look for, so this must match the page, not the direct line.
+      phone_conversion_country_code: "US"
+      phone_conversion_css_selector: "<leave empty>"
+      phone_conversion_options: defaults
+    send_to_equivalent: "AW-18453077620/lp3jCKf5vPocEPS8jt9E"
+    advanced_tag_firing_options: "Once per event"
+    triggering: "TR | Page View | Permanent Lights LP"
+    folder: "Google Ads | Permanent Lights"
+    feeds_conversion_action: "7773043879"
+    conversion_action_state_unchanged: SECONDARY
+    conversion_action_state_note: >-
+      7773043879 stays SECONDARY and non-biddable. CONV-J set it there deliberately and
+      this plan does not touch it. Promoting it is a separate decision that cannot be
+      made until the publication gate above is resolved and the tag actually fires.
+    built_but_not_published: true
+    supersedes_build_sheet_line: >-
+      GTM-MANUAL-BUILD-SHEET.md lists "Google Ads Calls from Website conversion tag" under
+      "Must NOT be created". Walter has since instructed that it be created in the draft
+      workspace. This plan overrides that single line of the build sheet for creation only.
+      The build sheet's publication restraint still stands and is reinforced by
+      publication_gate above.
+
+# =============================================================================
+mutation_summary:
+  gtm_objects_touched: 4
+  updates: 2
+  creates: 2
+  deletes: 0
+  by_object_type:
+    variable_update: 1
+    trigger_update: 1
+    trigger_create: 1
+    tag_create: 1
+  workspace_changes_before: 5
+  workspace_changes_after: 7
+  workspace_changes_after_note: >-
+    The two updates modify objects already counted in the existing 5 changes, so they do
+    not increment the counter. The two creates add 2. Expected reading: 7.
+  container_versions_created: 0
+  container_publishes: 0
+  google_ads_api_mutations: 0
+  wordpress_changes: 0
+  whatconverts_changes: 0
+
+not_in_scope:
+  - "Creating a container version."
+  - "Publishing the container or pressing Submit."
+  - "Any change to Default Workspace 2."
+  - "Any change to the Google tag id 6 or the form conversion tag id 7 beyond the variable default described in ordinal 1."
+  - "Any calls-from-ads GTM tag. Ad calls are configured in Google Ads by APG-0917-CALL-N."
+  - "Any WhatConverts placeholder tag, Custom HTML tag, GA4 tag, second Google tag, or standalone Conversion Linker."
+  - "Signing in to WhatConverts, buying a number pool, or changing the WhatConverts profile."
+  - "Any WordPress edit, media upload, cache purge, plugin or theme change."
+  - "Installing a consent platform or inventing consent defaults."
+  - "Accepting Customer Data Terms, lead-form terms or call-recording terms."
+  - "Enabling enhanced conversions."
+  - "Promoting 7773043879 to Primary."
+
+risks:
+  - risk: "The lead_id gate blocks every conversion until the developer ships the dataLayer push."
+    mitigation: "Intended. Stated explicitly in the developer handoff and in known_consequence above."
+  - risk: "GTM stringifies undefined and the .+ gate passes on a missing lead_id."
+    mitigation: "Ordinal 1 pins the variable default to an empty string; documented fallback regex if the UI refuses."
+  - risk: "Google and WhatConverts fight over the same phone node on the paid page."
+    mitigation: "Tag is built but not published. publication_gate requires an explicit A or B decision from Walter."
+  - risk: "The page view trigger never matches because the slug 404s."
+    mitigation: "Built against the agreed final slug; developer dependency already on the record."
+  - risk: "Someone later publishes the workspace without reading this plan."
+    mitigation: "publication_gate state BLOCKED is recorded in the plan, the receipt and the implementation record."
+
+developer_handoff_delta:
+  - "lead_id is now MANDATORY. Without it no form conversion is recorded at all."
+  - "lead_id must be opaque and non-PII: not a name, email, phone, ZIP or project note."
+  - "Publish https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/ so the page view trigger can match."
+  - "Do not add a no-swap class or any other WhatConverts change without a decision on publication_gate option A or B."
+
+approval_grant:
+  required_line: "APPROVE APG GTM DELTA <fingerprint>"

@@ -1,0 +1,417 @@
+{
+ "visible_vs_hidden": {
+  "AC Repair": {
+   "campaign_total": {
+    "impressions": 879,
+    "clicks": 29,
+    "cost": 3084.87,
+    "conversions": 5.0,
+    "all_conversions": 26.0
+   },
+   "visible": {
+    "impressions": 750,
+    "clicks": 25,
+    "cost": 2872.49,
+    "conversions": 5.0,
+    "all_conversions": 26.0
+   },
+   "hidden": {
+    "clicks": 4,
+    "cost": 212.38,
+    "conversions": 0.0
+   },
+   "hidden_click_share_pct": 13.8,
+   "hidden_conv_share_pct": 0.0
+  },
+  "Gas Boiler Repair": {
+   "campaign_total": {
+    "impressions": 34,
+    "clicks": 0,
+    "cost": 0.0,
+    "conversions": 0.0,
+    "all_conversions": 0.0
+   },
+   "visible": {
+    "impressions": 11,
+    "clicks": 0,
+    "cost": 0.0,
+    "conversions": 0.0,
+    "all_conversions": 0.0
+   },
+   "hidden": {
+    "clicks": 0,
+    "cost": 0.0,
+    "conversions": 0.0
+   },
+   "hidden_click_share_pct": null,
+   "hidden_conv_share_pct": null
+  },
+  "HVAC Installation": {
+   "campaign_total": {
+    "impressions": 3419,
+    "clicks": 112,
+    "cost": 2914.33,
+    "conversions": 3.0,
+    "all_conversions": 26.0
+   },
+   "visible": {
+    "impressions": 1452,
+    "clicks": 62,
+    "cost": 1707.53,
+    "conversions": 3.0,
+    "all_conversions": 23.0
+   },
+   "hidden": {
+    "clicks": 50,
+    "cost": 1206.8,
+    "conversions": 0.0
+   },
+   "hidden_click_share_pct": 44.6,
+   "hidden_conv_share_pct": 0.0
+  },
+  "HVAC Repair": {
+   "campaign_total": {
+    "impressions": 1058,
+    "clicks": 29,
+    "cost": 1951.94,
+    "conversions": 6.0,
+    "all_conversions": 25.0
+   },
+   "visible": {
+    "impressions": 943,
+    "clicks": 25,
+    "cost": 1816.59,
+    "conversions": 4.0,
+    "all_conversions": 19.0
+   },
+   "hidden": {
+    "clicks": 4,
+    "cost": 135.35,
+    "conversions": 2.0
+   },
+   "hidden_click_share_pct": 13.8,
+   "hidden_conv_share_pct": 33.3
+  },
+  "HVAC Replacement": {
+   "campaign_total": {
+    "impressions": 199,
+    "clicks": 5,
+    "cost": 152.52,
+    "conversions": 0.0,
+    "all_conversions": 0.0
+   },
+   "visible": {
+    "impressions": 132,
+    "clicks": 4,
+    "cost": 130.05,
+    "conversions": 0.0,
+    "all_conversions": 0.0
+   },
+   "hidden": {
+    "clicks": 1,
+    "cost": 22.47,
+    "conversions": 0.0
+   },
+   "hidden_click_share_pct": 20.0,
+   "hidden_conv_share_pct": null
+  }
+ },
+ "conversion_reconciliation": {
+  "campaign_total": 14.0,
+  "sum_by_action": 14.0,
+  "difference": 0.0,
+  "by_action": {
+   "Calls from ads": 5.0,
+   "Ambient Cooling - LP -Submit Lead Forms": 5.0,
+   "WC Lead": 4.0
+  },
+  "by_campaign_action": {
+   "AC Repair|Calls from ads": 3.0,
+   "AC Repair|Ambient Cooling - LP -Submit Lead Forms": 2.0,
+   "HVAC Installation|Ambient Cooling - LP -Submit Lead Forms": 1.0,
+   "HVAC Installation|WC Lead": 2.0,
+   "HVAC Repair|Calls from ads": 2.0,
+   "HVAC Repair|Ambient Cooling - LP -Submit Lead Forms": 2.0,
+   "HVAC Repair|WC Lead": 2.0
+  }
+ },
+ "installation_live_keywords": [
+  {
+   "crit": "295495761070",
+   "text": "hvac installers near me",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE",
+   "ag": "202339087634",
+   "ag_status": "ENABLED"
+  },
+  {
+   "crit": "315030681341",
+   "text": "hvac installers near me",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE",
+   "ag": "202339087634",
+   "ag_status": "ENABLED"
+  }
+ ],
+ "campaign_bid_modifiers": [
+  {
+   "camp": "24132507741",
+   "type": "DEVICE",
+   "crit": "30002",
+   "bid_modifier": 0.0,
+   "negative": false,
+   "status": "ENABLED",
+   "device": "TABLET",
+   "day": "UNSPECIFIED"
+  },
+  {
+   "camp": "24132507744",
+   "type": "DEVICE",
+   "crit": "30002",
+   "bid_modifier": 0.0,
+   "negative": false,
+   "status": "ENABLED",
+   "device": "TABLET",
+   "day": "UNSPECIFIED"
+  },
+  {
+   "camp": "24132507747",
+   "type": "DEVICE",
+   "crit": "30002",
+   "bid_modifier": 0.0,
+   "negative": false,
+   "status": "ENABLED",
+   "device": "TABLET",
+   "day": "UNSPECIFIED"
+  },
+  {
+   "camp": "24132507750",
+   "type": "DEVICE",
+   "crit": "30002",
+   "bid_modifier": 0.0,
+   "negative": false,
+   "status": "ENABLED",
+   "device": "TABLET",
+   "day": "UNSPECIFIED"
+  },
+  {
+   "camp": "24132507753",
+   "type": "DEVICE",
+   "crit": "30002",
+   "bid_modifier": 0.0,
+   "negative": false,
+   "status": "ENABLED",
+   "device": "TABLET",
+   "day": "UNSPECIFIED"
+  }
+ ],
+ "ad_group_bid_modifiers": [],
+ "audience_criteria": [],
+ "optimization_goals": [],
+ "max_bid_modifier": 0.0,
+ "hvac_repair_scenarios": {
+  "25": {
+   "cap": 25,
+   "visible_clicks": 6,
+   "visible_clicks_pct": 24.0,
+   "visible_spend": 116.67,
+   "visible_conv": 1.0,
+   "visible_cpa": 116.67,
+   "visible_cpc": 19.45,
+   "vs_max_cpql": -133.33
+  },
+  "35": {
+   "cap": 35,
+   "visible_clicks": 7,
+   "visible_clicks_pct": 28.0,
+   "visible_spend": 144.27,
+   "visible_conv": 1.0,
+   "visible_cpa": 144.27,
+   "visible_cpc": 20.61,
+   "vs_max_cpql": -105.73
+  },
+  "40": {
+   "cap": 40,
+   "visible_clicks": 7,
+   "visible_clicks_pct": 28.0,
+   "visible_spend": 144.27,
+   "visible_conv": 1.0,
+   "visible_cpa": 144.27,
+   "visible_cpc": 20.61,
+   "vs_max_cpql": -105.73
+  },
+  "45": {
+   "cap": 45,
+   "visible_clicks": 7,
+   "visible_clicks_pct": 28.0,
+   "visible_spend": 144.27,
+   "visible_conv": 1.0,
+   "visible_cpa": 144.27,
+   "visible_cpc": 20.61,
+   "vs_max_cpql": -105.73
+  },
+  "60": {
+   "cap": 60,
+   "visible_clicks": 13,
+   "visible_clicks_pct": 52.0,
+   "visible_spend": 474.06,
+   "visible_conv": 1.0,
+   "visible_cpa": 474.06,
+   "visible_cpc": 36.47,
+   "vs_max_cpql": 224.06
+  },
+  "None": {
+   "cap": null,
+   "visible_clicks": 25,
+   "visible_clicks_pct": 100.0,
+   "visible_spend": 1816.59,
+   "visible_conv": 4.0,
+   "visible_cpa": 454.15,
+   "visible_cpc": 72.66,
+   "vs_max_cpql": 204.15
+  }
+ },
+ "hvac_repair_totals": {
+  "campaign": {
+   "impressions": 1058,
+   "clicks": 29,
+   "cost": 1951.94,
+   "conversions": 6.0,
+   "all_conversions": 25.0
+  },
+  "visible": {
+   "impressions": 943,
+   "clicks": 25,
+   "cost": 1816.59,
+   "conversions": 4.0,
+   "all_conversions": 19.0
+  },
+  "hidden": {
+   "clicks": 4,
+   "cost": 135.35,
+   "conversions": 2.0
+  },
+  "hidden_blended_cpc": 33.84
+ },
+ "other_scenarios": {
+  "AC Repair": {
+   "25": {
+    "visible_clicks": 3,
+    "visible_spend": 70.79,
+    "visible_conv": 0.0,
+    "visible_cpa": null
+   },
+   "30": {
+    "visible_clicks": 4,
+    "visible_spend": 95.95,
+    "visible_conv": 0.0,
+    "visible_cpa": null
+   },
+   "40": {
+    "visible_clicks": 5,
+    "visible_spend": 129.35,
+    "visible_conv": 0.0,
+    "visible_cpa": null
+   },
+   "50": {
+    "visible_clicks": 5,
+    "visible_spend": 129.35,
+    "visible_conv": 0.0,
+    "visible_cpa": null
+   },
+   "65": {
+    "visible_clicks": 5,
+    "visible_spend": 129.35,
+    "visible_conv": 0.0,
+    "visible_cpa": null
+   },
+   "90": {
+    "visible_clicks": 8,
+    "visible_spend": 363.29,
+    "visible_conv": 1.0,
+    "visible_cpa": 363.29
+   },
+   "110": {
+    "visible_clicks": 13,
+    "visible_spend": 895.04,
+    "visible_conv": 3.0,
+    "visible_cpa": 298.35
+   },
+   "130": {
+    "visible_clicks": 15,
+    "visible_spend": 1124.75,
+    "visible_conv": 4.0,
+    "visible_cpa": 281.19
+   },
+   "None": {
+    "visible_clicks": 25,
+    "visible_spend": 2872.48,
+    "visible_conv": 5.0,
+    "visible_cpa": 574.5
+   }
+  },
+  "HVAC Installation": {
+   "25": {
+    "visible_clicks": 33,
+    "visible_spend": 600.15,
+    "visible_conv": 0.0,
+    "visible_cpa": null
+   },
+   "30": {
+    "visible_clicks": 47,
+    "visible_spend": 987.67,
+    "visible_conv": 0.0,
+    "visible_cpa": null
+   },
+   "40": {
+    "visible_clicks": 51,
+    "visible_spend": 1124.87,
+    "visible_conv": 0.0,
+    "visible_cpa": null
+   },
+   "50": {
+    "visible_clicks": 55,
+    "visible_spend": 1305.59,
+    "visible_conv": 0.0,
+    "visible_cpa": null
+   },
+   "65": {
+    "visible_clicks": 62,
+    "visible_spend": 1707.54,
+    "visible_conv": 3.0,
+    "visible_cpa": 569.18
+   },
+   "90": {
+    "visible_clicks": 62,
+    "visible_spend": 1707.54,
+    "visible_conv": 3.0,
+    "visible_cpa": 569.18
+   },
+   "110": {
+    "visible_clicks": 62,
+    "visible_spend": 1707.54,
+    "visible_conv": 3.0,
+    "visible_cpa": 569.18
+   },
+   "130": {
+    "visible_clicks": 62,
+    "visible_spend": 1707.54,
+    "visible_conv": 3.0,
+    "visible_cpa": 569.18
+   },
+   "None": {
+    "visible_clicks": 62,
+    "visible_spend": 1707.54,
+    "visible_conv": 3.0,
+    "visible_cpa": 569.18
+   }
+  }
+ },
+ "installation_min_qualification_rate": {
+  "raw_cpa": 141.87,
+  "target_cpql": 280.0,
+  "min_qualification_rate_pct": 50.7
+ }
+}

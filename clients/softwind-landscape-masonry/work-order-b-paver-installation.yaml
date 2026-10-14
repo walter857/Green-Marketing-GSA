@@ -1,0 +1,152 @@
+# Green Marketing work order B - Softwind Landscape & Masonry - PAVERS
+#
+# ---------------------------------------------------------------------------
+# IDENTITY GATE: PASS. Fresh per-account read from INSIDE 2429758629 on
+# 2026-09-03 18:09:26 -04:00 via scripts/slm_identity_gate.py.
+#   descriptive_name = 'Softwind Landscape & Masonry - Live'   exact match
+#   id               = 2429758629                              exact match
+#   manager = false, test_account = false, '- live' marker present
+#   status = ENABLED, tz = America/New_York, currency = USD,
+#   auto_tagging_enabled = true
+#   Receipt: snapshots/identity-gate-2026-09-03-1809.json
+#
+# MODE IS READ. This work order authorizes GAQL SELECT queries, read-only
+# website checks, local drafting, local validators, and API validate_only
+# calls that create no durable change. It authorizes NO Google Ads mutation.
+# Every durable write needs its own fingerprinted approval - see
+# recovery/2026-09-patio-pavers/00-program-manifest.yaml.
+#
+# This file supersedes the single-service work-order.yaml for Pavers work.
+# ---------------------------------------------------------------------------
+
+work_order:
+  client_slug: softwind-landscape-masonry
+  business_name: Softwind Landscape & Masonry
+  account:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: "2429758629"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: hardscaping
+    exact_primary_service: paver installation
+    related_services: []
+    expected_campaigns:
+      - Pavers
+    # Cross-check only, never authority. Live API response governs.
+    expected_historical_campaign_id: "23489296528"
+    expected_landing_page: https://offer.softwindli.com/pavers/
+    excluded_services:
+      # Sibling-account scope. Owner-confirmed 2026-08-28.
+      - power washing
+      - pressure washing
+      - soft washing
+      - house washing
+      - roof cleaning
+      - gutter cleaning
+      - window cleaning
+      - exterior surface cleaning
+      # Recovery-program scope. Recovery prompt 2026-09-03 section 2.
+      - asphalt paving
+      - asphalt repair
+      - blacktop
+      - sealcoating
+      - paver sealing
+      - paver restoration
+      - paver resanding
+      - paver leveling
+      - tar-and-chip driveways
+      - patio covers
+      - patio roofs
+      - patio enclosures
+      - screened patios
+      - pergolas
+      - gazebos
+      - decks
+      - material-only or retail paver sales
+      - DIY instruction
+    unresolved_services:
+      # Do NOT block and do NOT promote until the owner answers. Phase B.
+      - driveway paver installation
+      - concrete patio installation
+      - bluestone patio installation
+      - masonry repair
+      - patio resurfacing
+  task:
+    type: full-system
+    mode: read
+    request: >-
+      Pavers-campaign half of the 2026-09 Patio and Pavers recovery program.
+      Read-only discovery and local drafting only: fresh account snapshot,
+      conversion-action and attribution map, search-term classification,
+      wrong-service negative drafting (asphalt, sealcoating, paver sealing,
+      restoration and material-only intent), budget pacing against the $2,000
+      account-wide monthly cap, canonical Paver Installation ad-group design,
+      two RSAs per canonical ad group, location verification, and the weekly
+      search-to-qualified-to-sold reporting loop. Produce fingerprinted change
+      packages. Execute nothing without the exact matching approval.
+    date_range: >-
+      All available history through the execution date, with explicit
+      May-August 2026 comparison against the forensic audit baseline.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. hardscaping is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: ""      # UNKNOWN - read from the account, never assumed.
+    service_area: []              # UNKNOWN - read from campaign_criterion.
+    daily_budget: null            # UNKNOWN until the fresh read.
+    primary_conversion_goal: ""   # UNKNOWN until the conversion-action read.
+    account_monthly_hard_cap_usd: 2000
+    source_files:
+      - clients/softwind-landscape-masonry/client.yaml
+      - clients/softwind-landscape-masonry/snapshots/identity-gate-2026-09-03-1809.json
+      - clients/softwind-landscape-masonry/recovery/2026-09-patio-pavers/00-program-manifest.yaml
+
+  related_work_orders:
+    - file: clients/softwind-landscape-masonry/work-order-a-patio-construction.yaml
+      service: patio construction
+      relationship: >-
+        SAME account, same recovery program, different campaign and service.
+        Account-level measurement, budget-pacing and location changes affect
+        both and are planned once in the shared program manifest.
+
+  related_accounts:
+    - name: Softwind Power Washing - Live
+      customer_id: "1521725229"
+      relationship: >-
+        SAME COMPANY, separate child account, deliberately non-overlapping
+        service scope. Confirmed by the owner 2026-08-28. Never infer scope
+        across the two in either direction.
+
+  cross_account_scope_fence:
+    this_account_blocks: exterior-cleaning intents (power / pressure / soft /
+      house washing, roof, gutter and window cleaning)
+    sibling_account_blocks: hardscape and landscape build intents (paver sealing,
+      paver and patio installation, masonry, landscaping, lawn care)
+    direction: mutual
+    note: >-
+      Never fence with a bare noun. "patio cleaning" is Power Washing;
+      "patio installation" is Landscape & Masonry. Every fence negative must
+      carry an intent qualifier and must be collision-tested against this
+      account's own live and planned keyword texts before it is proposed.
+
+  open_questions:
+    - id: SLM-Q3
+      question: >-
+        Does this account run landscaping or masonry services beyond Patio and
+        Pavers? The account name says "Landscape & Masonry" but only two
+        campaigns are in scope.
+      blocks: nothing in this recovery program
+    - id: SLM-Q4
+      question: >-
+        Which account owns paver-sealing demand? Softwind Power Washing's
+        client.yaml records business_name "Softwind Powerwashing & Paver
+        Sealing", yet its work order EXCLUDES paver sealing.
+      blocks: whether paver sealing may be negated on 2429758629
+      recommended_answer: >-
+        Paver sealing is not a service of THIS work order either way. Two of
+        the five August Patio/Pavers conversion credits came from sealing
+        terms (paver sealing services near me, residential sealcoating near
+        me), so it must be excluded here regardless of which account owns it.
+
+  approval_owner: Walter Correa

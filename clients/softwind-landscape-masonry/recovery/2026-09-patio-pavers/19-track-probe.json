@@ -1,0 +1,368 @@
+{
+  "checked_at": "2026-09-03T20:11:47.732193-04:00",
+  "method": "headless chromium, JS enabled, read-only, nothing submitted",
+  "probes": [
+    {
+      "label": "patio/desktop",
+      "url": "https://offer.softwindli.com/patio/",
+      "status": 403,
+      "phones_at_domcontentloaded": [],
+      "phones_after_networkidle_plus_6s": [],
+      "number_changed_after_scripts_ran": false,
+      "tel_hrefs": [],
+      "tel_href_digits": [],
+      "wc_cookies": {},
+      "wc_swap_raw": "",
+      "wc_swap_parsed": {
+        "number_to_find": null,
+        "number_to_show": null,
+        "swap_rule_id": null
+      },
+      "swap_source_number_present_on_page": null,
+      "swap_target_number_present_on_page": null,
+      "wc_script_requests": [],
+      "wc_script_responses": [],
+      "wc_in_html": false,
+      "wc_script_tags_in_dom": [],
+      "wc_script_tags_matching": [],
+      "inline_script_mentions_wc": false,
+      "gclid_in_url": true,
+      "gclid_in_dom": false,
+      "wc_client_fields": [],
+      "wc_client_has_gclid": false,
+      "wc_client_has_campaign": false,
+      "wc_client_has_term": false,
+      "wc_client_has_adgroup": false,
+      "gcl_cookies": [],
+      "form_hidden_values": {
+        "input_8": [],
+        "gform_field_values": []
+      },
+      "consent_banner_present": false,
+      "third_party_hosts": [
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ]
+    },
+    {
+      "label": "patio/mobile",
+      "url": "https://offer.softwindli.com/patio/",
+      "status": 200,
+      "phones_at_domcontentloaded": [
+        "6315027946"
+      ],
+      "phones_after_networkidle_plus_6s": [
+        "6315027946"
+      ],
+      "number_changed_after_scripts_ran": false,
+      "tel_hrefs": [
+        "tel:(631)",
+        "tel:(631) 502-7946"
+      ],
+      "tel_href_digits": [
+        "631",
+        "6315027946"
+      ],
+      "wc_cookies": {
+        "wc_visitor": "158931-3bc04013-1d6c-9e6e-4a8f-478d1fb2f517",
+        "wc_client": "google+..+cpc+..+QAGATE_CAMPAIGN+..+QAGATE_ADGROUP+..+QAGATE_TERM+..+GMQA_TEST_GCLID_20260903B+..+https%3A%2F%2Foffer.softwindli.com%2Fpatio%2F%3Fgclid%3DGMQA_TEST_GCLID_20260903B%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DQAGATE_CAMPAIGN%26utm_term%3DQAGATE_TERM%26utm_content%3DQAGATE_ADGROUP+..+158931-3bc04013-1d6c-9e6e-4a8f-478d1fb2f517+..++..++..+",
+        "wc_client_current": "google+..+cpc+..+QAGATE_CAMPAIGN+..+QAGATE_ADGROUP+..+QAGATE_TERM+..+GMQA_TEST_GCLID_20260903B+..+https%3A%2F%2Foffer.softwindli.com%2Fpatio%2F%3Fgclid%3DGMQA_TEST_GCLID_20260903B%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DQAGATE_CAMPAIGN%26utm_term%3DQAGATE_TERM%26utm_content%3DQAGATE_ADGROUP+..+158931-3bc04013-1d6c-9e6e-4a8f-478d1fb2f517+..++..++..+",
+        "wc_swap": "6315025402+..+6315535927+..+197159"
+      },
+      "wc_swap_raw": "6315025402+..+6315535927+..+197159",
+      "wc_swap_parsed": {
+        "number_to_find": "6315025402",
+        "number_to_show": "6315535927",
+        "swap_rule_id": "197159"
+      },
+      "swap_source_number_present_on_page": false,
+      "swap_target_number_present_on_page": false,
+      "wc_script_requests": [],
+      "wc_script_responses": [],
+      "wc_in_html": true,
+      "wc_script_tags_in_dom": [
+        "https://www.gstatic.com/call-tracking/call-tracking_9.js",
+        "https://connect.facebook.net/signals/config/1644547286961413?v=2.9.393&r=stable&domain=offer.softwindli.com&im=1&hme=118644ce20ff837cfc6c6ee441987e9e11b8b9fb8ec6bc04b15a3c516441ba07&ex_m=115%2C226%2C166%2C26%2C80%2C81%2C158%2C76%2C75%2C11%2C176%2C100%2C20%2C150%2C138%2C45%2C83%2C88%2C146%2C171%2C178%2C31%2C17%2C30%2C18%2C32%2C33%2C34%2C36%2C54%2C159%2C85%2C123%2C22%2C24%2C50%2C46%2C48%2C47%2C93%2C102%2C106%2C121%2C157%2C160%2C52%2C122%2C28%2C25%2C130%2C77%2C42%2C162%2C161%2C163%2C154%2C152%2C29%2C41%2C65%2C120%2C173%2C78%2C21%2C125%2C91%2C74%2C23%2C95%2C96%2C127%2C94%2C148%2C147%2C151%2C107%2C172%2C175%2C40%2C55%2C124%2C53%2C8%2C4%2C5%2C7%2C6%2C3%2C101%2C112%2C179%2C193%2C240%2C82%2C254%2C253%2C252%2C14%2C27%2C39%2C61%2C114%2C67%2C10%2C71%2C108%2C109%2C110%2C116%2C141%2C37%2C35%2C143%2C144%2C145%2C140%2C139%2C167%2C84%2C170%2C168%2C169%2C56%2C66%2C134%2C19%2C174%2C51%2C303%2C304%2C305%2C302%2C318%2C340%2C233%2C222%2C68%2C223%2C221%2C343%2C334%2C58%2C234%2C118%2C142%2C90%2C132%2C60%2C131%2C137%2C136%2C64%2C72%2C70%2C164%2C86%2C87%2C126%2C43%2C38%2C59%2C62%2C111%2C177%2C1%2C135%2C16%2C133%2C12%2C2%2C63%2C103%2C15%2C73%2C69%2C129%2C99%2C98%2C181%2C182%2C104%2C105%2C9%2C113%2C180%2C57%2C155%2C97%2C89%2C79%2C128%2C117%2C49%2C156%2C0%2C92%2C149%2C153%2C165%2C44%2C119%2C13%2C183",
+        "https://connect.facebook.net/en_US/fbevents.js",
+        "https://www.gstatic.com/wcm/loader.js",
+        "https://www.googletagmanager.com/gtag/js?id=AW-18369652705&cx=c&gtm=4e6921",
+        "https://www.googletagmanager.com/gtag/js?id=G-D4BZM40RYD&cx=c&gtm=4e6921",
+        "https://www.googletagmanager.com/gtag/js?id=AW-17878095007&cx=c&gtm=4e6921",
+        "https://www.googletagmanager.com/gtm.js?id=GTM-P3LD97NN",
+        "https://www.googletagmanager.com/gtm.js?id=GTM-P3LD97NN",
+        "https://offer.softwindli.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://offer.softwindli.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://offer.softwindli.com/wp-content/plugins/popups-for-divi/scripts/ie-compat.min.js?ver=3.2.8",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=3.1.0.2",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=3.1.0.2",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=69a9db57304a9f86c3d1a0bea5fd2cf9",
+        "https://www.clickcease.com/monitor/stat.js",
+        "https://offer.softwindli.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/18369652705/?random=1788480717700&cv=11&fst=1788480717700&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921v9260299416z89240751516za20gzb9240751516zd9240751516xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&u_w=390&u_h=844&url=https%3A%2F%2Foffer.softwindli.com%2Fpatio%2F%3Fgclid%3DGMQA_TEST_GCLID_20260903B%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DQAGATE_CAMPAIGN%26utm_term%3DQAGATE_TERM%26utm_content%3DQAGATE_ADGROUP&rcb=18&frm=0&tiba=Patio%20%7C%20Softwind%20Landscape%20%26%20Masonry&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1917378812.1788480718&uaa=arm&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=1&uam=&uap=iOS&uapv=17_0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17878095007/?random=1788480717753&cv=11&fst=1788480717753&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921z89240751516za20gzb9240751516zd9240751516xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120385422~120469145~120469153&u_w=390&u_h=844&url=https%3A%2F%2Foffer.softwindli.com%2Fpatio%2F%3Fgclid%3DGMQA_TEST_GCLID_20260903B%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DQAGATE_CAMPAIGN%26utm_term%3DQAGATE_TERM%26utm_content%3DQAGATE_ADGROUP&rcb=4&frm=0&tiba=Patio%20%7C%20Softwind%20Landscape%20%26%20Masonry&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1917378812.1788480718&uaa=arm&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=1&uam=&uap=iOS&uapv=17_0&uaw=0&data=event%3Dgtag.config&gap.plf=5&ept=9&rfmt=3&fmt=4",
+        "https://offer.softwindli.com/wp-content/plugins/dg-blog-carousel/scripts/swiper.min.js?ver=5.2.1",
+        "https://s.ksrndkehqnwntyxlhgto.com/158931.js?ver=7.1",
+        "https://offer.softwindli.com/wp-content/plugins/popups-for-divi/scripts/front.min.js?ver=3.2.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-includes/js/comment-reply.min.js?ver=7.1",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/plugins/dg-blog-carousel/scripts/frontend-bundle.min.js?ver=1.0.15",
+        "https://offer.softwindli.com/wp-content/plugins/dg-divi-carousel/scripts/frontend-bundle.min.js?ver=2.0.26",
+        "https://offer.softwindli.com/wp-content/plugins/divi-plus/scripts/frontend-bundle.min.js?ver=1.10.0",
+        "https://offer.softwindli.com/wp-content/plugins/supreme-modules-for-divi/scripts/frontend-bundle.min.js?ver=2.5.63",
+        "https://offer.softwindli.com/wp-includes/js/dist/dom-ready.min.js?ver=3fe927cab37bf38d6a23",
+        "https://offer.softwindli.com/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255",
+        "https://offer.softwindli.com/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216",
+        "https://offer.softwindli.com/wp-includes/js/dist/a11y.min.js?ver=31c6cec5a4ff7aff483d",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=3.1.0.2",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=0c901cb641ce64b99c20ea1a4d208cc9",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=fff046cc68bff0467f80af78630b0987",
+        "https://offer.softwindli.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/plugins/dynamic-offer-countdown/assets/js/countdown.js?ver=2.8.1768904190",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.27.8"
+      ],
+      "wc_script_tags_matching": [],
+      "inline_script_mentions_wc": true,
+      "gclid_in_url": true,
+      "gclid_in_dom": true,
+      "wc_client_fields": [
+        "google",
+        "cpc",
+        "QAGATE_CAMPAIGN",
+        "QAGATE_ADGROUP",
+        "QAGATE_TERM",
+        "GMQA_TEST_GCLID_20260903B",
+        "https%3A%2F%2Foffer.softwindli.com%2Fpatio%2F%3Fgclid%3DGMQA_TEST_GCLID_20260903B%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DQAGATE_CAMPAIGN%26utm_term%3DQAGATE_TERM%26utm_content%3DQAGATE_ADGROUP",
+        "158931-3bc04013-1d6c-9e6e-4a8f-478d1fb2f517",
+        "",
+        "",
+        ""
+      ],
+      "wc_client_has_gclid": true,
+      "wc_client_has_campaign": true,
+      "wc_client_has_term": true,
+      "wc_client_has_adgroup": true,
+      "gcl_cookies": [
+        "GCL_AW_P",
+        "_gcl_au",
+        "_gcl_aw"
+      ],
+      "form_hidden_values": {
+        "input_8": [
+          "",
+          ""
+        ],
+        "gform_field_values": [
+          "",
+          ""
+        ]
+      },
+      "consent_banner_present": false,
+      "third_party_hosts": [
+        "ad.doubleclick.net",
+        "analytics.google.com",
+        "connect.facebook.net",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "googleads.g.doubleclick.net",
+        "mpc-prod-23-s6uit34pua-ue.a.run.app",
+        "p.ksrndkehqnwntyxlhgto.com",
+        "process.iconnode.com",
+        "s.ksrndkehqnwntyxlhgto.com",
+        "stats.g.doubleclick.net",
+        "www.clickcease.com",
+        "www.facebook.com",
+        "www.google.com",
+        "www.googleadservices.com",
+        "www.googletagmanager.com",
+        "www.gstatic.com"
+      ]
+    },
+    {
+      "label": "pavers/desktop",
+      "url": "https://offer.softwindli.com/pavers/",
+      "status": 403,
+      "phones_at_domcontentloaded": [],
+      "phones_after_networkidle_plus_6s": [],
+      "number_changed_after_scripts_ran": false,
+      "tel_hrefs": [],
+      "tel_href_digits": [],
+      "wc_cookies": {},
+      "wc_swap_raw": "",
+      "wc_swap_parsed": {
+        "number_to_find": null,
+        "number_to_show": null,
+        "swap_rule_id": null
+      },
+      "swap_source_number_present_on_page": null,
+      "swap_target_number_present_on_page": null,
+      "wc_script_requests": [],
+      "wc_script_responses": [],
+      "wc_in_html": false,
+      "wc_script_tags_in_dom": [],
+      "wc_script_tags_matching": [],
+      "inline_script_mentions_wc": false,
+      "gclid_in_url": true,
+      "gclid_in_dom": false,
+      "wc_client_fields": [],
+      "wc_client_has_gclid": false,
+      "wc_client_has_campaign": false,
+      "wc_client_has_term": false,
+      "wc_client_has_adgroup": false,
+      "gcl_cookies": [],
+      "form_hidden_values": {
+        "input_8": [],
+        "gform_field_values": []
+      },
+      "consent_banner_present": false,
+      "third_party_hosts": [
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ]
+    },
+    {
+      "label": "pavers/mobile",
+      "url": "https://offer.softwindli.com/pavers/",
+      "status": 200,
+      "phones_at_domcontentloaded": [
+        "6315027946"
+      ],
+      "phones_after_networkidle_plus_6s": [
+        "6315027946"
+      ],
+      "number_changed_after_scripts_ran": false,
+      "tel_hrefs": [
+        "tel:(631)",
+        "tel:(631) 502-7946"
+      ],
+      "tel_href_digits": [
+        "631",
+        "6315027946"
+      ],
+      "wc_cookies": {
+        "wc_visitor": "158931-71177d72-0973-dbd5-6930-ccb279e2331d",
+        "wc_client": "google+..+cpc+..+QAGATE_CAMPAIGN+..+QAGATE_ADGROUP+..+QAGATE_TERM+..+GMQA_TEST_GCLID_20260903B+..+https%3A%2F%2Foffer.softwindli.com%2Fpavers%2F%3Fgclid%3DGMQA_TEST_GCLID_20260903B%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DQAGATE_CAMPAIGN%26utm_term%3DQAGATE_TERM%26utm_content%3DQAGATE_ADGROUP+..+158931-71177d72-0973-dbd5-6930-ccb279e2331d+..++..++..+",
+        "wc_client_current": "google+..+cpc+..+QAGATE_CAMPAIGN+..+QAGATE_ADGROUP+..+QAGATE_TERM+..+GMQA_TEST_GCLID_20260903B+..+https%3A%2F%2Foffer.softwindli.com%2Fpavers%2F%3Fgclid%3DGMQA_TEST_GCLID_20260903B%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DQAGATE_CAMPAIGN%26utm_term%3DQAGATE_TERM%26utm_content%3DQAGATE_ADGROUP+..+158931-71177d72-0973-dbd5-6930-ccb279e2331d+..++..++..+",
+        "wc_swap": "6315025402+..+6315535927+..+197159"
+      },
+      "wc_swap_raw": "6315025402+..+6315535927+..+197159",
+      "wc_swap_parsed": {
+        "number_to_find": "6315025402",
+        "number_to_show": "6315535927",
+        "swap_rule_id": "197159"
+      },
+      "swap_source_number_present_on_page": false,
+      "swap_target_number_present_on_page": false,
+      "wc_script_requests": [],
+      "wc_script_responses": [],
+      "wc_in_html": true,
+      "wc_script_tags_in_dom": [
+        "https://www.gstatic.com/call-tracking/call-tracking_9.js",
+        "https://connect.facebook.net/signals/config/1644547286961413?v=2.9.393&r=stable&domain=offer.softwindli.com&im=1&hme=118644ce20ff837cfc6c6ee441987e9e11b8b9fb8ec6bc04b15a3c516441ba07&ex_m=115%2C226%2C166%2C26%2C80%2C81%2C158%2C76%2C75%2C11%2C176%2C100%2C20%2C150%2C138%2C45%2C83%2C88%2C146%2C171%2C178%2C31%2C17%2C30%2C18%2C32%2C33%2C34%2C36%2C54%2C159%2C85%2C123%2C22%2C24%2C50%2C46%2C48%2C47%2C93%2C102%2C106%2C121%2C157%2C160%2C52%2C122%2C28%2C25%2C130%2C77%2C42%2C162%2C161%2C163%2C154%2C152%2C29%2C41%2C65%2C120%2C173%2C78%2C21%2C125%2C91%2C74%2C23%2C95%2C96%2C127%2C94%2C148%2C147%2C151%2C107%2C172%2C175%2C40%2C55%2C124%2C53%2C8%2C4%2C5%2C7%2C6%2C3%2C101%2C112%2C179%2C193%2C240%2C82%2C254%2C253%2C252%2C14%2C27%2C39%2C61%2C114%2C67%2C10%2C71%2C108%2C109%2C110%2C116%2C141%2C37%2C35%2C143%2C144%2C145%2C140%2C139%2C167%2C84%2C170%2C168%2C169%2C56%2C66%2C134%2C19%2C174%2C51%2C303%2C304%2C305%2C302%2C318%2C340%2C233%2C222%2C68%2C223%2C221%2C343%2C334%2C58%2C234%2C118%2C142%2C90%2C132%2C60%2C131%2C137%2C136%2C64%2C72%2C70%2C164%2C86%2C87%2C126%2C43%2C38%2C59%2C62%2C111%2C177%2C1%2C135%2C16%2C133%2C12%2C2%2C63%2C103%2C15%2C73%2C69%2C129%2C99%2C98%2C181%2C182%2C104%2C105%2C9%2C113%2C180%2C57%2C155%2C97%2C89%2C79%2C128%2C117%2C49%2C156%2C0%2C92%2C149%2C153%2C165%2C44%2C119%2C13%2C183",
+        "https://connect.facebook.net/en_US/fbevents.js",
+        "https://www.gstatic.com/wcm/loader.js",
+        "https://www.googletagmanager.com/gtag/js?id=AW-18369652705&cx=c&gtm=4e6921",
+        "https://www.googletagmanager.com/gtag/js?id=G-D4BZM40RYD&cx=c&gtm=4e6921",
+        "https://www.googletagmanager.com/gtag/js?id=AW-17878095007&cx=c&gtm=4e6921",
+        "https://www.googletagmanager.com/gtm.js?id=GTM-P3LD97NN",
+        "https://www.googletagmanager.com/gtm.js?id=GTM-P3LD97NN",
+        "https://offer.softwindli.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://offer.softwindli.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://offer.softwindli.com/wp-content/plugins/popups-for-divi/scripts/ie-compat.min.js?ver=3.2.8",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=3.1.0.2",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=3.1.0.2",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=69a9db57304a9f86c3d1a0bea5fd2cf9",
+        "https://offer.softwindli.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1",
+        "https://www.clickcease.com/monitor/stat.js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17878095007/?random=1788480736911&cv=11&fst=1788480736911&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921z89240751516za20gzb9240751516zd9240751516xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120385423~120469145~120469153~120912439&u_w=390&u_h=844&url=https%3A%2F%2Foffer.softwindli.com%2Fpavers%2F%3Fgclid%3DGMQA_TEST_GCLID_20260903B%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DQAGATE_CAMPAIGN%26utm_term%3DQAGATE_TERM%26utm_content%3DQAGATE_ADGROUP&rcb=7&frm=0&tiba=Pavers%20%7C%20Softwind%20Landscape%20%26%20Masonry&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1944471144.1788480737&uaa=arm&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=1&uam=&uap=iOS&uapv=17_0&uaw=0&data=event%3Dgtag.config&gap.plf=5&ept=9&rfmt=3&fmt=4",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/18369652705/?random=1788480736967&cv=11&fst=1788480736967&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921v9260299416z89240751516za20gzb9240751516zd9240751516xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120213116~120385423~120469145~120469153&u_w=390&u_h=844&url=https%3A%2F%2Foffer.softwindli.com%2Fpavers%2F%3Fgclid%3DGMQA_TEST_GCLID_20260903B%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DQAGATE_CAMPAIGN%26utm_term%3DQAGATE_TERM%26utm_content%3DQAGATE_ADGROUP&rcb=12&frm=0&tiba=Pavers%20%7C%20Softwind%20Landscape%20%26%20Masonry&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1944471144.1788480737&uaa=arm&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=1&uam=&uap=iOS&uapv=17_0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+        "https://offer.softwindli.com/wp-content/plugins/dg-blog-carousel/scripts/swiper.min.js?ver=5.2.1",
+        "https://s.ksrndkehqnwntyxlhgto.com/158931.js?ver=7.1",
+        "https://offer.softwindli.com/wp-content/plugins/popups-for-divi/scripts/front.min.js?ver=3.2.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-includes/js/comment-reply.min.js?ver=7.1",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/plugins/dg-blog-carousel/scripts/frontend-bundle.min.js?ver=1.0.15",
+        "https://offer.softwindli.com/wp-content/plugins/dg-divi-carousel/scripts/frontend-bundle.min.js?ver=2.0.26",
+        "https://offer.softwindli.com/wp-content/plugins/divi-plus/scripts/frontend-bundle.min.js?ver=1.10.0",
+        "https://offer.softwindli.com/wp-content/plugins/supreme-modules-for-divi/scripts/frontend-bundle.min.js?ver=2.5.63",
+        "https://offer.softwindli.com/wp-includes/js/dist/dom-ready.min.js?ver=3fe927cab37bf38d6a23",
+        "https://offer.softwindli.com/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255",
+        "https://offer.softwindli.com/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216",
+        "https://offer.softwindli.com/wp-includes/js/dist/a11y.min.js?ver=31c6cec5a4ff7aff483d",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=3.1.0.2",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=0c901cb641ce64b99c20ea1a4d208cc9",
+        "https://offer.softwindli.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=fff046cc68bff0467f80af78630b0987",
+        "https://offer.softwindli.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/plugins/dynamic-offer-countdown/assets/js/countdown.js?ver=2.8.1768904190",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.27.8",
+        "https://offer.softwindli.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.27.8"
+      ],
+      "wc_script_tags_matching": [],
+      "inline_script_mentions_wc": true,
+      "gclid_in_url": true,
+      "gclid_in_dom": true,
+      "wc_client_fields": [
+        "google",
+        "cpc",
+        "QAGATE_CAMPAIGN",
+        "QAGATE_ADGROUP",
+        "QAGATE_TERM",
+        "GMQA_TEST_GCLID_20260903B",
+        "https%3A%2F%2Foffer.softwindli.com%2Fpavers%2F%3Fgclid%3DGMQA_TEST_GCLID_20260903B%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DQAGATE_CAMPAIGN%26utm_term%3DQAGATE_TERM%26utm_content%3DQAGATE_ADGROUP",
+        "158931-71177d72-0973-dbd5-6930-ccb279e2331d",
+        "",
+        "",
+        ""
+      ],
+      "wc_client_has_gclid": true,
+      "wc_client_has_campaign": true,
+      "wc_client_has_term": true,
+      "wc_client_has_adgroup": true,
+      "gcl_cookies": [
+        "GCL_AW_P",
+        "_gcl_au",
+        "_gcl_aw"
+      ],
+      "form_hidden_values": {
+        "input_8": [
+          "",
+          ""
+        ],
+        "gform_field_values": [
+          "",
+          ""
+        ]
+      },
+      "consent_banner_present": false,
+      "third_party_hosts": [
+        "ad.doubleclick.net",
+        "analytics.google.com",
+        "connect.facebook.net",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "googleads.g.doubleclick.net",
+        "mpc-prod-23-s6uit34pua-ue.a.run.app",
+        "p.ksrndkehqnwntyxlhgto.com",
+        "process.iconnode.com",
+        "s.ksrndkehqnwntyxlhgto.com",
+        "stats.g.doubleclick.net",
+        "www.clickcease.com",
+        "www.facebook.com",
+        "www.google.com",
+        "www.googleadservices.com",
+        "www.googletagmanager.com",
+        "www.gstatic.com"
+      ]
+    }
+  ]
+}

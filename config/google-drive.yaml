@@ -1,0 +1,74 @@
+# Non-secret Google Drive configuration for landing-page delivery.
+#
+# This file must never contain an OAuth client ID, client secret, refresh token, or
+# access token. Only Drive resource names and non-secret resource IDs belong here.
+#
+# Credential and token FILE PATHS are resolved from environment variables when set,
+# otherwise from the documented defaults in src/gm_gsa/google_drive.py:
+#   GOOGLE_DRIVE_CREDENTIALS_FILE  ->  D:\MG\secrets\green-marketing-drive-client.json
+#   GOOGLE_DRIVE_TOKEN_FILE        ->  D:\MG\secrets\green-marketing-drive-token.json
+# Both live outside the repository. Neither file is ever read by this repository except
+# by the Google OAuth libraries themselves.
+
+drive:
+  # Approved root. Every search and every write stays inside this folder.
+  landing_page_root_folder_name: "Green Marketing Landing Pages"
+
+  # Written automatically by gm_gsa.master_template, and only after the master template has
+  # been scrubbed, re-read, and validated. Non-secret Drive IDs only; the writer refuses any
+  # value that is not a bare Drive ID. Env override:
+  # GOOGLE_DRIVE_LANDING_PAGE_ROOT_FOLDER_ID
+  landing_page_root_folder_id: "1URdm5hmGV2s1B9M6XaD3xvel9DPfTZKG"
+
+  templates_folder_name: "Templates"
+
+  # The FINAL name of the scrubbed master. It must match MASTER_TEMPLATE_NAME in
+  # src/gm_gsa/google_drive.py or loading this file fails: that constant is what the
+  # "never create an unscrubbed master" guard protects and what the post-validation rename
+  # applies. Nothing may ever be created or copied under this name. The canonical example is
+  # copied to "TEMP - Master Template Scrub In Progress" first, scrubbed, validated for zero
+  # residual client facts and an identical structure, and only then renamed to this.
+  master_template_name: "Landing Page Content Template - Master"
+
+  # ID of the repository's own scrubbed master template. Written by the same
+  # post-validation step as the root folder ID above; never the canonical source ID.
+  # Env override: GOOGLE_DOC_LANDING_PAGE_TEMPLATE_ID
+  master_template_document_id: "1ohZDtALF5Px8RygicPx5_VQyVz6e4TcsY8rbDDgc7ZQ"
+
+  # The canonical native Google Doc that the master template is copied FROM.
+  # This original is read-only for this repository and must never be edited.
+  canonical_source_template_id: "1bQR5wLIF47fd-wNOaNxtjlun1ch8Fc5kmfCA93vuFuc"
+
+  # Hierarchy: client folders are direct children of the approved root. There is no
+  # "Clients/" level. CLAUDE_GOOGLE_DRIVE_SETUP_PROMPT.md, LANDING_PAGE_CONTENT_WORKFLOW.md,
+  # and this file were reconciled to that shape on 2026-08-14.
+  # Set to true only if Green Marketing decides to adopt the Clients/ level.
+  create_clients_folder: false
+  clients_folder_name: "Clients"
+
+oauth:
+  # Least privilege for WRITES. drive.file grants access only to files this app creates or
+  # that the user explicitly opens with it. documents grants read/write on Google Docs
+  # content. Every durable write this repository performs still goes through drive.file.
+  #
+  # drive.readonly was added 2026-08-15 on explicit Green Marketing approval, to inspect the
+  # client-owned EKG photo archive (see clients/ekg-lawn-services/client.yaml ->
+  # drive_photo_archive). Those folders were created outside this app, so drive.file cannot
+  # see them at all. drive.readonly is READ-ONLY: it can never create, modify, move, delete,
+  # or reshare anything. It is the narrowest scope that makes pre-existing client assets
+  # inspectable without a Picker handoff for every folder.
+  #
+  # The full read/write https://www.googleapis.com/auth/drive scope remains FORBIDDEN and is
+  # rejected by load_drive_settings(). Removing that guard needs separate written approval.
+  scopes:
+    - "https://www.googleapis.com/auth/drive.file"
+    - "https://www.googleapis.com/auth/drive.readonly"
+    - "https://www.googleapis.com/auth/documents"
+  scope_approval:
+    drive.readonly:
+      approved: true
+      approved_by: "Green Marketing"
+      approved_on: "2026-08-15"
+      reason: >-
+        Inspect client-owned EKG photo archive folders that drive.file cannot see. Read-only.
+        Writes continue to use drive.file.

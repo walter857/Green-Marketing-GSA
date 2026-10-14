@@ -1,0 +1,306 @@
+<!doctype html>
+<!--
+  LOCAL DRAFT - NOT DEPLOYED, NOT APPROVED FOR DEPLOYMENT.
+  Reference implementation for the canonical Pro Green Dallas campaign landing page.
+
+  Rules, rationale, and the full allow/deny lists live in:
+    clients/pro-green-dallas/canonical-landing-page-developer-handoff.md
+    clients/pro-green-dallas/landing-page-draft/README.md
+
+  Those rules are deliberately NOT restated here: this file must contain only the base
+  phone number and the approved tag set, so that a plain source grep for a disallowed
+  value returns zero and production source leaks no internal configuration.
+
+  Tag placeholders only. No live container or conversion ID is embedded.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sprinkler &amp; Irrigation Repair in Dallas, Fort Worth &amp; Frisco, TX | Pro Green Landscape Solutions</title>
+  <meta name="description" content="Professional irrigation, sprinkler repair and irrigation system repair in Dallas, Fort Worth, Frisco and surrounding areas. Licensed and insured. Free estimates and an 18-point system check.">
+  <link rel="canonical" href="https://offer.progreenlandscapesolutions.com/sprinkler-irrigation-repair/">
+
+  <!-- TAG PLACEHOLDER 1: approved GTM container snippet. Must load WITHOUT user interaction.
+       Deploy ONLY the containers and IDs listed in handoff section 8.1.
+       The deny list in handoff section 8.2 is mandatory. -->
+  <!-- TAG PLACEHOLDER 2: approved call-tracking script. Must not be deferred. -->
+
+  <script src="attribution.js"></script>
+
+  <style>
+    :root{--green:#2f7d32;--dark:#1c1c1c;--muted:#555;--bg:#fff;--soft:#f4f7f4;--line:#dde3dd}
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--dark);background:var(--bg)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    a{color:var(--green)}
+    /* Sticky click-to-call: must be reachable at all times on mobile */
+    .callbar{position:sticky;top:0;z-index:50;background:var(--green);color:#fff;text-align:center;padding:12px 16px;font-weight:700}
+    .callbar a{color:#fff;text-decoration:none;font-size:1.05rem}
+    h1{font-size:clamp(1.6rem,4.5vw,2.6rem);line-height:1.2;margin:0 0 12px}
+    h2{font-size:clamp(1.3rem,3vw,1.9rem);margin:0 0 12px}
+    .hero{display:grid;gap:28px;padding:32px 0 40px}
+    @media(min-width:900px){.hero{grid-template-columns:1.15fr .85fr;align-items:start}}
+    .sub{font-size:1.05rem;color:var(--muted);margin:0 0 20px}
+    .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:10px}
+    .btn{display:inline-block;padding:15px 22px;border-radius:8px;font-weight:700;text-decoration:none;min-height:44px}
+    .btn-call{background:var(--green);color:#fff}
+    .btn-form{background:#fff;color:var(--green);border:2px solid var(--green)}
+    .cond{font-size:.9rem;color:var(--muted);margin:0 0 18px}
+    .trust{display:flex;flex-wrap:wrap;gap:10px 22px;padding:0;margin:0;list-style:none;font-weight:600;font-size:.95rem}
+    .trust li::before{content:"\2713";color:var(--green);margin-right:6px}
+    .card{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:22px}
+    section{padding:36px 0;border-top:1px solid var(--line)}
+    .grid{display:grid;gap:18px}
+    @media(min-width:700px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1000px){.grid-4{grid-template-columns:repeat(4,1fr)}}
+    .field{margin-bottom:14px}
+    label{display:block;font-weight:600;margin-bottom:5px;font-size:.93rem}
+    input,textarea{width:100%;padding:12px;border:1px solid #bbb;border-radius:6px;font:inherit;min-height:44px}
+    input:focus,textarea:focus{outline:3px solid #9ac79c;outline-offset:1px}
+    button[type=submit]{width:100%;padding:15px;border:0;border-radius:8px;background:var(--green);color:#fff;font-size:1.05rem;font-weight:700;min-height:48px;cursor:pointer}
+    ol,ul{padding-left:1.2rem}
+    footer{background:var(--soft);padding:28px 0;font-size:.92rem;color:var(--muted)}
+    img{max-width:100%;height:auto}
+  </style>
+</head>
+<body>
+
+<!-- 1. TOP CTA BAR -->
+<div class="callbar">
+  Call Now: <a href="tel:+12143009564">(214) 300-9564</a>
+</div>
+
+<!-- 2. HERO -->
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <!-- IMAGE SLOT: logo - current approved Pro Green Landscape Solutions logo -->
+      <h1>Sprinkler &amp; Irrigation Repair in Dallas, Fort Worth &amp; Frisco, TX</h1>
+      <p class="sub">
+        Professional irrigation, sprinkler repair and irrigation system repair across Dallas,
+        Fort Worth, Frisco and surrounding areas. Licensed and insured, with free estimates
+        and an 18-point system check on every visit.
+      </p>
+      <div class="ctas">
+        <a class="btn btn-call" href="tel:+12143009564">Call (214) 300-9564</a>
+        <a class="btn btn-form" href="#estimate">Get My Free Estimate</a>
+      </div>
+      <!-- Required conditional availability wording - use verbatim, see handoff section 3. -->
+      <p class="cond">Same-Day Service May Be Available.</p>
+      <ul class="trust">
+        <li>Licensed &amp; Insured</li>
+        <li>Free Estimates</li>
+        <li>18-Point System Check</li>
+        <li>Satisfaction Guaranteed</li>
+      </ul>
+      <!-- IMAGE SLOT: hero 16:9 - technician repairing a sprinkler head in a DFW lawn -->
+    </div>
+
+    <!-- FORM -->
+    <div class="card" id="estimate">
+      <h2>Get Your Free Estimate</h2>
+      <form id="pg-estimate-form" method="post" action="#">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="address">Service Address or ZIP</label>
+          <input id="address" name="service_address_or_zip" type="text" autocomplete="postal-code" required>
+        </div>
+        <div class="field">
+          <label for="details">What is the system doing? (optional)</label>
+          <textarea id="details" name="project_details" rows="3"></textarea>
+        </div>
+
+        <!-- HIDDEN ATTRIBUTION FIELDS - populated by attribution.js -->
+        <input type="hidden" name="lead_id" value="">
+        <input type="hidden" name="gclid" value="">
+        <input type="hidden" name="gbraid" value="">
+        <input type="hidden" name="wbraid" value="">
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <input type="hidden" name="utm_term" value="">
+        <input type="hidden" name="utm_content" value="">
+        <input type="hidden" name="utm_id" value="">
+        <input type="hidden" name="landing_url" value="">
+        <input type="hidden" name="referrer_url" value="">
+        <input type="hidden" name="original_source" value="">
+        <input type="hidden" name="consent_state" value="">
+
+        <button type="submit">Get My Free Estimate</button>
+      </form>
+      <p class="cond" style="margin-top:12px">
+        Prefer to talk? Call <a href="tel:+12143009564">(214) 300-9564</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 3. PROBLEM AND OUTCOME -->
+<section><div class="wrap">
+  <h2>Sprinkler Problems Waste Water and Damage Your Lawn</h2>
+  <p>
+    A single broken head or leaking valve can flood one area, starve another, and quietly raise
+    your water bill for months. Most DFW systems fail in the same handful of places, and most of
+    those failures are a straightforward repair rather than a replacement.
+  </p>
+  <p>
+    We find the actual fault, show you what is wrong, and give you a free estimate before any
+    work begins.
+  </p>
+  <ul>
+    <li>Sprinkler heads that are broken, sunken, blocked or spraying the wrong direction</li>
+    <li>Zones that will not turn on, will not shut off, or run at low pressure</li>
+    <li>Leaking or stuck valves and valve boxes</li>
+    <li>Controller and timer faults that leave zones running or skipped</li>
+  </ul>
+</div></section>
+
+<!-- 4. SERVICE SCOPE - the four in-scope services only -->
+<section><div class="wrap">
+  <h2>What We Repair</h2>
+  <div class="grid grid-4">
+    <div class="card">
+      <h3>Sprinkler Repair</h3>
+      <p>Broken, sunken, clogged and misaligned heads, cracked laterals, and coverage problems
+         that leave dry or flooded patches.</p>
+    </div>
+    <div class="card">
+      <h3>Irrigation Repair</h3>
+      <p>Mainline and lateral leaks, pressure loss, wiring faults, and zones that have stopped
+         responding.</p>
+    </div>
+    <div class="card">
+      <h3>Sprinkler Head Repair</h3>
+      <p>Head replacement, nozzle matching, and spray-pattern correction so every zone waters
+         evenly.</p>
+    </div>
+    <div class="card">
+      <h3>Valve Repair</h3>
+      <p>Stuck, leaking and failed valves, solenoid faults, and valve-box access and repair.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- 5. PROOF -->
+<section><div class="wrap">
+  <h2>Recent Repairs</h2>
+  <!-- IMAGE SLOT: proof_1 4:3 - before/after of a repaired zone or head -->
+  <!-- IMAGE SLOT: proof_2 4:3 - valve box or leak repair in progress -->
+  <p>All photos show completed Pro Green Landscape Solutions work.</p>
+</div></section>
+
+<!-- 6. 18-POINT CHECK -->
+<section><div class="wrap">
+  <h2>Every Visit Includes an 18-Point System Check</h2>
+  <p>
+    Before we quote a repair we inspect the whole system, not only the part you noticed. That is
+    how we catch the second problem that would have brought us back out next month.
+  </p>
+</div></section>
+
+<!-- 7. PROCESS -->
+<section><div class="wrap">
+  <h2>How It Works</h2>
+  <ol>
+    <li><strong>Call or request an estimate.</strong> Tell us what the system is doing.<br>
+        <span class="cond">Same-Day Service May Be Available.</span></li>
+    <li><strong>We inspect and diagnose.</strong> Free estimate, with the 18-point check included.</li>
+    <li><strong>We repair and confirm.</strong> You see every zone run correctly before we leave.</li>
+  </ol>
+</div></section>
+
+<!-- 8. SERVICE AREA - only verified pages are linked -->
+<section><div class="wrap">
+  <h2>Serving Dallas, Fort Worth, Frisco and Surrounding Areas</h2>
+  <p>
+    <a href="/dfw/service-areas/dallas/">Dallas</a> &middot;
+    <a href="/dfw/service-areas/fort-worth/">Fort Worth</a> &middot;
+    <a href="/dfw/service-areas/frisco/">Frisco</a> &middot;
+    <a href="/dfw/service-areas/irving/">Irving</a> &middot;
+    <a href="/dfw/service-areas/arlington/">Arlington</a> &middot;
+    <a href="/dfw/service-areas/plano/">Plano</a> &middot;
+    <a href="/dfw/service-areas/allen/">Allen</a> &middot;
+    <a href="/dfw/service-areas/university-park/">University Park</a> &middot;
+    <a href="/dfw/service-areas/grand-prairie/">Grand Prairie</a> &middot;
+    <a href="/dfw/service-areas/richardson/">Richardson</a> &middot;
+    <a href="/dfw/service-areas/preston-hollow/">Preston Hollow</a>
+    <!-- Text only - no verified page exists for these. Do not fabricate URLs. -->
+    &middot; Highland Park &middot; Lakewood &middot; Farmers Branch &middot; Balch Springs
+    &middot; Duncanville &middot; Coppell &middot; Grapevine &middot; Vickery Meadow
+  </p>
+</div></section>
+
+<!-- 9. FAQ -->
+<section><div class="wrap">
+  <h2>Questions</h2>
+  <p><strong>Do you charge for an estimate?</strong><br>
+     No. Estimates are free, and every visit includes an 18-point system check.</p>
+  <p><strong>Can you come out today?</strong><br>
+     Same-Day Service May Be Available. Call and we will tell you the soonest we can be there.</p>
+  <p><strong>Are you licensed and insured?</strong><br>
+     Yes. Pro Green Landscape Solutions is licensed and insured.</p>
+  <p><strong>Do you repair systems you did not install?</strong><br>
+     Yes. We repair existing sprinkler and irrigation systems regardless of who installed them.</p>
+  <p><strong>What if the repair does not solve it?</strong><br>
+     Our work is backed by a customer satisfaction guarantee. Tell us and we will make it right.</p>
+  <p><strong>Which areas do you cover?</strong><br>
+     Dallas, Fort Worth, Frisco and the surrounding DFW area. Call to confirm your address.</p>
+</div></section>
+
+<!-- 10. FINAL CTA -->
+<section><div class="wrap">
+  <h2>Get Your Sprinkler System Working Again</h2>
+  <div class="ctas">
+    <a class="btn btn-call" href="tel:+12143009564">Call (214) 300-9564</a>
+    <a class="btn btn-form" href="#estimate">Get My Free Estimate</a>
+  </div>
+  <ul class="trust">
+    <li>Licensed &amp; Insured</li>
+    <li>Free Estimates</li>
+    <li>18-Point System Check</li>
+  </ul>
+  <p class="cond">Same-Day Service May Be Available.</p>
+</div></section>
+
+<!-- 11. FOOTER -->
+<footer><div class="wrap">
+  <p><strong>Pro Green Landscape Solutions</strong><br>
+     Sprinkler and irrigation repair in Dallas, Fort Worth, Frisco, TX and surrounding areas.<br>
+     Licensed &amp; Insured.<br>
+     Call <a href="tel:+12143009564">(214) 300-9564</a></p>
+  <p><a href="/privacy-policy/">Privacy Policy</a></p>
+</div></footer>
+
+<!-- LocalBusiness schema. telephone carries the base number only.
+     Rating, review and opening-hours properties are omitted - see handoff section 11. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Pro Green Landscape Solutions",
+  "url": "https://offer.progreenlandscapesolutions.com/sprinkler-irrigation-repair/",
+  "telephone": "+1-214-300-9564",
+  "areaServed": ["Dallas, TX","Fort Worth, TX","Frisco, TX","Irving, TX","Arlington, TX","Plano, TX","Allen, TX","University Park, TX","Grand Prairie, TX","Richardson, TX","Preston Hollow, TX","Highland Park, TX","Lakewood, TX","Farmers Branch, TX","Balch Springs, TX","Duncanville, TX","Coppell, TX","Grapevine, TX","Vickery Meadow, TX"],
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sprinkler Repair"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Irrigation Repair"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sprinkler Head Repair"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Valve Repair"}}
+  ]
+}
+</script>
+
+</body>
+</html>

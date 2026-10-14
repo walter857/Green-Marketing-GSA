@@ -1,0 +1,192 @@
+# =============================================================================
+# APG-0916-CONV-A2  --  Stage A completion: the two call conversion actions
+# =============================================================================
+# Follow-on to APG-0916-CONV-A (9BA1F4AE3CCA), which was approved and executed
+# 2026-09-16. Object 1 succeeded. Objects 2 and 3 were REJECTED BY THE API, so
+# execution stopped under the plan's own partial_failure_rule, which requires a
+# report before any retry.
+#
+# This plan covers ONLY the two remaining objects and carries the two field
+# corrections the API forces. It does not touch object 1.
+# =============================================================================
+plan_id: APG-0916-CONV-A2
+plan_kind: conversion_actions
+generated: "2026-09-16"
+follows: APG-0916-CONV-A
+follows_fingerprint: 9BA1F4AE3CCA
+
+target:
+  exact_child_account_name: "Apogee Lawns LLC - Live"
+  child_customer_id: "8164626278"
+  manager_customer_id: "3373711342"
+  vertical: similar-local-service
+  exact_primary_service: Permanent Christmas light installation
+
+# -----------------------------------------------------------------------------
+already_executed_do_not_repeat:
+  - ordinal: 1
+    name: "Lead | Permanent Lights | Form Submit | Thank You"
+    id: "7772803337"
+    resource_name: "customers/8164626278/conversionActions/7772803337"
+    status: LIVE_AND_READ_BACK_CLEAN
+    conversion_id_and_label: "AW-18453077620/KOL7CImirvocEPS8jt9E"
+    note: >-
+      Creating this object again would produce a duplicate under the same name.
+      This plan must never include it.
+
+# -----------------------------------------------------------------------------
+# WHY THE FIRST ATTEMPT FAILED, AND WHAT CHANGES
+# -----------------------------------------------------------------------------
+# Diagnosed by leave-one-out bisection using validate_only (no durable write).
+# Two fields are forbidden on AD_CALL and WEBSITE_CALL, and the second only
+# surfaces once the first is removed:
+#
+#   1. view_through_lookback_window_days
+#        "The field cannot be set."
+#        @ operations.create.view_through_lookback_window_days
+#      A phone call has no view-through path, so Google refuses the field.
+#
+#   2. value_settings.always_use_default_value = false
+#        "The field's value is invalid."
+#        @ operations.create.value_settings.always_use_default_value
+#      A call cannot report a dynamic value, so Google requires the default value
+#      to always apply.
+#
+# Both corrections were proven to pass validate_only for BOTH call types before
+# this plan was written.
+# -----------------------------------------------------------------------------
+forced_corrections:
+  - field: view_through_lookback_window_days
+    approved_value: 1
+    corrected_value: NOT_SET
+    reason: "API rejects the field outright for AD_CALL and WEBSITE_CALL"
+    substantive_impact: NONE
+  - field: value_settings.always_use_default_value
+    approved_value: false
+    corrected_value: true
+    reason: "API rejects false for call-type actions"
+    substantive_impact: >-
+      NONE, and arguably stricter. With default_value 0.0 and always_use_default_value
+      true, every call is valued at exactly $0.00. That is a firmer guarantee of "no
+      invented revenue value" than the approved setting, which would have accepted a
+      tag-supplied value.
+
+unchanged_from_the_approved_plan:
+  - "names, exactly as approved"
+  - "type AD_CALL and WEBSITE_CALL"
+  - "category PHONE_CALL_LEAD"
+  - "primary_for_goal false - both created SECONDARY"
+  - "counting_type ONE_PER_CLICK"
+  - "click_through_lookback_window_days 30"
+  - "phone_call_duration_seconds 60"
+  - "value_settings.default_value 0.0"
+  - "attribution GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN"
+  - "every readback assertion in APG-0916-CONV-A - none of them referenced either corrected field"
+
+# -----------------------------------------------------------------------------
+objects:
+  - ordinal: 2
+    resource: conversion_action
+    operation: create
+    name: "Call | Permanent Lights | Ads | 60s"
+    fields:
+      type: AD_CALL
+      category: PHONE_CALL_LEAD
+      status: ENABLED
+      primary_for_goal: false
+      counting_type: ONE_PER_CLICK
+      click_through_lookback_window_days: 30
+      attribution_model_settings.attribution_model: GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+      value_settings.default_value: 0.0
+      value_settings.always_use_default_value: true
+      phone_call_duration_seconds: 60
+    view_through_lookback_window_days: NOT_SET
+    gtm_tag: NONE - calls from ads are configured in Google Ads, never in GTM
+    duplicate_check: >-
+      Confirmed 2026-09-16 in the Google Ads UI: Goals > Conversions > Summary rendered
+      the bare onboarding empty state with no Calls-from-ads row, and the API returned
+      0 conversion actions under every status filter. Re-confirm immediately before the
+      mutate.
+    readback_assertions:
+      - "conversion_action.type == AD_CALL"
+      - "conversion_action.category == PHONE_CALL_LEAD"
+      - "conversion_action.phone_call_duration_seconds == 60"
+      - "conversion_action.primary_for_goal == false"
+      - "conversion_action.value_settings.default_value == 0.0"
+      - "conversion_action.owner_customer == 8164626278"
+
+  - ordinal: 3
+    resource: conversion_action
+    operation: create
+    name: "Call | Permanent Lights | Website | 60s"
+    fields:
+      type: WEBSITE_CALL
+      category: PHONE_CALL_LEAD
+      status: ENABLED
+      primary_for_goal: false
+      counting_type: ONE_PER_CLICK
+      click_through_lookback_window_days: 30
+      attribution_model_settings.attribution_model: GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+      value_settings.default_value: 0.0
+      value_settings.always_use_default_value: true
+      phone_call_duration_seconds: 60
+    view_through_lookback_window_days: NOT_SET
+    gtm_tag_status: >-
+      HELD. The matching "Google Ads Calls from Website Conversion" GTM tag is NOT built
+      by this plan and is not authorized by it. See DNI-CONFLICT-DECISION-2026-09-16.md:
+      402-526-5754 is a WhatConverts tracking number and the recommendation is that
+      WhatConverts owns call measurement. Creating this action only reserves the name and
+      issues the identifiers; it stays Secondary and unfed.
+    readback_assertions:
+      - "conversion_action.type == WEBSITE_CALL"
+      - "conversion_action.category == PHONE_CALL_LEAD"
+      - "conversion_action.phone_call_duration_seconds == 60"
+      - "conversion_action.primary_for_goal == false"
+      - "conversion_action.value_settings.default_value == 0.0"
+      - "conversion_action.owner_customer == 8164626278"
+
+object_counts:
+  conversion_action.create: 2
+  conversion_action.update: 0
+  any_delete_or_remove: 0
+  any_enable_operation: 0
+  TOTAL_MUTATIONS: 2
+
+# -----------------------------------------------------------------------------
+observed_side_effect_to_watch:
+  what: >-
+    Creating object 1 caused Google to auto-create one account-default conversion goal:
+    customer_conversion_goal category SUBMIT_LEAD_FORM with biddable = true. The account
+    had zero conversion goals before the write, and the approved plan listed account
+    default goals under explicitly_not_touched.
+  is_it_a_problem_now: >-
+    No. The action itself is Secondary (primary_for_goal false,
+    include_in_conversions_metric false), so nothing feeds that goal and no campaign
+    exists to bid on it.
+  why_it_still_matters: >-
+    It becomes live the moment any action is promoted to Primary. The campaign must use
+    CAMPAIGN-SPECIFIC conversion goals rather than account defaults, which is already the
+    standing requirement. Creating objects 2 and 3 will likely add a PHONE_CALL_LEAD goal
+    the same way. Record the goal set after this plan executes.
+  action_required: NONE_NOW - record and re-check before any promotion to Primary
+
+explicitly_not_touched:
+  - "Conversion action 7772803337 (object 1) - not modified in any way"
+  - "The 7 pre-existing negative shared lists"
+  - "customer.call_reporting_setting - still points at the vestigial /conversionActions/179"
+  - "Account-level call recording and call reporting settings"
+  - "Billing, payments profile, advertiser verification"
+  - "Every Green Marketing manager-account setting"
+
+rollback:
+  method: "conversion_action.status = REMOVED on each created action, by resource name"
+  blast_radius: "None. No campaign exists; nothing is serving; no spend."
+  partial_failure_rule: >-
+    STOP on the first failure. Inventory every created resource ID, write the receipt,
+    and report BEFORE any retry. Do not blindly rerun.
+
+gates_before_execution:
+  - "validate_work_order.py exits 0 (already true - approver Walter recorded)"
+  - "Fresh identity re-read immediately before the mutate"
+  - "Fresh conversion_action re-read confirming exactly 1 action (7772803337) and no Calls-from-ads row"
+  - "Explicit approval: APPROVE APG CREATE-PAUSED <this plan's fingerprint>"

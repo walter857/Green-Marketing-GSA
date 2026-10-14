@@ -1,0 +1,158 @@
+{
+  "subplan": "ENABLE",
+  "fingerprint": "CB8CFD00961A",
+  "customer_id": "7380491929",
+  "exact_child_account_name": "Pro Green - Austin - Live",
+  "mode": "LIVE WRITE",
+  "executed_at_utc": "2026-08-20T14:28:33.330637+00:00",
+  "approved_actions": 24,
+  "approved_objects": 24,
+  "api_operations": 24,
+  "partial_failure": false,
+  "results": [
+    {
+      "index": 0,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686216~821598464387",
+      "log": "ENA-001 ENABLE ad 821598464387 in Driveways | BOFU (customers/7380491929/adGroupAds/199051686216~821598464387)"
+    },
+    {
+      "index": 1,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686176~821598464390",
+      "log": "ENA-002 ENABLE ad 821598464390 in Driveways | Near Me (customers/7380491929/adGroupAds/199051686176~821598464390)"
+    },
+    {
+      "index": 2,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051685456~821598464393",
+      "log": "ENA-003 ENABLE ad 821598464393 in Hardscaping | BOFU (customers/7380491929/adGroupAds/199051685456~821598464393)"
+    },
+    {
+      "index": 3,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051685416~821598464396",
+      "log": "ENA-004 ENABLE ad 821598464396 in Hardscaping | Near Me (customers/7380491929/adGroupAds/199051685416~821598464396)"
+    },
+    {
+      "index": 4,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051685936~821598464399",
+      "log": "ENA-005 ENABLE ad 821598464399 in Patios | BOFU (customers/7380491929/adGroupAds/199051685936~821598464399)"
+    },
+    {
+      "index": 5,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051685896~821598464522",
+      "log": "ENA-006 ENABLE ad 821598464522 in Patios | Near Me (customers/7380491929/adGroupAds/199051685896~821598464522)"
+    },
+    {
+      "index": 6,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051685736~821598464525",
+      "log": "ENA-007 ENABLE ad 821598464525 in Pavers | BOFU (customers/7380491929/adGroupAds/199051685736~821598464525)"
+    },
+    {
+      "index": 7,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051685696~821598464528",
+      "log": "ENA-008 ENABLE ad 821598464528 in Pavers | Near Me (customers/7380491929/adGroupAds/199051685696~821598464528)"
+    },
+    {
+      "index": 8,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051685656~821598464531",
+      "log": "ENA-009 ENABLE ad 821598464531 in Retaining Walls | BOFU (customers/7380491929/adGroupAds/199051685656~821598464531)"
+    },
+    {
+      "index": 9,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051685496~821598464534",
+      "log": "ENA-010 ENABLE ad 821598464534 in Retaining Walls | Near Me (customers/7380491929/adGroupAds/199051685496~821598464534)"
+    },
+    {
+      "index": 10,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686136~821598464537",
+      "log": "ENA-011 ENABLE ad 821598464537 in Walkways | BOFU (customers/7380491929/adGroupAds/199051686136~821598464537)"
+    },
+    {
+      "index": 11,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051685976~821598464540",
+      "log": "ENA-012 ENABLE ad 821598464540 in Walkways | Near Me (customers/7380491929/adGroupAds/199051685976~821598464540)"
+    },
+    {
+      "index": 12,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051687096~821598464543",
+      "log": "ENA-013 ENABLE ad 821598464543 in Artificial Turf | BOFU (customers/7380491929/adGroupAds/199051687096~821598464543)"
+    },
+    {
+      "index": 13,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686936~821598464546",
+      "log": "ENA-014 ENABLE ad 821598464546 in Artificial Turf | Near Me (customers/7380491929/adGroupAds/199051686936~821598464546)"
+    },
+    {
+      "index": 14,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686696~821598464549",
+      "log": "ENA-015 ENABLE ad 821598464549 in Fire Pits | BOFU (customers/7380491929/adGroupAds/199051686696~821598464549)"
+    },
+    {
+      "index": 15,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686656~821598464552",
+      "log": "ENA-016 ENABLE ad 821598464552 in Fire Pits | Near Me (customers/7380491929/adGroupAds/199051686656~821598464552)"
+    },
+    {
+      "index": 16,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686416~821598464555",
+      "log": "ENA-017 ENABLE ad 821598464555 in Landscape Design | BOFU (customers/7380491929/adGroupAds/199051686416~821598464555)"
+    },
+    {
+      "index": 17,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686376~821598464558",
+      "log": "ENA-018 ENABLE ad 821598464558 in Landscape Design | Near Me (customers/7380491929/adGroupAds/199051686376~821598464558)"
+    },
+    {
+      "index": 18,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051687176~821598464561",
+      "log": "ENA-019 ENABLE ad 821598464561 in Landscape Lighting | BOFU (customers/7380491929/adGroupAds/199051687176~821598464561)"
+    },
+    {
+      "index": 19,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051687136~821598464564",
+      "log": "ENA-020 ENABLE ad 821598464564 in Landscape Lighting | Near Me (customers/7380491929/adGroupAds/199051687136~821598464564)"
+    },
+    {
+      "index": 20,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686616~821598464567",
+      "log": "ENA-021 ENABLE ad 821598464567 in Outdoor Living | BOFU (customers/7380491929/adGroupAds/199051686616~821598464567)"
+    },
+    {
+      "index": 21,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686456~821598464570",
+      "log": "ENA-022 ENABLE ad 821598464570 in Outdoor Living | Near Me (customers/7380491929/adGroupAds/199051686456~821598464570)"
+    },
+    {
+      "index": 22,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686896~821598464573",
+      "log": "ENA-023 ENABLE ad 821598464573 in Pergolas | BOFU (customers/7380491929/adGroupAds/199051686896~821598464573)"
+    },
+    {
+      "index": 23,
+      "type": "ad_group_ad_result",
+      "resource_name": "customers/7380491929/adGroupAds/199051686856~821598464576",
+      "log": "ENA-024 ENABLE ad 821598464576 in Pergolas | Near Me (customers/7380491929/adGroupAds/199051686856~821598464576)"
+    }
+  ]
+}

@@ -1,0 +1,824 @@
+====================================================================================================
+AD GROUPS IN THE FIVE NEW CAMPAIGNS
+====================================================================================================
+  AC Repair          ad_group='SKAG | AC Repair Near Me'               id=202339087834 status=ENABLED type=SEARCH_STANDARD cpc_bid=10000
+  AC Repair          ad_group='SKAG | HVAC Replacement Near Me'        id=202339087874 status=REMOVED type=SEARCH_STANDARD cpc_bid=10000
+  Gas Boiler Repair  ad_group='SKAG | Gas Boiler Repair'               id=202339087594 status=ENABLED type=SEARCH_STANDARD cpc_bid=10000
+  HVAC Installation  ad_group='SKAG | HVAC Installation'               id=202339087634 status=ENABLED type=SEARCH_STANDARD cpc_bid=10000
+  HVAC Repair        ad_group='SKAG | HVAC Repair Near Me'             id=202339087674 status=ENABLED type=SEARCH_STANDARD cpc_bid=10000
+  HVAC Replacement   ad_group='SKAG | HVAC Replacement Near Me'        id=200159223798 status=ENABLED type=SEARCH_STANDARD cpc_bid=10000
+
+====================================================================================================
+KEYWORDS IN THE FIVE NEW CAMPAIGNS
+====================================================================================================
+
+--- Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08  (4 keyword criteria)
+    [PHRASE ] 'ac repair near me'                status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=2 exp_ctr=BELOW_AVERAGE ad_rel=AVERAGE lp=BELOW_AVERAGE final_urls=[]
+    [EXACT  ] 'ac repair near me'                status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=2 exp_ctr=BELOW_AVERAGE ad_rel=AVERAGE lp=BELOW_AVERAGE final_urls=[]
+    [EXACT  ] 'hvac replacement near me'         status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=None exp_ctr=None ad_rel=None lp=None final_urls=[]
+    [PHRASE ] 'hvac replacement near me'         status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=None exp_ctr=None ad_rel=None lp=None final_urls=[]
+
+--- Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08  (2 keyword criteria)
+    [PHRASE ] 'hvac repair near me'              status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=4 exp_ctr=BELOW_AVERAGE ad_rel=AVERAGE lp=AVERAGE final_urls=[]
+    [EXACT  ] 'hvac repair near me'              status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=4 exp_ctr=BELOW_AVERAGE ad_rel=AVERAGE lp=AVERAGE final_urls=[]
+
+--- Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08  (2 keyword criteria)
+    [PHRASE ] 'hvac installers'                  status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=None exp_ctr=None ad_rel=None lp=None final_urls=[]
+    [EXACT  ] 'hvac installers'                  status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=None exp_ctr=None ad_rel=None lp=None final_urls=[]
+
+--- Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08  (2 keyword criteria)
+    [EXACT  ] 'hvac replacement near me'         status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=None exp_ctr=None ad_rel=None lp=None final_urls=[]
+    [PHRASE ] 'hvac replacement near me'         status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=None exp_ctr=None ad_rel=None lp=None final_urls=[]
+
+--- Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08  (2 keyword criteria)
+    [EXACT  ] 'gas boiler repair'                status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=None exp_ctr=None ad_rel=None lp=None final_urls=[]
+    [PHRASE ] 'gas boiler repair'                status=ENABLED  neg=False serving=ELIGIBLE approval=APPROVED
+              QS=None exp_ctr=None ad_rel=None lp=None final_urls=[]
+
+====================================================================================================
+RSAs IN THE FIVE NEW CAMPAIGNS
+====================================================================================================
+
+==========================================================================================
+--- Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08  (6 ads)
+
+  ad_id=820900825416 ad_group='SKAG | AC Repair Near Me'
+    status=ENABLED strength=AVERAGE approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/ac-repair/']
+    paths: path1='ac-repair' path2='severn-md'
+    HEADLINES (15):
+       1. [19] pin=UNSPECIFIED    'AC Repair in Severn'
+       2. [25] pin=UNSPECIFIED    'AC Repair in Severna Park'
+       3. [21] pin=UNSPECIFIED    'AC Repair in Columbia'
+       4. [23] pin=UNSPECIFIED    'Request a Free AC Quote'
+       5. [18] pin=UNSPECIFIED    'Schedule AC Repair'
+       6. [22] pin=UNSPECIFIED    'Air Conditioner Repair'
+       7. [24] pin=UNSPECIFIED    'AC Not Cooling Properly?'
+       8. [24] pin=UNSPECIFIED    'Help for Weak AC Airflow'
+       9. [25] pin=UNSPECIFIED    'Help for AC Leaks & Noise'
+      10. [22] pin=UNSPECIFIED    'Professional AC Repair'
+      11. [23] pin=UNSPECIFIED    'Clear AC Repair Options'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [25] pin=UNSPECIFIED    'Get Help With AC Problems'
+      14. [18] pin=UNSPECIFIED    'Call for AC Repair'
+      15. [25] pin=UNSPECIFIED    'Get Your AC Running Again'
+    DESCRIPTIONS (4):
+       1. [78] pin=UNSPECIFIED    'Request a free AC repair quote from Ambient for cooling problems in your home.'
+       2. [89] pin=UNSPECIFIED    'Get AC repair help for warm air, weak airflow, frequent cycling, unusual noises or leaks.'
+       3. [87] pin=UNSPECIFIED    'Ambient diagnoses air conditioner problems and explains the recommended repair options.'
+       4. [78] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia and surrounding Maryland service areas.'
+
+  ad_id=820900825419 ad_group='SKAG | AC Repair Near Me'
+    status=ENABLED strength=AVERAGE approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/ac-repair/']
+    paths: path1='ac-repair' path2='severn-md'
+    HEADLINES (15):
+       1. [27] pin=UNSPECIFIED    'Stop Guessing About Your AC'
+       2. [23] pin=UNSPECIFIED    'Get Clear Answers First'
+       3. [27] pin=UNSPECIFIED    'Confident AC Repair Choices'
+       4. [26] pin=UNSPECIFIED    'Bring Comfortable Air Back'
+       5. [25] pin=UNSPECIFIED    'Get Clarity on AC Trouble'
+       6. [25] pin=UNSPECIFIED    'Protect Your Home Comfort'
+       7. [23] pin=UNSPECIFIED    'Know What Your AC Needs'
+       8. [25] pin=UNSPECIFIED    'A Clear Path Back to Cool'
+       9. [30] pin=UNSPECIFIED    'Confidence Starts With Clarity'
+      10. [27] pin=UNSPECIFIED    'AC Repair Without Guesswork'
+      11. [25] pin=UNSPECIFIED    'Understand the AC Problem'
+      12. [28] pin=UNSPECIFIED    'Take Control of Home Comfort'
+      13. [26] pin=UNSPECIFIED    'Clear AC Repair Next Steps'
+      14. [26] pin=UNSPECIFIED    'Start With a Free AC Quote'
+      15. [30] pin=UNSPECIFIED    'Choose Ambient With Confidence'
+    DESCRIPTIONS (4):
+       1. [87] pin=UNSPECIFIED    'AC trouble creates uncertainty. Start with a free AC repair quote and clear next steps.'
+       2. [75] pin=UNSPECIFIED    'Understand what may be affecting your cooling before choosing an AC repair.'
+       3. [78] pin=UNSPECIFIED    'Get the details you need to make a confident AC repair decision for your home.'
+       4. [82] pin=UNSPECIFIED    'Talk with Ambient about your AC concerns and move forward with greater confidence.'
+
+  ad_id=820900825422 ad_group='SKAG | HVAC Replacement Near Me'
+    status=ENABLED strength=AVERAGE approval=AREA_OF_INTEREST_ONLY review=REVIEWED
+    !! POLICY TOPIC: type=AREA_OF_INTEREST_ONLY topic=CONSUMER_FINANCE
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-replacement/']
+    paths: path1='hvac-replace' path2='maryland'
+    HEADLINES (15):
+       1. [30] pin=UNSPECIFIED    "Know When It's Time to Replace"
+       2. [28] pin=UNSPECIFIED    'Make a Confident HVAC Choice'
+       3. [30] pin=UNSPECIFIED    'Clear HVAC Replacement Options'
+       4. [29] pin=UNSPECIFIED    'Move Past an Uncertain System'
+       5. [30] pin=UNSPECIFIED    'Regain Control of Home Comfort'
+       6. [28] pin=UNSPECIFIED    'Plan the Next Comfort System'
+       7. [28] pin=UNSPECIFIED    'Replace With More Confidence'
+       8. [30] pin=UNSPECIFIED    'Understand Your System Choices'
+       9. [27] pin=UNSPECIFIED    'A Clear Path to Replacement'
+      10. [27] pin=UNSPECIFIED    'Reduce HVAC Decision Stress'
+      11. [29] pin=UNSPECIFIED    'Start With Your Comfort Needs'
+      12. [27] pin=UNSPECIFIED    'Choose the Next Step Calmly'
+      13. [24] pin=UNSPECIFIED    'Talk Through Replacement'
+      14. [28] pin=UNSPECIFIED    'HVAC Replacement Starts Here'
+      15. [23] pin=UNSPECIFIED    'Start With a Free Quote'
+    DESCRIPTIONS (4):
+       1. [83] pin=UNSPECIFIED    'An aging HVAC system can raise hard questions. Start with a free replacement quote.'
+       2. [83] pin=UNSPECIFIED    'Review HVAC replacement options before deciding what makes sense for your property.'
+       3. [80] pin=UNSPECIFIED    'Compare repair and replacement with clear guidance based on your current system.'
+       4. [73] pin=UNSPECIFIED    'Talk with Ambient and plan your HVAC replacement with greater confidence.'
+
+  ad_id=820900825425 ad_group='SKAG | HVAC Replacement Near Me'
+    status=ENABLED strength=POOR approval=AREA_OF_INTEREST_ONLY review=REVIEWED
+    !! POLICY TOPIC: type=AREA_OF_INTEREST_ONLY topic=CONSUMER_FINANCE
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-replacement/']
+    paths: path1='hvac-replace' path2='maryland'
+    HEADLINES (15):
+       1. [26] pin=UNSPECIFIED    'HVAC Replacement in Severn'
+       2. [25] pin=UNSPECIFIED    'Columbia HVAC Replacement'
+       3. [22] pin=UNSPECIFIED    'Local HVAC Replacement'
+       4. [25] pin=UNSPECIFIED    'Schedule HVAC Replacement'
+       5. [28] pin=UNSPECIFIED    'Get a Free Replacement Quote'
+       6. [24] pin=UNSPECIFIED    'Replace Your HVAC System'
+       7. [26] pin=UNSPECIFIED    'HVAC Replacement for Homes'
+       8. [27] pin=UNSPECIFIED    'Commercial HVAC Replacement'
+       9. [29] pin=UNSPECIFIED    'Professional HVAC Replacement'
+      10. [22] pin=UNSPECIFIED    'Plan a New HVAC System'
+      11. [29] pin=UNSPECIFIED    'Compare Repair or Replacement'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [28] pin=UNSPECIFIED    'Replace an Aging HVAC System'
+      14. [29] pin=UNSPECIFIED    'Start Your System Replacement'
+      15. [27] pin=UNSPECIFIED    'HVAC Replacement Evaluation'
+    DESCRIPTIONS (4):
+       1. [77] pin=UNSPECIFIED    'Request a free HVAC replacement quote for your home or business from Ambient.'
+       2. [87] pin=UNSPECIFIED    'Compare repair and HVAC replacement options after an evaluation of your current system.'
+       3. [83] pin=UNSPECIFIED    'Plan professional HVAC replacement with clear guidance based on your comfort needs.'
+       4. [78] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia and surrounding Maryland service areas.'
+
+  ad_id=820789851723 ad_group='SKAG | AC Repair Near Me'
+    status=ENABLED strength=AVERAGE approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/ac-repair/']
+    paths: path1='ac-repair' path2='severn-md'
+    HEADLINES (15):
+       1. [19] pin=UNSPECIFIED    'AC Repair in Severn'
+       2. [25] pin=UNSPECIFIED    'AC Repair in Severna Park'
+       3. [21] pin=UNSPECIFIED    'AC Repair in Columbia'
+       4. [23] pin=UNSPECIFIED    'Request a Free AC Quote'
+       5. [18] pin=UNSPECIFIED    'Schedule AC Repair'
+       6. [22] pin=UNSPECIFIED    'Air Conditioner Repair'
+       7. [24] pin=UNSPECIFIED    'AC Not Cooling Properly?'
+       8. [24] pin=UNSPECIFIED    'Help for Weak AC Airflow'
+       9. [25] pin=UNSPECIFIED    'Help for AC Leaks & Noise'
+      10. [22] pin=UNSPECIFIED    'Professional AC Repair'
+      11. [23] pin=UNSPECIFIED    'Clear AC Repair Options'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [25] pin=UNSPECIFIED    'Get Help With AC Problems'
+      14. [18] pin=UNSPECIFIED    'Call for AC Repair'
+      15. [25] pin=UNSPECIFIED    'Get Your AC Running Again'
+    DESCRIPTIONS (4):
+       1. [78] pin=UNSPECIFIED    'Request a free AC repair quote from Ambient for cooling problems in your home.'
+       2. [89] pin=UNSPECIFIED    'Get AC repair help for warm air, weak airflow, frequent cycling, unusual noises or leaks.'
+       3. [87] pin=UNSPECIFIED    'Ambient diagnoses air conditioner problems and explains the recommended repair options.'
+       4. [78] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia and surrounding Maryland service areas.'
+
+  ad_id=820789851726 ad_group='SKAG | AC Repair Near Me'
+    status=ENABLED strength=AVERAGE approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/ac-repair/']
+    paths: path1='ac-repair' path2='severn-md'
+    HEADLINES (15):
+       1. [27] pin=UNSPECIFIED    'Stop Guessing About Your AC'
+       2. [23] pin=UNSPECIFIED    'Get Clear Answers First'
+       3. [27] pin=UNSPECIFIED    'Confident AC Repair Choices'
+       4. [26] pin=UNSPECIFIED    'Bring Comfortable Air Back'
+       5. [25] pin=UNSPECIFIED    'Get Clarity on AC Trouble'
+       6. [25] pin=UNSPECIFIED    'Protect Your Home Comfort'
+       7. [23] pin=UNSPECIFIED    'Know What Your AC Needs'
+       8. [25] pin=UNSPECIFIED    'A Clear Path Back to Cool'
+       9. [30] pin=UNSPECIFIED    'Confidence Starts With Clarity'
+      10. [27] pin=UNSPECIFIED    'AC Repair Without Guesswork'
+      11. [25] pin=UNSPECIFIED    'Understand the AC Problem'
+      12. [28] pin=UNSPECIFIED    'Take Control of Home Comfort'
+      13. [26] pin=UNSPECIFIED    'Clear AC Repair Next Steps'
+      14. [26] pin=UNSPECIFIED    'Start With a Free AC Quote'
+      15. [30] pin=UNSPECIFIED    'Choose Ambient With Confidence'
+    DESCRIPTIONS (4):
+       1. [87] pin=UNSPECIFIED    'AC trouble creates uncertainty. Start with a free AC repair quote and clear next steps.'
+       2. [75] pin=UNSPECIFIED    'Understand what may be affecting your cooling before choosing an AC repair.'
+       3. [78] pin=UNSPECIFIED    'Get the details you need to make a confident AC repair decision for your home.'
+       4. [82] pin=UNSPECIFIED    'Talk with Ambient about your AC concerns and move forward with greater confidence.'
+
+==========================================================================================
+--- Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08  (4 ads)
+
+  ad_id=820900825560 ad_group='SKAG | HVAC Repair Near Me'
+    status=ENABLED strength=POOR approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-repair/']
+    paths: path1='hvac-repair' path2='severn-md'
+    HEADLINES (15):
+       1. [21] pin=UNSPECIFIED    'HVAC Repair in Severn'
+       2. [27] pin=UNSPECIFIED    'HVAC Repair in Severna Park'
+       3. [23] pin=UNSPECIFIED    'HVAC Repair in Columbia'
+       4. [25] pin=UNSPECIFIED    'Request a Free HVAC Quote'
+       5. [20] pin=UNSPECIFIED    'Schedule HVAC Repair'
+       6. [27] pin=UNSPECIFIED    'Heating or Cooling Problem?'
+       7. [24] pin=UNSPECIFIED    'Professional HVAC Repair'
+       8. [26] pin=UNSPECIFIED    'Help for Weak HVAC Airflow'
+       9. [28] pin=UNSPECIFIED    'Help for Uneven Temperatures'
+      10. [29] pin=UNSPECIFIED    'Help for HVAC Noise & Cycling'
+      11. [25] pin=UNSPECIFIED    'Clear HVAC Repair Options'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [27] pin=UNSPECIFIED    'Get Help With HVAC Problems'
+      14. [20] pin=UNSPECIFIED    'Call for HVAC Repair'
+      15. [27] pin=UNSPECIFIED    'Restore Heating and Cooling'
+    DESCRIPTIONS (4):
+       1. [78] pin=UNSPECIFIED    'Request a free HVAC repair quote for heating or cooling problems in your home.'
+       2. [82] pin=UNSPECIFIED    'Get HVAC repair help for weak airflow, uneven temperatures, cycling or odd sounds.'
+       3. [76] pin=UNSPECIFIED    'Ambient diagnoses HVAC problems and explains the recommended repair options.'
+       4. [78] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia and surrounding Maryland service areas.'
+
+  ad_id=820900825563 ad_group='SKAG | HVAC Repair Near Me'
+    status=ENABLED strength=AVERAGE approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-repair/']
+    paths: path1='hvac-repair' path2='severn-md'
+    HEADLINES (15):
+       1. [29] pin=UNSPECIFIED    'Bring Comfort Back Into Focus'
+       2. [25] pin=UNSPECIFIED    'Know What Your HVAC Needs'
+       3. [30] pin=UNSPECIFIED    'Make a Confident Repair Choice'
+       4. [29] pin=UNSPECIFIED    'Stop Guessing About the Issue'
+       5. [29] pin=UNSPECIFIED    'Get Answers Before You Decide'
+       6. [28] pin=UNSPECIFIED    'A Clear Path Back to Comfort'
+       7. [28] pin=UNSPECIFIED    'Understand Your HVAC Problem'
+       8. [28] pin=UNSPECIFIED    'Take Control of Home Comfort'
+       9. [30] pin=UNSPECIFIED    'Confidence Starts With Answers'
+      10. [29] pin=UNSPECIFIED    'HVAC Repair Without Guesswork'
+      11. [26] pin=UNSPECIFIED    'Plan the Right HVAC Repair'
+      12. [28] pin=UNSPECIFIED    'Start With a Free HVAC Quote'
+      13. [30] pin=UNSPECIFIED    'Clear Next Steps for Your HVAC'
+      14. [29] pin=UNSPECIFIED    'Protect Everyday Home Comfort'
+      15. [30] pin=UNSPECIFIED    'Choose Ambient With Confidence'
+    DESCRIPTIONS (4):
+       1. [88] pin=UNSPECIFIED    'HVAC trouble disrupts comfort. Start with a free HVAC repair quote and clear next steps.'
+       2. [72] pin=UNSPECIFIED    'Understand what may be affecting comfort before choosing an HVAC repair.'
+       3. [80] pin=UNSPECIFIED    'Get the details you need to make a confident HVAC repair decision for your home.'
+       4. [84] pin=UNSPECIFIED    'Talk with Ambient about your HVAC concerns and move forward with greater confidence.'
+
+  ad_id=820789851729 ad_group='SKAG | HVAC Repair Near Me'
+    status=ENABLED strength=POOR approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-repair/']
+    paths: path1='hvac-repair' path2='severn-md'
+    HEADLINES (15):
+       1. [21] pin=UNSPECIFIED    'HVAC Repair in Severn'
+       2. [27] pin=UNSPECIFIED    'HVAC Repair in Severna Park'
+       3. [23] pin=UNSPECIFIED    'HVAC Repair in Columbia'
+       4. [25] pin=UNSPECIFIED    'Request a Free HVAC Quote'
+       5. [20] pin=UNSPECIFIED    'Schedule HVAC Repair'
+       6. [27] pin=UNSPECIFIED    'Heating or Cooling Problem?'
+       7. [24] pin=UNSPECIFIED    'Professional HVAC Repair'
+       8. [26] pin=UNSPECIFIED    'Help for Weak HVAC Airflow'
+       9. [28] pin=UNSPECIFIED    'Help for Uneven Temperatures'
+      10. [29] pin=UNSPECIFIED    'Help for HVAC Noise & Cycling'
+      11. [25] pin=UNSPECIFIED    'Clear HVAC Repair Options'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [27] pin=UNSPECIFIED    'Get Help With HVAC Problems'
+      14. [20] pin=UNSPECIFIED    'Call for HVAC Repair'
+      15. [27] pin=UNSPECIFIED    'Restore Heating and Cooling'
+    DESCRIPTIONS (4):
+       1. [78] pin=UNSPECIFIED    'Request a free HVAC repair quote for heating or cooling problems in your home.'
+       2. [82] pin=UNSPECIFIED    'Get HVAC repair help for weak airflow, uneven temperatures, cycling or odd sounds.'
+       3. [76] pin=UNSPECIFIED    'Ambient diagnoses HVAC problems and explains the recommended repair options.'
+       4. [78] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia and surrounding Maryland service areas.'
+
+  ad_id=820789851732 ad_group='SKAG | HVAC Repair Near Me'
+    status=ENABLED strength=AVERAGE approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-repair/']
+    paths: path1='hvac-repair' path2='severn-md'
+    HEADLINES (15):
+       1. [29] pin=UNSPECIFIED    'Bring Comfort Back Into Focus'
+       2. [25] pin=UNSPECIFIED    'Know What Your HVAC Needs'
+       3. [30] pin=UNSPECIFIED    'Make a Confident Repair Choice'
+       4. [29] pin=UNSPECIFIED    'Stop Guessing About the Issue'
+       5. [29] pin=UNSPECIFIED    'Get Answers Before You Decide'
+       6. [28] pin=UNSPECIFIED    'A Clear Path Back to Comfort'
+       7. [28] pin=UNSPECIFIED    'Understand Your HVAC Problem'
+       8. [28] pin=UNSPECIFIED    'Take Control of Home Comfort'
+       9. [30] pin=UNSPECIFIED    'Confidence Starts With Answers'
+      10. [29] pin=UNSPECIFIED    'HVAC Repair Without Guesswork'
+      11. [26] pin=UNSPECIFIED    'Plan the Right HVAC Repair'
+      12. [28] pin=UNSPECIFIED    'Start With a Free HVAC Quote'
+      13. [30] pin=UNSPECIFIED    'Clear Next Steps for Your HVAC'
+      14. [29] pin=UNSPECIFIED    'Protect Everyday Home Comfort'
+      15. [30] pin=UNSPECIFIED    'Choose Ambient With Confidence'
+    DESCRIPTIONS (4):
+       1. [88] pin=UNSPECIFIED    'HVAC trouble disrupts comfort. Start with a free HVAC repair quote and clear next steps.'
+       2. [72] pin=UNSPECIFIED    'Understand what may be affecting comfort before choosing an HVAC repair.'
+       3. [80] pin=UNSPECIFIED    'Get the details you need to make a confident HVAC repair decision for your home.'
+       4. [84] pin=UNSPECIFIED    'Talk with Ambient about your HVAC concerns and move forward with greater confidence.'
+
+==========================================================================================
+--- Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08  (4 ads)
+
+  ad_id=820900825434 ad_group='SKAG | HVAC Installation'
+    status=ENABLED strength=POOR approval=DISAPPROVED review=REVIEWED
+    !! POLICY TOPIC: type=FULLY_LIMITED topic=CONSUMER_FINANCE
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-installation/']
+    paths: path1='hvac-installers' path2='maryland'
+    HEADLINES (15):
+       1. [25] pin=UNSPECIFIED    'HVAC Installers in Severn'
+       2. [28] pin=UNSPECIFIED    'Severna Park HVAC Installers'
+       3. [24] pin=UNSPECIFIED    'Columbia HVAC Installers'
+       4. [30] pin=UNSPECIFIED    'Get an HVAC Installation Quote'
+       5. [26] pin=UNSPECIFIED    'Schedule HVAC Installation'
+       6. [21] pin=UNSPECIFIED    'Local HVAC Installers'
+       7. [27] pin=UNSPECIFIED    'Residential HVAC Installers'
+       8. [26] pin=UNSPECIFIED    'Commercial HVAC Installers'
+       9. [25] pin=UNSPECIFIED    'Plan Your New HVAC System'
+      10. [28] pin=UNSPECIFIED    'Professional HVAC Installers'
+      11. [30] pin=UNSPECIFIED    'Heating & Cooling Installation'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [23] pin=UNSPECIFIED    'Start Your HVAC Project'
+      14. [25] pin=UNSPECIFIED    'Talk to an HVAC Installer'
+      15. [28] pin=UNSPECIFIED    'Free HVAC Installation Quote'
+    DESCRIPTIONS (4):
+       1. [78] pin=UNSPECIFIED    "Request a free quote from Ambient's HVAC installers for your home or business."
+       2. [86] pin=UNSPECIFIED    'Talk with local HVAC installers about your comfort needs, system options, and project.'
+       3. [78] pin=UNSPECIFIED    'Plan your HVAC installation with honest, upfront pricing and clear next steps.'
+       4. [77] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia, and surrounding Maryland communities.'
+
+  ad_id=820900825437 ad_group='SKAG | HVAC Installation'
+    status=ENABLED strength=EXCELLENT approval=DISAPPROVED review=REVIEWED
+    !! POLICY TOPIC: type=FULLY_LIMITED topic=CONSUMER_FINANCE
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-installation/']
+    paths: path1='hvac-install' path2='maryland'
+    HEADLINES (15):
+       1. [28] pin=UNSPECIFIED    'Plan Comfort With Confidence'
+       2. [27] pin=UNSPECIFIED    'Feel Ready for a New System'
+       3. [28] pin=UNSPECIFIED    'Make an Informed HVAC Choice'
+       4. [30] pin=UNSPECIFIED    'Know Your Installation Options'
+       5. [28] pin=UNSPECIFIED    'Choose Comfort for Your Home'
+       6. [29] pin=UNSPECIFIED    'Take Control of System Choice'
+       7. [23] pin=UNSPECIFIED    'Compare HVAC Installers'
+       8. [25] pin=UNSPECIFIED    'A Thoughtful HVAC Upgrade'
+       9. [29] pin=UNSPECIFIED    'Build a More Comfortable Home'
+      10. [29] pin=UNSPECIFIED    'Move Forward Without Guessing'
+      11. [28] pin=UNSPECIFIED    'Your New Comfort Starts Here'
+      12. [22] pin=UNSPECIFIED    'Choose HVAC Installers'
+      13. [28] pin=UNSPECIFIED    'Clear HVAC Installation Path'
+      14. [23] pin=UNSPECIFIED    'Start With a Free Quote'
+      15. [25] pin=UNSPECIFIED    'Talk With HVAC Installers'
+    DESCRIPTIONS (4):
+       1. [87] pin=UNSPECIFIED    'A new HVAC system is a major decision. Talk with an installer about your comfort needs.'
+       2. [84] pin=UNSPECIFIED    'Compare HVAC installation options before choosing the next system for your property.'
+       3. [82] pin=UNSPECIFIED    "Reduce uncertainty with clear answers from Ambient's professional HVAC installers."
+       4. [80] pin=UNSPECIFIED    'Start with a free HVAC installation quote and plan your project with confidence.'
+
+  ad_id=820789851735 ad_group='SKAG | HVAC Installation'
+    status=ENABLED strength=GOOD approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-installation/']
+    paths: path1='hvac-installers' path2='maryland'
+    HEADLINES (15):
+       1. [25] pin=UNSPECIFIED    'HVAC Installers in Severn'
+       2. [28] pin=UNSPECIFIED    'Severna Park HVAC Installers'
+       3. [24] pin=UNSPECIFIED    'Columbia HVAC Installers'
+       4. [30] pin=UNSPECIFIED    'Get an HVAC Installation Quote'
+       5. [26] pin=UNSPECIFIED    'Schedule HVAC Installation'
+       6. [21] pin=UNSPECIFIED    'Local HVAC Installers'
+       7. [27] pin=UNSPECIFIED    'Residential HVAC Installers'
+       8. [26] pin=UNSPECIFIED    'Commercial HVAC Installers'
+       9. [25] pin=UNSPECIFIED    'Plan Your New HVAC System'
+      10. [28] pin=UNSPECIFIED    'Professional HVAC Installers'
+      11. [30] pin=UNSPECIFIED    'Heating & Cooling Installation'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [23] pin=UNSPECIFIED    'Start Your HVAC Project'
+      14. [25] pin=UNSPECIFIED    'Talk to an HVAC Installer'
+      15. [28] pin=UNSPECIFIED    'Free HVAC Installation Quote'
+    DESCRIPTIONS (4):
+       1. [78] pin=UNSPECIFIED    "Request a free quote from Ambient's HVAC installers for your home or business."
+       2. [86] pin=UNSPECIFIED    'Talk with local HVAC installers about your comfort needs, system options, and project.'
+       3. [78] pin=UNSPECIFIED    'Plan your HVAC installation with honest, upfront pricing and clear next steps.'
+       4. [77] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia, and surrounding Maryland communities.'
+
+  ad_id=820789851738 ad_group='SKAG | HVAC Installation'
+    status=ENABLED strength=EXCELLENT approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-installation/']
+    paths: path1='hvac-install' path2='maryland'
+    HEADLINES (15):
+       1. [28] pin=UNSPECIFIED    'Plan Comfort With Confidence'
+       2. [27] pin=UNSPECIFIED    'Feel Ready for a New System'
+       3. [28] pin=UNSPECIFIED    'Make an Informed HVAC Choice'
+       4. [30] pin=UNSPECIFIED    'Know Your Installation Options'
+       5. [28] pin=UNSPECIFIED    'Choose Comfort for Your Home'
+       6. [29] pin=UNSPECIFIED    'Take Control of System Choice'
+       7. [23] pin=UNSPECIFIED    'Compare HVAC Installers'
+       8. [25] pin=UNSPECIFIED    'A Thoughtful HVAC Upgrade'
+       9. [29] pin=UNSPECIFIED    'Build a More Comfortable Home'
+      10. [29] pin=UNSPECIFIED    'Move Forward Without Guessing'
+      11. [28] pin=UNSPECIFIED    'Your New Comfort Starts Here'
+      12. [22] pin=UNSPECIFIED    'Choose HVAC Installers'
+      13. [28] pin=UNSPECIFIED    'Clear HVAC Installation Path'
+      14. [23] pin=UNSPECIFIED    'Start With a Free Quote'
+      15. [25] pin=UNSPECIFIED    'Talk With HVAC Installers'
+    DESCRIPTIONS (4):
+       1. [87] pin=UNSPECIFIED    'A new HVAC system is a major decision. Talk with an installer about your comfort needs.'
+       2. [84] pin=UNSPECIFIED    'Compare HVAC installation options before choosing the next system for your property.'
+       3. [82] pin=UNSPECIFIED    "Reduce uncertainty with clear answers from Ambient's professional HVAC installers."
+       4. [80] pin=UNSPECIFIED    'Start with a free HVAC installation quote and plan your project with confidence.'
+
+==========================================================================================
+--- Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08  (4 ads)
+
+  ad_id=820944944368 ad_group='SKAG | HVAC Replacement Near Me'
+    status=ENABLED strength=POOR approval=DISAPPROVED review=REVIEWED
+    !! POLICY TOPIC: type=FULLY_LIMITED topic=CONSUMER_FINANCE
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-replacement/']
+    paths: path1='hvac-replace' path2='maryland'
+    HEADLINES (15):
+       1. [30] pin=UNSPECIFIED    "Know When It's Time to Replace"
+       2. [28] pin=UNSPECIFIED    'Make a Confident HVAC Choice'
+       3. [30] pin=UNSPECIFIED    'Clear HVAC Replacement Options'
+       4. [29] pin=UNSPECIFIED    'Move Past an Uncertain System'
+       5. [30] pin=UNSPECIFIED    'Regain Control of Home Comfort'
+       6. [28] pin=UNSPECIFIED    'Plan the Next Comfort System'
+       7. [28] pin=UNSPECIFIED    'Replace With More Confidence'
+       8. [30] pin=UNSPECIFIED    'Understand Your System Choices'
+       9. [27] pin=UNSPECIFIED    'A Clear Path to Replacement'
+      10. [27] pin=UNSPECIFIED    'Reduce HVAC Decision Stress'
+      11. [29] pin=UNSPECIFIED    'Start With Your Comfort Needs'
+      12. [27] pin=UNSPECIFIED    'Choose the Next Step Calmly'
+      13. [24] pin=UNSPECIFIED    'Talk Through Replacement'
+      14. [28] pin=UNSPECIFIED    'HVAC Replacement Starts Here'
+      15. [23] pin=UNSPECIFIED    'Start With a Free Quote'
+    DESCRIPTIONS (4):
+       1. [83] pin=UNSPECIFIED    'An aging HVAC system can raise hard questions. Start with a free replacement quote.'
+       2. [83] pin=UNSPECIFIED    'Review HVAC replacement options before deciding what makes sense for your property.'
+       3. [80] pin=UNSPECIFIED    'Compare repair and replacement with clear guidance based on your current system.'
+       4. [73] pin=UNSPECIFIED    'Talk with Ambient and plan your HVAC replacement with greater confidence.'
+
+  ad_id=820944944371 ad_group='SKAG | HVAC Replacement Near Me'
+    status=ENABLED strength=POOR approval=DISAPPROVED review=REVIEWED
+    !! POLICY TOPIC: type=FULLY_LIMITED topic=CONSUMER_FINANCE
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-replacement/']
+    paths: path1='hvac-replace' path2='maryland'
+    HEADLINES (15):
+       1. [26] pin=UNSPECIFIED    'HVAC Replacement in Severn'
+       2. [25] pin=UNSPECIFIED    'Columbia HVAC Replacement'
+       3. [22] pin=UNSPECIFIED    'Local HVAC Replacement'
+       4. [25] pin=UNSPECIFIED    'Schedule HVAC Replacement'
+       5. [28] pin=UNSPECIFIED    'Get a Free Replacement Quote'
+       6. [24] pin=UNSPECIFIED    'Replace Your HVAC System'
+       7. [26] pin=UNSPECIFIED    'HVAC Replacement for Homes'
+       8. [27] pin=UNSPECIFIED    'Commercial HVAC Replacement'
+       9. [29] pin=UNSPECIFIED    'Professional HVAC Replacement'
+      10. [22] pin=UNSPECIFIED    'Plan a New HVAC System'
+      11. [29] pin=UNSPECIFIED    'Compare Repair or Replacement'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [28] pin=UNSPECIFIED    'Replace an Aging HVAC System'
+      14. [29] pin=UNSPECIFIED    'Start Your System Replacement'
+      15. [27] pin=UNSPECIFIED    'HVAC Replacement Evaluation'
+    DESCRIPTIONS (4):
+       1. [77] pin=UNSPECIFIED    'Request a free HVAC replacement quote for your home or business from Ambient.'
+       2. [87] pin=UNSPECIFIED    'Compare repair and HVAC replacement options after an evaluation of your current system.'
+       3. [83] pin=UNSPECIFIED    'Plan professional HVAC replacement with clear guidance based on your comfort needs.'
+       4. [78] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia and surrounding Maryland service areas.'
+
+  ad_id=820789851741 ad_group='SKAG | HVAC Replacement Near Me'
+    status=ENABLED strength=POOR approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-replacement/']
+    paths: path1='hvac-replace' path2='maryland'
+    HEADLINES (15):
+       1. [26] pin=UNSPECIFIED    'HVAC Replacement in Severn'
+       2. [25] pin=UNSPECIFIED    'Columbia HVAC Replacement'
+       3. [22] pin=UNSPECIFIED    'Local HVAC Replacement'
+       4. [25] pin=UNSPECIFIED    'Schedule HVAC Replacement'
+       5. [28] pin=UNSPECIFIED    'Get a Free Replacement Quote'
+       6. [24] pin=UNSPECIFIED    'Replace Your HVAC System'
+       7. [26] pin=UNSPECIFIED    'HVAC Replacement for Homes'
+       8. [27] pin=UNSPECIFIED    'Commercial HVAC Replacement'
+       9. [29] pin=UNSPECIFIED    'Professional HVAC Replacement'
+      10. [22] pin=UNSPECIFIED    'Plan a New HVAC System'
+      11. [29] pin=UNSPECIFIED    'Compare Repair or Replacement'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [28] pin=UNSPECIFIED    'Replace an Aging HVAC System'
+      14. [29] pin=UNSPECIFIED    'Start Your System Replacement'
+      15. [27] pin=UNSPECIFIED    'HVAC Replacement Evaluation'
+    DESCRIPTIONS (4):
+       1. [77] pin=UNSPECIFIED    'Request a free HVAC replacement quote for your home or business from Ambient.'
+       2. [87] pin=UNSPECIFIED    'Compare repair and HVAC replacement options after an evaluation of your current system.'
+       3. [83] pin=UNSPECIFIED    'Plan professional HVAC replacement with clear guidance based on your comfort needs.'
+       4. [78] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia and surrounding Maryland service areas.'
+
+  ad_id=820789851744 ad_group='SKAG | HVAC Replacement Near Me'
+    status=ENABLED strength=AVERAGE approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/hvac-replacement/']
+    paths: path1='hvac-replace' path2='maryland'
+    HEADLINES (15):
+       1. [30] pin=UNSPECIFIED    "Know When It's Time to Replace"
+       2. [28] pin=UNSPECIFIED    'Make a Confident HVAC Choice'
+       3. [30] pin=UNSPECIFIED    'Clear HVAC Replacement Options'
+       4. [29] pin=UNSPECIFIED    'Move Past an Uncertain System'
+       5. [30] pin=UNSPECIFIED    'Regain Control of Home Comfort'
+       6. [28] pin=UNSPECIFIED    'Plan the Next Comfort System'
+       7. [28] pin=UNSPECIFIED    'Replace With More Confidence'
+       8. [30] pin=UNSPECIFIED    'Understand Your System Choices'
+       9. [27] pin=UNSPECIFIED    'A Clear Path to Replacement'
+      10. [27] pin=UNSPECIFIED    'Reduce HVAC Decision Stress'
+      11. [29] pin=UNSPECIFIED    'Start With Your Comfort Needs'
+      12. [27] pin=UNSPECIFIED    'Choose the Next Step Calmly'
+      13. [24] pin=UNSPECIFIED    'Talk Through Replacement'
+      14. [28] pin=UNSPECIFIED    'HVAC Replacement Starts Here'
+      15. [23] pin=UNSPECIFIED    'Start With a Free Quote'
+    DESCRIPTIONS (4):
+       1. [83] pin=UNSPECIFIED    'An aging HVAC system can raise hard questions. Start with a free replacement quote.'
+       2. [83] pin=UNSPECIFIED    'Review HVAC replacement options before deciding what makes sense for your property.'
+       3. [80] pin=UNSPECIFIED    'Compare repair and replacement with clear guidance based on your current system.'
+       4. [73] pin=UNSPECIFIED    'Talk with Ambient and plan your HVAC replacement with greater confidence.'
+
+==========================================================================================
+--- Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08  (4 ads)
+
+  ad_id=820900825428 ad_group='SKAG | Gas Boiler Repair'
+    status=ENABLED strength=EXCELLENT approval=DISAPPROVED review=REVIEWED
+    !! POLICY TOPIC: type=FULLY_LIMITED topic=CONSUMER_FINANCE
+    final_urls=['https://offer.ambientcoolingandheating.com/gas-boiler-repair/']
+    paths: path1='boiler-repair' path2='maryland'
+    HEADLINES (15):
+       1. [27] pin=UNSPECIFIED    'Gas Boiler Repair in Severn'
+       2. [29] pin=UNSPECIFIED    'Gas Boiler Repair in Columbia'
+       3. [23] pin=UNSPECIFIED    'Local Gas Boiler Repair'
+       4. [26] pin=UNSPECIFIED    'Schedule Gas Boiler Repair'
+       5. [27] pin=UNSPECIFIED    'Request a Free Boiler Quote'
+       6. [28] pin=UNSPECIFIED    'Boiler Not Heating Properly?'
+       7. [29] pin=UNSPECIFIED    'Help for Boiler Leaks & Noise'
+       8. [26] pin=UNSPECIFIED    'Professional Boiler Repair'
+       9. [26] pin=UNSPECIFIED    'Reliable Gas Boiler Repair'
+      10. [27] pin=UNSPECIFIED    'Gas Boiler Repair for Homes'
+      11. [25] pin=UNSPECIFIED    'Gas Boiler Repair Service'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [29] pin=UNSPECIFIED    'Get Help With Boiler Problems'
+      14. [26] pin=UNSPECIFIED    'Call for Gas Boiler Repair'
+      15. [27] pin=UNSPECIFIED    'Restore Warm Indoor Comfort'
+    DESCRIPTIONS (4):
+       1. [78] pin=UNSPECIFIED    'Request a free gas boiler repair quote for your home or business from Ambient.'
+       2. [82] pin=UNSPECIFIED    'Get gas boiler repair help for no heat, frequent cycling, unusual noises or leaks.'
+       3. [82] pin=UNSPECIFIED    'Ambient diagnoses gas boiler problems and explains the recommended repair options.'
+       4. [78] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia and surrounding Maryland service areas.'
+
+  ad_id=820900825431 ad_group='SKAG | Gas Boiler Repair'
+    status=ENABLED strength=EXCELLENT approval=DISAPPROVED review=REVIEWED
+    !! POLICY TOPIC: type=FULLY_LIMITED topic=CONSUMER_FINANCE
+    final_urls=['https://offer.ambientcoolingandheating.com/gas-boiler-repair/']
+    paths: path1='boiler-repair' path2='maryland'
+    HEADLINES (15):
+       1. [27] pin=UNSPECIFIED    'Know What Your Boiler Needs'
+       2. [25] pin=UNSPECIFIED    'Gas Boiler Repair Options'
+       3. [28] pin=UNSPECIFIED    'Take Control of Home Comfort'
+       4. [30] pin=UNSPECIFIED    'Stop Guessing About the Boiler'
+       5. [29] pin=UNSPECIFIED    'Get Answers Before You Decide'
+       6. [30] pin=UNSPECIFIED    'Make a Confident Repair Choice'
+       7. [27] pin=UNSPECIFIED    'A Clear Path Back to Warmth'
+       8. [22] pin=UNSPECIFIED    'Protect Warmth at Home'
+       9. [28] pin=UNSPECIFIED    'Plan the Right Boiler Repair'
+      10. [29] pin=UNSPECIFIED    'Reduce Uncertainty About Heat'
+      11. [25] pin=UNSPECIFIED    'Start With a Boiler Check'
+      12. [30] pin=UNSPECIFIED    'Choose Ambient With Confidence'
+      13. [29] pin=UNSPECIFIED    'Gas Boiler Repair Starts Here'
+      14. [30] pin=UNSPECIFIED    'Understand Your Boiler Problem'
+      15. [23] pin=UNSPECIFIED    'Start With a Free Quote'
+    DESCRIPTIONS (4):
+       1. [77] pin=UNSPECIFIED    'Boiler trouble can feel uncertain. Start with a free gas boiler repair quote.'
+       2. [74] pin=UNSPECIFIED    'Understand what may be affecting heat before choosing a gas boiler repair.'
+       3. [79] pin=UNSPECIFIED    'Get the details you need to make a confident repair decision for your property.'
+       4. [86] pin=UNSPECIFIED    'Talk with Ambient about your boiler concerns and move forward with greater confidence.'
+
+  ad_id=820789851747 ad_group='SKAG | Gas Boiler Repair'
+    status=ENABLED strength=POOR approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/gas-boiler-repair/']
+    paths: path1='boiler-repair' path2='maryland'
+    HEADLINES (15):
+       1. [27] pin=UNSPECIFIED    'Gas Boiler Repair in Severn'
+       2. [29] pin=UNSPECIFIED    'Gas Boiler Repair in Columbia'
+       3. [23] pin=UNSPECIFIED    'Local Gas Boiler Repair'
+       4. [26] pin=UNSPECIFIED    'Schedule Gas Boiler Repair'
+       5. [27] pin=UNSPECIFIED    'Request a Free Boiler Quote'
+       6. [28] pin=UNSPECIFIED    'Boiler Not Heating Properly?'
+       7. [29] pin=UNSPECIFIED    'Help for Boiler Leaks & Noise'
+       8. [26] pin=UNSPECIFIED    'Professional Boiler Repair'
+       9. [26] pin=UNSPECIFIED    'Reliable Gas Boiler Repair'
+      10. [27] pin=UNSPECIFIED    'Gas Boiler Repair for Homes'
+      11. [25] pin=UNSPECIFIED    'Gas Boiler Repair Service'
+      12. [25] pin=UNSPECIFIED    'Ambient Cooling & Heating'
+      13. [29] pin=UNSPECIFIED    'Get Help With Boiler Problems'
+      14. [26] pin=UNSPECIFIED    'Call for Gas Boiler Repair'
+      15. [27] pin=UNSPECIFIED    'Restore Warm Indoor Comfort'
+    DESCRIPTIONS (4):
+       1. [78] pin=UNSPECIFIED    'Request a free gas boiler repair quote for your home or business from Ambient.'
+       2. [82] pin=UNSPECIFIED    'Get gas boiler repair help for no heat, frequent cycling, unusual noises or leaks.'
+       3. [82] pin=UNSPECIFIED    'Ambient diagnoses gas boiler problems and explains the recommended repair options.'
+       4. [78] pin=UNSPECIFIED    'Serving Severn, Severna Park, Columbia and surrounding Maryland service areas.'
+
+  ad_id=820789851750 ad_group='SKAG | Gas Boiler Repair'
+    status=ENABLED strength=POOR approval=APPROVED review=REVIEWED
+    final_urls=['https://offer.ambientcoolingandheating.com/gas-boiler-repair/']
+    paths: path1='boiler-repair' path2='maryland'
+    HEADLINES (15):
+       1. [27] pin=UNSPECIFIED    'Know What Your Boiler Needs'
+       2. [25] pin=UNSPECIFIED    'Gas Boiler Repair Options'
+       3. [28] pin=UNSPECIFIED    'Take Control of Home Comfort'
+       4. [30] pin=UNSPECIFIED    'Stop Guessing About the Boiler'
+       5. [29] pin=UNSPECIFIED    'Get Answers Before You Decide'
+       6. [30] pin=UNSPECIFIED    'Make a Confident Repair Choice'
+       7. [27] pin=UNSPECIFIED    'A Clear Path Back to Warmth'
+       8. [22] pin=UNSPECIFIED    'Protect Warmth at Home'
+       9. [28] pin=UNSPECIFIED    'Plan the Right Boiler Repair'
+      10. [29] pin=UNSPECIFIED    'Reduce Uncertainty About Heat'
+      11. [25] pin=UNSPECIFIED    'Start With a Boiler Check'
+      12. [30] pin=UNSPECIFIED    'Choose Ambient With Confidence'
+      13. [29] pin=UNSPECIFIED    'Gas Boiler Repair Starts Here'
+      14. [30] pin=UNSPECIFIED    'Understand Your Boiler Problem'
+      15. [23] pin=UNSPECIFIED    'Start With a Free Quote'
+    DESCRIPTIONS (4):
+       1. [77] pin=UNSPECIFIED    'Boiler trouble can feel uncertain. Start with a free gas boiler repair quote.'
+       2. [74] pin=UNSPECIFIED    'Understand what may be affecting heat before choosing a gas boiler repair.'
+       3. [79] pin=UNSPECIFIED    'Get the details you need to make a confident repair decision for your property.'
+       4. [86] pin=UNSPECIFIED    'Talk with Ambient about your boiler concerns and move forward with greater confidence.'
+
+====================================================================================================
+ASSETS LINKED TO THE FIVE NEW CAMPAIGNS
+====================================================================================================
+
+--- Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08
+    CALL: 1
+        id=407995613637 status=ENABLED approval=APPROVED {"call_asset": {"country_code": "US", "phone_number": "(410)705-6354", "call_conversion_reporting_state": "UNSPECIFIED", "call_conversion_action": "", "ad_schedule_targets": []}}
+    CALLOUT: 5
+        id=349923938310 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Local Maryland Service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418595411 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Prompt, Reliable Service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418627430 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Clear Recommendations", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418646876 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Professional Technicians", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418646882 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Clear Service Options", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+    SITELINK: 5
+        id=407319490556 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "AC Repair Service", "description1": "Get help for cooling problems", "description2": "Request AC repair service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407319490559 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Customer Reviews", "description1": "Read customer experiences", "description2": "See feedback about Ambient", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407319490562 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "View Our Work", "description1": "See completed HVAC projects", "description2": "Explore Ambient project photos", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418567058 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Contact Ambient", "description1": "Ask about your HVAC needs", "description2": "Send a service request", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407494691217 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Service Areas", "description1": "See Maryland service areas", "description2": "Check whether we serve you", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+    STRUCTURED_SNIPPET: 1
+        id=407820091760 status=ENABLED approval=APPROVED {"structured_snippet_asset": {"header": "Service catalog", "values": ["AC Repair", "Air Conditioner Repair", "Cooling Diagnostics", "AC Problem Diagnosis"]}}
+
+--- Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08
+    CALL: 1
+        id=407995613637 status=ENABLED approval=APPROVED {"call_asset": {"country_code": "US", "phone_number": "(410)705-6354", "call_conversion_reporting_state": "UNSPECIFIED", "call_conversion_action": "", "ad_schedule_targets": []}}
+    CALLOUT: 5
+        id=349923938310 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Local Maryland Service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418595411 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Prompt, Reliable Service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418627430 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Clear Recommendations", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418646876 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Professional Technicians", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418646882 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Clear Service Options", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+    SITELINK: 5
+        id=407319490559 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Customer Reviews", "description1": "Read customer experiences", "description2": "See feedback about Ambient", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407319490562 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "View Our Work", "description1": "See completed HVAC projects", "description2": "Explore Ambient project photos", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418567058 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Contact Ambient", "description1": "Ask about your HVAC needs", "description2": "Send a service request", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418567061 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "HVAC Services", "description1": "Explore heating and cooling", "description2": "See available HVAC services", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407494691217 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Service Areas", "description1": "See Maryland service areas", "description2": "Check whether we serve you", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+    STRUCTURED_SNIPPET: 1
+        id=407995613364 status=ENABLED approval=APPROVED {"structured_snippet_asset": {"header": "Service catalog", "values": ["HVAC Repair", "Heating System Repair", "Cooling System Repair", "HVAC Diagnostics"]}}
+
+--- Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08
+    CALL: 1
+        id=407995613637 status=ENABLED approval=APPROVED {"call_asset": {"country_code": "US", "phone_number": "(410)705-6354", "call_conversion_reporting_state": "UNSPECIFIED", "call_conversion_action": "", "ad_schedule_targets": []}}
+    CALLOUT: 5
+        id=349923938310 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Local Maryland Service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418595411 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Prompt, Reliable Service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418627430 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Clear Recommendations", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418646876 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Professional Technicians", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418646882 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Clear Service Options", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+    SITELINK: 6
+        id=407319490559 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Customer Reviews", "description1": "Read customer experiences", "description2": "See feedback about Ambient", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407319490562 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "View Our Work", "description1": "See completed HVAC projects", "description2": "Explore Ambient project photos", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418567058 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Contact Ambient", "description1": "Ask about your HVAC needs", "description2": "Send a service request", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418567061 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "HVAC Services", "description1": "Explore heating and cooling", "description2": "See available HVAC services", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407494691217 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Service Areas", "description1": "See Maryland service areas", "description2": "Check whether we serve you", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407494735425 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "AC Installation", "description1": "Plan a new cooling system", "description2": "Review AC installation help", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+    STRUCTURED_SNIPPET: 1
+        id=407995609569 status=ENABLED approval=APPROVED {"structured_snippet_asset": {"header": "Service catalog", "values": ["HVAC Installation", "New HVAC Systems", "Heating Installation", "Cooling Installation"]}}
+
+--- Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08
+    CALL: 1
+        id=407995613637 status=ENABLED approval=APPROVED {"call_asset": {"country_code": "US", "phone_number": "(410)705-6354", "call_conversion_reporting_state": "UNSPECIFIED", "call_conversion_action": "", "ad_schedule_targets": []}}
+    CALLOUT: 5
+        id=349923938310 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Local Maryland Service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418595411 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Prompt, Reliable Service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418627430 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Clear Recommendations", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418646876 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Professional Technicians", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418646882 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Clear Service Options", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+    SITELINK: 6
+        id=407319490559 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Customer Reviews", "description1": "Read customer experiences", "description2": "See feedback about Ambient", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407319490562 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "View Our Work", "description1": "See completed HVAC projects", "description2": "Explore Ambient project photos", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418567058 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Contact Ambient", "description1": "Ask about your HVAC needs", "description2": "Send a service request", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418567061 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "HVAC Services", "description1": "Explore heating and cooling", "description2": "See available HVAC services", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407494691217 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Service Areas", "description1": "See Maryland service areas", "description2": "Check whether we serve you", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407494691220 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Heating Services", "description1": "Explore local heating help", "description2": "See available heating services", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+    STRUCTURED_SNIPPET: 1
+        id=407919112525 status=ENABLED approval=APPROVED {"structured_snippet_asset": {"header": "Service catalog", "values": ["HVAC Replacement", "Heating Replacement", "Cooling Replacement", "System Evaluation"]}}
+
+--- Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08
+    CALL: 1
+        id=407995613637 status=ENABLED approval=APPROVED {"call_asset": {"country_code": "US", "phone_number": "(410)705-6354", "call_conversion_reporting_state": "UNSPECIFIED", "call_conversion_action": "", "ad_schedule_targets": []}}
+    CALLOUT: 5
+        id=349923938310 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Local Maryland Service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418595411 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Prompt, Reliable Service", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418627430 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Clear Recommendations", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418646876 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Professional Technicians", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418646882 status=ENABLED approval=APPROVED {"callout_asset": {"callout_text": "Clear Service Options", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+    SITELINK: 6
+        id=407319490559 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Customer Reviews", "description1": "Read customer experiences", "description2": "See feedback about Ambient", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407319490562 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "View Our Work", "description1": "See completed HVAC projects", "description2": "Explore Ambient project photos", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407319490571 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Boiler Repair", "description1": "Learn about boiler service", "description2": "Request boiler repair help", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407418567058 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Contact Ambient", "description1": "Ask about your HVAC needs", "description2": "Send a service request", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407494691217 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Service Areas", "description1": "See Maryland service areas", "description2": "Check whether we serve you", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+        id=407494691220 status=ENABLED approval=APPROVED {"sitelink_asset": {"link_text": "Heating Services", "description1": "Explore local heating help", "description2": "See available heating services", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+    STRUCTURED_SNIPPET: 1
+        id=407820045167 status=ENABLED approval=APPROVED {"structured_snippet_asset": {"header": "Service catalog", "values": ["Gas Boiler Repair", "Boiler Diagnostics", "No-Heat Boiler Service", "Boiler Leak Diagnosis"]}}
+
+====================================================================================================
+CUSTOMER-LEVEL (ACCOUNT) ASSETS
+====================================================================================================
+  field=STRUCTURED_SNIPPET status=REMOVED id=308372431464 {"structured_snippet_asset": {"header": "Highlights", "values": ["We Offer A Range Of Services", "We Serve In Multiple Areas", "Chat Support Available"]}}
+  field=SITELINK status=REMOVED id=154098728776 {"sitelink_asset": {"link_text": "Blog Center", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=154098728779 {"sitelink_asset": {"link_text": "Request A Quote", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=154098728782 {"sitelink_asset": {"link_text": "Our Services", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=154098728785 {"sitelink_asset": {"link_text": "Our Reviews", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=154098728788 {"sitelink_asset": {"link_text": "Our Work", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=154539836245 {"sitelink_asset": {"link_text": "Blog Center", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=154539836248 {"sitelink_asset": {"link_text": "Request A Quote", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=154539836257 {"sitelink_asset": {"link_text": "Our Work", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=154686544428 {"sitelink_asset": {"link_text": "Services Offered", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=154686544431 {"sitelink_asset": {"link_text": "Customer Reviews", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=314390491975 {"sitelink_asset": {"link_text": "Request A Quote", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=314390491978 {"sitelink_asset": {"link_text": "Blog Center", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=314390491981 {"sitelink_asset": {"link_text": "Our Work", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=314390491984 {"sitelink_asset": {"link_text": "Services Offered", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=SITELINK status=REMOVED id=314390491987 {"sitelink_asset": {"link_text": "Customer Reviews", "description1": "", "description2": "", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=CALLOUT status=ENABLED id=89063098370 {"callout_asset": {"callout_text": "Get Free Online Quote", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=CALLOUT status=ENABLED id=89063098373 {"callout_asset": {"callout_text": "Licensed & Insured", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=CALLOUT status=ENABLED id=89063098376 {"callout_asset": {"callout_text": "Claim Your Discount", "start_date": "", "end_date": "", "ad_schedule_targets": []}}
+  field=CALL status=REMOVED id=369249814267 {"call_asset": {"country_code": "US", "phone_number": "4107056354", "call_conversion_reporting_state": "UNSPECIFIED", "call_conversion_action": "", "ad_schedule_targets": []}}
+
+====================================================================================================
+CALL ASSETS (phone number check)
+====================================================================================================
+  asset_id=80497290055 phone='(410) 415-9517' country=US approval=APPROVED
+      conv_action=customers/2401959466/conversionActions/179 reporting=USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION  -> *** NOT THE APPROVED PAID NUMBER ***
+  asset_id=98498198415 phone='(410) 415-9517' country=US approval=APPROVED
+      conv_action=customers/2401959466/conversionActions/179 reporting=USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION  -> *** NOT THE APPROVED PAID NUMBER ***
+  asset_id=343054924787 phone='(410) 705-6354' country=US approval=APPROVED
+      conv_action=customers/2401959466/conversionActions/179 reporting=USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION  -> APPROVED
+  asset_id=369249814267 phone='4107056354' country=US approval=APPROVED
+      conv_action=customers/2401959466/conversionActions/179 reporting=USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION  -> APPROVED
+  asset_id=407995613637 phone='(410)705-6354' country=US approval=APPROVED
+      conv_action=customers/2401959466/conversionActions/179 reporting=USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION  -> APPROVED
+
+====================================================================================================
+CONVERSION GOALS
+====================================================================================================
+customer_conversion_goal:
+    category=PHONE_CALL_LEAD origin=WEBSITE biddable=True
+    category=SUBMIT_LEAD_FORM origin=WEBSITE biddable=True
+    category=CONTACT origin=WEBSITE biddable=True
+    category=PAGE_VIEW origin=GOOGLE_HOSTED biddable=False
+    category=GET_DIRECTIONS origin=GOOGLE_HOSTED biddable=False
+    category=CONTACT origin=GOOGLE_HOSTED biddable=False
+    category=ENGAGEMENT origin=GOOGLE_HOSTED biddable=False
+    category=PHONE_CALL_LEAD origin=CALL_FROM_ADS biddable=True
+    category=CONTACT origin=CALL_FROM_ADS biddable=True
+
+campaign_conversion_goal (new campaigns), biddable only:
+    AC Repair          category=PHONE_CALL_LEAD origin=WEBSITE
+    AC Repair          category=PHONE_CALL_LEAD origin=CALL_FROM_ADS
+    AC Repair          category=SUBMIT_LEAD_FORM origin=WEBSITE
+    AC Repair          category=CONTACT origin=WEBSITE
+    AC Repair          category=CONTACT origin=CALL_FROM_ADS
+    Gas Boiler Repair  category=PHONE_CALL_LEAD origin=WEBSITE
+    Gas Boiler Repair  category=PHONE_CALL_LEAD origin=CALL_FROM_ADS
+    Gas Boiler Repair  category=SUBMIT_LEAD_FORM origin=WEBSITE
+    Gas Boiler Repair  category=CONTACT origin=WEBSITE
+    Gas Boiler Repair  category=CONTACT origin=CALL_FROM_ADS
+    HVAC Installation  category=PHONE_CALL_LEAD origin=WEBSITE
+    HVAC Installation  category=PHONE_CALL_LEAD origin=CALL_FROM_ADS
+    HVAC Installation  category=SUBMIT_LEAD_FORM origin=WEBSITE
+    HVAC Installation  category=CONTACT origin=WEBSITE
+    HVAC Installation  category=CONTACT origin=CALL_FROM_ADS
+    HVAC Repair        category=PHONE_CALL_LEAD origin=WEBSITE
+    HVAC Repair        category=PHONE_CALL_LEAD origin=CALL_FROM_ADS
+    HVAC Repair        category=SUBMIT_LEAD_FORM origin=WEBSITE
+    HVAC Repair        category=CONTACT origin=WEBSITE
+    HVAC Repair        category=CONTACT origin=CALL_FROM_ADS
+    HVAC Replacement   category=PHONE_CALL_LEAD origin=WEBSITE
+    HVAC Replacement   category=PHONE_CALL_LEAD origin=CALL_FROM_ADS
+    HVAC Replacement   category=SUBMIT_LEAD_FORM origin=WEBSITE
+    HVAC Replacement   category=CONTACT origin=WEBSITE
+    HVAC Replacement   category=CONTACT origin=CALL_FROM_ADS
+
+  non-biddable goal rows: 40

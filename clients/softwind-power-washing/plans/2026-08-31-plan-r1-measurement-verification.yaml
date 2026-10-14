@@ -1,0 +1,175 @@
+# PLAN-R1 - MEASUREMENT VERIFICATION
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# Built 2026-08-31 from the read-only forensic snapshot. NOT APPROVED.
+change_plan:
+  plan_id: PLAN-R1
+  plan_title: Measurement verification and conversion-counting repair
+  approval_type: MEASUREMENT_VERIFICATION
+  priority: P0
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 0
+  requires_separate_enable_approval: false
+  recommended_approval_order: 1
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  finding_this_plan_answers: >-
+    Zero conversions have been recorded on 22 billable clicks and $713.15 of spend.
+    Three separate facts must be untangled before anyone concludes the account has
+    produced no leads.
+
+  evidence:
+    - id: R1-E1
+      fact: >-
+        All four conversion actions report include_in_conversions_metric = FALSE,
+        and customer_conversion_goal returns biddable = FALSE for all four
+        categories (PHONE_CALL_LEAD/WEBSITE, PHONE_CALL_LEAD/CALL_FROM_ADS,
+        SUBMIT_LEAD_FORM/WEBSITE, GET_DIRECTIONS/GOOGLE_HOSTED).
+      consequence: >-
+        The account-level Conversions column is structurally incapable of counting
+        a lead. metrics.conversions will read 0.00 even on a fully successful
+        conversion. Any verification MUST query metrics.all_conversions segmented
+        by segments.conversion_action_name.
+      status: CONFIRMED
+    - id: R1-E2
+      fact: >-
+        Bidding is NOT affected. Both campaigns override with campaign-level goals
+        where PHONE_CALL_LEAD/WEBSITE, PHONE_CALL_LEAD/CALL_FROM_ADS and
+        SUBMIT_LEAD_FORM/WEBSITE are all biddable = TRUE.
+      consequence: >-
+        This is a reporting defect, not a bidding defect. It does not on its own
+        explain zero leads, and fixing it will not create leads.
+      status: CONFIRMED
+    - id: R1-E3
+      fact: >-
+        The remarketing list All Converters (9446168598, described by Google as
+        People who converted on your site, 180-day membership) has
+        size_for_search = 16, against All visitors size_for_search = 160.
+      consequence: >-
+        The conversion tag DEMONSTRABLY FIRES. It is not dead. Sixteen distinct
+        users have triggered a conversion on the site inside 180 days.
+      caveat: >-
+        This list counts all traffic sources over 180 days and its size is a
+        rounded audience estimate. It proves the tag fires. It does NOT prove any
+        specific paid click converted and it is NOT a lead count.
+      status: CONFIRMED
+    - id: R1-E4
+      fact: >-
+        metrics.all_conversions is 0.00 for every campaign on every date, and
+        segments.conversion_action_name returns zero rows. The API omits all-zero
+        segment rows, so zero rows means nothing was recorded on any action - not
+        a reporting gap.
+      consequence: No paid click has produced a recorded conversion of any kind.
+      status: CONFIRMED
+    - id: R1-E5
+      fact: >-
+        call_view returns zero rows across the entire retained call log, and
+        segments.click_type = CALLS shows 86 impressions with 0 clicks.
+      consequence: >-
+        The call asset has served 86 times and has never once been clicked. There
+        is no call to attribute, so the call path is untested rather than broken.
+      status: CONFIRMED
+    - id: R1-E6
+      fact: >-
+        The foreign Google Ads tag AW-17878095007 loads on all six offer landing
+        pages alongside the account own tag AW-18369652705, verified in a real
+        browser on 2026-08-31 in both desktop and mobile viewports.
+      consequence: >-
+        A Google Ads account that is not Softwind Power Washing is receiving
+        conversion and remarketing signal from Softwind paid landing pages. Owner
+        unknown. Unresolved since 2026-08-25.
+      status: CONFIRMED
+    - id: R1-E7
+      fact: >-
+        GCLID and all four UTM parameters survive to the final URL on every offer
+        page, desktop and mobile, with no redirect. HTTP 200 on all six.
+      consequence: Click-ID preservation is not the failure point.
+      status: CONFIRMED
+
+  actions: []
+
+  investigation_tasks:
+    - id: R1-T1
+      task: >-
+        Read the Google Ads UI conversion-goal screen and record which goals are
+        set as Account-default versus Campaign-specific. Confirm whether the four
+        FALSE biddable flags at customer level are deliberate.
+      requires: read-only UI access
+      severity: P0
+    - id: R1-T2
+      task: >-
+        Identify the owner of Google Ads account 17878095007 and remove its tag
+        from offer.softwindli.com, or obtain written confirmation that it is a
+        Softwind-controlled account.
+      requires: website access, owner decision
+      severity: P0
+    - id: R1-T3
+      task: >-
+        Supply a WhatConverts export covering 2026-08-01 to 2026-08-31 for the
+        Power Washing profile so leads can be reconciled against 22 paid clicks.
+      requires: client-supplied export
+      severity: P0
+      blocker_id: WC-1
+    - id: R1-T4
+      task: >-
+        Confirm where +1 631-519-8373 (GLE) and +1 631-315-8655 (GBP) are used.
+        Neither number appears in any Google Ads asset, tel: link, or landing-page
+        body text audited on 2026-08-31.
+      requires: owner confirmation
+      severity: P1
+    - id: R1-T5
+      task: >-
+        Re-run the wc_swap cookie probe on offer.softwindli.com to confirm whether
+        WhatConverts dynamic number insertion is active on the offer subdomain.
+        The 2026-08-31 render shows the static approved (631) 502-7946 in both the
+        tel: link and body copy, which is the correct tracked number either way.
+      requires: nothing - read-only, can run immediately
+      severity: P2
+
+  controlled_tests:
+    - id: R1-A2
+      test: Controlled form submission end to end
+      supersedes: PLAN-A2 3B30BD017E0C, approved 2026-08-27, never submitted
+      state: STILL BLOCKED
+      blocked_on:
+        - A2-PRE-2 client-controlled plus-addressed email address
+        - A2-PRE-3 client notified before a test lead reaches their inbox or CRM
+        - A2-PRE-4 named cleanup owner for the test record
+        - >-
+          PRESENCE targeting on 80 New York locations means a real GCLID requires
+          a click from a person physically on Long Island during Mon-Sat
+          08:00-18:00. Neither the agent nor a Florida-based approver can produce
+          one, so the GCLID-to-conversion join cannot be proven remotely.
+      settled_inputs:
+        test_name: GM TEST DO NOT CONTACT
+        test_phone_range: >-
+          NANP reserved fictitious range 555-0100..555-0199 (for example
+          631-555-0147) because it cannot ring a real person, so speed-to-lead
+          automation cannot dial a stranger.
+      verification_method: >-
+        metrics.all_conversions segmented by segments.conversion_action_name.
+        metrics.conversions will read 0.00 even on success - see R1-E1.
+    - id: R1-A3
+      test: Controlled website-call test
+      state: BLOCKED
+      blocked_on:
+        - same PRESENCE constraint as R1-A2
+        - >-
+          calling (631) 502-7946 rings the client real business line. Requires the
+          client prior consent and a named recipient.
+
+  risk: >-
+    Zero Google Ads mutations. The only external effects are a test form record
+    and a test phone call, both of which are separately gated and neither of which
+    is authorised by this plan.
+  rollback: >-
+    Not applicable - nothing is changed. If a test record is created, the named
+    cleanup owner deletes it from the CRM and the inbox.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does not grant permission.

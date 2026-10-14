@@ -1,0 +1,118 @@
+{
+ "generated_local": "2026-09-10T10:31:36.888720-04:00",
+ "measured": {
+  "AC Repair": {
+   "impr": 895,
+   "clicks": 29,
+   "cost": 3084.87,
+   "records": 5.0,
+   "is": 47.2,
+   "lost_budget": 6.28,
+   "lost_rank": 46.52,
+   "uql": 3,
+   "cpql": 1028.29
+  },
+  "Gas Boiler Repair": {
+   "impr": 38,
+   "clicks": 0,
+   "cost": 0.0,
+   "records": 0.0,
+   "is": 54.55,
+   "lost_budget": 0.0,
+   "lost_rank": 45.45,
+   "uql": 0,
+   "cpql": null
+  },
+  "HVAC Installation": {
+   "impr": 3450,
+   "clicks": 114,
+   "cost": 2972.96,
+   "records": 3.0,
+   "is": 36.43,
+   "lost_budget": 52.9,
+   "lost_rank": 10.68,
+   "uql": 1,
+   "cpql": 2972.96
+  },
+  "HVAC Repair": {
+   "impr": 1081,
+   "clicks": 29,
+   "cost": 1951.94,
+   "records": 6.0,
+   "is": 33.6,
+   "lost_budget": 8.68,
+   "lost_rank": 57.72,
+   "uql": 1,
+   "cpql": 1951.94
+  },
+  "HVAC Replacement": {
+   "impr": 207,
+   "clicks": 5,
+   "cost": 152.52,
+   "records": 0.0,
+   "is": 54.21,
+   "lost_budget": 0.0,
+   "lost_rank": 45.79,
+   "uql": 0,
+   "cpql": null
+  }
+ },
+ "blended_cpql": 1632.46,
+ "lead_source_reality": {
+  "total": 99,
+  "paid_search": 8,
+  "paid_share_pct": 8.1,
+  "mix": {
+   "google": 21,
+   "GBP Traffic": 34,
+   "2nd GBP Traffic": 31,
+   "GBP": 4,
+   "LSA - Ellicott": 3,
+   "GBP - Ellicott": 2,
+   "ambientcoolingandheating.com": 1,
+   "LSA Annapolis": 1,
+   "LSA's - Severn": 1,
+   "GLE Traffic": 1
+  }
+ },
+ "at_13k": {
+  "leads_at_current_efficiency": 8.0,
+  "leads_needed_for_250_cpql": 52.0,
+  "required_efficiency_gain_x": 6.5
+ },
+ "demand_ceiling": {
+  "monthly_impressions": 6385,
+  "avg_is_pct": 45.2,
+  "total_available_impressions": 14127,
+  "max_clicks": 441,
+  "observed_cpc": 46.11,
+  "max_monthly_spend_at_100pct_is": 20333
+ },
+ "constraints": {
+  "AC Repair": {
+   "is": 47.2,
+   "lost_rank": 46.52,
+   "lost_budget": 6.28
+  },
+  "Gas Boiler Repair": {
+   "is": 54.55,
+   "lost_rank": 45.45,
+   "lost_budget": 0.0
+  },
+  "HVAC Installation": {
+   "is": 36.43,
+   "lost_rank": 10.68,
+   "lost_budget": 52.9
+  },
+  "HVAC Repair": {
+   "is": 33.6,
+   "lost_rank": 57.72,
+   "lost_budget": 8.68
+  },
+  "HVAC Replacement": {
+   "is": 54.21,
+   "lost_rank": 45.79,
+   "lost_budget": 0.0
+  }
+ }
+}

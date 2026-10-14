@@ -1,0 +1,39 @@
+{
+ "package": "ambient-cooling-heating-sitelinks-ONLY",
+ "version": "2026-08-18",
+ "split_from": "50701AE742FCDEEB",
+ "split_reason": "Separated from the 24/7 schedule change at Green Marketing's direction.",
+ "phase": "modify-existing",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342"
+ },
+ "scope": "Sitelink assets and campaign-asset links ONLY.",
+ "observed": "All 9 distinct sitelink assets across the five campaigns point to ambientcoolingandheating.com, which uses a different phone number and has no matching lead form. 28 campaign-asset links in total.",
+ "assets": [
+  {
+   "action": "CREATE 5 sitelink assets pointing at existing offer. service pages",
+   "objects_to_create": 5
+  },
+  {
+   "action": "UNLINK the 9 main-site sitelinks from the five campaigns",
+   "approval_class": "DESTRUCTIVE - unlinks campaign assets; assets are not deleted",
+   "objects_to_remove": 28
+  }
+ ],
+ "part_1_non_destructive": {
+  "action": "CREATE 5 sitelink assets pointing at existing offer. service pages and attach them to the five campaigns",
+  "objects_to_create": 5,
+  "approval_class": "NON-DESTRUCTIVE"
+ },
+ "part_2_destructive": {
+  "action": "UNLINK the 9 main-site sitelinks from the five campaigns",
+  "objects_to_remove": 28,
+  "approval_class": "DESTRUCTIVE",
+  "note": "Assets are detached, not deleted; paused legacy campaigns keep them."
+ },
+ "not_proposed": "Reviews, Our Work, Service Areas and Contact have no compliant offer-subdomain equivalent. Building them is a separate landing-page workflow, not an invented destination.",
+ "sequencing": "Approve and apply part 1 first, confirm the offer-page sitelinks are serving, then approve part 2 separately so paid traffic is never left without sitelinks.",
+ "plan_fingerprint": "EAEF0D02B1C68E1F"
+}

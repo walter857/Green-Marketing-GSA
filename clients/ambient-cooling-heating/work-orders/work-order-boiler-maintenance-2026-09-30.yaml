@@ -1,0 +1,65 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # IDENTITY GATE PASSED 2026-09-30 by fresh read-only API lookup, 8/8 checks.
+    # Evidence: clients/ambient-cooling-heating/snapshots/maint-eval-2026-09-30.json
+    #   descriptive_name "Ambient Cooling - Live" == expected
+    #   customer.id 2401959466 == expected (CHILD id, not the Green Marketing MCC 3373711342)
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Boiler Maintenance
+    related_services: []
+  task:
+    type: ads-assets
+    mode: draft
+    request: >-
+      Evaluate bringing the budget-deferred ad group 204129718287 'SKAG | Boiler Maintenance'
+      (campaign 24132507744 'Search | NonBrand | Boiler Services | Central MD | BOFU | 2026-09') live
+      on https://offer.ambientcoolingandheating.com/boiler-maintenance/ without damaging Boiler Repair,
+      Gas Boiler Repair or Boiler Replacement traffic. Owner/agency direction 2026-09-30.
+      HARD GATE: developer defect D2 must be fixed first. /boiler-maintenance/ must carry Boiler
+      Maintenance content (H1, every H2, CTAs and FAQ), not Boiler Installation content.
+      READ + DRAFT ONLY. RSA copy may be drafted locally as a HELD payload. Nothing is created,
+      submitted for review or enabled while the destination fails QA.
+      Read-only comparison against the live Boiler Repair (204129718047), Gas Boiler Repair
+      (202339087594) and Boiler Replacement (204129718207) ad groups does not modify them.
+    date_range: >-
+      CURRENT AS AT 2026-09-30. Last complete day = 2026-09-29. 2026-09-30 is PARTIAL.
+      Windows: since offer-page migration 2026-09-24..09-29; last 7 complete days 09-23..09-29;
+      last 14 complete days 09-16..09-29; month to date 09-01..09-29.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/boiler-maintenance/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: null
+    primary_conversion_goal: "unique qualified residential boiler maintenance lead (form or call)"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-order.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-transition-2026-09.yaml
+      - clients/ambient-cooling-heating/dev-tasks/DEV-2026-09-25-offer-site-priority-list.md
+    ad_group_id: "204129718287"
+    campaign_id: "24132507744"
+    canonical_final_url: "https://offer.ambientcoolingandheating.com/boiler-maintenance/"
+    destination_gate: "FAIL 2026-09-30 - D2 open: H1 maintenance, body/H2s/CTA/FAQ still Boiler Installation"
+    # CLIENT CPL REQUIREMENT, recorded 2026-09-30 (explicit Green Marketing instruction in the
+    # working session). Mirrors client.yaml offer.target_cpl / offer.cpl_ceiling / offer.cpl_policy.
+    target_cpl_usd: 280
+    cpl_ceiling_usd: 350
+    cpl_requirement_source: "Explicit Green Marketing instruction in the Claude Code working session"
+    cpl_requirement_recorded_on: "2026-09-30"
+    cpl_definition: "all ad spend in scope and period / unique genuine paid leads (click-ID or matched Google call record); QA, spam, wrong numbers, duplicates and non-paid channels excluded"
+    spending_limits_are_maximums_not_targets: true
+    launch_authorized: false
+    enablement_authorized: false
+  approval_owner: Green Marketing

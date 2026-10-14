@@ -1,0 +1,119 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # Fresh read-only identity check required before any account read (exact name and child ID;
+    # the MCC 3373711342 is never the child).
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Heating Repair
+    # Existing approved heating scope only (client.yaml offer.services_in_scope +
+    # heating_advertising_scope_2026_09_21). No service is added by this work order.
+    related_services:
+      - Furnace Repair
+      - Gas Furnace Repair
+      - Electric Furnace Repair
+      - No Heat Repair
+      - Emergency Heating Repair
+      - Furnace Installation
+      - Furnace Replacement
+      - Heating Installation
+      - Heating Replacement
+      - Boiler Repair
+      - Gas Boiler Repair
+      - Boiler Replacement
+      - Boiler Installation
+      - Boiler Maintenance
+      - Heat Pump Repair
+      - Heat Pump Installation
+      - Heat Pump Replacement
+      - Heat Pump Maintenance
+      - Ductless Heating Repair
+      - Ductless Heating Installation
+      - Geothermal Heat Pump
+      - Thermostat Repair
+      - Thermostat Replacement
+      - Smart Thermostat Installation
+      - Heating Maintenance
+      - Furnace Maintenance
+      - Furnace Tune-Up
+      - Heating Tune-Up
+      - Heating System Inspection
+      - Commercial HVAC Installation
+  task:
+    type: audit
+    mode: draft
+    request: >-
+      Green Marketing request 2026-10-07 ("Ambient: Verify Tracking Repairs and Improve Qualified Leads",
+      plus "check and double check the searched terms per campaign ad group, to exclude all bad ones").
+      READ-ONLY investigation, local drafts and exact Google Ads change bundles for the ten live campaigns
+      (8 Search + 2 PMax): identity and settled-decision preservation; live inventory and policy/eligibility;
+      spend and unique genuine/qualified paid lead reconciliation (Google Ads, GA4, Gravity Forms,
+      WhatConverts incl. duplicate/spam views, call logs); landing-page/form/phone-route repair verification;
+      GTM published version, WhatConverts exports and conversion goals; full search-term review per campaign,
+      ad group and keyword with EXACT-only new negatives; audiences, exclusions and brand controls by campaign
+      type; one recommended strategy and fingerprinted change bundles. Website, WordPress, GTM and WhatConverts
+      fixes belong to the dev team (prepare exact fixes only). No test calls, no test conversion uploads, no
+      clicks on live ads; form submissions only after gm_qa=1 exclusions are verified in all four places.
+      No Google Ads write without a separate exact fingerprint approval.
+    date_range: >-
+      Account time America/New_York. September 2026 (2026-09-01..2026-09-30); October 2026-10-01 through the
+      latest complete day (2026-10-06), with 2026-10-07 shown separately as PARTIAL; since each campaign launch
+      and verified tracking repair where useful; Repair baseline 2026-09-24..2026-09-30 vs complete serving days
+      under the $18 ceiling (2026-10-01, 10-02, 10-05, 10-06; 10-07 counts only after its schedule finishes).
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    location_targets_expected: 75
+    location_option: PRESENCE
+    campaigns_in_scope:
+      "24257819463": "Heating & Furnace Repair"
+      "24257819466": "Heating & Furnace Install & Replace"
+      "24132507744": "Boiler Services"
+      "24268690038": "Heat Pump & Ductless Heating"
+      "24268690041": "Thermostat Services"
+      "24279798229": "Heating Maintenance & Inspection"
+      "24274160783": "Geothermal Heat Pump"
+      "24132507747": "HVAC Installation"
+      "24295088845": "PMax: Furnace & Boiler Replacement"
+      "24318905515": "PMax: Heat Pump & Geothermal"
+    primary_conversion_goal: "unique genuine paid heating lead (form or call); qualified = WhatConverts Quotable Yes"
+    target_cpl_usd: 280
+    cpl_ceiling_usd: 350
+    cpl_definition: "all ad spend in scope and period / unique genuine paid leads (click-ID or matched Google call record); QA, spam, wrong numbers, duplicates and non-paid channels excluded"
+    settled_decisions_preserved:
+      - "Owner-intentional PRIMARY on LP form action 6885463625 and LP website-call action 6885576934 (not drift; never auto-demote)"
+      - "$18 Maximize Clicks CPC ceiling on Heating & Furnace Repair 24257819463"
+      - "Tablet exclusion (-100%) on every active campaign, including both PMax"
+      - "Equal monthly allocations: 8 Search x $1,000 + 2 PMax x $1,000 = $10,000; no silent redistribution or increase; AMB-1101-BUD-NOV-2 150006548BA1 not before 2026-11-01"
+      - "Emergency booking Mon-Fri 08:00-16:00, next-available technician (owner confirmed; never re-ask; no 24/7 claim)"
+      - "Approved service areas and per-campaign schedules (HVAC Installation keeps its own schedule)"
+      - "No new PHRASE or BROAD negatives; new search-query negatives EXACT only"
+      - "No test calls, no test conversion uploads, no clicks on live ads"
+      - "Website/WordPress/GTM/WhatConverts fixes belong to the dev team; inspect and prepare only"
+      - "Omaha-style settled exclusions and withheld negatives from 2026-10-02 stay withheld unless new evidence"
+    negative_policy_for_this_request: >-
+      EXACT only, narrowest defensible scope (ad group or campaign), full query, resource IDs, metrics, reason,
+      current coverage and buyer-conflict check on every row. Never auto-negative near me, cost, price, pricing,
+      quote, best, local, hire, emergency, manufacturer names or location names without query-specific evidence.
+      $100 spend or zero reported leads triggers review, not automatic exclusion. No truncation of long queries
+      into broader exclusions; no invented savings.
+    raw_search_terms_in_deliverable: "HVAC corpus; Green Marketing asked for every visible query to be classified and every proposed negative to show the full query (same basis as the 2026-10-01 and 2026-10-05 requests). Written to the report and the exports folder."
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-budget-allocation-2026-10-02.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-repair-optimization-prep-2026-10-05.yaml
+      - reports/ambient-cooling-heating/2026-10-02-cleanup-and-launch-execution.md
+      - reports/ambient-cooling-heating/2026-10-05-repair-optimization-prep.md
+    change_authorized: false
+  approval_owner: Green Marketing

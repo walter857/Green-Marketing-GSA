@@ -1,0 +1,146 @@
+change_plan:
+  plan_name: PLAN-SLM-CONV-2
+  plan_version: 2
+  generated_at: '2026-09-03T20:10:43.058980-04:00'
+  target:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: '2429758629'
+    manager_customer_id: '3373711342'
+    currency: USD
+    time_zone: America/New_York
+    exact_service: patio construction (Patio) and paver installation (Pavers)
+    identity_receipt: clients/softwind-landscape-masonry/snapshots/identity-gate-2026-09-03-1959.json
+    baseline_snapshot: recovery/2026-09-patio-pavers/01e-baseline-2.json
+    baseline_evidence_sha256_short: 3D9E3199DD183E79
+  subplan_used: CONVERSIONS
+  subplans:
+    STATUS:
+      actions: &id001 []
+      empty_reason: not part of this package
+    BUDGET:
+      actions: *id001
+      empty_reason: not part of this package
+    EXISTING_RESOURCES:
+      actions: *id001
+      empty_reason: not part of this package
+    CONVERSIONS:
+      actions:
+      - action_id: CONV-01
+        operation: DEMOTE_CONVERSION_ACTION_FROM_PRIMARY
+        resource_type: conversion_action
+        resource_id: '7461619140'
+        resource_name: Softwind Submit lead form
+        current_state: primary_for_goal = True
+        proposed_state: primary_for_goal = False
+        rollback_state: primary_for_goal = True
+        object_count: 1
+        attributes:
+          name: Softwind Submit lead form
+          status: ENABLED
+          type: WEBPAGE
+          category: SUBMIT_LEAD_FORM
+          origin: WEBSITE
+          primary_for_goal: true
+          include_in_conversions_metric: true
+          counting_type: ONE_PER_CLICK
+          click_through_lookback_days: 30
+          view_through_lookback_days: 1
+          attribution_model: GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+          data_driven_status: AVAILABLE
+          phone_call_duration_seconds: 60
+          default_value: 0.0
+          always_use_default_value: true
+          owner_customer: customers/2429758629
+          app_id: null
+        twin_kept_primary:
+          id: '7480764700'
+          name: Softwind Landscape & Masonry (web) form_submission
+          type: GOOGLE_ANALYTICS_4_CUSTOM
+          counting_type: MANY_PER_CLICK
+          why_this_one_stays: It is the superset. It fired on all 6 days the WEBPAGE action fired AND
+            on 4 further days the WEBPAGE action did not. It is MANY_PER_CLICK where the WEBPAGE action
+            is ONE_PER_CLICK, which is why 2026-04-28 reads 3 against 1 - same click, three submissions,
+            capped at one.
+        duplicate_proof:
+          method: Day-level co-occurrence across all recorded history, segments.date x segments.conversion_action,
+            plus the conversion-lag profile.
+          days_demoted_action_fired: 6
+          days_kept_action_fired: 10
+          days_both_fired: 6
+          days_demoted_action_fired_ALONE: 0
+          same_day_identical_counts: 5
+          overlap_days:
+          - date: '2026-03-27'
+            demote_candidate: 1.0
+            keep_candidate: 1.0
+            third_action: 0.0
+          - date: '2026-04-01'
+            demote_candidate: 2.0
+            keep_candidate: 2.0
+            third_action: 0.0
+          - date: '2026-04-28'
+            demote_candidate: 1.0
+            keep_candidate: 3.0
+            third_action: 0.0
+          - date: '2026-05-14'
+            demote_candidate: 1.0
+            keep_candidate: 1.0
+            third_action: 0.0
+          - date: '2026-06-17'
+            demote_candidate: 1.0
+            keep_candidate: 1.0
+            third_action: 1.0
+          - date: '2026-07-15'
+            demote_candidate: 2.0
+            keep_candidate: 2.0
+            third_action: 2.0
+          lag_profile_demoted: 8.0 of 8.0 all_conversions in LESS_THAN_ONE_DAY
+          lag_profile_kept: 12.0 of 13.0 all_conversions in LESS_THAN_ONE_DAY
+          conclusion: The WEBPAGE action never once fired on a day the GA4 action did not. Its events
+            are a strict subset, and on 5 of 6 overlapping days the counts are identical. Both carry category
+            SUBMIT_LEAD_FORM, origin WEBSITE and a sub-one-day lag. This is duplicate counting of one
+            submission, not two separate lead actions.
+          residual_uncertainty: Day-level co-occurrence is not event-level ID matching. A controlled test
+            with a unique lead identifier would settle it beyond doubt; the procedure is documented in
+            18-conv-controlled-test.md and has NOT been run, because submitting a live form would create
+            a real record in the client's CRM and the form's field map is unverified.
+        campaign_learning_impact: NONE. Both in-scope campaigns run TARGET_SPEND (Maximize Clicks), which
+          does not consume conversion data for bidding. No learning period is disturbed. This is also
+          why the change is safe to make BEFORE the P2 Smart Bidding readiness gate rather than after.
+        reporting_impact: Reported Conversions falls by up to 8 credits across all history. Historic months
+          are NOT restated - a credit already counted stays in the historical column - so before/after
+          comparisons must be drawn at the change date, never across it.
+        whatconverts_dependency: None. WhatConverts writes to WC Leads (UPLOAD_CLICKS, 7635680357) and
+          WC Call (UPLOAD_CALLS, 7635680543), not to either web form action. Verified from conversion_action.type.
+    CREATE_PAUSED:
+      actions: *id001
+      empty_reason: not part of this package
+    SITE_OR_TRACKING:
+      actions: *id001
+      empty_reason: not part of this package
+    ENABLE:
+      actions: *id001
+      empty_reason: not part of this package
+  summary: Demote ONE proven-duplicate primary conversion action. Reduced from two after the day-level
+    evidence was gathered.
+  dropped_from_v1:
+    action: Calls from ads (1) (7508686781)
+    why_dropped: 'PLAN-SLM-CONV-1 claimed it duplicated ''Calls from ads'' (7461572537) and cited a June
+      2026 overlap. The day-level data refutes that: 7508686781 fired on 19 days, 7461572537 on 13, and
+      the two NEVER fired on the same day. The June monthly overlap was two actions firing on different
+      days inside one month. They are a handover, not a duplicate. The QA gate forbids demoting on a theoretical
+      duplicate, so it is dropped and moved to monitoring.'
+    residual_risk: Both remain primary AD_CALL / PHONE_CALL_LEAD actions. If the dormant one ever resumes
+      while the other is still firing, real duplication begins. Watch item, not an approved change.
+  still_held_back:
+    WC Leads (7635680357): Fired on 2 of the 6 form-overlap days, and on 2026-07-15 all three actions
+      recorded 2 apiece - a probable triple count. It is still NOT demoted, because it carries the only
+      credit Patio recorded in August and its intended replacement last fired 2026-08-08. Revisit after
+      the tracking repair.
+    WC Call (7635680543): Zero conversions and zero all_conversions in every month. Broken, not duplicative.
+      Fix the path before touching the flag.
+    the five Google-hosted local actions: 'Already isolated: include_in_conversions_metric=false and every
+      GOOGLE_HOSTED customer goal is biddable=false. No change.'
+  supersedes: PLAN-SLM-CONV-1 fingerprint FB9DA2D017AD (OBSOLETE, 2 ops, one unproven)
+  dependencies: []
+  fingerprint: 852D47BE6133

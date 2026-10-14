@@ -1,0 +1,126 @@
+{
+  "generated_account_local": "2026-09-01T20:28:34.243689-04:00",
+  "program_fingerprint_reference_only": "1D3A0D96924B",
+  "program_fingerprint_note": "This identifies the ARCHITECTURE, not an executable plan. It is NOT an approval code and no approval command uses it.",
+  "canonical_sha256_full": "1d3a0d96924b47a53a00eca6750ec597025851f2b8a861e235d092409bda0498",
+  "architecture": {
+    "program": "Softwind complete recovery, September 2026",
+    "target": {
+      "exact_child_account_name": "Softwind Power Washing - Live",
+      "child_customer_id": "1521725229",
+      "exact_service": "Power Washing",
+      "surviving_campaign_id": "24103511039"
+    },
+    "final_ad_groups": [
+      {
+        "name": "Driveway Pressure Washing",
+        "ad_group_id": "202870586110",
+        "texts": [
+          "driveway power washing near me",
+          "driveway pressure washing near me"
+        ],
+        "page": "https://offer.softwindli.com/driveway-pressure-washing/"
+      },
+      {
+        "name": "House Washing",
+        "ad_group_id": "202870585910",
+        "texts": [
+          "exterior house washing near me",
+          "house power washing near me",
+          "house pressure washing near me",
+          "house washing near me"
+        ],
+        "page": "https://offer.softwindli.com/house-washing-company/"
+      },
+      {
+        "name": "Patio Pressure Washing",
+        "ad_group_id": "202870586150",
+        "texts": [
+          "concrete pressure washing near me",
+          "patio power washing near me",
+          "patio pressure washing near me"
+        ],
+        "page": "https://offer.softwindli.com/patio-power-washing/"
+      },
+      {
+        "name": "Power Washing",
+        "ad_group_id": "202870585390",
+        "texts": [
+          "power washing",
+          "power washing company near me",
+          "power washing near me",
+          "power washing service",
+          "power washing services near me"
+        ],
+        "page": "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      },
+      {
+        "name": "Pressure Washing",
+        "ad_group_id": "202870585870",
+        "texts": [
+          "pressure washing",
+          "pressure washing near me",
+          "residential pressure washing near me"
+        ],
+        "page": "https://offer.softwindli.com/residential-pressure-washing/"
+      },
+      {
+        "name": "Soft Washing",
+        "ad_group_id": "202870586310",
+        "texts": [
+          "soft house washing near me",
+          "soft washing near me"
+        ],
+        "page": "https://offer.softwindli.com/soft-house-washing/"
+      }
+    ],
+    "keyword_objects_total": 38,
+    "keyword_objects_to_add": 28,
+    "keyword_objects_reused": 10,
+    "rsas_to_create_paused": 12,
+    "launch_routing_negatives": 103
+  },
+  "counts": {
+    "final_campaigns": 1,
+    "final_ad_groups": 6,
+    "ad_groups_to_create": 0,
+    "ad_groups_reused_existing": 6,
+    "canonical_keyword_texts": 19,
+    "keyword_objects_final": 38,
+    "keyword_objects_to_add_paused": 28,
+    "keyword_objects_reused": 10,
+    "rsas_final": 12,
+    "rsas_to_create_paused": 12,
+    "create_paused_objects_total": 40,
+    "routing_negatives_layer1_sibling_exact": 95,
+    "routing_negatives_layer2_modifier_deployed": 8,
+    "routing_negatives_layer2_modifier_deferred": 11,
+    "routing_negatives_layer3_deferred": 2,
+    "routing_negatives_at_launch": 103,
+    "deduped_local_monthly_demand": 2000,
+    "keyword_texts_reviewed_and_rejected": 20
+  },
+  "validation": {
+    "errors": [],
+    "warnings": [],
+    "error_count": 0,
+    "warning_count": 0,
+    "all_pass": true,
+    "checks": [
+      "every canonical text has exactly one owner ad group",
+      "no routing negative is placed in its own owner group",
+      "no modifier phrase negative blocks an owned text in its target group",
+      "every RSA headline <= 30 characters",
+      "every RSA description <= 90 characters",
+      "every path <= 15 characters",
+      "no duplicate headline or description within an ad",
+      "RSA1/RSA2 headline overlap <= 20% inside each ad group",
+      "no banned or unverified claim in any asset",
+      "no digit in any asset (phone-number guard)",
+      "no awkward 'near me' ad copy",
+      ">= 2 local headlines and >= 2 quote/estimate headlines per RSA",
+      "service token present in 3-9 headlines and >= 1 description per RSA",
+      "no pinning"
+    ]
+  }
+}

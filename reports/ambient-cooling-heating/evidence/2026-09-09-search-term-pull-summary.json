@@ -1,0 +1,113 @@
+{
+ "csv_window_2026_07_15_to_2026_09_09": {
+  "rows": 952,
+  "distinct_terms": 864,
+  "distinct_term_camp_ag": 933,
+  "totals": {
+   "impressions": 3317,
+   "clicks": 117,
+   "cost": 6556.39,
+   "conversions": 12.0,
+   "all_conversions": 68.0
+  },
+  "by_campaign": {
+   "AC Repair": {
+    "rows": 163,
+    "impressions": 751,
+    "clicks": 25,
+    "cost": 2872.49,
+    "conversions": 5.0,
+    "all_conversions": 26.0
+   },
+   "Gas Boiler Repair": {
+    "rows": 3,
+    "impressions": 15,
+    "clicks": 0,
+    "cost": 0.0,
+    "conversions": 0.0,
+    "all_conversions": 0.0
+   },
+   "HVAC Installation": {
+    "rows": 606,
+    "impressions": 1472,
+    "clicks": 63,
+    "cost": 1737.26,
+    "conversions": 3.0,
+    "all_conversions": 23.0
+   },
+   "HVAC Repair": {
+    "rows": 148,
+    "impressions": 947,
+    "clicks": 25,
+    "cost": 1816.59,
+    "conversions": 4.0,
+    "all_conversions": 19.0
+   },
+   "HVAC Replacement": {
+    "rows": 32,
+    "impressions": 132,
+    "clicks": 4,
+    "cost": 130.05,
+    "conversions": 0.0,
+    "all_conversions": 0.0
+   }
+  },
+  "file": "clients\\ambient-cooling-heating\\exports\\search-terms-api-2026-09-09-csvwindow.jsonl",
+  "sha256": "81874d106100feee"
+ },
+ "settled_2026_08_14_to_2026_09_08": {
+  "rows": 948,
+  "distinct_terms": 860,
+  "totals": {
+   "impressions": 3288,
+   "clicks": 116,
+   "cost": 6526.66,
+   "conversions": 12.0,
+   "all_conversions": 68.0
+  },
+  "file": "clients\\ambient-cooling-heating\\exports\\search-terms-api-2026-09-09-settled.jsonl",
+  "sha256": "461feb0194247855"
+ },
+ "converting_all_time": {
+  "rows": 40,
+  "distinct_terms": 25,
+  "total_conversions": 12.0,
+  "total_all_conversions": 68.0,
+  "by_conversion_action": {
+   "Local actions - Other engagements": 8,
+   "WC Lead": 6,
+   "Calls from ads": 5,
+   "Ambient Cooling - LP -Submit Lead Forms": 4,
+   "Ambient Cooling and Heating (web) form_submission": 4,
+   "Local actions - Website visits": 7,
+   "Local actions - Directions": 5,
+   "Clicks to call": 1
+  },
+  "file": "clients\\ambient-cooling-heating\\exports\\search-terms-api-2026-09-09-converting.jsonl",
+  "sha256": "f826859b179008dc"
+ },
+ "converting_account_wide_all_time": {
+  "rows": 449,
+  "distinct_terms": 304,
+  "campaigns": {
+   "AC Install & Replacement": 20,
+   "HVAC Install": 102,
+   "HVAC Repair": 54,
+   "Mini Split": 65,
+   "Search | NonBrand | AC Repair | Central ": 14,
+   "Heating & Boiler Repair - Calls": 14,
+   "Heating Installation": 32,
+   "Heating Installation (#2)": 25,
+   "Search | NonBrand | HVAC Installation | ": 14,
+   "Heating Repair": 56,
+   "Heating Maintenance": 18,
+   "Search | NonBrand | HVAC Repair | Centra": 12,
+   "Gas Boilers Repair": 12,
+   "Gas Boilers Installs": 7,
+   "Pool Room Dehumidifier": 2,
+   "Tankless Water Heaters": 2
+  },
+  "file": "clients\\ambient-cooling-heating\\exports\\search-terms-api-2026-09-09-converting-ACCOUNTWIDE.jsonl",
+  "sha256": "103cf4bbcc770e88"
+ }
+}

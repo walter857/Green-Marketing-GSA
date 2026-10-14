@@ -1,0 +1,103 @@
+{
+ "plan_name": "AMB-0915-COMM-NEGRM-1",
+ "approval_class": "DESTRUCTIVE - removes negatives and therefore EXPANDS traffic",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "exact_service": "Commercial HVAC Installation",
+ "summary": "Remove 6 campaign-level PHRASE negatives on 24132507747 that block real, reachable commercial buyer demand. 6 operations.",
+ "method": "Reachability-tested, not synthetic. 37 real commercial buyer phrases were tested against every ENABLED campaign, ad-group and account negative in scope. A phrase counts as a conflict only if it could actually match one of the two live commercial keywords. 26 phrases are clear; 11 are blocked.",
+ "operations": [
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "campaign_id": "24132507747",
+   "criterion_id": "171200462",
+   "text": "certified",
+   "match": "PHRASE",
+   "blocks_buyer_phrases": [
+    "certified commercial hvac installation",
+    "commercial hvac installation certified"
+   ],
+   "evidence": "agency policy forbids this as a blanket negative",
+   "verdict": "REMOVE"
+  },
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "campaign_id": "24132507747",
+   "criterion_id": "75327691",
+   "text": "industrial",
+   "match": "PHRASE",
+   "blocks_buyer_phrases": [
+    "commercial hvac installation industrial",
+    "industrial commercial hvac installation"
+   ],
+   "evidence": "capability not confirmed - see verdict",
+   "verdict": "HOLD"
+  },
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "campaign_id": "24132507747",
+   "criterion_id": "190023714",
+   "text": "licensed",
+   "match": "PHRASE",
+   "blocks_buyer_phrases": [
+    "commercial hvac installation licensed",
+    "licensed commercial hvac installation"
+   ],
+   "evidence": "agency policy forbids this as a blanket negative",
+   "verdict": "REMOVE"
+  },
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "campaign_id": "24132507747",
+   "criterion_id": "151698359",
+   "text": "rooftop",
+   "match": "PHRASE",
+   "blocks_buyer_phrases": [
+    "commercial hvac installation rooftop",
+    "commercial hvac installation rooftop unit",
+    "rooftop commercial hvac installation"
+   ],
+   "evidence": "the live commercial landing page sells this explicitly",
+   "verdict": "REMOVE"
+  },
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "campaign_id": "24132507747",
+   "criterion_id": "33316870",
+   "text": "store",
+   "match": "PHRASE",
+   "blocks_buyer_phrases": [
+    "commercial hvac installation for retail store"
+   ],
+   "evidence": "a legitimate commercial property type",
+   "verdict": "REMOVE"
+  },
+  {
+   "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "campaign_id": "24132507747",
+   "criterion_id": "38170401",
+   "text": "warehouse",
+   "match": "PHRASE",
+   "blocks_buyer_phrases": [
+    "commercial hvac installation for warehouse"
+   ],
+   "evidence": "a legitimate commercial property type",
+   "verdict": "REMOVE"
+  }
+ ],
+ "operation_count": 6,
+ "reason": "`rooftop` is the critical one: the live commercial page's own H3 is 'Rooftop and Packaged Units' and the structured snippet created today lists 'Rooftop Units'. The campaign currently blocks the exact demand the page and the ad were built to serve. `licensed` and `certified` are on the agency never-auto-negative list. `warehouse` and `store` are ordinary commercial property types.",
+ "hold_note": "`industrial` is marked HOLD, not REMOVE. The landing page says commercial, never industrial, and Ambient's industrial capability is not verified. Removing it would buy traffic for a service that may not be offered. Confirm capability with the client first.",
+ "risk": "MEDIUM-HIGH. This EXPANDS traffic in a campaign that is already the only one spending. Each removed negative can admit queries beyond the commercial ad group, because these are CAMPAIGN-level and the residential ad group shares the campaign.",
+ "mitigation": "The residential ad group 202339087634 will still be protected by the planned BROAD `commercial` routing negative once the commercial route can serve. Until then, monitor the search-term report daily.",
+ "rollback": "Re-create the removed campaign negatives with the same text and match type.",
+ "sequencing": "Execute only after the commercial RSAs are APPROVED and enabled, so the regained demand has somewhere correct to land.",
+ "unrelated_resource_assertion": "No positive keyword, ad, asset, budget, bid, schedule or location changes. No ad-group negative changes. No account-level or shared-set negative changes. The 17 commercial ad-group negatives are untouched.",
+ "fingerprint": "C566F5CF579F"
+}

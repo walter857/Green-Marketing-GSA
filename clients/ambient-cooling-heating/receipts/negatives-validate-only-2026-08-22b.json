@@ -1,0 +1,59 @@
+{
+ "receipt_type": "VALIDATE_ONLY",
+ "fingerprint": "EACEC7CBAE85FF2B",
+ "customer_id": "2401959466",
+ "service": "CampaignCriterionService.MutateCampaignCriteria",
+ "request": {
+  "customer_id": "2401959466",
+  "operations": 3,
+  "partial_failure": false,
+  "validate_only": true
+ },
+ "operations": [
+  {
+   "seq": 1,
+   "create": {
+    "campaign": "customers/2401959466/campaigns/24132507741",
+    "negative": true,
+    "keyword": {
+     "text": "car",
+     "match_type": "BROAD"
+    }
+   }
+  },
+  {
+   "seq": 2,
+   "create": {
+    "campaign": "customers/2401959466/campaigns/24132507741",
+    "negative": true,
+    "keyword": {
+     "text": "auto",
+     "match_type": "BROAD"
+    }
+   }
+  },
+  {
+   "seq": 3,
+   "create": {
+    "campaign": "customers/2401959466/campaigns/24132507741",
+    "negative": true,
+    "keyword": {
+     "text": "boat",
+     "match_type": "BROAD"
+    }
+   }
+  }
+ ],
+ "preflight_result": {
+  "status": "VALIDATE_OK",
+  "operations": 3,
+  "results_returned": 0,
+  "errors": 0
+ },
+ "immediately_before_write_result": {
+  "status": "VALIDATE_OK",
+  "operations": 3,
+  "errors": 0
+ },
+ "field_mask": "create operations carry no field mask; masks apply to updates only"
+}

@@ -1,0 +1,92 @@
+{
+ "package": "ambient-cooling-heating-LANDING-PAGE-PRODUCTION-DEPLOYMENT",
+ "version": "2026-08-21",
+ "priority": "P1",
+ "run_class": "DRAFT ONLY. Nothing published. No website, GTM or database change made.",
+ "lineage": {
+  "C99270C413C34431": "corrected specification",
+  "4A5BB56E2F15A5D2": "developer implementation plan",
+  "this_package": "production deployment gate"
+ },
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD",
+  "vertical": "heating-cooling"
+ },
+ "website_source_availability": "NOT AVAILABLE to this session. No WordPress filesystem, no SFTP, no staging credentials and no GTM API access are in scope, and credentials must not be requested. Local implementation of the actual site code is therefore not possible. The complete developer handoff in 4A5BB56E2F15A5D2 stands as the deliverable, with exact file paths, PHP and JavaScript responsibilities, GTM variables, triggers, tags, form-field mappings, 15 acceptance tests and a 6-step rollback.",
+ "deployment_order": [
+  "1. Take a full WordPress database backup and a Divi child theme snapshot. Record the current published GTM container version number.",
+  "2. Deploy child theme changes and the lead-id REST route to STAGING only.",
+  "3. Add the 17 hidden attribution fields to the staging copy of Gravity Forms form 1.",
+  "4. Remove the two duplicate form instances from the five staging page layouts and give every rendered form and field a unique DOM id.",
+  "5. Normalise hardcoded tel hrefs to tel:+14107056354, then IMMEDIATELY verify the WhatConverts swap still produces (410) 914-1456.",
+  "6. Add Privacy Policy and Terms links ONLY to verified existing legal pages. If either page does not exist, STOP that item and report it. Do not publish a placeholder URL and do not write legal language.",
+  "7. Configure the GTM WORKSPACE. Do not publish the container.",
+  "8. Run all 15 acceptance tests across the 7-cell browser matrix on staging.",
+  "9. Submit test entries through a non-production endpoint or intercepted handler. Do NOT submit a real lead and do NOT place a real call.",
+  "10. Capture evidence for every test.",
+  "11. Request production authorization citing this fingerprint.",
+  "12. On authorization: deploy theme, then form, then layouts, then publish the GTM container version. Re-run acceptance tests AT-4, AT-7, AT-10, AT-11, AT-12 in production."
+ ],
+ "acceptance_gates_before_production": [
+  "All 15 acceptance tests PASS on all five pages.",
+  "Browser matrix: 4 desktop cells and 3 mobile cells all green.",
+  "Privacy-mode cases pass: Safari ITP, third-party cookies blocked, all cookies blocked.",
+  "JavaScript-delayed and JavaScript-blocked cases degrade safely: the form still submits and never errors.",
+  "Accessibility: keyboard-only submission, screen-reader labels, logical focus order.",
+  "Exactly one form element per page and zero duplicate DOM ids (W3C validator).",
+  "Exactly one conversion event per successful submission; zero events on validation failure; zero re-fire on reload or back-navigation.",
+  "GTM-PQTPQ436 present exactly once; one container instance.",
+  "WhatConverts profile 105803 loads and the DNI swap still produces (410) 914-1456.",
+  "Zero occurrences of 4107610932 anywhere on the offer subdomain.",
+  "Every hardcoded tel href equals tel:+14107056354.",
+  "SG-Captcha does not invalidate the tests: confirm each page renders full content, not the 12 KB challenge stub. Retry on challenge; a stub is NOT a failed test.",
+  "FCP within the current 328-420 ms band and load within 1.8-2.1 s."
+ ],
+ "deduplication_language_control": {
+  "lead_id_does": "Prevents repeat firing WITHIN Google Ads conversion action 6885463625 via transaction_id.",
+  "lead_id_does_not": "Does NOT deduplicate across different conversion actions. Google Ads has no cross-action deduplication.",
+  "current_state": "Conversion Plan B was executed on 2026-08-21. WC Lead 7643656486 is now Secondary, so the cross-action double count is already resolved at the Google Ads layer. The lead id remains valuable for within-action integrity and for CRM reconciliation.",
+  "never_write": "Never describe the lead id as cross-action deduplication in any ticket, commit message or client communication."
+ },
+ "phone_architecture": {
+  "(410) 705-6354": "KEEP as hardcoded base and fallback on offer pages and on call asset 407995613637.",
+  "(410) 914-1456": "KEEP. Approved WhatConverts DNI number. NOT a defect.",
+  "(410) 761-0932": "CORRECT on ambientcoolingandheating.com. Leave it. Only barred from the offer subdomain and the paid call asset."
+ },
+ "backup_and_rollback": {
+  "backup": "Full WordPress database export, Divi child theme archive, Gravity Forms form 1 export, and the current published GTM container version number.",
+  "rollback": [
+   "1. Revert the GTM container to the prior published version (under 5 minutes, reverses all tag changes alone).",
+   "2. Restore the Divi child theme from snapshot (under 30 minutes).",
+   "3. Restore Gravity Forms form 1 from export.",
+   "4. Restore the five Divi layouts from Divi revision history.",
+   "5. Database restore ONLY as last resort - it would lose leads captured since the backup point.",
+   "6. Re-run AT-4, AT-10, AT-11 and AT-12 to confirm restoration."
+  ],
+  "rto": "GTM under 5 min; theme and form under 30 min; full database under 2 hours."
+ },
+ "google_ads_impact": {
+  "mutations": 0,
+  "note": "ZERO Google Ads API mutations. The Google Ads conversion tag is reconfigured inside GTM, which is a GTM change and is gated by this same authorization."
+ },
+ "mutation_counts": {
+  "creates": 0,
+  "updates": 0,
+  "removals": 0,
+  "total_mutations": 0,
+  "google_ads_mutations": 0,
+  "note": "Website and GTM changes only, and none is executed here."
+ },
+ "risk": "MEDIUM-HIGH, concentrated in three places: editing the live Gravity Form, removing duplicate form instances from live Divi layouts, and the interaction between tel href normalisation and the WhatConverts number-swap rule. All three are staging-gated.",
+ "rollback_plan": "See backup_and_rollback.",
+ "validate_only_result": {
+  "status": "NOT_APPLICABLE",
+  "reason": "No Google Ads API operations exist in this package. Validation is the 15-test acceptance suite on staging."
+ },
+ "drift_assumptions": "Assumes the five offer pages still render as audited on 2026-08-20 and that GTM-PQTPQ436 and WhatConverts 105803 remain installed.",
+ "plan_fingerprint": "93A9DF4AA19675E8"
+}

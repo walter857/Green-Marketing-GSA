@@ -1,0 +1,59 @@
+window,date_from,date_to,partial_day,scope,ad_group,cohort,ads_in_cohort,impressions,clicks,ctr,cost,avg_cpc,current_primary_conversions,conv_rate,cost_per_conversion,pct_of_total_impressions,pct_of_total_clicks,data_sufficiency
+E_aug21_23,2026-08-21,2026-08-23,no,ACCOUNT,,ORIGINAL,24,131,7,0.0534,144.99,20.71,0.00,0.0000,N/A - no conversions,0.4172,0.7000,Directional only
+E_aug21_23,2026-08-21,2026-08-23,no,ACCOUNT,,NEW,24,183,3,0.0164,41.37,13.79,0.00,0.0000,N/A - no conversions,0.5828,0.3000,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,ACCOUNT,,ORIGINAL,24,64,2,0.0312,43.36,21.68,0.00,0.0000,N/A - no conversions,0.4571,0.4000,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,ACCOUNT,,NEW,24,76,3,0.0395,57.38,19.13,0.00,0.0000,N/A - no conversions,0.5429,0.6000,Too early
+A_aug17_23,2026-08-17,2026-08-23,no,ACCOUNT,,ORIGINAL,24,586,16,0.0273,307.47,19.22,0.00,0.0000,N/A - no conversions,0.7043,0.8000,Directional only
+A_aug17_23,2026-08-17,2026-08-23,no,ACCOUNT,,NEW,24,246,4,0.0163,61.96,15.49,0.00,0.0000,N/A - no conversions,0.2957,0.2000,Too early
+D_aug19_20,2026-08-19,2026-08-20,no,ACCOUNT,,ORIGINAL,24,233,2,0.0086,36.81,18.41,0.00,0.0000,N/A - no conversions,0.7872,0.6667,Too early
+D_aug19_20,2026-08-19,2026-08-20,no,ACCOUNT,,NEW,24,63,1,0.0159,20.59,20.59,0.00,0.0000,N/A - no conversions,0.2128,0.3333,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Driveways | Near Me,ORIGINAL,1,2,0,0.0000,0.00,,0.00,,N/A - no conversions,0.5000,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Driveways | Near Me,NEW,1,2,0,0.0000,0.00,,0.00,,N/A - no conversions,0.5000,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Hardscaping | BOFU,ORIGINAL,1,5,1,0.2000,21.59,21.59,0.00,0.0000,N/A - no conversions,0.2941,1.0000,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Hardscaping | BOFU,NEW,1,12,0,0.0000,0.00,,0.00,,N/A - no conversions,0.7059,0.0000,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Hardscaping | Near Me,ORIGINAL,1,5,0,0.0000,0.00,,0.00,,N/A - no conversions,0.5556,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Hardscaping | Near Me,NEW,1,4,0,0.0000,0.00,,0.00,,N/A - no conversions,0.4444,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Patios | Near Me,ORIGINAL,1,4,1,0.2500,21.04,21.04,0.00,0.0000,N/A - no conversions,0.8000,1.0000,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Patios | Near Me,NEW,1,1,0,0.0000,0.00,,0.00,,N/A - no conversions,0.2000,0.0000,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Pavers | BOFU,ORIGINAL,1,9,0,0.0000,0.00,,0.00,,N/A - no conversions,0.3214,0.0000,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Pavers | BOFU,NEW,1,19,1,0.0526,9.62,9.62,0.00,0.0000,N/A - no conversions,0.6786,1.0000,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Retaining Walls | BOFU,ORIGINAL,1,2,0,0.0000,0.00,,0.00,,N/A - no conversions,0.2000,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Hardscape Construction > Retaining Walls | BOFU,NEW,1,8,0,0.0000,0.00,,0.00,,N/A - no conversions,0.8000,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Artificial Turf | BOFU,ORIGINAL,1,9,0,0.0000,0.00,,0.00,,N/A - no conversions,0.4286,0.0000,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Artificial Turf | BOFU,NEW,1,12,1,0.0833,21.48,21.48,0.00,0.0000,N/A - no conversions,0.5714,1.0000,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Artificial Turf | Near Me,ORIGINAL,1,2,0,0.0000,0.00,,0.00,,N/A - no conversions,0.6667,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Artificial Turf | Near Me,NEW,1,1,0,0.0000,0.00,,0.00,,N/A - no conversions,0.3333,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Design | BOFU,ORIGINAL,1,52,4,0.0769,86.48,21.62,0.00,0.0000,N/A - no conversions,0.3768,0.8000,Directional only
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Design | BOFU,NEW,1,86,1,0.0116,10.27,10.27,0.00,0.0000,N/A - no conversions,0.6232,0.2000,Directional only
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Design | Near Me,ORIGINAL,1,17,1,0.0588,15.88,15.88,0.00,0.0000,N/A - no conversions,0.5484,1.0000,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Design | Near Me,NEW,1,14,0,0.0000,0.00,,0.00,,N/A - no conversions,0.4516,0.0000,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Lighting | BOFU,ORIGINAL,1,16,0,0.0000,0.00,,0.00,,N/A - no conversions,0.5000,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Lighting | BOFU,NEW,1,16,0,0.0000,0.00,,0.00,,N/A - no conversions,0.5000,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Outdoor Living | Near Me,ORIGINAL,1,8,0,0.0000,0.00,,0.00,,N/A - no conversions,0.8000,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Outdoor Living | Near Me,NEW,1,2,0,0.0000,0.00,,0.00,,N/A - no conversions,0.2000,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Pergolas | BOFU,ORIGINAL,1,0,0,,0.00,,0.00,,N/A - no conversions,0.0000,,Too early
+E_aug21_23,2026-08-21,2026-08-23,no,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Pergolas | BOFU,NEW,1,6,0,0.0000,0.00,,0.00,,N/A - no conversions,1.0000,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Hardscape Construction > Hardscaping | BOFU,ORIGINAL,1,1,0,0.0000,0.00,,0.00,,N/A - no conversions,0.5000,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Hardscape Construction > Hardscaping | BOFU,NEW,1,1,0,0.0000,0.00,,0.00,,N/A - no conversions,0.5000,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Hardscape Construction > Hardscaping | Near Me,ORIGINAL,1,3,0,0.0000,0.00,,0.00,,N/A - no conversions,0.5000,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Hardscape Construction > Hardscaping | Near Me,NEW,1,3,0,0.0000,0.00,,0.00,,N/A - no conversions,0.5000,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Hardscape Construction > Patios | Near Me,ORIGINAL,1,4,0,0.0000,0.00,,0.00,,N/A - no conversions,0.6667,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Hardscape Construction > Patios | Near Me,NEW,1,2,0,0.0000,0.00,,0.00,,N/A - no conversions,0.3333,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Hardscape Construction > Pavers | BOFU,ORIGINAL,1,6,1,0.1667,21.92,21.92,0.00,0.0000,N/A - no conversions,0.4000,1.0000,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Hardscape Construction > Pavers | BOFU,NEW,1,9,0,0.0000,0.00,,0.00,,N/A - no conversions,0.6000,0.0000,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Hardscape Construction > Retaining Walls | BOFU,ORIGINAL,1,3,0,0.0000,0.00,,0.00,,N/A - no conversions,1.0000,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Hardscape Construction > Retaining Walls | BOFU,NEW,1,0,0,,0.00,,0.00,,N/A - no conversions,0.0000,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Artificial Turf | BOFU,ORIGINAL,1,1,0,0.0000,0.00,,0.00,,N/A - no conversions,0.3333,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Artificial Turf | BOFU,NEW,1,2,0,0.0000,0.00,,0.00,,N/A - no conversions,0.6667,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Design | BOFU,ORIGINAL,1,27,0,0.0000,0.00,,0.00,,N/A - no conversions,0.4030,0.0000,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Design | BOFU,NEW,1,40,3,0.0750,57.38,19.13,0.00,0.0000,N/A - no conversions,0.5970,1.0000,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Design | Near Me,ORIGINAL,1,7,0,0.0000,0.00,,0.00,,N/A - no conversions,1.0000,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Design | Near Me,NEW,1,0,0,,0.00,,0.00,,N/A - no conversions,0.0000,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Lighting | BOFU,ORIGINAL,1,5,0,0.0000,0.00,,0.00,,N/A - no conversions,0.2941,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Lighting | BOFU,NEW,1,12,0,0.0000,0.00,,0.00,,N/A - no conversions,0.7059,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Lighting | Near Me,ORIGINAL,1,2,1,0.5000,21.44,21.44,0.00,0.0000,N/A - no conversions,0.6667,1.0000,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Landscape Lighting | Near Me,NEW,1,1,0,0.0000,0.00,,0.00,,N/A - no conversions,0.3333,0.0000,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Outdoor Living | Near Me,ORIGINAL,1,2,0,0.0000,0.00,,0.00,,N/A - no conversions,0.6667,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Outdoor Living | Near Me,NEW,1,1,0,0.0000,0.00,,0.00,,N/A - no conversions,0.3333,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Pergolas | BOFU,ORIGINAL,1,3,0,0.0000,0.00,,0.00,,N/A - no conversions,0.3750,,Too early
+G_aug24,2026-08-24,2026-08-24,YES - partial current day,AD GROUP,Progreen Austin | Search | Outdoor Living & Design > Pergolas | BOFU,NEW,1,5,0,0.0000,0.00,,0.00,,N/A - no conversions,0.6250,,Too early

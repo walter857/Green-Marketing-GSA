@@ -1,0 +1,98 @@
+{
+ "launch_to_yesterday": {
+  "spend": 46.32,
+  "clicks": 7,
+  "impressions": 194,
+  "cpc": 6.6171
+ },
+ "last_7": {
+  "spend": 27.63,
+  "clicks": 4,
+  "impressions": 142,
+  "cpc": 6.9075
+ },
+ "sensitivity": [
+  {
+   "cvr": 0.05,
+   "cpc_basis": "full window",
+   "cpc": 6.62,
+   "cpl": 132.34,
+   "cac_at_assumed_20pct_close": 661.71,
+   "max_clicks_per_month_at_cap": 75.5,
+   "leads_per_month_if_budget_fully_spent": 3.78,
+   "p_zero_leads_in_7_clicks": 0.6983,
+   "p_zero_leads_in_8_clicks": 0.6634
+  },
+  {
+   "cvr": 0.05,
+   "cpc_basis": "last 7 days",
+   "cpc": 6.91,
+   "cpl": 138.15,
+   "cac_at_assumed_20pct_close": 690.75,
+   "max_clicks_per_month_at_cap": 72.4,
+   "leads_per_month_if_budget_fully_spent": 3.62,
+   "p_zero_leads_in_7_clicks": 0.6983,
+   "p_zero_leads_in_8_clicks": 0.6634
+  },
+  {
+   "cvr": 0.08,
+   "cpc_basis": "full window",
+   "cpc": 6.62,
+   "cpl": 82.71,
+   "cac_at_assumed_20pct_close": 413.57,
+   "max_clicks_per_month_at_cap": 75.5,
+   "leads_per_month_if_budget_fully_spent": 6.04,
+   "p_zero_leads_in_7_clicks": 0.5578,
+   "p_zero_leads_in_8_clicks": 0.5132
+  },
+  {
+   "cvr": 0.08,
+   "cpc_basis": "last 7 days",
+   "cpc": 6.91,
+   "cpl": 86.34,
+   "cac_at_assumed_20pct_close": 431.72,
+   "max_clicks_per_month_at_cap": 72.4,
+   "leads_per_month_if_budget_fully_spent": 5.79,
+   "p_zero_leads_in_7_clicks": 0.5578,
+   "p_zero_leads_in_8_clicks": 0.5132
+  },
+  {
+   "cvr": 0.1,
+   "cpc_basis": "full window",
+   "cpc": 6.62,
+   "cpl": 66.17,
+   "cac_at_assumed_20pct_close": 330.85,
+   "max_clicks_per_month_at_cap": 75.5,
+   "leads_per_month_if_budget_fully_spent": 7.55,
+   "p_zero_leads_in_7_clicks": 0.4783,
+   "p_zero_leads_in_8_clicks": 0.4305
+  },
+  {
+   "cvr": 0.1,
+   "cpc_basis": "last 7 days",
+   "cpc": 6.91,
+   "cpl": 69.07,
+   "cac_at_assumed_20pct_close": 345.37,
+   "max_clicks_per_month_at_cap": 72.4,
+   "leads_per_month_if_budget_fully_spent": 7.24,
+   "p_zero_leads_in_7_clicks": 0.4783,
+   "p_zero_leads_in_8_clicks": 0.4305
+  }
+ ],
+ "cvr_needed_for_100_cpl": {
+  "full window": 0.0662,
+  "last 7 days": 0.0691
+ },
+ "monthly_cap_usd": 499.78,
+ "observed": {
+  "leads_google_ads": 0,
+  "leads_whatconverts_paid": 0,
+  "cpl": "unavailable (0 leads)",
+  "cpql": "unavailable",
+  "cac": "unavailable",
+  "revenue": "unavailable",
+  "gross_profit": "unavailable",
+  "profit_after_ad_spend": "unavailable"
+ },
+ "break_even_note": "ad-cost-only break-even gross profit per sold job = CAC; at the assumed 20% close rate the job must earn at least the CAC above before any other cost"
+}

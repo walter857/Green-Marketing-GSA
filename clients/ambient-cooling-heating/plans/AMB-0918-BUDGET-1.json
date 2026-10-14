@@ -1,0 +1,128 @@
+{
+ "plan_name": "AMB-0918-BUDGET-1",
+ "approval_class": "update-existing-budgets",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-18",
+ "purpose": "Bring combined ENABLED daily budgets under the permanent account ceiling so the two paused heating campaigns can later be enabled without breaching it.",
+ "evidence_windows": {
+  "august_settled": "2026-08-01..2026-08-31",
+  "september_settled": "2026-09-01..2026-09-16",
+  "read_on": "2026-09-18"
+ },
+ "math": {
+  "permanent_monthly_cap_usd": 10000.0,
+  "days_per_month": 30.4,
+  "permanent_daily_ceiling_usd": 328.94,
+  "new_heating_daily_usd": 90.0,
+  "max_existing_enabled_daily_usd": 238.94,
+  "current_enabled_daily_usd": 421.55,
+  "proposed_enabled_daily_usd": 237.0,
+  "reduction_usd_per_day": 184.55,
+  "required_reduction_usd_per_day": 182.61,
+  "combined_after_heating_enabled_usd": 327.0,
+  "combined_monthly_equivalent_usd": 9940.8,
+  "headroom_under_daily_ceiling_usd": 1.94
+ },
+ "budgets": [
+  {
+   "campaign": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507747",
+   "budget_id": "15787409441",
+   "from": 176.15,
+   "to": 95.0,
+   "rationale": "Best conversion volume in the account and the only campaign whose CPA improved into September ($242.35). Actual settled September delivery is $45.44/day, so $95.00 still leaves roughly 2x headroom over real spend. Largest single reduction in dollars without touching delivery."
+  },
+  {
+   "campaign": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507741",
+   "budget_id": "15787409435",
+   "from": 141.45,
+   "to": 45.0,
+   "rationale": "Deepest cut, on three independent signals: worst CPA in the account ($637.65 August, $534.28 September), the most expensive clicks by far ($106+ CPC in both windows), and Central Maryland cooling demand falls through the autumn. NOT eliminated - it keeps enough budget for roughly one click per day at the observed clearing price."
+  },
+  {
+   "campaign": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507750",
+   "budget_id": "15787409444",
+   "from": 78.95,
+   "to": 70.0,
+   "rationale": "Protected almost intact. Best CPA of any campaign ($277.53 August on 6 conversions) and year-round repair demand. Actual September delivery is $17.92/day, so $70.00 is already generous; this is the smallest proportional cut on purpose."
+  },
+  {
+   "campaign": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507753",
+   "budget_id": "15787409447",
+   "from": 20.0,
+   "to": 15.0,
+   "rationale": "Zero September delivery and zero conversions across both windows. Small cut only, because replacement jobs carry high ticket value and the campaign should stay reachable when demand returns."
+  },
+  {
+   "campaign": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507744",
+   "budget_id": "15787409438",
+   "from": 5.0,
+   "to": 12.0,
+   "rationale": "The only INCREASE. It is the one enabled heating-adjacent campaign and Maryland boiler demand starts now. $5.00/day cannot buy a single click at this account's prices, which is why it has spent $0.00 all season."
+  }
+ ],
+ "operations": [
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409441",
+   "campaign": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "from_usd": 176.15,
+   "to_usd": 95.0,
+   "field_mask": "amount_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409435",
+   "campaign": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "from_usd": 141.45,
+   "to_usd": 45.0,
+   "field_mask": "amount_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409444",
+   "campaign": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+   "from_usd": 78.95,
+   "to_usd": 70.0,
+   "field_mask": "amount_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409447",
+   "campaign": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "from_usd": 20.0,
+   "to_usd": 15.0,
+   "field_mask": "amount_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409438",
+   "campaign": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "from_usd": 5.0,
+   "to_usd": 12.0,
+   "field_mask": "amount_micros"
+  }
+ ],
+ "does_not_touch": [
+  "campaign status",
+  "bidding strategy",
+  "CPC ceilings",
+  "keywords",
+  "ads",
+  "assets",
+  "conversion actions",
+  "the two paused heating campaigns",
+  "budget sharing",
+  "delivery method"
+ ],
+ "honest_limitation": "Actual combined settled delivery across the five enabled campaigns is about $96.76/day, far below both the current and the proposed budgets. These are CEILING changes. They make the cap compliant; they should not be expected to reduce actual spend, and no CPL, CPQL or profitability improvement is claimed.",
+ "reversible": "Every change is a single amount_micros write; the prior values are recorded in this plan and can be restored exactly.",
+ "operation_count": 5,
+ "fingerprint": "39097845F5F4"
+}

@@ -1,0 +1,220 @@
+# VOID 2026-08-26 - fingerprint 9ABDF6DDE3F4
+# Enables the output of PLAN-I2A-C, which is now VOID. Nothing to enable.
+
+change_plan:
+  plan_id: PLAN-I2A-EN
+  plan_title: Enable the four SKAGs created by PLAN-I2A-C, after readback QA
+  approval_type: ENABLE_AFTER_CREATE_PAUSED
+  priority: R5-C
+  approval_status: VOID - DO NOT APPROVE
+  execution_status: VOID - DO NOT EXECUTE
+  recommended_approval_order: 7
+  ads_mutation_count: 4
+  requires_separate_enable_approval: true
+  depends_on:
+    plan_id: PLAN-I2A-C
+    condition: PLAN-I2A-C executed AND readback QA passed
+  supersedes:
+    plan_id: PLAN-I2
+    fingerprint: 6AF733F709E2
+    status: VOID
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  fingerprint_status:
+    state: PROVISIONAL - NOT VALID FOR EXECUTION
+    reason: A fingerprint is a hash of the exact normalized plan, including every resource ID.
+      The four ad groups this plan would enable DO NOT EXIST YET - Google Ads assigns their
+      IDs at creation time. Any fingerprint generated now would hash the placeholder string
+      PENDING_CREATION, not the real resources, and approving it would authorise nothing identifiable.
+    what_the_provisional_fingerprint_is_for: It identifies the INTENT - which named ad groups,
+      in which campaigns, with which keywords - so the intent can be reviewed and agreed in
+      advance. It is not an execution authorisation.
+    mandatory_regeneration: After PLAN-I2A-C executes and readback QA passes, this file MUST
+      be rewritten with the four real ad_group IDs and re-fingerprinted. The new fingerprint
+      will differ from the provisional one. Only that regenerated fingerprint may be approved
+      for execution.
+  readback_qa_gate:
+    must_all_pass_before_this_plan_is_finalised:
+    - check: All four ad groups exist and are status PAUSED
+      expected: 4
+    - check: Each ad group has exactly 2 keyword criteria
+      expected: 8 keyword rows total
+    - check: Match types are exactly PHRASE and EXACT, one of each per ad group
+      expected: 4 PHRASE + 4 EXACT
+    - check: No keyword is BROAD
+      expected: 0
+    - check: Each ad group has exactly 2 RSAs
+      expected: 8 RSAs total
+    - check: Each RSA has 15 headlines and 4 descriptions
+      expected: 120 headlines, 32 descriptions total
+    - check: Every headline <= 30 characters, every description <= 90
+      expected: 0 violations
+    - check: HEADLINE_1 pinned on exactly 2 headlines per RSA
+      expected: 16 pinned assets total
+    - check: Final URLs match the plan exactly
+      expected:
+      - https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+      - https://offer.softwindli.com/residential-pressure-washing/
+      - https://offer.softwindli.com/house-washing-company/
+      - https://offer.softwindli.com/power-washing-soft-washing/
+    - check: ad_group_ad.policy_summary.approval_status is APPROVED on all 8 RSAs
+      expected: 8 APPROVED, 0 disapproved
+    - check: ad_group_criterion.system_serving_status is ELIGIBLE on all 8 keywords
+      expected: 8 ELIGIBLE
+    - check: The three legacy containers are STILL PAUSED
+      expected:
+      - 205713509704 PAUSED
+      - 198082079503 PAUSED
+      - 205713509744 PAUSED
+      - 198082078943 PAUSED
+      - 205713509664 PAUSED
+      - 198082078743 PAUSED
+    if_any_check_fails: Do not finalise this plan. Report the failure, propose a corrective
+      create-paused amendment, and re-run QA. Never enable a resource that failed readback.
+  actions:
+  - action_id: R5EN-01
+    priority: R5
+    resource_type: AD_GROUP
+    operation: UPDATE_STATUS_TO_ENABLED
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: PENDING_CREATION
+    ad_group_name: Power Washing Service
+    resource_id: PENDING_CREATION
+    field_mask: status
+    current_value:
+      status: PAUSED
+    proposed_value:
+      status: ENABLED
+    keywords_that_will_begin_serving:
+    - power washing service [PHRASE]
+    - power washing service [EXACT]
+    why: 70 local searches/month, +293.3% trend, the strongest single bucket recovered from
+      the legacy container.
+    evidence: snapshots/i2a-skag-validation-2026-08-26.json
+    expected_effect: Adds the highest-growth uncovered intent to live delivery.
+    risk: LOW-MEDIUM. Close-variant contention with the live 'power washing services near me'
+      SKAG in the SAME campaign - intra-campaign, resolved by Ad Rank.
+    rollback: Set the ad group back to PAUSED.
+    approval_required: YES - SEPARATE ENABLE APPROVAL, after readback QA, with a regenerated
+      fingerprint.
+    object_count: 1
+  - action_id: R5EN-02
+    priority: R5
+    resource_type: AD_GROUP
+    operation: UPDATE_STATUS_TO_ENABLED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: PENDING_CREATION
+    ad_group_name: Pressure Washing Service
+    resource_id: PENDING_CREATION
+    field_mask: status
+    current_value:
+      status: PAUSED
+    proposed_value:
+      status: ENABLED
+    keywords_that_will_begin_serving:
+    - pressure washing service [PHRASE]
+    - pressure washing service [EXACT]
+    why: Serves pressure-phrasing demand with pressure-phrasing copy. The account's 'pressure
+      wash' terms currently run 0% CTR on 15 impressions because they are served power-washing
+      copy.
+    evidence: metrics-2026-08-25.json search_terms phrasing split
+    expected_effect: Should convert existing 0%-CTR impressions into clicks.
+    risk: LOW-MEDIUM. Intra-campaign contention with 'residential pressure washing near me'.
+    rollback: Set the ad group back to PAUSED.
+    approval_required: YES - SEPARATE ENABLE APPROVAL, after readback QA.
+    object_count: 1
+  - action_id: R5EN-03
+    priority: R5
+    resource_type: AD_GROUP
+    operation: UPDATE_STATUS_TO_ENABLED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: PENDING_CREATION
+    ad_group_name: House Washing Near Me
+    resource_id: PENDING_CREATION
+    field_mask: status
+    current_value:
+      status: PAUSED
+    proposed_value:
+      status: ENABLED
+    keywords_that_will_begin_serving:
+    - house washing near me [PHRASE]
+    - house washing near me [EXACT]
+    why: 40 local searches/month at the highest top-of-page ceiling in the set, $32.09.
+    evidence: snapshots/rescue-inventory-ranking-2026-08-26.json
+    expected_effect: Captures the term the 2026-08-25 audit misattributed.
+    risk: MEDIUM. Recent trend is -73.3%, a declining term. Also intra-campaign contention with
+      the PLAN-I2A-E enablement of 'house washing company near me'.
+    rollback: Set the ad group back to PAUSED.
+    approval_required: YES - SEPARATE ENABLE APPROVAL, after readback QA.
+    object_count: 1
+  - action_id: R5EN-04
+    priority: R5
+    resource_type: AD_GROUP
+    operation: UPDATE_STATUS_TO_ENABLED
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: PENDING_CREATION
+    ad_group_name: Power Washing Long Island
+    resource_id: PENDING_CREATION
+    field_mask: status
+    current_value:
+      status: PAUSED
+    proposed_value:
+      status: ENABLED
+    keywords_that_will_begin_serving:
+    - power washing long island [PHRASE]
+    - power washing long island [EXACT]
+    why: 40 local searches/month, +30.8% trend, lowest bid range in the set at $8.12-$18.02.
+      Uniquely, the legacy /power-washing-soft-washing/ page has H1 'Power Washing & Soft Washing
+      in Long Island' and names Long Island 17 times - the best-matched published page in the
+      account for this exact intent.
+    evidence: snapshots/landing-pages-paused-skags-2026-08-25.json
+    expected_effect: Adds a region-level intent no live keyword covers.
+    risk: LOW. No live keyword contains 'long island'.
+    rollback: Set the ad group back to PAUSED.
+    approval_required: YES - SEPARATE ENABLE APPROVAL, after readback QA.
+    object_count: 1
+  post_enable_verification:
+  - Read back all four ad groups and assert status ENABLED.
+  - Confirm the three legacy containers are still PAUSED in both campaigns.
+  - Check the search terms report at the next two pacing checkpoints for out-of-scope queries
+    and for volume loss on the pre-existing SKAGs.
+  - Watch the emergency high-CPC stop condition - four new ad groups on uncapped Maximize Clicks
+    is exactly the situation that can bid up.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 4
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keyword_rows_that_begin_serving: 8
+    rsas_that_begin_serving: 8
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 4
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  void_status:
+    state: VOID
+    voided_on: '2026-08-26'
+    fingerprint_voided: 9ABDF6DDE3F4
+    reason: Enables the output of PLAN-I2A-C, which is now VOID. Nothing to enable.

@@ -1,0 +1,239 @@
+{
+ "plans": {
+  "AMB-1002-PMAX-A-2": "405EDDC8E478",
+  "AMB-1002-PMAX-B-2": "157DF8F88A9A"
+ },
+ "started_local": "2026-10-02T08:44:05.391214-04:00",
+ "A_created": [
+  "customers/2401959466/campaigns/24295088845",
+  "customers/2401959466/campaignBudgets/15897049193",
+  "customers/2401959466/assets/424666402986",
+  "customers/2401959466/assets/424666402989",
+  "customers/2401959466/assets/426110645840",
+  "customers/2401959466/assets/426209274241",
+  "customers/2401959466/assets/426110645843",
+  "customers/2401959466/assets/426209274247",
+  "customers/2401959466/assets/426209266018",
+  "customers/2401959466/assets/423809915079",
+  "customers/2401959466/assets/426294548667",
+  "customers/2401959466/assets/426110645846",
+  "customers/2401959466/assets/426209274253",
+  "customers/2401959466/assets/426110641601",
+  "customers/2401959466/assets/426209274256",
+  "customers/2401959466/assets/426209266021",
+  "customers/2401959466/assets/426110645849",
+  "customers/2401959466/assets/426209261539",
+  "customers/2401959466/assets/426209274259",
+  "customers/2401959466/assets/426110645852",
+  "customers/2401959466/assets/426209266024",
+  "customers/2401959466/assets/426209274262",
+  "customers/2401959466/assetGroups/6754646450"
+ ],
+ "B_created": [
+  "customers/2401959466/campaignBudgets/15923100463",
+  "customers/2401959466/campaigns/24318905515",
+  "customers/2401959466/assetGroups/6754769607",
+  "customers/2401959466/assets/426110646281",
+  "customers/2401959466/assets/348175918932",
+  "customers/2401959466/assets/421464540065",
+  "customers/2401959466/assets/424666402905",
+  "customers/2401959466/assets/426294548805",
+  "customers/2401959466/assets/426110646797",
+  "customers/2401959466/assets/426209261653",
+  "customers/2401959466/assets/426209274817",
+  "customers/2401959466/assets/426110646284",
+  "customers/2401959466/assets/426209274820",
+  "customers/2401959466/assets/426110646800",
+  "customers/2401959466/assets/426110646287",
+  "customers/2401959466/assets/424666402914",
+  "customers/2401959466/assetGroups/6754769691",
+  "customers/2401959466/assets/426110646389",
+  "customers/2401959466/assets/426110646884",
+  "customers/2401959466/assets/426294548835",
+  "customers/2401959466/assets/426110646392",
+  "customers/2401959466/assets/426209261668",
+  "customers/2401959466/assets/426209274952",
+  "customers/2401959466/assets/426110646887",
+  "customers/2401959466/assets/426110646395",
+  "customers/2401959466/assets/426209274955",
+  "customers/2401959466/assets/426110646398",
+  "customers/2401959466/assets/423809915478",
+  "customers/2401959466/assets/426209274958",
+  "customers/2401959466/assets/426110646890",
+  "customers/2401959466/assets/426294548838",
+  "customers/2401959466/assets/426209274961",
+  "customers/2401959466/assets/426198382639",
+  "customers/2401959466/assets/426198382615",
+  "customers/2401959466/assets/426198382645",
+  "customers/2401959466/assets/426110646401",
+  "customers/2401959466/assets/426198382633",
+  "customers/2401959466/assets/426110646893",
+  "customers/2401959466/assets/426198382642",
+  "customers/2401959466/assets/426110646404",
+  "customers/2401959466/assets/426209274967",
+  "customers/2401959466/assets/426198382627",
+  "customers/2401959466/assets/426110641703",
+  "customers/2401959466/assets/426209261671",
+  "customers/2401959466/assets/426110646407",
+  "customers/2401959466/assets/426110646896",
+  "customers/2401959466/assets/426209274970",
+  "customers/2401959466/assets/426294548841",
+  "customers/2401959466/assets/426110646410",
+  "customers/2401959466/assets/426209274973",
+  "customers/2401959466/assets/426110646899",
+  "customers/2401959466/assetGroups/6754769610"
+ ],
+ "B_campaign_id": "24318905515",
+ "B_goal_updates": 1,
+ "readback_paused": [
+  {
+   "check": "24295088845 name/PAUSED/PMax/MaxConv no target",
+   "pass": true
+  },
+  {
+   "check": "24295088845 budget $33.33",
+   "pass": true
+  },
+  {
+   "check": "24295088845 opted out of all 6 automations incl. Final URL expansion + text customization",
+   "pass": true
+  },
+  {
+   "check": "24295088845 TABLET excluded (bid_modifier present = 0); desktop + mobile not excluded",
+   "pass": true
+  },
+  {
+   "check": "24295088845 75 locations + 5 schedule rows",
+   "pass": true
+  },
+  {
+   "check": "24318905515 name/PAUSED/PMax/MaxConv no target",
+   "pass": true
+  },
+  {
+   "check": "24318905515 budget $33.33",
+   "pass": true
+  },
+  {
+   "check": "24318905515 opted out of all 6 automations incl. Final URL expansion + text customization",
+   "pass": true
+  },
+  {
+   "check": "24318905515 TABLET excluded (bid_modifier present = 0); desktop + mobile not excluded",
+   "pass": true
+  },
+  {
+   "check": "24318905515 75 locations + 5 schedule rows",
+   "pass": true
+  },
+  {
+   "check": "B negatives all EXACT (10)",
+   "pass": true
+  },
+  {
+   "check": "B shared lists = EXACT-only list only",
+   "pass": true
+  },
+  {
+   "check": "all asset groups PAUSED before enable",
+   "pass": true
+  },
+  {
+   "check": "geothermal group on the required URL",
+   "pass": true
+  },
+  {
+   "check": "B Heat Pump Replacement on /heat-pump-replacement/",
+   "pass": true
+  },
+  {
+   "check": "geothermal group links 36 assets incl. 10 images",
+   "pass": true
+  },
+  {
+   "check": "B biddable goals equal A's",
+   "pass": true
+  }
+ ],
+ "enabled_groups": [
+  "6751612859",
+  "6754646450",
+  "6754769607",
+  "6754769691",
+  "6754769610"
+ ],
+ "asset_group_status_after_enable": {
+  "6751612859": [
+   "Heating & Furnace Replacement",
+   "ENABLED",
+   "PENDING",
+   [
+    "ASSET_GROUP_UNDER_REVIEW"
+   ]
+  ],
+  "6751752096": [
+   "Heat Pump Replacement",
+   "PAUSED",
+   "PAUSED",
+   [
+    "ASSET_GROUP_PAUSED"
+   ]
+  ],
+  "6754646450": [
+   "Boiler Replacement",
+   "ENABLED",
+   "PENDING",
+   [
+    "ASSET_GROUP_UNDER_REVIEW"
+   ]
+  ],
+  "6754769607": [
+   "Heat Pump Replacement",
+   "ENABLED",
+   "PENDING",
+   [
+    "ASSET_GROUP_UNDER_REVIEW"
+   ]
+  ],
+  "6754769610": [
+   "Geothermal Heat Pump",
+   "ENABLED",
+   "PENDING",
+   [
+    "ASSET_GROUP_UNDER_REVIEW"
+   ]
+  ],
+  "6754769691": [
+   "Heat Pump Installation",
+   "ENABLED",
+   "PENDING",
+   [
+    "ASSET_GROUP_UNDER_REVIEW"
+   ]
+  ]
+ },
+ "readback_enabled": [
+  {
+   "check": "A and B campaigns ENABLED",
+   "pass": true
+  },
+  {
+   "check": "5 intended asset groups ENABLED",
+   "pass": true
+  },
+  {
+   "check": "old A heat pump group 6751752096 still PAUSED",
+   "pass": true
+  },
+  {
+   "check": "24295088845 tablet exclusion still saved after enable",
+   "pass": true
+  },
+  {
+   "check": "24318905515 tablet exclusion still saved after enable",
+   "pass": true
+  }
+ ],
+ "status": "EXECUTED",
+ "at": "2026-10-02T08:44:18.493146-04:00"
+}

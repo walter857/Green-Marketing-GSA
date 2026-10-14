@@ -1,0 +1,1168 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-21",
+ "plan_name": "AMB-0918-HEAT-EXPAND-1",
+ "approval_class": "create-paused",
+ "everything_created_paused": true,
+ "nothing_enabled": true,
+ "reuses_not_duplicates": {
+  "campaigns": {
+   "BOILER": "24132507744 (existing ENABLED Gas Boiler Repair campaign)",
+   "REPAIR": "24257819463 (existing PAUSED, untouched by this plan)",
+   "INSTALL": "24257819466 (existing PAUSED)"
+  },
+  "ad_groups_already_live_not_recreated": {
+   "SKAG | Furnace Repair": "199797580706",
+   "SKAG | Mini Split Installation": "199797580746",
+   "SKAG | Gas Boiler Repair": "202339087594"
+  },
+  "assets": {
+   "call": "407995613637 = (410) 705-6354",
+   "business_name": "80516971145"
+  }
+ },
+ "new_campaigns": {
+  "HEATPUMP": {
+   "name": "Search | NonBrand | Heat Pump & Geothermal | Central MD | BOFU | 2026-09",
+   "daily_budget": 18.0,
+   "cpc_ceiling": 40.0,
+   "ceiling_basis": "Legacy geothermal CPC $37.95 and water-source heat pump $44.93. $40 sits between them so the campaign can clear the auction without chasing the uncapped-Max-Clicks era prices.",
+   "controlled_test": "Geothermal is a controlled test. STOP-LOSS: pause the geothermal ad group once it has spent $250 with zero qualified leads. Heat pump cannot serve until its page is fixed."
+  },
+  "TANKLESS": {
+   "name": "Search | NonBrand | Tankless Water Heaters | Central MD | BOFU | 2026-09",
+   "daily_budget": 12.0,
+   "cpc_ceiling": 35.0,
+   "ceiling_basis": "Legacy tankless CPC $46.76. $35 deliberately sits below it to cap exposure on a service with a $6,265.89 historical CPA, accepting lower impression share as the trade.",
+   "controlled_test": "CONTROLLED TEST, isolated by instruction. STOP-LOSS: pause the campaign once it has spent $250 with zero qualified leads. At $12/day and a $35 ceiling it buys roughly one click every three days - deliberate."
+  }
+ },
+ "new_ad_groups": {
+  "SKAG | Boiler Repair": {
+   "campaign_key": "BOILER",
+   "existing_campaign_id": "24132507744",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "cpc_bid": 60.0,
+   "phrase": [
+    "boiler repair",
+    "boiler repair near me",
+    "boiler repair service",
+    "residential boiler repair",
+    "boiler repair company",
+    "commercial boiler repair"
+   ],
+   "exact": [
+    "boiler repair",
+    "boiler repair near me",
+    "residential boiler repair",
+    "commercial boiler repair"
+   ],
+   "evidence": "Legacy 'Gas Boilers Repair' all-time: $6,383.12 / 71 clicks / 9 conversions, CPC $89.90, CPA $709.24. 'Heating & Boiler Repair - Calls': 14 conversions at CPA $334.83. Boiler repair converts; the current $25 ceiling is the reason the live campaign has bought 1 click all season.",
+   "rsas": [
+    {
+     "label": "RSA A - service-first",
+     "h": [
+      "Boiler Repair in Severn",
+      "Boiler Repair Central MD",
+      "Severna Park Boiler Repair",
+      "Columbia MD Boiler Repair",
+      "Residential Boiler Repair",
+      "Commercial Boiler Repair",
+      "Boiler Repair Technicians",
+      "Book a Boiler Repair Visit",
+      "Maryland Boiler Repair",
+      "Boiler Diagnosis Explained",
+      "Schedule Boiler Service",
+      "Homes and Businesses",
+      "Trained HVAC Technicians",
+      "Boiler Service Central MD",
+      "Request Boiler Repair"
+     ],
+     "d": [
+      "Boiler repair for homes and businesses in Severn, Severna Park and Columbia.",
+      "Our technicians diagnose the fault and explain your options clearly.",
+      "Book a boiler repair visit with Ambient Cooling and Heating.",
+      "Serving Central Maryland with professional boiler repair."
+     ]
+    },
+    {
+     "label": "RSA B - symptom-led",
+     "h": [
+      "Boiler Stopped Working?",
+      "No Heat From Your Boiler?",
+      "Boiler Leaking or Faulty?",
+      "Get Your Boiler Looked At",
+      "Boiler Repair Near You",
+      "Central Maryland Boilers",
+      "Boiler Repair Specialists",
+      "Severn Boiler Repair",
+      "Book a Boiler Inspection",
+      "Talk to a Technician",
+      "We Repair Home Boilers",
+      "We Repair Business Boilers",
+      "Clear Repair Options",
+      "Request Boiler Service",
+      "Columbia Boiler Service"
+     ],
+     "d": [
+      "Boiler trouble in Severn, Severna Park or Columbia? Our technicians help.",
+      "We diagnose the problem and walk you through the repair options.",
+      "Boiler repair for Maryland homes and commercial properties.",
+      "Schedule a boiler repair appointment with Ambient today."
+     ]
+    }
+   ]
+  },
+  "SKAG | Oil Furnace Installation": {
+   "campaign_key": "INSTALL",
+   "existing_campaign_id": "24257819466",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/oil-furnace-installations/",
+   "cpc_bid": 30.0,
+   "phrase": [
+    "oil furnace installation",
+    "oil furnace installation cost"
+   ],
+   "exact": [
+    "oil furnace installation"
+   ],
+   "evidence": "Page sells oil furnace installation only. Legacy 'Heating Installation' all-time CPC $15.20 on 865 clicks, 17 conversions. Planner 10-city sample shows 10/mo for the installation bucket; 'install oil furnace' and 'oil furnace install' collapse into it and are not duplicated.",
+   "rsas": [
+    {
+     "label": "RSA A - service-first",
+     "h": [
+      "Oil Furnace Installation",
+      "Oil Furnace Install Severn",
+      "Severna Park Oil Furnace",
+      "Columbia MD Oil Furnace",
+      "Install a New Oil Furnace",
+      "Oil Furnace Installers",
+      "Central Maryland Oil Heat",
+      "Book an Oil Furnace Quote",
+      "Oil Furnace Specialists",
+      "Replace Your Oil Furnace",
+      "Oil Heating Installation",
+      "Trained HVAC Technicians",
+      "Schedule an Assessment",
+      "Oil Furnace Fitting",
+      "Request Oil Furnace Info"
+     ],
+     "d": [
+      "Oil furnace installation for homes across Severn, Severna Park and Columbia.",
+      "We size the system to your home and explain the options clearly.",
+      "Book an oil furnace assessment with Ambient Cooling and Heating.",
+      "Experienced oil furnace installation across Central Maryland."
+     ]
+    },
+    {
+     "label": "RSA B - outcome-led",
+     "h": [
+      "Need a New Oil Furnace?",
+      "Old Oil Furnace Failing?",
+      "Upgrade Your Oil Furnace",
+      "Oil Furnace Install Quote",
+      "Warm Home This Winter",
+      "Oil Furnace Installation",
+      "Maryland Oil Furnace Fitters",
+      "Book an Oil Furnace Visit",
+      "Talk to an Installer",
+      "Oil Heat Done Properly",
+      "Severn Oil Furnace Install",
+      "Columbia Oil Furnace Install",
+      "Clear Installation Options",
+      "Sized for Your Home",
+      "Request an Assessment"
+     ],
+     "d": [
+      "Planning a new oil furnace in Central Maryland? Speak to our installers.",
+      "We assess your home, size the furnace and explain each option.",
+      "Oil furnace installation for Severn, Severna Park and Columbia homes.",
+      "Book an oil furnace installation assessment with Ambient."
+     ]
+    }
+   ]
+  },
+  "SKAG | Oil Heating System Replacement": {
+   "campaign_key": "INSTALL",
+   "existing_campaign_id": "24257819466",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/oil-replacement/",
+   "cpc_bid": 30.0,
+   "phrase": [
+    "oil furnace replacement",
+    "replace oil furnace cost",
+    "oil heating system replacement"
+   ],
+   "exact": [
+    "oil furnace replacement",
+    "oil heating system replacement"
+   ],
+   "evidence": "Page H1 'Outstanding Oil Replacement' and body text 'helps homeowners replace aging oil equipment' - replacement intent, distinct from the installation page. 'oil boiler replacement' DROPPED: blocked by the PHRASE cross-negative 'boiler' on this campaign, which is routing boiler queries to the boiler campaign correctly.",
+   "rsas": [
+    {
+     "label": "RSA A - service-first",
+     "h": [
+      "Oil Heating Replacement",
+      "Replace Your Oil System",
+      "Oil Furnace Replacement",
+      "Severn Oil Replacement",
+      "Severna Park Oil Heating",
+      "Columbia Oil Replacement",
+      "Aging Oil System?",
+      "Oil System Assessment",
+      "Central Maryland Oil Heat",
+      "Book an Oil Assessment",
+      "Oil Heating Specialists",
+      "Trained HVAC Technicians",
+      "Plan Your Replacement",
+      "Oil Equipment Replacement",
+      "Request Replacement Info"
+     ],
+     "d": [
+      "Replace aging oil heating equipment before the cold weather arrives.",
+      "We assess your current system and explain the replacement options.",
+      "Oil heating replacement for Severn, Severna Park and Columbia.",
+      "Book an oil system assessment with Ambient Cooling and Heating."
+     ]
+    },
+    {
+     "label": "RSA B - timing-led",
+     "h": [
+      "Oil System Near the End?",
+      "Replace Before Winter",
+      "Oil Heating Replacement",
+      "Old Oil Equipment?",
+      "Upgrade Oil Heating",
+      "Oil Replacement Quote",
+      "Maryland Oil Heating",
+      "Book an Assessment",
+      "Talk to a Technician",
+      "Plan the Replacement",
+      "Severn Oil Heating Help",
+      "Columbia Oil Heating Help",
+      "Clear Replacement Options",
+      "Oil System Review",
+      "Request an Assessment"
+     ],
+     "d": [
+      "Oil systems give little warning before they fail. Plan the replacement early.",
+      "We review your oil equipment and set out the replacement options.",
+      "Oil heating replacement across Central Maryland homes.",
+      "Schedule an oil system assessment with Ambient today."
+     ]
+    }
+   ]
+  },
+  "SKAG | Heat Pump Installation": {
+   "campaign_key": "HEATPUMP",
+   "existing_campaign_id": null,
+   "url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "cpc_bid": 40.0,
+   "phrase": [
+    "heat pump installation",
+    "heat pump installation cost",
+    "heat pump installers near me"
+   ],
+   "exact": [
+    "heat pump installation",
+    "heat pump installers near me"
+   ],
+   "evidence": "Planner 10-city sample: 50/mo for the installation bucket, the strongest of the six new themes. Legacy 'Water Source Heat Pump' CPC $44.93 on 3 clicks.",
+   "rsas": [],
+   "BLOCKED": "DESTINATION_NOT_WORKING on the required URL, 3/3 validate_only trials 2026-09-18 (and 4/4 on 2026-09-17). Ad group and keywords are created PAUSED so the structure exists, but NO RSA is included - the API rejects any ad pointing at this URL, which would abort the whole batch. An ad group with no ads cannot serve. Do not enable until the page is fixed, a policy re-review is requested in the Google Ads UI, and RSAs are added under a later plan. A different URL must NOT be substituted."
+  },
+  "SKAG | Geothermal HVAC Installation": {
+   "campaign_key": "HEATPUMP",
+   "existing_campaign_id": null,
+   "url": "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+   "cpc_bid": 40.0,
+   "phrase": [
+    "geothermal hvac installation",
+    "geothermal heat pump installation",
+    "geothermal system installation"
+   ],
+   "exact": [
+    "geothermal hvac installation",
+    "geothermal heat pump installation"
+   ],
+   "evidence": "CONTROLLED TEST. Legacy 'Geothermal HVAC': $151.80 / 4 clicks / 0 conversions, CPC $37.95; plus $134.80 on 'Water Source Heat Pump', 0 conversions. Combined $286.60 with zero conversions is why the service sits in client.yaml services_excluded. Included at owner instruction as a tightly controlled test with an explicit stop-loss.",
+   "rsas": [
+    {
+     "label": "RSA A - service-first",
+     "h": [
+      "Geothermal HVAC Install",
+      "Geothermal Heat Pumps",
+      "Severn Geothermal HVAC",
+      "Severna Park Geothermal",
+      "Columbia MD Geothermal",
+      "Geothermal Installation",
+      "Ground Source Heat Pumps",
+      "Central Maryland Geothermal",
+      "Book a Geothermal Review",
+      "Geothermal System Fitting",
+      "Trained HVAC Technicians",
+      "Energy Efficient Heating",
+      "Geothermal Assessment",
+      "Year Round Comfort",
+      "Request Geothermal Info"
+     ],
+     "d": [
+      "Geothermal HVAC installation for homes across Central Maryland.",
+      "We assess the site and explain how a geothermal system would work.",
+      "Geothermal heating and cooling for Severn, Severna Park and Columbia.",
+      "Book a geothermal assessment with Ambient Cooling and Heating."
+     ]
+    },
+    {
+     "label": "RSA B - efficiency-led",
+     "h": [
+      "Considering Geothermal?",
+      "Ground Source Heating",
+      "Geothermal HVAC Install",
+      "Efficient Year Round Comfort",
+      "Geothermal for Your Home",
+      "Maryland Geothermal HVAC",
+      "Book a Site Assessment",
+      "Talk to a Technician",
+      "Geothermal Heat Pumps",
+      "Sustainable Home Heating",
+      "Severn Geothermal Install",
+      "Columbia Geothermal Install",
+      "Clear System Options",
+      "Geothermal Explained",
+      "Request an Assessment"
+     ],
+     "d": [
+      "Geothermal taps underground temperatures to heat and cool your home.",
+      "We assess your property and set out whether geothermal suits it.",
+      "Geothermal HVAC installation across Severn, Severna Park and Columbia.",
+      "Schedule a geothermal consultation with Ambient today."
+     ]
+    }
+   ]
+  },
+  "SKAG | Tankless Water Heater Installation": {
+   "campaign_key": "TANKLESS",
+   "existing_campaign_id": null,
+   "url": "https://ambientcoolingandheating.com/services/heating-services/tankless-water-heaters/",
+   "cpc_bid": 35.0,
+   "phrase": [
+    "tankless water heater installation",
+    "tankless water heater installation cost",
+    "tankless water heater installers near me"
+   ],
+   "exact": [
+    "tankless water heater installation"
+   ],
+   "evidence": "CONTROLLED TEST. Legacy 'Tankless Water Heaters': $12,531.77 / 268 clicks / 2 conversions, CPC $46.76, CPA $6,265.89 - the worst measured economics in the account and the reason it sits in client.yaml services_excluded. Included at owner instruction, isolated in its own campaign, tightly capped, with an explicit stop-loss. Page covers installation and maintenance.",
+   "rsas": [
+    {
+     "label": "RSA A - service-first",
+     "h": [
+      "Tankless Water Heaters",
+      "Tankless Install Severn",
+      "Severna Park Tankless",
+      "Columbia MD Tankless",
+      "Tankless Installation",
+      "Endless Hot Water",
+      "Tankless Water Heater Fit",
+      "Central Maryland Tankless",
+      "Book a Tankless Quote",
+      "Tankless Specialists",
+      "Trained HVAC Technicians",
+      "Space Saving Hot Water",
+      "Tankless Assessment",
+      "Energy Efficient Hot Water",
+      "Request Tankless Info"
+     ],
+     "d": [
+      "Tankless water heater installation for Central Maryland homes.",
+      "Tankless models heat water on demand rather than storing a hot tank.",
+      "Tankless installation for Severn, Severna Park and Columbia.",
+      "Book a tankless water heater assessment with Ambient."
+     ]
+    },
+    {
+     "label": "RSA B - benefit-led",
+     "h": [
+      "Tired of Running Out?",
+      "Switch to Tankless",
+      "Endless Hot Water at Home",
+      "Tankless Water Heaters",
+      "Tankless Install Quote",
+      "Save Space in Your Home",
+      "Maryland Tankless Fitting",
+      "Book an Assessment",
+      "Talk to a Technician",
+      "Tankless Explained",
+      "Severn Tankless Install",
+      "Columbia Tankless Install",
+      "Clear Install Options",
+      "Efficient Hot Water",
+      "Request an Assessment"
+     ],
+     "d": [
+      "Tankless units heat water on demand instead of storing it in a tank.",
+      "A compact tankless unit frees the space a storage tank takes up.",
+      "Tankless water heater installation across Central Maryland.",
+      "Schedule a tankless consultation with Ambient Cooling and Heating."
+     ]
+    }
+   ]
+  }
+ },
+ "keyword_total": 32,
+ "rsa_total": 10,
+ "cross_negatives": {
+  "SKAG | Furnace Repair": {
+   "existing_ad_group_id": "199797580706",
+   "status": "PAUSED",
+   "negatives": [
+    "oil",
+    "boiler",
+    "heat pump",
+    "tankless",
+    "geothermal",
+    "mini split"
+   ]
+  },
+  "SKAG | Mini Split Installation": {
+   "existing_ad_group_id": "199797580746",
+   "status": "PAUSED",
+   "negatives": [
+    "heat pump",
+    "geothermal",
+    "boiler",
+    "furnace",
+    "tankless"
+   ]
+  },
+  "SKAG | Gas Boiler Repair": {
+   "existing_ad_group_id": "202339087594",
+   "status": "ENABLED",
+   "negatives": [
+    "oil",
+    "tankless",
+    "furnace",
+    "heat pump"
+   ],
+   "live_change_note": "This ad group is ENABLED. The four negatives are additive and none matches its only keyword 'gas boiler repair', so no existing traffic is lost; they prevent collision with the new Boiler Repair ad group in the same campaign."
+  },
+  "SKAG | Boiler Repair": {
+   "new": true,
+   "negatives": [
+    "gas",
+    "oil",
+    "tankless",
+    "furnace",
+    "heat pump"
+   ],
+   "why_gas": "Routes gas-boiler queries to the existing Gas Boiler Repair ad group, which owns that theme and its own offer-subdomain landing page."
+  },
+  "SKAG | Oil Furnace Installation": {
+   "new": true,
+   "negatives": [
+    "repair",
+    "replacement",
+    "boiler",
+    "heat pump",
+    "tankless",
+    "mini split"
+   ]
+  },
+  "SKAG | Oil Heating System Replacement": {
+   "new": true,
+   "negatives": [
+    "repair",
+    "installation",
+    "tankless",
+    "mini split",
+    "heat pump"
+   ]
+  },
+  "SKAG | Heat Pump Installation": {
+   "new": true,
+   "negatives": [
+    "geothermal",
+    "mini split",
+    "ductless",
+    "boiler",
+    "furnace",
+    "tankless",
+    "repair"
+   ]
+  },
+  "SKAG | Geothermal HVAC Installation": {
+   "new": true,
+   "negatives": [
+    "mini split",
+    "ductless",
+    "boiler",
+    "furnace",
+    "tankless",
+    "repair"
+   ],
+   "why_no_heat_pump_negative": "'geothermal heat pump installation' is one of this ad group's own keywords, so 'heat pump' must NOT be negated here. The one-way split is enforced from the Heat Pump ad group, which negates 'geothermal'."
+  },
+  "SKAG | Tankless Water Heater Installation": {
+   "new": true,
+   "negatives": [
+    "boiler",
+    "furnace",
+    "heat pump",
+    "mini split",
+    "geothermal",
+    "repair"
+   ]
+  }
+ },
+ "cross_negative_total": 50,
+ "cross_negative_tests_2026_09_20": {
+  "self_block_check": "PASS - no cross-negative blocks its own ad group's keywords",
+  "historically_converting_heating_queries_tested": 69,
+  "method": "PHRASE containment against every distinct heating search term with conversions > 0 since 2024-01-01. Raw search terms were never printed or retained.",
+  "verdict": "Every exclusion routes the query to the ad group that owns that service."
+ },
+ "search_settings": {
+  "network": "Google Search only",
+  "search_partners": false,
+  "display": false,
+  "ai_max": false,
+  "dsa": false,
+  "broad_match_expansion": false,
+  "final_url_expansion": false,
+  "automatically_created_assets": false,
+  "text_customization": false,
+  "geo": "PRESENCE / PRESENCE",
+  "locations": "75 approved Central MD",
+  "schedule": "6 approved business-hour rows",
+  "match_types": [
+   "PHRASE",
+   "EXACT"
+  ],
+  "contains_eu_political_advertising": "DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING"
+ },
+ "blocked_within_this_plan": {
+  "SKAG | Heat Pump Installation": "DESTINATION_NOT_WORKING on the required URL, 3/3 validate_only trials 2026-09-18 (and 4/4 on 2026-09-17). Ad group and keywords are created PAUSED so the structure exists, but NO RSA is included - the API rejects any ad pointing at this URL, which would abort the whole batch. An ad group with no ads cannot serve. Do not enable until the page is fixed, a policy re-review is requested in the Google Ads UI, and RSAs are added under a later plan. A different URL must NOT be substituted."
+ },
+ "landing_page_defect_noted": {
+  "url": "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+  "issue": "Page copy claims 'most knowledgeable and experienced experts' and 'Top Geothermal HVAC Technicians'. Both are barred superlatives. No RSA mirrors them, but the page itself should be corrected.",
+  "launch_blocking": false
+ },
+ "operations": [
+  {
+   "op": "CREATE_CAMPAIGN_BUDGET",
+   "campaign_key": "HEATPUMP",
+   "amount_usd": 18.0
+  },
+  {
+   "op": "CREATE_CAMPAIGN_BUDGET",
+   "campaign_key": "TANKLESS",
+   "amount_usd": 12.0
+  },
+  {
+   "op": "CREATE_CAMPAIGN_PAUSED",
+   "campaign_key": "HEATPUMP",
+   "name": "Search | NonBrand | Heat Pump & Geothermal | Central MD | BOFU | 2026-09",
+   "cpc_bid_ceiling_usd": 40.0
+  },
+  {
+   "op": "CREATE_CAMPAIGN_PAUSED",
+   "campaign_key": "TANKLESS",
+   "name": "Search | NonBrand | Tankless Water Heaters | Central MD | BOFU | 2026-09",
+   "cpc_bid_ceiling_usd": 35.0
+  },
+  {
+   "op": "ADD_CAMPAIGN_LOCATIONS",
+   "campaign_key": "HEATPUMP",
+   "count": 75
+  },
+  {
+   "op": "ADD_CAMPAIGN_LOCATIONS",
+   "campaign_key": "TANKLESS",
+   "count": 75
+  },
+  {
+   "op": "ADD_CAMPAIGN_AD_SCHEDULE",
+   "campaign_key": "HEATPUMP",
+   "count": 6
+  },
+  {
+   "op": "ADD_CAMPAIGN_AD_SCHEDULE",
+   "campaign_key": "TANKLESS",
+   "count": 6
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Boiler Repair",
+   "campaign_key": "BOILER",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "cpc_bid_usd": 60.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Oil Furnace Installation",
+   "campaign_key": "INSTALL",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/oil-furnace-installations/",
+   "cpc_bid_usd": 30.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Oil Heating System Replacement",
+   "campaign_key": "INSTALL",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/oil-replacement/",
+   "cpc_bid_usd": 30.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "campaign_key": "HEATPUMP",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "cpc_bid_usd": 40.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Geothermal HVAC Installation",
+   "campaign_key": "HEATPUMP",
+   "final_url": "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+   "cpc_bid_usd": 40.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Tankless Water Heater Installation",
+   "campaign_key": "TANKLESS",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/tankless-water-heaters/",
+   "cpc_bid_usd": 35.0
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Boiler Repair",
+   "phrase": [
+    "boiler repair",
+    "boiler repair near me",
+    "boiler repair service",
+    "residential boiler repair",
+    "boiler repair company",
+    "commercial boiler repair"
+   ],
+   "exact": [
+    "boiler repair",
+    "boiler repair near me",
+    "residential boiler repair",
+    "commercial boiler repair"
+   ],
+   "count": 10
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Oil Furnace Installation",
+   "phrase": [
+    "oil furnace installation",
+    "oil furnace installation cost"
+   ],
+   "exact": [
+    "oil furnace installation"
+   ],
+   "count": 3
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Oil Heating System Replacement",
+   "phrase": [
+    "oil furnace replacement",
+    "replace oil furnace cost",
+    "oil heating system replacement"
+   ],
+   "exact": [
+    "oil furnace replacement",
+    "oil heating system replacement"
+   ],
+   "count": 5
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "phrase": [
+    "heat pump installation",
+    "heat pump installation cost",
+    "heat pump installers near me"
+   ],
+   "exact": [
+    "heat pump installation",
+    "heat pump installers near me"
+   ],
+   "count": 5
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Geothermal HVAC Installation",
+   "phrase": [
+    "geothermal hvac installation",
+    "geothermal heat pump installation",
+    "geothermal system installation"
+   ],
+   "exact": [
+    "geothermal hvac installation",
+    "geothermal heat pump installation"
+   ],
+   "count": 5
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Tankless Water Heater Installation",
+   "phrase": [
+    "tankless water heater installation",
+    "tankless water heater installation cost",
+    "tankless water heater installers near me"
+   ],
+   "exact": [
+    "tankless water heater installation"
+   ],
+   "count": 4
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Boiler Repair",
+   "label": "RSA A - service-first",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "headlines": [
+    "Boiler Repair in Severn",
+    "Boiler Repair Central MD",
+    "Severna Park Boiler Repair",
+    "Columbia MD Boiler Repair",
+    "Residential Boiler Repair",
+    "Commercial Boiler Repair",
+    "Boiler Repair Technicians",
+    "Book a Boiler Repair Visit",
+    "Maryland Boiler Repair",
+    "Boiler Diagnosis Explained",
+    "Schedule Boiler Service",
+    "Homes and Businesses",
+    "Trained HVAC Technicians",
+    "Boiler Service Central MD",
+    "Request Boiler Repair"
+   ],
+   "descriptions": [
+    "Boiler repair for homes and businesses in Severn, Severna Park and Columbia.",
+    "Our technicians diagnose the fault and explain your options clearly.",
+    "Book a boiler repair visit with Ambient Cooling and Heating.",
+    "Serving Central Maryland with professional boiler repair."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Boiler Repair",
+   "label": "RSA B - symptom-led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "headlines": [
+    "Boiler Stopped Working?",
+    "No Heat From Your Boiler?",
+    "Boiler Leaking or Faulty?",
+    "Get Your Boiler Looked At",
+    "Boiler Repair Near You",
+    "Central Maryland Boilers",
+    "Boiler Repair Specialists",
+    "Severn Boiler Repair",
+    "Book a Boiler Inspection",
+    "Talk to a Technician",
+    "We Repair Home Boilers",
+    "We Repair Business Boilers",
+    "Clear Repair Options",
+    "Request Boiler Service",
+    "Columbia Boiler Service"
+   ],
+   "descriptions": [
+    "Boiler trouble in Severn, Severna Park or Columbia? Our technicians help.",
+    "We diagnose the problem and walk you through the repair options.",
+    "Boiler repair for Maryland homes and commercial properties.",
+    "Schedule a boiler repair appointment with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Oil Furnace Installation",
+   "label": "RSA A - service-first",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/oil-furnace-installations/",
+   "headlines": [
+    "Oil Furnace Installation",
+    "Oil Furnace Install Severn",
+    "Severna Park Oil Furnace",
+    "Columbia MD Oil Furnace",
+    "Install a New Oil Furnace",
+    "Oil Furnace Installers",
+    "Central Maryland Oil Heat",
+    "Book an Oil Furnace Quote",
+    "Oil Furnace Specialists",
+    "Replace Your Oil Furnace",
+    "Oil Heating Installation",
+    "Trained HVAC Technicians",
+    "Schedule an Assessment",
+    "Oil Furnace Fitting",
+    "Request Oil Furnace Info"
+   ],
+   "descriptions": [
+    "Oil furnace installation for homes across Severn, Severna Park and Columbia.",
+    "We size the system to your home and explain the options clearly.",
+    "Book an oil furnace assessment with Ambient Cooling and Heating.",
+    "Experienced oil furnace installation across Central Maryland."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Oil Furnace Installation",
+   "label": "RSA B - outcome-led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/oil-furnace-installations/",
+   "headlines": [
+    "Need a New Oil Furnace?",
+    "Old Oil Furnace Failing?",
+    "Upgrade Your Oil Furnace",
+    "Oil Furnace Install Quote",
+    "Warm Home This Winter",
+    "Oil Furnace Installation",
+    "Maryland Oil Furnace Fitters",
+    "Book an Oil Furnace Visit",
+    "Talk to an Installer",
+    "Oil Heat Done Properly",
+    "Severn Oil Furnace Install",
+    "Columbia Oil Furnace Install",
+    "Clear Installation Options",
+    "Sized for Your Home",
+    "Request an Assessment"
+   ],
+   "descriptions": [
+    "Planning a new oil furnace in Central Maryland? Speak to our installers.",
+    "We assess your home, size the furnace and explain each option.",
+    "Oil furnace installation for Severn, Severna Park and Columbia homes.",
+    "Book an oil furnace installation assessment with Ambient."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Oil Heating System Replacement",
+   "label": "RSA A - service-first",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/oil-replacement/",
+   "headlines": [
+    "Oil Heating Replacement",
+    "Replace Your Oil System",
+    "Oil Furnace Replacement",
+    "Severn Oil Replacement",
+    "Severna Park Oil Heating",
+    "Columbia Oil Replacement",
+    "Aging Oil System?",
+    "Oil System Assessment",
+    "Central Maryland Oil Heat",
+    "Book an Oil Assessment",
+    "Oil Heating Specialists",
+    "Trained HVAC Technicians",
+    "Plan Your Replacement",
+    "Oil Equipment Replacement",
+    "Request Replacement Info"
+   ],
+   "descriptions": [
+    "Replace aging oil heating equipment before the cold weather arrives.",
+    "We assess your current system and explain the replacement options.",
+    "Oil heating replacement for Severn, Severna Park and Columbia.",
+    "Book an oil system assessment with Ambient Cooling and Heating."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Oil Heating System Replacement",
+   "label": "RSA B - timing-led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/oil-replacement/",
+   "headlines": [
+    "Oil System Near the End?",
+    "Replace Before Winter",
+    "Oil Heating Replacement",
+    "Old Oil Equipment?",
+    "Upgrade Oil Heating",
+    "Oil Replacement Quote",
+    "Maryland Oil Heating",
+    "Book an Assessment",
+    "Talk to a Technician",
+    "Plan the Replacement",
+    "Severn Oil Heating Help",
+    "Columbia Oil Heating Help",
+    "Clear Replacement Options",
+    "Oil System Review",
+    "Request an Assessment"
+   ],
+   "descriptions": [
+    "Oil systems give little warning before they fail. Plan the replacement early.",
+    "We review your oil equipment and set out the replacement options.",
+    "Oil heating replacement across Central Maryland homes.",
+    "Schedule an oil system assessment with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Geothermal HVAC Installation",
+   "label": "RSA A - service-first",
+   "final_url": "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+   "headlines": [
+    "Geothermal HVAC Install",
+    "Geothermal Heat Pumps",
+    "Severn Geothermal HVAC",
+    "Severna Park Geothermal",
+    "Columbia MD Geothermal",
+    "Geothermal Installation",
+    "Ground Source Heat Pumps",
+    "Central Maryland Geothermal",
+    "Book a Geothermal Review",
+    "Geothermal System Fitting",
+    "Trained HVAC Technicians",
+    "Energy Efficient Heating",
+    "Geothermal Assessment",
+    "Year Round Comfort",
+    "Request Geothermal Info"
+   ],
+   "descriptions": [
+    "Geothermal HVAC installation for homes across Central Maryland.",
+    "We assess the site and explain how a geothermal system would work.",
+    "Geothermal heating and cooling for Severn, Severna Park and Columbia.",
+    "Book a geothermal assessment with Ambient Cooling and Heating."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Geothermal HVAC Installation",
+   "label": "RSA B - efficiency-led",
+   "final_url": "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+   "headlines": [
+    "Considering Geothermal?",
+    "Ground Source Heating",
+    "Geothermal HVAC Install",
+    "Efficient Year Round Comfort",
+    "Geothermal for Your Home",
+    "Maryland Geothermal HVAC",
+    "Book a Site Assessment",
+    "Talk to a Technician",
+    "Geothermal Heat Pumps",
+    "Sustainable Home Heating",
+    "Severn Geothermal Install",
+    "Columbia Geothermal Install",
+    "Clear System Options",
+    "Geothermal Explained",
+    "Request an Assessment"
+   ],
+   "descriptions": [
+    "Geothermal taps underground temperatures to heat and cool your home.",
+    "We assess your property and set out whether geothermal suits it.",
+    "Geothermal HVAC installation across Severn, Severna Park and Columbia.",
+    "Schedule a geothermal consultation with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Tankless Water Heater Installation",
+   "label": "RSA A - service-first",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/tankless-water-heaters/",
+   "headlines": [
+    "Tankless Water Heaters",
+    "Tankless Install Severn",
+    "Severna Park Tankless",
+    "Columbia MD Tankless",
+    "Tankless Installation",
+    "Endless Hot Water",
+    "Tankless Water Heater Fit",
+    "Central Maryland Tankless",
+    "Book a Tankless Quote",
+    "Tankless Specialists",
+    "Trained HVAC Technicians",
+    "Space Saving Hot Water",
+    "Tankless Assessment",
+    "Energy Efficient Hot Water",
+    "Request Tankless Info"
+   ],
+   "descriptions": [
+    "Tankless water heater installation for Central Maryland homes.",
+    "Tankless models heat water on demand rather than storing a hot tank.",
+    "Tankless installation for Severn, Severna Park and Columbia.",
+    "Book a tankless water heater assessment with Ambient."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Tankless Water Heater Installation",
+   "label": "RSA B - benefit-led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/tankless-water-heaters/",
+   "headlines": [
+    "Tired of Running Out?",
+    "Switch to Tankless",
+    "Endless Hot Water at Home",
+    "Tankless Water Heaters",
+    "Tankless Install Quote",
+    "Save Space in Your Home",
+    "Maryland Tankless Fitting",
+    "Book an Assessment",
+    "Talk to a Technician",
+    "Tankless Explained",
+    "Severn Tankless Install",
+    "Columbia Tankless Install",
+    "Clear Install Options",
+    "Efficient Hot Water",
+    "Request an Assessment"
+   ],
+   "descriptions": [
+    "Tankless units heat water on demand instead of storing it in a tank.",
+    "A compact tankless unit frees the space a storage tank takes up.",
+    "Tankless water heater installation across Central Maryland.",
+    "Schedule a tankless consultation with Ambient Cooling and Heating."
+   ]
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Furnace Repair",
+   "existing_ad_group_id": "199797580706",
+   "match_type": "PHRASE",
+   "negatives": [
+    "oil",
+    "boiler",
+    "heat pump",
+    "tankless",
+    "geothermal",
+    "mini split"
+   ],
+   "count": 6
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Mini Split Installation",
+   "existing_ad_group_id": "199797580746",
+   "match_type": "PHRASE",
+   "negatives": [
+    "heat pump",
+    "geothermal",
+    "boiler",
+    "furnace",
+    "tankless"
+   ],
+   "count": 5
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Gas Boiler Repair",
+   "existing_ad_group_id": "202339087594",
+   "match_type": "PHRASE",
+   "negatives": [
+    "oil",
+    "tankless",
+    "furnace",
+    "heat pump"
+   ],
+   "count": 4
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Boiler Repair",
+   "existing_ad_group_id": null,
+   "match_type": "PHRASE",
+   "negatives": [
+    "gas",
+    "oil",
+    "tankless",
+    "furnace",
+    "heat pump"
+   ],
+   "count": 5
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Oil Furnace Installation",
+   "existing_ad_group_id": null,
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "replacement",
+    "boiler",
+    "heat pump",
+    "tankless",
+    "mini split"
+   ],
+   "count": 6
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Oil Heating System Replacement",
+   "existing_ad_group_id": null,
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "installation",
+    "tankless",
+    "mini split",
+    "heat pump"
+   ],
+   "count": 5
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "existing_ad_group_id": null,
+   "match_type": "PHRASE",
+   "negatives": [
+    "geothermal",
+    "mini split",
+    "ductless",
+    "boiler",
+    "furnace",
+    "tankless",
+    "repair"
+   ],
+   "count": 7
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Geothermal HVAC Installation",
+   "existing_ad_group_id": null,
+   "match_type": "PHRASE",
+   "negatives": [
+    "mini split",
+    "ductless",
+    "boiler",
+    "furnace",
+    "tankless",
+    "repair"
+   ],
+   "count": 6
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Tankless Water Heater Installation",
+   "existing_ad_group_id": null,
+   "match_type": "PHRASE",
+   "negatives": [
+    "boiler",
+    "furnace",
+    "heat pump",
+    "mini split",
+    "geothermal",
+    "repair"
+   ],
+   "count": 6
+  },
+  {
+   "op": "LINK_EXISTING_CALL_ASSET_PAUSED",
+   "asset_id": "407995613637",
+   "campaign_key": "HEATPUMP"
+  },
+  {
+   "op": "LINK_EXISTING_CALL_ASSET_PAUSED",
+   "asset_id": "407995613637",
+   "campaign_key": "TANKLESS"
+  },
+  {
+   "op": "LINK_EXISTING_BUSINESS_NAME_ASSET_PAUSED",
+   "asset_id": "80516971145",
+   "campaign_key": "HEATPUMP"
+  },
+  {
+   "op": "LINK_EXISTING_BUSINESS_NAME_ASSET_PAUSED",
+   "asset_id": "80516971145",
+   "campaign_key": "TANKLESS"
+  }
+ ],
+ "operation_count": 43,
+ "fingerprint": "87E7C7460E4F"
+}

@@ -1,0 +1,486 @@
+# PLAN-R1B - CONTROLLED FORM-CONVERSION TEST
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+#
+# This is an EXTERNAL TEST plan, not a Google Ads configuration plan.
+# It contains ZERO Google Ads mutations.
+#
+# It exists because the complete conversion-goal hierarchy was read fresh on
+# 2026-09-01 and proved to be technically CORRECT. There is no configuration
+# defect to repair. The remaining open question is whether the form conversion
+# event fires at all, and that can only be settled by a controlled event test.
+#
+# A fingerprint identifies an exact plan. It does NOT grant permission.
+
+change_plan:
+  plan_id: PLAN-R1B
+  plan_title: Controlled instrumented form-conversion test
+  approval_type: CONTROLLED_LIVE_TEST_FORM
+  priority: P0
+  plan_class: EXTERNAL_TEST
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  recommended_approval_order: 1
+  supersedes: null
+  relationship_to_plan_a2:
+    plan_id: PLAN-A2
+    fingerprint: 3B30BD017E0C
+    owner_state: APPROVED IN PRINCIPLE - DEFERRED TO SEPTEMBER by owner 2026-08-27
+    relationship: COMPLEMENTARY - NOT SUPERSEDED
+    difference: >-
+      PLAN-A2's preferred arrival path is a click on a live ad, which produces a
+      genuine GCLID and would additionally prove the Google Ads server-side
+      click-to-conversion join. That path is BLOCKED: PRESENCE targeting on 80
+      New York locations means a real GCLID requires a click from a person
+      physically on Long Island during Mon-Sat 08:00-18:00, which neither the
+      agent nor a Florida-based approver can produce. PLAN-R1B uses an
+      instrumented synthetic-GCLID arrival instead, which is executable today,
+      answers every question in this plan's verification list, costs no ad click,
+      and creates no permanent conversion in an account whose conversion history
+      is currently clean. PLAN-A2 remains available, still blocked, for the day a
+      Long Island click can be arranged.
+
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+    campaigns_in_scope:
+      - campaign_id: '24103511039'
+        campaign_name: Power Washing
+      - campaign_id: '24145053510'
+        campaign_name: Pressure Washing
+
+  counts:
+    action_count: 8
+    object_count: 8
+    google_ads_mutation_count: 0
+    external_test_action_count: 8
+    external_write_action_count: 2
+    external_read_action_count: 6
+    forms_submitted_by_this_plan_when_executed: 1
+    calls_placed_by_this_plan: 0
+
+  why_this_plan_and_not_a_configuration_repair:
+    verdict: 'D - NO GOAL-CONFIGURATION DEFECT - CONTROLLED EVENT TEST REQUIRED'
+    proven_2026_09_01:
+      - >-
+        conversion_goal_campaign_config.goal_config_level = CAMPAIGN on BOTH
+        campaigns. Neither campaign uses the account-default customer goals.
+      - >-
+        Both campaigns' three lead CampaignConversionGoals are biddable = true
+        (PHONE_CALL_LEAD/WEBSITE, PHONE_CALL_LEAD/CALL_FROM_ADS,
+        SUBMIT_LEAD_FORM/WEBSITE) and GET_DIRECTIONS/GOOGLE_HOSTED is
+        biddable = false. That is the correct configuration.
+      - >-
+        All four conversion actions read primary_for_goal = true, status ENABLED,
+        owner_customer = 1521725229. Per current official documentation
+        primary_for_goal is the field that determines inclusion in bidding and in
+        the Conversions column.
+      - >-
+        include_in_conversions_metric is a DEPRECATED field. Official
+        documentation states that setting or updating it raises
+        FieldError.IMMUTABLE_FIELD and that primary_for_goal must be set instead.
+        It reads false on all four actions and is diagnostic only. The prior
+        interpretation of that field was incorrect.
+      - >-
+        metrics.all_conversions = 0.0 on all four conversion actions for the
+        account's entire life. Official documentation states that when
+        primary_for_goal is false the data still remains accessible in All
+        conversions. All conversions is therefore NOT gated by any goal or
+        primary/secondary setting. A zero there means no conversion event has
+        ever been recorded for any of the four actions.
+    conclusion: >-
+      No goal-layer or conversion-action mutation can create an event that never
+      fired. The correct next action is to establish whether the form event fires
+      at all, and to do so without contaminating the account.
+
+  deferred_and_deliberately_excluded:
+    - item: customer_conversion_goal biddable = false on all four categories
+      classification: LATENT ACCOUNT HYGIENE - NOT A DEFECT FOR THESE CAMPAIGNS
+      effect_on_current_campaigns: >-
+        NONE. Both campaigns are goal_config_level = CAMPAIGN, so Google Ads
+        stops applying CustomerConversionGoal updates to their
+        CampaignConversionGoal objects. Changing the customer goals would not
+        alter bidding or the Conversions column for 24103511039 or 24145053510.
+      effect_on_future_campaigns: >-
+        A NEW campaign created at goal_config_level = CUSTOMER would inherit four
+        non-biddable goals and would have no biddable goal at all. That is
+        undesirable, but no new campaign is in the current roadmap - PLAN-R6
+        creates ad groups inside the existing campaign 24103511039.
+      decision: >-
+        DEFER. Not included here. It is not the controlling defect and must not be
+        mutated merely to change how the standard Conversions column appears.
+    - item: Website-call test
+      decision: DEFER - do not test until the form path is understood.
+    - item: Call-asset test
+      decision: DEFER - do not test until the phone-routing path is understood.
+    - item: Replacement conversion actions
+      decision: >-
+        NOT CREATED. The current actions are not proven unusable; they are proven
+        correctly configured and never exercised.
+
+  test_identity:
+    source: >-
+      Already settled in this repository and recorded as not needing
+      re-litigation. See audits/2026-08-31-conversion-audit.md section 10 and
+      plans/2026-08-31-plan-r1-measurement-verification.yaml settled_inputs.
+    test_full_name: GM TEST DO NOT CONTACT
+    test_phone: '631-555-0147'
+    test_phone_basis: >-
+      NANP reserved fictitious range 555-0100..555-0199. It cannot ring a real
+      person, so no speed-to-lead automation can dial a stranger. It is a reserved
+      literal, not personal information.
+    test_phone_must_not_be:
+      - '(631) 502-7946'
+      - '(631) 502-5402'
+    test_email:
+      state: RESOLVED 2026-09-02 - SUPPLIED BY WALTER CORREA
+      resolved_value: access@greenmarketing.com
+      resolved_note: >-
+        Walter supplied the agency's own approver address of record, which matches
+        work_order.scope_approval.approver_email. It is not a client inbox and not
+        an RFC 2606 reserved address, but it is SAFER than either: any
+        auto-responder or speed-to-lead reply lands with the approval owner
+        himself, so no client staffer and no real customer can be contacted. It is
+        also a real deliverable address, which is what makes CRM delivery
+        verifiable at all. Accepted.
+      not_in_fingerprint_payload: true
+      fingerprint_impact: >-
+        NONE. The canonical payload for B7AD76CB16F8 covers target identity, the
+        action list, the page, the form id, submissions_permitted, the test name,
+        the test phone, the conversion action id and the synthetic gclid. The email
+        was an unresolved precondition at fingerprint time and is deliberately not
+        a fingerprinted field, so resolving it cannot and does not change the code.
+      carried_forward_from: PLAN-A2 precondition A2-PRE-2
+      requirement: >-
+        A client-controlled plus-addressed alias, for example
+        name+gmtest@theirdomain, so the test lead filters cleanly and the client
+        can see it arrive.
+      safe_default_if_the_client_declines: >-
+        An RFC 2606 reserved address such as gm-test@example.com, which can never
+        be delivered. This proves CRM receipt without any auto-responder reaching
+        a real inbox. It weakens only the inbox-delivery check.
+      do_not_invent: >-
+        No personal information is invented by this plan. Both options above are
+        reserved literals or client-supplied.
+    project_note_field: >-
+      "Green Marketing conversion tracking test - not a customer - submitted
+      <date> - please delete after verification."
+
+  preconditions:
+    - id: R1B-PRE-1
+      requirement: Walter's explicit approval of this exact plan and fingerprint.
+      state: MET 2026-09-02
+      evidence: "APPROVE PLAN-R1B B7AD76CB16F8 FOR 1521725229"
+    - id: R1B-PRE-2
+      requirement: Test email address decided per test_identity.test_email.
+      state: MET 2026-09-02
+      evidence: access@greenmarketing.com supplied by Walter Correa
+    - id: R1B-PRE-3
+      requirement: >-
+        Client notified in advance that one clearly-marked test lead will arrive,
+        so nobody chases it.
+      state: MET 2026-09-02
+      evidence: >-
+        Walter confirmed the lead recipient has been notified that one clearly
+        labelled internal test lead named "GM TEST DO NOT CONTACT" will be
+        submitted.
+    - id: R1B-PRE-4
+      requirement: Named cleanup owner agreed, by name, before execution.
+      state: MET 2026-09-02
+      evidence: "Walter Correa, access@greenmarketing.com" 
+    - id: R1B-PRE-5
+      requirement: >-
+        Confirmation of which CRM or webhook receives Gravity Forms submissions.
+        Recorded as UNKNOWN in PLAN-A2 and still unidentified.
+      state: NOT MET
+      note: >-
+        If it remains unknown at execution time, run the test anyway and let T-6
+        DISCOVER the destination. That is a legitimate output, not a blocker.
+
+  page_under_test:
+    url: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+    why_this_page: >-
+      It is the sole serving final URL of campaign 24103511039 and is also served
+      by campaign 24145053510. It carries the most paid traffic of any page in the
+      account.
+    form_identifier: Gravity Forms gform_1
+    form_fields:
+      - field: input_9
+        label: Full Name
+        value_to_use: GM TEST DO NOT CONTACT
+      - field: input_1
+        label: (second text field)
+        value_to_use: GM TEST DO NOT CONTACT
+      - field: input_4
+        label: Phone Number
+        value_to_use: '631-555-0147'
+      - field: input_3
+        label: Email Address
+        value_to_use: per test_identity.test_email once decided
+      - field: input_7
+        label: Tell us about your project
+        value_to_use: per test_identity.project_note_field
+    submissions_permitted: 1
+    submissions_permitted_note: >-
+      Exactly ONE. A second submission makes the ONE_PER_CLICK result ambiguous.
+
+  browser_requirement:
+    engine: Playwright, real Chromium, JavaScript enabled
+    reason: >-
+      SG-Captcha serves non-JS clients an empty stub on this domain. curl and
+      WebFetch previously produced a false "no tracking present" finding. Any
+      tag-level test MUST use a real browser or its result is worthless.
+    network_capture: >-
+      Capture ALL outbound requests for the whole session, including
+      googleadservices.com/pagead/conversion, google.com/pagead/1p-conversion,
+      googletagmanager.com, google-analytics.com, whatconverts, clickcease and
+      facebook. Record the full query string of every conversion beacon.
+    existing_tooling: scripts/audit_landing_pages_playwright.py
+
+  arrival_url:
+    base: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+    synthetic_parameters:
+      gclid: GM-TEST-SYNTHETIC-GCLID-20260901
+      gbraid: GM-TEST-SYNTHETIC-GBRAID-20260901
+      wbraid: GM-TEST-SYNTHETIC-WBRAID-20260901
+      utm_source: google
+      utm_medium: cpc
+      utm_campaign: gm-conversion-test
+      utm_term: power washing near me
+      utm_content: plan-r1b
+    honest_limitation: >-
+      A synthetic gclid does not correspond to a real ad click, so Google Ads will
+      NOT record a conversion from this test and metrics.all_conversions will
+      remain 0.00. THAT IS THE EXPECTED RESULT AND IS NOT A FAILURE. This plan
+      tests whether the event FIRES and whether identifiers PERSIST. It does not
+      test the Google Ads server-side click-to-conversion join, which remains
+      PLAN-A2's job and remains geographically blocked.
+
+  actions:
+    - id: T-1
+      type: EXTERNAL_READ
+      action: >-
+        Load the arrival URL in instrumented Chromium with network capture armed.
+        Record HTTP status, final URL after any redirect, and every tag that loads.
+      verifies:
+        - Page reachable, HTTP 200, no unexpected redirect
+        - Which Google Ads tag IDs load on the page
+        - Whether AW-17878095007 loads alongside the account's own AW-18369652705
+      external_write: false
+
+    - id: T-2
+      type: EXTERNAL_READ
+      action: >-
+        Before touching the form, snapshot the persisted identifiers - the URL
+        query string, any hidden form inputs, sessionStorage, localStorage and
+        cookies that carry gclid, gbraid, wbraid or the UTMs. Snapshot the wc_swap
+        cookie and the rendered phone number in both the tel: href and the body.
+      verifies:
+        - GCLID preserved
+        - GBRAID and WBRAID preserved when present
+        - UTMs preserved
+        - Which phone number the page is currently rendering, and from what source
+      external_write: false
+
+    - id: T-3
+      type: EXTERNAL_WRITE
+      action: >-
+        Fill Gravity Forms gform_1 with the test identity and submit it EXACTLY
+        ONCE.
+      external_write: true
+      writes_to:
+        - Gravity Forms WordPress entry table
+        - WhatConverts lead log
+        - Client CRM or webhook, destination currently UNKNOWN
+      irreversibility: >-
+        The WordPress entry and the WhatConverts lead are deletable. Any CRM
+        record's deletability is unknown until T-6 identifies the destination.
+        NOTE: unlike PLAN-A2's real-click path, this test creates NO Google Ads
+        conversion, so it does NOT permanently pollute the account's conversion
+        history. That is a deliberate design advantage.
+
+    - id: T-4
+      type: EXTERNAL_READ
+      action: >-
+        Capture the post-submission behaviour: thank-you page, inline confirmation
+        or redirect. Record the exact confirmation URL or DOM state.
+      verifies:
+        - Form submission succeeds
+        - Correct thank-you behaviour
+      external_write: false
+
+    - id: T-5
+      type: EXTERNAL_READ
+      action: >-
+        From the captured network log, extract every conversion beacon fired
+        during and after submission. For each, record the destination host, the
+        Google Ads account id and the conversion label.
+      verifies:
+        - Correct Google Ads conversion label fires - expected AW-18369652705 with
+          label FddkCOul59scEOHPqrdE on conversion action 7708725995
+        - Conversion fires exactly once, not zero times and not twice
+        - >-
+          Whether the FOREIGN tag AW-17878095007 also receives the conversion
+          event. This is the single most valuable output of the test. It converts
+          the foreign-tag finding from suspected to proven, either way.
+      external_write: false
+
+    - id: T-6
+      type: EXTERNAL_READ
+      action: >-
+        Confirm the lead arrived, and where. Check the WhatConverts lead log for
+        the test record and confirm it carries the synthetic gclid and the UTMs.
+        Identify the CRM or webhook destination if a notification fires.
+      verifies:
+        - Lead reaches the correct CRM or webhook
+        - Campaign and ad-group context preserved through the handoff
+        - Lead is clearly labelled as an internal test
+      external_write: false
+
+    - id: T-7
+      type: EXTERNAL_READ
+      action: >-
+        24 hours after T-3, re-read Google Ads via GAQL - metrics.all_conversions
+        segmented by segments.conversion_action_name for the test date, plus
+        conversion_action.
+      expected_result: >-
+        all_conversions remains 0.00. EXPECTED. A synthetic gclid cannot join to a
+        real click. Recorded so the negative is documented rather than
+        misinterpreted later as a new failure.
+      note: >-
+        Do not declare anything a failure before 24 hours have elapsed. Google Ads
+        conversion reporting lags.
+      external_write: false
+
+    - id: T-8
+      type: EXTERNAL_WRITE
+      action: >-
+        Cleanup. The named cleanup owner deletes the Gravity Forms entry, archives
+        or marks the WhatConverts lead as a test, and deletes any CRM record
+        created. Record what was deleted, by whom, and when.
+      external_write: true
+      note: >-
+        Nothing needs removing from Google Ads because nothing was written to it.
+
+  expected_conversion_reference:
+    conversion_action_id: '7708725995'
+    conversion_action_name: Softwind Power Washing | Submission Lead Form
+    resource_name: customers/1521725229/conversionActions/7708725995
+    type: WEBPAGE
+    category: SUBMIT_LEAD_FORM
+    origin: WEBSITE
+    owner_customer_id: '1521725229'
+    primary_for_goal: true
+    include_in_conversions_metric: false
+    include_in_conversions_metric_note: >-
+      Deprecated and immutable. Not a defect and not mutable. Ignore it.
+    counting_type: ONE_PER_CLICK
+    click_through_lookback_window_days: 90
+    view_through_lookback_window_days: 1
+    google_tag_id: AW-18369652705
+    conversion_label: FddkCOul59scEOHPqrdE
+    tag_snippet_count: 4
+    account_conversion_tracking_id: '18369652705'
+    foreign_tag_under_investigation: AW-17878095007
+    foreign_tag_note: >-
+      AW-17878095007 is NOT this account. This account's own tag is
+      AW-18369652705, matching customer.conversion_tracking_setting.
+      conversion_tracking_id = 18369652705. The two are confirmed distinct.
+
+  interpretation_matrix:
+    - observation: >-
+        Conversion beacon to AW-18369652705 with label FddkCOul59scEOHPqrdE fires
+        exactly once, identifiers persist, lead reaches WhatConverts.
+      conclusion: >-
+        The measurement path is sound end to end on the client side. The account's
+        zero-conversion history is fully explained by zero real leads, not by any
+        defect. Close the measurement investigation and return to demand.
+    - observation: No conversion beacon fires at all.
+      conclusion: >-
+        The form event is not firing. THIS is the real defect, and it is a website
+        defect, not a Google Ads defect. Escalate to the website track.
+    - observation: The beacon fires twice.
+      conclusion: >-
+        Double-counting risk. Real leads would be overcounted. Website fix
+        required before the count can be trusted.
+    - observation: AW-17878095007 also receives the event.
+      conclusion: >-
+        Tag contamination PROVEN. This client's lead events are being sent to a
+        Google Ads account Green Marketing does not control. Escalate immediately;
+        it is a data-leakage issue as well as a measurement one.
+    - observation: Identifiers do not persist into the form or the CRM.
+      conclusion: >-
+        Attribution would fail even for a real lead. Website fix required.
+
+  distinctions_this_plan_preserves:
+    configuration_eligibility: >-
+      PROVEN CORRECT. Goals and actions are configured so a conversion WOULD be
+      counted and WOULD feed bidding.
+    event_firing: UNKNOWN. This is what the test establishes.
+    attribution: >-
+      UNTESTABLE remotely. Requires a real GCLID from a Long Island click.
+    reporting: >-
+      Correct by configuration. Nothing to repair.
+    bidding_eligibility: >-
+      PROVEN CORRECT. Three lead goals biddable at campaign level, all actions
+      primary_for_goal true.
+    actual_lead_generation: >-
+      ZERO. Confirmed by Google Ads all_conversions and independently by the
+      user-supplied WhatConverts records.
+
+  evidence:
+    whatconverts: >-
+      USER-SUPPLIED WHATCONVERTS RECORDS REVIEWED - ZERO CONFIRMED RELEVANT POWER
+      WASHING OR PRESSURE WASHING LEADS IN THE SUPPLIED ROWS. WhatConverts is an
+      independent source and it agrees with Google Ads at zero.
+    google_ads: >-
+      metrics.all_conversions = 0.0 on all four conversion actions for the
+      account's entire life, read 2026-09-01. Zero campaign x conversion_action
+      segment rows exist.
+    documentation:
+      - https://developers.google.com/google-ads/api/docs/conversions/goals/overview
+      - https://developers.google.com/google-ads/api/docs/conversions/overview
+
+  protected_surfaces_untouched:
+    - campaign bidding
+    - CPC ceilings
+    - budgets
+    - campaign names
+    - campaign statuses
+    - ad groups
+    - keywords
+    - negative keywords
+    - RSAs
+    - assets
+    - locations
+    - schedules
+    - audiences
+    - demographics
+    - final URLs
+    - landing pages
+    - tracking templates
+    - final URL suffixes
+    - custom parameters
+
+  risk: >-
+    ZERO Google Ads mutations, so no delivery, bidding or reporting risk inside
+    the account. The external risk is one test lead reaching the client's systems.
+    That is mitigated by a reserved fictitious phone number that cannot ring a
+    person, an unmistakable test name, an explanatory project note, advance client
+    notification, and a named cleanup owner. Unlike a real-ad-click test, this
+    plan writes NOTHING to Google Ads conversion history.
+
+  rollback: >-
+    Delete the Gravity Forms entry, archive or mark the WhatConverts lead as a
+    test, and delete any CRM record. Nothing is written to Google Ads, so there is
+    nothing to roll back there.
+
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does NOT grant permission. This
+    plan is NOT APPROVED and must not be executed. Approval of this plan
+    authorises exactly one form submission and the cleanup that follows it. It
+    authorises no Google Ads change of any kind.

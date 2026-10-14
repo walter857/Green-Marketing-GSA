@@ -1,0 +1,57 @@
+negative,match_type,scope,reason,terms_blocked_hist,cost_all,cost_30d,keep_terms_hit,guard
+fertilization,PHRASE,both,lawn treatment,0,0,0,0,ok
+overseeding,PHRASE,both,lawn treatment,0,0,0,0,ok
+stump,PHRASE,both,tree service,1,0.0,0.0,0,ok
+snow removal,PHRASE,both,seasonal service,0,0,0,0,ok
+snow plowing,PHRASE,both,seasonal service,0,0,0,0,ok
+leaf removal,PHRASE,both,seasonal service,0,0,0,0,ok
+christmas lights,PHRASE,both,seasonal service,0,0,0,0,ok
+jobs,PHRASE,both,employment,0,0,0,0,ok
+hiring,PHRASE,both,employment,0,0,0,0,ok
+salary,PHRASE,both,employment,0,0,0,0,ok
+diy,PHRASE,both,do it yourself,0,0,0,0,ok
+ideas,PHRASE,both,inspiration,0,0,0,0,ok
+pictures,PHRASE,both,inspiration,0,0,0,0,ok
+supply,PHRASE,both,materials buyer,0,0,0,0,ok
+supplies,PHRASE,both,materials buyer,0,0,0,0,ok
+home depot,PHRASE,both,retail,0,0,0,0,ok
+menards,PHRASE,both,retail,0,0,0,0,ok
+lowes,PHRASE,both,retail,0,0,0,0,ok
+rental,PHRASE,both,equipment rental,0,0,0,0,ok
+software,PHRASE,both,B2B,0,0,0,0,ok
+school,PHRASE,both,training,0,0,0,0,ok
+degree,PHRASE,both,training,0,0,0,0,ok
+free,PHRASE,both,freebie seekers,1,0.0,0.0,0,ok
+tree,PHRASE,both,tree service,6,66.74000000000001,33.67,0,ok
+trees,PHRASE,both,tree service,0,0,0,0,ok
+hedge,PHRASE,both,shrub care,1,0.0,0.0,0,ok
+shrub,PHRASE,both,shrub care,1,0.0,0.0,0,ok
+bush,PHRASE,both,shrub care,1,0.0,0.0,0,ok
+weed,PHRASE,both,lawn treatment,2,0.0,0.0,0,ok
+mower,PHRASE,both,equipment / mowing,1,0.0,0.0,0,ok
+seeding,PHRASE,both,lawn seeding,2,0.0,0.0,0,ok
+french drain,PHRASE,hard,belongs to Landscaping,0,0,0,0,ok
+drainage,PHRASE,hard,belongs to Landscaping,1,0.0,0.0,0,ok
+grading,PHRASE,hard,belongs to Landscaping,0,0,0,0,ok
+mulch,PHRASE,hard,belongs to Landscaping,1,0.0,0.0,0,ok
+lawn care,PHRASE,both,"maintenance service, not landscape install",0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+lawn service,PHRASE,both,maintenance service,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+lawn services,PHRASE,both,maintenance service,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+lawn mowing,PHRASE,both,maintenance service,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+mowing,PHRASE,both,maintenance service,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+fertilizer,PHRASE,both,lawn treatment / product,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+weed control,PHRASE,both,lawn treatment,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+aeration,PHRASE,both,lawn treatment,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+tree removal,PHRASE,both,tree service,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+tree trimming,PHRASE,both,tree service,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+sprinkler,PHRASE,both,"irrigation, separate trade here",0,0,0,0,already negative in Hardscaping
+irrigation,PHRASE,both,"irrigation, separate trade here",1,52.14,0.0,0,already negative in Hardscaping
+sod,PHRASE,both,sod install not advertised,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+how to,PHRASE,both,informational,0,0,0,0,already negative in Hardscaping
+tree service,PHRASE,both,tree service,0,0,0,0,already negative in Landscaping; already negative in Hardscaping
+retaining wall,PHRASE,land,belongs to Hardscaping,0,0,0,0,already negative in Landscaping
+pavers,PHRASE,land,belongs to Hardscaping,0,0,0,0,already negative in Landscaping
+paver,PHRASE,land,belongs to Hardscaping,0,0,0,0,already negative in Landscaping
+patio,PHRASE,land,belongs to Hardscaping,0,0,0,0,already negative in Landscaping
+fire pit,PHRASE,land,belongs to Hardscaping,0,0,0,0,already negative in Landscaping
+outdoor kitchen,PHRASE,land,belongs to Hardscaping,0,0,0,0,already negative in Landscaping

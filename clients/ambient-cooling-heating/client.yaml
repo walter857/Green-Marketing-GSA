@@ -1,0 +1,787 @@
+client:
+  slug: ambient-cooling-heating
+  # SUPPLIED by Green Marketing 2026-08-17 in the audit assignment.
+  business_name: Ambient Cooling & Heating
+  legal_name: "Ambient Cooling & Heating LLC"
+  vertical: heating-cooling
+  primary_service: AC Repair
+  google_ads:
+    # SUPPLIED child customer ID. VERIFIED 2026-08-17 by fresh read-only API lookup:
+    # customer.id returned exactly 2401959466.
+    child_customer_id: "2401959466"
+    # ---------------------------------------------------------------------------
+    # IDENTITY GATE: PASSED 2026-08-17 (second lookup).
+    # The account was renamed in Google Ads between the first and second lookup.
+    # Fresh customer.descriptive_name now returns exactly 'Ambient Cooling - Live',
+    # which matches the user-confirmed name and carries the required '- live' marker.
+    # The earlier conflict is preserved below as superseded historical evidence.
+    # ---------------------------------------------------------------------------
+    exact_child_account_name: "Ambient Cooling - Live"
+    manager_customer_id: "3373711342"
+    manager_account_name: "Green Marketing"
+    must_contain_live_marker: true
+    # VERIFIED 2026-08-17 by fresh read-only API lookup on customer 2401959466.
+    currency: USD
+    timezone: America/New_York
+    account_status: ENABLED
+    is_manager: false
+    is_test_account: false
+    auto_tagging_enabled: true
+    manager_link_level: 1
+    manager_link_status: ENABLED
+    conversion_tracking_id: 11155434808
+    conversion_tracking_status: CONVERSION_TRACKING_MANAGED_BY_SELF
+    cross_account_conversion_tracking_id: 0
+    # OBSERVED 2026-08-27 by fresh read-only lookup. Was 0.9678744 on 2026-08-17.
+    # Recorded as an observed fact only. Optimization Score is NEVER an objective.
+    optimization_score: 0.7843765
+    # OBSERVED account-level tracking template. This is a ClickCease click-fraud
+    # redirect wrapping every click. Recorded as observed fact, not as approval.
+    account_tracking_url_template_present: true
+    account_tracking_url_template_vendor: "ClickCease (monitor.clickcease.com)"
+    final_url_suffix: ""
+
+  # ---------------------------------------------------------------------------
+  # RESOLVED 2026-08-17. The gate now PASSES. Fresh read-only lookup returns
+  # customer.descriptive_name = 'Ambient Cooling - Live', matching the
+  # user-confirmed name exactly and carrying the required '- live' marker.
+  # ---------------------------------------------------------------------------
+  identity_gate:
+    status: PASSED
+    verified_on: "2026-08-17"
+    observed_name: "Ambient Cooling - Live"
+    observed_id: "2401959466"
+    name_matches_user_confirmation: true
+    live_marker_present: true
+    is_manager_account: false
+    is_test_account: false
+    under_expected_hierarchy: true
+    currency_correct: true
+    timezone_correct: true
+    evidence: >-
+      SELECT customer.* FROM customer (customer_id=2401959466) returned
+      descriptive_name 'Ambient Cooling - Live', currency USD, time_zone
+      America/New_York, manager False, test_account False, status ENABLED.
+      customer_client from manager 3373711342 shows the same account at level 1
+      with status ENABLED.
+    manager_verification:
+      verified_manager_customer_id: "3373711342"
+      verified_manager_name: "Green Marketing"
+      verified_manager_is_manager_account: true
+      child_level_under_manager: 1
+      method: >-
+        Verified through the configured hierarchy (customer_manager_link on the
+        child, and customer_client from the manager), NOT assumed from a URL.
+      # DISCREPANCY, recorded and not acted on.
+      expected_manager_id_supplied_by_user: "1247547723"
+      expected_manager_id_resolves: false
+      expected_manager_id_error: "No customer found for the provided customer id."
+      note: >-
+        The manager ID supplied from the Google Ads link (1247547723) is not
+        reachable with the configured credential and is not a manager of this child.
+        The authoritative manager verified through the hierarchy is 3373711342,
+        whose descriptive_name is 'Green Marketing' and whose manager flag is true.
+        The supplied value is most likely a UI/ocid parameter rather than a customer
+        ID. No operation used 1247547723.
+    # A SECOND manager link is ACTIVE on this child, alongside Green Marketing.
+    # CONFIRMED CLIENT FACT, supplied by Green Marketing 2026-08-18.
+    # RE-VERIFIED 2026-08-18 by fresh read-only customer_manager_link lookup.
+    additional_active_manager_links:
+      - manager_customer_id: "2815082755"
+        manager_customer_id_display: "281-508-2755"
+        link_id: "345789060"
+        status: ACTIVE
+        role: "ClickCease Client Center"
+        authorized: true
+        authorized_by: "Green Marketing"
+        authorized_on: "2026-08-18"
+        permissions: "full permissions, required to block spam IPs"
+        protected: true
+        note: >-
+          AUTHORIZED AND PROTECTED. This manager link, its ACTIVE status, and its full
+          permissions must be preserved. Never remove, downgrade, revoke, or modify it.
+          Any plan that would touch this link is invalid.
+
+  # SUPERSEDED historical evidence from the first lookup on 2026-08-17, preserved
+  # per instruction. The account was renamed between the two lookups.
+  identity_conflict_superseded:
+    status: SUPERSEDED_BY_RENAME
+    superseded_on: "2026-08-17"
+    expected_name: "Ambient Cooling & Heating"
+    observed_name: "Ambient Cooling"
+    observed_id: "2401959466"
+    expected_id: "2401959466"
+    id_matches: true
+    name_matches: false
+    live_marker_present: false
+    evidence: >-
+      Fresh read-only GAQL SELECT on FROM customer for 2401959466 returned
+      customer.descriptive_name = 'Ambient Cooling'. The same value is returned from
+      the manager view (customer_client.descriptive_name) under manager 3373711342.
+      The account name therefore fails two separate gate rules: it is not an exact
+      match for the expected name, and it does not contain the '- live' marker that
+      config/agency.yaml requires for a Green Marketing managed account.
+    corroborating_context: >-
+      11 of 33 enabled accounts visible under manager 3373711342 do carry the
+      '- live' marker, so the convention is in active use and its absence here is
+      meaningful rather than a project-wide non-convention. A second enabled account
+      named 'OLD Ambient C&H' (2391758435) also exists under the same manager. Its
+      existence is recorded from the account-selection listing only; it was NOT read,
+      audited, or selected.
+    rule: >-
+      Per CLAUDE.md, stop on any name mismatch and never select another account.
+      No campaign, keyword, ad, asset, budget, conversion, or performance data was
+      read from 2401959466 during that first pass.
+    resolution: >-
+      RESOLVED by rename. On the second fresh lookup the same customer ID returned
+      'Ambient Cooling - Live'. See identity_gate above, which is now authoritative.
+
+  website:
+    # VERIFIED 2026-08-17 by read-only browser render.
+    primary_url: "https://ambientcoolingandheating.com/"
+    landing_page_base_url: "https://offer.ambientcoolingandheating.com/"
+    paid_landing_pages:
+      - "https://offer.ambientcoolingandheating.com/ac-repair/"
+      - "https://offer.ambientcoolingandheating.com/hvac-repair/"
+      - "https://offer.ambientcoolingandheating.com/hvac-installation/"
+      - "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+      - "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+    # APPROVED PAID NUMBER. Supplied by Green Marketing 2026-08-17.
+    # Every paid landing page, call asset, call conversion, mobile CTA, hidden CTA,
+    # schema field, and form confirmation must use or route to this number.
+    phone_display: "(410) 705-6354"
+    phone_e164: "+14107056354"
+    phone_tel_link: "tel:+14107056354"
+    # The main website deliberately uses a DIFFERENT number. This is accepted and is
+    # NOT a defect on the main site. It IS a defect anywhere on a paid landing page.
+    main_site_phone_display: "(410) 761-0932"
+    main_site_phone_e164: "+14107610932"
+    main_site_phone_is_approved_for_paid_pages: false
+    # OBSERVED 2026-08-18 on all five paid landing pages, desktop and mobile.
+    # A THIRD number is present that is neither the approved paid number nor the
+    # main-site number. It is the mobile "Call Now" button (Divi module et_pb_button_5).
+    # =======================================================================
+    # PHONE-TRACKING TAXONOMY. SUPPLIED by Green Marketing 2026-08-18.
+    # Four distinct numbers, four distinct roles. Do not conflate them.
+    # =======================================================================
+    phone_taxonomy:
+      approved_paid_hardcoded_base_and_fallback:
+        display: "(410) 705-6354"
+        e164: "+14107056354"
+        tel: "tel:+14107056354"
+        role: >-
+          APPROVED WhatConverts tracking number. Must be hardcoded as the base and
+          fallback phone number on all paid landing pages: server HTML, JavaScript-disabled
+          fallback, visible text, every base tel: link, mobile CTA, FAQ and structured data.
+          Also the number on Google Ads call asset 407995613637.
+        status: APPROVED
+      whatconverts_dni_pool_runtime:
+        display: "(410) 914-1456"
+        e164: "+14109141456"
+        role: >-
+          WhatConverts dynamic number insertion POOL number, injected at runtime by
+          WhatConverts profile 105803. Session-level tracking number.
+        status: ACCEPTABLE_NOT_AN_ERROR
+        note: >-
+          This is NOT an incorrect number merely because it differs from the hardcoded
+          fallback. It is acceptable while it belongs to the correct WhatConverts profile
+          and routes to the intended Ambient destination. Routing is not yet verified,
+          because verification requires placing a real call.
+        observed_swap_rule: "wc_swap = '4109141456 .. 4107610932 .. 230773'"
+      main_site_not_for_paid_paths:
+        display: "(410) 761-0932"
+        e164: "+14107610932"
+        role: "Main information site number."
+        status: MUST_NOT_APPEAR_ON_ANY_PAID_CONVERSION_PATH
+        prohibited_locations: >-
+          Paid landing-page source HTML, mobile CTA, FAQ, structured data, form
+          confirmation, or any other paid conversion path.
+        observed: >-
+          PRESENT in the server HTML of all five paid pages as the base href of the
+          phone-only mobile CTA (a.et_pb_button_5), masked at runtime by the
+          WhatConverts swap. Must be replaced with the approved base number.
+      unexplained_google_wcm_number:
+        display: "(410) 415-9517"
+        e164: "+14104159517"
+        role: >-
+          Number configured in Google Ads website-call reporting
+          (pagead/conversion/11155434808/wcm?dn=4104159517).
+        status: UNEXPLAINED_DO_NOT_USE_OR_CHANGE
+        note: >-
+          Ownership and purpose are not identified. Must not be used and must not be
+          changed until identified.
+        observed: >-
+          Appears nowhere on the paid pages. Google returns
+          {"errorCode":2,"backoff":3600}, so no swap occurs on the offer subdomain.
+    # Superseded flat field, kept for traceability.
+    unapproved_third_phone_on_paid_pages: "+14109141456"
+    unapproved_third_phone_display: "(410) 914-1456"
+    unapproved_third_phone_status: RESOLVED_AND_RECLASSIFIED_AS_INTENDED_DNI_POOL_NUMBER
+    # RESOLVED 2026-08-18 by controlled script blocking in a JS-capable browser.
+    unapproved_third_phone_source: >-
+      WhatConverts dynamic number insertion. Aborting s.ksrndkehqnwntyxlhgto.com and
+      process.iconnode.com reverts the href to the server-HTML value. Blocking GTM,
+      Google WCM (gstatic.com/wcm) and gstatic.com/call-tracking does NOT revert it,
+      so neither GTM nor Google is the swapper. WhatConverts profile script 105803.js.
+    unapproved_third_phone_element: >-
+      a.et_pb_button_5.et_pb_button.et_pb_bg_layout_light, link text 'Call Now', inside
+      div.et_pb_button_5_wrapper > et_pb_column_26 > et_pb_row_17. Phone-only CTA
+      (et_flex_column_24_24_phone): 0x0 and unreachable at 1440x900, 175x37 and
+      tappable at 390x844. Present on all five paid pages.
+    unapproved_third_phone_forwarding_target: UNVERIFIED_REQUIRES_TEST_CALL_APPROVAL
+    unapproved_third_phone_risk: >-
+      WhatConverts DNI normally forwards to the number it replaced. The replaced number
+      in the server HTML is +14107610932, the MAIN-SITE number, which is NOT approved for
+      paid pages. Paid mobile calls may therefore route to the un-approved line.
+    # A FOURTH number is configured in Google Ads call reporting and is unexplained.
+    google_call_reporting_configured_number: "+14104159517"
+    google_call_reporting_status: INERT_ON_PAID_PAGES
+    google_call_reporting_evidence: >-
+      googleadservices.com/pagead/conversion/11155434808/wcm is called with dn=4104159517,
+      a number that appears nowhere on the paid pages, and google.com/pagead/attribution/wcm
+      returns {"errorCode":2,"backoff":3600}. Google issues no forwarding number and performs
+      no swap on the offer subdomain.
+    unapproved_third_phone_evidence: >-
+      href="tel:+14109141456" with link text "Call Now" on ac-repair, hvac-repair,
+      hvac-installation, hvac-replacement and gas-boiler-repair. Rendered 0x0 (not
+      reachable) at 1440x900 but VISIBLE and tappable at 175x37 at 390x844. The other
+      two telephone links on the same pages use the approved (410) 705-6354, so this is
+      not number-swap behaviour; it is a hardcoded value in one Divi button module.
+    # CORRECTED 2026-08-18. The 2026-08-18 claim that this number was absent was WRONG.
+    # It IS in the SERVER HTML of all five paid pages; it is only masked at runtime by the
+    # WhatConverts number swap. The 2026-08-17 audit finding was correct.
+    main_site_phone_present_on_paid_pages: true
+    main_site_phone_present_in_server_html: true
+    main_site_phone_present_in_rendered_dom: false
+    main_site_phone_evidence: >-
+      Same-origin fetch() of each page source returns has_761=true. With all external
+      scripts blocked the rendered href is tel:+14107610932. WhatConverts overwrites it
+      at runtime with the pool number +14109141456.
+    main_site_phone_recheck_2026_08_18: >-
+      The 2026-08-17 note that a hidden tel:+14107610932 remained in the DOM is NOT
+      reproducible. Zero occurrences of 410-761-0932 in the HTML or visible text of any
+      of the five pages at either viewport. The remaining wrong number is (410) 914-1456.
+    tel_href_format_defect: >-
+      None of the three telephone links use the approved E.164 form tel:+14107056354.
+      Observed: tel:4107056354 (no country code) and tel:(410) 705-6354 (unencoded
+      parentheses and a space), plus the unapproved tel:+14109141456.
+    # CORRECTED 2026-09-15. Both links are now present on ALL SIX paid landing pages,
+    # verified in a real JS browser on desktop and mobile. This closes a defect that was
+    # open from 2026-08-17. Evidence: snapshots/lp-browser-qa-2026-09-15.json
+    privacy_policy_url: "https://offer.ambientcoolingandheating.com/privacy-policy/"
+    terms_url: "https://offer.ambientcoolingandheating.com/terms-and-conditions/"
+    # OPEN DEFECT, PROVEN 2026-09-15: the Gravity Forms attribution fields input_9..input_15
+    # are populated SERVER-SIDE and the page is then cached by the SiteGround proxy
+    # (x-proxy-cache: HIT). The cached HTML carries one visitor's gclid/UTMs and replays it
+    # to every later visitor regardless of their own URL. 0 of 24 fresh loads across the six
+    # pages captured the visitor's own gclid. Evidence: snapshots/gclid-capture-probe-2026-09-15.json
+    form_attribution_capture_working: false
+    form_attribution_defect: "server-side population + full-page proxy cache; fix client-side or exclude from cache"
+    platform: "WordPress + Divi 5.10.1 + Gravity Forms 3.0.2"
+    host_bot_protection: "SiteGround SG-Captcha (challenges non-browser clients)"
+
+  offer:
+    services_in_scope:
+      - AC Repair
+      - HVAC Repair
+      - HVAC Installation
+      - HVAC Replacement
+      - Gas Boiler Repair
+      # Added 2026-09-15. This records a client fact confirmed in writing by the Green
+      # Marketing approval owner on 2026-09-10 and already captured in work-order.yaml
+      # under commercial_hvac_in_paid_scope: true. The service list simply had not been
+      # updated to match. Live corroboration on 2026-09-15: ad group 199748801029
+      # 'SKAG | Commercial HVAC Installation' exists in campaign 24132507747 with two
+      # ENABLED, APPROVED keywords and a live HTTP 200 commercial landing page.
+      - Commercial HVAC Installation
+      # ---------------------------------------------------------------------
+      # Added 2026-09-16 for the heating-portfolio RESEARCH workstream.
+      # CAPABILITY VERIFIED from the official Ambient website in a real browser
+      # (the site sits behind NitroCDN and returns nothing to a plain fetch, which
+      # would otherwise produce a false "service not offered" verdict).
+      # Evidence: snapshots/heating-capability-browser-2026-09-16.json
+      #   Heating Repair        -> /services/heating-services/furnace-repair/
+      #                            H1 "Furnace Repair in Severn, Severna Park & Columbia, MD"
+      #   Heat Pump Installation-> /services/heating-services/heat-pumps/
+      #                            "ductless mini splits and central heat pump systems"
+      #   Heating Installation  -> /services/heating-services/oil-furnace-installations/
+      #                            and /services/heating-services/oil-replacement/
+      #                            plus the hub "new heating system installed"
+      #
+      # SCOPE NOTE: this records VERIFIED CAPABILITY and admits these services to
+      # READ + DRAFT research work orders. It is NOT approval to advertise them.
+      # No heating campaign, ad group, keyword, ad, asset or budget may be created
+      # without the separate fingerprinted approvals listed in
+      # plans/AMB-0916-HEAT-STRATEGY-1.json.
+      # ---------------------------------------------------------------------
+      - Heating Repair
+      - Heat Pump Installation
+      - Heating Installation
+      # Added 2026-09-30 so single-service work orders can validate. Both services were
+      # already APPROVED FOR ADVERTISING by the owner on 2026-09-21 (listed below under
+      # heating_advertising_scope_2026_09_21) and neither is in services_capability_not_verified.
+      # Supporting evidence: the main-site heating hub /services/heating-services/ covers
+      # maintenance and tune-ups, and the account's own historical "Heating Maintenance"
+      # campaign advertised boiler and heat-pump maintenance keywords. The 2026-09-30 owner
+      # direction re-opens their 2026-09-25 budget deferral for EVALUATION only. This line is
+      # not approval to create, enable or fund anything; each change needs its own fingerprint.
+      # Work orders: work-orders/work-order-boiler-maintenance-2026-09-30.yaml,
+      #              work-orders/work-order-heat-pump-maintenance-2026-09-30.yaml
+      - Boiler Maintenance
+      - Heat Pump Maintenance
+      # Added 2026-10-01 so single-service work orders can validate, on the same basis as the
+      # 2026-09-30 additions above: both are in heating_advertising_scope_2026_09_21 (owner
+      # approval 2026-09-21) and neither is in services_capability_not_verified. Work orders:
+      # work-orders/work-order-emergency-heating-repair-lp-2026-10-01.yaml,
+      # work-orders/work-order-geothermal-heat-pump-lp-2026-10-01.yaml.
+      # Emergency Heating Repair: this records ADVERTISING scope only. Emergency, same-day,
+      # 24/7 and after-hours AVAILABILITY remain UNVERIFIED and stay in barred_claims
+      # (same_day_or_emergency_availability). Not approval to enable anything.
+      # Geothermal Heat Pump: the scope label does not say whether the paid service is repair,
+      # installation or replacement; each work order must establish that from the page and records.
+      - Emergency Heating Repair
+      - Geothermal Heat Pump
+      # Added 2026-10-02 for work-orders/work-order-heating-maintenance-launch-2026-10-02.yaml, on the same basis: in
+      # heating_advertising_scope_2026_09_21, not in services_capability_not_verified, and the main-site heating hub
+      # (/services/heating-services/) publishes maintenance, tune-up and inspection services. Green Marketing instructed the
+      # Maintenance & Inspection launch on that URL on 2026-10-02.
+      - Heating Maintenance
+    # ---------------------------------------------------------------------
+    # APPROVED ADVERTISING SCOPE, 2026-09-21. 31 heating services, recorded from the
+    # owner's transition instruction. See
+    # work-orders/work-order-heating-transition-2026-09.yaml.
+    # Capability is verified for the services above; for the rest this records
+    # ADVERTISING approval only. Each ad group whose capability or landing page is
+    # unproven is created PAUSED with no ads and an explicit launch gate.
+    # ---------------------------------------------------------------------
+    heating_advertising_scope_2026_09_21:
+      - Furnace Repair
+      - Furnace Replacement
+      - Furnace Installation
+      - Furnace Maintenance
+      - Furnace Tune-Up
+      - Heat Pump Repair
+      - Heat Pump Replacement
+      - Heat Pump Installation
+      - Heat Pump Maintenance
+      - Boiler Repair
+      - Boiler Replacement
+      - Boiler Installation
+      - Boiler Maintenance
+      - Heating Repair
+      - Heating Replacement
+      - Heating Installation
+      - Heating Maintenance
+      - Heating Tune-Up
+      - Emergency Heating Repair
+      - No Heat Repair
+      - Thermostat Repair
+      - Thermostat Replacement
+      - Smart Thermostat Installation
+      - Ductless Heating Repair
+      - Ductless Heating Installation
+      - Gas Furnace Repair
+      - Electric Furnace Repair
+      - Heating System Inspection
+      - Heating System Replacement
+      - Heating System Installation
+      - Geothermal Heat Pump
+    services_excluded:
+      # REVISED 2026-09-21 (second instruction of the day). Tankless and Oil services are
+      # OUT of the approved scope entirely and are no longer controlled tests.
+      - "Tankless Water Heaters - $12,531.77 historical spend for 2 conversions
+         ($6,265.89 CPA). OUT OF SCOPE under the 31-service heating transition."
+      - "Oil Furnace Installation and Oil Heating System Replacement - OUT OF SCOPE under
+         the 31-service heating transition. Their pages remain live on the site but no ad
+         group targets them."
+      # Geothermal is IN scope as a controlled test. The exclusion evidence that put it
+      # here is CORRECTED below, because it was measured the wrong way round.
+      - "Geothermal - RE-ADMITTED 2026-09-21 as a controlled test with a stop-loss.
+         CORRECTION: the $286.60 / zero-conversion figure counted only campaigns NAMED
+         geothermal. Geothermal SEARCH TERMS, wherever served, show $1,310.03 / 59 clicks /
+         4 conversions, CPC $22.20, CPA $327.51 - better than the account's heating
+         average. Evidence: snapshots/keyword-research-2026-09-21b.json."
+    services_capability_not_verified:
+      # Demand exists locally but NO capability evidence was found on the official site.
+      # STATUS 2026-09-21: the owner's 31-service instruction places all four in
+      # ADVERTISING scope. That authorises advertising; it does NOT verify the capability,
+      # and re-checking the site on 2026-09-21 still found no page for any of them.
+      # Every one of these ad groups is created PAUSED with NO ads and carries an explicit
+      # launch gate. Confirm the capability before enabling.
+      - Thermostat repair
+      - Thermostat replacement
+      - Smart thermostat installation
+      - Electric furnace repair
+    # Only wording actually published on the paid pages as of 2026-08-17.
+    verified_usps:
+      - "Free quote request is the published offer on all five paid pages."
+    verified_offers:
+      - "Free [service] quote. No price, discount, or dollar value is published."
+    # Claims that must NOT be used until the client verifies them in writing.
+    barred_claims:
+      - price_or_pricing
+      - discount_or_dollar_offer
+      - response_time_promise
+      - same_day_or_emergency_availability
+      - years_in_business
+      - license_number_claim
+      - insurance_claim
+      - rating_or_review_count
+      - guarantee_or_warranty
+      - manufacturer_certification
+    average_job_revenue: null
+    gross_margin_pct: null
+    close_rate_pct: null
+    # CLIENT REQUIREMENT, recorded 2026-09-30 from an explicit Green Marketing instruction in the
+    # working session ("Expected CPL: $280 or less. Mandatory CPL ceiling: $350."). These are
+    # client-specific business constraints, not benchmarks. CPL here means ALL advertising spend in
+    # the stated scope and period divided by UNIQUE, GENUINE PAID leads attributable to that spend
+    # (see cpl_policy below). They are NOT CPQL or CAC targets; those remain unset.
+    target_cpl: 280        # USD, expected CPL
+    cpl_ceiling: 350       # USD, mandatory hard ceiling
+    cpl_policy:
+      target_cpl_usd: 280
+      hard_ceiling_usd: 350
+      source: "Explicit Green Marketing instruction in the Claude Code working session"
+      recorded_on: "2026-09-30"
+      definition: >-
+        CPL = all advertising spend in the stated scope (account, campaign or ad group) and
+        period, including every click type, divided by unique, genuine paid leads attributable
+        to that spend. A paid lead needs a session click ID that resolves to this account's
+        click_view, or a Google call_view record matched to a genuine call. Excluded: QA
+        submissions, spam, wrong-number calls, duplicates/repeat contacts inside the window,
+        and organic, GBP, LSA or other-channel leads. A genuine paid lead with Quotable Not Set
+        counts toward CPL but is never assumed qualified or sold.
+      not_allowed: >-
+        Spending above the ceiling to fill a monthly budget, raise impression share or gather
+        data, unless a separately approved, bounded plan says otherwise. Monthly and daily
+        spending limits are maximums, not targets.
+    target_cpql: null      # NOT SUPPLIED (different metric from CPL)
+    target_cac: null       # NOT SUPPLIED (different metric from CPL)
+
+  service_area:
+    country_code: US
+    target_type: unknown_pending_account_read
+    # Published wording on the paid landing pages (H1 and body copy).
+    # This is PUBLISHED WORDING only. It is NOT the Google Ads targeting list.
+    published_service_area_wording: "Severn, Severna Park & Columbia, MD"
+    cities:
+      - Severn
+      - Severna Park
+      - Columbia
+    state: Maryland
+    postal_codes: []
+    geo_target_constant_ids: []
+    # The assignment states the approved build was expected to contain 75 Maryland
+    # location targets. NOT VERIFIED: the account read is blocked by identity_conflict.
+    expected_location_target_count: 75
+    verified_location_target_count: null
+    exclusions: []
+    location_option: PRESENCE
+    # VERIFIED 2026-08-18 by resolving all 75 geo target constants. Identical on all five
+    # campaigns. 28 cities, 5 neighborhoods, 42 postal codes.
+    verified_location_target_count: 75
+    verified_target_type_breakdown:
+      city: 28
+      neighborhood: 5
+      postal_code: 42
+    verified_targeted_cities:
+      - Annapolis
+      - Arbutus
+      - Arnold
+      - Bowie
+      - Brooklyn Park
+      - Catonsville
+      - Crofton
+      - Edgewater
+      - Elkridge
+      - Ellicott City
+      - Ferndale
+      - Fort Meade
+      - Fulton
+      - Gambrills
+      - Glen Burnie
+      - Halethorpe
+      - Hanover
+      - Jessup
+      - Laurel
+      - Linthicum Heights
+      - North Laurel
+      - Odenton
+      - Parole
+      - Pasadena
+      - Severn
+      - Severna Park
+      - Timonium
+      - Woodlawn
+    # IMPORTANT: Columbia is NOT a targeted CITY name even though all five landing-page
+    # H1s advertise it. It is covered only by postal codes 21044, 21045 and 21046.
+    columbia_covered_by: "postal codes 21044, 21045, 21046 (not by city target)"
+    # NOT in the 75 targets, so negatives naming them are redundant with PRESENCE
+    # targeting rather than harmful. Do not treat a Maryland place as in-scope by default.
+    maryland_places_NOT_targeted:
+      - Dayton
+      - Chestertown
+      - Upper Marlboro
+      - Montgomery County
+      - Hagerstown
+      - Forest Hill
+      - White Marsh
+
+  schedule:
+    timezone: America/New_York
+    # Expected ad schedule per the assignment. NOT VERIFIED against the live account.
+    expected_ad_schedule: "Monday through Friday, 8:00 AM to 4:00 PM Eastern Time"
+    # VERIFIED 2026-08-19 by fresh read-only campaign_criterion lookup on all five campaigns.
+    verified_ad_schedule: "Monday-Friday 08:00-20:00 + Saturday 08:00-13:00 America/New_York"
+    verified_ad_schedule_on: "2026-08-19"
+    verified_ad_schedule_criteria_count: 30   # 6 rows x 5 campaigns, all ENABLED
+    verified_ad_schedule_bid_modifier: 1.0    # reported as 0.0 by the API; no modifier is lost
+    verified_ad_schedule_sunday_row_present: false
+    # VERIFIED 2026-08-19 from change_event. The schedule was NOT part of the launch build.
+    verified_ad_schedule_created_utc: "2026-08-17 10:39:27 to 10:47:51 account time"
+    verified_ad_schedule_created_by_client_type: GOOGLE_ADS_WEB_CLIENT
+    campaigns_ran_24_7_until: "2026-08-17 ~10:40 America/New_York"
+    ad_schedule_criteria_on_legacy_campaigns: 109   # 19 PAUSED/REMOVED campaigns, out of scope
+    call_answering_hours_confirmed: false
+    can_answer_after_hours: null
+    windows: []
+    # CONFIRMED CLIENT REQUIREMENT supplied 2026-08-19 by Green Marketing.
+    # STALE, corrected 2026-09-21. This recorded an intention that was never implemented.
+    # Verified live 2026-09-21 (snapshots/schedule-geo-2026-09-21.json): all five enabled
+    # campaigns AND both 2026-09-17 heating campaigns carry the identical 6-row schedule
+    # Mon-Fri 08:00-20:00 + Sat 08:00-13:00, no Sunday row. Business hours, not 24/7, are
+    # the established live standard in this account, and the 2026-09 heating expansion
+    # matches it. Changing any campaign to 24/7 would be a delivery change in its own right
+    # and needs its own approval; it is not implied by this line.
+    required_campaign_delivery: "SUPERSEDED - see observed_campaign_delivery below"
+    observed_campaign_delivery: "Mon-Fri 08:00-20:00 + Sat 08:00-13:00 America/New_York,
+      6 criteria per campaign, on all 7 in-scope campaigns, verified 2026-09-21"
+    required_call_asset_schedule: "Mon-Fri 08:00-20:00, Sat 08:00-13:00, Sunday not scheduled"
+    required_form_availability: "24/7 for paid traffic, tracking included"
+    landing_page_phone_button_may_stay_24_7: true
+
+  # VERIFIED 2026-08-19 by fresh read-only asset, customer_asset, campaign_asset and
+  # ad_group_asset lookups. Five CALL assets exist in the account.
+  google_ads_call_assets:
+    approved_serving_asset:
+      asset_id: "407995613637"
+      phone_number: "(410)705-6354"
+      approval_status: APPROVED
+      ad_schedule_targets: 0
+      customer_level_links: 0
+      ad_group_level_links: 0
+      campaign_links: 5
+      campaign_links_outside_the_five: 0
+      note: >-
+        The ONLY call asset that can serve with the five in-scope campaigns, and it is
+        exclusive to them. Because CallAsset.ad_schedule_targets lives on the Asset
+        resource and is shared by every link, exclusivity is what makes an in-place
+        schedule update safe. Re-verify exclusivity before any future schedule change.
+    legacy_not_touched:
+      - asset_id: "343054924787"
+        phone_number: "(410) 705-6354"
+        links: "6 legacy campaigns, all PAUSED or REMOVED, 4 links themselves REMOVED"
+      - asset_id: "80497290055"
+        phone_number: "(410) 415-9517"
+        links: "10 legacy campaigns, all PAUSED or REMOVED"
+      - asset_id: "98498198415"
+        phone_number: "(410) 415-9517"
+        ad_schedule_targets: 7   # 7-day 08:00-21:00
+        links: "7 legacy campaigns, all PAUSED or REMOVED"
+      - asset_id: "369249814267"
+        phone_number: "4107056354"
+        ad_schedule_targets: 7   # 7-day 07:00-20:00
+        links: "one customer-level link, status REMOVED, so it serves nowhere"
+    barred_numbers_absent_from_the_five:
+      - "(410) 914-1456 WhatConverts DNI pool - on no Google Ads call asset"
+      - "(410) 761-0932 main site - on no Google Ads call asset"
+      - "(410) 415-9517 legacy - only on assets 80497290055 and 98498198415, neither linked to the five"
+
+  conversions:
+    # NOT VERIFIED. The conversion-action inventory requires the blocked account read.
+    primary: []
+    secondary: []
+    call_minimum_seconds: null
+    crm_stage_mapping:
+      lead: ""
+      qualified: ""
+      sold: ""
+    offline_route: DATA_MANAGER_API
+    # SUPERSEDED 2026-08-17 finding (tracking absent) is no longer true.
+    # RE-VERIFIED 2026-08-18 by headless Chrome render of all five paid pages at
+    # 1440x900 and 390x844. GTM is now correctly installed and firing.
+    landing_page_tracking_observed: GTM_LIVE_AND_FIRING
+    # OBSERVED 2026-08-18: additional undocumented tags on the paid pages.
+    undocumented_tags_on_paid_pages:
+      - "Microsoft UET (bat.bing.com, action 187243235)"
+      - "Meta pixel (connect.facebook.net, _fbp)"
+      - "Nextdoor pixel (ads.nextdoor.com/public/pixel/ndp.js)"
+      - "WhatConverts (s.ksrndkehqnwntyxlhgto.com/105803.js, process.iconnode.com)"
+      - "Google call tracking (gstatic.com/call-tracking, gstatic.com/wcm) - inert here"
+    landing_page_tracking_verified_on: "2026-08-18"
+    landing_page_tracking_evidence: >-
+      Exactly one standard GTM head snippet and exactly one noscript iframe for
+      GTM-PQTPQ436 on every page. One gtm.js?id=GTM-PQTPQ436 request returning HTTP 200.
+      window.google_tag_manager['GTM-PQTPQ436'] present at runtime, dataLayer initialized
+      with gtm.js, gtm.dom and gtm.load. No duplicate GTM container and no second
+      Google tag initialization. GA4 G-9X9ZHNCRWF and Google Ads conversion linker
+      11155434808 both fire through the container. Consent Mode v2 signals present
+      (ad_storage, analytics_storage, ad_user_data, ad_personalization).
+    landing_page_tracking_superseded_2026_08_17: >-
+      The 2026-08-17 audit recorded NO measurement of any kind on the paid pages. That
+      finding is superseded: it was produced without a JavaScript-capable render and the
+      SiteGround SG-Captcha challenge returned an empty document to the plain HTTP client.
+
+  integrations:
+    crm: ""
+    call_tracking: "NONE OBSERVED on the paid landing pages"
+    analytics: "NONE OBSERVED on the paid landing pages"
+    # APPROVED tag manager, recorded per the 2026-08-17 assignment.
+    tag_manager: "Google Tag Manager"
+    tag_manager_container_id: "GTM-PQTPQ436"
+    # VERIFIED 2026-08-17: the approved container is present in the MAIN SITE HTML
+    # but is entirely absent from all five paid landing pages.
+    tag_manager_status_on_paid_pages: NOT_INSTALLED
+    tag_manager_status_on_main_site: PRESENT_IN_HTML
+    tag_manager_api_access: UNAVAILABLE
+    # CONFLICT RECORDED 2026-08-18, not resolved. Do not act on either side.
+    # client.yaml has recorded whatconverts_expected: false, but WhatConverts IS live on
+    # all five paid landing pages and two WhatConverts upload conversion actions are
+    # PRIMARY in Google Ads.
+    whatconverts_expected: false
+    whatconverts_observed_live_on_paid_pages: true
+    whatconverts_evidence: >-
+      Cookies wc_visitor, wc_client, wc_client_current and wc_swap set on every paid page,
+      with matching localStorage keys. wc_swap indicates dynamic number insertion is
+      active. Google Ads conversion actions 7643656075 "WC Calls" (UPLOAD_CALLS) and
+      7643656486 "WC Lead" (UPLOAD_CLICKS) both exist and are PRIMARY.
+    # RESOLVED 2026-08-18: WhatConverts is CONFIRMED INTENTIONAL by Green Marketing.
+    # The earlier client.yaml value whatconverts_expected: false is superseded.
+    whatconverts_conflict_status: RESOLVED_WHATCONVERTS_IS_INTENTIONAL
+    whatconverts_is_intended_call_tracking_and_dni: true
+    whatconverts_must_not_be_removed: true
+    whatconverts_dni_swap_rule_id: "230773"
+    whatconverts_dni_current_target_number: "4107610932"
+    whatconverts_dni_required_target_number: "4107056354"
+    whatconverts_dni_reconfiguration_required: true
+    whatconverts_dni_reconfiguration_reason: >-
+      The swap rule is NUMBER-SPECIFIC and currently bound to the main-site number
+      4107610932. Changing the hardcoded base to 4107056354 without updating swap rule
+      230773 will stop the DNI swap firing, leaving the static approved number with no
+      session-level tracking number and silently losing call attribution.
+    whatconverts_captures_click_ids: true
+    whatconverts_click_id_evidence: >-
+      PROVEN 2026-08-18. A load carrying test gclid, gbraid, wbraid and five UTMs was
+      captured in the wc_client cookie and localStorage, and POSTed to
+      p.ksrndkehqnwntyxlhgto.com/keyword/ with wc_profile_id=105803.
+    whatconverts_google_ads_upload_status: NOT_CONFIGURED_OR_UNMAPPED
+    whatconverts_google_ads_upload_evidence: >-
+      Zero conversions all-time on 7643656075 'WC Calls' and 7643656486 'WC Lead', and
+      zero on ANY UPLOAD_* action in the account from 2019-01-01 to 2026-08-18. The Google
+      Ads receiving end IS provisioned: both actions are owned by customers/2401959466,
+      ENABLED, correct types, with accepted_customer_data_terms and
+      enhanced_conversions_for_leads both true. The gap is the WhatConverts-to-Google-Ads
+      push mapping, which cannot be read from the Google Ads API and must be checked in
+      WhatConverts profile 105803.
+    # OBSERVED 2026-08-18.
+    whatconverts_profile_script: "105803.js"
+    whatconverts_hosts:
+      - "s.ksrndkehqnwntyxlhgto.com"
+      - "p.ksrndkehqnwntyxlhgto.com"
+      - "process.iconnode.com"
+    whatconverts_performs_dni: true
+    whatconverts_google_ads_uploads_recorded: 0
+    whatconverts_upload_actions_inert: >-
+      Conversion actions 7643656075 'WC Calls' (UPLOAD_CALLS) and 7643656486 'WC Lead'
+      (UPLOAD_CLICKS) are both PRIMARY but have recorded 0.0 conversions in every window
+      including all time. WhatConverts captures calls in its own system and uploads
+      nothing to Google Ads.
+    other_pixels_observed_on_paid_pages: >-
+      Microsoft UET (bat.bing.com/bat.js, _uetsid/_uetvid), Meta pixel (_fbp), a Nextdoor
+      style pixel (ndp_session_id) and Google Web Call Metrics (gstatic.com/wcm/loader.js).
+      None of these are recorded in the approved measurement plan.
+    speed_to_lead: ""
+    review_url: ""
+    form_webhook_env_key: CRM_WEBHOOK_URL
+
+  permissions:
+    approvers:
+      - Green Marketing
+    allow_create_paused: false
+    allow_enable: false
+    allow_budget_changes: false
+    allow_deletions: false
+
+# ---------------------------------------------------------------------------
+# Procedural record, ratified by the owner 2026-09-18.
+# ---------------------------------------------------------------------------
+procedural_exceptions:
+  - id: EU-POLITICAL-FIELD-2026-09-17
+    plan: AMB-0917-HEAT-CREATE-1
+    fingerprint: "7DE31D6B6A88"
+    type: recovery-exception-after-partial-write
+    field: campaign.contains_eu_political_advertising
+    value: DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING
+    what_happened: >-
+      The first execution committed both campaign budgets and then failed at the campaign
+      stage with a bare `field_error: REQUIRED`. Five validate_only probes isolated the
+      missing field. The approved manifest predated Google making the field mandatory, so
+      the plan was not executable as written.
+    why_it_was_added: >-
+      Truthful for a Central Maryland HVAC campaign, required by the Google Ads API, matches
+      the value carried by all five pre-existing Ambient campaigns, and changes no serving
+      behaviour - no effect on budget, bid, targeting, status or delivery. The rest of the
+      manifest was untouched and still recomputes to 7DE31D6B6A88.
+    ratified_by_owner: "2026-09-18"
+    status: RATIFIED - the field remains
+    forward_requirement: >-
+      All future campaign manifests must include this field inside the serialized payload
+      BEFORE the approval fingerprint is computed. Recorded in config/agency.yaml under
+      search_defaults and required_campaign_create_fields. Adding a platform-mandated field
+      after approval is a manifest change and must not be treated as routine.
+
+
+# ---------------------------------------------------------------------------
+# QA test-lead exclusions. Established 2026-09-24 BEFORE the offer-page test.
+# Owner-approved QA identity (2026-09-22). Every report, CPL/CPQL figure, offline
+# upload and conversion import built from WhatConverts or Gravity Forms data must drop
+# any lead matching ANY rule below. A QA lead is never a customer and never a conversion.
+# ---------------------------------------------------------------------------
+qa_exclusions:
+  identities:
+    - email: "walter@greenmarketingfl.com"
+      phone_e164: "+584242773462"
+  label_marker: "TEST - DO NOT DISPATCH"
+  known_qa_leads:
+    - {whatconverts_lead_id: "259273825", date: "2026-09-21", form: "gform_1 / 205016", page: "/gas-boiler-repair/"}
+    - {whatconverts_lead_id: "259911044", date: "2026-09-24", form: "gform_1 / 205016", page: "/no-heat-repair/", source: "(direct)/(none)", wc_spam_flag: "NOT SET - API v1 ignores spam; needs UI (session expired)"}
+    - {whatconverts_lead_id: "260008407", date: "2026-09-24", form: "gform_1 / 205016", page: "/thermostat-repair/", source: "(direct)/(none)", basis: "Green Marketing GTM preview QA (D3 v2 run)"}
+    - {whatconverts_lead_id: "260010083", date: "2026-09-24", form: "gform_1 / 205016", page: "/thermostat-repair/", source: "(direct)/(none)", basis: "Green Marketing GTM preview QA (D3 v3 Test B, transaction gm-mufxuuaq-qshjmly7)"}
+    - {whatconverts_lead_id: "260044129", date: "2026-09-24", form: "gform_1 / 205016", page: "/thermostat-replacement/", source: "(direct)/(none)", basis: "GTM D3 v4 Preview keyboard-submit QA (transaction gm-mug33og1-ue5t30q5)"}
+    - {whatconverts_lead_id: "260045995", date: "2026-09-24", form: "gform_1 / 205016", page: "/smart-thermostat/", source: "(direct)/(none)", basis: "live QA after GTM v16: no Ads/UET/GA4 lead event sent (QA suppression verified)"}
+  # Matched only through WhatConverts' contact-level phone, not a submitted field. NOT
+  # excluded until someone confirms they were tests (instruction 2026-09-24: exclude only
+  # documented QA leads).
+  unconfirmed_possible_qa:
+    - {whatconverts_lead_id: "259833415", date: "2026-09-23", form: "gform_1 / 205016", page: "/furnace-repair/", source: "GBP Traffic/(not set)", why_unconfirmed: "contact phone equals QA phone, text says test"}
+    - {whatconverts_lead_id: "259833872", date: "2026-09-23", form: "gform_1 / 205016", page: "/no-heat-repair/", source: "GBP Traffic/(not set)", why_unconfirmed: "contact phone equals QA phone, text says test"}
+    - {whatconverts_lead_id: "259834246", date: "2026-09-23", form: "gform_1 / 205016", page: "/heat-pump-repair/", source: "GBP Traffic/(not set)", why_unconfirmed: "contact phone equals QA phone, text says test"}
+    - {whatconverts_lead_id: "259834954", date: "2026-09-23", form: "gform_1 / 205016", page: "/heat-pump-replacement/", source: "GBP Traffic/(not set)", why_unconfirmed: "contact phone equals QA phone, text says test"}
+    - {whatconverts_lead_id: "259835623", date: "2026-09-23", form: "gform_1 / 205016", page: "/heat-pump-installation/", source: "GBP Traffic/(not set)", why_unconfirmed: "contact phone equals QA phone, text says test"}
+    - {whatconverts_lead_id: "260135247", date: "2026-09-25", form: "gform_1 / 205016", page: "/smart-thermostat/", source: "GBP Traffic/(not set)", why_unconfirmed: "contact phone equals QA phone; no marker, not documented as a test"}
+  submission_rules:
+    - "No URL parameters of any kind: no gclid, gbraid, wbraid, utm_*. The offer pages are behind a full-page proxy cache that replays server-populated attribution fields (input_1_9..15) to later visitors."
+    - "Before submitting, the browser must hold no Google click identifier (_gcl_aw, _gcl_gb, _gcl_dc, _gcl_ag) and the WhatConverts wc_client cookie must carry no cpc/gclid, so neither the Google Ads tag nor the WhatConverts integration can attach a real ad click."
+    - "Before submitting, every attribution hidden field in the chosen form must be empty. If any is populated, abort: it is another visitor's cached click."
+    - "Never click a paid ad and never upload a synthetic click ID."
+  enforcement:
+    reporting: "src/gm_gsa/whatconverts.py fetch_leads() requires client_yaml and drops QA leads (tests/test_qa_exclusions.py)"
+    whatconverts_ui: "DONE 2026-09-25: all 6 known_qa_leads marked Spam in the UI (verified: they now appear only in spam=true API results). API v1 ignores spam edits."
+    whatconverts_google_ads_upload: "All 6 showed Google Ads = Success -> WC Lead (sent on New Lead Received via ENHANCED CONVERSIONS, no click id). Accepted, NOT credited: 0 WC Lead conversions by conversion date since 2026-09-15. Blocked Emails would stop capture entirely (WC help), so it is not used; future QA tests need an owner decision (see ALLOCATION-PMAX-DECISION-2026-09-25.md)."
+    gtm_live: "GTM v16 suppresses Google Ads, Microsoft UET and GA4 lead events for submissions with the QA email or the TEST - DO NOT DISPATCH marker (verified live 2026-09-24, lead 260045995)"
+    google_ads: "No QA lead credited: 0 conversions of any action by conversion date 2026-09-21..25 (read 2026-09-24)"
+  after_capture:
+    - "Confirm the WhatConverts Google Ads status for the test lead is not Success."
+    - "Mark the WhatConverts test lead Spam so it drops out of WhatConverts reporting."
+    - "Record the lead id under known_qa_leads."

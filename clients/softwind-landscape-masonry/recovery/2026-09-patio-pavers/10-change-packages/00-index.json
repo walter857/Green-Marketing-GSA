@@ -1,0 +1,39 @@
+{
+  "PLAN-SLM-CONV-1": {
+    "fingerprint": "FB9DA2D017AD",
+    "objects": 2,
+    "label": "APPROVE-CONVERSIONS",
+    "operation_class": "CONVERSION_ACTION_PRIMARY_FLAG_CHANGE",
+    "dependencies": []
+  },
+  "PLAN-SLM-BID-1": {
+    "fingerprint": "50C553579EF3",
+    "objects": 2,
+    "label": "APPROVE-BIDDING",
+    "operation_class": "BIDDING_STRATEGY_FIELD_CHANGE",
+    "dependencies": []
+  },
+  "PLAN-SLM-BUD-1": {
+    "fingerprint": "D82341B7238E",
+    "objects": 2,
+    "label": "APPROVE-BUDGETS",
+    "operation_class": "CAMPAIGN_BUDGET_CHANGE",
+    "dependencies": []
+  },
+  "PLAN-SLM-KW-1": {
+    "fingerprint": "19FA5CBBB1E5",
+    "objects": 7,
+    "label": "APPROVE-KEYWORD-PAUSES",
+    "operation_class": "KEYWORD_STATUS_CHANGE",
+    "dependencies": []
+  },
+  "PLAN-SLM-NEG-1": {
+    "fingerprint": "0895911A8133",
+    "objects": 154,
+    "label": "APPROVE-NEGATIVES",
+    "operation_class": "CAMPAIGN_NEGATIVE_KEYWORD_CREATE",
+    "dependencies": [
+      "PLAN-SLM-KW-1 must execute and read back FIRST. The 'asphalt' PHRASE negative on Pavers collides with the seven keywords that plan pauses."
+    ]
+  }
+}

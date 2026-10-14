@@ -1,0 +1,269 @@
+# =============================================================================
+# APG-0917-GTM-K  --  unpublished GTM workspace, HOSTNAME CORRECTED
+# =============================================================================
+# SUPERSEDES APG-0917-GTM-D (FC0E0B156F60), which must not be executed.
+# Corrections:
+#   1. The Google Ads Calls from Website tag and its landing-page trigger are
+#      REMOVED entirely, not merely held. WhatConverts owns website-call
+#      measurement.
+#   2. The WhatConverts tracking script could NOT be retrieved, because the
+#      WhatConverts application requires an interactive login this browser
+#      profile does not have. A placeholder is forbidden, so the WhatConverts tag
+#      is not included and is recorded as a blocker instead.
+#
+# STATUS: NOT BUILDABLE YET. GTM-M545Z8T2 is installed on zero pages and both
+# target URLs return 404. This plan does NOT authorize Submit, version creation
+# or publication.
+# =============================================================================
+plan_id: APG-0917-GTM-K
+plan_kind: gtm_workspace
+generated: "2026-09-17"
+supersedes: APG-0917-GTM-F
+supersedes_fingerprint: DB9391A883A7
+supersedes_reason: >-
+  Hostname-dependent change only. The paid funnel lives on offer.apogeelawns.com, not
+  apogeelawns.com, so the thank-you trigger condition in DB9391A883A7 would never match.
+  Everything else is unchanged.
+partially_executed_under_db9391a883a7:
+  workspace: {name: "Apogee | PPC Tracking | 2026-09", id: "3", status: CREATED}
+  folder: {name: "Google Ads | Permanent Lights", status: CREATED}
+  built_in_variables: {status: ENABLED, ids: {page_url: "2147481602", page_hostname: "2147481603", page_path: "2147481604", referrer: "2147481605", event: "2147481606"}}
+  workspace_changes_observed: 1
+  remaining: ["DLV | lead_id", "TR | Custom Event | apg_permanent_lights_lead", "Google tag | AW-18453077620 | All Pages", "Google Ads | Lead | Permanent Lights Thank You"]
+
+container:
+  account_id: "6377231045"
+  container_id: "264326944"
+  public_id: "GTM-M545Z8T2"
+  name: "Apogee Lawns"
+  domain: "apogeelawns.com"   # container-level property, unchanged
+  type: Web
+  observed_2026_09_16:
+    tags: 0
+    triggers: 0
+    built_in_variables_enabled: 0
+    user_defined_variables: 0
+    workspace_changes: 0
+    pending_changes: {modified: 0, added: 0, deleted: 0}
+    container_quality_2026_09_16: "No Recent Data"
+    container_installed_2026_09_17: "YES - GTM-M545Z8T2 head snippet and noscript iframe both confirmed on https://offer.apogeelawns.com/"
+    default_workspace_id: "2"
+
+ads_destination:
+  id: "AW-18453077620"
+  proven_three_ways:
+    - "customer.conversion_tracking_setting.conversion_tracking_id = 18453077620"
+    - "customer.remarketing_setting.google_global_site_tag contains AW-18453077620"
+    - "conversion action 7772803337 tag snippet send_to = AW-18453077620/KOL7CImirvocEPS8jt9E"
+  never_derived_from_customer_id: true
+
+conversion_labels_from_stage_a:
+  form_lead:
+    action_id: "7772803337"
+    conversion_id: "18453077620"
+    conversion_label: "KOL7CImirvocEPS8jt9E"
+    send_to: "AW-18453077620/KOL7CImirvocEPS8jt9E"
+    used_in_this_plan: true
+  calls_from_ads:
+    action_id: "7773013199"
+    gtm_tag: NONE
+    reason: "Calls from ads are configured in Google Ads. They never get a GTM tag."
+  website_call:
+    action_id: "7773043879"
+    conversion_label: "lp3jCKf5vPocEPS8jt9E"
+    used_in_this_plan: false
+    reason: "WhatConverts owns website-call measurement. No Google tag will feed this action."
+
+workspace:
+  name: "Apogee | PPC Tracking | 2026-09"
+  folder: "Google Ads | Permanent Lights"
+  isolation_rule: >-
+    The container currently has 0 pending changes, so a clean isolated workspace is
+    available. If that is no longer true at build time, STOP and report rather than mixing
+    changes with someone else's work.
+
+built_in_variables_to_enable:
+  # The container has ZERO built-in variables enabled today.
+  - Page URL
+  - Page Hostname
+  - Page Path
+  - Referrer
+count_built_in: 4
+
+user_defined_variables:
+  - name: "DLV | lead_id"
+    type: "Data Layer Variable"
+    data_layer_variable_name: "lead_id"
+    version: 2
+    purpose: "transaction ID for form-lead deduplication"
+    conditional: >-
+      Created ONLY if the developer exposes a real unique non-PII lead ID in the thank-you
+      page data layer. If they cannot, this variable is not created, the form tag ships
+      without a transaction ID, and the deduplication limitation is documented rather than
+      faked with a static value.
+count_user_defined: 1
+
+tags:
+  - ordinal: 1
+    name: "Google tag | AW-18453077620 | All Pages"
+    type: "Google tag (googtag)"
+    tag_id: "AW-18453077620"
+    trigger: "Initialization - All Pages"
+    rationale: >-
+      No equivalent implementation exists anywhere on the site. Verified across 5 pages and
+      all 17 enqueued JS files: 0 GTM containers, 0 gtag, 0 dataLayer, 0 AW ids. Exactly one
+      sitewide Google tag is required.
+    conversion_linker: NOT_CREATED
+    conversion_linker_reason: >-
+      The Google tag with an Ads destination performs conversion linking itself. A separate
+      Conversion Linker would be redundant.
+
+  - ordinal: 2
+    name: "Google Ads | Lead | Permanent Lights Thank You"
+    type: "Google Ads Conversion Tracking"
+    conversion_id: "18453077620"
+    conversion_label: "KOL7CImirvocEPS8jt9E"
+    trigger: "TR | Custom Event | apg_permanent_lights_lead"
+    transaction_id: "{{DLV | lead_id}}"
+    transaction_id_conditional: "omitted entirely if no real lead ID exists"
+    fire_once: "Once per event"
+    send_no_pii: true
+    must_not_fire_on:
+      - "ordinary landing-page view"
+      - "form start"
+      - "validation error"
+      - "abandoned form"
+      - "spam or reCAPTCHA rejection"
+      - "failed server-side submission"
+      - "direct thank-you-page visit with no valid success state"
+      - "any unrelated form on the site"
+
+triggers:
+  - name: "TR | Custom Event | apg_permanent_lights_lead"
+    type: "Custom Event"
+    event_name: "apg_permanent_lights_lead"
+    conditions:
+      - "Page Hostname equals offer.apogeelawns.com"
+      - "Page Path matches RegEx ^/thank-you/permanent-christmas-lights/?$"
+    regex_note: >-
+      Anchored at both ends with only an optional trailing slash. Deliberately NOT
+      'Page URL contains thank-you', which would fire on any thank-you page for any service.
+  - name: "Initialization - All Pages"
+    type: "Built-in Initialization trigger"
+    created: false
+    note: "built in, not created by this plan"
+
+# -----------------------------------------------------------------------------
+removed_from_this_plan:
+  - object: "Google Ads | Call | Permanent Lights Website | 60s"
+    type: "Google Ads Calls from Website Conversion"
+    decision: NOT_CREATED
+    reason: >-
+      WhatConverts owns website-call measurement. This tag performs Google Forwarding
+      Number replacement on 402-526-5754, which is itself a WhatConverts tracking number.
+      Two replacement systems on one displayed number race each other and the loser
+      silently records nothing. Removed from the plan, not held.
+  - object: "TR | Page View | Permanent Lights Landing Page"
+    decision: NOT_CREATED
+    reason: >-
+      Existed only to fire the removed website-call tag. The sitewide Google tag already
+      covers the landing page, so no landing-page trigger is needed.
+  - object: "phone-click conversion tag"
+    decision: NEVER_CREATE
+    reason: "a tel link click is not a completed call and cannot prove duration"
+  - object: "duplicate Google tag"
+    decision: NEVER_CREATE
+  - object: "duplicate Conversion Linker"
+    decision: NEVER_CREATE
+  - object: "GA4 property, GA4 events, GA4-imported form conversion"
+    decision: NEVER_CREATE
+    reason: "a GA4 import would double-count the same lead against the native Google Ads action"
+  - object: "any PII variable"
+    decision: NEVER_CREATE
+  - object: "any placeholder URL, container ID or conversion label"
+    decision: NEVER_CREATE
+
+whatconverts_tag:
+  status: BLOCKED_NOT_INCLUDED
+  what_was_required: "the exact WhatConverts tracking script from the authenticated Apogee profile"
+  why_blocked: >-
+    app.whatconverts.com redirects to a login screen on this browser profile, and Claude
+    does not enter credentials to authenticate. The WhatConverts API credentials in the
+    environment are valid and confirm account 119788 "Apogee Lawns LLC" with exactly one
+    profile, 174313, but the v1 API exposes only accounts, profiles and leads. It does not
+    expose the tracking script, the dynamic number pool, or pricing.
+  why_no_placeholder: >-
+    A placeholder script or ID is explicitly forbidden and would be worse than absent,
+    because it could be published by mistake.
+  unblock: >-
+    Supply the exact WhatConverts tracking snippet for profile 174313, or give this browser
+    profile an authenticated WhatConverts session. The tag and any WhatConverts support
+    variables or triggers then go into a follow-on plan with its own fingerprint.
+
+object_counts_if_built:
+  built_in_variables_enabled: 4
+  user_defined_variables_created: 1
+  tags_created: 2
+  triggers_created: 1
+  folders_created: 1
+  workspaces_created: 1
+  versions_created: 0
+  versions_published: 0
+  google_ads_calls_from_website_tags: 0
+  phone_click_conversion_tags: 0
+  duplicate_google_tags: 0
+  conversion_linker_tags: 0
+  ga4_tags: 0
+  whatconverts_tags: 0
+  TOTAL_WORKSPACE_OBJECTS: 10
+
+paths:
+  landing_page: "/permanent-christmas-lights-lincoln-ne/"
+  landing_page_full: "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+  thank_you: "/thank-you/permanent-christmas-lights/"
+  thank_you_full: "https://offer.apogeelawns.com/thank-you/permanent-christmas-lights/"
+  hostname: "offer.apogeelawns.com"
+  both_currently: "HTTP 404 - developer work"
+
+preflight_before_build:
+  - "GTM-M545Z8T2 returns in Tag Assistant on the landing page AND the thank-you page"
+  - "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/ returns 200"
+  - "https://offer.apogeelawns.com/thank-you/permanent-christmas-lights/ returns 200"
+  - "a real test submission reaches the thank-you URL; a deliberate validation failure does NOT"
+  - "the dataLayer push fires with a real non-PII lead_id, or the developer confirms it cannot"
+  - "container still has 0 pending changes, so the workspace is cleanly isolated"
+
+preview_test_matrix:
+  - "standard site page - Google tag fires once, no conversion tag"
+  - "PPC landing page - Google tag fires once"
+  - "empty form submission - no conversion"
+  - "invalid form submission - no conversion"
+  - "successful labelled test lead - conversion fires exactly once"
+  - "thank-you redirect carries a valid success state"
+  - "direct thank-you visit with no success state - NO conversion"
+  - "thank-you refresh - same lead_id, deduplicated by transaction ID"
+  - "back-button navigation - no extra conversion"
+  - "mobile form submission"
+  - "mobile click-to-call behaviour - no conversion tag fires"
+  - "a page outside the PPC funnel - no conversion tag"
+
+publication:
+  status: NOT_AUTHORIZED_BY_THIS_PLAN
+  submit: false
+  create_version: false
+  publish: false
+  production_test_lead: false
+  requires: "a separate fingerprinted plan and the exact approval APPROVE APG TRACKING PUBLISH <fingerprint>"
+  version_name_when_approved: "Apogee | Google Ads Lead Tracking | 2026-09"
+
+consent_and_pii:
+  consent_platform_detected: NONE
+  rules:
+    - "do not invent consent defaults or install a CMP"
+    - "do not accept Customer Data Terms; accepted_customer_data_terms is false and stays false"
+    - "do not configure enhanced conversions in this phase"
+    - "no name, email, phone, ZIP or project note in any URL, event parameter or data layer value"
+
+wordpress:
+  touched: false
+  rule: "WordPress is the developer's. Claude does not sign in, edit, upload or purge cache."

@@ -1,0 +1,65 @@
+{
+ "plan_name": "AMB-0909-CPC-1",
+ "approval_class": "reversible-setting-change",
+ "generated_local": "2026-09-09T14:58:54.854563-04:00",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "AC Repair",
+  "related_services": [
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "summary": "Raise the CPC bid ceilings on HVAC Installation ($30 to $65) and HVAC Repair ($25 to $60). AC Repair's $25 ceiling is deliberately left in place.",
+ "object_count": 2,
+ "partial_failure": false,
+ "atomic": true,
+ "operations": [
+  {
+   "operation": "SET_MAXIMIZE_CLICKS_CPC_BID_CEILING",
+   "resource": "campaign",
+   "resource_id": "24132507747",
+   "resource_name": "HVAC Installation",
+   "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "current_state": "target_spend.cpc_bid_ceiling_micros = 30000000 ($30.00)",
+   "proposed_state": "target_spend.cpc_bid_ceiling_micros = 65000000 ($65.00)",
+   "field_mask": [
+    "target_spend.cpc_bid_ceiling_micros"
+   ],
+   "reason": "Post-keyword-swap window 2026-08-29..09-03 delivered 9 clicks, $425.61, 3 primary conversions, CPA $141.87 against a $280 max CPQL, with a maximum observed CPC of $62.13. The $30 ceiling set on 2026-09-04 took the campaign to 0 clicks in the 4 settled days that followed. $65 preserves every observed converting click with headroom.",
+   "modelled_effect": "at $60 the settled window retains 98.4% of clicks and 100% of conversions; at $30 it retains 75.8% of clicks and 0% of conversions",
+   "rollback": "set target_spend.cpc_bid_ceiling_micros back to 30000000",
+   "risk": "MEDIUM - restores paid delivery and therefore spend",
+   "unrelated_resource_assertion": "bidding_strategy_type stays TARGET_SPEND; budget, networks, geo, schedule, keywords, negatives and assets are not in the field mask and must be unchanged on readback"
+  },
+  {
+   "operation": "SET_MAXIMIZE_CLICKS_CPC_BID_CEILING",
+   "resource": "campaign",
+   "resource_id": "24132507750",
+   "resource_name": "HVAC Repair",
+   "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+   "current_state": "target_spend.cpc_bid_ceiling_micros = 25000000 ($25.00)",
+   "proposed_state": "target_spend.cpc_bid_ceiling_micros = 60000000 ($60.00)",
+   "field_mask": [
+    "target_spend.cpc_bid_ceiling_micros"
+   ],
+   "reason": "Median observed CPC $56.41; Keyword Planner top-of-page LOW for 'hvac repair near me' in the live footprint is $14.87 and HIGH is $97.88. The $25 ceiling retains 24% of clicks. $60 restores roughly half the click volume at a $36.47 blended CPC, inside the optimistic economic band while Quality Score (currently 2, landing-page experience BELOW_AVERAGE) is remediated.",
+   "modelled_effect": "at $60 the settled window retains 52% of clicks and 26% of spend",
+   "rollback": "set target_spend.cpc_bid_ceiling_micros back to 25000000",
+   "risk": "MEDIUM - restores paid delivery and therefore spend",
+   "unrelated_resource_assertion": "bidding_strategy_type stays TARGET_SPEND; budget, networks, geo, schedule, keywords, negatives and assets are not in the field mask and must be unchanged on readback"
+  }
+ ],
+ "notes": {
+  "evidence": "reports/ambient-cooling-heating/evidence/2026-09-09-cpc-model.json",
+  "ac_repair_deliberately_excluded": "AC Repair raw CPA is $616.97 against a $150 max CPQL. No modelled cap makes it profitable: $110 retains 3 of 5 conversions at CPA $298.35, $160 retains all five at CPA $365.82. Raising this ceiling would buy proven-unprofitable traffic, so the campaign is held at $25 pending Quality Score and landing-page work.",
+  "who_set_the_current_ceilings": "GOOGLE_ADS_WEB_CLIENT on 2026-09-04 16:56 America/New_York (owner, in the UI). Not an agency change.",
+  "delivery_impact_measured": "2026-08-14..09-03: $8,025.18, 172 clicks, 14 primary conversions. 2026-09-05..09-08: $45.08, 2 clicks, 0 primary conversions."
+ },
+ "fingerprint": "46C39C6B7091"
+}

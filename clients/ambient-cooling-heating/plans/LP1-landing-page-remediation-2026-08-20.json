@@ -1,0 +1,130 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-LP1-landing-page-remediation",
+ "version": "2026-08-20",
+ "priority": "P1",
+ "run_class": "DEVELOPER HANDOFF SPEC. READ + DRAFT ONLY. No website change has been made and none is authorized by this document.",
+ "change_control": "NO WEBSITE MUTATION WITHOUT A SEPARATE EXACT PACKAGE AND APPROVAL. This is a specification for the WordPress/Divi/Gravity Forms developer, not a change order.",
+ "client": {
+  "account": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "platform": "WordPress + Divi 5.10.1 + Gravity Forms 3.0.2",
+  "host_protection": "SiteGround SG-Captcha"
+ },
+ "scope_pages": [
+  "https://offer.ambientcoolingandheating.com/ac-repair/",
+  "https://offer.ambientcoolingandheating.com/hvac-repair/",
+  "https://offer.ambientcoolingandheating.com/hvac-installation/",
+  "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+  "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+ ],
+ "audit_method": "Playwright headless Chromium, Pixel 7 mobile viewport, JavaScript executing, GET navigations only. No form submitted, no telephone link clicked. A plain HTTP fetch is NOT valid on these pages: SG-Captcha serves non-JS clients an empty stub and produces false negatives.",
+ "what_is_already_correct": [
+  "H1 matches the service on all five pages and aligns with the campaign keyword.",
+  "Mobile speed is good: TTFB 104-108 ms, First Contentful Paint 328-420 ms, load 1.8-2.1 s.",
+  "GTM-PQTPQ436 present and firing on all five pages.",
+  "WhatConverts profile 105803 present on all five, setting wc_visitor, wc_client, wc_client_current and wc_swap.",
+  "gclid captured into cookies and localStorage, and _gcl_aw is set.",
+  "Above-the-fold CTAs present and correctly sized for touch on mobile."
+ ],
+ "defects": [
+  {
+   "id": "LP-1",
+   "priority": "P1-HIGH",
+   "title": "No Privacy Policy or Terms link on any page",
+   "current": "Zero links matching privacy or terms on all five pages.",
+   "proposed": "Add visible Privacy Policy and Terms links in the footer of all five offer pages and adjacent to the form submit button.",
+   "why": "Google lead-form and personal-data policies expect a privacy policy on pages that collect personal information. It is also a standard trust signal.",
+   "inference_caveat": "Google rates the HVAC Repair landing-page experience BELOW_AVERAGE. The missing privacy and terms links are a PLAUSIBLE CONTRIBUTOR. This is an INFERENCE, not a confirmed cause: Google does not disclose the inputs to that rating. Do not present it as proven causation.",
+   "test": "Both links visible and returning HTTP 200 on desktop and mobile, all five pages."
+  },
+  {
+   "id": "LP-2",
+   "priority": "P1-HIGH",
+   "title": "Three Gravity Forms per page, all carrying DOM id gform_1",
+   "current": "Every page renders 3 form elements all with id='gform_1'. Two visible, one hidden. Fields identical across all three: input_16 optional, plus input_1, input_4, input_3 and input_7 required.",
+   "proposed": "Render exactly ONE functional Gravity Form per page. If the layout needs a second placement, use a link or anchor to the single form, not a second form instance.",
+   "why": "Duplicate DOM ids are invalid HTML. They break GTM form triggers that select by id and make it ambiguous which instance a submission came from. This is the most likely source of unreliable form-conversion measurement.",
+   "test": "document.querySelectorAll('form').length === 1 on every page, and one submission produces exactly one Gravity Forms entry and one GTM event."
+  },
+  {
+   "id": "LP-3",
+   "priority": "P1-HIGH",
+   "title": "The form posts no click identifier - the biggest measurement gap in the account",
+   "current": "The only hidden fields present are gform_source_page_number_1. There is no gclid, gbraid, wbraid or UTM hidden field on the form.",
+   "proposed": "Add hidden fields populated on page load from the query string with a cookie fallback, posted with every submission: gclid, gbraid, wbraid, utm_source, utm_medium, utm_campaign, utm_term, utm_content, plus campaign id, ad group id, keyword, device, landing page URL and a generated unique lead id.",
+   "why": "The CRM currently receives leads with no click identifier, so a lead cannot be tied back to the click that produced it. WhatConverts captures the IDs in its own cookies, but the Gravity Forms post does not carry them. Without this there is no reliable offline-conversion path and no way to compute a true cost per qualified lead.",
+   "unique_lead_id": "Generate a UUID v4 per submission, store it on the entry, and pass it to both GTM and WhatConverts so the same lead can be deduplicated across systems.",
+   "test": "Load with ?gclid=TEST&utm_source=google&utm_medium=cpc&utm_campaign=x, submit, and confirm every value arrives in the Gravity Forms entry and the dataLayer."
+  },
+  {
+   "id": "LP-4",
+   "priority": "P2",
+   "title": "Malformed tel: hrefs",
+   "current": "Two of the three telephone links use non-E.164 formats: 'tel:4107056354' (no country code) and 'tel:(410) 705-6354' (unencoded parentheses and space).",
+   "proposed": "Use tel:+14107056354 for every hardcoded telephone link on all five pages.",
+   "why": "Non-E.164 tel hrefs can fail to dial correctly on some handsets and dialers.",
+   "phone_architecture_to_preserve": {
+    "approved_paid_number": "(410) 705-6354 / +14107056354 - the hardcoded base and fallback on every paid landing page, and the number on Google Ads call asset 407995613637. This is what must appear in the server HTML.",
+    "whatconverts_dni": "(410) 914-1456 - injected at runtime by WhatConverts profile 105803. CORRECT AND EXPECTED. Do NOT remove it and do NOT treat it as a defect. It is the session-level tracking number.",
+    "main_site_number": "(410) 761-0932 - allowed on ambientcoolingandheating.com only. It MUST NOT appear anywhere on offer.ambientcoolingandheating.com or on the paid call asset.",
+    "verification": "After the change, fetch the raw server HTML of all five offer pages and confirm zero occurrences of 4107610932 in any format."
+   },
+   "test": "Every hardcoded tel href equals tel:+14107056354, WhatConverts still swaps at runtime, and no 410-761-0932 appears anywhere in the offer subdomain."
+  },
+  {
+   "id": "LP-5",
+   "priority": "P2",
+   "title": "Confirm form success fires exactly once",
+   "current": "Not testable read-only: verifying it requires submitting a form, which was not authorized.",
+   "proposed": "Instrument the Gravity Forms confirmation so the GTM success event fires once per submission, and confirm the thank-you state does not re-fire on reload, back-navigation or a second confirmation render.",
+   "why": "Conversion action 6885463625 is ONE_PER_CLICK so Google deduplicates within a click, but a double-firing tag still corrupts GA4 and WhatConverts counts.",
+   "test": "Submit once on desktop and once on mobile; confirm exactly one dataLayer success event, one Gravity Forms entry, one WhatConverts lead and one Google Ads conversion."
+  }
+ ],
+ "must_not_change": [
+  "GTM container GTM-PQTPQ436 - keep installed and firing exactly as now.",
+  "WhatConverts profile 105803 and its dynamic number insertion - keep.",
+  "The H1 text on any page - all five are correctly aligned to their service.",
+  "Page availability - all five pages stay reachable and submittable 24 hours a day, seven days a week. Only paid Google Ads delivery is time-restricted.",
+  "The approved paid number (410) 705-6354 as the hardcoded base and fallback."
+ ],
+ "test_matrix": {
+  "viewports": [
+   "desktop 1440x900",
+   "mobile 390x844 and 412x915"
+  ],
+  "browsers": [
+   "Chrome current",
+   "Safari iOS current"
+  ],
+  "pages": "all five offer-subdomain pages",
+  "cases": [
+   "privacy and terms links visible and resolving",
+   "exactly one form element per page and every HTML id unique",
+   "gclid, gbraid, wbraid and all five UTMs captured and posted",
+   "unique lead id generated and passed to GTM and WhatConverts",
+   "form success fires exactly once",
+   "tel href is E.164 and the WhatConverts swap still functions",
+   "no 410-761-0932 anywhere in the offer subdomain",
+   "GTM and WhatConverts still load and fire"
+  ]
+ },
+ "acceptance_criteria": [
+  "document.querySelectorAll('form').length === 1 on each of the five pages.",
+  "No duplicate id attribute anywhere in the DOM, validated with the W3C checker.",
+  "A test load carrying gclid and UTMs results in every value present in the entry.",
+  "Exactly one conversion event per submission across GTM, GA4, WhatConverts and Google Ads.",
+  "Privacy Policy and Terms links present and returning HTTP 200 from all five pages.",
+  "Raw server HTML of all five pages contains zero occurrences of 4107610932.",
+  "All hardcoded tel links equal tel:+14107056354.",
+  "GTM-PQTPQ436 and WhatConverts 105803 still present and firing after every change."
+ ],
+ "rollback_plan": "All changes are WordPress/Divi template and Gravity Forms configuration edits. Take a full staging snapshot and database backup before any edit, and stage every change before production. Rollback is a template and form configuration restore from that snapshot.",
+ "google_ads_impact": {
+  "mutations": 0,
+  "note": "This package contains ZERO Google Ads mutations. Final URLs, ads, keywords, assets, budgets and conversion actions are unchanged. It needs a website change approval, not a Google Ads approval."
+ },
+ "expected_benefit": "LP-3 restores click-to-lead attribution, the precondition for a real cost per qualified lead and for any offline conversion import. LP-2 makes form-conversion measurement trustworthy. LP-1 closes a policy gap and may contribute to the HVAC Repair landing-page experience rating, though that link is an inference and not proven.",
+ "risk": "MEDIUM. Touching Gravity Forms and Divi templates on live lead-capture pages can break submissions if done directly in production. Staging is mandatory, and a real submission must be verified end to end on staging before release.",
+ "plan_fingerprint": "56813A733CBA555A"
+}

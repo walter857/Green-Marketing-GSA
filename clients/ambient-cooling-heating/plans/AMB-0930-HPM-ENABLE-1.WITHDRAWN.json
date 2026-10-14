@@ -1,0 +1,241 @@
+{
+ "plan": "AMB-0930-HPM-ENABLE-1",
+ "target": {
+  "child_customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live"
+ },
+ "work_order": "clients/ambient-cooling-heating/work-orders/work-order-heat-pump-maintenance-2026-09-30.yaml",
+ "approval_type": "SEPARATE EXPLICIT ENABLE APPROVAL, only after Phase 6 readback QA",
+ "requires": {
+  "executed_first": "AMB-0930-HPM-BUDGET-1",
+  "receipt": "receipts/AMB-0930-HPM-BUDGET-1-EXECUTED.json with readback_fail == 0"
+ },
+ "preconditions": {
+  "campaign": {
+   "id": "24268690038",
+   "status": "ENABLED",
+   "budget_micros_required": 30000000
+  },
+  "ad_group": {
+   "id": "204129717567",
+   "status": "ENABLED",
+   "name": "SKAG | Heat Pump Maintenance",
+   "campaign": "24268690038"
+  },
+  "ads": {
+   "825863405664": {
+    "status": "PAUSED",
+    "type": "RESPONSIVE_SEARCH_AD",
+    "urls": [
+     "https://offer.ambientcoolingandheating.com/heat-pump-maintenance/"
+    ],
+    "approval": "APPROVED",
+    "topics": []
+   },
+   "825863405667": {
+    "status": "PAUSED",
+    "type": "RESPONSIVE_SEARCH_AD",
+    "urls": [
+     "https://offer.ambientcoolingandheating.com/heat-pump-maintenance/"
+    ],
+    "approval": "APPROVED",
+    "topics": []
+   }
+  },
+  "enabled_ads_before": 0,
+  "keywords": [
+   {
+    "text": "heat pump maintenance",
+    "match": "EXACT",
+    "status": "ENABLED",
+    "approval": "APPROVED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "heat pump maintenance",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "APPROVED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "heat pump tune up",
+    "match": "EXACT",
+    "status": "ENABLED",
+    "approval": "APPROVED",
+    "serving": "ELIGIBLE"
+   }
+  ],
+  "ad_group_negatives": [
+   {
+    "text": "boiler",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "UNSPECIFIED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "ductless",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "UNSPECIFIED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "furnace",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "UNSPECIFIED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "geothermal",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "UNSPECIFIED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "installation",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "UNSPECIFIED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "installers",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "UNSPECIFIED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "mini split",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "UNSPECIFIED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "repair",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "UNSPECIFIED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "replacement",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "UNSPECIFIED",
+    "serving": "ELIGIBLE"
+   },
+   {
+    "text": "thermostat",
+    "match": "PHRASE",
+    "status": "ENABLED",
+    "approval": "UNSPECIFIED",
+    "serving": "ELIGIBLE"
+   }
+  ],
+  "labels_on_ad_group": [
+   "DEFERRED_BUDGET"
+  ],
+  "label_exists": {
+   "MAINTENANCE_TEST": false,
+   "DEFERRED_BUDGET": "22294514687"
+  },
+  "hp_maintenance_sitelink_link": [
+   "PAUSED"
+  ],
+  "landing_page_gate": {
+   "gate": "PASS_WITH_DEFECTS",
+   "http": 200,
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-maintenance/",
+   "forms": [
+    "gform_1"
+   ],
+   "rendered_761": 0,
+   "tel_ok": true
+  },
+  "negative_reachability": {
+   "real_conflicts": 1,
+   "all_are_intended_routing": true
+  }
+ },
+ "operations": [
+  {
+   "op": "CREATE",
+   "resource": "label",
+   "temp_id": -1,
+   "name": "MAINTENANCE_TEST",
+   "description": "Maintenance service re-admitted 2026-09-30 as a monitored test with its own budget room"
+  },
+  {
+   "op": "CREATE",
+   "resource": "ad_group_label",
+   "ad_group": "204129717567",
+   "label": "temp:-1"
+  },
+  {
+   "op": "REMOVE",
+   "resource": "ad_group_label",
+   "ad_group": "204129717567",
+   "label_id": "22294514687"
+  },
+  {
+   "op": "UPDATE",
+   "resource": "ad_group_ad",
+   "ad_group": "204129717567",
+   "ad": "825863405664",
+   "field": "status",
+   "from": "PAUSED",
+   "to": "ENABLED"
+  },
+  {
+   "op": "UPDATE",
+   "resource": "ad_group_ad",
+   "ad_group": "204129717567",
+   "ad": "825863405667",
+   "field": "status",
+   "from": "PAUSED",
+   "to": "ENABLED"
+  }
+ ],
+ "not_changed": [
+  "keywords (3 already ENABLED)",
+  "ad-group routing negatives (10)",
+  "final URLs",
+  "HP Maintenance sitelink stays PAUSED",
+  "budgets and CPC ceilings",
+  "conversion goals",
+  "every other ad group"
+ ],
+ "stop_loss": [
+  "pause both ads if HP Maintenance spend >= $300 with no WhatConverts lead carrying a click id",
+  "pause both ads if Heat Pump campaign search_budget_lost_impression_share > 10% over 7 complete days",
+  "pause both ads if Heat Pump Repair/Installation/Replacement impressions fall > 30% vs the 14 days before enablement while Maintenance takes > 30% of campaign spend",
+  "pause both ads if either ad or the page picks up a policy limit or the page fails QA"
+ ],
+ "checkpoints": [
+  "day 2",
+  "day 7",
+  "day 14"
+ ],
+ "readback_assertions": [
+  "label MAINTENANCE_TEST exists and is linked to 204129717567",
+  "DEFERRED_BUDGET no longer linked to 204129717567",
+  "ads 825863405664 and 825863405667 ENABLED, final URL == canonical, approval APPROVED",
+  "enabled RSAs in 204129717567 == 2 (cap 3)",
+  "3 keywords ENABLED/ELIGIBLE, 10 negatives unchanged",
+  "HP campaign budget $30 / ceiling $35 / Mon-Fri 08-16 / 75 presence targets unchanged",
+  "sitelink 424481133551 link still PAUSED",
+  "no other ad group or ad changed"
+ ],
+ "fingerprint": "90C7E29E61BA",
+ "operation_count": 5,
+ "validate_only": "VALIDATE_OK",
+ "generated_local": "2026-09-30T12:19:43.438853-04:00",
+ "errors": [],
+ "status": "WITHDRAWN 2026-09-30b - NEVER EXECUTE. Superseded by the client CPL requirement (target $280, ceiling $350); Heat Pump Maintenance is on HOLD. The approval code must not be reused."
+}

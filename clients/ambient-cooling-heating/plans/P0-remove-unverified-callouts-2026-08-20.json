@@ -1,0 +1,54 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-D-remove-unverified-account-callouts",
+ "version": "2026-08-20",
+ "priority": "P0",
+ "run_class": "READ + DRAFT + VALIDATE-ONLY. No mutation performed.",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "problem": "Two ACCOUNT-LEVEL callout assets make claims the client file explicitly bars. Because they are linked at customer level they serve on EVERY campaign, including all five live Search campaigns.",
+ "current_state": [
+  {
+   "asset_id": "89063098370",
+   "text": "Get Free Online Quote",
+   "verdict": "KEEP - matches the only verified offer in client.yaml (free quote)."
+  },
+  {
+   "asset_id": "89063098373",
+   "text": "Licensed & Insured",
+   "verdict": "REMOVE LINK - client.yaml barred_claims includes license_number_claim and insurance_claim. No licence number or certificate of insurance is recorded as verified anywhere in the client file."
+  },
+  {
+   "asset_id": "89063098376",
+   "text": "Claim Your Discount",
+   "verdict": "REMOVE LINK - client.yaml barred_claims includes discount_or_dollar_offer, and verified_offers states the only published offer is a free quote with no price, discount or dollar value."
+  }
+ ],
+ "proposed_state": "Only 'Get Free Online Quote' remains linked at account level. The five campaigns keep their five campaign-level callouts (Clear Recommendations, Clear Service Options, Local Maryland Service, Professional Technicians, Prompt, Reliable Service), all of which are consistent with verified facts.",
+ "evidence": "customer_asset returned exactly 3 ENABLED CALLOUT links, all ELIGIBLE and all inherited by the five campaigns. client.yaml offer.barred_claims lists license_number_claim, insurance_claim and discount_or_dollar_offer among claims that must not be used until the client verifies them in writing.",
+ "expected_benefit": "Removes two unverifiable public claims from every ad the account serves. Reduces policy and truth-in-advertising exposure. No delivery loss: callouts do not affect eligibility.",
+ "risk": "LOW. Callout assets are additive; removing two of eight leaves six callouts serving. If the client later supplies a licence number and certificate of insurance, the claim can be re-created with evidence on file.",
+ "affected_resources": [
+  "customers/2401959466/customerAssets/89063098373~CALLOUT",
+  "customers/2401959466/customerAssets/89063098376~CALLOUT"
+ ],
+ "mutation_counts": {
+  "creates": 0,
+  "updates": 0,
+  "removals": 2,
+  "total_mutations": 2,
+  "assets_deleted": 0,
+  "note": "Removes the customer-level LINK only. The underlying assets are not deleted and stay available for re-linking."
+ },
+ "rollback_plan": "Re-create the two customer_asset links with field_type CALLOUT referencing assets 89063098373 and 89063098376. 2 mutations, immediate.",
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 2,
+  "errors": 0
+ },
+ "plan_fingerprint": "A21587057F5C113E"
+}

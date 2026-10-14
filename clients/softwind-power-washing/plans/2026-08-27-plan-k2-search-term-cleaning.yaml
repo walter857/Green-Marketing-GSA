@@ -1,0 +1,392 @@
+# PLAN-K2 - SEARCH-TERM CLEANING - VOID
+#
+# VOID 2026-08-27. NEVER EXECUTED. Zero external changes.
+# Replaced by PLAN-K2A (A43B407B84F9) and PLAN-K2B (1833A2B64E57).
+# Retained for the audit trail only.
+
+change_plan:
+  plan_id: PLAN-K2
+  plan_title: Search-term cleaning - ad-group exact and campaign phrase negatives
+  approval_type: NEGATIVES
+  priority: P1
+  approval_status: VOID
+  execution_status: VOID - NEVER EXECUTED
+  ads_mutation_count: 9
+  requires_separate_enable_approval: false
+  goes_live_immediately: YES. Negative keywords take effect the moment they are created. There is
+    no paused state for a negative, which is why this plan is separate from every create-paused plan
+    and carries its own fingerprint.
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  request_as_received: Clean all search terms, add as many as negative based on their ad group's keywords
+    and landing-page intention, and add bad search terms as EXACT match inside each ad group so they
+    show as excluded in the ad-group search-term report.
+  headline_finding_the_owner_should_read_first: 'THERE IS VERY LITTLE TO CLEAN, AND ''AS MANY AS POSSIBLE''
+    IS THE WRONG TARGET FOR THIS ACCOUNT. Of 56 ad-group x search-term pairs, 49 (87.5%) are in-scope
+    power-washing intent, carrying 90 of 100 clicks and $282.74 of $318.05 in matched cost. Only 4
+    pairs are genuinely out of scope and only ONE of them ever cost money. This account holds 43-70%
+    impression share and Google reports campaign B as LIMITED_BY_INVENTORY: it is starved of volume,
+    not drowning in junk. Every unnecessary negative removes reach from an account that just started
+    delivering. The five ad-group negatives below are the complete defensible list, not a shortlist.'
+  classification_method:
+    approach: WHITELIST-FIRST. A positive in-scope vocabulary for the approved Power Washing service
+      family was defined; anything failing it was bucketed by the reason it failed. No blocklist was
+      imported or written.
+    corpus:
+      distinct_terms: 45
+      ad_group_term_pairs: 56
+      total_impressions: 155
+      total_clicks: 10
+      total_cost: 318.05
+    buckets:
+      COMMERCIAL_INDUSTRIAL:
+        pairs: 2
+        impressions: 6
+        clicks: 1
+        cost: 35.31
+      EXCLUDED_SERVICE:
+        pairs: 2
+        impressions: 3
+        clicks: 0
+        cost: 0.0
+      IN_SCOPE_SERVICE:
+        pairs: 49
+        impressions: 140
+        clicks: 9
+        cost: 282.74
+      IN_SCOPE_SURFACE:
+        pairs: 2
+        impressions: 3
+        clicks: 0
+        cost: 0.0
+      UNCLASSIFIED:
+        pairs: 1
+        impressions: 3
+        clicks: 0
+        cost: 0.0
+    protected_terms_never_negatived:
+    - near me
+    - near you
+    - quote
+    - price
+    - pricing
+    - cost
+    - best
+    - hire
+    - local
+    - emergency
+    - estimate
+    - free
+    - cheap
+    - affordable
+    - company
+    - service
+    - services
+    - contractor
+    - professional
+    - residential
+    protected_terms_note: CLAUDE.md forbids auto-negativing these. Several appear inside the proposed
+      negatives - 'near me' is in four of the five - but each is negatived as a COMPLETE EXACT PHRASE,
+      never as a token. 'gas station pressure washing near me' EXACT does not block 'power washing
+      near me'.
+    collision_check: Every proposed negative was tested against all 55 distinct live keyword texts.
+      ZERO collisions. No proposed negative blocks any live keyword in any ad group.
+    evidence:
+    - audits/2026-08-27-search-term-classification.json
+    - audits/2026-08-27-negative-candidates.csv
+  deliberately_kept_not_negatived:
+  - term: jet wash near me
+    impressions: 3
+    clicks: 0
+    verdict: KEEP
+    why: '''Jet wash'' is a common synonym for pressure washing, not an out-of-scope intent. It is
+      in fact a KEYWORD OPPORTUNITY, not a negative - it currently reaches the account only through
+      a close variant.'
+  - term: outdoor house cleaning services near me
+    impressions: 2
+    clicks: 0
+    verdict: KEEP
+    why: '''Outdoor'' qualifies this as exterior washing, which is the approved service. Contrast
+      with ''house cleaning services near me'', which lacks the qualifier and IS negatived.'
+  - term: all remaining in-scope terms
+    count: 49
+    verdict: KEEP
+    why: Core BOFU power-washing and pressure-washing intent, correctly matched to the ad group's
+      keywords and to an offer-subdomain landing page for the same service.
+  why_two_tiers: 'K2-01 does exactly what was asked: ad-group EXACT negatives, which make each term
+    show as Excluded in that ad group''s search-term report. But an ad-group exact negative only stops
+    the term in ONE ad group - the same query can still be served by another ad group whose keyword
+    also close-variant matches it. K2-02 adds two campaign-level PHRASE negatives for the two genuinely
+    excluded themes, so the leak cannot simply move. Both were collision-tested against every live
+    keyword.'
+  commercial_intent_held_out: No broad 'commercial' negative is proposed. Whether Softwind takes commercial
+    work is still unanswered (K1-W2). A broad phrase negative could block real revenue, so only the
+    single observed exact query is negatived. Answer K1-W2 and the theme can be handled properly -
+    either a campaign phrase negative, or its own ad group and landing page.
+  actions:
+  - action_id: K2-01-01
+    priority: P1
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_NEGATIVE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: '202870585390'
+    resource_id: ad_group 202870585390 negative keyword
+    current_value: not present as a negative in this ad group
+    proposed_value:
+      keyword_text: gas station pressure washing near me
+      match_type: EXACT
+      negative: true
+    ad_group_name: Power Washing Near Me
+    ad_group_status: ENABLED
+    bucket: COMMERCIAL_INDUSTRIAL
+    confidence: HIGH
+    observed_impressions: 4
+    observed_clicks: 1
+    observed_cost: 35.31
+    why: Industrial forecourt degreasing. The ad group's landing page is residential power washing
+      in Islip / West Islip / Dix Hills. This single query took $35.31 - the most expensive out-of-scope
+      click in the account's history.
+    blocks_live_keyword: false
+    rollback: Remove the ad_group_criterion negative.
+    object_count: 1
+  - action_id: K2-01-02
+    priority: P1
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_NEGATIVE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: '202870585390'
+    resource_id: ad_group 202870585390 negative keyword
+    current_value: not present as a negative in this ad group
+    proposed_value:
+      keyword_text: commercial power washing company near me
+      match_type: EXACT
+      negative: true
+    ad_group_name: Power Washing Near Me
+    ad_group_status: ENABLED
+    bucket: COMMERCIAL_INDUSTRIAL
+    confidence: MEDIUM - depends on K1-W2
+    observed_impressions: 2
+    observed_clicks: 0
+    observed_cost: 0.0
+    why: Commercial intent against a residential landing page. Kept as a NARROW exact negative rather
+      than a broad 'commercial' phrase negative precisely because whether Softwind takes commercial
+      work is still unanswered (K1-W2). This blocks one exact query, not the commercial theme, and
+      is trivially reversible.
+    blocks_live_keyword: false
+    rollback: Remove the ad_group_criterion negative.
+    object_count: 1
+  - action_id: K2-01-03
+    priority: P1
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_NEGATIVE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: '202870585590'
+    resource_id: ad_group 202870585590 negative keyword
+    current_value: not present as a negative in this ad group
+    proposed_value:
+      keyword_text: roof washing near me
+      match_type: EXACT
+      negative: true
+    ad_group_name: Power Washing Company Near Me
+    ad_group_status: ENABLED
+    bucket: EXCLUDED_SERVICE
+    confidence: HIGH
+    observed_impressions: 2
+    observed_clicks: 0
+    observed_cost: 0.0
+    why: Roof cleaning is named in work-order.yaml excluded_services. Not an approved service under
+      this work order.
+    blocks_live_keyword: false
+    rollback: Remove the ad_group_criterion negative.
+    object_count: 1
+  - action_id: K2-01-04
+    priority: P1
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_NEGATIVE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: '202870585910'
+    resource_id: ad_group 202870585910 negative keyword
+    current_value: not present as a negative in this ad group
+    proposed_value:
+      keyword_text: slate roof cleaning near me
+      match_type: EXACT
+      negative: true
+    ad_group_name: House Washing Company Near Me
+    ad_group_status: PAUSED
+    bucket: EXCLUDED_SERVICE
+    confidence: HIGH
+    observed_impressions: 1
+    observed_clicks: 0
+    observed_cost: 0.0
+    why: Roof cleaning, explicitly excluded. The ad group is currently PAUSED so this negative is
+      inert today; it is added as hygiene so the term cannot leak if the ad group is ever re-enabled.
+    blocks_live_keyword: false
+    rollback: Remove the ad_group_criterion negative.
+    object_count: 1
+  - action_id: K2-01-05
+    priority: P1
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_NEGATIVE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: '202870585910'
+    resource_id: ad_group 202870585910 negative keyword
+    current_value: not present as a negative in this ad group
+    proposed_value:
+      keyword_text: house cleaning services near me
+      match_type: EXACT
+      negative: true
+    ad_group_name: House Washing Company Near Me
+    ad_group_status: PAUSED
+    bucket: INTERIOR_CLEANING
+    confidence: MEDIUM - judgment call
+    observed_impressions: 1
+    observed_clicks: 0
+    observed_cost: 0.0
+    why: '''House cleaning services'' without an exterior qualifier reads as interior maid service,
+      against a /house-washing-company/ exterior landing page. Note the contrast with ''outdoor house
+      cleaning services near me'', which IS kept - the word ''outdoor'' resolves the ambiguity in
+      favour of the approved service.'
+    blocks_live_keyword: false
+    rollback: Remove the ad_group_criterion negative.
+    object_count: 1
+  - action_id: K2-02-01-1039
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: null
+    resource_id: campaign 24103511039 negative keyword
+    current_value: not present as a campaign negative
+    proposed_value:
+      keyword_text: roof
+      match_type: PHRASE
+      negative: true
+    confidence: HIGH
+    why: 'Roof cleaning is an excluded service. Verified against all 55 distinct live keyword texts:
+      ZERO contain ''roof'', so this blocks no live keyword. Stops the excluded theme leaking into
+      any other ad group, which an ad-group exact negative cannot do.'
+    blocks_live_keyword: false
+    rollback: Remove the campaign_criterion negative.
+    object_count: 1
+  - action_id: K2-02-01-3510
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    ad_group_id: null
+    resource_id: campaign 24145053510 negative keyword
+    current_value: not present as a campaign negative
+    proposed_value:
+      keyword_text: roof
+      match_type: PHRASE
+      negative: true
+    confidence: HIGH
+    why: 'Roof cleaning is an excluded service. Verified against all 55 distinct live keyword texts:
+      ZERO contain ''roof'', so this blocks no live keyword. Stops the excluded theme leaking into
+      any other ad group, which an ad-group exact negative cannot do.'
+    blocks_live_keyword: false
+    rollback: Remove the campaign_criterion negative.
+    object_count: 1
+  - action_id: K2-02-02-1039
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: null
+    resource_id: campaign 24103511039 negative keyword
+    current_value: not present as a campaign negative
+    proposed_value:
+      keyword_text: gas station
+      match_type: PHRASE
+      negative: true
+    confidence: HIGH
+    why: 'Industrial forecourt work. Verified against all 55 live keyword texts: ZERO contain ''gas
+      station''. Prevents the same $35.31 mistake recurring through a different ad group.'
+    blocks_live_keyword: false
+    rollback: Remove the campaign_criterion negative.
+    object_count: 1
+  - action_id: K2-02-02-3510
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    ad_group_id: null
+    resource_id: campaign 24145053510 negative keyword
+    current_value: not present as a campaign negative
+    proposed_value:
+      keyword_text: gas station
+      match_type: PHRASE
+      negative: true
+    confidence: HIGH
+    why: 'Industrial forecourt work. Verified against all 55 live keyword texts: ZERO contain ''gas
+      station''. Prevents the same $35.31 mistake recurring through a different ad group.'
+    blocks_live_keyword: false
+    rollback: Remove the campaign_criterion negative.
+    object_count: 1
+  change_counts:
+    ad_group_negatives_added: 5
+    campaign_negatives_added: 4
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    keywords_changed: 0
+    ads_changed: 0
+    assets_changed: 0
+    locations_changed: 0
+    schedules_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 9
+  expected_effect:
+    spend_impact: Slightly NEGATIVE on volume and roughly neutral to positive on quality. The negatived
+      terms account for 10 impressions and 1 click ($35.31) across the whole month. Removing them
+      will not meaningfully reduce August spend, and it prevents repeat purchases of the single worst
+      click type in the account.
+    does_not_help_the_2500_goal: This plan does not move the spend goal and is not intended to. It
+      protects quality. The $2,500 goal remains unreachable for the reasons in the 2026-08-27 delivery
+      diagnosis.
+    search_term_report: Each negatived term will show as Excluded in the ad-group search-term report,
+      which is what was asked for.
+  readback_qa:
+  - Re-read ad_group_criterion negatives and assert the 5 new EXACT negatives exist on the named ad
+    groups.
+  - Re-read campaign_criterion negatives and assert 94 + 4 = 98.
+  - Assert the live keyword count is still 214 and none became ineligible.
+  - Assert budgets, CPC ceilings, bidding, locations, schedules, ads and assets are all unchanged.
+  - Re-run the search-term classifier after 7 days and confirm the negatived terms no longer appear
+    as serving.
+  rollback: Remove the created negative criteria. No positive keyword, ad, asset, budget or setting
+    is touched by this plan.
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  fingerprint: 57FECB3D6901
+  approval_phrase: APPROVE PLAN-K2 57FECB3D6901 FOR 1521725229
+  void_record:
+    voided_on: '2026-08-27'
+    voided_by: Walter Correa challenge, agent confirmed
+    fingerprint_voided: 57FECB3D6901
+    reasons:
+    - 'NARRATIVE ERROR: stated the in-scope buckets carried ''90 of 100 clicks''. True value is 9
+      of 10. Wrong by a factor of 10. The COST figures ($282.74 of $318.05) were correct. Cause: a
+      hand-written sentence in the plan builder that was never re-derived from the classifier output.'
+    - 'MISSING CAVEAT: presented search_term_view percentages as if they described the account. search_term_view
+      covers only 76.9% of clicks and 83.2% of impressions; Google withholds the rest below its privacy
+      threshold. Corpus shares are not account shares.'
+    - 'BUNDLING: mixed negatives settled by the validated work order (roof, interior cleaning) with
+      negatives that depend on an unanswered client question (commercial scope). One approval could
+      not express both.'
+    replaced_by:
+    - PLAN-K2A A43B407B84F9
+    - PLAN-K2B 1833A2B64E57
+    external_changes_made_under_this_plan: 0

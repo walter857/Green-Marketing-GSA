@@ -1,0 +1,57 @@
+{
+  "readback_at": "2026-09-03T23:52:51.437640-04:00",
+  "expected_suffix": "utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}&utm_matchtype={matchtype}&utm_device={device}",
+  "rows": [
+    {
+      "campaign_id": "23484545411",
+      "name": "Hardscaping",
+      "suffix_before": null,
+      "suffix_after": null,
+      "expected": null,
+      "ok": true
+    },
+    {
+      "campaign_id": "23484806108",
+      "name": "Patio",
+      "suffix_before": null,
+      "suffix_after": "utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}&utm_matchtype={matchtype}&utm_device={device}",
+      "expected": "utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}&utm_matchtype={matchtype}&utm_device={device}",
+      "ok": true
+    },
+    {
+      "campaign_id": "23914857298",
+      "name": "Paver Sealing",
+      "suffix_before": null,
+      "suffix_after": null,
+      "expected": null,
+      "ok": true
+    },
+    {
+      "campaign_id": "23489296528",
+      "name": "Pavers",
+      "suffix_before": null,
+      "suffix_after": "utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}&utm_matchtype={matchtype}&utm_device={device}",
+      "expected": "utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}&utm_matchtype={matchtype}&utm_device={device}",
+      "ok": true
+    },
+    {
+      "campaign_id": "23914859260",
+      "name": "Power Washing",
+      "suffix_before": null,
+      "suffix_after": null,
+      "expected": null,
+      "ok": true
+    },
+    {
+      "campaign_id": "23489591905",
+      "name": "Retaining Walls",
+      "suffix_before": null,
+      "suffix_after": null,
+      "expected": null,
+      "ok": true
+    }
+  ],
+  "verdict": "PASS",
+  "clickcease_template_intact": true,
+  "rollback": "clear campaign.final_url_suffix on 23484806108 and 23489296528"
+}

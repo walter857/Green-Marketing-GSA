@@ -1,0 +1,252 @@
+# VOID 2026-08-26 - fingerprint 9308DFCF8741
+# Its $299.93/$88.21 split was derived from a 10:02 snapshot and from PLAN-I2's demand assumptions, both superseded. Replaced by PLAN-I1B on 16:01 pacing.
+
+change_plan:
+  plan_id: PLAN-I1
+  plan_title: Raise combined daily budget to create August month-end headroom
+  approval_type: BUDGET
+  priority: R1
+  approval_status: VOID - DO NOT APPROVE
+  execution_status: VOID - DO NOT EXECUTE
+  recommended_approval_order: 2
+  ads_mutation_count: 2
+  requires_separate_enable_approval: false
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  decision_timestamp_supplied_by_owner: 2026-08-26 09:50 America/New_York
+  snapshot_timestamp_actual: 2026-08-26 10:02:12 America/New_York
+  pacing:
+    target: 2500.0
+    fresh_mtd_spend_S: 171.17
+    fresh_mtd_verified: Re-read at 10:02:12 on 2026-08-26. Aug 1-25 complete = $171.17, Aug
+      26 partial = $0.00 (2 impressions, 0 clicks). The August 25 figure was re-verified rather
+      than assumed, and it is unchanged.
+    remaining_budget_R: 2328.83
+    remaining_calendar_days_D_including_aug26: 6
+    remaining_hours_H: 133.96
+    required_average_per_remaining_calendar_day: 388.14
+    required_rolling_24_hour_pace: 417.22
+    current_combined_average_daily_budget: 82.22
+    current_combined_daily_spending_limit_2x: 164.44
+    minimum_combined_average_daily_budget_to_create_sufficient_monthly_limit: 388.14
+    mid_month_budget_rule_check:
+      formula: fresh MTD + proposed combined average daily budget x remaining calendar days
+      calculation: 171.17 + 388.14 x 6 = 2500.01
+      meets_2500: true
+      note: Google computes the monthly charging limit from the average daily budget in force
+        on each day, so a change made on 2026-08-26 creates capacity for the six remaining days
+        only. It is not retroactive.
+    max_theoretical_under_current_budgets:
+      calculation: 171.17 + (164.44 x 6) = 1157.81
+      shortfall_vs_target: 1342.19
+    CAN_CURRENT_DAILY_BUDGETS_MATHEMATICALLY_REACH_2500: 'NO'
+    CAN_CURRENT_VERIFIED_SEARCH_DEMAND_REACH_2500: NO - not inside the current 8-target geo
+      footprint
+  demand_evidence:
+    campaign_24103511039:
+      name: Power Washing
+      mtd_impressions: 91
+      mtd_clicks: 4
+      mtd_cost: 108.99
+      ctr: 0.044
+      avg_cpc: 27.25
+      search_impression_share: 0.394
+      lost_is_rank: 0.583
+      lost_is_budget: 0.024
+      enabled_ad_groups: 6
+      live_keyword_rows: 9
+      addressable_impressions_per_active_day: 13.6
+      intent_family: power washing (near me, services, company, Islip, West Islip, Dix Hills)
+    campaign_24145053510:
+      name: 'Power Washing #2'
+      mtd_impressions: 14
+      mtd_clicks: 2
+      mtd_cost: 62.18
+      ctr: 0.1429
+      avg_cpc: 31.09
+      search_impression_share: 0.7
+      lost_is_rank: 0.3
+      lost_is_budget: null
+      enabled_ad_groups: 6
+      live_keyword_rows: 12
+      addressable_impressions_per_active_day: 4.0
+      intent_family: pressure / residential / house / soft / driveway / patio washing
+  allocation_models:
+  - model: MODEL 1 - Proportional to qualified demand
+    basis: Split by addressable impressions per active day, derived from each campaign's own
+      impressions divided by its own search impression share. A = 13.6/day addressable, B =
+      4.0/day. Ratio 77.3% / 22.7%.
+    campaign_A_daily_budget: 299.93
+    campaign_B_daily_budget: 88.21
+    combined: 388.14
+    A_change: 258.82
+    B_change: 47.1
+    A_remaining_month_capacity: 1799.58
+    B_remaining_month_capacity: 529.26
+    combined_remaining_capacity: 2328.84
+    verdict: RECOMMENDED
+    reason: The only model derived from measured demand rather than from a convention. It also
+      aligns with PLAN-I2, which enables the Pressure & Power Washing legacy group into campaign
+      A, adding roughly 200 distinct monthly searches on that side.
+  - model: MODEL 2 - Primary campaign weighted (75/25)
+    basis: Campaign A carries 87% of MTD impressions, 4 of 6 clicks, the entire Quality Score
+      history, and 58.3% lost IS (rank) against B's 30.0% - so A has far more unclaimed auction
+      headroom to buy into.
+    campaign_A_daily_budget: 291.11
+    campaign_B_daily_budget: 97.03
+    combined: 388.14
+    A_change: 250.0
+    B_change: 55.92
+    A_remaining_month_capacity: 1746.66
+    B_remaining_month_capacity: 582.18
+    combined_remaining_capacity: 2328.84
+    verdict: ACCEPTABLE ALTERNATIVE
+    reason: Within 3% of Model 1 on both campaigns. Chooses a round convention over a measured
+      ratio. If the owner prefers a simpler story, this costs almost nothing in expected delivery.
+  - model: MODEL 3 - Equal split
+    basis: Mechanical 50/50.
+    campaign_A_daily_budget: 194.07
+    campaign_B_daily_budget: 194.07
+    combined: 388.14
+    A_change: 152.96
+    B_change: 152.96
+    A_remaining_month_capacity: 1164.42
+    B_remaining_month_capacity: 1164.42
+    combined_remaining_capacity: 2328.84
+    verdict: REJECT
+    reason: Puts $194/day behind a campaign with 4.0 addressable impressions per day and only
+      30% rank loss. Campaign B already holds 70% impression share, so most of that budget cannot
+      be spent on anything, and the portion that can will be spent by bidding up on queries
+      B already wins. It starves the side with the real headroom.
+  recommended_model: MODEL 1 - Proportional to qualified demand
+  central_risk:
+    headline: Budget headroom does not guarantee delivery, and with PLAN-B on HOLD it actively
+      invites CPC escalation.
+    mechanism: 'Both campaigns run Maximize Clicks with NO CPC ceiling. Maximize Clicks tries
+      to spend its budget. If the budget rises 4.7x but the auction pool does not, the strategy
+      cannot find more clicks - so it bids higher for the few clicks available. This account
+      has already demonstrated exactly that behaviour: when the $5.00 ceiling was removed on
+      2026-08-16, CPC went from $5.71 to $22.13 to $40.07 to $54.49 within eight days on an
+      unchanged keyword set.'
+    consequence: Approving PLAN-I1 alone is the single most likely way to spend money without
+      buying customers. Modelled scenario B projects $537 August spend at an estimated $41.37
+      CPC - more money, essentially the same clicks.
+    mitigation_order: PLAN-I1 should be approved TOGETHER WITH the demand-side plans (I2 schedule
+      / I3 / geo), not ahead of them. Budget without demand is inflation. Demand without budget
+      is a wasted opportunity. The pair is what works.
+    monitoring: The emergency high-CPC stop condition in the master plan section 6 exists precisely
+      because PLAN-B is on hold. It is a monitoring rule, not a live mutation, and it must be
+      watched from the first checkpoint after execution.
+  actions:
+  - action_id: R1-I1-01
+    priority: R1
+    resource_type: CAMPAIGN_BUDGET
+    operation: UPDATE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: customers/1521725229/campaignBudgets/15764226923
+    field_mask: amount_micros
+    current_value:
+      budget_id: '15764226923'
+      amount_micros: 41110000
+      amount_usd: 41.11
+      delivery_method: STANDARD
+      explicitly_shared: false
+      current_monthly_capacity_remaining_6_days: 246.66
+      current_2x_daily_ceiling: 82.22
+    proposed_value:
+      amount_micros: 299930000
+      amount_usd: 299.93
+      new_remaining_month_capacity_6_days: 1799.58
+      new_2x_daily_ceiling: 599.86
+    change_amount_usd: 258.82
+    why: Campaign A holds 13.6 addressable impressions per active day against B's 4.0, and loses
+      58.3% of impression share to rank - the largest single block of unclaimed auction volume
+      in the account. It also receives the Pressure & Power Washing enablement under PLAN-I2.
+    evidence: snapshots/rescue-snapshot-2026-08-26.json; snapshots/rescue-pacing-2026-08-26.json
+    expected_effect: 'Makes $1,799.58 billable on this campaign over the remaining six days.
+      Expected ACTUAL spend is far lower unless the demand-side plans also land: scenario C
+      projects roughly $417 combined across both campaigns.'
+    risk: HIGH on efficiency, LOW on safety. With no CPC ceiling this budget can be consumed
+      by a small number of very expensive clicks. It cannot overspend the month beyond amount
+      x remaining days.
+    rollback: Set campaign_budget 15764226923 amount_micros back to 41110000 ($41.11). Single
+      field edit, immediate.
+    approval_required: YES - budget change, separate approval per config/agency.yaml approvals.budget_change_requires_separate_approval
+    object_count: 1
+  - action_id: R1-I1-02
+    priority: R1
+    resource_type: CAMPAIGN_BUDGET
+    operation: UPDATE
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: customers/1521725229/campaignBudgets/15802443075
+    field_mask: amount_micros
+    current_value:
+      budget_id: '15802443075'
+      amount_micros: 41110000
+      amount_usd: 41.11
+      delivery_method: STANDARD
+      explicitly_shared: false
+      current_monthly_capacity_remaining_6_days: 246.66
+      current_2x_daily_ceiling: 82.22
+    proposed_value:
+      amount_micros: 88210000
+      amount_usd: 88.21
+      new_remaining_month_capacity_6_days: 529.26
+      new_2x_daily_ceiling: 176.42
+    change_amount_usd: 47.1
+    why: Campaign B already holds 70.0% impression share and loses only 30.0% to rank, so it
+      has the least unclaimed volume. A smaller raise still more than doubles its capacity while
+      avoiding parking money where it cannot be spent on real demand.
+    evidence: Same as R1-I1-01
+    expected_effect: Makes $529.26 billable on this campaign over six days.
+    risk: LOW-MEDIUM. At 100% top impression share this campaign is already winning the positions
+      it enters, so extra budget mostly raises price rather than volume.
+    rollback: Set campaign_budget 15802443075 amount_micros back to 41110000 ($41.11).
+    approval_required: YES - budget change, separate approval
+    object_count: 1
+  post_execution_verification:
+  - Read back both campaign_budget resources and assert amount_micros 299930000 and 88210000.
+  - Confirm no other campaign field changed.
+  - Run the first pacing checkpoint within 4 hours - see 2026-08-26-daily-pacing-control.md.
+  - Watch the emergency high-CPC stop condition from the first checkpoint.
+  explicitly_not_in_this_plan:
+  - NO bidding change. PLAN-B stays on HOLD.
+  - NO CPC ceiling of any value.
+  - NO keyword, ad group, ad, negative, asset, geo or schedule change.
+  - NO campaign pause or enable.
+  - NO shared budget. Both budgets remain unshared and campaign-specific.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 2
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 2
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  void_status:
+    state: VOID
+    voided_on: '2026-08-26'
+    fingerprint_voided: 9308DFCF8741
+    reason: Its $299.93/$88.21 split was derived from a 10:02 snapshot and from PLAN-I2's demand
+      assumptions, both superseded. Replaced by PLAN-I1B on 16:01 pacing.

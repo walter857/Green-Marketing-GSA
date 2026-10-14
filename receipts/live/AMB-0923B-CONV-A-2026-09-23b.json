@@ -1,0 +1,60 @@
+{
+ "plan": "AMB-0923B-CONV-A",
+ "fingerprint": "B515A5DFD479",
+ "when": "2026-09-23T18:53:47.106513-04:00",
+ "assertions": [
+  {
+   "check": "7643656486 primary_for_goal=True",
+   "pass": true,
+   "detail": "True"
+  },
+  {
+   "check": "7643656075 primary_for_goal=True",
+   "pass": true,
+   "detail": "True"
+  },
+  {
+   "check": "6885576934 primary_for_goal=False",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "7389995485 still Secondary",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "WC Lead biddable",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "WC Calls biddable",
+   "pass": true,
+   "detail": ""
+  }
+ ],
+ "FAIL": 0,
+ "actually_biddable_after": [
+  {
+   "id": "1068114183",
+   "name": "Calls from ads",
+   "type": "AD_CALL"
+  },
+  {
+   "id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "type": "WEBPAGE"
+  },
+  {
+   "id": "7643656075",
+   "name": "WC Calls",
+   "type": "UPLOAD_CALLS"
+  },
+  {
+   "id": "7643656486",
+   "name": "WC Lead",
+   "type": "UPLOAD_CLICKS"
+  }
+ ]
+}

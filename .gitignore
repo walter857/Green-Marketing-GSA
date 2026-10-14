@@ -1,0 +1,35 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+.next/
+dist/
+build/
+work/
+clients/*/exports/
+clients/*/snapshots/
+!clients/_template/exports/
+!clients/_template/exports/.gitkeep
+!clients/_template/snapshots/
+!clients/_template/snapshots/.gitkeep
+*.log
+*.sqlite
+credentials*.json
+client_secret*.json
+google-ads.yaml
+
+# Google Drive / Docs OAuth material.
+# These files are stored OUTSIDE this repository (default D:\MG\secrets\).
+# The patterns below are a second line of defense in case one is ever copied in.
+secrets/
+green-marketing-drive-client.json
+green-marketing-drive-token.json
+*-client.json
+*-token.json
+token*.json
+*oauth*.json

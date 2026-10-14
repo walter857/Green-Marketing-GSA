@@ -1,0 +1,98 @@
+{
+ "tested_local": "2026-09-10T10:18:36.406688-04:00",
+ "token_present": true,
+ "secret_present": true,
+ "profile": "105803",
+ "profiles_status": 400,
+ "leads_status": 200,
+ "lead_count": 99,
+ "total_leads": 99,
+ "fields": [
+  "account",
+  "account_id",
+  "additional_fields",
+  "answer_status",
+  "browser",
+  "call_duration",
+  "call_duration_seconds",
+  "call_status",
+  "call_transcription",
+  "caller_city",
+  "caller_country",
+  "caller_name",
+  "caller_number",
+  "caller_state",
+  "caller_zip",
+  "city",
+  "contact_company_name",
+  "contact_email_address",
+  "contact_name",
+  "contact_phone_number",
+  "country",
+  "custom_fields",
+  "date_created",
+  "destination_number",
+  "device_make",
+  "device_type",
+  "duplicate",
+  "email_address",
+  "form_name",
+  "gclid",
+  "ip_address",
+  "landing_url",
+  "last_updated",
+  "lead_analysis",
+  "lead_id",
+  "lead_medium",
+  "lead_score",
+  "lead_source",
+  "lead_state",
+  "lead_status",
+  "lead_type",
+  "lead_url",
+  "line_type",
+  "mapped_fields",
+  "message",
+  "operating_system",
+  "phone_name",
+  "phone_number",
+  "play_recording",
+  "profile",
+  "profile_id",
+  "quotable",
+  "quote_value",
+  "recording",
+  "sales_value",
+  "spam",
+  "spotted_keywords",
+  "state",
+  "tracking_number",
+  "user_id",
+  "zip"
+ ],
+ "field_coverage": {
+  "date": [
+   "date_created"
+  ],
+  "campaign": [],
+  "source": [
+   "lead_source"
+  ],
+  "type": [
+   "lead_type"
+  ],
+  "join_key": [
+   "gclid",
+   "lead_id"
+  ],
+  "qualified": [
+   "quotable",
+   "lead_status"
+  ],
+  "sold": [
+   "sales_value",
+   "quote_value"
+  ]
+ },
+ "rows_with_gclid": 8
+}

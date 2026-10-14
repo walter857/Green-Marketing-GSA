@@ -1,0 +1,453 @@
+work_order:
+  client_slug: apogee-lawns
+  business_name: Apogee Lawns LLC
+  account:
+    # -------------------------------------------------------------------------
+    # IDENTITY GATE: PASSED 2026-09-16 by fresh read-only API lookup.
+    # Supplied name "Apogee Lawns LLC - Live" == API descriptive_name (exact).
+    # Supplied ID  816-462-6278 == API customer.id 8164626278 (exact).
+    # manager=false, test_account=false, status=ENABLED, USD, America/Chicago.
+    # Manager 3373711342 (Green Marketing) link ACTIVE at level 1.
+    # The '- live' marker is an identity marker only. It authorizes nothing.
+    # -------------------------------------------------------------------------
+    exact_child_account_name: "Apogee Lawns LLC - Live"
+    child_customer_id: "8164626278"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: similar-local-service
+    exact_primary_service: Permanent Christmas light installation
+    related_services: []
+  # ---------------------------------------------------------------------------
+  # CURRENT TASK (reconciled 2026-10-05). The 2026-09-16 preflight task that this
+  # file was created for is preserved verbatim under task_history below.
+  # ---------------------------------------------------------------------------
+  task:
+    type: audit
+    # READ for every connected system (Google Ads API incl. Keyword Planner, public
+    # website, published GTM container script, WhatConverts API). DRAFT for local
+    # files only. No Google Ads, WordPress, GTM, WhatConverts, Drive or billing write.
+    mode: draft
+    request: >-
+      Conversion-path and qualified-inquiry optimization for campaign 24257151015
+      (S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026).
+      Verify the inquiry path and conversion measurement (developer checklist A01-A08,
+      thank-you page, success event, lead ID, call routing and number swapping), remove
+      conversion friction, verify lead follow-up, classify every visible search term,
+      evaluate installation Exact candidates and conflicting negatives, draft improved
+      RSAs and supported assets, calculate economics and sensitivity, and prepare
+      separate fingerprinted change bundles. Every bundle needs its own exact approval;
+      new Google Ads resources are created paused and need separate enablement approval.
+    date_range: >-
+      Campaign first serving 2026-09-21 through 2026-10-04 (completed days, America/Chicago);
+      latest complete seven-day window 2026-09-28..2026-10-04; 2026-10-05 partial.
+    raw_search_terms_in_deliverable: true
+    raw_search_terms_reason: >-
+      Every visible search term must be classified individually to decide keyword and
+      negative changes. Service is permanent Christmas light installation. No caller,
+      form or contact PII is included anywhere.
+  task_history:
+    - recorded: "2026-09-16"
+      type: campaign-build
+      mode: read
+      request: >-
+        READ-ONLY preflight for the Apogee Lawns permanent-Christmas-light launch in
+        Lincoln, Nebraska. Covers the identity gate, a full account inventory, conversion
+        ownership and duplicate search, the live website and tag-stack audit, landing-page
+        and thank-you URL verification, phone and DNI audit, geo-target resolution for all
+        14 supplied locations, Keyword Planner demand and bid evidence, a reverse audit of
+        the 7 pre-existing negative shared lists against the proposed positives, and an
+        exact proposed mutation plan with object counts and a plan fingerprint.
+        NOTHING WAS CREATED, ENABLED, PAUSED, EDITED OR DELETED. No Google Ads mutate call
+        was issued, not even validate_only. No Google Tag Manager change was made. No form
+        was submitted and no telephone link was dialled. The two Google Drive source
+        documents were opened read-only and were not edited, commented on, moved, renamed
+        or replaced.
+      date_range: >-
+        CURRENT AS AT 2026-09-16 (America/Chicago). The account has ZERO lifetime delivery:
+        impressions 0, clicks 0, cost $0.00, conversions 0 across 2015-01-01..2026-09-16.
+        There is no performance window to segment. Keyword Planner history covers
+        2025-09..2026-08 (12 settled months).
+  scope_approval:
+    # -------------------------------------------------------------------------
+    # BLOCKER BLK-001. config/verticals.yaml sets requires_scope_approval: true for
+    # similar-local-service, and CLAUDE.md requires approved: true plus an approver
+    # and a rationale before any account work in this vertical. Permanent Christmas
+    # light installation is not landscaping, hardscaping or heating-cooling.
+    # These two fields are attestations by a named person. They are NOT inferred,
+    # NOT copied from another client, and NOT filled in by the agent.
+    # -------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
+    # BLK-001 CLOSED 2026-09-16. The owner supplied the approver name "Walter" and
+    # the completed attestation sentence. Recorded exactly as supplied.
+    # The first two attempts arrived with "[FULL NAME]" still in the sentence and
+    # were correctly refused; this one carries a real name.
+    # -------------------------------------------------------------------------
+    approved: true
+    approved_by: "Walter"
+    reason: "it is a closely related local home-service installation service"
+    reason_status: CONFIRMED_BY_NAMED_APPROVER
+    attestation_sentence_received: true
+    attestation_name_supplied: true
+    attestation_received_text: "I, Walter, approve Apogee Lawns permanent outdoor holiday lighting as a similar local service because it is a closely related local home-service installation service."
+    attestation_recorded_date: "2026-09-16"
+    attestation_prior_rejected_attempts: 2
+    attestation_prior_rejected_reason: "both earlier submissions contained the literal placeholder [FULL NAME]"
+  inputs:
+    # Reconciled 2026-10-05. The 2026-09-16 value ("[[FINAL_PPC_URL]] - NOT PUBLISHED") was true
+    # for apogeelawns.com; the paid page was later found on the offer. subdomain, returned 200 on
+    # 2026-09-17 (page source) and rendered on 2026-09-28 (browser), and is the final URL on all
+    # four live RSAs.
+    website_or_final_url: "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+    settled_decisions_carried_forward:
+      budget: "about $500 per month: $16.44/day (x 30.4 = $499.78); no budget change without separate approval"
+      omaha: "EXCLUDED - location_decision_2026_09_16: settled, not to be reopened on search volume or website wording"
+      tablets: "EXCLUDED by owner decision 2026-09-28 (landing pages not tablet optimized); APG-0928-DEV-T2 REJECTED"
+      head_term_match_type: "[permanent christmas lights] stays EXACT only"
+      legacy_negative_lists: "none of the 7 legacy negative lists may be attached (shared_sets_verdict: DO_NOT_ATTACH_ANY)"
+      service_scope: "permanent installation only; no seasonal hanging, takedown, storage, lawn care or other service"
+      advertising_phone: "402-526-5754 is the advertising and landing-page number; 402-202-7261 is the forwarding destination only (owner ruling 2026-09-17)"
+      qualified_lead: "asks for permanent Christmas light installation on the form or on the call (owner, 2026-09-28)"
+      customer_supplied_lights: "Apogee installs customer-supplied lights (owner, 2026-09-28); not advertised; compatibility per product unconfirmed"
+      search_settings: "Search only; Phrase and Exact only; two distinct enabled RSAs per ad group; Search Partners, Display expansion, Broad, AI Max, DSA, text customization, Final URL expansion and automatically created assets off"
+    bidding_default_deviation: >-
+      Agency default initial strategy is MAXIMIZE_CONVERSIONS with no target CPA. This campaign
+      runs Maximize Clicks with an $8.00 CPC ceiling because form conversion measurement cannot
+      yet record a lead (checklist A01-A04) and no conversion has been observed. The deviation is
+      temporary and is re-decided after measurement is verified (see the 2026-10-05 plan).
+    service_area:
+      - "68372, Nebraska, United States"
+      - "68430, Nebraska, United States"
+      - "68527, Nebraska, United States"
+      - "68347, Nebraska, United States"
+      - "68526, Nebraska, United States"
+      - "68461, Nebraska, United States"
+      - "68516, Nebraska, United States"
+      - "68520, Nebraska, United States"
+      - "Waverly, Nebraska, United States"
+      - "Eagle, Nebraska, United States"
+      - "Lincoln, Nebraska, United States"
+      - "Ashland Township, Nebraska, United States"
+      - "Crete, Nebraska, United States"
+      - "Nemaha Precinct, Nebraska, United States"
+    daily_budget: 16.44
+    daily_budget_basis: >-
+      $16.44 x 30.4 = $499.78, which stays under a $500 recurring monthly limit.
+      Google's standard monthly spending limit is daily x 30.4, never daily x 30.
+      This assumes $500 is RECURRING MONTHLY. If the client means $500 for
+      Sep 21-30 only, the daily figure must be rebuilt before launch.
+    primary_conversion_goal: >-
+      Qualified permanent-lighting leads: one dedicated thank-you page form conversion
+      (7772803337, Primary), calls from ads at a 60-second minimum (7773013199, Primary), and
+      calls from the PPC website at a 60-second minimum (7773043879, Secondary until routing and
+      attribution are verified). A form submission or a 60-second call is a LEAD, not a sold job.
+      Qualified = asks for permanent Christmas light installation on the form or the call.
+    source_files:
+      - clients/apogee-lawns/client.yaml
+      - "Google Drive doc 1BDMXgZO_5byH3nCXw7XGp7YahRT1hklsqwHYlWHQWVM - 00 - LIVE ACCOUNT DRAFT - Google Ads Strategy and Measurement Plan (read-only)"
+      - "Google Drive doc 19MQ3J11WiUuFQZn9kCRih3sBh0BR5kp_wE_ctcxY8Ok - 01 - LIVE ACCOUNT DRAFT - Landing Page Content - Permanent Christmas Lights - Lincoln NE (read-only)"
+
+    # -----------------------------------------------------------------------
+    # SUPPLIED ASSIGNMENT FACTS (recorded verbatim, verification status marked)
+    # -----------------------------------------------------------------------
+    gtm_container_name: "apogeelawns.com"
+    gtm_container_id: "GTM-M545Z8T2"
+    gtm_container_verified: false
+    gtm_container_verification_note: >-
+      NOT VERIFIED. This session has no Google Tag Manager access: there is no Chrome
+      extension or browser tool, no Tag Manager API client in src/, and no GTM
+      credential in the environment. Container name, ID, type, workspaces, tags,
+      triggers, variables and published version are all UNREAD.
+    ppc_phone_display: "402-526-5754"
+    ppc_phone_e164: "+14025265754"
+    ppc_phone_verified: false
+    ppc_phone_verification_note: >-
+      NOT VERIFIED. 402-526-5754 returns ZERO occurrences across every audited page
+      (home, /permanent-holiday-lights-lincoln-ne/, /lawn-care-lighting-estimates-lincoln-ne/,
+      /contact/, /privacy-policy/). The number published sitewide is 402-202-7261.
+      Ownership, routing, voicemail behaviour and live-answer hours are all unconfirmed.
+    expected_account_timezone: "America/Chicago"
+    observed_account_timezone: "America/Chicago"
+    expected_account_currency: "USD"
+    observed_account_currency: "USD"
+    planned_launch_date: "[[LAUNCH_DATE]] - strategy document proposes 2026-09-21"
+
+    # -----------------------------------------------------------------------
+    # OBSERVED ACCOUNT STATE, VERIFIED 2026-09-16 BY FRESH READ-ONLY API LOOKUP.
+    # Recorded as observed facts. None of this authorizes any change.
+    # -----------------------------------------------------------------------
+    verified_2026_09_16:
+      campaigns_all_statuses: 0
+      campaign_budgets: 0
+      ad_groups: 0
+      keywords: 0
+      ads: 0
+      conversion_actions: 0
+      customer_conversion_goals: 0
+      campaign_conversion_goals: 0
+      custom_conversion_goals: 0
+      conversion_value_rules: 0
+      conversion_custom_variables: 0
+      customer_assets: 0
+      assets: 0
+      labels: 0
+      product_links: 0
+      recommendation_subscriptions: 0
+      portfolio_bidding_strategies: 0
+      auto_tagging_enabled: true
+      tracking_url_template: ""
+      final_url_suffix: ""
+      account_level_negative_criteria: 1
+      account_level_negative_criteria_detail: "id 300090179, CONTENT_LABEL PARKED_DOMAIN (Google default)"
+      lifetime_impressions: 0
+      lifetime_clicks: 0
+      lifetime_cost_usd: 0.00
+      lifetime_conversions: 0
+      # ---- BILLING: LAUNCH BLOCKER BLK-002 -------------------------------
+      billing_setups_total: 2
+      billing_setups_approved_or_pending: 0
+      billing_setup_detail:
+        - id: "8584340188"
+          status: CANCELLED
+          start: "2026-09-15 08:14:06"
+        - id: "8584421311"
+          status: CANCELLED
+          start: "2026-09-15 08:54:14"
+      billing_note: >-
+        Both billing setups on this account are CANCELLED and no APPROVED, APPROVED_HELD
+        or PENDING setup exists. account_budget returns 0 rows. An account with no active
+        billing setup cannot serve. This must be resolved before the enablement gate.
+      # ---- PRE-EXISTING NEGATIVE SHARED LISTS ----------------------------
+      shared_sets_total: 7
+      shared_criteria_total: 4237
+      shared_sets_attached_to_any_campaign: 0
+      shared_sets_detail:
+        - {id: "11807294063", name: "Christmas Lights Install", status: ENABLED, members: 424, refs: 0, match_mix: "BROAD 109 / PHRASE 294 / EXACT 21"}
+        - {id: "11813144900", name: "General List", status: ENABLED, members: 1111, refs: 0, match_mix: "BROAD 1109 / EXACT 2"}
+        - {id: "12178646912", name: "General List - Irrigation Repair", status: ENABLED, members: 1107, refs: 0, match_mix: "BROAD 1105 / EXACT 2"}
+        - {id: "11811255121", name: "Leaf Removal initial", status: ENABLED, members: 386, refs: 0, match_mix: "BROAD 386"}
+        - {id: "11840874961", name: "Paver", status: ENABLED, members: 387, refs: 0, match_mix: "BROAD 387"}
+        - {id: "11840890006", name: "Outdoor Kitchen", status: ENABLED, members: 386, refs: 0, match_mix: "BROAD 386"}
+        - {id: "10667314427", name: "Names", status: REMOVED, members: 436, refs: 0, match_mix: "PHRASE 436"}
+      shared_sets_verdict: DO_NOT_ATTACH_ANY
+      shared_sets_verdict_reason: >-
+        A reverse audit (do the existing negatives block the proposed positives?) found
+        that list 11807294063 "Christmas Lights Install" contains the PHRASE negative
+        "permanent christmas lights", which blocks [permanent christmas lights installer]
+        and every "permanent christmas lights ..." query. It also contains BROAD
+        "permanent christmas lights install" and "permanent christmas light install", and
+        EXACT "permanent christmas lights near me", "diy permanent christmas lights" and
+        "led permanent christmas lights". Lists 11813144900 and 12178646912 each carry the
+        single-word BROAD negatives cost, price, pricing, best, hire, emergency and
+        reviews, which CLAUDE.md forbids applying without an intent check and which the
+        strategy document explicitly protects. Attaching any of these to the new campaign
+        would suppress the exact demand being bought.
+
+    # -----------------------------------------------------------------------
+    # LIVE WEBSITE AND TAG AUDIT, VERIFIED 2026-09-16 (HTTP source inspection).
+    # -----------------------------------------------------------------------
+    verified_site_2026_09_16:
+      home_status: 200
+      planned_ppc_slug: "/permanent-christmas-lights-lincoln-ne/"
+      planned_ppc_slug_status: 404
+      planned_thank_you_path: "/thank-you/permanent-christmas-lights/"
+      planned_thank_you_path_status: 404
+      gtm_containers_found: 0
+      google_ads_tags_found: 0
+      ga4_tags_found: 0
+      gtag_or_datalayer_occurrences: 0
+      consent_platform_found: none
+      dni_or_call_tracking_found: none
+      form_platform: "Forminator, module 1611"
+      form_modules_sitewide: 1
+      form_success_behaviour: >-
+        Forminator redirect_url on every page is that same page's own URL
+        (home -> /, /contact/ -> /contact/, /permanent-holiday-lights-lincoln-ne/ ->
+        itself). There is no dedicated success URL anywhere on the site today, so there
+        is no page-view success signal a GTM trigger could key on.
+      unique_lead_id_exposed: false
+      phones_found_sitewide: ["+14022027261"]
+      ppc_phone_402_526_5754_occurrences: 0
+      existing_organic_permanent_lighting_page: "https://apogeelawns.com/permanent-holiday-lights-lincoln-ne/"
+      privacy_policy_url: "https://apogeelawns.com/privacy-policy/"
+      billing_policy_url: "https://apogeelawns.com/billing-policy/"
+      terms_and_conditions_url: "NOT FOUND in page-sitemap.xml"
+      captcha: "Google reCAPTCHA present on the form"
+      website_platform: "WordPress + Elementor 4.2.4"
+
+    # -----------------------------------------------------------------------
+    # KEYWORD PLANNER EVIDENCE, 2026-09-16, GOOGLE_SEARCH network, English.
+    # Two geo sets: Lincoln city alone (1021696) and the 10 highest-reach of the
+    # 14 approved targets (the service caps geo_target_constants at 10).
+    # Keyword Planner collapses synonyms into ONE shared volume bucket. Rows are
+    # per-bucket ceilings and must never be summed into a demand total.
+    # -----------------------------------------------------------------------
+    keyword_planner_2026_09_16:
+      head_bucket: "permanent christmas lights"
+      head_bucket_avg_monthly_searches_approved_area: 90
+      head_bucket_avg_monthly_searches_lincoln_city: 70
+      head_bucket_competition: "HIGH (index 100)"
+      head_bucket_top_of_page_bid_low_usd: 4.66
+      head_bucket_top_of_page_bid_high_usd: 13.76
+      head_bucket_monthly_series_approved_area:
+        SEP2025: 50
+        OCT2025: 140
+        NOV2025: 480
+        DEC2025: 170
+        JAN2026: 30
+        FEB2026: 20
+        MAR2026: 20
+        APR2026: 10
+        MAY2026: 20
+        JUN2026: 10
+        JUL2026: 10
+        AUG2026: 10
+      only_keyword_with_bid_data: "permanent christmas lights"
+      approved_ag1_keyword_volumes:
+        "permanent christmas light installation": "10/mo avg; SEP25 10, OCT25 20, NOV25 10, DEC25 10; ~50 searches across the whole Sep-Dec season"
+        "permanent christmas lights installer": "10/mo avg; NOV25 10 and zero in every other month; ~10 searches per year"
+      ag2_keyword_volumes:
+        "permanent holiday light installation": "10/mo avg; NOV25 10 only; ~10 searches per year"
+        "permanent holiday lights": "10/mo avg; ~90 searches per year, shares its bucket with 'permanent holiday lighting'"
+      ag3_keyword_volumes:
+        "everlights": "10/mo avg, flat all year"
+        "everlights installer": 0
+        "everlights installation": 0
+      competitor_brand_volumes:
+        "jellyfish lighting": 30
+        "trimlight": 20
+      generic_seasonal_volumes:
+        "christmas light installation": "20/mo avg; NOV25 140"
+        "christmas light installation lincoln ne": "10/mo avg; NOV25 90"
+        "christmas light installers near me": "10/mo avg; NOV25 50"
+      demand_verdict: >-
+        DEMAND, NOT BUDGET, IS THE BINDING CONSTRAINT. The two approved AG1 keywords
+        together carry roughly 60 searches across the entire Sep-Dec peak season in the
+        approved geography. The head bucket "permanent christmas lights" carries about
+        840 searches across the same Sep-Dec window - roughly 14x more. With Exact and
+        Phrase match only and HIGH competition, AG1 as specified cannot spend $500 per
+        month and cannot produce a statistically usable search-term or conversion
+        sample inside the season.
+
+    # -----------------------------------------------------------------------
+    # OWNER INPUTS SUPPLIED 2026-09-16. Recorded exactly as given.
+    # These are GREEN MARKETING PLANNING ASSUMPTIONS for a controlled initial
+    # test. They are NOT historical client performance and must never be
+    # reported as observed results. The account has zero lifetime delivery.
+    # -----------------------------------------------------------------------
+    economics_2026_09_16:
+      status: PLANNING_ASSUMPTIONS_NOT_HISTORICAL_PERFORMANCE
+      classification: CURRENT_2026_LAUNCH_BENCHMARK_AND_PLANNING_ASSUMPTIONS
+      not_historical_apogee_performance: true
+      not_historical_note: >-
+        The account has ZERO lifetime delivery (0 impressions, 0 clicks, $0.00). These
+        figures are Green Marketing launch benchmarks and must never be reported as
+        observed Apogee results.
+      target_cpl_acceptable_launch_range_usd: [90, 125]
+      target_cpl_usd: 100
+      expected_click_to_lead_rate: 0.05
+      expected_lead_to_sale_rate: 0.20
+      average_gross_profit_per_sold_project: null   # TBD pending client confirmation
+      average_gross_profit_status: TBD_PENDING_CLIENT_CONFIRMATION
+      max_cpc_usd: 8.00
+      max_cpc_status: APPROVED_AS_CONTROLLED_INITIAL_CEILING
+      max_cpc_is_a_ceiling_not_an_expected_cpc: true
+      forecast_average_cpc_usd: 4.85
+      modelled_cpl_at_5pct_usd: 97
+      affordable_cpc_check: "target CPL $100 x 5% = $5.00 affordable CPC; the $8.00 ceiling sits above it, so the ceiling is a delivery cap, not the economics-implied bid. Forecast clearing CPC $4.85 lands just under the $5.00 affordable figure."
+      cac_note: >-
+        At a 20% lead-to-sale rate, 5 leads are needed per sold project, so a $100 CPL
+        implies roughly $500 of ad cost per sale. Whether that is acceptable cannot be
+        judged until average gross profit per sold project is supplied.
+
+    schedule_policy_2026_09_16:
+      status: RESOLVED
+      form_traffic_eligibility: "24 hours per day - Search campaign ad schedule is all day"
+      campaign_ad_schedule: "24/7 - do NOT restrict the campaign to answer hours"
+      call_asset_schedule: "confirmed live-answer hours ONLY"
+      live_answer_hours_central:
+        monday_friday: "08:00-17:00"
+        saturday: "08:00-12:00"
+        sunday: CLOSED
+      ad_schedule_rows_for_call_asset: 6   # Mon,Tue,Wed,Thu,Fri 08:00-17:00 + Sat 08:00-12:00
+      timezone: America/Chicago
+      hours_apply_only_to:
+        - "call asset scheduling"
+        - "any other feature that requires a live answer"
+      do_not_assume_24h_live_phone_coverage: true
+
+    # -----------------------------------------------------------------------
+    # PHONE ARCHITECTURE, SUPPLIED BY THE OWNER 2026-09-16.
+    # MATERIAL CHANGE: 402-526-5754 is NOT Apogee's carrier number. It is a
+    # WhatConverts TRACKING number assigned to the permanent-lighting campaign,
+    # forwarding to Apogee's real line 402-202-7261.
+    # -----------------------------------------------------------------------
+    phone_architecture_2026_09_16:
+      status: RESOLVED_WITH_A_NEW_CONFLICT_TO_TEST
+      ppc_tracking_number_display: "402-526-5754"
+      ppc_tracking_number_e164: "+14025265754"
+      tracking_provider: WhatConverts
+      assigned_to: "Apogee Lawns permanent-lighting campaign"
+      forwarding_destination: "402-202-7261"
+      forwarding_destination_role: >-
+        Apogee's underlying line. It is ALSO the number published sitewide on
+        apogeelawns.com today. It is the DESTINATION, not a paid tracking number.
+      answered_by: "Receptionist"
+      is_apogee_carrier_number: false
+      number_ownership_note: >-
+        Treat 402-526-5754 as a WhatConverts tracking number assigned to Apogee, not as
+        Apogee's underlying carrier number. Routing still has to be verified by a real
+        test call before the call asset is created.
+      routing_verified: false
+      routing_verification_method: "live test call to 402-526-5754 confirming it rings 402-202-7261 and a receptionist answers, inside live-answer hours"
+
+    # -----------------------------------------------------------------------
+    # DNI CONFLICT GATE. Google's "Calls from website" conversion works by Google
+    # Forwarding Number replacement: Google swaps the displayed number in the DOM.
+    # WhatConverts DNI does the same thing. Two swappers on one number is the
+    # documented failure mode.
+    # -----------------------------------------------------------------------
+    dni_conflict_gate_2026_09_16:
+      status: UNDETERMINED_BY_DESIGN_NOT_YET_DECIDED
+      question: "Will WhatConverts DNI run on the PPC landing page?"
+      cannot_be_observed_because:
+        - "the PPC landing page does not exist yet (HTTP 404)"
+        - "no WhatConverts script is present anywhere on apogeelawns.com today (verified across 5 pages and all 17 enqueued JS files)"
+      therefore: >-
+        This is a DECISION the owner and developer have not yet made, not a fact that can
+        be discovered on the live site. It must be settled before the website-call tag is
+        built.
+      rule_if_whatconverts_dni_active:
+        - "STOP the Google Ads website-call tag implementation"
+        - "document the conflict"
+        - "recommend a single measurement owner, or a tested sequencing method"
+        - "never publish both replacement systems without successful Preview testing"
+      unaffected_by_this_gate:
+        - "Call | Permanent Lights | Ads | 60s (calls from ads) - no GTM tag, no DOM replacement"
+        - "the campaign call asset using 402-526-5754, subject to routing verification"
+
+    location_decision_2026_09_16:
+      nemaha_precinct_rule: >-
+        Use geo target 9233865 ONLY while its canonical Google label remains exactly
+        "Nemaha Precinct,Nebraska,United States". Do not rename it, do not infer a
+        county, do not broaden to county targeting.
+      omaha: EXCLUDED
+      omaha_status: "settled - not to be reopened on search volume or website wording"
+
+    billing_decision_2026_09_16:
+      owner_note_received: "payment profile updated to apogee's"
+      formal_instruction: "[[CHOOSE_ONE]]"   # STILL UNRESOLVED
+      stockdale_outdoors_authorized: false
+      rule: >-
+        The preselected Stockdale Outdoors payments profile (4984-3370-4007) is NOT
+        authorized unless the owner explicitly confirms it is the correct legal billing
+        profile for Apogee Lawns LLC. Claude must not submit billing information, accept
+        payment terms, create a passkey, or complete advertiser verification.
+
+    test_lead_2026_09_16:
+      status: DEFERRED_TO_PRODUCTION_QA
+      rule: >-
+        Do not request or store real customer information. At production QA use a clearly
+        labelled Green Marketing-controlled test name, email alias and phone number
+        supplied through the approved secure method.
+
+  approval_owner: "Green Marketing"

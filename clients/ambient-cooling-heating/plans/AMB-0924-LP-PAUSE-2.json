@@ -1,0 +1,284 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-24",
+ "plan_name": "AMB-0924-LP-PAUSE-2",
+ "supersedes": "AMB-0924-LP-PAUSE-1 ED3D506A68FF (never executed)",
+ "approval_class": "status-change-pause-only",
+ "nothing_created": true,
+ "nothing_removed": true,
+ "no_budget_bid_keyword_or_targeting_change": true,
+ "why": "Landing-page-only standard: every paid website destination must be a verified offer.ambientcoolingandheating.com page. These ad groups have no relevant offer page; these sitelink links point at the main site or at the cooling-only AC Repair page.",
+ "effect": "Campaigns 24274160783 (Geothermal) and 24279798229 (Heating Maintenance & Inspection) are left with no enabled ad group and stop serving; 24268690038 (Heat Pump & Ductless) stops until the heat-pump groups launch. Budgets unchanged.",
+ "operations": [
+  {
+   "op": "PAUSE_AD_GROUP",
+   "ad_group_id": "204129719007",
+   "name": "SKAG | Geothermal Heat Pump",
+   "missing_page": "no geothermal page on offer subdomain",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_AD_GROUP",
+   "ad_group_id": "204129717727",
+   "name": "SKAG | Ductless Heating Repair",
+   "missing_page": "no ductless/mini-split repair page",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_AD_GROUP",
+   "ad_group_id": "199797580746",
+   "name": "SKAG | Ductless Heating Installation",
+   "missing_page": "no ductless/mini-split installation page",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_AD_GROUP",
+   "ad_group_id": "204129718447",
+   "name": "SKAG | Furnace Maintenance",
+   "missing_page": "no furnace maintenance page",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_AD_GROUP",
+   "ad_group_id": "204129718527",
+   "name": "SKAG | Furnace Tune-Up",
+   "missing_page": "no furnace tune-up page",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_AD_GROUP",
+   "ad_group_id": "204129718487",
+   "name": "SKAG | Heating Maintenance",
+   "missing_page": "no heating maintenance page",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_AD_GROUP",
+   "ad_group_id": "204129718727",
+   "name": "SKAG | Heating System Inspection",
+   "missing_page": "no heating inspection page",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_AD_GROUP",
+   "ad_group_id": "204129718687",
+   "name": "SKAG | Heating Tune-Up",
+   "missing_page": "no heating tune-up page",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24132507744",
+   "asset_id": "407319490559",
+   "text": "Customer Reviews",
+   "url": "https://ambientcoolingandheating.com/reviews/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24132507747",
+   "asset_id": "407319490559",
+   "text": "Customer Reviews",
+   "url": "https://ambientcoolingandheating.com/reviews/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24132507744",
+   "asset_id": "407319490562",
+   "text": "View Our Work",
+   "url": "https://ambientcoolingandheating.com/our-work/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24132507747",
+   "asset_id": "407319490562",
+   "text": "View Our Work",
+   "url": "https://ambientcoolingandheating.com/our-work/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24132507744",
+   "asset_id": "407418567058",
+   "text": "Contact Ambient",
+   "url": "https://ambientcoolingandheating.com/contact-us/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24132507747",
+   "asset_id": "407418567058",
+   "text": "Contact Ambient",
+   "url": "https://ambientcoolingandheating.com/contact-us/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24132507744",
+   "asset_id": "407494691217",
+   "text": "Service Areas",
+   "url": "https://ambientcoolingandheating.com/service-areas/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24132507747",
+   "asset_id": "407494691217",
+   "text": "Service Areas",
+   "url": "https://ambientcoolingandheating.com/service-areas/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24132507744",
+   "asset_id": "410638280061",
+   "text": "AC Repair",
+   "url": "https://offer.ambientcoolingandheating.com/ac-repair/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24132507747",
+   "asset_id": "410638280061",
+   "text": "AC Repair",
+   "url": "https://offer.ambientcoolingandheating.com/ac-repair/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24268690038",
+   "asset_id": "422477374559",
+   "text": "Mini Splits",
+   "url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24268690041",
+   "asset_id": "422477374559",
+   "text": "Mini Splits",
+   "url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24274160783",
+   "asset_id": "422477374559",
+   "text": "Mini Splits",
+   "url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24279798229",
+   "asset_id": "422477374559",
+   "text": "Mini Splits",
+   "url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24268690038",
+   "asset_id": "422577771382",
+   "text": "Furnace Repair",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24268690041",
+   "asset_id": "422577771382",
+   "text": "Furnace Repair",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24274160783",
+   "asset_id": "422577771382",
+   "text": "Furnace Repair",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24279798229",
+   "asset_id": "422577771382",
+   "text": "Furnace Repair",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24268690038",
+   "asset_id": "422577777457",
+   "text": "Heating Services",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24268690041",
+   "asset_id": "422577777457",
+   "text": "Heating Services",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24274160783",
+   "asset_id": "422577777457",
+   "text": "Heating Services",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN_ASSET_LINK",
+   "campaign_id": "24279798229",
+   "asset_id": "422577777457",
+   "text": "Heating Services",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  }
+ ],
+ "operation_count": 30,
+ "preflight": {
+  "PAUSE ad groups": "VALIDATED 8",
+  "PAUSE sitelink links": "VALIDATED 22"
+ },
+ "fingerprint": "1ACEA26A07EF"
+}

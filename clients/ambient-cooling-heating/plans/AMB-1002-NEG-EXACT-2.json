@@ -1,0 +1,543 @@
+{
+ "plan_name": "AMB-1002-NEG-EXACT-2",
+ "supersedes": "AMB-1002-NEG-EXACT-1 D6ABF60771C3 (never executed; 98 terms; stale)",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "approval_class": "negative-keywords",
+ "authorization": "staged authorization 2026-10-02 (Green Marketing)",
+ "work_order": "work-orders/work-order-search-terms-sept-oct-2026-10-02.yaml",
+ "match_type": "EXACT (explicit KeywordMatchType.EXACT)",
+ "scope": "campaign level",
+ "operations": [
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "a c repair near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "ac service and repair near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "ac service near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "ac unit repair near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "air conditioner repair annapolis"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "air conditioner repair company"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "air conditioner repair near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "air conditioner service near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "air conditioner servicing near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "air conditioning service near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "air conditioning servicing near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "commercial air conditioner repair"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "fix air conditioner near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "fix air conditioning near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "home air conditioner repair"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "home air conditioner repair near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "repair air conditioner near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "repair air conditioning near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "24 hour heating repair"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "24 hour hvac repair near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "24 hour hvac service near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "allpro hvac"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "bnb heating and cooling"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "booths hvac"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "carroll mechanical columbia md"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "coastal hvac annapolis"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "cold comfort hvac rockville md"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "dodge heating and air"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "falcon hvac"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "frosty heating and air conditioning"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "go ecco climate control"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "grove hvac maryland"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "home team heating and cooling"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "honest air mt airy"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "hope plumbing heating and cooling"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "howard mechanical hvac"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "jiffy hvac"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "joey taylor hvac"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "maryland mechanical heating & cooling"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "max air heating & a c inc"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "moon air elkton"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "ocean air hvac"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "powell and turner hvac"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "s f jones heating and cooling"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "smock heating & air"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "southern maryland heating and air waldorf md"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "stivers hvac inc"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "triple eee hvac"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "vito hvac"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "xzavier hvac solutions llc baltimore reviews"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "energylogic waste oil heater service"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "heating oil furnace service"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "oil burner service near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "oil furnace cleaning service near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "oil furnace companies near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "oil heater service"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "pellet stove repair in my area"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "pellet stove repair near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "pellet stove service near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819463",
+   "text": "webasto heater repair near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "text": "central air installation near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "text": "how much does it cost to get central air installed"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "text": "100k btu furnace"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "text": "75000 btu gas furnace"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "text": "80 000 btu gas furnace"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "text": "gd9s800804bn"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "text": "gr9s800804bn"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "text": "r801ca100521msa"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24257819466",
+   "text": "w801t0754a17uhsnas"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "text": "25sca530a003"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "text": "aoh 36u3t24p"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "text": "bova36hdn1m20g"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "text": "bova36rtbm20s"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "text": "gszb403010"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "text": "ml14kp1 024"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690038",
+   "text": "rd18ay36ajvca"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "suntouch heated floor thermostat"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "can i change a thermostat myself"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "4pu49"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "5184570aj"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "91873"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "thermostat 701"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "7 day programmable thermostat"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "google home thermostat setup"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "honeywell focus pro s200 wifi setup"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "installing a programmable thermostat"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "nest thermostat installation wiring"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "round non programmable thermostat with 1h single stage heating"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "single stage thermostat"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "vivint thermostat programming"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24268690041",
+   "text": "replacement dometic thermostat"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "bnb heating and cooling"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "cold comfort hvac near me"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "comfort zone heating and cooling"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "grove heating and cooling crofton md"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "highland hvac oakland md"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "mays heating and air frederick md"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "oil furnace annual service"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "pellet stove inspections"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "annual water heater maintenance"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "hot water heater maintenance"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "hot water heater service"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "how do you maintain a hot water heater"
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVE_EXACT",
+   "campaign_id": "24279798229",
+   "text": "water heater service near me"
+  }
+ ],
+ "operation_count": 104,
+ "fingerprint": "04E22EF928DD",
+ "preflight": {
+  "24257819463": "VALIDATED 60",
+  "24257819466": "VALIDATED 9",
+  "24268690038": "VALIDATED 7",
+  "24268690041": "VALIDATED 15",
+  "24279798229": "VALIDATED 13"
+ }
+}

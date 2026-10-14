@@ -1,0 +1,250 @@
+# PLAN-R4 - CORE CAMPAIGN STRUCTURE
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# Built 2026-08-31 from the read-only forensic snapshot. NOT APPROVED.
+# This plan changes nothing. It is the structural decision the other plans depend on.
+change_plan:
+  plan_id: PLAN-R4
+  plan_title: Core rescue structure - one campaign, five owned intents
+  approval_type: STRUCTURE_DECISION_NO_MUTATION
+  priority: P1
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 0
+  object_count_total: 0
+  requires_separate_enable_approval: false
+  recommended_approval_order: 4
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  the_structural_diagnosis: >-
+    The account carries 2 campaigns, 30 ad groups and 214 keywords for 22 lifetime
+    clicks. That is roughly one click per 10 keywords. But the real defect is not
+    that there are too many containers; it is that the containers do not own the
+    demand. Only 11 distinct keyword texts are actually serving. The three largest
+    local demand buckets - power washing (880/mo), pressure washing (480/mo) and
+    power washing services (140/mo) - have NO matching keyword anywhere in the
+    account. The account reaches them only through Google close-variant matching,
+    which routes each query to whichever ad group Google picks.
+
+  what_that_cost_today: >-
+    On 2026-08-31 the query "power washing services" took FIVE billable clicks on
+    ONE recorded impression - $146.60, 20.6% of the account entire lifetime spend -
+    inside Power Washing #2 / Residential Pressure Washing Near Me, as a NEAR_EXACT
+    close variant of "residential pressure washing near me". Campaign A holds the
+    ad group that should have owned that query. Two campaigns bidding on the same
+    close-variant space is what let the wrong one win.
+
+  campaign_comparison:
+    verdict: DUPLICATIVE AND CANNIBALIZING
+    campaigns:
+      - id: "24103511039"
+        name: Power Washing
+        created: "2026-08-04 09:22:12"
+        ad_groups_total: 15
+        ad_groups_enabled: 6
+        keywords: 107
+        impressions: 202
+        clicks: 12
+        cost_usd: 403.09
+        ctr_pct: 5.94
+        avg_cpc_usd: 33.59
+        conversions: 0
+        primary_status: ELIGIBLE
+        budget_usd: 41.50
+      - id: "24145053510"
+        name: Power Washing #2
+        created: "2026-08-18 09:24:13"
+        ad_groups_total: 15
+        ad_groups_enabled: 6
+        keywords: 107
+        impressions: 44
+        clicks: 10
+        cost_usd: 310.06
+        ctr_pct: 22.73
+        avg_cpc_usd: 31.01
+        conversions: 0
+        primary_status: LEARNING
+        primary_status_reasons: [BIDDING_STRATEGY_LEARNING]
+        budget_usd: 41.11
+    duplication_evidence:
+      - >-
+        The two campaigns are exact mirrors: 15 ad groups each with identical
+        names, and 107 keywords each with identical texts and match types. Every
+        one of the 15 ad-group names appears in both.
+      - >-
+        Power Washing Services Near Me is ENABLED in BOTH campaigns and is the one
+        directly duplicated serving container (campaign A: 94 impressions, 4
+        clicks, $109.31; campaign B: 13 impressions, 1 click, $29.04).
+      - >-
+        Semantic overlap is far wider than identical text. The query "power
+        washing services" served in BOTH campaigns from different keywords; the
+        query "pressure washing near me" served in four different ad groups across
+        both campaigns; "house washing near me" served in three.
+      - >-
+        Ten asset IDs are shared between the two campaigns, including the single
+        call asset 403335872180. Editing one edits both.
+      - >-
+        Campaign B 22.73% CTR is not a quality signal. Strip out the single
+        Residential Pressure Washing Near Me ad group (7 impressions, 6 clicks) and
+        campaign B is 37 impressions, 4 clicks, 10.8% CTR.
+    conclusion: >-
+      Conversion data is being fragmented across two containers that have never
+      produced a conversion between them, and close-variant routing is picking the
+      wrong container. Consolidate.
+
+  decision:
+    owner_campaign: "24103511039"
+    owner_campaign_name: Power Washing
+    reason: >-
+      It is older (2026-08-04 vs 2026-08-18), it is primary_status ELIGIBLE rather
+      than LEARNING, it carries the larger impression history (202 vs 44), and it
+      holds the core near-me intents. Consolidating into the LEARNING campaign
+      would throw away the older campaign learning; consolidating into A costs only
+      campaign B four-day-old learning window, which PLAN-R3 restarts anyway.
+    second_campaign_disposition: >-
+      Power Washing #2 (24145053510) is retired, not deleted. Its four unique
+      serving intents are rebuilt inside campaign A (PLAN-R6), verified, enabled
+      (PLAN-R10), and only then is campaign B paused (PLAN-R11). Deletion is never
+      proposed here and would require a separate destructive-action approval.
+    timing_note: >-
+      The 2026-08-25 audit deferred consolidation to September on the grounds that
+      it resets learning in the last week of August. That deferral expires today.
+      September 1 is the correct execution window.
+
+  core_rescue_structure:
+    campaign: "24103511039"
+    principle: >-
+      One canonical intent per ad group. Phrase and Exact only. Landing page must
+      match the intent, not merely the service. The fewest ad groups that keep
+      intent and page aligned.
+    ad_groups:
+      - n: 1
+        name: Power Washing Near Me
+        status: EXISTS - KEEP
+        ad_group_id: "202870585390"
+        canonical_intent: power washing, local hire
+        keywords: [power washing near me PHRASE, power washing near me EXACT]
+        landing_page: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+        local_monthly_demand: 260
+        planner_top_of_page: 10.90 - 28.32
+        lifetime: 81 impressions, 7 clicks, $288.07, 0 conversions
+        action: KEEP BUT REWRITE ADS - Quality Score 1, ad relevance BELOW_AVERAGE. See PLAN-R5.
+      - n: 2
+        name: Power Washing Services Near Me
+        status: EXISTS - KEEP
+        ad_group_id: "202870585430"
+        canonical_intent: power washing service, local hire
+        keywords: [power washing services near me PHRASE, power washing services near me EXACT]
+        landing_page: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+        local_monthly_demand: 30
+        planner_top_of_page: 10.62 - 28.70
+        lifetime: 94 impressions, 4 clicks, $109.31, 0 conversions
+        action: KEEP. Its campaign-B twin (198082078783) is a DUPLICATE and is paused in PLAN-R11.
+      - n: 3
+        name: Power Washing Company Near Me
+        status: EXISTS - KEEP
+        ad_group_id: "202870585590"
+        canonical_intent: power washing company, vendor selection
+        keywords: [power washing company near me PHRASE, power washing company near me EXACT]
+        landing_page: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+        local_monthly_demand: 260 (shares the near-me bucket)
+        lifetime: 11 impressions, 0 clicks, $0.00
+        action: >-
+          KEEP. It has never taken a click on 11 impressions, but "power washing
+          companies near me" and "powerwashing companies near me" both took clicks
+          in OTHER ad groups. Add those texts here (PLAN-R6 phase 2) rather than
+          retiring the container.
+      - n: 4
+        name: Pressure Washing Near Me
+        status: NEW - CREATE PAUSED (PLAN-R6)
+        canonical_intent: pressure washing, local hire
+        keywords: [pressure washing near me PHRASE, pressure washing near me EXACT]
+        landing_page: https://offer.softwindli.com/residential-pressure-washing/
+        local_monthly_demand: 90
+        planner_top_of_page: 8.75 - 24.66
+        justification: >-
+          There is NO keyword matching this text anywhere in the account. The query
+          has served 13 times across four different ad groups in both campaigns and
+          taken a $29.57 click. This is the single largest uncovered near-me bucket.
+      - n: 5
+        name: Power Washing Services
+        status: NEW - CREATE PAUSED (PLAN-R6)
+        canonical_intent: power washing service purchase, no geo qualifier
+        keywords: [power washing services PHRASE, power washing services EXACT]
+        landing_page: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+        local_monthly_demand: 140
+        planner_top_of_page: 11.55 - 23.34
+        justification: >-
+          The exact query that cost $146.60 today by being routed into the wrong
+          campaign. Owning it explicitly is the direct fix for that routing failure.
+      - n: 6
+        name: Power Washing
+        status: NEW - CREATE PAUSED (PLAN-R6), higher variance
+        canonical_intent: power washing, unqualified head term
+        keywords: [power washing PHRASE]
+        landing_page: https://offer.softwindli.com/power-washing-soft-washing/
+        local_monthly_demand: 880
+        planner_top_of_page: 0.58 - 14.31
+        justification: >-
+          The largest local bucket by 3.4x AND the cheapest, at roughly half what
+          the account currently pays per click. PHRASE match plus the 123 existing
+          negative texts (equipment, DIY, jobs, brands, rental, repair, competitor
+          verticals) is a defensible fence. The Long-Island-wide page is the right
+          destination because the query carries no city.
+        risk: >-
+          Broader intent than any current keyword. Mitigated by PHRASE match, the
+          existing negative fence, and the PLAN-R3 ceiling. Review at 14 days.
+
+  ad_group_dispositions:
+    - {campaign: Power Washing, ad_group: Power Washing Near Me, id: "202870585390", classification: KEEP BUT REWRITE ADS}
+    - {campaign: Power Washing, ad_group: Power Washing Services Near Me, id: "202870585430", classification: KEEP}
+    - {campaign: Power Washing, ad_group: Power Washing Company Near Me, id: "202870585590", classification: KEEP}
+    - {campaign: Power Washing, ad_group: Power Washing Islip, id: "202870585630", classification: PAUSE AFTER REPLACEMENT, reason: "0 impressions all time; the H1 city lock it was built for now covers 3 of 80 targeted places"}
+    - {campaign: Power Washing, ad_group: Power Washing West Islip, id: "202870585670", classification: PAUSE AFTER REPLACEMENT, reason: "1 impression, 1 click, $5.71 - the account cheapest click ever, but not repeatable at 1 impression"}
+    - {campaign: Power Washing, ad_group: Power Washing Dix Hills, id: "202870585830", classification: PAUSE AFTER REPLACEMENT, reason: "0 impressions all time"}
+    - {campaign: Power Washing, ad_group: Driveway Patio Concrete Washing, id: "205713509664", classification: LOW VOLUME, reason: "paused; 24 keywords, 4 of which are blocked by the bare cleaning negative until PLAN-R2 lands"}
+    - {campaign: Power Washing, ad_group: Pressure & Power Washing, id: "205713509704", classification: DUPLICATE, reason: "34 keywords across 4 canonical intents - fails the one-intent test. Keep permanently paused."}
+    - {campaign: Power Washing, ad_group: Soft & House Washing, id: "205713509744", classification: DUPLICATE, reason: "28 keywords across 2 canonical intents. Keep permanently paused. house washing near me is extracted from it in PLAN-R6 phase 2."}
+    - {campaign: Power Washing, ad_group: Driveway Pressure Washing Near Me, id: "202870586110", classification: NEEDS MORE DATA}
+    - {campaign: Power Washing, ad_group: Patio Pressure Washing Near Me, id: "202870586150", classification: NEEDS MORE DATA}
+    - {campaign: Power Washing, ad_group: House Pressure Washing Estimate, id: "202870586070", classification: WEAK INTENT}
+    - {campaign: Power Washing, ad_group: House Washing Company Near Me, id: "202870585910", classification: LOW VOLUME, reason: "house washing company near me returns no reportable Planner volume; the 40/mo belongs to house washing near me"}
+    - {campaign: Power Washing, ad_group: Residential Pressure Washing Near Me, id: "202870585870", classification: CONSOLIDATE, reason: "20/mo. Its intent is absorbed by the new Pressure Washing Near Me group."}
+    - {campaign: Power Washing, ad_group: Soft House Washing Near Me, id: "202870586310", classification: NEEDS MORE DATA}
+    - {campaign: "Power Washing #2", ad_group: Power Washing Services Near Me, id: "198082078783", classification: DUPLICATE, reason: "the one ad group ENABLED in both campaigns. Pause after PLAN-R10."}
+    - {campaign: "Power Washing #2", ad_group: Residential Pressure Washing Near Me, id: "198082079423", classification: PAUSE AFTER REPLACEMENT, reason: "$176.17 on 6 clicks and 7 impressions - 85.7% CTR, which is not a human search-result CTR. It is the container that took today 5-clicks-on-1-impression event. Replaced by Pressure Washing Near Me."}
+    - {campaign: "Power Washing #2", ad_group: House Pressure Washing Estimate, id: "198082078983", classification: WEAK INTENT, reason: "$104.85 on 3 clicks. Every search term it attracted is price research - powerwash cost, average cost to power wash a house, house wash price, how much does power washing a house cost. The token estimate pulls researchers, not buyers."}
+    - {campaign: "Power Washing #2", ad_group: Driveway Pressure Washing Near Me, id: "198082079023", classification: NEEDS MORE DATA}
+    - {campaign: "Power Washing #2", ad_group: Patio Pressure Washing Near Me, id: "198082079183", classification: NEEDS MORE DATA}
+    - {campaign: "Power Washing #2", ad_group: Soft House Washing Near Me, id: "198082078703", classification: NEEDS MORE DATA}
+    - {campaign: "Power Washing #2", ad_groups_paused_x9, classification: REMAIN PAUSED}
+
+  query_intent_map:
+    note: >-
+      Demand figures are deduped Keyword Planner buckets for the live 80-target
+      footprint, sampled on the four Towns plus six largest places. Planner
+      collapses synonyms into shared buckets; summing raw rows overstates demand.
+    rows:
+      - {intent: power washing (head), monthly: 880, top_of_page: "0.58-14.31", terms_seen: "power washing", current_owner: "NONE - close variant of power washing near me EXACT", spend_usd: 29.57, clicks: 1, recommended_owner: "NEW ad group 6 Power Washing"}
+      - {intent: pressure washing (head), monthly: 480, top_of_page: "0.30-10.77", terms_seen: "pressure washing", current_owner: "NONE - close variant of power washing near me EXACT", spend_usd: 59.82, clicks: 2, recommended_owner: "PHASE 2 - Pressure Washing head-term group"}
+      - {intent: power washing near me, monthly: 260, top_of_page: "10.90-28.32", terms_seen: "power washing near me, power wash near me, powerwashing near me, power washer near me, powerwash near me, local power washers", current_owner: "Power Washing Near Me (A)", spend_usd: 288.07, clicks: 7, recommended_owner: "Power Washing Near Me (A) - KEEP"}
+      - {intent: power washing services, monthly: 140, top_of_page: "11.55-23.34", terms_seen: "power washing services", current_owner: "SPLIT - campaign A Power Washing Services Near Me AND campaign B Residential Pressure Washing Near Me", spend_usd: 146.60, clicks: 5, recommended_owner: "NEW ad group 5 Power Washing Services"}
+      - {intent: pressure washing near me, monthly: 90, top_of_page: "8.75-24.66", terms_seen: "pressure washing near me, pressure washing service near me, pressure washer near me, jet wash near me", current_owner: "NONE", spend_usd: 29.57, clicks: 1, recommended_owner: "NEW ad group 4 Pressure Washing Near Me"}
+      - {intent: power washing long island, monthly: 70, top_of_page: "10.66-22.87", terms_seen: none, current_owner: "DORMANT inside permanently paused Pressure & Power Washing", spend_usd: 0.00, clicks: 0, recommended_owner: "PHASE 2"}
+      - {intent: power washing company near me, monthly: 260 (shared bucket), top_of_page: "10.90-28.32", terms_seen: "power washing companies near me, powerwashing companies near me, powerwash company, power washer company near me, power wash companies near me", current_owner: "SPLIT across Power Washing Company Near Me and Power Washing Services Near Me", spend_usd: 79.59, clicks: 3, recommended_owner: "Power Washing Company Near Me (A)"}
+      - {intent: house washing near me, monthly: 40, top_of_page: "10.46-24.75", terms_seen: "house washing near me, house wash near me, house power wash, house exterior power washing, house washing services", current_owner: "DORMANT inside permanently paused Soft & House Washing", spend_usd: 0.00, clicks: 0, recommended_owner: "PHASE 2 - House Washing Near Me SKAG"}
+      - {intent: cost/price research, monthly: unmeasured, top_of_page: n/a, terms_seen: "powerwash cost, average cost to power wash a house, cost to power wash, house wash price, house soft wash cost, how much does power washing a house cost, how much is powerwashing a house, power washing costs, price to powerwash house", current_owner: "House Pressure Washing Estimate (both campaigns)", spend_usd: 62.18, clicks: 2, recommended_owner: "NO ONE until a page exists that converts price researchers. See PLAN-R7."}
+      - {intent: commercial/industrial, monthly: unmeasured, top_of_page: n/a, terms_seen: "gas station pressure washing near me, commercial power washing company near me", current_owner: "Power Washing Near Me PHRASE (A)", spend_usd: 35.31, clicks: 1, recommended_owner: "BLOCKED on K1-W2 - see PLAN-R2"}
+
+  what_this_plan_does_not_do: >-
+    Nothing. Zero mutations. It is the decision record that PLAN-R6, PLAN-R10 and
+    PLAN-R11 depend on. Approving it authorises no change to the account.
+  risk: NONE - no mutation.
+  rollback: Not applicable.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does not grant permission.

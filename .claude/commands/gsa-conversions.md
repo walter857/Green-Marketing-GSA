@@ -1,0 +1,1 @@
+Read `CLAUDE.md` and `prompts/07-setup-conversions.md`. Require a validated work order with the exact child account name, 10-digit child customer ID, and exact service. Inventory the current measurement setup, propose the map, and proceed one approved conversion at a time with verification.

@@ -1,0 +1,147 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-21",
+ "plan_name": "AMB-0921-BUDGET-1",
+ "approval_class": "update-existing-budgets",
+ "supersedes_allocation_of": "AMB-0918-BUDGET-1 (already executed; this is a NEW allocation, not a replay)",
+ "math": {
+  "permanent_daily_ceiling": 328.94,
+  "monthly_cap": 10000.0,
+  "working_target": 325.0,
+  "existing_five_after": 185.0,
+  "heating_four_after": 140.0,
+  "total_when_all_enabled": 325.0,
+  "monthly_equivalent": 9880.0,
+  "headroom_under_daily_cap": 3.94,
+  "september_read_on": "2026-09-21",
+  "september_mtd_spend_incl_partial_today": 1746.4,
+  "september_settled_calendar_days": 20,
+  "september_days_with_any_delivery": 14,
+  "september_settled_daily_avg_calendar": 87.32,
+  "september_last7_calendar_daily_avg": 49.13,
+  "september_days_left_incl_today": 10,
+  "september_remaining_allowance": 8253.6,
+  "september_reserve_10pct": 825.36,
+  "september_max_safe_daily_pace": 742.82,
+  "september_projection_worst_case": 4996.4,
+  "september_projection_worst_plus_reserve": 5821.76,
+  "september_projection_evidence_case": 2237.7,
+  "september_under_10k_worst_case": true,
+  "projection_basis": "Worst case assumes every enabled budget spends in full on every remaining day. Evidence case continues the observed last-7 calendar-day delivery rate. Neither is a forecast of leads, CPL, CPQL, revenue or profit."
+ },
+ "changes": [
+  {
+   "campaign": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507747",
+   "budget_id": "15787409441",
+   "from": 95.0,
+   "to": 55.0,
+   "why": "Best conversion volume in the account, but cooling-season installation demand falls through autumn. Settled September delivery is $45.44/day, so $55 still exceeds actual spend."
+  },
+  {
+   "campaign": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507750",
+   "budget_id": "15787409444",
+   "from": 70.0,
+   "to": 55.0,
+   "why": "Best CPA in the account ($277.53) and year-round repair demand. Protected: trimmed only $15 and still above its $17.92/day settled delivery."
+  },
+  {
+   "campaign": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507741",
+   "budget_id": "15787409435",
+   "from": 45.0,
+   "to": 25.0,
+   "why": "Cut first and deepest, as instructed. Worst measured economics in the account (CPA $637.65 August, $534.28 September) and the most expensive clicks ($106+ CPC in both windows), against falling autumn cooling demand. NOT eliminated - repair coverage is retained."
+  },
+  {
+   "campaign": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507753",
+   "budget_id": "15787409447",
+   "from": 15.0,
+   "to": 12.0,
+   "why": "Zero September delivery and zero conversions in both windows. Small trim only; replacement jobs carry high ticket value and the campaign stays reachable."
+  },
+  {
+   "campaign": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507744",
+   "budget_id": "15787409438",
+   "from": 12.0,
+   "to": 38.0,
+   "why": "INCREASE. This campaign becomes the boiler campaign and will carry two ad groups (existing Gas Boiler Repair plus the new Boiler Repair). Boiler clicks have historically cleared at $89.90-$106.03, so $12/day could never buy one."
+  },
+  {
+   "campaign": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09",
+   "campaign_id": "24257819466",
+   "budget_id": "15885327975",
+   "from": 35.0,
+   "to": 55.0,
+   "why": "INCREASE. Goes from one ad group to three (Mini Split, Oil Furnace Installation, Oil Heating System Replacement). $35 split three ways could not fund a single $25 mini-split click per day."
+  }
+ ],
+ "unchanged": [
+  {
+   "campaign": "Search | NonBrand | Heating Repair | Central MD | BOFU | 2026-09",
+   "campaign_id": "24257819463",
+   "budget_id": "15885327972",
+   "daily": 55.0,
+   "why": "Unchanged. Still one ad group (Furnace Repair). Legacy Heating Repair is the best converting heating theme in the account: 35 conversions at CPA $339.37."
+  }
+ ],
+ "no_incremental_budget": "Every dollar for heating comes from cooling reductions. Total account budget does not increase.",
+ "honest_limitation": "These are ceilings, not spend predictions. Measured September delivery is $87.32/day averaged over 20 settled calendar days and $49.13/day over the last 7, against $237.00/day of enabled budget - the account is not spending what it already has. Impression share lost to BUDGET is 0.0-8.9% on four of the five enabled campaigns while share lost to RANK is 43.6-67.3%, so the binding constraint is the CPC bid ceiling, not the budget. Gas Boiler Repair is the single exception at 31.2% lost to budget. Reallocation is therefore a necessary guardrail and a correct architecture, but on its own it will not move delivery. No CPL, CPQL, lead-volume, revenue or profitability improvement is claimed.",
+ "operations": [
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409441",
+   "campaign": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "from_usd": 95.0,
+   "to_usd": 55.0,
+   "field_mask": "amount_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409444",
+   "campaign": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+   "from_usd": 70.0,
+   "to_usd": 55.0,
+   "field_mask": "amount_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409435",
+   "campaign": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "from_usd": 45.0,
+   "to_usd": 25.0,
+   "field_mask": "amount_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409447",
+   "campaign": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "from_usd": 15.0,
+   "to_usd": 12.0,
+   "field_mask": "amount_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409438",
+   "campaign": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "from_usd": 12.0,
+   "to_usd": 38.0,
+   "field_mask": "amount_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15885327975",
+   "campaign": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09",
+   "from_usd": 35.0,
+   "to_usd": 55.0,
+   "field_mask": "amount_micros"
+  }
+ ],
+ "operation_count": 6,
+ "fingerprint": "6C665894E30D"
+}

@@ -1,0 +1,687 @@
+{
+ "AMB-0909B-BUD-1": {
+  "plan_name": "AMB-0909B-BUD-1",
+  "approval_class": "reversible-budget-change",
+  "generated_local": "2026-09-09T18:05:19.723631-04:00",
+  "supersedes": "AMB-0909-BUD-1 (D448BFDE4650) - SUPERSEDED, DO_NOT_EXECUTE",
+  "target": {
+   "customer_id": "2401959466",
+   "exact_child_account_name": "Ambient Cooling - Live",
+   "manager_customer_id": "3373711342",
+   "vertical": "heating-cooling",
+   "primary_service": "AC Repair",
+   "related_services": [
+    "HVAC Repair",
+    "HVAC Installation",
+    "HVAC Replacement",
+    "Gas Boiler Repair"
+   ]
+  },
+  "summary": "Reduce Gas Boiler Repair to $5.00/day and HVAC Replacement to $20.00/day. Combined daily total $465.63 -> $421.55, which is $12,815.12 over a 30.4-day month against the $13,000 maximum.",
+  "object_count": 2,
+  "partial_failure": false,
+  "atomic": true,
+  "operations": [
+   {
+    "operation": "UPDATE_CAMPAIGN_BUDGET",
+    "resource": "campaign_budget",
+    "resource_id": "15787409438",
+    "resource_name": "customers/2401959466/campaignBudgets/15787409438",
+    "campaign": "Gas Boiler Repair",
+    "current_state": "amount_micros = 42760000 ($42.76/day)",
+    "proposed_state": "amount_micros = 5000000 ($5.00/day)",
+    "field_mask": [
+     "amount_micros"
+    ],
+    "reason": "Zero clicks since launch on 2026-08-14 (34 impressions all time). Keyword Planner across the live 10-city Maryland sample returns 20 monthly searches for the strongest boiler term and no top-of-page bid estimate at all. The /gas-boiler-repair/ landing page still carries the heading 'Your HVAC Replacement in 3 Simple Steps', so the campaign is service-gated regardless of budget. $5.00/day keeps it measurable without reserving unspendable capacity.",
+    "rollback": "set amount_micros back to 42760000",
+    "risk": "LOW - both campaigns have 0.00% Search lost IS (budget) in every window",
+    "unrelated_resource_assertion": "budgets 15787409435, 15787409441 and 15787409444 must be unchanged; combined daily total must read $421.55"
+   },
+   {
+    "operation": "UPDATE_CAMPAIGN_BUDGET",
+    "resource": "campaign_budget",
+    "resource_id": "15787409447",
+    "resource_name": "customers/2401959466/campaignBudgets/15787409447",
+    "campaign": "HVAC Replacement",
+    "current_state": "amount_micros = 26320000 ($26.32/day)",
+    "proposed_state": "amount_micros = 20000000 ($20.00/day)",
+    "field_mask": [
+     "amount_micros"
+    ],
+    "reason": "5 clicks and 0 primary conversions since launch. Quality Score 2 with BELOW_AVERAGE landing-page experience. Search lost impression share to BUDGET is 0.00% in every window measured, so this budget has never been the constraint and reducing it cannot cost delivery.",
+    "rollback": "set amount_micros back to 26320000",
+    "risk": "LOW - both campaigns have 0.00% Search lost IS (budget) in every window",
+    "unrelated_resource_assertion": "budgets 15787409435, 15787409441 and 15787409444 must be unchanged; combined daily total must read $421.55"
+   }
+  ],
+  "notes": {
+   "supersedes": "AMB-0909-BUD-1 (D448BFDE4650) - SUPERSEDED, DO_NOT_EXECUTE",
+   "corrected_arithmetic": {
+    "denominator": "30.4 (Google's average-month multiplier), NOT 30",
+    "hard_daily_max": 427.6315789,
+    "prior_package_daily": 433.33,
+    "prior_package_x30_4": 13173.23,
+    "prior_package_overrun": 173.23,
+    "prior_package_compliant": false,
+    "why_prior_was_wrong": "AMB-0909-BUD-1 multiplied $433.33 by 30 and reported $12,999.90 as compliant. Google applies 30.4, giving $13,173.23 - a $173.23 breach. The prior compliance claim was arithmetically wrong and is retracted."
+   },
+   "future_uninterrupted_month": {
+    "proposed_daily_total": 421.55,
+    "x30_4": 12815.12,
+    "headroom_vs_13000": 184.88,
+    "compliant": true
+   },
+   "current_month_september": {
+    "september_budget_changes_found": 0,
+    "billed_basis": "served cost; Google Ads exposes no per-month billed figure through this API surface without monthly invoicing",
+    "served_through_2026_09_09": 1319.49,
+    "change_day_uses_highest_budget_in_force": 465.63,
+    "remaining_calendar_days_after_change_day": 20,
+    "september_maximum_if_executed_2026_09_10": 10216.12,
+    "headroom_vs_13000": 2783.88,
+    "method": "billed-to-date + highest budget in force on the change day + new daily total x remaining CALENDAR days. Remaining scheduled advertising days are deliberately NOT used."
+   },
+   "hvac_installation_budget_deliberately_unchanged": "AMB-0909-BUD-1 raised HVAC Installation on a 53.16% Search lost IS (budget) figure measured across 2026-08-14..09-08. That window is contaminated by the 'hvac installers' keyword, live 08-14..08-28. On the CLEAN post-swap window 2026-08-29..09-03 the same metric is 4.38%, with 35.62% lost to RANK instead. The budget increase is not supported and is withdrawn.",
+   "peak_observed_daily_spend": 448.36,
+   "two_x_single_day_ceiling_after": 843.1
+  },
+  "fingerprint": "752BF95EBD7C"
+ },
+ "AMB-0909B-CPC-INST-1": {
+  "plan_name": "AMB-0909B-CPC-INST-1",
+  "approval_class": "reversible-setting-change",
+  "generated_local": "2026-09-09T18:05:19.723631-04:00",
+  "supersedes": "AMB-0909-CPC-1 (46C39C6B7091) - SUPERSEDED, DO_NOT_EXECUTE (it bundled HVAC Repair on a recommendation now withdrawn)",
+  "target": {
+   "customer_id": "2401959466",
+   "exact_child_account_name": "Ambient Cooling - Live",
+   "manager_customer_id": "3373711342",
+   "vertical": "heating-cooling",
+   "primary_service": "AC Repair",
+   "related_services": [
+    "HVAC Repair",
+    "HVAC Installation",
+    "HVAC Replacement",
+    "Gas Boiler Repair"
+   ]
+  },
+  "summary": "HVAC Installation ONLY: raise the Maximize Clicks CPC bid ceiling from $30 to $65. No other campaign is touched.",
+  "object_count": 1,
+  "partial_failure": false,
+  "atomic": true,
+  "operations": [
+   {
+    "operation": "SET_MAXIMIZE_CLICKS_CPC_BID_CEILING",
+    "resource": "campaign",
+    "resource_id": "24132507747",
+    "resource_name": "HVAC Installation",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "current_state": "target_spend.cpc_bid_ceiling_micros = 30000000 ($30.00)",
+    "proposed_state": "target_spend.cpc_bid_ceiling_micros = 65000000 ($65.00)",
+    "field_mask": [
+     "target_spend.cpc_bid_ceiling_micros"
+    ],
+    "reason": "All three of this campaign's primary conversions came from clicks priced between $50.00 and $62.13. The live $30 ceiling admits 76% of its historical click volume while excluding every one of those converting clicks. $65 covers the highest observed converting CPC with headroom and stops the ceiling binding.",
+    "modelled_effect": "Descriptive sensitivity test on 62 visible clicks, NOT an auction forecast: at $30, 47 clicks and 0 of 3 conversions survive; at $65, 62 clicks and 3 of 3 survive.",
+    "rollback": "set target_spend.cpc_bid_ceiling_micros back to 30000000",
+    "risk": "MEDIUM - restores paid delivery and therefore spend",
+    "unrelated_resource_assertion": "bidding_strategy_type stays TARGET_SPEND; AC Repair and HVAC Repair ceilings must remain 25000000; budgets, networks, geo, schedules, keywords and negatives unchanged"
+   }
+  ],
+  "notes": {
+   "supersedes": "AMB-0909-CPC-1 (46C39C6B7091) - SUPERSEDED, DO_NOT_EXECUTE (it bundled HVAC Repair on a recommendation now withdrawn)",
+   "live_keyword_verified": {
+    "campaign": "HVAC Installation",
+    "ad_group": "202339087634",
+    "keywords": [
+     "hvac installers near me [PHRASE] crit 295495761070 ELIGIBLE",
+     "hvac installers near me [EXACT] crit 315030681341 ELIGIBLE"
+    ],
+    "removed_keyword_hvac_installers_still_live": false
+   },
+   "bid_adjustment_audit": {
+    "campaign_criterion_modifiers_not_equal_1": 5,
+    "all_five_are": "DEVICE / TABLET / bid_modifier x0.0 (tablet exclusion)",
+    "ad_group_bid_modifier_rows_not_equal_1": 0,
+    "audience_or_demographic_criteria": 0,
+    "highest_modifier_found": 0.0,
+    "conclusion": "No modifier above x1.0 exists anywhere on the five campaigns. Nothing can push the effective bid above the ceiling. A $65 ceiling means $65."
+   },
+   "economics_labelling": {
+    "post_swap_window": "2026-08-29..2026-09-03",
+    "figure": 141.87,
+    "label": "RAW CPA - NOT CPQL, and NOT a qualified-lead cost",
+    "sample": "3 raw primary conversions from 9 clicks. This is a small sample and no confidence claim is attached to it.",
+    "min_qualification_rate_to_meet_280_cpql_pct": 50.7,
+    "confidence": "The delivery-restoration case is strong. The ECONOMICS are NOT high-confidence: qualified-lead outcomes are unavailable because WHATCONVERTS_API_TOKEN is empty."
+   },
+   "privacy_hidden_traffic": {
+    "campaign_clicks": 112,
+    "visible_in_search_terms": 62,
+    "hidden": 50,
+    "hidden_primary_conversions": 0,
+    "note": "44.6% of this campaign's clicks are privacy-hidden, but 0 of its 3 primary conversions are, so the visible-click model sees every converting click."
+   }
+  },
+  "fingerprint": "DE376F91F449"
+ },
+ "AMB-0909B-NEG-A": {
+  "plan_name": "AMB-0909B-NEG-A",
+  "approval_class": "DESTRUCTIVE-removal",
+  "generated_local": "2026-09-09T18:05:19.723631-04:00",
+  "supersedes": "part of AMB-0909-NEG-RM-1 (CE289F3508A2) and AMB-0909-NEG-RM-2 (A435FA09AC97) - both SUPERSEDED, DO_NOT_EXECUTE",
+  "target": {
+   "customer_id": "2401959466",
+   "exact_child_account_name": "Ambient Cooling - Live",
+   "manager_customer_id": "3373711342",
+   "vertical": "heating-cooling",
+   "primary_service": "AC Repair",
+   "related_services": [
+    "HVAC Repair",
+    "HVAC Installation",
+    "HVAC Replacement",
+    "Gas Boiler Repair"
+   ]
+  },
+  "summary": "Package A, high-confidence unblock: 16 removals. PHRASE 'savage', 'free' and 'licensed' from all five campaigns, plus account-level BROAD 'commercial'.",
+  "object_count": 16,
+  "partial_failure": false,
+  "atomic": true,
+  "operations": [
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507741~15120770",
+    "campaign_id": "24132507741",
+    "campaign": "AC Repair",
+    "criterion_id": "15120770",
+    "match_type": "PHRASE",
+    "negative_text": "free",
+    "current_state": "negative KEYWORD [PHRASE] 'free' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Blocks 'hvac free estimate near me'. Free estimates are an approved, verified Ambient proposition, and Green Marketing rules forbid negativing value-intent words.",
+    "blocked_protected_probes": "hvac free estimate near me",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'free' [PHRASE] on campaign 24132507741",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507744~15120770",
+    "campaign_id": "24132507744",
+    "campaign": "Gas Boiler Repair",
+    "criterion_id": "15120770",
+    "match_type": "PHRASE",
+    "negative_text": "free",
+    "current_state": "negative KEYWORD [PHRASE] 'free' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Blocks 'hvac free estimate near me'. Free estimates are an approved, verified Ambient proposition, and Green Marketing rules forbid negativing value-intent words.",
+    "blocked_protected_probes": "hvac free estimate near me",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'free' [PHRASE] on campaign 24132507744",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507747~15120770",
+    "campaign_id": "24132507747",
+    "campaign": "HVAC Installation",
+    "criterion_id": "15120770",
+    "match_type": "PHRASE",
+    "negative_text": "free",
+    "current_state": "negative KEYWORD [PHRASE] 'free' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Blocks 'hvac free estimate near me'. Free estimates are an approved, verified Ambient proposition, and Green Marketing rules forbid negativing value-intent words.",
+    "blocked_protected_probes": "hvac free estimate near me",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'free' [PHRASE] on campaign 24132507747",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507750~15120770",
+    "campaign_id": "24132507750",
+    "campaign": "HVAC Repair",
+    "criterion_id": "15120770",
+    "match_type": "PHRASE",
+    "negative_text": "free",
+    "current_state": "negative KEYWORD [PHRASE] 'free' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Blocks 'hvac free estimate near me'. Free estimates are an approved, verified Ambient proposition, and Green Marketing rules forbid negativing value-intent words.",
+    "blocked_protected_probes": "hvac free estimate near me",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'free' [PHRASE] on campaign 24132507750",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507753~15120770",
+    "campaign_id": "24132507753",
+    "campaign": "HVAC Replacement",
+    "criterion_id": "15120770",
+    "match_type": "PHRASE",
+    "negative_text": "free",
+    "current_state": "negative KEYWORD [PHRASE] 'free' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Blocks 'hvac free estimate near me'. Free estimates are an approved, verified Ambient proposition, and Green Marketing rules forbid negativing value-intent words.",
+    "blocked_protected_probes": "hvac free estimate near me",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'free' [PHRASE] on campaign 24132507753",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507741~190023714",
+    "campaign_id": "24132507741",
+    "campaign": "AC Repair",
+    "criterion_id": "190023714",
+    "match_type": "PHRASE",
+    "negative_text": "licensed",
+    "current_state": "negative KEYWORD [PHRASE] 'licensed' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Blocks 'licensed hvac contractor near me'. Licensed and insured is an approved, verified Ambient claim.",
+    "blocked_protected_probes": "licensed hvac contractor near me",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'licensed' [PHRASE] on campaign 24132507741",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507744~190023714",
+    "campaign_id": "24132507744",
+    "campaign": "Gas Boiler Repair",
+    "criterion_id": "190023714",
+    "match_type": "PHRASE",
+    "negative_text": "licensed",
+    "current_state": "negative KEYWORD [PHRASE] 'licensed' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Blocks 'licensed hvac contractor near me'. Licensed and insured is an approved, verified Ambient claim.",
+    "blocked_protected_probes": "licensed hvac contractor near me",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'licensed' [PHRASE] on campaign 24132507744",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507747~190023714",
+    "campaign_id": "24132507747",
+    "campaign": "HVAC Installation",
+    "criterion_id": "190023714",
+    "match_type": "PHRASE",
+    "negative_text": "licensed",
+    "current_state": "negative KEYWORD [PHRASE] 'licensed' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Blocks 'licensed hvac contractor near me'. Licensed and insured is an approved, verified Ambient claim.",
+    "blocked_protected_probes": "licensed hvac contractor near me",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'licensed' [PHRASE] on campaign 24132507747",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507750~190023714",
+    "campaign_id": "24132507750",
+    "campaign": "HVAC Repair",
+    "criterion_id": "190023714",
+    "match_type": "PHRASE",
+    "negative_text": "licensed",
+    "current_state": "negative KEYWORD [PHRASE] 'licensed' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Blocks 'licensed hvac contractor near me'. Licensed and insured is an approved, verified Ambient claim.",
+    "blocked_protected_probes": "licensed hvac contractor near me",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'licensed' [PHRASE] on campaign 24132507750",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507753~190023714",
+    "campaign_id": "24132507753",
+    "campaign": "HVAC Replacement",
+    "criterion_id": "190023714",
+    "match_type": "PHRASE",
+    "negative_text": "licensed",
+    "current_state": "negative KEYWORD [PHRASE] 'licensed' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Blocks 'licensed hvac contractor near me'. Licensed and insured is an approved, verified Ambient claim.",
+    "blocked_protected_probes": "licensed hvac contractor near me",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'licensed' [PHRASE] on campaign 24132507753",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507741~138360213",
+    "campaign_id": "24132507741",
+    "campaign": "AC Repair",
+    "criterion_id": "138360213",
+    "match_type": "PHRASE",
+    "negative_text": "savage",
+    "current_state": "negative KEYWORD [PHRASE] 'savage' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Savage, Maryland (geoTargetConstants/1018704) is one of the 75 live location targets on all five campaigns. This PHRASE negative blocked 300 of 300 service-by-place probes for that city.",
+    "blocked_protected_probes": "",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'savage' [PHRASE] on campaign 24132507741",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507744~138360213",
+    "campaign_id": "24132507744",
+    "campaign": "Gas Boiler Repair",
+    "criterion_id": "138360213",
+    "match_type": "PHRASE",
+    "negative_text": "savage",
+    "current_state": "negative KEYWORD [PHRASE] 'savage' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Savage, Maryland (geoTargetConstants/1018704) is one of the 75 live location targets on all five campaigns. This PHRASE negative blocked 300 of 300 service-by-place probes for that city.",
+    "blocked_protected_probes": "",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'savage' [PHRASE] on campaign 24132507744",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507747~138360213",
+    "campaign_id": "24132507747",
+    "campaign": "HVAC Installation",
+    "criterion_id": "138360213",
+    "match_type": "PHRASE",
+    "negative_text": "savage",
+    "current_state": "negative KEYWORD [PHRASE] 'savage' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Savage, Maryland (geoTargetConstants/1018704) is one of the 75 live location targets on all five campaigns. This PHRASE negative blocked 300 of 300 service-by-place probes for that city.",
+    "blocked_protected_probes": "",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'savage' [PHRASE] on campaign 24132507747",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507750~138360213",
+    "campaign_id": "24132507750",
+    "campaign": "HVAC Repair",
+    "criterion_id": "138360213",
+    "match_type": "PHRASE",
+    "negative_text": "savage",
+    "current_state": "negative KEYWORD [PHRASE] 'savage' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Savage, Maryland (geoTargetConstants/1018704) is one of the 75 live location targets on all five campaigns. This PHRASE negative blocked 300 of 300 service-by-place probes for that city.",
+    "blocked_protected_probes": "",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'savage' [PHRASE] on campaign 24132507750",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507753~138360213",
+    "campaign_id": "24132507753",
+    "campaign": "HVAC Replacement",
+    "criterion_id": "138360213",
+    "match_type": "PHRASE",
+    "negative_text": "savage",
+    "current_state": "negative KEYWORD [PHRASE] 'savage' ENABLED",
+    "proposed_state": "REMOVED",
+    "reason": "Savage, Maryland (geoTargetConstants/1018704) is one of the 75 live location targets on all five campaigns. This PHRASE negative blocked 300 of 300 service-by-place probes for that city.",
+    "blocked_protected_probes": "",
+    "primary_conv_at_risk_if_left": 0,
+    "rollback": "re-create campaign negative 'savage' [PHRASE] on campaign 24132507753",
+    "risk": "LOW - each restores a verified Ambient proposition or a targeted city",
+    "unrelated_resource_assertion": "only this one campaign_criterion is removed"
+   },
+   {
+    "operation": "REMOVE_SHARED_LIST_NEGATIVE",
+    "resource": "shared_criterion",
+    "shared_set_id": "11252984411",
+    "shared_criterion_resource_name": "customers/2401959466/sharedCriteria/11252984411~10061081",
+    "criterion_id": "10061081",
+    "match_type": "BROAD",
+    "negative_text": "commercial",
+    "current_state": "account-level negative KEYWORD [BROAD] 'commercial' in shared set 11252984411",
+    "proposed_state": "REMOVED from the account-level list",
+    "reason": "Ambient's live website advertises commercial work: the homepage and the furnace-repair page both name commercial service, /services/hvac/condominium-hvac/ is a dedicated page, and the site carries a /category/commercial-hvac/ blog category including a Maryland BEPS compliance article. Two commercial queries have already produced primary conversions in this account: 'commercial ac repair near me' and 'commercial hvac companies near me'. BROAD 'commercial' is also named in the Green Marketing rules as a word that must not be broad-negatived.",
+    "blocked_protected_probes": "commercial hvac repair near me",
+    "blocked_historical_terms": "commercial ac repair near me|commercial boiler repair|commercial ductwork installation near me|commercial furnace repair|commercial hvac companies near me|commercial hvac near me|commercial radiator repair",
+    "primary_conv_at_risk_if_left": 3.83,
+    "all_conv_at_risk_if_left": 10.83,
+    "rollback": "re-add 'commercial' [BROAD] to shared set 11252984411",
+    "risk": "MEDIUM - account-level scope reaches all 23 non-removed campaigns, but only the 5 ENABLED ones can serve",
+    "unrelated_resource_assertion": "shared set 11252984411 member count must fall from 272 to 271; the other 16 shared sets untouched; still 0 shared lists attached to the five campaigns"
+   }
+  ],
+  "notes": {
+   "supersedes": "part of AMB-0909-NEG-RM-1 (CE289F3508A2) and AMB-0909-NEG-RM-2 (A435FA09AC97) - both SUPERSEDED, DO_NOT_EXECUTE",
+   "mixed_scope_is_deliberate": "This package pairs campaign-level and account-level removals in ONE atomic mutate so the two layers cannot end up half-applied.",
+   "row_evidence": "reports/ambient-cooling-heating/evidence/2026-09-09b-removal-row-evidence.csv",
+   "commercial_evidence": {
+    "website_pages": [
+     "https://ambientcoolingandheating.com/",
+     "https://ambientcoolingandheating.com/services/hvac/condominium-hvac/",
+     "https://ambientcoolingandheating.com/category/commercial-hvac/"
+    ],
+    "converting_terms_blocked": [
+     "commercial ac repair near me",
+     "commercial hvac companies near me",
+     "commercial furnace repair"
+    ],
+    "primary_conversions_at_risk": 3.83
+   },
+   "what_is_NOT_in_this_package": "The 11 manufacturer tokens, the 6 supply-house EXACT negatives, the additional-service terms and the dealer/installer terms are all held. See packages B, C and D in the correction report, none of which has executable operations."
+  },
+  "fingerprint": "18143479027D"
+ },
+ "AMB-0909B-COMP-1": {
+  "plan_name": "AMB-0909B-COMP-1",
+  "approval_class": "reversible-addition",
+  "generated_local": "2026-09-09T18:05:19.723631-04:00",
+  "supersedes": "AMB-0909-NEG-ADD-1 (23BE8FF0F24C) - SUPERSEDED, DO_NOT_EXECUTE",
+  "target": {
+   "customer_id": "2401959466",
+   "exact_child_account_name": "Ambient Cooling - Live",
+   "manager_customer_id": "3373711342",
+   "vertical": "heating-cooling",
+   "primary_service": "AC Repair",
+   "related_services": [
+    "HVAC Repair",
+    "HVAC Installation",
+    "HVAC Replacement",
+    "Gas Boiler Repair"
+   ]
+  },
+  "summary": "Verified competitors only: 3 negatives on HVAC Installation - two EXACT for Arundel Cooling & Heating brand queries and one PHRASE for Maryland Mechanical Heating & Cooling.",
+  "object_count": 3,
+  "partial_failure": false,
+  "atomic": true,
+  "operations": [
+   {
+    "operation": "ADD_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_id": "24132507747",
+    "campaign_id": "24132507747",
+    "campaign": "HVAC Installation",
+    "match_type": "EXACT",
+    "negative_text": "arundel cooling and heating reviews",
+    "current_state": "not present at campaign, ad group or account level",
+    "proposed_state": "negative KEYWORD [EXACT] 'arundel cooling and heating reviews' ENABLED",
+    "reason": "Verified competing HVAC contractor: Arundel Cooling & Heating Co., Inc.. Linthicum Heights is one of Ambient's 75 live location targets. Operating since 1971, now part of Service Experts. Residential and light commercial HVAC across Baltimore, Columbia, Annapolis, Ellicott City and Bowie - direct footprint overlap. Also a Carrier dealer.",
+    "entity_verification": {
+     "entity": "Arundel Cooling & Heating Co., Inc.",
+     "address": "707 Nursery Rd, Linthicum Heights, MD 21090",
+     "note": "Linthicum Heights is one of Ambient's 75 live location targets. Operating since 1971, now part of Service Experts. Residential and light commercial HVAC across Baltimore, Columbia, Annapolis, Ellicott City and Bowie - direct footprint overlap. Also a Carrier dealer.",
+     "sources": [
+      "https://www.bbb.org/us/md/linthicum/profile/heating-and-air-conditioning/arundel-cooling-heating-co-inc-0011-563",
+      "https://www.yelp.com/biz/arundel-cooling-and-heating-linthicum-heights-2",
+      "https://www.carrier.com/us/en/residential/dealers/md/linthicum-heights/707-nursery-rd-3274-loc"
+     ],
+     "match_choice": "EXACT, not PHRASE and never BROAD. Local preflight proved that PHRASE 'arundel cooling and heating' also blocks 'anne arundel cooling and heating', which produced a primary phone-call conversion in the legacy Heating Maintenance campaign, and sits one word away from 'hvac anne arundel county'. Anne Arundel County is Ambient's core service area. EXACT on the two unambiguous brand queries leaves both county queries free.",
+     "deliberately_not_blocked": [
+      "anne arundel cooling and heating - 1 primary conversion (Calls from ads)",
+      "hvac anne arundel county - county intent",
+      "arundel cooling and heating - too close to the county queries; 6 impressions, 0 clicks, $0.00, not worth the risk"
+     ],
+     "observed": {
+      "rows": 2,
+      "impressions": 8,
+      "clicks": 1,
+      "cost": 20.44,
+      "conversions": 0.0,
+      "terms": [
+       "arundel cooling and heating reviews"
+      ]
+     },
+     "why_this_one": "Unambiguous brand-research query and the only Arundel term that took a click. It carries all $20.44 of the measured Arundel waste."
+    },
+    "word_count": 5,
+    "char_count": 35,
+    "conflict_tests": {
+     "active_positive_keywords": "clear - the only live positives are 'hvac installers near me' PHRASE and EXACT",
+     "converting_terms_all_time_account_wide": "clear - 0 of 304 blocked",
+     "bofu_probes": "clear - 0 of 67 blocked",
+     "service_area": "clear - blocks none of the 80 live Maryland place tokens, none of the 67 BOFU probes and none of the 304 account-wide converting terms, including 'anne arundel cooling and heating'",
+     "manufacturers": "clear - contains no manufacturer token"
+    },
+    "rollback": "remove the campaign negative 'arundel cooling and heating reviews' [EXACT] from 24132507747",
+    "risk": "LOW",
+    "unrelated_resource_assertion": "HVAC Installation ENABLED campaign negatives must rise from 1435 to 1437 (or from 1420 to 1422 if AMB-0909B-NEG-A ran first); no other campaign changes"
+   },
+   {
+    "operation": "ADD_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_id": "24132507747",
+    "campaign_id": "24132507747",
+    "campaign": "HVAC Installation",
+    "match_type": "EXACT",
+    "negative_text": "arundel heating and cooling maryland",
+    "current_state": "not present at campaign, ad group or account level",
+    "proposed_state": "negative KEYWORD [EXACT] 'arundel heating and cooling maryland' ENABLED",
+    "reason": "Verified competing HVAC contractor: Arundel Cooling & Heating Co., Inc.. Linthicum Heights is one of Ambient's 75 live location targets. Operating since 1971, now part of Service Experts. Residential and light commercial HVAC across Baltimore, Columbia, Annapolis, Ellicott City and Bowie - direct footprint overlap. Also a Carrier dealer.",
+    "entity_verification": {
+     "entity": "Arundel Cooling & Heating Co., Inc.",
+     "address": "707 Nursery Rd, Linthicum Heights, MD 21090",
+     "note": "Linthicum Heights is one of Ambient's 75 live location targets. Operating since 1971, now part of Service Experts. Residential and light commercial HVAC across Baltimore, Columbia, Annapolis, Ellicott City and Bowie - direct footprint overlap. Also a Carrier dealer.",
+     "sources": [
+      "https://www.bbb.org/us/md/linthicum/profile/heating-and-air-conditioning/arundel-cooling-heating-co-inc-0011-563",
+      "https://www.yelp.com/biz/arundel-cooling-and-heating-linthicum-heights-2",
+      "https://www.carrier.com/us/en/residential/dealers/md/linthicum-heights/707-nursery-rd-3274-loc"
+     ],
+     "match_choice": "EXACT, not PHRASE and never BROAD. Local preflight proved that PHRASE 'arundel cooling and heating' also blocks 'anne arundel cooling and heating', which produced a primary phone-call conversion in the legacy Heating Maintenance campaign, and sits one word away from 'hvac anne arundel county'. Anne Arundel County is Ambient's core service area. EXACT on the two unambiguous brand queries leaves both county queries free.",
+     "deliberately_not_blocked": [
+      "anne arundel cooling and heating - 1 primary conversion (Calls from ads)",
+      "hvac anne arundel county - county intent",
+      "arundel cooling and heating - too close to the county queries; 6 impressions, 0 clicks, $0.00, not worth the risk"
+     ],
+     "observed": {
+      "rows": 1,
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "terms": [
+       "arundel heating and cooling maryland"
+      ]
+     },
+     "why_this_one": "Unambiguous brand-plus-state query. Zero cost so far, but a clear competitor-brand pattern and EXACT carries no collision risk."
+    },
+    "word_count": 5,
+    "char_count": 36,
+    "conflict_tests": {
+     "active_positive_keywords": "clear - the only live positives are 'hvac installers near me' PHRASE and EXACT",
+     "converting_terms_all_time_account_wide": "clear - 0 of 304 blocked",
+     "bofu_probes": "clear - 0 of 67 blocked",
+     "service_area": "clear - blocks none of the 80 live Maryland place tokens, none of the 67 BOFU probes and none of the 304 account-wide converting terms, including 'anne arundel cooling and heating'",
+     "manufacturers": "clear - contains no manufacturer token"
+    },
+    "rollback": "remove the campaign negative 'arundel heating and cooling maryland' [EXACT] from 24132507747",
+    "risk": "LOW",
+    "unrelated_resource_assertion": "HVAC Installation ENABLED campaign negatives must rise from 1435 to 1437 (or from 1420 to 1422 if AMB-0909B-NEG-A ran first); no other campaign changes"
+   },
+   {
+    "operation": "ADD_CAMPAIGN_NEGATIVE_KEYWORD",
+    "resource": "campaign_criterion",
+    "resource_id": "24132507747",
+    "campaign_id": "24132507747",
+    "campaign": "HVAC Installation",
+    "match_type": "PHRASE",
+    "negative_text": "maryland mechanical heating",
+    "current_state": "not present at campaign, ad group or account level",
+    "proposed_state": "negative KEYWORD [PHRASE] 'maryland mechanical heating' ENABLED",
+    "reason": "Verified competing HVAC contractor: Maryland Mechanical Heating & Cooling LLC. A separate company, Maryland Mechanical Services LLC (mmshvacllc.com), also trades in MD/VA/DC. The PHRASE covers the observed brand query for both.",
+    "entity_verification": {
+     "entity": "Maryland Mechanical Heating & Cooling LLC",
+     "address": "Maryland; HVACR licence #22169; marylandhvacs.com; founded 2023",
+     "note": "A separate company, Maryland Mechanical Services LLC (mmshvacllc.com), also trades in MD/VA/DC. The PHRASE covers the observed brand query for both.",
+     "sources": [
+      "https://marylandhvacs.com/",
+      "https://mmshvacllc.com/",
+      "https://www.labor.maryland.gov/license/hvacr/"
+     ],
+     "observed": {
+      "rows": 1,
+      "impressions": 4,
+      "clicks": 1,
+      "cost": 50.17,
+      "conversions": 0.0,
+      "terms": [
+       "maryland mechanical heating & cooling"
+      ]
+     },
+     "match_choice": "PHRASE on the three-word brand fragment. The individual words maryland, mechanical and heating are all left usable."
+    },
+    "word_count": 3,
+    "char_count": 27,
+    "conflict_tests": {
+     "active_positive_keywords": "clear - the only live positives are 'hvac installers near me' PHRASE and EXACT",
+     "converting_terms_all_time_account_wide": "clear - 0 of 304 blocked",
+     "bofu_probes": "clear - 0 of 67 blocked",
+     "service_area": "clear - blocks none of the 80 live Maryland place tokens, none of the 67 BOFU probes and none of the 304 account-wide converting terms, including 'anne arundel cooling and heating'",
+     "manufacturers": "clear - contains no manufacturer token"
+    },
+    "rollback": "remove the campaign negative 'maryland mechanical heating' [PHRASE] from 24132507747",
+    "risk": "LOW",
+    "unrelated_resource_assertion": "HVAC Installation ENABLED campaign negatives must rise from 1435 to 1437 (or from 1420 to 1422 if AMB-0909B-NEG-A ran first); no other campaign changes"
+   }
+  ],
+  "notes": {
+   "supersedes": "AMB-0909-NEG-ADD-1 (23BE8FF0F24C) - SUPERSEDED, DO_NOT_EXECUTE",
+   "dropped_from_the_prior_package": {
+    "\"sq ft house\"": "WITHDRAWN. Square-footage sizing queries are legitimate installation research from prospective buyers.",
+    "[how much is hvac system]": "WITHDRAWN. A price question is buyer research, not an irrelevant query.",
+    "\"all about air\"": "NOT ADDED. Could not be verified as a Maryland HVAC contractor. 4 impressions, 0 clicks, $0.00.",
+    "\"home comfort hvac\"": "NOT ADDED. No uniquely identifiable 'Home Comfort HVAC' entity in Maryland; several unrelated 'Comfort'-named contractors exist and 'home comfort' is generic trade language. 3 impressions, 0 clicks, $0.00."
+   },
+   "no_broad_negatives": "No operation uses BROAD. No negative is created from home, comfort, maryland, mechanical, heating, air or cooling.",
+   "preflight_caught": "The first draft used PHRASE 'arundel cooling and heating'. Local preflight proved it blocks 'anne arundel cooling and heating', a term that produced a primary phone-call conversion. The package was narrowed to EXACT before any API quota was spent."
+  },
+  "fingerprint": "05FBCBD34B4A"
+ }
+}

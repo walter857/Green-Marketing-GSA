@@ -1,0 +1,89 @@
+match,negative,verdict,why,n_converting_terms,n_bofu_probes,conversions_at_risk,all_conversions_at_risk,campaigns
+EXACT,hvac repair near me,ROUTING,"pure service phrase - intentional cross-campaign routing, verify sibling",1,1,5.0,15.0,HVAC Installation
+BROAD,commercial,REMOVE,BROAD negative on a word the Green Marketing rules forbid (['commercial']),7,1,3.83,10.83,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,warner,KEEP,competitor / entity / out-of-area token - intentional,2,0,2.0,3.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,chestertown,KEEP,competitor / entity / out-of-area token - intentional,2,0,2.0,2.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,hvac ductwork installation near me,ROUTING,"pure service phrase - intentional cross-campaign routing, verify sibling",1,1,2.0,2.0,HVAC Replacement
+BROAD,michaels,KEEP,competitor / entity / out-of-area token - intentional,3,0,1.0,4.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,elmar,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,2.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,beltway,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,dot,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,cornett,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,metcalf,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+BROAD,haller,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,montgomery county,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,dayton,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,smith,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,croft,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,HVAC Installation|HVAC Replacement
+PHRASE,hvac direct,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,HVAC Installation
+PHRASE,max air glen burnie,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,HVAC Installation
+BROAD,sons,KEEP,competitor / entity / out-of-area token - intentional,1,0,1.0,1.0,HVAC Installation|HVAC Replacement
+BROAD,furr,KEEP,competitor / entity / out-of-area token - intentional,3,0,0.0,7.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,inc,KEEP,competitor / entity / out-of-area token - intentional,2,0,0.0,6.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,carrier,REMOVE,supported manufacturer token; blocks manufacturer+service intent,5,1,0.0,5.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,daikin,REMOVE,supported manufacturer token; blocks manufacturer+service intent,3,0,0.0,4.0,HVAC Installation|HVAC Replacement
+PHRASE,for sale,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,3.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,re michel near me,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,3.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,store,KEEP,competitor / entity / out-of-area token - intentional,2,0,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,air duct cleaning,KEEP,competitor / entity / out-of-area token - intentional,1,1,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,barstow and sons annapolis,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,closest re michaels,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,daikin elkridge md,REMOVE,supported manufacturer token; blocks manufacturer+service intent,1,0,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,geothermal technician near me,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,home depot,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,home heater service,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,home radiator repair,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,r e michel company near me,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,michels,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,barstow,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,2.0,HVAC Installation|HVAC Replacement
+BROAD,depot,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,2.0,HVAC Installation|HVAC Replacement
+BROAD,trane,REMOVE,supported manufacturer token; blocks manufacturer+service intent,2,1,0.0,2.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,acrepair,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,aerco near me,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,aireco gaithersburg,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,aireco millersville md,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,airtron,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+BROAD,boland,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,alexandria,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,carrier enterprise laurel,REMOVE,supported manufacturer token; blocks manufacturer+service intent,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,carrier mid atlantic hanover maryland,REMOVE,supported manufacturer token; blocks manufacturer+service intent,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,carrier mid atlantic near me,REMOVE,supported manufacturer token; blocks manufacturer+service intent,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,ce carrier enterprise near me,REMOVE,supported manufacturer token; blocks manufacturer+service intent,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,chilltrol annapolis,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,daikin cerca de mi,REMOVE,supported manufacturer token; blocks manufacturer+service intent,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,daikin comfort technologies locations,REMOVE,supported manufacturer token; blocks manufacturer+service intent,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,energy audit near me,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,white,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,geothermal in maryland,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,geothermal maryland,REMOVE,names a live Maryland target location,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,humidifier,REMOVE,blocks a confirmed Ambient service with no competitor component,1,1,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,hobbs and associates jessup md,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,hvac contractor cerca de mi,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,thermostat,REMOVE,blocks a confirmed Ambient service with no competitor component,1,1,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,mccrea,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,mechanical contractor near me,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,mitsubishi,REMOVE,supported manufacturer token; blocks manufacturer+service intent,1,1,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,mold remediation,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+PHRASE,dehumidifier,REMOVE,blocks a confirmed Ambient service with no competitor component,1,1,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,r e michel company,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,fairfax,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,re michaels glen burnie,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,re michel glen burnie md,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,landover,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,remichel,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,smo,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,sweeney,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,trane authorized dealers near me,REMOVE,supported manufacturer token; blocks manufacturer+service intent,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+EXACT,trane installers near me,REMOVE,supported manufacturer token; blocks manufacturer+service intent,1,0,0.0,1.0,AC Repair|Gas Boiler Repair|HVAC Repair
+BROAD,airtron,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,HVAC Installation|HVAC Replacement
+BROAD,chilltrol,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,HVAC Installation|HVAC Replacement
+BROAD,hobbs,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,HVAC Installation|HVAC Replacement
+BROAD,mold,KEEP,competitor / entity / out-of-area token - intentional,1,0,0.0,1.0,HVAC Installation|HVAC Replacement
+EXACT,ac replacement near me,ROUTING,"pure service phrase - intentional cross-campaign routing, verify sibling",0,1,0,0,AC Repair
+EXACT,tankless water heater installation near me,ROUTING,"pure service phrase - intentional cross-campaign routing, verify sibling",0,1,0,0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,lennox,REMOVE,supported manufacturer token; blocks manufacturer+service intent,0,1,0,0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,goodman,REMOVE,supported manufacturer token; blocks manufacturer+service intent,0,1,0,0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+BROAD,rheem,REMOVE,supported manufacturer token; blocks manufacturer+service intent,0,1,0,0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,licensed,REMOVE,single-word PHRASE negative on a forbidden generic (licensed),0,1,0,0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+PHRASE,free,REMOVE,single-word PHRASE negative on a forbidden generic (free),0,1,0,0,AC Repair|Gas Boiler Repair|HVAC Installation|HVAC Repair|HVAC Replacement
+EXACT,furnace replacement near me,ROUTING,"pure service phrase - intentional cross-campaign routing, verify sibling",0,1,0,0,HVAC Repair

@@ -1,0 +1,31 @@
+{
+ "fails": [],
+ "warns": [],
+ "packages": {
+  "AMB-0909-CPC-1": {
+   "fingerprint": "46C39C6B7091",
+   "ops": 2,
+   "class": "reversible-setting-change"
+  },
+  "AMB-0909-NEG-RM-1": {
+   "fingerprint": "CE289F3508A2",
+   "ops": 89,
+   "class": "DESTRUCTIVE-removal"
+  },
+  "AMB-0909-ADS-1": {
+   "fingerprint": "11A79347A296",
+   "ops": 2,
+   "class": "reversible-status-change"
+  },
+  "AMB-0909-NEG-ADD-1": {
+   "fingerprint": "23BE8FF0F24C",
+   "ops": 6,
+   "class": "reversible-addition"
+  },
+  "AMB-0909-BUD-1": {
+   "fingerprint": "D448BFDE4650",
+   "ops": 2,
+   "class": "reversible-budget-change"
+  }
+ }
+}

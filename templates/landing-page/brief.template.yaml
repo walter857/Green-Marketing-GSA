@@ -1,0 +1,78 @@
+client: ""
+service: ""
+canonical_keyword: ""
+market_language: en
+final_url: ""
+phone_display: ""
+phone_e164: ""
+form_webhook_env_key: CRM_WEBHOOK_URL
+thank_you_path: /thank-you
+
+verified_claims:
+  usps: []
+  offers: []
+  licenses: []
+  warranties: []
+  rating: null
+  review_count: null
+  years_in_business: null
+
+service_area:
+  primary_city: ""
+  additional_locations: []
+
+structure:
+  - top_cta_bar
+  - hero
+  - problem_and_outcome
+  - service_scope
+  - before_after_gallery
+  - process
+  - verified_reviews
+  - service_area
+  - faq
+  - final_cta
+  - footer
+
+form_fields:
+  - name
+  - phone
+  - email
+  - project_details
+
+hidden_attribution_fields:
+  - lead_id
+  - gclid
+  - gbraid
+  - wbraid
+  - utm_source
+  - utm_medium
+  - utm_campaign
+  - utm_term
+  - utm_content
+  - campaign_id
+  - ad_group_id
+  - keyword
+  - device
+  - landing_page
+  - referrer
+  - consent_state
+
+images:
+  hero:
+    required: true
+    subject: ""
+    aspect_ratio: "16:9"
+  proof_1:
+    required: true
+    subject: ""
+    aspect_ratio: "4:3"
+  proof_2:
+    required: true
+    subject: ""
+    aspect_ratio: "4:3"
+  process_or_team:
+    required: false
+    subject: ""
+    aspect_ratio: "3:2"
+

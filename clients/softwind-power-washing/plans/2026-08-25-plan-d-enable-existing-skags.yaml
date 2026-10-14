@@ -1,0 +1,247 @@
+# PLAN D - ENABLE EXISTING PAUSED INVENTORY
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+#
+# Enabling a paused resource is a LIVE DELIVERY CHANGE and requires its own
+# explicit ENABLE approval tied to this exact fingerprint.
+#
+# IMPORTANT CORRECTION TO THE AUDIT: the 2026-08-25 audit recommended unpausing
+# "House Washing Company Near Me" on the basis that house washing near me shows
+# 40 local searches/month. Those are two DIFFERENT keyword texts. See
+# audit_correction below. The recommendation survives, but for a smaller reason
+# than the audit stated, and the 40/month demand is handled in PLAN-E instead.
+
+change_plan:
+  plan_id: PLAN-D
+  plan_title: Enable House Washing Company Near Me in campaign 24145053510
+  approval_type: ENABLE_EXISTING_RESOURCES
+  priority: P1
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  recommended_approval_order: NOT APPROVABLE - status SUPERSEDED
+  ads_mutation_count: 1
+  requires_separate_enable_approval: true
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  audit_correction:
+    what_the_audit_said: '"Unpause House Washing Company Near Me - 40 local searches/month at $10.46-$32.09."'
+    what_a_fresh_keyword_planner_read_shows: The ad group House Washing Company Near Me contains
+      exactly one keyword text, "house washing company near me", and that text returns NO reportable
+      local volume bucket (avg_monthly_searches = 0). The 40/month bucket at $10.46-$32.09 belongs
+      to the different text "house washing near me", which lives in the PAUSED LEGACY ad group "Soft
+      & House Washing" together with 13 other texts.
+    consequence: The audit conflated two keyword texts. Enabling House Washing Company Near Me is
+      still worth doing - it is a zero-build status change with a dedicated, well-matched landing
+      page - but it is a LOW VOLUME action, not the "single fastest win" the audit framed it as.
+      The genuine 40/month demand is captured properly in PLAN-E as a clean SKAG rather than by
+      enabling a 14-text legacy container.
+    also_corrected: 'The audit''s paused-inventory classifier initially flagged four ad groups as
+      LANDING PAGE NOT READY. That was a false negative: the classifier only knew about URLs belonging
+      to ENABLED ads. All four pages were then fetched in a real browser on 2026-08-25 and every
+      one returned HTTP 200 with the tracked phone, working forms and gclid preservation.'
+  actions:
+  - action_id: P1-D01
+    priority: P1
+    resource_type: AD_GROUP
+    operation: UPDATE_STATUS_TO_ENABLED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: '198082079463'
+    ad_group_name: House Washing Company Near Me
+    resource_id: customers/1521725229/adGroups/198082079463
+    field_mask: status
+    current_value:
+      status: PAUSED
+      primary_status: PAUSED
+    proposed_value:
+      status: ENABLED
+    why: 'A fully built, fully approved ad group sitting idle. Two RSAs already at ad_group_ad.status
+      ENABLED (so enabling the ad group alone makes them serve - one mutation, not three), both
+      APPROVED and REVIEWED with EXCELLENT and GOOD ad strength, pointing at a dedicated landing
+      page whose H1 is "House Washing Company In Islip, West Islip & Dix Hills, NY" and which mentions
+      house washing 24 times. Buyer intent is unambiguous: "house washing company near me" is a
+      hire-me query.'
+    evidence: deep-read-2026-08-25.json ad_groups/keywords/ads; landing-pages-paused-skags-2026-08-25.json
+      (HTTP 200, tel (631) 502-7946, 2 forms, gclid preserved).
+    expected_effect: Adds one in-scope BOFU SKAG to live delivery at zero build cost. Volume is
+      low - the text has no reportable Planner bucket - so the honest expectation is a small number
+      of additional impressions, not a step change. Historical delivery for this ad group was 2
+      impressions.
+    risk: 'LOW-MEDIUM. Its historical search terms included two out-of-scope queries: "house cleaning
+      services near me" (interior maid service) and "slate roof cleaning near me" (roof cleaning
+      is outside this work order''s approved scope). Both arrived via the PHRASE keyword.'
+    risk_mitigation: Approve PLAN-D only together with the three campaign negatives in PLAN-E (roof
+      cleaning, roof washing, house cleaning), or accept the small risk of a handful of out-of-scope
+      impressions on a ~26 impression/day account.
+    rollback: Set ad_group 198082079463 status back to PAUSED. Single field edit, fully reversible,
+      no data destroyed.
+    approval_required: YES - SEPARATE ENABLE APPROVAL. This is a live delivery change under the
+      Safety and Approval Model ("Enable | Yes | Passed QA report | Separate explicit approval").
+    object_count: 1
+  pre_enable_qa:
+    ad_group_id: '198082079463'
+    campaign: Power Washing
+    keywords:
+      count_rows: 2
+      texts:
+      - house washing company near me
+      match_types:
+      - PHRASE
+      - EXACT
+      all_status_enabled: true
+      all_approval_approved: true
+      all_system_serving_status_eligible: true
+    rsas:
+      count: 2
+      ad_group_ad_status:
+      - ENABLED
+      - ENABLED
+      approval_status:
+      - APPROVED
+      - APPROVED
+      review_status:
+      - REVIEWED
+      - REVIEWED
+      ad_strength:
+      - EXCELLENT
+      - GOOD
+      policy_topic_entries: 0
+      headlines_per_ad: 15
+      descriptions_per_ad: 4
+      character_violations: 0
+    final_url: https://offer.softwindli.com/house-washing-company/
+    landing_page_verified_2026_08_25:
+      http_status: 200
+      redirect_chain: []
+      title: House Washing Company | Softwind Landscape & Masonry
+      h1: House Washing Company In Islip, West Islip & Dix Hills, NY
+      forms: 2
+      tel_links:
+      - (631) 502-7946
+      phone_matches_approved_tracking_number: true
+      gclid_preserved: true
+      mobile_parity: true
+      known_page_defects:
+      - Carries the same evergreen 'Offer Ends in' countdown found on every offer page - see PLAN-F.
+        Not a blocker for enablement.
+      - Carries the second Google Ads tag AW-17878095007 - see PLAN-A.
+    ad_group_negatives: 0
+    ad_group_assets: 0
+    inherits_campaign_negatives: 47
+    inherits_campaign_geo: 8 targets, PRESENCE
+    inherits_campaign_schedule: Mon-Sat 08:00-18:00 today; 24/7 if PLAN-C is approved
+    inherits_conversion_goals:
+    - PHONE_CALL_LEAD/WEBSITE
+    - PHONE_CALL_LEAD/CALL_FROM_ADS
+    - SUBMIT_LEAD_FORM/WEBSITE
+  cross_campaign_check:
+    keyword_text: house washing company near me
+    campaign_a_24103511039_coverage:
+      ad_group: House Washing Company Near Me (202870585910)
+      status: PAUSED
+      note: Identical ad group exists in campaign A. Its two RSAs are at ad_group_ad.status PAUSED,
+        so enabling that copy would need three mutations rather than one.
+    campaign_b_24145053510_coverage:
+      ad_group: House Washing Company Near Me (198082079463)
+      status: PAUSED
+      note: RSAs already ENABLED. One mutation. CHOSEN.
+    currently_enabled_duplicate_anywhere: false
+    paused_duplicate_exists: true
+    paused_duplicate_location: campaign A (202870585910) - LEAVE PAUSED
+    search_term_overlap_with_live_skags: Historical terms for this ad group were "house cleaning
+      services near me" and "slate roof cleaning near me". Neither is served by any currently live
+      SKAG, so no live ad group loses traffic.
+    landing_page_overlap: /house-washing-company/ is used by no currently enabled ad group. No cannibalisation
+      of an existing page.
+    recommended_ownership: Campaign B (24145053510). Campaign B already owns the house / soft /
+      pressure washing family, so the theme is coherent, and its RSAs are already enabled. The campaign
+      A copy MUST remain paused, otherwise the two campaigns would compete for the same query -
+      the exact failure this section exists to prevent.
+    ownership_is_exclusive: true
+  paused_inventory_reviewed: 14 ad groups, 54 distinct keyword texts
+  rejected_for_enablement:
+  - ad_group: Pressure & Power Washing
+    exists_in:
+    - 24103511039 (205713509704)
+    - 24145053510 (198082079503)
+    classification: KEEP PAUSED
+    best_demand: power washing service 70/mo; pressure washing service 70/mo; power washing long
+      island 40/mo; pressure washing long island 40/mo
+    why_rejected: The highest-volume paused container in the account, and still the wrong move.
+      It holds 17 keyword texts spanning power washing, pressure washing, residential and exterior
+      intents in ONE ad group, against ONE generic landing page (/power-washing-soft-washing/, H1
+      "Power Washing & Soft Washing in Long Island", no city names). It carries only ONE RSA, against
+      the two-RSA SOP, and campaign A's copy is POOR ad strength. Worse, its texts (power washing
+      company, power washing service) would collide by close variant with the live power washing
+      company near me and power washing services near me in campaign A. Enabling it in campaign
+      B would create exactly the cross-campaign competition section 4 forbids; enabling it in campaign
+      A would fire a POOR single RSA at a generic page. The right answer is to extract its genuinely
+      uncovered texts into clean SKAGs - see PLAN-E.
+  - ad_group: Soft & House Washing
+    exists_in:
+    - 24103511039 (205713509744)
+    - 24145053510 (198082078943)
+    classification: KEEP PAUSED
+    best_demand: house washing near me 40/mo at $10.46-$32.09; soft washing near me 10/mo; soft
+      washing long island 10/mo at $8.29-$19.34
+    why_rejected: Holds the genuinely valuable 40/month "house washing near me" text, but in a 14-text
+      multi-intent container with ONE RSA pointing at the generic /power-washing-soft-washing/ page
+      rather than the far better matched /house-washing-company/ page. Its texts also overlap the
+      live soft house washing near me SKAG in campaign B. The 40/month demand is worth capturing
+      - as a clean SKAG in PLAN-E, not by enabling this container.
+  - ad_group: Driveway Patio Concrete Washing
+    exists_in:
+    - 24103511039 (205713509664)
+    - 24145053510 (198082078743)
+    classification: LOW VOLUME
+    best_demand: patio cleaning service 10/mo at $5.31-$15.09; every other text 10/mo or below the
+      reporting threshold
+    why_rejected: Twelve keyword texts, none reaching a meaningful local bucket. Its surfaces are
+      already covered by the live Driveway Pressure Washing Near Me and Patio Pressure Washing Near
+      Me SKAGs in campaign B. Splitting a ~26 impression/day pool further across a 12-text group
+      with one RSA and a generic page would dilute, not add.
+  - ad_group_group: The ten paused revamp SKAG duplicates
+    names:
+    - Power Washing Near Me
+    - Power Washing Company Near Me
+    - Power Washing Islip
+    - Power Washing West Islip
+    - Power Washing Dix Hills
+    - Residential Pressure Washing Near Me
+    - House Pressure Washing Estimate
+    - Driveway Pressure Washing Near Me
+    - Patio Pressure Washing Near Me
+    - Soft House Washing Near Me
+    classification: DUPLICATE
+    why_rejected: Every one of these keyword texts is ALREADY LIVE in the other campaign. The keyword
+      inventory is byte-identical across both campaigns, so each of the twelve revamp SKAGs exists
+      twice and exactly one copy is enabled. Enabling a second copy would put two ad groups in two
+      campaigns into the same auction for one query - the precise cannibalisation this plan set
+      is designed to remove, not create.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 1
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 1
+    note: Keywords and RSAs in ad group 198082079463 are already at ENABLED status. Enabling the
+      parent ad group is sufficient - no keyword or ad mutation is required, which is why this is
+      one mutation rather than five.
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com

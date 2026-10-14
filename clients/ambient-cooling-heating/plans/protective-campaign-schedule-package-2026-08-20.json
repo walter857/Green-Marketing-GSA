@@ -1,0 +1,860 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-C-protective-campaign-schedule",
+ "version": "2026-08-20",
+ "phase": "modify-existing",
+ "run_class": "READ + DRAFT + VALIDATE-ONLY. No mutation performed.",
+ "voids": {
+  "EF9FBA55926545F2": "Package B v1. REJECTED and VOID. Never execute.",
+  "93A1EA55973F7A94": "Package B-v2 staged budget increase. WITHDRAWN AND VOID by Green Marketing on 2026-08-20. Never execute. Its arithmetic was built on 2026-08-19 figures and, more importantly, its premise that budget was the binding constraint is outranked by the traffic-quality finding below."
+ },
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "manager_account_name": "Green Marketing",
+  "account_timezone": "America/New_York",
+  "currency": "USD",
+  "identity_verified": "2026-08-20, fresh read-only lookup. Name, ID, timezone and currency all matched exactly; not a manager account, not a test account."
+ },
+ "objective": "Restrict PAID CAMPAIGN DELIVERY on the five Search campaigns to Monday-Friday 08:00-20:00 and Saturday 08:00-13:00 America/New_York, with no Sunday delivery, as a protective response to the invalid-click finding.",
+ "why": {
+  "headline": "The five campaigns are running a 92.5% filtered-invalid click rate since launch against a 27.9% account baseline over the prior 12 months.",
+  "overnight_concentration": "The 00:00-07:59 block took 9.9% of impressions but 32.1% of charged spend, at $94.60 per charged click against $41.44 in daytime hours. Hours 06:00 ($111.82 per click) and 07:00 ($181.79 per click) are the worst in the account.",
+  "scope_limit": "This schedule closes the worst window. It is NOT a fix for the underlying problem, which is that ClickCease protection is not reaching these five campaigns at all. See clickcease_verification below."
+ },
+ "timezone_handling": {
+  "rule": "AdScheduleInfo hours are interpreted in the account time zone. America/New_York is set on the customer, so EST and EDT are handled by Google. No UTC conversion is applied anywhere in this package.",
+  "verified_account_time_zone": "America/New_York"
+ },
+ "observed_state_before": {
+  "ad_schedule_criteria_on_the_five": 0,
+  "reason": "Package A 44D14DA4714BB6E8 removed all 30 on 2026-08-19, making the campaigns eligible 24/7. This package restores a restricted schedule.",
+  "ad_schedule_criteria_on_legacy_campaigns": 109,
+  "legacy_campaigns_with_schedules": 19,
+  "legacy_status": "all PAUSED or REMOVED; none is touched by this package",
+  "campaign_criterion_type_counts_per_campaign_before": {
+   "LANGUAGE": 1,
+   "DEVICE": 3,
+   "LOCATION": 75,
+   "AD_SCHEDULE": 0
+  },
+  "campaign_criterion_type_counts_per_campaign_after": {
+   "LANGUAGE": 1,
+   "DEVICE": 3,
+   "LOCATION": 75,
+   "AD_SCHEDULE": 6
+  }
+ },
+ "call_asset_unchanged": {
+  "asset_id": "407995613637",
+  "phone": "(410)705-6354",
+  "current_schedule": [
+   "MONDAY 08:00-20:00",
+   "TUESDAY 08:00-20:00",
+   "WEDNESDAY 08:00-20:00",
+   "THURSDAY 08:00-20:00",
+   "FRIDAY 08:00-20:00",
+   "SATURDAY 08:00-13:00"
+  ],
+  "sunday_row": "absent",
+  "policy": "APPROVED / REVIEWED, all five campaign links ENABLED and ELIGIBLE (cleared review on 2026-08-20).",
+  "mutation_required": "NONE. It already matches the required hours exactly, so the campaign schedule and the call-asset schedule will be identical. Zero asset operations are in this package."
+ },
+ "operations": {
+  "execution_shape": "ONE GoogleAdsService.Mutate request containing 30 mutate_operations, partial_failure=false, so the package is atomic.",
+  "creates": [
+   {
+    "seq": 1,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507741",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "AC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "MONDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Monday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507741~303280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 2,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507741",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "AC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "TUESDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Tuesday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507741~313280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 3,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507741",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "AC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "WEDNESDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Wednesday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507741~323280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 4,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507741",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "AC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "THURSDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Thursday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507741~333280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 5,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507741",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "AC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "FRIDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Friday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507741~343280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 6,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507741",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "AC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "SATURDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 13,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Saturday 8:00 AM - 1:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507741~353252",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 7,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507744",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "service_name": "Gas Boiler Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "MONDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Monday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507744~303280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 8,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507744",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "service_name": "Gas Boiler Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "TUESDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Tuesday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507744~313280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 9,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507744",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "service_name": "Gas Boiler Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "WEDNESDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Wednesday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507744~323280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 10,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507744",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "service_name": "Gas Boiler Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "THURSDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Thursday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507744~333280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 11,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507744",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "service_name": "Gas Boiler Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "FRIDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Friday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507744~343280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 12,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507744",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "service_name": "Gas Boiler Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "SATURDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 13,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Saturday 8:00 AM - 1:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507744~353252",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 13,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507747",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Installation",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "MONDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Monday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507747~303280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 14,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507747",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Installation",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "TUESDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Tuesday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507747~313280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 15,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507747",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Installation",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "WEDNESDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Wednesday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507747~323280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 16,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507747",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Installation",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "THURSDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Thursday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507747~333280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 17,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507747",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Installation",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "FRIDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Friday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507747~343280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 18,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507747",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Installation",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "SATURDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 13,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Saturday 8:00 AM - 1:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507747~353252",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 19,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507750",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "MONDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Monday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507750~303280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 20,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507750",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "TUESDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Tuesday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507750~313280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 21,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507750",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "WEDNESDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Wednesday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507750~323280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 22,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507750",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "THURSDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Thursday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507750~333280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 23,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507750",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "FRIDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Friday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507750~343280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 24,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507750",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Repair",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "SATURDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 13,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Saturday 8:00 AM - 1:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507750~353252",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 25,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507753",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Replacement",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "MONDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Monday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507753~303280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 26,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507753",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Replacement",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "TUESDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Tuesday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507753~313280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 27,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507753",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Replacement",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "WEDNESDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Wednesday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507753~323280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 28,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507753",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Replacement",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "THURSDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Thursday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507753~333280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 29,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507753",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Replacement",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "FRIDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 20,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Friday 8:00 AM - 8:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507753~343280",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   },
+   {
+    "seq": 30,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "create",
+    "campaign": "customers/2401959466/campaigns/24132507753",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Replacement",
+    "criterion_type": "AD_SCHEDULE",
+    "ad_schedule": {
+     "day_of_week": "SATURDAY",
+     "start_hour": 8,
+     "start_minute": "ZERO",
+     "end_hour": 13,
+     "end_minute": "ZERO"
+    },
+    "reads_as": "Saturday 8:00 AM - 1:00 PM America/New_York",
+    "negative": false,
+    "bid_modifier": "not set - left at the Google default. TARGET_SPEND (Maximize Clicks) ignores ad-schedule bid modifiers, so setting one would be inert and is deliberately omitted.",
+    "expected_resource_name": "customers/2401959466/campaignCriteria/24132507753~353252",
+    "expected_resource_name_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span. These are the IDs the identical rows carried before Package A removed them on 2026-08-19, so they are EXPECTED, not guaranteed. Readback verifies by day and hour, not by predicted ID."
+   }
+  ],
+  "removals": [],
+  "updates": []
+ },
+ "mutation_counts": {
+  "creates": 30,
+  "updates": 0,
+  "removals": 0,
+  "total_mutations": 30,
+  "criteria_per_campaign": 6,
+  "campaigns_affected": 5,
+  "budgets_touched": 0,
+  "bids_touched": 0,
+  "bidding_strategies_touched": 0,
+  "keywords_touched": 0,
+  "negatives_touched": 0,
+  "ads_touched": 0,
+  "call_asset_touched": 0,
+  "other_assets_touched": 0,
+  "conversions_touched": 0,
+  "locations_touched": 0,
+  "manager_links_touched": 0,
+  "legacy_campaigns_touched": 0,
+  "clickcease_access_touched": 0
+ },
+ "coverage_change": {
+  "before_eligible_hours_per_week": 168,
+  "after_eligible_hours_per_week": 65,
+  "before_coverage_pct": 100.0,
+  "after_coverage_pct": 38.7,
+  "hours_closed_per_week": 103,
+  "breakdown_after": "Monday-Friday 12h x 5 = 60h, Saturday 5h, Sunday 0h",
+  "overnight_block_closed": "00:00-07:59 every day, which carried 32.1% of charged spend on 9.9% of impressions."
+ },
+ "what_stays_24_7": {
+  "website": "https://ambientcoolingandheating.com/ - unchanged, always available",
+  "landing_pages": "All five offer.ambientcoolingandheating.com pages - unchanged, always available",
+  "forms": "Gravity Forms on all five pages - unchanged, submittable 24/7",
+  "form_tracking": "GTM-PQTPQ436 confirmed live on all five pages by real-browser render on 2026-08-20 - unchanged",
+  "whatconverts": "Profile 105803 confirmed live on all five pages - unchanged",
+  "landing_page_phone_button": "unchanged, available 24/7",
+  "statement": "ONLY paid campaign delivery is restricted. Organic and direct visitors reach the pages and submit forms at any hour, and every tag continues to fire."
+ },
+ "explicitly_not_changed": [
+  "Campaign budgets - all five stay at 141.45 / 42.76 / 138.16 / 78.95 / 26.32 USD.",
+  "Bidding strategy and bids - TARGET_SPEND with cpc_bid_ceiling_micros 0 on all five.",
+  "Keywords, match types and negatives.",
+  "RSAs - the 6 replacements stay ENABLED/APPROVED, the 6 originals stay PAUSED.",
+  "The call asset and its schedule.",
+  "Conversion actions and goals.",
+  "Location targets and the PRESENCE setting.",
+  "Sitelinks, callouts, structured snippets and every other asset.",
+  "ClickCease access - manager link 2815082755 stays ACTIVE and untouched.",
+  "All 18 legacy campaigns and their 109 ad-schedule criteria and 2,796 IP exclusions.",
+  "Google Tag Manager, WhatConverts, the website and the landing pages."
+ ],
+ "validate_only_result": {
+  "run_utc": "2026-08-20T14:0Z",
+  "shape": "GoogleAdsService.Mutate, 30 mutate_operations, partial_failure=false, validate_only=true",
+  "status": "VALIDATE_OK",
+  "errors": 0,
+  "post_probe_no_change_check": {
+   "ad_schedule_criteria_on_the_five": 0,
+   "verdict": "Unchanged. validate_only performed no write."
+  },
+  "preflight_gates": "16/16 passed",
+  "receipt": "clients/ambient-cooling-heating/snapshots/schedule-package-preflight-2026-08-20.json"
+ },
+ "readback_verification": [
+  "SELECT campaign.id, campaign_criterion.resource_name, campaign_criterion.ad_schedule.day_of_week, campaign_criterion.ad_schedule.start_hour, campaign_criterion.ad_schedule.end_hour, campaign_criterion.status FROM campaign_criterion WHERE campaign_criterion.type = 'AD_SCHEDULE' AND campaign.id IN (the five). ASSERT exactly 30 rows, 6 per campaign.",
+  "ASSERT each campaign has exactly one row per day for MONDAY through FRIDAY at 08:00-20:00 and one SATURDAY row at 08:00-13:00, every minute value ZERO.",
+  "ASSERT NO SUNDAY row exists on any of the five.",
+  "ASSERT no two rows on the same campaign overlap.",
+  "ASSERT every new criterion has status ENABLED and negative = false.",
+  "Re-run the same query WITHOUT the campaign filter. ASSERT exactly 139 rows total, meaning the 109 legacy criteria are untouched and only 30 were added.",
+  "ASSERT per-campaign criterion type counts are LANGUAGE 1, DEVICE 3, LOCATION 75, AD_SCHEDULE 6.",
+  "ASSERT call asset 407995613637 still carries exactly 6 schedule rows, no SUNDAY, phone (410)705-6354, and all five links ENABLED.",
+  "ASSERT all five budgets are unchanged at 141450000, 42760000, 138160000, 78950000 and 26320000 micros.",
+  "ASSERT bidding_strategy_type is still TARGET_SPEND and cpc_bid_ceiling_micros is still 0 on all five.",
+  "ASSERT the 12 tracked ad IDs are unchanged: the 6 replacements ENABLED/APPROVED and the 6 originals PAUSED/DISAPPROVED.",
+  "ASSERT keyword count is still 6968 and conversion actions still 16.",
+  "ASSERT both manager links remain ACTIVE, including ClickCease 2815082755.",
+  "ASSERT the 2,796 IP exclusions on legacy campaigns are unchanged.",
+  "ASSERT the mutate response returned exactly 30 resource names."
+ ],
+ "rollback_plan": {
+  "trigger": "Any readback assertion fails, or Green Marketing reverses the decision.",
+  "method": "Remove the 30 criteria by the resource names returned in the mutation receipt, in one CampaignCriterionService MutateCampaignCriteria request with partial_failure=false. Removing them returns the campaigns to 24/7, which is the state immediately before this package.",
+  "restore_mutations": 30,
+  "data_loss": "NONE. Ad-schedule criteria hold no performance history of their own; hour-of-day performance stays available through segments.hour.",
+  "reversibility": "Immediate.",
+  "pre_change_evidence": "clients/ambient-cooling-heating/snapshots/schedule-package-preflight-2026-08-20.json"
+ },
+ "partial_write_protocol": "Send all 30 creates in ONE GoogleAdsService.Mutate request with partial_failure=false. If it fails, STOP, re-query the five campaigns to inventory what actually exists, and produce a recovery plan. Do not blindly rerun, because a blind rerun risks duplicate overlapping rows.",
+ "expected_effect": {
+  "immediate": "Closes 00:00-07:59 and all of Sunday to paid delivery. On the 2026-08-14 to 2026-08-20 evidence that window carried $567.61 of $1,769.38 charged spend, so roughly a third of current burn is removed.",
+  "not_a_complete_fix": "Daytime hours still ran a $41.44 charged CPC and mobile still showed a 93.5% filtered-invalid rate. The schedule buys time; it does not restore click-fraud protection.",
+  "no_promise": "This does not guarantee a proportional fall in spend. Maximize Clicks may redistribute budget into the remaining open hours."
+ },
+ "post_approval_sequence": [
+  "Repeat the identity gate.",
+  "Repeat the preflight snapshot and confirm the five still carry ZERO ad-schedule criteria, so no duplicate or overlapping row can be created.",
+  "Confirm the plan fingerprint still reproduces from the file.",
+  "Run validate_only=true on the exact 30 operations.",
+  "Execute atomically with partial_failure=false.",
+  "Stop immediately if any operation fails.",
+  "Read every changed resource back and run the readback assertions above.",
+  "Save mutation and readback receipts.",
+  "Then run the 24-hour comparison described in follow_up before any budget proposal."
+ ],
+ "follow_up_24h_comparison": {
+  "run_at": "24 hours after the schedule is applied",
+  "compare": [
+   "daytime charged spend",
+   "daytime charged CPC",
+   "filtered-invalid click rate",
+   "charged clicks",
+   "conversions by action",
+   "qualified leads where available"
+  ],
+  "baseline_2026_08_14_to_20": {
+   "charged_spend": 1769.38,
+   "charged_clicks": 35,
+   "filtered_invalid": 432,
+   "filtered_invalid_pct": 92.5,
+   "blended_charged_cpc": 50.55,
+   "daytime_charged_cpc": 41.44,
+   "overnight_charged_cpc": 94.6,
+   "primary_conversions": 2
+  },
+  "rule": "No budget increase is to be proposed until this comparison is complete."
+ },
+ "approval_note": "READ + DRAFT + VALIDATE-ONLY. Nothing has been applied. Approving this package authorizes exactly 30 AD_SCHEDULE creates on the five campaigns and nothing else.",
+ "plan_fingerprint": "C6C3DFFC9BD5AF9B"
+}

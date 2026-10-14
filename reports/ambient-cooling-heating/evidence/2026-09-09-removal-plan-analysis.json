@@ -1,0 +1,3164 @@
+{
+ "triage": [
+  {
+   "match": "EXACT",
+   "negative": "hvac repair near me",
+   "verdict": "ROUTING",
+   "why": "pure service phrase - intentional cross-campaign routing, verify sibling",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 5.0,
+   "all_conversions_at_risk": 15.0,
+   "campaigns": [
+    "HVAC Installation"
+   ],
+   "sample_probes": [
+    "hvac repair near me"
+   ]
+  },
+  {
+   "match": "BROAD",
+   "negative": "commercial",
+   "verdict": "REMOVE",
+   "why": "BROAD negative on a word the Green Marketing rules forbid (['commercial'])",
+   "n_converting_terms": 7,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 3.83,
+   "all_conversions_at_risk": 10.83,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "commercial hvac repair near me"
+   ]
+  },
+  {
+   "match": "BROAD",
+   "negative": "warner",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 2,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 2.0,
+   "all_conversions_at_risk": 3.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "chestertown",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 2,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 2.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "hvac ductwork installation near me",
+   "verdict": "ROUTING",
+   "why": "pure service phrase - intentional cross-campaign routing, verify sibling",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 2.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "hvac ductwork installation near me"
+   ]
+  },
+  {
+   "match": "BROAD",
+   "negative": "michaels",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 3,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 4.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "elmar",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "beltway",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "dot",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "cornett",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "metcalf",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "haller",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "montgomery county",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "dayton",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "smith",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "croft",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "HVAC Installation",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "hvac direct",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "HVAC Installation"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "max air glen burnie",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "HVAC Installation"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "sons",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 1.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "HVAC Installation",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "furr",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 3,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 7.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "inc",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 2,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 6.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "carrier",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 5,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 5.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "carrier hvac repair near me"
+   ]
+  },
+  {
+   "match": "BROAD",
+   "negative": "daikin",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 3,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 4.0,
+   "campaigns": [
+    "HVAC Installation",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "for sale",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 3.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "re michel near me",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 3.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "store",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 2,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "air duct cleaning",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "air duct cleaning and repair near me"
+   ]
+  },
+  {
+   "match": "EXACT",
+   "negative": "barstow and sons annapolis",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "closest re michaels",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "daikin elkridge md",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "geothermal technician near me",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "home depot",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "home heater service",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "home radiator repair",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "r e michel company near me",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "michels",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "barstow",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "HVAC Installation",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "depot",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "HVAC Installation",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "trane",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 2,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "trane furnace repair"
+   ]
+  },
+  {
+   "match": "PHRASE",
+   "negative": "acrepair",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "aerco near me",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "aireco gaithersburg",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "aireco millersville md",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "airtron",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "boland",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "alexandria",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "carrier enterprise laurel",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "carrier mid atlantic hanover maryland",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "carrier mid atlantic near me",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "ce carrier enterprise near me",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "chilltrol annapolis",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "daikin cerca de mi",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "daikin comfort technologies locations",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "energy audit near me",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "white",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "geothermal in maryland",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "geothermal maryland",
+   "verdict": "REMOVE",
+   "why": "names a live Maryland target location",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "humidifier",
+   "verdict": "REMOVE",
+   "why": "blocks a confirmed Ambient service with no competitor component",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "whole house humidifier installation"
+   ]
+  },
+  {
+   "match": "EXACT",
+   "negative": "hobbs and associates jessup md",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "hvac contractor cerca de mi",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "thermostat",
+   "verdict": "REMOVE",
+   "why": "blocks a confirmed Ambient service with no competitor component",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "thermostat replacement near me"
+   ]
+  },
+  {
+   "match": "BROAD",
+   "negative": "mccrea",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "mechanical contractor near me",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "mitsubishi",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "mitsubishi mini split installer near me"
+   ]
+  },
+  {
+   "match": "PHRASE",
+   "negative": "mold remediation",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "dehumidifier",
+   "verdict": "REMOVE",
+   "why": "blocks a confirmed Ambient service with no competitor component",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "dehumidifier installation near me"
+   ]
+  },
+  {
+   "match": "EXACT",
+   "negative": "r e michel company",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "fairfax",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "re michaels glen burnie",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "re michel glen burnie md",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "landover",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "remichel",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "PHRASE",
+   "negative": "smo",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "sweeney",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "trane authorized dealers near me",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "trane installers near me",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Repair"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "airtron",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "HVAC Installation",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "chilltrol",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "HVAC Installation",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "hobbs",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "HVAC Installation",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "BROAD",
+   "negative": "mold",
+   "verdict": "KEEP",
+   "why": "competitor / entity / out-of-area token - intentional",
+   "n_converting_terms": 1,
+   "n_bofu_probes": 0,
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "campaigns": [
+    "HVAC Installation",
+    "HVAC Replacement"
+   ],
+   "sample_probes": []
+  },
+  {
+   "match": "EXACT",
+   "negative": "ac replacement near me",
+   "verdict": "ROUTING",
+   "why": "pure service phrase - intentional cross-campaign routing, verify sibling",
+   "n_converting_terms": 0,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "campaigns": [
+    "AC Repair"
+   ],
+   "sample_probes": [
+    "ac replacement near me"
+   ]
+  },
+  {
+   "match": "EXACT",
+   "negative": "tankless water heater installation near me",
+   "verdict": "ROUTING",
+   "why": "pure service phrase - intentional cross-campaign routing, verify sibling",
+   "n_converting_terms": 0,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "tankless water heater installation near me"
+   ]
+  },
+  {
+   "match": "BROAD",
+   "negative": "lennox",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 0,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "lennox dealer near me"
+   ]
+  },
+  {
+   "match": "BROAD",
+   "negative": "goodman",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 0,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "goodman ac repair near me"
+   ]
+  },
+  {
+   "match": "BROAD",
+   "negative": "rheem",
+   "verdict": "REMOVE",
+   "why": "supported manufacturer token; blocks manufacturer+service intent",
+   "n_converting_terms": 0,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "rheem water heater repair near me"
+   ]
+  },
+  {
+   "match": "PHRASE",
+   "negative": "licensed",
+   "verdict": "REMOVE",
+   "why": "single-word PHRASE negative on a forbidden generic (licensed)",
+   "n_converting_terms": 0,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "licensed hvac contractor near me"
+   ]
+  },
+  {
+   "match": "PHRASE",
+   "negative": "free",
+   "verdict": "REMOVE",
+   "why": "single-word PHRASE negative on a forbidden generic (free)",
+   "n_converting_terms": 0,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "campaigns": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "sample_probes": [
+    "hvac free estimate near me"
+   ]
+  },
+  {
+   "match": "EXACT",
+   "negative": "furnace replacement near me",
+   "verdict": "ROUTING",
+   "why": "pure service phrase - intentional cross-campaign routing, verify sibling",
+   "n_converting_terms": 0,
+   "n_bofu_probes": 1,
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "campaigns": [
+    "HVAC Repair"
+   ],
+   "sample_probes": [
+    "furnace replacement near me"
+   ]
+  }
+ ],
+ "removal_operations": [
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~10278361",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "10278361",
+   "match": "BROAD",
+   "text": "carrier",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 5.0,
+   "bofu_probes_unblocked": [
+    "carrier hvac repair near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~10278361",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "10278361",
+   "match": "BROAD",
+   "text": "carrier",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 5.0,
+   "bofu_probes_unblocked": [
+    "carrier hvac repair near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~10574272",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "10574272",
+   "match": "BROAD",
+   "text": "daikin",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 4.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~10574272",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "10574272",
+   "match": "BROAD",
+   "text": "daikin",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 4.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~2336632146445",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "2336632146445",
+   "match": "EXACT",
+   "text": "daikin elkridge md",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~2336632146445",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "2336632146445",
+   "match": "EXACT",
+   "text": "daikin elkridge md",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~2336632146445",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "2336632146445",
+   "match": "EXACT",
+   "text": "daikin elkridge md",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~2336632146445",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "2336632146445",
+   "match": "EXACT",
+   "text": "daikin elkridge md",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~2336632146445",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "2336632146445",
+   "match": "EXACT",
+   "text": "daikin elkridge md",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~10889151",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "10889151",
+   "match": "BROAD",
+   "text": "trane",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "bofu_probes_unblocked": [
+    "trane furnace repair"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~10889151",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "10889151",
+   "match": "BROAD",
+   "text": "trane",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 2.0,
+   "bofu_probes_unblocked": [
+    "trane furnace repair"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~2315420079088",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "2315420079088",
+   "match": "EXACT",
+   "text": "carrier enterprise laurel",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~2315420079088",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "2315420079088",
+   "match": "EXACT",
+   "text": "carrier enterprise laurel",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~2315420079088",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "2315420079088",
+   "match": "EXACT",
+   "text": "carrier enterprise laurel",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~2315420079088",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "2315420079088",
+   "match": "EXACT",
+   "text": "carrier enterprise laurel",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~2315420079088",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "2315420079088",
+   "match": "EXACT",
+   "text": "carrier enterprise laurel",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~2553490730632",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "2553490730632",
+   "match": "EXACT",
+   "text": "carrier mid atlantic hanover maryland",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~2553490730632",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "2553490730632",
+   "match": "EXACT",
+   "text": "carrier mid atlantic hanover maryland",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~2553490730632",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "2553490730632",
+   "match": "EXACT",
+   "text": "carrier mid atlantic hanover maryland",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~2553490730632",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "2553490730632",
+   "match": "EXACT",
+   "text": "carrier mid atlantic hanover maryland",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~2553490730632",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "2553490730632",
+   "match": "EXACT",
+   "text": "carrier mid atlantic hanover maryland",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~1427323415670",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "1427323415670",
+   "match": "EXACT",
+   "text": "carrier mid atlantic near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~1427323415670",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "1427323415670",
+   "match": "EXACT",
+   "text": "carrier mid atlantic near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~1427323415670",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "1427323415670",
+   "match": "EXACT",
+   "text": "carrier mid atlantic near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~1427323415670",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "1427323415670",
+   "match": "EXACT",
+   "text": "carrier mid atlantic near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~1427323415670",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "1427323415670",
+   "match": "EXACT",
+   "text": "carrier mid atlantic near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~2271088223944",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "2271088223944",
+   "match": "EXACT",
+   "text": "ce carrier enterprise near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~2271088223944",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "2271088223944",
+   "match": "EXACT",
+   "text": "ce carrier enterprise near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~2271088223944",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "2271088223944",
+   "match": "EXACT",
+   "text": "ce carrier enterprise near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~2271088223944",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "2271088223944",
+   "match": "EXACT",
+   "text": "ce carrier enterprise near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~2271088223944",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "2271088223944",
+   "match": "EXACT",
+   "text": "ce carrier enterprise near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~2229854113618",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "2229854113618",
+   "match": "EXACT",
+   "text": "daikin cerca de mi",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~2229854113618",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "2229854113618",
+   "match": "EXACT",
+   "text": "daikin cerca de mi",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~2229854113618",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "2229854113618",
+   "match": "EXACT",
+   "text": "daikin cerca de mi",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~2229854113618",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "2229854113618",
+   "match": "EXACT",
+   "text": "daikin cerca de mi",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~2229854113618",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "2229854113618",
+   "match": "EXACT",
+   "text": "daikin cerca de mi",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~1765626867556",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "1765626867556",
+   "match": "EXACT",
+   "text": "daikin comfort technologies locations",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~1765626867556",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "1765626867556",
+   "match": "EXACT",
+   "text": "daikin comfort technologies locations",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~1765626867556",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "1765626867556",
+   "match": "EXACT",
+   "text": "daikin comfort technologies locations",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~1765626867556",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "1765626867556",
+   "match": "EXACT",
+   "text": "daikin comfort technologies locations",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~1765626867556",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "1765626867556",
+   "match": "EXACT",
+   "text": "daikin comfort technologies locations",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~772474371512",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "772474371512",
+   "match": "EXACT",
+   "text": "geothermal maryland",
+   "reason": "names a live Maryland target location",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~772474371512",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "772474371512",
+   "match": "EXACT",
+   "text": "geothermal maryland",
+   "reason": "names a live Maryland target location",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~772474371512",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "772474371512",
+   "match": "EXACT",
+   "text": "geothermal maryland",
+   "reason": "names a live Maryland target location",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~772474371512",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "772474371512",
+   "match": "EXACT",
+   "text": "geothermal maryland",
+   "reason": "names a live Maryland target location",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~772474371512",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "772474371512",
+   "match": "EXACT",
+   "text": "geothermal maryland",
+   "reason": "names a live Maryland target location",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~45652221",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "45652221",
+   "match": "PHRASE",
+   "text": "humidifier",
+   "reason": "blocks a confirmed Ambient service with no competitor component",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "whole house humidifier installation"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~45652221",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "45652221",
+   "match": "PHRASE",
+   "text": "humidifier",
+   "reason": "blocks a confirmed Ambient service with no competitor component",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "whole house humidifier installation"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~45652221",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "45652221",
+   "match": "PHRASE",
+   "text": "humidifier",
+   "reason": "blocks a confirmed Ambient service with no competitor component",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "whole house humidifier installation"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~45652221",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "45652221",
+   "match": "PHRASE",
+   "text": "humidifier",
+   "reason": "blocks a confirmed Ambient service with no competitor component",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "whole house humidifier installation"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~45652221",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "45652221",
+   "match": "PHRASE",
+   "text": "humidifier",
+   "reason": "blocks a confirmed Ambient service with no competitor component",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "whole house humidifier installation"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~10034531",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "10034531",
+   "match": "BROAD",
+   "text": "mitsubishi",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "mitsubishi mini split installer near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~10034531",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "10034531",
+   "match": "BROAD",
+   "text": "mitsubishi",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "mitsubishi mini split installer near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~42560411",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "42560411",
+   "match": "PHRASE",
+   "text": "dehumidifier",
+   "reason": "blocks a confirmed Ambient service with no competitor component",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "dehumidifier installation near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~42560411",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "42560411",
+   "match": "PHRASE",
+   "text": "dehumidifier",
+   "reason": "blocks a confirmed Ambient service with no competitor component",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "dehumidifier installation near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~42560411",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "42560411",
+   "match": "PHRASE",
+   "text": "dehumidifier",
+   "reason": "blocks a confirmed Ambient service with no competitor component",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "dehumidifier installation near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~42560411",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "42560411",
+   "match": "PHRASE",
+   "text": "dehumidifier",
+   "reason": "blocks a confirmed Ambient service with no competitor component",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "dehumidifier installation near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~42560411",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "42560411",
+   "match": "PHRASE",
+   "text": "dehumidifier",
+   "reason": "blocks a confirmed Ambient service with no competitor component",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": [
+    "dehumidifier installation near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~510211667485",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "510211667485",
+   "match": "EXACT",
+   "text": "trane authorized dealers near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~510211667485",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "510211667485",
+   "match": "EXACT",
+   "text": "trane authorized dealers near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~510211667485",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "510211667485",
+   "match": "EXACT",
+   "text": "trane authorized dealers near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~510211667485",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "510211667485",
+   "match": "EXACT",
+   "text": "trane authorized dealers near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~510211667485",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "510211667485",
+   "match": "EXACT",
+   "text": "trane authorized dealers near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~430054111344",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "430054111344",
+   "match": "EXACT",
+   "text": "trane installers near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~430054111344",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "430054111344",
+   "match": "EXACT",
+   "text": "trane installers near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~430054111344",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "430054111344",
+   "match": "EXACT",
+   "text": "trane installers near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~430054111344",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "430054111344",
+   "match": "EXACT",
+   "text": "trane installers near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~430054111344",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "430054111344",
+   "match": "EXACT",
+   "text": "trane installers near me",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0.0,
+   "all_conversions_at_risk": 1.0,
+   "bofu_probes_unblocked": []
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~10889141",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "10889141",
+   "match": "BROAD",
+   "text": "lennox",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "lennox dealer near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~10889141",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "10889141",
+   "match": "BROAD",
+   "text": "lennox",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "lennox dealer near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~12341233",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "12341233",
+   "match": "BROAD",
+   "text": "goodman",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "goodman ac repair near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~12341233",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "12341233",
+   "match": "BROAD",
+   "text": "goodman",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "goodman ac repair near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~10889241",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "10889241",
+   "match": "BROAD",
+   "text": "rheem",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "rheem water heater repair near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~10889241",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "10889241",
+   "match": "BROAD",
+   "text": "rheem",
+   "reason": "supported manufacturer token; blocks manufacturer+service intent",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "rheem water heater repair near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~190023714",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "190023714",
+   "match": "PHRASE",
+   "text": "licensed",
+   "reason": "single-word PHRASE negative on a forbidden generic (licensed)",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "licensed hvac contractor near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~190023714",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "190023714",
+   "match": "PHRASE",
+   "text": "licensed",
+   "reason": "single-word PHRASE negative on a forbidden generic (licensed)",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "licensed hvac contractor near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~190023714",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "190023714",
+   "match": "PHRASE",
+   "text": "licensed",
+   "reason": "single-word PHRASE negative on a forbidden generic (licensed)",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "licensed hvac contractor near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~190023714",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "190023714",
+   "match": "PHRASE",
+   "text": "licensed",
+   "reason": "single-word PHRASE negative on a forbidden generic (licensed)",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "licensed hvac contractor near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~190023714",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "190023714",
+   "match": "PHRASE",
+   "text": "licensed",
+   "reason": "single-word PHRASE negative on a forbidden generic (licensed)",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "licensed hvac contractor near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~15120770",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "15120770",
+   "match": "PHRASE",
+   "text": "free",
+   "reason": "single-word PHRASE negative on a forbidden generic (free)",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "hvac free estimate near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~15120770",
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "15120770",
+   "match": "PHRASE",
+   "text": "free",
+   "reason": "single-word PHRASE negative on a forbidden generic (free)",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "hvac free estimate near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~15120770",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "15120770",
+   "match": "PHRASE",
+   "text": "free",
+   "reason": "single-word PHRASE negative on a forbidden generic (free)",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "hvac free estimate near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~15120770",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "15120770",
+   "match": "PHRASE",
+   "text": "free",
+   "reason": "single-word PHRASE negative on a forbidden generic (free)",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "hvac free estimate near me"
+   ]
+  },
+  {
+   "op": "remove",
+   "resource": "campaign_criterion",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~15120770",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "15120770",
+   "match": "PHRASE",
+   "text": "free",
+   "reason": "single-word PHRASE negative on a forbidden generic (free)",
+   "conversions_at_risk": 0,
+   "all_conversions_at_risk": 0,
+   "bofu_probes_unblocked": [
+    "hvac free estimate near me"
+   ]
+  }
+ ],
+ "orphaned_converting_terms": [
+  {
+   "term": "ac store near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "acrepair",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "aerco near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "air duct cleaning",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "aireco gaithersburg",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "aireco millersville md",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "airtron",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "amazing heating and air conditioning inc reviews",
+   "conversions": 0.0,
+   "all_conversions": 4.0
+  },
+  {
+   "term": "barstow and sons annapolis",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "beltway heating and air",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "blue dot heating and air conditioning",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "boland gaithersburg",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "carrier alexandria",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "carrier enterprise laurel",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "carrier mid atlantic hanover maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "carrier mid atlantic near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "ce carrier enterprise near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "chilltrol annapolis",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "closest re michaels",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "commercial ac repair near me",
+   "conversions": 1.0,
+   "all_conversions": 3.0
+  },
+  {
+   "term": "commercial boiler repair",
+   "conversions": 0.33,
+   "all_conversions": 0.33
+  },
+  {
+   "term": "commercial ductwork installation near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "commercial furnace repair",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "commercial hvac companies near me",
+   "conversions": 1.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "commercial hvac near me",
+   "conversions": 0.0,
+   "all_conversions": 3.0
+  },
+  {
+   "term": "commercial radiator repair",
+   "conversions": 0.5,
+   "all_conversions": 0.5
+  },
+  {
+   "term": "cornett heating and air",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "croft metcalf",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "daikin cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "daikin comfort technologies locations",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "daikin elkridge md",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "elmar services",
+   "conversions": 1.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "energy audit near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "f h furr alexandria va",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "f h furr plumbing heating air conditioning & electrical cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 4.0
+  },
+  {
+   "term": "ferguson hvac white marsh",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "fh furr delaware",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "geothermal in maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "geothermal maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "geothermal technician near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "haller hvac york pa",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "heat pump with humidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "heat pumps for sale",
+   "conversions": 0.0,
+   "all_conversions": 3.0
+  },
+  {
+   "term": "hobbs and associates jessup md",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "home depot mini split installation cost",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "home heater service",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "home radiator repair",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "hvac chestertown md",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "hvac contractor cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "hvac montgomery county",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "hvac precision services inc gaithersburg md",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "hvac store near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "hvac thermostat installation",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "j c warner",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "jc warner queenstown md",
+   "conversions": 1.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "mccrea",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "mechanical contractor near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "michaels and sons hvac",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "mitsubishi ac service near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "mold remediation water damage hvac near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "pool room dehumidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "r e michel company",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "r e michel company near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "r e michel fairfax",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "re michaels glen burnie",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "re michel glen burnie md",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "re michel landover md",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "re michel near me",
+   "conversions": 0.0,
+   "all_conversions": 3.0
+  },
+  {
+   "term": "re michels near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "term": "remichel near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "ron air dayton md",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "shore hvac chestertown md",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "smith hvac",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "smo glen burnie md",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "sweeney's hvac",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "trane authorized dealers near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "term": "trane installers near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "plan_name": "AMB-0909B-BUD-1",
+ "approval_class": "reversible-budget-change",
+ "generated_local": "2026-09-09T18:05:19.723631-04:00",
+ "supersedes": "AMB-0909-BUD-1 (D448BFDE4650) - SUPERSEDED, DO_NOT_EXECUTE",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "AC Repair",
+  "related_services": [
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "summary": "Reduce Gas Boiler Repair to $5.00/day and HVAC Replacement to $20.00/day. Combined daily total $465.63 -> $421.55, which is $12,815.12 over a 30.4-day month against the $13,000 maximum.",
+ "object_count": 2,
+ "partial_failure": false,
+ "atomic": true,
+ "operations": [
+  {
+   "operation": "UPDATE_CAMPAIGN_BUDGET",
+   "resource": "campaign_budget",
+   "resource_id": "15787409438",
+   "resource_name": "customers/2401959466/campaignBudgets/15787409438",
+   "campaign": "Gas Boiler Repair",
+   "current_state": "amount_micros = 42760000 ($42.76/day)",
+   "proposed_state": "amount_micros = 5000000 ($5.00/day)",
+   "field_mask": [
+    "amount_micros"
+   ],
+   "reason": "Zero clicks since launch on 2026-08-14 (34 impressions all time). Keyword Planner across the live 10-city Maryland sample returns 20 monthly searches for the strongest boiler term and no top-of-page bid estimate at all. The /gas-boiler-repair/ landing page still carries the heading 'Your HVAC Replacement in 3 Simple Steps', so the campaign is service-gated regardless of budget. $5.00/day keeps it measurable without reserving unspendable capacity.",
+   "rollback": "set amount_micros back to 42760000",
+   "risk": "LOW - both campaigns have 0.00% Search lost IS (budget) in every window",
+   "unrelated_resource_assertion": "budgets 15787409435, 15787409441 and 15787409444 must be unchanged; combined daily total must read $421.55"
+  },
+  {
+   "operation": "UPDATE_CAMPAIGN_BUDGET",
+   "resource": "campaign_budget",
+   "resource_id": "15787409447",
+   "resource_name": "customers/2401959466/campaignBudgets/15787409447",
+   "campaign": "HVAC Replacement",
+   "current_state": "amount_micros = 26320000 ($26.32/day)",
+   "proposed_state": "amount_micros = 20000000 ($20.00/day)",
+   "field_mask": [
+    "amount_micros"
+   ],
+   "reason": "5 clicks and 0 primary conversions since launch. Quality Score 2 with BELOW_AVERAGE landing-page experience. Search lost impression share to BUDGET is 0.00% in every window measured, so this budget has never been the constraint and reducing it cannot cost delivery.",
+   "rollback": "set amount_micros back to 26320000",
+   "risk": "LOW - both campaigns have 0.00% Search lost IS (budget) in every window",
+   "unrelated_resource_assertion": "budgets 15787409435, 15787409441 and 15787409444 must be unchanged; combined daily total must read $421.55"
+  }
+ ],
+ "notes": {
+  "supersedes": "AMB-0909-BUD-1 (D448BFDE4650) - SUPERSEDED, DO_NOT_EXECUTE",
+  "corrected_arithmetic": {
+   "denominator": "30.4 (Google's average-month multiplier), NOT 30",
+   "hard_daily_max": 427.6315789,
+   "prior_package_daily": 433.33,
+   "prior_package_x30_4": 13173.23,
+   "prior_package_overrun": 173.23,
+   "prior_package_compliant": false,
+   "why_prior_was_wrong": "AMB-0909-BUD-1 multiplied $433.33 by 30 and reported $12,999.90 as compliant. Google applies 30.4, giving $13,173.23 - a $173.23 breach. The prior compliance claim was arithmetically wrong and is retracted."
+  },
+  "future_uninterrupted_month": {
+   "proposed_daily_total": 421.55,
+   "x30_4": 12815.12,
+   "headroom_vs_13000": 184.88,
+   "compliant": true
+  },
+  "current_month_september": {
+   "september_budget_changes_found": 0,
+   "billed_basis": "served cost; Google Ads exposes no per-month billed figure through this API surface without monthly invoicing",
+   "served_through_2026_09_09": 1319.49,
+   "change_day_uses_highest_budget_in_force": 465.63,
+   "remaining_calendar_days_after_change_day": 20,
+   "september_maximum_if_executed_2026_09_10": 10216.12,
+   "headroom_vs_13000": 2783.88,
+   "method": "billed-to-date + highest budget in force on the change day + new daily total x remaining CALENDAR days. Remaining scheduled advertising days are deliberately NOT used."
+  },
+  "hvac_installation_budget_deliberately_unchanged": "AMB-0909-BUD-1 raised HVAC Installation on a 53.16% Search lost IS (budget) figure measured across 2026-08-14..09-08. That window is contaminated by the 'hvac installers' keyword, live 08-14..08-28. On the CLEAN post-swap window 2026-08-29..09-03 the same metric is 4.38%, with 35.62% lost to RANK instead. The budget increase is not supported and is withdrawn.",
+  "peak_observed_daily_spend": 448.36,
+  "two_x_single_day_ceiling_after": 843.1
+ },
+ "fingerprint": "752BF95EBD7C"
+}

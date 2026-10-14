@@ -1,0 +1,188 @@
+{
+ "plan_name": "AMB-0909C-COMP-1",
+ "approval_class": "reversible-addition",
+ "generated_local": "2026-09-09T23:54:15.476300-04:00",
+ "supersedes": "AMB-0909B-COMP-1 (05FBCBD34B4A) - SUPERSEDED, DO_NOT_EXECUTE",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "AC Repair",
+  "related_services": [
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "summary": "Verified competitors, EXACT match only: 3 negatives on HVAC Installation, each reproducing a verbatim observed query.",
+ "object_count": 3,
+ "partial_failure": false,
+ "atomic": true,
+ "operations": [
+  {
+   "operation": "ADD_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_id": "24132507747",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "match_type": "EXACT",
+   "negative_text": "arundel cooling and heating reviews",
+   "current_state": "not present at campaign, ad group or account level",
+   "proposed_state": "negative KEYWORD [EXACT] 'arundel cooling and heating reviews' ENABLED",
+   "reason": "Verified competing HVAC contractor: Arundel Cooling & Heating Co., Inc.. EXACT match on the VERBATIM OBSERVED QUERY, not an invented variant.",
+   "entity_verification": {
+    "entity": "Arundel Cooling & Heating Co., Inc.",
+    "address": "707 Nursery Rd, Linthicum Heights, MD 21090 - itself a live target location",
+    "sources": [
+     "https://www.bbb.org/us/md/linthicum/profile/heating-and-air-conditioning/arundel-cooling-heating-co-inc-0011-563",
+     "https://www.yelp.com/biz/arundel-cooling-and-heating-linthicum-heights-2"
+    ]
+   },
+   "observed_query_verbatim": "arundel cooling and heating reviews",
+   "observed_metrics": {
+    "impressions": 8,
+    "clicks": 1,
+    "cost": 20.44,
+    "conversions": 0.0,
+    "campaign": "HVAC Installation",
+    "status": "NONE"
+   },
+   "word_count": 5,
+   "char_count": 35,
+   "rollback": "remove the campaign negative 'arundel cooling and heating reviews' [EXACT] from 24132507747",
+   "risk": "LOW - EXACT match on one observed brand query",
+   "unrelated_resource_assertion": "HVAC Installation ENABLED campaign negatives rise by exactly 3; no other campaign changes"
+  },
+  {
+   "operation": "ADD_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_id": "24132507747",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "match_type": "EXACT",
+   "negative_text": "arundel heating and cooling maryland",
+   "current_state": "not present at campaign, ad group or account level",
+   "proposed_state": "negative KEYWORD [EXACT] 'arundel heating and cooling maryland' ENABLED",
+   "reason": "Verified competing HVAC contractor: Arundel Cooling & Heating Co., Inc.. EXACT match on the VERBATIM OBSERVED QUERY, not an invented variant.",
+   "entity_verification": {
+    "entity": "Arundel Cooling & Heating Co., Inc.",
+    "address": "707 Nursery Rd, Linthicum Heights, MD 21090",
+    "sources": [
+     "https://www.bbb.org/us/md/linthicum/profile/heating-and-air-conditioning/arundel-cooling-heating-co-inc-0011-563"
+    ]
+   },
+   "observed_query_verbatim": "arundel heating and cooling maryland",
+   "observed_metrics": {
+    "impressions": 1,
+    "clicks": 0,
+    "cost": 0.0,
+    "conversions": 0.0,
+    "campaign": "HVAC Installation",
+    "status": "NONE"
+   },
+   "word_count": 5,
+   "char_count": 36,
+   "rollback": "remove the campaign negative 'arundel heating and cooling maryland' [EXACT] from 24132507747",
+   "risk": "LOW - EXACT match on one observed brand query",
+   "unrelated_resource_assertion": "HVAC Installation ENABLED campaign negatives rise by exactly 3; no other campaign changes"
+  },
+  {
+   "operation": "ADD_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_id": "24132507747",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "match_type": "EXACT",
+   "negative_text": "maryland mechanical heating & cooling",
+   "current_state": "not present at campaign, ad group or account level",
+   "proposed_state": "negative KEYWORD [EXACT] 'maryland mechanical heating & cooling' ENABLED",
+   "reason": "Verified competing HVAC contractor: Maryland Mechanical Heating & Cooling LLC. EXACT match on the VERBATIM OBSERVED QUERY, not an invented variant.",
+   "entity_verification": {
+    "entity": "Maryland Mechanical Heating & Cooling LLC",
+    "address": "marylandhvacs.com, Maryland HVACR licence #22169, founded 2023",
+    "sources": [
+     "https://marylandhvacs.com/",
+     "https://www.labor.maryland.gov/license/hvacr/"
+    ]
+   },
+   "observed_query_verbatim": "maryland mechanical heating & cooling",
+   "observed_metrics": {
+    "impressions": 4,
+    "clicks": 1,
+    "cost": 50.17,
+    "conversions": 0.0,
+    "campaign": "HVAC Installation",
+    "status": "NONE"
+   },
+   "word_count": 5,
+   "char_count": 37,
+   "rollback": "remove the campaign negative 'maryland mechanical heating & cooling' [EXACT] from 24132507747",
+   "risk": "LOW - EXACT match on one observed brand query",
+   "unrelated_resource_assertion": "HVAC Installation ENABLED campaign negatives rise by exactly 3; no other campaign changes"
+  }
+ ],
+ "notes": {
+  "supersedes": "AMB-0909B-COMP-1 (05FBCBD34B4A) - SUPERSEDED, DO_NOT_EXECUTE",
+  "match_type_correction": "The superseded package used PHRASE 'maryland mechanical heating'. That is withdrawn: it can overlap generic Maryland mechanical-heating intent. All three operations are now EXACT on the verbatim observed query, ampersand included.",
+  "verbatim_spellings_used": [
+   "arundel cooling and heating reviews",
+   "arundel heating and cooling maryland",
+   "maryland mechanical heating & cooling"
+  ],
+  "deliberately_not_blocked": {
+   "arundel cooling and heating": "6 impressions, 0 clicks, $0.00. Sits one word from 'anne arundel cooling and heating' (1 primary conversion record) and 'hvac anne arundel county'. Not worth the risk.",
+   "anne arundel cooling and heating": "produced a primary phone-call record in the legacy Heating Maintenance campaign",
+   "hvac anne arundel county": "county intent in the core service area"
+  },
+  "observed_terms": [
+   {
+    "camp": "HVAC Installation",
+    "term": "arundel cooling and heating",
+    "status": "NONE",
+    "impr": 6,
+    "clicks": 0,
+    "cost": 0.0,
+    "conv": 0.0
+   },
+   {
+    "camp": "HVAC Installation",
+    "term": "arundel cooling and heating reviews",
+    "status": "NONE",
+    "impr": 8,
+    "clicks": 1,
+    "cost": 20.44,
+    "conv": 0.0
+   },
+   {
+    "camp": "HVAC Installation",
+    "term": "arundel heating and cooling maryland",
+    "status": "NONE",
+    "impr": 1,
+    "clicks": 0,
+    "cost": 0.0,
+    "conv": 0.0
+   },
+   {
+    "camp": "HVAC Installation",
+    "term": "hvac anne arundel county",
+    "status": "NONE",
+    "impr": 1,
+    "clicks": 0,
+    "cost": 0.0,
+    "conv": 0.0
+   },
+   {
+    "camp": "HVAC Installation",
+    "term": "maryland mechanical heating & cooling",
+    "status": "NONE",
+    "impr": 4,
+    "clicks": 1,
+    "cost": 50.17,
+    "conv": 0.0
+   }
+  ]
+ },
+ "fingerprint": "D434D6F41747"
+}

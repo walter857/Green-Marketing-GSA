@@ -1,0 +1,102 @@
+# PLAN-R10 - ENABLEMENT
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# PROVISIONAL. Cannot be approved. Cannot be fingerprinted for execution.
+change_plan:
+  plan_id: PLAN-R10
+  plan_title: Enable the resources created paused by PLAN-R5 and PLAN-R6
+  approval_type: ENABLE_AFTER_READBACK_QA
+  priority: P1
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint_required: true
+  fingerprint_state: PROVISIONAL - MUST BE REGENERATED
+  ads_mutation_count: 11
+  object_count_total: 11
+  requires_separate_enable_approval: true
+  recommended_approval_order: 10
+  depends_on: [PLAN-R5, PLAN-R6]
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  why_this_plan_cannot_be_approved_today: >-
+    Every action below names a resource that DOES NOT EXIST YET. The ad group IDs
+    and ad IDs are PENDING_CREATION placeholders. A fingerprint computed over
+    placeholders would produce an approvable artifact that encodes nothing real.
+    After PLAN-R5 and PLAN-R6 execute and their resources are read back from the
+    API, this file MUST be regenerated with the real IDs and re-fingerprinted, and
+    the new fingerprint is the only one that may be approved.
+
+  the_rule_this_plan_exists_to_enforce: >-
+    Never enable delivery in the same operation that creates resources. Creation
+    and enablement are two approvals, separated by a readback QA gate.
+
+  gate_1_readback_qa_must_pass_before_this_plan_is_regenerated:
+    - Every created ad group reads back with status PAUSED and the exact intended name.
+    - Every created keyword reads back APPROVED, ELIGIBLE, and with the intended match type.
+    - >-
+      Every created ad reads back PAUSED, policy approval_status APPROVED, with
+      zero policy_topic_entries.
+    - Every created ad final_url matches the plan exactly, character for character.
+    - >-
+      scripts/softwind_0831_validate_rsas.py re-run against the AS-BUILT copy read
+      back from the API, not against the plan file.
+    - >-
+      Every final URL re-confirmed HTTP 200 or 202 in a real browser with GCLID and
+      UTMs preserved and the approved (631) 502-7946 rendering.
+    - >-
+      No created keyword text is blocked by any live negative. Re-run AFTER PLAN-R2
+      executes, because PLAN-R2 changes the negative fence.
+    - >-
+      Field-level before/after diff proving no pre-existing resource was modified
+      by the creation step.
+
+  gate_2_sequencing_conditions:
+    - PLAN-R3 (CPC ceiling $22.00) is live and has been binding for at least 3 serving days.
+    - PLAN-R2 (negatives) is live and read back clean.
+    - >-
+      The 2026-08-31 five-clicks-on-one-impression event has been explained. Until
+      it is, enabling more surface area risks repeating it. See PLAN-R1 and the
+      account traffic-quality finding (60 invalid clicks against 22 billable, 73.2%
+      of raw clicks filtered by Google).
+
+  provisional_actions:
+    - {action_id: R10-01, priority: P1, resource_type: ad_group_ad, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: "202870585390", resource_id: PENDING_CREATION_R5-01, current_value: PAUSED, proposed_value: ENABLED, object_count: 1, note: "RSA 1 for Power Washing Near Me"}
+    - {action_id: R10-02, priority: P1, resource_type: ad_group_ad, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: "202870585390", resource_id: PENDING_CREATION_R5-02, current_value: PAUSED, proposed_value: ENABLED, object_count: 1, note: "RSA 2 for Power Washing Near Me"}
+    - {action_id: R10-03, priority: P1, resource_type: ad_group, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: PENDING_CREATION_R6-01, resource_id: PENDING_CREATION_R6-01, current_value: PAUSED, proposed_value: ENABLED, object_count: 1, note: "Pressure Washing Near Me"}
+    - {action_id: R10-04, priority: P1, resource_type: ad_group_ad, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: PENDING_CREATION_R6-01, resource_id: PENDING_CREATION_R6-04, current_value: PAUSED, proposed_value: ENABLED, object_count: 1}
+    - {action_id: R10-05, priority: P1, resource_type: ad_group_ad, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: PENDING_CREATION_R6-01, resource_id: PENDING_CREATION_R6-05, current_value: PAUSED, proposed_value: ENABLED, object_count: 1}
+    - {action_id: R10-06, priority: P1, resource_type: ad_group, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: PENDING_CREATION_R6-06, resource_id: PENDING_CREATION_R6-06, current_value: PAUSED, proposed_value: ENABLED, object_count: 1, note: "Power Washing Services"}
+    - {action_id: R10-07, priority: P1, resource_type: ad_group_ad, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: PENDING_CREATION_R6-06, resource_id: PENDING_CREATION_R6-09, current_value: PAUSED, proposed_value: ENABLED, object_count: 1}
+    - {action_id: R10-08, priority: P1, resource_type: ad_group_ad, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: PENDING_CREATION_R6-06, resource_id: PENDING_CREATION_R6-10, current_value: PAUSED, proposed_value: ENABLED, object_count: 1}
+    - {action_id: R10-09, priority: P1, resource_type: ad_group, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: PENDING_CREATION_R6-11, resource_id: PENDING_CREATION_R6-11, current_value: PAUSED, proposed_value: ENABLED, object_count: 1, note: "Power Washing head term - HIGHER VARIANCE, see staging below"}
+    - {action_id: R10-10, priority: P1, resource_type: ad_group_ad, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: PENDING_CREATION_R6-11, resource_id: PENDING_CREATION_R6-13, current_value: PAUSED, proposed_value: ENABLED, object_count: 1}
+    - {action_id: R10-11, priority: P1, resource_type: ad_group_ad, operation: UPDATE, customer_id: "1521725229", campaign_id: "24103511039", ad_group_id: PENDING_CREATION_R6-14, resource_id: PENDING_CREATION_R6-14, current_value: PAUSED, proposed_value: ENABLED, object_count: 1}
+
+  recommended_staging: >-
+    When this plan is regenerated, split it in two. Stage 1 enables R10-01 through
+    R10-08 - the two rewritten RSAs and the two conservative SKAGs. Stage 2 enables
+    R10-09 through R10-11 - the head-term ad group - only after Stage 1 has run for
+    seven serving days and its search terms have been reviewed. The head term is
+    the only action in the R5/R6 set with materially different risk, and it should
+    not ride along on the same approval as the safe ones.
+
+  what_enabling_does_not_do: >-
+    It does not pause anything. The four existing ads in Power Washing Near Me stay
+    ENABLED, and campaign B stays untouched, until PLAN-R11 is separately approved.
+    There is never a window in which an ad group has zero serving ads.
+
+  risk: >-
+    MEDIUM. This is the point at which new surface area starts spending real money.
+    Every prior plan is reversible with no delivery consequence; this one is not.
+  rollback: >-
+    Set each enabled resource back to PAUSED. Eleven mutations. Rollback is
+    immediate and complete because nothing is deleted.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    PROVISIONAL. This file must be regenerated against real resource IDs after
+    PLAN-R5 and PLAN-R6 execute and pass readback QA. Do not approve the
+    provisional fingerprint.

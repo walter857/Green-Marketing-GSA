@@ -1,0 +1,72 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-23b",
+ "plan_name": "AMB-0923B-CONV-B",
+ "approval_class": "update-conversion-action-primary-flag",
+ "scope": "conversion_action.primary_for_goal ONLY",
+ "nothing_deleted": true,
+ "nothing_disabled": true,
+ "capture_untouched": true,
+ "no_budget_bid_keyword_ad_targeting_or_status_change": true,
+ "supersedes": "AMB-0923-CONV-2 / 2550EA4C9BDC for the two WC actions",
+ "unchanged_by_instruction": {
+  "7389995485": "GA4 form_submission import - stays SECONDARY per instruction."
+ },
+ "bidding_impact": "None today: every enabled campaign is TARGET_SPEND (Maximize Clicks with a CPC ceiling), which does not consume conversion goals. This governs REPORTING and prepares for conversion bidding.",
+ "changes": [
+  {
+   "conversion_action_id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "type": "WEBPAGE",
+   "category": "SUBMIT_LEAD_FORM",
+   "origin": "WEBSITE",
+   "goal_key": "SUBMIT_LEAD_FORM|WEBSITE",
+   "goal_biddable": true,
+   "from_primary_for_goal": true,
+   "to_primary_for_goal": false,
+   "takes_effect": false,
+   "why": "Native WEBPAGE form action. It DOES overlap WC Lead - but only on the offer subdomain. WhatConverts profile 105803 registers one form selector, #gform_1, so it has never captured a main-site #gform_2 submission. 13 of the 18 currently enabled heating ad groups point at MAIN-SITE pages. Demoting this today leaves those 13 ad groups with NO Primary measurement for a form submission at all.",
+   "release_condition": "Execute once a labelled main-site test submission produces a Web Form lead in WhatConverts profile 105803 carrying the main-site field labels.",
+   "measured_loss_if_executed_today": "5 conversions / 90 days, and all future main-site form submissions."
+  },
+  {
+   "conversion_action_id": "1068114183",
+   "name": "Calls from ads",
+   "type": "AD_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "CALL_FROM_ADS",
+   "goal_key": "PHONE_CALL_LEAD|CALL_FROM_ADS",
+   "goal_biddable": true,
+   "from_primary_for_goal": true,
+   "to_primary_for_goal": false,
+   "takes_effect": false,
+   "why": "Native AD_CALL action overlapping the WC Calls route. WC Calls has recorded zero conversions ever, so demoting this today leaves call-asset calls with NO Primary measurement.",
+   "release_condition": "Execute once WC Calls records its first accepted upload.",
+   "measured_loss_if_executed_today": "5 conversions / 90 days."
+  }
+ ],
+ "operations": [
+  {
+   "op": "SET_CONVERSION_ACTION_PRIMARY_FLAG",
+   "conversion_action_id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "from": "primary_for_goal=True",
+   "to": "primary_for_goal=False",
+   "field_mask": "primary_for_goal"
+  },
+  {
+   "op": "SET_CONVERSION_ACTION_PRIMARY_FLAG",
+   "conversion_action_id": "1068114183",
+   "name": "Calls from ads",
+   "from": "primary_for_goal=True",
+   "to": "primary_for_goal=False",
+   "field_mask": "primary_for_goal"
+  }
+ ],
+ "rollback": "Flip primary_for_goal back on the same ids. Nothing is removed or reconfigured.",
+ "DO_NOT_EXECUTE_YET": "Both changes remove the ONLY Primary measurement their event currently has. Execute each only when its release_condition is met.",
+ "operation_count": 2,
+ "fingerprint": "346D8583F5E8"
+}

@@ -1,0 +1,516 @@
+{
+ "executed_utc": "2026-08-21T04:12:04.388494Z",
+ "completed_utc": "2026-08-21T04:12:04.979377Z",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "approved_fingerprint": "1D964296F5C7CE79",
+ "package": "HVAC Repair diversified RSAs, created PAUSED",
+ "campaign_id": "24132507750",
+ "ad_group_id": "202339087674",
+ "execution_shape": "GoogleAdsService.Mutate, 2 mutate_operations, partial_failure=false, validate_only=false",
+ "operations_sent": 2,
+ "responses_returned": 2,
+ "created_resource_names": [
+  "customers/2401959466/adGroupAds/202339087674~821714108336",
+  "customers/2401959466/adGroupAds/202339087674~821714108339"
+ ],
+ "created_ad_ids": [
+  "821714108336",
+  "821714108339"
+ ],
+ "intent": [
+  {
+   "label": "A - direct response / request a quote",
+   "campaign_id": "24132507750",
+   "ad_group_id": "202339087674",
+   "status_on_create": "PAUSED",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+   "path1": "hvac-repair",
+   "path2": "severn-md",
+   "path1_len": 11,
+   "path2_len": 9,
+   "pinning": "none",
+   "headlines": [
+    {
+     "text": "HVAC Repair in Severn, MD",
+     "len": 25,
+     "keyword_relevant": true
+    },
+    {
+     "text": "Free HVAC Repair Quote",
+     "len": 22,
+     "keyword_relevant": true
+    },
+    {
+     "text": "HVAC Repair Near You",
+     "len": 20,
+     "keyword_relevant": true
+    },
+    {
+     "text": "Residential HVAC Repair",
+     "len": 23,
+     "keyword_relevant": true
+    },
+    {
+     "text": "HVAC Repair in Columbia MD",
+     "len": 26,
+     "keyword_relevant": true
+    },
+    {
+     "text": "Request HVAC Repair",
+     "len": 19,
+     "keyword_relevant": true
+    },
+    {
+     "text": "Heating & Cooling Repair",
+     "len": 24,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Serving Severna Park & Severn",
+     "len": 29,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Ambient Cooling & Heating",
+     "len": 25,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Request a Free Quote",
+     "len": 20,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Experienced HVAC Technicians",
+     "len": 28,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Careful System Diagnosis",
+     "len": 24,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Clear Repair Recommendations",
+     "len": 28,
+     "keyword_relevant": false
+    },
+    {
+     "text": "No Heating or Cooling?",
+     "len": 22,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Weak or Limited Airflow?",
+     "len": 24,
+     "keyword_relevant": false
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Request a free quote for HVAC repair in Severn, Severna Park and Columbia, MD.",
+     "len": 78
+    },
+    {
+     "text": "Tell Ambient what your heating or cooling system is doing and get repair options.",
+     "len": 81
+    },
+    {
+     "text": "Careful diagnosis first, then clear repair recommendations you can review.",
+     "len": 74
+    },
+    {
+     "text": "Ambient Cooling & Heating serves Severn, Severna Park and Columbia.",
+     "len": 67
+    }
+   ],
+   "keyword_relevant_headline_count": 6,
+   "keyword_relevant_headlines": [
+    "HVAC Repair in Severn, MD",
+    "Free HVAC Repair Quote",
+    "HVAC Repair Near You",
+    "Residential HVAC Repair",
+    "HVAC Repair in Columbia MD",
+    "Request HVAC Repair"
+   ],
+   "unique_non_keyword_headline_count": 9,
+   "unique_non_keyword_headlines": [
+    "Heating & Cooling Repair",
+    "Serving Severna Park & Severn",
+    "Ambient Cooling & Heating",
+    "Request a Free Quote",
+    "Experienced HVAC Technicians",
+    "Careful System Diagnosis",
+    "Clear Repair Recommendations",
+    "No Heating or Cooling?",
+    "Weak or Limited Airflow?"
+   ],
+   "distinct_idea_groups": [
+    "service",
+    "local",
+    "brand",
+    "CTA",
+    "technicians",
+    "diagnosis",
+    "recommendations",
+    "symptoms"
+   ],
+   "finance_language_check": "PASS",
+   "barred_claim_check": "PASS",
+   "barred_check_scope": "Flags discount, price, cheap, same-day, today, now, emergency, 24/7, guarantee, warranty, licence, insurance, certification, years-in-business, star ratings, plural 'reviews' as testimonials, rated, best, #1, fastest, immediate, timed promises, hurry, limited time, 'near me', prompt, fast and quick. The VERB 'review' is deliberately allowed: the landing page itself uses 'Review Your Options' and '3. Review the Repair Options', so it is verified page language and not a testimonial claim.",
+   "character_limit_check": "PASS",
+   "overlap_with_existing_rsas": [
+    {
+     "ad_id": "820900825416",
+     "campaign": "AC Repair",
+     "status": "ENABLED",
+     "strength": "AVERAGE",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "820900825425",
+     "campaign": "AC Repair",
+     "status": "ENABLED",
+     "strength": "POOR",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "820900825428",
+     "campaign": "Gas Boiler Repair",
+     "status": "PAUSED",
+     "strength": "EXCELLENT",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "820900825434",
+     "campaign": "HVAC Installation",
+     "status": "PAUSED",
+     "strength": "POOR",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "820900825560",
+     "campaign": "HVAC Repair",
+     "status": "ENABLED",
+     "strength": "POOR",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": true
+    },
+    {
+     "ad_id": "820944944371",
+     "campaign": "HVAC Replacement",
+     "status": "PAUSED",
+     "strength": "POOR",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "821319509197",
+     "campaign": "HVAC Installation",
+     "status": "ENABLED",
+     "strength": "GOOD",
+     "identical_headlines": 2,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "821319509203",
+     "campaign": "HVAC Replacement",
+     "status": "ENABLED",
+     "strength": "GOOD",
+     "identical_headlines": 2,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "821319509209",
+     "campaign": "Gas Boiler Repair",
+     "status": "ENABLED",
+     "strength": "EXCELLENT",
+     "identical_headlines": 2,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    }
+   ],
+   "max_identical_headlines_any_ad": 2,
+   "max_identical_headlines_same_ad_group": 1
+  },
+  {
+   "label": "B - problem recognition / decision",
+   "campaign_id": "24132507750",
+   "ad_group_id": "202339087674",
+   "status_on_create": "PAUSED",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+   "path1": "hvac-repair",
+   "path2": "severn-md",
+   "path1_len": 11,
+   "path2_len": 9,
+   "pinning": "none",
+   "headlines": [
+    {
+     "text": "HVAC Repair Recommendations",
+     "len": 27,
+     "keyword_relevant": true
+    },
+    {
+     "text": "HVAC Repair Near You",
+     "len": 20,
+     "keyword_relevant": true
+    },
+    {
+     "text": "Start Your HVAC Repair Quote",
+     "len": 28,
+     "keyword_relevant": true
+    },
+    {
+     "text": "HVAC Repair in Severna Park",
+     "len": 27,
+     "keyword_relevant": true
+    },
+    {
+     "text": "Local HVAC Repair Team",
+     "len": 22,
+     "keyword_relevant": true
+    },
+    {
+     "text": "Free HVAC Repair Quote",
+     "len": 22,
+     "keyword_relevant": true
+    },
+    {
+     "text": "Uneven Temperatures at Home?",
+     "len": 28,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Noisy or Cycling System?",
+     "len": 24,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Thermostat Acting Up?",
+     "len": 21,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Know Your Repair Options",
+     "len": 24,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Ambient Cooling & Heating",
+     "len": 25,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Serving Central Maryland",
+     "len": 24,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Careful HVAC Diagnosis",
+     "len": 22,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Request a Free Quote",
+     "len": 20,
+     "keyword_relevant": false
+    },
+    {
+     "text": "Comfort Problem? Tell Us.",
+     "len": 25,
+     "keyword_relevant": false
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Tell Ambient what changed and when the heating or cooling problem began.",
+     "len": 72
+    },
+    {
+     "text": "A careful diagnosis identifies the issue before any HVAC repair is recommended.",
+     "len": 79
+    },
+    {
+     "text": "Review the findings and repair options before deciding on next steps.",
+     "len": 69
+    },
+    {
+     "text": "Serving Severn, Severna Park, Columbia and nearby Central Maryland areas.",
+     "len": 73
+    }
+   ],
+   "keyword_relevant_headline_count": 6,
+   "keyword_relevant_headlines": [
+    "HVAC Repair Recommendations",
+    "HVAC Repair Near You",
+    "Start Your HVAC Repair Quote",
+    "HVAC Repair in Severna Park",
+    "Local HVAC Repair Team",
+    "Free HVAC Repair Quote"
+   ],
+   "unique_non_keyword_headline_count": 9,
+   "unique_non_keyword_headlines": [
+    "Uneven Temperatures at Home?",
+    "Noisy or Cycling System?",
+    "Thermostat Acting Up?",
+    "Know Your Repair Options",
+    "Ambient Cooling & Heating",
+    "Serving Central Maryland",
+    "Careful HVAC Diagnosis",
+    "Request a Free Quote",
+    "Comfort Problem? Tell Us."
+   ],
+   "distinct_idea_groups": [
+    "service",
+    "local",
+    "brand",
+    "CTA",
+    "technicians",
+    "diagnosis",
+    "recommendations",
+    "symptoms"
+   ],
+   "finance_language_check": "PASS",
+   "barred_claim_check": "PASS",
+   "barred_check_scope": "Flags discount, price, cheap, same-day, today, now, emergency, 24/7, guarantee, warranty, licence, insurance, certification, years-in-business, star ratings, plural 'reviews' as testimonials, rated, best, #1, fastest, immediate, timed promises, hurry, limited time, 'near me', prompt, fast and quick. The VERB 'review' is deliberately allowed: the landing page itself uses 'Review Your Options' and '3. Review the Repair Options', so it is verified page language and not a testimonial claim.",
+   "character_limit_check": "PASS",
+   "overlap_with_existing_rsas": [
+    {
+     "ad_id": "820900825416",
+     "campaign": "AC Repair",
+     "status": "ENABLED",
+     "strength": "AVERAGE",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "820900825425",
+     "campaign": "AC Repair",
+     "status": "ENABLED",
+     "strength": "POOR",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "820900825428",
+     "campaign": "Gas Boiler Repair",
+     "status": "PAUSED",
+     "strength": "EXCELLENT",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "820900825434",
+     "campaign": "HVAC Installation",
+     "status": "PAUSED",
+     "strength": "POOR",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "820900825560",
+     "campaign": "HVAC Repair",
+     "status": "ENABLED",
+     "strength": "POOR",
+     "identical_headlines": 2,
+     "identical_descriptions": 0,
+     "in_same_ad_group": true
+    },
+    {
+     "ad_id": "820944944371",
+     "campaign": "HVAC Replacement",
+     "status": "PAUSED",
+     "strength": "POOR",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "821319509197",
+     "campaign": "HVAC Installation",
+     "status": "ENABLED",
+     "strength": "GOOD",
+     "identical_headlines": 2,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "821319509200",
+     "campaign": "HVAC Installation",
+     "status": "ENABLED",
+     "strength": "EXCELLENT",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "821319509203",
+     "campaign": "HVAC Replacement",
+     "status": "ENABLED",
+     "strength": "GOOD",
+     "identical_headlines": 2,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "821319509206",
+     "campaign": "HVAC Replacement",
+     "status": "ENABLED",
+     "strength": "EXCELLENT",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "821319509209",
+     "campaign": "Gas Boiler Repair",
+     "status": "ENABLED",
+     "strength": "EXCELLENT",
+     "identical_headlines": 2,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    },
+    {
+     "ad_id": "821319509212",
+     "campaign": "Gas Boiler Repair",
+     "status": "ENABLED",
+     "strength": "EXCELLENT",
+     "identical_headlines": 1,
+     "identical_descriptions": 0,
+     "in_same_ad_group": false
+    }
+   ],
+   "max_identical_headlines_any_ad": 2,
+   "max_identical_headlines_same_ad_group": 2
+  }
+ ],
+ "pre_write_counts": {
+  "ads": 113,
+  "campaigns": 23,
+  "keywords": 6968,
+  "campaign_assets": 283,
+  "conversion_actions": 16
+ },
+ "enabled_ads_before": [
+  "820900825560",
+  "820900825563"
+ ],
+ "preflight_gates": "28/28"
+}

@@ -1,0 +1,266 @@
+{
+ "plan_name": "AMB-1002-EMER-CREATE-1",
+ "exact_service": "Emergency Heating Repair",
+ "work_order": "work-orders/work-order-emergency-heating-repair-lp-2026-10-01.yaml",
+ "campaign": {
+  "id": "24257819463",
+  "name": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09"
+ },
+ "ad_group": {
+  "id": "204129717047",
+  "name": "SKAG | Emergency Heating Repair"
+ },
+ "effective_url_before": "none - the ad group has 0 ads, so it has no destination and cannot serve",
+ "effective_url_after_create": "none - new RSAs are PAUSED; after ENABLE: https://offer.ambientcoolingandheating.com/emergency-heating-repair/",
+ "existing_keywords_untouched": [
+  [
+   "emergency furnace repair",
+   "EXACT",
+   "PAUSED",
+   "APPROVED"
+  ],
+  [
+   "emergency heat repair",
+   "EXACT",
+   "PAUSED",
+   "APPROVED"
+  ],
+  [
+   "emergency heater repair",
+   "PHRASE",
+   "PAUSED",
+   "APPROVED"
+  ],
+  [
+   "emergency heating repair",
+   "EXACT",
+   "PAUSED",
+   "APPROVED"
+  ],
+  [
+   "emergency heating repair",
+   "PHRASE",
+   "PAUSED",
+   "APPROVED"
+  ]
+ ],
+ "supersedes_copy": "AMB-0922-BUILD-1 held Emergency RSA payloads (never uploaded)",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-10-02",
+ "approval_class": "create-paused",
+ "everything_created_paused": true,
+ "nothing_enabled": true,
+ "nothing_removed": true,
+ "unchanged": {
+  "budget": "$85 repair (15885327972) / $20 geothermal (15887323571), unchanged",
+  "bidding": "Maximize Clicks (TARGET_SPEND); repair ceiling $18.00, geothermal ceiling $38.00, unchanged",
+  "locations": "75 PRESENCE targets on both campaigns, unchanged",
+  "schedule": "Mon-Fri 08:00-16:00 America/New_York, 5 rows, unchanged",
+  "conversions": "no conversion action or goal touched",
+  "negatives": "no negative added, removed or changed",
+  "tracking": "no tracking template / final URL suffix exists at account, campaign, ad group, ad or keyword level; none added",
+  "website": "no website, GTM, WhatConverts or Business Profile change"
+ },
+ "unrelated_resource_baseline_sha256_16": "ae1f1d999d90a549",
+ "operations": [
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group_id": "204129717047",
+   "final_url": "https://offer.ambientcoolingandheating.com/emergency-heating-repair/",
+   "label": "RSA A - keyword and location led",
+   "path1": "Emergency",
+   "path2": "Heating",
+   "headlines": [
+    {
+     "text": "Emergency Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Emergency Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating Stopped Working?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "No Heat? Call Mon-Fri 8-4",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating Repair In Central MD",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia MD Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Ask About The Next Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Free Heating Repair Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "No-Heat Diagnosis",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Repair Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace & Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Business-Hours Heating Help",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Local Maryland Service",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Heating stopped? Call Mon-Fri, 8 a.m.-4 p.m. to check the next available repair visit.",
+     "pin": "DESCRIPTION_1"
+    },
+    {
+     "text": "We assess the system, explain what failed and confirm the repair before work begins.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Emergency heating repair for homes in Severn, Severna Park and Columbia, Maryland.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Send a repair request online or call during business hours for a free quote.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "status": "PAUSED",
+   "tracking_url_template": "",
+   "final_url_suffix": "",
+   "final_mobile_urls": []
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group_id": "204129717047",
+   "final_url": "https://offer.ambientcoolingandheating.com/emergency-heating-repair/",
+   "label": "RSA B - problem led",
+   "path1": "Emergency",
+   "path2": "Heating",
+   "headlines": [
+    {
+     "text": "Heat Not Working?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Urgent Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Emergency Heater Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Stopped Heating?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Calls Answered Mon-Fri 8-4",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Next Available Appointment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating Breakdown Help",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Heating",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Glen Burnie Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Annapolis Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Get A Free Repair Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Assessment Before Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Scope Before Work",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Home Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To Our Heating Team",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Calls answered Mon-Fri, 8 a.m.-4 p.m. Ask about the next available heating repair visit.",
+     "pin": "DESCRIPTION_1"
+    },
+    {
+     "text": "Tell us what the system is doing. We assess it and confirm the repair scope first.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating repair for homes in Annapolis, Glen Burnie, Severn and Columbia, MD.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request a free heating repair quote online, or call during business hours.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "status": "PAUSED",
+   "tracking_url_template": "",
+   "final_url_suffix": "",
+   "final_mobile_urls": []
+  },
+  {
+   "op": "CREATE_KEYWORD_PAUSED",
+   "ad_group_id": "204129717047",
+   "text": "emergency furnace repair",
+   "match": "PHRASE",
+   "why": "EXACT [emergency furnace repair] exists; the PHRASE twin lets 'emergency furnace repair near me' and '... severn' reach the group. Furnace Repair negates 'emergency', so those searches have no other destination."
+  }
+ ],
+ "operation_count": 3,
+ "preflight": {
+  "EMER create 2 RSAs PAUSED": "VALIDATED 2",
+  "EMER create 1 PHRASE keyword PAUSED": "VALIDATED 1"
+ },
+ "fingerprint": "AF13621050E2"
+}

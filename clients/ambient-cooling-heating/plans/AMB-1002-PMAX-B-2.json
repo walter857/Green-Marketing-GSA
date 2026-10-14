@@ -1,0 +1,350 @@
+{
+ "plan_name": "AMB-1002-PMAX-B-2",
+ "supersedes": "AMB-1002-PMAX-B-1 (never executed)",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "authorization": "staged authorization 2026-10-02",
+ "work_order": "work-orders/work-order-pmax-heat-pump-geothermal-2026-10-02.yaml",
+ "campaign_name": "PMax | Heat Pump & Geothermal | Central MD | 2026-10",
+ "budget": 33.33,
+ "hp_install_payload": {
+  "name": "Heat Pump Installation",
+  "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-installation/",
+  "path1": "Heat-Pump",
+  "path2": "Installation",
+  "headlines": [
+   [
+    "id",
+    "310563102573"
+   ],
+   "Install a Heat Pump",
+   [
+    "id",
+    "424734001132"
+   ],
+   "Heat Pump Installers",
+   "Free Installation Quote",
+   "Severn Heat Pump Install",
+   [
+    "id",
+    "424666402908"
+   ],
+   [
+    "id",
+    "424632150596"
+   ],
+   [
+    "id",
+    "424734004471"
+   ],
+   [
+    "id",
+    "424734013285"
+   ],
+   [
+    "id",
+    "424734010534"
+   ],
+   [
+    "id",
+    "409521516376"
+   ],
+   [
+    "id",
+    "422477367425"
+   ],
+   "Heat Pump Options Explained",
+   "New Heat Pumps"
+  ],
+  "long_headlines": [
+   "Heat pump installation for homes in Severn, Severna Park and Columbia, MD",
+   "Request a free heat pump installation quote from Ambient Cooling & Heating",
+   "Considering a heat pump? Plan the installation with trained technicians",
+   [
+    "id",
+    "424734013318"
+   ],
+   "Compare heat pump installation options clearly before you decide"
+  ],
+  "descriptions": [
+   "Request a free heat pump installation quote.",
+   "Trained technicians assess your home and explain heat pump options clearly.",
+   "Heat pump installation for Severn, Severna Park and Columbia homes.",
+   [
+    "id",
+    "424734004492"
+   ],
+   [
+    "id",
+    "424734013138"
+   ]
+  ],
+  "images": "COPY_FROM_HP_SOURCE",
+  "search_themes": [
+   "heat pump installation",
+   "heat pump installation near me",
+   "install heat pump",
+   "new heat pump installation",
+   "heat pump installer",
+   "heat pump installation cost",
+   "air source heat pump installation",
+   "heat pump for house",
+   "convert to heat pump",
+   "electric heat pump installation"
+  ]
+ },
+ "geothermal_payload": {
+  "name": "Geothermal Heat Pump",
+  "final_url": "https://offer.ambientcoolingandheating.com/geothermal-heat-pump/",
+  "path1": "Geothermal",
+  "path2": "Heat-Pump",
+  "headlines": [
+   "Geothermal Heat Pumps",
+   "Geothermal Consultation",
+   "New Geothermal System",
+   "Geothermal Replacement",
+   "Plan A Geothermal System",
+   "Free Geothermal Quote",
+   "Geothermal Heating & Cooling",
+   "Ground-Loop System Review",
+   "Severn Geothermal Systems",
+   "Columbia Geothermal Systems",
+   "Annapolis Geothermal Quote",
+   "Property-Specific Review",
+   "Geothermal",
+   "Replacement Planning",
+   "Central MD Geothermal"
+  ],
+  "long_headlines": [
+   "Geothermal heat pump consultation for homes in Severn, Severna Park and Columbia, MD",
+   "Considering geothermal? Start with a property-specific review of your home",
+   "Plan a geothermal heat pump replacement with Ambient Cooling & Heating",
+   "Explore whether a geothermal system fits your home, property and comfort goals",
+   "Request a free geothermal heat pump quote from Ambient Cooling & Heating"
+  ],
+  "descriptions": [
+   "Request a free geothermal heat pump quote.",
+   "Discuss your home, current heating setup and goals before choosing equipment.",
+   "Replacement planning starts with the condition of your current geothermal equipment.",
+   "Geothermal consultation for Severn, Severna Park, Columbia and Annapolis homes.",
+   [
+    "id",
+    "424734013138"
+   ]
+  ],
+  "images": {
+   "comfortable-home-autumn_L_1200x628.jpg": "MARKETING_IMAGE",
+   "comfortable-home-autumn_S_1024x1024.jpg": "SQUARE_MARKETING_IMAGE",
+   "geothermal-heat-pump-piping-detail-2_L_1200x628.jpg": "MARKETING_IMAGE",
+   "geothermal-heat-pump-piping-detail-2_P_816x1020.jpg": "PORTRAIT_MARKETING_IMAGE",
+   "geothermal-heat-pump-piping-detail-2_S_1024x1024.jpg": "SQUARE_MARKETING_IMAGE",
+   "geothermal-heat-pump-utility-room-2_L_1200x628.jpg": "MARKETING_IMAGE",
+   "geothermal-heat-pump-utility-room-2_P_816x1020.jpg": "PORTRAIT_MARKETING_IMAGE",
+   "geothermal-heat-pump-utility-room-2_S_1024x1024.jpg": "SQUARE_MARKETING_IMAGE",
+   "home-thermostat-comfort-1_L_1200x628.jpg": "MARKETING_IMAGE",
+   "home-thermostat-comfort-1_S_1024x1024.jpg": "SQUARE_MARKETING_IMAGE"
+  },
+  "search_themes": [
+   "geothermal heat pump installation",
+   "geothermal heat pump replacement",
+   "geothermal heating and cooling",
+   "geothermal hvac",
+   "geothermal heat pump cost",
+   "geothermal system installation",
+   "ground source heat pump",
+   "geothermal installer near me",
+   "new geothermal system",
+   "geothermal heat pump",
+   "geothermal heating system",
+   "geothermal contractor"
+  ]
+ },
+ "geothermal_image_sha256": {
+  "comfortable-home-autumn_L_1200x628.jpg": "1329e557c5aa48d8",
+  "comfortable-home-autumn_S_1024x1024.jpg": "c599003be1fe83f1",
+  "geothermal-heat-pump-piping-detail-2_L_1200x628.jpg": "d2e4f3d91a3acddd",
+  "geothermal-heat-pump-piping-detail-2_P_816x1020.jpg": "12a3b1a6ed09e178",
+  "geothermal-heat-pump-piping-detail-2_S_1024x1024.jpg": "46ccbf3e52946121",
+  "geothermal-heat-pump-utility-room-2_L_1200x628.jpg": "9589d6ad54133da3",
+  "geothermal-heat-pump-utility-room-2_P_816x1020.jpg": "653176530966dafd",
+  "geothermal-heat-pump-utility-room-2_S_1024x1024.jpg": "5eeca9847a6dd46f",
+  "home-thermostat-comfort-1_L_1200x628.jpg": "cf084a4058d8c8a2",
+  "home-thermostat-comfort-1_S_1024x1024.jpg": "287ee77e59044ddf"
+ },
+ "hp_replacement_assets_linked": [
+  [
+   "92011805521",
+   "HEADLINE"
+  ],
+  [
+   "218982354502",
+   "CALL_TO_ACTION_SELECTION"
+  ],
+  [
+   "310563102573",
+   "HEADLINE"
+  ],
+  [
+   "409521516376",
+   "HEADLINE"
+  ],
+  [
+   "422477367425",
+   "HEADLINE"
+  ],
+  [
+   "423727600114",
+   "HEADLINE"
+  ],
+  [
+   "423809914800",
+   "HEADLINE"
+  ],
+  [
+   "424632150560",
+   "SQUARE_MARKETING_IMAGE"
+  ],
+  [
+   "424632150596",
+   "HEADLINE"
+  ],
+  [
+   "424632150617",
+   "DESCRIPTION"
+  ],
+  [
+   "424666402803",
+   "HEADLINE"
+  ],
+  [
+   "424666402908",
+   "HEADLINE"
+  ],
+  [
+   "424666402965",
+   "HEADLINE"
+  ],
+  [
+   "424734001078",
+   "HEADLINE"
+  ],
+  [
+   "424734001132",
+   "HEADLINE"
+  ],
+  [
+   "424734004438",
+   "SQUARE_MARKETING_IMAGE"
+  ],
+  [
+   "424734004471",
+   "HEADLINE"
+  ],
+  [
+   "424734004492",
+   "DESCRIPTION"
+  ],
+  [
+   "424734005911",
+   "SQUARE_MARKETING_IMAGE"
+  ],
+  [
+   "424734005944",
+   "LONG_HEADLINE"
+  ],
+  [
+   "424734010402",
+   "SQUARE_MARKETING_IMAGE"
+  ],
+  [
+   "424734010486",
+   "PORTRAIT_MARKETING_IMAGE"
+  ],
+  [
+   "424734010498",
+   "MARKETING_IMAGE"
+  ],
+  [
+   "424734010510",
+   "MARKETING_IMAGE"
+  ],
+  [
+   "424734010534",
+   "HEADLINE"
+  ],
+  [
+   "424734010555",
+   "LONG_HEADLINE"
+  ],
+  [
+   "424734010573",
+   "LONG_HEADLINE"
+  ],
+  [
+   "424734010597",
+   "DESCRIPTION"
+  ],
+  [
+   "424734013138",
+   "DESCRIPTION"
+  ],
+  [
+   "424734013162",
+   "PORTRAIT_MARKETING_IMAGE"
+  ],
+  [
+   "424734013243",
+   "MARKETING_IMAGE"
+  ],
+  [
+   "424734013252",
+   "MARKETING_IMAGE"
+  ],
+  [
+   "424734013285",
+   "HEADLINE"
+  ],
+  [
+   "424734013297",
+   "LONG_HEADLINE"
+  ],
+  [
+   "424734013318",
+   "LONG_HEADLINE"
+  ],
+  [
+   "424734013339",
+   "DESCRIPTION"
+  ]
+ ],
+ "actions": [
+  "budget $33.33 non-shared (= $1,000 / 30 days incl. 2026-10-02)",
+  "PAUSED PMax 'PMax | Heat Pump & Geothermal | Central MD | 2026-10': Max Conversions (no target, no value bidding), presence, brand guidelines, 6 automation opt-outs",
+  "75 locations (copied from A), English, Mon-Fri 08-16, tablet bid_modifier 0",
+  "5 own-brand + 5 repair-scope EXACT negatives; shared list ['12252013691'] (EXACT only)",
+  "18 campaign asset links (brand x3, call, snippet, 5 sitelinks incl. geothermal 426109948970, 8 callouts)",
+  "PAUSED 'Heat Pump Replacement' -> /heat-pump-replacement/ (36 existing assets, 8 themes + audience)",
+  "PAUSED 'Heat Pump Installation' -> /heat-pump-installation/ (36 links)",
+  "PAUSED 'Geothermal Heat Pump' -> https://offer.ambientcoolingandheating.com/geothermal-heat-pump/ (36 links: 10 new images from the client page, text from the page)",
+  "post-create: B campaign_conversion_goal biddable flags set equal to A's"
+ ],
+ "goal_mirror_of_A": {
+  "PAGE_VIEW~GOOGLE_HOSTED": false,
+  "PHONE_CALL_LEAD~WEBSITE": true,
+  "PHONE_CALL_LEAD~CALL_FROM_ADS": false,
+  "SUBMIT_LEAD_FORM~WEBSITE": true,
+  "GET_DIRECTIONS~GOOGLE_HOSTED": false,
+  "CONTACT~WEBSITE": true,
+  "CONTACT~GOOGLE_HOSTED": false,
+  "CONTACT~CALL_FROM_ADS": true,
+  "ENGAGEMENT~GOOGLE_HOSTED": false
+ },
+ "enable_after_readback": [
+  "campaign B",
+  "asset groups Heat Pump Replacement, Heat Pump Installation, Geothermal Heat Pump"
+ ],
+ "operation_count": 304,
+ "preflight": "VALIDATED 304",
+ "fingerprint": "157DF8F88A9A"
+}

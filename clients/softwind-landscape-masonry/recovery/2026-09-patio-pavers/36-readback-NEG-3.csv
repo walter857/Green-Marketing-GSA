@@ -1,0 +1,97 @@
+action_id,resource_name,criterion_id,campaign_id,campaign,planned_text,observed_text,expected_match,observed_match,observed_status,negative,family,classification,ok
+NEG-001,customers/2429758629/campaignCriteria/23484806108~66019371,66019371,23484806108,Patio,asphalt,asphalt,PHRASE,PHRASE,ENABLED,True,asphalt,high_confidence_wrong_service,True
+NEG-002,customers/2429758629/campaignCriteria/23484806108~297468284781,297468284781,23484806108,Patio,blacktop,blacktop,PHRASE,PHRASE,ENABLED,True,asphalt,high_confidence_wrong_service,True
+NEG-003,customers/2429758629/campaignCriteria/23484806108~497575926,497575926,23484806108,Patio,macadam,macadam,PHRASE,PHRASE,ENABLED,True,asphalt,high_confidence_wrong_service,True
+NEG-004,customers/2429758629/campaignCriteria/23484806108~314213650756,314213650756,23484806108,Patio,tar and chip,tar and chip,PHRASE,PHRASE,ENABLED,True,asphalt,high_confidence_wrong_service,True
+NEG-005,customers/2429758629/campaignCriteria/23484806108~256106153,256106153,23484806108,Patio,house washing,house washing,PHRASE,PHRASE,ENABLED,True,cleaning,high_confidence_wrong_service,True
+NEG-006,customers/2429758629/campaignCriteria/23484806108~296114422239,296114422239,23484806108,Patio,patio washing,patio washing,PHRASE,PHRASE,ENABLED,True,cleaning,high_confidence_wrong_service,True
+NEG-007,customers/2429758629/campaignCriteria/23484806108~21381541,21381541,23484806108,Patio,power washing,power washing,PHRASE,PHRASE,ENABLED,True,cleaning,high_confidence_wrong_service,True
+NEG-008,customers/2429758629/campaignCriteria/23484806108~21381571,21381571,23484806108,Patio,pressure washing,pressure washing,PHRASE,PHRASE,ENABLED,True,cleaning,high_confidence_wrong_service,True
+NEG-009,customers/2429758629/campaignCriteria/23484806108~298543151485,298543151485,23484806108,Patio,soft washing,soft washing,PHRASE,PHRASE,ENABLED,True,cleaning,high_confidence_wrong_service,True
+NEG-010,customers/2429758629/campaignCriteria/23484806108~157248365,157248365,23484806108,Patio,composite deck,composite deck,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-011,customers/2429758629/campaignCriteria/23484806108~157250065,157250065,23484806108,Patio,deck builder,deck builder,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-012,customers/2429758629/campaignCriteria/23484806108~13547852,13547852,23484806108,Patio,decking,decking,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-013,customers/2429758629/campaignCriteria/23484806108~122438280,122438280,23484806108,Patio,trex,trex,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-014,customers/2429758629/campaignCriteria/23484806108~46787810,46787810,23484806108,Patio,wood deck,wood deck,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-015,customers/2429758629/campaignCriteria/23484806108~170741122,170741122,23484806108,Patio,apprentice,apprentice,PHRASE,PHRASE,ENABLED,True,employment,employment_intent,True
+NEG-016,customers/2429758629/campaignCriteria/23484806108~10297371,10297371,23484806108,Patio,patio enclosure,patio enclosure,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-017,customers/2429758629/campaignCriteria/23484806108~10297381,10297381,23484806108,Patio,patio enclosures,patio enclosures,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-018,customers/2429758629/campaignCriteria/23484806108~31224810,31224810,23484806108,Patio,screen room,screen room,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-019,customers/2429758629/campaignCriteria/23484806108~337978949,337978949,23484806108,Patio,screened in patio,screened in patio,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-020,customers/2429758629/campaignCriteria/23484806108~280225204,280225204,23484806108,Patio,screened patio,screened patio,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-021,customers/2429758629/campaignCriteria/23484806108~15814552,15814552,23484806108,Patio,sunroom,sunroom,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-022,customers/2429758629/campaignCriteria/23484806108~296957162128,296957162128,23484806108,Patio,paver mold,paver mold,PHRASE,PHRASE,ENABLED,True,equipment,diy_information_and_materials_intent,True
+NEG-023,customers/2429758629/campaignCriteria/23484806108~367846488,367846488,23484806108,Patio,paver molds,paver molds,PHRASE,PHRASE,ENABLED,True,equipment,diy_information_and_materials_intent,True
+NEG-024,customers/2429758629/campaignCriteria/23484806108~297790262329,297790262329,23484806108,Patio,plate compactor,plate compactor,PHRASE,PHRASE,ENABLED,True,equipment,diy_information_and_materials_intent,True
+NEG-025,customers/2429758629/campaignCriteria/23484806108~110367874,110367874,23484806108,Patio,awning,awning,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-026,customers/2429758629/campaignCriteria/23484806108~28942500,28942500,23484806108,Patio,canopy,canopy,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-027,customers/2429758629/campaignCriteria/23484806108~300281448161,300281448161,23484806108,Patio,covered patio,covered patio,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-028,customers/2429758629/campaignCriteria/23484806108~13301863,13301863,23484806108,Patio,gazebo,gazebo,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-029,customers/2429758629/campaignCriteria/23484806108~133955292,133955292,23484806108,Patio,patio awning,patio awning,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-030,customers/2429758629/campaignCriteria/23484806108~92666976,92666976,23484806108,Patio,patio cover,patio cover,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-031,customers/2429758629/campaignCriteria/23484806108~253889720,253889720,23484806108,Patio,patio roof,patio roof,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-032,customers/2429758629/campaignCriteria/23484806108~117027409,117027409,23484806108,Patio,pergola,pergola,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-033,customers/2429758629/campaignCriteria/23484806108~280300834,280300834,23484806108,Patio,patio restoration,patio restoration,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-034,customers/2429758629/campaignCriteria/23484806108~2476429901003,2476429901003,23484806108,Patio,paver re sanding,paver re sanding,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-035,customers/2429758629/campaignCriteria/23484806108~1839627454552,1839627454552,23484806108,Patio,paver releveling,paver releveling,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-036,customers/2429758629/campaignCriteria/23484806108~776516951715,776516951715,23484806108,Patio,paver resanding,paver resanding,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-037,customers/2429758629/campaignCriteria/23484806108~845961532,845961532,23484806108,Patio,paver restoration,paver restoration,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-038,customers/2429758629/campaignCriteria/23484806108~300338543471,300338543471,23484806108,Patio,polymeric sand,polymeric sand,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-039,customers/2429758629/campaignCriteria/23484806108~335429859990,335429859990,23484806108,Patio,paver calculator,paver calculator,PHRASE,PHRASE,ENABLED,True,retail-diy,diy_information_and_materials_intent,True
+NEG-040,customers/2429758629/campaignCriteria/23484806108~147766364,147766364,23484806108,Patio,seal coat,seal coat,PHRASE,PHRASE,ENABLED,True,sealcoating,high_confidence_wrong_service,True
+NEG-041,customers/2429758629/campaignCriteria/23484806108~263415870,263415870,23484806108,Patio,seal coating,seal coating,PHRASE,PHRASE,ENABLED,True,sealcoating,high_confidence_wrong_service,True
+NEG-042,customers/2429758629/campaignCriteria/23484806108~289560744,289560744,23484806108,Patio,sealcoat,sealcoat,PHRASE,PHRASE,ENABLED,True,sealcoating,high_confidence_wrong_service,True
+NEG-043,customers/2429758629/campaignCriteria/23484806108~138876971,138876971,23484806108,Patio,sealcoating,sealcoating,PHRASE,PHRASE,ENABLED,True,sealcoating,high_confidence_wrong_service,True
+NEG-044,customers/2429758629/campaignCriteria/23484806108~298325502676,298325502676,23484806108,Patio,patio sealing,patio sealing,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True
+NEG-045,customers/2429758629/campaignCriteria/23484806108~156918817,156918817,23484806108,Patio,paver sealer,paver sealer,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True
+NEG-046,customers/2429758629/campaignCriteria/23484806108~75465548,75465548,23484806108,Patio,sealant,sealant,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True
+NEG-047,customers/2429758629/campaignCriteria/23484806108~342700756998,342700756998,23484806108,Patio,sealing service,sealing service,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True
+NEG-048,customers/2429758629/campaignCriteria/23484806108~347399528,347399528,23484806108,Patio,stone sealer,stone sealer,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True
+NEG-049,customers/2429758629/campaignCriteria/23489296528~66019371,66019371,23489296528,Pavers,asphalt,asphalt,PHRASE,PHRASE,ENABLED,True,asphalt,high_confidence_wrong_service,True
+NEG-050,customers/2429758629/campaignCriteria/23489296528~297468284781,297468284781,23489296528,Pavers,blacktop,blacktop,PHRASE,PHRASE,ENABLED,True,asphalt,high_confidence_wrong_service,True
+NEG-051,customers/2429758629/campaignCriteria/23489296528~497575926,497575926,23489296528,Pavers,macadam,macadam,PHRASE,PHRASE,ENABLED,True,asphalt,high_confidence_wrong_service,True
+NEG-052,customers/2429758629/campaignCriteria/23489296528~314213650756,314213650756,23489296528,Pavers,tar and chip,tar and chip,PHRASE,PHRASE,ENABLED,True,asphalt,high_confidence_wrong_service,True
+NEG-053,customers/2429758629/campaignCriteria/23489296528~256106153,256106153,23489296528,Pavers,house washing,house washing,PHRASE,PHRASE,ENABLED,True,cleaning,high_confidence_wrong_service,True
+NEG-054,customers/2429758629/campaignCriteria/23489296528~296114422239,296114422239,23489296528,Pavers,patio washing,patio washing,PHRASE,PHRASE,ENABLED,True,cleaning,high_confidence_wrong_service,True
+NEG-055,customers/2429758629/campaignCriteria/23489296528~21381541,21381541,23489296528,Pavers,power washing,power washing,PHRASE,PHRASE,ENABLED,True,cleaning,high_confidence_wrong_service,True
+NEG-056,customers/2429758629/campaignCriteria/23489296528~21381571,21381571,23489296528,Pavers,pressure washing,pressure washing,PHRASE,PHRASE,ENABLED,True,cleaning,high_confidence_wrong_service,True
+NEG-057,customers/2429758629/campaignCriteria/23489296528~298543151485,298543151485,23489296528,Pavers,soft washing,soft washing,PHRASE,PHRASE,ENABLED,True,cleaning,high_confidence_wrong_service,True
+NEG-058,customers/2429758629/campaignCriteria/23489296528~157248365,157248365,23489296528,Pavers,composite deck,composite deck,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-059,customers/2429758629/campaignCriteria/23489296528~157250065,157250065,23489296528,Pavers,deck builder,deck builder,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-060,customers/2429758629/campaignCriteria/23489296528~132594060,132594060,23489296528,Pavers,deck contractor,deck contractor,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-061,customers/2429758629/campaignCriteria/23489296528~13547852,13547852,23489296528,Pavers,decking,decking,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-062,customers/2429758629/campaignCriteria/23489296528~122438280,122438280,23489296528,Pavers,trex,trex,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-063,customers/2429758629/campaignCriteria/23489296528~46787810,46787810,23489296528,Pavers,wood deck,wood deck,PHRASE,PHRASE,ENABLED,True,deck-structure,high_confidence_wrong_service,True
+NEG-064,customers/2429758629/campaignCriteria/23489296528~170741122,170741122,23489296528,Pavers,apprentice,apprentice,PHRASE,PHRASE,ENABLED,True,employment,employment_intent,True
+NEG-065,customers/2429758629/campaignCriteria/23489296528~10297371,10297371,23489296528,Pavers,patio enclosure,patio enclosure,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-066,customers/2429758629/campaignCriteria/23489296528~10297381,10297381,23489296528,Pavers,patio enclosures,patio enclosures,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-067,customers/2429758629/campaignCriteria/23489296528~31224810,31224810,23489296528,Pavers,screen room,screen room,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-068,customers/2429758629/campaignCriteria/23489296528~337978949,337978949,23489296528,Pavers,screened in patio,screened in patio,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-069,customers/2429758629/campaignCriteria/23489296528~280225204,280225204,23489296528,Pavers,screened patio,screened patio,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-070,customers/2429758629/campaignCriteria/23489296528~15814552,15814552,23489296528,Pavers,sunroom,sunroom,PHRASE,PHRASE,ENABLED,True,enclosure,high_confidence_wrong_service,True
+NEG-071,customers/2429758629/campaignCriteria/23489296528~296957162128,296957162128,23489296528,Pavers,paver mold,paver mold,PHRASE,PHRASE,ENABLED,True,equipment,diy_information_and_materials_intent,True
+NEG-072,customers/2429758629/campaignCriteria/23489296528~367846488,367846488,23489296528,Pavers,paver molds,paver molds,PHRASE,PHRASE,ENABLED,True,equipment,diy_information_and_materials_intent,True
+NEG-073,customers/2429758629/campaignCriteria/23489296528~297790262329,297790262329,23489296528,Pavers,plate compactor,plate compactor,PHRASE,PHRASE,ENABLED,True,equipment,diy_information_and_materials_intent,True
+NEG-074,customers/2429758629/campaignCriteria/23489296528~110367874,110367874,23489296528,Pavers,awning,awning,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-075,customers/2429758629/campaignCriteria/23489296528~28942500,28942500,23489296528,Pavers,canopy,canopy,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-076,customers/2429758629/campaignCriteria/23489296528~300281448161,300281448161,23489296528,Pavers,covered patio,covered patio,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-077,customers/2429758629/campaignCriteria/23489296528~13301863,13301863,23489296528,Pavers,gazebo,gazebo,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-078,customers/2429758629/campaignCriteria/23489296528~133955292,133955292,23489296528,Pavers,patio awning,patio awning,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-079,customers/2429758629/campaignCriteria/23489296528~253889720,253889720,23489296528,Pavers,patio roof,patio roof,PHRASE,PHRASE,ENABLED,True,patio-cover,high_confidence_wrong_service,True
+NEG-080,customers/2429758629/campaignCriteria/23489296528~280300834,280300834,23489296528,Pavers,patio restoration,patio restoration,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-081,customers/2429758629/campaignCriteria/23489296528~313532908266,313532908266,23489296528,Pavers,paver leveling,paver leveling,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-082,customers/2429758629/campaignCriteria/23489296528~1839627454552,1839627454552,23489296528,Pavers,paver releveling,paver releveling,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-083,customers/2429758629/campaignCriteria/23489296528~776516951715,776516951715,23489296528,Pavers,paver resanding,paver resanding,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-084,customers/2429758629/campaignCriteria/23489296528~845961532,845961532,23489296528,Pavers,paver restoration,paver restoration,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-085,customers/2429758629/campaignCriteria/23489296528~300338543471,300338543471,23489296528,Pavers,polymeric sand,polymeric sand,PHRASE,PHRASE,ENABLED,True,restoration,high_confidence_wrong_service,True
+NEG-086,customers/2429758629/campaignCriteria/23489296528~335429859990,335429859990,23489296528,Pavers,paver calculator,paver calculator,PHRASE,PHRASE,ENABLED,True,retail-diy,diy_information_and_materials_intent,True
+NEG-087,customers/2429758629/campaignCriteria/23489296528~147766364,147766364,23489296528,Pavers,seal coat,seal coat,PHRASE,PHRASE,ENABLED,True,sealcoating,high_confidence_wrong_service,True
+NEG-088,customers/2429758629/campaignCriteria/23489296528~263415870,263415870,23489296528,Pavers,seal coating,seal coating,PHRASE,PHRASE,ENABLED,True,sealcoating,high_confidence_wrong_service,True
+NEG-089,customers/2429758629/campaignCriteria/23489296528~289560744,289560744,23489296528,Pavers,sealcoat,sealcoat,PHRASE,PHRASE,ENABLED,True,sealcoating,high_confidence_wrong_service,True
+NEG-090,customers/2429758629/campaignCriteria/23489296528~138876971,138876971,23489296528,Pavers,sealcoating,sealcoating,PHRASE,PHRASE,ENABLED,True,sealcoating,high_confidence_wrong_service,True
+NEG-091,customers/2429758629/campaignCriteria/23489296528~298325502676,298325502676,23489296528,Pavers,patio sealing,patio sealing,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True
+NEG-092,customers/2429758629/campaignCriteria/23489296528~156918817,156918817,23489296528,Pavers,paver sealer,paver sealer,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True
+NEG-093,customers/2429758629/campaignCriteria/23489296528~506651019,506651019,23489296528,Pavers,paver sealing,paver sealing,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True
+NEG-094,customers/2429758629/campaignCriteria/23489296528~75465548,75465548,23489296528,Pavers,sealant,sealant,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True
+NEG-095,customers/2429758629/campaignCriteria/23489296528~342700756998,342700756998,23489296528,Pavers,sealing service,sealing service,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True
+NEG-096,customers/2429758629/campaignCriteria/23489296528~347399528,347399528,23489296528,Pavers,stone sealer,stone sealer,PHRASE,PHRASE,ENABLED,True,sealing,high_confidence_wrong_service,True

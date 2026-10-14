@@ -1,0 +1,257 @@
+# =============================================================================
+# APG-0917-CALL-Q  --  campaign call asset, corrected phone number
+# =============================================================================
+# Replaces APG-0917-CALL-N (A29431412E96), which is REJECTED and marked
+# SUPERSEDED_WRONG_PHONE. CALL-N is retained as an audit record only and must
+# never be executed or approved.
+#
+# The only substantive difference is the call asset's phone number. Walter has
+# ruled that 402-526-5754 is the advertising, landing-page and WhatConverts
+# number, and that the other number on file is only the final forwarding
+# destination and must not appear in a Google Ads call asset. That ruling is
+# authoritative, is not reopened here, and the forwarding destination appears
+# nowhere in this plan.
+#
+# Covers what CAMP-I (4022CBA7FD51) deliberately excluded: the CALL asset on
+# campaign 24257151015. Does NOT re-execute CAMP-I, CONV-J or GTM-K.
+# =============================================================================
+plan_id: APG-0917-CALL-Q
+plan_kind: campaign_call_asset_create
+supersedes:
+  - plan_id: APG-0917-CALL-N
+    fingerprint: A29431412E96
+    status: SUPERSEDED_WRONG_PHONE
+    rejected_by: Walter
+    rejected_on: "2026-09-17"
+generated: "2026-09-17"
+classification: create-paused-equivalent
+
+target:
+  exact_child_account_name: "Apogee Lawns LLC - Live"
+  child_customer_id: "8164626278"
+  manager_customer_id: "3373711342"
+  manager_never_mutated: true
+  vertical: similar-local-service
+  exact_primary_service: Permanent Christmas light installation
+  campaign_id: "24257151015"
+  campaign_name: "S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026"
+  campaign_status_required_before: PAUSED
+  campaign_status_after_this_plan: PAUSED
+
+# -----------------------------------------------------------------------------
+# The phone number -- settled by the owner, not by this plan
+# -----------------------------------------------------------------------------
+phone_number:
+  value_for_api: "4025265754"
+  display_form: "402-526-5754"
+  e164_form: "+14025265754"
+  role: >-
+    The advertising, landing-page and WhatConverts number. It is the number
+    rendered on offer.apogeelawns.com and the number the owner requires on the
+    Google Ads call asset.
+  decided_by: Walter
+  decided_on: "2026-09-17"
+  status: SETTLED_DO_NOT_REOPEN
+  consistency_note: >-
+    This makes the ad call number, the landing-page number and the WhatConverts
+    tracking number one single number. Whether a Google forwarding number is
+    served or the raw number falls through, the caller sees the same digits the
+    landing page shows.
+  forwarding_destination_excluded: true
+  forwarding_destination_excluded_note: >-
+    The downstream forwarding destination is deliberately absent from this plan
+    and from the mutation payload. A red-team assertion checks that it appears
+    nowhere in this file.
+
+# -----------------------------------------------------------------------------
+# Conversion reporting state, forced by live account evidence
+# -----------------------------------------------------------------------------
+call_conversion_reporting_decision:
+  selected: USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION
+  call_conversion_action: "customers/8164626278/conversionActions/7773013199"
+  forced_by: >-
+    customer.call_reporting_setting.call_conversion_action currently points at
+    customers/8164626278/conversionActions/179. No conversion action with id 179 exists
+    in this account; the three that exist are 7772803337, 7773013199 and 7773043879.
+    The account-level pointer is stale and dead. USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION
+    would therefore attribute every ad call to a non-existent action and silently lose it.
+  account_level_pointer_left_untouched: true
+  account_level_pointer_note: >-
+    Repairing customer.call_reporting_setting.call_conversion_action is an account-wide
+    change outside this plan's scope and is explicitly NOT proposed. Walter instructed
+    that the stale pointer not be altered. Resource-level reporting makes it irrelevant
+    to this campaign.
+
+# -----------------------------------------------------------------------------
+# Website-call conversion action 7773043879 -- no Google Ads write exists
+# -----------------------------------------------------------------------------
+website_call_action_metadata_finding:
+  answer: NO_GOOGLE_ADS_MUTATION_IS_POSSIBLE_OR_REQUIRED
+  evidence:
+    - "conversion_action exposes 31 selectable fields in Google Ads API v25. The only
+       phone-related field is phone_call_duration_seconds, already set to 60."
+    - "The mutable ConversionAction proto carries no phone-number field of any kind:
+       no phone_number, no phone_conversion_number, no number-to-replace collection."
+    - "For a WEBSITE_CALL action the number to replace is a property of the page tag.
+       It is configured in APG-0917-GTM-P, which is EXECUTED."
+  conclusion: >-
+    7773043879 is COMPLETE as a Google Ads record. It stays SECONDARY, its campaign
+    goal stays non-biddable, and it is neither duplicated nor promoted.
+  mutations_proposed_against_7773043879: 0
+
+# -----------------------------------------------------------------------------
+# Preconditions -- asserted live before any operation is issued
+# -----------------------------------------------------------------------------
+preconditions:
+  - "customer.id == 8164626278"
+  - "customer.descriptive_name == 'Apogee Lawns LLC - Live'"
+  - "customer.manager == false and customer.test_account == false"
+  - "customer_manager_link 3373711342 status == ACTIVE"
+  - "campaign 24257151015 exists and campaign.status == PAUSED"
+  - "count(asset where asset.type == CALL) == 0"
+  - "count(campaign_asset where field_type == CALL) == 0"
+  - "no existing CALL asset carries phone_number 4025265754"
+  - "conversion_action 7773013199 status == ENABLED, type == AD_CALL, category == PHONE_CALL_LEAD, origin == CALL_FROM_ADS, primary_for_goal == true"
+  - "conversion_action 7773043879 primary_for_goal == false"
+  - "campaign_conversion_goal PHONE_CALL_LEAD / CALL_FROM_ADS biddable == true"
+  - "campaign_conversion_goal PHONE_CALL_LEAD / WEBSITE biddable == false"
+  - "customer.call_reporting_setting.call_reporting_enabled == true"
+  - "customer.call_reporting_setting.call_conversion_reporting_enabled == true"
+  - "count(conversion_action) == 3"
+  - "count(custom_conversion_goal) == 0"
+
+# -----------------------------------------------------------------------------
+objects:
+  - ordinal: 1
+    resource: asset
+    operation: create
+    asset_type: CALL
+    field_values:
+      call_asset.country_code: "US"
+      call_asset.phone_number: "4025265754"
+      call_asset.call_conversion_reporting_state: USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION
+      call_asset.call_conversion_action: "customers/8164626278/conversionActions/7773013199"
+    ad_schedule_targets:
+      - {day_of_week: MONDAY,    start_hour: 8, start_minute: ZERO, end_hour: 17, end_minute: ZERO}
+      - {day_of_week: TUESDAY,   start_hour: 8, start_minute: ZERO, end_hour: 17, end_minute: ZERO}
+      - {day_of_week: WEDNESDAY, start_hour: 8, start_minute: ZERO, end_hour: 17, end_minute: ZERO}
+      - {day_of_week: THURSDAY,  start_hour: 8, start_minute: ZERO, end_hour: 17, end_minute: ZERO}
+      - {day_of_week: FRIDAY,    start_hour: 8, start_minute: ZERO, end_hour: 17, end_minute: ZERO}
+      - {day_of_week: SATURDAY,  start_hour: 8, start_minute: ZERO, end_hour: 12, end_minute: ZERO}
+    schedule_source: work-order.yaml schedule_policy, stated by Walter
+    schedule_timezone: America/Chicago
+    schedule_timezone_note: >-
+      customer.time_zone is America/Chicago, so ad-schedule hours are already account
+      Central Time. No conversion is applied.
+    schedule_note: >-
+      SUNDAY is deliberately absent. The campaign itself stays 24/7 with zero ad-schedule
+      criteria, unchanged by this plan; only the call asset is time-restricted, so ads
+      still serve outside answering hours without offering a call that nobody answers.
+    asset_name_omitted: true
+    asset_name_omitted_reason: >-
+      Asset.name is not user-settable for CALL assets. It is omitted rather than guessed.
+    shared_schedule_warning: >-
+      A call-asset ad schedule lives on the ASSET, not on the link. Editing it later
+      rewrites the hours on every campaign linked to this asset. This asset is created
+      new and will be linked to exactly ONE campaign, 24257151015, which the zero-CALL-asset
+      precondition proves. Link exclusivity is verified, not assumed.
+    readback_assertions:
+      - "asset.type == CALL"
+      - "asset.call_asset.country_code == 'US'"
+      - "asset.call_asset.phone_number digits == '4025265754'"
+      - "asset.call_asset.call_conversion_reporting_state == USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION"
+      - "asset.call_asset.call_conversion_action endswith '/7773013199'"
+      - "len(asset.call_asset.ad_schedule_targets) == 6"
+      - "SUNDAY not in ad_schedule_targets"
+      - "count(asset where asset.type == CALL) == 1"
+
+  - ordinal: 2
+    resource: campaign_asset
+    operation: create
+    campaign: "customers/8164626278/campaigns/24257151015"
+    asset: "<resource_name created by ordinal 1>"
+    field_type: CALL
+    status: ENABLED
+    status_note: >-
+      ENABLED here means the link is live; it does not serve, because campaign
+      24257151015 is PAUSED. This plan enables nothing.
+    readback_assertions:
+      - "campaign_asset.field_type == CALL"
+      - "campaign_asset.campaign endswith '/24257151015'"
+      - "campaign_asset.status == ENABLED"
+      - "count(campaign_asset where field_type == CALL) == 1"
+      - "count(campaign_asset) == 8"
+
+mutation_summary:
+  total_mutations: 2
+  creates: 2
+  updates: 0
+  deletes: 0
+  by_resource:
+    asset: 1
+    campaign_asset: 1
+  conversion_actions_created: 0
+  conversion_actions_touched: 0
+  campaigns_touched: 0
+  campaign_enables: 0
+  budgets_touched: 0
+  ad_groups_touched: 0
+  keywords_touched: 0
+  ads_touched: 0
+  account_settings_touched: 0
+  gtm_objects_touched: 0
+  whatconverts_changes: 0
+  wordpress_changes: 0
+
+duplicate_guard:
+  live_check_2026_09_17:
+    call_assets: 0
+    campaign_asset_links_field_type_CALL: 0
+    conversion_actions: 3
+    custom_conversion_goals: 0
+  rule: >-
+    If any CALL asset already exists at execution time, or any campaign_asset link with
+    field_type CALL already exists, HARD STOP before issuing a single operation. Do not
+    create a second one and do not reuse an unexamined asset.
+
+invariants_asserted_after_execution:
+  - "campaign 24257151015 status still PAUSED"
+  - "campaign_budget 15884926233 amount unchanged at 16440000 micros"
+  - "ad groups 200347713516 and 200347713556 unchanged"
+  - "4 RSAs unchanged"
+  - "5 keywords unchanged"
+  - "90 campaign criteria unchanged, still 0 ad-schedule criteria"
+  - "conversion action count still 3, no duplicates created"
+  - "7772803337 PRIMARY, 7773013199 PRIMARY, 7773043879 SECONDARY"
+  - "campaign_conversion_goal PHONE_CALL_LEAD / WEBSITE still biddable false"
+  - "custom_conversion_goal count still 0"
+  - "callout and structured-snippet asset links still 7"
+  - "customer.call_reporting_setting unchanged, including the stale /179 pointer"
+  - "manager 3373711342 never mutated"
+
+not_in_scope:
+  - "Enabling campaign 24257151015. Enablement needs its own separate approval after readback."
+  - "Any change to conversion action 7773043879, including promotion or duplication."
+  - "Repairing the stale account-level call_conversion_action pointer to /179."
+  - "Any GTM object. GTM work is APG-0917-GTM-P, already EXECUTED."
+  - "Any WordPress change."
+  - "Any WhatConverts change, purchase or sign-in."
+  - "Accepting call-recording terms or any other legal attestation."
+  - "Deleting anything."
+
+risks:
+  - risk: "The call asset advertises a number outside answering hours."
+    mitigation: "Six ad-schedule targets restrict it to Mon-Fri 08:00-17:00 and Sat 08:00-12:00 America/Chicago."
+  - risk: "Ad calls attributed to a dead conversion action."
+    mitigation: "Resource-level reporting pinned to 7773013199; the stale account pointer is bypassed, not edited."
+  - risk: "Later edit of the asset schedule silently changes other campaigns."
+    mitigation: "Link exclusivity proven by the zero-CALL-asset precondition and re-asserted at readback."
+  - risk: "A duplicate call asset is created on a retry."
+    mitigation: "duplicate_guard hard-stops on any pre-existing CALL asset or CALL link."
+  - risk: "Ad calls routed through the WhatConverts number arrive without a browser session."
+    mitigation: >-
+      Accepted by the owner. Google measures these calls independently through
+      conversion action 7773013199, which does not depend on WhatConverts attribution.
+
+approval_grant:
+  required_line: "APPROVE APG CALL-ASSET <fingerprint>"

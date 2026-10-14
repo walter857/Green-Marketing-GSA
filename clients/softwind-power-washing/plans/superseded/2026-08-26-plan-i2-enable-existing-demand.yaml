@@ -1,0 +1,1130 @@
+# PLAN-I2 - ENABLE EXISTING QUALIFIED DEMAND
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+#
+# SUPERSEDES PLAN-D in the recommendation order (PLAN-D is NOT void - its
+# fingerprint F61C9F287B82 is unchanged and it remains valid as written).
+#
+# Enabling a paused ad group is a LIVE DELIVERY CHANGE. Every keyword that would
+# begin serving is listed explicitly below.
+
+change_plan:
+  plan_id: PLAN-I2
+  plan_title: Enable the two strongest paused BOFU ad groups
+  approval_type: ENABLE_EXISTING_RESOURCES
+  priority: R2
+  approval_status: VOID - DO NOT APPROVE
+  execution_status: VOID - DO NOT EXECUTE
+  void_status:
+    state: VOID
+    voided_on: "2026-08-26"
+    fingerprint_voided: "6AF733F709E2"
+    reason: >-
+      SKAG-integrity audit of all 62 keyword rows found BOTH proposed ad groups
+      fail the one-canonical-intent test. Pressure & Power Washing contains FOUR
+      distinct canonical intents across 34 rows (power washing generic service,
+      pressure washing generic service, power washing geo, pressure washing geo);
+      Soft & House Washing contains TWO across 28 rows (house washing, soft
+      washing). All 62 rows show semantic overlap with live keywords and only
+      PARTIAL landing-page relevance against a generic page that names no city.
+      Enabling either would place mixed intent behind a single RSA - the exact
+      architecture the account was revamped to remove.
+    replaced_by: [PLAN-I2A-E, PLAN-I2A-C, PLAN-I2A-EN]
+    evidence: audits/2026-08-26-plan-i2-62-keyword-audit.csv
+  recommended_approval_order: 3
+  ads_mutation_count: 2
+  requires_separate_enable_approval: true
+  supersedes:
+    plan_id: PLAN-D
+    fingerprint: F61C9F287B82
+    status: SUPERSEDED - NOT VOID
+    reason: PLAN-D enabled House Washing Company Near Me. Fresh Keyword Planner data on 2026-08-26
+      shows that ad group's only keyword text carries NO reportable local volume, so it is not
+      one of the strongest delivery opportunities. PLAN-D remains valid as written and its fingerprint
+      is unchanged, but it is displaced in the recommendation order by this plan.
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  selection_basis: All 14 paused ad groups were re-ranked on 2026-08-26 with fresh localized
+    Keyword Planner demand. Ten are DUPLICATE (their keyword text is already live in the other
+    campaign), one is LOW VOLUME, one is KEEP PAUSED. Only two clear the bar.
+  ad_groups_selected:
+  - ad_group_name: Pressure & Power Washing
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: '205713509704'
+    current_status: PAUSED
+    distinct_local_monthly_searches: 140
+    distinct_volume_buckets: 4
+    best_keyword: power washing service
+    best_keyword_volume: 70
+    best_keyword_recent_trend_pct: 293.3
+    keyword_rows_that_will_begin_serving: 34
+    phrase_keywords:
+    - exterior pressure washing service
+    - power washing company
+    - power washing contractor
+    - power washing estimate
+    - power washing long island
+    - power washing quote
+    - power washing service
+    - power washing service long island
+    - pressure washing company
+    - pressure washing contractor
+    - pressure washing estimate
+    - pressure washing long island
+    - pressure washing quote
+    - pressure washing service
+    - professional pressure washing
+    - residential power washing service
+    - residential pressure washing service
+    exact_keywords:
+    - exterior pressure washing service
+    - power washing company
+    - power washing contractor
+    - power washing estimate
+    - power washing long island
+    - power washing quote
+    - power washing service
+    - power washing service long island
+    - pressure washing company
+    - pressure washing contractor
+    - pressure washing estimate
+    - pressure washing long island
+    - pressure washing quote
+    - pressure washing service
+    - professional pressure washing
+    - residential power washing service
+    - residential pressure washing service
+    every_keyword:
+    - criterion_id: '300062854559'
+      text: exterior pressure washing service
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '300062854039'
+      text: exterior pressure washing service
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '829369322'
+      text: power washing company
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 20
+      competition: MEDIUM
+      top_of_page_low: 10.950415
+      top_of_page_high: 21.73228
+      recent_trend_pct: 83.3
+      already_live_elsewhere: false
+    - criterion_id: '338708583'
+      text: power washing company
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 20
+      competition: MEDIUM
+      top_of_page_low: 10.950415
+      top_of_page_high: 21.73228
+      recent_trend_pct: 83.3
+      already_live_elsewhere: false
+    - criterion_id: '1690557380'
+      text: power washing contractor
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '1435910611'
+      text: power washing contractor
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '413059437117'
+      text: power washing estimate
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: MEDIUM
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 100.0
+      already_live_elsewhere: false
+    - criterion_id: '333332829798'
+      text: power washing estimate
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: MEDIUM
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 100.0
+      already_live_elsewhere: false
+    - criterion_id: '327798301379'
+      text: power washing long island
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 40
+      competition: MEDIUM
+      top_of_page_low: 8.117141
+      top_of_page_high: 18.02
+      recent_trend_pct: 30.8
+      already_live_elsewhere: false
+    - criterion_id: '327798300419'
+      text: power washing long island
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 40
+      competition: MEDIUM
+      top_of_page_low: 8.117141
+      top_of_page_high: 18.02
+      recent_trend_pct: 30.8
+      already_live_elsewhere: false
+    - criterion_id: '324711291999'
+      text: power washing quote
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '390004612778'
+      text: power washing quote
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '448367730'
+      text: power washing service
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 70
+      competition: LOW
+      top_of_page_low: 11.397628
+      top_of_page_high: 26.345674
+      recent_trend_pct: 293.3
+      already_live_elsewhere: false
+    - criterion_id: '328994395'
+      text: power washing service
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 70
+      competition: LOW
+      top_of_page_low: 11.397628
+      top_of_page_high: 26.345674
+      recent_trend_pct: 293.3
+      already_live_elsewhere: false
+    - criterion_id: '468133895452'
+      text: power washing service long island
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 50.0
+      already_live_elsewhere: false
+    - criterion_id: '464241147824'
+      text: power washing service long island
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 50.0
+      already_live_elsewhere: false
+    - criterion_id: '1411770112'
+      text: pressure washing company
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 20
+      competition: MEDIUM
+      top_of_page_low: 10.950415
+      top_of_page_high: 21.73228
+      recent_trend_pct: 83.3
+      already_live_elsewhere: false
+    - criterion_id: '256120823'
+      text: pressure washing company
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 20
+      competition: MEDIUM
+      top_of_page_low: 10.950415
+      top_of_page_high: 21.73228
+      recent_trend_pct: 83.3
+      already_live_elsewhere: false
+    - criterion_id: '1690556660'
+      text: pressure washing contractor
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '338709693'
+      text: pressure washing contractor
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '303606938381'
+      text: pressure washing estimate
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: MEDIUM
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 100.0
+      already_live_elsewhere: false
+    - criterion_id: '297379312215'
+      text: pressure washing estimate
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: MEDIUM
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 100.0
+      already_live_elsewhere: false
+    - criterion_id: '318821246126'
+      text: pressure washing long island
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 40
+      competition: MEDIUM
+      top_of_page_low: 8.117141
+      top_of_page_high: 18.02
+      recent_trend_pct: 30.8
+      already_live_elsewhere: false
+    - criterion_id: '318821245846'
+      text: pressure washing long island
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 40
+      competition: MEDIUM
+      top_of_page_low: 8.117141
+      top_of_page_high: 18.02
+      recent_trend_pct: 30.8
+      already_live_elsewhere: false
+    - criterion_id: '324786969089'
+      text: pressure washing quote
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '6553918303'
+      text: pressure washing quote
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '137383976'
+      text: pressure washing service
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 70
+      competition: LOW
+      top_of_page_low: 11.397628
+      top_of_page_high: 26.345674
+      recent_trend_pct: 293.3
+      already_live_elsewhere: false
+    - criterion_id: '137383916'
+      text: pressure washing service
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 70
+      competition: LOW
+      top_of_page_low: 11.397628
+      top_of_page_high: 26.345674
+      recent_trend_pct: 293.3
+      already_live_elsewhere: false
+    - criterion_id: '321968802714'
+      text: professional pressure washing
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: HIGH
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '256115633'
+      text: professional pressure washing
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: HIGH
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '300130781659'
+      text: residential power washing service
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 100.0
+      already_live_elsewhere: false
+    - criterion_id: '300130781419'
+      text: residential power washing service
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 100.0
+      already_live_elsewhere: false
+    - criterion_id: '298227348120'
+      text: residential pressure washing service
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 100.0
+      already_live_elsewhere: false
+    - criterion_id: '294625885656'
+      text: residential pressure washing service
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 100.0
+      already_live_elsewhere: false
+    rsa_count: 1
+    rsas:
+    - ad_id: '819813815021'
+      status: ENABLED
+      approval: APPROVED
+      review: REVIEWED
+      ad_strength: POOR
+      headlines: 15
+      descriptions: 4
+      final_urls:
+      - https://offer.softwindli.com/power-washing-soft-washing/
+    landing_page:
+    - https://offer.softwindli.com/power-washing-soft-washing/
+    landing_page_verified_200: true
+    cross_campaign_duplicate_texts: NONE
+    intra_campaign_overlap_texts: NONE
+    expected_incremental_impressions_6d_current_schedule: 14.7
+    expected_incremental_clicks_6d: 0.84
+    expected_incremental_spend_6d: 23.87
+  - ad_group_name: Soft & House Washing
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: '198082078943'
+    current_status: PAUSED
+    distinct_local_monthly_searches: 60
+    distinct_volume_buckets: 3
+    best_keyword: house washing near me
+    best_keyword_volume: 40
+    best_keyword_recent_trend_pct: -73.3
+    keyword_rows_that_will_begin_serving: 28
+    phrase_keywords:
+    - house soft washing
+    - house washing company
+    - house washing contractor
+    - house washing long island
+    - house washing near me
+    - house washing quote
+    - house washing service
+    - soft washing company
+    - soft washing contractor
+    - soft washing estimate
+    - soft washing long island
+    - soft washing near me
+    - soft washing quote
+    - soft washing service
+    exact_keywords:
+    - house soft washing
+    - house washing company
+    - house washing contractor
+    - house washing long island
+    - house washing near me
+    - house washing quote
+    - house washing service
+    - soft washing company
+    - soft washing contractor
+    - soft washing estimate
+    - soft washing long island
+    - soft washing near me
+    - soft washing quote
+    - soft washing service
+    every_keyword:
+    - criterion_id: '322564513080'
+      text: house soft washing
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: HIGH
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '318781372693'
+      text: house soft washing
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: HIGH
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '298270709971'
+      text: house washing company
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '5316724086'
+      text: house washing company
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '298270710131'
+      text: house washing contractor
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 0
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '298270703971'
+      text: house washing contractor
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 0
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '318821246086'
+      text: house washing long island
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 50.0
+      already_live_elsewhere: false
+    - criterion_id: '318821245806'
+      text: house washing long island
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 50.0
+      already_live_elsewhere: false
+    - criterion_id: '315515597254'
+      text: house washing near me
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 40
+      competition: MEDIUM
+      top_of_page_low: 10.46
+      top_of_page_high: 32.09163
+      recent_trend_pct: -73.3
+      already_live_elsewhere: false
+    - criterion_id: '301057569810'
+      text: house washing near me
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 40
+      competition: MEDIUM
+      top_of_page_low: 10.46
+      top_of_page_high: 32.09163
+      recent_trend_pct: -73.3
+      already_live_elsewhere: false
+    - criterion_id: '450978726931'
+      text: house washing quote
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 0
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '421901238465'
+      text: house washing quote
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 0
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '1690557410'
+      text: house washing service
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 50.0
+      already_live_elsewhere: false
+    - criterion_id: '4872386603'
+      text: house washing service
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 50.0
+      already_live_elsewhere: false
+    - criterion_id: '338961202961'
+      text: soft washing company
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '338829469898'
+      text: soft washing company
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '338961203001'
+      text: soft washing contractor
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 0
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '338961202241'
+      text: soft washing contractor
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 0
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '453158978833'
+      text: soft washing estimate
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 0
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '453158977593'
+      text: soft washing estimate
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 0
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '799533744190'
+      text: soft washing long island
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: HIGH
+      top_of_page_low: 8.289629
+      top_of_page_high: 19.34
+      recent_trend_pct: 50.0
+      already_live_elsewhere: false
+    - criterion_id: '799533734790'
+      text: soft washing long island
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: HIGH
+      top_of_page_low: 8.289629
+      top_of_page_high: 19.34
+      recent_trend_pct: 50.0
+      already_live_elsewhere: false
+    - criterion_id: '338961203201'
+      text: soft washing near me
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: HIGH
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '338961202441'
+      text: soft washing near me
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: HIGH
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '453158979353'
+      text: soft washing quote
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 0
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '453158978113'
+      text: soft washing quote
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 0
+      competition: UNSPECIFIED
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: null
+      already_live_elsewhere: false
+    - criterion_id: '375258734342'
+      text: soft washing service
+      match_type: EXACT
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    - criterion_id: '307693349405'
+      text: soft washing service
+      match_type: PHRASE
+      status: ENABLED
+      approval: APPROVED
+      serving: ELIGIBLE
+      local_monthly_volume: 10
+      competition: LOW
+      top_of_page_low: null
+      top_of_page_high: null
+      recent_trend_pct: 0.0
+      already_live_elsewhere: false
+    rsa_count: 1
+    rsas:
+    - ad_id: '821261156151'
+      status: ENABLED
+      approval: APPROVED
+      review: REVIEWED
+      ad_strength: GOOD
+      headlines: 15
+      descriptions: 4
+      final_urls:
+      - https://offer.softwindli.com/power-washing-soft-washing/
+    landing_page:
+    - https://offer.softwindli.com/power-washing-soft-washing/
+    landing_page_verified_200: true
+    cross_campaign_duplicate_texts: NONE
+    intra_campaign_overlap_texts: NONE
+    expected_incremental_impressions_6d_current_schedule: 6.3
+    expected_incremental_clicks_6d: 0.36
+    expected_incremental_spend_6d: 10.23
+  rejected:
+  - ad_group: House Washing Company Near Me
+    classification: LOW VOLUME
+    reason: Its single keyword text 'house washing company near me' returns NO reportable local
+      volume bucket. The 40/month belongs to the different text 'house washing near me', which
+      lives in the Soft & House Washing group selected above. This is why PLAN-D is displaced.
+  - ad_group: Driveway Patio Concrete Washing
+    classification: KEEP PAUSED
+    reason: Best keyword 'patio cleaning service' at 10/month. Its surfaces are already covered
+      by the live Driveway and Patio SKAGs in campaign B.
+  - ad_groups:
+    - Power Washing Near Me
+    - Power Washing Company Near Me
+    - Power Washing Islip
+    - Power Washing West Islip
+    - Power Washing Dix Hills
+    - Residential Pressure Washing Near Me
+    - House Pressure Washing Estimate
+    - Driveway Pressure Washing Near Me
+    - Patio Pressure Washing Near Me
+    - Soft House Washing Near Me
+    classification: DUPLICATE
+    reason: Every one of these keyword texts is ALREADY LIVE in the other campaign. The inventory
+      is byte-identical across both campaigns, so enabling a second copy would put two ad groups
+      in two campaigns into the same auction for one query.
+  cross_campaign_safety:
+    rule: No proposal may put the two campaigns into the same auction for one query.
+    pressure_power_washing_placement: 'Placed in campaign A (24103511039). Its identity is the
+      power-washing family and A owns that family, A is the PLAN-G surviving campaign, and A
+      receives the larger budget under PLAN-I1. RESIDUAL RISK: the group also contains pressure-washing
+      texts (pressure washing service / company / contractor / estimate / quote / long island).
+      Those are NON-''near me'' query shapes, so overlap with campaign B''s narrow ''pressure
+      washing near me'' style SKAGs is modest rather than direct - but it is real. Monitor campaign
+      B''s impression volume at each pacing checkpoint; if B loses volume, pause the legacy
+      pressure keywords rather than the whole group.'
+    soft_house_washing_placement: Placed in campaign B (24145053510). Its house and soft washing
+      texts belong to B's family and overlap only INTRA-campaign with B's live 'soft house washing
+      near me' SKAG, which Google resolves cleanly by Ad Rank within a campaign.
+    the_other_copy_stays_paused: Pressure & Power Washing also exists in campaign B (198082079503)
+      and Soft & House Washing also exists in campaign A (205713509744). BOTH MUST REMAIN PAUSED.
+      Enabling either would create direct cross-campaign competition.
+  known_compromises_accepted_for_the_rescue:
+  - Each selected ad group carries ONE RSA, against the two-RSA SOP. The creative is byte-identical
+    between the campaign A and campaign B copies - only the Ad Strength label differs, and Ad
+    Strength is a Google advisory, not a ranking factor. Both RSAs are APPROVED with 15 headlines
+    and 4 descriptions.
+  - Both point at the generic /power-washing-soft-washing/ landing page, which names no city.
+    Message match is weaker than the purpose-built offer pages. Verified HTTP 200 with the tracked
+    phone and a working form.
+  - These are deliberate month-end trade-offs. Both should be restructured into clean SKAGs
+    in September.
+  actions:
+  - action_id: R2-I2-01
+    priority: R2
+    resource_type: AD_GROUP
+    operation: UPDATE_STATUS_TO_ENABLED
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: '205713509704'
+    ad_group_name: Pressure & Power Washing
+    resource_id: customers/1521725229/adGroups/205713509704
+    field_mask: status
+    current_value:
+      status: PAUSED
+      keyword_rows: 34
+      rsa_count: 1
+      rsa_status:
+      - ENABLED
+    proposed_value:
+      status: ENABLED
+    keywords_that_will_begin_serving:
+    - exterior pressure washing service [EXACT]
+    - exterior pressure washing service [PHRASE]
+    - power washing company [EXACT]
+    - power washing company [PHRASE]
+    - power washing contractor [EXACT]
+    - power washing contractor [PHRASE]
+    - power washing estimate [EXACT]
+    - power washing estimate [PHRASE]
+    - power washing long island [EXACT]
+    - power washing long island [PHRASE]
+    - power washing quote [EXACT]
+    - power washing quote [PHRASE]
+    - power washing service [EXACT]
+    - power washing service [PHRASE]
+    - power washing service long island [EXACT]
+    - power washing service long island [PHRASE]
+    - pressure washing company [EXACT]
+    - pressure washing company [PHRASE]
+    - pressure washing contractor [EXACT]
+    - pressure washing contractor [PHRASE]
+    - pressure washing estimate [EXACT]
+    - pressure washing estimate [PHRASE]
+    - pressure washing long island [EXACT]
+    - pressure washing long island [PHRASE]
+    - pressure washing quote [EXACT]
+    - pressure washing quote [PHRASE]
+    - pressure washing service [EXACT]
+    - pressure washing service [PHRASE]
+    - professional pressure washing [EXACT]
+    - professional pressure washing [PHRASE]
+    - residential power washing service [EXACT]
+    - residential power washing service [PHRASE]
+    - residential pressure washing service [EXACT]
+    - residential pressure washing service [PHRASE]
+    why: 140 distinct local monthly searches across 4 volume buckets. Best keyword 'power washing
+      service' at 70/month, recent trend 293.3%. Ad group, all keywords and RSA already exist
+      and are APPROVED.
+    evidence: snapshots/rescue-inventory-ranking-2026-08-26.json
+    expected_effect: +14.7 impressions, +0.84 clicks, +$23.87 over the remaining 6 days at the
+      CURRENT schedule. Roughly double that if PLAN-I3 opens the schedule.
+    risk: 'Only 1 RSA present against the two-RSA SOP, and the landing page is the generic /power-washing-soft-washing/
+      which names no city. Cross-campaign duplicate texts: none.'
+    rollback: Set ad_group 205713509704 status back to PAUSED. Single field edit.
+    approval_required: YES - SEPARATE ENABLE APPROVAL. This is a live delivery change.
+    object_count: 1
+  - action_id: R2-I2-02
+    priority: R2
+    resource_type: AD_GROUP
+    operation: UPDATE_STATUS_TO_ENABLED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: '198082078943'
+    ad_group_name: Soft & House Washing
+    resource_id: customers/1521725229/adGroups/198082078943
+    field_mask: status
+    current_value:
+      status: PAUSED
+      keyword_rows: 28
+      rsa_count: 1
+      rsa_status:
+      - ENABLED
+    proposed_value:
+      status: ENABLED
+    keywords_that_will_begin_serving:
+    - house soft washing [EXACT]
+    - house soft washing [PHRASE]
+    - house washing company [EXACT]
+    - house washing company [PHRASE]
+    - house washing contractor [EXACT]
+    - house washing contractor [PHRASE]
+    - house washing long island [EXACT]
+    - house washing long island [PHRASE]
+    - house washing near me [EXACT]
+    - house washing near me [PHRASE]
+    - house washing quote [EXACT]
+    - house washing quote [PHRASE]
+    - house washing service [EXACT]
+    - house washing service [PHRASE]
+    - soft washing company [EXACT]
+    - soft washing company [PHRASE]
+    - soft washing contractor [EXACT]
+    - soft washing contractor [PHRASE]
+    - soft washing estimate [EXACT]
+    - soft washing estimate [PHRASE]
+    - soft washing long island [EXACT]
+    - soft washing long island [PHRASE]
+    - soft washing near me [EXACT]
+    - soft washing near me [PHRASE]
+    - soft washing quote [EXACT]
+    - soft washing quote [PHRASE]
+    - soft washing service [EXACT]
+    - soft washing service [PHRASE]
+    why: 60 distinct local monthly searches across 3 volume buckets. Best keyword 'house washing
+      near me' at 40/month, recent trend -73.3%. Ad group, all keywords and RSA already exist
+      and are APPROVED.
+    evidence: snapshots/rescue-inventory-ranking-2026-08-26.json
+    expected_effect: +6.3 impressions, +0.36 clicks, +$10.23 over the remaining 6 days at the
+      CURRENT schedule. Roughly double that if PLAN-I3 opens the schedule.
+    risk: 'Only 1 RSA present against the two-RSA SOP, and the landing page is the generic /power-washing-soft-washing/
+      which names no city. Cross-campaign duplicate texts: none.'
+    rollback: Set ad_group 198082078943 status back to PAUSED. Single field edit.
+    approval_required: YES - SEPARATE ENABLE APPROVAL. This is a live delivery change.
+    object_count: 1
+  post_execution_verification:
+  - Read back both ad groups and assert status ENABLED.
+  - Read back every keyword listed above and assert status ENABLED, approval APPROVED, system_serving_status
+    ELIGIBLE.
+  - Confirm the paired copies (205713509744 and 198082079503) are still PAUSED.
+  - Check the search terms report at the next two pacing checkpoints for out-of-scope queries
+    and for campaign B volume loss.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 2
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keyword_rows_that_begin_serving: 62
+    rsas_that_begin_serving: 2
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 2
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com

@@ -1,0 +1,24 @@
+{
+ "fails": [
+  "similar-local-service scope_approval.approved is true (BLK-001)",
+  "scope_approval.approved_by is a real name (BLK-001)",
+  "scope_approval.reason is filled in (BLK-001)",
+  "CAMP-B validator: campaigns[0].schedule must be a non-empty list",
+  "no unresolved placeholder remains -- ['[[APPROVED_CPC_CAP]]', '[[LIVE_ANSWER_HOURS_CENTRAL]]']"
+ ],
+ "warns": [],
+ "fingerprints": {
+  "APG-0916-CONV-A": "9BA1F4AE3CCA",
+  "APG-0916-CAMP-B": "849EAED2873F"
+ },
+ "negative_counts": {
+  "broad": 37,
+  "phrase": 38,
+  "total": 75
+ },
+ "monthly_budget_at_30_4": 499.78,
+ "open_placeholders": [
+  "[[APPROVED_CPC_CAP]]",
+  "[[LIVE_ANSWER_HOURS_CENTRAL]]"
+ ]
+}

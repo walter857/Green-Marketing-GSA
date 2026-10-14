@@ -1,0 +1,34 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-24",
+ "plan_name": "AMB-0924-CONV-FORM-1",
+ "approval_class": "update-conversion-action-primary-flag",
+ "supersedes": "AMB-0923B-CONV-B 346D8583F5E8 (form half; its call half is withdrawn)",
+ "unchanged": {
+  "7643656486": "WC Lead PRIMARY",
+  "7643656075": "WC Calls PRIMARY",
+  "1068114183": "Calls from ads PRIMARY - complete native path for call-asset calls"
+ },
+ "operations": [
+  {
+   "op": "SET_CONVERSION_ACTION_PRIMARY_FLAG",
+   "conversion_action_id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "from": "primary_for_goal=True",
+   "to": "primary_for_goal=False",
+   "field_mask": "primary_for_goal"
+  }
+ ],
+ "execute_only_when": [
+  "AMB-0924-GTM-D3 is published and verified live (no conversion on direct/refresh)",
+  "the migration ENABLE plan has executed and read back: no enabled ad group or sitelink sends paid clicks to the main site",
+  ">= 3 real paid offer-page form leads show WhatConverts Google Ads status Success AND WC Lead credited them (conversions by conversion date)",
+  "fingerprint re-validated on the day of execution"
+ ],
+ "effect": "One paid form lead counts once (WC Lead) instead of twice. The native tag keeps recording as a Secondary diagnostic, so nothing is lost if WC fails.",
+ "operation_count": 1,
+ "preflight": "VALIDATED 1",
+ "fingerprint": "00E5791B8506"
+}

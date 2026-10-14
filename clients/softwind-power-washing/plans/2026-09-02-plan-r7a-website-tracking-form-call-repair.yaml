@@ -1,0 +1,681 @@
+# PLAN-R7A - WEBSITE TRACKING, FORM-INTEGRITY, AND CALL-ATTRIBUTION REPAIR
+#
+# ============================================================================
+# SUPERSEDED 2026-09-02 - DO NOT HONOR
+# Fingerprint 65A748A51E48 is VOID and is in the do-not-honour registry.
+#
+# Replaced by the split package:
+#   Track A  plans/2026-09-02-plan-r7a1-gtm-form-measurement.yaml       BLOCKED
+#   Track B  plans/2026-09-02-plan-r7a2-whatconverts-call-attribution.yaml BLOCKED
+#   Track C  dev-tickets/2026-09-02-r7a-developer-ticket-index.md       READY
+#   Track D  plans/2026-09-02-plan-r7a4-sibling-tag-scoping.yaml        BLOCKED
+#
+# Why superseded: it combined GTM, WhatConverts, WordPress and sibling-account
+# changes under one fingerprint; it selected a call-tracking architecture before
+# any authenticated WhatConverts read; and it treated unavailable WordPress
+# access as an execution dependency instead of a developer ticket.
+#
+# This file is PRESERVED AS HISTORICAL EVIDENCE. Do not delete it.
+# ============================================================================
+#
+# STATUS: SUPERSEDED. NOT APPROVED. DO NOT EXECUTE.
+#
+# ZERO Google Ads mutations. This is a WEBSITE plan and a DEVELOPER HANDOFF.
+# Green Marketing holds no WordPress, GTM or WhatConverts credentials in this
+# session, so the exact injection point of each tag is UNRESOLVED. Every action
+# below specifies the observable target and the required end state; whoever holds
+# site access locates and edits the source.
+#
+# CRO and copy work is deliberately EXCLUDED - see PLAN-R7B.
+#
+# A fingerprint identifies an exact plan. It does NOT grant permission.
+
+change_plan:
+  plan_id: PLAN-R7A
+  plan_title: Website tracking, form-integrity and call-attribution repair
+  approval_type: WEBSITE_DEPLOYMENT
+  priority: P0
+  plan_class: WEBSITE_EXTERNAL
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  supersedes:
+    plan_id: PLAN-R7
+    fingerprint: BCC32C8C9FC7
+    note: >-
+      PLAN-R7 mixed tracking defects with CRO copy and was written before the
+      2026-09-02 evidence. Its tracking scope is replaced here; its copy scope
+      moves to PLAN-R7B.
+
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    website: https://offer.softwindli.com
+    pages_in_scope:
+      - /power-washing-services-islip-west-islip-dix-hills/
+      - /residential-pressure-washing/
+      - /house-washing-company/
+      - /soft-house-washing/
+      - /driveway-pressure-washing/
+      - /patio-power-washing/
+      - /thank-you/
+
+  counts:
+    google_ads_mutation_count: 0
+    website_action_count: 11
+    executable_action_count: 10
+    blocked_action_count: 1
+    gtm_action_count: 6            # if the tags prove to be GTM-injected
+    wordpress_action_count: 5      # theme / plugin / Gravity Forms layer
+    plugin_or_config_action_count: 3
+    external_vendor_action_count: 2
+    test_action_count: 0           # the post-repair test is NOT in this plan
+    object_count: 11
+    pages_affected: 7
+
+  access_limitation:
+    gtm_read: 'GTM-P3LD97NN COULD NOT BE READ'
+    gtm_note: >-
+      No authenticated GTM access exists in this session. Container name, account,
+      version, workspace, tags, triggers, variables and consent settings are all
+      UNKNOWN. Every conclusion below is drawn from page source, network capture,
+      the Google Ads API and this repository instead.
+    wordpress_read: 'NO ACCESS - no WordPress, theme, plugin, mu-plugin, functions.php,
+      wp_options, deployment, CDN or server-side tag access.'
+    whatconverts_read: 'NO ACCESS - destination account not readable.'
+    repository_note: >-
+      The website source is NOT in this repository. Every local match for the
+      traced identifiers is a Green Marketing audit artifact, not site code.
+    consequence: >-
+      Green Marketing CANNOT execute this plan. It is a specification for whoever
+      holds site access. Approval authorises the change set, not agent execution.
+
+# ----------------------------------------------------------------- the trace
+  identifier_trace:
+    - identifier: AW-17878095007
+      resolved_as: >-
+        conversion_tracking_id of Google Ads customer 2429758629
+        "Softwind Landscape & Masonry - Live"
+      ownership_state: 'B - GREEN-MARKETING-OWNED AND DOCUMENTED'
+      ownership_evidence: >-
+        Read 2026-09-02 from customer.conversion_tracking_setting.
+        conversion_tracking_id on 2429758629, which sits at level 1 under the
+        authorized MCC 3373711342. A sweep of all 32 enabled non-manager accounts
+        under that MCC returned exactly one match. No unrelated client data read.
+      correction: >-
+        THIS CORRECTS THE 2026-09-01 AND 2026-09-02 RECEIPTS, which described this
+        as a "foreign" tag belonging to "an account Green Marketing does not
+        control". That was WRONG. It is the client's own sibling account, managed
+        by Green Marketing. It is NOT a third-party data leak. It remains a real
+        defect - cross-account contamination between two scope-fenced sibling
+        accounts - but the risk class is attribution and scope, not privacy breach.
+      observed_source: >-
+        <script src="https://www.googletagmanager.com/gtag/js?id=AW-17878095007">
+        loaded as its own gtag.js tag on every page in scope. No inline gtag
+        config block is present in the rendered DOM, so it is injected either by
+        GTM-P3LD97NN or by a header/plugin that emits the script tag.
+      exact_location: 'UNRESOLVED - requires GTM or WordPress read access'
+      trigger: all pages
+      pages_affected: 7
+      events_affected:
+        - page_view / viewthroughconversion  (1 per page)
+        - user-list + rmkt remarketing  (2 per page)
+        - website-call replacement wcm  (1 per page, all 7)
+        - 'en=form_start and en=form_submit  (3 each, proven at submission)'
+        - 'POST pagead/form-data and ccm/form-data  (2 each, proven at submission)'
+      necessary_for_power_washing: false
+      conflicts_with: >-
+        Softwind Power Washing's own website-call conversion action 7708765130,
+        which is preempted and has therefore never recorded a single call.
+      removal_safe: >-
+        From THESE pages, yes - they are Power Washing offer pages and the Masonry
+        account has no scope claim on them. Owner confirmation still required
+        because the Masonry account may be counting these conversions today and
+        its reporting will change.
+      owner_confirmation_required: true
+
+    - identifier: AW-18369652705
+      resolved_as: >-
+        conversion_tracking_id of Softwind Power Washing - Live, customer
+        1521725229. Confirmed by customer.conversion_tracking_setting.
+      ownership_state: 'A - SOFTWIND-OWNED AND DOCUMENTED'
+      observed_source: >-
+        <script src="https://www.googletagmanager.com/gtag/js?id=AW-18369652705">
+      exact_location: 'UNRESOLVED - requires GTM or WordPress read access'
+      pages_affected: 7
+      necessary: true
+      removal_safe: false
+      note: KEEP. This is the correct account.
+
+    - identifier: FddkCOul59scEOHPqrdE
+      resolved_as: >-
+        conversion label of conversion action 7708725995 "Softwind Power Washing |
+        Submission Lead Form" (WEBPAGE / SUBMIT_LEAD_FORM / ONE_PER_CLICK,
+        90-day click window, 4 tag snippets). Read from the Google Ads API.
+      status: >-
+        The conversion FIRES. Proven by PLAN-R1B. The label is not visible in the
+        outbound request query string because modern gtag carries it in the
+        encoded payload - absence there is NOT evidence of a wrong label.
+      necessary: true
+      removal_safe: false
+
+    - identifier: SFv1CLSo--UbEJ-p-MxC
+      resolved_as: >-
+        the conversion label used by the MASONRY account's website-call
+        replacement request. It belongs to 2429758629, not to 1521725229.
+      pages_affected: 7
+      necessary_for_power_washing: false
+      removal_safe: 'yes, together with AW-17878095007'
+
+    - identifier: ReAcCMrX6dscEOHPqrdE
+      resolved_as: >-
+        the CORRECT Softwind Power Washing website-call label, read fresh from
+        conversion action 7708765130. Its ready-made snippet is
+        gtag('config', 'AW-18369652705/ReAcCMrX6dscEOHPqrdE',
+        {'phone_conversion_number': '(631) 502-7946'})
+      status: >-
+        NOT DEPLOYED ANYWHERE. Zero conversion/18369652705/wcm requests on all 7
+        pages. The asset exists and is correctly configured; it was simply never
+        installed.
+      necessary: true
+
+    - identifier: '6315027946'
+      resolved_as: the approved landing-page number (631) 502-7946
+      status: >-
+        Rendered in body text and in the tel: link on all 7 pages, and passed as
+        the dn= parameter of the MASONRY wcm request.
+      necessary: true
+
+    - identifiers: ['6315025402', '6315535927']
+      resolved_as: >-
+        the two numbers nominated by the WhatConverts wc_swap cookie
+        (6315025402+..+6315535927+..+197159), identical on all 7 pages.
+      status: >-
+        NEITHER reaches the DOM. The swap does not execute. (631) 502-5402 is
+        separately recorded in client.yaml as the untracked main-site number.
+      necessary: false
+      note: The swap target and pool must be documented before any DNI decision.
+
+    - identifier: GTM-P3LD97NN
+      status: >-
+        Present on all 7 pages and the gtm.js loader is requested TWICE per page -
+        a duplicate container load, itself a double-fire risk.
+      exact_location: 'UNRESOLVED - GTM-P3LD97NN COULD NOT BE READ'
+      owner_confirmation_required: true
+
+    - identifier: process.iconnode.com/google-ads/
+      ownership_state: 'D/E - IDENTIFIED VENDOR CATEGORY, AUTHORIZATION UNKNOWN'
+      observed: >-
+        One POST per page load on ALL 7 pages, plus one additional POST at form
+        submission. Public sources describe iconnode as a Google Ads conversion
+        and lead-attribution processing vendor. Nothing in Softwind's client
+        records, this repository, or the work order documents an engagement with
+        it.
+      unknown: vendor relationship, purpose, data retention, destination, consent basis
+      necessary: UNKNOWN
+      removal_safe: UNKNOWN
+      owner_confirmation_required: true
+      note: >-
+        Payload contents are deliberately NOT reproduced in this plan.
+
+    - identifier: ClickCease (p.ksrndkehqnwntyxlhgto.com)
+      observed: '3 requests per page; /keyword/ and /lead/form at submission'
+      necessary: true
+      removal_safe: false
+      note: Approved click-fraud tool. KEEP. Do not remove or replace.
+
+# ------------------------------------------------- call-tracking architecture
+  call_tracking_architecture:
+    selected: 'OPTION A - GOOGLE WEBSITE-CALL REPLACEMENT ON SOFTWIND POWER WASHING'
+    decision: >-
+      Softwind Power Washing's own website-call conversion action 7708765130
+      becomes the single authority for number replacement and call conversions.
+      The Masonry account stops replacing the number. WhatConverts KEEPS its
+      attribution cookies but stops competing for the displayed number.
+    why_a:
+      - >-
+        The asset already exists and is already correct - primary_for_goal true,
+        60-second qualified-call threshold, 30-day window, the approved number
+        (631) 502-7946, and a ready snippet. Deploying it is the smallest safe
+        change that produces signal.
+      - >-
+        The account has ZERO conversion signal of any kind. Option A is the
+        shortest reliable path to the first trustworthy call conversion, and it
+        feeds the Conversions column and bidding natively via GCLID.
+      - >-
+        It resolves the actual conflict directly: today the Masonry account
+        occupies the call path and Power Washing's action has never recorded a
+        single call.
+    why_not_b: >-
+      Making WhatConverts the source of truth means making a system whose number
+      swap is currently BROKEN, for reasons not yet diagnosed, the authority for
+      the whole call path. It also depends on an offline import loop that cannot
+      exist yet - the CRM has not even been identified (IN-3 open), and qualified
+      call outcomes have nowhere to come from. Revisit once the CRM exists.
+    why_not_c: >-
+      A non-conflicting chain cannot be verified while two systems are actively
+      contending for the same displayed number and one of them does not work.
+    whatconverts_role_retained: >-
+      Attribution cookies stay. wc_client already preserves source, medium,
+      campaign, content, term and the GCLID and that is genuinely useful lead-
+      source reporting. Only the number swap is stood down.
+    revisit_trigger: >-
+      Reopen Option B when a CRM is identified, qualified-call outcomes can be
+      fed back, and offline conversion import is scoped. That is ledger Stage 12,
+      not this plan.
+
+# ------------------------------------------------------------------- actions
+  actions:
+
+    - id: R7A-1
+      priority: P0
+      system: GTM or WordPress header
+      exact_location: 'UNRESOLVED - requires GTM or WordPress read access'
+      target_identifier: AW-17878095007
+      current_implementation: >-
+        gtag.js loader for AW-17878095007 fires on all 7 pages, producing
+        page-view remarketing, user-list collection, website-call replacement,
+        form_start/form_submit events and form-data POSTs.
+      proposed_implementation: >-
+        Remove the AW-17878095007 tag and every trigger that fires it from the
+        offer.softwindli.com property. Preserve AW-18369652705, GA4
+        G-D4BZM40RYD, GTM-P3LD97NN and ClickCease untouched.
+      pages_affected: 7
+      reason: >-
+        These are Power Washing offer pages. The Masonry account has no scope
+        claim on them, and its tag preempts Power Washing's own call tracking.
+      evidence: 'page-tag-map-2026-09-02T094635.json; r1b-t3-t8-2026-09-02T092424.json'
+      expected_measurement_effect: >-
+        Masonry stops receiving Power Washing form interactions, form data,
+        GCLIDs and remarketing members. Power Washing's call path is unblocked.
+        Masonry account conversion and audience figures WILL change.
+      expected_ux_effect: none
+      privacy_data_routing_effect: >-
+        Power Washing lead form data stops flowing into a separate Google Ads
+        account. Both accounts belong to the same client and the same MCC, so
+        this is a scope and attribution correction, not a third-party breach.
+      risk: >-
+        MEDIUM. If the Masonry account is currently counting conversions from
+        these pages, its reported performance drops. That is a correction, not a
+        loss, but the owner must know before it happens.
+      dependency: owner confirmation that Masonry should not track these pages
+      rollback: re-add the AW-17878095007 tag and its triggers
+      qa: 'zero requests to any /17878095007/ endpoint across all 7 pages'
+      requires_owner_confirmation: true
+      requires_credentials: true
+      execution_status: NOT EXECUTED
+
+    - id: R7A-2
+      priority: P0
+      system: GTM or WordPress header
+      exact_location: 'UNRESOLVED'
+      target_identifier: 'AW-17878095007 website-call replacement, label SFv1CLSo--UbEJ-p-MxC'
+      current_implementation: >-
+        One conversion/17878095007/wcm request per page with dn=6315027946 and
+        the Masonry label, plus gstatic.com/wcm/loader.js.
+      proposed_implementation: >-
+        Removed as a consequence of R7A-1. Verify explicitly rather than assume.
+      pages_affected: 7
+      reason: The Masonry account must not replace Softwind Power Washing's number.
+      evidence: 'wcm request captured on all 7 pages, 2026-09-02'
+      expected_measurement_effect: 'Masonry stops claiming Power Washing calls.'
+      expected_ux_effect: none
+      privacy_data_routing_effect: 'GCLID stops being sent to the sibling account.'
+      risk: LOW
+      dependency: R7A-1
+      rollback: with R7A-1
+      qa: 'zero conversion/17878095007/wcm requests on all 7 pages'
+      requires_owner_confirmation: true
+      requires_credentials: true
+      execution_status: NOT EXECUTED
+
+    - id: R7A-3
+      priority: P0
+      system: GTM or WordPress header
+      exact_location: 'UNRESOLVED'
+      target_identifier: 'AW-18369652705/ReAcCMrX6dscEOHPqrdE'
+      current_implementation: >-
+        NOT DEPLOYED. Zero conversion/18369652705/wcm requests on any page.
+      proposed_implementation: >-
+        Deploy the website-call snippet exactly as Google Ads generates it for
+        conversion action 7708765130 -
+        gtag('config', 'AW-18369652705/ReAcCMrX6dscEOHPqrdE',
+        {'phone_conversion_number': '(631) 502-7946'})
+        - on all 7 pages, after R7A-1 and R7A-2 remove the competing replacement.
+      pages_affected: 7
+      reason: >-
+        This is the selected authoritative call architecture. The action exists,
+        is primary_for_goal, carries the 60-second qualified threshold and the
+        approved number, and has simply never been installed.
+      evidence: 'conversion_action 7708765130 tag_snippets, fresh read 2026-09-02'
+      expected_measurement_effect: >-
+        Website calls from paid traffic become attributable to Power Washing for
+        the first time. Magnitude UNKNOWN - the account has never recorded a call.
+      expected_ux_effect: >-
+        The displayed number becomes a Google forwarding number for paid visitors.
+        The client must be told, because it appears on the page and in the tel:
+        link.
+      privacy_data_routing_effect: 'call data flows to the correct account.'
+      risk: >-
+        MEDIUM. A forwarding number changes what the customer sees and dials.
+        Requires client awareness and a verified answered-hours position (IN-5).
+      dependency: 'R7A-1, R7A-2, R7A-5, and client confirmation of answered hours'
+      rollback: remove the config line; the static number returns
+      qa: >-
+        exactly one conversion/18369652705/wcm request per page, dn=6315027946,
+        label ReAcCMrX6dscEOHPqrdE, and the rendered tel: matches the displayed
+        number
+      requires_owner_confirmation: true
+      requires_credentials: true
+      execution_status: NOT EXECUTED
+
+    - id: R7A-4
+      priority: P1
+      system: Google Ads conversion tracking on /thank-you/
+      exact_location: 'UNRESOLVED - GTM tag or thank-you page template'
+      target_identifier: 'AW-18369652705/FddkCOul59scEOHPqrdE'
+      current_implementation: >-
+        The Power Washing form conversion fires on ANY page view of /thank-you/.
+        Proven 2026-09-02 by loading /thank-you/ directly with NO form submission:
+        en=conversion fired to both pagead/conversion/18369652705/ and
+        pagead/1p-conversion/18369652705/.
+      proposed_implementation: >-
+        Gate the conversion on an actual submission signal rather than a bare view
+        of the URL - a one-time query parameter or session flag set by the form
+        redirect, or a Gravity Forms confirmation event.
+      pages_affected: 1
+      reason: >-
+        A thank-you-page-view conversion counts anyone who reaches the URL by any
+        route - browser history, a bookmark, a shared link, a crawler. It is a
+        very common pattern and it is not broken, but it makes the Conversions
+        column inflate at exactly the moment the account starts trusting it.
+      evidence: 'bare /thank-you/ load, 2026-09-02, 2 conversion endpoints hit'
+      mitigation_already_present: >-
+        conversion action 7708725995 counts ONE_PER_CLICK, so repeat views within
+        one ad click are collapsed to one. The residual exposure is a visitor who
+        reaches /thank-you/ without submitting on a separate ad click.
+      expected_measurement_effect: >-
+        Fewer, more trustworthy conversions. It may REDUCE the count once real
+        conversions begin - that is the intent, not a regression.
+      expected_ux_effect: none
+      privacy_data_routing_effect: none
+      risk: >-
+        MEDIUM. A mis-implemented gate could suppress genuine conversions. This is
+        the one action where doing nothing is defensible, because ONE_PER_CLICK
+        already absorbs most of the exposure.
+      dependency: none
+      rollback: restore the page-view trigger
+      qa: >-
+        bare /thank-you/ visit fires ZERO conversions; a real submission fires
+        exactly one
+      requires_owner_confirmation: true
+      requires_credentials: true
+      execution_status: NOT EXECUTED
+
+    - id: R7A-5
+      priority: P1
+      system: WhatConverts DNI
+      exact_location: 'UNRESOLVED - WhatConverts account configuration'
+      target_identifier: 'wc_swap = 6315025402+..+6315535927+..+197159'
+      current_implementation: >-
+        WhatConverts loads and its attribution cookies work - wc_client carries
+        source, medium, campaign, content, term and the GCLID. The swap cookie
+        nominates two numbers but NEITHER reaches the DOM; the page renders the
+        static (631) 502-7946 in both body text and the tel: link on all 7 pages.
+      proposed_implementation: >-
+        Stand the number swap DOWN on the offer.softwindli.com paid pages so it
+        cannot contend with R7A-3. RETAIN the attribution script and cookies.
+        Document the tracking-number pool, the intended swap target and the
+        fallback before any future change.
+      pages_affected: 7
+      reason: >-
+        Two systems cannot both own the displayed number. Option A was selected,
+        and the WhatConverts swap is broken for undiagnosed reasons.
+      evidence: 'wc_swap present and unapplied on all 7 pages, 2026-09-02'
+      expected_measurement_effect: >-
+        No loss - the swap is not working today, so nothing that currently
+        functions is switched off. Lead-source attribution is unaffected.
+      expected_ux_effect: none
+      privacy_data_routing_effect: none
+      risk: LOW
+      dependency: none
+      rollback: re-enable the swap
+      qa: 'wc_client attribution still populated; no second number replacement'
+      requires_owner_confirmation: true
+      requires_credentials: true
+      execution_status: NOT EXECUTED
+
+    - id: R7A-6
+      priority: P1
+      system: WordPress template / page builder
+      exact_location: 'UNRESOLVED - page template emitting two Gravity Forms blocks'
+      target_identifier: 'form#gform_1'
+      current_implementation: >-
+        TWO rendered copies of form#gform_1 per offer page (hero ~400px and
+        ~5305px), with 22 duplicate HTML ids per page including gform_1,
+        gform_wrapper_1, gform_submit_button_1, input_1_1, input_1_3, input_1_4,
+        input_1_7, input_1_9 and Divi's et-boc. /thank-you/ carries 2 duplicate
+        ids with no form.
+      proposed_implementation: >-
+        Render exactly ONE form#gform_1 per page, or give the second instance a
+        unique form id and unique field ids. Every HTML id on the page must be
+        unique. Preserve the responsive layout and PRESERVE the honeypot.
+      pages_affected: 7
+      reason: >-
+        Duplicate ids are invalid HTML. getElementById returns only the first
+        copy, so any tracker, DNI or accessibility tool binding by id binds to the
+        wrong element. This is a live tracker-binding and accessibility defect.
+      evidence: 'duplicate_id_count = 22 on all 6 offer pages, 2026-09-02'
+      expected_measurement_effect: 'form-tracking binds deterministically'
+      expected_ux_effect: 'screen readers and label/for associations resolve correctly'
+      privacy_data_routing_effect: none
+      risk: 'MEDIUM - a layout regression is possible if the second form is a
+        responsive variant rather than a duplicate.'
+      dependency: none
+      rollback: restore the previous template revision
+      qa: >-
+        exactly one form#gform_1; zero duplicate ids; honeypot input_9 still
+        present, still display:none, still EMPTY
+      requires_owner_confirmation: false
+      requires_credentials: true
+      execution_status: NOT EXECUTED
+
+    - id: R7A-7
+      priority: P1
+      system: WordPress template
+      exact_location: 'UNRESOLVED - shared header/footer or hero component'
+      target_identifier: 'tel:(631)'
+      current_implementation: >-
+        A malformed telephone link `tel:(631)` exists alongside the correct
+        `tel:(631) 502-7946` on ALL 7 pages. Tapping it dials nothing.
+      proposed_implementation: >-
+        Repair or remove it. Every tel: href must be a complete, dialable number
+        matching the displayed number.
+      pages_affected: 7
+      reason: 'a dead click-to-call on a mobile-dominated account'
+      evidence: 'malformed_tel_links on all 7 pages, 2026-09-02'
+      expected_measurement_effect: 'phone-click tracking stops recording dead taps'
+      expected_ux_effect: 'mobile visitors reach a working dialer'
+      privacy_data_routing_effect: none
+      risk: LOW
+      dependency: 'coordinate with R7A-3 - the forwarding number must flow into
+        BOTH the display text and the tel: href'
+      rollback: restore the previous markup
+      qa: 'every tel: href is dialable and equals the displayed number'
+      requires_owner_confirmation: false
+      requires_credentials: true
+      execution_status: NOT EXECUTED
+
+    - id: R7A-8
+      priority: P2
+      system: GTM
+      exact_location: 'UNRESOLVED - GTM-P3LD97NN COULD NOT BE READ'
+      target_identifier: GTM-P3LD97NN
+      current_implementation: 'the gtm.js loader is requested TWICE per page'
+      proposed_implementation: 'load the container exactly once'
+      pages_affected: 7
+      reason: 'a duplicate container load is a double-fire risk for every tag in it'
+      evidence: 'two gtm.js?id=GTM-P3LD97NN requests per page, 2026-09-02'
+      expected_measurement_effect: 'removes a latent double-counting mechanism'
+      expected_ux_effect: 'marginally faster load'
+      privacy_data_routing_effect: none
+      risk: LOW
+      dependency: GTM read access
+      rollback: restore the second loader
+      qa: 'exactly one gtm.js request per page'
+      requires_owner_confirmation: false
+      requires_credentials: true
+      execution_status: NOT EXECUTED
+
+    - id: R7A-9
+      priority: P1
+      system: unidentified third-party vendor
+      exact_location: 'UNRESOLVED'
+      target_identifier: process.iconnode.com/google-ads/
+      current_implementation: >-
+        One POST per page load on all 7 pages, plus one additional POST at form
+        submission.
+      proposed_implementation: >-
+        NONE YET. Identify the vendor relationship, purpose, data retention,
+        destination and consent basis FIRST. If authorized and required, document
+        it in client.yaml. If unauthorized, a removal action is added to a
+        successor plan.
+      pages_affected: 7
+      reason: >-
+        An unidentified processor receives a POST at form submission on an
+        endpoint named /google-ads/. Public sources describe iconnode as a Google
+        Ads conversion and lead-attribution vendor, but nothing in Softwind's
+        records documents an engagement.
+      evidence: 'iconnode POST on all 7 pages and at submission, 2026-09-02'
+      expected_measurement_effect: UNKNOWN
+      expected_ux_effect: none
+      privacy_data_routing_effect: 'UNKNOWN and that is precisely the problem'
+      risk: >-
+        Removing an authorized processor could break a client system. Keeping an
+        unauthorized one leaves lead data flowing to an undocumented destination.
+      dependency: 'BLOCKED on IN-10 - vendor identification'
+      rollback: n/a - nothing is changed
+      qa: n/a
+      requires_owner_confirmation: true
+      requires_credentials: false
+      execution_status: 'BLOCKED - EXCLUDED FROM THE EXECUTABLE ACTION SET'
+
+    - id: R7A-10
+      priority: P0
+      system: Gravity Forms / WhatConverts / CRM
+      exact_location: 'client systems - cleanup owner has access, Green Marketing does not'
+      target_identifier: 'GM TEST DO NOT CONTACT'
+      current_implementation: >-
+        One internal test lead submitted 2026-09-02 09:24:37 America/New_York
+        under PLAN-R1B, fingerprint B7AD76CB16F8.
+      proposed_implementation: >-
+        The authorized cleanup owner - Walter Correa, access@greenmarketing.com -
+        deletes the Gravity Forms entry, archives or marks the WhatConverts lead
+        as a test, and removes any CRM record.
+      pages_affected: 0
+      reason: 'the test record must not be worked as a real lead'
+      evidence: '2026-09-02-plan-r1b-execution-continuation-receipt.md'
+      expected_measurement_effect: 'removes one artificial lead from lead reporting'
+      expected_ux_effect: none
+      privacy_data_routing_effect: none
+      risk: 'LOW - the record is unmistakably labelled and the phone cannot ring anyone'
+      dependency: none
+      rollback: n/a
+      qa: 'no record named GM TEST DO NOT CONTACT remains in any lead system'
+      requires_owner_confirmation: false
+      requires_credentials: true
+      execution_status: 'NOT EXECUTED - Green Marketing holds no credentials'
+      note: >-
+        Nothing to clean in Google Ads 1521725229. Its conversion history is
+        still clean - all_conversions 0.0 on all four actions.
+
+    - id: R7A-11
+      priority: P2
+      system: SiteGround SG-Captcha
+      exact_location: 'UNRESOLVED - hosting configuration'
+      target_identifier: '/.well-known/sgcaptcha/'
+      current_implementation: >-
+        INTERMITTENT. Observed intercepting the landing page on 2026-09-01
+        (HTTP 202) and absent on every one of the 7 pages scanned 2026-09-02
+        (HTTP 200), including the successful submission run.
+      proposed_implementation: >-
+        MONITOR ONLY in this plan. Establish frequency and whether a challenge is
+        ever rendered to a human visitor before changing hosting configuration.
+      pages_affected: 7
+      reason: >-
+        An intermittent challenge on a paid landing page costs some sessions, but
+        it is not a constant blocker and the earlier P0 framing was too strong.
+      evidence: '2026-09-01 HTTP 202 with sgcaptcha; 2026-09-02 HTTP 200 without'
+      expected_measurement_effect: none while monitoring
+      expected_ux_effect: none while monitoring
+      privacy_data_routing_effect: none
+      risk: 'LOW - disabling a security control without data would be worse'
+      dependency: none
+      rollback: n/a
+      qa: 'record HTTP status and sgcaptcha presence on every future page check'
+      requires_owner_confirmation: false
+      requires_credentials: false
+      execution_status: 'MONITOR - no change proposed'
+
+# ------------------------------------------------------------ excluded scope
+  explicitly_excluded_to_plan_r7b:
+    plan_id: PLAN-R7B
+    plan_title: Landing-page message match and CRO
+    not_built_or_fingerprinted_here: true
+    items:
+      - 'Browser titles reading "Softwind Landscape & Masonry" on all 7 pages,
+         including /thank-you/. Almost certainly the same root cause as the
+         Masonry tag - these pages appear to have been cloned from the Masonry
+         property - but the title is a message-match defect, not a technical
+         requirement of the tracking fix.'
+      - H1 rewrite and the three-city lock across 80 targeted places
+      - Service-area copy and the Long Island / Nassau and Suffolk wording
+      - Unsupported resetting "Offer Ends" countdown
+      - Reviews, ratings, trust signals - all blocked on client verification
+      - Project images - blocked on rights-cleared client photographs
+      - New page sections, mobile CTA hierarchy
+      - RSA copy, keyword changes, campaign consolidation
+
+# --------------------------------------------------------------- future QA
+  post_repair_qa_requirements:
+    note: >-
+      A post-repair form test requires its OWN separate exact approval and is NOT
+      covered by this fingerprint. test_action_count is 0.
+    checks:
+      - exactly one visible Gravity Form per page
+      - zero duplicate form ids
+      - zero duplicate customer-field ids
+      - honeypot input_9 preserved, display:none, and EMPTY
+      - form submits successfully
+      - thank-you behaviour succeeds
+      - Softwind conversion event fires exactly once, and ONLY after a real submission
+      - exact Softwind conversion label confirmed from source configuration
+      - 'AW-17878095007 sends ZERO requests on all 7 pages'
+      - 'pagead/form-data and ccm/form-data for 17878095007 receive ZERO requests'
+      - 'conversion/17878095007/wcm receives ZERO requests'
+      - 'conversion/18369652705/wcm fires exactly once per page with dn=6315027946'
+      - WhatConverts attribution cookies still populated
+      - no double number replacement
+      - every tel: href dialable and equal to the displayed number
+      - 'GCLID, GBRAID, WBRAID and all five UTMs survive to the form POST'
+      - process.iconnode.com state matches the approved decision
+      - no unexpected vendor receives form data
+      - no real customer contacted
+      - test records labelled and cleaned up
+
+  risk: >-
+    This plan changes tracking on 7 live revenue pages and hands the displayed
+    phone number to Google forwarding for paid visitors. It contains ZERO Google
+    Ads mutations. The largest single risk is that removing the Masonry tag
+    changes the Masonry account's reported performance - a correction the owner
+    must agree to in advance.
+  rollback: >-
+    Every action is individually reversible: re-add the removed tag, remove the
+    added config line, restore the previous template revision. No data is deleted
+    by this plan except the internal test record in R7A-10.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does NOT grant permission. Approval
+    authorises the change set for whoever holds site credentials; Green Marketing
+    cannot execute it from this session.

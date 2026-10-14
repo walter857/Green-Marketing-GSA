@@ -1,0 +1,127 @@
+{
+ "package": "ambient-cooling-heating-BUDGET-STAGE1-HVAC-INSTALLATION",
+ "version": "2026-08-21",
+ "priority": "P1",
+ "run_class": "DRAFT + VALIDATE-ONLY. Not executed.",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD",
+  "vertical": "heating-cooling"
+ },
+ "scope": "ONE campaign budget. No other campaign is touched. No bidding change.",
+ "evidence": {
+  "campaign": "HVAC Installation 24132507747",
+  "since_launch": {
+   "impressions": 756,
+   "billable_clicks": 28,
+   "invalid_clicks": 22,
+   "cost": 824.58,
+   "ctr_pct": 3.7,
+   "cpc": 29.45,
+   "search_is_pct": 41.38,
+   "budget_lost_is_pct": 51.72,
+   "rank_lost_is_pct": 6.9,
+   "abs_top_is_pct": 21.22
+  },
+  "yesterday_2026_08_20": {
+   "impressions": 402,
+   "billable_clicks": 15,
+   "cost": 276.25,
+   "ctr_pct": 3.73,
+   "cpc": 18.42,
+   "search_is_pct": 36.18,
+   "budget_lost_is_pct": 63.82,
+   "rank_lost_is_pct": 0.0
+  },
+  "why_this_campaign_only": "It is the only campaign with material budget-lost impression share, and the loss is WORSENING (51.72% since launch, 63.82% yesterday) while rank-loss fell to 0.00%. It also has the best economics in the account: CPC $18.42 yesterday against $140.13 on AC Repair and $153.03 on HVAC Repair. It spent $276.25 yesterday, exactly 200% of its $138.16 budget, meaning Google hit the hard 2x overdelivery ceiling.",
+  "why_the_others_are_held": {
+   "AC Repair": "budget-lost 0.53% since launch, rank-lost 63.76%, CPC $68.05. Rank limited, not budget limited.",
+   "HVAC Repair": "budget-lost 0.00%, rank-lost 69.66%, Quality Score 2, BELOW_AVERAGE landing-page experience, CTR 1.45%. Fix quality before money.",
+   "HVAC Replacement": "budget-lost 0.00%, rank-lost 68.42%, Quality Score 2, BELOW_AVERAGE landing-page experience. Spent $52.14 of a $26.32/day budget.",
+   "Gas Boiler Repair": "zero impressions, rank-lost 90.01%, no eligible auction volume. Budget has never been touched."
+  }
+ },
+ "sizing": {
+  "before_usd": 138.16,
+  "after_usd": 207.24,
+  "multiple": 1.5,
+  "delta_usd": 69.08,
+  "why_1_5x_not_2x": "The campaign already consumes $276.25/day at its 2x ceiling, so $207.24 is BELOW proven consumption and is certain to be used. It lifts the daily ceiling from $276.32 to $414.48 without doubling the planned budget, which keeps the learning phase stable and keeps total August exposure provably inside the maximum.",
+  "why_not_the_full_gap": "Closing 63.82% budget-lost implies roughly $763/day of available demand. Jumping there is a 5.5x step on a campaign with 3 weeks of history and zero recorded conversions, and it would break the exposure guarantee below."
+ },
+ "august_exposure_proof": {
+  "mtd_spend": 1947.95,
+  "maximum": 13000.0,
+  "remaining_budget": 11052.05,
+  "remaining_days_incl_today": 11,
+  "required_daily_to_reach_max": 1004.73,
+  "current_total_daily_budget": 427.64,
+  "new_total_daily_budget": 496.72,
+  "budget_bounded_projection": 7411.87,
+  "absolute_worst_case_2x_every_day": 12875.79,
+  "headroom_at_absolute_worst_case": 124.21,
+  "guarantee": "Even if EVERY campaign hit Google's maximum 2x overdelivery on EVERY remaining day, August would total $12875.79, which is still under the $13,000 maximum. This increase is safe by construction and needs no spend guardrail to stay compliant.",
+  "realistic_projection": "Yesterday the five spent $914.72 in total. At a similar run rate for 11 more days August lands near $12,000. At the more typical $400-600/day seen earlier it lands near $6,400-$8,500. Both are under the maximum.",
+  "note": "$13,000 is a maximum, not a quota. No attempt is made to reach it."
+ },
+ "operations": [
+  {
+   "seq": 1,
+   "service": "CampaignBudgetService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/campaignBudgets/15787409441",
+   "update_mask": [
+    "amount_micros"
+   ],
+   "before_micros": 138160000,
+   "after_micros": 207240000,
+   "before_usd": 138.16,
+   "after_usd": 207.24,
+   "budget_explicitly_shared": false,
+   "budget_reference_count": 1
+  }
+ ],
+ "mutation_counts": {
+  "creates": 0,
+  "updates": 1,
+  "removals": 0,
+  "total_mutations": 1,
+  "campaigns_touched": 0,
+  "bidding_touched": 0,
+  "keywords_touched": 0,
+  "ads_touched": 0,
+  "assets_touched": 0,
+  "other_budgets_touched": 0
+ },
+ "staging_plan": {
+  "stage_1": "$207.24/day, effective on approval",
+  "checkpoint_24h": "Read-only, 24 hours after application. Measure HVAC Installation billable clicks, CPC, budget-lost impression share, conversions.",
+  "advance_threshold": "budget-lost IS still >= 30% AND CPC <= $36.81 (1.25x the $29.45 since-launch CPC) AND at least 15 billable clicks -> propose Stage 2 at $276.32 with a fresh fingerprint.",
+  "hold_threshold": "budget-lost IS between 10% and 30%, or CPC between $36.81 and $44.18.",
+  "rollback_threshold": "CPC exceeds $44.18 (1.5x baseline) without more clicks, OR single-day spend exceeds $414.48, OR cumulative August spend for the five exceeds $11,000 before 2026-08-28.",
+  "expected_spend_range": "$207-$414 per day for this campaign"
+ },
+ "bidding_decision": "UNCHANGED. Maximize Clicks (TARGET_SPEND) is retained. Only 3 recorded conversions exist and 2 of them are the now-corrected double count, so there is nowhere near enough reliable Primary conversion volume for Maximize Conversions or Target CPA. No CPC ceiling is proposed because no target CPL, target CPQL, close rate, job value or margin exists in the client record and none will be invented.",
+ "risk": "LOW. One reversible field on one unshared budget. Worst-case August exposure is provably under the maximum.",
+ "rollback_plan": "Set customers/2401959466/campaignBudgets/15787409441 amount_micros back to 138160000. 1 mutation, immediate.",
+ "readback_verification": [
+  "ASSERT budget 15787409441 amount_micros = 207240000.",
+  "ASSERT the other four budgets are unchanged at 141450000, 78950000, 26320000, 42760000.",
+  "ASSERT explicitly_shared false and reference_count 1.",
+  "ASSERT bidding_strategy_type still TARGET_SPEND and cpc_bid_ceiling_micros still 0.",
+  "ASSERT campaign status, networks, locations and schedules unchanged."
+ ],
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 1,
+  "errors": 0
+ },
+ "drift_assumptions": "Assumes MTD is still approximately $1,947.95 and no other budget has changed. Re-read MTD at execution and recompute the exposure proof.",
+ "plan_fingerprint": "5DA7527B19276C0D",
+ "VOID": true,
+ "VOID_ON": "2026-08-21",
+ "VOID_REASON": "Superseded by BFB9FD367F639CA4."
+}

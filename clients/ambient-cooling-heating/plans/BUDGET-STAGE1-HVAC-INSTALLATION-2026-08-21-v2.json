@@ -1,0 +1,128 @@
+{
+ "package": "ambient-cooling-heating-BUDGET-STAGE1-HVAC-INSTALLATION-v2",
+ "version": "2026-08-21-v2",
+ "priority": "P1",
+ "run_class": "DRAFT + VALIDATE-ONLY. Not executed.",
+ "supersedes": {
+  "5DA7527B19276C0D": "SUPERSEDED - STALE INPUTS. It was built on MTD $1,947.95 and proposed $207.24/day. Fresh settled MTD is $2756.06, which BREAKS that package's worst-case guarantee: $207.24 would give a total daily budget of $496.72 and a 2x worst case of $13,683.90, exceeding the $13,000 maximum by $683.90. Resized here."
+ },
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "checkpoint": {
+  "run_at": "2026-08-21 20:26 ET",
+  "gate": "11:35 ET PASSED",
+  "data": "settled, billable"
+ },
+ "evidence": {
+  "campaign": "HVAC Installation 24132507747",
+  "mtd": {
+   "impressions": 1110,
+   "billable_clicks": 40,
+   "invalid_clicks": 25,
+   "cost": 1100.44,
+   "ctr_pct": 3.6,
+   "cpc": 27.51,
+   "search_is_pct": 40.98,
+   "budget_lost_is_pct": 55.35,
+   "rank_lost_is_pct": 3.68,
+   "abs_top_is_pct": 18.92
+  },
+  "aug_21": {
+   "impressions": 354,
+   "billable_clicks": 12,
+   "cost": 275.86,
+   "cpc": 22.99,
+   "budget_lost_is_pct": 56.35,
+   "rank_lost_is_pct": 0.51
+  },
+  "daily_utilisation": "199.5%, 197.4%, 199.9%, 199.7% on 08-18, 08-19, 08-20 and 08-21. Pinned at Google's 2x overdelivery ceiling FOUR consecutive days.",
+  "gates": {
+   "only_materially_budget_limited": "PASS - 55.35% budget-lost vs 1.78% AC Repair and 1.52% HVAC Repair",
+   "budget_lost_substantial": "PASS - 55.35% MTD, 56.35% yesterday",
+   "rank_lost_low": "PASS - 3.68% MTD, 0.51% yesterday",
+   "cpc_materially_better": "PASS - $27.51 vs $83.13 AC Repair and $86.55 HVAC Repair",
+   "using_available_budget": "PASS - at the 2x ceiling four days running",
+   "no_tracking_or_policy_problem": "PASS - campaign ENABLED, ads APPROVED",
+   "worst_case_under_maximum": "PASS at the resized amount, FAIL at $207.24",
+   "not_forcing_spend": "PASS - demand is demonstrated, not assumed"
+  }
+ },
+ "sizing": {
+  "before_usd": 138.16,
+  "after_usd": 176.15,
+  "multiple": 1.275,
+  "method": "Sized to the largest increase that keeps the ABSOLUTE worst case under the $13,000 maximum: max_total_daily = (13000 - MTD) / (2 x remaining_days).",
+  "arithmetic": "(13000 - 2756.06) / (2 x 11) = $465.63 total daily. Minus $289.48 for the four unchanged campaigns = $176.15 for HVAC Installation.",
+  "why_not_207_24": "It would produce a 2x worst case of $13,683.90, over the maximum."
+ },
+ "exposure": {
+  "mtd_spend": 2756.06,
+  "maximum": 13000.0,
+  "remaining": 10243.94,
+  "remaining_days_incl_today": 11,
+  "required_daily_pace_to_reach_max": 931.27,
+  "current_total_daily_budget": 427.64,
+  "new_total_daily_budget": 465.63,
+  "budget_bounded_projection": 7877.99,
+  "absolute_worst_case_2x_every_day": 12999.92,
+  "headroom_under_maximum": 0.08,
+  "guarantee": "Even if every campaign hit Google's maximum 2x overdelivery on every one of the 11 remaining days, August totals $12999.92, under the $13,000 maximum.",
+  "note": "$13,000 is a maximum, not a quota. The required pace to reach it is $931.27/day and no attempt is made to hit that."
+ },
+ "operations": [
+  {
+   "seq": 1,
+   "service": "CampaignBudgetService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/campaignBudgets/15787409441",
+   "update_mask": [
+    "amount_micros"
+   ],
+   "before_micros": 138160000,
+   "after_micros": 176150000,
+   "before_usd": 138.16,
+   "after_usd": 176.15,
+   "budget_explicitly_shared": false,
+   "budget_reference_count": 1
+  }
+ ],
+ "mutation_counts": {
+  "creates": 0,
+  "updates": 1,
+  "removals": 0,
+  "total_mutations": 1,
+  "campaigns_touched": 0,
+  "bidding_touched": 0,
+  "keywords_touched": 0,
+  "ads_touched": 0,
+  "other_budgets_touched": 0
+ },
+ "thresholds_24h": {
+  "measure_at": "2026-08-22 20:30 ET",
+  "advance": "budget-lost IS >= 30% AND CPC <= $34.39 (1.25x the $27.51 MTD CPC) AND >= 12 billable clicks -> propose a further increase ONLY if the recomputed worst case still clears $13,000.",
+  "hold": "budget-lost IS 10-30%, or CPC $34.39-$41.27.",
+  "rollback": "CPC > $41.27 (1.5x) without more clicks, OR single-day spend > $352.3, OR cumulative August spend > $11,500 before 2026-08-29 -> restore 138160000 micros."
+ },
+ "bidding_decision": "UNCHANGED. Maximize Clicks retained. 3 primary conversions is far too little for Maximize Conversions or Target CPA. No CPC ceiling proposed: no target CPL, CPQL, close rate, job value or margin exists and none will be invented.",
+ "risk": "LOW. One reversible field on one unshared budget, sized so the worst case cannot breach the maximum.",
+ "rollback_plan": "Restore amount_micros 138160000 on campaignBudgets/15787409441. 1 mutation.",
+ "readback_verification": [
+  "ASSERT budget 15787409441 amount_micros = 176150000.",
+  "ASSERT the other four budgets unchanged at 141450000, 78950000, 26320000, 42760000.",
+  "ASSERT explicitly_shared false and reference_count 1.",
+  "ASSERT bidding_strategy_type TARGET_SPEND and cpc_bid_ceiling_micros 0 on all five.",
+  "ASSERT campaign status, networks, locations, schedules and ads unchanged."
+ ],
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 1,
+  "errors": 0
+ },
+ "drift_assumptions": "Built on settled MTD $2756.06 at 2026-08-21 20:26 ET and 11 remaining days. Re-read MTD at execution; if it has moved materially, recompute and re-fingerprint rather than executing this plan.",
+ "plan_fingerprint": "BFB9FD367F639CA4"
+}

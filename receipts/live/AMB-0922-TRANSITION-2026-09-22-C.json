@@ -1,0 +1,26 @@
+{
+ "started": "2026-09-21T12:23:53.957619-04:00",
+ "customer_id": "2401959466",
+ "mcc_never_written": "3373711342",
+ "stages": [
+  {
+   "stage": "C",
+   "when": "2026-09-21T12:23:59.632758-04:00",
+   "dry": false
+  }
+ ],
+ "committed": {},
+ "mode": "EXECUTE stage C",
+ "ads_not_enabled_because_disapproved": [
+  {
+   "ad_id": "820900825428",
+   "ad_group": "SKAG | Gas Boiler Repair",
+   "why": "DISAPPROVED - not enabled"
+  },
+  {
+   "ad_id": "820900825431",
+   "ad_group": "SKAG | Gas Boiler Repair",
+   "why": "DISAPPROVED - not enabled"
+  }
+ ]
+}

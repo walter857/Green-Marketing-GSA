@@ -1,0 +1,436 @@
+# PLAN C - DELIVERY SCHEDULE
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+#
+# This plan is deliberately SPLIT. The campaign ad schedule and the call-asset
+# schedule are two different things and are NOT assumed to be identical.
+#
+#   C-1  CAMPAIGN SCHEDULE  -> executable, inside the fingerprint.
+#        Serves the FORM, which captures a lead at any hour of any day.
+#
+#   C-2  CALL ASSET SCHEDULE -> NEEDS INTERNAL CONFIRMATION, held OUT of the
+#        fingerprint entirely, because after-hours call answering is UNKNOWN.
+
+change_plan:
+  plan_id: PLAN-C
+  plan_title: Campaign ad schedule to 24/7 for form capture
+  approval_type: DELIVERY_SCHEDULE
+  priority: P1
+  approval_status: NOT APPROVED - BLOCKED
+  execution_status: DO NOT EXECUTE - BLOCKED PENDING INTERNAL CONFIRMATION
+  recommended_approval_order: NOT APPROVABLE - status SUPERSEDED
+  ads_mutation_count: 26
+  requires_separate_enable_approval: false
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  current_state:
+    schedule: Monday to Saturday 08:00-18:00, identical on both campaigns
+    hours_per_week_served: 60
+    hours_per_week_total: 168
+    coverage_pct: 35.7
+    sunday: Deleted 2026-08-07 16:17:45. Zero impressions all time. Sunday does not appear in the
+      day_of_week segment at all.
+    existing_criteria:
+      campaign_24103511039:
+      - criterion_id: '303272'
+        day: MONDAY
+        hours: 08:00-18:00
+      - criterion_id: '313272'
+        day: TUESDAY
+        hours: 08:00-18:00
+      - criterion_id: '323272'
+        day: WEDNESDAY
+        hours: 08:00-18:00
+      - criterion_id: '333272'
+        day: THURSDAY
+        hours: 08:00-18:00
+      - criterion_id: '343272'
+        day: FRIDAY
+        hours: 08:00-18:00
+      - criterion_id: '353272'
+        day: SATURDAY
+        hours: 08:00-18:00
+      campaign_24145053510:
+      - criterion_id: '303272'
+        day: MONDAY
+        hours: 08:00-18:00
+      - criterion_id: '313272'
+        day: TUESDAY
+        hours: 08:00-18:00
+      - criterion_id: '323272'
+        day: WEDNESDAY
+        hours: 08:00-18:00
+      - criterion_id: '333272'
+        day: THURSDAY
+        hours: 08:00-18:00
+      - criterion_id: '343272'
+        day: FRIDAY
+        hours: 08:00-18:00
+      - criterion_id: '353272'
+        day: SATURDAY
+        hours: 08:00-18:00
+  evidence:
+    hourly_impression_curve:
+      08:
+        impressions: 5
+        ctr: 0.0
+      09:
+        impressions: 8
+        ctr: 0.0
+      '10':
+        impressions: 8
+        ctr: 0.0
+      '11':
+        impressions: 7
+        ctr: 0.0
+      '12':
+        impressions: 12
+        ctr: 0.083
+      '13':
+        impressions: 11
+        ctr: 0.0
+      '14':
+        impressions: 11
+        ctr: 0.091
+      '15':
+        impressions: 9
+        ctr: 0.0
+      '16':
+        impressions: 13
+        ctr: 0.154
+      '17':
+        impressions: 23
+        ctr: 0.087
+      18_to_23: DARK - campaign switched off
+      00_to_07: DARK - campaign switched off
+    reading: 17:00 is the single largest hour in the account at 23 of 107 impressions, 21.5% of
+      all delivery and nearly double the next-highest hour. The demand curve is still climbing when
+      the schedule cuts it off at 18:00. Morning hours 08:00-11:00 produced 28 impressions and zero
+      clicks between them, while 12:00 onward carries every click the account has ever received.
+    day_of_week:
+      MONDAY:
+        impressions: 31
+        clicks: 2
+      TUESDAY:
+        impressions: 32
+        clicks: 3
+      WEDNESDAY:
+        impressions: 19
+        clicks: 1
+      THURSDAY:
+        impressions: 11
+        clicks: 0
+      FRIDAY:
+        impressions: 5
+        clicks: 0
+      SATURDAY:
+        impressions: 9
+        clicks: 0
+      SUNDAY:
+        impressions: 0
+        clicks: 0
+        note: never ran
+    zero_delivery_days_caused_by_schedule:
+    - '2026-08-09'
+    - '2026-08-16'
+    - '2026-08-23'
+    remaining_august_impact: 2026-08-30 is a Sunday and is the only non-serving day left in August.
+      One of the six remaining days is currently forfeited.
+    expected_reach_uplift: Crediting evenings plus Sunday at +50% moves reachable impressions from
+      the observed 25.5/day to roughly 38/day. That figure agrees independently with the Keyword
+      Planner all-hours ceiling of 39.2/day for this geo, so two unrelated methods converge.
+  blocking_status:
+    state: BLOCKED - WHOLE PLAN, NOT ONLY THE CALL-ASSET PORTION
+    reason_for_widening: The original draft held only the CALL ASSET out of the fingerprint and
+      treated the campaign schedule as safe because "the form captures a lead at any hour". That
+      reasoning was incomplete. Expanding the campaign schedule also expands exposure of the LANDING-PAGE
+      PHONE NUMBER, which is a different surface from the Google Ads call asset and cannot be scheduled
+      from Google Ads at all.
+    the_missed_surface:
+      what: 'The tel: link and displayed phone on all nine offer landing pages.'
+      number: (631) 502-7946
+      why_it_matters: 'A visitor arriving at 22:30 on a Sunday under a 24/7 campaign schedule sees
+        a large ''Call Now: (631) 502-7946'' button above the fold on every offer page. Google Ads
+        can suppress the CALL ASSET outside chosen hours. It CANNOT suppress a phone number rendered
+        by the client''s own landing page. If nobody answers, that visitor reaches a dead line and
+        is lost - and unlike a form, there is no captured record that they ever tried.'
+      consequence: 'Campaign schedule expansion therefore has TWO exposure paths, not one: the form
+        (safe at any hour, captures the lead) and the landing-page phone (unsafe outside answered
+        hours, captures nothing). The second path was not accounted for in the original plan and
+        it is why the whole plan is now blocked rather than just its call-asset section.'
+    required_confirmations_before_any_approval:
+    - id: SCHED-Q1
+      question: What are the live call-answering hours for (631) 502-7946?
+      status: NOT SUPPLIED
+    - id: SCHED-Q2
+      question: Is Saturday covered? The ad schedule already runs Saturday 08:00-18:00 but softwindli.com/contact-us/
+        publishes Monday-Friday only. That contradiction is unresolved.
+      status: NOT SUPPLIED
+    - id: SCHED-Q3
+      question: Is Sunday covered at all?
+      status: NOT SUPPLIED
+    - id: SCHED-Q4
+      question: Is there evening coverage after 18:00, and until when?
+      status: NOT SUPPLIED
+    - id: SCHED-Q5
+      question: Who owns an after-hours FORM lead, and through what channel are they notified?
+      status: NOT SUPPLIED
+    - id: SCHED-Q6
+      question: What is the expected callback time for a lead submitted outside answered hours?
+      status: NOT SUPPLIED
+    options_once_answers_arrive:
+      option_1_full_24_7:
+        condition: Only if calls are answered, or routed to an answering service, 24/7.
+        campaign_schedule: All 7 days 00:00-24:00
+        call_asset: No schedule needed
+        landing_page: No change needed
+      option_2_extended_but_bounded:
+        condition: If answering extends to evenings and Sunday but not overnight.
+        campaign_schedule: All 7 days, bounded to the confirmed answered window plus a margin
+        call_asset: Constrained to the answered window
+        landing_page: No change needed
+      option_3_form_first:
+        condition: If answering stays Monday-Friday 08:00-18:00.
+        campaign_schedule: All 7 days 00:00-24:00 for form capture
+        call_asset: Constrained to Mon-Fri 08:00-18:00
+        landing_page: 'REQUIRES A WEBSITE CHANGE, and therefore a PLAN-F item, not a PLAN-C item:
+          outside answered hours the offer pages should de-emphasise the call CTA and lead with
+          the form, or state the callback commitment next to the number. Without that, option 3
+          knowingly sends after-hours callers to an unanswered line.'
+        note: 'This is the most likely option given the published hours, and it is the one that
+          proves the point: it cannot be delivered by a Google Ads schedule change alone.'
+    what_is_NOT_blocked: Nothing in this plan is executable while blocked. The four actions remain
+      drafted and fingerprinted so that the exact proposal is identifiable, but the fingerprint
+      must not be approved until SCHED-Q1 through SCHED-Q6 are answered and an option above is chosen.
+    date_note: As of 2026-08-26 there are five full days left in August (27, 28, 29, 30, 31). 2026-08-30
+      is the Sunday this plan would recover. Every day this stays blocked, that recovery shrinks.
+  actions:
+  - action_id: P1-C01
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: REMOVE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: 303272,313272,323272,333272,343272,353272
+    current_value: Six AD_SCHEDULE criteria, Monday to Saturday 08:00-18:00
+    proposed_value: Remove all six. Google Ads has no in-place edit for an ad schedule criterion;
+      the day and hour values are part of the criterion identity, so replacement is remove-then-create.
+    why: Prerequisite for the 24/7 schedule. Removing the six restrictive dayparts is what allows
+      the seven full-day dayparts to take effect.
+    evidence: deep-read-2026-08-25.json campaign_criteria type AD_SCHEDULE
+    expected_effect: No delivery change on its own - it is paired with P1-C02 in the same operation
+      batch.
+    risk: MEDIUM if executed alone. If the create step failed after the remove step, the campaign
+      would fall back to all-hours delivery, which is the intended end state anyway, so the failure
+      mode is benign.
+    rollback: 'Re-create the six original dayparts: Monday to Saturday 08:00-18:00 on campaign 24103511039.'
+    approval_required: 'YES'
+    object_count: 6
+  - action_id: P1-C02
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: new AD_SCHEDULE criteria x7
+    current_value: No Sunday daypart. No evening or overnight coverage.
+    proposed_value:
+    - day: MONDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: TUESDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: WEDNESDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: THURSDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: FRIDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: SATURDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: SUNDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    why: The account's own hourly curve peaks at its final serving hour and is then cut off. Sunday
+      has never run. The landing-page FORM captures a lead at any hour, so evening and Sunday coverage
+      is defensible without any assumption about phone answering.
+    evidence: metrics-2026-08-25.json hour_of_day and day_of_week segments
+    expected_effect: Reachable impressions rise from ~25.5/day to ~38/day (+50%). Recovers Sunday
+      2026-08-30, currently a forfeited day.
+    risk: LOW for form capture. NO bid modifiers are proposed, so no hour is bid up. The residual
+      risk is a caller phoning outside answered hours - which is exactly why C-2 below is held out
+      of this plan.
+    rollback: Remove the seven 24/7 dayparts and re-create the six original Monday-to-Saturday 08:00-18:00
+      dayparts.
+    approval_required: 'YES'
+    object_count: 7
+  - action_id: P1-C03
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: REMOVE
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: 303272,313272,323272,333272,343272,353272
+    current_value: Six AD_SCHEDULE criteria, Monday to Saturday 08:00-18:00
+    proposed_value: Remove all six.
+    why: Same rationale as P1-C01. Both campaigns carry an identical schedule and both are affected
+      by the same cutoff.
+    evidence: campaign-forensics-2026-08-25.json schedule_identical = true
+    expected_effect: Paired with P1-C04.
+    risk: MEDIUM if executed alone; benign failure mode as above.
+    rollback: Re-create the six original dayparts on campaign 24145053510.
+    approval_required: 'YES'
+    object_count: 6
+  - action_id: P1-C04
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: new AD_SCHEDULE criteria x7
+    current_value: No Sunday daypart. No evening or overnight coverage.
+    proposed_value:
+    - day: MONDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: TUESDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: WEDNESDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: THURSDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: FRIDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: SATURDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    - day: SUNDAY
+      start_hour: 0
+      start_minute: ZERO
+      end_hour: 24
+      end_minute: ZERO
+      bid_modifier: null
+    why: Same as P1-C02. Applying the schedule to only one campaign would create an artificial delivery
+      asymmetry between two campaigns that are otherwise byte-identical in configuration.
+    evidence: campaign-forensics-2026-08-25.json
+    expected_effect: Same +50% reach uplift on this campaign's six live SKAGs.
+    risk: LOW. No bid modifiers.
+    rollback: As P1-C02, on campaign 24145053510.
+    approval_required: 'YES'
+    object_count: 7
+  held_out_of_fingerprint:
+    item: CALL_ASSET_SCHEDULE
+    status: NEEDS INTERNAL CONFIRMATION
+    asset_id: '403335872180'
+    phone: (631) 502-7946
+    current_state: The call asset carries NO ad_schedule of its own. It therefore inherits campaign
+      delivery. If the campaign moves to 24/7 and the call asset is left unscheduled, the call extension
+      will show at 02:00 on a Sunday.
+    critical_linkage_warning: Asset 403335872180 is linked to BOTH campaigns (24103511039 and 24145053510).
+      A call-asset schedule lives on the ASSET, not on the link, so one edit rewrites the hours
+      on every campaign that uses it. Link exclusivity has been checked and is NOT exclusive - both
+      campaigns share this single asset.
+    proposed_shape_pending_confirmation: Constrain the call asset to hours a human answers, while
+      the campaign and its form run 24/7. Published hours on softwindli.com/contact-us/ are Monday-Friday
+      08:00-18:00, with no Saturday or Sunday published - yet the current ad schedule already runs
+      Saturday. That contradiction is itself unresolved.
+    blocking_questions:
+    - Is (631) 502-7946 answered outside Monday-Friday 08:00-18:00?
+    - Is it answered on Saturday? The ad schedule already runs Saturday but the website publishes
+      no Saturday hours.
+    - What is the callback commitment for a form lead submitted at 21:00 on a Sunday?
+    - Is there an answering service or voicemail-to-lead path after hours?
+    why_held_out: Setting call-asset hours without knowing who answers would either suppress answerable
+      calls or send callers to an unanswered line. Neither is acceptable, and no defensible exact
+      value can be written today. Per the instruction, this portion is labelled NEEDS INTERNAL CONFIRMATION
+      and is excluded from the executable fingerprint.
+    interim_recommendation: If C-1 is approved before the staffing answer arrives, the safe interim
+      position is to accept the call asset showing 24/7. A missed call outside hours is no worse
+      than the current state, in which the ad does not show at all - and the form still captures
+      the lead either way.
+  explicitly_not_in_this_plan:
+  - NO hour or day bid modifiers. Introducing bid modifiers on 107 lifetime impressions would be
+    fitting noise.
+  - NO call-asset schedule - see held_out_of_fingerprint.
+  - NO change to campaign budgets, bidding or targeting.
+  change_counts:
+    campaigns_changed: 2
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 2
+    ad_schedule_criteria_removed: 12
+    ad_schedule_criteria_created: 14
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 26
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com

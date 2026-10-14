@@ -1,0 +1,145 @@
+{
+ "document": "DEVELOPER HANDOFF ADDENDUM C - Ambient paid landing pages, re-verified after reboot",
+ "supplements": {
+  "9EE19C066DC29D57": "DEVELOPER-HANDOFF-landing-pages-2026-08-21",
+  "93A9DF4AA19675E8": "LANDING-PAGE-PRODUCTION-DEPLOYMENT-2026-08-21",
+  "7A28BBF93AF27F8D": "DEVELOPER-HANDOFF-ADDENDUM-B-2026-08-22"
+ },
+ "generated": "2026-08-22",
+ "purpose": "Addendum B was written before the reboot. This addendum re-verifies every defect against fresh live renders taken 2026-08-22 09:38-09:41 EDT and records what changed. It adds no new required work beyond Addendum B; it confirms which items are still outstanding and corrects one earlier detection error.",
+ "status": "NOT DEPLOYED. No website, GTM, WhatConverts, form or DNS change was made.",
+ "evidence_basis": {
+  "renders": "15 - five pages x {desktop 1440x900, mobile 412x915, desktop 1440x900 with tracking parameters}",
+  "http_status": "200 on all 15 (Addendum B recorded 202; both are success responses from the same origin)",
+  "page_weight_kb": "160-173 on all 15",
+  "attempts": "1 - every render succeeded first try",
+  "sg_captcha_stub": "none encountered; every render carried full content, far above the ~12 KB challenge stub",
+  "tracking_parameters_used": "gclid, gbraid, wbraid and all five UTMs, with test values",
+  "no_form_submitted": true,
+  "no_telephone_link_clicked": true,
+  "evidence_files": [
+   "snapshots/lp-browser-qa-2026-08-22b.json",
+   "snapshots/lp-gates-2026-08-22b.json"
+  ]
+ },
+ "deployment_authority": {
+  "available": false,
+  "independent_check_performed_this_run": "Searched the entire workspace for wp-config.php, functions.php, theme or child-theme files, Divi layouts, Gravity Forms exports, .sql dumps, vercel.json, netlify.toml, sftp configuration and any local copy of an offer.ambientcoolingandheating.com page. ZERO matches.",
+  "binaries_on_path": "sftp, scp, ssh and vercel exist as executables, but there is no host, path, key, target or backup for any of them, and credentials must not be requested. Their presence is not deployment authority.",
+  "preconditions_from_93A9DF4AA19675E8": {
+   "real_current_source_available": "FAIL",
+   "deployment_target_proven": "FAIL",
+   "recoverable_backup_confirmed": "FAIL",
+   "staging_or_safe_preview_path": "FAIL",
+   "handoff_and_deployment_fingerprints_reproduce": "PASS - 9EE19C066DC29D57, 4A5BB56E2F15A5D2, C99270C413C34431 and 93A9DF4AA19675E8 all reproduce byte-for-byte",
+   "environment_has_deploy_authority_without_requesting_credentials": "FAIL"
+  },
+  "conclusion": "4 of 6 preconditions fail. Publishing is not authorized and was not attempted."
+ },
+ "DEFECT_1_gas_boiler_cross_service_heading": {
+  "severity": "P0 - blocks approved keyword package 3D823A10CB3C0B25",
+  "page": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+  "status_2026_08_22": "STILL LIVE",
+  "observed_h2": "Your HVAC Replacement in 3 Simple Steps",
+  "required_h2": "Your Gas Boiler Repair in 3 Simple Steps",
+  "confirmed_on": "desktop, mobile and desktop-with-tracking - all three renders",
+  "everything_else_on_the_page_is_correct": "H1 'Gas Boiler Repair in Severn, Severna Park & Columbia, MD' correct; canonical correct; the other seven H2s are all Gas Boiler specific.",
+  "root_cause_hypothesis": "Unchanged from Addendum B - the 3-Simple-Steps Divi block appears duplicated from the HVAC Replacement layout. Check whether it is a Divi GLOBAL module first; if it is, editing it in one place would change /hvac-replacement/ too, where the wording is correct.",
+  "acceptance": "Render both pages. /gas-boiler-repair/ must show the Gas Boiler wording; /hvac-replacement/ must still show the HVAC Replacement wording."
+ },
+ "DEFECT_2_hvac_repair_recent_work_heading": {
+  "severity": "P1",
+  "page": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+  "status_2026_08_22": "STILL LIVE",
+  "observed_h2": "Recent AC Repair Work",
+  "required_h2": "Recent HVAC Repair Work",
+  "confirmed_on": "desktop and mobile",
+  "note": "Same duplication pattern as DEFECT_1, inherited from the AC Repair layout. Every other heading on the page is correct."
+ },
+ "DEFECT_3_phone_swap_source": {
+  "severity": "P1",
+  "status_2026_08_22": "CONFIRMED UNCHANGED, and NOT exposed in any of this run's 15 renders",
+  "runtime_evidence": "The wc_swap cookie reads '4109141456+..+4107610932+..+230773' on ALL FIVE paid pages, identical to the 2026-08-22 01:30 reading. The middle value is the number WhatConverts is configured to FIND; the first is what it SWAPS IN.",
+  "new_this_run": "Across all 15 renders the barred number 4107610932 appeared in ZERO tel: hrefs and ZERO page bodies. Combined with the earlier 1-in-3 observation, this is consistent with an intermittent client-side race between page render and the WhatConverts swap - not a constant defect, and not resolved either.",
+  "DECISION": "UNRESOLVED AND PRESERVED. No WhatConverts change was made or proposed for execution.",
+  "why": "WHATCONVERTS_API_TOKEN exists as a variable name but its value is empty, so no authenticated WhatConverts session is available and credentials must not be requested. Without authenticated evidence, 4107610932 must be treated as the DELIBERATELY CONFIGURED swap source, not as stale.",
+  "what_green_marketing_must_confirm_before_any_change": "Whether 4107610932 is stale or deliberately retained in WhatConverts profile 105803.",
+  "recommended_fix_once_confirmed_stale": "Change the swap SOURCE in profile 105803 from 4107610932 to the approved paid base 4107056354, and make the page markup carry 4107056354 as its hardcoded base, so a pre-swap read exposes the approved paid number.",
+  "DO_NOT": "Do not remove WhatConverts. Do not change the DNI replacement number 4109141456 - it is intentional and approved. Do not treat this as a Google Ads issue and do not alter ClickCease because of it."
+ },
+ "DEFECT_4_malformed_tel_links": {
+  "severity": "P2",
+  "status_2026_08_22": "STILL LIVE on all five pages",
+  "observed_hrefs": [
+   "tel:4107056354",
+   "tel:(410) 705-6354",
+   "tel:+14109141456"
+  ],
+  "problem": "Two of the three are not E.164. 'tel:(410) 705-6354' contains parentheses and a space; 'tel:4107056354' omits the country code. Only the DNI link is well formed. Mobile dialers handle malformed tel: values inconsistently.",
+  "required": "Every hardcoded tel: href must match ^tel:\\+1[0-9]{10}$, i.e. tel:+14107056354.",
+  "caution": "Normalize the href ONLY. Do not change visible text, element attributes or classes that WhatConverts keys on to find and swap numbers, or DNI will break.",
+  "acceptance": "All hardcoded tel: hrefs are E.164 AND the swap still produces (410) 914-1456."
+ },
+ "DEFECT_5_duplicate_form_instances": {
+  "severity": "P1",
+  "status_2026_08_22": "STILL LIVE on all five pages",
+  "observed": "Three <form> elements per page, 34 duplicate DOM ids per page, three submit buttons per page.",
+  "why_it_matters": "Duplicate ids are invalid HTML. label[for] resolves to the first match only, so labels on the second and third instances are not programmatically associated - an accessibility failure. A GTM form-submit trigger keyed on an id or a generic form selector can bind to the wrong instance or fire more than once, which is a plausible contributor to duplicate form conversions.",
+  "required": "Prefer ONE rendered form per page. If the layout genuinely needs three, every DOM id, label for-attribute, error container id, field id and event binding must be unique per instance.",
+  "acceptance": "document.querySelectorAll('form').length === 1, OR zero duplicate ids, and exactly one conversion per successful submission."
+ },
+ "DEFECT_6_no_privacy_or_terms_links": {
+  "severity": "P1",
+  "status_2026_08_22": "STILL LIVE - zero privacy or terms links on any of the five pages, desktop and mobile",
+  "quality_signal_context": "HVAC Repair and HVAC Replacement keywords report landing-page experience BELOW_AVERAGE; AC Repair reports AVERAGE. Missing legal links are a recognised trust signal and a PLAUSIBLE contributor. Google does not expose per-signal attribution, so this remains an INFERENCE, not proven causation.",
+  "required": "Add Privacy Policy and Terms links using REAL existing Ambient URLs only. Do not invent legal text and do not invent URLs. If no published policy exists, that is a client decision, not a developer decision."
+ },
+ "CORRECTION_to_addendum_B_detection_method": {
+  "item": "WhatConverts presence detection",
+  "what_happened": "This run's first pass tested for a <script src> containing 'whatconverts' and reported WhatConverts ABSENT on all five pages.",
+  "correction": "That was a harness error, not a site regression. WhatConverts is injected through GTM-PQTPQ436, so it has no matching script src. Its presence is proven at runtime by the four wc_ cookies - wc_client, wc_client_current, wc_swap and wc_visitor - which are set on all five pages in every render.",
+  "standing_rule": "Assert WhatConverts presence from the wc_ runtime cookies, never from a script src pattern."
+ },
+ "verified_correct_do_not_change": {
+  "h1_per_page": {
+   "ac-repair": "AC Repair in Severn, Severna Park & Columbia, MD",
+   "hvac-repair": "HVAC Repair in Severn, Severna Park & Columbia, MD",
+   "hvac-installation": "HVAC Installers in Severn, Severna Park & Columbia, MD",
+   "hvac-replacement": "HVAC Replacement in Severn, Severna Park & Columbia, MD",
+   "gas-boiler-repair": "Gas Boiler Repair in Severn, Severna Park & Columbia, MD"
+  },
+  "h1_installers_wording_is_intentional": "The HVAC Installation H1 says 'HVAC Installers', which MATCHES the active keyword 'hvac installers'. Correct keyword-to-H1 alignment. Do not 'fix' it.",
+  "canonicals": "All five self-canonical and correct on all 15 renders.",
+  "gtm": "GTM-PQTPQ436 present on all five with exactly ONE gtm.js loader, ONE noscript iframe, 3 container-id string occurrences (standard snippet plus noscript URL) and 4 googletagmanager network requests. dataLayer initialised.",
+  "whatconverts": "Profile 105803 active on all five; all four wc_ cookies set.",
+  "click_id_and_utm_capture": "VERIFIED WORKING on all five pages. With gclid, gbraid, wbraid and all five UTMs on the URL, wc_client captured every one of the eight values.",
+  "barred_claims": "NONE PRESENT on any page. No 24/7, same-day, emergency, guaranteed response, financing or 0% APR language. Do not introduce any.",
+  "cta_and_form_presence": "12 CTAs and 3 submit buttons rendered per page; the form renders and is reachable.",
+  "cross_service_content": "AC Repair, HVAC Installation and HVAC Replacement are clean - zero cross-service headings. Only HVAC Repair (DEFECT_2) and Gas Boiler (DEFECT_1) carry one each."
+ },
+ "clickcease_note": "The ClickCease tag remains absent from the five paid landing pages while the account tracking template routes through monitor.clickcease.com. Recorded as an observation only. Do not install the tag, do not change the 2,796 IP exclusions, and do not treat this as the cause of charged traffic.",
+ "what_the_developer_must_return": [
+  "Confirmation that a full backup exists: WordPress database, Divi child theme, Gravity Forms form 1 export, and the current published GTM container version number.",
+  "A staging URL where DEFECT_1 through DEFECT_6 are fixed.",
+  "Confirmation of whether the 3-Simple-Steps block is a Divi GLOBAL module.",
+  "Confirmation of whether the three form instances are intentional.",
+  "Green Marketing confirmation that 4107610932 is stale before any WhatConverts change.",
+  "Results of the 15-test acceptance suite from 9EE19C066DC29D57 run on staging."
+ ],
+ "priority_order_for_the_developer": [
+  "1. DEFECT_1 - it is the single item blocking approved keyword package 3D823A10CB3C0B25 and is a one-heading edit.",
+  "2. DEFECT_2 - same pattern, same cost to fix.",
+  "3. DEFECT_5 and DEFECT_6 - both plausible contributors to BELOW_AVERAGE landing-page experience and to duplicate form events.",
+  "4. DEFECT_4 - low risk, but must be tested against the WhatConverts swap.",
+  "5. DEFECT_3 - blocked on a Green Marketing business confirmation, not on development."
+ ],
+ "mutation_counts": {
+  "google_ads_mutations": 0,
+  "website_changes_made": 0,
+  "gtm_changes_made": 0,
+  "whatconverts_changes_made": 0,
+  "total_mutations": 0
+ },
+ "run_class": "DOCUMENTATION ONLY. Nothing executed, nothing published.",
+ "plan_fingerprint": "FFD7D7A35924F4B2"
+}

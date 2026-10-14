@@ -1,0 +1,160 @@
+{
+ "receipt_type": "SEARCH_TERM_EVIDENCE",
+ "fingerprint": "EACEC7CBAE85FF2B",
+ "customer_id": "2401959466",
+ "window": "2026-08-14 .. 2026-08-22",
+ "query": "SELECT campaign.id, campaign.name, ad_group.id, ad_group.name,\n search_term_view.search_term, search_term_view.status,\n segments.keyword.info.text, segments.keyword.info.match_type,\n metrics.impressions, metrics.clicks, metrics.cost_micros, metrics.conversions,\n metrics.all_conversions FROM search_term_view\n WHERE segments.date BETWEEN '2026-08-14' AND '2026-08-22'",
+ "supporting_terms": [
+  {
+   "term": "car air conditioner repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 5,
+   "clicks": 2,
+   "cost": 47.78,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "car"
+   ]
+  },
+  {
+   "term": "ac car repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "car"
+   ]
+  },
+  {
+   "term": "auto ac repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "auto"
+   ]
+  },
+  {
+   "term": "bmw car ac repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "car"
+   ]
+  },
+  {
+   "term": "boat air conditioner repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "boat"
+   ]
+  },
+  {
+   "term": "car ac repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "car"
+   ]
+  },
+  {
+   "term": "car ac service near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "car"
+   ]
+  }
+ ],
+ "totals": {
+  "terms": 7,
+  "cost": 47.78,
+  "conversions": 0.0,
+  "clicks": 2,
+  "impressions": 19
+ },
+ "every_term_contains_a_literal_approved_token": true,
+ "all_terms_in_ac_repair_campaign": true,
+ "conversions_from_these_terms": 0.0,
+ "uncovered_variants_observed_not_negated": [
+  {
+   "term": "automotive ac mechanic near me",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "campaign": "24132507741"
+  },
+  {
+   "term": "automotive air conditioning repair near me",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "campaign": "24132507741"
+  }
+ ],
+ "uncovered_variant_policy": "Google negative keywords do not match close variants. Negative broad 'auto' does NOT block 'automotive'. These variants carry $0.00 cost and zero clicks, so no negative is proposed. They go to the monitoring list; adding them would require a new fingerprint and observed cost-bearing evidence.",
+ "historical_converting_terms_checked": 141,
+ "historical_converting_conversions": 172.33,
+ "converting_terms_blocked": []
+}

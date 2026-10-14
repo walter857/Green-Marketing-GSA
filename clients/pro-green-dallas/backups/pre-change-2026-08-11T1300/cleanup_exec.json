@@ -1,0 +1,45 @@
+{
+  "rollback": [
+    {
+      "to_restore": "campaign negative keyword",
+      "campaign": "customers/8735782888/campaigns/20315156610",
+      "keyword_text": "sprinkler head replacement",
+      "match_type": "BROAD",
+      "negative": true,
+      "original_criterion_id": "295473723839",
+      "original_resource_name": "customers/8735782888/campaignCriteria/20315156610~295473723839",
+      "original_status": "ENABLED",
+      "note": "re-create with this exact text + match on this campaign; a new criterion ID will be issued"
+    },
+    {
+      "to_restore": "campaign negative keyword",
+      "campaign": "customers/8735782888/campaigns/20315156610",
+      "keyword_text": "head replacement",
+      "match_type": "BROAD",
+      "negative": true,
+      "original_criterion_id": "301794223657",
+      "original_resource_name": "customers/8735782888/campaignCriteria/20315156610~301794223657",
+      "original_status": "ENABLED",
+      "note": "re-create with this exact text + match on this campaign; a new criterion ID will be issued"
+    },
+    {
+      "to_restore": "keyword status",
+      "resource_name": "customers/8735782888/adGroupCriteria/151125103616~1442898236",
+      "original_status": "PAUSED",
+      "revert_to": "PAUSED"
+    }
+  ],
+  "mutations": [
+    {
+      "action": "REMOVE",
+      "resources": [
+        "customers/8735782888/campaignCriteria/20315156610~295473723839",
+        "customers/8735782888/campaignCriteria/20315156610~301794223657"
+      ]
+    },
+    {
+      "action": "ENABLE_KEYWORD",
+      "resource": "customers/8735782888/adGroupCriteria/151125103616~1442898236"
+    }
+  ]
+}

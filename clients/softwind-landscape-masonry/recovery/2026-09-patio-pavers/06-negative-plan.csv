@@ -1,0 +1,155 @@
+blocks_clicks,blocks_conversions,blocks_cost,blocks_terms,campaign,campaign_id,chars,decision,dependency_note,depends_on,family,level,match_type,reason,rollback,target_resource_id,text,words
+0,0,0,0,Patio,23484806108,7,ACCEPT,,,asphalt,CAMPAIGN,PHRASE,"Softwind installs pavers, not asphalt. No in-scope keyword or KEEP term contains the word.",remove this campaign_criterion; no other object changes,23484806108,asphalt,1
+5,1.0,117.88,61,Pavers,23489296528,7,ACCEPT,collides only with 7 keyword(s) that PLAN-SLM-KW-1 pauses; create this negative only after that pause reads back,PLAN-SLM-KW-1,asphalt,CAMPAIGN,PHRASE,"Softwind installs pavers, not asphalt. No in-scope keyword or KEEP term contains the word.",remove this campaign_criterion; no other object changes,23489296528,asphalt,1
+0,0.0,0.0,1,Patio,23484806108,8,ACCEPT,,,asphalt,CAMPAIGN,PHRASE,Asphalt synonym. Never an in-scope intent.,remove this campaign_criterion; no other object changes,23484806108,blacktop,1
+2,0.0,24.51,30,Pavers,23489296528,8,ACCEPT,,,asphalt,CAMPAIGN,PHRASE,Asphalt synonym. Never an in-scope intent.,remove this campaign_criterion; no other object changes,23489296528,blacktop,1
+0,0,0,0,Patio,23484806108,12,ACCEPT,,,asphalt,CAMPAIGN,PHRASE,"Asphalt driveway surface, not a paver product.",remove this campaign_criterion; no other object changes,23484806108,tar and chip,3
+2,0.0,27.38,2,Pavers,23489296528,12,ACCEPT,,,asphalt,CAMPAIGN,PHRASE,"Asphalt driveway surface, not a paver product.",remove this campaign_criterion; no other object changes,23489296528,tar and chip,3
+0,0,0,0,Patio,23484806108,7,ACCEPT,,,asphalt,CAMPAIGN,PHRASE,Asphalt synonym.,remove this campaign_criterion; no other object changes,23484806108,macadam,1
+0,0,0,0,Pavers,23489296528,7,ACCEPT,,,asphalt,CAMPAIGN,PHRASE,Asphalt synonym.,remove this campaign_criterion; no other object changes,23489296528,macadam,1
+0,0,0,0,Patio,23484806108,11,ACCEPT,,,sealcoating,CAMPAIGN,PHRASE,Asphalt sealcoating. Out of scope for both work orders.,remove this campaign_criterion; no other object changes,23484806108,sealcoating,1
+5,1.0,117.29,15,Pavers,23489296528,11,ACCEPT,,,sealcoating,CAMPAIGN,PHRASE,Asphalt sealcoating. Out of scope for both work orders.,remove this campaign_criterion; no other object changes,23489296528,sealcoating,1
+0,0,0,0,Patio,23484806108,8,ACCEPT,,,sealcoating,CAMPAIGN,PHRASE,Sealcoating stem.,remove this campaign_criterion; no other object changes,23484806108,sealcoat,1
+0,0.0,0.0,2,Pavers,23489296528,8,ACCEPT,,,sealcoating,CAMPAIGN,PHRASE,Sealcoating stem.,remove this campaign_criterion; no other object changes,23489296528,sealcoat,1
+0,0,0,0,Patio,23484806108,12,ACCEPT,,,sealcoating,CAMPAIGN,PHRASE,Spaced spelling of sealcoating.,remove this campaign_criterion; no other object changes,23484806108,seal coating,2
+0,0.0,0.0,9,Pavers,23489296528,12,ACCEPT,,,sealcoating,CAMPAIGN,PHRASE,Spaced spelling of sealcoating.,remove this campaign_criterion; no other object changes,23489296528,seal coating,2
+0,0,0,0,Patio,23484806108,9,ACCEPT,,,sealcoating,CAMPAIGN,PHRASE,Spaced spelling of sealcoat.,remove this campaign_criterion; no other object changes,23484806108,seal coat,2
+0,0.0,0.0,3,Pavers,23489296528,9,ACCEPT,,,sealcoating,CAMPAIGN,PHRASE,Spaced spelling of sealcoat.,remove this campaign_criterion; no other object changes,23489296528,seal coat,2
+0,0,0,0,Patio,23484806108,13,ACCEPT,,,sealing,CAMPAIGN,PHRASE,"Belongs to this account's own PAUSED Paver Sealing campaign, not to Patio/Pavers.",remove this campaign_criterion; no other object changes,23484806108,paver sealing,2
+1,1.0,13.73,4,Pavers,23489296528,13,ACCEPT,,,sealing,CAMPAIGN,PHRASE,"Belongs to this account's own PAUSED Paver Sealing campaign, not to Patio/Pavers.",remove this campaign_criterion; no other object changes,23489296528,paver sealing,2
+0,0,0,0,Patio,23484806108,12,ACCEPT,,,sealing,CAMPAIGN,PHRASE,Sealing product/service intent.,remove this campaign_criterion; no other object changes,23484806108,paver sealer,2
+0,0.0,0.0,1,Pavers,23489296528,12,ACCEPT,,,sealing,CAMPAIGN,PHRASE,Sealing product/service intent.,remove this campaign_criterion; no other object changes,23489296528,paver sealer,2
+0,0,0,0,Patio,23484806108,15,ACCEPT,,,sealing,CAMPAIGN,PHRASE,"Sealing service intent, qualified so it cannot catch install terms.",remove this campaign_criterion; no other object changes,23484806108,sealing service,2
+0,0,0,0,Pavers,23489296528,15,ACCEPT,,,sealing,CAMPAIGN,PHRASE,"Sealing service intent, qualified so it cannot catch install terms.",remove this campaign_criterion; no other object changes,23489296528,sealing service,2
+0,0,0,0,Patio,23484806108,13,ACCEPT,,,sealing,CAMPAIGN,PHRASE,"Sealing, not installation.",remove this campaign_criterion; no other object changes,23484806108,patio sealing,2
+0,0,0,0,Pavers,23489296528,13,ACCEPT,,,sealing,CAMPAIGN,PHRASE,"Sealing, not installation.",remove this campaign_criterion; no other object changes,23489296528,patio sealing,2
+0,0,0,0,Patio,23484806108,16,ACCEPT,,,sealing,CAMPAIGN,PHRASE,"Sealing, not installation.",remove this campaign_criterion; no other object changes,23484806108,driveway sealing,2
+0,0.0,0.0,6,Pavers,23489296528,16,ACCEPT,,,sealing,CAMPAIGN,PHRASE,"Sealing, not installation.",remove this campaign_criterion; no other object changes,23489296528,driveway sealing,2
+0,0,0,0,Patio,23484806108,16,ACCEPT,,,sealing,CAMPAIGN,PHRASE,"Sealing, not installation.",remove this campaign_criterion; no other object changes,23484806108,concrete sealing,2
+0,0,0,0,Pavers,23489296528,16,ACCEPT,,,sealing,CAMPAIGN,PHRASE,"Sealing, not installation.",remove this campaign_criterion; no other object changes,23489296528,concrete sealing,2
+0,0,0,0,Patio,23484806108,7,ACCEPT,,,sealing,CAMPAIGN,PHRASE,Sealing product.,remove this campaign_criterion; no other object changes,23484806108,sealant,1
+0,0.0,0.0,2,Pavers,23489296528,7,ACCEPT,,,sealing,CAMPAIGN,PHRASE,Sealing product.,remove this campaign_criterion; no other object changes,23489296528,sealant,1
+0,0,0,0,Patio,23484806108,12,ACCEPT,,,sealing,CAMPAIGN,PHRASE,Sealing product.,remove this campaign_criterion; no other object changes,23484806108,stone sealer,2
+0,0,0,0,Pavers,23489296528,12,ACCEPT,,,sealing,CAMPAIGN,PHRASE,Sealing product.,remove this campaign_criterion; no other object changes,23489296528,stone sealer,2
+1,0.0,13.0,2,Patio,23484806108,17,ACCEPT,,,restoration,CAMPAIGN,PHRASE,"Restoration of existing pavers, not new installation.",remove this campaign_criterion; no other object changes,23484806108,paver restoration,2
+2,0.0,8.36,1,Pavers,23489296528,17,ACCEPT,,,restoration,CAMPAIGN,PHRASE,"Restoration of existing pavers, not new installation.",remove this campaign_criterion; no other object changes,23489296528,paver restoration,2
+0,0,0,0,Patio,23484806108,15,ACCEPT,,,restoration,CAMPAIGN,PHRASE,Resanding existing pavers.,remove this campaign_criterion; no other object changes,23484806108,paver resanding,2
+0,0,0,0,Pavers,23489296528,15,ACCEPT,,,restoration,CAMPAIGN,PHRASE,Resanding existing pavers.,remove this campaign_criterion; no other object changes,23489296528,paver resanding,2
+0,0,0,0,Patio,23484806108,16,ACCEPT,,,restoration,CAMPAIGN,PHRASE,Spaced spelling.,remove this campaign_criterion; no other object changes,23484806108,paver re sanding,3
+0,0,0,0,Patio,23484806108,14,ACCEPT,,,restoration,CAMPAIGN,PHRASE,Resanding material intent.,remove this campaign_criterion; no other object changes,23484806108,polymeric sand,2
+0,0.0,0.0,1,Pavers,23489296528,14,ACCEPT,,,restoration,CAMPAIGN,PHRASE,Resanding material intent.,remove this campaign_criterion; no other object changes,23489296528,polymeric sand,2
+0,0,0,0,Patio,23484806108,16,ACCEPT,,,restoration,CAMPAIGN,PHRASE,Releveling existing pavers.,remove this campaign_criterion; no other object changes,23484806108,paver releveling,2
+0,0,0,0,Pavers,23489296528,16,ACCEPT,,,restoration,CAMPAIGN,PHRASE,Releveling existing pavers.,remove this campaign_criterion; no other object changes,23489296528,paver releveling,2
+0,0,0,0,Pavers,23489296528,14,ACCEPT,,,restoration,CAMPAIGN,PHRASE,Leveling existing pavers.,remove this campaign_criterion; no other object changes,23489296528,paver leveling,2
+0,0,0,0,Patio,23484806108,17,ACCEPT,,,restoration,CAMPAIGN,PHRASE,"Restoration, not construction.",remove this campaign_criterion; no other object changes,23484806108,patio restoration,2
+0,0.0,0.0,1,Pavers,23489296528,17,ACCEPT,,,restoration,CAMPAIGN,PHRASE,"Restoration, not construction.",remove this campaign_criterion; no other object changes,23489296528,patio restoration,2
+1,0.0,12.5,6,Patio,23484806108,17,ACCEPT,,,resurfacing,CAMPAIGN,PHRASE,"Resurfacing an existing slab, not building a patio.",remove this campaign_criterion; no other object changes,23484806108,patio resurfacing,2
+0,0,0,0,Pavers,23489296528,17,ACCEPT,,,resurfacing,CAMPAIGN,PHRASE,"Resurfacing an existing slab, not building a patio.",remove this campaign_criterion; no other object changes,23489296528,patio resurfacing,2
+0,0,0,0,Patio,23484806108,20,ACCEPT,,,resurfacing,CAMPAIGN,PHRASE,Resurfacing intent.,remove this campaign_criterion; no other object changes,23484806108,concrete resurfacing,2
+0,0,0,0,Pavers,23489296528,20,ACCEPT,,,resurfacing,CAMPAIGN,PHRASE,Resurfacing intent.,remove this campaign_criterion; no other object changes,23489296528,concrete resurfacing,2
+0,0,0,0,Patio,23484806108,9,ACCEPT,,,resurfacing,CAMPAIGN,PHRASE,Resurfacing stem; no in-scope keyword or KEEP term uses it.,remove this campaign_criterion; no other object changes,23484806108,resurface,1
+0,0,0,0,Pavers,23489296528,9,ACCEPT,,,resurfacing,CAMPAIGN,PHRASE,Resurfacing stem; no in-scope keyword or KEEP term uses it.,remove this campaign_criterion; no other object changes,23489296528,resurface,1
+0,0,0,0,Pavers,23489296528,11,ACCEPT,,,resurfacing,CAMPAIGN,PHRASE,Refinishing an existing surface.,remove this campaign_criterion; no other object changes,23489296528,refinishing,1
+2,0.0,9.31,9,Patio,23484806108,11,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,"Roof/shade structure, not a patio surface.",remove this campaign_criterion; no other object changes,23484806108,patio cover,2
+0,0,0,0,Pavers,23489296528,11,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,"Roof/shade structure, not a patio surface.",remove this campaign_criterion; no other object changes,23489296528,patio cover,2
+4,0.0,48.22,7,Patio,23484806108,13,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Roof/shade structure.,remove this campaign_criterion; no other object changes,23484806108,covered patio,2
+0,0,0,0,Pavers,23489296528,13,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Roof/shade structure.,remove this campaign_criterion; no other object changes,23489296528,covered patio,2
+0,0.0,0.0,1,Patio,23484806108,10,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Roof structure.,remove this campaign_criterion; no other object changes,23484806108,patio roof,2
+0,0,0,0,Pavers,23489296528,10,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Roof structure.,remove this campaign_criterion; no other object changes,23489296528,patio roof,2
+0,0.0,0.0,2,Patio,23484806108,12,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Shade structure.,remove this campaign_criterion; no other object changes,23484806108,patio awning,2
+0,0,0,0,Pavers,23489296528,12,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Shade structure.,remove this campaign_criterion; no other object changes,23489296528,patio awning,2
+0,0.0,0.0,2,Patio,23484806108,6,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Shade structure; never an in-scope intent.,remove this campaign_criterion; no other object changes,23484806108,awning,1
+0,0,0,0,Pavers,23489296528,6,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Shade structure; never an in-scope intent.,remove this campaign_criterion; no other object changes,23489296528,awning,1
+0,0,0,0,Patio,23484806108,6,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Shade structure.,remove this campaign_criterion; no other object changes,23484806108,canopy,1
+0,0,0,0,Pavers,23489296528,6,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Shade structure.,remove this campaign_criterion; no other object changes,23489296528,canopy,1
+7,0.0,63.32,26,Patio,23484806108,7,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,"Structure, not hardscape surface.",remove this campaign_criterion; no other object changes,23484806108,pergola,1
+0,0,0,0,Pavers,23489296528,7,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,"Structure, not hardscape surface.",remove this campaign_criterion; no other object changes,23489296528,pergola,1
+3,0.0,24.65,8,Patio,23484806108,6,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,"Structure, not hardscape surface.",remove this campaign_criterion; no other object changes,23484806108,gazebo,1
+0,0,0,0,Pavers,23489296528,6,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,"Structure, not hardscape surface.",remove this campaign_criterion; no other object changes,23489296528,gazebo,1
+0,0,0,0,Patio,23484806108,11,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Shade structure.,remove this campaign_criterion; no other object changes,23484806108,patio shade,2
+0,0,0,0,Pavers,23489296528,11,ACCEPT,,,patio-cover,CAMPAIGN,PHRASE,Shade structure.,remove this campaign_criterion; no other object changes,23489296528,patio shade,2
+2,0.0,16.8,3,Patio,23484806108,15,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,"Enclosure, not a patio surface.",remove this campaign_criterion; no other object changes,23484806108,patio enclosure,2
+0,0,0,0,Pavers,23489296528,15,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,"Enclosure, not a patio surface.",remove this campaign_criterion; no other object changes,23489296528,patio enclosure,2
+1,0.0,8.78,2,Patio,23484806108,14,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,Enclosure.,remove this campaign_criterion; no other object changes,23484806108,screened patio,2
+0,0,0,0,Pavers,23489296528,14,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,Enclosure.,remove this campaign_criterion; no other object changes,23489296528,screened patio,2
+1,0.0,8.79,1,Patio,23484806108,17,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,Enclosure.,remove this campaign_criterion; no other object changes,23484806108,screened in patio,3
+0,0,0,0,Pavers,23489296528,17,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,Enclosure.,remove this campaign_criterion; no other object changes,23489296528,screened in patio,3
+0,0,0,0,Patio,23484806108,11,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,Enclosure.,remove this campaign_criterion; no other object changes,23484806108,screen room,2
+0,0,0,0,Pavers,23489296528,11,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,Enclosure.,remove this campaign_criterion; no other object changes,23489296528,screen room,2
+0,0,0,0,Patio,23484806108,7,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,Enclosure.,remove this campaign_criterion; no other object changes,23484806108,sunroom,1
+0,0,0,0,Pavers,23489296528,7,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,Enclosure.,remove this campaign_criterion; no other object changes,23489296528,sunroom,1
+1,0.0,14.24,7,Patio,23484806108,16,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,Enclosure plural.,remove this campaign_criterion; no other object changes,23484806108,patio enclosures,2
+0,0,0,0,Pavers,23489296528,16,ACCEPT,,,enclosure,CAMPAIGN,PHRASE,Enclosure plural.,remove this campaign_criterion; no other object changes,23489296528,patio enclosures,2
+0,0,0,0,Patio,23484806108,14,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Cleaning belongs to the sibling account Softwind Power Washing.,remove this campaign_criterion; no other object changes,23484806108,patio cleaning,2
+0,0,0,0,Pavers,23489296528,14,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Cleaning belongs to the sibling account Softwind Power Washing.,remove this campaign_criterion; no other object changes,23489296528,patio cleaning,2
+0,0,0,0,Patio,23484806108,14,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Cleaning intent.,remove this campaign_criterion; no other object changes,23484806108,paver cleaning,2
+0,0,0,0,Pavers,23489296528,14,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Cleaning intent.,remove this campaign_criterion; no other object changes,23489296528,paver cleaning,2
+0,0,0,0,Patio,23484806108,13,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Sibling-account scope.,remove this campaign_criterion; no other object changes,23484806108,power washing,2
+0,0.0,0.0,1,Pavers,23489296528,13,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Sibling-account scope.,remove this campaign_criterion; no other object changes,23489296528,power washing,2
+0,0,0,0,Patio,23484806108,16,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Sibling-account scope.,remove this campaign_criterion; no other object changes,23484806108,pressure washing,2
+0,0,0,0,Pavers,23489296528,16,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Sibling-account scope.,remove this campaign_criterion; no other object changes,23489296528,pressure washing,2
+0,0,0,0,Patio,23484806108,12,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Sibling-account scope.,remove this campaign_criterion; no other object changes,23484806108,soft washing,2
+0,0,0,0,Pavers,23489296528,12,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Sibling-account scope.,remove this campaign_criterion; no other object changes,23489296528,soft washing,2
+0,0,0,0,Patio,23484806108,13,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Sibling-account scope.,remove this campaign_criterion; no other object changes,23484806108,house washing,2
+0,0,0,0,Pavers,23489296528,13,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Sibling-account scope.,remove this campaign_criterion; no other object changes,23489296528,house washing,2
+0,0,0,0,Patio,23484806108,13,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Cleaning intent.,remove this campaign_criterion; no other object changes,23484806108,patio washing,2
+0,0,0,0,Pavers,23489296528,13,ACCEPT,,,cleaning,CAMPAIGN,PHRASE,Cleaning intent.,remove this campaign_criterion; no other object changes,23489296528,patio washing,2
+0,0,0,0,Patio,23484806108,9,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,"Wood decking, not hardscape. Bare 'deck' is NOT used: pool deck is in scope.",remove this campaign_criterion; no other object changes,23484806108,wood deck,2
+0,0,0,0,Pavers,23489296528,9,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,"Wood decking, not hardscape. Bare 'deck' is NOT used: pool deck is in scope.",remove this campaign_criterion; no other object changes,23489296528,wood deck,2
+0,0,0,0,Patio,23484806108,14,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,Composite decking.,remove this campaign_criterion; no other object changes,23484806108,composite deck,2
+0,0,0,0,Pavers,23489296528,14,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,Composite decking.,remove this campaign_criterion; no other object changes,23489296528,composite deck,2
+0,0.0,0.0,6,Patio,23484806108,4,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,Composite decking brand.,remove this campaign_criterion; no other object changes,23484806108,trex,1
+0,0,0,0,Pavers,23489296528,4,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,Composite decking brand.,remove this campaign_criterion; no other object changes,23489296528,trex,1
+0,0.0,0.0,3,Patio,23484806108,12,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,"Deck construction, not hardscape.",remove this campaign_criterion; no other object changes,23484806108,deck builder,2
+0,0,0,0,Pavers,23489296528,12,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,"Deck construction, not hardscape.",remove this campaign_criterion; no other object changes,23489296528,deck builder,2
+0,0,0,0,Pavers,23489296528,15,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,Deck construction.,remove this campaign_criterion; no other object changes,23489296528,deck contractor,2
+0,0.0,0.0,4,Patio,23484806108,7,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,Decking material.,remove this campaign_criterion; no other object changes,23484806108,decking,1
+0,0,0,0,Pavers,23489296528,7,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,Decking material.,remove this campaign_criterion; no other object changes,23489296528,decking,1
+0,0,0,0,Patio,23484806108,11,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,Deck service.,remove this campaign_criterion; no other object changes,23484806108,deck repair,2
+0,0,0,0,Pavers,23489296528,11,ACCEPT,,,deck-structure,CAMPAIGN,PHRASE,Deck service.,remove this campaign_criterion; no other object changes,23489296528,deck repair,2
+0,0,0,0,Patio,23484806108,10,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,"Retail, not a contractor search.",remove this campaign_criterion; no other object changes,23484806108,home depot,2
+0,0,0,0,Pavers,23489296528,10,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,"Retail, not a contractor search.",remove this campaign_criterion; no other object changes,23489296528,home depot,2
+0,0,0,0,Patio,23484806108,5,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Retail.,remove this campaign_criterion; no other object changes,23484806108,lowes,1
+0,0,0,0,Pavers,23489296528,5,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Retail.,remove this campaign_criterion; no other object changes,23489296528,lowes,1
+0,0,0,0,Patio,23484806108,7,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Retail.,remove this campaign_criterion; no other object changes,23484806108,menards,1
+0,0,0,0,Pavers,23489296528,7,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Retail.,remove this campaign_criterion; no other object changes,23489296528,menards,1
+0,0,0,0,Patio,23484806108,8,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Material purchase intent.,remove this campaign_criterion; no other object changes,23484806108,for sale,2
+0,0,0,0,Pavers,23489296528,8,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Material purchase intent.,remove this campaign_criterion; no other object changes,23489296528,for sale,2
+0,0,0,0,Patio,23484806108,9,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Material purchase intent.,remove this campaign_criterion; no other object changes,23484806108,wholesale,1
+0,0,0,0,Pavers,23489296528,9,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Material purchase intent.,remove this campaign_criterion; no other object changes,23489296528,wholesale,1
+0,0,0,0,Patio,23484806108,8,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Material purchase intent.,remove this campaign_criterion; no other object changes,23484806108,supplier,1
+0,0,0,0,Pavers,23489296528,8,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Material purchase intent.,remove this campaign_criterion; no other object changes,23489296528,supplier,1
+0,0,0,0,Patio,23484806108,15,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Material purchase intent.,remove this campaign_criterion; no other object changes,23484806108,pavers for sale,3
+0,0,0,0,Pavers,23489296528,15,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Material purchase intent.,remove this campaign_criterion; no other object changes,23489296528,pavers for sale,3
+0,0,0,0,Patio,23484806108,16,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,DIY planning.,remove this campaign_criterion; no other object changes,23484806108,paver calculator,2
+0,0,0,0,Pavers,23489296528,16,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,DIY planning.,remove this campaign_criterion; no other object changes,23489296528,paver calculator,2
+0,0,0,0,Patio,23484806108,21,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,DIY instruction.,remove this campaign_criterion; no other object changes,23484806108,how to install pavers,4
+0,0,0,0,Pavers,23489296528,21,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,DIY instruction.,remove this campaign_criterion; no other object changes,23489296528,how to install pavers,4
+0,0,0,0,Patio,23484806108,20,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,DIY instruction.,remove this campaign_criterion; no other object changes,23484806108,how to build a patio,5
+0,0,0,0,Pavers,23489296528,20,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,DIY instruction.,remove this campaign_criterion; no other object changes,23489296528,how to build a patio,5
+0,0,0,0,Patio,23484806108,14,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,DIY instruction.,remove this campaign_criterion; no other object changes,23484806108,do it yourself,3
+0,0,0,0,Pavers,23489296528,14,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,DIY instruction.,remove this campaign_criterion; no other object changes,23489296528,do it yourself,3
+0,0,0,0,Patio,23484806108,3,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,DIY instruction.,remove this campaign_criterion; no other object changes,23484806108,diy,1
+0,0,0,0,Pavers,23489296528,3,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,DIY instruction.,remove this campaign_criterion; no other object changes,23489296528,diy,1
+0,0,0,0,Patio,23484806108,7,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Instructional video intent.,remove this campaign_criterion; no other object changes,23484806108,youtube,1
+0,0,0,0,Pavers,23489296528,7,ACCEPT,,,retail-diy,CAMPAIGN,PHRASE,Instructional video intent.,remove this campaign_criterion; no other object changes,23489296528,youtube,1
+0,0,0,0,Patio,23484806108,4,ACCEPT,,,employment,CAMPAIGN,PHRASE,"Employment, not a buyer.",remove this campaign_criterion; no other object changes,23484806108,jobs,1
+0,0,0,0,Pavers,23489296528,4,ACCEPT,,,employment,CAMPAIGN,PHRASE,"Employment, not a buyer.",remove this campaign_criterion; no other object changes,23489296528,jobs,1
+0,0,0,0,Patio,23484806108,6,ACCEPT,,,employment,CAMPAIGN,PHRASE,Employment.,remove this campaign_criterion; no other object changes,23484806108,hiring,1
+0,0,0,0,Pavers,23489296528,6,ACCEPT,,,employment,CAMPAIGN,PHRASE,Employment.,remove this campaign_criterion; no other object changes,23489296528,hiring,1
+0,0,0,0,Patio,23484806108,6,ACCEPT,,,employment,CAMPAIGN,PHRASE,Employment.,remove this campaign_criterion; no other object changes,23484806108,salary,1
+0,0,0,0,Pavers,23489296528,6,ACCEPT,,,employment,CAMPAIGN,PHRASE,Employment.,remove this campaign_criterion; no other object changes,23489296528,salary,1
+0,0,0,0,Patio,23484806108,7,ACCEPT,,,employment,CAMPAIGN,PHRASE,Employment.,remove this campaign_criterion; no other object changes,23484806108,careers,1
+0,0,0,0,Pavers,23489296528,7,ACCEPT,,,employment,CAMPAIGN,PHRASE,Employment.,remove this campaign_criterion; no other object changes,23489296528,careers,1
+0,0,0,0,Patio,23484806108,10,ACCEPT,,,employment,CAMPAIGN,PHRASE,Employment.,remove this campaign_criterion; no other object changes,23484806108,apprentice,1
+0,0,0,0,Pavers,23489296528,10,ACCEPT,,,employment,CAMPAIGN,PHRASE,Employment.,remove this campaign_criterion; no other object changes,23489296528,apprentice,1
+0,0,0,0,Patio,23484806108,12,ACCEPT,,,equipment,CAMPAIGN,PHRASE,Equipment rental.,remove this campaign_criterion; no other object changes,23484806108,paver rental,2
+0,0,0,0,Pavers,23489296528,12,ACCEPT,,,equipment,CAMPAIGN,PHRASE,Equipment rental.,remove this campaign_criterion; no other object changes,23489296528,paver rental,2
+0,0,0,0,Patio,23484806108,15,ACCEPT,,,equipment,CAMPAIGN,PHRASE,Equipment.,remove this campaign_criterion; no other object changes,23484806108,plate compactor,2
+0,0,0,0,Pavers,23489296528,15,ACCEPT,,,equipment,CAMPAIGN,PHRASE,Equipment.,remove this campaign_criterion; no other object changes,23489296528,plate compactor,2
+0,0,0,0,Patio,23484806108,13,ACCEPT,,,equipment,CAMPAIGN,PHRASE,Equipment.,remove this campaign_criterion; no other object changes,23484806108,paver machine,2
+0,0,0,0,Pavers,23489296528,13,ACCEPT,,,equipment,CAMPAIGN,PHRASE,Equipment.,remove this campaign_criterion; no other object changes,23489296528,paver machine,2
+0,0,0,0,Patio,23484806108,10,ACCEPT,,,equipment,CAMPAIGN,PHRASE,DIY casting product.,remove this campaign_criterion; no other object changes,23484806108,paver mold,2
+0,0,0,0,Pavers,23489296528,10,ACCEPT,,,equipment,CAMPAIGN,PHRASE,DIY casting product.,remove this campaign_criterion; no other object changes,23489296528,paver mold,2
+0,0,0,0,Patio,23484806108,11,ACCEPT,,,equipment,CAMPAIGN,PHRASE,DIY casting product.,remove this campaign_criterion; no other object changes,23484806108,paver molds,2
+0,0,0,0,Pavers,23489296528,11,ACCEPT,,,equipment,CAMPAIGN,PHRASE,DIY casting product.,remove this campaign_criterion; no other object changes,23489296528,paver molds,2

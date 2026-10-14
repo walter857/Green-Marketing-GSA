@@ -1,0 +1,832 @@
+{
+  "checked_at": "2026-09-03T18:27:09.262903-04:00",
+  "method": "headless chromium, JS enabled, read-only",
+  "pages": {
+    "patio": {
+      "requested_url": "https://offer.softwindli.com/patio/",
+      "status": 200,
+      "final_url": "https://offer.softwindli.com/patio/?gclid=GMQA_TEST_GCLID_20260903&utm_source=google&utm_medium=cpc&utm_campaign=qa_probe&utm_term=qa_probe_term",
+      "redirected": false,
+      "redirect_chain": [
+        {
+          "url": "https://offer.softwindli.com/patio/?gclid=GMQA_TEST_GCLID_20260903&utm_source=google&utm_medium=cpc&utm_campaign=qa_probe&utm_term=qa_probe_term",
+          "status": 200
+        }
+      ],
+      "html_bytes": 160761,
+      "title": "Patio | Softwind Landscape & Masonry",
+      "canonical": "https://offer.softwindli.com/patio/",
+      "h1": [
+        "Patio Installation By A Local Patio Contractor You Can Trust"
+      ],
+      "h2": [
+        "A Better Backyard Starts With The Right Patio",
+        "Current Month Patio Planning Priority",
+        "Beautiful, Durable Patios Built For Long Island Living",
+        "One Team For Your Entire Outdoor Project",
+        "Recent Project Highlights",
+        "Your New Patio In 3 Simple Steps",
+        "Frequently Asked Questions",
+        "Our 100% Satisfaction Guarantee"
+      ],
+      "tel_links": [
+        "tel:(631)",
+        "tel:(631) 502-7946"
+      ],
+      "malformed_tel": [],
+      "visible_phone_numbers": [
+        "(631) 502-7946"
+      ],
+      "form_count": 2,
+      "form_ids": [
+        "gform_1",
+        "gform_1"
+      ],
+      "form_fields": [
+        {
+          "form": "gform_1",
+          "name": "input_9",
+          "id": "input_1_9",
+          "type": "text",
+          "required": null,
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_1",
+          "id": "input_1_1",
+          "type": "text",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_4",
+          "id": "input_1_4",
+          "type": "tel",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_3",
+          "id": "input_1_3",
+          "type": "email",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_7",
+          "id": "input_1_7",
+          "type": null,
+          "required": null,
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_8",
+          "id": "input_1_8",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_submission_method",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_theme",
+          "id": "gform_theme_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_style_settings",
+          "id": "gform_style_settings_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "is_submit_1",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_submit",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_currency",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_unique_id",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "state_1",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_target_page_number_1",
+          "id": "gform_target_page_number_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_source_page_number_1",
+          "id": "gform_source_page_number_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_field_values",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "input_9",
+          "id": "input_1_9",
+          "type": "text",
+          "required": null,
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_1",
+          "id": "input_1_1",
+          "type": "text",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_4",
+          "id": "input_1_4",
+          "type": "tel",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_3",
+          "id": "input_1_3",
+          "type": "email",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_7",
+          "id": "input_1_7",
+          "type": null,
+          "required": null,
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_8",
+          "id": "input_1_8",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_submission_method",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_theme",
+          "id": "gform_theme_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_style_settings",
+          "id": "gform_style_settings_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "is_submit_1",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_submit",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_currency",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_unique_id",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "state_1",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_target_page_number_1",
+          "id": "gform_target_page_number_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_source_page_number_1",
+          "id": "gform_source_page_number_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_field_values",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        }
+      ],
+      "hidden_field_names": [
+        "gform_currency",
+        "gform_field_values",
+        "gform_source_page_number_1",
+        "gform_style_settings",
+        "gform_submission_method",
+        "gform_submit",
+        "gform_target_page_number_1",
+        "gform_theme",
+        "gform_unique_id",
+        "input_8",
+        "is_submit_1",
+        "state_1"
+      ],
+      "duplicate_dom_ids": [
+        "et-boc",
+        "field_1_1",
+        "field_1_3",
+        "field_1_4",
+        "field_1_7",
+        "field_1_8",
+        "field_1_9",
+        "gfield_description_1_9",
+        "gform_1",
+        "gform_fields_1",
+        "gform_source_page_number_1",
+        "gform_style_settings_1",
+        "gform_submit_button_1",
+        "gform_target_page_number_1",
+        "gform_theme_1",
+        "gform_wrapper_1",
+        "input_1_1",
+        "input_1_3",
+        "input_1_4",
+        "input_1_7",
+        "input_1_8",
+        "input_1_9"
+      ],
+      "tags": {
+        "google_ads_gtag": [
+          "17878095007",
+          "18369652705"
+        ],
+        "gtm_container": [
+          "GTM-P3LD97NN"
+        ],
+        "ga4": [],
+        "conversion_send_to": [],
+        "conversion_label": [
+          "17878095007/wcm"
+        ],
+        "whatconverts": [
+          "whatconverts"
+        ],
+        "clickcease": [
+          "ClickCease",
+          "clickcease",
+          "monitor.clickcease"
+        ],
+        "iconnode": [
+          "process.iconnode.com"
+        ]
+      },
+      "third_party_hosts": [
+        "ad.doubleclick.net",
+        "analytics.google.com",
+        "connect.facebook.net",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "googleads.g.doubleclick.net",
+        "mpc-prod-23-s6uit34pua-ue.a.run.app",
+        "p.ksrndkehqnwntyxlhgto.com",
+        "process.iconnode.com",
+        "s.ksrndkehqnwntyxlhgto.com",
+        "stats.g.doubleclick.net",
+        "www.clickcease.com",
+        "www.facebook.com",
+        "www.google.com",
+        "www.googleadservices.com",
+        "www.googletagmanager.com",
+        "www.gstatic.com"
+      ],
+      "gclid_in_final_url": true,
+      "gclid_in_dom": true,
+      "utm_in_dom": true,
+      "cookies": [
+        "GCL_AW_P",
+        "_fbp",
+        "_ga",
+        "_ga_D4BZM40RYD",
+        "_gcl_au",
+        "_gcl_aw",
+        "test_cookie",
+        "wc_client",
+        "wc_client_current",
+        "wc_swap",
+        "wc_visitor"
+      ]
+    },
+    "pavers": {
+      "requested_url": "https://offer.softwindli.com/pavers/",
+      "status": 200,
+      "final_url": "https://offer.softwindli.com/pavers/?gclid=GMQA_TEST_GCLID_20260903&utm_source=google&utm_medium=cpc&utm_campaign=qa_probe&utm_term=qa_probe_term",
+      "redirected": false,
+      "redirect_chain": [
+        {
+          "url": "https://offer.softwindli.com/pavers/?gclid=GMQA_TEST_GCLID_20260903&utm_source=google&utm_medium=cpc&utm_campaign=qa_probe&utm_term=qa_probe_term",
+          "status": 200
+        }
+      ],
+      "html_bytes": 160770,
+      "title": "Pavers | Softwind Landscape & Masonry",
+      "canonical": "https://offer.softwindli.com/pavers/",
+      "h1": [
+        "Paver Installation Near You In Long Island, NY"
+      ],
+      "h2": [
+        "Custom Paver Patios And Walkways, Installed The Right Way",
+        "Current Month Paver Project Planning Session",
+        "Beautiful, Durable Pavers Built For Outdoor Living",
+        "One Team For Your Entire Outdoors",
+        "Recent Project Highlights",
+        "Your Dream Yard In 3 Simple Steps",
+        "Frequently Asked Questions",
+        "Our 100% Satisfaction Guarantee"
+      ],
+      "tel_links": [
+        "tel:(631)",
+        "tel:(631) 502-7946"
+      ],
+      "malformed_tel": [],
+      "visible_phone_numbers": [
+        "(631) 502-7946"
+      ],
+      "form_count": 2,
+      "form_ids": [
+        "gform_1",
+        "gform_1"
+      ],
+      "form_fields": [
+        {
+          "form": "gform_1",
+          "name": "input_9",
+          "id": "input_1_9",
+          "type": "text",
+          "required": null,
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_1",
+          "id": "input_1_1",
+          "type": "text",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_4",
+          "id": "input_1_4",
+          "type": "tel",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_3",
+          "id": "input_1_3",
+          "type": "email",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_7",
+          "id": "input_1_7",
+          "type": null,
+          "required": null,
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_8",
+          "id": "input_1_8",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_submission_method",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_theme",
+          "id": "gform_theme_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_style_settings",
+          "id": "gform_style_settings_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "is_submit_1",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_submit",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_currency",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_unique_id",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "state_1",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_target_page_number_1",
+          "id": "gform_target_page_number_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_source_page_number_1",
+          "id": "gform_source_page_number_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_field_values",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "input_9",
+          "id": "input_1_9",
+          "type": "text",
+          "required": null,
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_1",
+          "id": "input_1_1",
+          "type": "text",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_4",
+          "id": "input_1_4",
+          "type": "tel",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_3",
+          "id": "input_1_3",
+          "type": "email",
+          "required": "true",
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_7",
+          "id": "input_1_7",
+          "type": null,
+          "required": null,
+          "hidden": false
+        },
+        {
+          "form": "gform_1",
+          "name": "input_8",
+          "id": "input_1_8",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_submission_method",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_theme",
+          "id": "gform_theme_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_style_settings",
+          "id": "gform_style_settings_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "is_submit_1",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_submit",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_currency",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_unique_id",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "state_1",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_target_page_number_1",
+          "id": "gform_target_page_number_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_source_page_number_1",
+          "id": "gform_source_page_number_1",
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        },
+        {
+          "form": "gform_1",
+          "name": "gform_field_values",
+          "id": null,
+          "type": "hidden",
+          "required": null,
+          "hidden": true
+        }
+      ],
+      "hidden_field_names": [
+        "gform_currency",
+        "gform_field_values",
+        "gform_source_page_number_1",
+        "gform_style_settings",
+        "gform_submission_method",
+        "gform_submit",
+        "gform_target_page_number_1",
+        "gform_theme",
+        "gform_unique_id",
+        "input_8",
+        "is_submit_1",
+        "state_1"
+      ],
+      "duplicate_dom_ids": [
+        "et-boc",
+        "field_1_1",
+        "field_1_3",
+        "field_1_4",
+        "field_1_7",
+        "field_1_8",
+        "field_1_9",
+        "gfield_description_1_9",
+        "gform_1",
+        "gform_fields_1",
+        "gform_source_page_number_1",
+        "gform_style_settings_1",
+        "gform_submit_button_1",
+        "gform_target_page_number_1",
+        "gform_theme_1",
+        "gform_wrapper_1",
+        "input_1_1",
+        "input_1_3",
+        "input_1_4",
+        "input_1_7",
+        "input_1_8",
+        "input_1_9"
+      ],
+      "tags": {
+        "google_ads_gtag": [
+          "17878095007",
+          "18369652705"
+        ],
+        "gtm_container": [
+          "GTM-P3LD97NN"
+        ],
+        "ga4": [],
+        "conversion_send_to": [],
+        "conversion_label": [
+          "17878095007/wcm"
+        ],
+        "whatconverts": [
+          "whatconverts"
+        ],
+        "clickcease": [
+          "ClickCease",
+          "clickcease",
+          "monitor.clickcease"
+        ],
+        "iconnode": [
+          "process.iconnode.com"
+        ]
+      },
+      "third_party_hosts": [
+        "ad.doubleclick.net",
+        "analytics.google.com",
+        "connect.facebook.net",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "googleads.g.doubleclick.net",
+        "mpc-prod-23-s6uit34pua-ue.a.run.app",
+        "p.ksrndkehqnwntyxlhgto.com",
+        "process.iconnode.com",
+        "s.ksrndkehqnwntyxlhgto.com",
+        "stats.g.doubleclick.net",
+        "www.clickcease.com",
+        "www.facebook.com",
+        "www.google.com",
+        "www.googleadservices.com",
+        "www.googletagmanager.com",
+        "www.gstatic.com"
+      ],
+      "gclid_in_final_url": true,
+      "gclid_in_dom": true,
+      "utm_in_dom": true,
+      "cookies": [
+        "GCL_AW_P",
+        "_fbp",
+        "_ga",
+        "_ga_D4BZM40RYD",
+        "_gcl_au",
+        "_gcl_aw",
+        "test_cookie",
+        "wc_client",
+        "wc_client_current",
+        "wc_swap",
+        "wc_visitor"
+      ]
+    }
+  }
+}

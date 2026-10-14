@@ -1,0 +1,103 @@
+# #############################################################################
+# VOID 2026-09-28 (run C). Superseded by APG-0928-DEV-T2 (HOLD). Fingerprint 46060B03F5C9 is VOID:
+# it encoded a conditional 1-to-3-update payload and an unanswered owner question. Never approve or
+# execute this file. Content below preserved unchanged as the historical draft.
+# #############################################################################
+# =============================================================================
+# APG-0928-DEV-T  --  restore tablet eligibility on campaign 24257151015
+# =============================================================================
+# DRAFT, NOT EXECUTED. Authorizes nothing by itself. Requires the exact approval line
+# in approval_grant. Status is not changed; nothing is created, enabled or deleted.
+#
+# Evidence (fresh read 2026-09-28 19:45 UTC, reports/apogee-lawns/evidence/2026-09-28b-snapshot.json):
+#   campaign_criterion 24257151015~30002 (TABLET) carries an EXPLICIT bid_modifier 0.0
+#   (field present; 0.0 on a device criterion = -100%, device excluded - google-ads v25
+#   CampaignCriterion.bid_modifier docstring: "Use 0 to opt out of a Device type."). Desktop and mobile
+#   carry no modifier. ad_group_bid_modifier rows 200347713516~30002 and 200347713556~30002
+#   also report an explicit 0.0.
+#   change_event: 2026-09-25 08:26:21 CT, GOOGLE_ADS_WEB_CLIENT, UPDATE on ~30002, with an
+#   empty changed-fields payload; it is the only recorded change to that criterion.
+#   Delivery by device, Sep 21-28: the one tablet impression was on Sep 23; none since Sep 25.
+#   Before the change, tablets were 1 of 20 impressions (Sep 21-24).
+#   Neither CAMP-I nor any receipt set a device modifier; no record states why tablets were
+#   excluded. If the exclusion was deliberate for a reason not on file, REJECT this plan.
+# =============================================================================
+plan_id: APG-0928-DEV-T
+plan_kind: device_bid_modifier_update
+generated: "2026-09-28"
+mode_required: "create-paused (the repository's write mode); this plan updates one existing setting and enables nothing"
+external_writes_performed: NONE
+
+target:
+  exact_child_account_name: "Apogee Lawns LLC - Live"
+  child_customer_id: "8164626278"
+  manager_customer_id: "3373711342"
+  manager_never_mutated: true
+  vertical: similar-local-service
+  exact_primary_service: Permanent Christmas light installation
+  campaign_id: "24257151015"
+  campaign_name: "S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026"
+
+preconditions:
+  - "fresh identity gate PASS (name + ID exact, manager=false, test=false)"
+  - "campaign 24257151015 status read and recorded; this plan never changes it"
+  - "campaign_criterion 24257151015~30002 still reports bid_modifier present and == 0.0; if it differs, STOP (drift)"
+  - "no other campaign_criterion of type DEVICE has changed since 2026-09-28 19:45 UTC"
+
+objects:
+  - ordinal: 1
+    resource: campaign_criterion
+    operation: update
+    resource_name: "customers/8164626278/campaignCriteria/24257151015~30002"
+    criterion: {type: DEVICE, device: TABLET, criterion_id: "30002"}
+    update_mask: ["bid_modifier"]
+    field_changes:
+      bid_modifier: {from: 0.0, to: 1.0}
+    meaning: "-100% (excluded) -> no adjustment. Maximize Clicks applies bid adjustments on top of the $8.00 limit; 1.0 applies none."
+  - ordinal: 2
+    resource: ad_group_bid_modifier
+    operation: update
+    conditional: "execute ONLY if a readback after object 1 still reports has_bid_modifier=true and bid_modifier == 0.0"
+    resource_name: "customers/8164626278/adGroupBidModifiers/200347713516~30002"
+    update_mask: ["bid_modifier"]
+    field_changes:
+      bid_modifier: {from: 0.0, to: 1.0}
+  - ordinal: 3
+    resource: ad_group_bid_modifier
+    operation: update
+    conditional: "execute ONLY if a readback after object 1 still reports has_bid_modifier=true and bid_modifier == 0.0"
+    resource_name: "customers/8164626278/adGroupBidModifiers/200347713556~30002"
+    update_mask: ["bid_modifier"]
+    field_changes:
+      bid_modifier: {from: 0.0, to: 1.0}
+
+mutation_summary:
+  creates: 0
+  updates_min: 1
+  updates_max: 3
+  removes: 0
+  enables: 0
+  status_changes: 0
+  budget_changes: 0
+  bid_strategy_changes: 0
+  cpc_ceiling_changes: 0
+  geo_changes: 0
+  keyword_changes: 0
+
+readback_assertions:
+  - "campaign_criterion ~30002 bid_modifier == 1.0"
+  - "ad_group_bid_modifier 200347713516~30002 and 200347713556~30002 are absent, unset, or == 1.0"
+  - "desktop ~30000 and mobile ~30001 unchanged (no bid_modifier present)"
+  - "campaign status, budget 15884926233 amount 16440000 micros, TARGET_SPEND ceiling 8000000 micros unchanged"
+  - "14 LOCATION, 1 LANGUAGE, 75 negative KEYWORD campaign criteria unchanged"
+
+expected_effect: >-
+  Small. Tablets were 1 of 20 impressions in the four days before the exclusion. The goal
+  is to stop excluding a device on no evidence while total demand is this small; it is not
+  expected to change volume materially.
+risk: "Tablet form rendering was not tested (a 390 px mobile render passed). If tablet users struggle with the form, revert with the same field back to 0.0."
+rollback: "Set bid_modifier back to 0.0 on the same resource names (update_mask bid_modifier)."
+
+approval_grant:
+  required_line: "APPROVE APG DEVICE UPDATE <fingerprint>"
+  fingerprint_scope: "every key above approval_grant, serialized with gm_gsa.safety.approval_code"

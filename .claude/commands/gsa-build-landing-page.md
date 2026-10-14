@@ -1,0 +1,1 @@
+Read `CLAUDE.md` and `prompts/06-build-landing-page.md`. Require a validated work order with the exact child account name, 10-digit child customer ID, and exact service. Build or revise that service's landing page, preserve any supplied template structure, and complete local QA. Do not deploy without approval.

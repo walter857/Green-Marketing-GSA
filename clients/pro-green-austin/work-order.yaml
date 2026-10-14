@@ -1,0 +1,76 @@
+# Pro Green Landscape Solutions - Austin
+# Full-account audit and optimization plan. READ mode.
+#
+# task.type uses the repository's validated enum. The requested label
+# "full-account-audit-and-optimization-plan" is not an allowed schema value, so
+# the closest exact workflow, `audit`, is recorded and the full request text is
+# preserved verbatim below. No account, service, budget, or location was changed.
+
+work_order:
+  client_slug: pro-green-austin
+  business_name: Pro Green Landscape Solutions
+  account:
+    exact_child_account_name: Pro Green - Austin - Live
+    child_customer_id: "7380491929"
+    # Discovered read-only from customer_client on 2026-08-18. Not inferred.
+    manager_customer_id: "3373711342"
+  service:
+    vertical: hardscaping
+    exact_primary_service: outdoor design & build
+    related_services: []
+  task:
+    type: audit
+    mode: read
+    requested_type_label: full-account-audit-and-optimization-plan
+    request: >-
+      Audit the entire child account using all available history and current settings,
+      diagnose low conversion volume and high CPL, and build an exact approval-gated
+      remediation plan focused on qualified new-client outdoor design-and-build jobs.
+    date_range: >-
+      All history available through the execution date, plus comparable 365-, 180-,
+      90-, 60-, 30-, 14-, and 7-day views where data exists.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. hardscaping is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://progreenlandscapesolutions.com/austin/
+    service_area:
+      - 78642, Texas, United States
+      - 78681, Texas, United States
+      - 78732, Texas, United States
+      - 78703, Texas, United States
+      - 78726, Texas, United States
+      - Barton Creek, Texas, United States
+      - 78613, Texas, United States
+      - 78717, Texas, United States
+      - 78738, Texas, United States
+      - 78746, Texas, United States
+      - 78733, Texas, United States
+      - 78628, Texas, United States
+      - Cedar Park, Texas, United States
+      - 78750, Texas, United States
+      - Georgetown, Texas, United States
+      - 78730, Texas, United States
+      - 78756, Texas, United States
+      - 78734, Texas, United States
+      - 78757, Texas, United States
+      - 78731, Texas, United States
+      - West University, Texas, United States
+      - 78641, Texas, United States
+      - Leander, Texas, United States
+      - 78645, Texas, United States
+    daily_budget: 65.79
+    monthly_budget_cap: 2000.00
+    budget_basis: "2000 / 30.4 days, rounded to cents. Combined ceiling across all enabled in-scope campaigns."
+    primary_conversion_goal: >-
+      Qualified new-customer leads for outdoor design-and-build projects, followed by
+      qualified opportunities and sold-job revenue when those downstream outcomes exist.
+    source_files:
+      - Fresh Google Ads API account snapshot
+      - All available campaign, ad group, ad, keyword, negative, search-term, asset, location, schedule, audience, budget, bidding, and conversion data
+      - Current final URLs and landing pages used by the account
+      - https://progreenlandscapesolutions.com/austin/
+      - Official Austin Google Business Profile, if an unambiguous first-party listing is accessible
+      - Configured CRM and call-tracking outcome data, if available without exposing PII
+  approval_owner: Green Marketing

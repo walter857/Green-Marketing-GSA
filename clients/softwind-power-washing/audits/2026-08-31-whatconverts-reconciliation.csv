@@ -1,0 +1,16 @@
+source,value,evidence,note
+"Google Ads - metrics.conversions (all campaigns, all time)",0.00,conversion_action rows exist and are ENABLED,"STRUCTURALLY ZERO: all four conversion actions have include_in_conversions_metric = FALSE, and customer_conversion_goal returns no biddable category at account level. This column cannot show a lead even if one occurs."
+"Google Ads - metrics.all_conversions (all campaigns, all time)",0.00,segments.conversion_action_name returned 0 rows,"The API omits all-zero segment rows, so zero rows means nothing was recorded on ANY action - not a reporting gap."
+"Google Ads - call_view (whole retained call log, no date filter)",0,call_view accepts no segments.date; this is the full retained log,No call has ever been logged from a call asset.
+Google Ads - CALLS click type,0 clicks on 86 impressions,segments.click_type = CALLS,The call button has served 86 times and has never been clicked.
+Google Ads - form conversion action 7708725995,0,ENABLED,"WEBPAGE / SUBMIT_LEAD_FORM, ONE_PER_CLICK, 90-day click window, default value 0.00 with always_use_default_value TRUE."
+Google Ads - website call action 7708765130,0,ENABLED,"WEBSITE_CALL / PHONE_CALL_LEAD, 60-second qualified-call threshold."
+Google Ads - call asset action 7711699090,0,ENABLED,"AD_CALL / PHONE_CALL_LEAD, 60-second threshold."
+WhatConverts export - calls,NO EXPORT SUPPLIED,no file present under clients/softwind-power-washing/,BLOCKER WC-1. A repository-wide search for a WhatConverts export found none for this client. Reconciliation cannot be completed.
+WhatConverts export - forms,NO EXPORT SUPPLIED,no file present,BLOCKER WC-1.
+GLE Power Washing number +1 631-519-8373,NOT OBSERVED,"not found in any live landing page, tel: link, or Google Ads asset",Supplied in the brief. It appears nowhere in the audited surface.
+GBP Power Washing number +1 631-315-8655,NOT OBSERVED,"not found in any live landing page, tel: link, or Google Ads asset",Supplied in the brief. It appears nowhere in the audited surface.
+Approved landing-page number (631) 502-7946,PRESENT ON ALL 6 OFFER PAGES,"tel: link and body copy, desktop and mobile",Also the number on call asset 403335872180.
+Untracked main-site number (631) 502-5402,PRESENT ON softwindli.com,our-work and service-areas pages,"Destinations of the three surviving ACCOUNT-LEVEL sitelinks. Campaign-level sitelinks override them today, so this is a latent leak, not an active one."
+Third DNI number (631) 553-5927,NOT OBSERVED IN THIS RUN,no tel: link or body text matched it on any audited page,Recorded on 2026-08-26 via the wc_swap cookie on main-site pages. Not re-confirmed here; the offer pages render the static approved number.
+Account totals for the same period,22 clicks / $713.15,FROM customer segmented by date,The denominator any lead count must be judged against.

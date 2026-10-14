@@ -1,0 +1,551 @@
+{
+ "plan": "AMB-0930-REPAIR-CPC-1",
+ "target": {
+  "child_customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live"
+ },
+ "work_order": "clients/ambient-cooling-heating/work-orders/work-order-heating-repair-cpc-ceiling-2026-09-30.yaml",
+ "approval_type": "EXPLICIT APPROVAL (bid ceiling only)",
+ "preconditions": {
+  "campaign": {
+   "id": "24257819463",
+   "name": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "status": "ENABLED",
+   "bidding": "TARGET_SPEND",
+   "ceiling_micros": 42000000,
+   "budget_id": "15885327972",
+   "budget_micros": 85000000,
+   "search_partners": false,
+   "display": false
+  },
+  "enabled_repair_ad_groups": [
+   "199797580706",
+   "204129717007",
+   "204129717047",
+   "204129717087",
+   "204129717247",
+   "204129717287"
+  ]
+ },
+ "operations": [
+  {
+   "op": "UPDATE",
+   "resource": "campaign",
+   "id": "24257819463",
+   "field": "target_spend.cpc_bid_ceiling_micros",
+   "from": 42000000,
+   "to": 21000000
+  }
+ ],
+ "unchanged": [
+  "every repair ad group stays ENABLED (none paused)",
+  "keywords and Phrase/Exact match types",
+  "ads and landing pages",
+  "budget $85/day",
+  "locations",
+  "schedule",
+  "negative lists",
+  "conversion goals",
+  "Search-only networks"
+ ],
+ "unrelated_resource_baseline": {
+  "campaigns": {
+   "20022417562": [
+    "PAUSED",
+    "MANUAL_CPC",
+    0,
+    100000000
+   ],
+   "20293627152": [
+    "PAUSED",
+    "MAXIMIZE_CONVERSIONS",
+    0,
+    30000000
+   ],
+   "20303048590": [
+    "PAUSED",
+    "MAXIMIZE_CONVERSIONS",
+    0,
+    90000000
+   ],
+   "20509039406": [
+    "PAUSED",
+    "MANUAL_CPC",
+    0,
+    38000000
+   ],
+   "20509050656": [
+    "PAUSED",
+    "TARGET_SPEND",
+    0,
+    33330000
+   ],
+   "20513589817": [
+    "PAUSED",
+    "TARGET_SPEND",
+    0,
+    39000000
+   ],
+   "22375264936": [
+    "PAUSED",
+    "MANUAL_CPC",
+    0,
+    100000000
+   ],
+   "22379067302": [
+    "PAUSED",
+    "MAXIMIZE_CONVERSIONS",
+    0,
+    90000000
+   ],
+   "22822619680": [
+    "PAUSED",
+    "MAXIMIZE_CONVERSIONS",
+    0,
+    100000000
+   ],
+   "22855140165": [
+    "PAUSED",
+    "MAXIMIZE_CONVERSIONS",
+    0,
+    10000000
+   ],
+   "23143116432": [
+    "PAUSED",
+    "TARGET_SPEND",
+    0,
+    60000000
+   ],
+   "23152954036": [
+    "PAUSED",
+    "TARGET_SPEND",
+    0,
+    100000000
+   ],
+   "23167679179": [
+    "PAUSED",
+    "TARGET_SPEND",
+    0,
+    60000000
+   ],
+   "23333871301": [
+    "PAUSED",
+    "TARGET_SPEND",
+    0,
+    60000000
+   ],
+   "23737117084": [
+    "PAUSED",
+    "TARGET_SPEND",
+    0,
+    100000000
+   ],
+   "23743023491": [
+    "PAUSED",
+    "TARGET_SPEND",
+    0,
+    33330000
+   ],
+   "23762582794": [
+    "PAUSED",
+    "MAXIMIZE_CONVERSIONS",
+    0,
+    33000000
+   ],
+   "23883756382": [
+    "PAUSED",
+    "MAXIMIZE_CONVERSIONS",
+    0,
+    33000000
+   ],
+   "24132507741": [
+    "PAUSED",
+    "TARGET_SPEND",
+    25000000,
+    45000000
+   ],
+   "24132507744": [
+    "ENABLED",
+    "TARGET_SPEND",
+    60000000,
+    45000000
+   ],
+   "24132507747": [
+    "ENABLED",
+    "TARGET_SPEND",
+    30000000,
+    20000000
+   ],
+   "24132507750": [
+    "PAUSED",
+    "TARGET_SPEND",
+    25000000,
+    70000000
+   ],
+   "24132507753": [
+    "PAUSED",
+    "TARGET_SPEND",
+    30000000,
+    15000000
+   ],
+   "24257819463": [
+    "ENABLED",
+    "TARGET_SPEND",
+    42000000,
+    85000000
+   ],
+   "24257819466": [
+    "ENABLED",
+    "TARGET_SPEND",
+    46000000,
+    60000000
+   ],
+   "24268690038": [
+    "ENABLED",
+    "TARGET_SPEND",
+    35000000,
+    15000000
+   ],
+   "24268690041": [
+    "ENABLED",
+    "TARGET_SPEND",
+    20000000,
+    15000000
+   ],
+   "24274160783": [
+    "ENABLED",
+    "TARGET_SPEND",
+    38000000,
+    20000000
+   ],
+   "24279798229": [
+    "ENABLED",
+    "TARGET_SPEND",
+    32000000,
+    45000000
+   ],
+   "24295088845": [
+    "PAUSED",
+    "MAXIMIZE_CONVERSIONS",
+    0,
+    20000000
+   ]
+  },
+  "repair_campaign": {
+   "networks": [
+    false,
+    false,
+    "PRESENCE"
+   ],
+   "criteria": [
+    "AD_SCHEDULE|303264|False",
+    "AD_SCHEDULE|313264|False",
+    "AD_SCHEDULE|323264|False",
+    "AD_SCHEDULE|333264|False",
+    "AD_SCHEDULE|343264|False",
+    "DEVICE|30000|False",
+    "DEVICE|30001|False",
+    "DEVICE|30002|False",
+    "KEYWORD|100293065|True",
+    "KEYWORD|10050101|True",
+    "KEYWORD|101196837|True",
+    "KEYWORD|10238411|True",
+    "KEYWORD|118560915|True",
+    "KEYWORD|12471160|True",
+    "KEYWORD|128634778|True",
+    "KEYWORD|133303993|True",
+    "KEYWORD|141962804|True",
+    "KEYWORD|218172774|True",
+    "KEYWORD|218173674|True",
+    "KEYWORD|23004932|True",
+    "KEYWORD|23592862|True",
+    "KEYWORD|24709862|True",
+    "KEYWORD|302362892777|True",
+    "KEYWORD|302362899257|True",
+    "KEYWORD|314713295|True",
+    "KEYWORD|331533733|True",
+    "KEYWORD|364756923007|True",
+    "KEYWORD|41397162|True",
+    "KEYWORD|4332422790|True",
+    "KEYWORD|59121701|True",
+    "KEYWORD|63226180|True",
+    "KEYWORD|71523380|True",
+    "KEYWORD|994345262|True",
+    "LOCATION|1018507|False",
+    "LOCATION|1018509|False",
+    "LOCATION|1018519|False",
+    "LOCATION|1018535|False",
+    "LOCATION|1018557|False",
+    "LOCATION|1018574|False",
+    "LOCATION|1018576|False",
+    "LOCATION|1018578|False",
+    "LOCATION|1018590|False",
+    "LOCATION|1018592|False",
+    "LOCATION|1018595|False",
+    "LOCATION|1018600|False",
+    "LOCATION|1018610|False",
+    "LOCATION|1018612|False",
+    "LOCATION|1018614|False",
+    "LOCATION|1018629|False",
+    "LOCATION|1018636|False",
+    "LOCATION|1018639|False",
+    "LOCATION|1018643|False",
+    "LOCATION|1018669|False",
+    "LOCATION|1018677|False",
+    "LOCATION|1018704|False",
+    "LOCATION|1018705|False",
+    "LOCATION|1018706|False",
+    "LOCATION|1018747|False",
+    "LOCATION|9007726|False",
+    "LOCATION|9007743|False",
+    "LOCATION|9007748|False",
+    "LOCATION|9007755|False",
+    "LOCATION|9007757|False",
+    "LOCATION|9007765|False",
+    "LOCATION|9007818|False",
+    "LOCATION|9007828|False",
+    "LOCATION|9007830|False",
+    "LOCATION|9007832|False",
+    "LOCATION|9007835|False",
+    "LOCATION|9007836|False",
+    "LOCATION|9007837|False",
+    "LOCATION|9007838|False",
+    "LOCATION|9007845|False",
+    "LOCATION|9007846|False",
+    "LOCATION|9007848|False",
+    "LOCATION|9007849|False",
+    "LOCATION|9007852|False",
+    "LOCATION|9007853|False",
+    "LOCATION|9007854|False",
+    "LOCATION|9007861|False",
+    "LOCATION|9007866|False",
+    "LOCATION|9007868|False",
+    "LOCATION|9007869|False",
+    "LOCATION|9007872|False",
+    "LOCATION|9007879|False",
+    "LOCATION|9007880|False",
+    "LOCATION|9007881|False",
+    "LOCATION|9007916|False",
+    "LOCATION|9007917|False",
+    "LOCATION|9007918|False",
+    "LOCATION|9007919|False",
+    "LOCATION|9007928|False",
+    "LOCATION|9007937|False",
+    "LOCATION|9007938|False",
+    "LOCATION|9007939|False",
+    "LOCATION|9007940|False",
+    "LOCATION|9007941|False",
+    "LOCATION|9007970|False",
+    "LOCATION|9007983|False",
+    "LOCATION|9008008|False",
+    "LOCATION|9051516|False",
+    "LOCATION|9051655|False",
+    "LOCATION|9051943|False",
+    "LOCATION|9052545|False",
+    "LOCATION|9052647|False",
+    "LOCATION|9053205|False",
+    "LOCATION|9195526|False",
+    "LOCATION|9198809|False"
+   ],
+   "assets": [
+    "BUSINESS_NAME|80516971145|PAUSED",
+    "CALLOUT|422477374526|PAUSED",
+    "CALLOUT|422577760603|PAUSED",
+    "CALLOUT|422577771364|PAUSED",
+    "CALLOUT|422577777430|PAUSED",
+    "CALLOUT|422577777442|PAUSED",
+    "CALL|407995613637|PAUSED",
+    "CALL|424764337810|PAUSED",
+    "SITELINK|410638280067|ENABLED",
+    "SITELINK|422477374559|PAUSED",
+    "SITELINK|422577771382|PAUSED",
+    "SITELINK|422577777457|PAUSED",
+    "SITELINK|424481123441|ENABLED",
+    "SITELINK|424583525083|ENABLED",
+    "SITELINK|424666378863|ENABLED",
+    "STRUCTURED_SNIPPET|422477374541|PAUSED"
+   ],
+   "shared_sets": [
+    "12249470554",
+    "12252013691"
+   ]
+  },
+  "repair_groups": {
+   "199797580706": {
+    "status": "ENABLED",
+    "ads": [
+     "825056834769|PAUSED",
+     "825056834772|PAUSED",
+     "825863405484|ENABLED",
+     "825863405487|ENABLED"
+    ],
+    "kws": [
+     "100293065|True|ENABLED",
+     "101196837|True|ENABLED",
+     "115636961|False|ENABLED",
+     "12678680|False|ENABLED",
+     "12903011|True|ENABLED",
+     "132736152|True|ENABLED",
+     "133231517|True|ENABLED",
+     "144507596|True|ENABLED",
+     "18527140|True|ENABLED",
+     "1883846185|False|ENABLED",
+     "23708710|True|ENABLED",
+     "269415912|True|ENABLED",
+     "28849030|True|ENABLED",
+     "34040201|True|ENABLED",
+     "35331930|True|ENABLED",
+     "378018339|True|ENABLED",
+     "4018038434|False|ENABLED",
+     "41397162|True|ENABLED",
+     "4343738631|False|ENABLED",
+     "53082888326|False|ENABLED",
+     "5333029459|False|ENABLED",
+     "59088625593|False|ENABLED",
+     "99300462|True|ENABLED"
+    ]
+   },
+   "204129717007": {
+    "status": "ENABLED",
+    "ads": [
+     "825585199595|PAUSED",
+     "825585199598|PAUSED",
+     "825863405502|ENABLED",
+     "825863405505|ENABLED"
+    ],
+    "kws": [
+     "100293065|True|ENABLED",
+     "101196837|True|ENABLED",
+     "1100237210|False|ENABLED",
+     "116678509|False|ENABLED",
+     "12903011|True|ENABLED",
+     "132736152|True|ENABLED",
+     "133231517|True|ENABLED",
+     "142140741|False|ENABLED",
+     "144507596|True|ENABLED",
+     "269415912|True|ENABLED",
+     "279579187|False|ENABLED",
+     "28849030|True|ENABLED",
+     "320791641114|False|ENABLED",
+     "34040201|True|ENABLED",
+     "35331930|True|ENABLED",
+     "378018339|True|ENABLED",
+     "41397162|True|ENABLED",
+     "63226100|True|ENABLED",
+     "98048541|False|ENABLED",
+     "99300462|True|ENABLED"
+    ]
+   },
+   "204129717047": {
+    "status": "ENABLED",
+    "ads": [],
+    "kws": [
+     "100293065|True|ENABLED",
+     "101196837|True|ENABLED",
+     "12903011|True|ENABLED",
+     "133231517|True|ENABLED",
+     "144507596|True|ENABLED",
+     "1734598708|False|PAUSED",
+     "269415912|True|ENABLED",
+     "28849030|True|ENABLED",
+     "299713058575|False|PAUSED",
+     "320791640594|False|PAUSED",
+     "3304047112|False|PAUSED",
+     "34040201|True|ENABLED",
+     "378018339|True|ENABLED",
+     "41397162|True|ENABLED",
+     "777693505|False|PAUSED",
+     "99300462|True|ENABLED"
+    ]
+   },
+   "204129717087": {
+    "status": "ENABLED",
+    "ads": [
+     "825863405640|ENABLED",
+     "825863405643|ENABLED"
+    ],
+    "kws": [
+     "100293065|True|ENABLED",
+     "101196837|True|ENABLED",
+     "12903011|True|ENABLED",
+     "133231517|True|ENABLED",
+     "144507596|True|ENABLED",
+     "269415912|True|ENABLED",
+     "28849030|True|ENABLED",
+     "34040201|True|ENABLED",
+     "378018339|True|ENABLED",
+     "410033471640|False|PAUSED",
+     "41397162|True|ENABLED",
+     "414947263869|False|PAUSED",
+     "429882189727|False|ENABLED",
+     "577762646085|False|ENABLED",
+     "99300462|True|ENABLED"
+    ]
+   },
+   "204129717247": {
+    "status": "ENABLED",
+    "ads": [
+     "825585199601|PAUSED",
+     "825585199604|PAUSED",
+     "825863405490|ENABLED",
+     "825863405493|ENABLED"
+    ],
+    "kws": [
+     "100293065|True|ENABLED",
+     "101196837|True|ENABLED",
+     "12903011|True|ENABLED",
+     "133231517|True|ENABLED",
+     "136731902|False|ENABLED",
+     "144507596|True|ENABLED",
+     "15503170|True|ENABLED",
+     "18527140|True|ENABLED",
+     "269415912|True|ENABLED",
+     "28849030|True|ENABLED",
+     "301769526|False|ENABLED",
+     "34040201|True|ENABLED",
+     "378018339|True|ENABLED",
+     "41397162|True|ENABLED",
+     "99300462|True|ENABLED"
+    ]
+   },
+   "204129717287": {
+    "status": "ENABLED",
+    "ads": [
+     "825585199607|PAUSED",
+     "825585199610|PAUSED",
+     "825863405496|ENABLED",
+     "825863405499|ENABLED"
+    ],
+    "kws": [
+     "100293065|True|ENABLED",
+     "101196837|True|ENABLED",
+     "12903011|True|ENABLED",
+     "133231517|True|ENABLED",
+     "144507596|True|ENABLED",
+     "15503170|True|ENABLED",
+     "180671980|False|ENABLED",
+     "180676080|False|ENABLED",
+     "23708710|True|ENABLED",
+     "269415912|True|ENABLED",
+     "28849030|True|ENABLED",
+     "34040201|True|ENABLED",
+     "378018339|True|ENABLED",
+     "41397162|True|ENABLED",
+     "99300462|True|ENABLED"
+    ]
+   }
+  }
+ },
+ "readback_assertions": [
+  "campaign 24257819463 target_spend.cpc_bid_ceiling_micros == 21000000",
+  "every other baseline value identical after execution"
+ ],
+ "evaluation": "No automatic restart or reversal. Judge on complete days against the full history: a before/after comparison on the same weekdays, reconciled genuine paid leads, CPL bands ($280 target / $350 ceiling), clicks, impression share lost to rank and budget. Any further bid, budget or status change needs its own exact approval.",
+ "rollback": "Restoring $42 is a separate single-field plan requiring its own approval.",
+ "fingerprint": "CB667F2D4610",
+ "operation_count": 1,
+ "validate_only": "VALIDATE_OK",
+ "errors": [],
+ "generated_local": "2026-09-30T17:08:59.682779-04:00",
+ "status": "SUPERSEDED 2026-09-30e by AMB-0930-REPAIR-CPC-2 ($18). Never approved; never execute or reuse CB667F2D4610."
+}

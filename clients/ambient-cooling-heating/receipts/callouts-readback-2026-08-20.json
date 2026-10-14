@@ -1,0 +1,89 @@
+{
+ "captured_utc": "2026-08-20T19:01:46.131257Z",
+ "approved_fingerprint": "A21587057F5C113E",
+ "state_after": {
+  "89063098370": {
+   "text": "Get Free Online Quote",
+   "status": "ENABLED"
+  }
+ },
+ "counts_before": {
+  "campaign_assets": 271,
+  "campaigns": 23,
+  "ads": 113,
+  "keywords": 6968,
+  "conversion_actions": 16,
+  "campaign_criteria": 13810,
+  "ad_schedule": 139,
+  "ip_blocks": 2796
+ },
+ "counts_after": {
+  "campaign_assets": 271,
+  "campaigns": 23,
+  "ads": 113,
+  "keywords": 6968,
+  "conversion_actions": 16,
+  "campaign_criteria": 13810,
+  "ad_schedule": 139,
+  "ip_blocks": 2796
+ },
+ "budgets": {
+  "24132507741": 141450000,
+  "24132507744": 42760000,
+  "24132507747": 138160000,
+  "24132507750": 78950000,
+  "24132507753": 26320000
+ },
+ "manager_links": {
+  "2815082755": "ACTIVE",
+  "3373711342": "ACTIVE"
+ },
+ "checks": [
+  {
+   "check": "exactly 1 account-level callout link remains",
+   "pass": true,
+   "detail": "{'89063098370': {'text': 'Get Free Online Quote', 'status': 'ENABLED'}}"
+  },
+  {
+   "check": "the remaining one is 'Get Free Online Quote'",
+   "pass": true,
+   "detail": "{'text': 'Get Free Online Quote', 'status': 'ENABLED'}"
+  },
+  {
+   "check": "both barred callouts unlinked",
+   "pass": true,
+   "detail": "['89063098370']"
+  },
+  {
+   "check": "the two assets still EXIST (link removed, asset kept)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "all five campaigns still carry their 5 campaign-level callouts",
+   "pass": true,
+   "detail": "{'24132507741': 5, '24132507744': 5, '24132507747': 5, '24132507750': 5, '24132507753': 5}"
+  },
+  {
+   "check": "campaign_asset / campaign / ad / keyword / conversion / criteria / schedule / IP counts all unchanged",
+   "pass": true,
+   "detail": "before={'campaign_assets': 271, 'campaigns': 23, 'ads': 113, 'keywords': 6968, 'conversion_actions': 16, 'campaign_criteria': 13810, 'ad_schedule': 139, 'ip_blocks': 2796} after={'campaign_assets': 271, 'campaigns': 23, 'ads': 113, 'keywords': 6968, 'conversion_actions': 16, 'campaign_criteria': 138"
+  },
+  {
+   "check": "budgets unchanged",
+   "pass": true,
+   "detail": "{'24132507741': 141450000, '24132507744': 42760000, '24132507747': 138160000, '24132507750': 78950000, '24132507753': 26320000}"
+  },
+  {
+   "check": "manager links unchanged and ACTIVE",
+   "pass": true,
+   "detail": "{'2815082755': 'ACTIVE', '3373711342': 'ACTIVE'}"
+  },
+  {
+   "check": "call asset untouched: approved number, 6 schedule rows",
+   "pass": true,
+   "detail": "(410)705-6354"
+  }
+ ],
+ "all_pass": true
+}

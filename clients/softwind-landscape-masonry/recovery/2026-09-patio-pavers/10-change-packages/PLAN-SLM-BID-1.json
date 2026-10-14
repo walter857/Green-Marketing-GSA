@@ -1,0 +1,78 @@
+{
+  "plan_name": "PLAN-SLM-BID-1",
+  "version": 1,
+  "operation_class": "BIDDING_STRATEGY_FIELD_CHANGE",
+  "approval_label": "APPROVE-BIDDING",
+  "generated_at": "2026-09-03T18:32:29.249387-04:00",
+  "source_snapshot": "2026-09-03T18:14:13.987015-04:00",
+  "target": {
+    "exact_child_account_name": "Softwind Landscape & Masonry - Live",
+    "child_customer_id": "2429758629",
+    "manager_customer_id": "3373711342",
+    "currency": "USD",
+    "time_zone": "America/New_York",
+    "identity_receipt": "snapshots/identity-gate-2026-09-03-1809.json",
+    "work_orders": [
+      "work-order-a-patio-construction.yaml (patio construction, campaign Patio)",
+      "work-order-b-paver-installation.yaml (paver installation, campaign Pavers)"
+    ]
+  },
+  "summary": "Set a CPC bid ceiling on the two Maximize Clicks campaigns. Neither campaign has any ceiling today, so nothing bounds the price of a click.",
+  "actions": [
+    {
+      "resource_type": "campaign",
+      "resource_id": "23484806108",
+      "resource_name": "Patio",
+      "field": "campaign.target_spend.cpc_bid_ceiling_micros",
+      "current_value": null,
+      "current_value_display": "no ceiling set",
+      "proposed_value": 22000000,
+      "proposed_value_display": "$22.00",
+      "object_count": 1
+    },
+    {
+      "resource_type": "campaign",
+      "resource_id": "23489296528",
+      "resource_name": "Pavers",
+      "field": "campaign.target_spend.cpc_bid_ceiling_micros",
+      "current_value": null,
+      "current_value_display": "no ceiling set",
+      "proposed_value": 22000000,
+      "proposed_value_display": "$22.00",
+      "object_count": 1
+    }
+  ],
+  "evidence": {
+    "bidding_strategy_both_campaigns": "TARGET_SPEND (Maximize Clicks)",
+    "ceiling_today": "none on either campaign (Paver Sealing, paused, carries $7.50)",
+    "realised_avg_cpc_august": {
+      "Patio": 11.29,
+      "Pavers": 21.24
+    },
+    "realised_avg_cpc_september_to_date": {
+      "Patio": 13.98,
+      "Pavers": 22.76
+    },
+    "single_worst_day": "2026-09-03 Pavers, $83.49 for 3 clicks = $27.83 per click",
+    "in_scope_converting_term_avg_cpcs": [
+      2.71,
+      11.6,
+      19.98,
+      30.06
+    ],
+    "wrong_service_converting_term_avg_cpcs": [
+      13.73,
+      14.11,
+      46.54
+    ],
+    "modelled_retention_at_22": "about 87% of historic clicks",
+    "note_on_the_30_dollar_click": "The $30.06 term carried 2 conversion credits on ONE click. Those two credits are almost certainly the same form submission counted twice by (web) form_submission and WC Leads - the duplicate PLAN-SLM-CONV-1 addresses. Treated as one lead, not two."
+  },
+  "risk": "A ceiling lowers auction competitiveness. At $22 it binds Pavers (realised $22.76) and barely touches Patio (realised $13.98). If lost-impression-share-to-rank rises sharply without a rise in click volume, raise it back through a new plan.",
+  "rollback": "Clear campaign.target_spend.cpc_bid_ceiling_micros on both campaigns through a new approved plan. No other object changes.",
+  "step_down_path": "This is step 1. After PLAN-SLM-NEG-1 has 14 days of data, re-derive the ceiling from post-negative CPC and consider $18, then $16. Do not step down before that evidence exists.",
+  "validation": "google-ads validate_only on the two campaign mutations",
+  "dependencies": [],
+  "unchanged": "budgets, bidding strategy type, networks, locations, keywords, negatives, ads, assets, conversion actions, the other four campaigns",
+  "fingerprint": "50C553579EF3"
+}

@@ -1,0 +1,250 @@
+{
+ "receipt_type": "READBACK",
+ "package": "ambient-cooling-heating-NEGATIVES-AUTOMOTIVE-INTENT-AC-REPAIR",
+ "fingerprint": "EACEC7CBAE85FF2B",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "campaign_id": "24132507741",
+ "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+ "executed_local": "2026-08-22T09:36:06.740499-04:00",
+ "read_back_local": "2026-08-22T09:35:56.333563-04:00",
+ "readback_query": "SELECT campaign.id, campaign.name, campaign_criterion.resource_name,\n campaign_criterion.criterion_id, campaign_criterion.type, campaign_criterion.negative,\n campaign_criterion.status, campaign_criterion.keyword.text,\n campaign_criterion.keyword.match_type FROM campaign_criterion\n WHERE campaign.id IN (24132507741,24132507744,24132507747,24132507750,24132507753) AND campaign_criterion.type = 'KEYWORD'",
+ "created_resources": [
+  {
+   "text": "car",
+   "match_type": "BROAD",
+   "negative": true,
+   "criterion_id": "10008241",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~10008241"
+  },
+  {
+   "text": "auto",
+   "match_type": "BROAD",
+   "negative": true,
+   "criterion_id": "10000390",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~10000390"
+  },
+  {
+   "text": "boat",
+   "match_type": "BROAD",
+   "negative": true,
+   "criterion_id": "10019071",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~10019071"
+  }
+ ],
+ "campaign_level_keywords_after": [
+  {
+   "campaign": "24132507741",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~10000390",
+   "criterion_id": "10000390",
+   "type": "KEYWORD",
+   "negative": true,
+   "status": "ENABLED",
+   "text": "auto",
+   "match": "BROAD"
+  },
+  {
+   "campaign": "24132507741",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~10008241",
+   "criterion_id": "10008241",
+   "type": "KEYWORD",
+   "negative": true,
+   "status": "ENABLED",
+   "text": "car",
+   "match": "BROAD"
+  },
+  {
+   "campaign": "24132507741",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~10019071",
+   "criterion_id": "10019071",
+   "type": "KEYWORD",
+   "negative": true,
+   "status": "ENABLED",
+   "text": "boat",
+   "match": "BROAD"
+  }
+ ],
+ "asserts": {
+  "identity gate": {
+   "pass": true,
+   "detail": "Ambient Cooling - Live / 2401959466"
+  },
+  "fingerprint reproduces": {
+   "pass": true,
+   "detail": "EACEC7CBAE85FF2B"
+  },
+  "both manager links ACTIVE": {
+   "pass": true,
+   "detail": "{\"2815082755\": \"ACTIVE\", \"3373711342\": \"ACTIVE\"}"
+  },
+  "zero campaign-level keyword criteria on the five before write": {
+   "pass": true,
+   "detail": "0"
+  },
+  "HVAC Installation budget is 176150000 before write": {
+   "pass": true,
+   "detail": "176150000"
+  },
+  "all five budgets at expected amounts before write": {
+   "pass": true,
+   "detail": "{\"15787409435\": 141450000, \"15787409438\": 42760000, \"15787409441\": 176150000, \"15787409444\": 78950000, \"15787409447\": 26320000}"
+  },
+  "validate-only VALIDATE_OK": {
+   "pass": true,
+   "detail": "3 operations"
+  },
+  "exactly 3 negative criteria on AC Repair": {
+   "pass": true,
+   "detail": "3"
+  },
+  "texts are exactly car, auto, boat": {
+   "pass": true,
+   "detail": "['auto', 'boat', 'car']"
+  },
+  "match type BROAD on all three": {
+   "pass": true,
+   "detail": "['BROAD']"
+  },
+  "negative=True on all three": {
+   "pass": true,
+   "detail": ""
+  },
+  "all three attached ONLY to campaign 24132507741": {
+   "pass": true,
+   "detail": "total campaign-level keyword criteria on the five = 3"
+  },
+  "returned resource names match the readback": {
+   "pass": true,
+   "detail": ""
+  },
+  "zero unapproved negative criteria created": {
+   "pass": true,
+   "detail": ""
+  },
+  "other four campaigns still hold ZERO campaign-level negatives": {
+   "pass": true,
+   "detail": ""
+  },
+  "AC Repair active keywords remain ENABLED and ELIGIBLE": {
+   "pass": true,
+   "detail": "[('ac repair near me', 'ENABLED', 'ELIGIBLE'), ('ac repair near me', 'ENABLED', 'ELIGIBLE'), ('hvac replacement near me', 'ENABLED', 'ELIGIBLE'), ('hvac replacement near me', 'ENABLED', 'ELIGIBLE')]"
+  },
+  "Carrier searches not blocked by a substring error": {
+   "pass": true,
+   "detail": ""
+  },
+  "no shared list attached to any of the five": {
+   "pass": true,
+   "detail": "0"
+  },
+  "campaign_criteria rose by exactly 3": {
+   "pass": true,
+   "detail": "3"
+  },
+  "every other structural bucket unchanged": {
+   "pass": true,
+   "detail": "{\"campaign_criteria\": 3}"
+  },
+  "all five budgets unchanged": {
+   "pass": true,
+   "detail": "{\"15787409435\": 141450000, \"15787409438\": 42760000, \"15787409441\": 176150000, \"15787409444\": 78950000, \"15787409447\": 26320000}"
+  },
+  "HVAC Installation still 176150000": {
+   "pass": true,
+   "detail": "176150000"
+  },
+  "IP exclusions still 2796": {
+   "pass": true,
+   "detail": "2796"
+  },
+  "both manager links still ACTIVE and unchanged": {
+   "pass": true,
+   "detail": "{\"2815082755\": \"ACTIVE\", \"3373711342\": \"ACTIVE\"}"
+  },
+  "all five campaigns still ENABLED": {
+   "pass": true,
+   "detail": "{\"24132507741\": \"ENABLED\", \"24132507744\": \"ENABLED\", \"24132507747\": \"ENABLED\", \"24132507750\": \"ENABLED\", \"24132507753\": \"ENABLED\"}"
+  },
+  "primary+counted conversion set unchanged": {
+   "pass": true,
+   "detail": "['1068114183', '6885463625', '6885576934']"
+  }
+ },
+ "readback_pass": true,
+ "failed_asserts": [],
+ "counts_before": {
+  "campaign_criteria": 13810,
+  "keywords": 6968,
+  "ads": 115,
+  "ad_schedules": 139,
+  "ip_exclusions": 2796,
+  "campaign_assets": 283,
+  "customer_assets": 1,
+  "conversion_actions": 16,
+  "shared_sets": 16,
+  "campaigns": 23,
+  "ad_groups": 68
+ },
+ "counts_after": {
+  "campaign_criteria": 13813,
+  "keywords": 6968,
+  "ads": 115,
+  "ad_schedules": 139,
+  "ip_exclusions": 2796,
+  "campaign_assets": 283,
+  "customer_assets": 1,
+  "conversion_actions": 16,
+  "shared_sets": 16,
+  "campaigns": 23,
+  "ad_groups": 68
+ },
+ "counts_delta": {
+  "campaign_criteria": 3,
+  "keywords": 0,
+  "ads": 0,
+  "ad_schedules": 0,
+  "ip_exclusions": 0,
+  "campaign_assets": 0,
+  "customer_assets": 0,
+  "conversion_actions": 0,
+  "shared_sets": 0,
+  "campaigns": 0,
+  "ad_groups": 0
+ },
+ "budgets_before": {
+  "15787409435": 141450000,
+  "15787409438": 42760000,
+  "15787409441": 176150000,
+  "15787409444": 78950000,
+  "15787409447": 26320000
+ },
+ "budgets_after": {
+  "15787409435": 141450000,
+  "15787409438": 42760000,
+  "15787409441": 176150000,
+  "15787409444": 78950000,
+  "15787409447": 26320000
+ },
+ "manager_links_before": {
+  "2815082755": "ACTIVE",
+  "3373711342": "ACTIVE"
+ },
+ "manager_links_after": {
+  "2815082755": "ACTIVE",
+  "3373711342": "ACTIVE"
+ },
+ "campaign_status_after": {
+  "24132507741": "ENABLED",
+  "24132507744": "ENABLED",
+  "24132507747": "ENABLED",
+  "24132507750": "ENABLED",
+  "24132507753": "ENABLED"
+ },
+ "primary_and_counted_after": [
+  "1068114183",
+  "6885463625",
+  "6885576934"
+ ],
+ "rollback_used": false,
+ "rollback_reason": "Not required. Readback passed on every assert."
+}

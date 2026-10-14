@@ -1,0 +1,84 @@
+# EKG Lawn Services - exact pause manifest
+#
+# DRAFT. Nothing has been paused. This manifest is presented at Checkpoint A as the
+# current enabled-campaign inventory and becomes the Checkpoint B approval target.
+#
+# Scope rule: only campaigns whose CURRENT API status is ENABLED are listed. Pausing is
+# limited to the IDs below. If another enabled campaign appears after this snapshot, the
+# run stops and a revised approval is required.
+
+pause_manifest:
+  client_slug: ekg-lawn-services
+  child_customer_id: "7478932848"
+  exact_child_account_name: "EKG Lawn Services - Live"
+  snapshot_taken: "2026-08-14"
+  snapshot_source: clients/ekg-lawn-services/snapshots/all-time-2026-08-14.json
+  status: DRAFT_AWAITING_APPROVAL
+  campaigns_paused_so_far: 0
+
+  totals:
+    campaigns_in_account: 10
+    currently_enabled: 1
+    currently_paused: 9
+    to_be_paused: 1
+
+  campaigns:
+    - campaign_id: "19855617751"
+      campaign_name: "Lawn care & Landscaping"
+      campaign_type: SEARCH
+      advertising_channel_sub_type: UNSPECIFIED
+      current_status: ENABLED
+      serving_status: SERVING
+      experiment_type: BASE
+      bidding_strategy: MANUAL_CPC
+      budget_name: "Lawn care & Landscaping"
+      budget_daily_amount: 18.44
+      budget_currency: USD
+      budget_explicitly_shared: false
+      budget_delivery: STANDARD
+      shared_budget_implications: >-
+        None. The budget is not explicitly shared, so pausing this campaign releases no
+        budget to, and starves no, other campaign.
+      month_to_date_spend: 259.51
+      month_to_date_clicks: 38
+      month_to_date_impressions: 819
+      month_to_date_conversions: 7.0
+      networks:
+        google_search: true
+        search_partners: false
+        display: false
+      geo_targeting: PRESENCE
+      has_tracking_url_template: true
+      ad_groups_total: 3
+      ad_groups_enabled: 1
+      ad_groups_enabled_names: ["Landscaping"]
+      keywords_total: 793
+      negative_keywords_among_them: 661
+      what_delivery_stops: >-
+        This is the ONLY serving campaign in the account. Pausing it stops 100 percent of
+        Google Ads delivery for EKG Lawn Services, including the lawn care and landscaping
+        traffic that produced 7 conversions and $259.51 of spend so far this month. No
+        other campaign is enabled to take over, and the replacement Aeration & Overseeding
+        campaign will be created PAUSED, so there will be a delivery gap until it is
+        explicitly enabled at Checkpoint H.
+      dependencies_or_experiments: >-
+        experiment_type is BASE, so no experiment or trial depends on this campaign.
+      service_relationship_to_new_build: >-
+        Different service line. This campaign serves lawn care and landscaping intent, not
+        Aeration & Overseeding, so pausing it does not remove aeration or overseeding
+        coverage that the new campaign would replace one-for-one.
+
+  local_services_ads:
+    present_in_this_account: false
+    evidence: >-
+      Channel types observed across all 10 campaigns are SEARCH, SMART, and
+      PERFORMANCE_MAX. No LOCAL_SERVICES campaign exists here. Local Services Ads are
+      managed outside the Google Ads campaign surface and are not touched by this
+      operation.
+
+  explicitly_not_in_scope:
+    - "The 9 already-PAUSED campaigns. They are not touched."
+    - "Any campaign not listed above by ID."
+    - "Deletion or removal of anything. This is a status change to PAUSED only."
+    - "Budget changes."
+    - "Local Services Ads."

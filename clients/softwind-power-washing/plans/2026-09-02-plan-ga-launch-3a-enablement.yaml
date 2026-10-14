@@ -1,0 +1,178 @@
+# PLAN-GA-LAUNCH-3A - FINAL GOOGLE ADS RESOURCE ENABLEMENT
+#
+# STATUS: DRAFT - BLOCKED. NOT APPROVED. DO NOT EXECUTE.
+# NO FINGERPRINT IS GENERATED IN THIS RUN.
+#
+# BLOCKED BECAUSE: the fresh read found four legacy resources that would activate on
+# parent enable. A new pause mutation is therefore required first, and the standing rule
+# is to stop and report the conflict BEFORE fingerprinting this plan. That pause is
+# PLAN-GA-LAUNCH-3B. This plan is fingerprinted only after 3B executes and the twelve new
+# RSAs clear review.
+
+change_plan:
+  plan_id: PLAN-GA-LAUNCH-3A
+  plan_title: Final Google Ads resource enablement
+  approval_type: ENABLE
+  priority: P0
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: F91589D9EA2A
+  canonical_sha256_full: f91589d9ea2af9ad556836e19f7b3d57dfe7830e5d17fa3864679087b24ed459
+  approval_command: APPROVE PLAN-GA-LAUNCH-3A F91589D9EA2A FOR 1521725229
+  payload_file: clients/softwind-power-washing/plans/2026-09-02-plan-ga-launch-3a-payload.json
+  fingerprint_history:
+    - code: F91589D9EA2A
+      state: VALID - THIS IS THE APPROVAL FINGERPRINT
+      note: >-
+        First generated 2026-09-02 16:51 when its validate_only failed on the
+        3-RSA-per-ad-group limit. The PAYLOAD was always correct; only the account state
+        blocked it. PLAN-GA-LAUNCH-3C removed the blocker, the identical payload re-derives
+        the identical code, and all three batches now validate cleanly. An earlier note
+        calling it VOID was wrong and is corrected here.
+    - code: D04DBC638033
+      state: VOID - DO NOT HONOUR
+      note: >-
+        A 47-action variant produced by a rebuild that selected ALL paused keywords in the
+        six ad groups instead of only those created by PLAN-GA-LAUNCH-1. It wrongly included
+        criteria 384030528226 and 502487923397, the two `house washing company near me`
+        keywords PLAN-GA-LAUNCH-3B had just paused. Executing it would have undone 3B.
+  scope_rule: >-
+    The enable set is strictly the resource IDs recorded in
+    snapshots/launch1-created-ids.json - 28 keyword criteria and 12 ads - plus the five
+    paused ad groups. No other paused resource in these ad groups is touched.
+
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    campaign_id: '24103511039'
+
+  counts_recalculated_from_the_live_account:
+    ad_groups_to_enable: 5
+    keyword_criteria_to_enable: 28
+    rsas_to_enable: 12
+    action_count: 45
+    object_count: 45
+    mutation_count: 45
+    note: >-
+      Recalculated from the live account, not assumed. It happens to match the earlier
+      expected 45, and that was verified rather than carried forward.
+
+  already_enabled_not_mutated:
+    ad_groups: ['202870585390 Power Washing']
+    keyword_objects: 10
+    ads: '4 - two legacy in Power Washing already serving, two legacy in Soft Washing handled by 3B'
+
+  gates:
+    - id: GATE-1
+      requirement: PLAN-GA-LAUNCH-3B executed and read back
+      state: MET 2026-09-02 16:50
+      detail: >-
+        Four legacy resources would otherwise activate - two `house washing company near
+        me` criteria in 202870585910 and two legacy RSAs in 202870586310.
+    - id: GATE-2
+      requirement: All twelve new RSAs out of review and none DISAPPROVED
+      state: MET 2026-09-02 - all 12 APPROVED / REVIEWED
+    - id: GATE-3
+      requirement: >-
+        PLAN-GA-LAUNCH-3C executed - the 3-RSA-per-ad-group limit cleared in 202870585390
+      state: MET 2026-09-02 17:12
+      detail: >-
+        Projected enabled RSAs per ad group after enablement is now 2 in all six groups.
+
+  validate_only_2026_09_02_after_3c:
+    ad_groups: 'PASS - 5 enable operations validated, 0 applied'
+    keywords: 'PASS - 28 enable operations validated, 0 applied'
+    ads: 'PASS - 12 enable operations validated, 0 applied'
+
+  preflight_checks_already_passing:
+    - all six final URLs HTTPS 200, no redirect, form present, phone present: True
+    - no BROAD match keyword in the enable set: True
+    - no DISAPPROVED RSA in the enable set: True
+    - every target belongs to campaign 24103511039: True
+    - campaign 24145053510 still ENABLED: True
+    - both campaign ceilings still $30.00: True
+    - both campaigns still MAXIMIZE CLICKS (TARGET_SPEND): True
+    - enable count recalculated from live account, not assumed: True
+    - zero legacy child resources would activate AFTER 3B: True
+
+  actions:
+    ad_groups:
+    - {action: G-1, type: ad_group, campaign_id: '24103511039', resource_id: '202870585870', final_group: 'Pressure Washing', live_name: 'Residential Pressure Washing Near Me', current: PAUSED, proposed: ENABLED}
+    - {action: G-2, type: ad_group, campaign_id: '24103511039', resource_id: '202870585910', final_group: 'House Washing', live_name: 'House Washing Company Near Me', current: PAUSED, proposed: ENABLED}
+    - {action: G-3, type: ad_group, campaign_id: '24103511039', resource_id: '202870586310', final_group: 'Soft Washing', live_name: 'Soft House Washing Near Me', current: PAUSED, proposed: ENABLED}
+    - {action: G-4, type: ad_group, campaign_id: '24103511039', resource_id: '202870586110', final_group: 'Driveway Pressure Washing', live_name: 'Driveway Pressure Washing Near Me', current: PAUSED, proposed: ENABLED}
+    - {action: G-5, type: ad_group, campaign_id: '24103511039', resource_id: '202870586150', final_group: 'Patio Pressure Washing', live_name: 'Patio Pressure Washing Near Me', current: PAUSED, proposed: ENABLED}
+    keywords:
+    - {action: A-01, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585390', resource_id: '11244351', keyword: 'power washing', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-02, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585390', resource_id: '21381541', keyword: 'power washing', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-03, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585390', resource_id: '328994395', keyword: 'power washing service', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-04, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585390', resource_id: '448367730', keyword: 'power washing service', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-05, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585390', resource_id: '99754288381', keyword: 'power washing services near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-06, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585390', resource_id: '299856882403', keyword: 'power washing services near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-07, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585390', resource_id: '300840676293', keyword: 'power washing company near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-08, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585390', resource_id: '320045208640', keyword: 'power washing company near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-09, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585870', resource_id: '11244361', keyword: 'pressure washing', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-10, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585870', resource_id: '21381571', keyword: 'pressure washing', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-11, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585870', resource_id: '75294038799', keyword: 'pressure washing near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-12, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585870', resource_id: '75298360239', keyword: 'pressure washing near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-13, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585910', resource_id: '297379283655', keyword: 'house power washing near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-14, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585910', resource_id: '301057569810', keyword: 'house washing near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-15, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585910', resource_id: '306730658772', keyword: 'house power washing near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-16, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585910', resource_id: '315515597254', keyword: 'house washing near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-17, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585910', resource_id: '341987323402', keyword: 'house pressure washing near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-18, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585910', resource_id: '342645727874', keyword: 'house pressure washing near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-19, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585910', resource_id: '346845250713', keyword: 'exterior house washing near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-20, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870585910', resource_id: '394327423399', keyword: 'exterior house washing near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-21, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870586310', resource_id: '338961202441', keyword: 'soft washing near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-22, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870586310', resource_id: '338961203201', keyword: 'soft washing near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-23, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870586110', resource_id: '328201189095', keyword: 'driveway power washing near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-24, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870586110', resource_id: '328201199015', keyword: 'driveway power washing near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-25, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870586150', resource_id: '326576934122', keyword: 'patio power washing near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-26, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870586150', resource_id: '326576946202', keyword: 'patio power washing near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-27, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870586150', resource_id: '421330015623', keyword: 'concrete pressure washing near me', match_type: EXACT, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    - {action: A-28, type: ad_group_criterion, campaign_id: '24103511039', ad_group_id: '202870586150', resource_id: '449621045684', keyword: 'concrete pressure washing near me', match_type: PHRASE, current: PAUSED, proposed: ENABLED, policy: APPROVED}
+    responsive_search_ads:
+    - {action: R-01, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870585390', resource_id: '823152917197', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/'}
+    - {action: R-02, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870585390', resource_id: '823152917200', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/'}
+    - {action: R-03, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870585870', resource_id: '823152917203', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/residential-pressure-washing/'}
+    - {action: R-04, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870585870', resource_id: '823152917206', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/residential-pressure-washing/'}
+    - {action: R-05, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870585910', resource_id: '823152917209', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/house-washing-company/'}
+    - {action: R-06, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870585910', resource_id: '823152917212', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/house-washing-company/'}
+    - {action: R-07, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870586310', resource_id: '823152917215', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/soft-house-washing/'}
+    - {action: R-08, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870586310', resource_id: '823152917218', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/soft-house-washing/'}
+    - {action: R-09, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870586110', resource_id: '823152917221', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/driveway-pressure-washing/'}
+    - {action: R-10, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870586110', resource_id: '823152917224', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/driveway-pressure-washing/'}
+    - {action: R-11, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870586150', resource_id: '823152917227', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/patio-power-washing/'}
+    - {action: R-12, type: ad_group_ad, campaign_id: '24103511039', ad_group_id: '202870586150', resource_id: '823152917230', current: PAUSED, proposed: ENABLED, policy: 'UNDER REVIEW', final_url: 'https://offer.softwindli.com/patio-power-washing/'}
+
+  campaign_instruction:
+    campaign_24103511039: 'ENABLED - unchanged by this plan'
+    campaign_24145053510: >-
+      ENABLED and otherwise unchanged. NOT paused, NOT renamed, budget unchanged, CPC
+      ceiling unchanged. It remains a temporary transition campaign; its retirement needs
+      separate analysis, plan, fingerprint and approval.
+    bidding: 'Both campaigns stay on Maximize Clicks (TARGET_SPEND). No change under this plan.'
+    cpc_ceilings: 'Both remain $30.00. No change under this plan.'
+
+  what_this_plan_does_not_do:
+    - creates nothing
+    - deletes nothing
+    - pauses nothing
+    - no campaign pause, rename, budget, CPC or bidding change
+    - no negative keyword, audience, asset, location, schedule or conversion change
+    - no website, GTM or WhatConverts change
+
+  rollback: >-
+    Set each enabled resource back to PAUSED. Fully reversible, one mutation per resource.
+
+  post_enablement_qa:
+    - confirm each of the six ad groups is ELIGIBLE and serving
+    - confirm impressions begin and Search Terms appear
+    - confirm the correct Final URL per ad group
+    - confirm no policy problem on any serving ad
+    - confirm no owner ad group is blocked by a routing negative
+    - confirm phone and form paths still work
+    - confirm campaign 24145053510 is still ENABLED and unchanged
+  approval_owner: Walter Correa

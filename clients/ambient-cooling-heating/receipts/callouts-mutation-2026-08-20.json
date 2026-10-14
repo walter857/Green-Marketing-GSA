@@ -1,0 +1,57 @@
+{
+ "executed_utc": "2026-08-20T19:01:34.920130Z",
+ "completed_utc": "2026-08-20T19:01:35.310036Z",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "approved_fingerprint": "A21587057F5C113E",
+ "package": "P0 remove unverified account-level callouts",
+ "execution_shape": "GoogleAdsService.Mutate, 2 mutate_operations, partial_failure=false, validate_only=false",
+ "operations_sent": 2,
+ "responses_returned": 2,
+ "removed_links": [
+  "customers/2401959466/customerAssets/89063098373~CALLOUT",
+  "customers/2401959466/customerAssets/89063098376~CALLOUT"
+ ],
+ "returned_resource_names": [
+  "customers/2401959466/customerAssets/89063098373~CALLOUT",
+  "customers/2401959466/customerAssets/89063098376~CALLOUT"
+ ],
+ "state_before": {
+  "89063098370": {
+   "text": "Get Free Online Quote",
+   "field_type": "CALLOUT",
+   "status": "ENABLED",
+   "primary": "ELIGIBLE"
+  },
+  "89063098373": {
+   "text": "Licensed & Insured",
+   "field_type": "CALLOUT",
+   "status": "ENABLED",
+   "primary": "ELIGIBLE"
+  },
+  "89063098376": {
+   "text": "Claim Your Discount",
+   "field_type": "CALLOUT",
+   "status": "ENABLED",
+   "primary": "ELIGIBLE"
+  }
+ },
+ "pre_write_counts": {
+  "campaign_assets": 271,
+  "campaigns": 23,
+  "ads": 113,
+  "keywords": 6968,
+  "conversion_actions": 16,
+  "campaign_criteria": 13810,
+  "ad_schedule": 139,
+  "ip_blocks": 2796
+ },
+ "pre_write_budgets": {
+  "24132507741": 141450000,
+  "24132507744": 42760000,
+  "24132507747": 138160000,
+  "24132507750": 78950000,
+  "24132507753": 26320000
+ },
+ "preflight_gates": "13/13"
+}

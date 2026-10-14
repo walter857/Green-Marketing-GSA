@@ -1,0 +1,707 @@
+{
+ "run_local": "2026-08-22T09:34:27.692627-04:00",
+ "fingerprint": "EACEC7CBAE85FF2B",
+ "customer_id": "2401959466",
+ "campaign_id": "24132507741",
+ "gates": {
+  "account name == 'Ambient Cooling - Live'": {
+   "pass": true,
+   "detail": "'Ambient Cooling - Live'"
+  },
+  "customer id == 2401959466": {
+   "pass": true,
+   "detail": "2401959466"
+  },
+  "timezone == America/New_York": {
+   "pass": true,
+   "detail": "America/New_York"
+  },
+  "currency == USD": {
+   "pass": true,
+   "detail": "USD"
+  },
+  "manager == false": {
+   "pass": true,
+   "detail": "False"
+  },
+  "test_account == false": {
+   "pass": true,
+   "detail": "False"
+  },
+  "Green Marketing 3373711342 ACTIVE": {
+   "pass": true,
+   "detail": "ACTIVE"
+  },
+  "ClickCease 2815082755 ACTIVE": {
+   "pass": true,
+   "detail": "ACTIVE"
+  },
+  "fingerprint reproduces exactly": {
+   "pass": true,
+   "detail": "EACEC7CBAE85FF2B"
+  },
+  "plan not marked VOID": {
+   "pass": true,
+   "detail": "no VOID key"
+  },
+  "plan not marked superseded": {
+   "pass": true,
+   "detail": "no superseded_by key"
+  },
+  "plan declares exactly 3 creates": {
+   "pass": true,
+   "detail": "ops=3"
+  },
+  "plan declares 0 updates / 0 removals": {
+   "pass": true,
+   "detail": ""
+  },
+  "plan declares 0 shared-list changes": {
+   "pass": true,
+   "detail": ""
+  },
+  "plan declares 0 account-level negative changes": {
+   "pass": true,
+   "detail": ""
+  },
+  "plan texts are exactly car/auto/boat": {
+   "pass": true,
+   "detail": "['car', 'auto', 'boat']"
+  },
+  "plan match types are all BROAD": {
+   "pass": true,
+   "detail": ""
+  },
+  "plan campaign resource is 24132507741": {
+   "pass": true,
+   "detail": ""
+  },
+  "plan customer is 2401959466": {
+   "pass": true,
+   "detail": ""
+  },
+  "campaign 24132507741 exists and is AC Repair": {
+   "pass": true,
+   "detail": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08"
+  },
+  "campaign status ENABLED": {
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  "AC Repair has ZERO campaign-level negative keywords": {
+   "pass": true,
+   "detail": "found 0"
+  },
+  "other four campaigns have ZERO campaign-level negatives": {
+   "pass": true,
+   "detail": "found 0"
+  },
+  "no shared negative list attached to any of the five": {
+   "pass": true,
+   "detail": "0 rows"
+  },
+  "no ad-group negatives on the five": {
+   "pass": true,
+   "detail": "0 rows"
+  },
+  "account-level set reads 59 members": {
+   "pass": true,
+   "detail": "59"
+  },
+  "car/auto/boat NOT already in the account-level set": {
+   "pass": true,
+   "detail": "[]"
+  },
+  "blocks 0 active positive keywords on the five": {
+   "pass": true,
+   "detail": "12 tested, clashes=[]"
+  },
+  "blocks 0 of 41 Ambient service phrases": {
+   "pass": true,
+   "detail": "[]"
+  },
+  "does NOT block Carrier-branded HVAC searches": {
+   "pass": true,
+   "detail": "[]"
+  },
+  "touches 0 protected terms": {
+   "pass": true,
+   "detail": "[]"
+  },
+  "blocks 0 historical converting queries": {
+   "pass": true,
+   "detail": "141 distinct converting terms, 172.3 conversions, blocked=[]"
+  },
+  "every supporting query contains a literal approved token": {
+   "pass": true,
+   "detail": ""
+  },
+  "all supporting terms are in the AC Repair campaign": {
+   "pass": true,
+   "detail": "['24132507741']"
+  },
+  "supporting terms produced ZERO conversions": {
+   "pass": true,
+   "detail": "0.00"
+  },
+  "at least 7 supporting terms observed": {
+   "pass": true,
+   "detail": "7"
+  },
+  "validate-only returns VALIDATE_OK": {
+   "pass": true,
+   "detail": "3 operations, 0 errors"
+  }
+ },
+ "queries": {
+  "target_campaign": "SELECT campaign.id, campaign.name, campaign.status, campaign.advertising_channel_type FROM campaign WHERE campaign.id = 24132507741",
+  "campaign_level_keyword_criteria": "SELECT campaign.id, campaign_criterion.criterion_id, campaign_criterion.keyword.text,\n campaign_criterion.keyword.match_type, campaign_criterion.negative, campaign_criterion.status\n FROM campaign_criterion WHERE campaign.id IN (24132507741,24132507744,24132507747,24132507750,24132507753)\n AND campaign_criterion.type = 'KEYWORD'",
+  "campaign_shared_set_on_five": "SELECT campaign.id, campaign_shared_set.shared_set, campaign_shared_set.status FROM campaign_shared_set WHERE campaign.id IN (24132507741,24132507744,24132507747,24132507750,24132507753)",
+  "ad_group_negatives_on_five": "SELECT ad_group.id, ad_group_criterion.criterion_id, ad_group_criterion.keyword.text,\n ad_group_criterion.keyword.match_type FROM ad_group_criterion\n WHERE campaign.id IN (24132507741,24132507744,24132507747,24132507750,24132507753) AND ad_group_criterion.type = 'KEYWORD'\n AND ad_group_criterion.negative = TRUE AND ad_group_criterion.status != 'REMOVED'",
+  "account_level_set": "SELECT shared_set.id, shared_set.name, shared_set.member_count FROM shared_set WHERE shared_set.type = 'ACCOUNT_LEVEL_NEGATIVE_KEYWORDS'",
+  "account_level_members_11252984411": "SELECT shared_criterion.criterion_id, shared_criterion.keyword.text, shared_criterion.keyword.match_type FROM shared_criterion WHERE shared_set.id = 11252984411",
+  "active_positive_keywords": "SELECT campaign.id, ad_group.id, ad_group_criterion.criterion_id,\n ad_group_criterion.keyword.text, ad_group_criterion.keyword.match_type,\n ad_group_criterion.status FROM ad_group_criterion\n WHERE campaign.id IN (24132507741,24132507744,24132507747,24132507750,24132507753) AND ad_group_criterion.type = 'KEYWORD'\n AND ad_group_criterion.negative = FALSE AND ad_group_criterion.status = 'ENABLED'",
+  "historical_converting_terms": "SELECT campaign.id, search_term_view.search_term, metrics.clicks, metrics.cost_micros,\n metrics.conversions, metrics.all_conversions FROM search_term_view\n WHERE segments.date BETWEEN '2019-01-01' AND '2026-08-22'\n AND metrics.conversions > 0",
+  "search_terms_since_launch": "SELECT campaign.id, campaign.name, ad_group.id, ad_group.name,\n search_term_view.search_term, search_term_view.status,\n segments.keyword.info.text, segments.keyword.info.match_type,\n metrics.impressions, metrics.clicks, metrics.cost_micros, metrics.conversions,\n metrics.all_conversions FROM search_term_view\n WHERE segments.date BETWEEN '2026-08-14' AND '2026-08-22'"
+ },
+ "manager_links_before": {
+  "2815082755": "ACTIVE",
+  "3373711342": "ACTIVE"
+ },
+ "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+ "campaign_level_keyword_criteria_before": [],
+ "package_already_fulfilled": false,
+ "shared_sets_attached_to_five": [],
+ "ad_group_negatives_on_five": [],
+ "account_level_negatives": [
+  {
+   "criterion_id": "10061081",
+   "text": "commercial",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10064981",
+   "text": "dayton",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10065501",
+   "text": "hagerstown",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10090121",
+   "text": "white",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10115030",
+   "text": "jba",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10210731",
+   "text": "cb",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10242046",
+   "text": "frigidaire",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10242571",
+   "text": "assistance",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10274070",
+   "text": "contract",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10277421",
+   "text": "rods",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10449241",
+   "text": "capital",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10544491",
+   "text": "financing",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10545841",
+   "text": "empire",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10546211",
+   "text": "foster",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10581771",
+   "text": "alliance",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10624201",
+   "text": "thermostat",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10624211",
+   "text": "thermostats",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10659386",
+   "text": "attic",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10698651",
+   "text": "aurora",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "10856061",
+   "text": "charest",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "11016891",
+   "text": "aac",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "11044031",
+   "text": "griffith",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "11143481",
+   "text": "hanover",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "11203171",
+   "text": "101",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "11458872",
+   "text": "a&d",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12184766",
+   "text": "hughes",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12341163",
+   "text": "ruud",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12407891",
+   "text": "maximus",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12605301",
+   "text": "upper marlboro",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12696423",
+   "text": "ibew",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12701406",
+   "text": "wayne",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12709996",
+   "text": "warner",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12712276",
+   "text": "rcs",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12719736",
+   "text": "ducane",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12721566",
+   "text": "peach",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12735426",
+   "text": "vernon",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12797116",
+   "text": "bac",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "12799876",
+   "text": "corbin",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "13670783",
+   "text": "rudd",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "14766721",
+   "text": "empower",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "14822591",
+   "text": "cw",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "15078610",
+   "text": "montgomery county",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "16555761",
+   "text": "wendt",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "19011703",
+   "text": "forest hill",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "20991241",
+   "text": "able",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "24333292",
+   "text": "burlington nc",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "26594193",
+   "text": "c&c",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "35908381",
+   "text": "stumps",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "39773471",
+   "text": "chestertown",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "150777453",
+   "text": "chisholm",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "332203255",
+   "text": "mcdaniels",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "4367690940",
+   "text": "ecobee",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "11920474920",
+   "text": "\ub73b",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "297674824691",
+   "text": "farnen",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "298117715756",
+   "text": "hvacc",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "300829403401",
+   "text": "dermer",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "308892326819",
+   "text": "tetteris",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "1424229155884",
+   "text": "cbhvac",
+   "match": "BROAD"
+  },
+  {
+   "criterion_id": "2417001304723",
+   "text": "harmonaire",
+   "match": "BROAD"
+  }
+ ],
+ "account_level_set_id": "11252984411",
+ "active_positive_keywords": [
+  {
+   "campaign": "24132507741",
+   "ad_group": "202339087834",
+   "text": "ac repair near me",
+   "match": "PHRASE"
+  },
+  {
+   "campaign": "24132507741",
+   "ad_group": "202339087834",
+   "text": "ac repair near me",
+   "match": "EXACT"
+  },
+  {
+   "campaign": "24132507741",
+   "ad_group": "202339087874",
+   "text": "hvac replacement near me",
+   "match": "EXACT"
+  },
+  {
+   "campaign": "24132507741",
+   "ad_group": "202339087874",
+   "text": "hvac replacement near me",
+   "match": "PHRASE"
+  },
+  {
+   "campaign": "24132507744",
+   "ad_group": "202339087594",
+   "text": "gas boiler repair",
+   "match": "EXACT"
+  },
+  {
+   "campaign": "24132507744",
+   "ad_group": "202339087594",
+   "text": "gas boiler repair",
+   "match": "PHRASE"
+  },
+  {
+   "campaign": "24132507747",
+   "ad_group": "202339087634",
+   "text": "hvac installers",
+   "match": "PHRASE"
+  },
+  {
+   "campaign": "24132507747",
+   "ad_group": "202339087634",
+   "text": "hvac installers",
+   "match": "EXACT"
+  },
+  {
+   "campaign": "24132507750",
+   "ad_group": "202339087674",
+   "text": "hvac repair near me",
+   "match": "PHRASE"
+  },
+  {
+   "campaign": "24132507750",
+   "ad_group": "202339087674",
+   "text": "hvac repair near me",
+   "match": "EXACT"
+  },
+  {
+   "campaign": "24132507753",
+   "ad_group": "200159223798",
+   "text": "hvac replacement near me",
+   "match": "EXACT"
+  },
+  {
+   "campaign": "24132507753",
+   "ad_group": "200159223798",
+   "text": "hvac replacement near me",
+   "match": "PHRASE"
+  }
+ ],
+ "historical_converting_term_count": 141,
+ "historical_converting_conversions": 172.33,
+ "converting_terms_blocked": [],
+ "search_term_row_count_since_launch": 425,
+ "supporting_terms": [
+  {
+   "term": "car air conditioner repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 5,
+   "clicks": 2,
+   "cost": 47.78,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "car"
+   ]
+  },
+  {
+   "term": "ac car repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "car"
+   ]
+  },
+  {
+   "term": "auto ac repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "auto"
+   ]
+  },
+  {
+   "term": "bmw car ac repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "car"
+   ]
+  },
+  {
+   "term": "boat air conditioner repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "boat"
+   ]
+  },
+  {
+   "term": "car ac repair near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "car"
+   ]
+  },
+  {
+   "term": "car ac service near me",
+   "campaign": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "ad_group": "202339087834",
+   "ad_group_name": "SKAG | AC Repair Near Me",
+   "matched_keyword": "ac repair near me",
+   "match_type": "PHRASE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0,
+   "covered_by": [
+    "car"
+   ]
+  }
+ ],
+ "supporting_window": "2026-08-14 .. 2026-08-22",
+ "supporting_totals": {
+  "terms": 7,
+  "cost": 47.78,
+  "conversions": 0.0,
+  "clicks": 2,
+  "impressions": 19
+ },
+ "uncovered_variant_terms_observed": [
+  {
+   "term": "automotive ac mechanic near me",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "campaign": "24132507741"
+  },
+  {
+   "term": "automotive air conditioning repair near me",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "campaign": "24132507741"
+  }
+ ],
+ "validate_only": {
+  "status": "VALIDATE_OK",
+  "operations": 3,
+  "results_returned": 0,
+  "errors": 0
+ },
+ "preflight_pass": true,
+ "failed_gates": []
+}

@@ -1,0 +1,199 @@
+{
+ "timestamp_utc": "2026-08-18T20:00:54.164907Z",
+ "replacement_ads": {
+  "821319509209": {
+   "ad_group_id": "202339087594",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "primary_status": "ELIGIBLE",
+   "primary_reasons": [],
+   "topics": [],
+   "strength": "PENDING",
+   "impressions": 0,
+   "clicks": 0,
+   "cost": 0.0,
+   "fingerprint_match": true
+  },
+  "821319509212": {
+   "ad_group_id": "202339087594",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "primary_status": "ELIGIBLE",
+   "primary_reasons": [],
+   "topics": [],
+   "strength": "PENDING",
+   "impressions": 0,
+   "clicks": 0,
+   "cost": 0.0,
+   "fingerprint_match": true
+  },
+  "821319509197": {
+   "ad_group_id": "202339087634",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "primary_status": "ELIGIBLE",
+   "primary_reasons": [],
+   "topics": [],
+   "strength": "PENDING",
+   "impressions": 0,
+   "clicks": 0,
+   "cost": 0.0,
+   "fingerprint_match": true
+  },
+  "821319509200": {
+   "ad_group_id": "202339087634",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "primary_status": "ELIGIBLE",
+   "primary_reasons": [],
+   "topics": [],
+   "strength": "PENDING",
+   "impressions": 0,
+   "clicks": 0,
+   "cost": 0.0,
+   "fingerprint_match": true
+  },
+  "821319509203": {
+   "ad_group_id": "200159223798",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "primary_status": "ELIGIBLE",
+   "primary_reasons": [],
+   "topics": [],
+   "strength": "PENDING",
+   "impressions": 0,
+   "clicks": 0,
+   "cost": 0.0,
+   "fingerprint_match": true
+  },
+  "821319509206": {
+   "ad_group_id": "200159223798",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "primary_status": "ELIGIBLE",
+   "primary_reasons": [],
+   "topics": [],
+   "strength": "PENDING",
+   "impressions": 0,
+   "clicks": 0,
+   "cost": 0.0,
+   "fingerprint_match": true
+  }
+ },
+ "ad_groups": {
+  "202339087594": {
+   "name": "SKAG | Gas Boiler Repair",
+   "status": "ENABLED",
+   "primary": "NOT_ELIGIBLE",
+   "reasons": [
+    "HAS_ADS_DISAPPROVED"
+   ],
+   "today": [
+    0,
+    0,
+    0.0,
+    0.0
+   ]
+  },
+  "202339087634": {
+   "name": "SKAG | HVAC Installation",
+   "status": "ENABLED",
+   "primary": "NOT_ELIGIBLE",
+   "reasons": [
+    "HAS_ADS_DISAPPROVED"
+   ],
+   "today": [
+    0,
+    0,
+    0.0,
+    0.0
+   ]
+  },
+  "200159223798": {
+   "name": "SKAG | HVAC Replacement Near Me",
+   "status": "ENABLED",
+   "primary": "NOT_ELIGIBLE",
+   "reasons": [
+    "HAS_ADS_DISAPPROVED"
+   ],
+   "today": [
+    0,
+    0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "campaigns": {
+  "24132507744": {
+   "name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "status": "ENABLED",
+   "serving": "SERVING",
+   "primary": "NOT_ELIGIBLE",
+   "reasons": [
+    "BIDDING_STRATEGY_LEARNING",
+    "HAS_ADS_DISAPPROVED"
+   ],
+   "today": [
+    0,
+    0,
+    0.0,
+    0.0
+   ]
+  },
+  "24132507747": {
+   "name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "status": "ENABLED",
+   "serving": "SERVING",
+   "primary": "NOT_ELIGIBLE",
+   "reasons": [
+    "BIDDING_STRATEGY_LEARNING",
+    "HAS_ADS_DISAPPROVED"
+   ],
+   "today": [
+    0,
+    0,
+    0.0,
+    0.0
+   ]
+  },
+  "24132507753": {
+   "name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "status": "ENABLED",
+   "serving": "SERVING",
+   "primary": "NOT_ELIGIBLE",
+   "reasons": [
+    "BIDDING_STRATEGY_LEARNING",
+    "HAS_ADS_DISAPPROVED"
+   ],
+   "today": [
+    0,
+    0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "verdict": {
+  "all_replacements_enabled": true,
+  "all_replacements_approved": true,
+  "all_replacements_eligible": true,
+  "no_replacement_policy_topics": true,
+  "replacements_match_fingerprint": true,
+  "has_ads_disapproved_cleared_from_rollup": false,
+  "no_other_real_delivery_blocker": true,
+  "originals_still_paused": true,
+  "exactly_two_enabled_approved_per_ad_group": true,
+  "no_duplicate_rsa": true,
+  "unrelated_resources_unchanged": true,
+  "manager_links_unchanged": true,
+  "no_queued_package_applied": true
+ },
+ "other_blockers": []
+}

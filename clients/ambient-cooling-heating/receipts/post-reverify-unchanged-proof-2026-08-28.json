@@ -1,0 +1,125 @@
+{
+ "generated_local": "2026-08-27T19:02:54.759044-04:00",
+ "customer_id": "2401959466",
+ "purpose": "Prove the 2026-08-28 re-verification pass changed nothing.",
+ "checks": {
+  "non-removed campaigns": {
+   "observed": 23,
+   "expected": 23,
+   "pass": true
+  },
+  "live positive keywords": {
+   "observed": 10,
+   "expected": 10,
+   "pass": true
+  },
+  "campaign-level negatives (still only car/auto/boat)": {
+   "observed": [
+    "10000390",
+    "10008241",
+    "10019071"
+   ],
+   "expected": [
+    "10000390",
+    "10008241",
+    "10019071"
+   ],
+   "pass": true
+  },
+  "five budgets (micros)": {
+   "observed": {
+    "15787409435": 141450000,
+    "15787409438": 42760000,
+    "15787409441": 176150000,
+    "15787409444": 78950000,
+    "15787409447": 26320000
+   },
+   "expected": {
+    "15787409435": 141450000,
+    "15787409438": 42760000,
+    "15787409441": 176150000,
+    "15787409444": 78950000,
+    "15787409447": 26320000
+   },
+   "pass": true
+  },
+  "CPC ceilings still uncapped": {
+   "observed": [
+    0
+   ],
+   "expected": [
+    0
+   ],
+   "pass": true
+  },
+  "excluded_parent_asset_set_types still empty": {
+   "observed": [
+    []
+   ],
+   "expected": [
+    []
+   ],
+   "pass": true
+  },
+  "account-level negative list members (hanover still present)": {
+   "observed": 59,
+   "expected": 59,
+   "pass": true
+  },
+  "LOCATION_SYNC asset set 8620443109 still ENABLED": {
+   "observed": [
+    "ENABLED"
+   ],
+   "expected": [
+    "ENABLED"
+   ],
+   "pass": true
+  },
+  "active SITELINK associations on the five": {
+   "observed": 40,
+   "expected": 40,
+   "pass": true
+  },
+  "non-removed conversion actions": {
+   "observed": 16,
+   "expected": 16,
+   "pass": true
+  },
+  "biddable campaign conversion goals": {
+   "observed": 25,
+   "expected": 25,
+   "pass": true
+  },
+  "WC Lead include_in_conversions_metric still false": {
+   "observed": [
+    false
+   ],
+   "expected": [
+    false
+   ],
+   "pass": true
+  },
+  "ClickCease IP exclusions": {
+   "observed": 2796,
+   "expected": 2796,
+   "pass": true
+  },
+  "manager links": {
+   "observed": {
+    "2815082755": "ACTIVE",
+    "3373711342": "ACTIVE"
+   },
+   "expected": {
+    "2815082755": "ACTIVE",
+    "3373711342": "ACTIVE"
+   },
+   "pass": true
+  },
+  "most recent change event": {
+   "observed": "2026-08-22 09:36:07.725231",
+   "expected": "2026-08-22 09:36:07.725231",
+   "pass": true
+  }
+ },
+ "overall": "PASS - the 2026-08-28 re-verification pass changed nothing"
+}

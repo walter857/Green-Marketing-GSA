@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Green Marketing client work order",
+  "type": "object",
+  "required": ["work_order"],
+  "properties": {
+    "work_order": {
+      "type": "object",
+      "required": ["client_slug", "business_name", "account", "service", "task", "scope_approval"],
+      "properties": {
+        "client_slug": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "business_name": {"type": "string", "minLength": 1},
+        "account": {
+          "type": "object",
+          "required": ["exact_child_account_name", "child_customer_id"],
+          "properties": {
+            "exact_child_account_name": {"type": "string", "minLength": 1},
+            "child_customer_id": {"type": "string", "pattern": "^[0-9]{10}$"},
+            "manager_customer_id": {"type": "string", "pattern": "^[0-9]{10}$"}
+          }
+        },
+        "service": {
+          "type": "object",
+          "required": ["vertical", "exact_primary_service"],
+          "properties": {
+            "vertical": {
+              "type": "string",
+              "enum": ["landscaping", "hardscaping", "heating-cooling", "similar-local-service"]
+            },
+            "exact_primary_service": {"type": "string", "minLength": 1},
+            "related_services": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "task": {
+          "type": "object",
+          "required": ["type", "mode", "request"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "onboard", "audit", "lsa", "keyword-research", "campaign-build",
+                "campaign-revamp", "ads-assets", "landing-page", "conversions",
+                "search-terms", "speed-to-lead", "sales", "offline-conversions",
+                "reporting", "deployment", "full-system"
+              ]
+            },
+            "mode": {"type": "string", "enum": ["read", "draft", "create-paused", "enable"]},
+            "request": {"type": "string", "minLength": 1},
+            "date_range": {"type": "string"}
+          }
+        },
+        "scope_approval": {
+          "type": "object",
+          "required": ["approved"],
+          "properties": {
+            "approved": {"type": "boolean"},
+            "approved_by": {"type": "string"},
+            "reason": {"type": "string"}
+          }
+        },
+        "inputs": {
+          "type": "object",
+          "properties": {
+            "website_or_final_url": {"type": "string"},
+            "service_area": {"type": "array", "items": {"type": "string"}},
+            "daily_budget": {"type": ["number", "null"], "exclusiveMinimum": 0},
+            "primary_conversion_goal": {"type": "string"},
+            "source_files": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "approval_owner": {"type": "string"}
+      }
+    }
+  }
+}

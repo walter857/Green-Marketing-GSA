@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Green Marketing client profile",
+  "type": "object",
+  "required": ["client"],
+  "properties": {
+    "client": {
+      "type": "object",
+      "required": ["slug", "business_name", "vertical", "primary_service", "google_ads", "website", "offer", "service_area", "schedule", "conversions", "permissions"],
+      "properties": {
+        "slug": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "business_name": {"type": "string", "minLength": 1},
+        "vertical": {
+          "type": "string",
+          "enum": ["landscaping", "hardscaping", "heating-cooling", "similar-local-service"]
+        },
+        "primary_service": {"type": "string", "minLength": 1},
+        "google_ads": {
+          "type": "object",
+          "required": ["child_customer_id", "exact_child_account_name", "manager_customer_id", "currency", "timezone"],
+          "properties": {
+            "child_customer_id": {"type": "string", "pattern": "^[0-9]{10}$"},
+            "exact_child_account_name": {"type": "string", "minLength": 1},
+            "manager_customer_id": {"type": "string", "pattern": "^[0-9]{10}$"},
+            "currency": {"type": "string", "pattern": "^[A-Z]{3}$"},
+            "timezone": {"type": "string", "minLength": 1}
+          }
+        },
+        "website": {
+          "type": "object",
+          "required": ["primary_url"],
+          "properties": {
+            "primary_url": {"type": "string", "format": "uri"},
+            "landing_page_base_url": {"type": "string"},
+            "phone_display": {"type": "string"},
+            "phone_e164": {"type": "string"}
+          }
+        },
+        "offer": {"type": "object"},
+        "service_area": {"type": "object"},
+        "schedule": {"type": "object"},
+        "conversions": {"type": "object"},
+        "integrations": {"type": "object"},
+        "permissions": {"type": "object"}
+      }
+    }
+  }
+}

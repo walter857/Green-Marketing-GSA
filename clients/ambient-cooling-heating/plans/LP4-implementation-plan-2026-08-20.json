@@ -1,0 +1,249 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-LP4-implementation-plan",
+ "version": "2026-08-20-v4",
+ "priority": "P1",
+ "builds_on": {
+  "C99270C413C34431": "APPROVED SPECIFICATION FOR DEVELOPER REVIEW ONLY. Approval of that spec is NOT authorization to publish."
+ },
+ "run_class": "READ + DRAFT ONLY. Nothing published. No website, GTM or Google Ads change made by this request.",
+ "change_control": "PUBLICATION REQUIRES A SEPARATE EXPLICIT AUTHORIZATION naming this fingerprint. Staging work may begin on developer review; production release may not.",
+ "client": {
+  "account": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "platform": "WordPress + Divi 5.10.1 + Gravity Forms 3.0.2",
+  "host": "SiteGround with SG-Captcha",
+  "gtm": "GTM-PQTPQ436",
+  "ga4": "G-9X9ZHNCRWF",
+  "whatconverts_profile": "105803",
+  "google_ads_conversion_id": "11155434808"
+ },
+ "affected_components": [
+  {
+   "component": "Divi child theme functions.php",
+   "path": "wp-content/themes/<divi-child>/functions.php",
+   "change": "Enqueue a new attribution script on the five offer templates only. Register the REST route that mints the backend lead id.",
+   "risk": "LOW"
+  },
+  {
+   "component": "New attribution script",
+   "path": "wp-content/themes/<divi-child>/assets/js/amb-attribution.js",
+   "change": "NEW FILE. Captures URL params on first pageview, writes the amb_attr first-party cookie plus sessionStorage mirror, and populates the Gravity Forms hidden fields on DOM ready and again immediately before submit.",
+   "risk": "LOW"
+  },
+  {
+   "component": "REST endpoint for the lead id",
+   "path": "wp-content/themes/<divi-child>/inc/class-amb-lead-id.php",
+   "change": "NEW FILE. Registers POST /wp-json/ambient/v1/lead-id. Returns an opaque UUID v4. No personal data in, no personal data out.",
+   "risk": "LOW"
+  },
+  {
+   "component": "Gravity Forms form 1 field set",
+   "path": "WP Admin > Forms > <HVAC offer form, id 1> > Fields",
+   "change": "Add 17 HIDDEN fields, one per attribution value, each with a stable admin label and a parameter name matching the amb_attr key. Do NOT alter the 5 visible fields or their required flags.",
+   "risk": "MEDIUM - touches the live lead-capture form"
+  },
+  {
+   "component": "Gravity Forms confirmation",
+   "path": "WP Admin > Forms > 1 > Settings > Confirmations",
+   "change": "Ensure the confirmation renders once and exposes the returned lead_id to the page so the dataLayer push can read it.",
+   "risk": "MEDIUM"
+  },
+  {
+   "component": "gform_after_submission hook",
+   "path": "child theme functions.php",
+   "change": "On successful entry creation, mint or persist the lead id onto the entry meta and expose it to the confirmation output.",
+   "risk": "MEDIUM"
+  },
+  {
+   "component": "Divi page templates for the five offer pages",
+   "path": "Divi Library / page layouts for ac-repair, hvac-repair, hvac-installation, hvac-replacement, gas-boiler-repair",
+   "change": "Remove the two duplicate Gravity Forms module instances so exactly ONE form renders. Replace the removed placements with anchor links to the single form. Normalise every hardcoded tel href to tel:+14107056354. Add Privacy Policy and Terms links beside the submit button and in the footer.",
+   "risk": "MEDIUM-HIGH - layout and form placement on live pages"
+  },
+  {
+   "component": "Privacy Policy and Terms pages",
+   "path": "WordPress pages on the main site or the offer subdomain",
+   "change": "Confirm both exist and return HTTP 200. Create or link as required.",
+   "risk": "LOW"
+  }
+ ],
+ "code_changes": {
+  "amb-attribution.js": {
+   "responsibilities": [
+    "On first pageview of the session, read gclid, gbraid, wbraid, utm_source, utm_medium, utm_campaign, utm_term, utm_content, campaign_id, adgroup_id, matched_keyword, device from the query string.",
+    "Also record landing_page_url (window.location.href), referrer (document.referrer) and first_seen_timestamp (ISO-8601 UTC).",
+    "Write amb_attr as a first-party cookie on .ambientcoolingandheating.com, 90 days, SameSite=Lax, Secure. Mirror to sessionStorage.",
+    "FIRST TOUCH WINS: never overwrite a non-empty stored value later in the session.",
+    "Populate the Gravity Forms hidden fields on DOM ready and again on the submit handler.",
+    "Set submit_timestamp at submit time."
+   ],
+   "must_not": [
+    "Must not generate the lead id. That is backend-only.",
+    "Must not write any personal data into the cookie.",
+    "Must not modify any href that WhatConverts rewrites at runtime."
+   ]
+  },
+  "class-amb-lead-id.php": {
+   "responsibilities": [
+    "Expose POST /wp-json/ambient/v1/lead-id returning {\"lead_id\": \"<uuid v4>\"}.",
+    "Called only from gform_after_submission, server side, once per accepted entry.",
+    "Persist lead_id to entry meta so it is queryable later for reconciliation."
+   ],
+   "lead_id_properties": [
+    "opaque UUID v4",
+    "contains no personal information",
+    "unique per confirmed submission",
+    "returned only after successful form processing",
+    "written to entry meta and passed to the dataLayer"
+   ]
+  },
+  "datalayer_push": {
+   "where": "Gravity Forms confirmation output on the offer pages",
+   "guard": "if (window.__ambFired === leadId) { return; } window.__ambFired = leadId;",
+   "event": "amb_lead_submit",
+   "keys": [
+    "event",
+    "lead_id",
+    "form_id",
+    "form_instance",
+    "service",
+    "landing_page_url",
+    "referrer",
+    "gclid",
+    "gbraid",
+    "wbraid",
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_term",
+    "utm_content",
+    "campaign_id",
+    "adgroup_id",
+    "matched_keyword",
+    "device",
+    "first_seen_timestamp",
+    "submit_timestamp"
+   ],
+   "fires_only_after": "the backend has accepted the entry and returned lead_id. Never on client-side validation success alone."
+  }
+ },
+ "gtm_changes": {
+  "container": "GTM-PQTPQ436",
+  "rule": "Work in a GTM WORKSPACE. Do not publish the container version until production release is separately authorized.",
+  "new_variables": [
+   "DLV - lead_id",
+   "DLV - service",
+   "DLV - gclid",
+   "DLV - utm_campaign",
+   "DLV - campaign_id",
+   "DLV - adgroup_id",
+   "DLV - matched_keyword"
+  ],
+  "new_trigger": {
+   "name": "CE - amb_lead_submit",
+   "type": "Custom Event",
+   "event_name": "amb_lead_submit",
+   "condition": "DLV - lead_id does not equal (empty)"
+  },
+  "tag_changes": [
+   {
+    "tag": "Google Ads conversion - LP Submit Lead Forms",
+    "conversion_action": "6885463625",
+    "conversion_id": "11155434808",
+    "change": "Fire on CE - amb_lead_submit. Set transaction_id = {{DLV - lead_id}}.",
+    "accurate_scope": "This prevents conversion action 6885463625 from counting the same submission more than once. It does NOT deduplicate against WC Lead 7643656486 or any other conversion action. Google Ads has no cross-action deduplication."
+   },
+   {
+    "tag": "GA4 event - generate_lead",
+    "stream": "G-9X9ZHNCRWF",
+    "change": "Fire on the same trigger with the same parameters, for diagnostics only. GA4 actions are already Secondary and excluded from the conversions metric."
+   }
+  ],
+  "must_not_change": [
+   "The existing GTM head snippet and noscript iframe - exactly one of each must remain.",
+   "The Google Ads conversion linker.",
+   "Consent Mode v2 signals already present (ad_storage, analytics_storage, ad_user_data, ad_personalization).",
+   "Any WhatConverts tag or script."
+  ]
+ },
+ "whatconverts_preservation_checks": [
+  "Profile 105803 script still loads on all five offer pages.",
+  "Cookies wc_visitor, wc_client, wc_client_current and wc_swap are still set.",
+  "Dynamic number insertion still swaps the displayed number to (410) 914-1456.",
+  "The hardcoded base and JavaScript-disabled fallback is still (410) 705-6354.",
+  "The DNI swap rule still binds correctly after the tel href normalisation. This is the single highest-risk interaction in the whole package: the swap rule has historically been number-specific, so changing a hardcoded href can silently stop the swap. Verify on staging before production.",
+  "WhatConverts still captures gclid, gbraid, wbraid and UTMs into its own cookies.",
+  "No WhatConverts tag is removed, reordered or wrapped in a consent gate that did not previously apply to it."
+ ],
+ "phone_architecture": {
+  "(410) 705-6354": "KEEP as hardcoded base and fallback on the offer pages and on Google Ads call asset 407995613637.",
+  "(410) 914-1456": "KEEP. Approved WhatConverts DNI number. NOT a defect.",
+  "(410) 761-0932": "CORRECT on ambientcoolingandheating.com. Leave it alone there. It must simply not appear on the offer subdomain or the paid call asset.",
+  "fix": "Normalise hardcoded offer-page tel hrefs from 'tel:4107056354' and 'tel:(410) 705-6354' to 'tel:+14107056354'."
+ },
+ "staging_test_plan": {
+  "staging_url": "https://staging.offer.ambientcoolingandheating.com/ or the SiteGround staging clone. CONFIRM THE EXACT URL WITH THE DEVELOPER before testing.",
+  "prerequisites": [
+   "Full WordPress database backup taken and restorable.",
+   "Divi child theme snapshot taken.",
+   "GTM container version noted for rollback.",
+   "Staging is noindex and excluded from live WhatConverts billing if possible; if not, tag test submissions clearly so they can be excluded."
+  ],
+  "sequence": [
+   "1. Deploy the child theme changes and the new REST route to staging only.",
+   "2. Add the 17 hidden fields to the staging copy of Gravity Forms form 1.",
+   "3. Remove the duplicate form instances from the five staging page layouts.",
+   "4. Normalise tel hrefs and add the Privacy and Terms links.",
+   "5. Load the GTM workspace in Preview mode against staging.",
+   "6. Run every acceptance test AT-1 to AT-15 on every one of the five pages.",
+   "7. Submit at least one real test entry per page, desktop and mobile.",
+   "8. Confirm exactly one Google Ads conversion payload and one GA4 event per submission.",
+   "9. Confirm WhatConverts still swaps the number and still records the session.",
+   "10. Capture evidence for every test before requesting publication authorization."
+  ]
+ },
+ "acceptance_results_required_before_production": [
+  "AT-1 attribution captured from URL - PASS on 5/5 pages",
+  "AT-2 first touch wins - PASS",
+  "AT-3 hidden fields populated and matching amb_attr - PASS on 5/5",
+  "AT-4 exactly one form element per page - PASS on 5/5",
+  "AT-5 every DOM id unique, W3C validator zero duplicate-id errors - PASS on 5/5",
+  "AT-6 backend lead_id returned only after successful processing - PASS",
+  "AT-7 single fire within conversion action 6885463625 across reload, Back/Forward and confirmation re-render - PASS",
+  "AT-8 transaction_id equals the backend lead_id in the Google Ads tag payload - PASS",
+  "AT-9 zero events on validation failure - PASS",
+  "AT-10 GTM-PQTPQ436 present exactly once, one container instance - PASS on 5/5",
+  "AT-11 WhatConverts cookies set and number swapped to (410) 914-1456 - PASS on 5/5",
+  "AT-12 every hardcoded tel href is tel:+14107056354 and zero occurrences of 4107610932 on the offer subdomain - PASS on 5/5",
+  "AT-13 Privacy and Terms links visible, keyboard focusable, HTTP 200 - PASS on 5/5",
+  "AT-14 zero uncaught JavaScript errors - PASS on 5/5",
+  "AT-15 FCP within the current 328-420 ms band and load within 1.8-2.1 s - PASS on 5/5",
+  "Browser matrix: all 7 cells green, plus the three privacy-mode cases and the three accessibility cases.",
+  "One real end-to-end submission per page verified in Gravity Forms entries, GA4 DebugView and WhatConverts."
+ ],
+ "rollback_procedure": {
+  "trigger": "Any acceptance test fails in production, form submissions drop, the WhatConverts swap stops, or conversions stop recording.",
+  "steps": [
+   "1. Revert the GTM container to the previously published version. This is immediate and reverses all tag changes on its own.",
+   "2. Restore the Divi child theme from the pre-change snapshot.",
+   "3. Restore the Gravity Forms form 1 configuration from the pre-change export.",
+   "4. Restore the five Divi page layouts from the Divi Library revision history.",
+   "5. If entry data is affected, restore the WordPress database from the pre-change backup. Only do this if entries were lost, because it also rolls back any genuine leads captured since the backup.",
+   "6. Re-run AT-4, AT-10, AT-11 and AT-12 to confirm the site is back to its prior state."
+  ],
+  "recovery_time_objective": "GTM revert under 5 minutes; theme and form restore under 30 minutes; full database restore under 2 hours.",
+  "data_loss": "None expected. The only destructive step is the database restore, which is last resort and would lose leads captured after the backup point."
+ },
+ "corrected_deduplication_language": {
+  "lead_id_does": "Prevents repeat firing within the SAME Google Ads conversion action (6885463625), via transaction_id.",
+  "lead_id_does_not": "Does NOT deduplicate two different conversion actions. It will not stop WC Lead 7643656486 from also counting a submission that 6885463625 counted.",
+  "never_describe_as": "Cross-action deduplication. That does not exist in Google Ads.",
+  "the_actual_control": "Exactly one conversion action Primary and counted per physical lead event. That is a Google Ads configuration decision, pending the WhatConverts console answers, not a landing-page change."
+ },
+ "google_ads_impact": {
+  "mutations": 0,
+  "note": "ZERO Google Ads API mutations. The Google Ads conversion tag is reconfigured inside GTM, which is a GTM change."
+ },
+ "risk": "MEDIUM-HIGH overall, concentrated in three places: editing the live Gravity Form, removing duplicate form instances from live Divi layouts, and the interaction between tel href normalisation and the WhatConverts number-swap rule. All three are staging-gated.",
+ "plan_fingerprint": "4A5BB56E2F15A5D2"
+}

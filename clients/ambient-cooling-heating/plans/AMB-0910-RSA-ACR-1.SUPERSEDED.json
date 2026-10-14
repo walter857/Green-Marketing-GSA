@@ -1,0 +1,16 @@
+{
+ "plan_name": "AMB-0910-RSA-ACR-1",
+ "fingerprint": "19E2F2FFC311",
+ "status": "SUPERSEDED",
+ "status_recorded_local": "2026-09-10T13:35:30.550339-04:00",
+ "do_not_execute": true,
+ "executed": false,
+ "google_ads_operations_performed": 0,
+ "reason": "The package used 'Licensed & Insured' in one headline and one description. That claim is withdrawn from this workstream by instruction on 2026-09-10, so every fingerprint containing it is stale. No licence number or certificate of insurance is required, because the claim will not be used.",
+ "assets_carrying_the_withdrawn_claim": [
+  "Licensed & Insured AC Repair",
+  "Licensed and insured AC repair across Severn, Severna Park and Columbia. Free estimates."
+ ],
+ "superseded_by": "AMB-0910-RSA-ACR-2",
+ "what_was_kept": "the 3-headlines-pinned-to-HEADLINE_1 structure, the create-paused class, the ad group, the final URL and the measurement plan"
+}

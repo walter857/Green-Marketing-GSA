@@ -1,0 +1,56 @@
+{
+  "target_keyword": {
+    "rn": "customers/8735782888/adGroupCriteria/151125103616~1442898236",
+    "id": "1442898236",
+    "text": "sprinkler head replacement",
+    "match": "EXACT",
+    "status": "PAUSED",
+    "campaign_id": "20315156610",
+    "campaign": "Irrigation & Sprinklers",
+    "campaign_status": "ENABLED",
+    "ag_id": "151125103616",
+    "ag": "Sprinkler Repair Near Me",
+    "ag_status": "ENABLED",
+    "final_urls": []
+  },
+  "is_new_since_backup": true,
+  "negatives": [
+    {
+      "rn": "customers/8735782888/campaignCriteria/20315156610~295473723839",
+      "id": "295473723839",
+      "text": "sprinkler head replacement",
+      "match": "BROAD",
+      "type": "KEYWORD",
+      "negative": true,
+      "status": "ENABLED",
+      "campaign_id": "20315156610",
+      "campaign": "Irrigation & Sprinklers",
+      "campaign_status": "ENABLED",
+      "blocks_target": true
+    },
+    {
+      "rn": "customers/8735782888/campaignCriteria/20315156610~301794223657",
+      "id": "301794223657",
+      "text": "head replacement",
+      "match": "BROAD",
+      "type": "KEYWORD",
+      "negative": true,
+      "status": "ENABLED",
+      "campaign_id": "20315156610",
+      "campaign": "Irrigation & Sprinklers",
+      "campaign_status": "ENABLED",
+      "blocks_target": true
+    }
+  ],
+  "both_block": true,
+  "other_campaign_blockers": [],
+  "ad_group_blockers": [
+    {
+      "id": "503001",
+      "text": "",
+      "match": "UNSPECIFIED",
+      "ag": "Sprinkler Repair Near Me"
+    }
+  ],
+  "total_negatives_before": 657
+}

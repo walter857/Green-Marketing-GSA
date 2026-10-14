@@ -1,0 +1,85 @@
+{
+  "step": "2-containment-retry",
+  "results": [
+    {
+      "id": "7717433751",
+      "name": "Whatconverts Form",
+      "mask": [
+        "primary_for_goal"
+      ],
+      "api_accepted": true,
+      "resource_name": "customers/8735782888/conversionActions/7717433751",
+      "before_primary": true,
+      "after_primary": false,
+      "applied": true,
+      "collateral_drift": {
+        "include_in_conversions_metric": [
+          true,
+          false
+        ]
+      },
+      "include_in_conversions_metric_after": false
+    },
+    {
+      "id": "7717433754",
+      "name": "Whatconverts Calls",
+      "mask": [
+        "primary_for_goal"
+      ],
+      "api_accepted": true,
+      "resource_name": "customers/8735782888/conversionActions/7717433754",
+      "before_primary": true,
+      "after_primary": false,
+      "applied": true,
+      "collateral_drift": {
+        "include_in_conversions_metric": [
+          true,
+          false
+        ]
+      },
+      "include_in_conversions_metric_after": false
+    }
+  ],
+  "preserved": {
+    "6617381255": {
+      "name": "Calls from Ads",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "status": "ENABLED",
+      "category": "PHONE_CALL_LEAD",
+      "origin": "CALL_FROM_ADS",
+      "type": "AD_CALL",
+      "counting": "ONE_PER_CLICK",
+      "click_window": 30,
+      "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "default_value": 0.0
+    },
+    "6886101052": {
+      "name": "Pro Green DFW - Lp - Submit Lead Form",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "status": "ENABLED",
+      "category": "SUBMIT_LEAD_FORM",
+      "origin": "WEBSITE",
+      "type": "WEBPAGE",
+      "counting": "ONE_PER_CLICK",
+      "click_window": 30,
+      "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "default_value": 0.0
+    },
+    "6886103719": {
+      "name": "Pro Green DFW - Lp - Phone Call Leads",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "status": "ENABLED",
+      "category": "PHONE_CALL_LEAD",
+      "origin": "WEBSITE",
+      "type": "WEBSITE_CALL",
+      "counting": "ONE_PER_CLICK",
+      "click_window": 30,
+      "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "default_value": 0.0
+    }
+  },
+  "all_applied": true
+}

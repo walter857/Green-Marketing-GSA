@@ -1,0 +1,212 @@
+{
+ "captured_utc": "2026-08-21T12:36:27.565697Z",
+ "approved_fingerprint": "D441DEFC58EB5643",
+ "state_before": {
+  "820900825560": {
+   "status": "ENABLED",
+   "strength": "POOR",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": []
+  },
+  "820900825563": {
+   "status": "ENABLED",
+   "strength": "AVERAGE",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": []
+  },
+  "821714108336": {
+   "status": "PAUSED",
+   "strength": "PENDING",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": []
+  },
+  "821714108339": {
+   "status": "PAUSED",
+   "strength": "PENDING",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": []
+  }
+ },
+ "state_after": {
+  "820900825560": {
+   "status": "PAUSED",
+   "strength": "POOR",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "url": [
+    "https://offer.ambientcoolingandheating.com/hvac-repair/"
+   ]
+  },
+  "820900825563": {
+   "status": "PAUSED",
+   "strength": "AVERAGE",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "url": [
+    "https://offer.ambientcoolingandheating.com/hvac-repair/"
+   ]
+  },
+  "821714108336": {
+   "status": "ENABLED",
+   "strength": "PENDING",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "url": [
+    "https://offer.ambientcoolingandheating.com/hvac-repair/"
+   ]
+  },
+  "821714108339": {
+   "status": "ENABLED",
+   "strength": "PENDING",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "url": [
+    "https://offer.ambientcoolingandheating.com/hvac-repair/"
+   ]
+  }
+ },
+ "counts_before": {
+  "ads": 115,
+  "campaigns": 23,
+  "ad_groups": 68,
+  "keywords": 6968,
+  "campaign_criteria": 13810,
+  "ad_schedule": 139,
+  "campaign_assets": 283,
+  "customer_assets": 1,
+  "conversion_actions": 16,
+  "ip_blocks": 2796,
+  "shared_sets": 16
+ },
+ "counts_after": {
+  "ads": 115,
+  "campaigns": 23,
+  "ad_groups": 68,
+  "keywords": 6968,
+  "campaign_criteria": 13810,
+  "ad_schedule": 139,
+  "campaign_assets": 283,
+  "customer_assets": 1,
+  "conversion_actions": 16,
+  "ip_blocks": 2796,
+  "shared_sets": 16
+ },
+ "budgets": {
+  "24132507741": 141450000,
+  "24132507744": 42760000,
+  "24132507747": 138160000,
+  "24132507750": 78950000,
+  "24132507753": 26320000
+ },
+ "primary_counted": [
+  "1068114183",
+  "6885463625",
+  "6885576934"
+ ],
+ "manager_links": {
+  "2815082755": "ACTIVE",
+  "3373711342": "ACTIVE"
+ },
+ "preserved_rsas": {
+  "821319509209": [
+   "ENABLED",
+   "APPROVED"
+  ],
+  "821319509212": [
+   "ENABLED",
+   "APPROVED"
+  ],
+  "821319509197": [
+   "ENABLED",
+   "APPROVED"
+  ],
+  "821319509200": [
+   "ENABLED",
+   "APPROVED"
+  ],
+  "821319509203": [
+   "ENABLED",
+   "APPROVED"
+  ],
+  "821319509206": [
+   "ENABLED",
+   "APPROVED"
+  ]
+ },
+ "checks": [
+  {
+   "check": "821714108336 ENABLED + APPROVED + REVIEWED",
+   "pass": true,
+   "detail": "{'status': 'ENABLED', 'strength': 'PENDING', 'approval': 'APPROVED', 'review': 'REVIEWED', 'topics': [], 'url': ['https://offer.ambientcoolingandheating.com/hvac-repair/']}"
+  },
+  {
+   "check": "821714108339 ENABLED + APPROVED + REVIEWED",
+   "pass": true,
+   "detail": "{'status': 'ENABLED', 'strength': 'PENDING', 'approval': 'APPROVED', 'review': 'REVIEWED', 'topics': [], 'url': ['https://offer.ambientcoolingandheating.com/hvac-repair/']}"
+  },
+  {
+   "check": "820900825560 PAUSED",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "820900825563 PAUSED",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "exactly two ENABLED RSAs in the ad group",
+   "pass": true,
+   "detail": "['821714108336', '821714108339']"
+  },
+  {
+   "check": "both enabled are APPROVED",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "no ad removed - ad group still holds 4 non-removed",
+   "pass": true,
+   "detail": "4"
+  },
+  {
+   "check": "total account ad count remains 115",
+   "pass": true,
+   "detail": "115"
+  },
+  {
+   "check": "every unrelated count unchanged",
+   "pass": true,
+   "detail": "before={'ads': 115, 'campaigns': 23, 'ad_groups': 68, 'keywords': 6968, 'campaign_criteria': 13810, 'ad_schedule': 139, 'campaign_assets': 283, 'customer_assets': 1, 'conversion_actions': 16, 'ip_blocks': 2796, 'shared_sets': 16} after={'ads': 115, 'campaigns': 23, 'ad_groups': 68, 'keywords': 6968, 'campaign_criteria': 13810, 'ad_schedule': 139, 'campaign_assets': 283, 'customer_assets': 1, 'conv"
+  },
+  {
+   "check": "budgets unchanged",
+   "pass": true,
+   "detail": "{'24132507741': 141450000, '24132507744': 42760000, '24132507747': 138160000, '24132507750': 78950000, '24132507753': 26320000}"
+  },
+  {
+   "check": "primary+counted conversion set unchanged",
+   "pass": true,
+   "detail": "['1068114183', '6885463625', '6885576934']"
+  },
+  {
+   "check": "manager links unchanged and ACTIVE",
+   "pass": true,
+   "detail": "{'2815082755': 'ACTIVE', '3373711342': 'ACTIVE'}"
+  },
+  {
+   "check": "six preserved replacement RSAs untouched",
+   "pass": true,
+   "detail": "{'821319509209': ('ENABLED', 'APPROVED'), '821319509212': ('ENABLED', 'APPROVED'), '821319509197': ('ENABLED', 'APPROVED'), '821319509200': ('ENABLED', 'APPROVED'), '821319509203': ('ENABLED', 'APPROVED'), '821319509206': ('ENABLED', 'APPROVED')}"
+  }
+ ],
+ "all_pass": true
+}

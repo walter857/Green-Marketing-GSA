@@ -1,0 +1,71 @@
+{
+ "when": "2026-09-21T10:44:26.667640-04:00",
+ "validate_only": true,
+ "external_writes": 0,
+ "checks": {
+  "new_budgets": "OK",
+  "new_campaigns": {
+   "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09": "VALIDATED_OK",
+   "Search | NonBrand | Heating Maintenance & Inspection | Central MD | BOFU | 2026-09": "VALIDATED_OK",
+   "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09": "VALIDATED_OK",
+   "Search | NonBrand | Geothermal Heat Pump | Central MD | BOFU | 2026-09": "VALIDATED_OK"
+  },
+  "new_campaigns_note": "Validated one campaign per request against a single non-shared unattached budget. Batching them shares one non-shared budget, which Google rejects; that is a harness artefact, not a plan defect, because execution creates a budget per campaign.",
+  "new_ad_groups": "OK (27)",
+  "keywords": "OK (93 probed, 2 moved-not-probed)",
+  "cross_negatives": "OK (334)",
+  "rsas": {
+   "SKAG | Furnace Repair": "NO RSA - ADEQUATE",
+   "SKAG | Heating Repair": "VALIDATED_OK (2)",
+   "SKAG | Emergency Heating Repair": "NO RSA - NO PAGE",
+   "SKAG | No Heat Repair": "NO RSA - NO PAGE",
+   "SKAG | Gas Furnace Repair": "VALIDATED_OK (2)",
+   "SKAG | Electric Furnace Repair": "VALIDATED_OK (2)",
+   "SKAG | Heat Pump Repair": "NO RSA - DESTINATION BLOCKED",
+   "SKAG | Heat Pump Replacement": "NO RSA - DESTINATION BLOCKED",
+   "SKAG | Heat Pump Installation": "NO RSA - DESTINATION BLOCKED",
+   "SKAG | Heat Pump Maintenance": "NO RSA - DESTINATION BLOCKED",
+   "SKAG | Ductless Heating Repair": "VALIDATED_OK (2)",
+   "SKAG | Furnace Replacement": "VALIDATED_OK (2)",
+   "SKAG | Furnace Installation": "NO RSA - INSUFFICIENT PAGE",
+   "SKAG | Heating Replacement": "NO RSA - INSUFFICIENT PAGE",
+   "SKAG | Heating Installation": "NO RSA - INSUFFICIENT PAGE",
+   "SKAG | Ductless Heating Installation": "NO RSA - ADEQUATE",
+   "SKAG | Gas Boiler Repair": "NO RSA - ADEQUATE",
+   "SKAG | Boiler Repair": "VALIDATED_OK (2)",
+   "SKAG | Boiler Replacement": "NO RSA - INSUFFICIENT PAGE",
+   "SKAG | Boiler Installation": "NO RSA - INSUFFICIENT PAGE",
+   "SKAG | Boiler Maintenance": "NO RSA - INSUFFICIENT PAGE",
+   "SKAG | Furnace Maintenance": "VALIDATED_OK (2)",
+   "SKAG | Heating Maintenance": "VALIDATED_OK (2)",
+   "SKAG | Furnace Tune-Up": "NO RSA - INSUFFICIENT PAGE",
+   "SKAG | Heating Tune-Up": "NO RSA - INSUFFICIENT PAGE",
+   "SKAG | Heating System Inspection": "NO RSA - INSUFFICIENT PAGE",
+   "SKAG | Thermostat Repair": "NO RSA - NO PAGE",
+   "SKAG | Thermostat Replacement": "NO RSA - NO PAGE",
+   "SKAG | Smart Thermostat Installation": "NO RSA - NO PAGE",
+   "SKAG | Geothermal Heat Pump": "VALIDATED_OK (2)"
+  },
+  "keyword_removal": {
+   "targets": 2,
+   "resolved": 2,
+   "missing": [],
+   "criterion_ids": {
+    "gas furnace repair [PHRASE]": "301769526",
+    "gas furnace repair [EXACT]": "136731902"
+   },
+   "verdict": "OK"
+  },
+  "budget": "OK",
+  "bid": "OK",
+  "cooling_pause": "OK",
+  "structured_snippets": "OK (4)",
+  "reused_assets": {
+   "checked": 10,
+   "missing": [],
+   "disapproved": [],
+   "pointing_at_blocked_url": [],
+   "verdict": "OK"
+  }
+ }
+}

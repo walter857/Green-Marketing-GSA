@@ -1,0 +1,17 @@
+{
+  "operation": "pause_campaign",
+  "campaign_id": "19855617751",
+  "update_mask": [
+    "status"
+  ],
+  "planned_status": "PAUSED",
+  "resource_name": "customers/7478932848/campaigns/19855617751",
+  "success": true,
+  "request_id": "",
+  "readback": {
+    "status": "PAUSED",
+    "other_campaigns_changed": 0,
+    "campaigns_total": 10
+  },
+  "verified": true
+}

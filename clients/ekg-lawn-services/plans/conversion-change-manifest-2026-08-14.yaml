@@ -1,0 +1,246 @@
+# EKG Lawn Services - conversion-change manifest
+#
+# DRAFT. NOTHING HAS BEEN CHANGED. No conversion action was created, edited, renamed,
+# re-categorised, promoted, demoted, or removed. This document records what SHOULD change
+# and what must be verified first.
+#
+# Purpose: the new Aeration & Overseeding campaign must NOT inherit the account-default
+# conversion set. 17 of 21 enabled actions are currently primary_for_goal, including map
+# directions, menu views and website visits. Campaign-level conversion goals will be set so
+# only verified lead outcomes drive bidding.
+
+conversion_change_manifest:
+  client_slug: ekg-lawn-services
+  child_customer_id: "7478932848"
+  snapshot: clients/ekg-lawn-services/snapshots/all-time-2026-08-14.json
+  drafted: "2026-08-14"
+  status: DRAFT_NO_CHANGES_APPLIED
+  actions_changed_so_far: 0
+
+  approach: >-
+    Set campaign-level conversion goals on the new campaign only. Do not alter
+    account-level primary/secondary status in this step; that is a separate approved
+    change with its own blast radius across the nine paused campaigns.
+
+  totals:
+    conversion_actions_total: 31
+    enabled: 21
+    removed: 9
+    hidden: 1
+    enabled_and_primary_today: 17
+    proposed_primary_for_this_campaign: 2   # plus 1 conditional import, see below
+
+  # -------------------------------------------------------------------------
+  # PROPOSED PRIMARY - drive bidding, subject to verification
+  # -------------------------------------------------------------------------
+  proposed_primary:
+    - current_name: "EKG Lawn - Lp - Submit Lead Form"
+      action_id: PENDING_ID_READ          # id not captured in this snapshot pass
+      source: native Google Ads website tag
+      type: WEBPAGE
+      current_status: ENABLED
+      current_primary_for_goal: true
+      proposed_status: PROPOSED_PRIMARY / PENDING_TRIGGER_QA
+      goal_category: SUBMIT_LEAD_FORM
+      campaign_usage: "Aeration & Overseeding - both ad groups"
+      counting_type_today: ONE_PER_CLICK
+      call_threshold: n/a
+      duplicate_relationship: >-
+        Potentially duplicates 'Form Submission' (WEBPAGE, MANY_PER_CLICK),
+        'SAU - Submit Form Thank You Page' (WEBPAGE, ONE_PER_CLICK) and the GA4 import
+        'EKG Lawn (web) form_submission'. Only ONE form action may be primary.
+      evidence: >-
+        Named for the landing-page ("Lp") funnel this build targets, and already
+        ONE_PER_CLICK, which is correct for a lead.
+      verification_required:
+        - "Confirm it fires once per SUCCESSFUL submission, not on button click or page load."
+        - "Confirm it is bound to the offer.ekglawn.com pages, not the main site only."
+        - "Confirm it is not also counted through WhatConverts 'WC Leads'."
+      risk: >-
+        If it fires on click rather than on a completed submission, bidding optimises
+        toward form abandonment. Do not use until the trigger is proven.
+
+    - current_name: "EKG - Lp - Phone Call Leads"
+      action_id: PENDING_ID_READ
+      source: native Google Ads website-call tracking
+      type: WEBSITE_CALL
+      current_status: ENABLED
+      current_primary_for_goal: true
+      proposed_status: PROPOSED_PRIMARY / 60_SECONDS_RECOMMENDED / PENDING_SEPARATE_APPROVAL
+      goal_category: PHONE_CALL_LEAD
+      campaign_usage: "Aeration & Overseeding - both ad groups"
+      counting_type_today: ONE_PER_CLICK
+      call_threshold: 30 seconds
+      duplicate_relationship: >-
+        Overlaps 'Calls from ads' (AD_CALL, 60s), 'Manually Dialled Calls'
+        (CLICK_TO_CALL, 60s), 'Clicks to call' (GOOGLE_HOSTED),
+        'Clicks To Call' and 'Click To Call (Button 2)' (CLICK_TO_CALL, currently
+        secondary), and the upload 'WC calls' (60s). Exactly ONE call action may be
+        primary for this campaign.
+      evidence: >-
+        The only WEBSITE_CALL action, i.e. calls originating from the landing page, which
+        is the surface this build drives traffic to.
+      verification_required:
+        - "Confirm the call source is the landing-page number, not a stale pool number."
+        - "Confirm the 30-second threshold is intended; every other call action uses 60."
+        - "Confirm it still records calls - check for recent conversion volume."
+        - "Confirm it does not double-count with 'WC calls'."
+      risk: >-
+        A 30-second threshold counts hang-ups and wrong numbers as leads. If EKG's real
+        qualification takes longer, raise it to 60 seconds for consistency BEFORE launch.
+
+  # -------------------------------------------------------------------------
+  # CONDITIONAL - only after access, meaning and lead-ID dedup are verified
+  # -------------------------------------------------------------------------
+  conditional_offline_imports:
+    - current_name: "WC Leads"
+      action_id: PENDING_ID_READ
+      source: WhatConverts import (UPLOAD_CLICKS)
+      current_status: ENABLED
+      current_primary_for_goal: true
+      proposed_status: SECONDARY_PENDING_DEDUPLICATION
+      goal_category: QUALIFIED_LEAD or SOLD_JOB (to be determined)
+      campaign_usage: none until verified
+      duplicate_relationship: >-
+        Very likely double-counts 'EKG Lawn - Lp - Submit Lead Form'. A form fill recorded
+        natively AND imported from WhatConverts is the same lead counted twice.
+      evidence: "Upload-based action, so WhatConverts is already feeding this account."
+      verification_required:
+        - "Obtain read-only WhatConverts access."
+        - "Establish what 'WC Leads' actually means: raw lead, qualified lead, or sold job."
+        - "Confirm GCLID/lead-ID deduplication against native form and call actions."
+      risk: >-
+        Double-counting inflates conversions and depresses apparent CPA, which would make
+        the new campaign look better than it is and mis-train bidding.
+
+    - current_name: "WC calls"
+      action_id: PENDING_ID_READ
+      source: WhatConverts import (UPLOAD_CALLS)
+      current_status: ENABLED
+      current_primary_for_goal: true
+      proposed_status: SECONDARY_PENDING_DEDUPLICATION
+      call_threshold: 60 seconds
+      duplicate_relationship: "Duplicates 'EKG - Lp - Phone Call Leads' for the same call."
+      verification_required:
+        - "Same as WC Leads, plus confirm which system is the system of record for calls."
+      risk: "Same call counted natively and via import."
+
+  # -------------------------------------------------------------------------
+  # MUST NOT BE USED FOR BIDDING
+  # -------------------------------------------------------------------------
+  excluded_from_bidding:
+    - names: ["Local actions - Website visits", "Local actions - Menu views",
+              "Smart campaign map directions"]
+      reason: engagement_not_lead
+      note: >-
+        Map directions, menu views and website visits are engagement signals. Currently
+        primary_for_goal at account level. Excluded from this campaign's goals.
+    - names: ["Smart campaign map clicks to call", "Smart campaign ad clicks to call",
+              "Calls from Smart Campaign Ads"]
+      reason: smart_campaign_only_and_all_smart_campaigns_are_paused
+    - names: ["Clicks to call", "Clicks To Call", "Click To Call (Button 2)",
+              "Manually Dialled Calls", "Calls from ads"]
+      reason: duplicate_call_surface
+      note: >-
+        'Clicks to call' and 'Clicks To Call' differ only by capitalisation - a genuine
+        duplicate-name collision in the account.
+    - names: ["Click To Email"]
+      reason: not_a_verified_lead_outcome
+    - names: ["Form Submission", "SAU - Submit Form Thank You Page",
+              "SAU - Call BTN Click"]
+      reason: duplicate_or_unverified_form_surface
+    - names: ["EKG Lawn (web) form_submission", "EKG Lawn (web) phone_call_click",
+              "EKG Lawn (web) purchase"]
+      reason: ga4_import_duplicates_native_tracking
+
+  hard_rules:
+    - "No conversion action is created, edited, or re-statused by this manifest."
+    - "The same form must never be primary through both native tracking and WhatConverts."
+    - "The same call must never be primary through both native tracking and WhatConverts."
+    - "Bidding strategy cannot be finalised until the primary set is verified."
+
+  # -------------------------------------------------------------------------
+  # Call-duration threshold: DOCUMENTED, NOT CHANGED
+  # -------------------------------------------------------------------------
+  call_threshold_change_required:
+    action: "EKG - Lp - Phone Call Leads"
+    current_value_seconds: 30
+    recommended_value_seconds: 60
+    change_applied: false
+    why: >-
+      Every other call action in this account uses 60 seconds. A 30-second floor counts
+      hang-ups, wrong numbers and voicemail as leads, which inflates conversions and
+      mis-trains bidding on a $16.45/day budget where a handful of false conversions
+      dominates the signal.
+    exact_account_wide_impact_of_editing_it: >-
+      conversion_action.phone_call_duration_seconds is an ACCOUNT-LEVEL property of the
+      conversion action, not a campaign-level override. Raising it from 30 to 60 changes
+      the counting rule for EVERY campaign that uses this action, including the nine
+      currently paused campaigns if any are later re-enabled. It does not retroactively
+      restate historical conversions, so reporting before and after the change is not
+      directly comparable, and any bid strategy already trained on 30-second data will see
+      a step change in conversion volume.
+    alternative_without_account_wide_impact: >-
+      Create a NEW website-call conversion action with a 60-second threshold and use it as
+      this campaign's goal, leaving the 30-second action untouched for existing campaigns.
+      This costs a new action and a tracking change, and needs its own approval.
+    decision_required_before: "Checkpoint F"
+
+  bidding_dependency:
+    proposed_strategy: MAXIMIZE_CONVERSIONS
+    target_cpa: null
+    launch_ready: false
+    reason: >-
+      MAXIMIZE_CONVERSIONS optimises toward whatever the campaign's conversion goals count.
+      Both proposed primaries are unverified: the form action's trigger is unproven and the
+      call action's 30-second floor is below the account norm. Until both are verified this
+      strategy is NOT launch-ready. It is not being treated as clean.
+    if_unresolved_at_launch: >-
+      Do not launch on MAXIMIZE_CONVERSIONS. Either verify both actions first, or launch on
+      MANUAL_CPC with conversions recorded as observation-only and switch strategy after
+      the goals are proven. Switching strategy later is a separate approved change.
+
+  form_trigger_qa:
+    status: NOT_PERFORMED
+    method_required: >-
+      Read-only Tag Assistant, browser DevTools network/dataLayer inspection, or equivalent
+      observation of the live page, proving the tag fires on a SUCCESSFULLY COMPLETED
+      submission rather than on a button click or page load.
+    prohibited_without_separate_approval: >-
+      Submitting a real lead through the live form. That would create a real record in the
+      client's CRM and potentially dispatch a real sales follow-up.
+    blocks: "PROPOSED_PRIMARY status for EKG Lawn - Lp - Submit Lead Form"
+
+  # -------------------------------------------------------------------------
+  # C.4 additions
+  # -------------------------------------------------------------------------
+  effective_conversion_customer:
+    resource_name: "customers/7478932848"
+    id: "7478932848"
+    equals_campaign_child_account: true
+    readable_with_current_credentials: true
+    conversion_tracking_id: 10906176325
+    cross_account_conversion_tracking_id: null
+    conversion_tracking_status: CONVERSION_TRACKING_MANAGED_BY_SELF
+    both_actions_owned_by_it: true
+    evidence: >-
+      customer.conversion_tracking_setting.google_ads_conversion_customer resolves to
+      customers/7478932848, and conversion_action.owner_customer for both 6885542325 and
+      6885543534 is customers/7478932848. No cross-account conversion tracking is in use,
+      so the CustomConversionGoal is created in this same account. No write to any other
+      account is planned.
+
+  campaign_conversion_goal_isolation:
+    customer_conversion_goal_rows: 14
+    currently_biddable: 7
+    expected_inventory_rows_asserted: 14
+    rows_with_no_mutation_planned: 7
+    planned_updates: 7
+    update_mask: ["biddable"]
+    planned_biddable: false
+    creates: 0
+    note: >-
+      CampaignConversionGoal resources are auto-created by Google. Only UPDATE operations
+      are planned, and only for the seven rows currently inherited as biddable=true. The
+      seven already-false rows carry preflight and readback assertions but no mutation. Without these, the seven currently-biddable category-and-origin goals
+      would continue to drive bidding even with a CustomConversionGoal assigned.

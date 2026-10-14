@@ -1,0 +1,133 @@
+{
+ "payload": "AMB-0930-BM-HELD-PAYLOAD",
+ "status": "HELD - NOT FOR APPROVAL - do not create while the destination fails D2",
+ "target": {
+  "child_customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live"
+ },
+ "work_order": "clients/ambient-cooling-heating/work-orders/work-order-boiler-maintenance-2026-09-30.yaml",
+ "ad_group": {
+  "id": "204129718287",
+  "status": "ENABLED",
+  "name": "SKAG | Boiler Maintenance",
+  "campaign": "24132507744"
+ },
+ "final_url": "https://offer.ambientcoolingandheating.com/boiler-maintenance/",
+ "destination_gate_2026_09_30": {
+  "http": 200,
+  "final_url": "https://offer.ambientcoolingandheating.com/boiler-maintenance/",
+  "h1": [
+   "Boiler Maintenance in Central MD"
+  ],
+  "off_service": [
+   "installation: A Boiler Installation Planned Around Your Property",
+   "installation: Boiler Installation Questions",
+   "installation: Boiler Installation for Your Home",
+   "installation: Can you install a boiler in an existing property?",
+   "installation: Installation Scope",
+   "installation: Let's Discuss Your Boiler Installation",
+   "installation: Request a Boiler Installation Assessment",
+   "installation: Three Steps to Boiler Installation",
+   "installation: What affects the installation price?",
+   "installation: Will the installation include new radiators?"
+  ],
+  "barred": [],
+  "forms": [
+   "gform_1"
+  ],
+  "rendered_761": 0,
+  "tel_ok": true,
+  "d7_server_side": true,
+  "d7_replay": false,
+  "gate": "FAIL_D2"
+ },
+ "when_page_passes": {
+  "create_paused": [
+   "2 RSAs below -> https://offer.ambientcoolingandheating.com/boiler-maintenance/"
+  ],
+  "keywords_to_enable": [
+   "boiler maintenance PHRASE",
+   "boiler maintenance EXACT"
+  ],
+  "keywords_to_keep_paused": [
+   "boiler service PHRASE",
+   "boiler service EXACT (mixed repair/maintenance intent; Boiler Repair owns repair)"
+  ],
+  "ad_group_negative_to_add": [
+   "oil PHRASE (oil is out of scope; Boiler Repair already carries it)"
+  ],
+  "budget_gate": "Boiler Services is pacing above its monthly allowance at $45/day; enabling maintenance inside it needs budget room first"
+ },
+ "rsas": [
+  {
+   "h": [
+    "Boiler Maintenance",
+    "Boiler Maintenance Visit",
+    "Severn Boiler Maintenance",
+    "Columbia Boiler Maintenance",
+    "Severna Park Boiler Care",
+    "Book Boiler Maintenance",
+    "Request a Free Quote",
+    "Trained HVAC Technicians",
+    "Central Maryland Service",
+    "Boiler Care Near You",
+    "Plan Routine Boiler Care",
+    "Boiler Maintenance Quote",
+    "Boiler System Check-Up",
+    "Call Mon-Fri, 8 a.m.-4 p.m.",
+    "Maryland Boiler Maintenance"
+   ],
+   "d": [
+    "Boiler maintenance for homes in Severn, Severna Park and Columbia, Maryland.",
+    "Our technicians review the boiler's condition and explain what it needs.",
+    "Request a free boiler maintenance quote from Ambient Cooling and Heating.",
+    "Call Mon-Fri, 8 a.m. to 4 p.m., or request your free quote online."
+   ],
+   "path": [
+    "Boiler",
+    "Maintenance"
+   ]
+  },
+  {
+   "h": [
+    "Boiler Due For A Service?",
+    "Last Boiler Service Unknown?",
+    "Uneven Heat From Your Boiler?",
+    "Book A Boiler Visit",
+    "Boiler Maintenance Near You",
+    "Severn Boiler Service",
+    "Annapolis Boiler Maintenance",
+    "Glen Burnie Boiler Care",
+    "Routine Boiler Care",
+    "Request A Maintenance Visit",
+    "Free Boiler Maintenance Quote",
+    "Clear Service Options",
+    "Discuss Your Boiler's Needs",
+    "Central Maryland Boilers",
+    "Ambient Cooling & Heating"
+   ],
+   "d": [
+    "Not sure when your boiler was last serviced? Request a maintenance visit.",
+    "We review operation and condition, then explain any recommended next steps.",
+    "Boiler maintenance across Central Maryland from Ambient Cooling and Heating.",
+    "Request a free quote online or call Mon-Fri, 8 a.m. to 4 p.m."
+   ],
+   "path": [
+    "Boiler",
+    "Maintenance"
+   ]
+  }
+ ],
+ "validator_errors": [],
+ "headline_overlap_with_existing_boiler_ads": [
+  [
+   "Request a Free Quote",
+   "Trained HVAC Technicians"
+  ],
+  [
+   "Ambient Cooling & Heating",
+   "Central Maryland Boilers"
+  ]
+ ],
+ "content_sha256_12": "2C7D2C005624"
+}

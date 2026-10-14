@@ -1,0 +1,15 @@
+{
+ "fails": [],
+ "warns": [],
+ "expected_validator_notes": [
+  "campaigns[0].schedule must be a non-empty list",
+  "campaigns[0].ad_groups[0].keywords[2].text must match canonical_keyword",
+  "campaigns[0].ad_groups[0].keywords[3].text must match canonical_keyword",
+  "campaigns[0].ad_groups[1].keywords must include PHRASE and EXACT"
+ ],
+ "fingerprint": "4022CBA7FD51",
+ "negatives_total": 75,
+ "keywords": 5,
+ "rsas": 4,
+ "monthly_budget_at_30_4": 499.78
+}

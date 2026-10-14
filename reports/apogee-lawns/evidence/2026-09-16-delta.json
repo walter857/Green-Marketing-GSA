@@ -1,0 +1,98 @@
+{
+ "aw_destination_observed": [
+  "AW-18453077620"
+ ],
+ "counts": {
+  "campaigns": 0,
+  "campaign_budgets": 0,
+  "ad_groups": 0,
+  "ad_group_criteria": 0,
+  "ads": 0,
+  "conversion_actions": 0,
+  "customer_conversion_goals": 0,
+  "campaign_conversion_goals": 0,
+  "custom_conversion_goals": 0,
+  "conversion_value_rules": 0,
+  "customer_assets": 0,
+  "campaign_assets": 0,
+  "ad_group_assets": 0,
+  "assets": 0,
+  "asset_sets": 0,
+  "labels": 0,
+  "product_links_ga4_etc": 0,
+  "recommendation_subscriptions": 0,
+  "bidding_strategies": 0,
+  "shared_sets": 7,
+  "campaign_shared_sets": 0,
+  "shared_criteria": 4237,
+  "account_negative_criteria": 1
+ },
+ "billing_setup": [
+  {
+   "id": "8584340188",
+   "status": "CANCELLED",
+   "start": "2026-09-15 08:14:06",
+   "end": ""
+  },
+  {
+   "id": "8584421311",
+   "status": "CANCELLED",
+   "start": "2026-09-15 08:54:14",
+   "end": ""
+  }
+ ],
+ "shared_sets": {
+  "10667314427": {
+   "name": "Names",
+   "status": "REMOVED",
+   "members": 436,
+   "refs": 0
+  },
+  "11807294063": {
+   "name": "Christmas Lights Install",
+   "status": "ENABLED",
+   "members": 424,
+   "refs": 0
+  },
+  "11811255121": {
+   "name": "Leaf Removal initial",
+   "status": "ENABLED",
+   "members": 386,
+   "refs": 0
+  },
+  "11813144900": {
+   "name": "General List",
+   "status": "ENABLED",
+   "members": 1111,
+   "refs": 0
+  },
+  "11840874961": {
+   "name": "Paver",
+   "status": "ENABLED",
+   "members": 387,
+   "refs": 0
+  },
+  "11840890006": {
+   "name": "Outdoor Kitchen",
+   "status": "ENABLED",
+   "members": 386,
+   "refs": 0
+  },
+  "12178646912": {
+   "name": "General List - Irrigation Repair",
+   "status": "ENABLED",
+   "members": 1107,
+   "refs": 0
+  }
+ },
+ "lifetime": {
+  "impr": 0,
+  "clicks": 0,
+  "cost": 0.0,
+  "conv": 0.0
+ },
+ "change_status_rows": 0,
+ "deltas": [],
+ "unchanged_count": 49,
+ "checked_local": "2026-09-16T12:43:15.491033-05:00"
+}

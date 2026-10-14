@@ -1,0 +1,918 @@
+{
+  "read_only": true,
+  "mutations_issued": 0,
+  "label": "immediately",
+  "timestamp_account_local": "2026-08-27T10:17:52.626850-04:00",
+  "today": "2026-08-27",
+  "identity": {
+    "id": "1521725229",
+    "name": "Softwind Power Washing - Live",
+    "manager": false,
+    "test_account": false,
+    "currency": "USD",
+    "tz": "America/New_York"
+  },
+  "today_per_campaign": {
+    "24103511039": {
+      "cost": 0.0,
+      "impressions": 0,
+      "clicks": 0,
+      "avg_cpc": 0.0,
+      "conversions": 0.0,
+      "search_is_pct": 0.0,
+      "lost_is_budget_pct": 0.0,
+      "lost_is_rank_pct": 0.0
+    },
+    "24145053510": {
+      "cost": 0.0,
+      "impressions": 0,
+      "clicks": 0,
+      "avg_cpc": 0.0,
+      "conversions": 0.0,
+      "search_is_pct": 0.0,
+      "lost_is_budget_pct": 0.0,
+      "lost_is_rank_pct": 0.0
+    }
+  },
+  "mtd_per_campaign": {
+    "24103511039": {
+      "cost": 191.21,
+      "impressions": 119,
+      "clicks": 5,
+      "avg_cpc": 38.24,
+      "conversions": 0.0,
+      "search_is_pct": 43.15,
+      "lost_is_budget_pct": 2.05,
+      "lost_is_rank_pct": 54.79
+    },
+    "24145053510": {
+      "cost": 62.18,
+      "impressions": 14,
+      "clicks": 2,
+      "avg_cpc": 31.09,
+      "conversions": 0.0,
+      "search_is_pct": 70.0,
+      "lost_is_budget_pct": 0.0,
+      "lost_is_rank_pct": 30.0
+    }
+  },
+  "today_spend": 0.0,
+  "mtd_spend": 253.39,
+  "today_impressions": 0,
+  "today_clicks": 0,
+  "campaign_ab_spend_split": {
+    "Power Washing": 191.21,
+    "Power Washing #2": 62.18
+  },
+  "leads_mtd": 0.0,
+  "pacing": {
+    "target": 2500.0,
+    "mtd_spend": 253.39,
+    "remaining_R": 2246.61,
+    "remaining_calendar_days_D": 5,
+    "remaining_hours_H": 109.7,
+    "remaining_serving_days": 4,
+    "remaining_scheduled_serving_hours": 37.7,
+    "required_rolling_24h_pace": 491.51,
+    "required_per_scheduled_serving_hour": 59.59,
+    "observed_run_rate_per_serving_day": 75.18,
+    "recent_daily": {
+      "2026-08-24": 22.11,
+      "2026-08-25": 121.22,
+      "2026-08-26": 82.22
+    },
+    "projected_august_total": 554.11
+  },
+  "individual_click_costs": [
+    {
+      "date": "2026-08-17",
+      "campaign": "Power Washing",
+      "ad_group": "Power Washing West Islip",
+      "keyword": "power washing west islip",
+      "match": "EXACT",
+      "clicks": 1,
+      "cost": 5.71,
+      "avg_cpc": 5.71
+    },
+    {
+      "date": "2026-08-19",
+      "campaign": "Power Washing",
+      "ad_group": "Power Washing Services Near Me",
+      "keyword": "power washing services near me",
+      "match": "EXACT",
+      "clicks": 1,
+      "cost": 22.13,
+      "avg_cpc": 22.13
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "Power Washing #2",
+      "ad_group": "House Pressure Washing Estimate",
+      "keyword": "house pressure washing estimate",
+      "match": "EXACT",
+      "clicks": 1,
+      "cost": 22.11,
+      "avg_cpc": 22.11
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "Power Washing",
+      "ad_group": "Power Washing Near Me",
+      "keyword": "power washing near me",
+      "match": "EXACT",
+      "clicks": 1,
+      "cost": 54.49,
+      "avg_cpc": 54.49
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "Power Washing #2",
+      "ad_group": "House Pressure Washing Estimate",
+      "keyword": "house pressure washing estimate",
+      "match": "EXACT",
+      "clicks": 1,
+      "cost": 40.07,
+      "avg_cpc": 40.07
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "Power Washing",
+      "ad_group": "Power Washing Near Me",
+      "keyword": "power washing near me",
+      "match": "PHRASE",
+      "clicks": 1,
+      "cost": 26.66,
+      "avg_cpc": 26.66
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "Power Washing",
+      "ad_group": "Power Washing Near Me",
+      "keyword": "power washing near me",
+      "match": "PHRASE",
+      "clicks": 1,
+      "cost": 82.22,
+      "avg_cpc": 82.22
+    }
+  ],
+  "individual_click_costs_today": [],
+  "cpc_stop_condition": {
+    "thresholds": {
+      "single_investigate": 40.0,
+      "single_stop": 60.0,
+      "rolling_investigate": 38.0,
+      "rolling_stop": 45.0
+    },
+    "worst_single_click": 82.22,
+    "trailing_3_click_avg": 49.65,
+    "breached": true,
+    "alerts": [
+      "INVESTIGATE: 2026-08-25 Power Washing 'power washing near me' at $54.49 (>= $40.0)",
+      "INVESTIGATE: 2026-08-25 Power Washing #2 'house pressure washing estimate' at $40.07 (>= $40.0)",
+      "STOP: 2026-08-26 Power Washing 'power washing near me' at $82.22 (>= $60.0)",
+      "STOP: trailing-3-click average $49.65 (>= $45.0)"
+    ]
+  },
+  "search_terms": [
+    {
+      "term": "power washing near me",
+      "impressions": 6,
+      "clicks": 1,
+      "cost": 54.49,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "powerwash cost",
+      "impressions": 2,
+      "clicks": 1,
+      "cost": 40.07,
+      "campaigns": [
+        "Power Washing #2"
+      ]
+    },
+    {
+      "term": "power wash near me",
+      "impressions": 4,
+      "clicks": 1,
+      "cost": 26.66,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "powerwashing companies near me",
+      "impressions": 3,
+      "clicks": 1,
+      "cost": 22.13,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "average cost to power wash a house",
+      "impressions": 2,
+      "clicks": 1,
+      "cost": 22.11,
+      "campaigns": [
+        "Power Washing #2"
+      ]
+    },
+    {
+      "term": "power washing",
+      "impressions": 23,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "pressure washing service near me",
+      "impressions": 7,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "pressure washing near me",
+      "impressions": 6,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "house washing services",
+      "impressions": 5,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power washer near me",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "best power washing company",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power wash companies near me",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power washing services near me",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing",
+        "Power Washing #2"
+      ]
+    },
+    {
+      "term": "powerwash company",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "powerwash near me",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "affordable power washing near me",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "best power wash company near me",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "house exterior power washing",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "local services pressure washing",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "outdoor house cleaning services near me",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "professional power washing",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "roof washing near me",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "pressure washing service",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "how much is powerwashing a house",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "cost to power wash",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing #2"
+      ]
+    },
+    {
+      "term": "price to powerwash house",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing #2"
+      ]
+    },
+    {
+      "term": "local power washers",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power washing companies near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power washing service near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "soft power washing company near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power washing services",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "pressure washing companies near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "pressure washer service near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "house cleaning services near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "slate roof cleaning near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "house soft wash cost",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    }
+  ],
+  "search_terms_today": [
+    {
+      "term": "power washing near me",
+      "impressions": 6,
+      "clicks": 1,
+      "cost": 54.49,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "powerwash cost",
+      "impressions": 2,
+      "clicks": 1,
+      "cost": 40.07,
+      "campaigns": [
+        "Power Washing #2"
+      ]
+    },
+    {
+      "term": "power wash near me",
+      "impressions": 4,
+      "clicks": 1,
+      "cost": 26.66,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "powerwashing companies near me",
+      "impressions": 3,
+      "clicks": 1,
+      "cost": 22.13,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "average cost to power wash a house",
+      "impressions": 2,
+      "clicks": 1,
+      "cost": 22.11,
+      "campaigns": [
+        "Power Washing #2"
+      ]
+    },
+    {
+      "term": "power washing",
+      "impressions": 23,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "pressure washing service near me",
+      "impressions": 7,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "pressure washing near me",
+      "impressions": 6,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "house washing services",
+      "impressions": 5,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power washer near me",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "best power washing company",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power wash companies near me",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power washing services near me",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing",
+        "Power Washing #2"
+      ]
+    },
+    {
+      "term": "powerwash company",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "powerwash near me",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "affordable power washing near me",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "best power wash company near me",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "house exterior power washing",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "local services pressure washing",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "outdoor house cleaning services near me",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "professional power washing",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "roof washing near me",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "pressure washing service",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "how much is powerwashing a house",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "cost to power wash",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing #2"
+      ]
+    },
+    {
+      "term": "price to powerwash house",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing #2"
+      ]
+    },
+    {
+      "term": "local power washers",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power washing companies near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power washing service near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "soft power washing company near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "power washing services",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "pressure washing companies near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "pressure washer service near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "house cleaning services near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "slate roof cleaning near me",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    },
+    {
+      "term": "house soft wash cost",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "campaigns": [
+        "Power Washing"
+      ]
+    }
+  ],
+  "negative_candidates": {
+    "count": 0,
+    "detail": [],
+    "policy": "Protected terms are never auto-negatived: best, cost, emergency, hire, local, near me, price, pricing, quote. Every candidate still needs a human intent check before any plan."
+  },
+  "location_performance": {
+    "rows_total": 162,
+    "rows_with_delivery": 11,
+    "detail": [
+      {
+        "campaign": "Power Washing",
+        "criterion_id": "9051836",
+        "impressions": 24,
+        "clicks": 3,
+        "cost": 163.37
+      },
+      {
+        "campaign": "Power Washing #2",
+        "criterion_id": "9198508",
+        "impressions": 4,
+        "clicks": 2,
+        "cost": 62.18
+      },
+      {
+        "campaign": "Power Washing",
+        "criterion_id": "9214462",
+        "impressions": 26,
+        "clicks": 2,
+        "cost": 27.84
+      },
+      {
+        "campaign": "Power Washing",
+        "criterion_id": "9198508",
+        "impressions": 43,
+        "clicks": 0,
+        "cost": 0.0
+      },
+      {
+        "campaign": "Power Washing",
+        "criterion_id": "9052792",
+        "impressions": 9,
+        "clicks": 0,
+        "cost": 0.0
+      },
+      {
+        "campaign": "Power Washing",
+        "criterion_id": "1022729",
+        "impressions": 7,
+        "clicks": 0,
+        "cost": 0.0
+      },
+      {
+        "campaign": "Power Washing",
+        "criterion_id": "1023035",
+        "impressions": 5,
+        "clicks": 0,
+        "cost": 0.0
+      },
+      {
+        "campaign": "Power Washing",
+        "criterion_id": "1023482",
+        "impressions": 5,
+        "clicks": 0,
+        "cost": 0.0
+      },
+      {
+        "campaign": "Power Washing #2",
+        "criterion_id": "9051836",
+        "impressions": 4,
+        "clicks": 0,
+        "cost": 0.0
+      },
+      {
+        "campaign": "Power Washing #2",
+        "criterion_id": "9214462",
+        "impressions": 4,
+        "clicks": 0,
+        "cost": 0.0
+      },
+      {
+        "campaign": "Power Washing #2",
+        "criterion_id": "1022729",
+        "impressions": 2,
+        "clicks": 0,
+        "cost": 0.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+# PLAN-GA-LAUNCH-3 - FINAL RESOURCE ENABLEMENT
+# STATUS: PROVISIONAL. PLACEHOLDERS ONLY. NO FINGERPRINT. NO APPROVAL COMMAND.
+
+change_plan:
+  plan_id: PLAN-GA-LAUNCH-3
+  plan_title: Final resource enablement
+  approval_type: ENABLE
+  status: PROVISIONAL
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: null
+  fingerprint_withheld_because: >-
+    Every action references a resource that does not exist yet. Real criterion and ad IDs only
+    exist after PLAN-GA-LAUNCH-1 is executed and read back. A fingerprint over placeholders
+    would be void by construction.
+  target:
+    child_customer_id: '1521725229'
+    campaign_id: '24103511039'
+
+  real_ids_recorded: '2026-09-02 - PLAN-GA-LAUNCH-1 executed, placeholders replaced'
+  created_keyword_criteria_by_ad_group:
+    '202870585390': [21381541, 11244351, 328994395, 448367730, 99754288381, 299856882403,
+                     300840676293, 320045208640]
+    '202870585870': [21381571, 11244361, 75294038799, 75298360239]
+    '202870585910': [301057569810, 315515597254, 341987323402, 342645727874, 297379283655,
+                     306730658772, 346845250713, 394327423399]
+    '202870586310': [338961202441, 338961203201]
+    '202870586110': [328201189095, 328201199015]
+    '202870586150': [326576934122, 326576946202, 449621045684, 421330015623]
+  created_rsa_ads_by_ad_group:
+    '202870585390': [823152917197, 823152917200]
+    '202870585870': [823152917203, 823152917206]
+    '202870585910': [823152917209, 823152917212]
+    '202870586310': [823152917215, 823152917218]
+    '202870586110': [823152917221, 823152917224]
+    '202870586150': [823152917227, 823152917230]
+  enable_action_count: 45
+  enable_action_breakdown: '5 ad groups + 28 keywords + 12 RSAs'
+  fingerprint_policy: >-
+    Still NOT fingerprinted. The IDs are now real, but the plan remains BLOCKED on the go-live
+    gate below. The fingerprint is generated at approval time against a fresh read, so a stale
+    code cannot be honoured after the gate clears.
+  precheck_before_enablement:
+    - >-
+      Re-read ad_group_ad.policy_summary.approval_status on all 12 created RSAs. They currently
+      read UNKNOWN because Google has not reviewed newly created paused ads. Any DISAPPROVED ad
+      must be fixed before its group is enabled.
+
+  placeholder_actions_superseded_by_real_ids:
+    - {id: E-1, resource: ad_group, target: '202870585870 Pressure Washing',
+       current: PAUSED, proposed: ENABLED}
+    - {id: E-2, resource: ad_group, target: '202870585910 House Washing',
+       current: PAUSED, proposed: ENABLED}
+    - {id: E-3, resource: ad_group, target: '202870586310 Soft Washing',
+       current: PAUSED, proposed: ENABLED}
+    - {id: E-4, resource: ad_group, target: '202870586110 Driveway Pressure Washing',
+       current: PAUSED, proposed: ENABLED}
+    - {id: E-5, resource: ad_group, target: '202870586150 Patio Pressure Washing',
+       current: PAUSED, proposed: ENABLED}
+    - {id: E-6, resource: ad_group_criterion, target: 'PENDING_CREATION x28',
+       current: PAUSED, proposed: ENABLED}
+    - {id: E-7, resource: ad_group_ad, target: 'PENDING_CREATION x12',
+       current: PAUSED, proposed: ENABLED}
+  note_202870585390: >-
+    Ad group 202870585390 Power Washing is ALREADY ENABLED and is not re-enabled. Only its 8
+    newly created keywords move from PAUSED to ENABLED.
+
+  staged_enablement:
+    stage_a: [Power Washing, Pressure Washing, House Washing]
+    stage_a_rationale: 'the three groups carrying roughly 97% of measured demand'
+    stage_b: [Soft Washing, Driveway Pressure Washing, Patio Pressure Washing]
+    stage_b_rationale: 'the three micro groups, roughly 30 searches per month combined'
+    note: 'Order is evidence-based and may change if readback or page results support another.'
+
+  blocked_until_go_live_gate:
+    - PLAN-GA-LAUNCH-1 create-paused readback QA passed
+    - All six Final URLs return HTTP 200
+    - Correct titles, H1s and hero copy published
+    - Direct /thank-you/ visits do NOT fire the form conversion
+    - A successful form fires exactly one logical conversion
+    - Exactly one customer-facing form is rendered
+    - Phone links valid, displayed number equals tel: destination
+    - Selected call-tracking architecture verified
+    - Sibling-account tag scope corrected or safely contained
+    - No owner ad group blocked by a routing negative
+  after_each_stage_confirm:
+    - eligibility, impressions, Search Terms, ads serving
+    - correct Final URLs and no policy problem
+    - no owner group blocked by a negative
+    - phone and form paths work
+  approval_owner: Walter Correa

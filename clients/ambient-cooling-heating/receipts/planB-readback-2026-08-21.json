@@ -1,0 +1,399 @@
+{
+ "captured_utc": "2026-08-21T04:09:44.801317Z",
+ "approved_fingerprint": "03F125C189679E35",
+ "state_before": {
+  "1068114183": {
+   "name": "Calls from ads",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "PHONE_CALL_LEAD",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 30,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6498555481": {
+   "name": "Visit Thank you page - Submit Form",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "SUBMIT_LEAD_FORM",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 1,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6498555484": {
+   "name": "Call BTN Click",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "CONTACT",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 1,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6885463625": {
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "SUBMIT_LEAD_FORM",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 1,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6885576934": {
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "PHONE_CALL_LEAD",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 30,
+   "call_min_sec": 30,
+   "default_value": 0.0
+  },
+  "7643656075": {
+   "name": "WC Calls",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "CONTACT",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 60,
+   "view_lookback": 30,
+   "call_min_sec": 60,
+   "default_value": 1.0
+  },
+  "7643656486": {
+   "name": "WC Lead",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "CONTACT",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 60,
+   "view_lookback": 15,
+   "call_min_sec": 60,
+   "default_value": 1.0
+  }
+ },
+ "state_after": {
+  "1068114183": {
+   "name": "Calls from ads",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 30,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6498555481": {
+   "name": "Visit Thank you page - Submit Form",
+   "status": "ENABLED",
+   "primary": false,
+   "counted": false,
+   "counting": "ONE_PER_CLICK",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 1,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6498555484": {
+   "name": "Call BTN Click",
+   "status": "ENABLED",
+   "primary": false,
+   "counted": false,
+   "counting": "ONE_PER_CLICK",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 1,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6885463625": {
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 1,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6885576934": {
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 30,
+   "call_min_sec": 30,
+   "default_value": 0.0
+  },
+  "7643656075": {
+   "name": "WC Calls",
+   "status": "ENABLED",
+   "primary": false,
+   "counted": false,
+   "counting": "ONE_PER_CLICK",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 60,
+   "view_lookback": 30,
+   "call_min_sec": 60,
+   "default_value": 1.0
+  },
+  "7643656486": {
+   "name": "WC Lead",
+   "status": "ENABLED",
+   "primary": false,
+   "counted": false,
+   "counting": "ONE_PER_CLICK",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 60,
+   "view_lookback": 15,
+   "call_min_sec": 60,
+   "default_value": 1.0
+  }
+ },
+ "counts_before": {
+  "conversion_actions": 16,
+  "campaigns": 23,
+  "ads": 113,
+  "keywords": 6968,
+  "campaign_assets": 283,
+  "ad_schedule": 139,
+  "ip_blocks": 2796
+ },
+ "counts_after": {
+  "conversion_actions": 16,
+  "campaigns": 23,
+  "ads": 113,
+  "keywords": 6968,
+  "campaign_assets": 283,
+  "ad_schedule": 139,
+  "ip_blocks": 2796
+ },
+ "goals_before": [
+  [
+   "CONTACT",
+   "CALL_FROM_ADS",
+   true
+  ],
+  [
+   "CONTACT",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "CONTACT",
+   "WEBSITE",
+   true
+  ],
+  [
+   "ENGAGEMENT",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "GET_DIRECTIONS",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "PAGE_VIEW",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "PHONE_CALL_LEAD",
+   "CALL_FROM_ADS",
+   true
+  ],
+  [
+   "PHONE_CALL_LEAD",
+   "WEBSITE",
+   true
+  ],
+  [
+   "SUBMIT_LEAD_FORM",
+   "WEBSITE",
+   true
+  ]
+ ],
+ "goals_after": [
+  [
+   "CONTACT",
+   "CALL_FROM_ADS",
+   true
+  ],
+  [
+   "CONTACT",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "CONTACT",
+   "WEBSITE",
+   true
+  ],
+  [
+   "ENGAGEMENT",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "GET_DIRECTIONS",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "PAGE_VIEW",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "PHONE_CALL_LEAD",
+   "CALL_FROM_ADS",
+   true
+  ],
+  [
+   "PHONE_CALL_LEAD",
+   "WEBSITE",
+   true
+  ],
+  [
+   "SUBMIT_LEAD_FORM",
+   "WEBSITE",
+   true
+  ]
+ ],
+ "manager_links": {
+  "2815082755": "ACTIVE",
+  "3373711342": "ACTIVE"
+ },
+ "checks": [
+  {
+   "check": "WC Lead [7643656486] is now SECONDARY",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "Call BTN Click [6498555484] is now SECONDARY",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "Visit Thank you page - Submit Form [6498555481] is now SECONDARY",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "WC Calls [7643656075] is now SECONDARY",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "Ambient Cooling - LP -Submit Lead  [6885463625] remains PRIMARY",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "Ambient Cooling - Lp - Phone call  [6885576934] remains PRIMARY",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "Calls from ads [1068114183] remains PRIMARY",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "no action disabled or removed - all seven still ENABLED",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "include_in_conversions_metric: unchanged on the three KEEPERS; automatically set false on the four demoted (Google's defined Secondary behavior)",
+   "pass": true,
+   "detail": "The update_mask contained ONLY primary_for_goal. Google automatically excludes a Secondary action from the Conversions column - that is what Secondary means - and continues to record it in All conversions. Keepers: {\"1068114183\": [true, true], \"6885463625\": [true, true], \"6885576934\": [true, true]} Demoted: {\"6498555481\": [true, false], \"7643656486\": [true, false], \"6498555484\": [true, false], \"7643656075\": [true, false]}"
+  },
+  {
+   "check": "counting_type unchanged",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "attribution model unchanged",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "lookback windows unchanged",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "call duration thresholds unchanged",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "conversion values unchanged",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "action names unchanged",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "customer conversion goals unchanged",
+   "pass": true,
+   "detail": "9 goals"
+  },
+  {
+   "check": "all unrelated counts unchanged",
+   "pass": true,
+   "detail": "before={'conversion_actions': 16, 'campaigns': 23, 'ads': 113, 'keywords': 6968, 'campaign_assets': 283, 'ad_schedule': 139, 'ip_blocks': 2796} after={'conversion_actions': 16, 'campaigns': 23, 'ads': 113, 'keywords': 6968, 'campaign_assets': 283, 'ad_schedule': 139, 'ip_blocks': 2796}"
+  },
+  {
+   "check": "manager links unchanged and ACTIVE",
+   "pass": true,
+   "detail": "{'2815082755': 'ACTIVE', '3373711342': 'ACTIVE'}"
+  },
+  {
+   "check": "primary+counted set is now exactly the three intended",
+   "pass": true,
+   "detail": "['1068114183', '6885463625', '6885576934']"
+  }
+ ],
+ "all_pass": true,
+ "post_change_reporting_note": "Immediately after the change, August still reports metrics.conversions = 3.0 and metrics.all_conversions = 6.0 for the five campaigns. Historical reporting rows do not reprocess instantly and no promise is made that they will. WC Lead 7643656486 still shows its 2026-08-20 conversion in the historical row while now being Secondary. Secondary observations are retained in All conversions, which is the intended outcome. Re-query after propagation for the settled view.",
+ "duplicate_resolution": "Going forward exactly one Primary + counted action exists per physical lead surface: 6885463625 form, 6885576934 website call, 1068114183 call from ad. The 2026-08-20 06:00 HVAC Repair form double count cannot recur."
+}

@@ -1,0 +1,57 @@
+verticals:
+  landscaping:
+    label: Landscaping
+    reference: references/verticals/landscaping.md
+    example_services:
+      - landscape design
+      - landscape installation
+      - lawn care
+      - sod installation
+      - grading
+      - yard drainage
+      - landscape lighting
+      - irrigation
+      - tree and shrub planting
+  hardscaping:
+    label: Hardscaping
+    reference: references/verticals/hardscaping.md
+    example_services:
+      - paver patio installation
+      - retaining walls
+      - walkways
+      - outdoor kitchens
+      - fire pits
+      - pool decks
+      - driveway pavers
+      - masonry repair
+  heating-cooling:
+    label: Heating and Cooling
+    reference: references/verticals/heating-cooling.md
+    example_services:
+      - AC repair
+      - AC replacement
+      - furnace repair
+      - furnace replacement
+      - heat pump repair
+      - heat pump installation
+      - boiler repair
+      - ductless mini-split installation
+      - HVAC maintenance
+  similar-local-service:
+    label: Similar Local Service
+    reference: references/verticals/similar-local-services.md
+    requires_scope_approval: true
+
+rules:
+  exact_service_required: true
+  examples_are_not_client_claims: true
+  one_primary_service_per_work_order: true
+  excluded_verticals:
+    - ecommerce
+    - saas
+    - legal
+    - medical
+    - financial
+    - employment
+    - education
+    - unrelated national lead generation

@@ -1,0 +1,29 @@
+{
+  "plan_id": "PLAN-GA-LAUNCH-3C",
+  "target": {
+    "exact_child_account_name": "Softwind Power Washing - Live",
+    "child_customer_id": "1521725229",
+    "exact_service": "Power Washing",
+    "manager_customer_id": "3373711342",
+    "campaign_id": "24103511039"
+  },
+  "actions": [
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870585390",
+      "resource_id": "819975939342",
+      "current": "ENABLED",
+      "proposed": "PAUSED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870585390",
+      "resource_id": "819975939345",
+      "current": "ENABLED",
+      "proposed": "PAUSED",
+      "field_mask": "status"
+    }
+  ],
+  "mutation_count": 2
+}

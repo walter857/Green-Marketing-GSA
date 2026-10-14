@@ -1,0 +1,113 @@
+{
+  "errors": [],
+  "conversion_actions": [
+    {
+      "id": "7717433751",
+      "name": "Whatconverts Form",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "owner_customer": "customers/8735782888",
+      "status": "ENABLED",
+      "category": "CONTACT",
+      "origin": "WEBSITE",
+      "type": "UPLOAD_CLICKS"
+    },
+    {
+      "id": "7717433754",
+      "name": "Whatconverts Calls",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "owner_customer": "customers/8735782888",
+      "status": "ENABLED",
+      "category": "CONTACT",
+      "origin": "CALL_FROM_ADS",
+      "type": "UPLOAD_CALLS"
+    }
+  ],
+  "campaign_goal_config": [
+    {
+      "campaign_id": "20315156610",
+      "campaign": "Irrigation & Sprinklers",
+      "status": "ENABLED",
+      "goal_config_level": "CUSTOMER",
+      "custom_conversion_goal": ""
+    },
+    {
+      "campaign_id": "21718922354",
+      "campaign": "Drainage",
+      "status": "PAUSED",
+      "goal_config_level": "CUSTOMER",
+      "custom_conversion_goal": ""
+    },
+    {
+      "campaign_id": "22027188372",
+      "campaign": "Winterization",
+      "status": "PAUSED",
+      "goal_config_level": "CUSTOMER",
+      "custom_conversion_goal": ""
+    },
+    {
+      "campaign_id": "22255200632",
+      "campaign": "Outdoor Lightning",
+      "status": "PAUSED",
+      "goal_config_level": "CUSTOMER",
+      "custom_conversion_goal": ""
+    },
+    {
+      "campaign_id": "22379036365",
+      "campaign": "Leads-Performance Max-Sprinkler-Repair",
+      "status": "PAUSED",
+      "goal_config_level": "CUSTOMER",
+      "custom_conversion_goal": ""
+    }
+  ],
+  "custom_conversion_goals": [],
+  "wc_in_active_custom_goal": [],
+  "customer_goals": [
+    {
+      "category": "PAGE_VIEW",
+      "origin": "GOOGLE_HOSTED",
+      "biddable": false
+    },
+    {
+      "category": "PHONE_CALL_LEAD",
+      "origin": "WEBSITE",
+      "biddable": true
+    },
+    {
+      "category": "PHONE_CALL_LEAD",
+      "origin": "CALL_FROM_ADS",
+      "biddable": true
+    },
+    {
+      "category": "SUBMIT_LEAD_FORM",
+      "origin": "WEBSITE",
+      "biddable": true
+    },
+    {
+      "category": "GET_DIRECTIONS",
+      "origin": "GOOGLE_HOSTED",
+      "biddable": false
+    },
+    {
+      "category": "CONTACT",
+      "origin": "WEBSITE",
+      "biddable": true
+    },
+    {
+      "category": "CONTACT",
+      "origin": "GOOGLE_HOSTED",
+      "biddable": false
+    },
+    {
+      "category": "CONTACT",
+      "origin": "CALL_FROM_ADS",
+      "biddable": true
+    },
+    {
+      "category": "ENGAGEMENT",
+      "origin": "GOOGLE_HOSTED",
+      "biddable": false
+    }
+  ]
+}

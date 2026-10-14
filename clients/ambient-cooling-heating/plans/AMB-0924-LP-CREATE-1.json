@@ -1,0 +1,2331 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-24",
+ "plan_name": "AMB-0924-LP-CREATE-1",
+ "approval_class": "create-paused",
+ "everything_created_paused": true,
+ "nothing_enabled": true,
+ "nothing_removed": true,
+ "no_budget_bid_or_targeting_change": true,
+ "no_heat_hold_released_by": "owner instruction 2026-09-24: build No Heat Repair with business-hour messaging and no 24/7 or same-day promise. Copy states the published hours Mon-Fri 8 a.m.-4 p.m.",
+ "operations": [
+  {
+   "op": "CREATE_SITELINK_ASSET",
+   "key": "SL_FURNACE",
+   "link_text": "Furnace Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+   "description1": "Find the cause of the problem",
+   "description2": "Clear repair options"
+  },
+  {
+   "op": "CREATE_SITELINK_ASSET",
+   "key": "SL_NOHEAT",
+   "link_text": "No Heat Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/no-heat-repair/",
+   "description1": "House cold with the heat on?",
+   "description2": "Call Mon-Fri, 8 a.m.-4 p.m."
+  },
+  {
+   "op": "CREATE_SITELINK_ASSET",
+   "key": "SL_HPREP",
+   "link_text": "Heat Pump Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-repair/",
+   "description1": "Heat pump not heating?",
+   "description2": "Repair or replace advice"
+  },
+  {
+   "op": "CREATE_SITELINK_ASSET",
+   "key": "SL_HPINS",
+   "link_text": "Heat Pump Installation",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-installation/",
+   "description1": "Installation assessment",
+   "description2": "Request a free quote"
+  },
+  {
+   "op": "CREATE_SITELINK_ASSET",
+   "key": "SL_HPREPL",
+   "link_text": "Heat Pump Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-replacement/",
+   "description1": "Replace worn equipment",
+   "description2": "Request a free quote"
+  },
+  {
+   "op": "CREATE_SITELINK_ASSET",
+   "key": "SL_HPMAINT",
+   "link_text": "Heat Pump Maintenance",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-maintenance/",
+   "description1": "Planned heat pump checks",
+   "description2": "Request a free quote"
+  },
+  {
+   "op": "CREATE_SITELINK_ASSET",
+   "key": "SL_BOILREPL",
+   "link_text": "Boiler Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/boiler-replacement/",
+   "description1": "Replacement assessment",
+   "description2": "Request a free quote"
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24257819463",
+   "sitelink": "SL_FURNACE",
+   "existing_asset_id": null
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24257819463",
+   "sitelink": "SL_NOHEAT",
+   "existing_asset_id": null
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24257819463",
+   "sitelink": "SL_HPREP",
+   "existing_asset_id": null
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24257819463",
+   "sitelink": "SL_HVACREP",
+   "existing_asset_id": "410638280067"
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24257819466",
+   "sitelink": "SL_HPINS",
+   "existing_asset_id": null
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24257819466",
+   "sitelink": "SL_HPREPL",
+   "existing_asset_id": null
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24257819466",
+   "sitelink": "SL_HVACINST",
+   "existing_asset_id": "410638276380"
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24257819466",
+   "sitelink": "SL_HVACREPL",
+   "existing_asset_id": "410638278156"
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24268690038",
+   "sitelink": "SL_HPREP",
+   "existing_asset_id": null
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24268690038",
+   "sitelink": "SL_HPINS",
+   "existing_asset_id": null
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24268690038",
+   "sitelink": "SL_HPREPL",
+   "existing_asset_id": null
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24268690038",
+   "sitelink": "SL_HPMAINT",
+   "existing_asset_id": null
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24132507744",
+   "sitelink": "SL_BOILREPL",
+   "existing_asset_id": null
+  },
+  {
+   "op": "LINK_SITELINK_TO_CAMPAIGN_PAUSED",
+   "campaign_id": "24132507744",
+   "sitelink": "SL_GASBOIL",
+   "existing_asset_id": "410465469923"
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "199797580706",
+   "ad_group": "SKAG | Furnace Repair",
+   "copy_of_ad_id": "825056834769",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    {
+     "text": "Furnace Repair in Central MD",
+     "pin": "HEADLINE_1"
+    },
+    {
+     "text": "Furnace Repair Severn MD",
+     "pin": "HEADLINE_1"
+    },
+    {
+     "text": "Furnace Repair Service",
+     "pin": "HEADLINE_1"
+    },
+    {
+     "text": "Gas Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Not Working?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We Diagnose the Problem",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Qualified Heating Techs",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Honest Assessment First",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Repair & Maintenance",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Homes and Businesses",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park & Columbia",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Ambient Cooling & Heating",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Call for Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book Furnace Service",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Furnace repair for homes and businesses in Severn, Severna Park and Columbia.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Our qualified technicians diagnose the issue and explain what they found.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Honest assessments and clear recommendations before any repair work begins.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Gas furnace repair and maintenance across the surrounding Maryland communities.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "furnace",
+   "path2": "repair"
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "199797580706",
+   "ad_group": "SKAG | Furnace Repair",
+   "copy_of_ad_id": "825056834772",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    {
+     "text": "Furnace Blowing Cold Air?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Will Not Start?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Is Your Furnace Noisy?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating System Diagnosis",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Gas Furnace Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Repair Done Efficiently",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Recommendations",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Serving Anne Arundel Co.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk to a Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Residential & Commercial",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a Service Visit",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Furnace trouble in Severn, Severna Park or Columbia? Our technicians can help.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We diagnose the fault and recommend the repair, with transparency throughout.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Prompt, efficient furnace repair and maintenance from trained technicians.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Ambient serves homes and businesses across the surrounding Maryland area.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "furnace",
+   "path2": "repair"
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "204129717247",
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "copy_of_ad_id": "825585199601",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    {
+     "text": "Gas Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Gas Furnace Repair Severn",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Gas Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Gas Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Gas Furnace Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule A Repair Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained HVAC Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Home Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Repair Central MD",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Gas furnace repair for homes in Severn, Severna Park and Columbia, Maryland.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Our technicians diagnose the fault and explain your options clearly.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a furnace repair visit with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Serving Central Maryland with professional furnace repair.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "204129717247",
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "copy_of_ad_id": "825585199604",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    {
+     "text": "Gas Furnace Not Working?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Blowing Cold Air?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Cutting Out?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Get Your Furnace Checked",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Gas Furnace Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Repair Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Furnace Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We Repair Gas Furnaces",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Repair Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Furnace Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Anne Arundel Furnace",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Gas furnace trouble in Severn, Severna Park or Columbia? Our technicians help.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We diagnose the problem and walk you through the repair options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace repair for Maryland homes and commercial properties.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule a furnace repair appointment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "204129717287",
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "copy_of_ad_id": "825585199607",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    {
+     "text": "Electric Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Electric Furnace Severn",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Electric Furnace Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule A Repair Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained HVAC Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Home Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Repair Central MD",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Electric furnace repair for homes in Severn, Severna Park and Columbia, MD.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Our technicians diagnose the fault and explain your options clearly.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a furnace repair visit with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Serving Central Maryland with professional furnace repair.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "204129717287",
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "copy_of_ad_id": "825585199610",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    {
+     "text": "Electric Furnace Faulty?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Blowing Cold Air?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Cutting Out?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Get Your Furnace Checked",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Repair Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Furnace Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We Repair Electric Furnaces",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Repair Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Furnace Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Furnace Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Anne Arundel Furnace",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Electric furnace trouble in Severn, Severna Park or Columbia? We can help.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We diagnose the problem and walk you through the repair options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace repair for Maryland homes and commercial properties.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule a furnace repair appointment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "204129717007",
+   "ad_group": "SKAG | Heating Repair",
+   "copy_of_ad_id": "825585199595",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "headlines": [
+    {
+     "text": "Heating Repair Central MD",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating Repair in Severn",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Heating",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia MD Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Local Heating Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating System Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule A Repair Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained HVAC Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Home Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating Service Central MD",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Heating repair for homes across Severn, Severna Park and Columbia, Maryland.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Our technicians diagnose the fault and explain your options clearly.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a heating repair visit with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Serving Central Maryland with professional heating services.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "204129717007",
+   "ad_group": "SKAG | Heating Repair",
+   "copy_of_ad_id": "825585199598",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "headlines": [
+    {
+     "text": "Heating Not Working?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Running But Cold?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating System Faulty?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Get Your Heating Checked",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Heating",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating Repair Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Heating Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We Repair Home Heating",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Repair Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Heating Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Heating Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Anne Arundel Heating",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Heating trouble in Severn, Severna Park or Columbia? Our technicians help.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We diagnose the problem and walk you through the repair options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating repair for Maryland homes and commercial properties.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule a heating repair appointment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "204129717767",
+   "ad_group": "SKAG | Furnace Replacement",
+   "copy_of_ad_id": "825585199619",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    {
+     "text": "Furnace Replacement",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Replace Your Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Replacement Severn",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia MD Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "New Furnace Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Replacement Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book An Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained HVAC Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Furnace Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Replacement Info",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Plan Your Replacement",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Replace Central MD",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Furnace replacement for homes in Severn, Severna Park and Columbia, Maryland.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We assess your current furnace and explain the replacement options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a furnace assessment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Serving Central Maryland with professional furnace replacement.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "204129717767",
+   "ad_group": "SKAG | Furnace Replacement",
+   "copy_of_ad_id": "825585199622",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    {
+     "text": "Furnace Near The End?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Old Furnace Failing?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Repair Or Replace?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Upgrade Your Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Replacement Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Furnace Help",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Furnace",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book An Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Plan The Replacement",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Replacement Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request An Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Furnace Help",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Warm Home This Winter",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "An ageing furnace gives little warning. Plan the replacement early.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We assess your current furnace and set out the replacement options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace replacement across Severn, Severna Park and Columbia homes.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule a furnace assessment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "204129718047",
+   "ad_group": "SKAG | Boiler Repair",
+   "copy_of_ad_id": "825585199643",
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "headlines": [
+    {
+     "text": "Boiler Repair in Severn",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Repair Central MD",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Boiler",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia MD Boiler Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Residential Boiler Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Commercial Boiler Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Repair Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Boiler Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Boiler Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Diagnosis Explained",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule Boiler Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Homes And Businesses",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained HVAC Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Service Central MD",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Boiler Repair",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Boiler repair for homes and businesses in Severn, Severna Park and Columbia.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Our technicians diagnose the fault and explain your options clearly.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a boiler repair visit with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Serving Central Maryland with professional boiler repair.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "migration_copy",
+   "ad_group_id": "204129718047",
+   "ad_group": "SKAG | Boiler Repair",
+   "copy_of_ad_id": "825585199646",
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+   "old_final_url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "headlines": [
+    {
+     "text": "Boiler Stopped Working?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "No Heat From Your Boiler?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Leaking?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Get Your Boiler Looked At",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Boilers",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Repair Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Boiler Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Boiler Inspection",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We Repair Home Boilers",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We Repair Business Boilers",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Repair Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Boiler Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Boiler Service",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Boiler trouble in Severn, Severna Park or Columbia? Our technicians help.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We diagnose the problem and walk you through the repair options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler repair for Maryland homes and commercial properties.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule a boiler repair appointment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129717087",
+   "ad_group": "SKAG | No Heat Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/no-heat-repair/",
+   "label": "RSA A - service and hours led",
+   "headlines": [
+    {
+     "text": "No Heat Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "No Heat Repair Central MD",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "No Heat In Your Home?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "House Has No Heat?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Heating Repair Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia MD Heating Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Call Mon-Fri 8 AM-4 PM",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Free Heating Repair Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Repair Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request A Heating Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Heating Repair",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "No heat in your Severn, Severna Park or Columbia home? Request a repair visit.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We diagnose why your home has no heat and explain the repair options first.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Call Mon-Fri, 8 a.m.-4 p.m., or send a repair request online.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request a free no heat repair quote from Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129717087",
+   "ad_group": "SKAG | No Heat Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/no-heat-repair/",
+   "label": "RSA B - problem led",
+   "headlines": [
+    {
+     "text": "No Heat From The Vents?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Furnace Running, No Heat?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating System Not Heating?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "No Heat Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Thermostat On, House Cold?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Get Your Heating Checked",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "No Heat Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heating Repair Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Heating",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Repair Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Open Mon-Fri, 8 AM-4 PM",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request A Repair Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Heating Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Heating Help",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Thermostat calling for heat but the house stays cold? We find the cause.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We diagnose the no-heat fault and walk you through the repair options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "No heat repair for homes in Severn, Severna Park and Columbia, Maryland.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Open Monday to Friday, 8 a.m. to 4 p.m. Request your no heat repair visit.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129717327",
+   "ad_group": "SKAG | Heat Pump Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-repair/",
+   "label": "RSA A - 2026-09-22 draft",
+   "headlines": [
+    {
+     "text": "Heat Pump Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Repair Severn",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Heat Pump Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Heat Pump Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule A Repair Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained HVAC Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Heat Pump Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Heat Pump Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Home Heat Pump Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Service Central MD",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Heat pump repair for homes in Severn, Severna Park and Columbia, Maryland.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Our technicians diagnose the fault and explain your options clearly.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a heat pump repair visit with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Serving Central Maryland with professional heat pump repair.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129717327",
+   "ad_group": "SKAG | Heat Pump Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-repair/",
+   "label": "RSA B - 2026-09-22 draft",
+   "headlines": [
+    {
+     "text": "Heat Pump Not Heating?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Running Cold?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Icing Over?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Get Your Heat Pump Checked",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Repair Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Heat Pump Repair",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Heat Pump Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We Repair Home Heat Pumps",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Repair Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Heat Pump Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Heat Pump Help",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Anne Arundel Heat Pump",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Heat pump trouble in Severn, Severna Park or Columbia? Our technicians help.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We diagnose the problem and walk you through the repair options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat pump repair for Maryland homes and commercial properties.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule a heat pump repair appointment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129717487",
+   "ad_group": "SKAG | Heat Pump Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-replacement/",
+   "label": "RSA A - 2026-09-22 draft",
+   "headlines": [
+    {
+     "text": "Heat Pump Replacement",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Replace Your Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Replace Severn",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "New Heat Pump Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Replacement Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book An Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained HVAC Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Heat Pump Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Replacement Info",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Plan Your Replacement",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Central MD",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Heat pump replacement for homes in Severn, Severna Park and Columbia, Maryland.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We assess your current heat pump and explain the replacement options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a heat pump assessment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Serving Central Maryland with professional heat pump replacement.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129717487",
+   "ad_group": "SKAG | Heat Pump Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-replacement/",
+   "label": "RSA B - 2026-09-22 draft",
+   "headlines": [
+    {
+     "text": "Heat Pump Near The End?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Old Heat Pump Struggling?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Repair Or Replace?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Upgrade Your Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Replace Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Heat Pump Help",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book An Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Plan The Replacement",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Replacement Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request An Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Heat Pump Help",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Warm Home This Winter",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "An ageing heat pump gives little warning. Plan the replacement early.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We assess your current heat pump and set out the replacement options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat pump replacement across Severn, Severna Park and Columbia homes.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule a heat pump assessment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129717527",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-installation/",
+   "label": "RSA A - 2026-09-22 draft",
+   "headlines": [
+    {
+     "text": "Heat Pump Installation",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Install Severn",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia MD Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Install A New Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Installers",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Heat Pump Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained HVAC Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Heat Pump Fit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Heat Pump Info",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule An Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To An Installer",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Install Central MD",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Heat pump installation for homes across Severn, Severna Park and Columbia, MD.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We size the system to your home and explain the options clearly.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a heat pump assessment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Experienced heat pump installation across Central Maryland.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129717527",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-installation/",
+   "label": "RSA B - 2026-09-22 draft",
+   "headlines": [
+    {
+     "text": "Need A New Heat Pump?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Considering A Heat Pump?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Upgrade Your Heating",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Install Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Warm Home This Winter",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Installation",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Heat Pump Fitters",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Heat Pump Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To An Installer",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Efficient Home Heating",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Heat Pump Install",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Heat Pump Install",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Installation Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Sized For Your Home",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request An Assessment",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Planning a new heat pump in Central Maryland? Speak to our installers.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We assess your home, size the system and explain each option.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat pump installation for Severn, Severna Park and Columbia homes.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a heat pump installation assessment with Ambient.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129717567",
+   "ad_group": "SKAG | Heat Pump Maintenance",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-maintenance/",
+   "label": "RSA A - 2026-09-22 draft",
+   "headlines": [
+    {
+     "text": "Heat Pump Maintenance",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Care Severn",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Heat Pump Care",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Heat Pump Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book Heat Pump Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Care Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Service Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule A Service Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained HVAC Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Heat Pump Care",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Heat Pump Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Home Heat Pump Care",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Care Central MD",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Heat pump maintenance for homes in Severn, Severna Park and Columbia, Maryland.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Our technicians check the system and explain what it needs.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a heat pump maintenance visit with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Serving Central Maryland with professional heat pump maintenance.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129717567",
+   "ad_group": "SKAG | Heat Pump Maintenance",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-maintenance/",
+   "label": "RSA B - 2026-09-22 draft",
+   "headlines": [
+    {
+     "text": "Heat Pump Due A Service?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Keep Your Heat Pump Running",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Before The Cold Arrives",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book Heat Pump Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Care Near You",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Heat Pump Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat Pump Care Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book A Service Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Planned Heat Pump Care",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Service Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request A Service Visit",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Heat Pump Care",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Warm Home This Winter",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "A heat pump checked before winter is less likely to fail during it.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We inspect the system and set out anything that needs attention.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Heat pump maintenance across Severn, Severna Park and Columbia homes.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule a heat pump maintenance visit with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129718207",
+   "ad_group": "SKAG | Boiler Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/boiler-replacement/",
+   "label": "RSA A - 2026-09-22 draft",
+   "headlines": [
+    {
+     "text": "Boiler Replacement",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Replace Your Boiler",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Replace Severn",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severna Park Boiler",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia MD Boiler",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "New Boiler Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Replacement Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Boiler",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book An Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Trained HVAC Technicians",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Boiler Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Replacement Info",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Plan Your Replacement",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Replace Central MD",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Boiler replacement for homes and businesses across Central Maryland.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We assess your current boiler and explain the replacement options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book a boiler assessment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Serving Severn, Severna Park and Columbia with boiler replacement.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "kind": "launch",
+   "ad_group_id": "204129718207",
+   "ad_group": "SKAG | Boiler Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/boiler-replacement/",
+   "label": "RSA B - 2026-09-22 draft",
+   "headlines": [
+    {
+     "text": "Boiler Near The End?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Old Boiler Struggling?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Repair Or Replace?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Upgrade Your Boiler",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Replacement Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Boiler Help",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler Specialists",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Boiler",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Book An Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To A Technician",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Plan The Replacement",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Replacement Options",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request An Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Boiler Help",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Warm Home This Winter",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "An ageing boiler gives little warning. Plan the replacement early.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We assess your current boiler and set out the replacement options.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Boiler replacement across Severn, Severna Park and Columbia.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Schedule a boiler assessment with Ambient Cooling and Heating.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "path1": "",
+   "path2": ""
+  }
+ ],
+ "operation_count": 45,
+ "preflight": {
+  "CREATE sitelink assets": "VALIDATED 7",
+  "LINK existing offer sitelinks PAUSED (subset)": "VALIDATED 4",
+  "CREATE migration RSA copies PAUSED": "VALIDATED 12",
+  "CREATE launch RSAs PAUSED": "VALIDATED 12"
+ },
+ "fingerprint": "2A5C12587E7B"
+}

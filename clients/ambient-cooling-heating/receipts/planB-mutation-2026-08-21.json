@@ -1,0 +1,179 @@
+{
+ "executed_utc": "2026-08-21T04:09:36.742828Z",
+ "completed_utc": "2026-08-21T04:09:37.419364Z",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "approved_fingerprint": "03F125C189679E35",
+ "package": "Conversion Plan B - one Primary per physical lead surface",
+ "decision_gate": "WhatConverts console could not be inspected: no authenticated session was available and credentials must not be requested. Per the approved decision rule, an uninspectable or ambiguous WhatConverts state resolves to Plan B. The observed same-hour co-firing of WC Lead and LP Submit Lead Forms on 2026-08-20 at 06:00 corroborates it.",
+ "execution_shape": "GoogleAdsService.Mutate, 4 mutate_operations, partial_failure=false, validate_only=false",
+ "operations_sent": 4,
+ "responses_returned": 4,
+ "demoted_to_secondary": [
+  "7643656486",
+  "6498555484",
+  "6498555481",
+  "7643656075"
+ ],
+ "kept_primary": [
+  "6885463625",
+  "6885576934",
+  "1068114183"
+ ],
+ "returned_resource_names": [
+  "customers/2401959466/conversionActions/7643656486",
+  "customers/2401959466/conversionActions/6498555484",
+  "customers/2401959466/conversionActions/6498555481",
+  "customers/2401959466/conversionActions/7643656075"
+ ],
+ "state_before": {
+  "1068114183": {
+   "name": "Calls from ads",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "PHONE_CALL_LEAD",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 30,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6498555481": {
+   "name": "Visit Thank you page - Submit Form",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "SUBMIT_LEAD_FORM",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 1,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6498555484": {
+   "name": "Call BTN Click",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "CONTACT",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 1,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6885463625": {
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "SUBMIT_LEAD_FORM",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 1,
+   "call_min_sec": 60,
+   "default_value": 0.0
+  },
+  "6885576934": {
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "PHONE_CALL_LEAD",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 30,
+   "view_lookback": 30,
+   "call_min_sec": 30,
+   "default_value": 0.0
+  },
+  "7643656075": {
+   "name": "WC Calls",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "CONTACT",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 60,
+   "view_lookback": 30,
+   "call_min_sec": 60,
+   "default_value": 1.0
+  },
+  "7643656486": {
+   "name": "WC Lead",
+   "status": "ENABLED",
+   "primary": true,
+   "counted": true,
+   "counting": "ONE_PER_CLICK",
+   "category": "CONTACT",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_lookback": 60,
+   "view_lookback": 15,
+   "call_min_sec": 60,
+   "default_value": 1.0
+  }
+ },
+ "pre_write_counts": {
+  "conversion_actions": 16,
+  "campaigns": 23,
+  "ads": 113,
+  "keywords": 6968,
+  "campaign_assets": 283,
+  "ad_schedule": 139,
+  "ip_blocks": 2796
+ },
+ "customer_conversion_goals_before": [
+  [
+   "CONTACT",
+   "CALL_FROM_ADS",
+   true
+  ],
+  [
+   "CONTACT",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "CONTACT",
+   "WEBSITE",
+   true
+  ],
+  [
+   "ENGAGEMENT",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "GET_DIRECTIONS",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "PAGE_VIEW",
+   "GOOGLE_HOSTED",
+   false
+  ],
+  [
+   "PHONE_CALL_LEAD",
+   "CALL_FROM_ADS",
+   true
+  ],
+  [
+   "PHONE_CALL_LEAD",
+   "WEBSITE",
+   true
+  ],
+  [
+   "SUBMIT_LEAD_FORM",
+   "WEBSITE",
+   true
+  ]
+ ],
+ "preflight_gates": "10/10"
+}

@@ -1,0 +1,26 @@
+{
+ "plan_name": "AMB-0909B-CPC-INST-1",
+ "fingerprint": "DE376F91F449",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "validate_only": true,
+ "partial_failure": false,
+ "operation_count": 1,
+ "operations_log": [
+  "UPDATE campaign 24132507747 (HVAC Installation) cpc_bid_ceiling_micros -> 65000000"
+ ],
+ "identity": {
+  "descriptive_name == 'Ambient Cooling - Live'": true,
+  "customer.id == 2401959466": true,
+  "not a manager account": true,
+  "not a test account": true,
+  "time_zone == America/New_York": true,
+  "currency_code == USD": true,
+  "Green Marketing manager 3373711342 ACTIVE": true,
+  "ClickCease manager 2815082755 ACTIVE": true
+ },
+ "started_local": "2026-09-09T18:05:42.144663-04:00",
+ "status": "VALIDATED_OK",
+ "results_returned": 0,
+ "finished_local": "2026-09-09T18:05:42.565651-04:00"
+}

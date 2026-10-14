@@ -1,0 +1,131 @@
+# PLAN-GA-LAUNCH-3B - PRE-ENABLEMENT LEGACY GUARD
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+# Fingerprint B9EDA34DA712  (recomputed twice, identical)
+# validate_only PASSED. ZERO resources changed.
+#
+# WHY THIS PLAN EXISTS: the fresh read found FOUR resources that are ENABLED inside
+# PAUSED ad groups and are NOT part of the authoritative final inventory. They would
+# begin serving the instant their parent ad group is enabled. The standing rule is to
+# STOP and report before fingerprinting the enablement plan when a new pause mutation
+# is required. This is that pause, isolated into its own approval.
+
+change_plan:
+  plan_id: PLAN-GA-LAUNCH-3B
+  plan_title: Pre-enablement legacy guard
+  approval_type: PAUSE
+  priority: P0
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: B9EDA34DA712
+  canonical_sha256_full: b9eda34da712afcdf2288ce7850c0dbae0f5312a96eba1f2f889c57b6cd4bf09
+  approval_command: APPROVE PLAN-GA-LAUNCH-3B B9EDA34DA712 FOR 1521725229
+  payload_file: clients/softwind-power-washing/plans/2026-09-02-plan-ga-launch-3b-payload.json
+
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    campaign_id: '24103511039'
+
+  counts:
+    action_count: 4
+    object_count: 4
+    mutation_count: 4
+    creations: 0
+    enablements: 0
+    campaign_changes: 0
+    budget_changes: 0
+    cpc_changes: 0
+
+  validation:
+    validate_only_keywords: 'PASS - 2 pause operations validated, 0 applied'
+    validate_only_ads: 'PASS - 2 pause operations validated, 0 applied'
+    conflict_set_matches_fresh_read: true
+    fingerprint_recomputed_twice: true
+    field_mask: 'status only - nothing else is touched on any resource'
+
+  actions:
+    - action: P-1
+      type: ad_group_criterion
+      ad_group_id: '202870585910'
+      ad_group_name: House Washing Company Near Me
+      resource_id: '384030528226'
+      keyword: house washing company near me
+      match_type: PHRASE
+      current_status: ENABLED
+      proposed_status: PAUSED
+      policy: APPROVED / ELIGIBLE
+      reason: >-
+        NOT in the authoritative final inventory. It was removed for bucket collapse -
+        it shares the 40/mo Planner bucket with the owned text `house washing near me`.
+        It is ENABLED inside a PAUSED ad group, so enabling House Washing would activate
+        it and create intra-ad-group self-competition against its own owner text.
+      rollback: set status back to ENABLED
+    - action: P-2
+      type: ad_group_criterion
+      ad_group_id: '202870585910'
+      ad_group_name: House Washing Company Near Me
+      resource_id: '502487923397'
+      keyword: house washing company near me
+      match_type: EXACT
+      current_status: ENABLED
+      proposed_status: PAUSED
+      policy: APPROVED / ELIGIBLE
+      reason: same as P-1
+      rollback: set status back to ENABLED
+    - action: P-3
+      type: ad_group_ad
+      ad_group_id: '202870586310'
+      ad_group_name: Soft House Washing Near Me
+      resource_id: '819975939528'
+      current_status: ENABLED
+      proposed_status: PAUSED
+      policy: APPROVED AND ELIGIBLE
+      final_url: https://offer.softwindli.com/soft-house-washing/
+      reason: >-
+        A legacy RSA not created by PLAN-GA-LAUNCH-1, ENABLED inside a PAUSED ad group.
+        Enabling Soft Washing would activate it, giving that ad group FOUR ads and
+        violating the two-RSA-per-group specification. Its replacement pair
+        (823152917215, 823152917218) is already created and waiting.
+      rollback: set status back to ENABLED
+    - action: P-4
+      type: ad_group_ad
+      ad_group_id: '202870586310'
+      ad_group_name: Soft House Washing Near Me
+      resource_id: '819975939531'
+      current_status: ENABLED
+      proposed_status: PAUSED
+      policy: APPROVED AND ELIGIBLE
+      final_url: https://offer.softwindli.com/soft-house-washing/
+      reason: same as P-3
+      rollback: set status back to ENABLED
+
+  coverage_risk_and_how_it_is_handled:
+    risk: >-
+      Pausing the two legacy Soft Washing ads while their replacements are still UNDER
+      REVIEW would leave that ad group with no servable ad IF it were enabled in that
+      state.
+    mitigation: >-
+      Sequencing, not rule-breaking. PLAN-GA-LAUNCH-3B only PAUSES - it enables nothing,
+      and ad group 202870586310 stays PAUSED, so nothing goes dark. PLAN-GA-LAUNCH-3A is
+      separately gated on all twelve new RSAs clearing review, so by the time Soft Washing
+      is enabled it has two approved ads.
+    why_not_leave_them_enabled: >-
+      The standing rule is explicit - a nonfinal ad must not become active merely because
+      its parent ad group is enabled. Bending it here would also put four ads in one group.
+
+  what_this_plan_does_not_do:
+    - creates nothing
+    - enables nothing
+    - deletes nothing
+    - touches no campaign, budget, CPC ceiling or bidding strategy
+    - touches no negative keyword, audience, asset, location, schedule or conversion
+    - touches no website, GTM or WhatConverts setting
+    - does not touch campaign 24145053510
+
+  dependency: NONE - executable on approval
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does NOT grant permission.

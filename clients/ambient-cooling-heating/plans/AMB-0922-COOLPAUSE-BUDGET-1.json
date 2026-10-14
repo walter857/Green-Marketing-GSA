@@ -1,0 +1,149 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-22",
+ "plan_name": "AMB-0922-COOLPAUSE-BUDGET-1",
+ "approval_class": "pause-delivery-and-reallocate",
+ "sequencing": "Cooling is paused and the commercial budget is reduced BEFORE any heating budget rises, inside one plan, so the enabled total never exceeds its end state even momentarily.",
+ "nothing_deleted": true,
+ "commercial_preserved": {
+  "campaign_id": "24132507747",
+  "budget_id": "15787409441",
+  "campaign": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+  "from_usd": 95.0,
+  "to_usd": 20.0,
+  "residential_ad_group": "202339087634",
+  "commercial_ad_group": "199748801029",
+  "why": "The campaign carries BOTH the residential HVAC Installation ad group and the separately scoped Commercial HVAC Installation ad group. Pausing the campaign would stop an approved commercial service, so only the residential ad group is paused and the campaign stays ENABLED at a $20 holding allocation.",
+  "commercial_state": "Ad group ENABLED, 2 keywords ELIGIBLE, 2 ads APPROVED but BOTH PAUSED, destination live at HTTP 200, all-time delivery 0 impressions and $0.00. It spends nothing until its ads are enabled, which is a separate owner decision."
+ },
+ "inventory": {
+  "24132507741": {
+   "campaign": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "level": "CAMPAIGN",
+   "ad_groups": {
+    "202339087834": "SKAG | AC Repair Near Me"
+   },
+   "rollback": {
+    "status": "ENABLED",
+    "daily": 45.0,
+    "budget_id": "15787409435",
+    "ceiling": 25.0
+   }
+  },
+  "24132507750": {
+   "campaign": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+   "level": "CAMPAIGN",
+   "ad_groups": {
+    "202339087674": "SKAG | HVAC Repair Near Me"
+   },
+   "rollback": {
+    "status": "ENABLED",
+    "daily": 70.0,
+    "budget_id": "15787409444",
+    "ceiling": 25.0
+   }
+  },
+  "24132507753": {
+   "campaign": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "level": "CAMPAIGN",
+   "ad_groups": {
+    "200159223798": "SKAG | HVAC Replacement Near Me"
+   },
+   "rollback": {
+    "status": "ENABLED",
+    "daily": 15.0,
+    "budget_id": "15787409447",
+    "ceiling": 30.0
+   }
+  },
+  "24132507747": {
+   "campaign": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "level": "AD_GROUP",
+   "ad_groups": {
+    "202339087634": "SKAG | HVAC Installation"
+   },
+   "preserve": {
+    "199748801029": "SKAG | Commercial HVAC Installation"
+   },
+   "rollback": {
+    "status": "ENABLED",
+    "daily": 95.0,
+    "budget_id": "15787409441",
+    "ceiling": 30.0,
+    "ad_group_202339087634_status": "ENABLED",
+    "enabled_ads": [
+     "821319509197",
+     "821319509200"
+    ]
+   }
+  }
+ },
+ "rollback": "Every original campaign status, budget, ceiling, ad-group status and enabled ad ID is in 'inventory'. Reversal is a status flip back to the recorded values; nothing is removed, so nothing must be recreated.",
+ "operations": [
+  {
+   "op": "PAUSE_CAMPAIGN",
+   "campaign_id": "24132507741",
+   "campaign": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN",
+   "campaign_id": "24132507750",
+   "campaign": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08"
+  },
+  {
+   "op": "PAUSE_CAMPAIGN",
+   "campaign_id": "24132507753",
+   "campaign": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08"
+  },
+  {
+   "op": "PAUSE_AD_GROUP",
+   "campaign_id": "24132507747",
+   "ad_group_id": "202339087634",
+   "ad_group": "SKAG | HVAC Installation"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409441",
+   "campaign_id": "24132507747",
+   "from_usd": 95.0,
+   "to_usd": 20.0
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15885327972",
+   "campaign_id": "24257819463",
+   "to_usd": 85.0
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15885327975",
+   "campaign_id": "24257819466",
+   "to_usd": 60.0
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_BUDGET_AMOUNT",
+   "budget_id": "15787409438",
+   "campaign_id": "24132507744",
+   "to_usd": 45.0
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "campaign_id": "24257819463",
+   "to_usd": 42.0
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "campaign_id": "24257819466",
+   "to_usd": 46.0
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "campaign_id": "24132507744",
+   "to_usd": 60.0
+  }
+ ],
+ "operation_count": 11,
+ "fingerprint": "44EAF19FC7D6"
+}

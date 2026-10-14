@@ -1,0 +1,62 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # IDENTITY GATE PASSED 2026-09-17, fresh read-only API lookup, 10/10 checks.
+    # Evidence: snapshots/heating-build-snapshot-2026-09-17.json
+    # child customer id 2401959466 - NOT the Green Marketing MCC 3373711342
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Heating Repair
+    related_services:
+      - Heat Pump Installation
+      - Heating Installation
+  task:
+    type: campaign-build
+    mode: create-paused
+    request: >-
+      Build a heating Search structure that uses Ambient's EXISTING dedicated service pages on
+      ambientcoolingandheating.com as final URLs. No landing-page documents, no Drive folders,
+      no offer-subdomain heating pages. Two PAUSED campaigns (Heating Repair, Heating
+      Installation), three PAUSED ad groups (Furnace Repair, Heat Pump Installation, Mini Split
+      Installation), 26 Phrase and Exact BOFU keywords, 6 PAUSED RSAs and a PAUSED asset set.
+      Nothing is enabled. No budget is changed. No existing campaign, keyword, negative, ad,
+      asset or conversion action is touched. The existing Gas Boiler Repair campaign
+      24132507744 is preserved and NOT duplicated.
+      PERMANENTLY SUPERSEDED BY THIS SCOPE AND THE $10,000 CAP - never execute:
+      AMB-0916-HEAT-STRATEGY-1 / 9EC0CE017DE7, AMB-0916-HEAT-BUDGET-1 / 54613304B752,
+      AMB-0915-CPC-HR-1 / 14BD03817042.
+    date_range: >-
+      CURRENT AS AT 2026-09-17. 2026-09-17 is PARTIAL. September MTD read live.
+      Windows: all-time account history 2019-01-01 onward; September MTD 2026-09-01..2026-09-17.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://ambientcoolingandheating.com/services/heating-services/furnace-repair/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: null
+    primary_conversion_goal: "unique qualified residential heating lead (form or call)"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-order.yaml
+    hard_monthly_cap_usd: 10000
+    max_combined_enabled_daily_usd: 328.94
+    cap_basis: "daily x 30.4, never x 30"
+    current_combined_enabled_daily_usd: 421.55
+    current_position_vs_cap: "OVER by $92.60/day = $2,815.04/month - must be corrected by a
+      separate budget-reallocation plan before anything is enabled"
+    heating_funded_by_reallocation_only: true
+    shared_budgets_used: false
+    launch_authorized: false
+    enablement_authorized: false
+    final_urls_use_main_website: true
+    landing_pages_to_be_built: 0
+  approval_owner: Green Marketing

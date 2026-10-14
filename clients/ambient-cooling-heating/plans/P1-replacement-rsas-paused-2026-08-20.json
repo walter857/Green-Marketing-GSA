@@ -1,0 +1,456 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-F-replacement-rsas-paused",
+ "version": "2026-08-20",
+ "priority": "P1",
+ "run_class": "READ + DRAFT + VALIDATE-ONLY. No mutation performed.",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "scope": "Create 4 new RSAs PAUSED in 2 ad groups. Nothing is enabled and nothing existing is paused, edited or removed by this package.",
+ "targets": {
+  "HVAC Repair": {
+   "campaign_id": "24132507750",
+   "ad_group_id": "202339087674",
+   "why": "Quality Score 2, the lowest in the account, with BELOW_AVERAGE expected CTR and BELOW_AVERAGE landing page experience. Charged CTR is 1.45% on 413 impressions. Ad 820900825560 carries ad strength POOR. Rank-lost impression share is 71.46% while budget-lost is 0.00%, so Ad Rank, not money, is the ceiling, and expected CTR is the component the ad copy can move."
+  },
+  "HVAC Replacement": {
+   "campaign_id": "24132507753",
+   "ad_group_id": "200159223798",
+   "why": "393 impressions and ZERO charged clicks between 2026-08-14 and 2026-08-20, a 0.00% CTR. The campaign is being served but nothing in the ad is earning the click. Rank-lost impression share is 85.71%, budget-lost 0.00%. Quality Score is not yet computed because no click history exists, so expected CTR is the only lever available."
+  }
+ },
+ "not_touched": [
+  "The six replacement RSAs 821319509197 / 200 / 203 / 206 / 209 / 212 are NOT recreated, edited, paused or re-enabled.",
+  "The six PAUSED CONSUMER_FINANCE originals are not touched.",
+  "AC Repair, HVAC Installation and Gas Boiler Repair ad groups are not touched."
+ ],
+ "rsa_limit_compliance": {
+  "rule": "Google allows at most 3 ENABLED responsive search ads per ad group. PAUSED RSAs do not count toward that limit.",
+  "hvac_repair_ad_group_202339087674": "currently 2 ENABLED + 0 PAUSED. After this package: 2 ENABLED + 2 PAUSED. Compliant.",
+  "hvac_replacement_ad_group_200159223798": "currently 2 ENABLED + 2 PAUSED (the CONSUMER_FINANCE originals). After this package: 2 ENABLED + 4 PAUSED. Compliant.",
+  "enabling_later": "Enabling these four would exceed 3 enabled per ad group unless the current pair is paused in the SAME atomic request. That swap is a SEPARATE package requiring its own approval and fingerprint, exactly as the 2026-08-18 swap 5026CAD20F45F581 had to be."
+ },
+ "copy_rules_applied": [
+  "Two RSAs per ad group: one direct-response, one benefit/decision.",
+  "The main keyword appears naturally in multiple headlines.",
+  "'Near You' used instead of awkward 'near me' phrasing, per agency policy.",
+  "No finance or CONSUMER_FINANCE language of any kind: no financing, credit, loan, payment plan, monthly payment, 0%, APR or affordability wording.",
+  "No barred claim: no price, discount, dollar value, response-time promise, same-day or emergency availability, years in business, licence, insurance, rating, review count, guarantee, warranty or manufacturer certification.",
+  "Only the verified offer is used: a free quote.",
+  "Only verified locations: Severn, Severna Park, Columbia, Central Maryland.",
+  "No pinning, so Google can test every combination.",
+  "15 headlines and 4 descriptions per ad, all inside 30 and 90 characters."
+ ],
+ "ads": [
+  {
+   "service": "HVAC Repair",
+   "label": "A - direct response",
+   "campaign_id": "24132507750",
+   "ad_group_id": "202339087674",
+   "status_on_create": "PAUSED",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+   "path1": "hvac-repair",
+   "path2": "severn-md",
+   "headlines": [
+    {
+     "text": "HVAC Repair in Severn, MD",
+     "len": 25
+    },
+    {
+     "text": "HVAC Repair Near You",
+     "len": 20
+    },
+    {
+     "text": "Local HVAC Repair Team",
+     "len": 22
+    },
+    {
+     "text": "Request a Free Quote",
+     "len": 20
+    },
+    {
+     "text": "HVAC Repair Severna Park",
+     "len": 24
+    },
+    {
+     "text": "HVAC Repair in Columbia MD",
+     "len": 26
+    },
+    {
+     "text": "Book HVAC Repair Today",
+     "len": 22
+    },
+    {
+     "text": "Heating & Cooling Repair",
+     "len": 24
+    },
+    {
+     "text": "Talk to an HVAC Technician",
+     "len": 26
+    },
+    {
+     "text": "Free HVAC Repair Quote",
+     "len": 22
+    },
+    {
+     "text": "Central Maryland HVAC Repair",
+     "len": 28
+    },
+    {
+     "text": "Ambient Cooling & Heating",
+     "len": 25
+    },
+    {
+     "text": "Residential HVAC Repair",
+     "len": 23
+    },
+    {
+     "text": "Get Your HVAC Repaired",
+     "len": 22
+    },
+    {
+     "text": "HVAC Repair Diagnosis",
+     "len": 21
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Request a free quote for HVAC repair from Ambient's local Maryland team.",
+     "len": 72
+    },
+    {
+     "text": "Serving Severn, Severna Park, Columbia and nearby Central Maryland areas.",
+     "len": 73
+    },
+    {
+     "text": "Tell us what your system is doing and we will diagnose the repair needed.",
+     "len": 73
+    },
+    {
+     "text": "Ambient repairs residential heating and cooling systems in Central MD.",
+     "len": 70
+    }
+   ],
+   "headline_count": 15,
+   "description_count": 4,
+   "pins": "none - no headline or description is pinned"
+  },
+  {
+   "service": "HVAC Repair",
+   "label": "B - benefit / decision",
+   "campaign_id": "24132507750",
+   "ad_group_id": "202339087674",
+   "status_on_create": "PAUSED",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+   "path1": "hvac-repair",
+   "path2": "severn-md",
+   "headlines": [
+    {
+     "text": "HVAC Repair Done Right",
+     "len": 22
+    },
+    {
+     "text": "Get Comfortable Again",
+     "len": 21
+    },
+    {
+     "text": "HVAC Repair Near You",
+     "len": 20
+    },
+    {
+     "text": "Clear HVAC Repair Options",
+     "len": 25
+    },
+    {
+     "text": "Start With a Free Quote",
+     "len": 23
+    },
+    {
+     "text": "Know the Problem First",
+     "len": 22
+    },
+    {
+     "text": "HVAC Repair in Severn MD",
+     "len": 24
+    },
+    {
+     "text": "Steady Heating & Cooling",
+     "len": 24
+    },
+    {
+     "text": "Repairs Explained Clearly",
+     "len": 25
+    },
+    {
+     "text": "Local HVAC Repair Team",
+     "len": 22
+    },
+    {
+     "text": "No Guesswork HVAC Repair",
+     "len": 24
+    },
+    {
+     "text": "Serving Central Maryland",
+     "len": 24
+    },
+    {
+     "text": "Free HVAC Repair Quote",
+     "len": 22
+    },
+    {
+     "text": "Fix Your HVAC System",
+     "len": 20
+    },
+    {
+     "text": "Ambient HVAC Repair",
+     "len": 19
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "We diagnose the fault first, then explain the repair options before we start.",
+     "len": 77
+    },
+    {
+     "text": "Get a clear picture of what your heating and cooling system actually needs.",
+     "len": 75
+    },
+    {
+     "text": "Ambient serves Severn, Severna Park, Columbia and Central Maryland homes.",
+     "len": 73
+    },
+    {
+     "text": "Request a free quote and talk your HVAC repair through with a technician.",
+     "len": 73
+    }
+   ],
+   "headline_count": 15,
+   "description_count": 4,
+   "pins": "none - no headline or description is pinned"
+  },
+  {
+   "service": "HVAC Replacement",
+   "label": "A - direct response",
+   "campaign_id": "24132507753",
+   "ad_group_id": "200159223798",
+   "status_on_create": "PAUSED",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+   "path1": "hvac-replace",
+   "path2": "severn-md",
+   "headlines": [
+    {
+     "text": "HVAC Replacement in Severn",
+     "len": 26
+    },
+    {
+     "text": "HVAC Replacement Near You",
+     "len": 25
+    },
+    {
+     "text": "Replace Your HVAC System",
+     "len": 24
+    },
+    {
+     "text": "Request a Free Quote",
+     "len": 20
+    },
+    {
+     "text": "HVAC Replacement, Severn MD",
+     "len": 27
+    },
+    {
+     "text": "Columbia HVAC Replacement",
+     "len": 25
+    },
+    {
+     "text": "New HVAC System Quote",
+     "len": 21
+    },
+    {
+     "text": "Local HVAC Replacement",
+     "len": 22
+    },
+    {
+     "text": "Heating & Cooling Replaced",
+     "len": 26
+    },
+    {
+     "text": "Talk to an HVAC Installer",
+     "len": 25
+    },
+    {
+     "text": "Central Maryland HVAC Team",
+     "len": 26
+    },
+    {
+     "text": "Ambient Cooling & Heating",
+     "len": 25
+    },
+    {
+     "text": "Free Replacement Quote",
+     "len": 22
+    },
+    {
+     "text": "Residential HVAC Replacement",
+     "len": 28
+    },
+    {
+     "text": "System Sizing & Install",
+     "len": 23
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Request a free quote to replace your heating and cooling system.",
+     "len": 64
+    },
+    {
+     "text": "We size the new system to your home, then handle the full replacement.",
+     "len": 70
+    },
+    {
+     "text": "Serving Severn, Severna Park, Columbia and surrounding Central Maryland.",
+     "len": 72
+    },
+    {
+     "text": "Talk with a local installer about your replacement options and timing.",
+     "len": 70
+    }
+   ],
+   "headline_count": 15,
+   "description_count": 4,
+   "pins": "none - no headline or description is pinned"
+  },
+  {
+   "service": "HVAC Replacement",
+   "label": "B - benefit / decision",
+   "campaign_id": "24132507753",
+   "ad_group_id": "200159223798",
+   "status_on_create": "PAUSED",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+   "path1": "hvac-replace",
+   "path2": "severn-md",
+   "headlines": [
+    {
+     "text": "HVAC Replacement Done Right",
+     "len": 27
+    },
+    {
+     "text": "Right-Sized for Your Home",
+     "len": 25
+    },
+    {
+     "text": "HVAC Replacement Near You",
+     "len": 25
+    },
+    {
+     "text": "Even Comfort, Room to Room",
+     "len": 26
+    },
+    {
+     "text": "Start With a Free Quote",
+     "len": 23
+    },
+    {
+     "text": "See Your System Options",
+     "len": 23
+    },
+    {
+     "text": "Quieter, Steadier Comfort",
+     "len": 25
+    },
+    {
+     "text": "Replace It Once, Properly",
+     "len": 25
+    },
+    {
+     "text": "HVAC Replacement, Severn MD",
+     "len": 27
+    },
+    {
+     "text": "Built for Your Floor Plan",
+     "len": 25
+    },
+    {
+     "text": "Serving Central Maryland",
+     "len": 24
+    },
+    {
+     "text": "Ambient HVAC Replacement",
+     "len": 24
+    },
+    {
+     "text": "Plan Your Replacement",
+     "len": 21
+    },
+    {
+     "text": "New Heating & Cooling",
+     "len": 21
+    },
+    {
+     "text": "Local HVAC Replacement",
+     "len": 22
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Ambient matches the new system to your rooms, layout and comfort needs.",
+     "len": 71
+    },
+    {
+     "text": "Get even temperatures and quieter operation from a properly sized system.",
+     "len": 73
+    },
+    {
+     "text": "See your heating and cooling options before you commit to anything.",
+     "len": 67
+    },
+    {
+     "text": "Serving Severn, Severna Park, Columbia and nearby Central Maryland homes.",
+     "len": 73
+    }
+   ],
+   "headline_count": 15,
+   "description_count": 4,
+   "pins": "none - no headline or description is pinned"
+  }
+ ],
+ "mutation_counts": {
+  "creates": 4,
+  "updates": 0,
+  "removals": 0,
+  "total_mutations": 4,
+  "ads_enabled": 0,
+  "ads_paused": 0,
+  "ads_edited": 0,
+  "keywords_touched": 0,
+  "budgets_touched": 0
+ },
+ "expected_benefit": "Expected CTR is the Quality Score component ad copy can move. HVAC Repair sits at Quality Score 2 with a 1.45% CTR and HVAC Replacement at 0.00% CTR on 393 impressions. Both campaigns are rank-limited, not budget-limited, so a CTR gain is the only route to more impression share at the current budget.",
+ "risk": "LOW while paused. Nothing serves until a separate enablement approval. The new ads enter policy review on creation; any disapproval is visible before the swap and the swap simply would not proceed.",
+ "readback_verification": [
+  "ASSERT 4 new ad IDs exist, all status PAUSED, type RESPONSIVE_SEARCH_AD.",
+  "ASSERT each has exactly 15 headlines and 4 descriptions, byte-identical to this plan and in the same order.",
+  "ASSERT final_urls, path1 and path2 match this plan exactly.",
+  "ASSERT no pins on any asset.",
+  "ASSERT the 6 preserved replacement RSAs are still ENABLED and APPROVED.",
+  "ASSERT the enabled ad count per affected ad group is still exactly 2.",
+  "ASSERT total non-removed ads rose from 113 to 117 and nothing else changed.",
+  "After review completes, record approval_status and ad_strength for each new ad."
+ ],
+ "rollback_plan": "Remove the 4 created ad IDs. 4 mutations. Nothing else is affected because nothing was enabled, paused or edited.",
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 4,
+  "errors": 0
+ },
+ "character_limit_check": "All 60 headlines <= 30 chars and all 16 descriptions <= 90 chars, verified programmatically at build time. Violations found: none",
+ "plan_fingerprint": "18AA929B46A83104",
+ "VOID": true,
+ "VOID_ON": "2026-08-20",
+ "VOID_REASON": "Its HVAC Replacement pair duplicated 9/15 and 6/15 headlines of the PROTECTED preserved replacement RSAs 821319509203 and 821319509206. Superseded by 86EEAE3CB04B73AD (HVAC Repair only)."
+}

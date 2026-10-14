@@ -1,0 +1,56 @@
+{
+ "plan_name": "AMBIENT-A2-VEHICLE-PROTECTION-2026-08-28",
+ "supersedes": "the ADJ-2 package inside ACE80A09AC134C85",
+ "approval_class": "campaign-criterion CREATE, reversible",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "target_campaign_id": "24132507741",
+ "object_count": 1,
+ "operations": [
+  {
+   "operation_type": "CREATE campaign_criterion (negative keyword)",
+   "package": "A-2",
+   "campaign_id": "24132507741",
+   "campaign_name": "AC Repair",
+   "resource_targeted": "customers/2401959466/campaigns/24132507741",
+   "current_value": "no such negative exists on this campaign",
+   "proposed_value": "negative keyword 'automotive' [BROAD] at campaign level",
+   "reason": "vehicle air-conditioning intent, outside all five services; negatives have no close variants so 'auto' does not cover it",
+   "supporting_metrics": {
+    "terms_covered": 2,
+    "impressions": 3,
+    "clicks": 0,
+    "cost": 0.0,
+    "primary_conversions": 0.0,
+    "secondary_all_conversions": 0.0,
+    "example_terms": [
+     "automotive air conditioning repair near me",
+     "automotive ac mechanic near me"
+    ]
+   },
+   "conflict_test_active_keywords": [],
+   "conflict_test_five_services": [],
+   "strict_rule_screen": "ALLOW",
+   "strict_rule_reasons": [],
+   "already_covered_by_existing_negative": [],
+   "risk": "Blocks the exact phrase only. Zero live keywords and zero of the 54 service probes are affected. Reversible in one REMOVE.",
+   "rollback": "REMOVE the returned campaign_criterion resource name.",
+   "unrelated_resource_assertion": "creates one campaign_criterion; touches no budget, bid, keyword, ad, asset, schedule, location, conversion or manager link"
+  }
+ ],
+ "classification": "PROTECTION, not a measured saving. Observed cost is $0.00. It is proposed because AC Repair's observed CPC is $90.49, so a single leaked vehicle click would cost more than this control, and because the already-approved 'auto' negative provably does not cover 'automotive'.",
+ "fingerprint": "6F2B6ABBCEB992E4",
+ "validate_only": {
+  "status": "VALIDATE_OK",
+  "operations": 1,
+  "results_returned": 0
+ },
+ "executed": true,
+ "executed_local": "2026-08-27T19:28:02.572907-04:00",
+ "execution_status": "EXECUTED 2026-08-28, readback PASS. 'automotive' BROAD live on campaign 24132507741. Do not re-execute.",
+ "do_not_execute": true,
+ "executed_resource_names": [
+  "customers/2401959466/campaignCriteria/24132507741~10008471"
+ ],
+ "readback_pass": true
+}

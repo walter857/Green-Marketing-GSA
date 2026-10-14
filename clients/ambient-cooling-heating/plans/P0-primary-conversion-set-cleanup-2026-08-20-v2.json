@@ -1,0 +1,253 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-G2-primary-conversion-set-cleanup",
+ "version": "2026-08-20",
+ "priority": "P0",
+ "run_class": "READ + DRAFT + VALIDATE-ONLY. No mutation performed.",
+ "supersedes": {
+  "011EA574B826F45B": "RETIRED AND VOID. That package described these four actions as active duplicate conversions. Day-level analysis disproved it: neither pair has a single day of co-firing, and neither pair's active window even intersects. The corrected finding is two DORMANT legacy tags and two NEVER-FIRED upload actions. The operations are unchanged but the evidence and the justification are corrected, so a new fingerprint is required."
+ },
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "corrected_finding": {
+  "what_was_claimed": "Four conversion actions were double-counting live lead events.",
+  "what_the_data_shows": "NO double-counting exists in this account. Tested every day from 2023-01-01 to 2026-08-20: the form pair (6885463625 / 6498555481) co-fired on ZERO days, and the phone pair (6885576934 / 6498555484) co-fired on ZERO days. Their active windows do not intersect at all.",
+  "the_real_problem": "Seven conversion actions are Primary AND included in the conversions metric, but only THREE of them are live. Two are dormant legacy tags that stopped firing 19 and 23 months ago, and two have never fired at all. A Primary set that is more than half inert is unsafe to bid on and hard to reason about."
+ },
+ "conversion_action_inventory": {
+  "keep_primary": {
+   "6885463625": {
+    "name": "Ambient Cooling - LP -Submit Lead Forms",
+    "type": "WEBPAGE",
+    "category": "SUBMIT_LEAD_FORM",
+    "all_time": 71,
+    "window": "2024-11-29 to 2026-08-20",
+    "days_fired": 61,
+    "verdict": "KEEP PRIMARY - the live form-lead signal, fired today"
+   },
+   "6885576934": {
+    "name": "Ambient Cooling - Lp - Phone call leads",
+    "type": "WEBSITE_CALL",
+    "category": "PHONE_CALL_LEAD",
+    "all_time": 23,
+    "window": "2024-09-25 to 2026-06-20",
+    "days_fired": 22,
+    "verdict": "KEEP PRIMARY - a connected website call, stronger than a click"
+   },
+   "1068114183": {
+    "name": "Calls from ads",
+    "type": "AD_CALL",
+    "category": "PHONE_CALL_LEAD",
+    "all_time": 237,
+    "window": "2023-04-25 to 2026-08-20",
+    "days_fired": 199,
+    "verdict": "KEEP PRIMARY - call placed from the ad itself, no overlap with the website actions, fired today"
+   }
+  },
+  "demote_to_secondary": {
+   "6498555481": {
+    "name": "Visit Thank you page - Submit Form",
+    "type": "WEBPAGE",
+    "category": "SUBMIT_LEAD_FORM",
+    "origin": "WEBSITE",
+    "all_time": 3,
+    "first_fired": "2023-10-13",
+    "last_fired": "2024-01-23",
+    "days_fired": 3,
+    "classification": "DORMANT LEGACY TAG",
+    "reason": "Has not fired in about 19 months. Its active window (2023-10-13 to 2024-01-23) does NOT intersect the window of the current form action 6885463625 (2024-11-29 to 2026-08-20), so the two are successive generations of the same measurement, not concurrent duplicates. It remains Primary and counted, so if a stray tag ever fires again it would inject untrusted data straight into the primary metric."
+   },
+   "6498555484": {
+    "name": "Call BTN Click",
+    "type": "WEBPAGE",
+    "category": "CONTACT",
+    "origin": "WEBSITE",
+    "all_time": 34,
+    "first_fired": "2023-09-06",
+    "last_fired": "2024-09-06",
+    "days_fired": 33,
+    "classification": "DORMANT LEGACY TAG",
+    "reason": "Has not fired in about 23 months. Its active window (2023-09-06 to 2024-09-06) does NOT intersect the window of the current call action 6885576934 (2024-09-25 to 2026-06-20). Successive generations, not concurrent duplicates. Also note it is a CONTACT-category click event, a weaker signal than a connected call."
+   },
+   "7643656075": {
+    "name": "WC Calls",
+    "type": "UPLOAD_CALLS",
+    "category": "CONTACT",
+    "origin": "WEBSITE",
+    "all_time": 0,
+    "first_fired": null,
+    "last_fired": null,
+    "days_fired": 0,
+    "classification": "NEVER FIRED - FORWARD-LOOKING DUPLICATE RISK",
+    "reason": "Zero conversions all-time. It is Primary and included in the conversions metric, so the moment WhatConverts uploads are switched on it would begin counting calls that 6885576934 and 1068114183 may already be counting, with no deduplication key configured. Demote until a transaction or lead ID mapping is confirmed in WhatConverts profile 105803."
+   },
+   "7643656486": {
+    "name": "WC Lead",
+    "type": "UPLOAD_CLICKS",
+    "category": "CONTACT",
+    "origin": "WEBSITE",
+    "all_time": 0,
+    "first_fired": null,
+    "last_fired": null,
+    "days_fired": 0,
+    "classification": "NEVER FIRED - FORWARD-LOOKING DUPLICATE RISK",
+    "reason": "Zero conversions all-time. Same forward-looking risk against the live form action 6885463625. Demote until a deduplication key is confirmed."
+   }
+  },
+  "already_secondary_no_change": {
+   "7389995485": "Ambient Cooling and Heating (web) form_submit - GA4 custom, 37 all-time, correctly Secondary and excluded from the metric",
+   "7389995488": "Ambient Cooling and Heating (web) phone_call - GA4 custom, 352 all-time, correctly Secondary and excluded",
+   "6684124701": "GA4 form_submit (HIDDEN) - no change",
+   "6636693088": "GA4 purchase (HIDDEN) - no change"
+  },
+  "google_hosted_local_actions_no_change": {
+   "6640721230": "Clicks to call - 89 all-time, primary_for_goal true but include_in_conversions_metric FALSE. This is normal for Google-hosted local actions and is left alone.",
+   "6642544931": "Local actions - Directions - 152 all-time, not in the metric",
+   "6642551975": "Local actions - Other engagements - 555 all-time, not in the metric",
+   "6641739327": "Local actions - Website visits - 223 all-time, not in the metric",
+   "6954620053": "Local actions - Menu views - 6 all-time, not in the metric"
+  }
+ },
+ "account_wide_vs_campaign_specific": {
+  "scope_of_the_change": "ACCOUNT-WIDE. conversion_action.primary_for_goal is a property of the conversion action itself, not of a campaign goal, so it cannot be scoped to a campaign directly.",
+  "which_campaigns_inherit_it": "All 25 non-removed campaigns whose conversion_goal_campaign_config.goal_config_level is CUSTOMER. The other 8 non-removed campaigns are at CAMPAIGN level and are insulated from account-level goal changes.",
+  "legacy_campaigns_affected": {
+   "count_non_removed_legacy": 18,
+   "how_many_are_ENABLED": 0,
+   "evidence": "A fresh campaign.status read returns exactly 5 ENABLED campaigns in this account and all five are the in-scope Search campaigns. Every one of the 18 other non-removed campaigns is PAUSED, and all of them spent $0.00 in August.",
+   "per_action_check": "For all 12 conversion actions with recorded history, the count of ENABLED legacy campaigns attributing to them is ZERO."
+  },
+  "rebuild_condition_not_triggered": "The instruction was to rebuild with campaign-specific goals if an account-level change would affect an unrelated ACTIVE legacy campaign. No legacy campaign is active, so the condition does not apply and campaign-specific goals are not required. Forcing goal_config_level to CAMPAIGN on the five would add configuration surface for no benefit.",
+  "if_isolation_is_ever_wanted": "Set conversion_goal_campaign_config.goal_config_level to CAMPAIGN on the five and define campaign_conversion_goal rows per category and origin. That is a larger change, would need its own package, and is not proposed."
+ },
+ "exact_bidding_impact": {
+  "today": "NONE. All five campaigns run TARGET_SPEND (Maximize Clicks), which does not use conversion data to bid. This change cannot alter current delivery, cost per click or spend in any way.",
+  "reported_metrics": "metrics.conversions will exclude the four demoted actions going forward. Because two are dormant and two have never fired, the expected change to reported conversions is ZERO for the five campaigns. Historical rows are not rewritten.",
+  "future_conversion_bidding": "This is the precondition. A move to Maximize Conversions or Target CPA would then optimise against three live, non-overlapping lead signals rather than seven of which four are inert. That move is NOT proposed here and still needs far more volume than the 2 conversions recorded since launch.",
+  "risk_of_not_doing_it": "If WhatConverts uploads are enabled while WC Calls and WC Lead remain Primary, real double counting would begin immediately against 6885576934, 1068114183 and 6885463625."
+ },
+ "duplicate_conversion_evidence": {
+  "method": "Day-level all_conversions pulled FROM customer for every conversion action from 2023-01-01 to 2026-08-20, then tested for same-day co-occurrence and for overlap of active windows.",
+  "form_pair": {
+   "a": "6885463625 LP Submit Lead Forms, 71 conversions over 61 days, 2024-11-29 to 2026-08-20",
+   "b": "6498555481 Visit Thank you page, 3 conversions over 3 days, 2023-10-13 to 2024-01-23",
+   "same_day_co_occurrence_days": 0,
+   "windows_intersect": false,
+   "verdict": "NOT duplicates. Successive generations."
+  },
+  "phone_pair": {
+   "a": "6885576934 Lp - Phone call leads, 23 conversions over 22 days, 2024-09-25 to 2026-06-20",
+   "b": "6498555484 Call BTN Click, 34 conversions over 33 days, 2023-09-06 to 2024-09-06",
+   "same_day_co_occurrence_days": 0,
+   "windows_intersect": false,
+   "verdict": "NOT duplicates. Successive generations."
+  },
+  "upload_actions": {
+   "7643656075": 0,
+   "7643656486": 0,
+   "verdict": "Never fired. The duplicate risk is real but FORWARD-LOOKING only."
+  }
+ },
+ "operations": [
+  {
+   "seq": 1,
+   "service": "ConversionActionService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/conversionActions/6498555481",
+   "update_mask": [
+    "primary_for_goal"
+   ],
+   "field": "primary_for_goal",
+   "before": true,
+   "after": false,
+   "name": "Visit Thank you page - Submit Form",
+   "classification": "DORMANT LEGACY TAG"
+  },
+  {
+   "seq": 2,
+   "service": "ConversionActionService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/conversionActions/6498555484",
+   "update_mask": [
+    "primary_for_goal"
+   ],
+   "field": "primary_for_goal",
+   "before": true,
+   "after": false,
+   "name": "Call BTN Click",
+   "classification": "DORMANT LEGACY TAG"
+  },
+  {
+   "seq": 3,
+   "service": "ConversionActionService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/conversionActions/7643656075",
+   "update_mask": [
+    "primary_for_goal"
+   ],
+   "field": "primary_for_goal",
+   "before": true,
+   "after": false,
+   "name": "WC Calls",
+   "classification": "NEVER FIRED - FORWARD-LOOKING DUPLICATE RISK"
+  },
+  {
+   "seq": 4,
+   "service": "ConversionActionService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/conversionActions/7643656486",
+   "update_mask": [
+    "primary_for_goal"
+   ],
+   "field": "primary_for_goal",
+   "before": true,
+   "after": false,
+   "name": "WC Lead",
+   "classification": "NEVER FIRED - FORWARD-LOOKING DUPLICATE RISK"
+  }
+ ],
+ "mutation_counts": {
+  "creates": 0,
+  "updates": 4,
+  "removals": 0,
+  "total_mutations": 4,
+  "conversion_actions_disabled": 0,
+  "conversion_actions_deleted": 0,
+  "include_in_conversions_metric_changed": 0,
+  "campaign_goals_changed": 0,
+  "goal_config_level_changed": 0,
+  "tags_touched": 0,
+  "gtm_touched": 0,
+  "whatconverts_touched": 0,
+  "campaigns_touched": 0,
+  "budgets_touched": 0,
+  "bidding_touched": 0
+ },
+ "gtm_and_whatconverts": "BOTH KEPT AND UNTOUCHED. GTM-PQTPQ436 and WhatConverts profile 105803 are confirmed live on all five landing pages. The two WhatConverts actions stay ENABLED and keep recording; only the primary_for_goal flag changes, so they can be promoted the moment a deduplication key is confirmed.",
+ "expected_benefit": "The Primary conversion set becomes three live, non-overlapping lead signals: form lead, connected website call, and call from the ad. That is exactly the agency standard, and it removes the latent double-count that would start the day WhatConverts uploads are switched on.",
+ "risk": "LOW and fully reversible. No action is disabled or deleted; all four keep recording as secondary. Expected change to reported conversions is zero because all four are inert. Historical data is untouched.",
+ "rollback_plan": "Set primary_for_goal = true on the same four resource names. 4 mutations, immediate, no data loss.",
+ "readback_verification": [
+  "ASSERT 6498555481, 6498555484, 7643656075 and 7643656486 return primary_for_goal = false and status ENABLED.",
+  "ASSERT 6885463625, 6885576934 and 1068114183 still return primary_for_goal = true and status ENABLED.",
+  "ASSERT include_in_conversions_metric is unchanged on all seven.",
+  "ASSERT conversion_action count is still 16 and none was disabled or removed.",
+  "ASSERT customer_conversion_goal still lists SUBMIT_LEAD_FORM/WEBSITE, PHONE_CALL_LEAD/WEBSITE and PHONE_CALL_LEAD/CALL_FROM_ADS as biddable.",
+  "ASSERT the five campaigns still show goal_config_level CUSTOMER and are unchanged.",
+  "ASSERT budgets, bidding, ads, keywords, assets, schedules and manager links are unchanged."
+ ],
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 4,
+  "errors": 0
+ },
+ "approval_note": "READ + DRAFT + VALIDATE-ONLY. Nothing applied. This package supersedes 011EA574B826F45B, which must not be executed.",
+ "plan_fingerprint": "24243FC484DDAF64",
+ "VOID": true,
+ "VOID_ON": "2026-08-20",
+ "VOID_REASON": "Overtaken by evidence. WC Lead 7643656486 FIRED on 2026-08-20 at 06:00 on HVAC Repair, so it is no longer a never-fired action and must not be demoted for that reason. More importantly the same 06:00 form submission was counted by BOTH 6885463625 (SUBMIT_LEAD_FORM, counted) and 7643656486 (CONTACT, counted), which is a LIVE double count. The correct fix depends on whether WhatConverts uploads every lead or only qualified leads, which is not knowable from the Google Ads API. No replacement fingerprint is issued until the owner classifies the 2026-08-20 leads in WhatConverts profile 105803."
+}

@@ -1,0 +1,1169 @@
+{
+ "conversion_actions": [
+  {
+   "id": "1068114183",
+   "name": "Calls from ads",
+   "status": "ENABLED",
+   "type": "AD_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "primary_for_goal": true,
+   "counting": "ONE_PER_CLICK",
+   "origin": "CALL_FROM_ADS",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 30,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 5.0
+  },
+  {
+   "id": "6498555481",
+   "name": "Visit Thank you page - Submit Form",
+   "status": "ENABLED",
+   "type": "WEBPAGE",
+   "category": "SUBMIT_LEAD_FORM",
+   "primary_for_goal": false,
+   "counting": "ONE_PER_CLICK",
+   "origin": "WEBSITE",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 30,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 0.0
+  },
+  {
+   "id": "6498555484",
+   "name": "Call BTN Click",
+   "status": "ENABLED",
+   "type": "WEBPAGE",
+   "category": "CONTACT",
+   "primary_for_goal": false,
+   "counting": "ONE_PER_CLICK",
+   "origin": "WEBSITE",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 30,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 0.0
+  },
+  {
+   "id": "6636693088",
+   "name": "Ambient Cooling and Heating (web) purchase",
+   "status": "HIDDEN",
+   "type": "GOOGLE_ANALYTICS_4_PURCHASE",
+   "category": "PURCHASE",
+   "primary_for_goal": false,
+   "counting": "MANY_PER_CLICK",
+   "origin": "WEBSITE",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 90,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 0.0
+  },
+  {
+   "id": "6640721230",
+   "name": "Clicks to call",
+   "status": "ENABLED",
+   "type": "GOOGLE_HOSTED",
+   "category": "CONTACT",
+   "primary_for_goal": true,
+   "counting": "MANY_PER_CLICK",
+   "origin": "GOOGLE_HOSTED",
+   "attribution": "GOOGLE_ADS_LAST_CLICK",
+   "click_window": 30,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 1.0
+  },
+  {
+   "id": "6641739327",
+   "name": "Local actions - Website visits",
+   "status": "ENABLED",
+   "type": "GOOGLE_HOSTED",
+   "category": "PAGE_VIEW",
+   "primary_for_goal": true,
+   "counting": "MANY_PER_CLICK",
+   "origin": "GOOGLE_HOSTED",
+   "attribution": "GOOGLE_ADS_LAST_CLICK",
+   "click_window": 30,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 9.0
+  },
+  {
+   "id": "6642544931",
+   "name": "Local actions - Directions",
+   "status": "ENABLED",
+   "type": "GOOGLE_HOSTED",
+   "category": "GET_DIRECTIONS",
+   "primary_for_goal": true,
+   "counting": "MANY_PER_CLICK",
+   "origin": "GOOGLE_HOSTED",
+   "attribution": "GOOGLE_ADS_LAST_CLICK",
+   "click_window": 30,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 7.0
+  },
+  {
+   "id": "6642551975",
+   "name": "Local actions - Other engagements",
+   "status": "ENABLED",
+   "type": "GOOGLE_HOSTED",
+   "category": "ENGAGEMENT",
+   "primary_for_goal": true,
+   "counting": "MANY_PER_CLICK",
+   "origin": "GOOGLE_HOSTED",
+   "attribution": "GOOGLE_ADS_LAST_CLICK",
+   "click_window": 30,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 33.0
+  },
+  {
+   "id": "6684124701",
+   "name": "Ambient Cooling and Heating (web) form_submit",
+   "status": "HIDDEN",
+   "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "category": "SUBMIT_LEAD_FORM",
+   "primary_for_goal": false,
+   "counting": "MANY_PER_CLICK",
+   "origin": "WEBSITE",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 90,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 0.0
+  },
+  {
+   "id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "status": "ENABLED",
+   "type": "WEBPAGE",
+   "category": "SUBMIT_LEAD_FORM",
+   "primary_for_goal": true,
+   "counting": "ONE_PER_CLICK",
+   "origin": "WEBSITE",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 30,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 5.0
+  },
+  {
+   "id": "6885576934",
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "status": "ENABLED",
+   "type": "WEBSITE_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "primary_for_goal": true,
+   "counting": "ONE_PER_CLICK",
+   "origin": "WEBSITE",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 30,
+   "phone_min_secs": 30,
+   "owner": "2401959466",
+   "all_conversions": 0.0
+  },
+  {
+   "id": "6954620053",
+   "name": "Local actions - Menu views",
+   "status": "ENABLED",
+   "type": "GOOGLE_HOSTED",
+   "category": "PAGE_VIEW",
+   "primary_for_goal": true,
+   "counting": "MANY_PER_CLICK",
+   "origin": "GOOGLE_HOSTED",
+   "attribution": "GOOGLE_ADS_LAST_CLICK",
+   "click_window": 30,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 0.0
+  },
+  {
+   "id": "7389995485",
+   "name": "Ambient Cooling and Heating (web) form_submission",
+   "status": "ENABLED",
+   "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "category": "SUBMIT_LEAD_FORM",
+   "primary_for_goal": false,
+   "counting": "MANY_PER_CLICK",
+   "origin": "WEBSITE",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 90,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 6.0
+  },
+  {
+   "id": "7389995488",
+   "name": "Ambient Cooling and Heating (web) phone_call_click",
+   "status": "ENABLED",
+   "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "category": "PHONE_CALL_LEAD",
+   "primary_for_goal": false,
+   "counting": "MANY_PER_CLICK",
+   "origin": "WEBSITE",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 90,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 3.0
+  },
+  {
+   "id": "7643656075",
+   "name": "WC Calls",
+   "status": "ENABLED",
+   "type": "UPLOAD_CALLS",
+   "category": "CONTACT",
+   "primary_for_goal": true,
+   "counting": "ONE_PER_CLICK",
+   "origin": "CALL_FROM_ADS",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 60,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 0.0
+  },
+  {
+   "id": "7643656486",
+   "name": "WC Lead",
+   "status": "ENABLED",
+   "type": "UPLOAD_CLICKS",
+   "category": "CONTACT",
+   "primary_for_goal": true,
+   "counting": "ONE_PER_CLICK",
+   "origin": "WEBSITE",
+   "attribution": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "click_window": 60,
+   "phone_min_secs": 60,
+   "owner": "2401959466",
+   "all_conversions": 8.0
+  }
+ ],
+ "conversion_actions_config": [
+  {
+   "id": "1068114183",
+   "name": "Calls from ads",
+   "status": "ENABLED",
+   "type": "AD_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "primary_for_goal": true,
+   "counting": "ONE_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6498555481",
+   "name": "Visit Thank you page - Submit Form",
+   "status": "ENABLED",
+   "type": "WEBPAGE",
+   "category": "SUBMIT_LEAD_FORM",
+   "primary_for_goal": false,
+   "counting": "ONE_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6498555484",
+   "name": "Call BTN Click",
+   "status": "ENABLED",
+   "type": "WEBPAGE",
+   "category": "CONTACT",
+   "primary_for_goal": false,
+   "counting": "ONE_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6636693088",
+   "name": "Ambient Cooling and Heating (web) purchase",
+   "status": "HIDDEN",
+   "type": "GOOGLE_ANALYTICS_4_PURCHASE",
+   "category": "PURCHASE",
+   "primary_for_goal": false,
+   "counting": "MANY_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6640721230",
+   "name": "Clicks to call",
+   "status": "ENABLED",
+   "type": "GOOGLE_HOSTED",
+   "category": "CONTACT",
+   "primary_for_goal": true,
+   "counting": "MANY_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6641739327",
+   "name": "Local actions - Website visits",
+   "status": "ENABLED",
+   "type": "GOOGLE_HOSTED",
+   "category": "PAGE_VIEW",
+   "primary_for_goal": true,
+   "counting": "MANY_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6642544931",
+   "name": "Local actions - Directions",
+   "status": "ENABLED",
+   "type": "GOOGLE_HOSTED",
+   "category": "GET_DIRECTIONS",
+   "primary_for_goal": true,
+   "counting": "MANY_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6642551975",
+   "name": "Local actions - Other engagements",
+   "status": "ENABLED",
+   "type": "GOOGLE_HOSTED",
+   "category": "ENGAGEMENT",
+   "primary_for_goal": true,
+   "counting": "MANY_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6684124701",
+   "name": "Ambient Cooling and Heating (web) form_submit",
+   "status": "HIDDEN",
+   "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "category": "SUBMIT_LEAD_FORM",
+   "primary_for_goal": false,
+   "counting": "MANY_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "status": "ENABLED",
+   "type": "WEBPAGE",
+   "category": "SUBMIT_LEAD_FORM",
+   "primary_for_goal": true,
+   "counting": "ONE_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6885576934",
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "status": "ENABLED",
+   "type": "WEBSITE_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "primary_for_goal": true,
+   "counting": "ONE_PER_CLICK",
+   "phone_min_secs": 30,
+   "owner": "2401959466"
+  },
+  {
+   "id": "6954620053",
+   "name": "Local actions - Menu views",
+   "status": "ENABLED",
+   "type": "GOOGLE_HOSTED",
+   "category": "PAGE_VIEW",
+   "primary_for_goal": true,
+   "counting": "MANY_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "7389995485",
+   "name": "Ambient Cooling and Heating (web) form_submission",
+   "status": "ENABLED",
+   "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "category": "SUBMIT_LEAD_FORM",
+   "primary_for_goal": false,
+   "counting": "MANY_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "7389995488",
+   "name": "Ambient Cooling and Heating (web) phone_call_click",
+   "status": "ENABLED",
+   "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "category": "PHONE_CALL_LEAD",
+   "primary_for_goal": false,
+   "counting": "MANY_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "7643656075",
+   "name": "WC Calls",
+   "status": "ENABLED",
+   "type": "UPLOAD_CALLS",
+   "category": "CONTACT",
+   "primary_for_goal": true,
+   "counting": "ONE_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  },
+  {
+   "id": "7643656486",
+   "name": "WC Lead",
+   "status": "ENABLED",
+   "type": "UPLOAD_CLICKS",
+   "category": "CONTACT",
+   "primary_for_goal": true,
+   "counting": "ONE_PER_CLICK",
+   "phone_min_secs": 60,
+   "owner": "2401959466"
+  }
+ ],
+ "conversions_by_action_campaign": {
+  "('AC Repair', 'Local actions - Website visits', 'PAGE_VIEW')": {
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "('AC Repair', 'Calls from ads', 'PHONE_CALL_LEAD')": {
+   "conversions": 3.0,
+   "all_conversions": 3.0
+  },
+  "('AC Repair', 'Ambient Cooling - LP -Submit Lead Forms', 'SUBMIT_LEAD_FORM')": {
+   "conversions": 2.0,
+   "all_conversions": 2.0
+  },
+  "('AC Repair', 'Ambient Cooling and Heating (web) form_submission', 'SUBMIT_LEAD_FORM')": {
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  "('AC Repair', 'Local actions - Directions', 'GET_DIRECTIONS')": {
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "('AC Repair', 'WC Lead', 'CONTACT')": {
+   "conversions": 0.0,
+   "all_conversions": 3.0
+  },
+  "('AC Repair', 'Local actions - Other engagements', 'ENGAGEMENT')": {
+   "conversions": 0.0,
+   "all_conversions": 14.0
+  },
+  "('HVAC Installation', 'Local actions - Website visits', 'PAGE_VIEW')": {
+   "conversions": 0.0,
+   "all_conversions": 4.0
+  },
+  "('HVAC Installation', 'Ambient Cooling and Heating (web) phone_call_click', 'PHONE_CALL_LEAD')": {
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "('HVAC Installation', 'Ambient Cooling - LP -Submit Lead Forms', 'SUBMIT_LEAD_FORM')": {
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  "('HVAC Installation', 'Ambient Cooling and Heating (web) form_submission', 'SUBMIT_LEAD_FORM')": {
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  "('HVAC Installation', 'Local actions - Directions', 'GET_DIRECTIONS')": {
+   "conversions": 0.0,
+   "all_conversions": 4.0
+  },
+  "('HVAC Installation', 'Clicks to call', 'CONTACT')": {
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "('HVAC Installation', 'WC Lead', 'CONTACT')": {
+   "conversions": 2.0,
+   "all_conversions": 3.0
+  },
+  "('HVAC Installation', 'Local actions - Other engagements', 'ENGAGEMENT')": {
+   "conversions": 0.0,
+   "all_conversions": 10.0
+  },
+  "('HVAC Repair', 'Local actions - Website visits', 'PAGE_VIEW')": {
+   "conversions": 0.0,
+   "all_conversions": 4.0
+  },
+  "('HVAC Repair', 'Ambient Cooling and Heating (web) phone_call_click', 'PHONE_CALL_LEAD')": {
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  "('HVAC Repair', 'Calls from ads', 'PHONE_CALL_LEAD')": {
+   "conversions": 2.0,
+   "all_conversions": 2.0
+  },
+  "('HVAC Repair', 'Ambient Cooling - LP -Submit Lead Forms', 'SUBMIT_LEAD_FORM')": {
+   "conversions": 2.0,
+   "all_conversions": 2.0
+  },
+  "('HVAC Repair', 'Ambient Cooling and Heating (web) form_submission', 'SUBMIT_LEAD_FORM')": {
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  "('HVAC Repair', 'Local actions - Directions', 'GET_DIRECTIONS')": {
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  "('HVAC Repair', 'WC Lead', 'CONTACT')": {
+   "conversions": 2.0,
+   "all_conversions": 2.0
+  },
+  "('HVAC Repair', 'Local actions - Other engagements', 'ENGAGEMENT')": {
+   "conversions": 0.0,
+   "all_conversions": 9.0
+  }
+ },
+ "campaign_by_date": {
+  "2026-08-14|AC Repair": {
+   "impressions": 10,
+   "clicks": 1,
+   "cost": 2.34,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-15|AC Repair": {
+   "impressions": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-16|AC Repair": {
+   "impressions": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-17|AC Repair": {
+   "impressions": 29,
+   "clicks": 2,
+   "cost": 47.78,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-18|AC Repair": {
+   "impressions": 15,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-19|AC Repair": {
+   "impressions": 59,
+   "clicks": 4,
+   "cost": 282.06,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-20|AC Repair": {
+   "impressions": 25,
+   "clicks": 2,
+   "cost": 280.27,
+   "conversions": 1.0,
+   "all_conversions": 2.0
+  },
+  "2026-08-21|AC Repair": {
+   "impressions": 9,
+   "clicks": 3,
+   "cost": 385.15,
+   "conversions": 0.0,
+   "all_conversions": 14.0
+  },
+  "2026-08-22|AC Repair": {
+   "impressions": 21,
+   "clicks": 1,
+   "cost": 68.16,
+   "conversions": 1.0,
+   "all_conversions": 3.0
+  },
+  "2026-08-24|AC Repair": {
+   "impressions": 13,
+   "clicks": 2,
+   "cost": 281.64,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-25|AC Repair": {
+   "impressions": 69,
+   "clicks": 4,
+   "cost": 371.93,
+   "conversions": 1.0,
+   "all_conversions": 3.0
+  },
+  "2026-08-26|AC Repair": {
+   "impressions": 61,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-27|AC Repair": {
+   "impressions": 82,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-28|AC Repair": {
+   "impressions": 76,
+   "clicks": 1,
+   "cost": 267.96,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-29|AC Repair": {
+   "impressions": 9,
+   "clicks": 2,
+   "cost": 283.84,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-31|AC Repair": {
+   "impressions": 30,
+   "clicks": 2,
+   "cost": 279.46,
+   "conversions": 1.0,
+   "all_conversions": 2.0
+  },
+  "2026-09-01|AC Repair": {
+   "impressions": 102,
+   "clicks": 1,
+   "cost": 112.63,
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  "2026-09-02|AC Repair": {
+   "impressions": 127,
+   "clicks": 1,
+   "cost": 166.36,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-03|AC Repair": {
+   "impressions": 52,
+   "clicks": 2,
+   "cost": 221.89,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-04|AC Repair": {
+   "impressions": 61,
+   "clicks": 1,
+   "cost": 33.4,
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "2026-09-05|AC Repair": {
+   "impressions": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-07|AC Repair": {
+   "impressions": 15,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-08|AC Repair": {
+   "impressions": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-21|Gas Boiler Repair": {
+   "impressions": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-22|Gas Boiler Repair": {
+   "impressions": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-24|Gas Boiler Repair": {
+   "impressions": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-25|Gas Boiler Repair": {
+   "impressions": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-31|Gas Boiler Repair": {
+   "impressions": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-01|Gas Boiler Repair": {
+   "impressions": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-02|Gas Boiler Repair": {
+   "impressions": 9,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-05|Gas Boiler Repair": {
+   "impressions": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-08|Gas Boiler Repair": {
+   "impressions": 9,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-14|HVAC Installation": {
+   "impressions": 12,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-18|HVAC Installation": {
+   "impressions": 128,
+   "clicks": 6,
+   "cost": 275.58,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-19|HVAC Installation": {
+   "impressions": 214,
+   "clicks": 7,
+   "cost": 272.75,
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "2026-08-20|HVAC Installation": {
+   "impressions": 402,
+   "clicks": 15,
+   "cost": 276.25,
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "2026-08-21|HVAC Installation": {
+   "impressions": 354,
+   "clicks": 12,
+   "cost": 275.86,
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  "2026-08-22|HVAC Installation": {
+   "impressions": 173,
+   "clicks": 4,
+   "cost": 119.91,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-24|HVAC Installation": {
+   "impressions": 337,
+   "clicks": 13,
+   "cost": 312.85,
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "2026-08-25|HVAC Installation": {
+   "impressions": 313,
+   "clicks": 12,
+   "cost": 229.49,
+   "conversions": 0.0,
+   "all_conversions": 3.0
+  },
+  "2026-08-26|HVAC Installation": {
+   "impressions": 396,
+   "clicks": 10,
+   "cost": 225.29,
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  "2026-08-27|HVAC Installation": {
+   "impressions": 377,
+   "clicks": 12,
+   "cost": 224.23,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-28|HVAC Installation": {
+   "impressions": 288,
+   "clicks": 11,
+   "cost": 218.14,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-29|HVAC Installation": {
+   "impressions": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-31|HVAC Installation": {
+   "impressions": 17,
+   "clicks": 1,
+   "cost": 44.18,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-01|HVAC Installation": {
+   "impressions": 159,
+   "clicks": 3,
+   "cost": 181.49,
+   "conversions": 3.0,
+   "all_conversions": 8.0
+  },
+  "2026-09-02|HVAC Installation": {
+   "impressions": 76,
+   "clicks": 5,
+   "cost": 199.86,
+   "conversions": 0.0,
+   "all_conversions": 7.0
+  },
+  "2026-09-03|HVAC Installation": {
+   "impressions": 54,
+   "clicks": 1,
+   "cost": 58.45,
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "2026-09-04|HVAC Installation": {
+   "impressions": 53,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-05|HVAC Installation": {
+   "impressions": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-07|HVAC Installation": {
+   "impressions": 30,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-08|HVAC Installation": {
+   "impressions": 30,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-14|HVAC Repair": {
+   "impressions": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-15|HVAC Repair": {
+   "impressions": 32,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-16|HVAC Repair": {
+   "impressions": 62,
+   "clicks": 1,
+   "cost": 20.34,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-17|HVAC Repair": {
+   "impressions": 77,
+   "clicks": 1,
+   "cost": 21.72,
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  "2026-08-18|HVAC Repair": {
+   "impressions": 141,
+   "clicks": 1,
+   "cost": 56.41,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-19|HVAC Repair": {
+   "impressions": 88,
+   "clicks": 1,
+   "cost": 54.25,
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "2026-08-20|HVAC Repair": {
+   "impressions": 7,
+   "clicks": 2,
+   "cost": 306.06,
+   "conversions": 2.0,
+   "all_conversions": 3.0
+  },
+  "2026-08-21|HVAC Repair": {
+   "impressions": 20,
+   "clicks": 1,
+   "cost": 147.1,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-22|HVAC Repair": {
+   "impressions": 15,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-24|HVAC Repair": {
+   "impressions": 113,
+   "clicks": 2,
+   "cost": 157.85,
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  "2026-08-25|HVAC Repair": {
+   "impressions": 25,
+   "clicks": 1,
+   "cost": 148.67,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-26|HVAC Repair": {
+   "impressions": 80,
+   "clicks": 2,
+   "cost": 98.58,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-27|HVAC Repair": {
+   "impressions": 121,
+   "clicks": 3,
+   "cost": 105.0,
+   "conversions": 1.0,
+   "all_conversions": 2.0
+  },
+  "2026-08-28|HVAC Repair": {
+   "impressions": 21,
+   "clicks": 3,
+   "cost": 199.36,
+   "conversions": 2.0,
+   "all_conversions": 6.0
+  },
+  "2026-08-29|HVAC Repair": {
+   "impressions": 34,
+   "clicks": 3,
+   "cost": 212.57,
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  "2026-08-31|HVAC Repair": {
+   "impressions": 95,
+   "clicks": 2,
+   "cost": 137.25,
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "2026-09-01|HVAC Repair": {
+   "impressions": 23,
+   "clicks": 2,
+   "cost": 89.51,
+   "conversions": 0.0,
+   "all_conversions": 5.0
+  },
+  "2026-09-02|HVAC Repair": {
+   "impressions": 26,
+   "clicks": 1,
+   "cost": 82.14,
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "2026-09-03|HVAC Repair": {
+   "impressions": 25,
+   "clicks": 1,
+   "cost": 70.05,
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  "2026-09-04|HVAC Repair": {
+   "impressions": 11,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-05|HVAC Repair": {
+   "impressions": 3,
+   "clicks": 1,
+   "cost": 21.46,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-07|HVAC Repair": {
+   "impressions": 21,
+   "clicks": 1,
+   "cost": 23.62,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-08|HVAC Repair": {
+   "impressions": 12,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-18|HVAC Replacement": {
+   "impressions": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-19|HVAC Replacement": {
+   "impressions": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-20|HVAC Replacement": {
+   "impressions": 38,
+   "clicks": 2,
+   "cost": 52.14,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-21|HVAC Replacement": {
+   "impressions": 15,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-22|HVAC Replacement": {
+   "impressions": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-24|HVAC Replacement": {
+   "impressions": 1,
+   "clicks": 1,
+   "cost": 49.69,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-25|HVAC Replacement": {
+   "impressions": 12,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-26|HVAC Replacement": {
+   "impressions": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-27|HVAC Replacement": {
+   "impressions": 5,
+   "clicks": 2,
+   "cost": 50.69,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-28|HVAC Replacement": {
+   "impressions": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-08-31|HVAC Replacement": {
+   "impressions": 9,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-01|HVAC Replacement": {
+   "impressions": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-02|HVAC Replacement": {
+   "impressions": 68,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-03|HVAC Replacement": {
+   "impressions": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-04|HVAC Replacement": {
+   "impressions": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-05|HVAC Replacement": {
+   "impressions": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-07|HVAC Replacement": {
+   "impressions": 11,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  },
+  "2026-09-08|HVAC Replacement": {
+   "impressions": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conversions": 0.0,
+   "all_conversions": 0.0
+  }
+ }
+}

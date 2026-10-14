@@ -1,0 +1,232 @@
+# PLAN-R7 - LANDING-PAGE FIXES
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# WEBSITE CHANGES ONLY. ZERO Google Ads mutations.
+# Built 2026-08-31 from a real-browser audit of all 11 live destinations. NOT APPROVED.
+change_plan:
+  plan_id: PLAN-R7
+  plan_title: Landing-page and tracking fixes on offer.softwindli.com
+  approval_type: WEBSITE_CHANGE_NO_ADS_MUTATION
+  priority: P0
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 0
+  object_count_total: 0
+  requires_separate_enable_approval: false
+  recommended_approval_order: 7
+  separate_approval_note: >-
+    This plan is a developer handoff. It authorises no Google Ads change, no
+    tracking change inside Google Ads, and no Final URL change. A WordPress edit
+    needs its own approval from whoever owns the site.
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  audit_method: >-
+    Playwright, real Chromium, desktop 1920x1080 and mobile viewports, GCLID and
+    UTM appended to every URL. These hosts sit behind SG-Captcha and serve non-JS
+    clients an empty stub, so curl or a plain fetch produces false findings.
+
+  what_is_already_right:
+    - All six offer pages return HTTP 200 with no redirect chain, desktop and mobile.
+    - >-
+      GCLID and all four UTM parameters survive intact to the final URL on every
+      page. Click-ID preservation is not a failure point.
+    - >-
+      Every offer page displays the approved tracked number (631) 502-7946 in both
+      the tel: link and body copy. The untracked (631) 502-5402 does NOT appear on
+      any offer page.
+    - >-
+      Every offer page carries a 5-field Gravity Form (name, name, tel, email,
+      message) - low friction for a home-services quote request.
+    - >-
+      GA4 G-D4BZM40RYD, GTM-P3LD97NN, WhatConverts, ClickCease and the account own
+      AW-18369652705 all load on every offer page.
+    - Mobile and desktop render the same content, same H1, same phone, same form.
+
+  findings:
+    - id: R7-F1
+      severity: P0
+      finding: >-
+        The browser title on ALL SIX offer pages ends in "| Softwind Landscape &
+        Masonry". Examples - "Power Washing | Softwind Landscape & Masonry",
+        "Residential Pressure Washing | Softwind Landscape & Masonry".
+      why_it_matters: >-
+        The tab title and the SERP-style title carry the SIBLING company brand.
+        Softwind runs two Google Ads accounts with deliberately mutually exclusive
+        scope; Landscape & Masonry owns patio and paver INSTALLATION, this account
+        owns exterior WASHING. A power-washing searcher who clicks a power-washing
+        ad and lands on a page branded for a masonry company has been given a
+        reason to doubt they are in the right place, at the exact moment they are
+        deciding whether to call.
+      current_value: "<title>Power Washing | Softwind Landscape & Masonry</title>"
+      proposed_value: "<title>Power Washing | Softwind Powerwashing</title>"
+      applies_to: all 6 offer pages, each with its own service prefix
+      effort: one WordPress title-template change
+    - id: R7-F2
+      severity: P0
+      finding: >-
+        The foreign Google Ads tag AW-17878095007 loads on ALL SIX offer pages and
+        on softwindli.com/our-work/ and /service-areas/, alongside the account own
+        AW-18369652705. Confirmed in desktop and mobile renders on 2026-08-31.
+      why_it_matters: >-
+        A Google Ads account that is not Softwind Power Washing is receiving
+        conversion and remarketing signal from Softwind paid landing pages. It has
+        been flagged since 2026-08-25 and is still live.
+      current_value: "AW-17878095007 present"
+      proposed_value: "removed, OR written confirmation that it is Softwind-controlled"
+      blocked_on: owner must identify the account
+    - id: R7-F3
+      severity: P1
+      finding: >-
+        Every offer page runs an "Offer Ends" countdown. There is no dated offer in
+        the client profile; verified_offers contains only "Free quote / free
+        estimate" and unverified_claims_do_not_use explicitly lists "any price,
+        discount or promotion".
+      why_it_matters: >-
+        A countdown attached to no real offer is fake urgency. Green Marketing copy
+        policy forbids it and it erodes exactly the trust a first-time exterior
+        contractor needs.
+      current_value: '"Offer Ends in" countdown block, present on all 6 offer pages'
+      proposed_value: >-
+        Remove the countdown, OR replace it with a real dated offer the client
+        confirms in writing.
+      blocked_on: owner decision on whether a real dated offer exists
+    - id: R7-F4
+      severity: P1
+      finding: >-
+        Six of the eight offer pages carry an H1 locked to three hamlets - "In
+        Islip, West Islip & Dix Hills, NY". Since PLAN-J2A executed on 2026-08-26
+        the campaigns target 80 places across Nassau and Suffolk counties.
+      why_it_matters: >-
+        A searcher in Holbrook, Sayville, North Babylon, Brentwood, Melville,
+        Smithtown or 70 other targeted places lands on a page that names three
+        towns that are not theirs. Google reports landing-page experience
+        BELOW_AVERAGE on the account biggest keyword, and this is the most likely
+        contributor. The page carrying 60.6% of all spend
+        (/power-washing-services-islip-west-islip-dix-hills/, 13 clicks, $432.13)
+        is one of them.
+      evidence: >-
+        The one page whose H1 is NOT city-locked - /power-washing-soft-washing/,
+        H1 "Power Washing & Soft Washing in Long Island", 17 Long Island mentions -
+        is the page PLAN-R6 selects for the head-term ad group precisely because it
+        travels across all 80 targets.
+      current_value: 'H1 "Power Washing Service In Islip, West Islip & Dix Hills, NY"'
+      proposed_value: >-
+        H1 "Power Washing Service On Long Island" with a supporting line naming the
+        service area at town level. Keep the URL slug unchanged - changing it would
+        break the Final URL on 12 ad groups and reset the page history.
+      applies_to:
+        - /power-washing-services-islip-west-islip-dix-hills/  (60.6% of all spend)
+        - /residential-pressure-washing/                       (24.7% of all spend)
+        - /driveway-pressure-washing/
+        - /patio-power-washing/
+        - /house-washing-company/
+        - /soft-house-washing/
+      do_not_change: >-
+        /power-washing-soft-washing/ - already Long-Island-wide, leave it alone.
+        /house-pressure-washing-estimate/ - H1 already reads "In Long Island".
+    - id: R7-F5
+      severity: P1
+      finding: >-
+        softwindli.com/our-work/ and /service-areas/ display the UNTRACKED number
+        (631) 502-5402 in both the tel: link and body text. Those two pages are the
+        destinations of two of the three surviving ACCOUNT-LEVEL sitelinks
+        (403497584582 Our Work, 403497568748 Service Areas).
+      why_it_matters: >-
+        A call generated from those pages is invisible to Google Ads and to
+        WhatConverts. Campaign-level sitelinks override account-level ones on both
+        in-scope campaigns, so this is a latent leak rather than an active one -
+        but the account has exactly two campaigns and both are in scope, so the
+        clean fix is to remove the account-level links (PLAN-R11).
+      current_value: "(631) 502-5402 on both pages"
+      proposed_value: >-
+        Either swap to the tracked (631) 502-7946, or accept the leak and remove
+        the account-level sitelinks in PLAN-R11. The second is cheaper and is the
+        recommendation.
+    - id: R7-F6
+      severity: P1
+      finding: >-
+        softwindli.com/contact-us/ could not be rendered - it stayed on the
+        SG-Captcha interstitial through four retries with escalating waits.
+      status: UNKNOWN, not FAIL
+      why_it_matters: >-
+        A single cold load is not evidence against these hosts; /patio-power-washing/
+        behaved the same way on 2026-08-27 and cleared on a warmed context. It is
+        the destination of account-level sitelink 403497573329 "Request A Quote".
+      proposed_value: re-test on a warmed browser context before drawing any conclusion
+    - id: R7-F7
+      severity: P2
+      finding: >-
+        No offer page states a price range. Competitors in the same auctions
+        publish them openly - one Long Island competitor lists house washing
+        $300-$800 and driveway washing $150-$400 on its public site.
+      why_it_matters: >-
+        Nine of the account 53 search terms are price research
+        ("powerwash cost", "average cost to power wash a house", "house wash
+        price", "how much does power washing a house cost"), and they have cost
+        $62.18 with no conversion. Those searchers bounce because the page answers
+        a different question.
+      proposed_value: >-
+        EITHER add an honest "typical project range" block to
+        /house-pressure-washing-estimate/ so the cost cluster has somewhere to
+        land, OR accept that the cost cluster is unservable and retire the
+        estimate keyword (PLAN-R4 ad-group disposition WEAK INTENT).
+      blocked_on: >-
+        client must supply real price ranges. average_job_revenue,
+        gross_margin_pct, close_rate_pct and target_cpl are all null in
+        client.yaml. Nothing may be published without client-confirmed figures.
+    - id: R7-F8
+      severity: P2
+      finding: >-
+        The reviews page at softwindli.com/reviews/ presents a HAPPY / NEUTRAL /
+        POOR selector before routing the reviewer.
+      why_it_matters: >-
+        config/agency.yaml sets review_collection.prohibit_review_gating true, and
+        Google review policy also prohibits gating. Carried forward unresolved from
+        the 2026-08-25 audit. This is on the client site, not in the Ads account,
+        and is raised for the client decision.
+      proposed_value: remove the sentiment gate
+    - id: R7-F9
+      severity: P2
+      finding: >-
+        No offer page carries a review count, star rating, years in business,
+        licence or insurance statement.
+      why_it_matters: >-
+        These are the standard trust signals in this vertical and their absence
+        costs conversion rate. They are ALSO on the client unverified-claims list,
+        so none of them may be added without written client confirmation.
+      proposed_value: >-
+        Ask the client for verifiable review count, rating, years in business and
+        licence/insurance status. Add ONLY what is confirmed in writing. Add
+        nothing otherwise.
+      blocked_on: client confirmation
+
+  actions: []
+
+  qa_after_any_website_change:
+    - re-run scripts/softwind_lp_audit.py with --gclid-test on all 11 URLs
+    - >-
+      assert HTTP 200 or 202 and judge on rendered content - offer.softwindli.com
+      answers 202 through its SiteGround edge on some loads
+    - assert the approved (631) 502-7946 still appears in the tel: link and body copy
+    - assert GCLID and UTMs still survive to the final URL
+    - assert AW-18369652705 still loads
+    - assert the Gravity Form still renders with its 5 visible fields
+    - >-
+      do NOT declare tracking fixed on tag presence alone - that requires the
+      controlled test in PLAN-R1
+
+  risk: >-
+    Website-only. The material risk is a WordPress edit breaking the form or the
+    tag, which the QA list above catches. Changing the URL slug is explicitly out
+    of scope because it would break the Final URL on 12 ad groups.
+  rollback: >-
+    WordPress revision history per page. Capture the current title, H1 and
+    countdown markup before editing.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A Google Drive or WordPress draft does not authorise a live deployment, a
+    tracking change, or a Google Ads Final URL change.

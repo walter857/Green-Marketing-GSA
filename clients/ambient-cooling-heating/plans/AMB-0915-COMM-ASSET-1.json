@@ -1,0 +1,93 @@
+{
+ "plan_name": "AMB-0915-COMM-ASSET-1",
+ "approval_class": "create-paused",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "exact_service": "Commercial HVAC Installation",
+ "summary": "Create 6 commercial callouts and 1 structured snippet and link them to ad group 199748801029 with the asset link PAUSED. 7 operations. Nothing serves until a separate enablement approval.",
+ "before_state": {
+  "ad_group_asset_links_on_commercial": 0,
+  "campaign_level_callouts": [
+   "Clear Recommendations",
+   "Clear Service Options",
+   "Local Maryland Service",
+   "Professional Technicians",
+   "Prompt, Reliable Service"
+  ],
+  "campaign_level_structured_snippet": "Service catalog (residential HVAC Installation wording)"
+ },
+ "operations": [
+  {
+   "operation": "CREATE_CALLOUT_ASSET_AND_LINK_PAUSED",
+   "resource": "asset + ad_group_asset",
+   "ad_group_id": "199748801029",
+   "field_type": "CALLOUT",
+   "asset_link_status": "PAUSED",
+   "text": "Free Consultation"
+  },
+  {
+   "operation": "CREATE_CALLOUT_ASSET_AND_LINK_PAUSED",
+   "resource": "asset + ad_group_asset",
+   "ad_group_id": "199748801029",
+   "field_type": "CALLOUT",
+   "asset_link_status": "PAUSED",
+   "text": "Flexible Scheduling"
+  },
+  {
+   "operation": "CREATE_CALLOUT_ASSET_AND_LINK_PAUSED",
+   "resource": "asset + ad_group_asset",
+   "ad_group_id": "199748801029",
+   "field_type": "CALLOUT",
+   "asset_link_status": "PAUSED",
+   "text": "Transparent Pricing"
+  },
+  {
+   "operation": "CREATE_CALLOUT_ASSET_AND_LINK_PAUSED",
+   "resource": "asset + ad_group_asset",
+   "ad_group_id": "199748801029",
+   "field_type": "CALLOUT",
+   "asset_link_status": "PAUSED",
+   "text": "Central Maryland Service"
+  },
+  {
+   "operation": "CREATE_CALLOUT_ASSET_AND_LINK_PAUSED",
+   "resource": "asset + ad_group_asset",
+   "ad_group_id": "199748801029",
+   "field_type": "CALLOUT",
+   "asset_link_status": "PAUSED",
+   "text": "Multiple System Options"
+  },
+  {
+   "operation": "CREATE_CALLOUT_ASSET_AND_LINK_PAUSED",
+   "resource": "asset + ad_group_asset",
+   "ad_group_id": "199748801029",
+   "field_type": "CALLOUT",
+   "asset_link_status": "PAUSED",
+   "text": "Commercial HVAC Team"
+  },
+  {
+   "operation": "CREATE_STRUCTURED_SNIPPET_AND_LINK_PAUSED",
+   "resource": "asset + ad_group_asset",
+   "ad_group_id": "199748801029",
+   "field_type": "STRUCTURED_SNIPPET",
+   "asset_link_status": "PAUSED",
+   "header": "Types",
+   "values": [
+    "Rooftop Units",
+    "Packaged Systems",
+    "Heat Pumps",
+    "Central Air",
+    "HVAC Replacement"
+   ]
+  }
+ ],
+ "operation_count": 7,
+ "reason": "Campaign 24132507747 carries five generic callouts and a residential 'Service catalog' snippet. Ad-group assets take precedence for this ad group only, so commercial searchers see commercial extensions while the residential ad group is untouched. Every value is verbatim-supported by the live commercial page.",
+ "risk": "LOW - asset links created PAUSED cannot serve.",
+ "rollback": "Set the 7 ad_group_asset links to REMOVED.",
+ "dependencies": [
+  "AMB-0915-COMM-RSA-1 should be approved first; assets without ads serve nothing"
+ ],
+ "unrelated_resource_assertion": "No campaign_asset is created, edited or removed. The five campaign callouts, the campaign structured snippet, the shared call asset 407995613637 and every sitelink remain exactly as they are, on all five campaigns.",
+ "fingerprint": "02F6EECCCDF8"
+}

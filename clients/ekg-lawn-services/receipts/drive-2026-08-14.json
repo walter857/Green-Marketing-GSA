@@ -1,0 +1,92 @@
+{
+  "folders": [
+    {
+      "name": "EKG Lawn Services LLC",
+      "id": "1jL42Hxa4IpFRR37G3uczLgqx9gb-ZXaH",
+      "state": "reused",
+      "url": "https://drive.google.com/drive/folders/1jL42Hxa4IpFRR37G3uczLgqx9gb-ZXaH",
+      "parent": "1URdm5hmGV2s1B9M6XaD3xvel9DPfTZKG"
+    },
+    {
+      "name": "Landing Pages",
+      "id": "1XvIguvVuVZxTtWM8nkKxg8YxEZIgsejm",
+      "state": "reused",
+      "url": "https://drive.google.com/drive/folders/1XvIguvVuVZxTtWM8nkKxg8YxEZIgsejm",
+      "parent": "1jL42Hxa4IpFRR37G3uczLgqx9gb-ZXaH"
+    }
+  ],
+  "documents": [
+    {
+      "name": "EKG Lawn Services LLC - Lawn Aeration Landing Page Content",
+      "id": "1Ic-c56wZzeLAYAJ2olnXeWZM4_cmJg0toFFyNNALTQM",
+      "state": "created",
+      "url": "https://docs.google.com/document/d/1Ic-c56wZzeLAYAJ2olnXeWZM4_cmJg0toFFyNNALTQM/edit",
+      "parent": "1XvIguvVuVZxTtWM8nkKxg8YxEZIgsejm",
+      "local_source": "clients/ekg-lawn-services/landing-pages/lawn-aeration-content.md",
+      "replacements": 107
+    },
+    {
+      "name": "EKG Lawn Services LLC - Aeration & Overseeding Landing Page Content",
+      "id": "1HjZZ3Wrqc15T0qoFntagktRTQz4pWngaJi4XulYat-E",
+      "state": "created",
+      "url": "https://docs.google.com/document/d/1HjZZ3Wrqc15T0qoFntagktRTQz4pWngaJi4XulYat-E/edit",
+      "parent": "1XvIguvVuVZxTtWM8nkKxg8YxEZIgsejm",
+      "local_source": "clients/ekg-lawn-services/landing-pages/aeration-overseeding-content.md",
+      "replacements": 107
+    }
+  ],
+  "created": [
+    {
+      "type": "document",
+      "name": "EKG Lawn Services LLC - Lawn Aeration Landing Page Content",
+      "id": "1Ic-c56wZzeLAYAJ2olnXeWZM4_cmJg0toFFyNNALTQM"
+    },
+    {
+      "type": "document",
+      "name": "EKG Lawn Services LLC - Aeration & Overseeding Landing Page Content",
+      "id": "1HjZZ3Wrqc15T0qoFntagktRTQz4pWngaJi4XulYat-E"
+    }
+  ],
+  "reused": [
+    {
+      "type": "folder",
+      "name": "EKG Lawn Services LLC",
+      "id": "1jL42Hxa4IpFRR37G3uczLgqx9gb-ZXaH"
+    },
+    {
+      "type": "folder",
+      "name": "Landing Pages",
+      "id": "1XvIguvVuVZxTtWM8nkKxg8YxEZIgsejm"
+    }
+  ],
+  "validation": {
+    "structure_vs_master": "177 paragraphs, identical style sequence, 13 bullets, 0 tables, 1 tab",
+    "image_placements_at_template_indices": [
+      22,
+      69,
+      89,
+      92,
+      95,
+      105,
+      107,
+      109,
+      111
+    ],
+    "review_cards_at_template_indices": [
+      128,
+      130,
+      132
+    ],
+    "logo_positions_at_template_indices": [
+      7,
+      174
+    ],
+    "ambient_or_source_client_residue": 0,
+    "provenance_or_licensing_text_in_copy": 0,
+    "unresolved_template_placeholders": 0,
+    "duplicates_created": 0,
+    "master_template_modified": false,
+    "master_version_after_run": 9
+  },
+  "publication_qa_note": "The template's review cards carry a five-star glyph at paragraphs 128/130/132. It is the master's own layout, not a claim I introduced, and the review text beside it is a DEVELOPER TODO. Before publication the glyph must reflect each real review's actual rating, or the review module must be hidden. No rating or review count is asserted anywhere else on either page."
+}

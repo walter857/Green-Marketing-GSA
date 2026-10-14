@@ -1,0 +1,66 @@
+{
+ "plan_name": "AMB-0909-BUD-1",
+ "approval_class": "reversible-budget-change",
+ "generated_local": "2026-09-09T14:58:54.854563-04:00",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "AC Repair",
+  "related_services": [
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "summary": "Retire $37.76/day of unspendable Gas Boiler Repair budget: $5.46 goes to the budget-limited HVAC Installation campaign and $32.30 is released, bringing the five daily budgets to $433.33 - exactly $13,000 over 30 days.",
+ "object_count": 2,
+ "partial_failure": false,
+ "atomic": true,
+ "operations": [
+  {
+   "operation": "UPDATE_CAMPAIGN_BUDGET",
+   "resource": "campaign_budget",
+   "resource_id": "15787409438",
+   "resource_name": "customers/2401959466/campaignBudgets/15787409438",
+   "campaign": "Gas Boiler Repair",
+   "current_state": "amount_micros = 42760000 ($42.76/day)",
+   "proposed_state": "amount_micros = 5000000 ($5.00/day)",
+   "field_mask": [
+    "amount_micros"
+   ],
+   "reason": "34 impressions and zero clicks since launch. Keyword Planner across the live 10-city sample returns 20 monthly searches for the best boiler term and no top-of-page bid estimate at all. The landing page still carries the wrong service heading, so the campaign is gated anyway. $5.00/day keeps it alive for measurement without reserving unspendable budget.",
+   "rollback": "set amount_micros back to 42760000",
+   "risk": "LOW - net daily total unchanged",
+   "unrelated_resource_assertion": "sum of the five daily budgets must stay $465.63; the other three budgets (15787409435, 15787409444, 15787409447) must be unchanged"
+  },
+  {
+   "operation": "UPDATE_CAMPAIGN_BUDGET",
+   "resource": "campaign_budget",
+   "resource_id": "15787409441",
+   "resource_name": "customers/2401959466/campaignBudgets/15787409441",
+   "campaign": "HVAC Installation",
+   "current_state": "amount_micros = 176150000 ($176.15/day)",
+   "proposed_state": "amount_micros = 181610000 ($181.61/day)",
+   "field_mask": [
+    "amount_micros"
+   ],
+   "reason": "Only budget-limited campaign in the account: 53.16% Search lost impression share (budget) over the last 30 settled days, against 10.32% lost to rank. It also produced the account's only sub-target CPA window (CPA $141.87 against a $280 max CPQL after the 2026-08-29 keyword swap). Receives $5.46 of the $37.76 released by Gas Boiler; the remaining $32.30 is retired so that the five daily budgets sum to exactly $433.33, which is $13,000 over 30 days.",
+   "rollback": "set amount_micros back to 176150000",
+   "risk": "LOW - net daily total unchanged",
+   "unrelated_resource_assertion": "sum of the five daily budgets must stay $465.63; the other three budgets (15787409435, 15787409444, 15787409447) must be unchanged"
+  }
+ ],
+ "notes": {
+  "daily_total_before": 465.63,
+  "daily_total_after": 433.33,
+  "monthly_maximum_usd": 13000,
+  "worst_case_30_day_exposure_before": 13968.9,
+  "worst_case_30_day_exposure_after": 12999.9,
+  "cap_note": "Before this package the five daily budgets summed to $465.63, which is $13,968.90 over 30 days - $968.90 above the $13,000 monthly maximum. Observed spend has never approached it (August settled at $6,842.80; September stands at $1,260.86 through 8 settled days), but the documented worst case did breach the cap. This package closes that gap by construction: $433.33 x 30 = $13,000.00 exactly.",
+  "ac_repair_budget_left_alone": "AC Repair keeps $141.45/day even though its $25 ceiling currently prevents it from spending. Cutting it would make the deliberate ceiling hold harder to reverse. Raised as an owner question instead."
+ },
+ "fingerprint": "D448BFDE4650"
+}

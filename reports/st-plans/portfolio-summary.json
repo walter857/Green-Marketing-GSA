@@ -1,0 +1,102 @@
+{
+  "ambient-cooling-heating": {
+    "universe_core": 874,
+    "universe_hardened": 3016,
+    "layer_a_objects": 4252,
+    "layer_b_objects": 4252,
+    "layer_x_objects": 0,
+    "live_campaigns": 5,
+    "live_ad_groups": 5,
+    "negative_terms": 8847,
+    "wasted_spend_usd": 20637.17,
+    "spend_blocked_usd": 20623.47,
+    "roots": 446,
+    "tiers": {
+      "T1_spent": 429,
+      "T2_clicked": 0,
+      "T3_impressed": 2160,
+      "T4_tail": 3196
+    },
+    "rejected": 43,
+    "excluded_rows": 0,
+    "by_ad_group_negative": 0,
+    "by_campaign_negative_only": 0,
+    "by_shared_list_only": 0,
+    "unexplained": 0
+  },
+  "pro-green-austin": {
+    "universe_core": 624,
+    "universe_hardened": 1709,
+    "layer_a_objects": 1054,
+    "layer_b_objects": 12120,
+    "layer_x_objects": 2,
+    "live_campaigns": 2,
+    "live_ad_groups": 24,
+    "negative_terms": 4840,
+    "wasted_spend_usd": 10059.72,
+    "spend_blocked_usd": 10059.72,
+    "roots": 407,
+    "tiers": {
+      "T1_spent": 217,
+      "T2_clicked": 0,
+      "T3_impressed": 1086,
+      "T4_tail": 1423
+    },
+    "rejected": 2,
+    "excluded_rows": 17,
+    "by_ad_group_negative": 0,
+    "by_campaign_negative_only": 17,
+    "by_shared_list_only": 0,
+    "unexplained": 0
+  },
+  "softwind-power-washing": {
+    "universe_core": 2,
+    "universe_hardened": 3,
+    "layer_a_objects": 4,
+    "layer_b_objects": 24,
+    "layer_x_objects": 1,
+    "live_campaigns": 2,
+    "live_ad_groups": 12,
+    "negative_terms": 5,
+    "wasted_spend_usd": 0.0,
+    "spend_blocked_usd": 0.0,
+    "roots": 2,
+    "tiers": {
+      "T1_spent": 0,
+      "T2_clicked": 0,
+      "T3_impressed": 1,
+      "T4_tail": 0
+    },
+    "rejected": 0,
+    "excluded_rows": 0,
+    "by_ad_group_negative": 0,
+    "by_campaign_negative_only": 0,
+    "by_shared_list_only": 0,
+    "unexplained": 0
+  },
+  "softwind-landscape-masonry": {
+    "universe_core": 211,
+    "universe_hardened": 606,
+    "layer_a_objects": 365,
+    "layer_b_objects": 910,
+    "layer_x_objects": 0,
+    "live_campaigns": 2,
+    "live_ad_groups": 5,
+    "negative_terms": 1701,
+    "wasted_spend_usd": 1163.22,
+    "spend_blocked_usd": 1116.59,
+    "roots": 137,
+    "tiers": {
+      "T1_spent": 76,
+      "T2_clicked": 0,
+      "T3_impressed": 399,
+      "T4_tail": 532
+    },
+    "rejected": 6,
+    "excluded_rows": 24,
+    "by_ad_group_negative": 24,
+    "by_campaign_negative_only": 0,
+    "by_shared_list_only": 0,
+    "unexplained": 0
+  }
+}

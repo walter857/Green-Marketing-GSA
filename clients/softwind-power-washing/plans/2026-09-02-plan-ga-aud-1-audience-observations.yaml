@@ -1,0 +1,52 @@
+# PLAN-GA-AUD-1 - SEARCH AUDIENCE OBSERVATIONS
+# STATUS: DEFERRED ON LIST SIZE - NOT FINGERPRINTED. NOT APPROVED. DO NOT EXECUTE.
+
+change_plan:
+  plan_id: PLAN-GA-AUD-1
+  plan_title: Search audience observations
+  approval_type: AUDIENCES
+  priority: P3
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: null
+  fingerprint_withheld_because: >-
+    Exact IDs ARE now resolved, but every available list is far below Google's Search
+    remarketing minimum of 1,000 active visitors. Attaching a 16-to-210 member list produces no
+    usable observation data, so the plan is DEFERRED on list size rather than on unknown IDs.
+    It becomes fingerprintable the moment a list crosses the threshold.
+  target: {child_customer_id: '1521725229', campaign_id: '24103511039'}
+  mode: OBSERVATION ONLY
+  initial_bid_modifier: '0%'
+  never: 'Audience TARGETING mode. It would restrict Search reach.'
+
+  resolved_segments_live_read_2026_09_02:
+    first_party_user_lists:
+      - {id: '9446096870', name: 'All visitors (AdWords)', type: RULE_BASED, search_size: 210, status: OPEN}
+      - {id: '9446154938', name: 'AdWords optimized list', type: LOGICAL, search_size: 200, status: OPEN}
+      - {id: '9446168598', name: 'All Converters', type: RULE_BASED, search_size: 16, status: OPEN}
+      - {id: '9447544308', name: 'All visitors (AdWords) (system-defined)', type: RULE_BASED, search_size: 200, status: OPEN}
+    google_provided_detailed_demographic:
+      - {id: '30007', name: Homeowners, relevance: 'HIGH - exterior home services'}
+      - {id: '30006', name: 'Homeownership Status (parent)', relevance: 'container'}
+    size_constraint: >-
+      Google requires roughly 1,000 active visitors for a remarketing list to serve on Search.
+      The largest list here holds 210 and "All Converters" holds 16. All four are OPEN and
+      collecting, but none is close to the threshold - unsurprising on 21 lifetime clicks.
+    evidence_file: clients/softwind-power-washing/snapshots/audience-segments-2026-09-02.json
+
+  intended_observations_when_size_permits:
+    - {segment_id: '9446096870', name: 'All visitors (AdWords)', association: 'campaign 24103511039', setting: OBSERVATION, bid_modifier: '0%', reason: 'baseline site-visitor reporting', overlap_risk: 'high with 9447544308 - pick one', rollback: 'remove the campaign criterion'}
+    - {segment_id: '9446168598', name: 'All Converters', association: 'campaign 24103511039', setting: OBSERVATION, bid_modifier: '0%', reason: 'the only converter-shaped list; 16 members, reporting only', overlap_risk: low, rollback: 'remove the campaign criterion'}
+    - {segment_id: '30007', name: Homeowners, association: 'campaign 24103511039', setting: OBSERVATION, bid_modifier: '0%', reason: 'exterior home services are a homeowner purchase', overlap_risk: none, rollback: 'remove the campaign criterion'}
+  excluded_deliberately:
+    - 9446154938 AdWords optimized list - a LOGICAL auto-list with no clear definition, poor reporting value
+    - unrelated lifestyle and affinity-only segments
+    - employment, job-seeker and contractor audiences
+    - pressure-washer equipment buyers
+    - generic broad audiences that add no reporting value
+
+  sequencing_note: >-
+    Audience work is a REPORTING enhancement, not a lead-generation action. Twelve criteria at 0%
+    produce zero leads by design. With 21 lifetime clicks the observation data would be
+    uninterpretable for months. It sits behind measurement, structure and landing pages.
+  approval_owner: Walter Correa

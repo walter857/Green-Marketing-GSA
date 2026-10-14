@@ -1,0 +1,590 @@
+{
+  "subplan": "EXISTING_RESOURCES",
+  "fingerprint": "C58644338C89",
+  "customer_id": "2429758629",
+  "exact_child_account_name": "Softwind Landscape & Masonry - Live",
+  "mode": "LIVE WRITE",
+  "executed_at_utc": "2026-09-04T03:30:50.413691+00:00",
+  "approved_actions": 96,
+  "approved_objects": 96,
+  "api_operations": 96,
+  "partial_failure": false,
+  "results": [
+    {
+      "index": 0,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~66019371",
+      "log": "NEG-001 CREATE negative PHRASE 'asphalt' on 23484806108"
+    },
+    {
+      "index": 1,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~297468284781",
+      "log": "NEG-002 CREATE negative PHRASE 'blacktop' on 23484806108"
+    },
+    {
+      "index": 2,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~497575926",
+      "log": "NEG-003 CREATE negative PHRASE 'macadam' on 23484806108"
+    },
+    {
+      "index": 3,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~314213650756",
+      "log": "NEG-004 CREATE negative PHRASE 'tar and chip' on 23484806108"
+    },
+    {
+      "index": 4,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~256106153",
+      "log": "NEG-005 CREATE negative PHRASE 'house washing' on 23484806108"
+    },
+    {
+      "index": 5,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~296114422239",
+      "log": "NEG-006 CREATE negative PHRASE 'patio washing' on 23484806108"
+    },
+    {
+      "index": 6,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~21381541",
+      "log": "NEG-007 CREATE negative PHRASE 'power washing' on 23484806108"
+    },
+    {
+      "index": 7,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~21381571",
+      "log": "NEG-008 CREATE negative PHRASE 'pressure washing' on 23484806108"
+    },
+    {
+      "index": 8,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~298543151485",
+      "log": "NEG-009 CREATE negative PHRASE 'soft washing' on 23484806108"
+    },
+    {
+      "index": 9,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~157248365",
+      "log": "NEG-010 CREATE negative PHRASE 'composite deck' on 23484806108"
+    },
+    {
+      "index": 10,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~157250065",
+      "log": "NEG-011 CREATE negative PHRASE 'deck builder' on 23484806108"
+    },
+    {
+      "index": 11,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~13547852",
+      "log": "NEG-012 CREATE negative PHRASE 'decking' on 23484806108"
+    },
+    {
+      "index": 12,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~122438280",
+      "log": "NEG-013 CREATE negative PHRASE 'trex' on 23484806108"
+    },
+    {
+      "index": 13,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~46787810",
+      "log": "NEG-014 CREATE negative PHRASE 'wood deck' on 23484806108"
+    },
+    {
+      "index": 14,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~170741122",
+      "log": "NEG-015 CREATE negative PHRASE 'apprentice' on 23484806108"
+    },
+    {
+      "index": 15,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~10297371",
+      "log": "NEG-016 CREATE negative PHRASE 'patio enclosure' on 23484806108"
+    },
+    {
+      "index": 16,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~10297381",
+      "log": "NEG-017 CREATE negative PHRASE 'patio enclosures' on 23484806108"
+    },
+    {
+      "index": 17,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~31224810",
+      "log": "NEG-018 CREATE negative PHRASE 'screen room' on 23484806108"
+    },
+    {
+      "index": 18,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~337978949",
+      "log": "NEG-019 CREATE negative PHRASE 'screened in patio' on 23484806108"
+    },
+    {
+      "index": 19,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~280225204",
+      "log": "NEG-020 CREATE negative PHRASE 'screened patio' on 23484806108"
+    },
+    {
+      "index": 20,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~15814552",
+      "log": "NEG-021 CREATE negative PHRASE 'sunroom' on 23484806108"
+    },
+    {
+      "index": 21,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~296957162128",
+      "log": "NEG-022 CREATE negative PHRASE 'paver mold' on 23484806108"
+    },
+    {
+      "index": 22,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~367846488",
+      "log": "NEG-023 CREATE negative PHRASE 'paver molds' on 23484806108"
+    },
+    {
+      "index": 23,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~297790262329",
+      "log": "NEG-024 CREATE negative PHRASE 'plate compactor' on 23484806108"
+    },
+    {
+      "index": 24,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~110367874",
+      "log": "NEG-025 CREATE negative PHRASE 'awning' on 23484806108"
+    },
+    {
+      "index": 25,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~28942500",
+      "log": "NEG-026 CREATE negative PHRASE 'canopy' on 23484806108"
+    },
+    {
+      "index": 26,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~300281448161",
+      "log": "NEG-027 CREATE negative PHRASE 'covered patio' on 23484806108"
+    },
+    {
+      "index": 27,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~13301863",
+      "log": "NEG-028 CREATE negative PHRASE 'gazebo' on 23484806108"
+    },
+    {
+      "index": 28,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~133955292",
+      "log": "NEG-029 CREATE negative PHRASE 'patio awning' on 23484806108"
+    },
+    {
+      "index": 29,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~92666976",
+      "log": "NEG-030 CREATE negative PHRASE 'patio cover' on 23484806108"
+    },
+    {
+      "index": 30,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~253889720",
+      "log": "NEG-031 CREATE negative PHRASE 'patio roof' on 23484806108"
+    },
+    {
+      "index": 31,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~117027409",
+      "log": "NEG-032 CREATE negative PHRASE 'pergola' on 23484806108"
+    },
+    {
+      "index": 32,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~280300834",
+      "log": "NEG-033 CREATE negative PHRASE 'patio restoration' on 23484806108"
+    },
+    {
+      "index": 33,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~2476429901003",
+      "log": "NEG-034 CREATE negative PHRASE 'paver re sanding' on 23484806108"
+    },
+    {
+      "index": 34,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~1839627454552",
+      "log": "NEG-035 CREATE negative PHRASE 'paver releveling' on 23484806108"
+    },
+    {
+      "index": 35,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~776516951715",
+      "log": "NEG-036 CREATE negative PHRASE 'paver resanding' on 23484806108"
+    },
+    {
+      "index": 36,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~845961532",
+      "log": "NEG-037 CREATE negative PHRASE 'paver restoration' on 23484806108"
+    },
+    {
+      "index": 37,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~300338543471",
+      "log": "NEG-038 CREATE negative PHRASE 'polymeric sand' on 23484806108"
+    },
+    {
+      "index": 38,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~335429859990",
+      "log": "NEG-039 CREATE negative PHRASE 'paver calculator' on 23484806108"
+    },
+    {
+      "index": 39,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~147766364",
+      "log": "NEG-040 CREATE negative PHRASE 'seal coat' on 23484806108"
+    },
+    {
+      "index": 40,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~263415870",
+      "log": "NEG-041 CREATE negative PHRASE 'seal coating' on 23484806108"
+    },
+    {
+      "index": 41,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~289560744",
+      "log": "NEG-042 CREATE negative PHRASE 'sealcoat' on 23484806108"
+    },
+    {
+      "index": 42,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~138876971",
+      "log": "NEG-043 CREATE negative PHRASE 'sealcoating' on 23484806108"
+    },
+    {
+      "index": 43,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~298325502676",
+      "log": "NEG-044 CREATE negative PHRASE 'patio sealing' on 23484806108"
+    },
+    {
+      "index": 44,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~156918817",
+      "log": "NEG-045 CREATE negative PHRASE 'paver sealer' on 23484806108"
+    },
+    {
+      "index": 45,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~75465548",
+      "log": "NEG-046 CREATE negative PHRASE 'sealant' on 23484806108"
+    },
+    {
+      "index": 46,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~342700756998",
+      "log": "NEG-047 CREATE negative PHRASE 'sealing service' on 23484806108"
+    },
+    {
+      "index": 47,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23484806108~347399528",
+      "log": "NEG-048 CREATE negative PHRASE 'stone sealer' on 23484806108"
+    },
+    {
+      "index": 48,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~66019371",
+      "log": "NEG-049 CREATE negative PHRASE 'asphalt' on 23489296528"
+    },
+    {
+      "index": 49,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~297468284781",
+      "log": "NEG-050 CREATE negative PHRASE 'blacktop' on 23489296528"
+    },
+    {
+      "index": 50,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~497575926",
+      "log": "NEG-051 CREATE negative PHRASE 'macadam' on 23489296528"
+    },
+    {
+      "index": 51,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~314213650756",
+      "log": "NEG-052 CREATE negative PHRASE 'tar and chip' on 23489296528"
+    },
+    {
+      "index": 52,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~256106153",
+      "log": "NEG-053 CREATE negative PHRASE 'house washing' on 23489296528"
+    },
+    {
+      "index": 53,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~296114422239",
+      "log": "NEG-054 CREATE negative PHRASE 'patio washing' on 23489296528"
+    },
+    {
+      "index": 54,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~21381541",
+      "log": "NEG-055 CREATE negative PHRASE 'power washing' on 23489296528"
+    },
+    {
+      "index": 55,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~21381571",
+      "log": "NEG-056 CREATE negative PHRASE 'pressure washing' on 23489296528"
+    },
+    {
+      "index": 56,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~298543151485",
+      "log": "NEG-057 CREATE negative PHRASE 'soft washing' on 23489296528"
+    },
+    {
+      "index": 57,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~157248365",
+      "log": "NEG-058 CREATE negative PHRASE 'composite deck' on 23489296528"
+    },
+    {
+      "index": 58,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~157250065",
+      "log": "NEG-059 CREATE negative PHRASE 'deck builder' on 23489296528"
+    },
+    {
+      "index": 59,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~132594060",
+      "log": "NEG-060 CREATE negative PHRASE 'deck contractor' on 23489296528"
+    },
+    {
+      "index": 60,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~13547852",
+      "log": "NEG-061 CREATE negative PHRASE 'decking' on 23489296528"
+    },
+    {
+      "index": 61,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~122438280",
+      "log": "NEG-062 CREATE negative PHRASE 'trex' on 23489296528"
+    },
+    {
+      "index": 62,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~46787810",
+      "log": "NEG-063 CREATE negative PHRASE 'wood deck' on 23489296528"
+    },
+    {
+      "index": 63,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~170741122",
+      "log": "NEG-064 CREATE negative PHRASE 'apprentice' on 23489296528"
+    },
+    {
+      "index": 64,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~10297371",
+      "log": "NEG-065 CREATE negative PHRASE 'patio enclosure' on 23489296528"
+    },
+    {
+      "index": 65,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~10297381",
+      "log": "NEG-066 CREATE negative PHRASE 'patio enclosures' on 23489296528"
+    },
+    {
+      "index": 66,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~31224810",
+      "log": "NEG-067 CREATE negative PHRASE 'screen room' on 23489296528"
+    },
+    {
+      "index": 67,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~337978949",
+      "log": "NEG-068 CREATE negative PHRASE 'screened in patio' on 23489296528"
+    },
+    {
+      "index": 68,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~280225204",
+      "log": "NEG-069 CREATE negative PHRASE 'screened patio' on 23489296528"
+    },
+    {
+      "index": 69,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~15814552",
+      "log": "NEG-070 CREATE negative PHRASE 'sunroom' on 23489296528"
+    },
+    {
+      "index": 70,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~296957162128",
+      "log": "NEG-071 CREATE negative PHRASE 'paver mold' on 23489296528"
+    },
+    {
+      "index": 71,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~367846488",
+      "log": "NEG-072 CREATE negative PHRASE 'paver molds' on 23489296528"
+    },
+    {
+      "index": 72,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~297790262329",
+      "log": "NEG-073 CREATE negative PHRASE 'plate compactor' on 23489296528"
+    },
+    {
+      "index": 73,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~110367874",
+      "log": "NEG-074 CREATE negative PHRASE 'awning' on 23489296528"
+    },
+    {
+      "index": 74,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~28942500",
+      "log": "NEG-075 CREATE negative PHRASE 'canopy' on 23489296528"
+    },
+    {
+      "index": 75,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~300281448161",
+      "log": "NEG-076 CREATE negative PHRASE 'covered patio' on 23489296528"
+    },
+    {
+      "index": 76,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~13301863",
+      "log": "NEG-077 CREATE negative PHRASE 'gazebo' on 23489296528"
+    },
+    {
+      "index": 77,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~133955292",
+      "log": "NEG-078 CREATE negative PHRASE 'patio awning' on 23489296528"
+    },
+    {
+      "index": 78,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~253889720",
+      "log": "NEG-079 CREATE negative PHRASE 'patio roof' on 23489296528"
+    },
+    {
+      "index": 79,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~280300834",
+      "log": "NEG-080 CREATE negative PHRASE 'patio restoration' on 23489296528"
+    },
+    {
+      "index": 80,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~313532908266",
+      "log": "NEG-081 CREATE negative PHRASE 'paver leveling' on 23489296528"
+    },
+    {
+      "index": 81,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~1839627454552",
+      "log": "NEG-082 CREATE negative PHRASE 'paver releveling' on 23489296528"
+    },
+    {
+      "index": 82,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~776516951715",
+      "log": "NEG-083 CREATE negative PHRASE 'paver resanding' on 23489296528"
+    },
+    {
+      "index": 83,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~845961532",
+      "log": "NEG-084 CREATE negative PHRASE 'paver restoration' on 23489296528"
+    },
+    {
+      "index": 84,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~300338543471",
+      "log": "NEG-085 CREATE negative PHRASE 'polymeric sand' on 23489296528"
+    },
+    {
+      "index": 85,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~335429859990",
+      "log": "NEG-086 CREATE negative PHRASE 'paver calculator' on 23489296528"
+    },
+    {
+      "index": 86,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~147766364",
+      "log": "NEG-087 CREATE negative PHRASE 'seal coat' on 23489296528"
+    },
+    {
+      "index": 87,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~263415870",
+      "log": "NEG-088 CREATE negative PHRASE 'seal coating' on 23489296528"
+    },
+    {
+      "index": 88,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~289560744",
+      "log": "NEG-089 CREATE negative PHRASE 'sealcoat' on 23489296528"
+    },
+    {
+      "index": 89,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~138876971",
+      "log": "NEG-090 CREATE negative PHRASE 'sealcoating' on 23489296528"
+    },
+    {
+      "index": 90,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~298325502676",
+      "log": "NEG-091 CREATE negative PHRASE 'patio sealing' on 23489296528"
+    },
+    {
+      "index": 91,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~156918817",
+      "log": "NEG-092 CREATE negative PHRASE 'paver sealer' on 23489296528"
+    },
+    {
+      "index": 92,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~506651019",
+      "log": "NEG-093 CREATE negative PHRASE 'paver sealing' on 23489296528"
+    },
+    {
+      "index": 93,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~75465548",
+      "log": "NEG-094 CREATE negative PHRASE 'sealant' on 23489296528"
+    },
+    {
+      "index": 94,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~342700756998",
+      "log": "NEG-095 CREATE negative PHRASE 'sealing service' on 23489296528"
+    },
+    {
+      "index": 95,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/2429758629/campaignCriteria/23489296528~347399528",
+      "log": "NEG-096 CREATE negative PHRASE 'stone sealer' on 23489296528"
+    }
+  ]
+}

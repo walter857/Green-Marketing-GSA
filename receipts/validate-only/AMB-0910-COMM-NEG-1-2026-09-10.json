@@ -1,0 +1,43 @@
+{
+ "plan_name": "AMB-0910-COMM-NEG-1",
+ "fingerprint": "C4142D5D5DE0",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "validate_only": true,
+ "partial_failure": false,
+ "operation_count": 18,
+ "operations_log": [
+  "CREATE ad-group negative [BROAD] 'residential' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'homeowner' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'house' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'diy' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'job' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'jobs' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'career' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'careers' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'salary' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'salaries' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'training' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'course' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'courses' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'parts' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'used' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'wholesale' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'supplier' on SKAG | Commercial HVAC Installation",
+  "CREATE ad-group negative [BROAD] 'supply' on SKAG | Commercial HVAC Installation"
+ ],
+ "identity": {
+  "descriptive_name == 'Ambient Cooling - Live'": true,
+  "customer.id == 2401959466": true,
+  "not a manager account": true,
+  "not a test account": true,
+  "time_zone == America/New_York": true,
+  "currency_code == USD": true,
+  "Green Marketing manager 3373711342 ACTIVE": true,
+  "ClickCease manager 2815082755 ACTIVE": true
+ },
+ "started_local": "2026-09-10T15:25:16.360152-04:00",
+ "status": "VALIDATED_OK",
+ "results_returned": 0,
+ "finished_local": "2026-09-10T15:25:16.876275-04:00"
+}

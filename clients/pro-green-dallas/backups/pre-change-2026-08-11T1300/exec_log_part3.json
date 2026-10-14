@@ -1,0 +1,160 @@
+{
+  "batches": [
+    {
+      "batch": "F-assets",
+      "operations": [
+        {
+          "action": "PAUSE_LINK",
+          "resource": "customers/8735782888/campaignAssets/20315156610~89872309308~CALLOUT",
+          "asset_id": "89872309308",
+          "text": "Claim Your Discount",
+          "reason": "expired 10% promotion language",
+          "rollback": "set link status back to ENABLED"
+        },
+        {
+          "action": "PAUSE_LINK",
+          "resource": "customers/8735782888/adGroupAssets/151125103616~205729352013~SITELINK",
+          "ad_group": "Sprinkler Repair Near Me",
+          "asset_id": "205729352013",
+          "text": "Irrigation Winterization",
+          "reason": "winterization is an excluded service",
+          "rollback": "set link status back to ENABLED"
+        },
+        {
+          "action": "PAUSE_LINK",
+          "resource": "customers/8735782888/adGroupAssets/151125103616~333127655836~SITELINK",
+          "ad_group": "Sprinkler Repair Near Me",
+          "asset_id": "333127655836",
+          "text": "Irrigation Winterization",
+          "reason": "winterization is an excluded service",
+          "rollback": "set link status back to ENABLED"
+        },
+        {
+          "action": "PAUSE_LINK",
+          "resource": "customers/8735782888/adGroupAssets/190202910461~334324133443~SITELINK",
+          "ad_group": "Irrigation Repair Near Me",
+          "asset_id": "334324133443",
+          "text": "Irrigation Winterization",
+          "reason": "winterization is an excluded service",
+          "rollback": "set link status back to ENABLED"
+        },
+        {
+          "action": "PAUSE_LINK",
+          "resource": "customers/8735782888/adGroupAssets/191996690566~334324133443~SITELINK",
+          "ad_group": "Sprinkler System Repair",
+          "asset_id": "334324133443",
+          "text": "Irrigation Winterization",
+          "reason": "winterization is an excluded service",
+          "rollback": "set link status back to ENABLED"
+        },
+        {
+          "action": "PAUSE_LINK",
+          "resource": "customers/8735782888/adGroupAssets/151125103616~335128948948~SITELINK",
+          "ad_group": "Sprinkler Repair Near Me",
+          "asset_id": "335128948948",
+          "text": "Irrigation Winterization",
+          "reason": "winterization is an excluded service",
+          "rollback": "set link status back to ENABLED"
+        }
+      ],
+      "results": {
+        "error": "(<_InactiveRpcError of RPC that terminated with:\n\tstatus = StatusCode.INVALID_ARGUMENT\n\tdetails = \"Request contains an invalid argument.\"\n\tdebug_error_string = \"INVALID_ARGUMENT:Request contains an invalid argument.\"\n>, <_InactiveRpcError of RPC that terminated with:\n\tstatus = StatusCode.INVALID_ARGUMENT\n\tdetails = \"Request contains an invalid argument.\"\n\tdebug_error_string = \"INVALID_ARGUMENT:Request contains an invalid argument.\"\n>, errors {\n  error_code {\n    query_error: EXPECTED_REFERENCED_"
+      },
+      "readback": [],
+      "note": "SKIPPED"
+    },
+    {
+      "batch": "F2-new-callouts",
+      "operations": [],
+      "results": {
+        "error": "(<_InactiveRpcError of RPC that terminated with:\n\tstatus = StatusCode.INVALID_ARGUMENT\n\tdetails = \"Request contains an invalid argument.\"\n\tdebug_error_string = \"INVALID_ARGUMENT:Request contains an invalid argument.\"\n>, <_InactiveRpcError of RPC that terminated with:\n\tstatus = StatusCode.INVALID_ARGUMENT\n\tdetails = \"Request contains an invalid argument.\"\n\tdebug_error_string = \"INVALID_ARGUMENT:Request contains an invalid argument.\"\n>, errors {\n  error_code {\n    query_error: EXPECTED_REFERENCED_"
+      },
+      "readback": [],
+      "note": "SKIPPED"
+    },
+    {
+      "batch": "G-tracking-templates",
+      "operations": [
+        {
+          "action": "UPDATE",
+          "campaign_id": "22027188372",
+          "name": "Winterization",
+          "campaign_status": "PAUSED",
+          "before": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20315156610",
+          "after_intended": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=22027188372",
+          "rollback": "restore tracking_url_template to: {lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20315156610"
+        },
+        {
+          "action": "UPDATE",
+          "campaign_id": "22255200632",
+          "name": "Outdoor Lightning",
+          "campaign_status": "PAUSED",
+          "before": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=21718922354",
+          "after_intended": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=22255200632",
+          "rollback": "restore tracking_url_template to: {lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=21718922354"
+        },
+        {
+          "action": "UPDATE",
+          "campaign_id": "22379036365",
+          "name": "Leads-Performance Max-Sprinkler-Repair",
+          "campaign_status": "PAUSED",
+          "before": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20315156610",
+          "after_intended": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=22379036365",
+          "rollback": "restore tracking_url_template to: {lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20315156610"
+        }
+      ],
+      "results": [
+        "customers/8735782888/campaigns/22027188372",
+        "customers/8735782888/campaigns/22255200632",
+        "customers/8735782888/campaigns/22379036365"
+      ],
+      "readback": [
+        {
+          "id": "22027188372",
+          "name": "Winterization",
+          "status": "PAUSED",
+          "template": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=22027188372"
+        },
+        {
+          "id": "22255200632",
+          "name": "Outdoor Lightning",
+          "status": "PAUSED",
+          "template": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=22255200632"
+        },
+        {
+          "id": "22379036365",
+          "name": "Leads-Performance Max-Sprinkler-Repair",
+          "status": "PAUSED",
+          "template": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=22379036365"
+        }
+      ],
+      "note": "verified"
+    },
+    {
+      "batch": "H-budget",
+      "operations": [
+        {
+          "action": "UPDATE",
+          "resource": "customers/8735782888/campaignBudgets/12723712793",
+          "budget_id": "12723712793",
+          "before_daily": 32.5,
+          "after_intended_daily": 45.0,
+          "monthly_projection": 1269.97,
+          "cap": 2000.0,
+          "rollback": "set amount_micros back to 32500000 ($32.5)"
+        }
+      ],
+      "results": [
+        "customers/8735782888/campaignBudgets/12723712793"
+      ],
+      "readback": [
+        {
+          "id": "12723712793",
+          "daily": 45.0,
+          "delivery": "STANDARD"
+        }
+      ],
+      "note": "verified"
+    }
+  ]
+}

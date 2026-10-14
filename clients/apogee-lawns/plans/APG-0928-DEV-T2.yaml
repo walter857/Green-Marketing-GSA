@@ -1,0 +1,70 @@
+# ##  REJECTED 2026-09-28 BY OWNER -- STATUS: OWNER_CONFIRMED_DELIBERATE_EXCLUSION
+# ##  Owner: "Landing pages are not tablet optimized so I excluded them." Tablets stay excluded.
+# ##  No restoration fingerprint exists or will be issued from this file. A future restoration needs
+# ##  completed tablet-layout QA and a new, separately approved plan.
+# =============================================================================
+# APG-0928-DEV-T2  --  tablet eligibility: HOLD (owner intent unresolved)
+# =============================================================================
+# Supersedes APG-0928-DEV-T (fingerprint 46060B03F5C9, VOID).
+# STATUS: HOLD. NOT fingerprinted. NOT executable. The current tablet exclusion stays in place until the
+# owner answers the single question below. This file records the evaluated, deterministic payload so that
+# a fingerprint can be generated immediately after a "restore" answer without redrafting.
+# =============================================================================
+plan_id: APG-0928-DEV-T2
+plan_kind: device_bid_modifier_update
+status: REJECTED
+status_reason: OWNER_CONFIRMED_DELIBERATE_EXCLUSION
+status_history:
+  - {date: "2026-09-28", status: HOLD_OWNER_INTENT_UNRESOLVED, by: "Green Marketing (run C)"}
+  - {date: "2026-09-28", status: REJECTED, by: owner, reason: "Landing pages are not tablet optimized so I excluded them."}
+generated: "2026-09-28"
+external_writes_performed: NONE
+fingerprint: NONE   # generated only after the owner answers "restore"
+
+target:
+  exact_child_account_name: "Apogee Lawns LLC - Live"
+  child_customer_id: "8164626278"
+  manager_customer_id: "3373711342"
+  manager_never_mutated: true
+  exact_primary_service: Permanent Christmas light installation
+  campaign_id: "24257151015"
+
+evidence:
+  fresh_read: "reports/apogee-lawns/evidence/2026-09-28c-reads.json (2026-09-28 ~21:15 UTC)"
+  change_event: >-
+    2026-09-25 08:26:21 CT, GOOGLE_ADS_WEB_CLIENT, UPDATE customers/8164626278/campaignCriteria/24257151015~30002,
+    changed_fields empty, old/new payload empty. It is the only change_event row for any device resource.
+  change_status: "CAMPAIGN_CRITERION 24257151015~30002 CHANGED 2026-09-25 08:26:21; no AD_GROUP_BID_MODIFIER row"
+  documented_business_reason: NONE_FOUND   # searched work orders, client.yaml, plans, receipts, implementation record, memory
+  delivery: "one tablet impression 2026-09-23; none since 2026-09-25; tablets were 1 of 20 impressions 09-21..09-24"
+  impact_limits: >-
+    One impression cannot establish tablet value or its absence. Expected upside is small (device mix 09-17..09-28 14:45 CT:
+    mobile 47, desktop 17, tablet 1 of 65 impressions = 72.3% / 26.2% / 1.5%); the reason to restore would be to remove an undocumented
+    restriction, not a proven volume gain.
+
+current_state:   # all three carry an EXPLICIT value (field presence true); v25 docs: "Use 0 to opt out of a Device type."
+  - {resource: "customers/8164626278/campaignCriteria/24257151015~30002", level: campaign, device: TABLET, bid_modifier_set: true, bid_modifier: 0.0}
+  - {resource: "customers/8164626278/adGroupBidModifiers/200347713516~30002", level: ad_group, device: TABLET, bid_modifier_set: true, bid_modifier: 0.0}
+  - {resource: "customers/8164626278/adGroupBidModifiers/200347713556~30002", level: ad_group, device: TABLET, bid_modifier_set: true, bid_modifier: 0.0}
+unchanged_by_design:
+  - "desktop ~30000 and mobile ~30001 at campaign and ad-group level: no bid_modifier set; not normalized"
+
+decision: >-
+  All three tablet rows are evaluated as REQUIRED, not conditional: each carries an explicit 0.0, and an ad-group
+  device modifier overrides the campaign one for that ad group, so restoring only the campaign row would leave
+  tablets excluded in both ad groups. Setting an explicit 1.0 at ad-group level is equivalent to "no adjustment"
+  and is harmless even if those rows turn out to mirror the campaign value.
+
+objects_if_owner_answers_restore:
+  - {ordinal: 1, resource: campaign_criterion, operation: update, resource_name: "customers/8164626278/campaignCriteria/24257151015~30002", update_mask: [bid_modifier], from: 0.0, to: 1.0}
+  - {ordinal: 2, resource: ad_group_bid_modifier, operation: update, resource_name: "customers/8164626278/adGroupBidModifiers/200347713516~30002", update_mask: [bid_modifier], from: 0.0, to: 1.0}
+  - {ordinal: 3, resource: ad_group_bid_modifier, operation: update, resource_name: "customers/8164626278/adGroupBidModifiers/200347713556~30002", update_mask: [bid_modifier], from: 0.0, to: 1.0}
+mutation_counts_evaluated: {creates: 0, updates: 3, removes: 0, enables: 0, status_changes: 0, budget_changes: 0, bid_strategy_changes: 0, geo_changes: 0, keyword_changes: 0}
+preconditions_at_execution:
+  - "fresh identity gate PASS"
+  - "all three rows still explicit 0.0; any drift = STOP"
+readback_assertions:
+  - "all three rows == 1.0"
+  - "desktop/mobile rows unchanged (unset); campaign status, budget 16440000 micros, cap 8000000 micros unchanged"
+rollback: "same three resources, bid_modifier back to 0.0"
+owner_question_resolved: "Was the 2026-09-25 tablet exclusion deliberate? -> YES (2026-09-28): landing pages are not tablet optimized. Plan closed; payload kept as history only."

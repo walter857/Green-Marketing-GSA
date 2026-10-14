@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Green Marketing read-only service-discovery order",
+  "description": "Authorizes one narrowly scoped, read-only discovery pass that identifies which services a live child account advertises. It never authorizes an audit, draft, build, revamp, or any Google Ads write, and it must not assert a service.",
+  "type": "object",
+  "required": ["service_discovery"],
+  "additionalProperties": false,
+  "properties": {
+    "service_discovery": {
+      "type": "object",
+      "required": ["client_slug", "business_name", "account", "task", "authorization"],
+      "additionalProperties": false,
+      "properties": {
+        "client_slug": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "business_name": {"type": "string", "minLength": 1},
+        "account": {
+          "type": "object",
+          "required": ["exact_child_account_name", "child_customer_id", "manager_customer_id"],
+          "additionalProperties": false,
+          "properties": {
+            "exact_child_account_name": {"type": "string", "minLength": 1},
+            "child_customer_id": {"type": "string", "pattern": "^[0-9]{10}$"},
+            "manager_customer_id": {"type": "string", "pattern": "^[0-9]{10}$"},
+            "manager_account_name": {"type": "string"}
+          }
+        },
+        "task": {
+          "type": "object",
+          "required": ["type", "mode", "request"],
+          "additionalProperties": false,
+          "properties": {
+            "type": {"const": "service-discovery"},
+            "mode": {"const": "read"},
+            "request": {"type": "string", "minLength": 1}
+          }
+        },
+        "authorization": {
+          "type": "object",
+          "required": ["read_only_service_discovery", "approved_by", "granted_on"],
+          "additionalProperties": false,
+          "properties": {
+            "read_only_service_discovery": {"const": true},
+            "approved_by": {"type": "string", "minLength": 1},
+            "granted_on": {"type": "string", "minLength": 1},
+            "notes": {"type": "string"}
+          }
+        },
+        "landing_pages": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "fetch": {"type": "boolean"},
+            "max_pages": {"type": "integer", "minimum": 1, "maximum": 50},
+            "allowed_hosts": {"type": "array", "items": {"type": "string", "minLength": 1}}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+ "package": "ambient-cooling-heating-KEYWORD-GAS-BOILER-STAGE1-EXACT-v2",
+ "version": "2026-08-21-v2",
+ "priority": "P2",
+ "run_class": "DRAFT + VALIDATE-ONLY. NOT EXECUTED. BLOCKED by a live landing-page defect.",
+ "supersedes": {
+  "E6D25322E35F3E62": "VOID.",
+  "44145A2CE26A811B": "VOID.",
+  "1A0737BCFD1B980D": "SUPERSEDED. Its rationale contained an INCORRECT claim about Exact match. See corrected_exact_match_analysis below. The single operation is unchanged; only the reasoning and the monitoring plan are corrected."
+ },
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "campaign_id": "24132507744",
+ "ad_group_id": "202339087594",
+ "landing_page": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+ "corrected_exact_match_analysis": {
+  "RETRACTION": "Earlier plans and reports stated that Exact [boiler repair] 'can only serve the literal query' and that modified queries such as oil boiler repair, steam boiler repair, commercial boiler repair, boiler installation or boiler replacement 'verifiably cannot serve'. THAT CLAIM IS WRONG AND IS RETRACTED.",
+  "correct_position": "Google Exact match includes close variants, which cover misspellings, singular and plural forms, stemming, abbreviations, accents, reordered words with the same meaning, added or removed function words, AND paraphrases or other searches Google judges to have the SAME INTENT. Google does not publish the boundary of same-intent matching and it changes over time.",
+  "consequence": "No guarantee can be made that modifier queries will never match. Exact match REDUCES exposure to unrelated intent; it does not eliminate it.",
+  "why_no_negatives_are_added_anyway": "Because the correct response to an unprovable boundary is EVIDENCE, not speculation. Adding negatives for steam, commercial, residential, industrial, oil, installation or replacement would require confirming that Ambient does NOT provide those services. That confirmation does not exist, and account evidence points the other way: legacy campaigns in this account are named 'Gas Boilers Installs' and 'Tankless Boilers'. Negating them could block services Ambient actually sells.",
+  "how_exposure_is_controlled_instead": "By scheduled search-term review at 24 hours, 72 hours and 7 settled days after activation, with negatives added only from observed query evidence or confirmed service ineligibility."
+ },
+ "the_single_operation": {
+  "seq": 1,
+  "service": "AdGroupCriterionService (via GoogleAdsService.Mutate)",
+  "operation": "create",
+  "type": "KEYWORD",
+  "text": "boiler repair",
+  "match_type": "EXACT",
+  "status_on_create": "ENABLED",
+  "negative": false,
+  "ad_group": "customers/2401959466/adGroups/202339087594"
+ },
+ "keywords_preserved_unchanged": [
+  {
+   "criterion_id": "102973796",
+   "text": "gas boiler repair",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "action": "UNCHANGED"
+  },
+  {
+   "criterion_id": "102974196",
+   "text": "gas boiler repair",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "action": "UNCHANGED"
+  }
+ ],
+ "not_added": {
+  "phrase_keywords": 0,
+  "broad_keywords": 0,
+  "negatives": 0,
+  "shared_list_changes": 0,
+  "account_level_negative_changes": 0
+ },
+ "conflict_testing_2026_08_21": {
+  "account_level_set_11252984411": {
+   "members": 59,
+   "blocks_candidate": false
+  },
+  "shared_sets_examined": 16,
+  "shared_sets_attached_to_gas_boiler_campaign": "NONE",
+  "campaign_level_negatives_on_the_five": 0,
+  "ad_group_negatives_on_the_five": 0,
+  "active_positive_keywords_checked": 12,
+  "verdict": "CLEAR - no negative that can currently reach the Gas Boiler campaign blocks [boiler repair].",
+  "LANDMINE": {
+   "shared_set": "11813144900 'General List'",
+   "finding": "contains single-word negatives 'repair' and 'Repair'",
+   "attached_to_the_five": false,
+   "action": "Never attach this list to the five campaigns. It would block every repair keyword in the account. Documented, not modified."
+  },
+  "services_reviewed": [
+   "ac repair",
+   "ac installation",
+   "mini splits",
+   "boiler repair",
+   "furnace repair",
+   "heat pumps",
+   "oil furnace installations",
+   "oil replacement",
+   "tankless water heaters",
+   "hvac",
+   "condominium hvac",
+   "geothermal hvac",
+   "air filtration",
+   "dehumidification"
+  ]
+ },
+ "BLOCKING_GATE": {
+  "status": "FAILED as at 2026-08-21 20:24 ET",
+  "defect": "The Gas Boiler landing page still renders the H2 'Your HVAC Replacement in 3 Simple Steps' on BOTH desktop and mobile. Verified in a real JavaScript browser.",
+  "required": "Replace with 'Your Gas Boiler Repair in 3 Simple Steps' and confirm no other HVAC Replacement copy remains on the page.",
+  "rule": "DO NOT EXECUTE while the incorrect H2 is live.",
+  "evidence_file": "snapshots/gas-boiler-lp-gate-2026-08-21.json",
+  "additional_finding": "On 1 of 3 desktop renders the barred main-site number tel:+14107610932 was exposed on the phone-only CTA, on the load where WhatConverts had set only 3 of its 4 wc_ cookies. On the other 2 renders the approved DNI number +14109141456 was present. This is a RACE CONDITION between page render and the WhatConverts swap, not a constant defect. The element is 0x0 on desktop but is the tappable Call Now button on mobile, so a mobile visitor whose WhatConverts script is slow or blocked could reach the main-site number from a paid landing page. Fix by hardcoding tel:+14107056354 as the base href."
+ },
+ "post_activation_search_term_reviews": [
+  {
+   "at": "24 hours after activation",
+   "action": "Read search_term_view for ad group 202339087594. Classify every term. Confirm no oil, steam, industrial, parts, jobs, DIY or water-heater intent is being served."
+  },
+  {
+   "at": "72 hours after activation",
+   "action": "Repeat. Look for repeated patterns, not single occurrences."
+  },
+  {
+   "at": "7 settled days after activation",
+   "action": "Full review. Recommend negatives ONLY from observed query evidence or from a confirmed statement of which services Ambient does not provide."
+  }
+ ],
+ "mutation_counts": {
+  "creates": 1,
+  "updates": 0,
+  "removals": 0,
+  "total_mutations": 1,
+  "positive_keywords": 1,
+  "negative_keywords": 0,
+  "phrase_added": 0,
+  "broad_added": 0,
+  "shared_lists_touched": 0,
+  "account_negatives_touched": 0,
+  "existing_keywords_modified": 0
+ },
+ "risk": "LOW-MEDIUM. Exact match reduces but does not eliminate exposure to modifier queries. Scheduled search-term review is the control. Fully reversible.",
+ "rollback_plan": "Remove the single created criterion. 1 mutation.",
+ "readback_verification": [
+  "ASSERT ad group 202339087594 holds exactly 3 positive keywords and 0 negatives.",
+  "ASSERT the new criterion is EXACT, ENABLED, negative=false.",
+  "ASSERT account keyword count rose by exactly 1 (6968 -> 6969).",
+  "ASSERT no shared set attached to any of the five campaigns.",
+  "ASSERT account-level set 11252984411 unchanged at 59 members."
+ ],
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 1,
+  "errors": 0
+ },
+ "plan_fingerprint": "3D823A10CB3C0B25"
+}

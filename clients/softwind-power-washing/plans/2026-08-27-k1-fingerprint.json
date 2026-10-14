@@ -1,0 +1,79 @@
+{
+  "generated_account_local": "2026-08-27T10:15:41.470248-04:00",
+  "target": {
+    "exact_child_account_name": "Softwind Power Washing - Live",
+    "child_customer_id": "1521725229",
+    "exact_service": "Power Washing",
+    "manager_customer_id": "3373711342"
+  },
+  "fingerprint_function": "gm_gsa.safety.approval_code (SHA-256, first 12 hex, upper)",
+  "plan_id": "PLAN-K1",
+  "plan_file": "2026-08-27-plan-k1-cpc-control.yaml",
+  "approval_type": "BIDDING",
+  "fingerprint": "3B77F0F4C879",
+  "action_count": 2,
+  "object_count": 2,
+  "ads_mutation_count": 2,
+  "approval_status": "NOT APPROVED",
+  "execution_status": "DO NOT EXECUTE",
+  "approval_phrase": "APPROVE PLAN-K1 3B77F0F4C879 FOR 1521725229",
+  "plan_i1d": {
+    "created": false,
+    "reason": "Budget is not the active delivery constraint. Stage 8 criteria 2, 3, 4 and 5 are all FALSE on fresh data; only the arithmetic capacity criterion is arguable, and a budget rise cannot convert capacity into spend at 81-86% impression share with LIMITED_BY_INVENTORY."
+  },
+  "canonical_payload": {
+    "target": {
+      "exact_child_account_name": "Softwind Power Washing - Live",
+      "child_customer_id": "1521725229",
+      "exact_service": "Power Washing"
+    },
+    "plan_id": "PLAN-K1",
+    "approval_type": "BIDDING",
+    "actions": [
+      {
+        "action_id": "R1-K1-01",
+        "priority": "R1",
+        "resource_type": "CAMPAIGN",
+        "operation": "UPDATE",
+        "customer_id": "1521725229",
+        "campaign_id": "24103511039",
+        "ad_group_id": null,
+        "resource_id": "24103511039",
+        "current_value": {
+          "bidding_strategy_type": "TARGET_SPEND",
+          "target_spend_cpc_bid_ceiling_micros": null,
+          "target_spend_cpc_bid_ceiling_usd": null
+        },
+        "proposed_value": {
+          "target_spend_cpc_bid_ceiling_micros": 30000000,
+          "target_spend_cpc_bid_ceiling_usd": 30.0,
+          "field_mask": "target_spend.cpc_bid_ceiling_micros"
+        },
+        "object_count": 1
+      },
+      {
+        "action_id": "R1-K1-02",
+        "priority": "R1",
+        "resource_type": "CAMPAIGN",
+        "operation": "UPDATE",
+        "customer_id": "1521725229",
+        "campaign_id": "24145053510",
+        "ad_group_id": null,
+        "resource_id": "24145053510",
+        "current_value": {
+          "bidding_strategy_type": "TARGET_SPEND",
+          "target_spend_cpc_bid_ceiling_micros": null,
+          "target_spend_cpc_bid_ceiling_usd": null
+        },
+        "proposed_value": {
+          "target_spend_cpc_bid_ceiling_micros": 30000000,
+          "target_spend_cpc_bid_ceiling_usd": 30.0,
+          "field_mask": "target_spend.cpc_bid_ceiling_micros"
+        },
+        "object_count": 1
+      }
+    ],
+    "action_count": 2,
+    "object_count": 2
+  }
+}

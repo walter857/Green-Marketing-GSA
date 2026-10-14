@@ -1,0 +1,88 @@
+# PLAN-GA-BID-1 - INTERIM CPC CONTROL
+# STATUS: DRAFT / BLOCKED. NO FINGERPRINT THIS RUN. NO APPROVAL COMMAND THIS RUN.
+
+change_plan:
+  plan_id: PLAN-GA-BID-1
+  plan_title: Interim CPC control
+  approval_type: BIDDING
+  status: 'DRAFT - BLOCKED ON THE LANDING-PAGE GATE'
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: null
+  fingerprint_withheld_because: >-
+    The brief requires exactly one approval command this run, for PLAN-GA-LAUNCH-1. This plan
+    is also gated on evidence that does not exist yet - see the gate below.
+  target:
+    child_customer_id: '1521725229'
+    campaigns: ['24103511039', '24145053510']
+
+  bidding_strategy_decision:
+    stays: MAXIMIZE_CLICKS (TARGET_SPEND)
+    reason: >-
+      The account has ZERO verified qualified conversions. Switching to Maximize Conversions
+      would bid toward a signal that does not exist. Revisit only after conversion tracking is
+      verified, qualified conversions are recording, there is enough reliable data, and lead
+      quality can be judged. That switch gets its own plan and is never combined with
+      consolidation or RSA changes.
+
+  fresh_evidence_2026_09_02:
+    current_ceilings: {'24103511039': 30.00, '24145053510': 30.00}
+    billable_clicks_all_time: 19
+    click_price_distribution: [5.71, 22.11, 22.13, 26.66, 28.73, 28.73, 29.04, 29.32, 29.50,
+                               29.57, 29.57, 29.72, 29.91, 29.91, 35.31, 40.07, 42.67, 54.49,
+                               82.22]
+    median_click_price: 29.57
+    mean_click_price: 32.91
+    clicks_at_or_below_29_91: 14
+    clicks_above_30: 5
+    clicks_above_30_note: 'all five occurred during the uncapped period before the $30 ceiling'
+    search_lost_is_rank: {'24103511039': 0.4786, '24145053510': 0.2558}
+    search_lost_is_budget: {'24103511039': 0.0350, '24145053510': 0.0698}
+    top_impression_rate: {'24103511039': 0.3268, '24145053510': 0.5814}
+    absolute_top_rate: {'24103511039': 0.2607, '24145053510': 0.4419}
+    invalid_click_credits: '72 and 12 invalid clicks filtered and credited, not billed'
+    quality_score_components:
+      - 'power washing near me QS2 - expected CTR BELOW_AVERAGE, ad relevance AVERAGE, landing page BELOW_AVERAGE'
+      - 'power washing services near me QS3 - landing page BELOW_AVERAGE'
+      - 'power washing services near me QS5 in campaign B against a different page - landing page AVERAGE'
+
+  derivation_of_the_ceiling:
+    method: >-
+      Lowest ceiling that still covers the local Keyword Planner TOP-OF-PAGE LOW estimate for
+      the owned 19-text inventory, cross-checked against the observed click-price distribution.
+    top_of_page_low_across_owned_texts:
+      power washing: 0.58
+      pressure washing: 0.30
+      pressure washing near me: 8.75
+      house washing near me: 10.46
+      power washing services near me: 10.62
+      power washing near me: 10.90
+      power washing company near me: 10.90
+      power washing service: 11.55
+      house pressure washing near me: 13.49
+      house power washing near me: 13.49
+      soft washing near me: 15.09
+    selected_ceiling_usd: 14.00
+    why_14: >-
+      $14.00 covers the top-of-page LOW estimate for 18 of the 19 owned texts. The single
+      exception is soft washing near me at $15.09, which carries 10 searches a month and sits
+      in a micro group. $14 also sits below the second-lowest real observed click price
+      ($22.11) and roughly halves the current $29.57 median.
+    explicitly_not_reused: >-
+      $12, $15, $18 and $22 all appeared in earlier plans or conversation. None was carried
+      forward. $14.00 is derived fresh from the figures above.
+    symmetry: >-
+      Apply to BOTH campaigns while both are live - moving one creates the Ad Rank asymmetry
+      across shared query space that voided an earlier plan. Single ceiling after consolidation.
+
+  gate_before_this_plan_can_be_approved:
+    - >-
+      The landing-page P0 work must be published first. Ad Rank is bid x Quality Score, and
+      landing-page experience currently reads BELOW_AVERAGE on the two highest-spend keywords.
+      Cutting the bid while the page is scored badly attacks the wrong half of the equation
+      and would raise lost impression share from an already-high 47.86%.
+    - One settled serving day after the page fix, to re-measure the price distribution.
+  risk_of_acting_now: 'raises Lost IS to rank above the current 47.86% on the surviving campaign'
+  risk_of_waiting: 'roughly $29.57 median per click continues on a badly scored page'
+  rollback: 'restore the prior ceiling with one mutation per campaign'
+  approval_owner: Walter Correa

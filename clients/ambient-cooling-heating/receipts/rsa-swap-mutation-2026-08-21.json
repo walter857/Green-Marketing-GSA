@@ -1,0 +1,83 @@
+{
+ "executed_utc": "2026-08-21T12:36:16.664145Z",
+ "completed_utc": "2026-08-21T12:36:17.147459Z",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "approved_fingerprint": "D441DEFC58EB5643",
+ "package": "HVAC Repair RSA atomic swap",
+ "campaign_id": "24132507750",
+ "ad_group_id": "202339087674",
+ "execution_shape": "GoogleAdsService.Mutate, 4 mutate_operations, partial_failure=false, validate_only=false",
+ "paused": [
+  "820900825560",
+  "820900825563"
+ ],
+ "enabled": [
+  "821714108336",
+  "821714108339"
+ ],
+ "operations_sent": 4,
+ "responses_returned": 4,
+ "returned_resource_names": [
+  "customers/2401959466/adGroupAds/202339087674~820900825560",
+  "customers/2401959466/adGroupAds/202339087674~820900825563",
+  "customers/2401959466/adGroupAds/202339087674~821714108336",
+  "customers/2401959466/adGroupAds/202339087674~821714108339"
+ ],
+ "state_before": {
+  "820900825560": {
+   "status": "ENABLED",
+   "strength": "POOR",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": []
+  },
+  "820900825563": {
+   "status": "ENABLED",
+   "strength": "AVERAGE",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": []
+  },
+  "821714108336": {
+   "status": "PAUSED",
+   "strength": "PENDING",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": []
+  },
+  "821714108339": {
+   "status": "PAUSED",
+   "strength": "PENDING",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": []
+  }
+ },
+ "pre_write_counts": {
+  "ads": 115,
+  "campaigns": 23,
+  "ad_groups": 68,
+  "keywords": 6968,
+  "campaign_criteria": 13810,
+  "ad_schedule": 139,
+  "campaign_assets": 283,
+  "customer_assets": 1,
+  "conversion_actions": 16,
+  "ip_blocks": 2796,
+  "shared_sets": 16
+ },
+ "pre_write_budgets": {
+  "24132507741": 141450000,
+  "24132507744": 42760000,
+  "24132507747": 138160000,
+  "24132507750": 78950000,
+  "24132507753": 26320000
+ },
+ "pre_write_primary_counted": [
+  "1068114183",
+  "6885463625",
+  "6885576934"
+ ],
+ "preflight_gates": "10/10"
+}

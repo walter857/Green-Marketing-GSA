@@ -1,0 +1,504 @@
+# Scrubbing manifest for the Green Marketing landing-page master template.
+#
+# The canonical document (source_document_id) is a COMPLETED CLIENT EXAMPLE for
+# Ambient Cooling & Heating. It is a protected, read-only structural source. These rules
+# are applied to a COPY only. The canonical document is never modified.
+#
+# Ordering: rules are applied longest-find-first, so whole client sentences are replaced
+# before the shorter identity tokens run as a safety net over anything left behind.
+#
+# Reusable template instructions are deliberately NOT targeted and survive untouched:
+#   "Final Slug:", "SEO Title:", "Meta Description:", "Primary CTA:", "Left:", "Right:",
+#   "Right Button:", "Icon:", "Heading:", "Copy:", "Image:", "Alt Text:", "Placeholder:",
+#   "Label:", "Question:", "Answer:", "Green Supporting Line:", "Footer Links:",
+#   "LOGO HERE", "Time Left Today", "DAY/HRS/MIN/SEC", section numbering, and all
+#   HEADING_1 / HEADING_2 section titles.
+
+source_document_id: "1bQR5wLIF47fd-wNOaNxtjlun1ch8Fc5kmfCA93vuFuc"
+
+# Rich-link chips and hyperlinked URLs cannot be changed by replaceAllText. Each Drive
+# image link below is replaced by an explicit range operation instead.
+link_replacements:
+  "https://drive.google.com/file/d/1zlxytOLOfweuFlN0eaIIm9NkpcrdtOfu/view?usp=drive_link": "[IMAGE_PLACEMENT_1]"
+  "https://drive.google.com/file/d/1tnL8rbtFNi8Rqbw9wX4lcjJNSY9Dc4QU/view?usp=drive_link": "[IMAGE_PLACEMENT_2]"
+  "https://drive.google.com/file/d/1DFvfHaK43WAboQk8B6ZQYoUWhBDD7RY_/view?usp=drive_link": "[IMAGE_PLACEMENT_3]"
+  "https://drive.google.com/file/d/1_7vlSIU3jain9kfqXvduWLhBdY3XsDCQ/view?usp=drive_link": "[IMAGE_PLACEMENT_4]"
+  "https://drive.google.com/file/d/17FrmrIQgDdhepogkbku78LmTcZqcJPTF/view?usp=drive_link": "[IMAGE_PLACEMENT_5]"
+  "https://drive.google.com/file/d/1i6mnHqL-3wgjVgSe5liSFGpEnrf2qmBx/view?usp=drive_link": "[IMAGE_PLACEMENT_6]"
+  "https://drive.google.com/file/d/1KiJd01T5kp4yiQDVIHYdGmBYKq2EQW5v/view?usp=drive_link": "[IMAGE_PLACEMENT_7]"
+  "https://drive.google.com/file/d/12q8ZMda9avaGEmLeyyxT9Ab2FnexZSyW/view?usp=drive_link": "[IMAGE_PLACEMENT_8]"
+  "https://drive.google.com/file/d/1LPfH1bbhXANz7sPnSK-o25wdLMdoOcVw/view?usp=drive_link": "[IMAGE_PLACEMENT_9]"
+
+replacements:
+
+  # ---- Service area and locations (longest first) ----
+  - find: "Ambient serves Severn, Severna Park, Columbia, Ellicott City, Annapolis, Pasadena, Crofton, Davidsonville, Glen Burnie, Bowie, Odenton, Catonsville, Elkridge, Arnold, Arbutus, Lake Shore, Parole, Ferndale, Brooklyn Park, Riviera Beach, Linthicum, Jessup, Cape St. Claire, Edgewater, Mayo, Stevensville, Shady Side, Springdale, Grasonville, Gambrills, Herold Harbor, Guilford, and Crownsville, Maryland. Submit your ZIP code or city to confirm AC repair availability for your location."
+    replace: "[CLIENT_NAME] serves [SERVICE_AREA]. Submit your ZIP code or city to confirm [PRIMARY_SERVICE] availability for your location."
+    category: service_area
+    note: "33-city Anne Arundel/Howard County service list."
+  - find: "Severn, Severna Park, Columbia, and nearby service areas"
+    replace: "[SERVICE_AREA]"
+    category: service_area
+  - find: "Severn, Severna Park and Columbia, Maryland"
+    replace: "[PRIMARY_LOCATION]"
+    category: location
+  - find: "Severn, Severna Park & Columbia, MD"
+    replace: "[PRIMARY_LOCATION]"
+    category: location
+  - find: "Severn, Severna Park & Columbia"
+    replace: "[PRIMARY_LOCATION]"
+    category: location
+
+  # ---- SEO settings ----
+  - find: "Need AC repair for warm air, weak airflow, frequent cycling, unusual noises, or leaks? Request a free AC repair quote from Ambient Cooling & Heating."
+    replace: "[META_DESCRIPTION]"
+    category: seo
+  - find: "/ac-repair"
+    replace: "/[PRIMARY_SERVICE_SLUG]"
+    category: seo
+
+  # ---- Hero ----
+  - find: "When your air conditioner is not cooling properly, Ambient provides focused AC repair with a thorough diagnosis, clear communication, and practical next steps."
+    replace: "[HERO_PARAGRAPH]"
+    category: hero
+  - find: "Comprehensive AC repair diagnosis"
+    replace: "[USP_1]"
+    category: usp
+  - find: "Skilled air conditioner repair technicians"
+    replace: "[USP_2]"
+    category: usp
+  - find: "Clear findings and repair recommendations"
+    replace: "[USP_3]"
+    category: usp
+  - find: "Service in Severn, Severna Park & Columbia"
+    replace: "[USP_4]"
+    category: usp
+  - find: "Tell us what your AC is doing and where AC repair is needed."
+    replace: "[FORM_INTRO]"
+    category: form
+    note: "Used by both the hero form and the second form."
+  - find: "Tell Us About Your AC Problem"
+    replace: "Tell Us About Your [PRIMARY_SERVICE_ISSUE]"
+    category: form
+  - find: "Describe the cooling problem."
+    replace: "Describe the [PRIMARY_SERVICE_ISSUE]."
+    category: form
+  - find: "FREE AC REPAIR QUOTE"
+    replace: "[OFFER_BADGE]"
+    category: offer
+  - find: "FREE QUOTE"
+    replace: "[OFFER_BADGE]"
+    category: offer
+
+  # ---- Calls to action ----
+  - find: "Request Your Free AC Repair Quote Today"
+    replace: "[PRIMARY_CTA]"
+    category: cta
+  - find: "Request Your Free AC Repair Quote"
+    replace: "[PRIMARY_CTA]"
+    category: cta
+  - find: "Get Your Free AC Repair Quote"
+    replace: "[PRIMARY_CTA]"
+    category: cta
+  - find: "Get My Free AC Repair Quote"
+    replace: "[PRIMARY_CTA]"
+    category: cta
+  - find: "Get a Free AC Repair Quote"
+    replace: "[PRIMARY_CTA]"
+    category: cta
+
+  # ---- Section 3: problem cards ----
+  - find: "Different AC problems can create similar symptoms. A professional AC repair diagnosis can help identify the cause."
+    replace: "[PROBLEM_SECTION_INTRO]"
+    category: section_intro
+  - find: "Common Signs You May Need AC Repair"
+    replace: "[PROBLEM_SECTION_HEADING]"
+    category: section_heading
+  - find: "Temperature icon"
+    replace: "[PROBLEM_CARD_1_ICON]"
+    category: icon
+  - find: "Warm Air or No Cooling"
+    replace: "[PROBLEM_CARD_1_HEADING]"
+    category: card
+  - find: "Your air conditioner runs, but the air feels warm or the space never reaches the set temperature."
+    replace: "[PROBLEM_CARD_1_COPY]"
+    category: card
+  - find: "Airflow icon"
+    replace: "[PROBLEM_CARD_2_ICON]"
+    category: icon
+  - find: "Weak or Uneven Airflow"
+    replace: "[PROBLEM_CARD_2_HEADING]"
+    category: card
+  - find: "Airflow feels weak, or some rooms remain warmer and less comfortable than others."
+    replace: "[PROBLEM_CARD_2_COPY]"
+    category: card
+  - find: "Noise, Cycling, or Leaks"
+    replace: "[PROBLEM_CARD_3_HEADING]"
+    category: card
+  - find: "Unusual sounds, frequent cycling, odors, or moisture around the AC system should be checked."
+    replace: "[PROBLEM_CARD_3_COPY]"
+    category: card
+
+  # ---- Section headings that embed the client's service or offer ----
+  # Renamed to the generic section names used by LANDING_PAGE_CONTENT_WORKFLOW.md so the
+  # structural role is preserved while the client-specific wording is removed.
+  - find: "4. FREE QUOTE COUNTDOWN SECTION"
+    replace: "4. PROMOTIONAL OR EVERGREEN CTA SECTION"
+    category: section_heading
+  - find: "5. MAIN AC REPAIR FEATURE"
+    replace: "5. MAIN SERVICE FEATURE"
+    category: section_heading
+
+  # ---- Section 4: countdown ----
+  - find: "Tell Ambient what your AC is doing before today's timer reaches zero. We are accepting new clients for AC repair in Severn, Severna Park, Columbia, and nearby service areas."
+    replace: "[COUNTDOWN_PARAGRAPH]"
+    category: offer
+    note: "Countdown copy. Only use a real, approved deadline; otherwise disable the timer."
+
+  # ---- Section 5: main feature ----
+  - find: "Ambient begins each AC repair request by learning about the symptoms and evaluating the relevant parts of the air-conditioning system. A comprehensive diagnosis helps identify problems that may involve the compressor, refrigerant, thermostat, airflow, electrical components, or another part of the system."
+    replace: "[MAIN_FEATURE_PARAGRAPH]"
+    category: section_paragraph
+  - find: "Complete AC Repair Starts With a Clear Diagnosis"
+    replace: "[MAIN_FEATURE_HEADING]"
+    category: section_heading
+  - find: "Comprehensive Diagnosis"
+    replace: "[FEATURE_1_HEADING]"
+    category: feature
+  - find: "The technician evaluates the AC symptoms and checks system components related to the cooling problem."
+    replace: "[FEATURE_1_COPY]"
+    category: feature
+  - find: "Skilled AC Repair Technicians"
+    replace: "[FEATURE_2_HEADING]"
+    category: feature
+  - find: "Ambient's experienced technicians use professional knowledge and proven methods to evaluate air-conditioning problems."
+    replace: "[FEATURE_2_COPY]"
+    category: feature
+    note: "Experience claim. Must be re-verified per client."
+  - find: "Clear Repair Recommendations"
+    replace: "[FEATURE_3_HEADING]"
+    category: feature
+  - find: "The findings and recommended AC repair options are explained so you can understand the proposed next step."
+    replace: "[FEATURE_3_COPY]"
+    category: feature
+
+  # ---- Section 6: service cards ----
+  - find: "Ambient keeps the process focused on finding the cooling problem and explaining the appropriate AC repair options."
+    replace: "[SERVICE_SECTION_INTRO]"
+    category: section_intro
+  - find: "One Team for Your AC Repair"
+    replace: "[SERVICE_SECTION_HEADING]"
+    category: section_heading
+  - find: "Technician gathering AC system information"
+    replace: "[IMAGE_BRIEF_3]"
+    category: image_brief
+  - find: "Clipboard icon"
+    replace: "[SERVICE_CARD_1_ICON]"
+    category: icon
+  - find: "Share the AC Problem"
+    replace: "[SERVICE_CARD_1_HEADING]"
+    category: card
+  - find: "Tell us what changed, when the problem began, and where AC repair is needed."
+    replace: "[SERVICE_CARD_1_COPY]"
+    category: card
+  - find: "Technician diagnosing air-conditioning equipment"
+    replace: "[IMAGE_BRIEF_4]"
+    category: image_brief
+  - find: "Diagnose the System"
+    replace: "[SERVICE_CARD_2_HEADING]"
+    category: card
+  - find: "The technician checks the relevant AC components to identify the source of the cooling issue."
+    replace: "[SERVICE_CARD_2_COPY]"
+    category: card
+  - find: "Technician explaining AC repair findings"
+    replace: "[IMAGE_BRIEF_5]"
+    category: image_brief
+  - find: "Checklist icon"
+    replace: "[SERVICE_CARD_3_ICON]"
+    category: icon
+  - find: "Review Your Options"
+    replace: "[SERVICE_CARD_3_HEADING]"
+    category: card
+  - find: "Review the findings, ask questions, and understand the recommended AC repair before moving forward."
+    replace: "[SERVICE_CARD_3_COPY]"
+    category: card
+
+  # ---- Section 7: gallery ----
+  - find: "See Ambient technicians diagnosing air-conditioning problems and completing professional AC repair work."
+    replace: "[GALLERY_SECTION_INTRO]"
+    category: section_intro
+  - find: "Recent AC Repair Work"
+    replace: "[GALLERY_SECTION_HEADING]"
+    category: section_heading
+  - find: "Outdoor condenser inspection"
+    replace: "[IMAGE_BRIEF_6]"
+    category: image_brief
+  - find: "Indoor air handler or equipment inspection"
+    replace: "[IMAGE_BRIEF_7]"
+    category: image_brief
+  - find: "Thermostat or control-system check"
+    replace: "[IMAGE_BRIEF_8]"
+    category: image_brief
+  - find: "Completed repair area or customer explanation"
+    replace: "[IMAGE_BRIEF_9]"
+    category: image_brief
+
+  # ---- Image alt text ----
+  - find: "Ambient technician providing AC repair in Severn, Severna Park and Columbia, Maryland"
+    replace: "[IMAGE_ALT_TEXT_1]"
+    category: image_alt
+  - find: "Ambient technician diagnosing an air-conditioning problem during an AC repair visit"
+    replace: "[IMAGE_ALT_TEXT_2]"
+    category: image_alt
+  - find: "Ambient technician collecting information for an AC repair request"
+    replace: "[IMAGE_ALT_TEXT_3]"
+    category: image_alt
+  - find: "Ambient technician diagnosing equipment during an AC repair appointment"
+    replace: "[IMAGE_ALT_TEXT_4]"
+    category: image_alt
+  - find: "Ambient technician explaining AC repair recommendations to a customer"
+    replace: "[IMAGE_ALT_TEXT_5]"
+    category: image_alt
+  - find: "Ambient technician inspecting an outdoor unit during an AC repair visit"
+    replace: "[IMAGE_ALT_TEXT_6]"
+    category: image_alt
+  - find: "Indoor air-conditioning equipment being evaluated for AC repair"
+    replace: "[IMAGE_ALT_TEXT_7]"
+    category: image_alt
+  - find: "Ambient technician checking thermostat controls during AC repair service"
+    replace: "[IMAGE_ALT_TEXT_8]"
+    category: image_alt
+  - find: "Clean work area after an Ambient AC repair appointment"
+    replace: "[IMAGE_ALT_TEXT_9]"
+    category: image_alt
+
+  # ---- Section 8: three-step process ----
+  - find: "Request AC Repair in 3 Simple Steps"
+    replace: "[PROCESS_SECTION_HEADING]"
+    category: section_heading
+  - find: "Request form icon"
+    replace: "[STEP_1_ICON]"
+    category: icon
+  - find: "1. Request a Free Quote"
+    replace: "[STEP_1_HEADING]"
+    category: step
+  - find: "Complete the form or call with your AC symptoms and service location."
+    replace: "[STEP_1_COPY]"
+    category: step
+  - find: "Describe the Problem"
+    replace: "[STEP_1_SUPPORTING_LINE]"
+    category: step
+  - find: "2. Diagnose the AC System"
+    replace: "[STEP_2_HEADING]"
+    category: step
+  - find: "An Ambient technician evaluates the air-conditioning problem and identifies the relevant findings."
+    replace: "[STEP_2_COPY]"
+    category: step
+  - find: "Find the Cause"
+    replace: "[STEP_2_SUPPORTING_LINE]"
+    category: step
+  - find: "Checkmark icon"
+    replace: "[STEP_3_ICON]"
+    category: icon
+  - find: "3. Review the Repair Options"
+    replace: "[STEP_3_HEADING]"
+    category: step
+  - find: "Discuss the recommended AC repair and decide how you would like to move forward."
+    replace: "[STEP_3_COPY]"
+    category: step
+  - find: "Choose the Next Step"
+    replace: "[STEP_3_SUPPORTING_LINE]"
+    category: step
+
+  # ---- Section 9: reviews (never reuse across clients) ----
+  - find: "What Ambient Customers Are Saying"
+    replace: "[REVIEWS_SECTION_HEADING]"
+    category: reviews
+  - find: "“He took time to check multiple things.”"
+    replace: "[CLIENT_REVIEW_1]"
+    category: reviews
+  - find: "Rachel Ehmann"
+    replace: "[REVIEWER_NAME_1]"
+    category: reviewer_name
+  - find: "“The technician was very professional... and quickly resolved it.”"
+    replace: "[CLIENT_REVIEW_2]"
+    category: reviews
+  - find: "Javis Brown"
+    replace: "[REVIEWER_NAME_2]"
+    category: reviewer_name
+  - find: "“Timely and great service good company to deal with.”"
+    replace: "[CLIENT_REVIEW_3]"
+    category: reviews
+  - find: "Ernesto Palacios Jr"
+    replace: "[REVIEWER_NAME_3]"
+    category: reviewer_name
+  - find: "Google Review"
+    replace: "[REVIEW_SOURCE]"
+    category: reviews
+
+  # ---- Section 10: FAQ ----
+  - find: "Frequently Asked Questions About AC Repair"
+    replace: "[FAQ_SECTION_HEADING]"
+    category: section_heading
+  - find: "What signs may mean my AC needs repair?"
+    replace: "[FAQ_1_QUESTION]"
+    category: faq
+  - find: "Warm air, weak airflow, uneven cooling, frequent cycling, unusual noises, odors, moisture, or thermostat problems may indicate that AC repair is needed. Similar symptoms can have different causes, so a professional diagnosis helps determine the source of the problem."
+    replace: "[FAQ_1_ANSWER]"
+    category: faq
+  - find: "What happens during an AC repair appointment?"
+    replace: "[FAQ_2_QUESTION]"
+    category: faq
+  - find: "The technician begins with the symptoms you reported and evaluates the relevant air-conditioning components. Ambient then explains the findings and recommended AC repair options so you can understand the next step."
+    replace: "[FAQ_2_ANSWER]"
+    category: faq
+  - find: "What air-conditioning problems can Ambient diagnose?"
+    replace: "[FAQ_3_QUESTION]"
+    category: faq
+  - find: "Ambient can evaluate AC problems involving reduced cooling, unusual noises, frequent cycling, visible leaks, airflow, thermostats, electrical components, compressors, refrigerant, and other system concerns. The exact AC repair recommendation depends on the diagnosis."
+    replace: "[FAQ_3_ANSWER]"
+    category: faq
+  - find: "How do I request a free AC repair quote?"
+    replace: "[FAQ_4_QUESTION]"
+    category: faq
+  - find: "Complete the AC repair quote form with your contact information, service location, and a short description of the cooling problem. You can also call Ambient Cooling & Heating at (410) 761-0932."
+    replace: "[FAQ_4_ANSWER]"
+    category: faq
+  - find: "Which areas does Ambient serve?"
+    replace: "[FAQ_5_QUESTION]"
+    category: faq
+  - find: "By submitting, you agree that Ambient Cooling & Heating may contact you about your AC repair request. See Privacy Policy and Terms and Conditions."
+    replace: "By submitting, you agree that [CLIENT_NAME] may contact you about your [PRIMARY_SERVICE] request. See Privacy Policy and Terms and Conditions."
+    category: legal
+
+  # ---- Section 11: final CTA ----
+  - find: "Customer Satisfaction Is at the Heart of Every AC Repair"
+    replace: "[FINAL_CTA_HEADING]"
+    category: final_cta
+  - find: "Ambient focuses on professional service, transparent communication, and clear next steps from your first AC repair request through the completed work."
+    replace: "[FINAL_CTA_SUPPORTING_LINE]"
+    category: final_cta
+  - find: "Lock icon"
+    replace: "[FINAL_CTA_ICON]"
+    category: icon
+
+  # ---- Identity tokens: safety net for anything the phrase rules did not catch ----
+  - find: "Ambient Cooling & Heating"
+    replace: "[CLIENT_NAME]"
+    category: company_name
+  - find: "Ambient's"
+    replace: "[CLIENT_NAME]'s"
+    category: company_name
+  - find: "Ambient"
+    replace: "[CLIENT_NAME]"
+    category: company_name
+  - find: "(410) 761-0932"
+    replace: "[PHONE_NUMBER]"
+    category: phone
+  - find: "(410) 555-0123"
+    replace: "[PHONE_PLACEHOLDER]"
+    category: phone
+    note: "Form placeholder example; area code is client-region specific."
+  - find: "your.email@example.com"
+    replace: "[EMAIL_ADDRESS]"
+    category: email
+  - find: "air conditioner repair"
+    replace: "[PRIMARY_SERVICE]"
+    category: service
+  - find: "air-conditioning"
+    replace: "[PRIMARY_SERVICE_CATEGORY]"
+    category: service
+  - find: "air conditioner"
+    replace: "[PRIMARY_SERVICE_EQUIPMENT]"
+    category: service
+  - find: "AC components"
+    replace: "[PRIMARY_SERVICE_EQUIPMENT] components"
+    category: service
+  - find: "AC symptoms"
+    replace: "[PRIMARY_SERVICE_EQUIPMENT] symptoms"
+    category: service
+  - find: "AC problems"
+    replace: "[PRIMARY_SERVICE_EQUIPMENT] problems"
+    category: service
+  - find: "AC System"
+    replace: "[PRIMARY_SERVICE_EQUIPMENT] System"
+    category: service
+  - find: "AC system"
+    replace: "[PRIMARY_SERVICE_EQUIPMENT] system"
+    category: service
+  - find: "AC Problem"
+    replace: "[PRIMARY_SERVICE_ISSUE]"
+    category: service
+  - find: "AC REPAIR"
+    replace: "[PRIMARY_SERVICE]"
+    category: service
+    note: "All-caps safety net. Case-sensitive rules would otherwise miss upper-case headings."
+  - find: "AC Repair"
+    replace: "[PRIMARY_SERVICE]"
+    category: service
+  - find: "AC repair"
+    replace: "[PRIMARY_SERVICE]"
+    category: service
+  - find: "my AC needs repair"
+    replace: "my [PRIMARY_SERVICE_EQUIPMENT] needs [PRIMARY_SERVICE]"
+    category: service
+  - find: "your AC is doing"
+    replace: "your [PRIMARY_SERVICE_EQUIPMENT] is doing"
+    category: service
+  - find: "Maryland"
+    replace: "[STATE]"
+    category: location
+  # Bare city-name safety net. In the canonical document every city appears inside a
+  # longer phrase already handled above, so these only catch a leftover. They exist so a
+  # partial phrase match can never leave a real place name in the master template.
+  - find: "Ellicott City"
+    replace: "[PRIMARY_LOCATION]"
+    category: location
+  - find: "Severna Park"
+    replace: "[PRIMARY_LOCATION]"
+    category: location
+  - find: "Crownsville"
+    replace: "[PRIMARY_LOCATION]"
+    category: location
+  - find: "Annapolis"
+    replace: "[PRIMARY_LOCATION]"
+    category: location
+  - find: "Columbia"
+    replace: "[PRIMARY_LOCATION]"
+    category: location
+  - find: "Severn"
+    replace: "[PRIMARY_LOCATION]"
+    category: location
+
+# Validation gate. If ANY of these still appears after scrubbing, the copy is NOT renamed
+# to the master template and the run is reported as a failure. Case-insensitive.
+forbidden_after_scrub:
+  - "Ambient"
+  - "761-0932"
+  - "555-0123"
+  - "your.email@example.com"
+  - "ac-repair"
+  - "AC Repair"
+  - "AC repair"
+  - "air conditioner"
+  - "air-conditioning"
+  - "Severn"
+  - "Severna Park"
+  - "Columbia"
+  - "Ellicott City"
+  - "Annapolis"
+  - "Crownsville"
+  - "Maryland"
+  - "Rachel Ehmann"
+  - "Javis Brown"
+  - "Ernesto Palacios"
+  - "Google Review"
+  - "drive.google.com/file/d/1zlxytOLOfweuFlN0eaIIm9NkpcrdtOfu"
+  - "drive.google.com/file/d/1tnL8rbtFNi8Rqbw9wX4lcjJNSY9Dc4QU"
+  - "drive.google.com/file/d/1DFvfHaK43WAboQk8B6ZQYoUWhBDD7RY_"
+  - "drive.google.com/file/d/1_7vlSIU3jain9kfqXvduWLhBdY3XsDCQ"
+  - "drive.google.com/file/d/17FrmrIQgDdhepogkbku78LmTcZqcJPTF"
+  - "drive.google.com/file/d/1i6mnHqL-3wgjVgSe5liSFGpEnrf2qmBx"
+  - "drive.google.com/file/d/1KiJd01T5kp4yiQDVIHYdGmBYKq2EQW5v"
+  - "drive.google.com/file/d/12q8ZMda9avaGEmLeyyxT9Ab2FnexZSyW"
+  - "drive.google.com/file/d/1LPfH1bbhXANz7sPnSK-o25wdLMdoOcVw"

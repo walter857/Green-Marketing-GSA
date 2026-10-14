@@ -1,0 +1,139 @@
+{
+ "package": "ambient-cooling-heating-rsa-enablement",
+ "version": "2026-08-18",
+ "phase": "enable",
+ "depends_on_fingerprint": "0BCC73A397580856",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342"
+ },
+ "precondition_met": "All six replacement RSAs completed policy review on 2026-08-18: ad-level APPROVED and REVIEWED, zero policy topics, zero CONSUMER_FINANCE, and 112 of 114 assets APPROVED with the remaining 2 headlines still individually indexing (both are APPROVED on the sibling ad that carries the same text).",
+ "action": "Set ad_group_ad.status from PAUSED to ENABLED on exactly these six ads. Nothing else.",
+ "ads_to_enable": [
+  {
+   "ad_id": "821319509197",
+   "resource_name": "customers/2401959466/adGroupAds/202339087634~821319509197",
+   "campaign_id": "24132507747",
+   "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "ad_group_id": "202339087634",
+   "ad_group_name": "SKAG | HVAC Installation",
+   "approved_label": "A - direct response / service",
+   "before_status": "PAUSED",
+   "after_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": "NONE",
+   "ad_strength_at_approval_time": "PENDING"
+  },
+  {
+   "ad_id": "821319509200",
+   "resource_name": "customers/2401959466/adGroupAds/202339087634~821319509200",
+   "campaign_id": "24132507747",
+   "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "ad_group_id": "202339087634",
+   "ad_group_name": "SKAG | HVAC Installation",
+   "approved_label": "B - evaluation and comfort outcome",
+   "before_status": "PAUSED",
+   "after_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": "NONE",
+   "ad_strength_at_approval_time": "PENDING"
+  },
+  {
+   "ad_id": "821319509203",
+   "resource_name": "customers/2401959466/adGroupAds/200159223798~821319509203",
+   "campaign_id": "24132507753",
+   "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "ad_group_id": "200159223798",
+   "ad_group_name": "SKAG | HVAC Replacement Near Me",
+   "approved_label": "A - direct response / service",
+   "before_status": "PAUSED",
+   "after_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": "NONE",
+   "ad_strength_at_approval_time": "PENDING"
+  },
+  {
+   "ad_id": "821319509206",
+   "resource_name": "customers/2401959466/adGroupAds/200159223798~821319509206",
+   "campaign_id": "24132507753",
+   "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "ad_group_id": "200159223798",
+   "ad_group_name": "SKAG | HVAC Replacement Near Me",
+   "approved_label": "B - evaluation and comfort outcome",
+   "before_status": "PAUSED",
+   "after_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": "NONE",
+   "ad_strength_at_approval_time": "PENDING"
+  },
+  {
+   "ad_id": "821319509209",
+   "resource_name": "customers/2401959466/adGroupAds/202339087594~821319509209",
+   "campaign_id": "24132507744",
+   "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "ad_group_id": "202339087594",
+   "ad_group_name": "SKAG | Gas Boiler Repair",
+   "approved_label": "A - direct response / service",
+   "before_status": "PAUSED",
+   "after_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": "NONE",
+   "ad_strength_at_approval_time": "PENDING"
+  },
+  {
+   "ad_id": "821319509212",
+   "resource_name": "customers/2401959466/adGroupAds/202339087594~821319509212",
+   "campaign_id": "24132507744",
+   "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "ad_group_id": "202339087594",
+   "ad_group_name": "SKAG | Gas Boiler Repair",
+   "approved_label": "B - symptom-led problem resolution",
+   "before_status": "PAUSED",
+   "after_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": "NONE",
+   "ad_strength_at_approval_time": "PENDING"
+  }
+ ],
+ "mutation_summary": {
+  "ad_group_ads_modified": 6,
+  "field_mask": "status",
+  "created": 0,
+  "removed": 0,
+  "total_mutations": 6
+ },
+ "explicitly_not_included": [
+  "Pausing or removing the six pre-existing DISAPPROVED ads (820900825428, 820900825431, 820900825434,820900825437,820944944368,820944944371) - separate destructive approval.",
+  "Filing any policy appeal.",
+  "Any change to campaigns, budgets, schedules, keywords, negatives, assets, sitelinks, conversion goals, phone numbers, landing pages, or manager access."
+ ],
+ "interim_state_warning": "Enabling these six WITHOUT pausing the six originals leaves 4 ads per ad group: 2 newly eligible and 2 disapproved-and-ineligible. That is SAFE - a disapproved ad cannot serve - and it deliberately guarantees no service interruption. The intended end state of exactly two eligible RSAs per ad group is reached later, under destructive approval.",
+ "readback_procedure": [
+  "1. SELECT ad_group_ad.ad.id, ad_group_ad.status, ad_group_ad.policy_summary.approval_status FROM ad_group_ad WHERE ad_group_ad.ad.id IN (the six). ASSERT all six status=ENABLED and approval_status=APPROVED.",
+  "2. ASSERT the six pre-existing ads are STILL ENABLED and STILL DISAPPROVED - untouched.",
+  "3. ASSERT total non-removed ads is still 113 (no create, no remove).",
+  "4. ASSERT each of the five campaigns is still ENABLED / SERVING / TARGET_SPEND with unchanged budgets ($141.45 / $42.76 / $138.16 / $78.95 / $26.32).",
+  "5. ASSERT criterion, asset, conversion-action and shared-set counts are unchanged: campaign criteria 13810, keywords 6968, conversion actions 23, shared sets 17, shared criteria 7015, campaign assets 271, ad-schedule criteria 139.",
+  "6. ASSERT both manager links ACTIVE and unchanged, including ClickCease 2815082755.",
+  "7. Within 48 hours confirm impressions are accruing in Gas Boiler Repair and HVAC Replacement, which have had ZERO impressions since launch."
+ ],
+ "rollback_plan": {
+  "method": "Set status back to PAUSED on the same six ad IDs.",
+  "restore_mutations": 6,
+  "data_loss": "None. Status changes do not delete an ad or its history.",
+  "trigger": "Any readback assertion fails, or an ad is disapproved after enabling."
+ },
+ "partial_write_protocol": "One MutateAdGroupAds request, partial_failure=false, so the batch is atomic. If it fails, STOP, re-query the six statuses, inventory which were enabled, and produce a recovery plan before any retry.",
+ "risk_note": "Enabling starts real spend in two campaigns that have never served. Conversion tracking is still not trustworthy: the landing-page form captures no click IDs, so form leads will not be attributable until the landing-page fix lands. This is a deliberate trade: getting eligible ads live now is worth more than waiting, because zero impressions produces zero learning. Budgets are unchanged and Maximize Clicks caps daily spend.",
+ "plan_fingerprint": "80868F985D33B756",
+ "VOID": true,
+ "VOID_ON": "2026-08-21",
+ "VOID_REASON": "SUPERSEDED. RSA enablement was carried out instead by the six policy-safe replacement RSAs and later by HVAC Repair RSA swap D441DEFC58EB5643. Green Marketing listed this fingerprint as do-not-execute on 2026-08-21. Executing it now would re-enable or duplicate protected ads."
+}

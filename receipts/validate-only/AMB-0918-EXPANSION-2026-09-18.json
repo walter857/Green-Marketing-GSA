@@ -1,0 +1,21 @@
+{
+ "when": "2026-09-18T21:02:24.665865-04:00",
+ "validate_only": true,
+ "external_writes": 0,
+ "checks": {
+  "new_budgets": "OK",
+  "new_campaigns": "VALIDATED_OK - re-run with two unattached budgets (15044731597, 15466378777). The first failure was a HARNESS artefact: both probe campaigns were pointed at one already-attached non-shared budget, which Google rejects with CANNOT_USE_IMPLICITLY_SHARED_CAMPAIGN_BUDGET_WITH_MULTIPLE_CAMPAIGNS. In execution each campaign receives its own budget created in stage 1, so the condition cannot arise.",
+  "keywords": "OK (32)",
+  "rsas": {
+   "SKAG | Boiler Repair": "VALIDATED_OK (2)",
+   "SKAG | Oil Furnace Installation": "VALIDATED_OK (2)",
+   "SKAG | Oil Heating System Replacement": "VALIDATED_OK (2)",
+   "SKAG | Heat Pump Installation": "SKIPPED - no RSA in plan (destination blocked)",
+   "SKAG | Geothermal HVAC Installation": "VALIDATED_OK (2)",
+   "SKAG | Tankless Water Heater Installation": "VALIDATED_OK (2)"
+  },
+  "budget2": "OK",
+  "bid1": "OK"
+ },
+ "all_checks_pass": true
+}

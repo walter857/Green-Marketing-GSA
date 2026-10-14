@@ -1,0 +1,72 @@
+{
+ "plan_name": "AMB-0915-RSA-ACR-3",
+ "approval_class": "create-paused",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "exact_service": "AC Repair",
+ "supersedes": "AMB-0910-RSA-ACR-2 / 1F166DE17017 - the on-disk plan no longer recomputes to its published fingerprint (recomputes to 4C7E73A3194D) and carries no operation_count field, so it is not approvable as 1F166DE17017. The AD COPY itself was re-checked and is CLEAN: zero barred or withdrawn claims in any headline or description. This plan re-issues the same copy under a fingerprint that verifies.",
+ "summary": "Create 1 AC Repair RSA challenger PAUSED in ad group 202339087834. 1 operation.",
+ "before_state": {
+  "ad_group_id": "202339087834",
+  "ads_now": [
+   "820900825416",
+   "820900825419"
+  ],
+  "ads_count": 2,
+  "after_count": 3,
+  "google_rsa_cap_per_ad_group": 3,
+  "within_cap": true
+ },
+ "operations": [
+  {
+   "operation": "CREATE_RSA_PAUSED",
+   "resource": "ad_group_ad",
+   "resource_id": "202339087834",
+   "resource_name": "SKAG | AC Repair Near Me",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/ac-repair/",
+   "path1": "ac-repair",
+   "path2": "severn-md",
+   "status": "PAUSED",
+   "headlines_pinned_headline_1": [
+    "AC Repair in Severn, MD",
+    "AC Repair Near You Today",
+    "Air Conditioner Repair MD"
+   ],
+   "headlines_unpinned": [
+    "Free AC Repair Estimate",
+    "AC Not Cooling? We Can Help",
+    "Local Anne Arundel AC Repair",
+    "AC Repair in Severna Park",
+    "AC Repair in Columbia, MD",
+    "Book Your AC Repair Visit",
+    "Talk to a Real Technician",
+    "Straight AC Repair Pricing",
+    "Residential & Commercial AC",
+    "Fix My AC Unit",
+    "Call for AC Repair Help",
+    "AC Repair Done Right"
+   ],
+   "descriptions": [
+    "AC repair across Severn, Severna Park and Columbia. Free estimates before any work.",
+    "AC not cooling? Book a repair visit and get straight pricing before any work begins.",
+    "Local Anne Arundel technicians. Residential and commercial air conditioning repair.",
+    "Request your free AC repair estimate today and get your home comfortable again."
+   ],
+   "current_state": "ad group 202339087834 holds 2 ads, 2 ENABLED and APPROVED (820900825416, 820900825419)",
+   "proposed_state": "ad group 202339087834 holds 3 ads; the new one is PAUSED; both existing ENABLED ads are untouched",
+   "reason": "Challenger for ad 820900825419, whose 15 headlines are largely non-specific ('Stop Guessing About Your AC', 'Get Clear Answers First', 'Bring Comfortable Air Back'). Three materially different keyword-forward headlines are pinned to HEADLINE_1 so the service keyword always leads while Google still rotates among three candidates in the most visible slot.",
+   "rollback": "remove the created ad_group_ad by its returned resource name; it is PAUSED so it can never serve before a separate enable approval",
+   "risk": "LOW - created PAUSED, no existing ad is edited",
+   "unrelated_resource_assertion": "ads 820900825416, 820900825419 must remain ENABLED and APPROVED; ad group 202339087834 must hold 3 ads afterwards, exactly 2 of them ENABLED"
+  }
+ ],
+ "operation_count": 1,
+ "reason": "AC Repair runs 2 ENABLED APPROVED RSAs and has had zero clicks since 2026-09-04. A third, materially different challenger is ready and costs nothing while paused.",
+ "sequencing": "LOW priority. AC Repair currently cannot win auctions at a $25 ceiling, so a new ad changes nothing until the bid question is settled. Approve this only if you want it staged and policy-reviewed in advance.",
+ "risk": "LOW - created PAUSED.",
+ "rollback": "set the created ad_group_ad to REMOVED",
+ "unrelated_resource_assertion": "The two existing AC Repair ads 820900825416 and 820900825419 remain ENABLED and unedited. No other resource changes.",
+ "fingerprint": "1648D816ABAE"
+}

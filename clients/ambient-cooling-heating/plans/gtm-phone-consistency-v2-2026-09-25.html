@@ -1,0 +1,56 @@
+<script>
+(function () {
+  if (window.__gmPhoneFix) return;
+  window.__gmPhoneFix = 'pending';
+  // Offer pages are paid destinations: the number shown must be the number dialled,
+  // (410) 705-6354. The theme header prints the destination line 410-761-0932, which the
+  // all-traffic WhatConverts number (tracking id 230773) rewrites to 410-914-1456.
+  // DNI GUARD 2026-09-25: wait for WhatConverts to assign a number first. Bridge only when
+  // the assigned number is the known mixed-source 410-914-1456, or when no swap happened.
+  // Any other assigned number is a real DNI number: stand down and change nothing.
+  var SHOW = '(410) 705-6354';
+  var BRIDGED = '4109141456';
+  var WRONG = /\(?\b410\)?[\s.\-]?(?:761[\s.\-]?0932|914[\s.\-]?1456)\b/g;
+  function assigned() {
+    var m = document.cookie.match(/(?:^|;\s*)wc_swap=([^;]*)/);
+    if (!m) return '';
+    return decodeURIComponent(m[1]).split('+')[0].replace(/\D/g, '').slice(-10);
+  }
+  function fixText(node) {
+    if (node && node.nodeValue) {
+      WRONG.lastIndex = 0;
+      if (WRONG.test(node.nodeValue)) { WRONG.lastIndex = 0; node.nodeValue = node.nodeValue.replace(WRONG, SHOW); }
+    }
+  }
+  function fixTree(root) {
+    if (!root) return;
+    if (root.nodeType === 3) { fixText(root); return; }
+    if (root.nodeType !== 1) return;
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false), n;
+    while ((n = w.nextNode())) fixText(n);
+    var links = root.querySelectorAll('a[href^="tel:"]');
+    for (var i = 0; i < links.length; i++) {
+      var d = decodeURIComponent(links[i].getAttribute('href')).replace(/\D/g, '').slice(-10);
+      if (d === '4107610932' || d === '4109141456') links[i].setAttribute('href', 'tel:+14107056354');
+    }
+  }
+  function start() {
+    var s = assigned();
+    if (s && s !== BRIDGED) { window.__gmPhoneFix = 'standdown:' + s.slice(-4); return; }
+    window.__gmPhoneFix = s ? 'bridge:wc' : 'bridge:noswap';
+    fixTree(document.body);
+    new MutationObserver(function (ms) {
+      if (assigned() && assigned() !== BRIDGED) return;
+      ms.forEach(function (m) {
+        if (m.type === 'characterData') fixText(m.target);
+        else for (var i = 0; i < m.addedNodes.length; i++) fixTree(m.addedNodes[i]);
+      });
+    }).observe(document.body, { subtree: true, childList: true, characterData: true });
+  }
+  var t0 = Date.now();
+  (function poll() {
+    if (assigned() || Date.now() - t0 >= 4000) return start();
+    setTimeout(poll, 150);
+  })();
+})();
+</script>

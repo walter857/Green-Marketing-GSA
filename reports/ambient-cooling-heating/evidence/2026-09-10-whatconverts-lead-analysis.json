@@ -1,0 +1,189 @@
+{
+ "generated_local": "2026-09-10T10:19:53.035493-04:00",
+ "window": [
+  "2026-08-14",
+  "2026-09-10"
+ ],
+ "profile": "105803",
+ "total_leads": 99,
+ "rows_with_gclid": 8,
+ "gclids_resolved": 7,
+ "aggregate": {
+  "lead_type": {
+   "Phone Call": 84,
+   "Text Message": 9,
+   "Web Form": 6
+  },
+  "lead_status": {
+   "Unique": 87,
+   "Repeat": 12
+  },
+  "quotable": {
+   "Not Set": 28,
+   "Pending": 21,
+   "Yes": 31,
+   "No": 19
+  },
+  "lead_source": {
+   "google": 21,
+   "GBP Traffic": 34,
+   "2nd GBP Traffic": 31,
+   "GBP": 4,
+   "LSA - Ellicott": 3,
+   "GBP - Ellicott": 2,
+   "ambientcoolingandheating.com": 1,
+   "LSA Annapolis": 1,
+   "LSA's - Severn": 1,
+   "GLE Traffic": 1
+  }
+ },
+ "paid_attributable_rows": [
+  {
+   "campaign": "HVAC Installation",
+   "campaign_id": "24132507747",
+   "click_date": "2026-09-01",
+   "lead_date": "2026-09-01",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "quotable": "Yes",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "sales_value": null,
+   "quote_value": null,
+   "lead_key": "80e3d47e42273527",
+   "meets_60s_or_form": true,
+   "unique_qualified": true
+  },
+  {
+   "campaign": "HVAC Repair",
+   "campaign_id": "24132507750",
+   "click_date": "2026-08-28",
+   "lead_date": "2026-08-28",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "quotable": "No",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "sales_value": null,
+   "quote_value": null,
+   "lead_key": "69bcca9175627906",
+   "meets_60s_or_form": true,
+   "unique_qualified": false
+  },
+  {
+   "campaign": "AC Repair",
+   "campaign_id": "24132507741",
+   "click_date": "2026-08-25",
+   "lead_date": "2026-08-25",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "quotable": "Yes",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "sales_value": null,
+   "quote_value": null,
+   "lead_key": "3f3d86f4fd0b7a8a",
+   "meets_60s_or_form": true,
+   "unique_qualified": true
+  },
+  {
+   "campaign": "AC Repair",
+   "campaign_id": "24132507741",
+   "click_date": "2026-08-22",
+   "lead_date": "2026-08-22",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "quotable": "Yes",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "sales_value": null,
+   "quote_value": null,
+   "lead_key": "2a8891892c77eadc",
+   "meets_60s_or_form": true,
+   "unique_qualified": true
+  },
+  {
+   "campaign": "HVAC Installation",
+   "campaign_id": "24132507747",
+   "click_date": "2026-08-21",
+   "lead_date": "2026-08-21",
+   "lead_type": "Phone Call",
+   "lead_status": "Unique",
+   "quotable": "No",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 57,
+   "sales_value": null,
+   "quote_value": null,
+   "lead_key": "96aed1d63ad308c4",
+   "meets_60s_or_form": false,
+   "unique_qualified": false
+  },
+  {
+   "campaign": "AC Repair",
+   "campaign_id": "24132507741",
+   "click_date": "2026-08-21",
+   "lead_date": "2026-08-21",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "quotable": "Yes",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "sales_value": null,
+   "quote_value": null,
+   "lead_key": "498d356b08b69381",
+   "meets_60s_or_form": true,
+   "unique_qualified": true
+  },
+  {
+   "campaign": "HVAC Repair",
+   "campaign_id": "24132507750",
+   "click_date": "2026-08-20",
+   "lead_date": "2026-08-20",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "quotable": "Yes",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "sales_value": null,
+   "quote_value": null,
+   "lead_key": "340619629840eca2",
+   "meets_60s_or_form": true,
+   "unique_qualified": true
+  }
+ ],
+ "unique_qualified_by_campaign": {
+  "HVAC Installation": 1,
+  "HVAC Repair": 1,
+  "AC Repair": 3
+ },
+ "cost_and_records": {
+  "AC Repair": {
+   "cost": 3084.87,
+   "records": 5.0
+  },
+  "Gas Boiler Repair": {
+   "cost": 0.0,
+   "records": 0.0
+  },
+  "HVAC Installation": {
+   "cost": 2972.96,
+   "records": 3.0
+  },
+  "HVAC Repair": {
+   "cost": 1951.94,
+   "records": 6.0
+  },
+  "HVAC Replacement": {
+   "cost": 152.52,
+   "records": 0.0
+  }
+ },
+ "pii_policy": "names, numbers, emails, addresses, IPs, recordings and transcripts are excluded before any write; GCLID is stored only as a 16-char SHA-256 prefix"
+}

@@ -1,0 +1,179 @@
+{
+ "generated_local": "2026-09-10T10:35:06.120581-04:00",
+ "ac_repair_click_reconciliation": [
+  {
+   "date": "2026-08-14",
+   "click_view_rows": 3,
+   "valid": 1,
+   "invalid": 2,
+   "cost": 2.34,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-17",
+   "click_view_rows": 2,
+   "valid": 2,
+   "invalid": 0,
+   "cost": 47.78,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-18",
+   "click_view_rows": 3,
+   "valid": 0,
+   "invalid": 3,
+   "cost": 0.0,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-19",
+   "click_view_rows": 91,
+   "valid": 4,
+   "invalid": 87,
+   "cost": 282.06,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-20",
+   "click_view_rows": 122,
+   "valid": 2,
+   "invalid": 120,
+   "cost": 280.27,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-21",
+   "click_view_rows": 3,
+   "valid": 3,
+   "invalid": 0,
+   "cost": 385.15,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-22",
+   "click_view_rows": 106,
+   "valid": 1,
+   "invalid": 105,
+   "cost": 68.16,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-24",
+   "click_view_rows": 3,
+   "valid": 2,
+   "invalid": 1,
+   "cost": 281.64,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-25",
+   "click_view_rows": 84,
+   "valid": 4,
+   "invalid": 80,
+   "cost": 371.93,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-26",
+   "click_view_rows": 111,
+   "valid": 0,
+   "invalid": 111,
+   "cost": 0.0,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-27",
+   "click_view_rows": 109,
+   "valid": 0,
+   "invalid": 113,
+   "cost": 0.0,
+   "matches": "neither"
+  },
+  {
+   "date": "2026-08-28",
+   "click_view_rows": 108,
+   "valid": 1,
+   "invalid": 107,
+   "cost": 267.96,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-08-29",
+   "click_view_rows": 121,
+   "valid": 2,
+   "invalid": 120,
+   "cost": 283.84,
+   "matches": "neither"
+  },
+  {
+   "date": "2026-08-31",
+   "click_view_rows": 9,
+   "valid": 2,
+   "invalid": 10,
+   "cost": 279.46,
+   "matches": "neither"
+  },
+  {
+   "date": "2026-09-01",
+   "click_view_rows": 11,
+   "valid": 1,
+   "invalid": 10,
+   "cost": 112.63,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-09-02",
+   "click_view_rows": 32,
+   "valid": 1,
+   "invalid": 31,
+   "cost": 166.36,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-09-03",
+   "click_view_rows": 19,
+   "valid": 2,
+   "invalid": 17,
+   "cost": 221.89,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-09-04",
+   "click_view_rows": 21,
+   "valid": 1,
+   "invalid": 20,
+   "cost": 33.4,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-09-05",
+   "click_view_rows": 1,
+   "valid": 0,
+   "invalid": 1,
+   "cost": 0.0,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-09-07",
+   "click_view_rows": 1,
+   "valid": 0,
+   "invalid": 1,
+   "cost": 0.0,
+   "matches": "valid+invalid"
+  },
+  {
+   "date": "2026-09-09",
+   "click_view_rows": 2,
+   "valid": 0,
+   "invalid": 2,
+   "cost": 0.0,
+   "matches": "valid+invalid"
+  }
+ ],
+ "ac_repair_totals": {
+  "click_view_rows": 962,
+  "valid": 29,
+  "invalid": 941
+ },
+ "change_events": []
+}

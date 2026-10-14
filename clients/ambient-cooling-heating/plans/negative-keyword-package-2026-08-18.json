@@ -1,0 +1,1036 @@
+{
+ "package": "ambient-cooling-heating-negative-keywords",
+ "version": "2026-08-18",
+ "supersedes": "12E7572A25B9AFF0",
+ "supersede_reason": "The superseded package proposed legitimate HVAC demand as negatives and relied on a literal-only conflict check. Rebuilt from raw account data with an evidence-calibrated reachability model plus a human semantic review.",
+ "phase": "create-paused",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466"
+ },
+ "corpus": {
+  "rows_read": 43415,
+  "unique_terms_all_time": 21687,
+  "windows": [
+   "since_launch",
+   "last_30",
+   "last_90",
+   "last_365",
+   "all_time"
+  ],
+  "reachable_and_out_of_scope_terms": 424,
+  "historical_cost_of_those_terms_usd": 432.33,
+  "conversions_from_those_terms": 0.0
+ },
+ "shared_list_to_create": {
+  "name": "GM | Ambient HVAC | Universal Irrelevant 2026-08",
+  "type": "NEGATIVE_KEYWORDS",
+  "attach_to_campaigns": [
+   "24132507741",
+   "24132507744",
+   "24132507747",
+   "24132507750",
+   "24132507753"
+  ],
+  "member_count": 110
+ },
+ "proposals": [
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "car",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "cars",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "automotive",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "auto",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "truck",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "trucks",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "vehicle",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "vehicles",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "rv",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "camper",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "motorhome",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "boat",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "marine",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "tractor",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "vehicle_and_marine_ac",
+   "text": "forklift",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Vehicle and marine A/C. The only bucket with proven paid waste on the live campaigns: $82.77 all-time, $47.78 of it since launch on 2026-08-17, 4 clicks, 0 conversions. Ambient services buildings, not vehicles.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "job",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "jobs",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "hiring",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "hire me",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "career",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "careers",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "salary",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "salaries",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "apprentice",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "apprenticeship",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "resume",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "employment",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "helper wanted",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "employment",
+   "text": "ibew",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Job seekers, not service buyers. 19 reachable terms, $17.41, 0 conversions. 'hire' alone is NOT proposed: it is a protected commercial modifier.",
+   "conflicts": []
+  },
+  {
+   "bucket": "training_and_licensing",
+   "text": "trade school",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Trade education. Deliberately narrow multi-word phrases. Single words 'program', 'degree', 'class' and 'certification' are REJECTED: they collide with 'preventative maintenance program' and competitor names such as 'a degree above heating and cooling'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "training_and_licensing",
+   "text": "hvac school",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Trade education. Deliberately narrow multi-word phrases. Single words 'program', 'degree', 'class' and 'certification' are REJECTED: they collide with 'preventative maintenance program' and competitor names such as 'a degree above heating and cooling'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "training_and_licensing",
+   "text": "training course",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Trade education. Deliberately narrow multi-word phrases. Single words 'program', 'degree', 'class' and 'certification' are REJECTED: they collide with 'preventative maintenance program' and competitor names such as 'a degree above heating and cooling'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "training_and_licensing",
+   "text": "epa 608",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Trade education. Deliberately narrow multi-word phrases. Single words 'program', 'degree', 'class' and 'certification' are REJECTED: they collide with 'preventative maintenance program' and competitor names such as 'a degree above heating and cooling'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "training_and_licensing",
+   "text": "nate exam",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Trade education. Deliberately narrow multi-word phrases. Single words 'program', 'degree', 'class' and 'certification' are REJECTED: they collide with 'preventative maintenance program' and competitor names such as 'a degree above heating and cooling'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "training_and_licensing",
+   "text": "certification exam",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Trade education. Deliberately narrow multi-word phrases. Single words 'program', 'degree', 'class' and 'certification' are REJECTED: they collide with 'preventative maintenance program' and competitor names such as 'a degree above heating and cooling'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "training_and_licensing",
+   "text": "how to become",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Trade education. Deliberately narrow multi-word phrases. Single words 'program', 'degree', 'class' and 'certification' are REJECTED: they collide with 'preventative maintenance program' and competitor names such as 'a degree above heating and cooling'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "training_and_licensing",
+   "text": "apprentice program",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Trade education. Deliberately narrow multi-word phrases. Single words 'program', 'degree', 'class' and 'certification' are REJECTED: they collide with 'preventative maintenance program' and competitor names such as 'a degree above heating and cooling'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "how to",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "diy",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "do it yourself",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "tutorial",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "youtube",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "pdf",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "wiring diagram",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "reset button",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "troubleshooting chart",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "window unit",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "diy_and_research",
+   "text": "portable air conditioner",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Self-serve research and window/portable units Ambient does not install. 'manual' is NOT proposed: it collides with 'manual j load calculation'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "parts",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "part number",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "supplies",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "supplier",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "distributor",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "wholesale",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "supply house",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "for sale",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "costco",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "grainger",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "home depot",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "lowes",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "amazon",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "ebay",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "rental",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "parts_retail_wholesale",
+   "text": "rent",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Wholesale, retail and parts-buying intent. 57 reachable terms, $77.42, 0 conversions.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "refrigerator",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "fridge",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "freezer",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "washer",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "dishwasher",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "dryer vent",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "ice maker",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "mold",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "mold remediation",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "insulation",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "septic",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "roofing",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "garage door",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "sewer",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "appliance_and_other_trade",
+   "text": "radon",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Adjacent trades Ambient does not sell. 'mold' alone accounts for $80.45 and 4 clicks with 0 conversions. 'duct cleaning', 'plumbing' and 'electrician' are NOT proposed here: duct work is HVAC-adjacent, and the plumbing/electrical hits are almost entirely competitor company names routed to the competitor list instead. 'chimney' was dropped by the conflict checker: it blocks 'oil furnace chimney sweep near me'.",
+   "conflicts": []
+  },
+  {
+   "bucket": "unrelated_boiler_and_manufacturer",
+   "text": "industrial boiler",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-domestic boilers and manufacturer admin. 'industrial boiler' is safe against 'commercial boiler repair', which converted and is protected.",
+   "conflicts": []
+  },
+  {
+   "bucket": "unrelated_boiler_and_manufacturer",
+   "text": "steam locomotive",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-domestic boilers and manufacturer admin. 'industrial boiler' is safe against 'commercial boiler repair', which converted and is protected.",
+   "conflicts": []
+  },
+  {
+   "bucket": "unrelated_boiler_and_manufacturer",
+   "text": "double boiler",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-domestic boilers and manufacturer admin. 'industrial boiler' is safe against 'commercial boiler repair', which converted and is protected.",
+   "conflicts": []
+  },
+  {
+   "bucket": "unrelated_boiler_and_manufacturer",
+   "text": "boiler suit",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-domestic boilers and manufacturer admin. 'industrial boiler' is safe against 'commercial boiler repair', which converted and is protected.",
+   "conflicts": []
+  },
+  {
+   "bucket": "unrelated_boiler_and_manufacturer",
+   "text": "boilermaker",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-domestic boilers and manufacturer admin. 'industrial boiler' is safe against 'commercial boiler repair', which converted and is protected.",
+   "conflicts": []
+  },
+  {
+   "bucket": "unrelated_boiler_and_manufacturer",
+   "text": "recall",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-domestic boilers and manufacturer admin. 'industrial boiler' is safe against 'commercial boiler repair', which converted and is protected.",
+   "conflicts": []
+  },
+  {
+   "bucket": "unrelated_boiler_and_manufacturer",
+   "text": "warranty registration",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-domestic boilers and manufacturer admin. 'industrial boiler' is safe against 'commercial boiler repair', which converted and is protected.",
+   "conflicts": []
+  },
+  {
+   "bucket": "unrelated_boiler_and_manufacturer",
+   "text": "serial number",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-domestic boilers and manufacturer admin. 'industrial boiler' is safe against 'commercial boiler repair', which converted and is protected.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "virginia",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "washington dc",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "richmond",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "philadelphia",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "pittsburgh",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "atlanta",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "dallas",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "houston",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "delaware",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "wilmington",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "norfolk",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "boston",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "denver",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "chicago",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "miami",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "alexandria va",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "woodbridge va",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "winchester va",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "harrisonburg va",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "sterling va",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "ashburn va",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "roanoke va",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  },
+  {
+   "bucket": "out_of_area",
+   "text": "lynchburg va",
+   "match_type": "PHRASE",
+   "scope": "shared_list:GM | Ambient HVAC | Universal Irrelevant 2026-08",
+   "rationale": "Non-Maryland demand. Low value ($77.95 all-time, 4 clicks, 0 conversions) because presence targeting is the primary control. Bare 'va' and 'dc' are NOT proposed: 'va' collides with VA Medical Center commercial work and 'dc' is too short to control safely. 'Columbia' and 'Chesapeake' are excluded because both name Maryland places.",
+   "conflicts": []
+  }
+ ],
+ "campaign_specific_negatives": [],
+ "cross_service_negatives": [],
+ "cross_service_note": "NONE proposed. The five ad groups are single-theme with distinct core nouns and no internal overlap appears in the since-launch search terms. Adding cross-negatives now would be speculative.",
+ "competitor_terms_for_manual_review": [
+  "f h furr plumbing heating air conditioning & electrical",
+  "len the plumber hvac",
+  "shepherd plumbing heating a c",
+  "metropolitan plumbing heating & air conditioning",
+  "madden plumbing and hvac",
+  "asap plumbing hvac & septic",
+  "michaels and sons hvac",
+  "united air temp near me",
+  "horizon heating and cooling near me",
+  "abc heating and cooling near me",
+  "blue dot heating and air conditioning"
+ ],
+ "watch_list": {
+  "duct cleaning": "HVAC-adjacent. 9 terms, 0 clicks, $0. Ambient ran an Air Quality campaign historically.",
+  "plumbing / plumber": "61 terms but almost all are competitor COMPANY NAMES, not plumbing-service demand. Routed to competitor review.",
+  "union": "$17.41, 1 click. Collides with Union Bridge, MD and with commercial 'union contractor' sourcing.",
+  "manual": "Collides with 'manual j load calculation', a legitimate installation query.",
+  "program / degree / class / certification (single word)": "Collide with maintenance programs and competitor names. Rejected outright.",
+  "water heater": "Already blocked by the existing GM | Phrase Blockers list. Out of scope for these five services but real Ambient demand historically ($12,531 on Tankless Water Heaters).",
+  "thermostat": "Currently blocked ACCOUNT-WIDE by list 11252984411. Recommend removing that block, not adding one.",
+  "commercial": "Currently blocked ACCOUNT-WIDE by list 11252984411 and must be UNBLOCKED: it carries 3.83 historical conversions and $1,043 of spend."
+ },
+ "protected_query_count": 287,
+ "objects_to_create": 111,
+ "objects_to_modify": 0,
+ "objects_to_remove": 0,
+ "list_reuse_verdicts": [
+  {
+   "shared_set_id": "10664309518",
+   "list_name": "States List",
+   "members": 48,
+   "verdict": "SAFE TO REUSE",
+   "detail": "0 conflicts with the protected set."
+  },
+  {
+   "shared_set_id": "12025671131",
+   "list_name": "GM | Competitor Brands",
+   "members": 17,
+   "verdict": "SAFE TO REUSE",
+   "detail": "All PHRASE; only self-referential conflicts."
+  },
+  {
+   "shared_set_id": "12021721179",
+   "list_name": "GM | Broad Poison",
+   "members": 5,
+   "verdict": "REUSE AFTER CLEANUP",
+   "detail": "Drop BROAD 'technicians'; it blocks 'ac technicians near me'."
+  },
+  {
+   "shared_set_id": "12021722439",
+   "list_name": "GM | Phrase Blockers",
+   "members": 6,
+   "verdict": "REUSE AFTER CLEANUP",
+   "detail": "Drop PHRASE 'hvac work'; it blocks 'hvac work near me'. 'water heater' is correct for these five services but forecloses real Ambient demand."
+  },
+  {
+   "shared_set_id": "10664304544",
+   "list_name": "Names List",
+   "members": 486,
+   "verdict": "REUSE AFTER CLEANUP",
+   "detail": "3 conflicts."
+  },
+  {
+   "shared_set_id": "12022987128",
+   "list_name": "GM | Competitor Name Tokens",
+   "members": 17,
+   "verdict": "REUSE AFTER CLEANUP",
+   "detail": "17 BROAD single-word surname and brand terms including 'plumbing', 'capital', 'advantage'. BROAD surnames are unsafe for a local service account."
+  },
+  {
+   "shared_set_id": "10720232972",
+   "list_name": "General",
+   "members": 1148,
+   "verdict": "REUSE AFTER CLEANUP",
+   "detail": "20 conflicts including PHRASE 'of', 'price', 'hire' and 'cheap'."
+  },
+  {
+   "shared_set_id": "12091293463",
+   "list_name": "Ambient - Neg Kwd List",
+   "members": 968,
+   "verdict": "REUSE AFTER CLEANUP",
+   "detail": "56 conflicts; 929 of 968 members are BROAD. Blocks 'aircon', 'arundel' (Anne Arundel County), 'cheap', 'cleaning' and 'fixed'."
+  },
+  {
+   "shared_set_id": "11813144900",
+   "list_name": "General List",
+   "members": 1111,
+   "verdict": "DO NOT REUSE",
+   "detail": "Contains BROAD 'Repair' and BROAD 'Fix'. 170 conflicts. Attaching this would block essentially every repair query in the account."
+  },
+  {
+   "shared_set_id": "12178646912",
+   "list_name": "General List - Irrigation Repair",
+   "members": 1107,
+   "verdict": "DO NOT REUSE",
+   "detail": "Landscaping vertical in an HVAC account. 40 conflicts."
+  },
+  {
+   "shared_set_id": "11252984411",
+   "list_name": "account-level negative keywords list",
+   "members": 59,
+   "verdict": "REQUIRES CLEANUP",
+   "detail": "ACCOUNT_LEVEL_NEGATIVE_KEYWORDS applies account-wide with no campaign association. See the separate account-level cleanup plan."
+  },
+  {
+   "shared_set_id": "11807294063 / 11811255121 / 11840890006 / 11840874961",
+   "list_name": "Christmas Lights Install / Leaf Removal initial / Outdoor Kitchen / Paver",
+   "members": 424,
+   "verdict": "DO NOT REUSE",
+   "detail": "Landscaping and hardscaping lists in an HVAC account. reference_count 0, so all are inert. Archive only under destructive approval."
+  }
+ ],
+ "plan_fingerprint": "E0D26EF2943B941D"
+}

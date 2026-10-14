@@ -1,0 +1,81 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Emergency Heating Repair
+    related_services: []
+  task:
+    type: landing-page
+    mode: enable
+    request: >-
+      Green Marketing request 2026-10-01 (workstream 2). DRAFT the exact Google Ads URL-assignment
+      and activation plan for the Emergency Heating Repair ad group in campaign 24257819463, using
+      the supplied destination. Inspect the live page and approved client records; verify emergency
+      availability, answering/dispatch coverage and that the page makes no unsupported 24/7,
+      same-day, response-time, price or guarantee claim. If the ad group still has no ads or
+      keywords, draft the minimum complete build (two distinct RSAs, Phrase/Exact keywords) from
+      approved facts only. Present the exact plan and fingerprint. Create paused only after an
+      exact-plan approval; enabling needs a second approval after readback QA. Emergency
+      advertising is NOT enabled while availability is unverified. No budget, bidding, schedule,
+      location, conversion, negative-keyword, website or tracking change is in scope.
+    date_range: "CURRENT AS AT 2026-10-01"
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/emergency-heating-repair/
+    url_supplied_by: "Green Marketing, 2026-10-01 request"
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    location_targets_expected: 75
+    campaign_id: "24257819463"
+    ad_group_name_expected: "SKAG | Emergency Heating Repair"
+    daily_budget: 85.00
+    daily_budget_note: "shared with the five serving repair ad groups; unchanged"
+    schedule: "Mon-Fri 08:00-16:00 America/New_York (campaign schedule; unchanged)"
+    primary_conversion_goal: "unique genuine paid emergency heating repair lead (form or call)"
+    availability_gate:
+      published_hours: "Mon-Fri 08:00-16:00, closed Sat/Sun (contact page + schema.org, read 2026-09-22)"
+      emergency_availability_verified: "business hours only - owner confirmed 2026-10-02 (next available visit, Mon-Fri 08-16)"
+      after_hours_answering_verified: false   # correct: there is no after-hours service; ads never claim it
+      barred_claim: same_day_or_emergency_availability
+      prior_hold: "2026-09-22 HOLD (WAITING_AVAILABILITY label, AMB-0925-PRIORITY-1). The 2026-10-01 request supersedes the blanket instruction to leave the group untouched, but not the availability gate."
+    page_qa: >-
+      snapshots/lp-qa-2026-10-01.json - HTTP 200, H1 'Emergency Heating Repair in Central MD'. The page itself states
+      business-hours-only service (Mon-Fri 8-4, "immediate arrival is not guaranteed", FAQ answers No to 24-hour and to
+      same-day guarantees). No unsupported availability, price or guarantee claim. Defects: AC template sentence, D6, D5, D1.
+    availability_confirmed_2026_10_02: >-
+      OWNER CONFIRMED (Green Marketing instruction 2026-10-02): Ambient books callers with no heat into the next available
+      technician visit during Mon-Fri 8 a.m.-4 p.m. Settled - not to be re-asked. 24/7, immediate-arrival and guaranteed
+      same-day claims remain barred.
+    availability_gate_status_2026_10_02_superseded: >-
+      ANSWERING verified (published hours + owner statement recorded 2026-09-22). DISPATCH not verified: whether Ambient will
+      book an urgent no-heat repair visit for a caller during Mon-Fri 08:00-16:00. Create-paused may proceed; ENABLE waits for
+      that one confirmation.
+    plans:
+      create_paused: "AMB-1002-EMER-CREATE-1 AF13621050E2 APPROVED by Green Marketing 2026-10-02 and EXECUTED 07:0x ET; readback 18/18
+        (ads 826702584886, 826702584889; PHRASE keyword 4213560696), receipts/AMB-1002-EMER-CREATE-1-EXECUTED.json"
+      enable: "AMB-1002-EMER-ENABLE-1.DRAFT - after CREATE readback, ad approval and the dispatch confirmation"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-transition-2026-09.yaml
+      - clients/ambient-cooling-heating/plans/AMB-0922-BUILD-1.json
+      - clients/ambient-cooling-heating/plans/AMB-0925-PRIORITY-1.json
+    change_authorized: true   # staged authorization 2026-10-02 (see authorization_2026_10_02_staged)
+    enablement_authorized: true   # staged authorization 2026-10-02
+    owner_requested_enable_date: "2026-10-02"
+  authorization_2026_10_02_staged:
+    source: "Green Marketing instruction in the Claude Code session, 2026-10-02 ('Complete the Account Cleanup and Launch the Approved Campaigns')"
+    sequence_authorized: "prepare + validate -> create PAUSED -> read back -> enable after successful QA, without a further confirmation between stages, for the defined scope only"
+    in_scope: "Emergency enable; Geothermal ads/sitelinks to /geothermal-heat-pump/ + enable; Heating Maintenance & Inspection on https://ambientcoolingandheating.com/services/heating-services/; complete + enable intended current resources in the 8 Search campaigns; high-confidence EXACT negatives; $1,000/month per campaign (8 Search + 2 PMax); launch the 2 PMax campaigns; tablet exclusions; policy-compatible targeting inside the approved service area"
+    excluded: "deletions; unrelated legacy campaigns or unsupported services; spend above the allocations; conversion-action, upload, tracking-number or Business Profile phone changes; Phrase/Broad negatives; test leads/forms/calls/uploads; new website deployments"
+    fingerprints_still_recorded: true
+  approval_owner: Green Marketing

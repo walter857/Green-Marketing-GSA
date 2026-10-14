@@ -1,0 +1,205 @@
+# ChatGPT image-generation request - EKG Lawn Services LLC landing pages
+#
+# ============================== STATUS: FINAL ==============================
+# Updated 2026-08-15, third pass, AFTER the complete EKG-owned Drive archive was opened
+# and inspected. This list is now settled: it contains only the general-service positions
+# that no EKG-owned photograph can fill.
+#
+# What the archive inspection found:
+#   * The EKG subtree of the "GM - Team Folder" Shared Drive was walked in full:
+#     1,222 media files, including 165 full-resolution 4032x3024 HEIC originals.
+#   * EKG's originals are overwhelmingly finished mowing and striping, mulch beds, shrub
+#     work and hardscape. There is NO core aerator, NO soil plugs and NO seed spreader
+#     anywhere in EKG's own photography.
+#   * Four positions were filled from genuine EKG originals and are already uploaded.
+#   * Every high-resolution aeration/overseeding image in the Shared Drive belongs to a
+#     DIFFERENT Green Marketing client (Divine Lawns LLC, Softwind Landscape & Masonry,
+#     Perfection Lawn & Landscape, Iowa Lawn and Landscape) or is Shutterstock stock.
+#     None of it may be used for EKG. See the provenance manifest.
+# ===========================================================================
+#
+# HARD RULES FOR WHOEVER FULFILLS THIS REQUEST
+#   1. Generate images ONLY for the four positions listed below.
+#   2. Never generate anything for positions 6-9 on either page. Those are project-gallery
+#      positions and must carry authentic EKG project photographs or stay empty.
+#   3. Every image produced here is ILLUSTRATIVE SERVICE IMAGERY. It must never be captioned,
+#      labeled, or described as EKG Lawn Services' own completed work, and it must never be
+#      attributed to a named customer or property.
+#   4. Upload each finished file into the matching page's Drive `Images` folder using the
+#      exact filename and exact output size given, preserving the real file extension.
+#   5. Replace only the IMAGE SUGGESTION text at that position in the matching Google Doc.
+#   6. Never upscale. Deliver at or above the stated output size and crop to fill.
+
+request:
+  client: EKG Lawn Services LLC
+  google_ads_child_account_name: "EKG Lawn Services - Live"
+  google_ads_child_customer_id: "7478932848"
+  service: "Aeration & Overseeding"
+  market: "Residential lawns in the Midlothian / Woodlake / Brandermill area of Virginia"
+  generated_on: "2026-08-15"
+  positions_requested: 4
+  positions_forbidden: "6, 7, 8, 9 on both pages (project gallery - authentic EKG photos only)"
+
+drive_targets:
+  - landing_page: "Lawn Aeration"
+    page_folder_id: "1IRC2VS38aAzaAcEDFNb_ui9NGwgYWWvr"
+    images_folder_id: "1X8SYuJffNZpAFOZmaYbRwWbER8qNOc_j"
+    doc_id: "1Ic-c56wZzeLAYAJ2olnXeWZM4_cmJg0toFFyNNALTQM"
+  - landing_page: "Aeration & Overseeding"
+    page_folder_id: "1c5htkRjzCOqvFm2-OXFpOgUU6yxOS79y"
+    images_folder_id: "1yverSS5DJKBiHVJS23lctV0er8S1EF-R"
+    doc_id: "1HjZZ3Wrqc15T0qoFntagktRTQz4pWngaJi4XulYat-E"
+
+# Applies to every image below.
+global_requirements:
+  virginia_residential_setting: >-
+    A modest suburban single-family property typical of central Virginia. Cool-season turf
+    (tall fescue or a fescue blend). Mature deciduous hardwoods such as oak and maple at the
+    edges. Brick, vinyl-siding, or painted-clapboard homes. Beds edged with dark hardwood
+    mulch. No palm trees, no cactus, no alpine or Mediterranean landscaping, no British or
+    European garden styling, and no open farmland horizon.
+  lighting_and_season: >-
+    Early-autumn daylight, which is the real aeration and overseeding season in Virginia.
+    Soft, slightly warm mid-morning or late-afternoon light. Overcast-bright is acceptable.
+    No harsh midday glare, no golden-hour lens flare, no heavy color grading, no snow, no
+    parched midsummer drought.
+  realism: >-
+    Photographic realism at a quality consistent with professional local-service marketing.
+    Not illustration, not 3D render, not painterly. Turf must look like real grass with
+    natural variation, never a uniform synthetic green.
+  universally_avoid:
+    - Any logo, wordmark, watermark, signature, or text overlay of any kind
+    - Any legible brand name on machinery, clothing, or vehicles
+    - Agricultural fields, farm tractors, towed implements, hay, or crop rows
+    - Golf-course fairways, greens, or flagsticks
+    - Identifiable human faces, house numbers, or license plates
+    - Spike aerators (the service is CORE aeration, which pulls plugs)
+    - Distorted or extra limbs, warped machinery, impossible tool geometry
+    - Anything implying a named customer, address, or completed EKG job
+
+images:
+  # ---------------------------------------------------------------- Lawn Aeration
+  - landing_page: "Lawn Aeration"
+    position: 1
+    filename: "01-lawn-aeration-hero.jpg"
+    intended_use: "Hero background behind the H1, benefit bullets and lead form."
+    exact_subject: >-
+      A residential front or back lawn immediately after core aeration, with soil plugs
+      scattered evenly across dense green turf and a modest Virginia-style home softly out
+      of focus in the background.
+    orientation: landscape
+    output_size: "1920x1080"
+    aspect_ratio: "16:9 - deliver exactly 1920x1080, landscape"
+    composition: >-
+      Wide establishing shot from roughly waist height. Turf fills the lower two thirds.
+      Keep the upper-left third visually quiet and low-contrast so white headline text and
+      the form card stay readable. No subject crossing the center where the form sits.
+    alt_text: "Residential lawn after professional core aeration, with soil plugs across healthy green turf."
+    avoid:
+      - Machinery in frame; this is the finished-surface shot
+      - Busy backgrounds, fences or cars competing with the headline area
+      - People
+    why_no_ekg_photo: >-
+      EKG has no photograph showing soil plugs or a freshly aerated surface at any
+      resolution. The only authentic EKG aeration evidence is a 320x320 four-panel
+      composite whose quadrants are roughly 160px and may not be enlarged.
+    illustrative_only: true
+    must_not_be_labeled_as_ekg_work: true
+
+  - landing_page: "Lawn Aeration"
+    position: 2
+    filename: "02-core-aerator-in-use.jpg"
+    intended_use: "Main service feature image beside the aeration explanation."
+    exact_subject: >-
+      A commercial walk-behind core aerator being operated across a residential lawn, with
+      freshly pulled soil plugs on the surface behind it.
+    orientation: landscape
+    output_size: "1500x1200"
+    aspect_ratio: "5:4 - deliver exactly 1500x1200, landscape"
+    composition: >-
+      Three-quarter side view. The machine occupies the middle third. Fresh plugs clearly
+      visible in the foreground. Operator may appear from behind or cropped at the torso.
+    alt_text: "Commercial walk-behind core aerator pulling soil plugs from a residential lawn."
+    avoid:
+      - Any readable manufacturer badge or model name on the machine
+      - Riding mowers or lawn tractors
+      - A face turned toward the camera, which would read as an EKG employee portrait
+    why_no_ekg_photo: >-
+      EKG's equipment photography covers mowers and trucks only. No aerator appears in any
+      EKG-owned folder. Aerator images elsewhere in the Shared Drive belong to Divine Lawns
+      LLC, Softwind Landscape & Masonry and Perfection Lawn & Landscape, and are barred.
+    illustrative_only: true
+    must_not_be_labeled_as_ekg_work: true
+
+  # ------------------------------------------------------- Aeration & Overseeding
+  - landing_page: "Aeration & Overseeding"
+    position: 2
+    filename: "02-overseeding-aerated-lawn.jpg"
+    intended_use: "Main service feature image beside the overseeding explanation."
+    exact_subject: >-
+      Grass seed being broadcast from a walk-behind spreader across freshly aerated
+      residential turf, with aeration holes and soil plugs visible in the foreground.
+    orientation: landscape
+    output_size: "1500x1200"
+    aspect_ratio: "5:4 - deliver exactly 1500x1200, landscape"
+    composition: >-
+      Three-quarter side view. Spreader in the middle third, seed visibly leaving the
+      hopper, aerated surface receiving it in the foreground.
+    alt_text: "Grass seed being spread across a freshly aerated residential lawn."
+    avoid:
+      - Readable brand names on the spreader
+      - Agricultural seed drills or tractor-mounted equipment
+      - Broadcasting seed by hand, which reads as amateur
+    why_no_ekg_photo: >-
+      No EKG photograph shows seed, a spreader, or an overseeding pass. The overseeding
+      images in the Shared Drive belong to Divine Lawns LLC and are barred.
+    illustrative_only: true
+    must_not_be_labeled_as_ekg_work: true
+
+  - landing_page: "Aeration & Overseeding"
+    position: 4
+    filename: "04-bare-areas-maintained-lawn.jpg"
+    intended_use: "Supporting problem card - 'The Surface Settles'."
+    exact_subject: >-
+      Small bare areas and weak growth inside an otherwise well-maintained residential lawn.
+    orientation: landscape
+    output_size: "1200x900"
+    aspect_ratio: "4:3 - deliver exactly 1200x900, landscape"
+    composition: >-
+      Mid-distance view with a bare patch in the foreground and healthy, cared-for turf
+      surrounding it, so the lawn reads as maintained rather than neglected.
+    alt_text: "Small bare areas within a maintained residential lawn."
+    avoid:
+      - Severe damage unrelated to aeration or overseeding
+      - Construction scarring, vehicle ruts, tarps, cut logs, or excavation
+      - Drought-cracked soil
+    why_no_ekg_photo: >-
+      The closest EKG candidate was inspected and rejected: it shows a ground tarp, cut logs
+      and dead brush along a fence, which reads as a cleanup or clearing site rather than a
+      maintained lawn with bare patches.
+    illustrative_only: true
+    must_not_be_labeled_as_ekg_work: true
+
+# Positions NOT requested here, and why.
+excluded_positions:
+  - positions: "Lawn Aeration 3 and 4"
+    filenames: ["03-compacted-soil-thin-grass.jpg", "04-thinning-residential-lawn.jpg"]
+    reason: >-
+      Filled from authentic EKG originals (IMG_7513.HEIC and z12.20.23.HEIC, both
+      4032x3024). Cropped to 1200x900 and already uploaded. No generation needed.
+  - positions: "Aeration & Overseeding 1 and 3"
+    filenames: ["01-aeration-overseeding-hero.jpg", "03-thin-patchy-lawn.jpg"]
+    reason: >-
+      Filled from authentic EKG originals (z4.09.02.24.HEIC and IMG_7513.HEIC, both
+      4032x3024). Cropped to 1920x1080 and 1200x900 and already uploaded.
+  - positions: "Lawn Aeration 5 and Aeration & Overseeding 5"
+    filenames: ["05-aerated-turf-detail.jpg", "05-seed-to-soil-contact.jpg"]
+    reason: >-
+      Already filled and retained at 1000x667 from EKG's own published aeration photograph.
+  - positions: "Lawn Aeration 6-9 and Aeration & Overseeding 6-9"
+    reason: >-
+      Project-gallery positions. These require authentic EKG project photographs, which do
+      not exist in the archive at usable resolution. Generated, stock, licensed and
+      other-client photography are all forbidden here. Each of these eight positions carries
+      a specific IMAGE SUGGESTION in its Google Doc describing the photograph EKG must
+      supply. Do not send these to any generation tool.

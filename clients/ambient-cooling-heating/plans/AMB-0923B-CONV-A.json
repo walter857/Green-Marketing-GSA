@@ -1,0 +1,88 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-23b",
+ "plan_name": "AMB-0923B-CONV-A",
+ "approval_class": "update-conversion-action-primary-flag",
+ "scope": "conversion_action.primary_for_goal ONLY",
+ "nothing_deleted": true,
+ "nothing_disabled": true,
+ "capture_untouched": true,
+ "no_budget_bid_keyword_ad_targeting_or_status_change": true,
+ "supersedes": "AMB-0923-CONV-2 / 2550EA4C9BDC for the two WC actions",
+ "unchanged_by_instruction": {
+  "7389995485": "GA4 form_submission import - stays SECONDARY per instruction."
+ },
+ "bidding_impact": "None today: every enabled campaign is TARGET_SPEND (Maximize Clicks with a CPC ceiling), which does not consume conversion goals. This governs REPORTING and prepares for conversion bidding.",
+ "changes": [
+  {
+   "conversion_action_id": "7643656486",
+   "name": "WC Lead",
+   "type": "UPLOAD_CLICKS",
+   "category": "CONTACT",
+   "origin": "WEBSITE",
+   "goal_key": "CONTACT|WEBSITE",
+   "goal_biddable": true,
+   "from_primary_for_goal": false,
+   "to_primary_for_goal": true,
+   "takes_effect": true,
+   "why": "Owner instruction 2026-09-23: WC Lead MUST be Primary. This supersedes AMB-0923-CONV-2, which demoted it. Its goal combo CONTACT|WEBSITE is already biddable at account level and on every enabled campaign, so Primary here genuinely takes effect rather than being a label."
+  },
+  {
+   "conversion_action_id": "7643656075",
+   "name": "WC Calls",
+   "type": "UPLOAD_CALLS",
+   "category": "CONTACT",
+   "origin": "CALL_FROM_ADS",
+   "goal_key": "CONTACT|CALL_FROM_ADS",
+   "goal_biddable": true,
+   "from_primary_for_goal": false,
+   "to_primary_for_goal": true,
+   "takes_effect": true,
+   "why": "Owner instruction 2026-09-23: WC Calls MUST be Primary. Its goal combo CONTACT|CALL_FROM_ADS is already biddable. NOTE: it has recorded zero conversions to date; Primary status does not make it deliver, and the delivery fault is diagnosed separately."
+  },
+  {
+   "conversion_action_id": "6885576934",
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "type": "WEBSITE_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "WEBSITE",
+   "goal_key": "PHONE_CALL_LEAD|WEBSITE",
+   "goal_biddable": true,
+   "from_primary_for_goal": true,
+   "to_primary_for_goal": false,
+   "takes_effect": false,
+   "why": "Native WEBSITE_CALL action overlapping the WC call route. Safe to demote NOW because it has recorded ZERO conversions for its entire lifetime, so no measurement is lost. Stays ENABLED as a diagnostic."
+  }
+ ],
+ "operations": [
+  {
+   "op": "SET_CONVERSION_ACTION_PRIMARY_FLAG",
+   "conversion_action_id": "7643656486",
+   "name": "WC Lead",
+   "from": "primary_for_goal=False",
+   "to": "primary_for_goal=True",
+   "field_mask": "primary_for_goal"
+  },
+  {
+   "op": "SET_CONVERSION_ACTION_PRIMARY_FLAG",
+   "conversion_action_id": "7643656075",
+   "name": "WC Calls",
+   "from": "primary_for_goal=False",
+   "to": "primary_for_goal=True",
+   "field_mask": "primary_for_goal"
+  },
+  {
+   "op": "SET_CONVERSION_ACTION_PRIMARY_FLAG",
+   "conversion_action_id": "6885576934",
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "from": "primary_for_goal=True",
+   "to": "primary_for_goal=False",
+   "field_mask": "primary_for_goal"
+  }
+ ],
+ "rollback": "Flip primary_for_goal back on the same ids. Nothing is removed or reconfigured.",
+ "operation_count": 3,
+ "fingerprint": "B515A5DFD479"
+}

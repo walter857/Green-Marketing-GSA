@@ -1,0 +1,26 @@
+{
+  "subplan": "EXISTING_RESOURCES",
+  "fingerprint": "8C71888E09CC",
+  "customer_id": "2429758629",
+  "exact_child_account_name": "Softwind Landscape & Masonry - Live",
+  "mode": "LIVE WRITE",
+  "executed_at_utc": "2026-09-04T03:06:20.476930+00:00",
+  "approved_actions": 2,
+  "approved_objects": 2,
+  "api_operations": 2,
+  "partial_failure": false,
+  "results": [
+    {
+      "index": 0,
+      "type": "campaign_result",
+      "resource_name": "customers/2429758629/campaigns/23484806108",
+      "log": "BID-01 UPDATE campaign 23484806108 mask=['target_spend.cpc_bid_ceiling_micros']"
+    },
+    {
+      "index": 1,
+      "type": "campaign_result",
+      "resource_name": "customers/2429758629/campaigns/23489296528",
+      "log": "BID-02 UPDATE campaign 23489296528 mask=['target_spend.cpc_bid_ceiling_micros']"
+    }
+  ]
+}

@@ -1,0 +1,895 @@
+{
+ "generated_local": "2026-09-17T10:15:36.882418-04:00",
+ "step": "1 - BASELINE INSPECTION ONLY",
+ "parameters_sent": "NONE - no gclid/gbraid/wbraid/utm was transmitted",
+ "cache_seeding_risk": "none - no parameterised request was made",
+ "forms_submitted": 0,
+ "tel_links_activated": 0,
+ "website_changes": 0,
+ "pii_policy": "any real-looking click id or token is SHA-256 hashed, never stored raw",
+ "sites": {
+  "BEAVER": {
+   "url": "https://offer.beaverbinsin.com/",
+   "raw_http_status": 200,
+   "cache_headers": {
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "sg-f-cache": "HIT",
+    "host-header": "8441280b0c35cbc1147f8ba998a563a7",
+    "x-proxy-cache": "HIT"
+   },
+   "server_html_bytes": 173204,
+   "server_html_populated_inputs": [
+    {
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value_hash": "sha256:514d02781c929c42",
+     "length": 112,
+     "preview": "Bz9+ZY\u2026"
+    },
+    {
+     "field": "state_1",
+     "classification": "other_value_present",
+     "value_hash": "sha256:1730753b72bfa84c",
+     "length": 564,
+     "preview": "WyJ7XC\u2026"
+    },
+    {
+     "field": "gform_submit",
+     "classification": "other_value_present",
+     "value_hash": "sha256:d4735e3a265e16ee",
+     "length": 1,
+     "preview": "2"
+    },
+    {
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value_hash": "sha256:268a11bc47fde8ae",
+     "length": 112,
+     "preview": "4ROKZW\u2026"
+    },
+    {
+     "field": "state_2",
+     "classification": "other_value_present",
+     "value_hash": "sha256:c517235a9fa6a9f1",
+     "length": 564,
+     "preview": "WyJ7XC\u2026"
+    }
+   ],
+   "browser_initial_status": 200,
+   "title": "Beaver Bins | Dumpster Rentals",
+   "h1": [
+    "NEXT-DAY DUMPSTER DELIVERY AVAILABLE",
+    "Dumpster Rental Services\nIn Elkhart and its surrounding areas"
+   ],
+   "form_count": 2,
+   "forms": [
+    {
+     "id": "gform_1",
+     "cls": "",
+     "action": "https://offer.beaverbinsin.com/",
+     "method": "post",
+     "visible": true,
+     "height": 478,
+     "fieldCount": 18,
+     "hidden_fields": [
+      "gform_currency",
+      "gform_field_values",
+      "gform_source_page_number_1",
+      "gform_style_settings",
+      "gform_submission_method",
+      "gform_submit",
+      "gform_target_page_number_1",
+      "gform_theme",
+      "gform_unique_id",
+      "input_7",
+      "is_submit_1",
+      "state_1"
+     ]
+    },
+    {
+     "id": "gform_2",
+     "cls": "",
+     "action": "https://offer.beaverbinsin.com/",
+     "method": "post",
+     "visible": true,
+     "height": 478,
+     "fieldCount": 18,
+     "hidden_fields": [
+      "gform_currency",
+      "gform_field_values",
+      "gform_source_page_number_2",
+      "gform_style_settings",
+      "gform_submission_method",
+      "gform_submit",
+      "gform_target_page_number_2",
+      "gform_theme",
+      "gform_unique_id",
+      "input_7",
+      "is_submit_2",
+      "state_2"
+     ]
+    }
+   ],
+   "duplicate_id_count": 0,
+   "duplicate_ids": [],
+   "total_ids": 110,
+   "trackers": {
+    "gtm": [
+     "GTM-W8X9FD5R"
+    ],
+    "google_ads": [
+     "AW-10992011837"
+    ],
+    "ga4": [
+     "G-D629G6VMLG"
+    ],
+    "whatconverts": true,
+    "hubspot": false,
+    "callrail": false,
+    "gravity_forms": true,
+    "hubspot_forms": false,
+    "wpforms": false,
+    "elementor_forms": false
+   },
+   "hidden_field_names": [
+    "gform_currency",
+    "gform_field_values",
+    "gform_source_page_number_1",
+    "gform_source_page_number_2",
+    "gform_style_settings",
+    "gform_submission_method",
+    "gform_submit",
+    "gform_target_page_number_1",
+    "gform_target_page_number_2",
+    "gform_theme",
+    "gform_unique_id",
+    "input_7",
+    "is_submit_1",
+    "is_submit_2",
+    "state_1",
+    "state_2"
+   ],
+   "attribution_field_presence": {
+    "gclid": false,
+    "gbraid": false,
+    "wbraid": false,
+    "utm": false,
+    "campaign": false,
+    "keyword": false
+   },
+   "live_dom_populated": [
+    {
+     "form": "gform_1",
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value": "sha256:514d02781c929c42",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_1",
+     "field": "state_1",
+     "classification": "OPAQUE_TOKEN_possibly_real",
+     "value": "sha256:a73a11227c1a9ad4",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_2",
+     "field": "gform_submit",
+     "classification": "other_value_present",
+     "value": "sha256:d4735e3a265e16ee",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_2",
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value": "sha256:268a11bc47fde8ae",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_2",
+     "field": "state_2",
+     "classification": "OPAQUE_TOKEN_possibly_real",
+     "value": "sha256:a73a11227c1a9ad4",
+     "attr_equals_dom": true
+    }
+   ],
+   "attribution_cookies": [
+    {
+     "k": "wc_visitor",
+     "v_hash": "sha256:aec781158c091428"
+    },
+    {
+     "k": "_gcl_au",
+     "v_hash": "sha256:7222997a3b2c18ec"
+    },
+    {
+     "k": "wc_client",
+     "v_hash": "sha256:35e4570de7fb0ec4"
+    },
+    {
+     "k": "wc_client_current",
+     "v_hash": "sha256:35e4570de7fb0ec4"
+    },
+    {
+     "k": "wc_swap",
+     "v_hash": "sha256:3ff0816848af3bb6"
+    },
+    {
+     "k": "_ga_D629G6VMLG",
+     "v_hash": "sha256:7af667e22f38a67b"
+    },
+    {
+     "k": "_ga",
+     "v_hash": "sha256:807396b0b6650d35"
+    }
+   ],
+   "attribution_storage": [
+    {
+     "k": "wc_client",
+     "v_hash": "sha256:35e4570de7fb0ec4"
+    },
+    {
+     "k": "wc_visitor",
+     "v_hash": "sha256:aec781158c091428"
+    },
+    {
+     "k": "_gcl_ls",
+     "v_hash": "sha256:ba0a705e0056c9ec"
+    },
+    {
+     "k": "wc_swap",
+     "v_hash": "sha256:3ff0816848af3bb6"
+    },
+    {
+     "k": "wc_client_current",
+     "v_hash": "sha256:35e4570de7fb0ec4"
+    }
+   ],
+   "dataLayer_present": true,
+   "dataLayer_length": 3,
+   "tel_links": [
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    },
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    },
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    },
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    },
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    },
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    },
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    },
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    },
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    },
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    },
+    {
+     "href": "tel:5742122219",
+     "visible": true
+    }
+   ],
+   "network_hosts": [
+    "ad.doubleclick.net",
+    "analytics.google.com",
+    "blob:https://offer.beaverbinsin.com/80a9889e-50f2-4809-a461-c26e867977fe",
+    "cdnjs.cloudflare.com",
+    "embed.survcart.com",
+    "fonts.googleapis.com",
+    "fonts.gstatic.com",
+    "googleads.g.doubleclick.net",
+    "offer.beaverbinsin.com",
+    "p.ksrndkehqnwntyxlhgto.com",
+    "pixel.wp.com",
+    "process.iconnode.com",
+    "s.ksrndkehqnwntyxlhgto.com",
+    "s.w.org",
+    "stats.g.doubleclick.net",
+    "stats.wp.com",
+    "www.google.com",
+    "www.googleadservices.com",
+    "www.googletagmanager.com",
+    "www.gstatic.com"
+   ]
+  },
+  "NOLTE": {
+   "url": "https://offer.nolteandsons.com/landscaping-2/",
+   "raw_http_status": 200,
+   "cache_headers": {
+    "server": "nginx",
+    "vary": "User-Agent",
+    "cache-control": "public, max-age=0, s-maxage=3600",
+    "x-cache-enabled": "True",
+    "x-nitro-cache": "HIT",
+    "x-nitro-cache-from": "drop-in",
+    "x-cache-ctime": "1789170306",
+    "host-header": "6b7412fb82ca5edfd0917e3957f05d89",
+    "x-proxy-cache": "MISS",
+    "x-proxy-cache-info": "0 NC:000000 UP:"
+   },
+   "server_html_bytes": 316510,
+   "server_html_populated_inputs": [
+    {
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value_hash": "sha256:4a1d0c5a9be1d702",
+     "length": 112,
+     "preview": "9N3r2R\u2026"
+    },
+    {
+     "field": "state_1",
+     "classification": "other_value_present",
+     "value_hash": "sha256:b9b1c9c19663f11d",
+     "length": 616,
+     "preview": "WyJ7XC\u2026"
+    },
+    {
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value_hash": "sha256:5f16677ac6f8b719",
+     "length": 112,
+     "preview": "I96x44\u2026"
+    },
+    {
+     "field": "state_1",
+     "classification": "other_value_present",
+     "value_hash": "sha256:b9b1c9c19663f11d",
+     "length": 616,
+     "preview": "WyJ7XC\u2026"
+    },
+    {
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value_hash": "sha256:1ac8c1488d1098dc",
+     "length": 112,
+     "preview": "Zlt1mv\u2026"
+    },
+    {
+     "field": "state_1",
+     "classification": "other_value_present",
+     "value_hash": "sha256:b9b1c9c19663f11d",
+     "length": 616,
+     "preview": "WyJ7XC\u2026"
+    }
+   ],
+   "browser_initial_status": 200,
+   "title": "Landscaping | Nolte & Sons",
+   "h1": [
+    "Landscaping Services in Ankeny, Des Moines, and Nearby Areas"
+   ],
+   "form_count": 3,
+   "forms": [
+    {
+     "id": "gform_1",
+     "cls": "",
+     "action": "https://offer.nolteandsons.com/landscaping-2/",
+     "method": "post",
+     "visible": true,
+     "height": 448,
+     "fieldCount": 17,
+     "hidden_fields": [
+      "gform_currency",
+      "gform_field_values",
+      "gform_source_page_number_1",
+      "gform_style_settings",
+      "gform_submission_method",
+      "gform_submit",
+      "gform_target_page_number_1",
+      "gform_theme",
+      "gform_unique_id",
+      "input_8",
+      "is_submit_1",
+      "state_1"
+     ]
+    },
+    {
+     "id": "gform_1",
+     "cls": "",
+     "action": "https://offer.nolteandsons.com/landscaping-2/",
+     "method": "post",
+     "visible": true,
+     "height": 448,
+     "fieldCount": 17,
+     "hidden_fields": [
+      "gform_currency",
+      "gform_field_values",
+      "gform_source_page_number_1",
+      "gform_style_settings",
+      "gform_submission_method",
+      "gform_submit",
+      "gform_target_page_number_1",
+      "gform_theme",
+      "gform_unique_id",
+      "input_8",
+      "is_submit_1",
+      "state_1"
+     ]
+    },
+    {
+     "id": "gform_1",
+     "cls": "",
+     "action": "https://offer.nolteandsons.com/landscaping-2/",
+     "method": "post",
+     "visible": false,
+     "height": 0,
+     "fieldCount": 17,
+     "hidden_fields": [
+      "gform_currency",
+      "gform_field_values",
+      "gform_source_page_number_1",
+      "gform_style_settings",
+      "gform_submission_method",
+      "gform_submit",
+      "gform_target_page_number_1",
+      "gform_theme",
+      "gform_unique_id",
+      "input_8",
+      "is_submit_1",
+      "state_1"
+     ]
+    }
+   ],
+   "duplicate_id_count": 21,
+   "duplicate_ids": [
+    "gform_wrapper_1",
+    "gform_1",
+    "gform_fields_1",
+    "field_1_9",
+    "input_1_9",
+    "gfield_description_1_9",
+    "field_1_1",
+    "input_1_1",
+    "field_1_4",
+    "input_1_4",
+    "field_1_3",
+    "input_1_3",
+    "field_1_7",
+    "input_1_7",
+    "field_1_8",
+    "input_1_8",
+    "gform_submit_button_1",
+    "gform_theme_1",
+    "gform_style_settings_1",
+    "gform_target_page_number_1",
+    "gform_source_page_number_1"
+   ],
+   "total_ids": 123,
+   "trackers": {
+    "gtm": [
+     "GTM-TMVJHR5F"
+    ],
+    "google_ads": [],
+    "ga4": [],
+    "whatconverts": true,
+    "hubspot": false,
+    "callrail": false,
+    "gravity_forms": true,
+    "hubspot_forms": false,
+    "wpforms": false,
+    "elementor_forms": false
+   },
+   "hidden_field_names": [
+    "gform_currency",
+    "gform_field_values",
+    "gform_source_page_number_1",
+    "gform_style_settings",
+    "gform_submission_method",
+    "gform_submit",
+    "gform_target_page_number_1",
+    "gform_theme",
+    "gform_unique_id",
+    "input_8",
+    "is_submit_1",
+    "state_1"
+   ],
+   "attribution_field_presence": {
+    "gclid": false,
+    "gbraid": false,
+    "wbraid": false,
+    "utm": false,
+    "campaign": false,
+    "keyword": false
+   },
+   "live_dom_populated": [
+    {
+     "form": "gform_1",
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value": "sha256:4a1d0c5a9be1d702",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_1",
+     "field": "state_1",
+     "classification": "OPAQUE_TOKEN_possibly_real",
+     "value": "sha256:83f71a2f40892620",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_1",
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value": "sha256:5f16677ac6f8b719",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_1",
+     "field": "state_1",
+     "classification": "OPAQUE_TOKEN_possibly_real",
+     "value": "sha256:83f71a2f40892620",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_1",
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value": "sha256:1ac8c1488d1098dc",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_1",
+     "field": "state_1",
+     "classification": "OPAQUE_TOKEN_possibly_real",
+     "value": "sha256:83f71a2f40892620",
+     "attr_equals_dom": true
+    }
+   ],
+   "attribution_cookies": [],
+   "attribution_storage": [],
+   "dataLayer_present": false,
+   "dataLayer_length": 0,
+   "tel_links": [
+    {
+     "href": "tel:(515) 750-2384",
+     "visible": true
+    },
+    {
+     "href": "tel:(515) 750-2384",
+     "visible": true
+    }
+   ],
+   "network_hosts": [
+    "blob:https://offer.nolteandsons.com/ee98d39a-a077-46c7-9bc1-659d8ed396bf",
+    "cdn-ileeegk.nitrocdn.com",
+    "fonts.gstatic.com",
+    "offer.nolteandsons.com",
+    "to.getnitropack.com"
+   ]
+  },
+  "MASTERGRASS": {
+   "url": "https://offer.mastergrasslawncare.com/landscaping-contractor/",
+   "raw_http_status": 200,
+   "cache_headers": {
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache-enabled": "True",
+    "host-header": "8441280b0c35cbc1147f8ba998a563a7",
+    "x-proxy-cache": "HIT"
+   },
+   "server_html_bytes": 145938,
+   "server_html_populated_inputs": [
+    {
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value_hash": "sha256:dc1b0b97c9081479",
+     "length": 112,
+     "preview": "S3D0nx\u2026"
+    },
+    {
+     "field": "state_1",
+     "classification": "other_value_present",
+     "value_hash": "sha256:ea8f872baeac9e41",
+     "length": 564,
+     "preview": "WyJ7XC\u2026"
+    },
+    {
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value_hash": "sha256:653479ffbaf4e445",
+     "length": 112,
+     "preview": "6siUL8\u2026"
+    },
+    {
+     "field": "state_1",
+     "classification": "other_value_present",
+     "value_hash": "sha256:18ee95606cb05177",
+     "length": 564,
+     "preview": "WyJ7XC\u2026"
+    },
+    {
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value_hash": "sha256:86bc733bd3cfb37a",
+     "length": 112,
+     "preview": "Rr1HXM\u2026"
+    },
+    {
+     "field": "state_1",
+     "classification": "other_value_present",
+     "value_hash": "sha256:18ee95606cb05177",
+     "length": 564,
+     "preview": "WyJ7XC\u2026"
+    }
+   ],
+   "browser_initial_status": 200,
+   "title": "Landscaping Contractor | Master Grass",
+   "h1": [
+    "Landscaping Contractor in Ames, Ankeny & Altoona"
+   ],
+   "form_count": 2,
+   "forms": [
+    {
+     "id": "gform_1",
+     "cls": "",
+     "action": "https://offer.mastergrasslawncare.com/landscaping-contractor/",
+     "method": "post",
+     "visible": true,
+     "height": 461,
+     "fieldCount": 23,
+     "hidden_fields": [
+      "gform_currency",
+      "gform_field_values",
+      "gform_source_page_number_1",
+      "gform_style_settings",
+      "gform_submission_method",
+      "gform_submit",
+      "gform_target_page_number_1",
+      "gform_theme",
+      "gform_unique_id",
+      "input_10",
+      "input_11",
+      "input_12",
+      "input_13",
+      "input_14",
+      "input_15",
+      "input_9",
+      "is_submit_1",
+      "state_1"
+     ]
+    },
+    {
+     "id": "gform_1",
+     "cls": "",
+     "action": "https://offer.mastergrasslawncare.com/landscaping-contractor/",
+     "method": "post",
+     "visible": true,
+     "height": 461,
+     "fieldCount": 23,
+     "hidden_fields": [
+      "gform_currency",
+      "gform_field_values",
+      "gform_source_page_number_1",
+      "gform_style_settings",
+      "gform_submission_method",
+      "gform_submit",
+      "gform_target_page_number_1",
+      "gform_theme",
+      "gform_unique_id",
+      "input_10",
+      "input_11",
+      "input_12",
+      "input_13",
+      "input_14",
+      "input_15",
+      "input_9",
+      "is_submit_1",
+      "state_1"
+     ]
+    }
+   ],
+   "duplicate_id_count": 34,
+   "duplicate_ids": [
+    "gform_wrapper_1",
+    "gform_1",
+    "gform_fields_1",
+    "field_1_16",
+    "input_1_16",
+    "gfield_description_1_16",
+    "field_1_1",
+    "input_1_1",
+    "field_1_4",
+    "input_1_4",
+    "field_1_3",
+    "input_1_3",
+    "field_1_7",
+    "input_1_7",
+    "field_1_9",
+    "input_1_9",
+    "field_1_10",
+    "input_1_10",
+    "field_1_11",
+    "input_1_11",
+    "field_1_12",
+    "input_1_12",
+    "field_1_13",
+    "input_1_13",
+    "field_1_14",
+    "input_1_14",
+    "field_1_15",
+    "input_1_15",
+    "gform_submit_button_1",
+    "gform_theme_1",
+    "gform_style_settings_1",
+    "gform_target_page_number_1",
+    "gform_source_page_number_1",
+    "et-boc"
+   ],
+   "total_ids": 137,
+   "trackers": {
+    "gtm": [
+     "GTM-5M6RJZVK"
+    ],
+    "google_ads": [
+     "AW-11101196502"
+    ],
+    "ga4": [],
+    "whatconverts": true,
+    "hubspot": false,
+    "callrail": false,
+    "gravity_forms": true,
+    "hubspot_forms": false,
+    "wpforms": false,
+    "elementor_forms": false
+   },
+   "hidden_field_names": [
+    "gform_currency",
+    "gform_field_values",
+    "gform_source_page_number_1",
+    "gform_style_settings",
+    "gform_submission_method",
+    "gform_submit",
+    "gform_target_page_number_1",
+    "gform_theme",
+    "gform_unique_id",
+    "input_10",
+    "input_11",
+    "input_12",
+    "input_13",
+    "input_14",
+    "input_15",
+    "input_9",
+    "is_submit_1",
+    "state_1"
+   ],
+   "attribution_field_presence": {
+    "gclid": false,
+    "gbraid": false,
+    "wbraid": false,
+    "utm": false,
+    "campaign": false,
+    "keyword": false
+   },
+   "live_dom_populated": [
+    {
+     "form": "gform_1",
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value": "sha256:dc1b0b97c9081479",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_1",
+     "field": "state_1",
+     "classification": "OPAQUE_TOKEN_possibly_real",
+     "value": "sha256:df0086d30f4a66e1",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_1",
+     "field": "gform_currency",
+     "classification": "other_value_present",
+     "value": "sha256:653479ffbaf4e445",
+     "attr_equals_dom": true
+    },
+    {
+     "form": "gform_1",
+     "field": "state_1",
+     "classification": "OPAQUE_TOKEN_possibly_real",
+     "value": "sha256:df0086d30f4a66e1",
+     "attr_equals_dom": true
+    }
+   ],
+   "attribution_cookies": [
+    {
+     "k": "wc_visitor",
+     "v_hash": "sha256:122fb5448ceef7a6"
+    },
+    {
+     "k": "_gcl_au",
+     "v_hash": "sha256:76130f12a0af39b6"
+    },
+    {
+     "k": "wc_client",
+     "v_hash": "sha256:ea509ddba46e18f2"
+    },
+    {
+     "k": "wc_client_current",
+     "v_hash": "sha256:ea509ddba46e18f2"
+    },
+    {
+     "k": "wc_swap",
+     "v_hash": "sha256:c6df3a274a4be6b1"
+    }
+   ],
+   "attribution_storage": [
+    {
+     "k": "wc_client",
+     "v_hash": "sha256:ea509ddba46e18f2"
+    },
+    {
+     "k": "wc_visitor",
+     "v_hash": "sha256:122fb5448ceef7a6"
+    },
+    {
+     "k": "_gcl_ls",
+     "v_hash": "sha256:59540af319342d95"
+    },
+    {
+     "k": "wc_swap",
+     "v_hash": "sha256:c6df3a274a4be6b1"
+    },
+    {
+     "k": "wc_client_current",
+     "v_hash": "sha256:ea509ddba46e18f2"
+    }
+   ],
+   "dataLayer_present": true,
+   "dataLayer_length": 3,
+   "tel_links": [
+    {
+     "href": "tel:(515)%20310-1321",
+     "visible": true
+    },
+    {
+     "href": "tel:(515) 310-1321",
+     "visible": true
+    },
+    {
+     "href": "tel:(515)",
+     "visible": false
+    }
+   ],
+   "network_hosts": [
+    "ad.doubleclick.net",
+    "blob:https://offer.mastergrasslawncare.com/5e10e61f-ace5-4a41-920a-eeef9e17103e",
+    "fonts.googleapis.com",
+    "fonts.gstatic.com",
+    "googleads.g.doubleclick.net",
+    "offer.mastergrasslawncare.com",
+    "p.ksrndkehqnwntyxlhgto.com",
+    "process.iconnode.com",
+    "s.ksrndkehqnwntyxlhgto.com",
+    "www.google.com",
+    "www.googleadservices.com",
+    "www.googletagmanager.com",
+    "www.gstatic.com"
+   ]
+  }
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "package": "ambient-cooling-heating-KEYWORD-GAS-BOILER-STAGE1-EXACT-ONLY",
+ "version": "2026-08-21-stage1",
+ "priority": "P2",
+ "run_class": "DRAFT + VALIDATE-ONLY. Not executed.",
+ "supersedes": {
+  "E6D25322E35F3E62": "VOID. Negated 'commercial boiler' against landing-page evidence.",
+  "44145A2CE26A811B": "VOID. Superseded for four reasons supplied by Green Marketing: (1) the Gas Boiler landing page still carries the incorrect heading 'Your HVAC Replacement in 3 Simple Steps'; (2) a steam boiler may be GAS-FIRED, so the absence of the word 'steam' from the page does NOT prove steam boiler queries are irrelevant; (3) the absence of installation and replacement pages does NOT conclusively prove Ambient does not offer those services; (4) broader Phrase traffic must not be opened before the template defect is corrected."
+ },
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "campaign_id": "24132507744",
+ "campaign": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+ "ad_group_id": "202339087594",
+ "ad_group": "SKAG | Gas Boiler Repair",
+ "landing_page": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+ "the_single_operation": {
+  "seq": 1,
+  "service": "AdGroupCriterionService (via GoogleAdsService.Mutate)",
+  "operation": "create",
+  "type": "KEYWORD",
+  "text": "boiler repair",
+  "match_type": "EXACT",
+  "status_on_create": "ENABLED",
+  "negative": false,
+  "ad_group": "customers/2401959466/adGroups/202339087594",
+  "why_exact_only": "Exact match confines the keyword to the query 'boiler repair' and its close variants. It cannot reach oil, steam, commercial, industrial, installation, replacement, parts, manual, DIY or jobs queries, because each of those adds a content word that changes meaning and is therefore not a close variant. That containment is what makes the addition safe without opening broader Phrase traffic."
+ },
+ "keywords_preserved_unchanged": [
+  {
+   "criterion_id": "102973796",
+   "text": "gas boiler repair",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "action": "UNCHANGED"
+  },
+  {
+   "criterion_id": "102974196",
+   "text": "gas boiler repair",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "action": "UNCHANGED"
+  }
+ ],
+ "no_negatives_and_why": {
+  "negatives_in_this_package": 0,
+  "reasoning": "Negatives were tested for NECESSITY, not added for activity. With an EXACT-only keyword every problematic query was verified NOT to serve, so no negative would ever fire. Adding them would be inert configuration.",
+  "exact_match_necessity_test": {
+   "oil boiler repair": "does NOT serve",
+   "commercial boiler repair": "does NOT serve",
+   "steam boiler repair": "does NOT serve",
+   "residential boiler repair": "does NOT serve",
+   "boiler installation": "does NOT serve",
+   "boiler replacement": "does NOT serve",
+   "boiler parts": "does NOT serve",
+   "boiler manual": "does NOT serve",
+   "diy boiler repair": "does NOT serve",
+   "boiler repair jobs": "does NOT serve",
+   "water heater repair": "does NOT serve",
+   "boiler repair": "SERVES"
+  },
+  "candidates_deliberately_NOT_added": {
+   "steam boiler": "WITHDRAWN. A steam boiler may be gas-fired, so absence of the word 'steam' from the page is not evidence of irrelevance. No verified client service source was consulted.",
+   "boiler installation": "WITHDRAWN. Absence of an installation page does not prove Ambient does not install boilers. Legacy campaigns in this very account were named 'Gas Boilers Installs' and 'Tankless Boilers', which is affirmative evidence AGAINST negating it.",
+   "boiler replacement": "WITHDRAWN. Same reasoning.",
+   "commercial boiler": "WITHDRAWN. The page states 'Gas boiler repair for homes and businesses'.",
+   "residential boiler": "WITHDRAWN. Core audience.",
+   "industrial boiler": "WITHDRAWN. No verified service source confirms exclusion.",
+   "oil boiler": "WITHDRAWN. No verified service source confirms exclusion; the main site does list oil furnace installations and oil replacement.",
+   "water heater / boiler parts / boiler manual / diy boiler / boiler jobs": "Conflict testing passes for all five, but they are UNNECESSARY under Exact match and are therefore not added. They become candidates again only if a future stage introduces Phrase match."
+  }
+ },
+ "conflict_testing": {
+  "account_level_negative_set_11252984411": {
+   "members": 59,
+   "blocks_candidate": false
+  },
+  "shared_sets_examined": 16,
+  "shared_sets_attached_to_gas_boiler_campaign": "NONE",
+  "campaign_level_negatives_on_the_five": {
+   "count": 0,
+   "blocks_candidate": false
+  },
+  "ad_group_negatives_on_the_five": {
+   "count": 0,
+   "blocks_candidate": false
+  },
+  "verdict": "[boiler repair] EXACT is CLEAR against every negative that can currently reach the Gas Boiler campaign.",
+  "LANDMINE_FLAGGED": {
+   "shared_set": "11813144900 'General List'",
+   "members": 1111,
+   "finding": "This list contains the single-word negatives 'repair' and 'Repair'. It is NOT attached to any of the five campaigns today, so it does not affect this package. If it were ever attached to the five it would block EVERY repair keyword in the account, including ac repair near me, hvac repair near me and gas boiler repair.",
+   "action": "Do not attach this list to the five campaigns. Documented, not modified."
+  },
+  "test_artifact_note": "Shared set 11646241995 is type BRANDS and stores empty keyword text, which produced a false positive in the broad-match containment test. It is not a negative keyword list and is not attached to the five."
+ },
+ "BLOCKING_PRECONDITION": {
+  "defect": "The Gas Boiler landing page renders the H2 'Your HVAC Replacement in 3 Simple Steps'. Verified in a real JavaScript browser on 2026-08-21.",
+  "page_h2_list_observed": [
+   "Common Signs You May Need Gas Boiler Repair",
+   "Request Your Free Gas Boiler Repair Quote Today",
+   "Reliable Gas Boiler Repair Starts With the Right Diagnosis",
+   "One Team for Your Complete Boiler Service",
+   "Recent Gas Boiler Repair Work",
+   "Your HVAC Replacement in 3 Simple Steps  <-- DEFECT",
+   "Frequently Asked Questions About Gas Boiler Repair",
+   "Clear Answers Start With Professional Gas Boiler Repair"
+  ],
+  "required_fix": "Replace with 'Your Gas Boiler Repair in 3 Simple Steps'.",
+  "rule": "THIS KEYWORD MUST NOT BE ENABLED UNTIL THE HEADING IS CORRECTED. Sending broader 'boiler repair' traffic to a page that advertises HVAC Replacement mid-funnel is a message-match failure and a landing-page-experience risk on a campaign whose Quality Score signals are already weak elsewhere in the account.",
+  "note": "The H1 is correct and gas-specific, and one H2 already reads 'One Team for Your Complete Boiler Service', which is broader than gas alone."
+ },
+ "mutation_counts": {
+  "creates": 1,
+  "updates": 0,
+  "removals": 0,
+  "total_mutations": 1,
+  "positive_keywords": 1,
+  "negative_keywords": 0,
+  "phrase_keywords_added": 0,
+  "broad_keywords_added": 0,
+  "account_level_negatives_touched": 0,
+  "shared_lists_touched": 0,
+  "campaigns_touched": 0,
+  "budgets_touched": 0,
+  "ads_touched": 0,
+  "existing_keywords_modified": 0
+ },
+ "expected_impact": "Adds the exact head term at 30 average monthly searches versus the live 'gas boiler repair' at the 10-search floor. Honest scale: the campaign has recorded ZERO impressions to date, so this may produce only a few impressions per week. Incremental cost is bounded by the existing unused $42.76/day budget.",
+ "risk": "LOW. One Exact keyword, contained by match type, in a campaign that currently spends nothing. Fully reversible.",
+ "rollback_plan": "Remove the single created criterion by resource name. 1 mutation.",
+ "readback_verification": [
+  "ASSERT ad group 202339087594 holds exactly 3 positive keywords: [gas boiler repair] EXACT, 'gas boiler repair' PHRASE and the new [boiler repair] EXACT.",
+  "ASSERT the new criterion is EXACT, ENABLED, negative=false.",
+  "ASSERT zero negative keywords exist in the ad group.",
+  "ASSERT account keyword count rose by exactly 1 (6968 -> 6969).",
+  "ASSERT no shared set was attached to any of the five campaigns.",
+  "ASSERT account-level negative set 11252984411 is unchanged at 59 members.",
+  "ASSERT no other ad group or campaign gained a criterion."
+ ],
+ "stage_2_not_proposed": "A Phrase 'boiler repair' keyword is NOT proposed. It would only be reconsidered after the landing-page heading is fixed, after Stage 1 has produced settled impression and search-term data, and after a verified client service source confirms which boiler types and services Ambient does and does not provide.",
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 1,
+  "errors": 0
+ },
+ "drift_assumptions": "Assumes ad group 202339087594 still holds exactly 2 keywords and 0 negatives, and that no shared negative list has been attached to the Gas Boiler campaign.",
+ "plan_fingerprint": "1A0737BCFD1B980D",
+ "VOID": true,
+ "VOID_ON": "2026-08-21",
+ "VOID_REASON": "Superseded by 3D823A10CB3C0B25."
+}

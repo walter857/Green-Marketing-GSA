@@ -1,0 +1,146 @@
+# PLAN-R12 - BUDGET
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# Built 2026-08-31 from the read-only forensic snapshot. NOT APPROVED.
+# Budget is deliberately isolated. It rides along with nothing.
+change_plan:
+  plan_id: PLAN-R12
+  plan_title: Hold both budgets unchanged and record why
+  approval_type: LIVE_CAMPAIGN_BUDGET
+  priority: P2
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 0
+  object_count_total: 0
+  requires_separate_enable_approval: false
+  recommended_approval_order: 12
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  recommendation: NO CHANGE. Hold both budgets exactly as they are.
+
+  current_state_read_2026_08_31_10_21_ET:
+    - campaign_id: "24103511039"
+      campaign_name: Power Washing
+      budget_id: "15764226923"
+      daily_budget_usd: 41.50
+      changed: >-
+        2026-08-31 09:39:41 America/New_York via GOOGLE_ADS_WEB_CLIENT by
+        access@greenmarketingfl.com - forty-two minutes before this audit snapshot
+      previous_value_usd: 333.33
+      previous_change: >-
+        2026-08-26 18:00:31 via GOOGLE_ADS_API (PLAN-I1C, the month-end spend push)
+    - campaign_id: "24145053510"
+      campaign_name: Power Washing #2
+      budget_id: "15802443075"
+      daily_budget_usd: 41.11
+      changed: 2026-08-18 09:34:13 via GOOGLE_ADS_WEB_CLIENT
+
+  combined_daily_budget_usd: 82.61
+
+  a_change_was_made_outside_this_repository: >-
+    The campaign-A budget was cut from $333.33 to $41.50 by hand in the Google Ads
+    UI at 09:39:41 this morning. Nothing in this repository did that, and no plan
+    here authorised it. It is recorded as observed state, not as drift to be
+    corrected. Given that the account had already spent $146.60 by 09:00 today, the
+    change was almost certainly the right instinct - and it is the reason the
+    local record and the live account disagreed until this snapshot.
+
+  why_no_increase:
+    - id: R12-E1
+      evidence: >-
+        Search Lost IS (budget) is 0.00% on 24 of the 30 campaign-days that
+        delivered. The impression-weighted averages are 2.30% and 2.27%, and almost
+        all of that sits on the single day (2026-08-27) when the geo expansion
+        first delivered.
+      conclusion: Budget is not, and has never been, the binding constraint.
+    - id: R12-E2
+      evidence: >-
+        Both campaigns report primary_status with no budget-related reason.
+        Campaign A is ELIGIBLE with an empty primary_status_reasons list; campaign
+        B is LEARNING with BIDDING_STRATEGY_LEARNING. Neither says BUDGET_CONSTRAINED.
+      conclusion: Google itself does not consider these campaigns budget-limited.
+    - id: R12-E3
+      evidence: >-
+        Impression share is already 61.24% and 75.34% impression-weighted. The
+        remaining gap is lost to RANK (35.97% and 20.12%), not to budget.
+      conclusion: >-
+        More budget cannot buy impressions the account is losing on Ad Rank. Only
+        a better Quality Score or a higher bid can, and the bid is already at the
+        market top of page.
+    - id: R12-E4
+      evidence: >-
+        Today, 2026-08-31, the account spent $146.60 by roughly 09:00 on a
+        combined daily budget of $82.61 - about 177% of the whole day allowance
+        before mid-morning, on five clicks from one query in one postal code.
+      conclusion: >-
+        The account is not struggling to spend. It is struggling to spend WELL. An
+        increase today would raise the ceiling on an unbounded price rather than
+        buy more qualified demand.
+    - id: R12-E5
+      evidence: >-
+        Zero conversions on 22 clicks and $713.15. The account has no measured
+        cost per lead, no measured close rate, and client.yaml records
+        average_job_revenue, gross_margin_pct, close_rate_pct, target_cpl,
+        target_cpql and target_cac all as null.
+      conclusion: >-
+        There is no economic basis on which to justify any budget number. Raising
+        spend before a single lead is measured is spending without a denominator.
+    - id: R12-E6
+      evidence: >-
+        The 2026-08-26 lesson, already paid for. Campaign A budget was raised to
+        $333.33 to chase a $2,500 month-end spend target. The effective per-click
+        brake - the 2x daily overdelivery cap - went from $82.22 to $666.66
+        overnight, and the very next billable click cost $82.22, the entire day
+        spend.
+      conclusion: >-
+        In a demand-limited account on uncapped-in-practice Maximize Clicks, the
+        daily budget IS the last brake on per-click price. Raising it removes the
+        brake.
+
+  why_no_decrease_either:
+    - >-
+      $41.50 and $41.11 are already close to the observed run rate on normal days.
+      Cutting further would start losing impressions the account currently wins,
+      and the impression-share data shows there is nothing to gain by it.
+    - >-
+      The problem is price per click, not volume of spend. PLAN-R3 addresses price
+      directly and does so without touching budget.
+
+  the_2500_dollar_question:
+    goal_as_stated_in_the_work_order: 2500 USD for August 2026
+    actual_august_spend_usd: 713.15
+    shortfall_usd: 1786.85
+    shortfall_pct: 71.5
+    verdict: >-
+      NOT ACHIEVABLE AND NO LONGER THE OBJECTIVE. The brief that commissioned this
+      audit demoted the spend goal to secondary and made the primary objective
+      "stop wasting money and generate qualified leads". That is the correct call
+      and this plan endorses it. With one day left in August the arithmetic is
+      closed regardless.
+    what_it_would_have_taken: >-
+      Roughly 61 more clicks at the current $29 effective price, in an account that
+      averages under one billable click per serving day.
+
+  actions: []
+
+  when_to_revisit:
+    trigger: >-
+      Revisit budget ONLY when all three are true: PLAN-R3 has been live for 14
+      days and the lower ceiling is confirmed binding; at least one qualified lead
+      has been verified end to end through PLAN-R1; and Search Lost IS (budget)
+      exceeds 10% on a trailing 7-day window.
+    then: >-
+      Raise campaign A first and only campaign A, in a single step no larger than
+      50%, as its own separately fingerprinted plan. Never as part of another plan.
+
+  risk: NONE - zero mutations.
+  rollback: Not applicable.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    This plan proposes no change. It exists so that the decision NOT to change
+    budget is recorded, evidenced and auditable, and so that no other plan can
+    quietly carry a budget change inside it.

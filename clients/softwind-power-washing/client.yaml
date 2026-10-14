@@ -1,0 +1,287 @@
+# Green Marketing client profile - Softwind Power Washing
+#
+# RULE: every value here is either (a) supplied by the client/owner, (b) read
+# from the live Google Ads account or the live website, or (c) marked UNKNOWN.
+# Nothing is inferred from another client, from a competitor, or from general
+# industry knowledge.
+#
+# Identity VERIFIED read-only 2026-08-25 16:47:57 America/New_York.
+# Profile enriched from the 2026-08-25 read-only audit.
+# Evidence: snapshots/identity-2026-08-25.json, deep-read-2026-08-25.json,
+#           metrics-2026-08-25.json, landing-pages-2026-08-25.json
+
+client:
+  slug: softwind-power-washing
+  business_name: Softwind Powerwashing & Paver Sealing
+  vertical: similar-local-service
+  primary_service: Power Washing
+
+  google_ads:
+    # VERIFIED: customer.id returned exactly 1521725229 on 2026-08-25.
+    child_customer_id: "1521725229"
+    # VERIFIED: customer.descriptive_name returned exactly this string.
+    exact_child_account_name: Softwind Power Washing - Live
+    # VERIFIED read-only 2026-08-25: level-1 manager over this child is
+    # 3373711342 "Green Marketing". This is the MCC, never a child ID.
+    manager_customer_id: "3373711342"
+    must_contain_live_marker: true
+    currency: USD
+    timezone: America/New_York
+    # Read from the account 2026-08-25, recorded as observed state.
+    auto_tagging_enabled: true
+    conversion_tracking_id: "18369652705"
+    conversion_tracking_status: CONVERSION_TRACKING_MANAGED_BY_SELF
+    enhanced_conversions_for_leads_enabled: false
+    account_status: ENABLED
+    # VERIFIED 2026-08-25: the account contains TWO enabled Search campaigns,
+    # not one. Both target the same keyword universe in the same geo.
+    live_campaigns:
+      - id: "24103511039"
+        name: Power Washing
+        created: "2026-08-04 09:22:12"
+        daily_budget: 41.11
+        budget_id: "15764226923"
+      - id: "24145053510"
+        name: Power Washing #2
+        created: "2026-08-18 09:24:13"
+        daily_budget: 41.11
+        budget_id: "15802443075"
+    combined_daily_budget: 82.22
+
+  website:
+    primary_url: https://softwindli.com/services/landscaping/pressure-washing/
+    landing_page_base_url: https://offer.softwindli.com/
+    # Approved landing-page / call-tracking number. VERIFIED present in the
+    # Google Ads call asset 403335872180 and in the tel: links and body copy of
+    # all six offer landing pages.
+    phone_display: "(631) 502-7946"
+    phone_e164: "+16315027946"
+
+  offer:
+    services_in_scope:
+      - Power Washing
+      - Pressure Washing
+      - Residential Pressure Washing
+      - House Washing
+      - Soft Washing
+      - Driveway Pressure Washing
+      - Patio Pressure Washing
+    services_excluded:
+      - Roof Cleaning
+      - Gutter Cleaning
+      - Paver Sealing
+      - Landscaping
+      - Masonry
+      - Painting
+      - Shrink Wrapping
+      - Party Rentals
+      - Lawn Care
+    # VERIFIED on the live landing pages and softwindli.com/contact-us/.
+    verified_usps:
+      - Surface-specific cleaning method chosen for the material
+      - Soft washing for siding, trim and fences
+      - Pressure washing for driveways, patios, walkways, pavers and concrete
+      - Local Long Island service
+    verified_offers:
+      - Free quote / free estimate (present on every offer page and on the client site)
+    unverified_claims_do_not_use:
+      - years in business
+      - review count or star rating
+      - licensed / insured / bonded
+      - warranty or guarantee
+      - response-time promise
+      - any price, discount or promotion
+      - same-day service
+    average_job_revenue: null  # UNKNOWN
+    gross_margin_pct: null     # UNKNOWN
+    close_rate_pct: null       # UNKNOWN
+    target_cpl: null           # UNKNOWN
+    target_cpql: null          # UNKNOWN
+    target_cac: null           # UNKNOWN
+
+  service_area:
+    country_code: US
+    # VERIFIED read-only 2026-08-25 from campaign_criterion on BOTH campaigns.
+    # These are the TARGETED locations, which is NOT the same as a verified
+    # service area. The area the business actually covers is UNKNOWN and must be
+    # confirmed by the client before any geo change.
+    target_type: cities_and_municipalities
+    geo_target_constant_ids:
+      - "1022729"   # Bellmore, NY (City, Nassau)
+      - "1023035"   # Islip, NY (City - the hamlet, ~18k, NOT the Town of Islip)
+      - "1023415"   # Syosset, NY (City, Nassau)
+      - "1023482"   # West Islip, NY (City, Suffolk)
+      - "9051836"   # Dix Hills, NY (City, Suffolk)
+      - "9052792"   # Salisbury, NY (City, Nassau)
+      - "9198508"   # North Hempstead, NY (Municipality/Town, Nassau)
+      - "9214462"   # Babylon, NY (Municipality/Town, Suffolk)
+    cities:
+      - Bellmore, NY
+      - Islip, NY
+      - Syosset, NY
+      - West Islip, NY
+      - Dix Hills, NY
+      - Salisbury, NY
+      - North Hempstead, NY
+      - Babylon, NY
+    postal_codes: []
+    radius:
+      latitude: null
+      longitude: null
+      distance: null
+      unit: MILES
+    exclusions: []              # VERIFIED: no excluded locations on either campaign.
+    location_option: PRESENCE   # VERIFIED; changed from PRESENCE_OR_INTEREST 2026-08-04.
+    delivery_leakage: none      # VERIFIED: targeting_location true on every row.
+    verified_service_area: CONFIRMED
+    verified_service_area_confirmed_on: '2026-08-26'
+    verified_service_area_confirmed_by: Walter Correa
+    verified_service_area_source: >-
+      Direct written confirmation table supplied 2026-08-26. Supersedes the prior
+      UNKNOWN state. Instruction was: target all valid New York locations in the
+      geo-union report, exclude Connecticut, keep Presence, apply to both
+      campaigns, and add no other state or country exclusion without evidence.
+    verified_service_area_locations:
+      # All 16 validated ENABLED against geo_target_constant on 2026-08-26.
+      already_targeted_before_confirmation:
+        - {id: '1022729', name: 'Bellmore,New York,United States', type: City}
+        - {id: '1023035', name: 'Islip,Islip,New York,United States', type: City}
+        - {id: '1023415', name: 'Syosset,New York,United States', type: City}
+        - {id: '1023482', name: 'West Islip,New York,United States', type: City}
+        - {id: '9051836', name: 'Dix Hills,New York,United States', type: City}
+        - {id: '9052792', name: 'Salisbury,New York,United States', type: City}
+        - {id: '9198508', name: 'North Hempstead,New York,United States', type: Municipality}
+        - {id: '9214462', name: 'Babylon,New York,United States', type: Municipality}
+      confirmed_additions:
+        - {id: '1022719', name: 'Bay Shore,New York,United States', type: City}
+        - {id: '1022748', name: 'Brentwood,New York,United States', type: City}
+        - {id: '1023022', name: 'Huntington,New York,United States', type: City}
+        - {id: '9198014', name: 'Oyster Bay,New York,United States', type: Municipality}
+        - {id: '9198487', name: 'Islip,New York,United States', type: Municipality}
+        - {id: '9198728', name: 'Brookhaven,New York,United States', type: Municipality}
+        - {id: '9198814', name: 'Hempstead,New York,United States', type: Municipality}
+        - {id: '9220615', name: 'Smithtown,New York,United States', type: Municipality}
+    verified_location_exclusions:
+      - {id: '21139', name: 'Connecticut,United States', type: State, reach: 5820000}
+    verified_location_exclusions_note: >-
+      Connecticut is the ONLY confirmed exclusion. No other state or country may be
+      excluded without separate evidence and approval.
+    location_setting: >-
+      Presence - people in or regularly in the targeted locations. Verified already
+      in force on both campaigns on 2026-08-26; requires no mutation.
+    verified_service_area_note: >-
+      RESOLVED 2026-08-26. Applied to the account only via PLAN-J, which is drafted
+      and fingerprinted but NOT approved and NOT executed. Until PLAN-J is approved
+      the live account still carries the original 8 targets and zero exclusions.
+    # Landing-page city messaging. This is page copy, NOT a verified service area.
+    landing_page_city_messaging:
+      - Islip, NY
+      - West Islip, NY
+      - Dix Hills, NY
+
+  schedule:
+    timezone: America/New_York
+    # PUBLISHED hours read from https://softwindli.com/contact-us/ on 2026-08-25.
+    published_hours:
+      monday: "08:00-18:00"
+      tuesday: "08:00-18:00"
+      wednesday: "08:00-18:00"
+      thursday: "08:00-18:00"
+      friday: "08:00-18:00"
+      saturday: NOT PUBLISHED
+      sunday: NOT PUBLISHED
+    # LIVE Google Ads ad schedule, VERIFIED read-only on both campaigns. Note it
+    # already runs one day beyond published office hours (Saturday).
+    live_ad_schedule: >-
+      Monday-Saturday 08:00-18:00, 60 of 168 hours. The Sunday daypart was
+      deleted 2026-08-07 16:17:45 and Sunday has zero impressions all time.
+    can_answer_after_hours: null   # UNKNOWN - NEEDS INTERNAL CONFIRMATION.
+    after_hours_note: >-
+      Schedule expansion to evenings and Sunday is recommended for FORM capture.
+      Whether (631) 502-7946 is answered outside Mon-Fri 8-6, and the callback
+      commitment for an after-hours form lead, are both unconfirmed.
+    windows: []
+
+  conversions:
+    # VERIFIED read-only 2026-08-25. Campaign-specific goals on BOTH campaigns
+    # make exactly these three categories biddable; GET_DIRECTIONS is present in
+    # the goal table but NOT biddable on either campaign.
+    primary:
+      - id: "7708725995"
+        name: Softwind Power Washing | Submission Lead Form
+        type: WEBPAGE
+        category: SUBMIT_LEAD_FORM
+        counting: ONE_PER_CLICK
+        click_lookback_days: 90
+      - id: "7708765130"
+        name: Softwind Power Washing | Website Phone Call Lead
+        type: WEBSITE_CALL
+        category: PHONE_CALL_LEAD
+        counting: ONE_PER_CLICK
+        click_lookback_days: 30
+      - id: "7711699090"
+        name: Softwind Power Washing | Call Asset Lead
+        type: AD_CALL
+        category: PHONE_CALL_LEAD
+        counting: ONE_PER_CLICK
+        click_lookback_days: 30
+    secondary:
+      # FINDING: this is primary_for_goal true at ACCOUNT level with
+      # MANY_PER_CLICK counting. Contained today only because both campaigns
+      # override with campaign-specific goals. Should be demoted.
+      - id: "7713188607"
+        name: Local actions - Directions
+        category: GET_DIRECTIONS
+        counting: MANY_PER_CLICK
+        finding: incorrectly primary_for_goal at account level
+    call_minimum_seconds: 60   # VERIFIED on both call actions.
+    conversion_value_finding: >-
+      All three lead actions use default_value 0.0 with always_use_default_value
+      true. Conversion value is structurally always zero, so ROAS and profit
+      reporting are impossible until client economics are supplied.
+    tracking_verified: false
+    tracking_verified_note: >-
+      ZERO conversions recorded all time on 6 total clicks. That sample proves
+      nothing either way, so tracking is UNVERIFIED, not proven broken. An
+      end-to-end test requires separate approval before any Smart Bidding change.
+    crm_stage_mapping:
+      lead: ""
+      qualified: ""
+      sold: ""
+    offline_route: DATA_MANAGER_API
+
+  integrations:
+    # OBSERVED in a real browser on the live pages 2026-08-25. The presence of a
+    # tag is not proof that it is correctly configured or that it fires.
+    crm: ""                    # UNKNOWN
+    call_tracking: WhatConverts
+    analytics: GA4 G-D4BZM40RYD
+    tag_manager: GTM-P3LD97NN
+    click_fraud: ClickCease
+    social_pixel: Facebook Pixel
+    google_ads_tags_on_page:
+      - AW-18369652705   # correct - this account
+      - AW-17878095007   # FINDING: a DIFFERENT Google Ads account. Owner UNKNOWN.
+    speed_to_lead: ""          # UNKNOWN
+    review_url: https://softwindli.com/reviews/
+    review_finding: >-
+      The reviews page presents a HAPPY / NEUTRAL / POOR selector before routing
+      reviewers. config/agency.yaml sets review_collection.prohibit_review_gating
+      true, and Google review policy also prohibits gating. This is on the client
+      site, not in the Ads account, and is raised for the client's decision.
+    form_webhook_env_key: CRM_WEBHOOK_URL
+    untracked_phone_on_main_site: "(631) 502-5402"
+    untracked_phone_note: >-
+      softwindli.com pages display (631) 502-5402, not the tracked
+      (631) 502-7946. All sitelinks point at those pages, so a call generated by
+      a sitelink click is invisible to Google Ads and to WhatConverts.
+
+  permissions:
+    approvers:
+      - name: Walter Correa
+        email: access@greenmarketing.com
+    # READ-ONLY work order. Every write gate is closed.
+    allow_create_paused: false
+    allow_enable: false
+    allow_budget_changes: false
+    allow_deletions: false

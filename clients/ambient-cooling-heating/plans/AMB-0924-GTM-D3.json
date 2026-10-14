@@ -1,0 +1,134 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "plan_name": "AMB-0924-GTM-D3",
+ "built_local": "2026-09-24",
+ "version": "v4",
+ "live_version_before": 15,
+ "rollback": "publish the previous container version (one click in GTM Versions)",
+ "approval_class": "gtm-workspace-build-unpublished + gated ga4-rule-modification",
+ "gtm": {
+  "account_id": "6250987248",
+  "container_id": "196198182",
+  "public_id": "GTM-PQTPQ436",
+  "container_name": "offer.ambientcoolingandheating.com",
+  "workspace": "NEW workspace 'GM D3 thank-you gating 2026-09-24' (default workspace 17 untouched)",
+  "versions_created": 0,
+  "publishes": 0
+ },
+ "google_ads_api_mutations": 0,
+ "objects": [
+  {
+   "step": 1,
+   "action": "CREATE",
+   "kind": "Custom HTML tag",
+   "name": "GM - GF submit token (set)",
+   "trigger": "All Pages (Page View)",
+   "html": "<script>\n(function () {\n  if (window.__gmGfSubmitHooked) return;\n  window.__gmGfSubmitHooked = true;\n  function isQA(f) {\n    try {\n      var em = ((f.querySelector('input[type=email]') || {}).value || '').trim().toLowerCase();\n      if (em === 'walter@greenmarketingfl.com') return true;\n      var txt = [].map.call(f.querySelectorAll('input[type=text], textarea'), function (e) { return e.value; }).join(' ');\n      return /test\\s*[-\u2013\u2014]\\s*do not dispatch/i.test(txt);\n    } catch (x) { return false; }\n  }\n  function newToken(f) {\n    return { id: 'gm-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10),\n             t: Date.now(), form: f.id, qa: isQA(f) };\n  }\n  function errCount() {\n    return document.querySelectorAll('.gform_validation_errors, .gfield_error').length;\n  }\n  // Gravity Forms 2.9 validates in the browser and then submits without a submit event,\n  // so the token is set on the submit-button click (Enter also fires this click).\n  document.addEventListener('click', function (e) {\n    var b = e.target && e.target.closest && e.target.closest('button[type=submit], input[type=submit], .gform_button');\n    var f = b && b.closest && b.closest('form');\n    if (!f || !f.id || !/^gform_\\d+$/.test(f.id)) return;\n    var before = errCount(), tok = newToken(f);\n    try { sessionStorage.setItem('gm_gf_submit', JSON.stringify(tok)); } catch (x) {}\n    // still on the page with MORE errors than before: browser-side validation failed\n    setTimeout(function () {\n      if (errCount() > before) {\n        try {\n          var cur = JSON.parse(sessionStorage.getItem('gm_gf_submit') || 'null');\n          if (cur && cur.id === tok.id) sessionStorage.removeItem('gm_gf_submit');\n        } catch (x) {}\n      }\n    }, 1500);\n  }, true);\n  // any native submit path still gets a token\n  document.addEventListener('submit', function (e) {\n    var f = e.target;\n    if (!f || !f.id || !/^gform_\\d+$/.test(f.id)) return;\n    try { sessionStorage.setItem('gm_gf_submit', JSON.stringify(newToken(f))); } catch (x) {}\n  }, true);\n  // a failed server-side validation reloads the landing page with errors: drop the token\n  function dropOnError() {\n    if (errCount() > 0) { try { sessionStorage.removeItem('gm_gf_submit'); } catch (x) {} }\n  }\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', dropOnError);\n  else dropOnError();\n})();\n</script>",
+   "support_document_write": false
+  },
+  {
+   "step": 2,
+   "action": "CREATE",
+   "kind": "Custom JavaScript variable",
+   "name": "GM - GF submit token",
+   "code": "function () {\n  try {\n    var v = JSON.parse(sessionStorage.getItem('gm_gf_submit') || 'null');\n    if (!v || !v.id || (Date.now() - v.t) > 30 * 60 * 1000) return undefined;\n    // Confirmed success only: this page was reached by a fresh navigation that went through\n    // the server redirect Gravity Forms sends after a successful POST, referred by a page on\n    // this site. Direct visits, refreshes, back/forward and failed attempts all fail this.\n    var n = (window.performance && performance.getEntriesByType) ? performance.getEntriesByType('navigation')[0] : null;\n    var navType = n ? n.type : ((performance.navigation && performance.navigation.type === 0) ? 'navigate' : 'other');\n    var redirects = n ? n.redirectCount : (performance.navigation ? performance.navigation.redirectCount : 0);\n    if (navType !== 'navigate' || !(redirects > 0)) return undefined;\n    var ref = document.referrer || '';\n    if (!ref || ref.indexOf('//' + location.hostname + '/') === -1 || /thank-you/.test(ref)) return undefined;\n    // QA submissions never reach Google Ads, Microsoft or GA4 outside GTM Preview\n    if (v.qa && !{{Debug Mode}}) return undefined;\n    return v.id;\n  } catch (x) { return undefined; }\n}"
+  },
+  {
+   "step": 3,
+   "action": "MODIFY",
+   "kind": "Trigger",
+   "name": "Form - Thank You - Conversions",
+   "from": "Page View; Page URL contains thank-you",
+   "to": "Page View; Page URL contains thank-you AND {{GM - GF submit token}} matches RegEx ^gm-"
+  },
+  {
+   "step": 4,
+   "action": "MODIFY",
+   "kind": "Google Ads Conversion Tracking tag",
+   "name": "GA - Form Submission Conversion",
+   "field": "Transaction ID",
+   "from": "(empty)",
+   "to": "{{GM - GF submit token}}",
+   "unchanged": [
+    "Conversion ID 11155434808",
+    "Conversion Label GeFgCMmsn9MZELjaqccp",
+    "trigger (now gated by step 3)"
+   ]
+  },
+  {
+   "step": 5,
+   "action": "NO CHANGE",
+   "kind": "Microsoft UET tag",
+   "name": "GA - Form Submission Conversion(Microsoft UET)",
+   "note": "shares the trigger, so step 3 gates it too"
+  },
+  {
+   "step": 6,
+   "action": "CREATE",
+   "kind": "Trigger",
+   "name": "GM - Thank You - Window Loaded",
+   "definition": "Window Loaded; Page URL contains thank-you"
+  },
+  {
+   "step": 7,
+   "action": "CREATE",
+   "kind": "Custom HTML tag",
+   "name": "GM - GF submit token (clear)",
+   "trigger": "GM - Thank You - Window Loaded",
+   "html": "<script>\ntry { sessionStorage.removeItem('gm_gf_submit'); } catch (x) {}\n</script>"
+  },
+  {
+   "step": 9,
+   "action": "ENABLE",
+   "kind": "Built-in variable",
+   "name": "Debug Mode"
+  },
+  {
+   "step": 10,
+   "action": "CREATE",
+   "kind": "Trigger",
+   "name": "GM - Offer pages - DOM Ready",
+   "definition": "DOM Ready; Page Hostname equals offer.ambientcoolingandheating.com"
+  },
+  {
+   "step": 11,
+   "action": "CREATE",
+   "kind": "Custom HTML tag",
+   "name": "GM - Offer phone consistency",
+   "trigger": "GM - Offer pages - DOM Ready",
+   "html": "<script>\n(function () {\n  if (window.__gmPhoneFix) return;\n  window.__gmPhoneFix = true;\n  // Offer pages are paid destinations: the number shown must be the number dialled,\n  // (410) 705-6354. The theme header prints the destination line 410-761-0932, which the\n  // all-traffic WhatConverts pool then rewrites to 410-914-1456. Bridge until the markup\n  // is fixed; once it is, this tag finds nothing to change.\n  var SHOW = '(410) 705-6354';\n  var WRONG = /\\(?\\b410\\)?[\\s.\\-]?(?:761[\\s.\\-]?0932|914[\\s.\\-]?1456)\\b/g;\n  function fixText(node) {\n    if (node && node.nodeValue) {\n      WRONG.lastIndex = 0;\n      if (WRONG.test(node.nodeValue)) { WRONG.lastIndex = 0; node.nodeValue = node.nodeValue.replace(WRONG, SHOW); }\n    }\n  }\n  function fixTree(root) {\n    if (!root) return;\n    if (root.nodeType === 3) { fixText(root); return; }\n    if (root.nodeType !== 1) return;\n    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false), n;\n    while ((n = w.nextNode())) fixText(n);\n    var links = root.querySelectorAll('a[href^=\"tel:\"]');\n    for (var i = 0; i < links.length; i++) {\n      var d = decodeURIComponent(links[i].getAttribute('href')).replace(/\\D/g, '').slice(-10);\n      if (d === '4107610932' || d === '4109141456') links[i].setAttribute('href', 'tel:+14107056354');\n    }\n  }\n  fixTree(document.body);\n  new MutationObserver(function (ms) {\n    ms.forEach(function (m) {\n      if (m.type === 'characterData') fixText(m.target);\n      else for (var i = 0; i < m.addedNodes.length; i++) fixTree(m.addedNodes[i]);\n    });\n  }).observe(document.body, { subtree: true, childList: true, characterData: true });\n})();\n</script>"
+  },
+  {
+   "step": 8,
+   "action": "MODIFY",
+   "kind": "Google Tag",
+   "name": "Google Tag G-9X9ZHNCRWF",
+   "field": "Configuration parameter",
+   "add": {
+    "gm_form_submit": "{{GM - GF submit token}}"
+   }
+  }
+ ],
+ "ga4_after_publish_only": {
+  "property": "364077190",
+  "stream": "Ambient Cooling and Heating (G-9X9ZHNCRWF)",
+  "custom_event": "form_submission",
+  "from": "event_name equals page_view AND page_location contains thank-you",
+  "to": "event_name equals page_view AND page_location contains thank-you AND gm_form_submit starts with gm-",
+  "order": "only AFTER the GTM version is published and the parameter is seen in DebugView; changing it first would drop every real form_submission"
+ },
+ "publication_gate": {
+  "requires": "separate explicit approval after Preview QA",
+  "preview_qa": [
+   "direct visit to /thank-you/: no request with label=GeFgCMmsn9MZELjaqccp, no UET conversion, page_view has no gm_form_submit",
+   "one labelled QA submission on an offer page: exactly one Ads conversion carrying transaction_id gm-..., one UET conversion, page_view carries gm_form_submit",
+   "refresh the thank-you page: nothing fires again",
+   "failed submission, browser-side (a required field empty) and server-side: landing page reloads with errors, the token is removed, no conversion fires; the corrected resubmission fires exactly once",
+   "main-site gform_2 path cannot be proven until the NitroPack repair; same code"
+  ]
+ },
+ "effect": "6885463625 stops counting refreshes and direct thank-you visits. Real submissions keep counting. WhatConverts capture is untouched.",
+ "operation_count": 10,
+ "fingerprint": "B3EB2A137897"
+}

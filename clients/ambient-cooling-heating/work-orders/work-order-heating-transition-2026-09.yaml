@@ -1,0 +1,194 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  supersedes: work-orders/work-order-heating-expansion-2026-09.yaml
+  supersedes_reason: >-
+    That work order scoped nine heating ad groups including Oil and Tankless services, and
+    retained active residential cooling budgets. The owner has replaced it with a full
+    heating transition: 31 heating services across seven campaigns, cooling reduced to $0,
+    and no Oil or Tankless service in scope. The earlier work order stays on disk as the
+    record of what it authorised; nothing from it is executed.
+  account:
+    # IDENTITY GATE RE-PASSED 2026-09-21, fresh read-only lookup, 10/10 checks, re-run at
+    # the start of every script in this pass.
+    # Evidence: snapshots/full-inventory-2026-09-21b.json
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+    time_zone: "America/New_York"
+    currency: "USD"
+    manager_never_used_as_client_id: true
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Heating Repair
+    related_services:
+      - Furnace Repair
+      - Furnace Replacement
+      - Furnace Installation
+      - Furnace Maintenance
+      - Furnace Tune-Up
+      - Heat Pump Repair
+      - Heat Pump Replacement
+      - Heat Pump Installation
+      - Heat Pump Maintenance
+      - Boiler Repair
+      - Boiler Replacement
+      - Boiler Installation
+      - Boiler Maintenance
+      - Heating Replacement
+      - Heating Installation
+      - Heating Maintenance
+      - Heating Tune-Up
+      - Emergency Heating Repair
+      - No Heat Repair
+      - Thermostat Repair
+      - Thermostat Replacement
+      - Smart Thermostat Installation
+      - Ductless Heating Repair
+      - Ductless Heating Installation
+      - Gas Furnace Repair
+      - Electric Furnace Repair
+      - Heating System Inspection
+      - Heating System Replacement
+      - Heating System Installation
+      - Geothermal Heat Pump
+  task:
+    type: campaign-build
+    mode: create-paused
+    request: >-
+      Full heating transition. Build seven Search campaigns carrying 30 SKAG-style ad groups
+      that cover all 31 approved heating services plus the retained Gas Boiler Repair ad
+      group. Reallocate the entire active budget from residential cooling into heating at no
+      more than $325/day. Everything is created PAUSED. Cooling is NOT paused during the
+      build. Cooling pauses only after heating is enabled and proven able to serve, under a
+      separate approval.
+    date_range: >-
+      CURRENT AS AT 2026-09-21. 2026-09-21 is PARTIAL and is never mixed into a settled
+      comparison. September MTD read live = $1,746.40 across 20 settled calendar days.
+      Windows: all-time account history 2019-01-01 onward; all-time search terms
+      2019-01-01..2026-09-21; CPC regime split at 2026-09-04 16:56 America/New_York.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  owner_decision:
+    recorded: "2026-09-21"
+    strategy: "Full heating transition with residential cooling pause"
+    services_in_advertising_scope: 31
+    hard_monthly_cap_usd: 10000
+    max_enabled_daily_usd: 325.00
+    absolute_daily_ceiling_usd: 328.94
+    cooling_receives_after_transition_usd: 0
+    cap_may_not_be_raised: true
+    approves_strategy_and_service_scope: true
+    approves_a_mutation_plan: false
+    claims_NOT_verified_by_this_instruction:
+      # The instruction states these are NOT verified by it and must be independently
+      # verified before appearing in any ad or asset. No drafted RSA uses any of them.
+      - "24/7 availability"
+      - "Emergency dispatch"
+      - "Same-day service"
+      - "Brands serviced"
+      - "Pricing"
+      - "Financing"
+      - "Free estimates"
+      - "Licensing"
+      - "Guarantees"
+      - "Response times"
+  superseded_never_execute:
+    - plan: AMB-0921-HEAT-EXPAND-1
+      fingerprint: 20A73EEA3023
+      reason: "Nine ad groups only; includes Oil and Tankless, both out of scope; retains
+        cooling budgets."
+    - plan: AMB-0921-BUDGET-1
+      fingerprint: 6C665894E30D
+      reason: "Allocation keeps residential cooling funded."
+    - plan: AMB-0921-BID-1
+      fingerprint: B520C42F2007
+      reason: "Ceilings cover only two campaigns and do not match the seven-campaign
+        structure."
+  already_executed_do_not_replay:
+    plans:
+      - plan: AMB-0917-HEAT-CREATE-1
+        fingerprint: 7DE31D6B6A88
+        state: EXECUTED
+      - plan: AMB-0918-BUDGET-1
+        fingerprint: 39097845F5F4
+        state: EXECUTED
+      - plan: AMB-0918-CONV-1
+        fingerprint: A3370F96FA6E
+        state: EXECUTED
+    resources_reused_not_recreated:
+      campaigns:
+        "24257819463": "Campaign 1 - Heating & Furnace Repair"
+        "24257819466": "Campaign 3 - Heating & Furnace Install & Replace"
+        "24132507744": "Campaign 4 - Boiler Services"
+      ad_groups:
+        "199797580706": "SKAG | Furnace Repair - reused, 2 keywords moved out to the new
+          Gas Furnace Repair SKAG"
+        "199797580746": "SKAG | Mini Split Installation - RENAMED to SKAG | Ductless
+          Heating Installation"
+        "202339087594": "SKAG | Gas Boiler Repair - reused as the retained extra ad group"
+      assets:
+        call: "407995613637"
+        business_name: "80516971145"
+        callouts: "422477374526, 422577760603, 422577771364, 422577777430, 422577777442"
+        sitelinks: "422577777457, 422577771382, 422477374559"
+  inputs:
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    location_targets_verified: 75
+    location_option: PRESENCE
+    hard_monthly_cap_usd: 10000
+    max_combined_enabled_daily_usd: 328.94
+    working_target_daily_usd: 325.00
+    cap_basis: "daily x 30.4, never x 30"
+    current_combined_enabled_daily_usd: 237.00
+    heating_funded_by_reallocation_only: true
+    incremental_budget_added_usd: 0
+    shared_budgets_used: false
+    primary_conversion_goal: "unique qualified residential heating lead (form or call)"
+    # CLIENT CPL REQUIREMENT, recorded 2026-09-30 (explicit Green Marketing instruction in the
+    # working session). Mirrors client.yaml offer.target_cpl / offer.cpl_ceiling / offer.cpl_policy.
+    target_cpl_usd: 280
+    cpl_ceiling_usd: 350
+    cpl_requirement_source: "Explicit Green Marketing instruction in the Claude Code working session"
+    cpl_requirement_recorded_on: "2026-09-30"
+    cpl_definition: "all ad spend in scope and period / unique genuine paid leads (click-ID or matched Google call record); QA, spam, wrong numbers, duplicates and non-paid channels excluded"
+    spending_limits_are_maximums_not_targets: true
+    cpl_controls_reference: reports/ambient-cooling-heating/2026-09-30b-cpl-policy-revision.md
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-expansion-2026-09.yaml
+  search_settings_required:
+    network: "Google Search only"
+    search_partners: false
+    display: false
+    performance_max: false
+    ai_max: false
+    dsa: false
+    final_url_expansion: false
+    automatically_created_assets: false
+    broad_match_expansion: false
+    geo: "PRESENCE / PRESENCE"
+    match_types: ["PHRASE", "EXACT"]
+    schedule: "Mon-Fri 08:00-20:00 + Sat 08:00-13:00 America/New_York, 6 rows"
+  commercial_hvac_installation:
+    in_cooling_pause_scope: false
+    campaign_id: "24132507747"
+    ad_group_id: "199748801029"
+    note: >-
+      Campaign 24132507747 carries BOTH the residential SKAG | HVAC Installation ad group
+      and SKAG | Commercial HVAC Installation. The pause is taken at AD GROUP level so the
+      commercial service is not stopped. The campaign stays ENABLED at a $20/day holding
+      allocation inside the $325 total. Verified 2026-09-21: commercial ad group ENABLED,
+      2 keywords ELIGIBLE, 2 ads APPROVED but BOTH PAUSED, destination live at HTTP 200,
+      all-time delivery 0 impressions / $0.00.
+  launch_authorized: false
+  enablement_authorized: false
+  cooling_pause_authorized: false
+  website_changes_authorized: false
+  landing_page_packages_authorized: false
+  approval_owner: Green Marketing

@@ -1,0 +1,366 @@
+{
+ "read_local": "2026-09-10T00:43:09.034738-04:00",
+ "comp1_readback": {
+  "24132507747~2425986330221": {
+   "text": "maryland mechanical heating & cooling",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "negative": true,
+   "type": "KEYWORD",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~2425986330221",
+   "campaign": "24132507747"
+  },
+  "24132507747~922383112306": {
+   "text": "arundel heating and cooling maryland",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "negative": true,
+   "type": "KEYWORD",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~922383112306",
+   "campaign": "24132507747"
+  },
+  "24132507747~335741381439": {
+   "text": "arundel cooling and heating reviews",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "negative": true,
+   "type": "KEYWORD",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~335741381439",
+   "campaign": "24132507747"
+  }
+ },
+ "negative_counts": {
+  "before": {
+   "AC Repair": 1136,
+   "Gas Boiler Repair": 1132,
+   "HVAC Installation": 1435,
+   "HVAC Repair": 1138,
+   "HVAC Replacement": 1319
+  },
+  "after": {
+   "AC Repair": 1135,
+   "HVAC Installation": 1437,
+   "HVAC Replacement": 1318,
+   "Gas Boiler Repair": 1131,
+   "HVAC Repair": 1137
+  },
+  "expected": {
+   "AC Repair": 1135,
+   "Gas Boiler Repair": 1131,
+   "HVAC Installation": 1437,
+   "HVAC Repair": 1137,
+   "HVAC Replacement": 1318
+  }
+ },
+ "ads_readback": [
+  {
+   "camp": "24132507741",
+   "ag": "202339087834",
+   "ad": "820900825416",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "strength": "AVERAGE",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/ac-repair/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507741",
+   "ag": "202339087834",
+   "ad": "820900825419",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "strength": "AVERAGE",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/ac-repair/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507741",
+   "ag": "202339087874",
+   "ad": "820900825422",
+   "status": "ENABLED",
+   "approval": "AREA_OF_INTEREST_ONLY",
+   "strength": "AVERAGE",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507741",
+   "ag": "202339087874",
+   "ad": "820900825425",
+   "status": "ENABLED",
+   "approval": "AREA_OF_INTEREST_ONLY",
+   "strength": "POOR",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507744",
+   "ag": "202339087594",
+   "ad": "820900825428",
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "strength": "EXCELLENT",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507744",
+   "ag": "202339087594",
+   "ad": "820900825431",
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "strength": "EXCELLENT",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507747",
+   "ag": "202339087634",
+   "ad": "820900825434",
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "strength": "POOR",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-installation/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507747",
+   "ag": "202339087634",
+   "ad": "820900825437",
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "strength": "EXCELLENT",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-installation/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507750",
+   "ag": "202339087674",
+   "ad": "820900825560",
+   "status": "PAUSED",
+   "approval": "APPROVED",
+   "strength": "POOR",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-repair/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507750",
+   "ag": "202339087674",
+   "ad": "820900825563",
+   "status": "PAUSED",
+   "approval": "APPROVED",
+   "strength": "AVERAGE",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-repair/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507753",
+   "ag": "200159223798",
+   "ad": "820944944368",
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "strength": "POOR",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507753",
+   "ag": "200159223798",
+   "ad": "820944944371",
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "strength": "POOR",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507747",
+   "ag": "202339087634",
+   "ad": "821319509197",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "strength": "POOR",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-installation/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507747",
+   "ag": "202339087634",
+   "ad": "821319509200",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "strength": "EXCELLENT",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-installation/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507753",
+   "ag": "200159223798",
+   "ad": "821319509203",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "strength": "GOOD",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507753",
+   "ag": "200159223798",
+   "ad": "821319509206",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "strength": "EXCELLENT",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507744",
+   "ag": "202339087594",
+   "ad": "821319509209",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "strength": "EXCELLENT",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507744",
+   "ag": "202339087594",
+   "ad": "821319509212",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "strength": "EXCELLENT",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507750",
+   "ag": "202339087674",
+   "ad": "821714108336",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "strength": "EXCELLENT",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-repair/"
+   ],
+   "n_headlines": 15
+  },
+  {
+   "camp": "24132507750",
+   "ag": "202339087674",
+   "ad": "821714108339",
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "strength": "EXCELLENT",
+   "urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-repair/"
+   ],
+   "n_headlines": 15
+  }
+ ],
+ "savage_readback": {
+  "remaining_savage_negatives_on_five": 0,
+  "savage_geo_targets": 5,
+  "geo_total": 375,
+  "account_set_members": 272
+ },
+ "after_state": {
+  "campaigns_non_removed": 23,
+  "campaigns_enabled": 5,
+  "ad_groups_non_removed": 68,
+  "ad_schedules_on_five": 30,
+  "ip_blocks": 2796,
+  "ip_blocks_on_five": 0,
+  "shared_sets": 17,
+  "conversion_actions": 16,
+  "shared_sets_attached_to_five": 0,
+  "live_positive_keywords": 10,
+  "live_keywords_eligible": 10,
+  "ceilings": {
+   "AC Repair": {
+    "ceiling": 25000000,
+    "bidding": "TARGET_SPEND",
+    "status": "ENABLED"
+   },
+   "Gas Boiler Repair": {
+    "ceiling": 0,
+    "bidding": "TARGET_SPEND",
+    "status": "ENABLED"
+   },
+   "HVAC Installation": {
+    "ceiling": 30000000,
+    "bidding": "TARGET_SPEND",
+    "status": "ENABLED"
+   },
+   "HVAC Repair": {
+    "ceiling": 25000000,
+    "bidding": "TARGET_SPEND",
+    "status": "ENABLED"
+   },
+   "HVAC Replacement": {
+    "ceiling": 0,
+    "bidding": "TARGET_SPEND",
+    "status": "ENABLED"
+   }
+  },
+  "five_budgets": {
+   "15787409435": {
+    "micros": 141450000,
+    "shared": false
+   },
+   "15787409438": {
+    "micros": 42760000,
+    "shared": false
+   },
+   "15787409441": {
+    "micros": 176150000,
+    "shared": false
+   },
+   "15787409444": {
+    "micros": 78950000,
+    "shared": false
+   },
+   "15787409447": {
+    "micros": 26320000,
+    "shared": false
+   }
+  }
+ },
+ "fails": []
+}

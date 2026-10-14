@@ -1,0 +1,89 @@
+# PLAN-R7A1-GTM - POWER WASHING GTM FORM-MEASUREMENT REPAIR
+#
+# STATUS: BLOCKED - NO GTM CREDENTIAL. NOT APPROVED. DO NOT EXECUTE.
+# NO FINGERPRINT IS GENERATED. See fingerprint_withheld_because.
+
+change_plan:
+  plan_id: PLAN-R7A1-GTM
+  plan_title: Power Washing GTM form-measurement repair
+  approval_type: GTM_CONFIGURATION
+  priority: P0
+  approval_status: NOT APPROVED
+  execution_status: 'BLOCKED - NO GTM CREDENTIAL'
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    exact_service: Power Washing
+    gtm_container_public_id: GTM-P3LD97NN
+
+  counts:
+    executable_action_count: 0
+    object_count: 0
+    google_ads_mutation_count: 0
+    gtm_mutation_count: 0
+
+  fingerprint: null
+  fingerprint_withheld_because: >-
+    Rule 18 forbids fingerprinting a plan with placeholder IDs, unknown current values, or zero
+    executable actions. Every action below needs an exact GTM tag ID, trigger ID, variable ID
+    and current value, and none can be read.
+
+  blocking_access_finding:
+    claim_in_brief: 'GOOGLE TAG MANAGER: AUTHENTICATED ACCESS AVAILABLE'
+    verified_reality: 'NOT AVAILABLE'
+    evidence:
+      - >-
+        The Google OAuth refresh token in .env returns exactly one granted scope on refresh:
+        https://www.googleapis.com/auth/adwords. There is no tagmanager or
+        tagmanager.readonly scope.
+      - No separate GTM service-account, API key or OAuth credential exists in .env.
+      - No stored browser profile, cookie jar or authenticated session exists on this machine.
+      - >-
+        CLAUDE.md forbids automatically reusing or broadening the Google Ads OAuth refresh
+        token, so minting a Tag Manager scope from it is not permitted even if it were possible.
+    unblock_requirement: >-
+      A Tag Manager OAuth credential with tagmanager.readonly, or an exported container JSON,
+      or a read-only GTM user invitation to an account Green Marketing controls.
+
+  intended_actions_when_unblocked:
+    - id: R7A1-1
+      intent: >-
+        Repoint the Power Washing form conversion trigger from the /thank-you/ page path to the
+        verified success event gm_power_washing_form_success delivered by DEV-R7A3-04.
+      why: >-
+        PROVEN 2026-09-02 - a bare visit to /thank-you/ with no form submission fires
+        en=conversion to pagead/conversion/18369652705 and pagead/1p-conversion/18369652705.
+      preserve: 'AW-18369652705, label FddkCOul59scEOHPqrdE, Conversion Linker, consent mode'
+      needs_before_it_can_be_written: 'exact tag ID, trigger ID, current trigger conditions'
+      depends_on: DEV-R7A3-04
+    - id: R7A1-2
+      intent: 'Add trigger exceptions so refresh, back navigation and direct visits cannot re-fire.'
+      needs_before_it_can_be_written: exact trigger and variable IDs
+    - id: R7A1-3
+      intent: >-
+        Confirm the deployed conversion label really is FddkCOul59scEOHPqrdE by reading the tag
+        configuration, since the outbound request carries it in an encoded payload rather than a
+        visible label= parameter.
+      needs_before_it_can_be_written: read access to the tag
+    - id: R7A1-4
+      intent: >-
+        Establish whether process.iconnode.com is a GTM Custom HTML tag. It POSTs on every page
+        yet has ZERO occurrences in the rendered source, which is consistent with GTM injection.
+      needs_before_it_can_be_written: container read
+      note: 'Investigation only - no removal before DEV-R7A3-06 establishes ownership.'
+    - id: R7A1-5
+      intent: >-
+        Establish whether AW-17878095007 and AW-18369652705 are GTM tags or Google tag linked
+        destinations. This determines whether sibling scoping is a GTM change or a site change.
+      needs_before_it_can_be_written: container read
+      note: 'Any change to AW-17878095007 belongs to PLAN-R7A4 and needs sibling-account approval.'
+
+  explicitly_excluded:
+    - WordPress code changes
+    - Gravity Forms embed changes
+    - WhatConverts changes
+    - Sibling-account tag changes
+    - iconnode changes while authorization is unknown
+    - Landing-page copy
+    - Google Ads campaign changes
+  approval_owner: Walter Correa

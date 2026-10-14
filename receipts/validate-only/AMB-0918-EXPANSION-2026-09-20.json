@@ -1,0 +1,20 @@
+{
+ "when": "2026-09-20T02:11:40.494262-04:00",
+ "validate_only": true,
+ "external_writes": 0,
+ "checks": {
+  "new_budgets": "OK",
+  "new_campaigns": "OK",
+  "keywords": "OK (32)",
+  "rsas": {
+   "SKAG | Boiler Repair": "VALIDATED_OK (2)",
+   "SKAG | Oil Furnace Installation": "VALIDATED_OK (2)",
+   "SKAG | Oil Heating System Replacement": "VALIDATED_OK (2)",
+   "SKAG | Heat Pump Installation": "SKIPPED - no RSA in plan (destination blocked)",
+   "SKAG | Geothermal HVAC Installation": "VALIDATED_OK (2)",
+   "SKAG | Tankless Water Heater Installation": "VALIDATED_OK (2)"
+  },
+  "budget_0920": "OK",
+  "bid1": "OK"
+ }
+}

@@ -1,0 +1,63 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # Fresh read-only identity check required before any account read (exact name and child ID;
+    # the MCC 3373711342 is never the child).
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Heating Repair
+    related_services:
+      - Furnace Repair
+      - Gas Furnace Repair
+      - Electric Furnace Repair
+      - No Heat Repair
+  task:
+    type: campaign-revamp
+    mode: draft
+    request: >-
+      Owner direction 2026-09-30: the repair services stay LIVE (no ad group in campaign 24257819463
+      'Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09' may be paused).
+      Investigate whether the current Maximize Clicks CPC ceiling ($42) is too high and whether a
+      materially lower ceiling can move CPL toward the $280 target without killing qualified repair
+      demand. Phase 1 fresh read; Phase 2 Keyword Planner historical metrics (Maryland, English,
+      Google Search) for every enabled repair keyword; Phase 3 Maximize Clicks forecasts at $8, $10,
+      $12, $15, $18 and $42 (plus curve points); Phase 4 CPL math; Phase 5 one recommended ceiling;
+      Phase 6 an exact, fingerprinted change plan that alters ONLY
+      campaign.target_spend.cpc_bid_ceiling_micros. READ + DRAFT ONLY; STOP before any change.
+      Preserved: all repair ad groups, keywords, Phrase/Exact policy, ads, landing pages, locations,
+      schedule, negative lists, conversions, Search-only configuration. No new keywords.
+    date_range: >-
+      CURRENT AS AT 2026-09-30. Complete days through 2026-09-29; 2026-09-30 PARTIAL, shown only as
+      provisional. Forecast horizon: 2026-10-01..2026-10-31.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/hvac-repair/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: null
+    primary_conversion_goal: "unique genuine paid heating repair lead (form or call)"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-transition-2026-09.yaml
+    campaign_id: "24257819463"
+    current_cpc_ceiling_usd: 42.00
+    repair_ad_groups_must_stay_live: true
+    target_cpl_usd: 280
+    cpl_ceiling_usd: 350
+    cpl_requirement_source: "Explicit Green Marketing instruction in the Claude Code working session"
+    cpl_requirement_recorded_on: "2026-09-30"
+    cpl_definition: "all ad spend in scope and period / unique genuine paid leads (click-ID or matched Google call record); QA, spam, wrong numbers, duplicates and non-paid channels excluded"
+    spending_limits_are_maximums_not_targets: true
+    keyword_planner_geo: "Maryland, United States (resolved from Google at run time)"
+    change_authorized: true
+    executed: "AMB-0930-REPAIR-CPC-2 CC87C9A6F406 approved by Green Marketing and EXECUTED 2026-09-30 17:52 ET; ceiling $42 -> $18; readback 0 FAIL (receipts/AMB-0930-REPAIR-CPC-2-EXECUTED.json). No other change."
+  approval_owner: Green Marketing

@@ -1,0 +1,406 @@
+# VOID 2026-08-26 - fingerprint B42EAD386795
+# SOURCE MISMATCH - the plan was built from the 16-location geo-union analysis because the actual client-approved CSV was not available to that run. The approved source is 'Location report (2).csv' (sha256 95eb808ba20cb2fd), which carries 75 New York rows resolving to 72 net-new targets, not 8. Superseded by PLAN-J2A (positive targets) and PLAN-J2B (Connecticut exclusion), which are separately fingerprinted.
+
+change_plan:
+  plan_id: PLAN-J
+  plan_title: Confirmed New York geo footprint + Connecticut exclusion
+  approval_type: LIVE_LOCATION_CRITERIA
+  priority: R4
+  approval_status: VOID - DO NOT APPROVE
+  execution_status: VOID - DO NOT EXECUTE
+  ads_mutation_count: 18
+  requires_separate_enable_approval: false
+  live_on_creation_warning: Location criteria have NO paused state. Every one of these 18 objects
+    begins affecting delivery the moment it is created. There is no create-paused/readback/enable
+    split available for this resource type, so this single approval is the only gate.
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  confirmed_instruction:
+    source: Walter Correa, 2026-08-26, confirmation table
+    positive_targeting: All valid New York locations in the geo-union report
+    location_exclusion: Connecticut, United States
+    campaign_scope: Both Power Washing campaigns
+    location_setting: Keep Presence (people in or regularly in)
+    extra_exclusions: None without evidence or approval
+  interpretation_note: '''The attached report'' is read as the geo-union analysis delivered in correction
+    2 (snapshots/geo-union-2026-08-26.json), which is the only geo report produced for this account.
+    It contains exactly 16 New York constants: the 8 currently targeted plus the 8 proposed. All
+    16 validated ENABLED. Every one is enumerated below so any mismatch with the intended list is
+    visible before approval.'
+  validation:
+    ny_constants_checked: 16
+    ny_constants_valid: 16
+    ny_constants_invalid: 0
+    all_positive_targets_are_new_york_us: true
+    connecticut_resolved_unambiguously: true
+    connecticut_geo_target_constant_id: '21139'
+    connecticut_reach: 5820000
+    no_other_state_or_country_excluded: true
+    presence_setting_verified_already_correct:
+      '24103511039': PRESENCE
+      '24145053510': PRESENCE
+    presence_mutations_required: 0
+    blocking_problems: []
+  presence_finding: Both campaigns ALREADY report positive_geo_target_type = PRESENCE and negative_geo_target_type
+    = PRESENCE. The instruction to keep Presence therefore requires ZERO mutations. It is recorded
+    here as a verified assertion, not as a change, and the readback QA re-checks it.
+  advisory_geographic_overlap:
+    status: ADVISORY ONLY - NO ACTION TAKEN
+    why_not_actioned: 'Google''s parent_geo_target does not model town-contains-hamlet: all 16 constants
+      report parent ''New York, United States''. Containment is therefore NOT API-provable, and
+      nothing is removed on the strength of outside geographic knowledge. Overlapping location targets
+      are resolved by Google as a union; they do not double-serve or double-charge.'
+    likely_subsumed_by_a_target_being_added:
+      '9198487':
+      - '1023035'
+      - '1023482'
+      - '1022719'
+      - '1022748'
+      '9198814':
+      - '1022729'
+      - '9052792'
+      '9198014':
+      - '1023415'
+    consequence: Geo reporting granularity gets noisier - a click in Bay Shore may report against
+      either Bay Shore or Town of Islip. No delivery or cost consequence. No removal is proposed;
+      removing criteria was not requested and would be a destructive action needing its own approval.
+  actions:
+  - action_id: R4-J-01
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    current_value: 8 positive location criteria; Bay Shore,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '1022719'
+      canonical_name: Bay Shore,New York,United States
+      target_type: City
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-02
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    current_value: 8 positive location criteria; Brentwood,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '1022748'
+      canonical_name: Brentwood,New York,United States
+      target_type: City
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-03
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    current_value: 8 positive location criteria; Huntington,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '1023022'
+      canonical_name: Huntington,New York,United States
+      target_type: City
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-04
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    current_value: 8 positive location criteria; Oyster Bay,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '9198014'
+      canonical_name: Oyster Bay,New York,United States
+      target_type: Municipality
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-05
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    current_value: 8 positive location criteria; Islip,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '9198487'
+      canonical_name: Islip,New York,United States
+      target_type: Municipality
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-06
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    current_value: 8 positive location criteria; Brookhaven,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '9198728'
+      canonical_name: Brookhaven,New York,United States
+      target_type: Municipality
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-07
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    current_value: 8 positive location criteria; Hempstead,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '9198814'
+      canonical_name: Hempstead,New York,United States
+      target_type: Municipality
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-08
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    current_value: 8 positive location criteria; Smithtown,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '9220615'
+      canonical_name: Smithtown,New York,United States
+      target_type: Municipality
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-09
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    current_value: 8 positive location criteria; Bay Shore,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '1022719'
+      canonical_name: Bay Shore,New York,United States
+      target_type: City
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-10
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    current_value: 8 positive location criteria; Brentwood,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '1022748'
+      canonical_name: Brentwood,New York,United States
+      target_type: City
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-11
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    current_value: 8 positive location criteria; Huntington,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '1023022'
+      canonical_name: Huntington,New York,United States
+      target_type: City
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-12
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    current_value: 8 positive location criteria; Oyster Bay,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '9198014'
+      canonical_name: Oyster Bay,New York,United States
+      target_type: Municipality
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-13
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    current_value: 8 positive location criteria; Islip,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '9198487'
+      canonical_name: Islip,New York,United States
+      target_type: Municipality
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-14
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    current_value: 8 positive location criteria; Brookhaven,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '9198728'
+      canonical_name: Brookhaven,New York,United States
+      target_type: Municipality
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-15
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    current_value: 8 positive location criteria; Hempstead,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '9198814'
+      canonical_name: Hempstead,New York,United States
+      target_type: Municipality
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-16
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    current_value: 8 positive location criteria; Smithtown,New York,United States not targeted
+    proposed_value:
+      geo_target_constant_id: '9220615'
+      canonical_name: Smithtown,New York,United States
+      target_type: Municipality
+      negative: false
+    why: Confirmed by Walter 2026-08-26 as a served New York location.
+    goes_live_on_creation: true
+    rollback: Remove campaign criterion; footprint returns to 8 targets.
+    object_count: 1
+  - action_id: R4-J-17
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    current_value: 0 negative location criteria
+    proposed_value:
+      geo_target_constant_id: '21139'
+      canonical_name: Connecticut,United States
+      target_type: State
+      negative: true
+    why: Confirmed exclusion. Blocks Connecticut-present users who would otherwise qualify through
+      the 'regularly in' half of Presence.
+    goes_live_on_creation: true
+    rollback: Remove the negative criterion.
+    object_count: 1
+  - action_id: R4-J-18
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    current_value: 0 negative location criteria
+    proposed_value:
+      geo_target_constant_id: '21139'
+      canonical_name: Connecticut,United States
+      target_type: State
+      negative: true
+    why: Confirmed exclusion. Blocks Connecticut-present users who would otherwise qualify through
+      the 'regularly in' half of Presence.
+    goes_live_on_creation: true
+    rollback: Remove the negative criterion.
+    object_count: 1
+  change_counts:
+    positive_location_criteria_added_campaign_A: 8
+    positive_location_criteria_added_campaign_B: 8
+    negative_location_criteria_added: 2
+    geo_target_type_settings_changed: 0
+    locations_removed: 0
+    campaigns_changed: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    keywords_changed: 0
+    ads_changed: 0
+    assets_changed: 0
+    google_ads_mutations_total: 18
+  readback_qa:
+  - Re-read campaign_criterion for both campaigns.
+  - Assert positive LOCATION count == 16 on each campaign.
+  - Assert negative LOCATION count == 1 on each campaign and it is 21139.
+  - Assert campaign.geo_target_type_setting.positive_geo_target_type is still PRESENCE on both campaigns.
+  - Assert no keyword, budget, bid, ad, asset or schedule changed.
+  - Assert total campaign count is still 2.
+  risks:
+  - LIVE ON CREATION - no paused state exists for location criteria.
+  - Landing pages name only Islip, West Islip and Dix Hills. Targeting 16 locations weakens message
+    match for the other 13 and may depress conversion rate and Quality Score. This is PLAN-F territory
+    and is NOT fixed by this plan.
+  - Uncapped Maximize Clicks is still in force (PLAN-B on HOLD). A larger eligible audience with
+    no CPC ceiling can raise average CPC as well as impressions.
+  - 'The Connecticut exclusion is largely redundant under Presence targeting and blocks a small,
+    genuine segment: Connecticut residents who own Long Island property. Confirmed by Walter and
+    fully reversible.'
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  recommended_approval_order: 3
+  void_status:
+    state: VOID
+    voided_on: '2026-08-26'
+    fingerprint_voided: B42EAD386795
+    replaced_by:
+    - PLAN-J2A
+    - PLAN-J2B
+    reason: SOURCE MISMATCH - the plan was built from the 16-location geo-union analysis because
+      the actual client-approved CSV was not available to that run. The approved source is 'Location
+      report (2).csv' (sha256 95eb808ba20cb2fd), which carries 75 New York rows resolving to 72
+      net-new targets, not 8. Superseded by PLAN-J2A (positive targets) and PLAN-J2B (Connecticut
+      exclusion), which are separately fingerprinted.

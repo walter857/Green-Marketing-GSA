@@ -1,0 +1,141 @@
+{
+ "package": "ambient-cooling-heating-account-level-negative-cleanup",
+ "version": "2026-08-18",
+ "phase": "modify-existing",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342"
+ },
+ "target_resource": {
+  "shared_set_id": "11252984411",
+  "name": "account-level negative keywords list",
+  "type": "ACCOUNT_LEVEL_NEGATIVE_KEYWORDS",
+  "status": "ENABLED",
+  "observed_member_count": 59,
+  "reported_member_count_field": 0
+ },
+ "why_this_matters": "An ACCOUNT_LEVEL_NEGATIVE_KEYWORDS shared set applies account-wide without any campaign association, so it reaches all five new campaigns even though campaign_shared_set shows no attachment. All 59 members are BROAD.",
+ "remove_members": [
+  {
+   "text": "commercial",
+   "match_type": "BROAD",
+   "evidence": "Blocks 3.83 historical conversions and $1,043.02 of spend across 344 terms. The live HVAC Replacement RSA carries the headline 'Commercial HVAC Replacement'."
+  },
+  {
+   "text": "hanover",
+   "match_type": "BROAD",
+   "evidence": "Hanover, MD is in Anne Arundel County, adjacent to Severn, and inside the 75 targets."
+  },
+  {
+   "text": "dayton",
+   "match_type": "BROAD",
+   "evidence": "Dayton, MD is in Howard County. 3 clicks, 1 conversion historically."
+  },
+  {
+   "text": "chestertown",
+   "match_type": "BROAD",
+   "evidence": "Chestertown is a Maryland town. 3 clicks, 2 conversions historically."
+  },
+  {
+   "text": "montgomery county",
+   "match_type": "BROAD",
+   "evidence": "Maryland county. 1 click, 1 conversion historically."
+  },
+  {
+   "text": "upper marlboro",
+   "match_type": "BROAD",
+   "evidence": "Maryland town. 2 clicks."
+  },
+  {
+   "text": "aac",
+   "match_type": "BROAD",
+   "evidence": "Common abbreviation for Anne Arundel County, the core service area."
+  },
+  {
+   "text": "thermostat",
+   "match_type": "BROAD",
+   "evidence": "Thermostat faults are legitimate HVAC repair demand. 102 terms."
+  },
+  {
+   "text": "thermostats",
+   "match_type": "BROAD",
+   "evidence": "Same as 'thermostat'."
+  },
+  {
+   "text": "attic",
+   "match_type": "BROAD",
+   "evidence": "Attic air handlers and attic HVAC work are in scope. 35 terms, $112.41."
+  },
+  {
+   "text": "contract",
+   "match_type": "BROAD",
+   "evidence": "Blocks 'hvac service contract', a legitimate maintenance-agreement query."
+  },
+  {
+   "text": "white",
+   "match_type": "BROAD",
+   "evidence": "Collides with White Marsh, MD and with White-Rodgers equipment."
+  },
+  {
+   "text": "ruud",
+   "match_type": "BROAD",
+   "evidence": "Manufacturer brand; 'ruud furnace repair near me' is service demand. 51 terms."
+  },
+  {
+   "text": "rudd",
+   "match_type": "BROAD",
+   "evidence": "Common misspelling of Ruud; same reasoning."
+  },
+  {
+   "text": "ducane",
+   "match_type": "BROAD",
+   "evidence": "Manufacturer brand; 20 terms."
+  },
+  {
+   "text": "frigidaire",
+   "match_type": "BROAD",
+   "evidence": "Manufacturer brand; 15 terms, 1 click."
+  },
+  {
+   "text": "ecobee",
+   "match_type": "BROAD",
+   "evidence": "Thermostat brand; installation and fault demand is in scope."
+  },
+  {
+   "text": "hagerstown",
+   "match_type": "BROAD",
+   "evidence": "Maryland city. Out of the 75 targets, so presence targeting already controls it; a BROAD negative is redundant and risky."
+  },
+  {
+   "text": "forest hill",
+   "match_type": "BROAD",
+   "evidence": "Harford County, Maryland."
+  },
+  {
+   "text": "able",
+   "match_type": "BROAD",
+   "evidence": "Overly generic single token."
+  },
+  {
+   "text": "assistance",
+   "match_type": "BROAD",
+   "evidence": "Blocks 'hvac repair assistance', an ordinary help-seeking phrasing."
+  },
+  {
+   "text": "\\ud6ff (non-Latin single character)",
+   "match_type": "BROAD",
+   "evidence": "Junk entry. Cannot match any English query; remove for hygiene."
+  }
+ ],
+ "keep_members": [
+  "financing (aligns with keeping Consumer Finance intent out of the account)",
+  "101, a&d, alliance, aurora, bac, burlington nc, c&c, capital, cb, cbhvac, charest, chisholm, corbin, cw, dermer, empire, empower, farnen, foster, griffith, hughes, hvacc, ibew, jba, maximus, mcdaniels, peach, rcs, rods, stumps, tetteris, vernon, warner, wayne, wendt (competitor and out-of-area brand tokens; review separately, none blocks a protected query except as noted above)"
+ ],
+ "objects_to_modify": 0,
+ "objects_to_create": 0,
+ "objects_to_remove": 22,
+ "approval_class": "DESTRUCTIVE - removes existing negative criteria",
+ "verification_required_before_apply": "Confirm in the Google Ads UI under Tools > Shared library > Account-level negative keywords that this list is the active account-level list. The API reports member_count 0 while shared_criterion returns 59 rows, so the UI is the authoritative check.",
+ "plan_fingerprint": "BC24DF875FCA1CDD"
+}

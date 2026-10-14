@@ -1,0 +1,356 @@
+{
+  "PLAN-SLM-BID-2": {
+    "checks": {
+      "exactly_one_plan_file": {
+        "pass": true,
+        "detail": "found ['PLAN-SLM-BID-2.yaml']"
+      },
+      "package_id": {
+        "pass": true,
+        "detail": "PLAN-SLM-BID-2"
+      },
+      "subplan": {
+        "pass": true,
+        "detail": "EXISTING_RESOURCES"
+      },
+      "target_customer": {
+        "pass": true,
+        "detail": "2429758629"
+      },
+      "target_account_name": {
+        "pass": true,
+        "detail": "Softwind Landscape & Masonry - Live"
+      },
+      "operation_count": {
+        "pass": true,
+        "detail": "2 (want 2)"
+      },
+      "fingerprint_recomputed_matches_authorized": {
+        "pass": true,
+        "detail": "8C71888E09CC vs authorized 8C71888E09CC"
+      },
+      "fingerprint_stored_in_file_matches": {
+        "pass": true,
+        "detail": "8C71888E09CC"
+      },
+      "every_action_has_rollback": {
+        "pass": true,
+        "detail": ""
+      },
+      "every_action_has_current_and_proposed": {
+        "pass": true,
+        "detail": ""
+      },
+      "every_action_in_operations_csv": {
+        "pass": true,
+        "detail": ""
+      },
+      "source_snapshot_recorded": {
+        "pass": true,
+        "detail": "recovery/2026-09-patio-pavers/01e-baseline-2.json"
+      },
+      "targets_exactly_patio_and_pavers": {
+        "pass": true,
+        "detail": "['23484806108', '23489296528']"
+      },
+      "no_strategy_field_in_proposal_23484806108": {
+        "pass": true,
+        "detail": ""
+      },
+      "no_strategy_field_in_proposal_23489296528": {
+        "pass": true,
+        "detail": ""
+      },
+      "both_still_maximize_clicks_and_unset_ceiling": {
+        "pass": true,
+        "detail": ""
+      },
+      "no_portfolio_strategy": {
+        "pass": true,
+        "detail": ""
+      },
+      "ceilings_are_exactly_16_and_18": {
+        "pass": true,
+        "detail": ""
+      }
+    },
+    "verdict": "PASS"
+  },
+  "PLAN-SLM-BUD-2": {
+    "checks": {
+      "exactly_one_plan_file": {
+        "pass": true,
+        "detail": "found ['PLAN-SLM-BUD-2.yaml']"
+      },
+      "package_id": {
+        "pass": true,
+        "detail": "PLAN-SLM-BUD-2"
+      },
+      "subplan": {
+        "pass": true,
+        "detail": "BUDGET"
+      },
+      "target_customer": {
+        "pass": true,
+        "detail": "2429758629"
+      },
+      "target_account_name": {
+        "pass": true,
+        "detail": "Softwind Landscape & Masonry - Live"
+      },
+      "operation_count": {
+        "pass": true,
+        "detail": "2 (want 2)"
+      },
+      "fingerprint_recomputed_matches_authorized": {
+        "pass": true,
+        "detail": "BB9869E17E37 vs authorized BB9869E17E37"
+      },
+      "fingerprint_stored_in_file_matches": {
+        "pass": true,
+        "detail": "BB9869E17E37"
+      },
+      "every_action_has_rollback": {
+        "pass": true,
+        "detail": ""
+      },
+      "every_action_has_current_and_proposed": {
+        "pass": true,
+        "detail": ""
+      },
+      "every_action_in_operations_csv": {
+        "pass": true,
+        "detail": ""
+      },
+      "source_snapshot_recorded": {
+        "pass": true,
+        "detail": "recovery/2026-09-patio-pavers/01e-baseline-2.json"
+      },
+      "exactly_patio_and_pavers_enabled": {
+        "pass": true,
+        "detail": "['23484806108', '23489296528']"
+      },
+      "no_shared_budget_anywhere": {
+        "pass": true,
+        "detail": ""
+      },
+      "budget_resource_id_matches_live_23484806108": {
+        "pass": true,
+        "detail": "15309303030 vs live 15309303030"
+      },
+      "budget_resource_id_matches_live_23489296528": {
+        "pass": true,
+        "detail": "15314089588 vs live 15314089588"
+      },
+      "budgets_are_exactly_24_and_32": {
+        "pass": true,
+        "detail": "{'23484806108': 24.0, '23489296528': 32.0}"
+      },
+      "projection_at_or_below_2000": {
+        "pass": true,
+        "detail": "$1760.36"
+      },
+      "paused_campaigns_spent_nothing_mtd": {
+        "pass": true,
+        "detail": "$0.00"
+      }
+    },
+    "verdict": "PASS",
+    "projection": 1760.36,
+    "headroom": 239.64
+  },
+  "PLAN-SLM-KW-2": {
+    "checks": {
+      "exactly_one_plan_file": {
+        "pass": true,
+        "detail": "found ['PLAN-SLM-KW-2.yaml']"
+      },
+      "package_id": {
+        "pass": true,
+        "detail": "PLAN-SLM-KW-2"
+      },
+      "subplan": {
+        "pass": true,
+        "detail": "STATUS"
+      },
+      "target_customer": {
+        "pass": true,
+        "detail": "2429758629"
+      },
+      "target_account_name": {
+        "pass": true,
+        "detail": "Softwind Landscape & Masonry - Live"
+      },
+      "operation_count": {
+        "pass": true,
+        "detail": "7 (want 7)"
+      },
+      "fingerprint_recomputed_matches_authorized": {
+        "pass": true,
+        "detail": "B7A11B246D74 vs authorized B7A11B246D74"
+      },
+      "fingerprint_stored_in_file_matches": {
+        "pass": true,
+        "detail": "B7A11B246D74"
+      },
+      "every_action_has_rollback": {
+        "pass": true,
+        "detail": ""
+      },
+      "every_action_has_current_and_proposed": {
+        "pass": true,
+        "detail": ""
+      },
+      "every_action_in_operations_csv": {
+        "pass": true,
+        "detail": ""
+      },
+      "source_snapshot_recorded": {
+        "pass": true,
+        "detail": "recovery/2026-09-patio-pavers/01e-baseline-2.json"
+      },
+      "live_text_matches_plan_543919818878": {
+        "pass": true,
+        "detail": "'local asphalt companies near me'/PHRASE vs live 'local asphalt companies near me'/PHRASE"
+      },
+      "live_text_matches_plan_297075223566": {
+        "pass": true,
+        "detail": "'asphalt contractor near me'/PHRASE vs live 'asphalt contractor near me'/PHRASE"
+      },
+      "live_text_matches_plan_309567954442": {
+        "pass": true,
+        "detail": "'asphalt paving services near me'/PHRASE vs live 'asphalt paving services near me'/PHRASE"
+      },
+      "live_text_matches_plan_300588535183": {
+        "pass": true,
+        "detail": "'asphalt services near me'/PHRASE vs live 'asphalt services near me'/PHRASE"
+      },
+      "live_text_matches_plan_298883953673": {
+        "pass": true,
+        "detail": "'local asphalt paving companies'/PHRASE vs live 'local asphalt paving companies'/PHRASE"
+      },
+      "live_text_matches_plan_303329780817": {
+        "pass": true,
+        "detail": "'local asphalt paving contractors'/PHRASE vs live 'local asphalt paving contractors'/PHRASE"
+      },
+      "live_text_matches_plan_356532888916": {
+        "pass": true,
+        "detail": "'asphalt and paving companies near me'/PHRASE vs live 'asphalt and paving companies near me'/PHRASE"
+      },
+      "all_seven_currently_enabled": {
+        "pass": true,
+        "detail": ""
+      },
+      "all_seven_in_pavers": {
+        "pass": true,
+        "detail": ""
+      },
+      "all_seven_asphalt_blacktop_or_sealcoat_intent": {
+        "pass": true,
+        "detail": ""
+      },
+      "none_is_inscope_or_protected_unresolved": {
+        "pass": true,
+        "detail": ""
+      },
+      "all_operations_are_pause_only": {
+        "pass": true,
+        "detail": ""
+      }
+    },
+    "verdict": "PASS"
+  },
+  "PLAN-SLM-NEG-2": {
+    "checks": {
+      "exactly_one_plan_file": {
+        "pass": true,
+        "detail": "found ['PLAN-SLM-NEG-2.yaml']"
+      },
+      "package_id": {
+        "pass": true,
+        "detail": "PLAN-SLM-NEG-2"
+      },
+      "subplan": {
+        "pass": true,
+        "detail": "EXISTING_RESOURCES"
+      },
+      "target_customer": {
+        "pass": true,
+        "detail": "2429758629"
+      },
+      "target_account_name": {
+        "pass": true,
+        "detail": "Softwind Landscape & Masonry - Live"
+      },
+      "operation_count": {
+        "pass": true,
+        "detail": "99 (want 99)"
+      },
+      "fingerprint_recomputed_matches_authorized": {
+        "pass": true,
+        "detail": "2CD5644B5504 vs authorized 2CD5644B5504"
+      },
+      "fingerprint_stored_in_file_matches": {
+        "pass": true,
+        "detail": "2CD5644B5504"
+      },
+      "every_action_has_rollback": {
+        "pass": true,
+        "detail": ""
+      },
+      "every_action_has_current_and_proposed": {
+        "pass": true,
+        "detail": ""
+      },
+      "every_action_in_operations_csv": {
+        "pass": true,
+        "detail": ""
+      },
+      "source_snapshot_recorded": {
+        "pass": true,
+        "detail": "recovery/2026-09-patio-pavers/01e-baseline-2.json"
+      },
+      "exactly_99_operations": {
+        "pass": true,
+        "detail": "99"
+      },
+      "all_phrase_match": {
+        "pass": true,
+        "detail": "Counter({'PHRASE': 99})"
+      },
+      "all_target_patio_or_pavers": {
+        "pass": true,
+        "detail": "Counter({'23489296528': 50, '23484806108': 49})"
+      },
+      "all_campaign_level": {
+        "pass": true,
+        "detail": ""
+      },
+      "no_account_level_shared_list_touched": {
+        "pass": true,
+        "detail": ""
+      },
+      "no_collision_with_enabled_positive_keyword": {
+        "pass": true,
+        "detail": "[]"
+      },
+      "no_protected_unresolved_service_blocked": {
+        "pass": false,
+        "detail": "[('NEG-044', 'concrete sealing', 'concrete'), ('NEG-092', 'concrete sealing', 'concrete'), ('NEG-093', 'driveway sealing', 'driveway')]"
+      },
+      "no_bare_protected_buying_word": {
+        "pass": true,
+        "detail": "[]"
+      },
+      "no_exact_duplicate_of_an_existing_negative": {
+        "pass": true,
+        "detail": "[]"
+      }
+    },
+    "verdict": "FAIL",
+    "by_campaign": {
+      "Patio": 49,
+      "Pavers": 50
+    }
+  }
+}

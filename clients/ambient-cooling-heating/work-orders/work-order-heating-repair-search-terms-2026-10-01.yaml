@@ -1,0 +1,77 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # Fresh read-only identity check required before any account read (exact name and child ID;
+    # the MCC 3373711342 is never the child).
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Heating Repair
+    related_services:
+      - Furnace Repair
+      - Gas Furnace Repair
+      - Electric Furnace Repair
+      - No Heat Repair
+      - Emergency Heating Repair
+  task:
+    type: search-terms
+    mode: read
+    request: >-
+      Green Marketing request 2026-10-01 ("Ambient: Search-Term Optimization and Landing-Page
+      Activation", workstream 1). READ-ONLY search-term, attribution and performance analysis of
+      every ad group in campaign 24257819463 'Search | NonBrand | Heating & Furnace Repair |
+      Central MD | BOFU | 2026-09', with DRAFT recommendations only: full-query EXACT negative
+      candidates (no new Phrase/Broad, no account-level or shared-list additions), a separate list
+      of at most 25 hypothetical EXACT candidates, a boiler-repair and short-query assessment, a
+      Heating Repair Phrase-versus-Exact recommendation, phone-attribution reconciliation, and the
+      $18 CPC-ceiling baseline/comparison template. No negative, match-type, pause, bid, budget,
+      schedule, location, conversion or tracking change is authorized by this work order.
+    date_range: >-
+      CURRENT AS AT 2026-10-01 (account time America/New_York). Pre-change baseline
+      2026-09-24..2026-09-30 ($42 ceiling; 09-30 closed under $42 because the $18 change ran at
+      17:52 ET after scheduled serving ended at 16:00). Post-change: completed days from
+      2026-10-01 onward; 2026-10-01 is PARTIAL on the read date and is never a completed day.
+      Expected first five complete serving days: 10-01, 10-02, 10-05, 10-06, 10-07.
+      History window for intent/recurring waste: 2026-09-17 (campaign first served) .. 2026-09-30.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/hvac-repair/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    location_targets_expected: 75
+    location_option: PRESENCE
+    campaign_id: "24257819463"
+    daily_budget: 85.00
+    bidding: "Maximize Clicks (TARGET_SPEND), CPC ceiling $18.00 since 2026-09-30 17:52 ET (AMB-0930-REPAIR-CPC-2 CC87C9A6F406)"
+    schedule: "Mon-Fri 08:00-16:00 America/New_York (to be re-verified live)"
+    primary_conversion_goal: "unique genuine paid heating repair lead (form or call); qualified = WhatConverts Quotable Yes"
+    target_cpl_usd: 280
+    cpl_ceiling_usd: 350
+    cpl_definition: "all ad spend in scope and period / unique genuine paid leads (click-ID or matched Google call record); QA, spam, wrong numbers, duplicates and non-paid channels excluded"
+    preserve_unchanged:
+      - "$18 CPC ceiling"
+      - "$85 budget and every other budget"
+      - "bidding strategy"
+      - "locations and location options"
+      - "ad schedules"
+      - "conversion settings"
+      - "every repair ad group stays live (owner direction 2026-09-30)"
+    negative_policy_for_this_request: "new negatives EXACT full-query only, narrowest defensible scope (ad group or campaign); existing Phrase/Broad negatives reviewed for conflicts but never modified"
+    raw_search_terms_in_deliverable: "Requested explicitly by Green Marketing on 2026-10-01 (actual full query per row). HVAC corpus; written to the report and the exports folder."
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-transition-2026-09.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-repair-cpc-ceiling-2026-09-30.yaml
+      - reports/ambient-cooling-heating/2026-09-30e-repair-cpc-18-vs-21.md
+      - reports/ambient-cooling-heating/2026-09-30b-cpl-policy-revision.md
+      - reports/ambient-cooling-heating/HANDOFF-2026-09-30-full-account-briefing.md
+    change_authorized: false
+  approval_owner: Green Marketing

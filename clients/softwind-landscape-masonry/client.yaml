@@ -1,0 +1,274 @@
+# Green Marketing client profile - Softwind Landscape & Masonry
+#
+# Schema: templates/client/client.example.yaml (canonical).
+# Strict-parse clean: scripts/yaml_strict.py rejects duplicate mapping keys and
+# this file passes. Audit: scripts/slm_0903_yaml_audit.py.
+#
+# EVIDENCE TAGS used throughout:
+#   [API]   read from Google Ads 2429758629 on 2026-09-03 (receipts under recovery/)
+#   [LP]    observed in a real headless browser on the live landing pages 2026-09-03
+#   [USER]  explicit instruction in the 2026-09-03 recovery prompt
+#   [OWNER] the owner's statement of 2026-08-28
+#   UNKNOWN no evidence exists yet. It stays UNKNOWN. It is never guessed.
+#
+# Nothing here is inferred from the sibling account Softwind Power Washing
+# (1521725229), whose work order explicitly EXCLUDES landscaping, masonry and
+# paver sealing.
+
+client:
+  slug: softwind-landscape-masonry
+  business_name: Softwind Landscape & Masonry
+  vertical: hardscaping
+
+  # The account's lead service. This account is approved for more than one
+  # service; see offer.services_in_scope and the two linked work orders.
+  primary_service: patio construction
+
+  google_ads:
+    child_customer_id: "2429758629"
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    manager_customer_id: "3373711342"
+    must_contain_live_marker: true
+    # [API] identity read 2026-09-03T18:09:26-04:00.
+    currency: USD
+    timezone: America/New_York
+    account_status: ENABLED
+    manager: false
+    test_account: false
+    auto_tagging_enabled: true
+    # [API] customer.conversion_tracking_setting, 2026-09-03. This is a
+    # conversion TRACKING id, not a customer id. It renders on the landing pages
+    # as AW-17878095007.
+    conversion_tracking_id: "17878095007"
+    cross_account_conversion_tracking_id: null
+    conversion_tracking_status: CONVERSION_TRACKING_MANAGED_BY_SELF
+    enhanced_conversions_for_leads_enabled: true
+    # [API] customer.tracking_url_template, 2026-09-03. ClickCease owns the
+    # account-level tracking template. Do not replace or bypass it.
+    account_tracking_url_template_owner: ClickCease
+    account_final_url_suffix: null      # [API] genuinely unset. See SLM-Q8.
+
+    # [API] campaign read 2026-09-03, campaign.status != REMOVED.
+    # Names are exactly as they appear in Google Ads.
+    live_campaigns:
+      - {name: Patio,           id: "23484806108", status: ENABLED, in_recovery_scope: true}
+      - {name: Pavers,          id: "23489296528", status: ENABLED, in_recovery_scope: true}
+      - {name: Hardscaping,     id: "23484545411", status: PAUSED,  in_recovery_scope: false}
+      - {name: Paver Sealing,   id: "23914857298", status: PAUSED,  in_recovery_scope: false}
+      - {name: Power Washing,   id: "23914859260", status: PAUSED,  in_recovery_scope: false}
+      - {name: Retaining Walls, id: "23489591905", status: PAUSED,  in_recovery_scope: false}
+
+  identity_gate:
+    mcc_discovery_verified: true
+    mcc_discovery_date: "2026-08-28"
+    per_account_confirmation_read: true
+    per_account_confirmation_date: "2026-09-03"
+    per_account_confirmation_receipt: >-
+      clients/softwind-landscape-masonry/snapshots/identity-gate-2026-09-03-1809.json
+    per_account_confirmation_checks:
+      name_match: true
+      id_match: true
+      not_manager: true
+      not_test: true
+      live_marker: true
+    status: PASS
+    # PASS authorizes read-only work against 2429758629. It authorizes no
+    # mutation of any kind.
+
+  website:
+    # [API] landing_page_view + the ClickCease template's ccpturl parameter.
+    primary_url: https://softwindli.com/
+    # [API] every Patio/Pavers ad final URL. [LP] both returned HTTP 200.
+    landing_page_base_url: https://offer.softwindli.com/
+    landing_pages:
+      - {service: patio construction,   url: "https://offer.softwindli.com/patio/"}
+      - {service: paver installation,   url: "https://offer.softwindli.com/pavers/"}
+    # [LP] the number RENDERED on both offer pages on 2026-09-03. This is the
+    # number a visitor actually dials. It is NOT the number the WhatConverts
+    # swap is configured against - see measurement.known_defects.
+    phone_display: "(631) 502-7946"
+    phone_e164: "+16315027946"
+    phone_ownership_confirmed_by_owner: false   # blocks nothing; see SLM-Q8
+
+  offer:
+    # [USER] the recovery prompt's approved service scope. Each entry is a
+    # service this account is authorized to advertise.
+    services_in_scope:
+      - patio construction          # work order A
+      - paver patio installation    # related to work order A
+      - paver installation          # work order B
+    # [OWNER] out of scope for THIS account because they belong to the sibling
+    # account Softwind Power Washing (1521725229).
+    services_excluded:
+      - power washing
+      - pressure washing
+      - soft washing
+      - house washing
+      - roof cleaning
+      - gutter cleaning
+      - window cleaning
+      - exterior surface cleaning
+    # [USER] out of scope for the 2026-09 recovery program. These MAY be
+    # negated, because an explicit instruction excludes them.
+    services_excluded_pending_confirmation:
+      - asphalt paving
+      - asphalt repair
+      - blacktop
+      - sealcoating
+      - paver sealing
+      - paver restoration
+      - paver resanding
+      - paver leveling
+      - tar-and-chip driveways
+      - patio covers
+      - patio roofs
+      - patio enclosures
+      - screened patios
+      - pergolas
+      - gazebos
+      - decks
+      - material-only or retail paver sales
+      - DIY instruction
+    # UNRESOLVED. These must NEVER be negated and never promoted until the owner
+    # answers SLM-Q5. They are deliberately kept apart from services_excluded.
+    services_unresolved:
+      - driveway paver installation
+      - concrete patio installation
+      - bluestone patio installation
+      - masonry repair
+      - patio resurfacing
+      - pool deck and pool coping
+    # No USP has been verified by a first-party source. Defined once, as a list.
+    verified_usps: []
+    verified_offers: []
+    # Claims that must not appear in any ad or page until the owner confirms
+    # them. Every one of these is CURRENTLY LIVE somewhere in the account or on
+    # the landing pages, which is why SLM-Q6 is a blocking question.
+    unverified_claims_do_not_use:
+      - years in business
+      - review count or star rating
+      - licensed / insured / bonded
+      - certified installers
+      - warranty or guarantee
+      - response-time promise
+      - any price, discount or promotion
+    average_job_revenue: null
+    gross_margin_pct: null
+    close_rate_pct: null
+    target_cpl: null
+    target_cpql: null
+    target_cac: null
+    minimum_acceptable_project_size: null   # SLM-Q12
+
+  service_area:
+    country_code: US
+    # [API] campaign_criterion on both Patio and Pavers, 2026-09-03.
+    # 110 positive targets on each campaign, identical sets, zero exclusions.
+    positive_target_count: 110
+    target_type_breakdown: {City: 49, Postal Code: 58, Neighborhood: 2, Municipality: 1}
+    region: Long Island, New York (Nassau and Suffolk; 115xx and 117xx)
+    # [API] campaign.geo_target_type_setting on both campaigns.
+    location_option: PRESENCE
+    negative_location_option: PRESENCE
+    exclusions: []
+    # The 110 constant IDs are NOT copied here on purpose. A pasted geo list in a
+    # client profile has already gone stale once on the sibling account. The
+    # authoritative source is the live campaign_criterion read; the resolved
+    # names are cached in the recovery folder.
+    geo_target_constant_ids: []
+    geo_source_of_truth: campaign_criterion (live read)
+    geo_resolved_names_cache: >-
+      clients/softwind-landscape-masonry/recovery/2026-09-patio-pavers/01d-geo-targets.json
+    approved_counties_cities_zips_confirmed_by_owner: false   # SLM-Q11
+
+  schedule:
+    timezone: America/New_York
+    can_answer_after_hours: UNKNOWN
+    windows: []
+    # [API] no AD_SCHEDULE criterion exists on either campaign.
+    ad_schedule_in_google_ads: none
+
+  conversions:
+    # OBSERVED STATE, not approved architecture. [API] 2026-09-03.
+    # 16 conversion actions exist; 12 are primary_for_goal; 7 of those count
+    # into the Conversions column.
+    observed_primary_and_counting:
+      - {id: "7461572537", name: Calls from ads,                    type: AD_CALL}
+      - {id: "7461590068", name: Softwind - Phone Call Lead,        type: WEBSITE_CALL}
+      - {id: "7461619140", name: Softwind Submit lead form,         type: WEBPAGE}
+      - {id: "7480764700", name: "Softwind Landscape & Masonry (web) form_submission", type: GOOGLE_ANALYTICS_4_CUSTOM}
+      - {id: "7508686781", name: Calls from ads (1),                type: AD_CALL}
+      - {id: "7635680357", name: WC Leads,                          type: UPLOAD_CLICKS}
+      - {id: "7635680543", name: WC Call,                           type: UPLOAD_CALLS}
+    observed_primary_not_counting:
+      - {id: "7491907814", name: Local actions - Website visits}
+      - {id: "7534783908", name: Local actions - Other engagements}
+      - {id: "7546222032", name: Local actions - Directions}
+      - {id: "7559375681", name: Clicks to call}
+      - {id: "7561175025", name: Local actions - Menu views}
+    # Green Marketing's INTENDED architecture. Not yet applied anywhere.
+    proposed_primary: []          # blocked pending the CONV-1 duplicate proof
+    proposed_secondary: []
+    call_minimum_seconds: 30      # [API] on 7461572537. Every other action uses 60.
+    call_minimum_seconds_approved_by_owner: false   # SLM-Q7
+    crm_stage_mapping:
+      lead: UNKNOWN
+      qualified: UNKNOWN
+      sold: UNKNOWN
+    qualified_lead_definition: UNKNOWN              # SLM-Q11
+    offline_route: DATA_MANAGER_API
+    known_defects:
+      - >-
+        [LP] The WhatConverts swap cookie reads 6315025402 -> 6315535927, but the
+        pages render (631) 502-7946. Not yet proven to be the sole cause of zero
+        WhatConverts calls. See recovery/2026-09-patio-pavers/TRACK-A.
+      - >-
+        [API] No final_url_suffix on the account or either campaign, and the
+        account tracking template is ClickCease's, which carries no UTMs. See
+        recovery/2026-09-patio-pavers/TRACK-B.
+
+  budget:
+    account_monthly_hard_cap_usd: 2000
+    hard_cap_basis: account-wide, all campaigns, calendar month, America/New_York
+    # [API] account_budget.approved_spending_limit_type = INFINITE. Google Ads
+    # enforces no account cap. Only campaign daily budgets enforce the $2,000.
+    platform_account_spending_limit: INFINITE
+
+  integrations:
+    crm: UNKNOWN
+    call_tracking: WhatConverts          # [LP] wc_visitor / wc_client / wc_swap cookies
+    whatconverts_swap_profile_id: "197159"   # [LP] third field of the wc_swap cookie
+    analytics: GA4                       # [LP] _ga and _ga_D4BZM40RYD cookies present
+    analytics_measurement_id_inferred: G-D4BZM40RYD   # INFERRED from the cookie name, not read directly
+    tag_manager: GTM-P3LD97NN            # [LP] observed loading on both pages
+    click_fraud: ClickCease              # [API] account template + 235 IP_BLOCK criteria per campaign
+    other_tags_observed:
+      - {vendor: "process.iconnode.com", note: "POSTs on every page. Undocumented in client records."}
+      - {vendor: "connect.facebook.net", note: "Meta pixel. Undocumented in client records."}
+      - {vendor: "AW-18369652705", note: "The SIBLING account's Google Ads tag, loading on this account's pages. See SLM-Q9."}
+    speed_to_lead: UNKNOWN
+    review_url: UNKNOWN
+    form_webhook_env_key: CRM_WEBHOOK_URL
+
+  permissions:
+    approvers:
+      - Walter Correa
+    allow_create_paused: false
+    allow_enable: false
+    allow_budget_changes: false
+    allow_deletions: false
+
+  notes:
+    - >-
+      Same owner as Softwind Power Washing (1521725229) but a separate child
+      account with separate approved services. Do not share negatives, keywords,
+      landing pages or scope between the two without explicit instruction.
+    - >-
+      This account is approved for more than one service. Work order A covers
+      patio construction (campaign Patio); work order B covers paver installation
+      (campaign Pavers). Linked by
+      recovery/2026-09-patio-pavers/00-program-manifest.yaml.
+    - >-
+      services_excluded, services_excluded_pending_confirmation and
+      services_unresolved are three DIFFERENT lists and must stay separate. Only
+      the first two may ever produce a negative keyword.

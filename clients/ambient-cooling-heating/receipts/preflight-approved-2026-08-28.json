@@ -1,0 +1,702 @@
+{
+ "stage": "PREFLIGHT",
+ "run_local": "2026-08-27T19:26:35.629664-04:00",
+ "customer_id": "2401959466",
+ "mutations": 0,
+ "approved_fingerprints": [
+  "82ACD4953536C020",
+  "6F2B6ABBCEB992E4",
+  "E50EDFE7644A9B5F"
+ ],
+ "expected_total_operations": 9,
+ "checks": {},
+ "identity": {
+  "customer_id": "2401959466",
+  "descriptive_name": "Ambient Cooling - Live",
+  "currency": "USD",
+  "time_zone": "America/New_York",
+  "manager": false,
+  "test_account": false,
+  "status": "ENABLED",
+  "auto_tagging_enabled": true,
+  "tracking_url_template": "https://monitor.clickcease.com/tracker/tracker.aspx?id=Y6qzID4E9cPYCj&adpos={adposition}&locphisical={loc_physical_ms}&locinterest={loc_interest_ms}&adgrp={adgroupid}&kw={keyword}&nw={network}&url={lpurl}&cpn={campaignid}&device={device}&ccpturl=offer.ambientcoolingandheating.com&pl={placement}",
+  "final_url_suffix": "",
+  "conversion_tracking_id": "11155434808",
+  "conversion_tracking_status": "CONVERSION_TRACKING_MANAGED_BY_SELF",
+  "optimization_score": 0.7843765,
+  "manager_links": {
+   "2815082755": "ACTIVE",
+   "3373711342": "ACTIVE"
+  },
+  "checks": {
+   "descriptive_name == 'Ambient Cooling - Live'": true,
+   "customer.id == 2401959466": true,
+   "not a manager account": true,
+   "not a test account": true,
+   "time_zone == America/New_York": true,
+   "currency_code == USD": true,
+   "Green Marketing manager 3373711342 ACTIVE": true,
+   "ClickCease manager 2815082755 ACTIVE": true
+  },
+  "checked_local": "2026-08-27T19:26:38.523170-04:00"
+ },
+ "latest_change_event": "2026-08-22 09:36:07.725231",
+ "fingerprints": {
+  "A-1": {
+   "approved": "82ACD4953536C020",
+   "in_file": "82ACD4953536C020",
+   "recomputed": "82ACD4953536C020"
+  },
+  "A-2": {
+   "approved": "6F2B6ABBCEB992E4",
+   "in_file": "6F2B6ABBCEB992E4",
+   "recomputed": "6F2B6ABBCEB992E4"
+  },
+  "D-1": {
+   "approved": "E50EDFE7644A9B5F",
+   "in_file": "E50EDFE7644A9B5F",
+   "recomputed": "E50EDFE7644A9B5F"
+  }
+ },
+ "operation_counts": {
+  "A-1": 7,
+  "A-2": 1,
+  "D-1": 1,
+  "total": 9
+ },
+ "existing_campaign_negatives_before": [
+  {
+   "campaign_id": "24132507741",
+   "criterion_id": "10000390",
+   "text": "auto",
+   "match": "BROAD",
+   "negative": true
+  },
+  {
+   "campaign_id": "24132507741",
+   "criterion_id": "10008241",
+   "text": "car",
+   "match": "BROAD",
+   "negative": true
+  },
+  {
+   "campaign_id": "24132507741",
+   "criterion_id": "10019071",
+   "text": "boat",
+   "match": "BROAD",
+   "negative": true
+  }
+ ],
+ "duplicates_found": [],
+ "account_list_members_before": [
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10061081",
+   "criterion_id": "10061081",
+   "text": "commercial",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10064981",
+   "criterion_id": "10064981",
+   "text": "dayton",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10065501",
+   "criterion_id": "10065501",
+   "text": "hagerstown",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10090121",
+   "criterion_id": "10090121",
+   "text": "white",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10115030",
+   "criterion_id": "10115030",
+   "text": "jba",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10210731",
+   "criterion_id": "10210731",
+   "text": "cb",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10242046",
+   "criterion_id": "10242046",
+   "text": "frigidaire",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10242571",
+   "criterion_id": "10242571",
+   "text": "assistance",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10274070",
+   "criterion_id": "10274070",
+   "text": "contract",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10277421",
+   "criterion_id": "10277421",
+   "text": "rods",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10449241",
+   "criterion_id": "10449241",
+   "text": "capital",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10544491",
+   "criterion_id": "10544491",
+   "text": "financing",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10545841",
+   "criterion_id": "10545841",
+   "text": "empire",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10546211",
+   "criterion_id": "10546211",
+   "text": "foster",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10581771",
+   "criterion_id": "10581771",
+   "text": "alliance",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10624201",
+   "criterion_id": "10624201",
+   "text": "thermostat",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10624211",
+   "criterion_id": "10624211",
+   "text": "thermostats",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10659386",
+   "criterion_id": "10659386",
+   "text": "attic",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10698651",
+   "criterion_id": "10698651",
+   "text": "aurora",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10856061",
+   "criterion_id": "10856061",
+   "text": "charest",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~11016891",
+   "criterion_id": "11016891",
+   "text": "aac",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~11044031",
+   "criterion_id": "11044031",
+   "text": "griffith",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~11143481",
+   "criterion_id": "11143481",
+   "text": "hanover",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~11203171",
+   "criterion_id": "11203171",
+   "text": "101",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~11458872",
+   "criterion_id": "11458872",
+   "text": "a&d",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12184766",
+   "criterion_id": "12184766",
+   "text": "hughes",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12341163",
+   "criterion_id": "12341163",
+   "text": "ruud",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12407891",
+   "criterion_id": "12407891",
+   "text": "maximus",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12605301",
+   "criterion_id": "12605301",
+   "text": "upper marlboro",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12696423",
+   "criterion_id": "12696423",
+   "text": "ibew",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12701406",
+   "criterion_id": "12701406",
+   "text": "wayne",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12709996",
+   "criterion_id": "12709996",
+   "text": "warner",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12712276",
+   "criterion_id": "12712276",
+   "text": "rcs",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12719736",
+   "criterion_id": "12719736",
+   "text": "ducane",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12721566",
+   "criterion_id": "12721566",
+   "text": "peach",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12735426",
+   "criterion_id": "12735426",
+   "text": "vernon",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12797116",
+   "criterion_id": "12797116",
+   "text": "bac",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12799876",
+   "criterion_id": "12799876",
+   "text": "corbin",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~13670783",
+   "criterion_id": "13670783",
+   "text": "rudd",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~14766721",
+   "criterion_id": "14766721",
+   "text": "empower",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~14822591",
+   "criterion_id": "14822591",
+   "text": "cw",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~15078610",
+   "criterion_id": "15078610",
+   "text": "montgomery county",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~16555761",
+   "criterion_id": "16555761",
+   "text": "wendt",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~19011703",
+   "criterion_id": "19011703",
+   "text": "forest hill",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~20991241",
+   "criterion_id": "20991241",
+   "text": "able",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~24333292",
+   "criterion_id": "24333292",
+   "text": "burlington nc",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~26594193",
+   "criterion_id": "26594193",
+   "text": "c&c",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~35908381",
+   "criterion_id": "35908381",
+   "text": "stumps",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~39773471",
+   "criterion_id": "39773471",
+   "text": "chestertown",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~150777453",
+   "criterion_id": "150777453",
+   "text": "chisholm",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~332203255",
+   "criterion_id": "332203255",
+   "text": "mcdaniels",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~4367690940",
+   "criterion_id": "4367690940",
+   "text": "ecobee",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~11920474920",
+   "criterion_id": "11920474920",
+   "text": "\ub73b",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~297674824691",
+   "criterion_id": "297674824691",
+   "text": "farnen",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~298117715756",
+   "criterion_id": "298117715756",
+   "text": "hvacc",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~300829403401",
+   "criterion_id": "300829403401",
+   "text": "dermer",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~308892326819",
+   "criterion_id": "308892326819",
+   "text": "tetteris",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~1424229155884",
+   "criterion_id": "1424229155884",
+   "text": "cbhvac",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  },
+  {
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~2417001304723",
+   "criterion_id": "2417001304723",
+   "text": "harmonaire",
+   "match": "BROAD",
+   "set_id": "11252984411"
+  }
+ ],
+ "account_list_member_count_before": 59,
+ "hanover_member_before": {
+  "resource_name": "customers/2401959466/sharedCriteria/11252984411~11143481",
+  "criterion_id": "11143481",
+  "text": "hanover",
+  "match": "BROAD",
+  "set_id": "11252984411"
+ },
+ "hanover_geo_targeted_before": [
+  {
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "criterion_id": "1018614",
+   "negative": false
+  },
+  {
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "criterion_id": "1018614",
+   "negative": false
+  },
+  {
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "criterion_id": "1018614",
+   "negative": false
+  },
+  {
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "criterion_id": "1018614",
+   "negative": false
+  },
+  {
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "criterion_id": "1018614",
+   "negative": false
+  }
+ ],
+ "live_keywords_before": [
+  {
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "text": "hvac replacement near me",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "text": "hvac replacement near me",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "text": "gas boiler repair",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign_id": "24132507744",
+   "campaign": "Gas Boiler Repair",
+   "text": "gas boiler repair",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "hvac installers",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "hvac installers",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "text": "hvac repair near me",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "text": "hvac repair near me",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "text": "ac repair near me",
+   "match": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  },
+  {
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "text": "ac repair near me",
+   "match": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE"
+  }
+ ],
+ "converting_terms_tested": 13,
+ "primary_converting_terms_tested": 5,
+ "conflict_tests": {
+  "keywords": [],
+  "service_probes": [],
+  "converting_terms": [],
+  "service_area_locations": [],
+  "hvac_brands": []
+ },
+ "held_members_present_before": [
+  "ducane",
+  "ecobee",
+  "frigidaire",
+  "rudd",
+  "ruud",
+  "thermostat",
+  "thermostats"
+ ],
+ "structural_baseline": {
+  "campaigns": 23,
+  "ad_groups_on_five": 5,
+  "ads_on_five": 20,
+  "positive_keywords": 10,
+  "campaign_negatives": 3,
+  "account_list_members": 59,
+  "budgets": {
+   "15787409435": 141450000,
+   "15787409438": 42760000,
+   "15787409441": 176150000,
+   "15787409444": 78950000,
+   "15787409447": 26320000
+  },
+  "cpc_ceilings": [
+   0
+  ],
+  "excluded_asset_set_types": [
+   []
+  ],
+  "ip_exclusions": 2796,
+  "ad_schedule_rows": 30,
+  "location_criteria": 375,
+  "conversion_actions": 16,
+  "wc_lead_include_in_conversions": [
+   false
+  ],
+  "sitelink_associations": 40,
+  "campaign_shared_sets_on_five": 0,
+  "location_asset_set_status": [
+   "ENABLED"
+  ],
+  "manager_links": {
+   "2815082755": "ACTIVE",
+   "3373711342": "ACTIVE"
+  }
+ },
+ "validate_only": {
+  "A-1 (7 PHRASE on 24132507747)": {
+   "status": "VALIDATE_OK",
+   "operations": 7,
+   "results_returned": 0
+  },
+  "A-2 (1 BROAD on 24132507741)": {
+   "status": "VALIDATE_OK",
+   "operations": 1,
+   "results_returned": 0
+  },
+  "D-1 (1 REMOVE 11252984411~11143481)": {
+   "status": "VALIDATE_OK",
+   "operations": 1,
+   "results_returned": 0
+  }
+ },
+ "preflight_result": "PASS",
+ "failed_checks": []
+}

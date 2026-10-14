@@ -1,0 +1,397 @@
+{
+ "generated_local": "2026-09-17T17:02:53.168328-04:00",
+ "target": "https://offer.mastergrasslawncare.com/landscaping-contractor/",
+ "cycle": 1,
+ "preconditions": {
+  "cache_purged_by": "Ahmad, confirmed by operator",
+  "cache_remains_enabled": true,
+  "page_not_loaded_before_visitor_a": true,
+  "first_request_after_purge_is_visitor_a": true
+ },
+ "forms_submitted": 0,
+ "tel_links_activated": 0,
+ "website_changes": 0,
+ "cache_purges_by_me": 0,
+ "expected": {
+  "A": {
+   "gclid": "QA-MASTERGRASS-A-GCLID-170253",
+   "gbraid": "QA-MASTERGRASS-A-GBRAID-170253",
+   "wbraid": "QA-MASTERGRASS-A-WBRAID-170253",
+   "utm_source": "QA-MASTERGRASS-A-SOURCE-170253",
+   "utm_medium": "QA-MASTERGRASS-A-MEDIUM-170253",
+   "utm_campaign": "QA-MASTERGRASS-A-CAMPAIGN-170253",
+   "utm_term": "QA-MASTERGRASS-A-TERM-170253",
+   "utm_content": "QA-MASTERGRASS-A-CONTENT-170253"
+  },
+  "B": {
+   "gclid": "QA-MASTERGRASS-B-GCLID-170253",
+   "gbraid": "QA-MASTERGRASS-B-GBRAID-170253",
+   "wbraid": "QA-MASTERGRASS-B-WBRAID-170253",
+   "utm_source": "QA-MASTERGRASS-B-SOURCE-170253",
+   "utm_medium": "QA-MASTERGRASS-B-MEDIUM-170253",
+   "utm_campaign": "QA-MASTERGRASS-B-CAMPAIGN-170253",
+   "utm_term": "QA-MASTERGRASS-B-TERM-170253",
+   "utm_content": "QA-MASTERGRASS-B-CONTENT-170253"
+  }
+ },
+ "visits": [
+  {
+   "visitor": "A",
+   "requested_url": "https://offer.mastergrasslawncare.com/landscaping-contractor/?gclid=QA-MASTERGRASS-A-GCLID-170253&gbraid=QA-MASTERGRASS-A-GBRAID-170253&wbraid=QA-MASTERGRASS-A-WBRAID-170253&utm_source=QA-MASTERGRASS-A-SOURCE-170253&utm_medium=QA-MASTERGRASS-A-MEDIUM-170253&utm_campaign=QA-MASTERGRASS-A-CAMPAIGN-170253&utm_term=QA-MASTERGRASS-A-TERM-170253&utm_content=QA-MASTERGRASS-A-CONTENT-170253",
+   "at": "2026-09-17T17:02:56.413956-04:00",
+   "http_status": 200,
+   "cache_headers": {
+    "host-header": "8441280b0c35cbc1147f8ba998a563a7",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache-enabled": "True",
+    "x-proxy-cache": "HIT"
+   },
+   "x_proxy_cache": "HIT",
+   "server_html_bytes": 145940,
+   "server_html_qa_markers": [],
+   "server_html_hidden_values": [],
+   "form_count": 2,
+   "duplicate_id_count": 34,
+   "title": "Landscaping Contractor | Master Grass",
+   "gtm_present": true,
+   "wc_visitor_cookie": "wc_visitor=94840-29d9deee-aeec-a69e-2dc7-9c2e723d6680",
+   "dataLayer_length": 3,
+   "tel_links": [
+    "tel:(515)%20310-1321",
+    "tel:(515) 310-1321",
+    "tel:(515)"
+   ],
+   "live_dom_populated": {
+    "gform_currency": [
+     "Irk8OoeNh4ptRcQGOgo0774KKb6VSQnrbSfG9/Sx0VXXQe9jN1CGw4vuV+V4fmYtZmbJBY3Ctz/Vwad7uP85emdzlt2Z9UqK9UPcHiOvy+7vrB4=",
+     "UC83RUDkWyZfRk4EnU3NnnM28dUUuGOtZ+RHoi5bUAKmNXQS/qzxXEgkEBo8OsqSWwh2j+d4Acba2OofHTulZl6dnJ5wlfxlfP+1lMNE5zaTTPA="
+    ],
+    "state_1": [
+     "WyJ7XCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcIjFiNTVhZjc5NjY3ZGViN2ExOGQ4OTk1NTMxNmFkZWJhXCIsXCJhNzM1ZTkwNjU1OWMyOWM4OTBkZTM4Mjg0MDg3ZTIyNVwiXSxcImdmb3JtX3RoZW1lXCI6XCI5NGE0NzM5MDRhYzhhY2UyYTRlZTM1OGU4YmQ5ZTU2MVwiLFwiZ2Zvcm1fc3R5bGVfc2V0dGlu"
+    ]
+   },
+   "live_dom_qa_markers": [],
+   "cookies": [
+    "wc_visitor",
+    "wc_client",
+    "wc_client_current",
+    "_gcl_au",
+    "_gcl_aw",
+    "wc_swap"
+   ],
+   "cookie_qa_markers": [
+    "QA-MASTERGRASS-A-CAMPAIGN-170253",
+    "QA-MASTERGRASS-A-CONTENT-170253",
+    "QA-MASTERGRASS-A-GCLID-170253",
+    "QA-MASTERGRASS-A-TERM-170253"
+   ],
+   "storage_qa_markers": [
+    "QA-MASTERGRASS-A-CAMPAIGN-170253",
+    "QA-MASTERGRASS-A-CONTENT-170253",
+    "QA-MASTERGRASS-A-GCLID-170253",
+    "QA-MASTERGRASS-A-TERM-170253"
+   ],
+   "hidden_field_names": [
+    "gform_currency",
+    "gform_field_values",
+    "gform_source_page_number_1",
+    "gform_style_settings",
+    "gform_submission_method",
+    "gform_submit",
+    "gform_target_page_number_1",
+    "gform_theme",
+    "gform_unique_id",
+    "input_10",
+    "input_11",
+    "input_12",
+    "input_13",
+    "input_14",
+    "input_15",
+    "input_9",
+    "is_submit_1",
+    "state_1"
+   ],
+   "screenshot": "01-visitorA-first.png"
+  },
+  {
+   "visitor": "A-reload",
+   "requested_url": "https://offer.mastergrasslawncare.com/landscaping-contractor/?gclid=QA-MASTERGRASS-A-GCLID-170253&gbraid=QA-MASTERGRASS-A-GBRAID-170253&wbraid=QA-MASTERGRASS-A-WBRAID-170253&utm_source=QA-MASTERGRASS-A-SOURCE-170253&utm_medium=QA-MASTERGRASS-A-MEDIUM-170253&utm_campaign=QA-MASTERGRASS-A-CAMPAIGN-170253&utm_term=QA-MASTERGRASS-A-TERM-170253&utm_content=QA-MASTERGRASS-A-CONTENT-170253",
+   "at": "2026-09-17T17:03:12.398556-04:00",
+   "http_status": 200,
+   "cache_headers": {
+    "host-header": "8441280b0c35cbc1147f8ba998a563a7",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache-enabled": "True",
+    "x-proxy-cache": "HIT"
+   },
+   "x_proxy_cache": "HIT",
+   "server_html_bytes": 145940,
+   "server_html_qa_markers": [],
+   "server_html_hidden_values": [],
+   "form_count": 2,
+   "duplicate_id_count": 34,
+   "title": "Landscaping Contractor | Master Grass",
+   "gtm_present": true,
+   "wc_visitor_cookie": "wc_visitor=94840-b225aacd-0c40-b9e1-eee6-64edf9fe00e1",
+   "dataLayer_length": 3,
+   "tel_links": [
+    "tel:(515)%20310-1321",
+    "tel:(515) 310-1321",
+    "tel:(515)"
+   ],
+   "live_dom_populated": {
+    "gform_currency": [
+     "Irk8OoeNh4ptRcQGOgo0774KKb6VSQnrbSfG9/Sx0VXXQe9jN1CGw4vuV+V4fmYtZmbJBY3Ctz/Vwad7uP85emdzlt2Z9UqK9UPcHiOvy+7vrB4=",
+     "UC83RUDkWyZfRk4EnU3NnnM28dUUuGOtZ+RHoi5bUAKmNXQS/qzxXEgkEBo8OsqSWwh2j+d4Acba2OofHTulZl6dnJ5wlfxlfP+1lMNE5zaTTPA="
+    ],
+    "state_1": [
+     "WyJ7XCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcIjFiNTVhZjc5NjY3ZGViN2ExOGQ4OTk1NTMxNmFkZWJhXCIsXCJhNzM1ZTkwNjU1OWMyOWM4OTBkZTM4Mjg0MDg3ZTIyNVwiXSxcImdmb3JtX3RoZW1lXCI6XCI5NGE0NzM5MDRhYzhhY2UyYTRlZTM1OGU4YmQ5ZTU2MVwiLFwiZ2Zvcm1fc3R5bGVfc2V0dGlu"
+    ]
+   },
+   "live_dom_qa_markers": [],
+   "cookies": [
+    "wc_visitor",
+    "wc_client",
+    "wc_client_current",
+    "_gcl_au",
+    "wc_swap",
+    "_gcl_aw"
+   ],
+   "cookie_qa_markers": [
+    "QA-MASTERGRASS-A-CAMPAIGN-170253",
+    "QA-MASTERGRASS-A-CONTENT-170253",
+    "QA-MASTERGRASS-A-GCLID-170253",
+    "QA-MASTERGRASS-A-TERM-170253"
+   ],
+   "storage_qa_markers": [
+    "QA-MASTERGRASS-A-CAMPAIGN-170253",
+    "QA-MASTERGRASS-A-CONTENT-170253",
+    "QA-MASTERGRASS-A-GCLID-170253",
+    "QA-MASTERGRASS-A-TERM-170253"
+   ],
+   "hidden_field_names": [
+    "gform_currency",
+    "gform_field_values",
+    "gform_source_page_number_1",
+    "gform_style_settings",
+    "gform_submission_method",
+    "gform_submit",
+    "gform_target_page_number_1",
+    "gform_theme",
+    "gform_unique_id",
+    "input_10",
+    "input_11",
+    "input_12",
+    "input_13",
+    "input_14",
+    "input_15",
+    "input_9",
+    "is_submit_1",
+    "state_1"
+   ],
+   "screenshot": "02-visitorA-reload.png"
+  },
+  {
+   "visitor": "B",
+   "requested_url": "https://offer.mastergrasslawncare.com/landscaping-contractor/?gclid=QA-MASTERGRASS-B-GCLID-170253&gbraid=QA-MASTERGRASS-B-GBRAID-170253&wbraid=QA-MASTERGRASS-B-WBRAID-170253&utm_source=QA-MASTERGRASS-B-SOURCE-170253&utm_medium=QA-MASTERGRASS-B-MEDIUM-170253&utm_campaign=QA-MASTERGRASS-B-CAMPAIGN-170253&utm_term=QA-MASTERGRASS-B-TERM-170253&utm_content=QA-MASTERGRASS-B-CONTENT-170253",
+   "at": "2026-09-17T17:03:28.194273-04:00",
+   "http_status": 200,
+   "cache_headers": {
+    "host-header": "8441280b0c35cbc1147f8ba998a563a7",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache-enabled": "True",
+    "x-proxy-cache": "HIT"
+   },
+   "x_proxy_cache": "HIT",
+   "server_html_bytes": 145940,
+   "server_html_qa_markers": [],
+   "server_html_hidden_values": [],
+   "form_count": 2,
+   "duplicate_id_count": 34,
+   "title": "Landscaping Contractor | Master Grass",
+   "gtm_present": true,
+   "wc_visitor_cookie": "wc_visitor=94840-1febc223-259f-7baa-1d48-77a9c7ce47af",
+   "dataLayer_length": 3,
+   "tel_links": [
+    "tel:(515)%20310-1321",
+    "tel:(515) 310-1321",
+    "tel:(515)"
+   ],
+   "live_dom_populated": {
+    "gform_currency": [
+     "Irk8OoeNh4ptRcQGOgo0774KKb6VSQnrbSfG9/Sx0VXXQe9jN1CGw4vuV+V4fmYtZmbJBY3Ctz/Vwad7uP85emdzlt2Z9UqK9UPcHiOvy+7vrB4=",
+     "UC83RUDkWyZfRk4EnU3NnnM28dUUuGOtZ+RHoi5bUAKmNXQS/qzxXEgkEBo8OsqSWwh2j+d4Acba2OofHTulZl6dnJ5wlfxlfP+1lMNE5zaTTPA="
+    ],
+    "state_1": [
+     "WyJ7XCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcIjFiNTVhZjc5NjY3ZGViN2ExOGQ4OTk1NTMxNmFkZWJhXCIsXCJhNzM1ZTkwNjU1OWMyOWM4OTBkZTM4Mjg0MDg3ZTIyNVwiXSxcImdmb3JtX3RoZW1lXCI6XCI5NGE0NzM5MDRhYzhhY2UyYTRlZTM1OGU4YmQ5ZTU2MVwiLFwiZ2Zvcm1fc3R5bGVfc2V0dGlu"
+    ]
+   },
+   "live_dom_qa_markers": [],
+   "cookies": [
+    "wc_visitor",
+    "wc_client",
+    "wc_client_current",
+    "_gcl_au",
+    "wc_swap",
+    "_gcl_aw"
+   ],
+   "cookie_qa_markers": [
+    "QA-MASTERGRASS-B-CAMPAIGN-170253",
+    "QA-MASTERGRASS-B-CONTENT-170253",
+    "QA-MASTERGRASS-B-GCLID-170253",
+    "QA-MASTERGRASS-B-TERM-170253"
+   ],
+   "storage_qa_markers": [
+    "QA-MASTERGRASS-B-CAMPAIGN-170253",
+    "QA-MASTERGRASS-B-CONTENT-170253",
+    "QA-MASTERGRASS-B-GCLID-170253",
+    "QA-MASTERGRASS-B-TERM-170253"
+   ],
+   "hidden_field_names": [
+    "gform_currency",
+    "gform_field_values",
+    "gform_source_page_number_1",
+    "gform_style_settings",
+    "gform_submission_method",
+    "gform_submit",
+    "gform_target_page_number_1",
+    "gform_theme",
+    "gform_unique_id",
+    "input_10",
+    "input_11",
+    "input_12",
+    "input_13",
+    "input_14",
+    "input_15",
+    "input_9",
+    "is_submit_1",
+    "state_1"
+   ],
+   "screenshot": "03-visitorB.png",
+   "visitor_a_values_found": [],
+   "received_own_values": []
+  },
+  {
+   "visitor": "C",
+   "requested_url": "https://offer.mastergrasslawncare.com/landscaping-contractor/",
+   "at": "2026-09-17T17:03:44.068343-04:00",
+   "http_status": 200,
+   "cache_headers": {
+    "host-header": "8441280b0c35cbc1147f8ba998a563a7",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache-enabled": "True",
+    "x-proxy-cache": "HIT"
+   },
+   "x_proxy_cache": "HIT",
+   "server_html_bytes": 145940,
+   "server_html_qa_markers": [],
+   "server_html_hidden_values": [],
+   "form_count": 2,
+   "duplicate_id_count": 34,
+   "title": "Landscaping Contractor | Master Grass",
+   "gtm_present": true,
+   "wc_visitor_cookie": "wc_visitor=94840-f570452f-3d49-f277-c62e-ae085895f1b4",
+   "dataLayer_length": 3,
+   "tel_links": [
+    "tel:(515)%20310-1321",
+    "tel:(515) 310-1321",
+    "tel:(515)"
+   ],
+   "live_dom_populated": {
+    "gform_currency": [
+     "Irk8OoeNh4ptRcQGOgo0774KKb6VSQnrbSfG9/Sx0VXXQe9jN1CGw4vuV+V4fmYtZmbJBY3Ctz/Vwad7uP85emdzlt2Z9UqK9UPcHiOvy+7vrB4=",
+     "UC83RUDkWyZfRk4EnU3NnnM28dUUuGOtZ+RHoi5bUAKmNXQS/qzxXEgkEBo8OsqSWwh2j+d4Acba2OofHTulZl6dnJ5wlfxlfP+1lMNE5zaTTPA="
+    ],
+    "state_1": [
+     "WyJ7XCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcIjFiNTVhZjc5NjY3ZGViN2ExOGQ4OTk1NTMxNmFkZWJhXCIsXCJhNzM1ZTkwNjU1OWMyOWM4OTBkZTM4Mjg0MDg3ZTIyNVwiXSxcImdmb3JtX3RoZW1lXCI6XCI5NGE0NzM5MDRhYzhhY2UyYTRlZTM1OGU4YmQ5ZTU2MVwiLFwiZ2Zvcm1fc3R5bGVfc2V0dGlu"
+    ]
+   },
+   "live_dom_qa_markers": [],
+   "cookies": [
+    "wc_visitor",
+    "_gcl_au",
+    "wc_client",
+    "wc_client_current",
+    "wc_swap"
+   ],
+   "cookie_qa_markers": [],
+   "storage_qa_markers": [],
+   "hidden_field_names": [
+    "gform_currency",
+    "gform_field_values",
+    "gform_source_page_number_1",
+    "gform_style_settings",
+    "gform_submission_method",
+    "gform_submit",
+    "gform_target_page_number_1",
+    "gform_theme",
+    "gform_unique_id",
+    "input_10",
+    "input_11",
+    "input_12",
+    "input_13",
+    "input_14",
+    "input_15",
+    "input_9",
+    "is_submit_1",
+    "state_1"
+   ],
+   "screenshot": "04-visitorC-noparams.png",
+   "any_qa_markers_found": []
+  }
+ ],
+ "cycle_1_verdict": "INCONCLUSIVE - Visitor A did not capture its own values on the initial request",
+ "verdict_inputs": {
+  "visitor_a_first_cache_state": "HIT",
+  "visitor_a_captured_own_values": false,
+  "hit_observed_on_a_followup": true,
+  "visitor_b_received_visitor_a_values": [],
+  "visitor_c_received_any_qa_marker": []
+ },
+ "precondition_failure": {
+  "expected": "Visitor A is the first request after the purge and returns x-proxy-cache: MISS",
+  "observed": "Visitor A returned x-proxy-cache: HIT on its very first request",
+  "all_four_visits_identical_bytes": 145940,
+  "meaning": "the cache was already warm when Visitor A arrived, so no new cache entry was created from a parameterised request and the leak path was never exercised",
+  "possible_causes": [
+   "the purge had not taken effect at the moment of the request",
+   "another visitor, bot or uptime monitor re-cached the page between the purge and Visitor A"
+  ]
+ },
+ "my_markers_containment": {
+  "in_site_cached_server_html": "NONE - server HTML was byte-identical on all four visits and contained no QA- marker",
+  "in_gravity_forms_hidden_fields": "NONE - input_9..input_15 were empty on every visit",
+  "in_my_own_browser_cookies_and_storage": [
+   "QA-MASTERGRASS-A-GCLID",
+   "-CAMPAIGN",
+   "-CONTENT",
+   "-TERM",
+   "QA-MASTERGRASS-B-GCLID",
+   "-CAMPAIGN",
+   "-CONTENT",
+   "-TERM"
+  ],
+  "note": "those live only in the ephemeral browser contexts I created, which were destroyed on close. Nothing of mine was written into the site's shared cache."
+ },
+ "incidental_finding_client_side_capture": {
+  "observed": "MasterGrass DOES capture some URL parameters client-side into first-party cookies/localStorage, scoped correctly per browser context",
+  "captured": [
+   "gclid",
+   "utm_campaign",
+   "utm_content",
+   "utm_term"
+  ],
+  "not_captured": [
+   "gbraid",
+   "wbraid",
+   "utm_source",
+   "utm_medium"
+  ],
+  "cross_contamination_in_storage": "NONE - Visitor B's storage held only B values",
+  "caveat": "this is storage capture, not form-field capture. The Gravity Forms hidden fields input_9..input_15 remained EMPTY throughout, so whether they are populated server-side (the Ambient mechanism) is still UNTESTED."
+ }
+}

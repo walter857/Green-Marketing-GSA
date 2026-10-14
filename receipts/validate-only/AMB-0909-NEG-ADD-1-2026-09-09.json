@@ -1,0 +1,31 @@
+{
+ "plan_name": "AMB-0909-NEG-ADD-1",
+ "fingerprint": "23BE8FF0F24C",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "validate_only": true,
+ "partial_failure": false,
+ "operation_count": 6,
+ "operations_log": [
+  "CREATE negative [PHRASE] 'arundel cooling and heating' on HVAC Installation",
+  "CREATE negative [PHRASE] 'maryland mechanical heating' on HVAC Installation",
+  "CREATE negative [PHRASE] 'all about air' on HVAC Installation",
+  "CREATE negative [PHRASE] 'home comfort hvac' on HVAC Installation",
+  "CREATE negative [PHRASE] 'sq ft house' on HVAC Installation",
+  "CREATE negative [EXACT] 'how much is hvac system' on HVAC Installation"
+ ],
+ "identity": {
+  "descriptive_name == 'Ambient Cooling - Live'": true,
+  "customer.id == 2401959466": true,
+  "not a manager account": true,
+  "not a test account": true,
+  "time_zone == America/New_York": true,
+  "currency_code == USD": true,
+  "Green Marketing manager 3373711342 ACTIVE": true,
+  "ClickCease manager 2815082755 ACTIVE": true
+ },
+ "started_local": "2026-09-09T14:59:30.393071-04:00",
+ "status": "VALIDATED_OK",
+ "results_returned": 0,
+ "finished_local": "2026-09-09T14:59:30.825491-04:00"
+}

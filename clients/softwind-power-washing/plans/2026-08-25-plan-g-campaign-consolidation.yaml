@@ -1,0 +1,226 @@
+change_plan:
+  plan_id: PLAN-G
+  plan_title: Resolve duplicate ad group now, defer full consolidation
+  approval_type: CAMPAIGN_STRUCTURE
+  priority: P1
+  approval_status: NOT APPROVED - HOLD FOR SEPTEMBER
+  execution_status: DO NOT EXECUTE
+  recommended_approval_order: NOT APPROVABLE - status HOLD
+  ads_mutation_count: 1
+  requires_separate_enable_approval: false
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  forensic_verdict: DUPLICATIVE / CANNIBALIZING
+  duplication_score: 12/12
+  evidence_file: snapshots/campaign-forensics-2026-08-25.json
+  forensic_comparison:
+    identical_on:
+      bidding_strategy_type: TARGET_SPEND (both)
+      cpc_bid_ceiling: null (both)
+      daily_budget: 41.11 (both, but separate unshared budget objects)
+      budget_delivery: STANDARD (both)
+      channel: SEARCH (both)
+      network_google_search: true
+      network_search_partners: false
+      network_display: false
+      geo_option: PRESENCE
+      geo_targets: identical 8 constants - Bellmore, Islip, Syosset, West Islip, Dix Hills, Salisbury,
+        North Hempstead, Babylon
+      ad_schedule: identical - Mon-Sat 08:00-18:00, six dayparts, no Sunday
+      campaign_negatives: identical 47 keywords, zero difference either way
+      biddable_conversion_goals: identical - PHONE_CALL_LEAD/WEBSITE, PHONE_CALL_LEAD/CALL_FROM_ADS,
+        SUBMIT_LEAD_FORM/WEBSITE
+      assets: identical - and the SAME 10 asset IDs are linked to both campaigns, not copies
+      targeting_restrictions: identical
+      tracking_template: none on either
+      final_url_suffix: none on either
+      ai_max: false on both
+      dsa: none on either
+      keyword_inventory: 100% overlap - 107 keyword rows each, byte-identical
+      ad_group_names: all 15 names exist in both campaigns
+    differing_on:
+      name:
+        A: Power Washing
+        B: 'Power Washing #2'
+      created:
+        A: '2026-08-04 09:22:12'
+        B: '2026-08-18 09:24:13'
+      budget_id:
+        A: '15764226923'
+        B: '15802443075'
+      primary_status:
+        A: LEARNING (BIDDING_STRATEGY_LEARNING)
+        B: ELIGIBLE
+      which_ad_groups_are_enabled: THE ONLY MEANINGFUL DIFFERENCE - see below
+  the_nuance_that_matters: 'Campaign B is a byte-for-byte CLONE of campaign A in every setting,
+    negative, asset, geo, schedule and keyword. But the ENABLED SUBSETS are largely complementary,
+    not overlapping: campaign A runs the six power-washing SKAGs, campaign B runs the six pressure/house/soft
+    SKAGs. Exactly ONE ad group is enabled in both. So the correct verdict is not simply "duplicate
+    campaigns, pause one". It is: DUPLICATIVE STRUCTURE carrying a MOSTLY COMPLEMENTARY enabled
+    subset with ONE genuine live collision. That distinction is what makes G-1 safe and urgent while
+    G-2 is neither.'
+  enabled_split:
+    campaign_A_24103511039:
+    - Power Washing Near Me
+    - Power Washing Services Near Me
+    - Power Washing Company Near Me
+    - Power Washing Islip
+    - Power Washing West Islip
+    - Power Washing Dix Hills
+    campaign_B_24145053510:
+    - Power Washing Services Near Me
+    - Residential Pressure Washing Near Me
+    - House Pressure Washing Estimate
+    - Driveway Pressure Washing Near Me
+    - Patio Pressure Washing Near Me
+    - Soft House Washing Near Me
+    enabled_in_both:
+    - Power Washing Services Near Me
+  live_collision_detail:
+    keyword_rows_live_in_both:
+    - text: power washing services near me
+      match_type: EXACT
+    - text: power washing services near me
+      match_type: PHRASE
+    shared_landing_page: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+    search_terms_seen_by_both_campaigns:
+      power washing services near me:
+        campaign_A_impressions: 2
+        campaign_B_impressions: 1
+    head_to_head:
+      campaign_A_202870585430:
+        impressions: 51
+        clicks: 1
+        cost: 22.13
+      campaign_B_198082078783:
+        impressions: 1
+        clicks: 0
+        cost: 0.0
+    reading: Campaign A wins this auction essentially always - 51 impressions against 1. The measured
+      harm to date is therefore small. The reason to act is not lost revenue; it is that two campaigns
+      entering one auction fragments reporting and learning, and the collision would grow the moment
+      budgets or bids move.
+  actions:
+  - action_id: P1-G01
+    priority: P1
+    stage: G-1
+    resource_type: AD_GROUP
+    operation: UPDATE_STATUS_TO_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: '198082078783'
+    ad_group_name: Power Washing Services Near Me
+    resource_id: customers/1521725229/adGroups/198082078783
+    field_mask: status
+    current_value:
+      status: ENABLED
+      impressions: 1
+      clicks: 0
+      cost: 0.0
+    proposed_value:
+      status: PAUSED
+    why: The only ad group enabled in both campaigns, holding the only two keyword rows live in
+      both. Campaign A's copy has taken 51 impressions and 1 click against this copy's 1 impression
+      and 0 clicks, so campaign A already wins the auction almost every time. Pausing the losing
+      copy removes the account's only genuine cross-campaign collision at effectively zero cost.
+    evidence: campaign-forensics-2026-08-25.json duplicate_ad_group_head_to_head; keywords.LIVE_IN_BOTH;
+      search_terms.terms_seen_by_BOTH_campaigns.
+    expected_effect: 'Removes cross-campaign competition on "power washing services near me". No
+      loss of coverage - campaign A continues to serve the identical keyword pair against the identical
+      landing page. Expected traffic change: within noise, since this copy has produced 1 impression
+      in its life.'
+    risk: LOW. The keyword remains live in campaign A. The only scenario in which this loses volume
+      is if campaign A's copy were later paused, which is not proposed.
+    rollback: Set ad_group 198082078783 status back to ENABLED. Single field edit.
+    approval_required: YES - this is a PAUSE, a live delivery change, and needs its own explicit
+      approval. It is deliberately NOT bundled with any CPC, schedule or enablement action.
+    object_count: 1
+  deferred_stage:
+    stage: G-2
+    title: Full consolidation into a single campaign
+    status: DO NOT APPROVE YET
+    defer_until: September 2026, after the August reporting period closes
+    recommended_surviving_campaign:
+      campaign_id: '24103511039'
+      campaign_name: Power Washing
+      why: Older (created 2026-08-04 versus 2026-08-18), carries 89 of the account's 103 impressions
+        and 4 of its 6 clicks, holds the account's entire Quality Score history, and owns the two
+        keywords that carry any QS data at all. Its name has no "#2" suffix. It is the natural survivor.
+    campaign_eventually_paused:
+      campaign_id: '24145053510'
+      campaign_name: 'Power Washing #2'
+    resources_that_must_be_preserved_or_migrated_first:
+    - The six SKAGs currently enabled ONLY in campaign B - Residential Pressure Washing Near Me,
+      House Pressure Washing Estimate, Driveway Pressure Washing Near Me, Patio Pressure Washing
+      Near Me, Soft House Washing Near Me, and (if PLAN-D is approved) House Washing Company Near
+      Me. Identical paused copies of the first five already exist in campaign A, so migration is
+      an ENABLE in A rather than a rebuild - but each is a separate enable approval.
+    - Any ad group created by PLAN-E. PLAN-E deliberately creates into campaign B. If G-2 is approved
+      before PLAN-E is enabled, PLAN-E should be re-pointed at campaign A instead. Ad groups cannot
+      be moved between campaigns in Google Ads; they must be rebuilt.
+    - Campaign B's budget object 15802443075 becomes orphaned. Campaign A's budget would need review,
+      since the account would drop from $82.22/day committed to $41.11/day. Note the account currently
+      spends $7.78/day, so this is a paper change, not a real constraint - but it must be a conscious
+      decision, not a side effect.
+    - The 10 shared asset IDs are linked to BOTH campaigns. They are shared asset objects, not copies,
+      so pausing campaign B does not delete them and campaign A keeps them intact. Verified, no
+      action needed.
+    - August performance history stays attached to campaign B and will not merge into campaign A.
+      Any month-end reporting must sum both.
+    expected_impact: Consolidated bidding signal and one learning cycle instead of two, one budget,
+      and clean reporting. No demand is gained - the same keywords serve either way. The account
+      reaches roughly 26 qualified impressions a day, and splitting that across two learning cycles
+      guarantees neither accumulates signal.
+    why_deferred: Consolidation resets learning. Campaign A is already in BIDDING_STRATEGY_LEARNING.
+      Doing this with six days left in August, in an account chasing its first-ever lead, risks
+      a delivery gap during precisely the week that matters most - and the measured harm from the
+      current split is one ad group with one impression. The cost of waiting is near zero; the cost
+      of acting now is a possible delivery interruption.
+    recovery_method_if_the_recommendation_is_wrong: Fully reversible. Campaign B is paused, never
+      removed, so its ad groups, keywords, ads and history remain intact. If consolidation degrades
+      performance, set campaign 24145053510 status back to ENABLED and pause the ad groups that
+      were enabled in campaign A to compensate. No resource is deleted at any point, so nothing
+      has to be rebuilt.
+    approval_required: YES - a separate destructive-adjacent approval, taken in September against
+      its own fresh plan and fingerprint. This plan does NOT request it.
+  explicitly_not_in_this_plan:
+  - NO campaign is paused. G-1 pauses one AD GROUP, not a campaign.
+  - NO campaign is removed at any stage. Pause only, always reversible.
+  - NO budget change.
+  - NO bidding change - that is PLAN-B.
+  - NO ad group enablement - that is PLAN-D.
+  - NO keyword or ad creation - that is PLAN-E.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_paused: 1
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 1
+    deferred_g2_mutations_not_counted: 1
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  hold_status:
+    state: HOLD FOR SEPTEMBER
+    set_on: '2026-08-26'
+    not_void: true
+    reason: G-1 pauses one duplicate ad group with 1 lifetime impression; G-2 is a full consolidation
+      that resets learning. Neither helps the month-end objective, and G-2 risks a delivery gap
+      in the final week. Both wait for September.
+    fingerprint_preserved: EC35724753AE

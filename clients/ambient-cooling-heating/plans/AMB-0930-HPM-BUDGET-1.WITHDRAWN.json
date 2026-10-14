@@ -1,0 +1,74 @@
+{
+ "plan": "AMB-0930-HPM-BUDGET-1",
+ "target": {
+  "child_customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live"
+ },
+ "work_order": "clients/ambient-cooling-heating/work-orders/work-order-heat-pump-maintenance-2026-09-30.yaml",
+ "approval_type": "SEPARATE EXPLICIT BUDGET APPROVAL",
+ "preconditions": {
+  "hp_campaign": {
+   "id": "24268690038",
+   "status": "ENABLED",
+   "budget_id": "15887323562",
+   "amount_micros": 15000000,
+   "shared": false
+  },
+  "maintenance_campaign": {
+   "id": "24279798229",
+   "status": "ENABLED",
+   "budget_id": "15887323565",
+   "amount_micros": 45000000,
+   "shared": false,
+   "enabled_ads": 0
+  },
+  "enabled_daily_total_usd": 305.0,
+  "pmax_pilot": {
+   "id": "24295088845",
+   "status": "PAUSED",
+   "budget_usd": 20.0
+  }
+ },
+ "operations": [
+  {
+   "op": "UPDATE",
+   "resource": "campaign_budget",
+   "id": "15887323562",
+   "campaign": "24268690038",
+   "field": "amount_micros",
+   "from": 15000000,
+   "to": 30000000
+  },
+  {
+   "op": "UPDATE",
+   "resource": "campaign_budget",
+   "id": "15887323565",
+   "campaign": "24279798229",
+   "field": "amount_micros",
+   "from": 45000000,
+   "to": 30000000
+  }
+ ],
+ "math": {
+  "enabled_daily_total_after_usd": 305.0,
+  "monthly_max_enabled_usd": 9272.0,
+  "monthly_max_if_pmax_enabled_usd": 9880.0,
+  "cap_monthly_usd": 10000.0,
+  "cap_daily_usd": 325.0,
+  "basis": "daily x 30.4",
+  "real_spend_effect": "HP campaign monthly ceiling $456.00 -> $912.00; Maintenance campaign has 0 enabled ads, so its cut changes no delivery. Net possible real spend increase <= $456.00/month."
+ },
+ "readback_assertions": [
+  "budget 15887323562 amount_micros == 30000000",
+  "budget 15887323565 amount_micros == 30000000",
+  "enabled daily total == 305.00",
+  "no campaign/ad group/ad/keyword status changed",
+  "PMax 24295088845 still PAUSED at its own $20 budget"
+ ],
+ "fingerprint": "7472853C4EA9",
+ "operation_count": 2,
+ "validate_only": "VALIDATE_OK",
+ "generated_local": "2026-09-30T12:19:42.933482-04:00",
+ "errors": [],
+ "status": "WITHDRAWN 2026-09-30b - NEVER EXECUTE. Superseded by the client CPL requirement (target $280, ceiling $350); Heat Pump Maintenance is on HOLD. The approval code must not be reused."
+}

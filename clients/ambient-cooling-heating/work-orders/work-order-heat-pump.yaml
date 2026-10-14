@@ -1,0 +1,55 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # IDENTITY GATE PASSED 2026-09-16 by fresh read-only API lookup, 10/10 checks.
+    # Evidence: clients/ambient-cooling-heating/snapshots/heating-identity-baseline-2026-09-16.json
+    #   descriptive_name "Ambient Cooling - Live" == expected
+    #   customer.id 2401959466 == expected (CHILD id, not the Green Marketing MCC)
+    #   manager=false  test=false  status=ENABLED  USD  America/New_York
+    #   manager 3373711342 Green Marketing ACTIVE; 2815082755 ClickCease ACTIVE
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Heat Pump Installation
+    related_services: []
+  task:
+    type: keyword-research
+    mode: draft
+    request: >-
+      Tier A canonical cluster 'Heat Pump & Ductless'. Covers heat pump repair, installation and replacement plus ductless mini-split installation, which Ambient's own heat-pump page names as a heat-pump type.
+      READ + DRAFT ONLY. This work order confers NO write authority. No campaign, ad group,
+      keyword, negative, ad, asset, budget, bid, conversion, WhatConverts, GTM or website
+      change is authorized. Every future external change requires its own fingerprinted plan
+      and its own explicit approval.
+    date_range: >-
+      CURRENT AS AT 2026-09-16. Latest fully settled day = 2026-09-15. 2026-09-16 is PARTIAL
+      and is never mixed into a settled comparison. Windows used: all-time account history
+      (2019-01-01 onward); last heating season 2025-10-01..2026-03-31; trailing 12 months
+      2025-09-16..2026-09-15; August clean window 2026-08-01..2026-08-31;
+      September 2026-09-01..2026-09-15.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://ambientcoolingandheating.com/services/heating-services/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: null
+    primary_conversion_goal: "unique qualified heating lead (form or call)"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-order.yaml
+    search_monthly_maximum_usd: 13000
+    search_monthly_maximum_basis: "daily budget x 30.4, never x 30"
+    max_combined_daily_usd: 427.63
+    heating_is_funded_by_reallocation_not_addition: true
+    live_geo_targets: 75
+    live_geo_composition: "28 City + 5 Neighborhood + 42 Postal Code, zero containment overlap"
+    launch_authorized: false
+  approval_owner: Green Marketing

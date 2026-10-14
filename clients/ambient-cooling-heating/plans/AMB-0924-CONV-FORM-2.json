@@ -1,0 +1,36 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-24",
+ "plan_name": "AMB-0924-CONV-FORM-2",
+ "revised_from": "AMB-0924-CONV-FORM-1 00E5791B8506 (gate replaced per owner 2026-09-24: do not wait for 3 new paid leads)",
+ "approval_class": "update-conversion-action-primary-flag",
+ "supersedes": "AMB-0923B-CONV-B 346D8583F5E8 (form half; its call half is withdrawn)",
+ "unchanged": {
+  "7643656486": "WC Lead PRIMARY",
+  "7643656075": "WC Calls PRIMARY",
+  "1068114183": "Calls from ads PRIMARY - complete native path for call-asset calls"
+ },
+ "operations": [
+  {
+   "op": "SET_CONVERSION_ACTION_PRIMARY_FLAG",
+   "conversion_action_id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "from": "primary_for_goal=True",
+   "to": "primary_for_goal=False",
+   "field_mask": "primary_for_goal"
+  }
+ ],
+ "preconditions_met": [
+  "GTM v16 live: native form conversion counts only confirmed submissions, with transaction_id",
+  "AMB-0924-LP-SWAP-2 executed: no enabled ad or sitelink sends paid clicks to the main site",
+  "WhatConverts captures #gform_1 on every live offer page (tests 259911044, 260010083, 260044129, 260045995; Sep-23 captures on 5 pages)",
+  "WC Lead click upload proven end-to-end on the offer template (2026-09-01 paid form lead: Success + credited)"
+ ],
+ "fallback": "6885463625 keeps recording as Secondary (All conversions); re-promote in one step if WC Lead stops crediting",
+ "effect": "One paid form lead counts once (WC Lead) instead of twice. The native tag keeps recording as a Secondary diagnostic, so nothing is lost if WC fails.",
+ "operation_count": 1,
+ "preflight": "VALIDATED 1",
+ "fingerprint": "8780E9522DDA"
+}

@@ -1,0 +1,75 @@
+client:
+  slug: example-hardscape
+  business_name: Example Hardscape
+  vertical: hardscaping
+  primary_service: paver patio installation
+  google_ads:
+    child_customer_id: "0000000000"
+    exact_child_account_name: Example Hardscape - live
+    manager_customer_id: "1111111111"
+    must_contain_live_marker: true
+    currency: USD
+    timezone: America/New_York
+  website:
+    primary_url: https://example.com/
+    landing_page_base_url: https://example.com/paver-patios/
+    phone_display: "(555) 010-0000"
+    phone_e164: "+15550100000"
+  offer:
+    services_in_scope:
+      - paver patio installation
+    services_excluded: []
+    verified_usps: []
+    verified_offers: []
+    average_job_revenue: null
+    gross_margin_pct: null
+    close_rate_pct: null
+    target_cpl: null
+    target_cpql: null
+    target_cac: null
+  service_area:
+    country_code: US
+    target_type: radius
+    geo_target_constant_ids: []
+    cities:
+      - Example City
+    postal_codes: []
+    radius:
+      latitude: 40.7891
+      longitude: -73.1350
+      distance: 20
+      unit: MILES
+    exclusions: []
+    location_option: PRESENCE
+  schedule:
+    timezone: America/New_York
+    can_answer_after_hours: false
+    windows:
+      - day: MONDAY
+        start: "08:00"
+        end: "18:00"
+  conversions:
+    primary:
+      - form_lead
+    secondary: []
+    call_minimum_seconds: null
+    crm_stage_mapping:
+      lead: new
+      qualified: qualified
+      sold: sold
+    offline_route: DATA_MANAGER_API
+  integrations:
+    crm: ""
+    call_tracking: ""
+    analytics: ""
+    tag_manager: ""
+    speed_to_lead: ""
+    review_url: ""
+    form_webhook_env_key: CRM_WEBHOOK_URL
+  permissions:
+    approvers:
+      - GM account owner
+    allow_create_paused: false
+    allow_enable: false
+    allow_budget_changes: false
+    allow_deletions: false

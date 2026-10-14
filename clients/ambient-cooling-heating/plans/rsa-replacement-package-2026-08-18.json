@@ -1,0 +1,380 @@
+{
+ "package": "ambient-cooling-heating-rsa-replacement",
+ "version": "2026-08-18",
+ "phase": "create-paused",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342"
+ },
+ "objects_to_create": 6,
+ "objects_to_modify": 0,
+ "objects_to_remove": 0,
+ "create_status": "PAUSED",
+ "enable_requires_separate_approval": true,
+ "ad_groups": {
+  "HVAC Installation": {
+   "campaign_id": "24132507747",
+   "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "ad_group_id": "202339087634",
+   "ad_group_name": "SKAG | HVAC Installation",
+   "canonical_keyword": "hvac installers",
+   "keyword_stems": [
+    "hvac install"
+   ],
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-installation/",
+   "landing_h1": "HVAC Installers in Severn, Severna Park & Columbia, MD",
+   "path1": "hvac-installers",
+   "path2": "severn-md",
+   "replaces": [
+    "820900825434",
+    "820900825437"
+   ],
+   "ads": [
+    {
+     "label": "A - direct response / service",
+     "headlines": [
+      "HVAC Installers in Severn",
+      "HVAC Installation Service",
+      "Local HVAC Installers",
+      "Severna Park HVAC Installers",
+      "Columbia HVAC Installers",
+      "Request a Free Quote",
+      "Request HVAC Installation",
+      "New Heating & Cooling Setup",
+      "Residential HVAC Installers",
+      "Commercial HVAC Installers",
+      "Central Maryland HVAC Team",
+      "Ambient Cooling & Heating",
+      "Talk to an HVAC Installer",
+      "Free HVAC Installation Quote",
+      "System Sizing & Placement"
+     ],
+     "descriptions": [
+      "Request a free quote from Ambient's HVAC installers for your home or business.",
+      "Talk with local HVAC installers about your heating and cooling system options.",
+      "Ambient sizes and places the new system, then completes the HVAC installation.",
+      "Serving Severn, Severna Park, Columbia and surrounding Central Maryland areas."
+     ],
+     "_keyword_headline_count": 10,
+     "_headline_lengths": [
+      25,
+      25,
+      21,
+      28,
+      24,
+      20,
+      25,
+      27,
+      27,
+      26,
+      26,
+      25,
+      25,
+      28,
+      25
+     ],
+     "_description_lengths": [
+      78,
+      78,
+      78,
+      78
+     ]
+    },
+    {
+     "label": "B - evaluation and comfort outcome",
+     "headlines": [
+      "HVAC Installation Done Right",
+      "Right-Sized HVAC Systems",
+      "HVAC Installers Near You",
+      "Even Comfort in Every Room",
+      "Start With a Free Quote",
+      "See Your System Options",
+      "Professional HVAC Install",
+      "Quiet, Steady Home Comfort",
+      "Ambient Installs It Right",
+      "HVAC Installation in Severn",
+      "Serving Central Maryland",
+      "Request HVAC Installation",
+      "Built for Your Floor Plan",
+      "Heating & Cooling Installed",
+      "Local HVAC Installers"
+     ],
+     "descriptions": [
+      "Ambient's HVAC installers match the system to your rooms, layout and comfort needs.",
+      "Get even temperatures and quieter operation from a properly installed HVAC system.",
+      "See your heating and cooling system options before the HVAC installation begins.",
+      "Request a free HVAC installation quote in Severn, Severna Park or Columbia."
+     ],
+     "_keyword_headline_count": 6,
+     "_headline_lengths": [
+      28,
+      24,
+      24,
+      26,
+      23,
+      23,
+      25,
+      26,
+      25,
+      27,
+      24,
+      25,
+      25,
+      27,
+      21
+     ],
+     "_description_lengths": [
+      83,
+      82,
+      80,
+      75
+     ]
+    }
+   ]
+  },
+  "HVAC Replacement": {
+   "campaign_id": "24132507753",
+   "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "ad_group_id": "200159223798",
+   "ad_group_name": "SKAG | HVAC Replacement Near Me",
+   "canonical_keyword": "hvac replacement near me",
+   "keyword_stems": [
+    "hvac replacement",
+    "replacement"
+   ],
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+   "landing_h1": "HVAC Replacement in Severn, Severna Park & Columbia, MD",
+   "path1": "hvac-replace",
+   "path2": "central-md",
+   "replaces": [
+    "820944944368",
+    "820944944371"
+   ],
+   "ads": [
+    {
+     "label": "A - direct response / service",
+     "headlines": [
+      "HVAC Replacement in Severn",
+      "Local HVAC Replacement",
+      "HVAC Replacement Near You",
+      "Columbia HVAC Replacement",
+      "Severna Park Replacement",
+      "Request HVAC Replacement",
+      "Request a Free Quote",
+      "Replace an Aging HVAC System",
+      "Residential HVAC Replacement",
+      "Commercial HVAC Replacement",
+      "New System, Better Comfort",
+      "Ambient Cooling & Heating",
+      "Central Maryland HVAC Team",
+      "Free HVAC Replacement Quote",
+      "System Evaluation First"
+     ],
+     "descriptions": [
+      "Request a free HVAC replacement quote for your home or business from Ambient.",
+      "Ambient evaluates the current system, then handles the complete HVAC replacement.",
+      "Compare repair and HVAC replacement options for your heating and cooling system.",
+      "Serving Severn, Severna Park, Columbia and surrounding Central Maryland areas."
+     ],
+     "_keyword_headline_count": 9,
+     "_headline_lengths": [
+      26,
+      22,
+      25,
+      25,
+      24,
+      24,
+      20,
+      28,
+      28,
+      27,
+      26,
+      25,
+      26,
+      27,
+      23
+     ],
+     "_description_lengths": [
+      77,
+      81,
+      80,
+      78
+     ]
+    },
+    {
+     "label": "B - evaluation and comfort outcome",
+     "headlines": [
+      "HVAC Replacement Done Right",
+      "Repair or Replace? Ask Us",
+      "HVAC Replacement Near You",
+      "Right-Sized Replacement",
+      "Steady Heating and Cooling",
+      "Start With a Free Quote",
+      "See Your System Options",
+      "Local HVAC Replacement",
+      "End Repeat HVAC Breakdowns",
+      "HVAC Replacement in Columbia",
+      "Serving Central Maryland",
+      "Evaluate Your System First",
+      "Quiet, Even Home Comfort",
+      "Replace Your HVAC System",
+      "Request HVAC Replacement"
+     ],
+     "descriptions": [
+      "Ambient evaluates your current system before recommending an HVAC replacement.",
+      "Get even temperatures and quieter operation from a right-sized replacement system.",
+      "See your heating and cooling options before the HVAC replacement is scheduled.",
+      "Request a free HVAC replacement quote in Severn, Severna Park or Columbia."
+     ],
+     "_keyword_headline_count": 6,
+     "_headline_lengths": [
+      27,
+      25,
+      25,
+      23,
+      26,
+      23,
+      23,
+      22,
+      26,
+      28,
+      24,
+      26,
+      24,
+      24,
+      24
+     ],
+     "_description_lengths": [
+      78,
+      82,
+      78,
+      74
+     ]
+    }
+   ]
+  },
+  "Gas Boiler Repair": {
+   "campaign_id": "24132507744",
+   "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "ad_group_id": "202339087594",
+   "ad_group_name": "SKAG | Gas Boiler Repair",
+   "canonical_keyword": "gas boiler repair",
+   "keyword_stems": [
+    "gas boiler repair",
+    "boiler repair"
+   ],
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+   "landing_h1": "Gas Boiler Repair in Severn, Severna Park & Columbia, MD",
+   "path1": "boiler-repair",
+   "path2": "severn-md",
+   "replaces": [
+    "820900825428",
+    "820900825431"
+   ],
+   "ads": [
+    {
+     "label": "A - direct response / service",
+     "headlines": [
+      "Gas Boiler Repair in Severn",
+      "Local Gas Boiler Repair",
+      "Gas Boiler Repair Service",
+      "Gas Boiler Repair Columbia",
+      "Severna Park Boiler Repair",
+      "Request Boiler Repair",
+      "Request a Free Quote",
+      "Boiler Not Heating Properly?",
+      "Help for Boiler Leaks & Noise",
+      "Gas Boiler Repair for Homes",
+      "Central Maryland Boiler Team",
+      "Ambient Cooling & Heating",
+      "Restore Warm Indoor Comfort",
+      "Free Gas Boiler Repair Quote",
+      "Boiler Diagnosis & Repair"
+     ],
+     "descriptions": [
+      "Request a free gas boiler repair quote for your home or business from Ambient.",
+      "Get gas boiler repair help for no heat, short cycling, unusual noises or leaks.",
+      "Ambient diagnoses the gas boiler fault, then explains the recommended repair.",
+      "Serving Severn, Severna Park, Columbia and surrounding Central Maryland areas."
+     ],
+     "_keyword_headline_count": 8,
+     "_headline_lengths": [
+      27,
+      23,
+      25,
+      26,
+      26,
+      21,
+      20,
+      28,
+      29,
+      27,
+      28,
+      25,
+      27,
+      28,
+      25
+     ],
+     "_description_lengths": [
+      78,
+      79,
+      77,
+      78
+     ]
+    },
+    {
+     "label": "B - symptom-led problem resolution",
+     "headlines": [
+      "Gas Boiler Repair Done Right",
+      "No Heat? Boiler Repair Help",
+      "Gas Boiler Repair Near You",
+      "Find the Boiler Fault",
+      "Steady Heat Through Winter",
+      "Start With a Free Quote",
+      "Boiler Leaks and Noises Fixed",
+      "Local Gas Boiler Repair",
+      "Short Cycling? We Can Help",
+      "Ambient Repairs Gas Boilers",
+      "Gas Boiler Repair in Severn",
+      "Serving Central Maryland",
+      "Request Boiler Repair",
+      "Warm Rooms Again",
+      "Boiler Diagnosis First"
+     ],
+     "descriptions": [
+      "Ambient traces no heat, short cycling, noises and leaks to the gas boiler fault.",
+      "Get warm rooms back with a gas boiler repair from a local Central Maryland team.",
+      "See what the gas boiler needs before any repair work is scheduled.",
+      "Request a free gas boiler repair quote in Severn, Severna Park or Columbia."
+     ],
+     "_keyword_headline_count": 6,
+     "_headline_lengths": [
+      28,
+      27,
+      26,
+      21,
+      26,
+      23,
+      29,
+      23,
+      26,
+      27,
+      27,
+      24,
+      21,
+      16,
+      22
+     ],
+     "_description_lengths": [
+      80,
+      80,
+      66,
+      75
+     ]
+    }
+   ]
+  }
+ },
+ "plan_fingerprint": "0BCC73A397580856"
+}

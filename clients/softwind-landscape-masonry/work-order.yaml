@@ -1,0 +1,165 @@
+# ---------------------------------------------------------------------------
+# SUPERSEDED 2026-09-03. This single-service work order is retained for history
+# only. It no longer governs any work on 2429758629.
+#
+# Replaced by two service work orders under the 2026-09 recovery program:
+#   work-order-a-patio-construction.yaml   service: patio construction
+#   work-order-b-paver-installation.yaml   service: paver installation
+# Linked by recovery/2026-09-patio-pavers/00-program-manifest.yaml
+#
+# It also fails the current validator, because client.yaml was restructured
+# onto the canonical schema on 2026-09-03. Do not repair it; use the two
+# replacements.
+# ---------------------------------------------------------------------------
+# Green Marketing work order - Softwind Landscape & Masonry
+#
+# ---------------------------------------------------------------------------
+# IDENTITY GATE: PASS (completed 2026-08-29 09:28 America/New_York).
+#
+# What IS verified (fresh read-only MCC discovery, 2026-08-28):
+#   The account "Softwind Landscape & Masonry - Live" / 2429758629 exists as a
+#   level-1, non-manager, non-test child of 3373711342 "Green Marketing", and
+#   carries the '- live' marker. Source: scripts/portfolio_discover.py run
+#   2026-08-28, reports/portfolio-live-accounts.json.
+#
+# What was verified 2026-08-29 (per-account confirmation read, from INSIDE
+# 2429758629, scripts/slm_identity_gate.py):
+#   descriptive_name = 'Softwind Landscape & Masonry - Live'  (exact match)
+#   id               = 2429758629                             (exact match)
+#   manager = false, test_account = false, '- live' marker present
+#   status = ENABLED, tz = America/New_York, currency = USD,
+#   auto_tagging_enabled = true
+#   Receipt: clients/softwind-landscape-masonry/snapshots/
+#            identity-gate-2026-08-29-0928.json
+#
+# The gate authorizes read-only work only. MODE IS READ below still governs.
+#
+# ORIGIN OF THIS WORK ORDER:
+#   The owner stated on 2026-08-28: "Softwind Pavers is Softwind Landscape &
+#   Masonry". The account label the owner originally used, "Softwind - Pavers",
+#   matches no account in the MCC. This file records the owner's own mapping.
+#   The exact service below is DERIVED from the owner's wording and must be
+#   confirmed before work begins - see open_questions.
+#
+# MODE IS READ. This work order authorizes SELECT queries and local drafts only.
+# It does NOT authorize any Google Ads mutation of any kind.
+# ---------------------------------------------------------------------------
+
+work_order:
+  client_slug: softwind-landscape-masonry
+  business_name: Softwind Landscape & Masonry
+  account:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: "2429758629"
+    manager_customer_id: "3373711342"
+  service:
+    # CONFIRMED BY THE OWNER 2026-08-28: this account is not pavers alone. It runs
+    # TWO campaigns, Patio and Pavers, and the account covers the landscape and
+    # masonry side of the business. Hardscaping is a core Green Marketing
+    # vertical, so no scope approval is required.
+    vertical: hardscaping
+    exact_primary_service: Pavers
+    related_services:
+      - Patio
+    expected_campaigns:
+      - Patio
+      - Pavers
+    owner_confirmation:
+      date: "2026-08-28"
+      statement: >-
+        "it is not pavers only it is patio campaign and pavers campaign. Both
+        softwinds owns to the same company but one it is for landscape and
+        mansory services and the another ones is for power washing and similar
+        services"
+    # Explicitly OUT OF SCOPE for this account - they belong to the sibling
+    # account Softwind Power Washing (1521725229). See cross_account_scope_fence.
+    excluded_services:
+      - power washing
+      - pressure washing
+      - soft washing
+      - house washing
+      - roof cleaning
+      - gutter cleaning
+      - window cleaning
+      - exterior surface cleaning
+  task:
+    type: search-terms
+    mode: read
+    request: >-
+      Search-term optimization. Classify the all-time search-term corpus against
+      the approved Pavers service, then draft campaign-level negative keywords
+      covering competitors, out-of-scope services and out-of-area geography, plus
+      the broad-match personal/business-name and entity-marker layer approved by
+      the owner on 2026-08-28 for the rest of the portfolio. Read and draft only.
+    date_range: >-
+      All available history through the execution date.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. hardscaping is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: ""      # UNKNOWN - read from the account, never assumed.
+    service_area: []              # UNKNOWN - read from campaign_criterion.
+    daily_budget: null            # UNKNOWN until the fresh read.
+    primary_conversion_goal: ""   # UNKNOWN until the fresh conversion-action read.
+    source_files:
+      - reports/portfolio-live-accounts.json
+      - clients/softwind-landscape-masonry/client.yaml
+
+  # ---------------------------------------------------------------------------
+  # Sibling account. Softwind Power Washing (1521725229) is a SEPARATE child
+  # account with its own work order. Its work order explicitly lists
+  # "paver sealing", "landscaping" and "masonry" as EXCLUDED services, so scope
+  # must never be inferred across the two accounts in either direction.
+  # ---------------------------------------------------------------------------
+  related_accounts:
+    - name: Softwind Power Washing - Live
+      customer_id: "1521725229"
+      relationship: >-
+        SAME COMPANY, separate child account, deliberately non-overlapping
+        service scope. Confirmed by the owner 2026-08-28.
+
+  # ---------------------------------------------------------------------------
+  # CROSS-ACCOUNT SCOPE FENCE. Owner instruction 2026-08-28: the two Softwind
+  # accounts must not compete with each other or absorb each other's demand.
+  # Each account carries campaign-level negatives for the OTHER account's
+  # services. This is a scope boundary, so it is applied preventively and does
+  # not require prior waste evidence.
+  # ---------------------------------------------------------------------------
+  cross_account_scope_fence:
+    this_account_blocks: exterior-cleaning intents (power / pressure / soft /
+      house washing, roof, gutter and window cleaning)
+    sibling_account_blocks: hardscape and landscape build intents (paver sealing,
+      paver and patio installation, masonry, landscaping, lawn care)
+    direction: mutual
+    note: >-
+      Cleaning intent belongs to 1521725229. Build, install, seal and masonry
+      intent belongs to 2429758629. "patio cleaning" is Power Washing;
+      "patio installation" is Landscape & Masonry.
+
+  open_questions:
+    - id: SLM-Q1
+      status: RESOLVED 2026-08-28 by the owner. Two campaigns, Patio and Pavers.
+    - id: SLM-Q3
+      question: >-
+        Does this account also run landscaping and masonry services beyond Patio
+        and Pavers? The account name says "Landscape & Masonry" but only two
+        campaigns were named. Confirm before extending keyword or negative scope
+        past Patio and Pavers.
+      blocks: nothing on this pass - Patio and Pavers are sufficient to proceed
+    - id: SLM-Q4
+      question: >-
+        Softwind Power Washing's client.yaml records business_name "Softwind
+        Powerwashing & Paver Sealing", yet its work order EXCLUDES paver sealing
+        and the owner reconfirmed that exclusion on 2026-08-28. Paver sealing is
+        therefore treated as belonging to THIS account. Confirm.
+      blocks: which account owns paver-sealing demand
+      recommended_answer: >-
+        Paver sealing belongs to 2429758629. Leave it excluded on 1521725229.
+    - id: SLM-Q2
+      status: >-
+        RESOLVED 2026-08-29. Per-account identity read performed from inside
+        2429758629; all five checks passed. Receipt:
+        snapshots/identity-gate-2026-08-29-0928.json
+
+  approval_owner: Walter Correa

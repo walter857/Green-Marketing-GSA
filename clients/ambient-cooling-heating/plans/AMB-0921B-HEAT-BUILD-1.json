@@ -1,0 +1,3688 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-21b",
+ "plan_name": "AMB-0921B-HEAT-BUILD-1",
+ "approval_class": "create-paused",
+ "everything_created_paused": true,
+ "nothing_enabled": true,
+ "cooling_untouched_by_this_plan": true,
+ "supersedes": [
+  "AMB-0921-HEAT-EXPAND-1 / 20A73EEA3023",
+  "AMB-0921-BUDGET-1 / 6C665894E30D",
+  "AMB-0921-BID-1 / B520C42F2007"
+ ],
+ "reuses_not_duplicates": {
+  "campaigns": {
+   "C1_REPAIR": "24257819463",
+   "C3_INSTALL": "24257819466",
+   "C4_BOILER": "24132507744"
+  },
+  "ad_groups": {
+   "SKAG | Furnace Repair": "199797580706",
+   "SKAG | Ductless Heating Installation": "199797580746",
+   "SKAG | Gas Boiler Repair": "202339087594"
+  },
+  "assets": {
+   "call": "407995613637 = (410) 705-6354",
+   "business_name": "80516971145",
+   "callouts": "5 reused, APPROVED/REVIEWED",
+   "sitelinks": "3 reused per campaign, APPROVED/REVIEWED, none pointing at the blocked heat-pumps URL",
+   "structured_snippets": "1 created per new campaign"
+  }
+ },
+ "campaigns": {
+  "C1_REPAIR": {
+   "reuse_campaign_id": "24257819463",
+   "name": "Search | NonBrand | Heating Repair | Central MD | BOFU | 2026-09",
+   "rename_to": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "daily_budget": 90.0,
+   "cpc_ceiling": 42.0,
+   "budget_id": "15885327972",
+   "ceiling_basis": "Pre-ceiling clearing prices: furnace p50 $23.04 / p75 $42.19 (161 clicks); heating_generic p50 $20.43 / p75 $37.48 (1,413 clicks). Account search-term CPCs: Furnace Repair $41.70, Heating Repair $10.35. $42 sits at the furnace p75, high enough to take three quarters of the auctions this theme has historically cleared, without chasing the $59.95-$63.50 p90 tail set under uncapped Maximize Clicks. Replaces the old $38.",
+   "budget_basis": "Largest allocation because this campaign carries the two biggest converting heating themes in the account: Heating Repair (34 conversions, $14,662) and Furnace Repair (5 conversions). At a $42 ceiling, $90/day funds roughly two clicks a day across six ad groups."
+  },
+  "C2_HEATPUMP": {
+   "reuse_campaign_id": null,
+   "name": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "daily_budget": 50.0,
+   "cpc_ceiling": 35.0,
+   "ceiling_basis": "heat_pump p50 $17.34 / p75 $32.00 (556 clicks); ductless p50 $22.26 / p75 $31.61 (940 clicks). Account search-term CPCs: Heat Pump Repair $25.32, Ductless Repair $23.30, Ductless Installation $25.66. $35 clears both p75s.",
+   "budget_basis": "REDUCED from the proposed $65 to $50 on evidence, not preference: four of this campaign's six ad groups point at the heat-pumps URL, which fails Google's destination check, so they will carry no ads and cannot spend. Only Ductless Heating Repair can deliver at launch. $65 would fund capacity that physically cannot be used. Restore to $65 in the same motion that unblocks the heat-pump page."
+  },
+  "C3_INSTALL": {
+   "reuse_campaign_id": "24257819466",
+   "name": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09",
+   "rename_to": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "daily_budget": 55.0,
+   "cpc_ceiling": 46.0,
+   "budget_id": "15885327975",
+   "ceiling_basis": "Installation clicks are the most expensive non-boiler heating clicks in the account: Furnace Replacement $45.97, Furnace Installation $45.39, oil furnace installation $28.22, furnace p75 $42.19. Heating-generic installation is much cheaper ($10.19-$16.81), so the ceiling is set by the furnace end of the campaign. $46 clears the observed furnace install/replace prices. Replaces the old $24, which sat below the account's own mini-split clearing price of $25.15 and priced the campaign out of its own best theme.",
+   "budget_basis": "Holds the proposed $55. Three of five ad groups lack an adequate page and will carry no ads at launch, but the two that can run (Furnace Replacement, Ductless Heating Installation) are expensive per click, so the budget is not stranded the way Campaign 2's would be."
+  },
+  "C4_BOILER": {
+   "reuse_campaign_id": "24132507744",
+   "name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "rename_to": "Search | NonBrand | Boiler Services | Central MD | BOFU | 2026-09",
+   "daily_budget": 45.0,
+   "cpc_ceiling": 60.0,
+   "budget_id": "15787409438",
+   "ceiling_basis": "The most expensive heating theme in the account. Generic boiler p50 $29.83 / p75 $55.80 (265 clicks); gas boiler p50 $87.75, mean $98.87 (160 clicks); account search-term CPCs Boiler Repair $59.32, Boiler Maintenance $75.08, Boiler Installation $47.76. $60 clears the generic-boiler p75 and the account boiler-repair CPC, and sits deliberately BELOW the gas-boiler prices because those were set under uncapped Maximize Clicks. Evidence the current $25 is binding: this ENABLED campaign has bought ONE click all season ($12.84) and is losing 31.2% of impression share to budget with 6.2% to rank.",
+   "budget_basis": "The only campaign in the account that is genuinely budget-limited (31.2% impression share lost to budget on $12/day). At a $60 ceiling, $45/day funds under one boiler click a day, which is the realistic shape of this theme."
+  },
+  "C5_MAINT": {
+   "reuse_campaign_id": null,
+   "name": "Search | NonBrand | Heating Maintenance & Inspection | Central MD | BOFU | 2026-09",
+   "daily_budget": 30.0,
+   "cpc_ceiling": 32.0,
+   "ceiling_basis": "Maintenance clearing prices: furnace|maintenance $24.80, heating|maintenance $23.38, boiler|maintenance $29.22, heat_pump|maintenance $30.25. $32 clears all four. Account search-term CPCs run higher (Furnace Maintenance $53.22, Boiler Maintenance $75.08) but those include boiler queries that belong to Campaign 4, not here.",
+   "budget_basis": "Holds the proposed $30 even though this campaign carries the BEST measured CPAs in the account (heat_pump|maintenance $185.85, furnace|maintenance $230.31). It is not raised because three of five ad groups have no page and cannot run at launch. Revisit once the tune-up and inspection pages exist - on CPA evidence this is the campaign most likely to deserve more."
+  },
+  "C6_THERMOSTAT": {
+   "reuse_campaign_id": null,
+   "name": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "daily_budget": 15.0,
+   "cpc_ceiling": 20.0,
+   "ceiling_basis": "NO campaign-level history exists for this theme. The only evidence is account search terms: Thermostat Repair $17.16 CPC (1 click), Smart Thermostat Installation $14.28 (1 click). Planner sample shows roughly 30 searches a month for thermostat repair. $20 is a conservative cold-start ceiling anchored just above the two observed clicks.",
+   "budget_basis": "REDUCED from the proposed $20 to $15. All three ad groups have NO landing page and cannot carry ads at launch, the theme has never converted, and client.yaml still lists all three thermostat services as capability-not-verified. $15 is a placeholder until a page and a capability confirmation exist."
+  },
+  "C7_GEO": {
+   "reuse_campaign_id": null,
+   "name": "Search | NonBrand | Geothermal Heat Pump | Central MD | BOFU | 2026-09",
+   "daily_budget": 20.0,
+   "cpc_ceiling": 38.0,
+   "ceiling_basis": "Campaign-named geothermal: mean $37.95, p50 $35.83 on 4 clicks. Geothermal SEARCH TERMS wherever served: $22.20 CPC on 59 clicks. $38 sits at the campaign-level observation and comfortably above the search-term CPC.",
+   "budget_basis": "Holds the proposed $20 as a controlled test with a stop-loss. At a $38 ceiling this funds roughly one click every two days - small, but above the level where a budget cannot buy a click at all."
+  }
+ },
+ "commercial_holding": {
+  "campaign_id": "24132507747",
+  "campaign": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+  "budget_id": "15787409441",
+  "from_usd": 95.0,
+  "to_usd": 20.0,
+  "why": "This campaign carries BOTH the residential SKAG | HVAC Installation ad group (202339087634) and SKAG | Commercial HVAC Installation (199748801029). Pausing the campaign would stop an approved commercial service, so the pause is taken at AD GROUP level and the campaign stays ENABLED. $20/day is a real commercial allocation, not a token: commercial HVAC installation clicks are expensive and the service must be able to buy one the moment its ads are enabled. It will spend $0 until then, because both of its ads are currently PAUSED.",
+  "commercial_state_2026_09_21": "Ad group ENABLED, 2 keywords ENABLED/APPROVED/ELIGIBLE, 2 ads APPROVED/REVIEWED but BOTH PAUSED, destination offer.ambientcoolingandheating.com/commercial-hvac-installation/ live at HTTP 200. All-time delivery: 0 impressions, 0 clicks, $0.00. It is one step from serving and has never served."
+ },
+ "ad_groups": {
+  "SKAG | Furnace Repair": {
+   "campaign_key": "C1_REPAIR",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "cpc_bid": 42.0,
+   "phrase": [],
+   "exact": [],
+   "evidence": "EXISTING ad group 199797580706, built 2026-09-17, 10 keywords APPROVED/ELIGIBLE and 2 RSAs APPROVED/REVIEWED. Reused, not recreated. Account search-term history: $2,084.77 / 50 clicks / 5 conversions, CPC $41.70, CPA $416.95. CHANGE REQUIRED: this ad group already carries 'gas furnace repair' in PHRASE and EXACT. The new scope gives Gas Furnace Repair its own SKAG, so those two keywords must move, not be duplicated. They are REMOVED here and recreated in 'SKAG | Gas Furnace Repair'. Without this the 'gas' cross-negative would block this ad group's own live keyword and the two ad groups would compete for one query.",
+   "rsas": [],
+   "existing_ad_group_id": "199797580706",
+   "rename_from": null,
+   "page_verdict": "ADEQUATE",
+   "launch_gate": null,
+   "remove_keywords": [
+    [
+     "gas furnace repair",
+     "PHRASE"
+    ],
+    [
+     "gas furnace repair",
+     "EXACT"
+    ]
+   ],
+   "services_covered": [
+    "Furnace Repair"
+   ]
+  },
+  "SKAG | Heating Repair": {
+   "campaign_key": "C1_REPAIR",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "cpc_bid": 42.0,
+   "phrase": [
+    "heating repair",
+    "heater repair"
+   ],
+   "exact": [
+    "heating repair",
+    "heater repair",
+    "heating repair service",
+    "residential heating repair"
+   ],
+   "evidence": "The single largest converting heating theme in the account: $14,662.48 / 1,416 clicks / 34 conversions, CPC $10.35, CPA $431.25. Campaign-level view agrees (heating_generic|repair CPA $265.66 on 42 conversions).",
+   "rsas": [
+    {
+     "label": "RSA A - service and location led",
+     "h": [
+      "Heating Repair Central MD",
+      "Heating Repair in Severn",
+      "Severna Park Heating",
+      "Columbia MD Heating Repair",
+      "Book A Heating Repair",
+      "Heating Repair Near You",
+      "Local Heating Technicians",
+      "Heating System Repair",
+      "Schedule A Repair Visit",
+      "Trained HVAC Technicians",
+      "Maryland Heating Repair",
+      "Request Heating Repair",
+      "Home Heating Repair",
+      "Talk To A Technician",
+      "Heating Service Central MD"
+     ],
+     "d": [
+      "Heating repair for homes across Severn, Severna Park and Columbia, Maryland.",
+      "Our technicians diagnose the fault and explain your options clearly.",
+      "Book a heating repair visit with Ambient Cooling and Heating.",
+      "Serving Central Maryland with professional heating services."
+     ]
+    },
+    {
+     "label": "RSA B - problem led",
+     "h": [
+      "Heating Not Working?",
+      "Heat Running But Cold?",
+      "Heating System Faulty?",
+      "Get Your Heating Checked",
+      "Heating Repair Near You",
+      "Central Maryland Heating",
+      "Heating Repair Specialists",
+      "Severn Heating Repair",
+      "Book A Heating Visit",
+      "Talk To A Technician",
+      "We Repair Home Heating",
+      "Clear Repair Options",
+      "Request Heating Service",
+      "Columbia Heating Service",
+      "Anne Arundel Heating"
+     ],
+     "d": [
+      "Heating trouble in Severn, Severna Park or Columbia? Our technicians help.",
+      "We diagnose the problem and walk you through the repair options.",
+      "Heating repair for Maryland homes and commercial properties.",
+      "Schedule a heating repair appointment with Ambient today."
+     ]
+    }
+   ],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "ADEQUATE",
+   "launch_gate": null,
+   "remove_keywords": [],
+   "services_covered": [
+    "Heating Repair"
+   ]
+  },
+  "SKAG | Emergency Heating Repair": {
+   "campaign_key": "C1_REPAIR",
+   "url": null,
+   "cpc_bid": 42.0,
+   "phrase": [
+    "emergency heating repair",
+    "emergency heater repair"
+   ],
+   "exact": [
+    "emergency heating repair",
+    "emergency heat repair",
+    "emergency furnace repair"
+   ],
+   "evidence": "Account search-term history: $881.40 / 52 clicks / 1 conversion, CPC $16.95. Real demand exists, but no page supports an emergency promise and answering/dispatch hours are NOT verified in client.yaml.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "NO PAGE",
+   "launch_gate": "DOUBLE GATE. (1) No landing page supports emergency intent - the heating hub mentions 'emergency' once. (2) client.yaml records call_answering_hours_confirmed: false and can_answer_after_hours: null, and campaigns run Mon-Fri 08:00-20:00 + Sat 08:00-13:00, so the service cannot be promised outside those hours. No RSA is drafted: emergency copy would be an unverified availability claim, which is barred.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Emergency Heating Repair"
+   ]
+  },
+  "SKAG | No Heat Repair": {
+   "campaign_key": "C1_REPAIR",
+   "url": null,
+   "cpc_bid": 42.0,
+   "phrase": [
+    "no heat repair",
+    "no heat service"
+   ],
+   "exact": [
+    "no heat repair",
+    "house has no heat"
+   ],
+   "evidence": "Account search-term history: 28 distinct terms, 0 clicks, 0 conversions. Demand is real but unbought. Same availability concern as emergency: a 'no heat' searcher expects a fast visit. DROPPED 2026-09-21: EXACT [no heat in house] was rejected by validate_only under GENERAL_DATING_AND_COMPANIONSHIP - a false positive from Google's classifier on an HVAC term. It is flagged exemptible, but [house has no heat] carries the same query intent and passes cleanly, so the keyword was dropped rather than an exemption filed.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "NO PAGE",
+   "launch_gate": "No landing page supports no-heat intent. No RSA drafted - copy cannot be verified against a page that does not exist.",
+   "remove_keywords": [],
+   "services_covered": [
+    "No Heat Repair"
+   ]
+  },
+  "SKAG | Gas Furnace Repair": {
+   "campaign_key": "C1_REPAIR",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "cpc_bid": 42.0,
+   "phrase": [
+    "gas furnace repair"
+   ],
+   "exact": [
+    "gas furnace repair"
+   ],
+   "evidence": "Account search-term history: $90.18 / 8 clicks / 0 conversions, CPC $11.27. The furnace-repair page supports furnace repair (repair 21, furnace 18) but never says 'gas'. Acceptable because the service is furnace repair and fuel type is a qualifier, not a different service - but a fuel-specific page would match better.",
+   "rsas": [
+    {
+     "label": "RSA A - service led",
+     "h": [
+      "Gas Furnace Repair",
+      "Gas Furnace Repair Severn",
+      "Severna Park Gas Furnace",
+      "Columbia Gas Furnace",
+      "Book A Furnace Repair",
+      "Furnace Repair Near You",
+      "Gas Furnace Technicians",
+      "Central Maryland Furnace",
+      "Schedule A Repair Visit",
+      "Trained HVAC Technicians",
+      "Maryland Furnace Repair",
+      "Request Furnace Repair",
+      "Home Furnace Repair",
+      "Talk To A Technician",
+      "Furnace Repair Central MD"
+     ],
+     "d": [
+      "Gas furnace repair for homes in Severn, Severna Park and Columbia, Maryland.",
+      "Our technicians diagnose the fault and explain your options clearly.",
+      "Book a furnace repair visit with Ambient Cooling and Heating.",
+      "Serving Central Maryland with professional furnace repair."
+     ]
+    },
+    {
+     "label": "RSA B - problem led",
+     "h": [
+      "Gas Furnace Not Working?",
+      "Furnace Blowing Cold Air?",
+      "Furnace Cutting Out?",
+      "Get Your Furnace Checked",
+      "Gas Furnace Repair Near You",
+      "Severn Furnace Repair",
+      "Furnace Repair Specialists",
+      "Central Maryland Furnace",
+      "Book A Furnace Visit",
+      "Talk To A Technician",
+      "We Repair Gas Furnaces",
+      "Clear Repair Options",
+      "Request Furnace Service",
+      "Columbia Furnace Repair",
+      "Anne Arundel Furnace"
+     ],
+     "d": [
+      "Gas furnace trouble in Severn, Severna Park or Columbia? Our technicians help.",
+      "We diagnose the problem and walk you through the repair options.",
+      "Furnace repair for Maryland homes and commercial properties.",
+      "Schedule a furnace repair appointment with Ambient today."
+     ]
+    }
+   ],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "ADEQUATE WITH CAVEAT",
+   "launch_gate": null,
+   "remove_keywords": [],
+   "services_covered": [
+    "Gas Furnace Repair"
+   ]
+  },
+  "SKAG | Electric Furnace Repair": {
+   "campaign_key": "C1_REPAIR",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "cpc_bid": 42.0,
+   "phrase": [
+    "electric furnace repair"
+   ],
+   "exact": [
+    "electric furnace repair"
+   ],
+   "evidence": "Account search-term history: $47.64 / 3 clicks / 0 conversions, CPC $15.88. NOTE: client.yaml lists 'Electric furnace repair' under services_capability_not_verified. The 2026-09-21 instruction places it in advertising scope, which supersedes that flag, but the capability itself has still not been independently verified and the page never says 'electric'.",
+   "rsas": [
+    {
+     "label": "RSA A - service led",
+     "h": [
+      "Electric Furnace Repair",
+      "Electric Furnace Severn",
+      "Severna Park Furnace",
+      "Columbia Furnace Repair",
+      "Book A Furnace Repair",
+      "Furnace Repair Near You",
+      "Electric Furnace Service",
+      "Central Maryland Furnace",
+      "Schedule A Repair Visit",
+      "Trained HVAC Technicians",
+      "Maryland Furnace Repair",
+      "Request Furnace Repair",
+      "Home Furnace Repair",
+      "Talk To A Technician",
+      "Furnace Repair Central MD"
+     ],
+     "d": [
+      "Electric furnace repair for homes in Severn, Severna Park and Columbia, MD.",
+      "Our technicians diagnose the fault and explain your options clearly.",
+      "Book a furnace repair visit with Ambient Cooling and Heating.",
+      "Serving Central Maryland with professional furnace repair."
+     ]
+    },
+    {
+     "label": "RSA B - problem led",
+     "h": [
+      "Electric Furnace Faulty?",
+      "Furnace Blowing Cold Air?",
+      "Furnace Cutting Out?",
+      "Get Your Furnace Checked",
+      "Furnace Repair Near You",
+      "Severn Furnace Repair",
+      "Furnace Repair Specialists",
+      "Central Maryland Furnace",
+      "Book A Furnace Visit",
+      "Talk To A Technician",
+      "We Repair Electric Furnaces",
+      "Clear Repair Options",
+      "Request Furnace Service",
+      "Columbia Furnace Repair",
+      "Anne Arundel Furnace"
+     ],
+     "d": [
+      "Electric furnace trouble in Severn, Severna Park or Columbia? We can help.",
+      "We diagnose the problem and walk you through the repair options.",
+      "Furnace repair for Maryland homes and commercial properties.",
+      "Schedule a furnace repair appointment with Ambient today."
+     ]
+    }
+   ],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "ADEQUATE WITH CAVEAT",
+   "launch_gate": "Confirm Ambient services electric furnaces before enabling. The scope instruction authorises advertising it; it does not verify the capability.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Electric Furnace Repair"
+   ]
+  },
+  "SKAG | Heat Pump Repair": {
+   "campaign_key": "C2_HEATPUMP",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "cpc_bid": 35.0,
+   "phrase": [
+    "heat pump repair"
+   ],
+   "exact": [
+    "heat pump repair",
+    "heat pump not heating",
+    "heat pump service"
+   ],
+   "evidence": "Account search-term history: $1,088.79 / 43 clicks / 0 conversions, CPC $25.32. Campaign view: heat_pump|repair CPC $9.46, 3 conversions, CPA $365.93.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "DESTINATION BLOCKED",
+   "launch_gate": "Heat Pump page fails Google's destination check. Ad group and keywords are created PAUSED so the structure exists, but NO RSA is included - the API rejects any ad pointing at this URL and would abort the batch. An ad group with no ads cannot serve. Do not substitute another URL.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Heat Pump Repair"
+   ]
+  },
+  "SKAG | Heat Pump Replacement": {
+   "campaign_key": "C2_HEATPUMP",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "cpc_bid": 35.0,
+   "phrase": [
+    "heat pump replacement"
+   ],
+   "exact": [
+    "heat pump replacement",
+    "replace heat pump"
+   ],
+   "evidence": "Account search-term history: 30 terms, 2 clicks, 1 conversion on $6.27.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "DESTINATION BLOCKED",
+   "launch_gate": "Heat Pump page fails Google's destination check. Ad group and keywords are created PAUSED so the structure exists, but NO RSA is included - the API rejects any ad pointing at this URL and would abort the batch. An ad group with no ads cannot serve. Do not substitute another URL.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Heat Pump Replacement"
+   ]
+  },
+  "SKAG | Heat Pump Installation": {
+   "campaign_key": "C2_HEATPUMP",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "cpc_bid": 35.0,
+   "phrase": [
+    "heat pump installation"
+   ],
+   "exact": [
+    "heat pump installation",
+    "heat pump installers near me"
+   ],
+   "evidence": "Campaign view: heat_pump|installation $6,128.74 / 397 clicks / 16 conversions, CPC $15.44, CPA $383.05 - the strongest heat-pump intent in the account.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "DESTINATION BLOCKED",
+   "launch_gate": "Heat Pump page fails Google's destination check. Ad group and keywords are created PAUSED so the structure exists, but NO RSA is included - the API rejects any ad pointing at this URL and would abort the batch. An ad group with no ads cannot serve. Do not substitute another URL.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Heat Pump Installation"
+   ]
+  },
+  "SKAG | Heat Pump Maintenance": {
+   "campaign_key": "C2_HEATPUMP",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "cpc_bid": 35.0,
+   "phrase": [
+    "heat pump maintenance"
+   ],
+   "exact": [
+    "heat pump maintenance",
+    "heat pump tune up"
+   ],
+   "evidence": "Campaign view: heat_pump|maintenance CPA $185.85 on 7 conversions - the BEST measured CPA of any heating intent in this account.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "DESTINATION BLOCKED",
+   "launch_gate": "Heat Pump page fails Google's destination check. Ad group and keywords are created PAUSED so the structure exists, but NO RSA is included - the API rejects any ad pointing at this URL and would abort the batch. An ad group with no ads cannot serve. Do not substitute another URL.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Heat Pump Maintenance"
+   ]
+  },
+  "SKAG | Ductless Heating Repair": {
+   "campaign_key": "C2_HEATPUMP",
+   "url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "cpc_bid": 35.0,
+   "phrase": [
+    "ductless heating repair",
+    "mini split repair"
+   ],
+   "exact": [
+    "ductless repair",
+    "mini split repair",
+    "ductless heating repair"
+   ],
+   "evidence": "Account search-term history: $838.66 / 36 clicks / 3 conversions, CPC $23.30, CPA $279.55 - one of the better heating CPAs. The mini-splits page carries repair content (repair 11, ductless 16), not installation only.",
+   "rsas": [
+    {
+     "label": "RSA A - service led",
+     "h": [
+      "Ductless Heating Repair",
+      "Mini Split Repair Severn",
+      "Severna Park Mini Split",
+      "Columbia Ductless Repair",
+      "Book A Ductless Repair",
+      "Ductless Repair Near You",
+      "Mini Split Technicians",
+      "Central Maryland Ductless",
+      "Schedule A Repair Visit",
+      "Trained HVAC Technicians",
+      "Maryland Mini Split Help",
+      "Request Ductless Repair",
+      "Home Ductless Repair",
+      "Talk To A Technician",
+      "Ductless Repair Central MD"
+     ],
+     "d": [
+      "Ductless and mini split repair across Severn, Severna Park and Columbia, MD.",
+      "Our technicians diagnose the fault and explain your options clearly.",
+      "Book a ductless repair visit with Ambient Cooling and Heating.",
+      "Serving Central Maryland with professional mini split service."
+     ]
+    },
+    {
+     "label": "RSA B - problem led",
+     "h": [
+      "Mini Split Not Heating?",
+      "Ductless Unit Faulty?",
+      "Mini Split Leaking?",
+      "Get Your Ductless Checked",
+      "Ductless Repair Near You",
+      "Severn Ductless Repair",
+      "Mini Split Specialists",
+      "Central Maryland Ductless",
+      "Book A Ductless Visit",
+      "Talk To A Technician",
+      "We Repair Mini Splits",
+      "Clear Repair Options",
+      "Request Ductless Service",
+      "Columbia Mini Split Help",
+      "Anne Arundel Ductless"
+     ],
+     "d": [
+      "Mini split trouble in Severn, Severna Park or Columbia? Our technicians help.",
+      "We diagnose the problem and walk you through the repair options.",
+      "Ductless heating repair for Maryland homes and businesses.",
+      "Schedule a ductless repair appointment with Ambient today."
+     ]
+    }
+   ],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "ADEQUATE",
+   "launch_gate": null,
+   "remove_keywords": [],
+   "services_covered": [
+    "Ductless Heating Repair"
+   ]
+  },
+  "SKAG | Furnace Replacement": {
+   "campaign_key": "C3_INSTALL",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "cpc_bid": 46.0,
+   "phrase": [
+    "furnace replacement"
+   ],
+   "exact": [
+    "furnace replacement",
+    "replace furnace",
+    "new furnace cost"
+   ],
+   "evidence": "Account search-term history: $321.79 / 7 clicks / 0 conversions, CPC $45.97. The furnace-repair page carries an explicit replacement H2 ('Trusted Furnace Repair and Replacement') and 10 replacement mentions, so it genuinely supports this intent.",
+   "rsas": [
+    {
+     "label": "RSA A - service led",
+     "h": [
+      "Furnace Replacement",
+      "Replace Your Furnace",
+      "Furnace Replacement Severn",
+      "Severna Park Furnace",
+      "Columbia MD Furnace",
+      "New Furnace Assessment",
+      "Furnace Replacement Quote",
+      "Central Maryland Furnace",
+      "Book An Assessment",
+      "Trained HVAC Technicians",
+      "Maryland Furnace Service",
+      "Request Replacement Info",
+      "Plan Your Replacement",
+      "Talk To A Technician",
+      "Furnace Replacement Central MD"
+     ],
+     "d": [
+      "Furnace replacement for homes in Severn, Severna Park and Columbia, Maryland.",
+      "We assess your current furnace and explain the replacement options.",
+      "Book a furnace assessment with Ambient Cooling and Heating.",
+      "Serving Central Maryland with professional furnace replacement."
+     ]
+    },
+    {
+     "label": "RSA B - problem led",
+     "h": [
+      "Furnace Near The End?",
+      "Old Furnace Failing?",
+      "Repair Or Replace?",
+      "Upgrade Your Furnace",
+      "Furnace Replacement Quote",
+      "Severn Furnace Help",
+      "Furnace Specialists",
+      "Central Maryland Furnace",
+      "Book An Assessment",
+      "Talk To A Technician",
+      "Plan The Replacement",
+      "Clear Replacement Options",
+      "Request An Assessment",
+      "Columbia Furnace Help",
+      "Warm Home This Winter"
+     ],
+     "d": [
+      "An ageing furnace gives little warning. Plan the replacement early.",
+      "We assess your current furnace and set out the replacement options.",
+      "Furnace replacement across Severn, Severna Park and Columbia homes.",
+      "Schedule a furnace assessment with Ambient today."
+     ]
+    }
+   ],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "ADEQUATE",
+   "launch_gate": null,
+   "remove_keywords": [],
+   "services_covered": [
+    "Furnace Replacement"
+   ]
+  },
+  "SKAG | Furnace Installation": {
+   "campaign_key": "C3_INSTALL",
+   "url": null,
+   "cpc_bid": 46.0,
+   "phrase": [
+    "furnace installation"
+   ],
+   "exact": [
+    "furnace installation",
+    "furnace installers near me"
+   ],
+   "evidence": "Account search-term history: $317.74 / 7 clicks / 0 conversions, CPC $45.39.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "INSUFFICIENT PAGE",
+   "launch_gate": "The furnace-repair page mentions installation 5 times and has no installation section or heading. Sending installation traffic there is exactly the mismatch the instruction forbids. No RSA drafted - copy cannot be verified against a page that does not exist.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Furnace Installation"
+   ]
+  },
+  "SKAG | Heating Replacement": {
+   "campaign_key": "C3_INSTALL",
+   "url": null,
+   "cpc_bid": 46.0,
+   "phrase": [
+    "heating replacement",
+    "heating system replacement"
+   ],
+   "exact": [
+    "heating replacement",
+    "heating system replacement",
+    "replace heating system"
+   ],
+   "evidence": "Account search-term history: Heating Replacement $215.27 / 15 clicks / 0 conversions, CPC $14.35; Heating System Replacement 2 terms, no clicks. Covers BOTH requested service labels in one ad group, as instructed, because they are close variants that Google groups into one demand bucket.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "INSUFFICIENT PAGE",
+   "launch_gate": "The heating hub mentions replacement 6 times with no replacement section. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Heating Replacement",
+    "Heating System Replacement"
+   ]
+  },
+  "SKAG | Heating Installation": {
+   "campaign_key": "C3_INSTALL",
+   "url": null,
+   "cpc_bid": 46.0,
+   "phrase": [
+    "heating installation",
+    "heating system installation"
+   ],
+   "exact": [
+    "heating installation",
+    "heating system installation"
+   ],
+   "evidence": "Account search-term history: Heating Installation $857.15 / 51 clicks / 2 conversions, CPC $16.81, CPA $428.57; Heating System Installation 4 terms, no clicks. Covers BOTH requested labels in one ad group.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "INSUFFICIENT PAGE",
+   "launch_gate": "The heating hub mentions installation 7 times with no installation section. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Heating Installation",
+    "Heating System Installation"
+   ]
+  },
+  "SKAG | Ductless Heating Installation": {
+   "campaign_key": "C3_INSTALL",
+   "url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "cpc_bid": 46.0,
+   "phrase": [],
+   "exact": [],
+   "evidence": "RENAME of existing ad group 199797580746 'SKAG | Mini Split Installation', built 2026-09-17 with 8 keywords and 2 APPROVED RSAs. Renamed rather than duplicated, as instructed. NOTE: Google Ads cannot move an ad group between campaigns, so it stays in campaign 24257819466 (Campaign 3) rather than moving to Campaign 2. That is the right home anyway - it is an installation ad group in the installation campaign. Account history: $461.79 / 18 clicks / 0 conversions, CPC $25.66.",
+   "rsas": [],
+   "existing_ad_group_id": "199797580746",
+   "rename_from": "SKAG | Mini Split Installation",
+   "page_verdict": "ADEQUATE",
+   "launch_gate": null,
+   "remove_keywords": [],
+   "services_covered": [
+    "Ductless Heating Installation"
+   ]
+  },
+  "SKAG | Gas Boiler Repair": {
+   "campaign_key": "C4_BOILER",
+   "url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+   "cpc_bid": 60.0,
+   "phrase": [],
+   "exact": [],
+   "evidence": "EXISTING ad group 202339087594 on the live boiler campaign. 2 keywords APPROVED/ELIGIBLE, 2 ENABLED APPROVED RSAs (plus 2 older PAUSED RSAs disapproved for CONSUMER_FINANCE, left untouched). Reused, not recreated.",
+   "rsas": [],
+   "existing_ad_group_id": "202339087594",
+   "rename_from": null,
+   "page_verdict": "ADEQUATE",
+   "launch_gate": null,
+   "remove_keywords": [],
+   "services_covered": [
+    "Gas Boiler Repair"
+   ]
+  },
+  "SKAG | Boiler Repair": {
+   "campaign_key": "C4_BOILER",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "cpc_bid": 60.0,
+   "phrase": [
+    "boiler repair"
+   ],
+   "exact": [
+    "boiler repair",
+    "residential boiler repair",
+    "commercial boiler repair"
+   ],
+   "evidence": "Account search-term history: $5,219.83 / 88 clicks / 12.33 conversions, CPC $59.32, CPA $423.34 - the second largest converting heating theme. The boiler-repair page is strongly repair-weighted (repair 29, boiler 19) and explicitly serves businesses ('Expert Boiler Repair to Get You Back in Business'), which supports the commercial EXACT variant.",
+   "rsas": [
+    {
+     "label": "RSA A - service led",
+     "h": [
+      "Boiler Repair in Severn",
+      "Boiler Repair Central MD",
+      "Severna Park Boiler Repair",
+      "Columbia MD Boiler Repair",
+      "Residential Boiler Repair",
+      "Commercial Boiler Repair",
+      "Boiler Repair Technicians",
+      "Book a Boiler Repair Visit",
+      "Maryland Boiler Repair",
+      "Boiler Diagnosis Explained",
+      "Schedule Boiler Service",
+      "Homes and Businesses",
+      "Trained HVAC Technicians",
+      "Boiler Service Central MD",
+      "Request Boiler Repair"
+     ],
+     "d": [
+      "Boiler repair for homes and businesses in Severn, Severna Park and Columbia.",
+      "Our technicians diagnose the fault and explain your options clearly.",
+      "Book a boiler repair visit with Ambient Cooling and Heating.",
+      "Serving Central Maryland with professional boiler repair."
+     ]
+    },
+    {
+     "label": "RSA B - problem led",
+     "h": [
+      "Boiler Stopped Working?",
+      "No Heat From Your Boiler?",
+      "Boiler Leaking or Faulty?",
+      "Get Your Boiler Looked At",
+      "Boiler Repair Near You",
+      "Central Maryland Boilers",
+      "Boiler Repair Specialists",
+      "Severn Boiler Repair",
+      "Book a Boiler Inspection",
+      "Talk to a Technician",
+      "We Repair Home Boilers",
+      "We Repair Business Boilers",
+      "Clear Repair Options",
+      "Request Boiler Service",
+      "Columbia Boiler Service"
+     ],
+     "d": [
+      "Boiler trouble in Severn, Severna Park or Columbia? Our technicians help.",
+      "We diagnose the problem and walk you through the repair options.",
+      "Boiler repair for Maryland homes and commercial properties.",
+      "Schedule a boiler repair appointment with Ambient today."
+     ]
+    }
+   ],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "ADEQUATE",
+   "launch_gate": null,
+   "remove_keywords": [],
+   "services_covered": [
+    "Boiler Repair"
+   ]
+  },
+  "SKAG | Boiler Replacement": {
+   "campaign_key": "C4_BOILER",
+   "url": null,
+   "cpc_bid": 60.0,
+   "phrase": [
+    "boiler replacement"
+   ],
+   "exact": [
+    "boiler replacement",
+    "replace boiler",
+    "new boiler cost"
+   ],
+   "evidence": "Account search-term history: $221.75 / 7 clicks / 0 conversions, CPC $31.68.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "INSUFFICIENT PAGE",
+   "launch_gate": "The boiler-repair page is repair-weighted (repair 29) with only 5 replacement, 5 installation and 2 maintenance mentions and no section for any of them. The instruction explicitly forbids sending Boiler Installation traffic to a repair-only page. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Boiler Replacement"
+   ]
+  },
+  "SKAG | Boiler Installation": {
+   "campaign_key": "C4_BOILER",
+   "url": null,
+   "cpc_bid": 60.0,
+   "phrase": [
+    "boiler installation"
+   ],
+   "exact": [
+    "boiler installation",
+    "boiler installers near me"
+   ],
+   "evidence": "Account search-term history: $95.51 / 2 clicks / 0 conversions, CPC $47.76. Campaign view: boiler|installation CPA $315.24 on 6 conversions.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "INSUFFICIENT PAGE",
+   "launch_gate": "The boiler-repair page is repair-weighted (repair 29) with only 5 replacement, 5 installation and 2 maintenance mentions and no section for any of them. The instruction explicitly forbids sending Boiler Installation traffic to a repair-only page. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Boiler Installation"
+   ]
+  },
+  "SKAG | Boiler Maintenance": {
+   "campaign_key": "C4_BOILER",
+   "url": null,
+   "cpc_bid": 60.0,
+   "phrase": [
+    "boiler maintenance",
+    "boiler service"
+   ],
+   "exact": [
+    "boiler maintenance",
+    "boiler service"
+   ],
+   "evidence": "Account search-term history: $2,102.23 / 28 clicks / 4 conversions, CPC $75.08, CPA $525.56 - the most expensive heating clicks in the account.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "INSUFFICIENT PAGE",
+   "launch_gate": "The boiler-repair page is repair-weighted (repair 29) with only 5 replacement, 5 installation and 2 maintenance mentions and no section for any of them. The instruction explicitly forbids sending Boiler Installation traffic to a repair-only page. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Boiler Maintenance"
+   ]
+  },
+  "SKAG | Furnace Maintenance": {
+   "campaign_key": "C5_MAINT",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "cpc_bid": 32.0,
+   "phrase": [
+    "furnace maintenance"
+   ],
+   "exact": [
+    "furnace maintenance",
+    "furnace cleaning"
+   ],
+   "evidence": "Account search-term history: $2,554.67 / 48 clicks / 7 conversions, CPC $53.22, CPA $364.95. Campaign view: furnace|maintenance CPA $230.31 - among the best in the account. The furnace page carries an explicit maintenance H2 ('Timely Furnace Repair and Maintenance Services').",
+   "rsas": [
+    {
+     "label": "RSA A - service led",
+     "h": [
+      "Furnace Maintenance",
+      "Furnace Maintenance Severn",
+      "Severna Park Furnace Care",
+      "Columbia Furnace Service",
+      "Book Furnace Maintenance",
+      "Furnace Care Near You",
+      "Furnace Service Visit",
+      "Central Maryland Furnace",
+      "Schedule A Service Visit",
+      "Trained HVAC Technicians",
+      "Maryland Furnace Care",
+      "Request Furnace Service",
+      "Home Furnace Maintenance",
+      "Talk To A Technician",
+      "Furnace Care Central MD"
+     ],
+     "d": [
+      "Furnace maintenance for homes in Severn, Severna Park and Columbia, Maryland.",
+      "Our technicians check the system and explain what it needs.",
+      "Book a furnace maintenance visit with Ambient Cooling and Heating.",
+      "Serving Central Maryland with professional furnace maintenance."
+     ]
+    },
+    {
+     "label": "RSA B - seasonal led",
+     "h": [
+      "Furnace Due A Service?",
+      "Keep Your Furnace Running",
+      "Before The Cold Arrives",
+      "Book Furnace Maintenance",
+      "Furnace Care Near You",
+      "Severn Furnace Service",
+      "Furnace Care Specialists",
+      "Central Maryland Furnace",
+      "Book A Service Visit",
+      "Talk To A Technician",
+      "Planned Furnace Care",
+      "Clear Service Options",
+      "Request A Service Visit",
+      "Columbia Furnace Care",
+      "Warm Home This Winter"
+     ],
+     "d": [
+      "A furnace checked before winter is less likely to fail during it.",
+      "We inspect the system and set out anything that needs attention.",
+      "Furnace maintenance across Severn, Severna Park and Columbia homes.",
+      "Schedule a furnace maintenance visit with Ambient today."
+     ]
+    }
+   ],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "ADEQUATE",
+   "launch_gate": null,
+   "remove_keywords": [],
+   "services_covered": [
+    "Furnace Maintenance"
+   ]
+  },
+  "SKAG | Heating Maintenance": {
+   "campaign_key": "C5_MAINT",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "cpc_bid": 32.0,
+   "phrase": [
+    "heating maintenance"
+   ],
+   "exact": [
+    "heating maintenance",
+    "heating system maintenance"
+   ],
+   "evidence": "Account search-term history: $1,816.70 / 273 clicks / 2 conversions, CPC $6.65, CPA $908.35 - cheap clicks, weak conversion. The heating hub carries an explicit maintenance H2 ('Comprehensive Heating Services and Maintenance Plans', 7 mentions).",
+   "rsas": [
+    {
+     "label": "RSA A - service led",
+     "h": [
+      "Heating Maintenance",
+      "Heating Care Severn MD",
+      "Severna Park Heating Care",
+      "Columbia Heating Service",
+      "Book Heating Maintenance",
+      "Heating Care Near You",
+      "Heating Service Visit",
+      "Central Maryland Heating",
+      "Schedule A Service Visit",
+      "Trained HVAC Technicians",
+      "Maryland Heating Care",
+      "Request Heating Service",
+      "Home Heating Maintenance",
+      "Talk To A Technician",
+      "Heating Care Central MD"
+     ],
+     "d": [
+      "Heating maintenance for homes in Severn, Severna Park and Columbia, Maryland.",
+      "Our technicians check the system and explain what it needs.",
+      "Book a heating maintenance visit with Ambient Cooling and Heating.",
+      "Serving Central Maryland with professional heating maintenance."
+     ]
+    },
+    {
+     "label": "RSA B - seasonal led",
+     "h": [
+      "Heating Due A Service?",
+      "Keep Your Heating Running",
+      "Before The Cold Arrives",
+      "Book Heating Maintenance",
+      "Heating Care Near You",
+      "Severn Heating Service",
+      "Heating Care Specialists",
+      "Central Maryland Heating",
+      "Book A Service Visit",
+      "Talk To A Technician",
+      "Planned Heating Care",
+      "Clear Service Options",
+      "Request A Service Visit",
+      "Columbia Heating Care",
+      "Warm Home This Winter"
+     ],
+     "d": [
+      "A heating system checked before winter is less likely to fail during it.",
+      "We inspect the system and set out anything that needs attention.",
+      "Heating maintenance across Severn, Severna Park and Columbia homes.",
+      "Schedule a heating maintenance visit with Ambient today."
+     ]
+    }
+   ],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "ADEQUATE",
+   "launch_gate": null,
+   "remove_keywords": [],
+   "services_covered": [
+    "Heating Maintenance"
+   ]
+  },
+  "SKAG | Furnace Tune-Up": {
+   "campaign_key": "C5_MAINT",
+   "url": null,
+   "cpc_bid": 32.0,
+   "phrase": [
+    "furnace tune up"
+   ],
+   "exact": [
+    "furnace tune up"
+   ],
+   "evidence": "Account search-term history: $40.21 / 2 clicks / 0 conversions, CPC $20.11.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "INSUFFICIENT PAGE",
+   "launch_gate": "No page carries tune-up or inspection content: the heating hub mentions tune-up twice and inspection once, with no section for either. Kept separate from Maintenance for ad relevance as instructed, which makes a dedicated page necessary. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Furnace Tune-Up"
+   ]
+  },
+  "SKAG | Heating Tune-Up": {
+   "campaign_key": "C5_MAINT",
+   "url": null,
+   "cpc_bid": 32.0,
+   "phrase": [
+    "heating tune up"
+   ],
+   "exact": [
+    "heating tune up"
+   ],
+   "evidence": "Account search-term history: 11 terms, 0 clicks, 0 conversions.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "INSUFFICIENT PAGE",
+   "launch_gate": "No page carries tune-up or inspection content: the heating hub mentions tune-up twice and inspection once, with no section for either. Kept separate from Maintenance for ad relevance as instructed, which makes a dedicated page necessary. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Heating Tune-Up"
+   ]
+  },
+  "SKAG | Heating System Inspection": {
+   "campaign_key": "C5_MAINT",
+   "url": null,
+   "cpc_bid": 32.0,
+   "phrase": [
+    "heating system inspection",
+    "heating inspection"
+   ],
+   "exact": [
+    "heating system inspection",
+    "heating inspection"
+   ],
+   "evidence": "Account search-term history: 5 terms, 0 clicks, 0 conversions.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "INSUFFICIENT PAGE",
+   "launch_gate": "No page carries tune-up or inspection content: the heating hub mentions tune-up twice and inspection once, with no section for either. Kept separate from Maintenance for ad relevance as instructed, which makes a dedicated page necessary. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Heating System Inspection"
+   ]
+  },
+  "SKAG | Thermostat Repair": {
+   "campaign_key": "C6_THERMOSTAT",
+   "url": null,
+   "cpc_bid": 20.0,
+   "phrase": [
+    "thermostat repair"
+   ],
+   "exact": [
+    "thermostat repair"
+   ],
+   "evidence": "Account search-term history: $17.16 / 1 click / 0 conversions, CPC $17.16. Planner sample: ~30 searches/month.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "NO PAGE",
+   "launch_gate": "NO page on either domain mentions thermostat work beyond a single passing reference on the heating hub. ALSO: client.yaml records 'Thermostat repair', 'Thermostat replacement' and 'Smart thermostat installation' under services_capability_not_verified. The scope instruction authorises advertising them but does not verify the capability. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Thermostat Repair"
+   ]
+  },
+  "SKAG | Thermostat Replacement": {
+   "campaign_key": "C6_THERMOSTAT",
+   "url": null,
+   "cpc_bid": 20.0,
+   "phrase": [
+    "thermostat replacement"
+   ],
+   "exact": [
+    "thermostat replacement",
+    "replace thermostat"
+   ],
+   "evidence": "Account search-term history: 11 terms, 0 clicks, 0 conversions.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "NO PAGE",
+   "launch_gate": "NO page on either domain mentions thermostat work beyond a single passing reference on the heating hub. ALSO: client.yaml records 'Thermostat repair', 'Thermostat replacement' and 'Smart thermostat installation' under services_capability_not_verified. The scope instruction authorises advertising them but does not verify the capability. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Thermostat Replacement"
+   ]
+  },
+  "SKAG | Smart Thermostat Installation": {
+   "campaign_key": "C6_THERMOSTAT",
+   "url": null,
+   "cpc_bid": 20.0,
+   "phrase": [
+    "smart thermostat installation"
+   ],
+   "exact": [
+    "smart thermostat installation",
+    "nest thermostat installation"
+   ],
+   "evidence": "Account search-term history: $14.28 / 1 click / 0 conversions, CPC $14.28.",
+   "rsas": [],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "NO PAGE",
+   "launch_gate": "NO page on either domain mentions thermostat work beyond a single passing reference on the heating hub. ALSO: client.yaml records 'Thermostat repair', 'Thermostat replacement' and 'Smart thermostat installation' under services_capability_not_verified. The scope instruction authorises advertising them but does not verify the capability. No RSA drafted.",
+   "remove_keywords": [],
+   "services_covered": [
+    "Smart Thermostat Installation"
+   ]
+  },
+  "SKAG | Geothermal Heat Pump": {
+   "campaign_key": "C7_GEO",
+   "url": "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+   "cpc_bid": 38.0,
+   "phrase": [
+    "geothermal heat pump",
+    "geothermal heating"
+   ],
+   "exact": [
+    "geothermal heat pump",
+    "geothermal heating",
+    "geothermal installation"
+   ],
+   "evidence": "CONTROLLED TEST. IMPORTANT CORRECTION TO THE STATED PREMISE: the instruction says geothermal shows 'spend with no confirmed conversions'. That is true of campaigns NAMED geothermal ($151.80 / 4 clicks / 0 conversions). But geothermal SEARCH TERMS, wherever they were served, show $1,310.03 / 59 clicks / 4 conversions, CPC $22.20, CPA $327.51 - better than the account's heating average. Kept as a controlled test as instructed, with a stop-loss, but the evidence is stronger than the premise assumed.",
+   "rsas": [
+    {
+     "label": "RSA A - service led",
+     "h": [
+      "Geothermal Heat Pumps",
+      "Geothermal HVAC Install",
+      "Severn Geothermal HVAC",
+      "Severna Park Geothermal",
+      "Columbia MD Geothermal",
+      "Geothermal Installation",
+      "Ground Source Heat Pumps",
+      "Central Maryland Geothermal",
+      "Book A Geothermal Review",
+      "Geothermal System Fitting",
+      "Trained HVAC Technicians",
+      "Energy Efficient Heating",
+      "Geothermal Assessment",
+      "Year Round Comfort",
+      "Request Geothermal Info"
+     ],
+     "d": [
+      "Geothermal heat pump installation for homes across Central Maryland.",
+      "We assess the site and explain how a geothermal system would work.",
+      "Geothermal heating and cooling for Severn, Severna Park and Columbia.",
+      "Book a geothermal assessment with Ambient Cooling and Heating."
+     ]
+    },
+    {
+     "label": "RSA B - benefit led",
+     "h": [
+      "Considering Geothermal?",
+      "Ground Source Heating",
+      "Geothermal Heat Pumps",
+      "Efficient Year Round Comfort",
+      "Geothermal For Your Home",
+      "Maryland Geothermal",
+      "Book A Site Assessment",
+      "Talk To A Technician",
+      "Geothermal HVAC Install",
+      "Sustainable Home Heating",
+      "Severn Geothermal Install",
+      "Columbia Geothermal",
+      "Clear System Options",
+      "Geothermal Explained",
+      "Request An Assessment"
+     ],
+     "d": [
+      "Geothermal taps underground temperatures to heat and cool your home.",
+      "We assess your property and set out whether geothermal suits it.",
+      "Geothermal installation across Severn, Severna Park and Columbia.",
+      "Schedule a geothermal consultation with Ambient today."
+     ]
+    }
+   ],
+   "existing_ad_group_id": null,
+   "rename_from": null,
+   "page_verdict": "ADEQUATE",
+   "launch_gate": null,
+   "remove_keywords": [],
+   "services_covered": [
+    "Geothermal Heat Pump"
+   ]
+  }
+ },
+ "cross_negatives": {
+  "SKAG | Furnace Repair": [
+   "gas",
+   "electric",
+   "emergency",
+   "no heat",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "replacement",
+   "installation"
+  ],
+  "SKAG | Heating Repair": [
+   "furnace",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat",
+   "emergency",
+   "no heat",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "replacement",
+   "installation"
+  ],
+  "SKAG | Emergency Heating Repair": [
+   "maintenance",
+   "tune up",
+   "inspection",
+   "replacement",
+   "installation",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat"
+  ],
+  "SKAG | No Heat Repair": [
+   "maintenance",
+   "tune up",
+   "inspection",
+   "replacement",
+   "installation",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat"
+  ],
+  "SKAG | Gas Furnace Repair": [
+   "electric",
+   "oil",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "replacement",
+   "installation"
+  ],
+  "SKAG | Electric Furnace Repair": [
+   "gas",
+   "oil",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "replacement",
+   "installation"
+  ],
+  "SKAG | Heat Pump Repair": [
+   "geothermal",
+   "ductless",
+   "mini split",
+   "boiler",
+   "furnace",
+   "thermostat",
+   "maintenance",
+   "tune up",
+   "replacement",
+   "installation",
+   "installers"
+  ],
+  "SKAG | Heat Pump Replacement": [
+   "repair",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "geothermal",
+   "ductless",
+   "mini split",
+   "boiler",
+   "furnace",
+   "thermostat",
+   "installation"
+  ],
+  "SKAG | Heat Pump Installation": [
+   "repair",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "replacement",
+   "geothermal",
+   "ductless",
+   "mini split",
+   "boiler",
+   "furnace",
+   "thermostat"
+  ],
+  "SKAG | Heat Pump Maintenance": [
+   "repair",
+   "replacement",
+   "installation",
+   "installers",
+   "geothermal",
+   "ductless",
+   "mini split",
+   "boiler",
+   "furnace",
+   "thermostat"
+  ],
+  "SKAG | Ductless Heating Repair": [
+   "installation",
+   "installers",
+   "replacement",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "heat pump",
+   "geothermal",
+   "boiler",
+   "furnace",
+   "thermostat"
+  ],
+  "SKAG | Furnace Replacement": [
+   "repair",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "installation",
+   "installers",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat",
+   "oil"
+  ],
+  "SKAG | Furnace Installation": [
+   "repair",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "replacement",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat",
+   "oil"
+  ],
+  "SKAG | Heating Replacement": [
+   "repair",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "installation",
+   "installers",
+   "furnace",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat"
+  ],
+  "SKAG | Heating Installation": [
+   "repair",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "replacement",
+   "furnace",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat"
+  ],
+  "SKAG | Ductless Heating Installation": [
+   "repair",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "heat pump",
+   "geothermal",
+   "boiler",
+   "furnace",
+   "thermostat"
+  ],
+  "SKAG | Gas Boiler Repair": [
+   "oil",
+   "electric",
+   "tankless",
+   "furnace",
+   "heat pump",
+   "replacement",
+   "installation",
+   "installers",
+   "maintenance",
+   "tune up",
+   "inspection"
+  ],
+  "SKAG | Boiler Repair": [
+   "gas",
+   "oil",
+   "tankless",
+   "furnace",
+   "heat pump",
+   "replacement",
+   "installation",
+   "installers",
+   "maintenance",
+   "tune up",
+   "inspection"
+  ],
+  "SKAG | Boiler Replacement": [
+   "repair",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "installation",
+   "installers",
+   "furnace",
+   "heat pump",
+   "tankless"
+  ],
+  "SKAG | Boiler Installation": [
+   "repair",
+   "maintenance",
+   "tune up",
+   "inspection",
+   "replacement",
+   "furnace",
+   "heat pump",
+   "tankless"
+  ],
+  "SKAG | Boiler Maintenance": [
+   "repair",
+   "replacement",
+   "installation",
+   "installers",
+   "furnace",
+   "heat pump",
+   "tankless"
+  ],
+  "SKAG | Furnace Maintenance": [
+   "repair",
+   "replacement",
+   "installation",
+   "installers",
+   "tune up",
+   "inspection",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat",
+   "oil"
+  ],
+  "SKAG | Furnace Tune-Up": [
+   "repair",
+   "replacement",
+   "installation",
+   "installers",
+   "maintenance",
+   "inspection",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat"
+  ],
+  "SKAG | Heating Maintenance": [
+   "repair",
+   "replacement",
+   "installation",
+   "installers",
+   "tune up",
+   "inspection",
+   "furnace",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat"
+  ],
+  "SKAG | Heating Tune-Up": [
+   "repair",
+   "replacement",
+   "installation",
+   "installers",
+   "maintenance",
+   "inspection",
+   "furnace",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat"
+  ],
+  "SKAG | Heating System Inspection": [
+   "repair",
+   "replacement",
+   "installation",
+   "installers",
+   "maintenance",
+   "tune up",
+   "furnace",
+   "boiler",
+   "heat pump",
+   "ductless",
+   "mini split",
+   "geothermal",
+   "thermostat"
+  ],
+  "SKAG | Thermostat Repair": [
+   "replacement",
+   "installation",
+   "installers",
+   "smart",
+   "nest",
+   "ecobee",
+   "furnace",
+   "boiler",
+   "heat pump",
+   "heating system"
+  ],
+  "SKAG | Thermostat Replacement": [
+   "repair",
+   "installation",
+   "installers",
+   "smart",
+   "nest",
+   "ecobee",
+   "furnace",
+   "boiler",
+   "heat pump",
+   "heating system"
+  ],
+  "SKAG | Smart Thermostat Installation": [
+   "repair",
+   "replacement",
+   "furnace",
+   "boiler",
+   "heat pump",
+   "heating system"
+  ],
+  "SKAG | Geothermal Heat Pump": [
+   "ductless",
+   "mini split",
+   "boiler",
+   "furnace",
+   "thermostat",
+   "repair",
+   "maintenance",
+   "tune up"
+  ]
+ },
+ "cross_negative_total": 334,
+ "page_support_evidence": {
+  "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/": {
+   "furnace": 18,
+   "repair": 21,
+   "replace": 10,
+   "install": 5,
+   "maintenance": 3,
+   "tune_up": 0,
+   "gas": 0,
+   "electric": 0,
+   "h2": "Timely Furnace Repair and Maintenance Services / Trusted Furnace Repair and Replacement"
+  },
+  "https://ambientcoolingandheating.com/services/heating-services/": {
+   "repair": 12,
+   "replace": 6,
+   "install": 7,
+   "maintenance": 7,
+   "tune_up": 2,
+   "inspection": 1,
+   "emergency": 1,
+   "thermostat": 1,
+   "h2": "Heating Services from Professionals You Can Trust / Comprehensive Heating Services and Maintenance Plans"
+  },
+  "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/": {
+   "boiler": 19,
+   "repair": 29,
+   "replace": 5,
+   "install": 5,
+   "maintenance": 2,
+   "h2": "Expert Boiler Repair to Get You Back in Business"
+  },
+  "https://offer.ambientcoolingandheating.com/gas-boiler-repair/": {
+   "boiler": 50,
+   "gas": 37,
+   "repair": 37,
+   "emergency": 3,
+   "h2": "Common Signs You May Need Gas Boiler Repair"
+  },
+  "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/": {
+   "heat_pump": 22,
+   "install": 8,
+   "maintenance": 4,
+   "repair": 10,
+   "replace": 5,
+   "h2": "Comprehensive Heat Pump Installation Services"
+  },
+  "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/": {
+   "ductless": 16,
+   "install": 12,
+   "repair": 11,
+   "maintenance": 3,
+   "replace": 5,
+   "h2": "Comprehensive Installation and Maintenance Services"
+  },
+  "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/": {
+   "geothermal": 16,
+   "install": 11,
+   "repair": 12,
+   "maintenance": 3,
+   "h2": "Energy-Efficient Heating and Cooling with Geothermal HVAC"
+  }
+ },
+ "blocked_destinations": {
+  "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/": "DESTINATION_NOT_WORKING - 0/3 validate_only trials 2026-09-21, while 8 other Ambient destinations passed 3/3 with the IDENTICAL ad body. URL-specific, not ad copy and not account-wide. No RSA may be created against it: the API rejects the ad and would abort the batch."
+ },
+ "search_settings": {
+  "network": "Google Search only",
+  "search_partners": false,
+  "display": false,
+  "ai_max": false,
+  "dsa": false,
+  "performance_max": false,
+  "broad_match_expansion": false,
+  "final_url_expansion": false,
+  "automatically_created_assets": false,
+  "text_customization": false,
+  "geo": "PRESENCE / PRESENCE",
+  "locations": "75 approved Central MD",
+  "schedule": "6 approved rows, Mon-Fri 08:00-20:00 + Sat 08:00-13:00",
+  "match_types": [
+   "PHRASE",
+   "EXACT"
+  ],
+  "contains_eu_political_advertising": "DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING"
+ },
+ "counts": {
+  "campaigns": 7,
+  "new_campaigns": 4,
+  "ad_groups": 30,
+  "new_ad_groups": 27,
+  "keywords_new": 95,
+  "rsas": 18,
+  "ad_groups_with_rsas": 9,
+  "ad_groups_without_rsas_pending_pages": 18
+ },
+ "operations": [
+  {
+   "op": "CREATE_CAMPAIGN_BUDGET",
+   "campaign_key": "C2_HEATPUMP",
+   "amount_usd": 50.0
+  },
+  {
+   "op": "CREATE_CAMPAIGN_BUDGET",
+   "campaign_key": "C5_MAINT",
+   "amount_usd": 30.0
+  },
+  {
+   "op": "CREATE_CAMPAIGN_BUDGET",
+   "campaign_key": "C6_THERMOSTAT",
+   "amount_usd": 15.0
+  },
+  {
+   "op": "CREATE_CAMPAIGN_BUDGET",
+   "campaign_key": "C7_GEO",
+   "amount_usd": 20.0
+  },
+  {
+   "op": "CREATE_CAMPAIGN_PAUSED",
+   "campaign_key": "C2_HEATPUMP",
+   "name": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "cpc_bid_ceiling_usd": 35.0
+  },
+  {
+   "op": "CREATE_CAMPAIGN_PAUSED",
+   "campaign_key": "C5_MAINT",
+   "name": "Search | NonBrand | Heating Maintenance & Inspection | Central MD | BOFU | 2026-09",
+   "cpc_bid_ceiling_usd": 32.0
+  },
+  {
+   "op": "CREATE_CAMPAIGN_PAUSED",
+   "campaign_key": "C6_THERMOSTAT",
+   "name": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "cpc_bid_ceiling_usd": 20.0
+  },
+  {
+   "op": "CREATE_CAMPAIGN_PAUSED",
+   "campaign_key": "C7_GEO",
+   "name": "Search | NonBrand | Geothermal Heat Pump | Central MD | BOFU | 2026-09",
+   "cpc_bid_ceiling_usd": 38.0
+  },
+  {
+   "op": "RENAME_CAMPAIGN",
+   "campaign_id": "24257819463",
+   "from": "Search | NonBrand | Heating Repair | Central MD | BOFU | 2026-09",
+   "to": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09"
+  },
+  {
+   "op": "RENAME_CAMPAIGN",
+   "campaign_id": "24257819466",
+   "from": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09",
+   "to": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09"
+  },
+  {
+   "op": "RENAME_CAMPAIGN",
+   "campaign_id": "24132507744",
+   "from": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "to": "Search | NonBrand | Boiler Services | Central MD | BOFU | 2026-09"
+  },
+  {
+   "op": "ADD_CAMPAIGN_LOCATIONS",
+   "campaign_key": "C2_HEATPUMP",
+   "count": 75
+  },
+  {
+   "op": "ADD_CAMPAIGN_LOCATIONS",
+   "campaign_key": "C5_MAINT",
+   "count": 75
+  },
+  {
+   "op": "ADD_CAMPAIGN_LOCATIONS",
+   "campaign_key": "C6_THERMOSTAT",
+   "count": 75
+  },
+  {
+   "op": "ADD_CAMPAIGN_LOCATIONS",
+   "campaign_key": "C7_GEO",
+   "count": 75
+  },
+  {
+   "op": "ADD_CAMPAIGN_AD_SCHEDULE",
+   "campaign_key": "C2_HEATPUMP",
+   "count": 6
+  },
+  {
+   "op": "ADD_CAMPAIGN_AD_SCHEDULE",
+   "campaign_key": "C5_MAINT",
+   "count": 6
+  },
+  {
+   "op": "ADD_CAMPAIGN_AD_SCHEDULE",
+   "campaign_key": "C6_THERMOSTAT",
+   "count": 6
+  },
+  {
+   "op": "ADD_CAMPAIGN_AD_SCHEDULE",
+   "campaign_key": "C7_GEO",
+   "count": 6
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heating Repair",
+   "campaign_key": "C1_REPAIR",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "cpc_bid_usd": 42.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Emergency Heating Repair",
+   "campaign_key": "C1_REPAIR",
+   "final_url": null,
+   "cpc_bid_usd": 42.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | No Heat Repair",
+   "campaign_key": "C1_REPAIR",
+   "final_url": null,
+   "cpc_bid_usd": 42.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "campaign_key": "C1_REPAIR",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "cpc_bid_usd": 42.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "campaign_key": "C1_REPAIR",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "cpc_bid_usd": 42.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heat Pump Repair",
+   "campaign_key": "C2_HEATPUMP",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "cpc_bid_usd": 35.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heat Pump Replacement",
+   "campaign_key": "C2_HEATPUMP",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "cpc_bid_usd": 35.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "campaign_key": "C2_HEATPUMP",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "cpc_bid_usd": 35.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heat Pump Maintenance",
+   "campaign_key": "C2_HEATPUMP",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "cpc_bid_usd": 35.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Ductless Heating Repair",
+   "campaign_key": "C2_HEATPUMP",
+   "final_url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "cpc_bid_usd": 35.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Furnace Replacement",
+   "campaign_key": "C3_INSTALL",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "cpc_bid_usd": 46.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Furnace Installation",
+   "campaign_key": "C3_INSTALL",
+   "final_url": null,
+   "cpc_bid_usd": 46.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heating Replacement",
+   "campaign_key": "C3_INSTALL",
+   "final_url": null,
+   "cpc_bid_usd": 46.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heating Installation",
+   "campaign_key": "C3_INSTALL",
+   "final_url": null,
+   "cpc_bid_usd": 46.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Boiler Repair",
+   "campaign_key": "C4_BOILER",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "cpc_bid_usd": 60.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Boiler Replacement",
+   "campaign_key": "C4_BOILER",
+   "final_url": null,
+   "cpc_bid_usd": 60.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Boiler Installation",
+   "campaign_key": "C4_BOILER",
+   "final_url": null,
+   "cpc_bid_usd": 60.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Boiler Maintenance",
+   "campaign_key": "C4_BOILER",
+   "final_url": null,
+   "cpc_bid_usd": 60.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Furnace Maintenance",
+   "campaign_key": "C5_MAINT",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "cpc_bid_usd": 32.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heating Maintenance",
+   "campaign_key": "C5_MAINT",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "cpc_bid_usd": 32.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Furnace Tune-Up",
+   "campaign_key": "C5_MAINT",
+   "final_url": null,
+   "cpc_bid_usd": 32.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heating Tune-Up",
+   "campaign_key": "C5_MAINT",
+   "final_url": null,
+   "cpc_bid_usd": 32.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Heating System Inspection",
+   "campaign_key": "C5_MAINT",
+   "final_url": null,
+   "cpc_bid_usd": 32.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Thermostat Repair",
+   "campaign_key": "C6_THERMOSTAT",
+   "final_url": null,
+   "cpc_bid_usd": 20.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Thermostat Replacement",
+   "campaign_key": "C6_THERMOSTAT",
+   "final_url": null,
+   "cpc_bid_usd": 20.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Smart Thermostat Installation",
+   "campaign_key": "C6_THERMOSTAT",
+   "final_url": null,
+   "cpc_bid_usd": 20.0
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "ad_group": "SKAG | Geothermal Heat Pump",
+   "campaign_key": "C7_GEO",
+   "final_url": "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+   "cpc_bid_usd": 38.0
+  },
+  {
+   "op": "RENAME_AD_GROUP",
+   "ad_group_id": "199797580746",
+   "from": "SKAG | Mini Split Installation",
+   "to": "SKAG | Ductless Heating Installation"
+  },
+  {
+   "op": "REMOVE_KEYWORDS_FROM_EXISTING_AD_GROUP",
+   "ad_group": "SKAG | Furnace Repair",
+   "ad_group_id": "199797580706",
+   "keywords": [
+    {
+     "text": "gas furnace repair",
+     "match_type": "PHRASE"
+    },
+    {
+     "text": "gas furnace repair",
+     "match_type": "EXACT"
+    }
+   ],
+   "count": 2,
+   "why": "Theme handed to its own SKAG in this plan. Removing rather than duplicating prevents two ad groups bidding on one query."
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heating Repair",
+   "phrase": [
+    "heating repair",
+    "heater repair"
+   ],
+   "exact": [
+    "heating repair",
+    "heater repair",
+    "heating repair service",
+    "residential heating repair"
+   ],
+   "count": 6
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Emergency Heating Repair",
+   "phrase": [
+    "emergency heating repair",
+    "emergency heater repair"
+   ],
+   "exact": [
+    "emergency heating repair",
+    "emergency heat repair",
+    "emergency furnace repair"
+   ],
+   "count": 5
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | No Heat Repair",
+   "phrase": [
+    "no heat repair",
+    "no heat service"
+   ],
+   "exact": [
+    "no heat repair",
+    "house has no heat"
+   ],
+   "count": 4
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "phrase": [
+    "gas furnace repair"
+   ],
+   "exact": [
+    "gas furnace repair"
+   ],
+   "count": 2
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "phrase": [
+    "electric furnace repair"
+   ],
+   "exact": [
+    "electric furnace repair"
+   ],
+   "count": 2
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heat Pump Repair",
+   "phrase": [
+    "heat pump repair"
+   ],
+   "exact": [
+    "heat pump repair",
+    "heat pump not heating",
+    "heat pump service"
+   ],
+   "count": 4
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heat Pump Replacement",
+   "phrase": [
+    "heat pump replacement"
+   ],
+   "exact": [
+    "heat pump replacement",
+    "replace heat pump"
+   ],
+   "count": 3
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "phrase": [
+    "heat pump installation"
+   ],
+   "exact": [
+    "heat pump installation",
+    "heat pump installers near me"
+   ],
+   "count": 3
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heat Pump Maintenance",
+   "phrase": [
+    "heat pump maintenance"
+   ],
+   "exact": [
+    "heat pump maintenance",
+    "heat pump tune up"
+   ],
+   "count": 3
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Ductless Heating Repair",
+   "phrase": [
+    "ductless heating repair",
+    "mini split repair"
+   ],
+   "exact": [
+    "ductless repair",
+    "mini split repair",
+    "ductless heating repair"
+   ],
+   "count": 5
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Furnace Replacement",
+   "phrase": [
+    "furnace replacement"
+   ],
+   "exact": [
+    "furnace replacement",
+    "replace furnace",
+    "new furnace cost"
+   ],
+   "count": 4
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Furnace Installation",
+   "phrase": [
+    "furnace installation"
+   ],
+   "exact": [
+    "furnace installation",
+    "furnace installers near me"
+   ],
+   "count": 3
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heating Replacement",
+   "phrase": [
+    "heating replacement",
+    "heating system replacement"
+   ],
+   "exact": [
+    "heating replacement",
+    "heating system replacement",
+    "replace heating system"
+   ],
+   "count": 5
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heating Installation",
+   "phrase": [
+    "heating installation",
+    "heating system installation"
+   ],
+   "exact": [
+    "heating installation",
+    "heating system installation"
+   ],
+   "count": 4
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Boiler Repair",
+   "phrase": [
+    "boiler repair"
+   ],
+   "exact": [
+    "boiler repair",
+    "residential boiler repair",
+    "commercial boiler repair"
+   ],
+   "count": 4
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Boiler Replacement",
+   "phrase": [
+    "boiler replacement"
+   ],
+   "exact": [
+    "boiler replacement",
+    "replace boiler",
+    "new boiler cost"
+   ],
+   "count": 4
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Boiler Installation",
+   "phrase": [
+    "boiler installation"
+   ],
+   "exact": [
+    "boiler installation",
+    "boiler installers near me"
+   ],
+   "count": 3
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Boiler Maintenance",
+   "phrase": [
+    "boiler maintenance",
+    "boiler service"
+   ],
+   "exact": [
+    "boiler maintenance",
+    "boiler service"
+   ],
+   "count": 4
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Furnace Maintenance",
+   "phrase": [
+    "furnace maintenance"
+   ],
+   "exact": [
+    "furnace maintenance",
+    "furnace cleaning"
+   ],
+   "count": 3
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heating Maintenance",
+   "phrase": [
+    "heating maintenance"
+   ],
+   "exact": [
+    "heating maintenance",
+    "heating system maintenance"
+   ],
+   "count": 3
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Furnace Tune-Up",
+   "phrase": [
+    "furnace tune up"
+   ],
+   "exact": [
+    "furnace tune up"
+   ],
+   "count": 2
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heating Tune-Up",
+   "phrase": [
+    "heating tune up"
+   ],
+   "exact": [
+    "heating tune up"
+   ],
+   "count": 2
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Heating System Inspection",
+   "phrase": [
+    "heating system inspection",
+    "heating inspection"
+   ],
+   "exact": [
+    "heating system inspection",
+    "heating inspection"
+   ],
+   "count": 4
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Thermostat Repair",
+   "phrase": [
+    "thermostat repair"
+   ],
+   "exact": [
+    "thermostat repair"
+   ],
+   "count": 2
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Thermostat Replacement",
+   "phrase": [
+    "thermostat replacement"
+   ],
+   "exact": [
+    "thermostat replacement",
+    "replace thermostat"
+   ],
+   "count": 3
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Smart Thermostat Installation",
+   "phrase": [
+    "smart thermostat installation"
+   ],
+   "exact": [
+    "smart thermostat installation",
+    "nest thermostat installation"
+   ],
+   "count": 3
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Geothermal Heat Pump",
+   "phrase": [
+    "geothermal heat pump",
+    "geothermal heating"
+   ],
+   "exact": [
+    "geothermal heat pump",
+    "geothermal heating",
+    "geothermal installation"
+   ],
+   "count": 5
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Heating Repair",
+   "label": "RSA A - service and location led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "headlines": [
+    "Heating Repair Central MD",
+    "Heating Repair in Severn",
+    "Severna Park Heating",
+    "Columbia MD Heating Repair",
+    "Book A Heating Repair",
+    "Heating Repair Near You",
+    "Local Heating Technicians",
+    "Heating System Repair",
+    "Schedule A Repair Visit",
+    "Trained HVAC Technicians",
+    "Maryland Heating Repair",
+    "Request Heating Repair",
+    "Home Heating Repair",
+    "Talk To A Technician",
+    "Heating Service Central MD"
+   ],
+   "descriptions": [
+    "Heating repair for homes across Severn, Severna Park and Columbia, Maryland.",
+    "Our technicians diagnose the fault and explain your options clearly.",
+    "Book a heating repair visit with Ambient Cooling and Heating.",
+    "Serving Central Maryland with professional heating services."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Heating Repair",
+   "label": "RSA B - problem led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "headlines": [
+    "Heating Not Working?",
+    "Heat Running But Cold?",
+    "Heating System Faulty?",
+    "Get Your Heating Checked",
+    "Heating Repair Near You",
+    "Central Maryland Heating",
+    "Heating Repair Specialists",
+    "Severn Heating Repair",
+    "Book A Heating Visit",
+    "Talk To A Technician",
+    "We Repair Home Heating",
+    "Clear Repair Options",
+    "Request Heating Service",
+    "Columbia Heating Service",
+    "Anne Arundel Heating"
+   ],
+   "descriptions": [
+    "Heating trouble in Severn, Severna Park or Columbia? Our technicians help.",
+    "We diagnose the problem and walk you through the repair options.",
+    "Heating repair for Maryland homes and commercial properties.",
+    "Schedule a heating repair appointment with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "label": "RSA A - service led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    "Gas Furnace Repair",
+    "Gas Furnace Repair Severn",
+    "Severna Park Gas Furnace",
+    "Columbia Gas Furnace",
+    "Book A Furnace Repair",
+    "Furnace Repair Near You",
+    "Gas Furnace Technicians",
+    "Central Maryland Furnace",
+    "Schedule A Repair Visit",
+    "Trained HVAC Technicians",
+    "Maryland Furnace Repair",
+    "Request Furnace Repair",
+    "Home Furnace Repair",
+    "Talk To A Technician",
+    "Furnace Repair Central MD"
+   ],
+   "descriptions": [
+    "Gas furnace repair for homes in Severn, Severna Park and Columbia, Maryland.",
+    "Our technicians diagnose the fault and explain your options clearly.",
+    "Book a furnace repair visit with Ambient Cooling and Heating.",
+    "Serving Central Maryland with professional furnace repair."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "label": "RSA B - problem led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    "Gas Furnace Not Working?",
+    "Furnace Blowing Cold Air?",
+    "Furnace Cutting Out?",
+    "Get Your Furnace Checked",
+    "Gas Furnace Repair Near You",
+    "Severn Furnace Repair",
+    "Furnace Repair Specialists",
+    "Central Maryland Furnace",
+    "Book A Furnace Visit",
+    "Talk To A Technician",
+    "We Repair Gas Furnaces",
+    "Clear Repair Options",
+    "Request Furnace Service",
+    "Columbia Furnace Repair",
+    "Anne Arundel Furnace"
+   ],
+   "descriptions": [
+    "Gas furnace trouble in Severn, Severna Park or Columbia? Our technicians help.",
+    "We diagnose the problem and walk you through the repair options.",
+    "Furnace repair for Maryland homes and commercial properties.",
+    "Schedule a furnace repair appointment with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "label": "RSA A - service led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    "Electric Furnace Repair",
+    "Electric Furnace Severn",
+    "Severna Park Furnace",
+    "Columbia Furnace Repair",
+    "Book A Furnace Repair",
+    "Furnace Repair Near You",
+    "Electric Furnace Service",
+    "Central Maryland Furnace",
+    "Schedule A Repair Visit",
+    "Trained HVAC Technicians",
+    "Maryland Furnace Repair",
+    "Request Furnace Repair",
+    "Home Furnace Repair",
+    "Talk To A Technician",
+    "Furnace Repair Central MD"
+   ],
+   "descriptions": [
+    "Electric furnace repair for homes in Severn, Severna Park and Columbia, MD.",
+    "Our technicians diagnose the fault and explain your options clearly.",
+    "Book a furnace repair visit with Ambient Cooling and Heating.",
+    "Serving Central Maryland with professional furnace repair."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "label": "RSA B - problem led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    "Electric Furnace Faulty?",
+    "Furnace Blowing Cold Air?",
+    "Furnace Cutting Out?",
+    "Get Your Furnace Checked",
+    "Furnace Repair Near You",
+    "Severn Furnace Repair",
+    "Furnace Repair Specialists",
+    "Central Maryland Furnace",
+    "Book A Furnace Visit",
+    "Talk To A Technician",
+    "We Repair Electric Furnaces",
+    "Clear Repair Options",
+    "Request Furnace Service",
+    "Columbia Furnace Repair",
+    "Anne Arundel Furnace"
+   ],
+   "descriptions": [
+    "Electric furnace trouble in Severn, Severna Park or Columbia? We can help.",
+    "We diagnose the problem and walk you through the repair options.",
+    "Furnace repair for Maryland homes and commercial properties.",
+    "Schedule a furnace repair appointment with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Ductless Heating Repair",
+   "label": "RSA A - service led",
+   "final_url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "headlines": [
+    "Ductless Heating Repair",
+    "Mini Split Repair Severn",
+    "Severna Park Mini Split",
+    "Columbia Ductless Repair",
+    "Book A Ductless Repair",
+    "Ductless Repair Near You",
+    "Mini Split Technicians",
+    "Central Maryland Ductless",
+    "Schedule A Repair Visit",
+    "Trained HVAC Technicians",
+    "Maryland Mini Split Help",
+    "Request Ductless Repair",
+    "Home Ductless Repair",
+    "Talk To A Technician",
+    "Ductless Repair Central MD"
+   ],
+   "descriptions": [
+    "Ductless and mini split repair across Severn, Severna Park and Columbia, MD.",
+    "Our technicians diagnose the fault and explain your options clearly.",
+    "Book a ductless repair visit with Ambient Cooling and Heating.",
+    "Serving Central Maryland with professional mini split service."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Ductless Heating Repair",
+   "label": "RSA B - problem led",
+   "final_url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "headlines": [
+    "Mini Split Not Heating?",
+    "Ductless Unit Faulty?",
+    "Mini Split Leaking?",
+    "Get Your Ductless Checked",
+    "Ductless Repair Near You",
+    "Severn Ductless Repair",
+    "Mini Split Specialists",
+    "Central Maryland Ductless",
+    "Book A Ductless Visit",
+    "Talk To A Technician",
+    "We Repair Mini Splits",
+    "Clear Repair Options",
+    "Request Ductless Service",
+    "Columbia Mini Split Help",
+    "Anne Arundel Ductless"
+   ],
+   "descriptions": [
+    "Mini split trouble in Severn, Severna Park or Columbia? Our technicians help.",
+    "We diagnose the problem and walk you through the repair options.",
+    "Ductless heating repair for Maryland homes and businesses.",
+    "Schedule a ductless repair appointment with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Furnace Replacement",
+   "label": "RSA A - service led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    "Furnace Replacement",
+    "Replace Your Furnace",
+    "Furnace Replacement Severn",
+    "Severna Park Furnace",
+    "Columbia MD Furnace",
+    "New Furnace Assessment",
+    "Furnace Replacement Quote",
+    "Central Maryland Furnace",
+    "Book An Assessment",
+    "Trained HVAC Technicians",
+    "Maryland Furnace Service",
+    "Request Replacement Info",
+    "Plan Your Replacement",
+    "Talk To A Technician",
+    "Furnace Replacement Central MD"
+   ],
+   "descriptions": [
+    "Furnace replacement for homes in Severn, Severna Park and Columbia, Maryland.",
+    "We assess your current furnace and explain the replacement options.",
+    "Book a furnace assessment with Ambient Cooling and Heating.",
+    "Serving Central Maryland with professional furnace replacement."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Furnace Replacement",
+   "label": "RSA B - problem led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    "Furnace Near The End?",
+    "Old Furnace Failing?",
+    "Repair Or Replace?",
+    "Upgrade Your Furnace",
+    "Furnace Replacement Quote",
+    "Severn Furnace Help",
+    "Furnace Specialists",
+    "Central Maryland Furnace",
+    "Book An Assessment",
+    "Talk To A Technician",
+    "Plan The Replacement",
+    "Clear Replacement Options",
+    "Request An Assessment",
+    "Columbia Furnace Help",
+    "Warm Home This Winter"
+   ],
+   "descriptions": [
+    "An ageing furnace gives little warning. Plan the replacement early.",
+    "We assess your current furnace and set out the replacement options.",
+    "Furnace replacement across Severn, Severna Park and Columbia homes.",
+    "Schedule a furnace assessment with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Boiler Repair",
+   "label": "RSA A - service led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "headlines": [
+    "Boiler Repair in Severn",
+    "Boiler Repair Central MD",
+    "Severna Park Boiler Repair",
+    "Columbia MD Boiler Repair",
+    "Residential Boiler Repair",
+    "Commercial Boiler Repair",
+    "Boiler Repair Technicians",
+    "Book a Boiler Repair Visit",
+    "Maryland Boiler Repair",
+    "Boiler Diagnosis Explained",
+    "Schedule Boiler Service",
+    "Homes and Businesses",
+    "Trained HVAC Technicians",
+    "Boiler Service Central MD",
+    "Request Boiler Repair"
+   ],
+   "descriptions": [
+    "Boiler repair for homes and businesses in Severn, Severna Park and Columbia.",
+    "Our technicians diagnose the fault and explain your options clearly.",
+    "Book a boiler repair visit with Ambient Cooling and Heating.",
+    "Serving Central Maryland with professional boiler repair."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Boiler Repair",
+   "label": "RSA B - problem led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "headlines": [
+    "Boiler Stopped Working?",
+    "No Heat From Your Boiler?",
+    "Boiler Leaking or Faulty?",
+    "Get Your Boiler Looked At",
+    "Boiler Repair Near You",
+    "Central Maryland Boilers",
+    "Boiler Repair Specialists",
+    "Severn Boiler Repair",
+    "Book a Boiler Inspection",
+    "Talk to a Technician",
+    "We Repair Home Boilers",
+    "We Repair Business Boilers",
+    "Clear Repair Options",
+    "Request Boiler Service",
+    "Columbia Boiler Service"
+   ],
+   "descriptions": [
+    "Boiler trouble in Severn, Severna Park or Columbia? Our technicians help.",
+    "We diagnose the problem and walk you through the repair options.",
+    "Boiler repair for Maryland homes and commercial properties.",
+    "Schedule a boiler repair appointment with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Furnace Maintenance",
+   "label": "RSA A - service led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    "Furnace Maintenance",
+    "Furnace Maintenance Severn",
+    "Severna Park Furnace Care",
+    "Columbia Furnace Service",
+    "Book Furnace Maintenance",
+    "Furnace Care Near You",
+    "Furnace Service Visit",
+    "Central Maryland Furnace",
+    "Schedule A Service Visit",
+    "Trained HVAC Technicians",
+    "Maryland Furnace Care",
+    "Request Furnace Service",
+    "Home Furnace Maintenance",
+    "Talk To A Technician",
+    "Furnace Care Central MD"
+   ],
+   "descriptions": [
+    "Furnace maintenance for homes in Severn, Severna Park and Columbia, Maryland.",
+    "Our technicians check the system and explain what it needs.",
+    "Book a furnace maintenance visit with Ambient Cooling and Heating.",
+    "Serving Central Maryland with professional furnace maintenance."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Furnace Maintenance",
+   "label": "RSA B - seasonal led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "headlines": [
+    "Furnace Due A Service?",
+    "Keep Your Furnace Running",
+    "Before The Cold Arrives",
+    "Book Furnace Maintenance",
+    "Furnace Care Near You",
+    "Severn Furnace Service",
+    "Furnace Care Specialists",
+    "Central Maryland Furnace",
+    "Book A Service Visit",
+    "Talk To A Technician",
+    "Planned Furnace Care",
+    "Clear Service Options",
+    "Request A Service Visit",
+    "Columbia Furnace Care",
+    "Warm Home This Winter"
+   ],
+   "descriptions": [
+    "A furnace checked before winter is less likely to fail during it.",
+    "We inspect the system and set out anything that needs attention.",
+    "Furnace maintenance across Severn, Severna Park and Columbia homes.",
+    "Schedule a furnace maintenance visit with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Heating Maintenance",
+   "label": "RSA A - service led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "headlines": [
+    "Heating Maintenance",
+    "Heating Care Severn MD",
+    "Severna Park Heating Care",
+    "Columbia Heating Service",
+    "Book Heating Maintenance",
+    "Heating Care Near You",
+    "Heating Service Visit",
+    "Central Maryland Heating",
+    "Schedule A Service Visit",
+    "Trained HVAC Technicians",
+    "Maryland Heating Care",
+    "Request Heating Service",
+    "Home Heating Maintenance",
+    "Talk To A Technician",
+    "Heating Care Central MD"
+   ],
+   "descriptions": [
+    "Heating maintenance for homes in Severn, Severna Park and Columbia, Maryland.",
+    "Our technicians check the system and explain what it needs.",
+    "Book a heating maintenance visit with Ambient Cooling and Heating.",
+    "Serving Central Maryland with professional heating maintenance."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Heating Maintenance",
+   "label": "RSA B - seasonal led",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "headlines": [
+    "Heating Due A Service?",
+    "Keep Your Heating Running",
+    "Before The Cold Arrives",
+    "Book Heating Maintenance",
+    "Heating Care Near You",
+    "Severn Heating Service",
+    "Heating Care Specialists",
+    "Central Maryland Heating",
+    "Book A Service Visit",
+    "Talk To A Technician",
+    "Planned Heating Care",
+    "Clear Service Options",
+    "Request A Service Visit",
+    "Columbia Heating Care",
+    "Warm Home This Winter"
+   ],
+   "descriptions": [
+    "A heating system checked before winter is less likely to fail during it.",
+    "We inspect the system and set out anything that needs attention.",
+    "Heating maintenance across Severn, Severna Park and Columbia homes.",
+    "Schedule a heating maintenance visit with Ambient today."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Geothermal Heat Pump",
+   "label": "RSA A - service led",
+   "final_url": "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+   "headlines": [
+    "Geothermal Heat Pumps",
+    "Geothermal HVAC Install",
+    "Severn Geothermal HVAC",
+    "Severna Park Geothermal",
+    "Columbia MD Geothermal",
+    "Geothermal Installation",
+    "Ground Source Heat Pumps",
+    "Central Maryland Geothermal",
+    "Book A Geothermal Review",
+    "Geothermal System Fitting",
+    "Trained HVAC Technicians",
+    "Energy Efficient Heating",
+    "Geothermal Assessment",
+    "Year Round Comfort",
+    "Request Geothermal Info"
+   ],
+   "descriptions": [
+    "Geothermal heat pump installation for homes across Central Maryland.",
+    "We assess the site and explain how a geothermal system would work.",
+    "Geothermal heating and cooling for Severn, Severna Park and Columbia.",
+    "Book a geothermal assessment with Ambient Cooling and Heating."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Geothermal Heat Pump",
+   "label": "RSA B - benefit led",
+   "final_url": "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+   "headlines": [
+    "Considering Geothermal?",
+    "Ground Source Heating",
+    "Geothermal Heat Pumps",
+    "Efficient Year Round Comfort",
+    "Geothermal For Your Home",
+    "Maryland Geothermal",
+    "Book A Site Assessment",
+    "Talk To A Technician",
+    "Geothermal HVAC Install",
+    "Sustainable Home Heating",
+    "Severn Geothermal Install",
+    "Columbia Geothermal",
+    "Clear System Options",
+    "Geothermal Explained",
+    "Request An Assessment"
+   ],
+   "descriptions": [
+    "Geothermal taps underground temperatures to heat and cool your home.",
+    "We assess your property and set out whether geothermal suits it.",
+    "Geothermal installation across Severn, Severna Park and Columbia.",
+    "Schedule a geothermal consultation with Ambient today."
+   ]
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Furnace Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "gas",
+    "electric",
+    "emergency",
+    "no heat",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "replacement",
+    "installation"
+   ],
+   "count": 15
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heating Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "furnace",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat",
+    "emergency",
+    "no heat",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "replacement",
+    "installation"
+   ],
+   "count": 14
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Emergency Heating Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "maintenance",
+    "tune up",
+    "inspection",
+    "replacement",
+    "installation",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat"
+   ],
+   "count": 11
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | No Heat Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "maintenance",
+    "tune up",
+    "inspection",
+    "replacement",
+    "installation",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat"
+   ],
+   "count": 11
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "electric",
+    "oil",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "replacement",
+    "installation"
+   ],
+   "count": 13
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "gas",
+    "oil",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "replacement",
+    "installation"
+   ],
+   "count": 13
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heat Pump Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "geothermal",
+    "ductless",
+    "mini split",
+    "boiler",
+    "furnace",
+    "thermostat",
+    "maintenance",
+    "tune up",
+    "replacement",
+    "installation",
+    "installers"
+   ],
+   "count": 11
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heat Pump Replacement",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "geothermal",
+    "ductless",
+    "mini split",
+    "boiler",
+    "furnace",
+    "thermostat",
+    "installation"
+   ],
+   "count": 11
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "replacement",
+    "geothermal",
+    "ductless",
+    "mini split",
+    "boiler",
+    "furnace",
+    "thermostat"
+   ],
+   "count": 11
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heat Pump Maintenance",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "replacement",
+    "installation",
+    "installers",
+    "geothermal",
+    "ductless",
+    "mini split",
+    "boiler",
+    "furnace",
+    "thermostat"
+   ],
+   "count": 10
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Ductless Heating Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "installation",
+    "installers",
+    "replacement",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "heat pump",
+    "geothermal",
+    "boiler",
+    "furnace",
+    "thermostat"
+   ],
+   "count": 11
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Furnace Replacement",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "installation",
+    "installers",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat",
+    "oil"
+   ],
+   "count": 13
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Furnace Installation",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "replacement",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat",
+    "oil"
+   ],
+   "count": 12
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heating Replacement",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "installation",
+    "installers",
+    "furnace",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat"
+   ],
+   "count": 13
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heating Installation",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "replacement",
+    "furnace",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat"
+   ],
+   "count": 12
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Ductless Heating Installation",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "heat pump",
+    "geothermal",
+    "boiler",
+    "furnace",
+    "thermostat"
+   ],
+   "count": 9
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Gas Boiler Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "oil",
+    "electric",
+    "tankless",
+    "furnace",
+    "heat pump",
+    "replacement",
+    "installation",
+    "installers",
+    "maintenance",
+    "tune up",
+    "inspection"
+   ],
+   "count": 11
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Boiler Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "gas",
+    "oil",
+    "tankless",
+    "furnace",
+    "heat pump",
+    "replacement",
+    "installation",
+    "installers",
+    "maintenance",
+    "tune up",
+    "inspection"
+   ],
+   "count": 11
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Boiler Replacement",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "installation",
+    "installers",
+    "furnace",
+    "heat pump",
+    "tankless"
+   ],
+   "count": 9
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Boiler Installation",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "maintenance",
+    "tune up",
+    "inspection",
+    "replacement",
+    "furnace",
+    "heat pump",
+    "tankless"
+   ],
+   "count": 8
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Boiler Maintenance",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "replacement",
+    "installation",
+    "installers",
+    "furnace",
+    "heat pump",
+    "tankless"
+   ],
+   "count": 7
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Furnace Maintenance",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "replacement",
+    "installation",
+    "installers",
+    "tune up",
+    "inspection",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat",
+    "oil"
+   ],
+   "count": 13
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heating Maintenance",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "replacement",
+    "installation",
+    "installers",
+    "tune up",
+    "inspection",
+    "furnace",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat"
+   ],
+   "count": 13
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Furnace Tune-Up",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "replacement",
+    "installation",
+    "installers",
+    "maintenance",
+    "inspection",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat"
+   ],
+   "count": 12
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heating Tune-Up",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "replacement",
+    "installation",
+    "installers",
+    "maintenance",
+    "inspection",
+    "furnace",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat"
+   ],
+   "count": 13
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Heating System Inspection",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "replacement",
+    "installation",
+    "installers",
+    "maintenance",
+    "tune up",
+    "furnace",
+    "boiler",
+    "heat pump",
+    "ductless",
+    "mini split",
+    "geothermal",
+    "thermostat"
+   ],
+   "count": 13
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Thermostat Repair",
+   "match_type": "PHRASE",
+   "negatives": [
+    "replacement",
+    "installation",
+    "installers",
+    "smart",
+    "nest",
+    "ecobee",
+    "furnace",
+    "boiler",
+    "heat pump",
+    "heating system"
+   ],
+   "count": 10
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Thermostat Replacement",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "installation",
+    "installers",
+    "smart",
+    "nest",
+    "ecobee",
+    "furnace",
+    "boiler",
+    "heat pump",
+    "heating system"
+   ],
+   "count": 10
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Smart Thermostat Installation",
+   "match_type": "PHRASE",
+   "negatives": [
+    "repair",
+    "replacement",
+    "furnace",
+    "boiler",
+    "heat pump",
+    "heating system"
+   ],
+   "count": 6
+  },
+  {
+   "op": "ADD_AD_GROUP_CROSS_NEGATIVES",
+   "ad_group": "SKAG | Geothermal Heat Pump",
+   "match_type": "PHRASE",
+   "negatives": [
+    "ductless",
+    "mini split",
+    "boiler",
+    "furnace",
+    "thermostat",
+    "repair",
+    "maintenance",
+    "tune up"
+   ],
+   "count": 8
+  },
+  {
+   "op": "LINK_EXISTING_CALL_ASSET_PAUSED",
+   "asset_id": "407995613637",
+   "campaign_key": "C2_HEATPUMP"
+  },
+  {
+   "op": "LINK_EXISTING_CALL_ASSET_PAUSED",
+   "asset_id": "407995613637",
+   "campaign_key": "C5_MAINT"
+  },
+  {
+   "op": "LINK_EXISTING_CALL_ASSET_PAUSED",
+   "asset_id": "407995613637",
+   "campaign_key": "C6_THERMOSTAT"
+  },
+  {
+   "op": "LINK_EXISTING_CALL_ASSET_PAUSED",
+   "asset_id": "407995613637",
+   "campaign_key": "C7_GEO"
+  },
+  {
+   "op": "LINK_EXISTING_BUSINESS_NAME_ASSET",
+   "asset_id": "80516971145",
+   "campaign_key": "C2_HEATPUMP"
+  },
+  {
+   "op": "LINK_EXISTING_BUSINESS_NAME_ASSET",
+   "asset_id": "80516971145",
+   "campaign_key": "C5_MAINT"
+  },
+  {
+   "op": "LINK_EXISTING_BUSINESS_NAME_ASSET",
+   "asset_id": "80516971145",
+   "campaign_key": "C6_THERMOSTAT"
+  },
+  {
+   "op": "LINK_EXISTING_BUSINESS_NAME_ASSET",
+   "asset_id": "80516971145",
+   "campaign_key": "C7_GEO"
+  },
+  {
+   "op": "LINK_EXISTING_CALLOUT_ASSETS",
+   "campaign_key": "C2_HEATPUMP",
+   "asset_ids": [
+    "422477374526",
+    "422577760603",
+    "422577771364",
+    "422577777430",
+    "422577777442"
+   ],
+   "count": 5,
+   "reused_not_created": true
+  },
+  {
+   "op": "LINK_EXISTING_CALLOUT_ASSETS",
+   "campaign_key": "C5_MAINT",
+   "asset_ids": [
+    "422477374526",
+    "422577760603",
+    "422577771364",
+    "422577777430",
+    "422577777442"
+   ],
+   "count": 5,
+   "reused_not_created": true
+  },
+  {
+   "op": "LINK_EXISTING_CALLOUT_ASSETS",
+   "campaign_key": "C6_THERMOSTAT",
+   "asset_ids": [
+    "422477374526",
+    "422577760603",
+    "422577771364",
+    "422577777430",
+    "422577777442"
+   ],
+   "count": 5,
+   "reused_not_created": true
+  },
+  {
+   "op": "LINK_EXISTING_CALLOUT_ASSETS",
+   "campaign_key": "C7_GEO",
+   "asset_ids": [
+    "422477374526",
+    "422577760603",
+    "422577771364",
+    "422577777430",
+    "422577777442"
+   ],
+   "count": 5,
+   "reused_not_created": true
+  },
+  {
+   "op": "LINK_EXISTING_SITELINK_ASSETS",
+   "campaign_key": "C2_HEATPUMP",
+   "asset_ids": [
+    "422577777457",
+    "422577771382",
+    "422477374559"
+   ],
+   "count": 3,
+   "reused_not_created": true,
+   "no_blocked_url": true
+  },
+  {
+   "op": "LINK_EXISTING_SITELINK_ASSETS",
+   "campaign_key": "C5_MAINT",
+   "asset_ids": [
+    "422577777457",
+    "422577771382",
+    "422477374559"
+   ],
+   "count": 3,
+   "reused_not_created": true,
+   "no_blocked_url": true
+  },
+  {
+   "op": "LINK_EXISTING_SITELINK_ASSETS",
+   "campaign_key": "C6_THERMOSTAT",
+   "asset_ids": [
+    "422577777457",
+    "422577771382",
+    "422477374559"
+   ],
+   "count": 3,
+   "reused_not_created": true,
+   "no_blocked_url": true
+  },
+  {
+   "op": "LINK_EXISTING_SITELINK_ASSETS",
+   "campaign_key": "C7_GEO",
+   "asset_ids": [
+    "422577777457",
+    "422577771382",
+    "422477374559"
+   ],
+   "count": 3,
+   "reused_not_created": true,
+   "no_blocked_url": true
+  },
+  {
+   "op": "CREATE_STRUCTURED_SNIPPET_AND_LINK",
+   "campaign_key": "C2_HEATPUMP",
+   "header": "Services",
+   "values": [
+    "Heat Pump Repair",
+    "Heat Pump Installation",
+    "Ductless Heating",
+    "Mini Split Service"
+   ],
+   "count": 1
+  },
+  {
+   "op": "CREATE_STRUCTURED_SNIPPET_AND_LINK",
+   "campaign_key": "C5_MAINT",
+   "header": "Services",
+   "values": [
+    "Furnace Maintenance",
+    "Heating Maintenance",
+    "Heating Tune-Up",
+    "System Inspection"
+   ],
+   "count": 1
+  },
+  {
+   "op": "CREATE_STRUCTURED_SNIPPET_AND_LINK",
+   "campaign_key": "C6_THERMOSTAT",
+   "header": "Services",
+   "values": [
+    "Thermostat Repair",
+    "Thermostat Replacement",
+    "Smart Thermostat Install"
+   ],
+   "count": 1
+  },
+  {
+   "op": "CREATE_STRUCTURED_SNIPPET_AND_LINK",
+   "campaign_key": "C7_GEO",
+   "header": "Services",
+   "values": [
+    "Geothermal Heat Pump",
+    "Heat Pump Installation",
+    "Heating Installation",
+    "Ductless Heating"
+   ],
+   "count": 1
+  }
+ ],
+ "operation_count": 143,
+ "fingerprint": "08F6BD427AFD"
+}

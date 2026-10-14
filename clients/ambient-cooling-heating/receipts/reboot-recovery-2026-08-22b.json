@@ -1,0 +1,160 @@
+{
+ "receipt_type": "REBOOT_RECOVERY",
+ "generated_local": "2026-08-22 09:30-09:50 EDT",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "premise": "The machine was rebooted. All prior processes and in-memory state are gone. Current state was reconstructed from durable evidence only: project instructions, validated client records, plan files, the fingerprint ledger, receipts, snapshots, reports, Google Ads change history, fresh read-only API reads and fresh live-browser renders. No terminal memory, prior conversation or recap was relied on.",
+
+ "step_1_project_root": {
+  "root": "D:/MG/green-marketing-gsa",
+  "confirmed_by": "presence of CLAUDE.md, config/agency.yaml, clients/ambient-cooling-heating/",
+  "version_control": "NOT a git repository. `git status` returns 'fatal: not a git repository'. There is therefore no working tree to reset, discard or clean, and nothing was.",
+  "user_changes_preserved": true
+ },
+
+ "step_2_mandatory_sources_read": {
+  "note": "Five files named at the repository root actually live under project-instructions/ and docs/. All were located and read in full; none was missing.",
+  "resolved_paths": {
+   "CLAUDE.md": "CLAUDE.md",
+   "START_HERE.md": "START_HERE.md",
+   "CHATGPT_PROJECT_INSTRUCTIONS.md": "project-instructions/CHATGPT_PROJECT_INSTRUCTIONS.md",
+   "OPERATING_WORKFLOWS.md": "docs/OPERATING_WORKFLOWS.md",
+   "SOURCE_COVERAGE_AND_DECISIONS.md": "docs/SOURCE_COVERAGE_AND_DECISIONS.md",
+   "FIVE_PART_GM_SYSTEM.md": "docs/FIVE_PART_GM_SYSTEM.md",
+   "SAFETY_AND_APPROVALS.md": "docs/SAFETY_AND_APPROVALS.md",
+   "config/agency.yaml": "config/agency.yaml",
+   "config/verticals.yaml": "config/verticals.yaml",
+   "heating-cooling reference": "references/verticals/heating-cooling.md",
+   "client profile": "clients/ambient-cooling-heating/client.yaml",
+   "work order": "clients/ambient-cooling-heating/work-order.yaml"
+  }
+ },
+
+ "step_3_runtime_and_dependencies": {
+  "python": "3.11.9 (.venv/Scripts/python.exe)",
+  "virtual_environment": "present and usable",
+  "google-ads": "31.2.0",
+  "playwright": "1.62.0, Chromium 151.0.7922.34 launched successfully",
+  "pyyaml_jsonschema": "present",
+  "DEPENDENCY_GAP_FOUND_AND_FIXED": {
+   "package": "tzdata",
+   "symptom": "zoneinfo.ZoneInfoNotFoundError: No time zone found with key America/New_York. Windows ships no system tz database, so scripts/ambient_checkpoint.py could not start.",
+   "root_cause": "tzdata was an undeclared dependency - absent from requirements.txt and pyproject.toml.",
+   "fix": "Installed tzdata 2026.3 into the project virtual environment and declared it in requirements.txt and pyproject.toml. Local environment change only; no Google Ads, website or external effect.",
+   "verified": "datetime.now(ZoneInfo('America/New_York')) returns 2026-08-22T09:26:27-04:00"
+  }
+ },
+
+ "step_4_credentials": {
+  "method": "variable NAMES only were listed; no value was printed, copied, logged or moved",
+  "present": ["GOOGLE_ADS_DEVELOPER_TOKEN", "GOOGLE_ADS_CLIENT_ID", "GOOGLE_ADS_CLIENT_SECRET", "GOOGLE_ADS_REFRESH_TOKEN", "GOOGLE_ADS_LOGIN_CUSTOMER_ID", "GOOGLE_ADS_CUSTOMER_ID", "GOOGLE_CLOUD_PROJECT_ID", "GOOGLE_APPLICATION_CREDENTIALS", "DATA_MANAGER_LOGIN_ACCOUNT_ID", "MAKE_WEBHOOK_URL", "CRM_WEBHOOK_URL", "WHATCONVERTS_API_TOKEN"],
+  "WHATCONVERTS_API_TOKEN": "variable name exists but its VALUE IS EMPTY (length 0). No authenticated WhatConverts session is available. Credentials were not requested. See the WhatConverts decision below.",
+  "env_file_edited": false
+ },
+
+ "step_5_validators": {
+  "validate_work_order.py": "PASS | Ambient Cooling - Live | 2401959466 | heating-cooling | AC Repair",
+  "verify_setup.py": "Credential variable names: present | Preflight: PASS"
+ },
+
+ "step_6_concurrency": {
+  "python_processes_running": 0,
+  "processes_matching_2401959466": 0,
+  "unrelated_processes_found": "Three Git bash processes belonging to a different project (D:/Carbon PT/... carbon-ppc landing-page gates). They matched only because the regex token 'google.ads' matched the literal path fragment 'Google Ads' in that project's directory name. They do not touch customer 2401959466.",
+  "action_taken": "none - unrelated processes were NOT terminated",
+  "verdict": "No concurrent writer to 2401959466. Safe to mutate."
+ },
+
+ "step_7_ledger_and_change_history": {
+  "change_history_window": "2026-07-25 .. 2026-08-22 (Google caps change_event at 30 days)",
+  "most_recent_event_in_the_account_before_this_run": {
+   "when": "2026-08-22 01:23:35",
+   "resource_type": "CAMPAIGN_BUDGET",
+   "operation": "UPDATE",
+   "changed_fields": ["amount_micros"],
+   "resource": "customers/2401959466/campaignBudgets/15787409441"
+  },
+  "conclusion": "The budget mutation BFB9FD367F639CA4 is the newest change in the account. Nothing has been written since, by this or any other session.",
+  "ledger_defect_found_and_corrected": {
+   "problem": "receipts/fingerprint-manifest-2026-08-21.json listed 80868F985D33B756, 6A2DE7A6589CA2B7 and 12E7572A25B9AFF0 as void=false, while the plan files on disk carry VOID:true. A future session reading only the ledger could have executed a do-not-execute plan.",
+   "fix": "Rebuilt the ledger from the plan files as receipts/fingerprint-manifest-2026-08-22b.json. Ledger and files now agree. 14 fingerprints are on the do-not-execute list.",
+   "google_ads_effect": "none"
+  }
+ },
+
+ "step_8_fresh_identity_gate": {
+  "descriptive_name": "Ambient Cooling - Live",
+  "customer_id": "2401959466",
+  "time_zone": "America/New_York",
+  "currency_code": "USD",
+  "manager": false,
+  "test_account": false,
+  "status": "ENABLED",
+  "auto_tagging_enabled": true,
+  "account_tracking_url_template": "routes through monitor.clickcease.com (ClickCease) - present, unchanged, not modified",
+  "manager_links": {"3373711342": "ACTIVE (Green Marketing)", "2815082755": "ACTIVE (ClickCease Client Center)"},
+  "gate": "PASS"
+ },
+
+ "step_9_package_execution_determination": {
+  "EACEC7CBAE85FF2B": {
+   "determination": "UNEXECUTED before this run",
+   "evidence_1": "change_event shows no CAMPAIGN_CRITERION create on campaign 24132507741 at any point in the 30-day window; the newest account event was the budget update.",
+   "evidence_2": "Direct read of campaign_criterion WHERE campaign.id IN (the five) AND type='KEYWORD' returned ZERO rows - AC Repair held no campaign-level negative keyword.",
+   "not_inferred_from_plan_file": true,
+   "action": "Executed once, this run. See negatives-mutation and negatives-readback receipts."
+  },
+  "BFB9FD367F639CA4": {
+   "determination": "ALREADY EXECUTED - verified, not replayed",
+   "evidence": "campaign budget 15787409441 reads 176150000 micros; change_event confirms the amount_micros UPDATE at 2026-08-22 01:23:35.",
+   "action": "Verified only. Not re-executed. Not raised again."
+  },
+  "3D823A10CB3C0B25": {
+   "determination": "NOT EXECUTED - blocked by a live landing-page defect",
+   "evidence": "Ad group 202339087594 holds exactly 2 keywords (both 'gas boiler repair', EXACT and PHRASE). Fresh browser renders show the Gas Boiler page still carries the H2 'Your HVAC Replacement in 3 Simple Steps'."
+  },
+  "93A9DF4AA19675E8": {
+   "determination": "NOT EXECUTED - deployment preconditions fail",
+   "evidence": "No website source, theme, wp-config, Divi layout, Gravity Forms export or deployment configuration exists anywhere in the workspace; no staging URL; no confirmable backup; no deployment authority. Credentials were not requested."
+  }
+ },
+
+ "step_10_structural_reconciliation": {
+  "finding": "A raw count of every resource returned 33 campaigns / 83 ad groups / 7028 keywords / 353 campaign assets / 20 customer assets / 23 conversion actions / 17 shared sets, which differs from the expected reference. This is a QUERY-DEFINITION difference, not account drift: the reference counts exclude REMOVED resources.",
+  "proof": "Re-counting each bucket with an explicit status != 'REMOVED' filter reproduced the expected reference EXACTLY in all eleven buckets.",
+  "reconciliation": {
+   "campaigns": {"raw": 33, "non_removed": 23, "expected": 23},
+   "ad_groups": {"raw": 83, "non_removed": 68, "expected": 68},
+   "ads": {"raw": 115, "non_removed": 115, "expected": 115},
+   "keywords": {"raw": 7028, "non_removed": 6968, "expected": 6968},
+   "campaign_criteria": {"raw": 13810, "non_removed": 13810, "expected": 13810},
+   "ad_schedules": {"raw": 139, "non_removed": 139, "expected": 139},
+   "campaign_assets": {"raw": 353, "non_removed": 283, "expected": 283},
+   "customer_assets": {"raw": 20, "non_removed": 1, "expected": 1},
+   "conversion_actions": {"raw": 23, "non_removed": 16, "expected": 16},
+   "shared_sets": {"raw": 17, "non_removed": 16, "expected": 16},
+   "ip_exclusions": {"raw": 2796, "non_removed": 2796, "expected": 2796}
+  },
+  "verdict": "ZERO structural drift across the reboot."
+ },
+
+ "artifacts_written": [
+  "snapshots/reboot-identity-2026-08-22b.json",
+  "snapshots/reboot-baseline-2026-08-22b.json",
+  "snapshots/reboot-counts-2026-08-22b.json",
+  "receipts/fingerprint-manifest-2026-08-22b.json",
+  "receipts/negatives-preflight-2026-08-22b.json",
+  "receipts/negatives-validate-only-2026-08-22b.json",
+  "receipts/negatives-mutation-2026-08-22b.json",
+  "receipts/negatives-readback-2026-08-22b.json",
+  "receipts/negatives-search-term-evidence-2026-08-22b.json",
+  "snapshots/lp-browser-qa-2026-08-22b.json",
+  "snapshots/lp-gates-2026-08-22b.json",
+  "snapshots/search-terms-2026-08-22b.json",
+  "snapshots/schedule-compliance-2026-08-22b.json",
+  "snapshots/final-audit-2026-08-22b.json",
+  "snapshots/budget-checkpoint-2026-08-22b.txt",
+  "exports/search-terms-verdicts-2026-08-22b.csv"
+ ],
+ "secrets_or_pii_in_any_artifact": false
+}

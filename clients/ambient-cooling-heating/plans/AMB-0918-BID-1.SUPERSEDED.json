@@ -1,0 +1,47 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-21",
+ "plan_name": "AMB-0918-BID-1",
+ "approval_class": "update-cpc-bid-ceiling",
+ "why_separate": "These are BID changes, not budget changes. One lands on an ENABLED campaign and raises cost per click, so it is listed as its own approval category rather than folded into the budget plan.",
+ "changes": [
+  {
+   "campaign": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "campaign_id": "24132507744",
+   "from": 25.0,
+   "to": 60.0,
+   "why": "The live campaign has spent $12.84 on ONE click since launch because the $25 ceiling sits far below the boiler clearing price. Legacy boiler CPCs were $89.90 (repair) and $106.03 (installs), though both ran under the uncapped Maximize Clicks regime that inflated prices, so $60 is a deliberate midpoint rather than a return to historical levels. Without this, the budget increase buys nothing.",
+   "risk": "Raises cost per click on an ENABLED campaign. Bounded by the $38/day budget."
+  },
+  {
+   "campaign": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09",
+   "campaign_id": "24257819466",
+   "from": 24.0,
+   "to": 30.0,
+   "why": "Mini Split has cleared at $25.15 all-time, just ABOVE the current $24 ceiling, so the campaign is priced out of its own best theme. $30 restores participation.",
+   "risk": "Campaign is PAUSED, so no immediate spend effect."
+  }
+ ],
+ "operations": [
+  {
+   "op": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "campaign_id": "24132507744",
+   "campaign": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "from_usd": 25.0,
+   "to_usd": 60.0,
+   "field_mask": "target_spend.cpc_bid_ceiling_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09",
+   "from_usd": 24.0,
+   "to_usd": 30.0,
+   "field_mask": "target_spend.cpc_bid_ceiling_micros"
+  }
+ ],
+ "operation_count": 2,
+ "fingerprint": "9AB4F46DD993"
+}

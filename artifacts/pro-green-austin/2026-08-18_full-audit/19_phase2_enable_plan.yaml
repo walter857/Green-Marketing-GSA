@@ -1,0 +1,869 @@
+change_plan:
+  version: 1
+  phase: PHASE 2 ENABLE - follows the executed CREATE_PAUSED subplan
+  generated_on: '2026-08-20'
+  mode: draft
+  prepared_by: Green Marketing Google Ads implementation agent
+  approval_owner: Green Marketing
+  target:
+    exact_child_account_name: Pro Green - Austin - Live
+    child_customer_id: '7380491929'
+    manager_customer_id: '3373711342'
+    exact_service: outdoor design & build
+    vertical: hardscaping
+    snapshot: clients/pro-green-austin/snapshots/phase2-read-2026-08-19.json
+    landing_page_copy_source: clients/pro-green-austin/snapshots/lp-copy-2026-08-19.json
+    sitelink_destination_audit: clients/pro-green-austin/snapshots/sitelink-destinations-2026-08-19.json
+    read_on: '2026-08-19'
+    account_timezone: America/New_York
+    currency: USD
+    created_on: '2026-08-20'
+    create_paused_fingerprint_executed: 13B70F010DDF
+    create_paused_master: 93B8761DF260
+  external_writes_performed: NONE under this plan. The 24 ads were created PAUSED under the separate CREATE_PAUSED
+    approval on 2026-08-20.
+  execution_gate: 'TWO conditions must both hold before this plan may be executed. First, Green Marketing
+    must paste back the exact ENABLE fingerprint. Second, Google''s review of all 24 ads must have finished:
+    at readback on 2026-08-20 every one of the 24 was REVIEW_IN_PROGRESS with approval_status UNKNOWN
+    and ad_strength PENDING, which is normal for a newly created ad. A fresh preflight will re-read policy
+    state and will STOP if any ad is DISAPPROVED or limited, or if any ad no longer matches the frozen
+    copy.'
+  measurement_caveat: SPEC-001 and SPEC-002 remain outstanding, so the offer-page form still captures
+    no click identifier and the form-submit conversion tag is unverified. This test will be readable on
+    CTR within weeks and on conversions only after those land. Enabling is still worthwhile because CTR
+    is the weak Quality Score component and CTR does not depend on the form.
+  subplans:
+    STATUS:
+      actions: []
+      empty_reason: Enabling a newly created ad is handled under ENABLE, not STATUS. No existing resource
+        changes status.
+    BUDGET:
+      actions: []
+      empty_reason: No budget change. $65.78/day stands.
+    EXISTING_RESOURCES:
+      actions: []
+      empty_reason: No change to any existing ad, keyword, negative, asset, schedule, location, bidding
+        setting or tracking field.
+    CONVERSIONS:
+      actions: []
+      empty_reason: No conversion change. Exactly three primary actions stand.
+    CREATE_PAUSED:
+      actions: []
+      empty_reason: Nothing further is created. The 24 ads already exist, created PAUSED on 2026-08-20.
+    SITE_OR_TRACKING:
+      actions: []
+      empty_reason: Website work remains a developer specification. SPEC-001, SPEC-002 and SPEC-005 are
+        unchanged and still outstanding.
+    ENABLE:
+      actions:
+      - action_id: ENA-001
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686216~821598464387
+        ad_id: '821598464387'
+        ad_group_id: '199051686216'
+        ad_group_name: Driveways | BOFU
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/paver-driveway/
+        paths: /driveways/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/paver-driveway/, paired with existing
+          ENABLED ad 817941409336 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686216~821598464387 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-002
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686176~821598464390
+        ad_id: '821598464390'
+        ad_group_id: '199051686176'
+        ad_group_name: Driveways | Near Me
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/paver-driveway/
+        paths: /driveways/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/paver-driveway/, paired with existing
+          ENABLED ad 817941409333 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686176~821598464390 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-003
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051685456~821598464393
+        ad_id: '821598464393'
+        ad_group_id: '199051685456'
+        ad_group_name: Hardscaping | BOFU
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/hardscaping/
+        paths: /hardscaping/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/hardscaping/, paired with existing
+          ENABLED ad 817941409186 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051685456~821598464393 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-004
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051685416~821598464396
+        ad_id: '821598464396'
+        ad_group_id: '199051685416'
+        ad_group_name: Hardscaping | Near Me
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://progreenlandscapesolutions.com/austin/services/hardscaping/
+        paths: /hardscaping/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://progreenlandscapesolutions.com/austin/services/hardscaping/, paired with existing
+          ENABLED ad 817941409183 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051685416~821598464396 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-005
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051685936~821598464399
+        ad_id: '821598464399'
+        ad_group_id: '199051685936'
+        ad_group_name: Patios | BOFU
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/patio-2/
+        paths: /patios/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/patio-2/, paired with existing
+          ENABLED ad 817941409324 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051685936~821598464399 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-006
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051685896~821598464522
+        ad_id: '821598464522'
+        ad_group_id: '199051685896'
+        ad_group_name: Patios | Near Me
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/patio-2/
+        paths: /patios/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/patio-2/, paired with existing
+          ENABLED ad 817941409321 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051685896~821598464522 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-007
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051685736~821598464525
+        ad_id: '821598464525'
+        ad_group_id: '199051685736'
+        ad_group_name: Pavers | BOFU
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/pavers-2/
+        paths: /pavers/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/pavers-2/, paired with existing
+          ENABLED ad 817941409198 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051685736~821598464525 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-008
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051685696~821598464528
+        ad_id: '821598464528'
+        ad_group_id: '199051685696'
+        ad_group_name: Pavers | Near Me
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/pavers-2/
+        paths: /pavers/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/pavers-2/, paired with existing
+          ENABLED ad 817941409195 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051685696~821598464528 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-009
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051685656~821598464531
+        ad_id: '821598464531'
+        ad_group_id: '199051685656'
+        ad_group_name: Retaining Walls | BOFU
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/retaining-walls/
+        paths: /retaining-wall/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/retaining-walls/, paired with existing
+          ENABLED ad 817941409192 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051685656~821598464531 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-010
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051685496~821598464534
+        ad_id: '821598464534'
+        ad_group_id: '199051685496'
+        ad_group_name: Retaining Walls | Near Me
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/retaining-walls/
+        paths: /retaining-wall/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/retaining-walls/, paired with existing
+          ENABLED ad 817941409189 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051685496~821598464534 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-011
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686136~821598464537
+        ad_id: '821598464537'
+        ad_group_id: '199051686136'
+        ad_group_name: Walkways | BOFU
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/walkway/
+        paths: /walkways/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/walkway/, paired with existing
+          ENABLED ad 817941409330 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686136~821598464537 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-012
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051685976~821598464540
+        ad_id: '821598464540'
+        ad_group_id: '199051685976'
+        ad_group_name: Walkways | Near Me
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        final_url: https://offeraustin.progreenlandscapesolutions.com/walkway/
+        paths: /walkways/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/walkway/, paired with existing
+          ENABLED ad 817941409327 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051685976~821598464540 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-013
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051687096~821598464543
+        ad_id: '821598464543'
+        ad_group_id: '199051687096'
+        ad_group_name: Artificial Turf | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/artificial-turf/
+        paths: /artificial-turf/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/artificial-turf/, paired with existing
+          ENABLED ad 817941409366 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051687096~821598464543 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-014
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686936~821598464546
+        ad_id: '821598464546'
+        ad_group_id: '199051686936'
+        ad_group_name: Artificial Turf | Near Me
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/artificial-turf/
+        paths: /artificial-turf/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/artificial-turf/, paired with existing
+          ENABLED ad 817941409363 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686936~821598464546 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-015
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686696~821598464549
+        ad_id: '821598464549'
+        ad_group_id: '199051686696'
+        ad_group_name: Fire Pits | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/fire-pit/
+        paths: /fire-pits/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/fire-pit/, paired with existing
+          ENABLED ad 817941409354 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686696~821598464549 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-016
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686656~821598464552
+        ad_id: '821598464552'
+        ad_group_id: '199051686656'
+        ad_group_name: Fire Pits | Near Me
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/fire-pit/
+        paths: /fire-pits/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/fire-pit/, paired with existing
+          ENABLED ad 817941409351 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686656~821598464552 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-017
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686416~821598464555
+        ad_id: '821598464555'
+        ad_group_id: '199051686416'
+        ad_group_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/landscape-design/
+        paths: /landscape/design-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/landscape-design/, paired with
+          existing ENABLED ad 817941409342 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686416~821598464555 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-018
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686376~821598464558
+        ad_id: '821598464558'
+        ad_group_id: '199051686376'
+        ad_group_name: Landscape Design | Near Me
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/landscape-design/
+        paths: /landscape/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/landscape-design/, paired with
+          existing ENABLED ad 817941409339 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686376~821598464558 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-019
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051687176~821598464561
+        ad_id: '821598464561'
+        ad_group_id: '199051687176'
+        ad_group_name: Landscape Lighting | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/landscape-lighting/
+        paths: /lighting/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/landscape-lighting/, paired with
+          existing ENABLED ad 817941409372 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051687176~821598464561 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-020
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051687136~821598464564
+        ad_id: '821598464564'
+        ad_group_id: '199051687136'
+        ad_group_name: Landscape Lighting | Near Me
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/landscape-lighting/
+        paths: /lighting/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/landscape-lighting/, paired with
+          existing ENABLED ad 817941409369 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051687136~821598464564 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-021
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686616~821598464567
+        ad_id: '821598464567'
+        ad_group_id: '199051686616'
+        ad_group_name: Outdoor Living | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/outdoor-living/
+        paths: /outdoor-living/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/outdoor-living/, paired with existing
+          ENABLED ad 817941409348 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686616~821598464567 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-022
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686456~821598464570
+        ad_id: '821598464570'
+        ad_group_id: '199051686456'
+        ad_group_name: Outdoor Living | Near Me
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/outdoor-living/
+        paths: /outdoor-living/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/outdoor-living/, paired with existing
+          ENABLED ad 817941409345 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686456~821598464570 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-023
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686896~821598464573
+        ad_id: '821598464573'
+        ad_group_id: '199051686896'
+        ad_group_name: Pergolas | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/pergola/
+        paths: /pergolas/free-quote
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/pergola/, paired with existing
+          ENABLED ad 817941409360 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686896~821598464573 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+      - action_id: ENA-024
+        priority: P2
+        operation: SET_AD_GROUP_AD_STATUS_ENABLED
+        resource_type: ad_group_ad
+        resource_name: customers/7380491929/adGroupAds/199051686856~821598464576
+        ad_id: '821598464576'
+        ad_group_id: '199051686856'
+        ad_group_name: Pergolas | Near Me
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        final_url: https://offeraustin.progreenlandscapesolutions.com/pergola/
+        paths: /pergolas/austin
+        current_state: status = PAUSED, created 2026-08-20 under CREATE_PAUSED fingerprint 13B70F010DDF,
+          verified against the frozen plan by 25 of 25 readback assertions
+        proposed_state: status = ENABLED
+        field_mask: status
+        evidence: 15 headlines and 4 descriptions matching the approved plan byte for byte, no pinning,
+          final URL https://offeraustin.progreenlandscapesolutions.com/pergola/, paired with existing
+          ENABLED ad 817941409357 in the same ad group.
+        reason: Starts the outcome-led versus feature-led creative test and brings the ad group to the
+          Green Marketing default of two RSAs.
+        expected_effect: Google rotates two creatives per ad group and a CTR comparison becomes readable.
+          Impressions split between the two ads while the test runs. No guarantee of a higher CTR or a
+          lower cost per lead.
+        risk: The existing ad's share of impressions falls while the test runs. Fully reversible by setting
+          status back to PAUSED.
+        rollback: Set customers/7380491929/adGroupAds/199051686856~821598464576 status back to PAUSED.
+        policy_state_at_plan_time:
+          approval_status: UNKNOWN
+          review_status: REVIEW_IN_PROGRESS
+          ad_strength: PENDING
+          policy_topics: []
+        object_count: 1
+  outstanding_items:
+  - id: SPEC-001
+    status: OPEN
+    item: Add click IDs, UTMs and unique lead IDs to the offer-page forms (gform_3)
+  - id: SPEC-002
+    status: OPEN
+    item: Verify and repair the landing-page form conversion tag; needs its own approval for one test
+      submission
+  - id: SPEC-005
+    status: OPEN
+    item: Correct the copied 'Confirm the Landscape Plan' wording on the Pergola and Artificial Turf offer
+      pages
+  - id: BLK-001
+    status: BLOCKED
+    item: Resolve the ClickCease destination configuration inside ClickCease; the ccpturl value oscillates
+      and a Google Ads-side edit would likely be overwritten
+  - id: BLK-002
+    status: BLOCKED
+    item: Sitelink repointing stays blocked until the offer-page attribution problem is fixed under SPEC-001

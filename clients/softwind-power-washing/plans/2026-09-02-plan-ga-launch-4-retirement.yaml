@@ -1,0 +1,52 @@
+# PLAN-GA-LAUNCH-4 - OLD RESOURCE RETIREMENT
+# STATUS: BLOCKED. NO FINGERPRINT. NO APPROVAL COMMAND. PAUSE ONLY - NEVER DELETE.
+
+change_plan:
+  plan_id: PLAN-GA-LAUNCH-4
+  plan_title: Old resource retirement
+  approval_type: PAUSE
+  status: BLOCKED
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: null
+  fingerprint_withheld_because: >-
+    Nothing may be retired until its replacement is created, enabled, eligible and verified
+    serving. Fingerprinting now would let a stale plan pause the account's only live delivery.
+  target:
+    child_customer_id: '1521725229'
+
+  method: 'PAUSE ONLY. Deletion requires its own separate destructive-action approval.'
+
+  retirement_order:
+    - step: 1
+      what: Displaced duplicate positive keywords
+      detail: >-
+        30 objects across 10 legacy ad groups carry texts now owned by one of the six final
+        groups. Full list in snapshots/launch1-delta-2026-09-02T125154.json.
+    - step: 2
+      what: Displaced duplicate ad groups
+      detail: '202870585430 Power Washing Services Near Me, 202870585590 Power Washing Company Near Me'
+    - step: 3
+      what: Weak old RSAs, only after replacements serve
+      detail: 'the 12 currently live ads in campaign 24103511039'
+    - step: 4
+      what: Zero-volume city groups
+      detail: '202870585630 Islip, 202870585670 West Islip, 202870585830 Dix Hills - 1 impression between them all-time'
+    - step: 5
+      what: Legacy mixed-intent groups
+      detail: '205713509664, 205713509704, 205713509744'
+    - step: 6
+      what: 'Campaign 24145053510 - LAST'
+      detail: >-
+        It currently carries half the account's live delivery. It must NOT be paused during
+        this sprint or during PLAN-GA-LAUNCH-1.
+
+  every_pause_action_must_carry:
+    - exact resource ID
+    - current status
+    - the replacement resource
+    - evidence the replacement is live and serving
+    - historical performance
+    - risk
+    - rollback
+  approval_owner: Walter Correa

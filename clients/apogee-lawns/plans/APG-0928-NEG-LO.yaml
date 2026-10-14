@@ -1,0 +1,65 @@
+# SUPERSEDED 2026-10-05 by APG-1005-KWNEG (removes all three: labor only, my own lights, customer supplied).
+# NEVER EXECUTE this plan or fingerprint 58362D536336.
+# =============================================================================
+# APG-0928-NEG-LO  --  align labor-only negatives with the owner-confirmed service scope
+# =============================================================================
+# DRAFT for separate approval. NOT executed. Removes 2 campaign negatives; keeps 1.
+# Owner answer 2026-09-28: Apogee DOES install customer-supplied lights (owner-provided service information;
+# not stated on the website; does not imply compatibility with every product or any other service).
+# =============================================================================
+plan_id: APG-0928-NEG-LO
+plan_kind: campaign_negative_keyword_remove
+generated: "2026-09-28"
+external_writes_performed: NONE
+priority: LOW   # no measurable search volume for these phrasings (Planner: no data for 10 phrasings)
+
+target:
+  exact_child_account_name: "Apogee Lawns LLC - Live"
+  child_customer_id: "8164626278"
+  manager_customer_id: "3373711342"
+  manager_never_mutated: true
+  exact_primary_service: Permanent Christmas light installation
+  campaign_id: "24257151015"
+
+evidence:
+  live_read: "reports/apogee-lawns/evidence/2026-09-28d-reads.json (75 ENABLED campaign negatives; the 3 below verified)"
+  owner_answer: "yes - installs customer-supplied lights (2026-09-28)"
+  website: "neither apogeelawns.com page read 2026-09-29 02:33 UTC mentions customer-supplied lights; owner answer is the only source"
+  planner: "reports/apogee-lawns/evidence/2026-09-28d-labor-only-planner.json - no data for all 10 labor-only/own-lights phrasings"
+  probes: "reports/apogee-lawns/evidence/2026-09-28d-negative-probes.json - buyer probes unblocked; DIY/job probes still blocked by how to, diy, jobs, career"
+
+objects:
+  - ordinal: 1
+    resource: campaign_criterion
+    operation: remove
+    resource_name: "customers/8164626278/campaignCriteria/24257151015~296448593009"
+    keyword: {text: "labor only", match_type: PHRASE, negative: true}
+    reason: "Blocks homeowners asking for installation labor for lights they already have - a service the owner confirms. Job-seeker variants stay blocked by BROAD job/jobs/career/careers/salary."
+  - ordinal: 2
+    resource: campaign_criterion
+    operation: remove
+    resource_name: "customers/8164626278/campaignCriteria/24257151015~2225874598953"
+    keyword: {text: "my own lights", match_type: PHRASE, negative: true}
+    reason: "Blocks homeowners asking to have their own lights installed permanently. DIY variants stay blocked by diy, how to, do it yourself, tutorial(s), instructions."
+
+kept_unchanged:
+  - resource_name: "customers/8164626278/campaignCriteria/24257151015~573042878059"
+    keyword: {text: "customer supplied", match_type: PHRASE}
+    verdict: KEEP
+    reason: "Contractor/trade jargon; no evidence homeowners search with it. It no longer reflects a service limit, so removal would be harmless, but it is not justified by any buyer evidence."
+
+mutation_counts: {creates: 0, updates: 0, removes: 2, enables: 0, status_changes: 0, budget_changes: 0, bid_changes: 0, geo_changes: 0, positive_keyword_changes: 0}
+preconditions_at_execution:
+  - "fresh identity gate PASS"
+  - "both resource names still ENABLED campaign negatives with the exact text and PHRASE match type; any drift = STOP"
+readback_assertions:
+  - "campaign negative count 75 -> 73; the two resource names absent"
+  - "'customer supplied' and all other 72 negatives unchanged"
+  - "campaign status, budget 16440000 micros, cap 8000000 micros, tablet rows unchanged"
+expected_effect: "Negligible measurable volume; removes a scope contradiction so genuine labor-only / own-lights buyers are not excluded."
+ad_and_page_claims: "No ad or landing-page wording about customer-supplied lights is added. Compatibility with any given product is not claimed."
+rollback: "re-add PHRASE negatives 'labor only' and 'my own lights' to campaign 24257151015"
+
+approval_grant:
+  required_line: "APPROVE APG NEGATIVE REMOVE <fingerprint>"
+  fingerprint_scope: "every key above approval_grant, serialized with gm_gsa.safety.approval_code"

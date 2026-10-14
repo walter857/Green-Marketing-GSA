@@ -1,0 +1,224 @@
+{
+ "package": "ambient-cooling-heating-KEYWORD-GAS-BOILER-EXPANSION-v2",
+ "version": "2026-08-21-v2",
+ "priority": "P2",
+ "run_class": "DRAFT + VALIDATE-ONLY. Not executed.",
+ "supersedes": {
+  "E6D25322E35F3E62": "VOID. It negated 'commercial boiler'. The gas boiler landing page states verbatim 'Gas boiler repair for homes and businesses', so commercial intent IS served and must not be blocked. 'steam boiler' replaces it."
+ },
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "campaign_id": "24132507744",
+ "campaign": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU",
+ "ad_group_id": "202339087594",
+ "ad_group": "SKAG | Gas Boiler Repair",
+ "landing_page": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+ "landing_page_evidence": {
+  "h1": "Gas Boiler Repair in Severn, Severna Park & Columbia, MD",
+  "commercial_supported": "VERBATIM: 'Gas boiler repair for homes and businesses'",
+  "steam_mentions": 0,
+  "install_mentions": 0,
+  "oil_boiler_mentions": 0,
+  "replace_mentions": "1, and it is the stray heading 'Your HVAC Replacement in 3 Simple Steps', a template artifact reported as a landing-page defect",
+  "conclusion": "The page supports the broader phrase 'boiler repair' for residential AND commercial GAS boilers. It does not support oil, steam or industrial boilers, installation, replacement, parts or water heaters."
+ },
+ "positive_keywords": [
+  {
+   "text": "boiler repair",
+   "match": "PHRASE",
+   "avg_monthly": 30,
+   "competition": "LOW",
+   "competition_index": 15,
+   "low_top_bid": 0.0,
+   "high_top_bid": 0.0,
+   "reason": "The only researched boiler term above Google's 10-search reporting floor, at 3x the volume of the live 'gas boiler repair'. LOW competition, index 15.",
+   "expected_coverage": "Queries containing the phrase 'boiler repair' in order: boiler repair near me, gas boiler repair, residential boiler repair, boiler repair cost, emergency boiler repair, local boiler repair company.",
+   "overlap": "SUBSUMES the existing 'gas boiler repair' PHRASE keyword, because 'boiler repair' is contained within it. Both stay in the SAME ad group, so Google serves the more specific keyword when it matches and there is no cross-ad-group or cross-campaign competition. No other Ambient campaign targets any boiler term, so no cannibalisation is possible."
+  },
+  {
+   "text": "boiler repair",
+   "match": "EXACT",
+   "avg_monthly": 30,
+   "competition": "LOW",
+   "competition_index": 15,
+   "low_top_bid": 0.0,
+   "high_top_bid": 0.0,
+   "reason": "Exact form of the same head term, to win the highest-intent variant at the cleanest Ad Rank.",
+   "expected_coverage": "The exact query 'boiler repair' and Google's close variants.",
+   "overlap": "Does not conflict with [gas boiler repair] EXACT; the two exact keywords match different queries."
+  }
+ ],
+ "negative_keywords": [
+  {
+   "text": "oil boiler",
+   "match": "PHRASE",
+   "reason": "The landing page is explicitly a GAS boiler page. The word 'steam' and any oil boiler wording are absent. Ambient's main site lists oil FURNACE installations and oil replacement, but NO oil boiler service.",
+   "patterns": "oil boiler repair, oil fired boiler repair, oil boiler service",
+   "service_check": "Ambient does not advertise oil boiler repair anywhere."
+  },
+  {
+   "text": "steam boiler",
+   "match": "PHRASE",
+   "reason": "Zero occurrences of 'steam' on the landing page. A steam boiler is a distinct system type from the gas hot-water boiler the page describes.",
+   "patterns": "steam boiler repair, steam boiler service",
+   "service_check": "No steam boiler service on the main site."
+  },
+  {
+   "text": "water heater",
+   "match": "PHRASE",
+   "reason": "A water heater is not a boiler and the gas boiler page never mentions one. Ambient DOES service tankless water heaters, but that is a separate service with its own main-site page and no active campaign, so routing that intent to a boiler repair page would be a poor experience.",
+   "patterns": "water heater repair, hot water heater not working, tankless water heater",
+   "service_check": "Ambient offers tankless water heaters at /services/heating-services/tankless-water-heaters/. Deliberately routed away from this ad group, NOT blocked account-wide."
+  },
+  {
+   "text": "boiler installation",
+   "match": "PHRASE",
+   "reason": "Zero occurrences of 'install' on the gas boiler landing page, and the main site has no boiler installation page. The ad group and its page are repair-only.",
+   "patterns": "boiler installation cost, new boiler installation, install a boiler",
+   "service_check": "No boiler installation page exists on the main site."
+  },
+  {
+   "text": "boiler replacement",
+   "match": "PHRASE",
+   "reason": "The gas boiler page contains no boiler replacement offer. The single occurrence of the word 'replace' on that page is the stray heading 'Your HVAC Replacement in 3 Simple Steps', which is a template artifact from the HVAC Replacement page and is reported separately as a landing-page defect - it is NOT a boiler replacement offer.",
+   "patterns": "boiler replacement cost, replace my boiler, new boiler quote",
+   "service_check": "No boiler replacement page on the main site."
+  },
+  {
+   "text": "industrial boiler",
+   "match": "PHRASE",
+   "reason": "Industrial plant boilers are a different trade and a different equipment class from the commercial and residential gas boilers the page serves.",
+   "patterns": "industrial boiler repair, plant boiler service",
+   "service_check": "No industrial boiler service anywhere on the main site."
+  },
+  {
+   "text": "boiler parts",
+   "match": "PHRASE",
+   "reason": "Product-purchase intent, not service intent. This is the ONE category with observed evidence: PARTS_OR_PRODUCT accounted for the single clearly irrelevant billable click in the whole account, $17.24.",
+   "patterns": "boiler parts, boiler replacement parts, boiler spare parts",
+   "service_check": "Ambient does not sell parts."
+  },
+  {
+   "text": "boiler manual",
+   "match": "PHRASE",
+   "reason": "Documentation and self-research intent.",
+   "patterns": "boiler manual pdf, boiler wiring diagram manual",
+   "service_check": "n/a"
+  },
+  {
+   "text": "diy boiler",
+   "match": "PHRASE",
+   "reason": "Explicit do-it-yourself intent; the searcher is not hiring a contractor.",
+   "patterns": "diy boiler repair, diy boiler fix",
+   "service_check": "n/a"
+  },
+  {
+   "text": "boiler jobs",
+   "match": "PHRASE",
+   "reason": "Employment intent, not customer intent.",
+   "patterns": "boiler jobs, boiler technician jobs, boiler engineer jobs",
+   "service_check": "n/a"
+  }
+ ],
+ "composition": {
+  "positive_count": 2,
+  "negative_count": 10,
+  "total_criteria": 12,
+  "broad_positive": 0,
+  "broad_negative": 0,
+  "all_negatives_match_type": "PHRASE",
+  "scope": "AD GROUP 202339087594 ONLY",
+  "account_level_negatives_touched": 0,
+  "shared_lists_attached": 0,
+  "campaign_level_negatives_added": 0,
+  "other_campaigns_touched": 0
+ },
+ "conflict_test": {
+  "queries_tested": [
+   "gas boiler repair",
+   "boiler repair",
+   "ac repair near me",
+   "hvac repair near me",
+   "hvac installers",
+   "hvac replacement near me",
+   "heating and cooling service",
+   "residential boiler repair",
+   "boiler repair near me",
+   "boiler repair cost",
+   "emergency boiler repair",
+   "local boiler repair",
+   "boiler repair quote",
+   "gas boiler repair near me",
+   "commercial boiler repair",
+   "boiler repair price",
+   "hire boiler repair",
+   "best boiler repair"
+  ],
+  "conflicts_found": [],
+  "protected_intent_preserved": [
+   "near me",
+   "quote",
+   "price",
+   "pricing",
+   "cost",
+   "best",
+   "hire",
+   "local",
+   "emergency"
+  ],
+  "verdict": "PASS - zero negatives block any active keyword, any boiler repair variant, or any protected intent token."
+ },
+ "ambiguous_words_reviewed": {
+  "commercial": "NOT negated. The page explicitly serves businesses.",
+  "residential": "NOT negated. Core audience.",
+  "heating": "NOT negated. Too broad and central to the vertical.",
+  "furnace": "NOT negated. Ambient offers furnace repair; blocking it here is unnecessary because 'furnace' cannot appear inside a 'boiler repair' phrase match.",
+  "steam": "Negated as the two-word phrase 'steam boiler' only, never as the single word.",
+  "oil": "Negated as 'oil boiler' only, never as the single word. Ambient offers oil furnace installation and oil replacement, neither of which contains 'oil boiler'.",
+  "plumbing": "NOT negated. No evidence of plumbing queries.",
+  "installation": "Negated as 'boiler installation' only.",
+  "replacement": "Negated as 'boiler replacement' only.",
+  "service": "NOT negated. 'boiler service' is legitimate repair-adjacent intent.",
+  "parts": "Negated as 'boiler parts' only. This is the one category with observed evidence.",
+  "water heater": "Negated as the two-word phrase. Separate Ambient service, separate page."
+ },
+ "mutation_counts": {
+  "creates": 12,
+  "updates": 0,
+  "removals": 0,
+  "total_mutations": 12,
+  "positive_keywords": 2,
+  "negative_keywords": 10,
+  "campaigns_touched": 0,
+  "budgets_touched": 0,
+  "ads_touched": 0,
+  "account_negatives_touched": 0,
+  "shared_sets_touched": 0
+ },
+ "expected_impact": "Raises addressable monthly volume for a campaign that has recorded ZERO impressions from roughly 10 searches to roughly 40. Honest scale: still very small, likely a handful of impressions per week. Incremental cost is bounded by the existing unused $42.76/day budget.",
+ "risk": "LOW-MEDIUM. Phrase 'boiler repair' is broader than the current keyword; ten ad-group-scoped Phrase negatives bound it to gas boiler repair intent. Fully reversible.",
+ "rollback_plan": "Remove the 12 created criteria by resource name. 12 mutations.",
+ "readback_verification": [
+  "ASSERT ad group 202339087594 holds exactly 4 positive keywords (2 existing + 2 new), all PHRASE or EXACT, zero BROAD.",
+  "ASSERT the same ad group holds exactly 10 negative keywords, all PHRASE.",
+  "ASSERT account keyword count rose by exactly 12 (6968 -> 6980).",
+  "ASSERT no criterion was created in any other ad group or campaign.",
+  "ASSERT account-level negative set 11252984411 is unchanged at 59 members.",
+  "ASSERT no shared set was attached to any of the five campaigns."
+ ],
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 12,
+  "errors": 0
+ },
+ "drift_assumptions": "Assumes ad group 202339087594 still holds exactly 2 keywords and 0 negatives at execution.",
+ "plan_fingerprint": "44145A2CE26A811B",
+ "VOID": true,
+ "VOID_ON": "2026-08-21",
+ "VOID_REASON": "Superseded by 1A0737BCFD1B980D. Phrase match withdrawn until the landing-page heading defect is fixed; seven negatives withdrawn because no verified client service source confirms Ambient does not provide those services."
+}

@@ -1,0 +1,57 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Heating Repair
+    related_services:
+      - Heating Installation
+      - Heat Pump Installation
+      - Gas Boiler Repair
+      - Geothermal Heat Pump
+      - Commercial HVAC Installation
+  task:
+    type: campaign-revamp
+    mode: enable
+    request: >-
+      Owner instruction 2026-10-02: allocate about $1,000/month to each of the eight ENABLED Search campaigns and $1,000/month
+      to each of two Performance Max campaigns (~$10,000/month). DRAFT the exact October budget plan (pro-rated against
+      October spend already incurred) and the steady-state full-month budgets ($1,000 / 30.4 = $32.89/day). Budget changes
+      only; no bid, ceiling, schedule, location, conversion or status change. Flag campaigns that cannot spend their
+      allocation; do not silently reallocate.
+    date_range: "October 2026 (change day 2026-10-02 or the approval day); steady state from 2026-11-01"
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: 32.89
+    monthly_allocation_per_campaign_usd: 1000
+    campaigns_in_allocation: 10   # 8 Search + 2 PMax
+    hard_monthly_cap_usd: 10000
+    cap_basis: "daily x 30.4, never x 30 or x 22"
+    preserve: ["$18 repair CPC ceiling", "all other ceilings", "schedules", "locations", "conversion settings"]
+    primary_conversion_goal: "unique genuine paid heating lead (form or call)"
+    target_cpl_usd: 280
+    cpl_ceiling_usd: 350
+    spending_limits_are_maximums_not_targets: true
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-transition-2026-09.yaml
+    change_authorized: true   # staged authorization 2026-10-02 (see authorization_2026_10_02_staged)
+  authorization_2026_10_02_staged:
+    source: "Green Marketing instruction in the Claude Code session, 2026-10-02 ('Complete the Account Cleanup and Launch the Approved Campaigns')"
+    sequence_authorized: "prepare + validate -> create PAUSED -> read back -> enable after successful QA, without a further confirmation between stages, for the defined scope only"
+    in_scope: "Emergency enable; Geothermal ads/sitelinks to /geothermal-heat-pump/ + enable; Heating Maintenance & Inspection on https://ambientcoolingandheating.com/services/heating-services/; complete + enable intended current resources in the 8 Search campaigns; high-confidence EXACT negatives; $1,000/month per campaign (8 Search + 2 PMax); launch the 2 PMax campaigns; tablet exclusions; policy-compatible targeting inside the approved service area"
+    excluded: "deletions; unrelated legacy campaigns or unsupported services; spend above the allocations; conversion-action, upload, tracking-number or Business Profile phone changes; Phrase/Broad negatives; test leads/forms/calls/uploads; new website deployments"
+    fingerprints_still_recorded: true
+  approval_owner: Green Marketing

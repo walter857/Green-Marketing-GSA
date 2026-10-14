@@ -1,0 +1,41 @@
+{
+ "recorded_utc": "2026-08-18T17:52:59.968465Z",
+ "customer_id": "2401959466",
+ "approved_fingerprint_attempted": "80868F985D33B756",
+ "outcome": "REJECTED BY GOOGLE ADS BEFORE ANY WRITE",
+ "atomicity": "partial_failure=false, so the batch was all-or-nothing. NOTHING was changed.",
+ "blocker": {
+  "error": "RESOURCE_LIMIT / RESPONSIVE_SEARCH_ADS_PER_AD_GROUP",
+  "api_detail": "limit=3, existing_count=2, enclosing_resource=ad_group",
+  "meaning": "Google Ads allows at most 3 ENABLED responsive search ads per ad group. Paused RSAs do not count: each of the three ad groups reports existing_count=2 while holding 4 non-removed RSAs (2 ENABLED originals + 2 PAUSED replacements). Enabling both replacements would make 4 enabled, which exceeds the limit.",
+  "validated_facts": [
+   "Enabling all six at once: REJECTED, 3 errors (operations 1, 3, 5 - the second ad in each group).",
+   "Enabling ONE replacement per ad group: VALIDATES OK.",
+   "Pausing the 6 originals and enabling the 6 replacements in one atomic request: VALIDATES OK."
+  ],
+  "why_the_original_sequence_was_wrong": "The enablement package 80868F985D33B756 assumed the replacements could be enabled first and the originals paused later, to guarantee no service interruption. The 3-enabled-RSA limit makes that impossible for 2 new + 2 old. The premise was also unnecessary: the six originals are DISAPPROVED and therefore cannot serve, so pausing them causes NO service interruption at all."
+ },
+ "state_after_failure": {
+  "six_replacements": "all still PAUSED and APPROVED",
+  "six_originals": "all still ENABLED and DISAPPROVED",
+  "ads_all_statuses": 113,
+  "all_other_counts": "identical to the pre-write baseline",
+  "manager_links": "both ACTIVE and unchanged"
+ },
+ "resource_ids_successfully_modified": [],
+ "recovery_options": {
+  "A_recommended": {
+   "fingerprint": "5026CAD20F45F581",
+   "mutations": 12,
+   "class": "MIXED (destructive pause element)",
+   "reaches_intended_end_state": true
+  },
+  "B_alternative": {
+   "fingerprint": "EBBD339D6773D41F",
+   "mutations": 3,
+   "class": "NON-DESTRUCTIVE",
+   "reaches_intended_end_state": false
+  }
+ },
+ "no_retry_performed": true
+}

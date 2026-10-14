@@ -1,0 +1,223 @@
+{
+  "canonical": {
+    "Patio Construction": {
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "intent": "General patio construction and patio contractor intent.",
+      "final_url": "https://offer.softwindli.com/patio/",
+      "owns": [
+        "patio construction",
+        "patio contractor",
+        "patio builder",
+        "patio installation",
+        "patio company"
+      ],
+      "routes_away": "Queries that name pavers AND patio go to Patio Paver Installation. Queries that name pavers without patio go to Paver Installation in the Pavers campaign."
+    },
+    "Patio Paver Installation": {
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "intent": "Patio intent that explicitly names pavers or paving stone.",
+      "final_url": "https://offer.softwindli.com/patio/",
+      "owns": [
+        "paver patio installation",
+        "patio pavers",
+        "patio paver installer",
+        "paver patio contractor"
+      ],
+      "routes_away": "Generic paver installation with no patio word belongs to Paver Installation."
+    },
+    "Paver Installation": {
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "intent": "General paver installation with no patio qualifier.",
+      "final_url": "https://offer.softwindli.com/pavers/",
+      "owns": [
+        "paver installation",
+        "paver installer",
+        "paver contractor",
+        "brick paver installation",
+        "interlocking pavers installation",
+        "paver walkway installation",
+        "paving stone installation"
+      ],
+      "routes_away": "Anything naming patio goes to the Patio campaign's two groups."
+    }
+  },
+  "rsas": {
+    "Patio Construction": [
+      {
+        "variant": "A - contractor and process",
+        "path1": "patio",
+        "path2": "free-quote",
+        "headlines": [
+          "Patio Construction Company",
+          "Hire A Patio Contractor",
+          "Long Island Patio Builders",
+          "Patio Construction Quote",
+          "Patio Contractor Near You",
+          "Custom Patio Construction",
+          "Built On A Level Base",
+          "Drainage Planned From Day 1",
+          "Layout And Material Guidance",
+          "Request A Free Patio Quote",
+          "Talk To A Patio Builder",
+          "Serving Long Island, NY",
+          "Start Your Patio Project",
+          "Get My Free Patio Quote",
+          "Book A Patio Site Visit"
+        ],
+        "descriptions": [
+          "Hire a patio contractor for layout, base prep, drainage and clean installation.",
+          "Request a free patio quote with a clear scope, material options and a timeline.",
+          "Long Island patio construction. Talk through your space before any work starts.",
+          "Call or request your free quote and get a plan for your new patio."
+        ]
+      },
+      {
+        "variant": "B - outcome and planning",
+        "path1": "patio-build",
+        "path2": "estimate",
+        "headlines": [
+          "Build Your New Patio",
+          "Patio Construction Estimate",
+          "Local Patio Construction",
+          "Plan Your Patio Layout",
+          "More Usable Backyard Space",
+          "Patio Built For Entertaining",
+          "Compare Patio Materials",
+          "Clean Cuts, Tight Joints",
+          "A Patio That Drains Right",
+          "Get A Clear Patio Timeline",
+          "Patio Builders Near You",
+          "Islip And Nearby Towns",
+          "Speak With A Patio Team",
+          "Request Your Free Estimate",
+          "Schedule A Patio Walkthrough"
+        ],
+        "descriptions": [
+          "Turn unused yard into a patio built for how you actually use the space.",
+          "Compare paver and stone options with guidance before you commit to a layout.",
+          "Serving Islip and Long Island. Schedule a walkthrough and get a clear scope.",
+          "Request a free estimate and see what your patio project will involve."
+        ]
+      }
+    ],
+    "Patio Paver Installation": [
+      {
+        "variant": "A - paver patio specific",
+        "path1": "paver-patio",
+        "path2": "free-quote",
+        "headlines": [
+          "Paver Patio Installation",
+          "Paver Patio Contractors",
+          "Patio Paver Installers",
+          "Install A Paver Patio",
+          "Paver Patio Quote",
+          "Long Island Paver Patios",
+          "Base Prep And Edge Restraint",
+          "Pitched For Drainage",
+          "Choose Your Paver Pattern",
+          "Color And Border Guidance",
+          "Paver Patio Near You",
+          "Serving Long Island, NY",
+          "Request A Free Paver Quote",
+          "Book A Patio Paver Visit",
+          "Get My Free Patio Quote"
+        ],
+        "descriptions": [
+          "Paver patio installation with proper base prep, drainage and edge restraint.",
+          "Pick colors, patterns and borders with guidance so the finish suits your home.",
+          "Long Island paver patio contractors. Request a free quote and a clear scope.",
+          "Call or request your free paver patio quote and get a project timeline."
+        ]
+      },
+      {
+        "variant": "B - material and durability",
+        "path1": "patio-pavers",
+        "path2": "estimate",
+        "headlines": [
+          "Patio Pavers Installed",
+          "Paver Patio Installers",
+          "Replace An Old Patio Slab",
+          "Brick And Stone Paver Patios",
+          "Patio Pavers Estimate",
+          "Built To Handle Our Winters",
+          "Level Finish, Clean Edges",
+          "Interlocking Paver Patios",
+          "Pool And Backyard Patios",
+          "Walkways And Steps Too",
+          "Local Paver Patio Team",
+          "Islip And Nearby Towns",
+          "Request A Paver Patio Quote",
+          "See Your Paver Options",
+          "Get A Free Patio Estimate"
+        ],
+        "descriptions": [
+          "Swap a cracked slab for an interlocking paver patio built on a proper base.",
+          "Brick, stone and interlocking pavers with layout guidance for your space.",
+          "Patios, walkways and steps installed by a local Long Island paver team.",
+          "Request a free estimate for patio pavers and get a clear project scope."
+        ]
+      }
+    ],
+    "Paver Installation": [
+      {
+        "variant": "A - installer and process",
+        "path1": "pavers",
+        "path2": "free-quote",
+        "headlines": [
+          "Paver Installation Near You",
+          "Hire A Paver Contractor",
+          "Long Island Paver Installers",
+          "Paver Installation Quote",
+          "Professional Paver Install",
+          "Base Prep And Drainage",
+          "Edge Restraint Done Right",
+          "Clean Lines, Tight Joints",
+          "Layout And Material Help",
+          "Walkways, Patios And Steps",
+          "Paver Installers Near You",
+          "Serving Long Island, NY",
+          "Request A Free Paver Quote",
+          "Get My Free Paver Quote",
+          "Book A Paver Site Visit"
+        ],
+        "descriptions": [
+          "Paver installation with proper base prep, drainage and edge restraint.",
+          "Request a free paver quote with clear scope, material options and a timeline.",
+          "Long Island paver installers for walkways, patios, steps and pool surrounds.",
+          "Call or request your free quote and get a plan for your paver project."
+        ]
+      },
+      {
+        "variant": "B - surfaces and curb appeal",
+        "path1": "paver-install",
+        "path2": "estimate",
+        "headlines": [
+          "Interlocking Paver Install",
+          "Brick Paver Installation",
+          "Paving Stone Installation",
+          "Paver Walkway Installation",
+          "Upgrade Your Curb Appeal",
+          "Paver Installation Estimate",
+          "A Level, Lasting Finish",
+          "Built For Daily Use",
+          "Pool Surrounds And Steps",
+          "Compare Paver Options",
+          "Local Paver Installation",
+          "Islip And Nearby Towns",
+          "Speak With A Paver Team",
+          "Request Your Free Estimate",
+          "See Your Paver Choices"
+        ],
+        "descriptions": [
+          "Interlocking, brick and stone pavers installed level and built for daily use.",
+          "Walkways, steps and pool surrounds that lift curb appeal and stay put.",
+          "Serving Islip and Long Island. Get guidance on pattern, color and border.",
+          "Request a free estimate for paver installation and a clear project scope."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,407 @@
+{
+ "billing_setup": [
+  {
+   "id": "8584340188",
+   "status": "CANCELLED",
+   "pay_acct_name": "",
+   "profile_name": "",
+   "start": "2026-09-15 08:14:06",
+   "end": ""
+  },
+  {
+   "id": "8584421311",
+   "status": "CANCELLED",
+   "pay_acct_name": "",
+   "profile_name": "",
+   "start": "2026-09-15 08:54:14",
+   "end": ""
+  }
+ ],
+ "account_negatives": [
+  {
+   "id": "300090179",
+   "type": "CONTENT_LABEL",
+   "placement_url": "",
+   "content_label": "PARKED_DOMAIN",
+   "neg_kw_list": ""
+  }
+ ],
+ "shared_sets": {
+  "10667314427": {
+   "name": "Names",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "REMOVED",
+   "members": 436,
+   "refs": 0,
+   "match_mix": {
+    "PHRASE": 436
+   },
+   "actual_members": 436
+  },
+  "11807294063": {
+   "name": "Christmas Lights Install",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "members": 424,
+   "refs": 0,
+   "match_mix": {
+    "BROAD": 109,
+    "PHRASE": 294,
+    "EXACT": 21
+   },
+   "actual_members": 424
+  },
+  "11811255121": {
+   "name": "Leaf Removal initial",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "members": 386,
+   "refs": 0,
+   "match_mix": {
+    "BROAD": 386
+   },
+   "actual_members": 386
+  },
+  "11813144900": {
+   "name": "General List",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "members": 1111,
+   "refs": 0,
+   "match_mix": {
+    "BROAD": 1109,
+    "EXACT": 2
+   },
+   "actual_members": 1111
+  },
+  "11840874961": {
+   "name": "Paver",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "members": 387,
+   "refs": 0,
+   "match_mix": {
+    "BROAD": 387
+   },
+   "actual_members": 387
+  },
+  "11840890006": {
+   "name": "Outdoor Kitchen",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "members": 386,
+   "refs": 0,
+   "match_mix": {
+    "BROAD": 386
+   },
+   "actual_members": 386
+  },
+  "12178646912": {
+   "name": "General List - Irrigation Repair",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "members": 1107,
+   "refs": 0,
+   "match_mix": {
+    "BROAD": 1105,
+    "EXACT": 2
+   },
+   "actual_members": 1107
+  }
+ },
+ "reverse_negative_conflicts": {
+  "11807294063 :: Christmas Lights Install (ENABLED, refs=0)": {
+   "permanent christmas lights installer": [
+    "permanent christmas lights [PHRASE]"
+   ],
+   "permanent christmas lights": [
+    "permanent christmas lights [PHRASE]"
+   ],
+   "permanent christmas lights cost": [
+    "permanent christmas lights [PHRASE]"
+   ],
+   "permanent christmas lights price": [
+    "permanent christmas lights [PHRASE]"
+   ]
+  },
+  "11813144900 :: General List (ENABLED, refs=0)": {
+   "permanent christmas lights cost": [
+    "cost [BROAD]"
+   ],
+   "permanent christmas lights price": [
+    "price [BROAD]"
+   ]
+  },
+  "12178646912 :: General List - Irrigation Repair (ENABLED, refs=0)": {
+   "permanent christmas lights cost": [
+    "cost [BROAD]"
+   ],
+   "permanent christmas lights price": [
+    "price [BROAD]"
+   ]
+  }
+ },
+ "xmas_list_11807294063": {
+  "count": 424,
+  "top_tokens": [
+   [
+    "lights",
+    195
+   ],
+   [
+    "christmas",
+    179
+   ],
+   [
+    "light",
+    46
+   ],
+   [
+    "for",
+    24
+   ],
+   [
+    "lighting",
+    20
+   ],
+   [
+    "permanent",
+    16
+   ],
+   [
+    "controller",
+    12
+   ],
+   [
+    "clips",
+    11
+   ],
+   [
+    "luces",
+    11
+   ],
+   [
+    "to",
+    11
+   ],
+   [
+    "navidad",
+    10
+   ],
+   [
+    "tree",
+    9
+   ],
+   [
+    "bulbs",
+    9
+   ],
+   [
+    "c9",
+    8
+   ],
+   [
+    "outdoor",
+    8
+   ],
+   [
+    "of",
+    8
+   ],
+   [
+    "de",
+    8
+   ],
+   [
+    "hooks",
+    8
+   ],
+   [
+    "how",
+    7
+   ],
+   [
+    "led",
+    7
+   ],
+   [
+    "wire",
+    7
+   ],
+   [
+    "music",
+    7
+   ],
+   [
+    "franchise",
+    7
+   ],
+   [
+    "string",
+    6
+   ],
+   [
+    "bulk",
+    6
+   ],
+   [
+    "price",
+    6
+   ],
+   [
+    "show",
+    6
+   ],
+   [
+    "garland",
+    6
+   ],
+   [
+    "business",
+    6
+   ],
+   [
+    "installers",
+    6
+   ],
+   [
+    "window",
+    5
+   ],
+   [
+    "indoor",
+    5
+   ],
+   [
+    "on",
+    5
+   ],
+   [
+    "hanging",
+    5
+   ],
+   [
+    "holiday",
+    5
+   ],
+   [
+    "fix",
+    5
+   ],
+   [
+    "spt",
+    5
+   ],
+   [
+    "plug",
+    5
+   ],
+   [
+    "com",
+    5
+   ],
+   [
+    "house",
+    5
+   ],
+   [
+    "socket",
+    5
+   ],
+   [
+    "track",
+    5
+   ],
+   [
+    "best",
+    4
+   ],
+   [
+    "c7",
+    4
+   ],
+   [
+    "yard",
+    4
+   ],
+   [
+    "oelo",
+    4
+   ],
+   [
+    "everlights",
+    4
+   ],
+   [
+    "replacement",
+    4
+   ],
+   [
+    "hang",
+    4
+   ],
+   [
+    "free",
+    4
+   ],
+   [
+    "a",
+    4
+   ],
+   [
+    "average",
+    4
+   ],
+   [
+    "replace",
+    4
+   ],
+   [
+    "installer",
+    4
+   ],
+   [
+    "gemstone",
+    3
+   ],
+   [
+    "dollar",
+    3
+   ],
+   [
+    "displays",
+    3
+   ],
+   [
+    "wholesale",
+    3
+   ],
+   [
+    "sale",
+    3
+   ],
+   [
+    "twinkly",
+    3
+   ]
+  ],
+  "permanent_members": [
+   "permanent christmas lights",
+   "diy permanent christmas lights",
+   "led permanent christmas lights",
+   "permanent christmas lights near me",
+   "permanent outdoor lights",
+   "permanent eave lighting",
+   "permanent christmas lights install",
+   "permanent christmas light install",
+   "permanent track lighting",
+   "permanent soffit lighting",
+   "color changing permanent lights",
+   "programmable permanent lights",
+   "addressable permanent lights",
+   "permanent lighting track",
+   "permanent light housing",
+   "permanent lighting channel"
+  ]
+ }
+}

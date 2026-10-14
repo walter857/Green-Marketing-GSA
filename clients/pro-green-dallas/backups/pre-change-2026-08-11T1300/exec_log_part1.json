@@ -1,0 +1,496 @@
+{
+  "batches": [
+    {
+      "batch": "A-conversion-containment",
+      "operations": [
+        {
+          "resource": "customers/8735782888/conversionActions/7717433751",
+          "name": "Whatconverts Form",
+          "before": {
+            "primary_for_goal": true,
+            "include_in_conversions_metric": true
+          },
+          "after_intended": {
+            "primary_for_goal": false,
+            "include_in_conversions_metric": false
+          }
+        },
+        {
+          "resource": "customers/8735782888/conversionActions/7717433754",
+          "name": "Whatconverts Calls",
+          "before": {
+            "primary_for_goal": true,
+            "include_in_conversions_metric": true
+          },
+          "after_intended": {
+            "primary_for_goal": false,
+            "include_in_conversions_metric": false
+          }
+        }
+      ],
+      "results": [
+        "customers/8735782888/conversionActions/7717433751",
+        "customers/8735782888/conversionActions/7717433754"
+      ],
+      "readback": [
+        {
+          "id": "7717433751",
+          "name": "Whatconverts Form",
+          "primary_for_goal": true,
+          "include_in_conversions_metric": true,
+          "status": "ENABLED"
+        },
+        {
+          "id": "7717433754",
+          "name": "Whatconverts Calls",
+          "primary_for_goal": true,
+          "include_in_conversions_metric": true,
+          "status": "ENABLED"
+        }
+      ],
+      "note": "MISMATCH"
+    },
+    {
+      "batch": "B-devices",
+      "operations": [
+        {
+          "resource": "customers/8735782888/campaignCriteria/20315156610~30000",
+          "device": "DESKTOP",
+          "before": {
+            "bid_modifier": 0.0,
+            "meaning": "-100% excluded"
+          },
+          "after_intended": {
+            "bid_modifier": 1.0,
+            "meaning": "0% adjustment, eligible"
+          }
+        }
+      ],
+      "results": [
+        "customers/8735782888/campaignCriteria/20315156610~30000"
+      ],
+      "readback": [
+        {
+          "criterion_id": "30000",
+          "device": "DESKTOP",
+          "bid_modifier_set": true,
+          "bid_modifier": 1.0
+        },
+        {
+          "criterion_id": "30001",
+          "device": "MOBILE",
+          "bid_modifier_set": false,
+          "bid_modifier": null
+        },
+        {
+          "criterion_id": "30002",
+          "device": "TABLET",
+          "bid_modifier_set": true,
+          "bid_modifier": 0.0
+        }
+      ],
+      "note": "verified"
+    },
+    {
+      "batch": "C-negatives",
+      "operations": [
+        {
+          "action": "REMOVE",
+          "kw": "cost",
+          "match": "PHRASE",
+          "resource": "customers/8735782888/campaignCriteria/20315156610~40961223",
+          "rollback": "re-add negative 'cost' as PHRASE on campaign 20315156610"
+        },
+        {
+          "action": "REMOVE",
+          "kw": "how much",
+          "match": "PHRASE",
+          "resource": "customers/8735782888/campaignCriteria/20315156610~101679803",
+          "rollback": "re-add negative 'how much' as PHRASE on campaign 20315156610"
+        },
+        {
+          "action": "REMOVE",
+          "kw": "sprinkler valve replacement cost",
+          "match": "EXACT",
+          "resource": "customers/8735782888/campaignCriteria/20315156610~337388455191",
+          "rollback": "re-add negative 'sprinkler valve replacement cost' as EXACT on campaign 20315156610"
+        },
+        {
+          "action": "ADD",
+          "kw": "lawn sense dallas",
+          "match": "EXACT",
+          "reason": "competitor",
+          "measured_waste_90d": 175.47,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "lawn sense plano",
+          "match": "EXACT",
+          "reason": "competitor",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "lawn sense texas",
+          "match": "EXACT",
+          "reason": "competitor",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "lee engineering irrigation",
+          "match": "EXACT",
+          "reason": "competitor",
+          "measured_waste_90d": 44.22,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "lee engineering arlington texas",
+          "match": "EXACT",
+          "reason": "competitor",
+          "measured_waste_90d": 35.91,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "garden springs irrigation",
+          "match": "EXACT",
+          "reason": "competitor",
+          "measured_waste_90d": 19.85,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "h20rx",
+          "match": "EXACT",
+          "reason": "competitor",
+          "measured_waste_90d": 19.11,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "albuquerque",
+          "match": "PHRASE",
+          "reason": "out-of-market",
+          "measured_waste_90d": 37.93,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "sioux falls",
+          "match": "PHRASE",
+          "reason": "out-of-market",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "austin",
+          "match": "PHRASE",
+          "reason": "out-of-market-separate-operation",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "round rock",
+          "match": "PHRASE",
+          "reason": "out-of-market-separate-operation",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "cedar park",
+          "match": "PHRASE",
+          "reason": "out-of-market-separate-operation",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "jobs",
+          "match": "PHRASE",
+          "reason": "employment",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "job openings",
+          "match": "PHRASE",
+          "reason": "employment",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "careers",
+          "match": "PHRASE",
+          "reason": "employment",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "salary",
+          "match": "PHRASE",
+          "reason": "employment",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "apprentice",
+          "match": "PHRASE",
+          "reason": "employment",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "how to",
+          "match": "PHRASE",
+          "reason": "diy-instructional",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "diy",
+          "match": "PHRASE",
+          "reason": "diy-instructional",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "tutorial",
+          "match": "PHRASE",
+          "reason": "diy-instructional",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "youtube",
+          "match": "PHRASE",
+          "reason": "diy-instructional",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "training",
+          "match": "PHRASE",
+          "reason": "training",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "certification",
+          "match": "PHRASE",
+          "reason": "training",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "license class",
+          "match": "PHRASE",
+          "reason": "training",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "home depot",
+          "match": "PHRASE",
+          "reason": "retail",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "lowes",
+          "match": "PHRASE",
+          "reason": "retail",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "amazon",
+          "match": "PHRASE",
+          "reason": "retail",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "for sale",
+          "match": "PHRASE",
+          "reason": "retail",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "buy online",
+          "match": "PHRASE",
+          "reason": "retail",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "parts store",
+          "match": "PHRASE",
+          "reason": "retail-parts",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "replacement parts",
+          "match": "PHRASE",
+          "reason": "retail-parts",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "free sprinkler system",
+          "match": "PHRASE",
+          "reason": "no-hire-intent",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "volunteer",
+          "match": "PHRASE",
+          "reason": "no-hire-intent",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "new install",
+          "match": "PHRASE",
+          "reason": "out-of-scope-install",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "new installation",
+          "match": "PHRASE",
+          "reason": "out-of-scope-install",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "install cost",
+          "match": "PHRASE",
+          "reason": "out-of-scope-install",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "system design",
+          "match": "PHRASE",
+          "reason": "out-of-scope-design",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "lawn mowing",
+          "match": "PHRASE",
+          "reason": "out-of-scope-landscaping",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "tree service",
+          "match": "PHRASE",
+          "reason": "out-of-scope-landscaping",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        },
+        {
+          "action": "ADD",
+          "kw": "sod installation",
+          "match": "PHRASE",
+          "reason": "out-of-scope-landscaping",
+          "measured_waste_90d": 0.0,
+          "rollback": "remove this negative criterion"
+        }
+      ],
+      "results": [
+        "customers/8735782888/campaignCriteria/20315156610~40961223",
+        "customers/8735782888/campaignCriteria/20315156610~101679803",
+        "customers/8735782888/campaignCriteria/20315156610~337388455191",
+        "customers/8735782888/campaignCriteria/20315156610~1700884486695",
+        "customers/8735782888/campaignCriteria/20315156610~2450462305133",
+        "customers/8735782888/campaignCriteria/20315156610~2270032920467",
+        "customers/8735782888/campaignCriteria/20315156610~2496851174383",
+        "customers/8735782888/campaignCriteria/20315156610~2496851175783",
+        "customers/8735782888/campaignCriteria/20315156610~2005281102624",
+        "customers/8735782888/campaignCriteria/20315156610~1985614871904",
+        "customers/8735782888/campaignCriteria/20315156610~93931774",
+        "customers/8735782888/campaignCriteria/20315156610~93933094",
+        "customers/8735782888/campaignCriteria/20315156610~29376801",
+        "customers/8735782888/campaignCriteria/20315156610~93932754",
+        "customers/8735782888/campaignCriteria/20315156610~93933074",
+        "customers/8735782888/campaignCriteria/20315156610~20584260",
+        "customers/8735782888/campaignCriteria/20315156610~14644863",
+        "customers/8735782888/campaignCriteria/20315156610~20584220",
+        "customers/8735782888/campaignCriteria/20315156610~43322030",
+        "customers/8735782888/campaignCriteria/20315156610~170741122",
+        "customers/8735782888/campaignCriteria/20315156610~12471160",
+        "customers/8735782888/campaignCriteria/20315156610~33920640",
+        "customers/8735782888/campaignCriteria/20315156610~20440971",
+        "customers/8735782888/campaignCriteria/20315156610~801190167",
+        "customers/8735782888/campaignCriteria/20315156610~15699942",
+        "customers/8735782888/campaignCriteria/20315156610~101361173",
+        "customers/8735782888/campaignCriteria/20315156610~318609239702",
+        "customers/8735782888/campaignCriteria/20315156610~17273460",
+        "customers/8735782888/campaignCriteria/20315156610~104575737",
+        "customers/8735782888/campaignCriteria/20315156610~29754051",
+        "customers/8735782888/campaignCriteria/20315156610~12604301",
+        "customers/8735782888/campaignCriteria/20315156610~13748012",
+        "customers/8735782888/campaignCriteria/20315156610~112229823",
+        "customers/8735782888/campaignCriteria/20315156610~10148373",
+        "customers/8735782888/campaignCriteria/20315156610~2443139913331",
+        "customers/8735782888/campaignCriteria/20315156610~17412360",
+        "customers/8735782888/campaignCriteria/20315156610~364545616754",
+        "customers/8735782888/campaignCriteria/20315156610~320939591919",
+        "customers/8735782888/campaignCriteria/20315156610~372748291614",
+        "customers/8735782888/campaignCriteria/20315156610~22584670",
+        "customers/8735782888/campaignCriteria/20315156610~92804490",
+        "customers/8735782888/campaignCriteria/20315156610~259785414",
+        "customers/8735782888/campaignCriteria/20315156610~337662097"
+      ],
+      "readback": {
+        "total_after": 657,
+        "removed_confirmed": [
+          "cost",
+          "how much",
+          "sprinkler valve replacement cost"
+        ],
+        "added_confirmed": 40
+      },
+      "note": "verified"
+    }
+  ]
+}

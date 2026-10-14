@@ -1,0 +1,60 @@
+{
+ "campaign_totals_2026_09_17_to_28": {
+  "impr": 65,
+  "clicks": 3,
+  "cost": 18.689999999999998
+ },
+ "search_term_view_totals": {
+  "impr": 42,
+  "clicks": 0,
+  "cost": 0.0
+ },
+ "buckets": [
+  {
+   "bucket": "BARE_HEAD_VARIANT",
+   "keyword": "permanent christmas lights",
+   "match_type": "EXACT",
+   "distinct_terms": 1,
+   "impressions": 12,
+   "clicks": 0,
+   "cost": 0.0
+  },
+  {
+   "bucket": "LOCAL_MARKER_ONLY",
+   "keyword": "permanent christmas light installation",
+   "match_type": "PHRASE",
+   "distinct_terms": 2,
+   "impressions": 4,
+   "clicks": 0,
+   "cost": 0.0
+  },
+  {
+   "bucket": "OUT_OF_SCOPE_BY_WHITELIST",
+   "keyword": "permanent christmas light installation",
+   "match_type": "PHRASE",
+   "distinct_terms": 1,
+   "impressions": 4,
+   "clicks": 0,
+   "cost": 0.0
+  },
+  {
+   "bucket": "OUT_OF_SCOPE_BY_WHITELIST",
+   "keyword": "permanent christmas lights",
+   "match_type": "EXACT",
+   "distinct_terms": 8,
+   "impressions": 19,
+   "clicks": 0,
+   "cost": 0.0
+  },
+  {
+   "bucket": "SERVICE_MARKER",
+   "keyword": "permanent christmas light installation",
+   "match_type": "PHRASE",
+   "distinct_terms": 2,
+   "impressions": 3,
+   "clicks": 0,
+   "cost": 0.0
+  }
+ ],
+ "buyer_modifier_probe_hits": {}
+}

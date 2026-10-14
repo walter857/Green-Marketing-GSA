@@ -1,0 +1,459 @@
+{
+ "customer_id": "9487471092",
+ "exact_account_name": "MasterGrass - Live",
+ "never_write_to_mcc": "3373711342",
+ "package": "MG-0926-PMAX",
+ "campaign_name": "PMax | Drainage | French Drain & Yard Drainage | 2026-09",
+ "status_on_create": "PAUSED",
+ "budget": {
+  "amount": 20.0,
+  "shared": false
+ },
+ "bidding": "MAXIMIZE_CONVERSIONS, no target CPA",
+ "goals": "account default (PHONE_CALL_LEAD website+call-from-ads, SUBMIT_LEAD_FORM website); WC Call Lead (QUALIFIED_LEAD) stays non-biddable",
+ "geo": [
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/1015640",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017767",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017770",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017773",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017775",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017777",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017794",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017803",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017819",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017821",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017827",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017840",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017842",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017872",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017878",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017891",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017907",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017911",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017917",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017925",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017928",
+   "neg": false
+  },
+  {
+   "t": "LOCATION",
+   "geo": "geoTargetConstants/9017952",
+   "neg": false
+  },
+  {
+   "t": "PROXIMITY",
+   "radius": 1.0,
+   "units": "MILES",
+   "lat": 41684502,
+   "lng": -93625066
+  }
+ ],
+ "geo_type": "PRESENCE",
+ "language": "languageConstants/1000",
+ "schedule": [
+  {
+   "day": "FRIDAY",
+   "start": 10,
+   "end": 18
+  },
+  {
+   "day": "MONDAY",
+   "start": 10,
+   "end": 18
+  },
+  {
+   "day": "THURSDAY",
+   "start": 10,
+   "end": 18
+  },
+  {
+   "day": "TUESDAY",
+   "start": 10,
+   "end": 18
+  },
+  {
+   "day": "WEDNESDAY",
+   "start": 10,
+   "end": 18
+  }
+ ],
+ "negatives": {
+  "shared_list": "GM | MasterGrass | Low-intent & off-service | 2026-09",
+  "cross_phrase": [
+   "patio",
+   "patios",
+   "paver",
+   "pavers",
+   "retaining wall",
+   "retaining walls",
+   "fire pit",
+   "fire pits",
+   "firepit",
+   "outdoor kitchen",
+   "outdoor kitchens",
+   "hardscaping",
+   "hardscape",
+   "mulch",
+   "sod",
+   "lawn care",
+   "lawn service",
+   "mowing",
+   "landscaping company",
+   "landscaping companies",
+   "landscaping services",
+   "landscape design",
+   "flower bed",
+   "flower beds"
+  ]
+ },
+ "asset_automation_opted_out": [
+  "TEXT_ASSET_AUTOMATION",
+  "FINAL_URL_EXPANSION_TEXT_ASSET_AUTOMATION",
+  "GENERATE_IMAGE_EXTRACTION",
+  "GENERATE_IMAGE_ENHANCEMENT",
+  "GENERATE_DESIGN_VERSIONS_FOR_IMAGES",
+  "GENERATE_ENHANCED_YOUTUBE_VIDEOS"
+ ],
+ "brand_guidelines_enabled": true,
+ "campaign_assets": {
+  "business_name": "271703655260",
+  "logo": "mg_logo_square_192.png",
+  "sitelinks": {
+   "389018280341": "French Drain Services",
+   "389018280344": "Yard Grading Services",
+   "421378509029": "Request A Grading Quote",
+   "389018280338": "Landscaping Contractor",
+   "389192654853": "Retaining Walls"
+  },
+  "callouts": {
+   "389202648207": "Free Estimates",
+   "389202648216": "Drainage Solutions",
+   "389202648219": "French Drain Services",
+   "389202648231": "Wet Yard Drainage Help",
+   "389202648222": "Yard Grading Help",
+   "389202648213": "Residential Projects",
+   "389202648210": "Local Contractors"
+  },
+  "new_callouts_by_text": [
+   "Licensed & Insured",
+   "4.9-Star Google Rating",
+   "80+ Google Reviews"
+  ],
+  "snippet": [
+   "Services",
+   [
+    "French Drains",
+    "Yard Drainage",
+    "Yard Grading",
+    "Regrading",
+    "Yard Leveling",
+    "Wet Yard Drainage"
+   ]
+  ]
+ },
+ "asset_group": {
+  "name": "French Drain & Yard Drainage",
+  "final_url": "https://offer.mastergrasslawncare.com/french-drain/",
+  "path": [
+   "French-Drains",
+   "Free-Quote"
+  ],
+  "status": "PAUSED",
+  "text": {
+   "headlines": [
+    "French Drain Installation",
+    "Yard Drainage Solutions",
+    "Fix Soggy Yard Areas",
+    "Free Drainage Quote",
+    "Wet Yard?",
+    "Stop Standing Water",
+    "French Drain Contractor",
+    "Yard Grading & Drainage",
+    "Licensed & Insured Team",
+    "4.9-Star Rated On Google",
+    "80+ Google Reviews",
+    "Drainage Experts",
+    "Request A Free Estimate",
+    "Protect Your Lawn & Beds",
+    "Move Water Away From Home"
+   ],
+   "long_headlines": [
+    "French drain and yard drainage installation from a licensed, insured local team",
+    "Standing water or a soggy lawn? Get a free drainage quote from Master Grass",
+    "Rated 4.9 stars on Google by 80+ customers. Request your free French drain estimate",
+    "Move water away from your home with a French drain planned around your yard",
+    "Combine yard grading and a French drain to give water a clear path away"
+   ],
+   "descriptions": [
+    "Free drainage quote. Licensed and insured.",
+    "We find where water collects and where it needs to go, then quote the right drain for it.",
+    "French drains and yard drainage from a team rated 4.9 stars on Google by 80+ customers.",
+    "Soggy lawn after every rain? Get a clear drainage plan and a free estimate today.",
+    "Call or request your free French drain estimate online. Clear options, clear next steps."
+   ],
+   "search_themes": [
+    "french drain installation",
+    "french drain contractor",
+    "french drain installers",
+    "yard drainage solutions",
+    "yard drainage contractor",
+    "backyard drainage solutions",
+    "standing water in yard",
+    "soggy yard fix",
+    "drainage contractor",
+    "yard drainage system",
+    "lawn drainage solutions",
+    "water pooling in yard",
+    "yard grading for drainage",
+    "yard drainage company",
+    "yard regrading",
+    "wet yard solutions",
+    "fix drainage in yard",
+    "french drain near me",
+    "yard drainage near me",
+    "drainage installation"
+   ]
+  },
+  "cta": "GET_QUOTE",
+  "images": [
+   {
+    "file": "mg_drain_L_19.jpg",
+    "slot": "MARKETING_IMAGE",
+    "size": "1200x628",
+    "sha256": "8fac55ddd2dd02183b8171a008b5f4f1c0f68704dd6dbd12c1ae9c4a5ce53cf8",
+    "source": "https://mastergrasslawncare.com/wp-content/uploads/2024/08/mastergrass-landscape-lawncare-services-french-drains-in-ames.jpg"
+   },
+   {
+    "file": "mg_drain_L_27.jpg",
+    "slot": "MARKETING_IMAGE",
+    "size": "1200x628",
+    "sha256": "16bc342ab31f3b4611df87b6992ff64fe01b6ee15175a6dff1c4ee43ef85c5d4",
+    "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/Mastergrass-Lawn-Care-french-drain-lp-7.webp"
+   },
+   {
+    "file": "mg_drain_L_29.jpg",
+    "slot": "MARKETING_IMAGE",
+    "size": "1200x628",
+    "sha256": "12b3d7e6be4a33439fed7f8110cf95c6a8325798c98846a3f649d1c7eef21c1d",
+    "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/Mastergrass-Lawn-Care-french-drain-lp-1.webp"
+   },
+   {
+    "file": "mg_drain_L_34.jpg",
+    "slot": "MARKETING_IMAGE",
+    "size": "1200x628",
+    "sha256": "853f86594b6219425a8cb2e02fbc8094b60a607b270235c3c4de126f55b7fa96",
+    "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/Mastergrass-Lawn-Care-yard-drainage-lp-2.webp"
+   },
+   {
+    "file": "mg_drain_L_41.jpg",
+    "slot": "MARKETING_IMAGE",
+    "size": "1200x628",
+    "sha256": "97f493f96196c4d448411190e596cea99436decd9a966baa1cc51a12fe097151",
+    "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/Mastergrass-Lawn-Care-yard-drainage-lp-5.webp"
+   },
+   {
+    "file": "mg_drain_L_02.jpg",
+    "slot": "MARKETING_IMAGE",
+    "size": "1200x628",
+    "sha256": "8272f0fa29a721d142edc0cdc379ab188bf4f550b6ef30ff30680840078dab78",
+    "source": "https://cdn-ilcghkh.nitrocdn.com/uwYDOabmsoCFtLjXPxUlWOywEgyDfXoB/assets/images/optimized/rev-c84aed1/mastergrasslawncare.com/wp-content/uploads/2024/06/mastergrass-homepage-serviceimage5.jpg"
+   },
+   {
+    "file": "mg_drain_L_14.jpg",
+    "slot": "MARKETING_IMAGE",
+    "size": "1200x628",
+    "sha256": "500c6fc11f5de3296731472f58ad04f35244caea879214b9833c0a0dfafc92ad",
+    "source": "https://mastergrasslawncare.com/wp-content/uploads/2024/06/mastergrass-patios-ankeny.jpg"
+   },
+   {
+    "file": "mg_drain_L_38.jpg",
+    "slot": "MARKETING_IMAGE",
+    "size": "1200x628",
+    "sha256": "7a6b2b8d768ad22b658a62f78067a00a999660230e5537532df7ab3966a4be46",
+    "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/Mastergrass-Lawn-Care-yard-drainage-lp.webp"
+   },
+   {
+    "file": "mg_drain_S_19.jpg",
+    "slot": "SQUARE_MARKETING_IMAGE",
+    "size": "816x816",
+    "sha256": "af5b3787ef3f5504567828ac6449cfb25e1c729ad41fc4276d0d2394ca3f1749",
+    "source": "https://mastergrasslawncare.com/wp-content/uploads/2024/08/mastergrass-landscape-lawncare-services-french-drains-in-ames.jpg"
+   },
+   {
+    "file": "mg_drain_S_29.jpg",
+    "slot": "SQUARE_MARKETING_IMAGE",
+    "size": "1066x1066",
+    "sha256": "c07d8176be53e9ded5c64917f3b5148490850674483c1d8cbab35d09d956bc00",
+    "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/Mastergrass-Lawn-Care-french-drain-lp-1.webp"
+   },
+   {
+    "file": "mg_drain_S_27.jpg",
+    "slot": "SQUARE_MARKETING_IMAGE",
+    "size": "900x900",
+    "sha256": "bb2db753b0283f6db75dd113d2c4acb6c94bf6a2c567073de9c3265deef22965",
+    "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/Mastergrass-Lawn-Care-french-drain-lp-7.webp"
+   },
+   {
+    "file": "mg_drain_S_34.jpg",
+    "slot": "SQUARE_MARKETING_IMAGE",
+    "size": "900x900",
+    "sha256": "948961368e606e989e489b79f62fe6918b3a39d4bcac169de2bd078304787407",
+    "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/Mastergrass-Lawn-Care-yard-drainage-lp-2.webp"
+   },
+   {
+    "file": "mg_drain_S_14.jpg",
+    "slot": "SQUARE_MARKETING_IMAGE",
+    "size": "1080x1080",
+    "sha256": "b344245f8b756c264ec926a4dcf8ed3df4ba02ad87101959e2cef00d38fae791",
+    "source": "https://mastergrasslawncare.com/wp-content/uploads/2024/06/mastergrass-patios-ankeny.jpg"
+   },
+   {
+    "file": "mg_drain_S_02.jpg",
+    "slot": "SQUARE_MARKETING_IMAGE",
+    "size": "996x996",
+    "sha256": "36517bf2475ba86f130b8a493298a5f5207d2191dec067b6f2ab039a1851ab7e",
+    "source": "https://cdn-ilcghkh.nitrocdn.com/uwYDOabmsoCFtLjXPxUlWOywEgyDfXoB/assets/images/optimized/rev-c84aed1/mastergrasslawncare.com/wp-content/uploads/2024/06/mastergrass-homepage-serviceimage5.jpg"
+   },
+   {
+    "file": "mg_drain_P_29.jpg",
+    "slot": "PORTRAIT_MARKETING_IMAGE",
+    "size": "853x1066",
+    "sha256": "5d191e20c0799169b39c0c30f8281d5c5124f1ea5323e157f0d9f63734163148",
+    "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/Mastergrass-Lawn-Care-french-drain-lp-1.webp"
+   },
+   {
+    "file": "mg_drain_P_27.jpg",
+    "slot": "PORTRAIT_MARKETING_IMAGE",
+    "size": "720x900",
+    "sha256": "e2acce5d6cc292c212814cf90053a4ab319710bdc529a4e7795af8778a58d7fc",
+    "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/Mastergrass-Lawn-Care-french-drain-lp-7.webp"
+   },
+   {
+    "file": "mg_drain_P_15.jpg",
+    "slot": "PORTRAIT_MARKETING_IMAGE",
+    "size": "864x1080",
+    "sha256": "0f3417e085e4d00a513814d75073dc0bb233f15cf59ee5cbec497a5f98cd01eb",
+    "source": "http://mastergrasslawncare.com/wp-content/uploads/2024/06/mastergrass-landscaping-altoona.jpg"
+   }
+  ]
+ },
+ "logo_image": [
+  {
+   "file": "mg_logo_square_192.png",
+   "slot": "LOGO",
+   "size": "192x192",
+   "sha256": "867041c1997f5c67d31e4559e5331693527c1756f8c355ec07d7e988192a0080",
+   "source": "https://offer.mastergrasslawncare.com/wp-content/uploads/2026/05/cropped-apple-touch-icon-192x192.png"
+  }
+ ],
+ "audience_signal": {
+  "custom_audience": {
+   "name": "GM | MasterGrass | Drainage search intent | 2026-09",
+   "type": "SEARCH",
+   "keywords": [
+    "french drain",
+    "french drain installation",
+    "yard drainage",
+    "yard drainage solutions",
+    "standing water in yard",
+    "soggy yard",
+    "drainage contractor",
+    "water pooling in yard",
+    "wet yard",
+    "backyard drainage",
+    "lawn drainage",
+    "yard grading"
+   ]
+  },
+  "audience": "GM | MasterGrass | Drainage PMax signal | 2026-09",
+  "user_lists": [
+   "7884187726",
+   "8012296976"
+  ]
+ },
+ "videos": "none supplied; Google may auto-generate (not opt-out-able at create in v25)",
+ "fingerprint": "B882AC1CB44B",
+ "built_local": "2026-09-26T23:48:06-04:00"
+}

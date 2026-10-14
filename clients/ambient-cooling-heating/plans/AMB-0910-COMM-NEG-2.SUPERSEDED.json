@@ -1,0 +1,20 @@
+{
+ "plan_name": "AMB-0910-COMM-NEG-2",
+ "fingerprint": "A9C9BCBDDD74",
+ "status": "SUPERSEDED",
+ "status_recorded_local": "2026-09-10T17:22:16.089367-04:00",
+ "do_not_execute": true,
+ "executed": false,
+ "google_ads_operations_performed": 0,
+ "superseded_by": "AMB-0910-COMM-NEG-3 51CF5986F18A",
+ "reason": "Contained BROAD 'training'. BROAD blocks any query carrying the token, so 'commercial hvac installation for a training facility' and 'commercial hvac installation for a training center' - both of which match the live PHRASE keyword - would have been suppressed. Training facilities and training centres are ordinary commercial buildings. Withdrawn by the approval owner 2026-09-10 before execution.",
+ "delta": "NEG-3 is NEG-2 minus 'training'. 17 operations instead of 18. No other change.",
+ "measured_effect_of_the_change": {
+  "reachable_buyer_phrases_regained": [
+   "commercial hvac installation for a training facility",
+   "commercial hvac installation for a training center"
+  ],
+  "non_buyer_phrases_now_unblocked": [],
+  "note": "Dropping it costs nothing measurable: all 8 non-buyer control phrases remain correctly blocked, including 'commercial hvac installation course' via 'course'."
+ }
+}

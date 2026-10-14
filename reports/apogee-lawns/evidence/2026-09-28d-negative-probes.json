@@ -1,0 +1,96 @@
+[
+ {
+  "probe": "permanent christmas light installation labor only",
+  "kind": "buyer",
+  "expect": "should reach after removal",
+  "reachable_proxy": true,
+  "blocked_before": [
+   "labor only"
+  ],
+  "blocked_after": []
+ },
+ {
+  "probe": "permanent christmas light installation with my own lights",
+  "kind": "buyer",
+  "expect": "should reach after removal",
+  "reachable_proxy": true,
+  "blocked_before": [
+   "my own lights"
+  ],
+  "blocked_after": []
+ },
+ {
+  "probe": "permanent christmas lights installer for my own lights",
+  "kind": "buyer",
+  "expect": "should reach after removal",
+  "reachable_proxy": true,
+  "blocked_before": [
+   "my own lights"
+  ],
+  "blocked_after": []
+ },
+ {
+  "probe": "how to do permanent christmas light installation with my own lights",
+  "kind": "diy",
+  "expect": "must stay blocked",
+  "reachable_proxy": true,
+  "blocked_before": [
+   "how to",
+   "my own lights"
+  ],
+  "blocked_after": [
+   "how to"
+  ]
+ },
+ {
+  "probe": "permanent christmas light installation my own lights diy",
+  "kind": "diy",
+  "expect": "must stay blocked",
+  "reachable_proxy": true,
+  "blocked_before": [
+   "diy",
+   "my own lights"
+  ],
+  "blocked_after": [
+   "diy"
+  ]
+ },
+ {
+  "probe": "permanent christmas light installation labor only jobs",
+  "kind": "job",
+  "expect": "must stay blocked",
+  "reachable_proxy": true,
+  "blocked_before": [
+   "jobs",
+   "labor only"
+  ],
+  "blocked_after": [
+   "jobs"
+  ]
+ },
+ {
+  "probe": "permanent christmas lights installer labor only career",
+  "kind": "job",
+  "expect": "must stay blocked",
+  "reachable_proxy": true,
+  "blocked_before": [
+   "career",
+   "labor only"
+  ],
+  "blocked_after": [
+   "career"
+  ]
+ },
+ {
+  "probe": "permanent christmas light installation customer supplied",
+  "kind": "trade",
+  "expect": "stays blocked (kept negative)",
+  "reachable_proxy": true,
+  "blocked_before": [
+   "customer supplied"
+  ],
+  "blocked_after": [
+   "customer supplied"
+  ]
+ }
+]

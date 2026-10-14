@@ -1,0 +1,64 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-21b",
+ "plan_name": "AMB-0921B-BID-1",
+ "approval_class": "update-cpc-bid-ceiling",
+ "why_separate": "These are BID changes, not budget changes. One lands on an ENABLED campaign (24132507744) and raises cost per click, so it carries its own approval.",
+ "bidding_strategy_unchanged": "All campaigns stay on TARGET_SPEND (Maximize Clicks) with a CPC ceiling. No conversion-based Smart Bidding, because the primary-conversion and attribution signals are still unreliable: the website phone number is wrong, the positive-path GCLID test is incomplete, and no approved production form test has been run.",
+ "changes": [
+  {
+   "campaign_key": "C1_REPAIR",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating Repair | Central MD | BOFU | 2026-09",
+   "to_usd": 42.0,
+   "evidence": "Pre-ceiling clearing prices: furnace p50 $23.04 / p75 $42.19 (161 clicks); heating_generic p50 $20.43 / p75 $37.48 (1,413 clicks). Account search-term CPCs: Furnace Repair $41.70, Heating Repair $10.35. $42 sits at the furnace p75, high enough to take three quarters of the auctions this theme has historically cleared, without chasing the $59.95-$63.50 p90 tail set under uncapped Maximize Clicks. Replaces the old $38."
+  },
+  {
+   "campaign_key": "C3_INSTALL",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09",
+   "to_usd": 46.0,
+   "evidence": "Installation clicks are the most expensive non-boiler heating clicks in the account: Furnace Replacement $45.97, Furnace Installation $45.39, oil furnace installation $28.22, furnace p75 $42.19. Heating-generic installation is much cheaper ($10.19-$16.81), so the ceiling is set by the furnace end of the campaign. $46 clears the observed furnace install/replace prices. Replaces the old $24, which sat below the account's own mini-split clearing price of $25.15 and priced the campaign out of its own best theme."
+  },
+  {
+   "campaign_key": "C4_BOILER",
+   "campaign_id": "24132507744",
+   "campaign": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "to_usd": 60.0,
+   "evidence": "The most expensive heating theme in the account. Generic boiler p50 $29.83 / p75 $55.80 (265 clicks); gas boiler p50 $87.75, mean $98.87 (160 clicks); account search-term CPCs Boiler Repair $59.32, Boiler Maintenance $75.08, Boiler Installation $47.76. $60 clears the generic-boiler p75 and the account boiler-repair CPC, and sits deliberately BELOW the gas-boiler prices because those were set under uncapped Maximize Clicks. Evidence the current $25 is binding: this ENABLED campaign has bought ONE click all season ($12.84) and is losing 31.2% of impression share to budget with 6.2% to rank."
+  }
+ ],
+ "new_campaign_ceilings": {
+  "C2_HEATPUMP": 35.0,
+  "C5_MAINT": 32.0,
+  "C6_THERMOSTAT": 20.0,
+  "C7_GEO": 38.0
+ },
+ "operations": [
+  {
+   "op": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating Repair | Central MD | BOFU | 2026-09",
+   "to_usd": 42.0,
+   "field_mask": "target_spend.cpc_bid_ceiling_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09",
+   "to_usd": 46.0,
+   "field_mask": "target_spend.cpc_bid_ceiling_micros"
+  },
+  {
+   "op": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "campaign_id": "24132507744",
+   "campaign": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "to_usd": 60.0,
+   "field_mask": "target_spend.cpc_bid_ceiling_micros"
+  }
+ ],
+ "operation_count": 3,
+ "fingerprint": "B30C02B776CD"
+}

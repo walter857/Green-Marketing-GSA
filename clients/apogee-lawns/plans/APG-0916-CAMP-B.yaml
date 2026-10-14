@@ -1,0 +1,325 @@
+# #############################################################################
+# ##  VOID - DO NOT EXECUTE. SUPERSEDED BY APG-0916-CAMP-C (7BC3407302B2).  ##
+# ##  Fingerprint 849EAED2873F must never be approved or executed.         ##
+# ##  Reasons: 404 final URL, unapproved CPC cap, superseded keyword        ##
+# ##  architecture (PHRASE on the head term was overturned by forecast      ##
+# ##  evidence), empty schedule, and open owner placeholders.               ##
+# #############################################################################
+# =============================================================================
+# APG-0916-CAMP-B  --  Stage B: paused Search campaign
+# =============================================================================
+# STATUS: NOT APPROVABLE YET. Two inputs are unresolved and one URL is dead.
+#   - campaigns[0].final_url returns HTTP 404 today (BLK-006)
+#   - campaigns[0].schedule needs [[LIVE_ANSWER_HOURS_CENTRAL]] (BLK-007)
+#   - the call asset needs [[APPROVED_CPC_CAP]] peers and a verified phone (BLK-005)
+# The plan is published in full so the owner can approve the structure and supply
+# the two missing lines in one reply. Supplying them CHANGES the fingerprint.
+# =============================================================================
+plan_id: APG-0916-CAMP-B
+plan_kind: search_campaign
+generated: "2026-09-16"
+
+target:
+  exact_child_account_name: "Apogee Lawns LLC - Live"
+  child_customer_id: "8164626278"
+  manager_customer_id: "3373711342"
+  vertical: similar-local-service
+  exact_primary_service: Permanent Christmas light installation
+
+# -----------------------------------------------------------------------------
+# STRUCTURE DECISION, AND WHY IT DIFFERS FROM THE DRIVE STRATEGY DOCUMENT
+# -----------------------------------------------------------------------------
+# The Drive plan launches AG1 on [permanent christmas light installation] and
+# [permanent christmas lights installer]. Live Keyword Planner evidence for the
+# approved geography (2026-09-16) shows those two buckets carry roughly 60
+# searches across the ENTIRE Sep-Dec peak season, and "permanent christmas lights
+# installer" recorded 10 searches in one month and zero in the other eleven.
+# The bucket that actually carries demand is "permanent christmas lights":
+# 90/mo average, 480 in Nov 2025, ~840 across Sep-Dec, and it is the only bucket
+# in the whole research set that returned top-of-page bid data ($4.66-$13.76).
+#
+# So the head bucket becomes its own SKAG (AG1) and the installation long-tail
+# keeps its own SKAG (AG2). Both keep Phrase + Exact only and both point at the
+# same canonical page, which the Drive plan explicitly permits. AG "Permanent
+# Holiday Light Installation" and AG "EverLights Installation" are NOT built:
+# see deferred_ad_groups below.
+# -----------------------------------------------------------------------------
+
+campaigns:
+  - name: "S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026"
+    status: PAUSED
+    advertising_channel_type: SEARCH
+    daily_budget: 16.44
+    budget_basis: "16.44 x 30.4 = 499.78, under a $500 recurring monthly limit"
+    budget_name: "B | Permanent Christmas Lights | Apogee Lawns | 09_2026"
+    budget_explicitly_shared: false
+    budget_delivery_method: STANDARD
+    bidding_strategy_type: TARGET_SPEND          # Maximize Clicks
+    cpc_bid_ceiling: "[[APPROVED_CPC_CAP]]"
+    cpc_bid_ceiling_recommendation: 8.00
+    language: "languageConstants/1000"           # English
+    final_url: "https://apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+    final_url_status_2026_09_16: 404
+    final_url_suffix: "utm_source=google&utm_medium=cpc&utm_campaign=apogee_permanent_lights_2026&utm_id={campaignid}&utm_term={keyword}&utm_content={creative}&utm_matchtype={matchtype}&utm_device={device}&utm_network={network}&utm_adgroup={adgroupid}"
+
+    network_settings:
+      target_google_search: true
+      target_search_network: false               # Search Partners OFF
+      target_content_network: false              # Display OFF
+      target_partner_search_network: false
+    ai_max: false
+    keyword_match_expansion: false               # campaign broad match OFF
+    dynamic_search_ads: false
+    final_url_expansion: OPTED_OUT
+    url_inclusions: false
+    text_customization: OPTED_OUT
+    automatically_created_assets: OPTED_OUT
+    ad_rotation: OPTIMIZE
+    audience_setting: OBSERVATION_ONLY
+
+    location:
+      option: PRESENCE
+      geo_target_constant_ids:
+        - 9024671    # 68372,Nebraska
+        - 9024703    # 68430,Nebraska
+        - 9024754    # 68527,Nebraska
+        - 9024651    # 68347,Nebraska
+        - 9024753    # 68526,Nebraska
+        - 9024728    # 68461,Nebraska
+        - 9024746    # 68516,Nebraska
+        - 9024748    # 68520,Nebraska
+        - 1021783    # Waverly,Nebraska        (City)
+        - 1021647    # Eagle,Nebraska          (City)
+        - 1021696    # Lincoln,Nebraska        (City)
+        - 9195288    # Ashland Township,Nebraska (Municipality)
+        - 1021635    # Crete,Nebraska          (City)
+        - 9233865    # Nemaha Precinct,Nebraska (Municipality)
+      excluded_geo_target_constant_ids: []
+      note: "No state-level target. Nebraska (21162) is the PARENT of all 14, never a target."
+
+    # BLOCKER BLK-007. Do not invent hours. Do not default to 24/7.
+    schedule: []
+    schedule_unresolved: "[[LIVE_ANSWER_HOURS_CENTRAL]]"
+
+    negatives_match_broad:
+      [diy, tutorial, tutorials, instructions, job, jobs, career, careers, salary,
+       wholesale, supplier, suppliers, distributor, distributors, kit, kits,
+       wreath, wreaths, garland, garlands, inflatable, inflatables, projector,
+       projectors, laser, lasers, rent, rental, rentals, indoor, amazon, walmart,
+       lowes, menards, costco, ebay, temu]
+    negatives_match_phrase:
+      ["how to", "do it yourself", "where to buy", "home depot", "light show",
+       "lights show", "christmas lights map", "holiday lights map",
+       "christmas light tour", "holiday light tour", "drive through", "zoo lights",
+       "christmas at the zoo", "holiday event", "christmas parade",
+       "lighting festival", "best christmas displays", "customer supplied",
+       "my own lights", "labor only", "app download", "app not working",
+       "christmas lights for sale", "holiday lights for sale",
+       "christmas light hanging service", "christmas light removal",
+       "take down christmas lights", "christmas light storage",
+       "seasonal light installation", "replacement christmas bulbs",
+       "christmas light repair", "target christmas lights",
+       govee, trimlight, jellyfish, gemstone, oelo, celebright]
+    negatives_protected_and_deliberately_kept_eligible:
+      [cost, price, pricing, "how much", quote, estimate, financing, "near me",
+       company, installer, service, reviews, best, hire, local, emergency]
+    shared_negative_lists_attached: []
+    shared_negative_lists_attached_note: >-
+      NONE. The 7 pre-existing lists are deliberately not attached. List
+      11807294063 "Christmas Lights Install" carries PHRASE "permanent christmas
+      lights", which would block this campaign's own head keyword.
+
+    ad_groups:
+      # ---------------------------------------------------------------- AG1
+      - name: "AG | Permanent Christmas Lights"
+        status: ENABLED           # inside a PAUSED campaign: nothing can serve
+        canonical_keyword: "permanent christmas lights"
+        demand_evidence: "90/mo avg approved area; NOV25 480; TOP bid $4.66-$13.76; HIGH comp"
+        path1: permanent
+        path2: lights
+        keywords:
+          - {text: "permanent christmas lights", match_type: EXACT}
+          - {text: "permanent christmas lights", match_type: PHRASE}
+        ads:
+          - label: "RSA A - direct response"
+            headlines:
+              - {text: "Permanent Christmas Lights", pin: HEADLINE_1}
+              - {text: "Christmas Lights Installed"}
+              - {text: "Lincoln Permanent Lights"}
+              - {text: "Professional Installation"}
+              - {text: "Permanent, Not Seasonal"}
+              - {text: "Request a Free Estimate"}
+              - {text: "Apogee Lawns Lighting"}
+              - {text: "For Homes and Businesses"}
+              - {text: "App-Controlled Lighting"}
+              - {text: "Custom Colors and Schedules"}
+              - {text: "Built for Year-Round Use"}
+              - {text: "Plan Your Lighting Project"}
+            descriptions:
+              - {text: "Get permanent Christmas lights installed in Lincoln. Request a free estimate."}
+              - {text: "Choose a permanent system instead of yearly hanging and removal. Call Apogee Lawns."}
+              - {text: "Use app-controlled colors, patterns and schedules for Christmas and every season."}
+              - {text: "Tell us about your home or business and get a custom permanent-lighting estimate."}
+          - label: "RSA B - benefits"
+            headlines:
+              - {text: "Permanent Christmas Lighting", pin: HEADLINE_1}
+              - {text: "One Install, Year-Round Use"}
+              - {text: "Skip Yearly Light Hanging"}
+              - {text: "Lights Ready Every Season"}
+              - {text: "Control Lights From Your Phone"}
+              - {text: "Custom Colors and Schedules"}
+              - {text: "Lighting for Every Occasion"}
+              - {text: "Professional Lincoln Installer"}
+              - {text: "See Lighting Possibilities"}
+              - {text: "Request Your Free Estimate"}
+              - {text: "Permanent, Not Seasonal"}
+            descriptions:
+              - {text: "Use one permanent lighting system for Christmas, events and everyday accent lighting."}
+              - {text: "Change colors, patterns and schedules from your phone after professional installation."}
+              - {text: "Skip annual setup and removal with permanent lights designed for year-round use."}
+              - {text: "Tell Apogee Lawns about your property and request a free custom estimate."}
+        assets:
+          callouts:
+            ["App-Controlled Lights", "Year-Round Use", "Professional Installation",
+             "Homes and Businesses", "Custom Colors and Scenes", "Local Installation"]
+          structured_snippets:
+            - header: "Service catalog"
+              values: ["Permanent Light Install", "Residential Lighting", "Commercial Lighting"]
+          sitelinks: []
+          sitelinks_deferred_reason: >-
+            Every proposed sitelink points at an anchor (#estimate, #gallery,
+            #how-it-works, #residential-commercial) on a page that returns 404.
+            Sitelinks are created only after the page is published and the anchors
+            resolve.
+
+      # ---------------------------------------------------------------- AG2
+      - name: "AG | Permanent Christmas Light Installation"
+        status: ENABLED
+        canonical_keyword: "permanent christmas light installation"
+        demand_evidence: "10/mo avg; SEP25 10, OCT25 20, NOV25 10, DEC25 10; ~50 searches Sep-Dec"
+        path1: christmas
+        path2: install
+        keywords:
+          - {text: "permanent christmas light installation", match_type: EXACT}
+          - {text: "permanent christmas light installation", match_type: PHRASE}
+        ads:
+          - label: "RSA A - direct response"
+            headlines:
+              - {text: "Permanent Light Installation", pin: HEADLINE_1}
+              - {text: "Christmas Lights Installed"}
+              - {text: "Lincoln Lighting Installer"}
+              - {text: "Professional Installation"}
+              - {text: "Permanent, Not Seasonal"}
+              - {text: "Request a Free Estimate"}
+              - {text: "Apogee Lawns Lighting"}
+              - {text: "For Homes and Businesses"}
+              - {text: "App-Controlled Lighting"}
+              - {text: "Installed Once, Used All Year"}
+              - {text: "Plan Your Lighting Project"}
+            descriptions:
+              - {text: "Professional permanent Christmas light installation in Lincoln. Request an estimate."}
+              - {text: "One professional install replaces yearly hanging, removal and storage."}
+              - {text: "Choose colors, patterns and schedules from the app after installation."}
+              - {text: "Tell Apogee Lawns about your home or business and get a custom estimate."}
+          - label: "RSA B - benefits"
+            headlines:
+              - {text: "Permanent Lights Installed", pin: HEADLINE_1}
+              - {text: "Skip Yearly Light Hanging"}
+              - {text: "One Install, Year-Round Use"}
+              - {text: "Lights Ready Every Season"}
+              - {text: "Control Lights From Your Phone"}
+              - {text: "Custom Colors and Schedules"}
+              - {text: "Lighting for Every Occasion"}
+              - {text: "Professional Lincoln Installer"}
+              - {text: "No More Ladders Each Year"}
+              - {text: "Request Your Free Estimate"}
+            descriptions:
+              - {text: "Install the lighting once and use it for Christmas, events and everyday accents."}
+              - {text: "Professional installation along the roofline, then control it from your phone."}
+              - {text: "Avoid yearly setup, removal and storage with a permanent lighting system."}
+              - {text: "Request a free permanent-lighting estimate for your Lincoln-area property."}
+        assets:
+          callouts:
+            ["App-Controlled Lights", "Year-Round Use", "Professional Installation",
+             "Homes and Businesses", "Custom Colors and Scenes", "Local Installation"]
+          structured_snippets:
+            - header: "Service catalog"
+              values: ["Permanent Light Install", "Residential Lighting", "Commercial Lighting"]
+          sitelinks: []
+
+# -----------------------------------------------------------------------------
+deferred_ad_groups:
+  - name: "AG | Permanent Holiday Light Installation"
+    decision: NOT_BUILT
+    evidence: >-
+      "permanent holiday light installation" recorded 10 searches in NOV 2025 and
+      zero in the other eleven months. "permanent holiday lights" averages 10/mo and
+      shares its volume bucket with "permanent holiday lighting". Two ad groups, four
+      RSAs and two keywords cannot accumulate a usable sample against ~40 searches
+      across the whole Sep-Dec window.
+    reconsider_when: >-
+      November search-term data shows real "permanent holiday light" queries that the
+      AG1 phrase keyword does not already capture. Then add one SKAG, not cross-negatives.
+  - name: "AG | EverLights Installation"
+    decision: NOT_BUILT
+    evidence: >-
+      "everlights installer" and "everlights installation" both return ZERO average
+      monthly searches in the approved geography. "everlights" alone averages 10/mo.
+      There is no demand to buy even if the trademark question were settled.
+    trademark_note: >-
+      Separately, apogeelawns.com publicly states "Apogee Lawns is a certified
+      EverLights dealer and installer". That is first-party evidence of the
+      relationship, but it is NOT the written paid-trademark permission the brief
+      requires, and it does not create volume.
+  - name: "S | Website Leads | Generic Light Install Test | Apogee Lawns | Test | 2026"
+    decision: NOT_BUILT
+    evidence: "Out of scope for this build by explicit instruction. Requires 7-14 days of clean core-campaign data first."
+
+deferred_assets:
+  call_asset:
+    decision: NOT_BUILT
+    blocker: BLK-005
+    reason: >-
+      402-526-5754 appears ZERO times on apogeelawns.com. The number published
+      sitewide is 402-202-7261. Ownership, routing, voicemail behaviour and
+      live-answer hours are unverified. Call reporting ON and call recording OFF are
+      the approved settings once the number is confirmed, associated with
+      "Call | Permanent Lights | Ads | 60s".
+  sitelinks:
+    decision: NOT_BUILT
+    blocker: BLK-006
+    reason: "All four sitelink anchors live on a page that returns HTTP 404."
+  image_assets:
+    decision: NOT_BUILT
+    reason: >-
+      A brand-new account with zero lifetime delivery will not meet Search image-asset
+      eligibility. Prepare crops for the landing page now; recheck account eligibility
+      after delivery begins.
+
+object_counts_if_executed:
+  campaign_budget.create: 1
+  campaign.create: 1
+  campaign_criterion.create_location: 14
+  campaign_criterion.create_negative_keyword: 75
+  campaign_criterion.create_ad_schedule: 0        # blocked, BLK-007
+  campaign_criterion.create_language: 1
+  ad_group.create: 2
+  ad_group_criterion.create_keyword: 4
+  ad_group_ad.create: 4
+  asset.create_callout: 6
+  asset.create_structured_snippet: 1
+  campaign_asset.create: 7
+  asset.create_call: 0                            # blocked, BLK-005
+  asset.create_sitelink: 0                        # blocked, BLK-006
+  any_delete_or_remove: 0
+  TOTAL_MUTATIONS: 116
+
+rollback:
+  method: >-
+    campaign.status = REMOVED removes the campaign and orphans its children; the
+    budget is then removed by resource name. Created callout and snippet assets are
+    unlinked by removing the campaign_asset links. Nothing has served, so no spend
+    or history is lost.
+  partial_failure_rule: >-
+    Stop on the first partial success. Inventory every created resource ID, write the
+    receipt, report, and do not rerun blindly.

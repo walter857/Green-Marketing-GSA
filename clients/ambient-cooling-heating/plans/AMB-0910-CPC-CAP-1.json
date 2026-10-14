@@ -1,0 +1,64 @@
+{
+ "plan_name": "AMB-0910-CPC-CAP-1",
+ "approval_class": "reversible-setting-change",
+ "generated_local": "2026-09-10T10:41:40.117429-04:00",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "AC Repair",
+  "related_services": [
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "summary": "Apply the max-CPC ceilings that Gas Boiler Repair and HVAC Replacement never received. 2 operations. No budget, keyword, negative, geo or ad is touched.",
+ "object_count": 2,
+ "partial_failure": false,
+ "atomic": true,
+ "operations": [
+  {
+   "operation": "SET_MAXIMIZE_CLICKS_CPC_BID_CEILING",
+   "resource": "campaign",
+   "resource_id": "24132507744",
+   "resource_name": "Gas Boiler Repair",
+   "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "current_state": "target_spend.cpc_bid_ceiling_micros UNSET - uncapped Maximize Clicks",
+   "proposed_state": "target_spend.cpc_bid_ceiling_micros = 25000000 ($25.00)",
+   "field_mask": [
+    "target_spend.cpc_bid_ceiling_micros"
+   ],
+   "reason": "This campaign was left uncapped when AC Repair, HVAC Repair and HVAC Installation received ceilings on 2026-09-04 16:56. $25.00 matches HVAC Repair, whose maximum cost per unique qualified lead is the same $250. The campaign has taken 0 valid clicks and 42 invalid clicks since 2026-08-14 on a $5.00/day budget, so the ceiling costs no measured delivery today and bounds the price if it starts serving.",
+   "rollback": "clear target_spend.cpc_bid_ceiling_micros back to unset, the verified pre-change value",
+   "risk": "LOW - reversible setting change on a campaign with zero valid clicks in 27 days",
+   "unrelated_resource_assertion": "bidding_strategy_type stays TARGET_SPEND; campaign_budget.amount_micros stays 5000000; AC Repair 25000000, HVAC Repair 25000000 and HVAC Installation 30000000 unchanged"
+  },
+  {
+   "operation": "SET_MAXIMIZE_CLICKS_CPC_BID_CEILING",
+   "resource": "campaign",
+   "resource_id": "24132507753",
+   "resource_name": "HVAC Replacement",
+   "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "current_state": "target_spend.cpc_bid_ceiling_micros UNSET - uncapped Maximize Clicks",
+   "proposed_state": "target_spend.cpc_bid_ceiling_micros = 30000000 ($30.00)",
+   "field_mask": [
+    "target_spend.cpc_bid_ceiling_micros"
+   ],
+   "reason": "Also left uncapped on 2026-09-04. Uncapped, it paid $30.50 per valid click (5 valid clicks, 82 invalid, $152.52) and produced 0 unique qualified leads. $30.00 matches HVAC Installation, which carries the same $280 maximum cost per unique qualified lead.",
+   "rollback": "clear target_spend.cpc_bid_ceiling_micros back to unset, the verified pre-change value",
+   "risk": "LOW - reversible setting change; $30.00 is above the $30.50 observed average only by rounding, so measured delivery loss is expected to be small but is NOT zero",
+   "unrelated_resource_assertion": "bidding_strategy_type stays TARGET_SPEND; campaign_budget.amount_micros stays 20000000; AC Repair 25000000, HVAC Repair 25000000 and HVAC Installation 30000000 unchanged"
+  }
+ ],
+ "notes": {
+  "why_now": "change_event shows ceilings were applied to three of five campaigns on 2026-09-04 16:56 (GOOGLE_ADS_WEB_CLIENT, access@greenmarketingfl.com) from an empty old_resource. These two were missed. They are the only remaining uncapped Maximize Clicks campaigns in the account.",
+  "measured_effect_of_the_existing_ceilings": "Cost per valid click across the five fell from $46.66 (2026-08-14..2026-09-03, uncapped) to $25.93 (2026-09-05..2026-09-09, capped). Daily spend fell from $382.15 to $20.74. The capped window is 5 settled days and 4 valid clicks, which is directionally consistent with the ceiling binding but far too short to call the effect established.",
+  "tension_with_the_spend_goal": "This lowers, not raises, the ceiling on spend. Under the stated priority order qualified-lead economics outranks spend utilization, so this is the correct trade. It is stated explicitly rather than buried.",
+  "not_a_forecast": "No lead, cost or ranking outcome is promised. These are bounds on price per click, not predictions of volume.",
+  "requires_new_approval": true
+ },
+ "fingerprint": "7EA6922309EB"
+}

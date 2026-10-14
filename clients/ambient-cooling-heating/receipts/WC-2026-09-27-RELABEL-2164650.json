@@ -1,0 +1,22 @@
+{
+ "change": "WhatConverts profile 105803 number +14102164650 'GLE Traffic' (paid Maps / Google Ads location-asset override on Severn + Annapolis GBP)",
+ "before": {
+  "type": "Offline",
+  "source": "GLE Traffic",
+  "medium": "(none)"
+ },
+ "after": {
+  "type": "Offline",
+  "source": "google",
+  "medium": "cpc"
+ },
+ "unchanged": [
+  "name GLE Traffic",
+  "forwarding to Ambient Cooling and Heating (410-761-0932)",
+  "other 10 numbers"
+ ],
+ "readback": "re-opened editor: Offline source=google medium=cpc, forwarding unchanged",
+ "applies_to": "calls from now on; past calls keep their old label",
+ "authorized_by": "Walter, 2026-09-27 chat",
+ "executed": "2026-09-27T22:29"
+}

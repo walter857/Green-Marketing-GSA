@@ -1,0 +1,27 @@
+# PLAN-GA-NEG-1 - UNIVERSAL TRAFFIC QUALITY NEGATIVES
+# STATUS: DRAFT - NOT FINGERPRINTED. NOT APPROVED. DO NOT EXECUTE.
+
+change_plan:
+  plan_id: PLAN-GA-NEG-1
+  plan_title: Universal traffic-quality negatives
+  approval_type: NEGATIVE_KEYWORDS
+  priority: P2
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: null
+  fingerprint_withheld_because: >-
+    Only 5 candidates clear individual review, and every one has ZERO clicks and ZERO
+    spend. Adding permanent criteria for queries that have cost nothing is premature. The right
+    moment is after the rebuilt structure produces real Search Terms. Re-evaluate at the 14-day
+    checkpoint.
+  target: {child_customer_id: '1521725229', level: CAMPAIGN, campaign_ids: ['24103511039', '24145053510']}
+  counts: {candidates_reviewed: 8, deploy: 5, rejected: 3, mutation_count: 0}
+  separation_rule: >-
+    Universal negatives live at CAMPAIGN level and stay separate from the ad-group SKAG routing
+    negatives in PLAN-GA-LAUNCH-2A. The existing 132-per-campaign fence already blocks
+    sale/rental/parts/repair/brands/DIY/jobs.
+  never_negative_regardless_of_cost:
+    [quote, estimate, cost, price, pricing, near me, best, local, company, services,
+     residential, emergency, hire]
+  reviewed_individually: see audits/2026-09-02-universal-negative-candidates.csv
+  approval_owner: Walter Correa

@@ -1,0 +1,449 @@
+{
+ "policy": [
+  {
+   "camp": "24132507741",
+   "ag": "202339087874",
+   "ad": "820900825422",
+   "status": "ENABLED",
+   "approval": "AREA_OF_INTEREST_ONLY",
+   "review": "REVIEWED",
+   "entries": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "AREA_OF_INTEREST_ONLY",
+     "evidences": 0,
+     "constraints": [
+      "PolicyTopicConstraint'>"
+     ]
+    }
+   ]
+  },
+  {
+   "camp": "24132507741",
+   "ag": "202339087874",
+   "ad": "820900825425",
+   "status": "ENABLED",
+   "approval": "AREA_OF_INTEREST_ONLY",
+   "review": "REVIEWED",
+   "entries": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "AREA_OF_INTEREST_ONLY",
+     "evidences": 0,
+     "constraints": [
+      "PolicyTopicConstraint'>"
+     ]
+    }
+   ]
+  },
+  {
+   "camp": "24132507744",
+   "ag": "202339087594",
+   "ad": "820900825428",
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "entries": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": 0,
+     "constraints": [
+      "PolicyTopicConstraint'>"
+     ]
+    }
+   ]
+  },
+  {
+   "camp": "24132507744",
+   "ag": "202339087594",
+   "ad": "820900825431",
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "entries": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": 0,
+     "constraints": [
+      "PolicyTopicConstraint'>"
+     ]
+    }
+   ]
+  },
+  {
+   "camp": "24132507747",
+   "ag": "202339087634",
+   "ad": "820900825434",
+   "status": "ENABLED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "entries": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": 0,
+     "constraints": [
+      "PolicyTopicConstraint'>"
+     ]
+    }
+   ]
+  },
+  {
+   "camp": "24132507747",
+   "ag": "202339087634",
+   "ad": "820900825437",
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "entries": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": 0,
+     "constraints": [
+      "PolicyTopicConstraint'>"
+     ]
+    }
+   ]
+  },
+  {
+   "camp": "24132507753",
+   "ag": "200159223798",
+   "ad": "820944944368",
+   "status": "ENABLED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "entries": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": 0,
+     "constraints": [
+      "PolicyTopicConstraint'>"
+     ]
+    }
+   ]
+  },
+  {
+   "camp": "24132507753",
+   "ag": "200159223798",
+   "ad": "820944944371",
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "entries": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": 0,
+     "constraints": [
+      "PolicyTopicConstraint'>"
+     ]
+    }
+   ]
+  }
+ ],
+ "quality_score": [
+  {
+   "camp": "24132507753",
+   "text": "hvac replacement near me",
+   "match": "EXACT",
+   "qs": 2,
+   "ctr_component": "BELOW_AVERAGE",
+   "ad_relevance": "AVERAGE",
+   "lp_experience": "BELOW_AVERAGE",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507753",
+   "text": "hvac replacement near me",
+   "match": "PHRASE",
+   "qs": 2,
+   "ctr_component": "BELOW_AVERAGE",
+   "ad_relevance": "AVERAGE",
+   "lp_experience": "BELOW_AVERAGE",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507744",
+   "text": "gas boiler repair",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507744",
+   "text": "gas boiler repair",
+   "match": "PHRASE",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507747",
+   "text": "hvac installers near me",
+   "match": "PHRASE",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507747",
+   "text": "hvac installers near me",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507750",
+   "text": "hvac repair near me",
+   "match": "PHRASE",
+   "qs": 2,
+   "ctr_component": "BELOW_AVERAGE",
+   "ad_relevance": "AVERAGE",
+   "lp_experience": "BELOW_AVERAGE",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507750",
+   "text": "hvac repair near me",
+   "match": "EXACT",
+   "qs": 2,
+   "ctr_component": "BELOW_AVERAGE",
+   "ad_relevance": "AVERAGE",
+   "lp_experience": "BELOW_AVERAGE",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507750",
+   "text": "furnace replacement near me",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507750",
+   "text": "heat pump replacement cost near me",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507750",
+   "text": "mitsubishi diamond contractor near me",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507750",
+   "text": "hvac technician near me utm_campaign gs105607",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507750",
+   "text": "air duct cleaning and repairs near me",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507741",
+   "text": "shop",
+   "match": "BROAD",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507741",
+   "text": "ac repair near me",
+   "match": "PHRASE",
+   "qs": 4,
+   "ctr_component": "BELOW_AVERAGE",
+   "ad_relevance": "AVERAGE",
+   "lp_experience": "AVERAGE",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507741",
+   "text": "ac repair near me",
+   "match": "EXACT",
+   "qs": 4,
+   "ctr_component": "BELOW_AVERAGE",
+   "ad_relevance": "AVERAGE",
+   "lp_experience": "AVERAGE",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507741",
+   "text": "ac replacement near me",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507741",
+   "text": "air conditioner replacement near me",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507741",
+   "text": "ac replacement companies near me",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507741",
+   "text": "ac hose repair shop near me",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507741",
+   "text": "hvac technician near me utm_campaign gs105607",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507741",
+   "text": "hvac replacement near me",
+   "match": "EXACT",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  },
+  {
+   "camp": "24132507741",
+   "text": "hvac replacement near me",
+   "match": "PHRASE",
+   "qs": null,
+   "ctr_component": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "lp_experience": "UNSPECIFIED",
+   "first_page_cpc": 0.0,
+   "top_of_page_cpc": 0.0,
+   "first_position_cpc": 0.0,
+   "eff_cpc_bid": 0.01
+  }
+ ]
+}

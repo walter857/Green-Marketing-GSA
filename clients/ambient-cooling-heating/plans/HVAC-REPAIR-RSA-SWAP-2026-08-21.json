@@ -1,0 +1,85 @@
+{
+ "package": "ambient-cooling-heating-HVAC-REPAIR-RSA-SWAP",
+ "version": "2026-08-21",
+ "priority": "P1",
+ "run_class": "DRAFT + VALIDATE-ONLY. Not executed.",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD",
+  "vertical": "heating-cooling"
+ },
+ "gate": "MUST NOT EXECUTE until BOTH 821714108336 and 821714108339 return approval_status APPROVED, review_status REVIEWED and zero policy topics. At build time both are UNKNOWN / REVIEW_IN_PROGRESS with no policy topics, which is the normal post-creation state.",
+ "campaign_id": "24132507750",
+ "ad_group_id": "202339087674",
+ "why": "Ad 820900825560 is rated POOR and 820900825563 AVERAGE. The ad group carries Quality Score 2 with BELOW_AVERAGE expected CTR, and charged CTR since launch is 1.45% on 413 impressions. Rank-lost impression share is 69.66% against 0.00% budget-lost, so Ad Rank is the ceiling and expected CTR is the lever ad copy can move. The two replacements were built from landing-page-verified language with balanced keyword density.",
+ "operations": [
+  {
+   "seq": 1,
+   "op": "update",
+   "resource_name": "customers/2401959466/adGroupAds/202339087674~820900825560",
+   "field": "status",
+   "before": "ENABLED",
+   "after": "PAUSED",
+   "note": "ad strength POOR"
+  },
+  {
+   "seq": 2,
+   "op": "update",
+   "resource_name": "customers/2401959466/adGroupAds/202339087674~820900825563",
+   "field": "status",
+   "before": "ENABLED",
+   "after": "PAUSED",
+   "note": "ad strength AVERAGE"
+  },
+  {
+   "seq": 3,
+   "op": "update",
+   "resource_name": "customers/2401959466/adGroupAds/202339087674~821714108336",
+   "field": "status",
+   "before": "PAUSED",
+   "after": "ENABLED",
+   "note": "RSA A direct response"
+  },
+  {
+   "seq": 4,
+   "op": "update",
+   "resource_name": "customers/2401959466/adGroupAds/202339087674~821714108339",
+   "field": "status",
+   "before": "PAUSED",
+   "after": "ENABLED",
+   "note": "RSA B problem/decision"
+  }
+ ],
+ "atomicity": "All four operations MUST go in ONE GoogleAdsService.Mutate request with partial_failure=false. Enabling two while two are already enabled would make four and be rejected by the 3-enabled-RSA-per-ad-group limit. This is the same constraint that caused the 2026-08-18 failure 80868F985D33B756 and was solved by atomic swap 5026CAD20F45F581.",
+ "end_state": "Exactly 2 ENABLED RSAs in ad group 202339087674, both the new diversified ads. The two prior ads become PAUSED and are NOT removed, so their history is kept and rollback is a status flip.",
+ "mutation_counts": {
+  "creates": 0,
+  "updates": 4,
+  "removals": 0,
+  "total_mutations": 4,
+  "ads_removed": 0,
+  "ads_created": 0,
+  "keywords_touched": 0,
+  "budgets_touched": 0,
+  "assets_touched": 0
+ },
+ "risk": "MEDIUM. New copy replaces a known-CTR baseline. Reversible in one request. If CTR falls below 1.45% over 7 settled days, roll back.",
+ "rollback_plan": "One request: set 820900825560 and 820900825563 back to ENABLED and 821714108336 and 821714108339 back to PAUSED. 4 mutations, atomic.",
+ "readback_verification": [
+  "ASSERT exactly 2 ENABLED ads in ad group 202339087674 and they are the two new IDs.",
+  "ASSERT 820900825560 and 820900825563 are PAUSED and still APPROVED.",
+  "ASSERT no ad was removed; non-removed ad count stays 115.",
+  "ASSERT the six preserved replacement RSAs are untouched.",
+  "Record ad_strength for both newly enabled ads."
+ ],
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 4,
+  "errors": 0
+ },
+ "drift_assumptions": "Assumes both new ads are APPROVED at execution time and that no other ad in the ad group has been enabled since 2026-08-21. Re-verify both before executing.",
+ "plan_fingerprint": "D441DEFC58EB5643"
+}

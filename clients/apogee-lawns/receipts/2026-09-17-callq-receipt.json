@@ -1,0 +1,302 @@
+{
+  "plan_id": "APG-0917-CALL-Q",
+  "fingerprint": "E3214C210910",
+  "approval": "APPROVE APG CALL-ASSET E3214C210910",
+  "supersedes": {
+    "plan_id": "APG-0917-CALL-N",
+    "fingerprint": "A29431412E96",
+    "status": "SUPERSEDED_WRONG_PHONE"
+  },
+  "executed_local": "2026-09-17T16:28:01.552995-05:00",
+  "customer_id": "8164626278",
+  "account_name": "Apogee Lawns LLC - Live",
+  "campaign_id": "24257151015",
+  "mutations": 2,
+  "creates": 2,
+  "updates": 0,
+  "deletes": 0,
+  "created": [
+    {
+      "resource": "asset",
+      "resource_name": "customers/8164626278/assets/422649064971",
+      "id": "422649064971"
+    },
+    {
+      "resource": "campaign_asset",
+      "resource_name": "customers/8164626278/campaignAssets/24257151015~422649064971~CALL"
+    }
+  ],
+  "call_asset": {
+    "id": "422649064971",
+    "resource_name": "customers/8164626278/assets/422649064971",
+    "country_code": "US",
+    "phone_number": "4025265754",
+    "phone_digits": "4025265754",
+    "call_conversion_reporting_state": "USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION",
+    "call_conversion_action": "customers/8164626278/conversionActions/7773013199",
+    "ad_schedule_targets": [
+      {
+        "day_of_week": "FRIDAY",
+        "start_hour": 8,
+        "start_minute": "ZERO",
+        "end_hour": 17,
+        "end_minute": "ZERO"
+      },
+      {
+        "day_of_week": "MONDAY",
+        "start_hour": 8,
+        "start_minute": "ZERO",
+        "end_hour": 17,
+        "end_minute": "ZERO"
+      },
+      {
+        "day_of_week": "SATURDAY",
+        "start_hour": 8,
+        "start_minute": "ZERO",
+        "end_hour": 12,
+        "end_minute": "ZERO"
+      },
+      {
+        "day_of_week": "THURSDAY",
+        "start_hour": 8,
+        "start_minute": "ZERO",
+        "end_hour": 17,
+        "end_minute": "ZERO"
+      },
+      {
+        "day_of_week": "TUESDAY",
+        "start_hour": 8,
+        "start_minute": "ZERO",
+        "end_hour": 17,
+        "end_minute": "ZERO"
+      },
+      {
+        "day_of_week": "WEDNESDAY",
+        "start_hour": 8,
+        "start_minute": "ZERO",
+        "end_hour": 17,
+        "end_minute": "ZERO"
+      }
+    ]
+  },
+  "campaign_asset": {
+    "resource_name": "customers/8164626278/campaignAssets/24257151015~422649064971~CALL",
+    "campaign": "customers/8164626278/campaigns/24257151015",
+    "asset": "customers/8164626278/assets/422649064971",
+    "field_type": "CALL",
+    "status": "ENABLED"
+  },
+  "campaign_status_after": [
+    [
+      "24257151015",
+      "PAUSED"
+    ]
+  ],
+  "conversion_actions_after": {
+    "7772803337": {
+      "primary_for_goal": true,
+      "status": "ENABLED",
+      "type": "WEBPAGE"
+    },
+    "7773013199": {
+      "primary_for_goal": true,
+      "status": "ENABLED",
+      "type": "AD_CALL"
+    },
+    "7773043879": {
+      "primary_for_goal": false,
+      "status": "ENABLED",
+      "type": "WEBSITE_CALL"
+    }
+  },
+  "campaign_conversion_goals_after": {
+    "PHONE_CALL_LEAD/WEBSITE": false,
+    "PHONE_CALL_LEAD/CALL_FROM_ADS": true,
+    "SUBMIT_LEAD_FORM/WEBSITE": true
+  },
+  "stale_account_pointer_before": "customers/8164626278/conversionActions/179",
+  "stale_account_pointer_after": "customers/8164626278/conversionActions/179",
+  "readback": [
+    {
+      "check": "exactly 1 CALL asset exists",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "check": "asset.type == CALL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "country_code == US",
+      "pass": true,
+      "detail": "US"
+    },
+    {
+      "check": "phone digits == 4025265754",
+      "pass": true,
+      "detail": "4025265754 -> 4025265754"
+    },
+    {
+      "check": "phone is NOT the forwarding destination",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "reporting state resource-level",
+      "pass": true,
+      "detail": "USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION"
+    },
+    {
+      "check": "call_conversion_action -> 7773013199",
+      "pass": true,
+      "detail": "customers/8164626278/conversionActions/7773013199"
+    },
+    {
+      "check": "6 ad-schedule targets",
+      "pass": true,
+      "detail": "6"
+    },
+    {
+      "check": "schedule matches the plan exactly",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "SUNDAY absent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly 1 CALL link",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "check": "link campaign == 24257151015",
+      "pass": true,
+      "detail": "customers/8164626278/campaigns/24257151015"
+    },
+    {
+      "check": "link points at the asset just created",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "link status ENABLED",
+      "pass": true,
+      "detail": "ENABLED"
+    },
+    {
+      "check": "total campaign_asset links == 8",
+      "pass": true,
+      "detail": "8"
+    },
+    {
+      "check": "6 callout links unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "1 snippet link unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "campaign still PAUSED, still the only one",
+      "pass": true,
+      "detail": "[('24257151015', 'PAUSED')]"
+    },
+    {
+      "check": "budget unchanged at 16,440,000 micros",
+      "pass": true,
+      "detail": "16440000"
+    },
+    {
+      "check": "conversion action count still 3, none created",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "7772803337 still PRIMARY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "7773013199 still PRIMARY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "7773043879 still SECONDARY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "campaign conversion goals unchanged",
+      "pass": true,
+      "detail": "{'PHONE_CALL_LEAD/WEBSITE': False, 'PHONE_CALL_LEAD/CALL_FROM_ADS': True, 'SUBMIT_LEAD_FORM/WEBSITE': True}"
+    },
+    {
+      "check": "still 0 custom conversion goals",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "campaign still has 0 ad-schedule criteria (24/7)",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "90 campaign criteria unchanged",
+      "pass": false,
+      "detail": "93"
+    },
+    {
+      "check": "4 RSAs unchanged",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "check": "5 keywords unchanged",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "check": "stale account-level pointer left untouched",
+      "pass": true,
+      "detail": "customers/8164626278/conversionActions/179"
+    },
+    {
+      "check": "manager link untouched",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "qa_failures": 1,
+  "campaign_enabled": false,
+  "budget_changed": false,
+  "readback_failure_resolution": {
+    "check": "90 campaign criteria unchanged",
+    "observed": 93,
+    "verdict": "EXPECTATION_WAS_WRONG_NOT_A_SIDE_EFFECT",
+    "resolved_local": "2026-09-17T17:29:31",
+    "breakdown_now": {
+      "LOCATION": 14,
+      "LANGUAGE": 1,
+      "KEYWORD_negative": 75,
+      "DEVICE": 3,
+      "total": 93
+    },
+    "evidence": [
+      "The 3 extra rows are DEVICE criteria 30000 Desktop, 30001 HighEndMobile, 30002 Tablet. Those are Google's fixed global device criterion IDs, identical in every account, so no create allocated them.",
+      "CAMP-I's readback used the same unfiltered GAQL but only ever printed LOCATION 14, LANGUAGE 1 and negatives 75. The '90' in the plan and the implementation record was my own sum of those three printed categories, never a measured total. The DEVICE rows were present then and were simply never enumerated.",
+      "LOCATION 14, LANGUAGE 1 and negatives 75 (37 BROAD / 38 PHRASE) are identical to the CAMP-I readback, so none of the criteria CAMP-I created moved.",
+      "CALL-Q issued exactly two operations, AssetService.mutate_assets and CampaignAssetService.mutate_campaign_assets. Neither service can write campaign_criterion.",
+      "AD_SCHEDULE campaign criteria remain 0, confirming the call-asset schedule stayed on the asset and did not materialise as campaign criteria."
+    ],
+    "change_status_note": "change_status returned 0 rows for 2026-09-15..2026-09-18, so it corroborates nothing either way. It did not contradict the finding.",
+    "corrected_invariant": "93 campaign criteria = 14 location + 1 language + 75 negative keyword + 3 implicit device"
+  },
+  "qa_failures_after_resolution": 0
+}

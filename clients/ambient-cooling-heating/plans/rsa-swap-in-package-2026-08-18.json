@@ -1,0 +1,239 @@
+{
+ "package": "ambient-cooling-heating-rsa-swap-in",
+ "version": "2026-08-18",
+ "replaces_blocked_package": "80868F985D33B756",
+ "phase": "modify-existing",
+ "approval_class": "MIXED - contains a DESTRUCTIVE element (pausing six existing ads)",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342"
+ },
+ "blocker_that_forced_this": {
+  "error": "RESOURCE_LIMIT / RESPONSIVE_SEARCH_ADS_PER_AD_GROUP",
+  "api_detail": "limit=3, existing_count=2, enclosing_resource=ad_group",
+  "meaning": "Google Ads allows at most 3 ENABLED responsive search ads per ad group. Paused RSAs do not count: each of the three ad groups reports existing_count=2 while holding 4 non-removed RSAs (2 ENABLED originals + 2 PAUSED replacements). Enabling both replacements would make 4 enabled, which exceeds the limit.",
+  "validated_facts": [
+   "Enabling all six at once: REJECTED, 3 errors (operations 1, 3, 5 - the second ad in each group).",
+   "Enabling ONE replacement per ad group: VALIDATES OK.",
+   "Pausing the 6 originals and enabling the 6 replacements in one atomic request: VALIDATES OK."
+  ],
+  "why_the_original_sequence_was_wrong": "The enablement package 80868F985D33B756 assumed the replacements could be enabled first and the originals paused later, to guarantee no service interruption. The 3-enabled-RSA limit makes that impossible for 2 new + 2 old. The premise was also unnecessary: the six originals are DISAPPROVED and therefore cannot serve, so pausing them causes NO service interruption at all."
+ },
+ "action": "ONE atomic MutateAdGroupAds request, partial_failure=false, 12 operations, each with an explicit [\"status\"] update mask: pause the 6 DISAPPROVED originals, then enable the 6 APPROVED replacements. No other field on any resource is touched.",
+ "operations_in_order": [
+  {
+   "seq": 1,
+   "ad_id": "820900825434",
+   "from_status": "ENABLED",
+   "to_status": "PAUSED",
+   "approval_status": "DISAPPROVED",
+   "policy_topic": "CONSUMER_FINANCE",
+   "ad_group_id": "202339087634",
+   "campaign_id": "24132507747",
+   "service": "HVAC Installation",
+   "serving_impact": "NONE - a DISAPPROVED ad cannot serve, so pausing it removes nothing"
+  },
+  {
+   "seq": 2,
+   "ad_id": "820900825437",
+   "from_status": "ENABLED",
+   "to_status": "PAUSED",
+   "approval_status": "DISAPPROVED",
+   "policy_topic": "CONSUMER_FINANCE",
+   "ad_group_id": "202339087634",
+   "campaign_id": "24132507747",
+   "service": "HVAC Installation",
+   "serving_impact": "NONE - a DISAPPROVED ad cannot serve, so pausing it removes nothing"
+  },
+  {
+   "seq": 3,
+   "ad_id": "820944944368",
+   "from_status": "ENABLED",
+   "to_status": "PAUSED",
+   "approval_status": "DISAPPROVED",
+   "policy_topic": "CONSUMER_FINANCE",
+   "ad_group_id": "200159223798",
+   "campaign_id": "24132507753",
+   "service": "HVAC Replacement",
+   "serving_impact": "NONE - a DISAPPROVED ad cannot serve, so pausing it removes nothing"
+  },
+  {
+   "seq": 4,
+   "ad_id": "820944944371",
+   "from_status": "ENABLED",
+   "to_status": "PAUSED",
+   "approval_status": "DISAPPROVED",
+   "policy_topic": "CONSUMER_FINANCE",
+   "ad_group_id": "200159223798",
+   "campaign_id": "24132507753",
+   "service": "HVAC Replacement",
+   "serving_impact": "NONE - a DISAPPROVED ad cannot serve, so pausing it removes nothing"
+  },
+  {
+   "seq": 5,
+   "ad_id": "820900825428",
+   "from_status": "ENABLED",
+   "to_status": "PAUSED",
+   "approval_status": "DISAPPROVED",
+   "policy_topic": "CONSUMER_FINANCE",
+   "ad_group_id": "202339087594",
+   "campaign_id": "24132507744",
+   "service": "Gas Boiler Repair",
+   "serving_impact": "NONE - a DISAPPROVED ad cannot serve, so pausing it removes nothing"
+  },
+  {
+   "seq": 6,
+   "ad_id": "820900825431",
+   "from_status": "ENABLED",
+   "to_status": "PAUSED",
+   "approval_status": "DISAPPROVED",
+   "policy_topic": "CONSUMER_FINANCE",
+   "ad_group_id": "202339087594",
+   "campaign_id": "24132507744",
+   "service": "Gas Boiler Repair",
+   "serving_impact": "NONE - a DISAPPROVED ad cannot serve, so pausing it removes nothing"
+  },
+  {
+   "seq": 7,
+   "ad_id": "821319509197",
+   "from_status": "PAUSED",
+   "to_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "policy_topic": "NONE",
+   "ad_group_id": "202339087634",
+   "campaign_id": "24132507747",
+   "service": "HVAC Installation",
+   "serving_impact": "Becomes eligible to serve"
+  },
+  {
+   "seq": 8,
+   "ad_id": "821319509200",
+   "from_status": "PAUSED",
+   "to_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "policy_topic": "NONE",
+   "ad_group_id": "202339087634",
+   "campaign_id": "24132507747",
+   "service": "HVAC Installation",
+   "serving_impact": "Becomes eligible to serve"
+  },
+  {
+   "seq": 9,
+   "ad_id": "821319509203",
+   "from_status": "PAUSED",
+   "to_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "policy_topic": "NONE",
+   "ad_group_id": "200159223798",
+   "campaign_id": "24132507753",
+   "service": "HVAC Replacement",
+   "serving_impact": "Becomes eligible to serve"
+  },
+  {
+   "seq": 10,
+   "ad_id": "821319509206",
+   "from_status": "PAUSED",
+   "to_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "policy_topic": "NONE",
+   "ad_group_id": "200159223798",
+   "campaign_id": "24132507753",
+   "service": "HVAC Replacement",
+   "serving_impact": "Becomes eligible to serve"
+  },
+  {
+   "seq": 11,
+   "ad_id": "821319509209",
+   "from_status": "PAUSED",
+   "to_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "policy_topic": "NONE",
+   "ad_group_id": "202339087594",
+   "campaign_id": "24132507744",
+   "service": "Gas Boiler Repair",
+   "serving_impact": "Becomes eligible to serve"
+  },
+  {
+   "seq": 12,
+   "ad_id": "821319509212",
+   "from_status": "PAUSED",
+   "to_status": "ENABLED",
+   "approval_status": "APPROVED",
+   "policy_topic": "NONE",
+   "ad_group_id": "202339087594",
+   "campaign_id": "24132507744",
+   "service": "Gas Boiler Repair",
+   "serving_impact": "Becomes eligible to serve"
+  }
+ ],
+ "end_state_per_ad_group": [
+  {
+   "ad_group_id": "202339087634",
+   "ad_group_name": "SKAG | HVAC Installation",
+   "service": "HVAC Installation",
+   "before": "2 ENABLED but DISAPPROVED (0 eligible) + 2 PAUSED and APPROVED",
+   "after": "2 ENABLED and APPROVED (2 eligible) + 2 PAUSED and DISAPPROVED",
+   "eligible_rsas_before": 0,
+   "eligible_rsas_after": 2
+  },
+  {
+   "ad_group_id": "200159223798",
+   "ad_group_name": "SKAG | HVAC Replacement Near Me",
+   "service": "HVAC Replacement",
+   "before": "2 ENABLED but DISAPPROVED (0 eligible) + 2 PAUSED and APPROVED",
+   "after": "2 ENABLED and APPROVED (2 eligible) + 2 PAUSED and DISAPPROVED",
+   "eligible_rsas_before": 0,
+   "eligible_rsas_after": 2
+  },
+  {
+   "ad_group_id": "202339087594",
+   "ad_group_name": "SKAG | Gas Boiler Repair",
+   "service": "Gas Boiler Repair",
+   "before": "2 ENABLED but DISAPPROVED (0 eligible) + 2 PAUSED and APPROVED",
+   "after": "2 ENABLED and APPROVED (2 eligible) + 2 PAUSED and DISAPPROVED",
+   "eligible_rsas_before": 0,
+   "eligible_rsas_after": 2
+  }
+ ],
+ "achieves_intended_end_state": "YES - exactly two eligible, service-specific RSAs per active ad group, reached in a single atomic step with no window in which an ad group has zero eligible ads.",
+ "mutation_summary": {
+  "ad_group_ads_modified": 12,
+  "paused": 6,
+  "enabled": 6,
+  "created": 0,
+  "removed": 0,
+  "field_mask": [
+   "status"
+  ],
+  "total_mutations": 12
+ },
+ "validation_evidence": "validate_only=true on this exact 12-operation request: VALIDATES OK.",
+ "explicitly_not_included": [
+  "Removing any ad - the six originals are PAUSED, not removed, and stay fully recoverable.",
+  "Editing any headline, description, URL, path or pin.",
+  "Filing any policy appeal.",
+  "Any change to campaigns, budgets, schedules, keywords, negatives, conversions, assets, sitelinks, landing pages, phone numbers, bidding, or manager access."
+ ],
+ "readback_procedure": [
+  "1. ASSERT the six replacements are ENABLED and still APPROVED with zero policy topics.",
+  "2. ASSERT the six originals are PAUSED and still DISAPPROVED - paused, never removed.",
+  "3. ASSERT each of the three ad groups has exactly 2 ENABLED RSAs and 2 PAUSED RSAs.",
+  "4. ASSERT every headline, description, final URL, path and pin on the six replacements is byte-identical to fingerprint 0BCC73A397580856.",
+  "5. ASSERT total non-removed ads is still 113 - nothing created, nothing removed.",
+  "6. ASSERT the five campaigns are still ENABLED / SERVING / TARGET_SPEND with unchanged budgets ($141.45 / $42.76 / $138.16 / $78.95 / $26.32).",
+  "7. ASSERT unchanged counts: campaign criteria 13810, keywords 6968, conversion actions 23, shared sets 17, shared criteria 7015, campaign assets 271, ad-schedule criteria 139.",
+  "8. ASSERT both manager links ACTIVE and unchanged, including ClickCease 2815082755.",
+  "9. Read-only delivery check: campaign and ad-group serving status, and impressions over the next 48 hours in Gas Boiler Repair and HVAC Replacement."
+ ],
+ "rollback_plan": {
+  "method": "One atomic request reversing all 12 statuses: enable the 6 originals, pause the 6 replacements.",
+  "restore_mutations": 12,
+  "data_loss": "None. Status changes delete nothing and preserve all history.",
+  "note": "Rolling back restores 2 DISAPPROVED enabled ads per ad group, i.e. zero eligible ads again. Roll back only if the replacements themselves misbehave.",
+  "trigger": "Any readback assertion fails, or a replacement is disapproved after enabling."
+ },
+ "partial_write_protocol": "partial_failure=false makes the batch atomic. If it fails, STOP, re-query all 12 statuses, inventory exactly what changed, and produce a recovery plan before any retry.",
+ "risk_note": "Enabling starts real spend in two campaigns that have never served. Conversion tracking is still incomplete: the Gravity Forms fields capture no click IDs, so form leads will not be attributable until the landing-page fix lands. Budgets are unchanged and Maximize Clicks caps daily spend.",
+ "plan_fingerprint": "5026CAD20F45F581"
+}

@@ -1,0 +1,181 @@
+change_plan:
+  plan_name: PLAN-SLM-P1A-GUARD
+  plan_version: 1
+  generated_at: '2026-09-03T23:12:00.945476-04:00'
+  target:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: '2429758629'
+    manager_customer_id: '3373711342'
+    currency: USD
+    time_zone: America/New_York
+    exact_service: patio construction (Patio) and paver installation (Pavers)
+    identity_receipt: clients/softwind-landscape-masonry/snapshots/identity-gate-2026-09-03-1959.json
+    baseline_snapshot: recovery/2026-09-patio-pavers/01e-baseline-2.json
+    baseline_evidence_sha256_short: 3D9E3199DD183E79
+  subplan_used: STATUS
+  subplans:
+    STATUS:
+      actions:
+      - action_id: P1A-01
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '389296747613'
+        criterion_id: '389296747613'
+        ad_group_id: '191263597185'
+        ad_group_name: Paver Patio Installation Near Me
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: brick paver installers near me
+        match_type: EXACT
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        reason: ENABLED keyword inside a PAUSED ad group. It begins serving the instant the ad group is
+          enabled, with no separate approval. Pausing it now makes any future enablement an explicit,
+          itemised decision.
+      - action_id: P1A-02
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '405278861678'
+        criterion_id: '405278861678'
+        ad_group_id: '191263597185'
+        ad_group_name: Paver Patio Installation Near Me
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: patio paver installers near me
+        match_type: EXACT
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        reason: ENABLED keyword inside a PAUSED ad group. It begins serving the instant the ad group is
+          enabled, with no separate approval. Pausing it now makes any future enablement an explicit,
+          itemised decision.
+      - action_id: P1A-03
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '344130974374'
+        criterion_id: '344130974374'
+        ad_group_id: '191263597185'
+        ad_group_name: Paver Patio Installation Near Me
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: paver patio contractors near me
+        match_type: EXACT
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        reason: ENABLED keyword inside a PAUSED ad group. It begins serving the instant the ad group is
+          enabled, with no separate approval. Pausing it now makes any future enablement an explicit,
+          itemised decision.
+      - action_id: P1A-04
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '298729021090'
+        criterion_id: '298729021090'
+        ad_group_id: '191263597185'
+        ad_group_name: Paver Patio Installation Near Me
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: paver patio installation
+        match_type: EXACT
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        reason: ENABLED keyword inside a PAUSED ad group. It begins serving the instant the ad group is
+          enabled, with no separate approval. Pausing it now makes any future enablement an explicit,
+          itemised decision.
+      - action_id: P1A-05
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '376019343301'
+        criterion_id: '376019343301'
+        ad_group_id: '191263597185'
+        ad_group_name: Paver Patio Installation Near Me
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: paver patio installation near me
+        match_type: EXACT
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        reason: ENABLED keyword inside a PAUSED ad group. It begins serving the instant the ad group is
+          enabled, with no separate approval. Pausing it now makes any future enablement an explicit,
+          itemised decision.
+      - action_id: P1A-06
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '541460760374'
+        criterion_id: '541460760374'
+        ad_group_id: '191263597185'
+        ad_group_name: Paver Patio Installation Near Me
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: paver patio installation near me
+        match_type: PHRASE
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        reason: ENABLED keyword inside a PAUSED ad group. It begins serving the instant the ad group is
+          enabled, with no separate approval. Pausing it now makes any future enablement an explicit,
+          itemised decision.
+      - action_id: P1A-07
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '907151576637'
+        criterion_id: '907151576637'
+        ad_group_id: '191263597185'
+        ad_group_name: Paver Patio Installation Near Me
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: paver patio installer near me
+        match_type: EXACT
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        reason: ENABLED keyword inside a PAUSED ad group. It begins serving the instant the ad group is
+          enabled, with no separate approval. Pausing it now makes any future enablement an explicit,
+          itemised decision.
+    BUDGET:
+      actions: []
+      empty_reason: not part of this package
+    EXISTING_RESOURCES:
+      actions: []
+      empty_reason: not part of this package
+    CONVERSIONS:
+      actions: []
+      empty_reason: not part of this package
+    CREATE_PAUSED:
+      actions: []
+      empty_reason: not part of this package
+    SITE_OR_TRACKING:
+      actions: []
+      empty_reason: not part of this package
+    ENABLE:
+      actions: []
+      empty_reason: not part of this package
+  summary: Guard-pause the 7 ENABLED keywords sitting inside the PAUSED Pavers ad group 'Paver Patio Installation
+    Near Me' (191263597185).
+  structural_decision: 'RETAIN AND CLEAN the existing ad groups. Do NOT build canonical replacements yet.
+    Reasons: (1) P0 has just changed both CPC ceilings, both budgets and seven keyword statuses today,
+    so the account has no stable post-change data to design against; (2) the account buys only 3-6 clicks
+    a day, so a parallel structure would take months to accumulate signal while resetting what little
+    Quality Score exists; (3) creating paused twins risks duplicate auction entry at cutover for no measured
+    gain; (4) the existing groups already map cleanly onto the three canonical intents - 76.5% of live
+    keyword spend before KW-2, 81.9% after. Revisit after the 30-day P0 decision point.'
+  also_present_but_not_in_this_package:
+    2 ENABLED RSAs in the same PAUSED ad group: ad ids 793879597166 and 795049355495. The executor's STATUS
+      branch pauses ad-group criteria only; pausing an ad needs an AD_STATUS branch that does not exist.
+      Left as a documented risk rather than an unexecutable operation.
+    duplicate Pavers ad groups: '''Paver Installation Near Me'' (191263597345) and ''... (Pharse)'' (196134824089)
+      hold overlapping texts. Consolidation is a P1-B design item, deferred with the rebuild.'
+  dependencies: []
+  approval_status: NOT APPROVED. Requires explicit owner approval of this fingerprint.
+  object_count: 7
+  fingerprint: 00FA45112351

@@ -1,0 +1,290 @@
+{
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "run_class": "READ + DRAFT + VALIDATE-ONLY. No mutation performed.",
+ "corrected_deduplication_facts": {
+  "what_was_wrong": "An earlier statement in this engagement claimed a shared lead_id or transaction_id would deduplicate 'LP Submit Lead Forms' against 'WC Lead'. THAT IS INCORRECT and is retracted.",
+  "how_google_actually_dedupes": "order_id / transaction_id deduplicates only WITHIN a single conversion action. Two different conversion actions each record independently and no shared identifier links them.",
+  "why_merging_is_impossible_here": "Offline uploads require a conversion action of type UPLOAD_CLICKS or UPLOAD_CALLS. Verified from the API: 6885463625 is WEBPAGE, 6885576934 is WEBSITE_CALL and 1068114183 is AD_CALL, so NONE of them can receive a WhatConverts upload. Only 7643656486 (UPLOAD_CLICKS) and 7643656075 (UPLOAD_CALLS) can. The two form signals therefore cannot be merged into one action.",
+  "enhanced_conversions_note": "customer.conversion_tracking_setting.enhanced_conversions_for_leads_enabled is TRUE and accepted_customer_data_terms is TRUE. Enhanced Conversions for Leads DOES supplement an existing web action using hashed first-party identifiers, but it is Google's own matching mechanism for the SAME action. It does not merge a third-party upload action with a tag action.",
+  "the_only_reliable_control": "Exactly ONE conversion action may be Primary AND included in the conversions metric per real-world lead event. That is what both plans below implement."
+ },
+ "observed_double_count": {
+  "date": "2026-08-20",
+  "campaign": "HVAC Repair 24132507750",
+  "hour": "06:00",
+  "device": "MOBILE",
+  "actions_that_fired": [
+   "6885463625 LP Submit Lead Forms (SUBMIT_LEAD_FORM) - COUNTED",
+   "7389995485 GA4 form_submit (SUBMIT_LEAD_FORM) - secondary, not counted",
+   "7643656486 WC Lead (CONTACT) - COUNTED"
+  ],
+  "result": "One form submission produced TWO counted conversions.",
+  "august_totals": {
+   "reported_metrics_conversions": 3.0,
+   "real_distinct_lead_events": 2,
+   "inflation": "50% over-count on HVAC Repair; 3 reported vs 2 real"
+  }
+ },
+ "real_august_events": [
+  {
+   "event": "AC Repair call from ad",
+   "when": "2026-08-20 07:46:59",
+   "evidence": "call_view: duration 171 seconds, status RECEIVED, HIGH_END_MOBILE_SEARCH. The only call_view record ever on the five campaigns.",
+   "counted_by": "1068114183 Calls from ads (60s minimum, met)"
+  },
+  {
+   "event": "HVAC Repair form submission",
+   "when": "2026-08-20 06:00",
+   "evidence": "counted twice, see observed_double_count",
+   "counted_by": "6885463625 AND 7643656486"
+  }
+ ],
+ "not_touched": [
+  "ClickCease manager link 2815082755",
+  "campaign schedules",
+  "callouts",
+  "sitelinks",
+  "keywords",
+  "negatives",
+  "ads",
+  "budgets",
+  "bidding",
+  "locations",
+  "assets",
+  "manager links",
+  "GTM-PQTPQ436",
+  "WhatConverts profile 105803",
+  "include_in_conversions_metric on any action",
+  "conversion action status - nothing is disabled or removed"
+ ],
+ "package": "ambient-cooling-heating-PLAN-A-conversion-whatconverts-qualified",
+ "version": "2026-08-20",
+ "priority": "P0",
+ "plan": "Plan A",
+ "condition": "APPLIES ONLY IF WhatConverts uploads ONLY QUALIFIED leads and qualified calls to Google Ads.",
+ "conversion_action_table": [
+  {
+   "id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "type_source": "WEBPAGE",
+   "category": "SUBMIT_LEAD_FORM",
+   "current_primary": true,
+   "current_counted": true,
+   "proposed_primary": false,
+   "proposed_counted": true,
+   "include_in_conversions_changed": false,
+   "change": "WC Lead becomes the counted form signal. This tag action would otherwise double-count the same submission, as it did on 2026-08-20 at 06:00."
+  },
+  {
+   "id": "6885576934",
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "type_source": "WEBSITE_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "current_primary": true,
+   "current_counted": true,
+   "proposed_primary": false,
+   "proposed_counted": true,
+   "include_in_conversions_changed": false,
+   "change": "Only ONE Primary website-call action is permitted. Under Plan A the qualified call signal is WC Calls, so this WEBSITE_CALL action steps down. It is also effectively inert on the paid pages: client records show Google web-call metrics return errorCode 2 on the offer subdomain so no Google number swap occurs, and it last fired 2026-06-20."
+  },
+  {
+   "id": "1068114183",
+   "name": "Calls from ads",
+   "type_source": "AD_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "current_primary": true,
+   "current_counted": true,
+   "proposed_primary": false,
+   "proposed_counted": true,
+   "include_in_conversions_changed": false,
+   "change": "DUPLICATES WC Calls under Plan A. The Google call asset number (410) 705-6354 is itself a WhatConverts tracking number, so a call placed from the ad is visible to BOTH Google (AD_CALL) and WhatConverts (UPLOAD_CALLS). The 2026-08-20 07:46:59 call, 171 seconds and RECEIVED, is exactly such a call. Keeping both Primary would double-count every ad call."
+  },
+  {
+   "id": "6498555484",
+   "name": "Call BTN Click",
+   "type_source": "WEBPAGE",
+   "category": "CONTACT",
+   "current_primary": true,
+   "current_counted": true,
+   "proposed_primary": false,
+   "proposed_counted": true,
+   "include_in_conversions_changed": false,
+   "change": "Dormant since 2024-09-06 and a weaker CONTACT click signal than a connected call. Not the qualified source under Plan A."
+  },
+  {
+   "id": "6498555481",
+   "name": "Visit Thank you page - Submit Form",
+   "type_source": "WEBPAGE",
+   "category": "SUBMIT_LEAD_FORM",
+   "current_primary": true,
+   "current_counted": true,
+   "proposed_primary": false,
+   "proposed_counted": true,
+   "include_in_conversions_changed": false,
+   "change": "Dormant since 2024-01-23 and superseded by 6885463625, which is itself demoted under Plan A."
+  },
+  {
+   "id": "7643656075",
+   "name": "WC Calls",
+   "type_source": "UPLOAD_CALLS",
+   "category": "CONTACT",
+   "current_primary": true,
+   "current_counted": true,
+   "proposed_primary": true,
+   "proposed_counted": true,
+   "include_in_conversions_changed": false,
+   "change": "NO CHANGE"
+  },
+  {
+   "id": "7643656486",
+   "name": "WC Lead",
+   "type_source": "UPLOAD_CLICKS",
+   "category": "CONTACT",
+   "current_primary": true,
+   "current_counted": true,
+   "proposed_primary": true,
+   "proposed_counted": true,
+   "include_in_conversions_changed": false,
+   "change": "NO CHANGE"
+  },
+  {
+   "id": "7389995485",
+   "name": "Ambient Cooling and Heating (web) form_submit",
+   "type_source": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "category": "SUBMIT_LEAD_FORM",
+   "current_primary": false,
+   "current_counted": false,
+   "proposed_primary": false,
+   "proposed_counted": false,
+   "include_in_conversions_changed": false,
+   "change": "NO CHANGE"
+  }
+ ],
+ "mutations": [
+  {
+   "seq": 1,
+   "service": "ConversionActionService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/conversionActions/6885463625",
+   "update_mask": [
+    "primary_for_goal"
+   ],
+   "field": "primary_for_goal",
+   "before": true,
+   "after": false,
+   "action": "Ambient Cooling - LP -Submit Lead Forms",
+   "justification": "WC Lead becomes the counted form signal. This tag action would otherwise double-count the same submission, as it did on 2026-08-20 at 06:00."
+  },
+  {
+   "seq": 2,
+   "service": "ConversionActionService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/conversionActions/6498555484",
+   "update_mask": [
+    "primary_for_goal"
+   ],
+   "field": "primary_for_goal",
+   "before": true,
+   "after": false,
+   "action": "Call BTN Click",
+   "justification": "Dormant since 2024-09-06 and a weaker CONTACT click signal than a connected call. Not the qualified source under Plan A."
+  },
+  {
+   "seq": 3,
+   "service": "ConversionActionService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/conversionActions/6498555481",
+   "update_mask": [
+    "primary_for_goal"
+   ],
+   "field": "primary_for_goal",
+   "before": true,
+   "after": false,
+   "action": "Visit Thank you page - Submit Form",
+   "justification": "Dormant since 2024-01-23 and superseded by 6885463625, which is itself demoted under Plan A."
+  },
+  {
+   "seq": 4,
+   "service": "ConversionActionService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/conversionActions/6885576934",
+   "update_mask": [
+    "primary_for_goal"
+   ],
+   "field": "primary_for_goal",
+   "before": true,
+   "after": false,
+   "action": "Ambient Cooling - Lp - Phone call leads",
+   "justification": "Only ONE Primary website-call action is permitted. Under Plan A the qualified call signal is WC Calls, so this WEBSITE_CALL action steps down. It is also effectively inert on the paid pages: client records show Google web-call metrics return errorCode 2 on the offer subdomain so no Google number swap occurs, and it last fired 2026-06-20."
+  },
+  {
+   "seq": 5,
+   "service": "ConversionActionService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/conversionActions/1068114183",
+   "update_mask": [
+    "primary_for_goal"
+   ],
+   "field": "primary_for_goal",
+   "before": true,
+   "after": false,
+   "action": "Calls from ads",
+   "justification": "DUPLICATES WC Calls under Plan A. The Google call asset number (410) 705-6354 is itself a WhatConverts tracking number, so a call placed from the ad is visible to BOTH Google (AD_CALL) and WhatConverts (UPLOAD_CALLS). The 2026-08-20 07:46:59 call, 171 seconds and RECEIVED, is exactly such a call. Keeping both Primary would double-count every ad call."
+  }
+ ],
+ "primary_set_after": [
+  "7643656486 WC Lead (UPLOAD_CLICKS) - qualified forms",
+  "7643656075 WC Calls (UPLOAD_CALLS) - qualified calls"
+ ],
+ "kept_primary_unchanged": [
+  "7643656486 WC Lead - already Primary, unchanged",
+  "7643656075 WC Calls - already Primary, unchanged"
+ ],
+ "mutation_counts": {
+  "creates": 0,
+  "updates": 5,
+  "removals": 0,
+  "total_mutations": 5,
+  "actions_disabled": 0,
+  "actions_removed": 0,
+  "include_in_conversions_changed": 0,
+  "goals_changed": 0,
+  "campaigns_touched": 0,
+  "budgets_touched": 0,
+  "ads_touched": 0
+ },
+ "effect_on_reported_august_conversions": {
+  "august_before": 3.0,
+  "august_after": 1.0,
+  "detail": "Only WC Lead's 1.0 on HVAC Repair would remain counted. The AC Repair 171-second call would STOP being counted, because Calls from ads is demoted and WC Calls has never uploaded anything.",
+  "warning": "THIS IS THE MATERIAL RISK IN PLAN A. WC Calls has 0 conversions all-time. Demoting Calls from ads before WC Calls is PROVEN to upload would leave the account with NO counted call measurement at all."
+ },
+ "rollback_plan": "Set primary_for_goal = true on the same 5 resource names. 5 mutations, immediate, no data loss. No action is disabled or removed by this plan, so all history is retained.",
+ "readback_verification": [
+  "ASSERT the 5 demoted actions return primary_for_goal = false and status ENABLED.",
+  "ASSERT every action still returns its original include_in_conversions_metric value.",
+  "ASSERT conversion_action count is still 16 and none was disabled or removed.",
+  "ASSERT the intended primary set returns primary_for_goal = true.",
+  "ASSERT budgets, bidding, ads, keywords, assets, schedules, sitelinks, callouts and both manager links are unchanged."
+ ],
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 5,
+  "errors": 0
+ },
+ "approval_note": "DO NOT EXECUTE until the WhatConverts console is inspected and the owner confirms which plan applies.",
+ "preconditions_before_executing_plan_A": [
+  "WhatConverts must be confirmed to upload ONLY qualified leads, not every lead.",
+  "WC Calls (7643656075) must be PROVEN to upload at least one real call to Google Ads. Until it does, do NOT demote 1068114183 Calls from ads. If qualification is confirmed but WC Calls is unproven, execute Plan A WITHOUT the 1068114183 operation, which is a 4-mutation variant needing its own fingerprint.",
+  "WhatConverts must be sending a stable order_id so repeat uploads of the same lead do not stack inside WC Lead."
+ ],
+ "effect_on_smart_bidding": "Optimises toward qualified outcomes, which is the strongest possible signal. But volume collapses to roughly 1 conversion per week at current rates, far below the threshold any conversion-based strategy needs. Smart Bidding is NOT viable on this signal yet, and the account remains on Maximize Clicks regardless.",
+ "duplication_after": "None. WC Lead and WC Calls are separate surfaces (form versus call) and no tag action is counted alongside them.",
+ "plan_fingerprint": "EC6687D08385287E"
+}

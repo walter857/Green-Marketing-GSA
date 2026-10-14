@@ -1,0 +1,722 @@
+{
+  "targeting_setting": [
+    {
+      "campaign_id": "23484545411",
+      "name": "Hardscaping",
+      "target_restrictions": [
+        {
+          "dimension": "AUDIENCE",
+          "bid_only": true
+        }
+      ],
+      "asset_automation": [
+        {
+          "type": "TEXT_ASSET_AUTOMATION",
+          "status": "OPTED_OUT"
+        }
+      ],
+      "optimization_goals": []
+    },
+    {
+      "campaign_id": "23484806108",
+      "name": "Patio",
+      "target_restrictions": [
+        {
+          "dimension": "AUDIENCE",
+          "bid_only": true
+        }
+      ],
+      "asset_automation": [
+        {
+          "type": "TEXT_ASSET_AUTOMATION",
+          "status": "OPTED_OUT"
+        }
+      ],
+      "optimization_goals": []
+    },
+    {
+      "campaign_id": "23489296528",
+      "name": "Pavers",
+      "target_restrictions": [
+        {
+          "dimension": "AUDIENCE",
+          "bid_only": true
+        }
+      ],
+      "asset_automation": [
+        {
+          "type": "TEXT_ASSET_AUTOMATION",
+          "status": "OPTED_OUT"
+        }
+      ],
+      "optimization_goals": []
+    },
+    {
+      "campaign_id": "23489591905",
+      "name": "Retaining Walls",
+      "target_restrictions": [
+        {
+          "dimension": "AUDIENCE",
+          "bid_only": true
+        }
+      ],
+      "asset_automation": [
+        {
+          "type": "TEXT_ASSET_AUTOMATION",
+          "status": "OPTED_OUT"
+        }
+      ],
+      "optimization_goals": []
+    },
+    {
+      "campaign_id": "23914857298",
+      "name": "Paver Sealing",
+      "target_restrictions": [
+        {
+          "dimension": "AUDIENCE",
+          "bid_only": true
+        }
+      ],
+      "asset_automation": [
+        {
+          "type": "FINAL_URL_EXPANSION_TEXT_ASSET_AUTOMATION",
+          "status": "OPTED_OUT"
+        },
+        {
+          "type": "TEXT_ASSET_AUTOMATION",
+          "status": "OPTED_OUT"
+        }
+      ],
+      "optimization_goals": []
+    },
+    {
+      "campaign_id": "23914859260",
+      "name": "Power Washing",
+      "target_restrictions": [
+        {
+          "dimension": "AUDIENCE",
+          "bid_only": true
+        }
+      ],
+      "asset_automation": [
+        {
+          "type": "FINAL_URL_EXPANSION_TEXT_ASSET_AUTOMATION",
+          "status": "OPTED_OUT"
+        },
+        {
+          "type": "TEXT_ASSET_AUTOMATION",
+          "status": "OPTED_OUT"
+        }
+      ],
+      "optimization_goals": []
+    }
+  ],
+  "audience_criteria": [
+    {
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "criterion_id": "53679711743",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80241",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "criterion_id": "53679711743",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80241",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "criterion_id": "53679711743",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80241",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "criterion_id": "53679711743",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80241",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "criterion_id": "53679711743",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80241",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "criterion_id": "53679711743",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80241",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "criterion_id": "70259810614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80483",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "criterion_id": "70259810614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80483",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "criterion_id": "70259810614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80483",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "criterion_id": "70259810614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80483",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "criterion_id": "70259810614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80483",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "criterion_id": "70259810614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80483",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "criterion_id": "70339538614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80494",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "criterion_id": "70339538614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80494",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "criterion_id": "70339538614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80494",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "criterion_id": "70339538614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80494",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "criterion_id": "70339538614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80494",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "criterion_id": "70339538614",
+      "type": "USER_INTEREST",
+      "user_interest": "customers/2429758629/userInterests/80494",
+      "user_list": "",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "criterion_id": "2468245242165",
+      "type": "USER_LIST",
+      "user_interest": "",
+      "user_list": "customers/2429758629/userLists/9297065044",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "criterion_id": "2468245242165",
+      "type": "USER_LIST",
+      "user_interest": "",
+      "user_list": "customers/2429758629/userLists/9297065044",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "criterion_id": "2468245242165",
+      "type": "USER_LIST",
+      "user_interest": "",
+      "user_list": "customers/2429758629/userLists/9297065044",
+      "bid_modifier": null
+    },
+    {
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "criterion_id": "2468245242165",
+      "type": "USER_LIST",
+      "user_interest": "",
+      "user_list": "customers/2429758629/userLists/9297065044",
+      "bid_modifier": null
+    }
+  ],
+  "account_budget": [
+    {
+      "status": "APPROVED",
+      "approved_limit_type": "INFINITE",
+      "adjusted_limit_type": "INFINITE",
+      "approved_limit": null,
+      "amount_served": 10294.74
+    }
+  ],
+  "billing_setup": [
+    {
+      "id": "8158363744",
+      "status": "APPROVED"
+    }
+  ],
+  "conversion_recency": [
+    {
+      "date": "2026-08-31",
+      "action": "Local actions - Directions",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-29",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-29",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-28",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-08-26",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-26",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-26",
+      "action": "Local actions - Directions",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-25",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-22",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 6.0
+    },
+    {
+      "date": "2026-08-22",
+      "action": "WC Leads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-22",
+      "action": "Local actions - Directions",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-22",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 14.0
+    },
+    {
+      "date": "2026-08-21",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-08-20",
+      "action": "Calls from ads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-17",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-16",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-08-15",
+      "action": "Local actions - Directions",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-15",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-13",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-12",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-08",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-08",
+      "action": "WC Leads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-07",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-06",
+      "action": "Calls from ads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-03",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-03",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-08-03",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-02",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-01",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-01",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-31",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-07-30",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-30",
+      "action": "Clicks to call",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-29",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-28",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-07-28",
+      "action": "Local actions - Directions",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-28",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 8.0
+    },
+    {
+      "date": "2026-07-27",
+      "action": "Calls from ads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-27",
+      "action": "Calls from ads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-27",
+      "action": "WC Leads",
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-07-26",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-25",
+      "action": "Local actions - Directions",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-24",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-07-24",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-23",
+      "action": "Local actions - Directions",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-21",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-20",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 8.0
+    },
+    {
+      "date": "2026-07-20",
+      "action": "Calls from ads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-20",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-19",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-19",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-07-16",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 14.0
+    },
+    {
+      "date": "2026-07-16",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action": "Softwind Submit lead form",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action": "WC Leads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action": "Softwind Submit lead form",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action": "WC Leads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-14",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-14",
+      "action": "Local actions - Directions",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-14",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-11",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-07-10",
+      "action": "Calls from ads",
+      "all_conversions": 0.998
+    },
+    {
+      "date": "2026-07-10",
+      "action": "Clicks to call",
+      "all_conversions": 5.0
+    },
+    {
+      "date": "2026-07-10",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 6.0
+    },
+    {
+      "date": "2026-07-10",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-09",
+      "action": "Calls from ads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-09",
+      "action": "Local actions - Directions",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-09",
+      "action": "Local actions - Website visits",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-08",
+      "action": "Calls from ads",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-08",
+      "action": "Clicks to call",
+      "all_conversions": 12.0
+    },
+    {
+      "date": "2026-07-08",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 16.0
+    },
+    {
+      "date": "2026-07-07",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 5.0
+    },
+    {
+      "date": "2026-07-06",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 15.0
+    },
+    {
+      "date": "2026-07-04",
+      "action": "Local actions - Directions",
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-01",
+      "action": "Calls from ads",
+      "all_conversions": 1.002
+    },
+    {
+      "date": "2026-07-01",
+      "action": "Local actions - Other engagements",
+      "all_conversions": 1.0
+    }
+  ],
+  "errors": []
+}

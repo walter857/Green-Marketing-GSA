@@ -1,0 +1,119 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-21b",
+ "plan_name": "AMB-0921B-COOLPAUSE-1",
+ "approval_class": "pause-existing-delivery",
+ "runs_only_after": "Heating enablement is complete AND the heating campaigns are proven able to serve. If heating enablement fails, this plan does NOT run.",
+ "nothing_deleted": true,
+ "commercial_preserved": {
+  "campaign_id": "24132507747",
+  "ad_group_id": "199748801029",
+  "note": "SKAG | Commercial HVAC Installation stays ENABLED. Its campaign stays ENABLED at the $20 holding budget. Only the residential ad group is paused."
+ },
+ "gas_boiler_preserved": {
+  "campaign_id": "24132507744",
+  "note": "Gas Boiler Repair is HEATING and becomes Campaign 4. Never paused."
+ },
+ "inventory": {
+  "24132507741": {
+   "campaign": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "level": "CAMPAIGN",
+   "why": "Contains only residential cooling (SKAG | AC Repair Near Me). Safe to pause at campaign level.",
+   "ad_groups": {
+    "202339087834": "SKAG | AC Repair Near Me"
+   },
+   "rollback": {
+    "campaign_status": "ENABLED",
+    "daily": 45.0,
+    "budget_id": "15787409435",
+    "ceiling": 25.0
+   }
+  },
+  "24132507750": {
+   "campaign": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+   "level": "CAMPAIGN",
+   "why": "Contains only residential cooling (SKAG | HVAC Repair Near Me).",
+   "ad_groups": {
+    "202339087674": "SKAG | HVAC Repair Near Me"
+   },
+   "rollback": {
+    "campaign_status": "ENABLED",
+    "daily": 70.0,
+    "budget_id": "15787409444",
+    "ceiling": 25.0
+   }
+  },
+  "24132507753": {
+   "campaign": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "level": "CAMPAIGN",
+   "why": "Contains only residential cooling (SKAG | HVAC Replacement Near Me).",
+   "ad_groups": {
+    "200159223798": "SKAG | HVAC Replacement Near Me"
+   },
+   "rollback": {
+    "campaign_status": "ENABLED",
+    "daily": 15.0,
+    "budget_id": "15787409447",
+    "ceiling": 30.0
+   }
+  },
+  "24132507747": {
+   "campaign": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "level": "AD_GROUP",
+   "why": "DO NOT pause this campaign. It carries SKAG | Commercial HVAC Installation 199748801029, which is an approved non-cooling service with a live landing page. Only the residential ad group is paused; the campaign stays ENABLED at the $20 commercial holding budget.",
+   "ad_groups": {
+    "202339087634": "SKAG | HVAC Installation"
+   },
+   "preserve": {
+    "199748801029": "SKAG | Commercial HVAC Installation - LEAVE ENABLED"
+   },
+   "rollback": {
+    "campaign_status": "ENABLED",
+    "daily": 95.0,
+    "budget_id": "15787409441",
+    "ceiling": 30.0,
+    "ad_group_202339087634_status": "ENABLED",
+    "enabled_ads": [
+     "821319509197",
+     "821319509200"
+    ],
+    "keywords": [
+     "hvac installers near me PHRASE",
+     "hvac installers near me EXACT"
+    ]
+   }
+  }
+ },
+ "rollback": "Every original campaign status, budget, CPC ceiling, ad-group status, enabled ad ID and keyword is recorded in 'inventory'. Reversal is a status flip back to the recorded values; nothing is removed, so no resource has to be recreated.",
+ "operations": [
+  {
+   "op": "PAUSE_CAMPAIGN",
+   "campaign_id": "24132507741",
+   "campaign": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "why": "Contains only residential cooling (SKAG | AC Repair Near Me). Safe to pause at campaign level."
+  },
+  {
+   "op": "PAUSE_CAMPAIGN",
+   "campaign_id": "24132507750",
+   "campaign": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+   "why": "Contains only residential cooling (SKAG | HVAC Repair Near Me)."
+  },
+  {
+   "op": "PAUSE_CAMPAIGN",
+   "campaign_id": "24132507753",
+   "campaign": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "why": "Contains only residential cooling (SKAG | HVAC Replacement Near Me)."
+  },
+  {
+   "op": "PAUSE_AD_GROUP",
+   "campaign_id": "24132507747",
+   "ad_group_id": "202339087634",
+   "ad_group": "SKAG | HVAC Installation",
+   "why": "DO NOT pause this campaign. It carries SKAG | Commercial HVAC Installation 199748801029, which is an approved non-cooling service with a live landing page. Only the residential ad group is paused; the campaign stays ENABLED at the $20 commercial holding budget."
+  }
+ ],
+ "operation_count": 4,
+ "fingerprint": "38471B0B0971"
+}

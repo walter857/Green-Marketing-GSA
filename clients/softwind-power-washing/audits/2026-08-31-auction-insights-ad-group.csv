@@ -1,0 +1,2 @@
+domain,impression_share_pct,overlap_rate_pct,position_above_rate_pct,top_of_page_rate_pct,abs_top_rate_pct,outranking_share_pct,status
+INSUFFICIENT AUCTION DATA - API ACCESS DENIED,,,,,,,"metrics.auction_insight_* returned PERMISSION_DENIED: ""The developer doesn't have access to metrics: 'auction_insight_search_impression_share'"". The Green Marketing developer token is Basic access. Auction Insights must be exported from the Google Ads UI by a signed-in user. No value has been invented."

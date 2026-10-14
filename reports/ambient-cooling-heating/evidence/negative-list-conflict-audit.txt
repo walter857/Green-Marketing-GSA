@@ -1,0 +1,120 @@
+==============================================================================================================
+EXISTING NEGATIVE LIST AUDIT  -  conflict-tested against the 5 approved keywords
+==============================================================================================================
+
+--- 'General List'  id=11813144900 members=1111 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 1 campaign(s); attached to any NEW campaign: False
+    VERDICT: DO NOT REUSE
+    blocking negatives: 6  |  approved/BOFU queries blocked: 22
+        BLOCKS: negative 'repair' [BROAD]  ->  ['ac repair', 'ac repair company near me', 'ac repair cost', 'ac repair near me', 'ac repair quote', 'ac repair severn md'] ...
+        BLOCKS: negative 'cost' [BROAD]  ->  ['ac repair cost', 'hvac replacement cost']
+        BLOCKS: negative 'emergency' [BROAD]  ->  ['emergency ac repair near me']
+        BLOCKS: negative 'best' [BROAD]  ->  ['best hvac repair near me']
+        BLOCKS: negative 'hire' [BROAD]  ->  ['hire hvac contractor']
+        BLOCKS: negative 'Repair' [BROAD]  ->  ['ac repair', 'ac repair company near me', 'ac repair cost', 'ac repair near me', 'ac repair quote', 'ac repair severn md'] ...
+        risky single-word negatives: [('Repair', 'BROAD'), ('repair', 'BROAD')]
+        POLICY-PROTECTED terms present as negatives: [('best', 'BROAD'), ('cost', 'BROAD'), ('emergency', 'BROAD'), ('hire', 'BROAD'), ('price', 'BROAD'), ('pricing', 'BROAD')]
+
+--- 'General List - Irrigation Repair'  id=12178646912 members=1107 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 0 campaign(s); attached to any NEW campaign: False
+    VERDICT: DO NOT REUSE
+    blocking negatives: 4  |  approved/BOFU queries blocked: 5
+        BLOCKS: negative 'cost' [BROAD]  ->  ['ac repair cost', 'hvac replacement cost']
+        BLOCKS: negative 'emergency' [BROAD]  ->  ['emergency ac repair near me']
+        BLOCKS: negative 'best' [BROAD]  ->  ['best hvac repair near me']
+        BLOCKS: negative 'hire' [BROAD]  ->  ['hire hvac contractor']
+        POLICY-PROTECTED terms present as negatives: [('best', 'BROAD'), ('cost', 'BROAD'), ('emergency', 'BROAD'), ('hire', 'BROAD'), ('price', 'BROAD'), ('pricing', 'BROAD')]
+
+--- 'Ambient - Neg Kwd List'  id=12091293463 members=968 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 18 campaign(s); attached to any NEW campaign: False
+    VERDICT: DO NOT REUSE
+    blocking negatives: 2  |  approved/BOFU queries blocked: 3
+        BLOCKS: negative 'quote' [BROAD]  ->  ['ac repair quote', 'hvac installation quote']
+        BLOCKS: negative 'severn' [BROAD]  ->  ['ac repair severn md']
+        risky single-word negatives: [('furnace', 'EXACT'), ('hvac', 'EXACT'), ('quote', 'BROAD')]
+        POLICY-PROTECTED terms present as negatives: [('price', 'BROAD'), ('quote', 'BROAD')]
+
+--- 'General'  id=10720232972 members=1148 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 11 campaign(s); attached to any NEW campaign: False
+    VERDICT: DO NOT REUSE
+    blocking negatives: 1  |  approved/BOFU queries blocked: 1
+        BLOCKS: negative 'hire' [PHRASE]  ->  ['hire hvac contractor']
+        POLICY-PROTECTED terms present as negatives: [('hire', 'PHRASE'), ('price', 'PHRASE'), ('pricing', 'PHRASE')]
+
+--- 'Names'  id=10667314427 members=436 status=REMOVED type=NEGATIVE_KEYWORDS
+    attached to 0 campaign(s); attached to any NEW campaign: False
+    VERDICT: DO NOT REUSE (list is REMOVED)
+    blocking negatives: 1  |  approved/BOFU queries blocked: 1
+        BLOCKS: negative 'system' [PHRASE]  ->  ['hvac system replacement near me']
+        risky single-word negatives: [('system', 'PHRASE')]
+
+--- 'account-level negative keywords list'  id=11252984411 members=59 status=ENABLED type=ACCOUNT_LEVEL_NEGATIVE_KEYWORDS
+    attached to 0 campaign(s); attached to any NEW campaign: False
+    VERDICT: N/A (ACCOUNT_LEVEL_NEGATIVE_KEYWORDS)
+    blocking negatives: 1  |  approved/BOFU queries blocked: 1
+        BLOCKS: negative 'commercial' [BROAD]  ->  ['commercial hvac repair']
+        risky single-word negatives: [('commercial', 'BROAD')]
+
+--- 'Christmas Lights Install'  id=11807294063 members=424 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 0 campaign(s); attached to any NEW campaign: False
+    VERDICT: SAFE TO REUSE
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+--- 'Exclusion Brand List'  id=11646241995 members=24 status=ENABLED type=BRANDS
+    attached to 0 campaign(s); attached to any NEW campaign: False
+    VERDICT: N/A (BRANDS)
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+--- 'GM | Broad Poison'  id=12021721179 members=5 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 9 campaign(s); attached to any NEW campaign: False
+    VERDICT: SAFE TO REUSE
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+--- 'GM | Competitor Brands'  id=12025671131 members=17 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 9 campaign(s); attached to any NEW campaign: False
+    VERDICT: SAFE TO REUSE
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+--- 'GM | Competitor Name Tokens'  id=12022987128 members=17 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 9 campaign(s); attached to any NEW campaign: False
+    VERDICT: SAFE TO REUSE
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+--- 'GM | Phrase Blockers'  id=12021722439 members=6 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 9 campaign(s); attached to any NEW campaign: False
+    VERDICT: SAFE TO REUSE
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+--- 'Leaf Removal initial'  id=11811255121 members=386 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 0 campaign(s); attached to any NEW campaign: False
+    VERDICT: SAFE TO REUSE
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+--- 'Names List'  id=10664304544 members=486 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 11 campaign(s); attached to any NEW campaign: False
+    VERDICT: SAFE TO REUSE
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+--- 'Outdoor Kitchen'  id=11840890006 members=386 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 0 campaign(s); attached to any NEW campaign: False
+    VERDICT: SAFE TO REUSE
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+--- 'Paver'  id=11840874961 members=387 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 0 campaign(s); attached to any NEW campaign: False
+    VERDICT: SAFE TO REUSE
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+--- 'States List'  id=10664309518 members=48 status=ENABLED type=NEGATIVE_KEYWORDS
+    attached to 11 campaign(s); attached to any NEW campaign: False
+    VERDICT: SAFE TO REUSE
+    blocking negatives: 0  |  approved/BOFU queries blocked: 0
+
+==============================================================================================================
+SUMMARY
+==============================================================================================================
+SAFE TO REUSE        (10): ['Christmas Lights Install', 'GM | Broad Poison', 'GM | Competitor Brands', 'GM | Competitor Name Tokens', 'GM | Phrase Blockers', 'Leaf Removal initial', 'Names List', 'Outdoor Kitchen', 'Paver', 'States List']
+REUSE AFTER CLEANUP  (0): []
+DO NOT REUSE         (4): ['Ambient - Neg Kwd List', 'General', 'General List', 'General List - Irrigation Repair']
+
+Lists attached to any of the five NEW campaigns: NONE

@@ -1,0 +1,359 @@
+{
+ "generated_local": "2026-09-10T13:24:52.715152-04:00",
+ "window": [
+  "2026-08-14",
+  "2026-09-10"
+ ],
+ "profile": "105803",
+ "reachable": true,
+ "total_leads": 101,
+ "api_fields": [
+  "account",
+  "account_id",
+  "additional_fields",
+  "answer_status",
+  "browser",
+  "call_duration",
+  "call_duration_seconds",
+  "call_status",
+  "call_transcription",
+  "caller_city",
+  "caller_country",
+  "caller_name",
+  "caller_number",
+  "caller_state",
+  "caller_zip",
+  "city",
+  "contact_company_name",
+  "contact_email_address",
+  "contact_name",
+  "contact_phone_number",
+  "country",
+  "custom_fields",
+  "date_created",
+  "destination_number",
+  "device_make",
+  "device_type",
+  "duplicate",
+  "email_address",
+  "form_name",
+  "gclid",
+  "ip_address",
+  "landing_url",
+  "last_updated",
+  "lead_analysis",
+  "lead_id",
+  "lead_medium",
+  "lead_score",
+  "lead_source",
+  "lead_state",
+  "lead_status",
+  "lead_type",
+  "lead_url",
+  "line_type",
+  "mapped_fields",
+  "message",
+  "operating_system",
+  "phone_name",
+  "phone_number",
+  "play_recording",
+  "profile",
+  "profile_id",
+  "quotable",
+  "quote_value",
+  "recording",
+  "sales_value",
+  "spam",
+  "spotted_keywords",
+  "state",
+  "tracking_number",
+  "user_id",
+  "zip"
+ ],
+ "attribution_signals": {
+  "tracking_number": 95,
+  "NO click/UTM identifier at all": 89,
+  "utm_source": 5,
+  "gclid": 8,
+  "gbraid": 6
+ },
+ "buckets": {
+  "UNATTRIBUTED - no click id, no UTM": 89,
+  "TAGGED non-paid utm_source=GBP": 4,
+  "PAID SEARCH - joined to one of the five": 7,
+  "PAID SEARCH - gclid present but not resolved to a click": 1
+ },
+ "gclids_seen": 8,
+ "gclids_resolved": 7,
+ "unique_qualified_by_campaign": {
+  "HVAC Installation": 1,
+  "AC Repair": 3,
+  "HVAC Repair": 1
+ },
+ "cpql_by_regime": {
+  "UNCAPPED": {
+   "AC Repair": {
+    "cost": 3051.47,
+    "clicks": 28,
+    "uniq_ql": 3,
+    "cpql": 1017.16,
+    "limit": 150.0,
+    "verdict": "OVER"
+   },
+   "Gas Boiler Repair": {
+    "cost": 0.0,
+    "clicks": 0,
+    "uniq_ql": 0,
+    "cpql": null,
+    "limit": 250.0,
+    "verdict": "-"
+   },
+   "HVAC Installation": {
+    "cost": 2914.33,
+    "clicks": 112,
+    "uniq_ql": 1,
+    "cpql": 2914.33,
+    "limit": 280.0,
+    "verdict": "OVER"
+   },
+   "HVAC Repair": {
+    "cost": 1906.86,
+    "clicks": 27,
+    "uniq_ql": 1,
+    "cpql": 1906.86,
+    "limit": 250.0,
+    "verdict": "OVER"
+   },
+   "HVAC Replacement": {
+    "cost": 152.52,
+    "clicks": 5,
+    "uniq_ql": 0,
+    "cpql": null,
+    "limit": 280.0,
+    "verdict": "-"
+   }
+  },
+  "CAPPED": {
+   "AC Repair": {
+    "cost": 0.0,
+    "clicks": 0,
+    "uniq_ql": 0,
+    "cpql": null,
+    "limit": 150.0,
+    "verdict": "-"
+   },
+   "Gas Boiler Repair": {
+    "cost": 0.0,
+    "clicks": 0,
+    "uniq_ql": 0,
+    "cpql": null,
+    "limit": 250.0,
+    "verdict": "-"
+   },
+   "HVAC Installation": {
+    "cost": 58.63,
+    "clicks": 2,
+    "uniq_ql": 0,
+    "cpql": null,
+    "limit": 280.0,
+    "verdict": "-"
+   },
+   "HVAC Repair": {
+    "cost": 45.08,
+    "clicks": 2,
+    "uniq_ql": 0,
+    "cpql": null,
+    "limit": 250.0,
+    "verdict": "-"
+   },
+   "HVAC Replacement": {
+    "cost": 0.0,
+    "clicks": 0,
+    "uniq_ql": 0,
+    "cpql": null,
+    "limit": 280.0,
+    "verdict": "-"
+   }
+  }
+ },
+ "paid_five_rows": [
+  {
+   "lead_id": "7ceb270f6272295c",
+   "date": "2026-09-01",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "lead_source": "google",
+   "lead_medium": "cpc",
+   "lead_campaign": null,
+   "quotable": "Yes",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "tracking_number_present": false,
+   "url_paths": [
+    "/hvac-installation/"
+   ],
+   "url_hosts": [
+    "offer.ambientcoolingandheating.com"
+   ],
+   "bucket": "PAID SEARCH - joined to one of the five",
+   "campaign": "HVAC Installation",
+   "click_date": "2026-09-01",
+   "meets_60s_or_form": true,
+   "unique_qualified": true
+  },
+  {
+   "lead_id": "cc81d0037131c3f3",
+   "date": "2026-08-28",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "lead_source": "google",
+   "lead_medium": "cpc",
+   "lead_campaign": null,
+   "quotable": "No",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "tracking_number_present": false,
+   "url_paths": [
+    "/hvac-repair/"
+   ],
+   "url_hosts": [
+    "offer.ambientcoolingandheating.com"
+   ],
+   "bucket": "PAID SEARCH - joined to one of the five",
+   "campaign": "HVAC Repair",
+   "click_date": "2026-08-28",
+   "meets_60s_or_form": true,
+   "unique_qualified": false
+  },
+  {
+   "lead_id": "c726508db0bb0aec",
+   "date": "2026-08-25",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "lead_source": "google",
+   "lead_medium": "cpc",
+   "lead_campaign": null,
+   "quotable": "Yes",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "tracking_number_present": false,
+   "url_paths": [
+    "/ac-repair/"
+   ],
+   "url_hosts": [
+    "offer.ambientcoolingandheating.com"
+   ],
+   "bucket": "PAID SEARCH - joined to one of the five",
+   "campaign": "AC Repair",
+   "click_date": "2026-08-25",
+   "meets_60s_or_form": true,
+   "unique_qualified": true
+  },
+  {
+   "lead_id": "e3e6184927562e6f",
+   "date": "2026-08-22",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "lead_source": "google",
+   "lead_medium": "cpc",
+   "lead_campaign": null,
+   "quotable": "Yes",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "tracking_number_present": false,
+   "url_paths": [
+    "/ac-repair/"
+   ],
+   "url_hosts": [
+    "offer.ambientcoolingandheating.com"
+   ],
+   "bucket": "PAID SEARCH - joined to one of the five",
+   "campaign": "AC Repair",
+   "click_date": "2026-08-22",
+   "meets_60s_or_form": true,
+   "unique_qualified": true
+  },
+  {
+   "lead_id": "8b9c329aafa0f2e6",
+   "date": "2026-08-21",
+   "lead_type": "Phone Call",
+   "lead_status": "Unique",
+   "lead_source": "google",
+   "lead_medium": "cpc",
+   "lead_campaign": null,
+   "quotable": "No",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 57,
+   "tracking_number_present": true,
+   "url_paths": [
+    "/hvac-replacement/"
+   ],
+   "url_hosts": [
+    "offer.ambientcoolingandheating.com"
+   ],
+   "bucket": "PAID SEARCH - joined to one of the five",
+   "campaign": "HVAC Installation",
+   "click_date": "2026-08-21",
+   "meets_60s_or_form": false,
+   "unique_qualified": false
+  },
+  {
+   "lead_id": "f2fc7f7f765b29bb",
+   "date": "2026-08-21",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "lead_source": "google",
+   "lead_medium": "cpc",
+   "lead_campaign": null,
+   "quotable": "Yes",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "tracking_number_present": false,
+   "url_paths": [
+    "/ac-repair/"
+   ],
+   "url_hosts": [
+    "offer.ambientcoolingandheating.com"
+   ],
+   "bucket": "PAID SEARCH - joined to one of the five",
+   "campaign": "AC Repair",
+   "click_date": "2026-08-21",
+   "meets_60s_or_form": true,
+   "unique_qualified": true
+  },
+  {
+   "lead_id": "955aa07e33ffba8d",
+   "date": "2026-08-20",
+   "lead_type": "Web Form",
+   "lead_status": "Unique",
+   "lead_source": "google",
+   "lead_medium": "cpc",
+   "lead_campaign": null,
+   "quotable": "Yes",
+   "spam": false,
+   "duplicate": false,
+   "call_duration_seconds": 0,
+   "tracking_number_present": false,
+   "url_paths": [
+    "/hvac-repair/",
+    "/reviews/"
+   ],
+   "url_hosts": [
+    "ambientcoolingandheating.com",
+    "offer.ambientcoolingandheating.com"
+   ],
+   "bucket": "PAID SEARCH - joined to one of the five",
+   "campaign": "HVAC Repair",
+   "click_date": "2026-08-20",
+   "meets_60s_or_form": true,
+   "unique_qualified": true
+  }
+ ],
+ "pii_policy": "no name, number, email, address, IP, recording, transcript or message body is read into memory beyond the redaction filter, and none is written. URLs reduced to host+path+attribution params. lead_id and gclid stored only as 16-char SHA-256 prefixes."
+}

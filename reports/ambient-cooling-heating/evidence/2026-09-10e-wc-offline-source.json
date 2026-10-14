@@ -1,0 +1,61 @@
+{
+ "generated_local": "2026-09-10T15:44:13.487861-04:00",
+ "read_only": true,
+ "configuration_of_record": {
+  "profile": "Ambient Cooling & Heating",
+  "profile_id": "105803",
+  "tracking_number": "410-705-6354",
+  "tracking_number_name": "GSA Cooling Traffic",
+  "google_ads_call_asset": "407995613637",
+  "forwarding_destination": "410-761-0932 - never public",
+  "mixed_source_number": "410-914-1456 - never static on a paid page",
+  "routing_change": "NONE. This run is read-only.",
+  "correction": "GSA Cooling Traffic is the name of the TRACKING NUMBER, not a WhatConverts profile. My session-D report recorded it as a missing profile name; that was wrong. The profile is Ambient Cooling & Heating (105803)."
+ },
+ "paid_number_by_lead_type": {
+  "Phone Call": {
+   "n": 11,
+   "with_gclid": 0,
+   "with_landing_url": 3,
+   "sources": {
+    "google": 11
+   },
+   "mediums": {
+    "cpc": 8,
+    "organic": 3
+   }
+  },
+  "Text Message": {
+   "n": 2,
+   "with_gclid": 0,
+   "with_landing_url": 2,
+   "sources": {
+    "google": 2
+   },
+   "mediums": {
+    "organic": 2
+   }
+  }
+ },
+ "gclid_by_channel": {
+  "calls": {
+   "n": 363,
+   "with_gclid": 2
+  },
+  "forms": {
+   "n": 8,
+   "with_gclid": 6
+  }
+ },
+ "call_asset": {
+  "id": "407995613637",
+  "number": "(410)705-6354",
+  "reporting": "USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION"
+ },
+ "finding": {
+  "paid_number_calls": 13,
+  "paid_number_calls_with_gclid": 0,
+  "paid_number_forms": 0,
+  "paid_number_forms_with_gclid": 0
+ }
+}

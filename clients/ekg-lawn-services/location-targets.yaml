@@ -1,0 +1,127 @@
+# EKG Lawn Services - approved Google Ads location targets
+#
+# Authoritative record for the six user-approved positive location criteria on the
+# Aeration & Overseeding campaign. This file exists because the client.yaml template
+# carries a single `service_area.radius` object, which cannot represent five distinct
+# proximity radii. Nothing here overwrites or drops a target.
+#
+# SCOPE: these are Google Ads TARGETING criteria only. They do not authorize any
+# public-facing city, neighborhood, county, or regional wording on a landing page, in an
+# ad, or in a service-area claim. Any such wording must be verified separately against an
+# authoritative client source or explicit user confirmation.
+
+location_targets:
+  client_slug: ekg-lawn-services
+  campaign: "Aeration & Overseeding"
+  approved_by: user
+  approved_on: "2026-08-14"
+  total_positive_targets: 6
+
+  # Campaign-level geo setting. PRESENCE only: people in or regularly in the targeted
+  # locations. Presence-or-interest is explicitly not approved.
+  geo_target_type_setting:
+    positive_geo_target_type: PRESENCE
+    negative_geo_target_type: PRESENCE
+  exclude_all_other_countries: false
+  negative_locations: []
+
+  # Overlap among the proximity targets is intentional and approved. Only an exactly
+  # duplicated criterion may be removed, and only after a fresh read-only inventory.
+  # Verified 2026-08-14: all five coordinate pairs are distinct, so there is nothing to
+  # deduplicate.
+  overlap_policy: intentional_keep
+  exact_duplicates_found: 0
+
+  proximity_targets:
+    - id: prox-1
+      radius: 2.0
+      radius_units: MILES
+      latitude: 37.441924
+      longitude: -77.704566
+      latitude_micro_degrees: 37441924
+      longitude_micro_degrees: -77704566
+      country_code: US
+      note: ""
+    - id: prox-2
+      radius: 2.0
+      radius_units: MILES
+      latitude: 37.387932
+      longitude: -77.701819
+      latitude_micro_degrees: 37387932
+      longitude_micro_degrees: -77701819
+      country_code: US
+      note: ""
+    - id: prox-3
+      radius: 2.0
+      radius_units: MILES
+      latitude: 37.417932
+      longitude: -77.750571
+      latitude_micro_degrees: 37417932
+      longitude_micro_degrees: -77750571
+      country_code: US
+      note: ""
+    - id: prox-4
+      radius: 2.0
+      radius_units: MILES
+      latitude: 37.435133
+      longitude: -77.663776
+      latitude_micro_degrees: 37435133
+      longitude_micro_degrees: -77663776
+      country_code: US
+      note: "User-marked custom point."
+    - id: prox-5
+      radius: 2.0
+      radius_units: MILES
+      latitude: 37.450549
+      longitude: -77.751945
+      latitude_micro_degrees: 37450549
+      longitude_micro_degrees: -77751945
+      country_code: US
+      note: ""
+
+  postal_code_targets:
+    - id: postal-1
+      postal_code: "23114"
+      state_as_supplied: Virginia
+      country_as_supplied: United States
+      country_code: US
+      # RESOLVED 2026-08-14 by a fresh read-only geo-target-constant lookup against
+      # customer 7478932848, country_code=US. Exactly one suggestion returned and it was
+      # confirmed against the geo_target_constant resource. Estimated reach 90,000.
+      # The canonical name matches the supplied string exactly.
+      geo_target_constant_resource_name: "geoTargetConstants/9008421"
+      geo_target_constant_id: 9008421
+      canonical_name: "23114,Virginia,United States"
+      resolved_country_code: "US"
+      target_type: "Postal Code"
+      status: "ENABLED"
+      targetable: true
+      lookup_status: RESOLVED
+      lookup_date: "2026-08-14"
+      lookup_rule: >-
+        Stop if the lookup returns zero matches, more than one match, a non-targetable
+        constant, or a country other than the United States.
+
+  # Exact strings as supplied in the assignment, preserved verbatim for traceability
+  # against work_order.inputs.service_area.
+  as_supplied:
+    - "2.0|mi|37.441924,-77.704566"
+    - "23114, Virginia, United States"
+    - "2.0|mi|37.387932,-77.701819"
+    - "2.0|mi|37.417932,-77.750571"
+    - "2.0|mi|37.435133,-77.663776"
+    - "2.0|mi|37.450549,-77.751945"
+
+  # Conversion applied: degrees -> micro degrees (x 1,000,000). Every supplied coordinate
+  # carries exactly six decimal places, so the conversion is exact with no rounding.
+  normalization_note: >-
+    Radii remain 2.0 MILES. They were not converted to kilometers, enlarged, merged, or
+    replaced with city, county, state, or DMA targets.
+
+  api_mapping:
+    proximity: >-
+      campaign_criterion.proximity with geo_point.latitude_in_micro_degrees,
+      geo_point.longitude_in_micro_degrees, radius, radius_units=MILES
+    postal_code: campaign_criterion.location.geo_target_constant
+    presence: >-
+      campaign.geo_target_type_setting.positive_geo_target_type=PRESENCE

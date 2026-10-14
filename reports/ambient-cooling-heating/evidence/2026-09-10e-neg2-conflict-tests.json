@@ -1,0 +1,182 @@
+{
+ "generated_local": "2026-09-10T15:48:01.803330-04:00",
+ "blocked_and_reachable": {
+  "commercial hvac installation for a training facility": [
+   "training"
+  ]
+ },
+ "blocked_but_unreachable": {
+  "hvac installation for a training facility": [
+   "training"
+  ]
+ },
+ "residual_risk": {
+  "commercial hvac installation for a training facility": [
+   "training"
+  ]
+ },
+ "preserved_by_holding": {
+  "commercial hvac installation for my rental building": [
+   "rental"
+  ],
+  "commercial hvac installation for schools": [
+   "schools"
+  ]
+ },
+ "existing_duplicates": {
+  "diy": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12091293463",
+    "12178646912"
+   ]
+  },
+  "job": {
+   "campaign": [
+    "PHRASE"
+   ],
+   "shared_set": [
+    "11813144900",
+    "12091293463",
+    "12178646912"
+   ]
+  },
+  "jobs": {
+   "campaign": [
+    "PHRASE"
+   ],
+   "shared_set": [
+    "11813144900",
+    "12091293463",
+    "12178646912"
+   ]
+  },
+  "career": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12091293463",
+    "12178646912"
+   ]
+  },
+  "careers": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12021721179",
+    "12178646912"
+   ]
+  },
+  "salary": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12178646912"
+   ]
+  },
+  "salaries": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12178646912"
+   ]
+  },
+  "training": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12091293463",
+    "12178646912"
+   ]
+  },
+  "course": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12091293463",
+    "12178646912"
+   ]
+  },
+  "courses": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12178646912"
+   ]
+  },
+  "parts": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12091293463",
+    "12178646912"
+   ]
+  },
+  "used": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12178646912"
+   ]
+  },
+  "wholesale": {
+   "shared_set": [
+    "10720232972",
+    "11813144900",
+    "12091293463",
+    "12178646912"
+   ]
+  },
+  "supplier": {
+   "campaign": [
+    "PHRASE"
+   ],
+   "shared_set": [
+    "11813144900",
+    "12091293463",
+    "12178646912"
+   ]
+  },
+  "supply": {
+   "shared_set": [
+    "10664304544",
+    "10667314427",
+    "11813144900",
+    "12091293463",
+    "12178646912"
+   ]
+  }
+ },
+ "plan": {
+  "name": "AMB-0910-COMM-NEG-2",
+  "fingerprint": "A9C9BCBDDD74",
+  "ops": 18,
+  "ship": [
+   "residential",
+   "homeowner",
+   "house",
+   "diy",
+   "job",
+   "jobs",
+   "career",
+   "careers",
+   "salary",
+   "salaries",
+   "training",
+   "course",
+   "courses",
+   "parts",
+   "used",
+   "wholesale",
+   "supplier",
+   "supply"
+  ],
+  "hold": [
+   "school",
+   "schools",
+   "rent",
+   "rental"
+  ]
+ }
+}

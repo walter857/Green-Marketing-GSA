@@ -1,0 +1,13 @@
+{
+ "when": "2026-09-18T00:22:52.454734-04:00",
+ "validate_only": true,
+ "external_writes": 0,
+ "checks": {
+  "budget_preconditions": "OK",
+  "budget_validate_only": "VALIDATED_OK (5)",
+  "budget_math": "PASS",
+  "conversion_preconditions": "OK",
+  "conversion_validate_only": "VALIDATED_OK (2)",
+  "survivors": "PASS"
+ }
+}

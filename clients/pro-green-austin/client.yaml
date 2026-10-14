@@ -1,0 +1,191 @@
+# Pro Green Landscape Solutions - Austin
+# Confirmed identity and scope for the read-only full-account audit.
+#
+# Rules for this file:
+#   - Nothing here is invented. Unverified values stay null or empty.
+#   - Austin facts only. Dallas (8735782888) and Houston (1556242048) facts are
+#     never copied into this profile.
+#   - google_ads.* values below were confirmed by a fresh read-only API read on
+#     2026-08-18, not from a browser URL or another client file.
+
+client:
+  slug: pro-green-austin
+  business_name: Pro Green Landscape Solutions
+  vertical: hardscaping
+  primary_service: outdoor design & build
+  google_ads:
+    child_customer_id: "7380491929"
+    exact_child_account_name: Pro Green - Austin - Live
+    # Verified read-only 2026-08-18: customer_client level 0 manager over this
+    # child is 3373711342 'Green Marketing'. This is the MCC, never a child ID.
+    manager_customer_id: "3373711342"
+    must_contain_live_marker: true
+    # Observed from the API, not assumed. NOTE: the account reports Eastern time
+    # while the served market is Austin (America/Chicago). Every Google Ads
+    # report boundary and ad schedule below is therefore in America/New_York.
+    currency: USD
+    timezone: America/New_York
+    market_timezone: America/Chicago
+    account_timezone_matches_market: false
+  website:
+    primary_url: https://progreenlandscapesolutions.com/
+    landing_page_base_url: https://progreenlandscapesolutions.com/austin/
+    # Dynamic number insertion is active (WhatConverts). Three different numbers were
+    # observed in a real browser on 2026-08-18 across two page loads of the same URL:
+    #   offeraustin.* landing pages : (512) 890-2716  -- matches the Google Ads call asset
+    #   /austin/ desktop load       : (512) 277-9435
+    #   /austin/ mobile load        : (512) 559-1315
+    # These are legitimate tracking swaps from a pool, not a market error. Do not
+    # standardise them. The client's true published number is not yet verified.
+    phone_display: ""
+    phone_e164: ""
+    dynamic_number_insertion: true
+    dynamic_number_vendor: WhatConverts
+    numbers_observed_2026_08_18:
+      - "(512) 890-2716"
+      - "(512) 277-9435"
+      - "(512) 559-1315"
+    landing_page_hosts:
+      - offeraustin.progreenlandscapesolutions.com
+      - progreenlandscapesolutions.com
+  offer:
+    # Verified on 2026-08-18 by reading https://progreenlandscapesolutions.com/austin/ in a
+    # real browser and enumerating its /austin/services/ links. Every theme the two live
+    # campaigns advertise is a real first-party Austin service.
+    services_in_scope:
+      - hardscaping
+      - patios
+      - pavers
+      - paver driveways
+      - walkways
+      - retaining walls
+      - outdoor living spaces
+      - fire pits
+      - pergolas
+      - landscape design
+      - landscape lighting
+      - artificial turf
+    # Verified first-party Austin design-and-build services the account does NOT advertise.
+    # Expansion candidates only; nothing has been added.
+    services_verified_but_not_advertised:
+      - outdoor kitchens
+      - concrete
+      - masonry
+      - deck construction
+    # Real Austin services that are outside this work order's exact service.
+    services_excluded:
+      - irrigation
+      - irrigation repair
+      - irrigation winterization
+      - sprinkler repair
+      - sod installation
+      - fertilizer and weed control
+      - lawn care
+    verified_usps: []
+    verified_offers:
+      # Present on every landing page read on 2026-08-18.
+      - free quote
+    unverified_claims_currently_serving:
+      - claim: "Over 20 Years Of Experience"
+        source: "Google auto-created account-level structured snippet (AUTOMATICALLY_CREATED)"
+        status: "NOT FOUND on the first-party Austin site. Needs client confirmation or removal."
+    average_job_revenue: null
+    gross_margin_pct: null
+    close_rate_pct: null
+    target_cpl: null
+    target_cpql: null
+    target_cac: null
+  service_area:
+    country_code: US
+    target_type: fixed-list-cities-and-postal-codes
+    geo_target_constant_ids: []
+    cities: []
+    postal_codes: []
+    radius:
+      latitude: null
+      longitude: null
+      distance: null
+      unit: MILES
+    exclusions: []
+    location_option: PRESENCE
+    # The approved 24-location set lives in location-targets.yaml so that city
+    # and postal targets keep separate resolution status.
+    manifest: clients/pro-green-austin/location-targets.yaml
+  schedule:
+    # Business answering hours are not verified. No ad-schedule change may be
+    # proposed as fact until they are.
+    timezone: ""
+    can_answer_after_hours: null
+    windows: []
+  conversions:
+    # Observed 2026-08-18. 16 conversion actions exist; 13 are ENABLED and 8 currently feed
+    # the Conversions column, across three overlapping form-lead and five overlapping
+    # call-lead definitions. See 07_conversion_and_tracking_audit.md.
+    primary:
+      - id: "7644242327"
+        name: WC leads
+        type: UPLOAD_CLICKS
+        note: "WhatConverts upload. The only form-lead source producing in the live window."
+      - id: "7644612703"
+        name: WC calls
+        type: UPLOAD_CALLS
+        note: "Configured but zero conversions all-time."
+      - id: "6566620547"
+        name: Calls from ads
+        type: AD_CALL
+        note: "60-second minimum. Produced 1 of the 3 conversions in the live window."
+      - id: "6885608055"
+        name: Progreen - Lp - Submit Lead Form
+        type: WEBPAGE
+        note: "196 all-time, zero in the live window despite all paid traffic landing there."
+      - id: "6885610317"
+        name: Progreen - Lp - Phone Call Leads
+        type: WEBSITE_CALL
+        note: "30-second minimum. 12 all-time, zero in the live window."
+    proposed_secondary:
+      - id: "6557277268"
+        name: GA Submit Form
+      - id: "6557280400"
+        name: GA Call Btn Click
+      - id: "7389543347"
+        name: Progreen Landscape Solutions - Austin (web) form_submission
+      - id: "7389543053"
+        name: Progreen Landscape Solutions - Austin (web) phone_call_click
+    secondary_already:
+      - Local actions - Website visits
+      - Local actions - Other engagements
+      - Local actions - Directions
+      - Local actions - Menu views
+      - Clicks to call
+    call_minimum_seconds: 60
+    crm_stage_mapping:
+      lead: ""
+      qualified: ""
+      sold: ""
+    offline_route: DATA_MANAGER_API
+  integrations:
+    crm: ""
+    call_tracking: WhatConverts
+    analytics: |
+      GA4 properties observed on 2026-08-18:
+        G-HL5EFB8XKJ  offeraustin.* landing pages only
+        G-MHX199EBNJ  both hosts
+        G-JDFF195TRG  cookie _ga_JDFF195TRG observed on the main site
+    tag_manager: |
+      GTM-54Q4TVXF  both hosts
+      GTM-PS42RNC   main site /austin/ only
+    google_ads_conversion_id: AW-11240766632
+    click_fraud_tool: |
+      ClickCease redirect configured at account level with ccpturl=offer.sehydroseed.com,
+      a domain belonging to a different business. No ClickCease script was found on any
+      of the 13 live destinations.
+    speed_to_lead: ""
+    review_url: ""
+    form_webhook_env_key: CRM_WEBHOOK_URL
+  permissions:
+    approvers:
+      - Green Marketing
+    allow_create_paused: false
+    allow_enable: false
+    allow_budget_changes: false
+    allow_deletions: false

@@ -1,0 +1,428 @@
+# PLAN-GA-BID-2 - FINAL INTERIM MAXIMIZE CLICKS CPC CONTROL
+#
+# STATUS: APPROVED AND EXECUTED 2026-09-02 23:59:24 -04:00. Readback 20/20 PASS.
+# Receipt: receipts/2026-09-02-plan-ga-bid-2-execution-receipt.md
+#
+# This plan supersedes the two unfingerprinted BID-1 drafts
+# (2026-09-02-plan-ga-bid-1-cpc-control.yaml and
+#  2026-09-02-plan-ga-bid-1-interim-cpc-control.yaml), both of which declined to commit
+# to a number because every CPC observation then available described the OLD structure.
+# The 2026-09-02 evidence below is sufficient to commit, so BID-2 commits.
+
+change_plan:
+  plan_id: PLAN-GA-BID-2
+  plan_title: Final interim Maximize Clicks CPC control
+  approval_type: BID
+  priority: P0
+  approval_status: APPROVED
+  execution_status: EXECUTED
+  fingerprint: 3F1AB2CCFBDA
+  canonical_sha256_full: 3f1ab2ccfbda5041d4af92168f01eae4ff14a4d096fe608747e795423e5dbe1e
+  approval_command: APPROVE PLAN-GA-BID-2 3F1AB2CCFBDA FOR 1521725229
+  payload_file: clients/softwind-power-washing/plans/2026-09-02-plan-ga-bid-2-payload.json
+  fingerprint_computed_twice: true
+  validate_only_result: PASS
+  supersedes:
+    - PLAN-GA-BID-1 (both unfingerprinted drafts, 2026-09-02)
+
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    formatted_child_customer_id: 152-172-5229
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  counts:
+    action_count: 2
+    object_count: 2
+    google_ads_mutation_count: 2
+    fields_changed_per_campaign: 1
+    campaigns_paused: 0
+    keywords_touched: 0
+    ads_touched: 0
+    budgets_touched: 0
+
+  # ------------------------------------------------------------------ decision
+  decision:
+    selected_maximum_cpc_usd: 18.00
+    applied_to: both campaigns
+    same_ceiling_on_both: true
+    same_ceiling_justification: >-
+      A fresh read of campaign_criterion proves both campaigns target an IDENTICAL
+      80-location positive geo set and an identical Connecticut exclusion, and both run
+      overlapping power/pressure washing keyword families. They compete in the same auction
+      pool, so a split ceiling would only advantage one campaign against the other.
+
+    candidate_rejected_14:
+      amount: 14.00
+      reason: >-
+        REJECTED ON FRESH EVIDENCE, not on preference. The localized Planner sweep across
+        the live service area returns a hard top-of-page-LOW cliff at $15.09 that gates five
+        of the eleven priced keyword families: pressure washing near me, house washing near
+        me, house power washing near me, house pressure washing near me and soft washing
+        near me. A $14.00 ceiling sits $1.09 below that cliff and would structurally
+        starve the House Washing and Soft Washing ad groups - two of the six ad groups
+        enabled by PLAN-GA-LAUNCH-3A the previous day - of top-of-page eligibility.
+        $15.00 fails for the same reason with only $0.09 of margin, which is not a
+        defensible engineering tolerance on an estimate.
+
+  # ------------------------------------------------------------------ evidence
+  evidence:
+    valid_billable_clicks:
+      window: 2026-08-01 to 2026-09-02
+      total_valid_clicks: 21
+      total_cost_usd: 678.47
+      invalid_clicks_campaign_24103511039: 94
+      invalid_click_rate_campaign_24103511039: 0.870
+      invalid_clicks_campaign_24145053510: 13
+      invalid_click_rate_campaign_24145053510: 0.650
+      note: >-
+        metrics.clicks is already net of invalidated clicks; credited clicks are reported
+        separately in metrics.invalid_clicks and are excluded from every CPC figure here.
+      all_valid_clicks:
+        min: 5.71
+        median: 29.57
+        average: 32.31
+        p75: 29.91
+        max: 82.22
+      by_campaign:
+        '24103511039':
+          clicks: 14
+          min: 5.71
+          median: 29.64
+          average: 33.04
+          p75: 29.91
+          max: 82.22
+        '24145053510':
+          clicks: 7
+          min: 22.11
+          median: 29.32
+          average: 30.85
+          p75: 29.57
+          max: 42.67
+      ceiling_era_split:
+        uncapped_era_before_2026_08_27:
+          clicks: 7
+          min: 5.71
+          median: 26.66
+          average: 36.20
+          max: 82.22
+        thirty_dollar_ceiling_era_from_2026_08_27:
+          clicks: 14
+          min: 23.20
+          median: 29.57
+          average: 30.36
+          p75: 29.91
+          max: 42.67
+        clean_post_ceiling_window_from_2026_08_28:
+          clicks: 8
+          observed_cpcs: [23.20, 29.04, 29.32, 29.50, 29.57, 29.57, 29.72, 29.90]
+          finding: >-
+            SEVEN OF EIGHT clicks priced between $29.04 and $29.90 against a $30.00 ceiling.
+            The clearing price is not being set by competition; it is being set by our own
+            ceiling. This is the single most important fact in the plan: Maximize Clicks
+            bids the ceiling into essentially every auction it enters, so the ceiling IS
+            the price. Lowering it to $18 should move the cluster to roughly $17.50, not
+            eliminate clicks.
+      by_final_ad_group:
+        Power Washing Near Me:        {clicks: 8, min: 26.66, median: 29.91, max: 82.22}
+        Power Washing Services Near Me: {clicks: 6, min: 22.13, median: 28.88, max: 29.90}
+        House Pressure Washing Estimate: {clicks: 4, min: 22.11, median: 31.64, max: 42.67}
+        Residential Pressure Washing Near Me: {clicks: 2, min: 29.32, median: 29.45, max: 29.57}
+        Power Washing West Islip:     {clicks: 1, min: 5.71, median: 5.71, max: 5.71}
+
+    impression_share:
+      '24103511039': {search_is: 0.541, lost_to_rank: 0.430, lost_to_budget: 0.029}
+      '24145053510': {search_is: 0.689, lost_to_rank: 0.244, lost_to_budget: 0.067}
+      reading: >-
+        Budget is NOT the binding constraint on either campaign - only 2.9% and 6.7% of
+        impression share is lost to budget. Rank is the constraint. That is the principal
+        risk a lower ceiling carries, and the reason $10 and $12 are rejected outright.
+
+    quality_score:
+      keywords_with_a_score: 6
+      of_enabled_keywords: 240
+      scores: {5: 2, 2: 4}
+      landing_page_experience: {AVERAGE: 2, BELOW_AVERAGE: 4}
+      expected_ctr: {BELOW_AVERAGE: 6}
+      ad_relevance: {ABOVE_AVERAGE: 2, AVERAGE: 4}
+      reading: >-
+        Ad Rank is bid x Quality Score. Expected CTR is BELOW_AVERAGE on every scored
+        keyword and landing-page experience is BELOW_AVERAGE on four of six. The account is
+        currently buying rank with money because it cannot buy it with quality. The durable
+        fix is the landing-page package now in Drive, not the bid. Until those pages ship,
+        cutting the ceiling too far converts a rank problem into a no-impressions problem.
+
+    keyword_planner:
+      method: >-
+        GenerateKeywordHistoricalMetrics over the 19 owned keyword texts in the six rebuilt
+        ad groups. The Planner caps geo_target_constants at 10 per request, so the live
+        80-location union was swept in batches of 10; five of eight batches returned before
+        the Planner quota was exhausted, covering roughly 50 of the 80 targeted locations.
+        Volume buckets were deduplicated before any demand was summed.
+      bucket_dedupe:
+        raw_summed_volume_would_have_been: 530
+        deduped_bucket_volume: 440
+        note: >-
+          Nine of nineteen texts share a volume bucket with another text. Summing raw
+          Planner rows overstates demand; the recorded lesson is applied here.
+      priced_texts: 11
+      unpriced_texts: 8
+      top_of_page_low_cliff_usd: 15.09
+      per_keyword:
+        power washing:                        {volume: 720, top_low: 0.61, top_high: 15.09}
+        pressure washing:                     {volume: 390, top_low: 0.50, top_high: 13.92}
+        power washing company near me:        {volume: 260, top_low: 12.70, top_high: 33.40}
+        power washing near me:                {volume: 260, top_low: 12.70, top_high: 33.40}
+        power washing service:                {volume: 140, top_low: 13.68, top_high: 31.96}
+        pressure washing near me:             {volume: 90, top_low: 15.09, top_high: 31.95}
+        house washing near me:                {volume: 50, top_low: 15.09, top_high: 32.09}
+        power washing services near me:       {volume: 30, top_low: 13.90, top_high: 28.70}
+        house power washing near me:          {volume: 20, top_low: 15.09, top_high: 34.11}
+        house pressure washing near me:       {volume: 20, top_low: 15.09, top_high: 34.11}
+        soft washing near me:                 {volume: 10, top_low: 15.09, top_high: 41.58}
+
+  # ------------------------------------------------------- ceiling comparison
+  ceiling_comparison:
+    basis: >-
+      "TOPlow covered" is the count of priced keyword texts whose top-of-page LOW estimate
+      is at or below the ceiling - the minimum price to be eligible for top of page at all.
+      "TOPhigh covered" is the count whose top-of-page HIGH estimate is at or below the
+      ceiling - the price to hold top of page reliably. Priced demand is monthly searches
+      on the TOPhigh-covered texts.
+    options:
+      - ceiling: 10.00
+        top_low_covered: 2 of 11
+        top_high_covered: 0 of 11
+        priced_demand_share: 0%
+        families_above_ceiling: >-
+          every near-me family plus power washing service; only the two head terms
+          (power washing, pressure washing) remain reachable
+        qualified_click_capacity_per_day: 8.26 theoretical at full budget
+        daily_spend_capacity: $82.61 theoretical, unreachable in practice
+        risk_poor_position: SEVERE - not top-of-page eligible on any priced family
+        risk_low_ctr: SEVERE - position collapse compounds an already BELOW_AVERAGE CTR
+        risk_underspend: SEVERE - cannot approach $2,500/month
+        risk_overpay: none
+        verdict: REJECTED - materially excludes important final keyword demand
+      - ceiling: 12.00
+        top_low_covered: 2 of 11
+        top_high_covered: 0 of 11
+        priced_demand_share: 0%
+        families_above_ceiling: same as $10
+        qualified_click_capacity_per_day: 6.88 theoretical
+        daily_spend_capacity: $82.61 theoretical, unreachable in practice
+        risk_poor_position: SEVERE
+        risk_low_ctr: SEVERE
+        risk_underspend: SEVERE
+        risk_overpay: none
+        verdict: REJECTED - buys nothing $10 does not, still below every near-me TOPlow
+      - ceiling: 14.00
+        top_low_covered: 6 of 11
+        top_high_covered: 1 of 11
+        priced_demand_share: 20%
+        families_above_ceiling: >-
+          pressure washing near me, house washing near me, house power washing near me,
+          house pressure washing near me, soft washing near me
+        qualified_click_capacity_per_day: 5.90 theoretical
+        daily_spend_capacity: $82.61 theoretical
+        risk_poor_position: HIGH - sits $1.09 below the $15.09 TOPlow cliff
+        risk_low_ctr: HIGH
+        risk_underspend: MODERATE
+        risk_overpay: none
+        verdict: >-
+          REJECTED - would structurally starve the House Washing and Soft Washing ad groups
+          enabled one day earlier by PLAN-GA-LAUNCH-3A
+      - ceiling: 15.00
+        top_low_covered: 6 of 11
+        top_high_covered: 1 of 11
+        priced_demand_share: 20%
+        families_above_ceiling: identical to $14.00
+        qualified_click_capacity_per_day: 5.51 theoretical
+        daily_spend_capacity: $82.61 theoretical
+        risk_poor_position: HIGH - clears nothing $14 does not; $0.09 short of the cliff
+        risk_low_ctr: HIGH
+        risk_underspend: MODERATE
+        risk_overpay: none
+        verdict: REJECTED - a $0.09 margin on an estimate is not an engineering tolerance
+      - ceiling: 18.00
+        top_low_covered: 11 of 11
+        top_high_covered: 2 of 11
+        priced_demand_share: 56%
+        families_above_ceiling: >-
+          the near-me families remain above TOPhigh, so they will serve at the lower end of
+          top-of-page rather than holding it - acceptable, and identical in kind to $30
+        qualified_click_capacity_per_day: 4.59 theoretical at full budget
+        daily_spend_capacity: $82.61/day = $2,511/month
+        risk_poor_position: MODERATE - eligible everywhere, dominant nowhere
+        risk_low_ctr: MODERATE
+        risk_underspend: MODERATE - depends on demand, not on the ceiling
+        risk_overpay: LOW - 40% below the current clearing price
+        verdict: SELECTED
+      - ceiling: 30.00
+        top_low_covered: 11 of 11
+        top_high_covered: 3 of 11
+        priced_demand_share: 57%
+        families_above_ceiling: >-
+          house power washing near me, house pressure washing near me, soft washing near me
+        qualified_click_capacity_per_day: 2.75 theoretical at full budget
+        daily_spend_capacity: $82.61/day but only ~84 clicks/month
+        risk_poor_position: LOW
+        risk_low_ctr: LOW
+        risk_underspend: SEVERE - at ~$30/click the account cannot buy enough clicks
+        risk_overpay: SEVERE - proven, 7 of 8 recent clicks cleared at $29.04-$29.90
+        verdict: >-
+          REJECTED - $18 preserves 56% of priced demand against $30's 57% and covers the
+          same 11 of 11 TOPlow families, for 40% less per click
+
+  rationale_for_18: >-
+    $18.00 is the LOWEST ceiling in the comparison set that keeps all eleven priced BOFU
+    keyword families top-of-page eligible. It clears the $15.09 top-of-page-low cliff with
+    $2.91 of headroom, so it does not depend on an estimate being exact. Against the
+    current $30.00 it surrenders one percentage point of priced demand (56% vs 57%) while
+    cutting the clearing price by roughly 40%, which converts the same $82.61/day budget
+    from about 2.75 clicks into about 4.59 clicks. It directly answers the owner's stated
+    objection - that valid clicks cluster near $30 with no confirmed qualified lead - by
+    moving the cluster to roughly $17.50, without repeating the mistake of cutting so far
+    that the six ad groups enabled yesterday stop serving before the landing pages that
+    would fix their BELOW_AVERAGE quality signals have even shipped.
+
+  monthly_spend_risk:
+    monthly_objective_usd: 2500
+    combined_daily_budget_usd: 82.61
+    budget_derived_monthly_ceiling_usd: 2511
+    note: >-
+      Google may overdeliver on any single day but caps monthly charges at 30.4x the daily
+      budget, so this plan cannot cause spend above about $2,511/month. It does not change
+      either budget.
+    at_30_dollars: >-
+      Observed run rate 2026-08-05 to 2026-09-02 is $678.47 over 24 active days, about
+      $28/day, or roughly $850/month - about 34% of the objective. At ~$30/click the
+      objective is arithmetically unreachable.
+    at_18_dollars: >-
+      The same budget buys about 67% more clicks. Reaching $2,500 still depends on demand,
+      which the Planner puts at roughly 440 deduplicated local searches/month, so the
+      realistic expectation is $1,600-$2,500/month, not a guaranteed $2,500.
+    honest_limit: >-
+      No qualified-lead forecast is offered. Zero qualified Power Washing or Pressure
+      Washing leads have been confirmed and metrics.all_conversions is 0.0 on both
+      campaigns, so there is no conversion baseline from which a CPL or lead count could be
+      projected. Any such number would be invented.
+
+  search_rank_risk: >-
+    Lost impression share due to rank is already 43.0% and 24.4% at $30.00. A 40% ceiling
+    cut will increase both. $18.00 keeps every priced family above its top-of-page LOW
+    threshold, so the expected outcome is lower average position within top-of-page rather
+    than loss of eligibility. This must be measured at the 2026-09-03 checkpoint: if
+    lost-IS-to-rank rises above roughly 65% on either campaign without a compensating
+    increase in click volume, the ceiling should be revisited through a new plan.
+
+  # ------------------------------------------------------------------ actions
+  actions:
+    - id: BID2-A1
+      action: UPDATE_CAMPAIGN_CPC_BID_CEILING
+      customer_id: '1521725229'
+      campaign_id: '24103511039'
+      campaign_name: Power Washing
+      resource_name: customers/1521725229/campaigns/24103511039
+      field: target_spend.cpc_bid_ceiling_micros
+      field_mask: target_spend.cpc_bid_ceiling_micros
+      current_value_micros: 30000000
+      current_value_usd: 30.00
+      proposed_value_micros: 18000000
+      proposed_value_usd: 18.00
+      evidence: >-
+        14 valid clicks, median $29.64, and 7 of 8 post-ceiling clicks clearing between
+        $29.04 and $29.90 against the $30.00 cap. Search IS 54.1% with 43.0% lost to rank
+        and only 2.9% lost to budget.
+      expected_effect: >-
+        Clearing price falls to roughly $17.50. Click capacity at the unchanged $41.50
+        budget rises from about 1.38/day to about 2.31/day. Lost IS to rank rises.
+      monthly_spend_risk: >-
+        Cannot exceed 30.4 x $41.50 = $1,262 for this campaign. Underspend, not overspend,
+        remains the live risk.
+      search_rank_risk: MODERATE - all 11 priced families stay above top-of-page LOW
+      rollback: >-
+        Restore target_spend.cpc_bid_ceiling_micros to 30000000 through a new, separately
+        approved plan. Not automated.
+
+    - id: BID2-A2
+      action: UPDATE_CAMPAIGN_CPC_BID_CEILING
+      customer_id: '1521725229'
+      campaign_id: '24145053510'
+      campaign_name: Pressure Washing
+      resource_name: customers/1521725229/campaigns/24145053510
+      field: target_spend.cpc_bid_ceiling_micros
+      field_mask: target_spend.cpc_bid_ceiling_micros
+      current_value_micros: 30000000
+      current_value_usd: 30.00
+      proposed_value_micros: 18000000
+      proposed_value_usd: 18.00
+      evidence: >-
+        7 valid clicks, median $29.32, minimum $22.11. Search IS 68.9% with 24.4% lost to
+        rank and 6.7% lost to budget. Targets an identical 80-location geo set to 24103511039.
+      expected_effect: >-
+        Clearing price falls to roughly $17.50. Click capacity at the unchanged $41.11
+        budget rises from about 1.37/day to about 2.28/day.
+      monthly_spend_risk: >-
+        Cannot exceed 30.4 x $41.11 = $1,250 for this campaign.
+      search_rank_risk: MODERATE - this campaign has the healthier rank position of the two
+      rollback: >-
+        Restore target_spend.cpc_bid_ceiling_micros to 30000000 through a new, separately
+        approved plan. Not automated.
+
+  # --------------------------------------------------------------- guarantees
+  fields_explicitly_not_changed:
+    - bidding_strategy_type
+    - campaign_budget.amount_micros
+    - campaign.status
+    - campaign.name
+    - ad_groups
+    - keywords
+    - ads
+    - negative_keywords
+    - assets
+    - audiences
+    - demographics
+    - locations
+    - ad_schedules
+    - conversion_actions
+    - conversion_goals
+    - final_urls
+    - network_settings.target_search_network
+    - network_settings.target_content_network
+    - website
+    - google_tag_manager
+    - whatconverts
+
+  validation:
+    fresh_read_of_both_current_ceilings: PASS - both 30000000 micros
+    both_campaigns_confirmed_maximize_clicks: PASS - TARGET_SPEND
+    exactly_two_actions: PASS
+    exactly_two_objects: PASS
+    exactly_two_mutations: PASS
+    one_field_per_campaign: PASS
+    yaml_duplicate_key_detection: PASS
+    validate_only: PASS - 2 operations accepted, nothing written
+    no_protected_field_in_payload: PASS - update_mask is exactly
+      ["target_spend.cpc_bid_ceiling_micros"]
+    fingerprint_recomputed_twice: PASS - 3F1AB2CCFBDA both times
+
+  rollback_policy: >-
+    Rollback restores each campaign to its exact current ceiling of 30000000 micros and
+    must be executed as a NEW, separately approved plan. No automated rollback exists and
+    none is created by this plan.
+
+  executed:
+    at: '2026-09-02T23:59:24-04:00'
+    approved_by: Walter Correa
+    approval_command_received: APPROVE PLAN-GA-BID-2 3F1AB2CCFBDA FOR 1521725229
+    pre_execution_gate: 25/25 PASS
+    validate_only_at_execution: PASS
+    mutations_applied: 2
+    readback: 20/20 PASS
+    ceiling_before_micros: 30000000
+    ceiling_after_micros: 18000000
+    receipt: clients/softwind-power-washing/receipts/2026-09-02-plan-ga-bid-2-execution-receipt.md
+  next_approval_required: none for this plan - it is complete

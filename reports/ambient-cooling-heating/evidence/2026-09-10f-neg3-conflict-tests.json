@@ -1,0 +1,143 @@
+{
+ "generated_local": "2026-09-10T17:21:38.230481-04:00",
+ "preserved_by_holding": {
+  "commercial hvac installation for my rental building": [
+   "rental"
+  ],
+  "commercial hvac installation for schools": [
+   "schools"
+  ],
+  "commercial hvac installation for a school district": [
+   "school"
+  ],
+  "commercial hvac installation for a training facility": [
+   "training"
+  ],
+  "commercial hvac installation for a training center": [
+   "training"
+  ]
+ },
+ "correctly_blocked": {
+  "commercial hvac installation jobs near me": [
+   "jobs"
+  ],
+  "commercial hvac installation salary": [
+   "salary"
+  ],
+  "commercial hvac installation career": [
+   "career"
+  ],
+  "commercial hvac installation course": [
+   "course"
+  ],
+  "commercial hvac installation diy": [
+   "diy"
+  ],
+  "commercial hvac installation parts supplier": [
+   "parts",
+   "supplier"
+  ],
+  "used commercial hvac installation equipment": [
+   "used"
+  ],
+  "residential hvac installation near me": [
+   "residential"
+  ]
+ },
+ "blocked_but_unreachable": {},
+ "training_delta": {
+  "blocked_phrases": [
+   "commercial hvac installation for a training facility",
+   "commercial hvac installation for a training center"
+  ],
+  "reachable_regained": [
+   "commercial hvac installation for a training facility",
+   "commercial hvac installation for a training center"
+  ],
+  "non_buyer_now_unblocked": []
+ },
+ "duplicates": {
+  "diy": {
+   "inert_shared_sets": 4
+  },
+  "job": {
+   "campaign_level": [
+    "PHRASE"
+   ],
+   "inert_shared_sets": 3
+  },
+  "jobs": {
+   "campaign_level": [
+    "PHRASE"
+   ],
+   "inert_shared_sets": 3
+  },
+  "career": {
+   "inert_shared_sets": 4
+  },
+  "careers": {
+   "inert_shared_sets": 4
+  },
+  "salary": {
+   "inert_shared_sets": 3
+  },
+  "salaries": {
+   "inert_shared_sets": 3
+  },
+  "course": {
+   "inert_shared_sets": 4
+  },
+  "courses": {
+   "inert_shared_sets": 3
+  },
+  "parts": {
+   "inert_shared_sets": 4
+  },
+  "used": {
+   "inert_shared_sets": 3
+  },
+  "wholesale": {
+   "inert_shared_sets": 4
+  },
+  "supplier": {
+   "campaign_level": [
+    "PHRASE"
+   ],
+   "inert_shared_sets": 3
+  },
+  "supply": {
+   "inert_shared_sets": 5
+  }
+ },
+ "plan": {
+  "name": "AMB-0910-COMM-NEG-3",
+  "fingerprint": "51CF5986F18A",
+  "ops": 17,
+  "ship": [
+   "residential",
+   "homeowner",
+   "house",
+   "diy",
+   "job",
+   "jobs",
+   "career",
+   "careers",
+   "salary",
+   "salaries",
+   "course",
+   "courses",
+   "parts",
+   "used",
+   "wholesale",
+   "supplier",
+   "supply"
+  ],
+  "hold": [
+   "school",
+   "schools",
+   "rent",
+   "rental",
+   "training"
+  ]
+ }
+}

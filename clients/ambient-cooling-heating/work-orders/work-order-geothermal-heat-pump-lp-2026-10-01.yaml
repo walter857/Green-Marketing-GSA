@@ -1,0 +1,86 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    # Approved advertising-scope label (client.yaml heating_advertising_scope_2026_09_21).
+    # The exact paid sub-service (repair / installation / replacement / other) is established
+    # in this work order from the page and approved records, never assumed interchangeable.
+    exact_primary_service: Geothermal Heat Pump
+    paid_sub_service: "geothermal heat pump system inquiries + new-system installation / replacement consultation; REPAIR excluded"
+    related_services: []
+  task:
+    type: landing-page
+    mode: enable
+    request: >-
+      Green Marketing request 2026-10-01 (workstream 2). DRAFT the exact Google Ads URL-assignment
+      and activation plan for the supplied geothermal destination. Inspect the page's actual offer
+      and the approved service records, establish the exact paid geothermal service, and map it to
+      the matching existing ad group (reuse before create; no duplicate ad group because a URL was
+      supplied; no new campaign or budget). Present the exact plan and fingerprint. Create paused
+      only after exact-plan approval; enabling needs a second approval after readback QA. No
+      budget, bidding, schedule, location, conversion, negative-keyword, website or tracking change.
+    date_range: "CURRENT AS AT 2026-10-01"
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/geothermal-heat-pump/
+    url_supplied_by: "Green Marketing, 2026-10-01 request"
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    location_targets_expected: 75
+    campaign_id: "24274160783"
+    ad_group_id_expected: "204129719007"
+    ad_group_name_expected: "SKAG | Geothermal Heat Pump"
+    daily_budget: 20.00
+    daily_budget_note: "existing GEOTHERMAL_TEST budget (owner decision 2026-09-25); unchanged"
+    schedule: "Mon-Fri 08:00-16:00 America/New_York (campaign schedule; unchanged)"
+    primary_conversion_goal: "unique genuine paid geothermal lead (form or call)"
+    geothermal_service_determination:
+      decided_on: "2026-10-02"
+      paid_service: >-
+        Geothermal heat pump system inquiries and new-system installation / replacement consultation.
+        Geothermal heat pump REPAIR is NOT in the paid scope.
+      evidence:
+        - "Approved structure: ad group 204129719007 keywords are geothermal heat pump (P+E), geothermal heating (P+E) and
+          geothermal installation (E); it carries ad-group PHRASE negatives 'repair' and 'maintenance' (built 2026-09-21/22,
+          owner-approved AMB-0922-BUILD-1), and Heat Pump Repair negates 'geothermal'. Repair intent was excluded by design."
+        - "Capability evidence for installation: Ambient's own main-site page /services/hvac/geothermal-hvac/ (geothermal
+          installation copy, read 2026-09-21)."
+        - "Owner decision 2026-09-25: keep a $20/day geothermal Search test (label GEOTHERMAL_TEST)."
+        - "Page /geothermal-heat-pump/ (read 2026-10-02): H1 'Geothermal Heat Pump Service in Central MD'; offers New-System
+          Consultation, Replacement Planning and Existing-System Assessment. It supports the paid service; its existing-system
+          service content is broader than the paid scope and needs no ad-side change."
+      not_assumed: >-
+        Repair, installation and replacement are not treated as interchangeable. Adding geothermal repair to the paid scope
+        would need the 'repair' negative removed - a separate negative-keyword plan and an owner decision, not part of this
+        work order.
+      superseded_copy: "AMB-0925-HELD-RSA-PAYLOADS geothermal entry (repair-led copy conflicts with the 'repair' negative)"
+    page_qa: "snapshots/lp-qa-2026-10-01.json - HTTP 200, H1 matches; blocker before ENABLE: zeroed 'Offer Ends in' countdown"
+    plans:
+      create_paused: "AMB-1002-GEO-CREATE-1 B7B7A99EA739 APPROVED 2026-10-02 and EXECUTED; readback 17/17 (ads 826785945725,
+        826785945728; sitelink link 290641223062 PAUSED), receipts/AMB-1002-GEO-CREATE-1-EXECUTED.json"
+      enable: "AMB-1002-GEO-ENABLE-1.DRAFT - after CREATE readback, ad approval and the countdown fix"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-transition-2026-09.yaml
+      - clients/ambient-cooling-heating/plans/AMB-0922-BUILD-1.json
+      - clients/ambient-cooling-heating/plans/AMB-0925-HELD-RSA-PAYLOADS.json
+      - clients/ambient-cooling-heating/dev-tasks/DEV-2026-09-25-offer-site-priority-list.md
+    change_authorized: true   # staged authorization 2026-10-02 (see authorization_2026_10_02_staged)
+    enablement_authorized: true   # staged authorization 2026-10-02
+  authorization_2026_10_02_staged:
+    source: "Green Marketing instruction in the Claude Code session, 2026-10-02 ('Complete the Account Cleanup and Launch the Approved Campaigns')"
+    sequence_authorized: "prepare + validate -> create PAUSED -> read back -> enable after successful QA, without a further confirmation between stages, for the defined scope only"
+    in_scope: "Emergency enable; Geothermal ads/sitelinks to /geothermal-heat-pump/ + enable; Heating Maintenance & Inspection on https://ambientcoolingandheating.com/services/heating-services/; complete + enable intended current resources in the 8 Search campaigns; high-confidence EXACT negatives; $1,000/month per campaign (8 Search + 2 PMax); launch the 2 PMax campaigns; tablet exclusions; policy-compatible targeting inside the approved service area"
+    excluded: "deletions; unrelated legacy campaigns or unsupported services; spend above the allocations; conversion-action, upload, tracking-number or Business Profile phone changes; Phrase/Broad negatives; test leads/forms/calls/uploads; new website deployments"
+    fingerprints_still_recorded: true
+  approval_owner: Green Marketing

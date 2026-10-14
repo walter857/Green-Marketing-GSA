@@ -1,0 +1,323 @@
+{
+ "generated_local": "2026-09-09T23:56:25.954625-04:00",
+ "mode": "READ-ONLY. No IP exclusion, network, device, schedule or location changed.",
+ "A_by_campaign": {
+  "AC Repair": {
+   "clicks": 29,
+   "invalid": 939,
+   "impressions": 879,
+   "cost": 3084.87,
+   "raw_clicks": 968,
+   "invalid_pct": 97.0
+  },
+  "HVAC Repair": {
+   "clicks": 29,
+   "invalid": 619,
+   "impressions": 1058,
+   "cost": 1951.94,
+   "raw_clicks": 648,
+   "invalid_pct": 95.52
+  },
+  "HVAC Installation": {
+   "clicks": 112,
+   "invalid": 91,
+   "impressions": 3419,
+   "cost": 2914.33,
+   "raw_clicks": 203,
+   "invalid_pct": 44.83
+  },
+  "HVAC Replacement": {
+   "clicks": 5,
+   "invalid": 82,
+   "impressions": 199,
+   "cost": 152.52,
+   "raw_clicks": 87,
+   "invalid_pct": 94.25
+  },
+  "Gas Boiler Repair": {
+   "clicks": 0,
+   "invalid": 42,
+   "impressions": 34,
+   "cost": 0.0,
+   "raw_clicks": 42,
+   "invalid_pct": 100.0
+  }
+ },
+ "B_by_date": {
+  "2026-08-20": {
+   "clicks": 21,
+   "invalid": 216,
+   "impressions": 472,
+   "cost": 914.72,
+   "raw_clicks": 237,
+   "invalid_pct": 91.14
+  },
+  "2026-08-26": {
+   "clicks": 12,
+   "invalid": 193,
+   "impressions": 542,
+   "cost": 323.87,
+   "raw_clicks": 205,
+   "invalid_pct": 94.15
+  },
+  "2026-08-22": {
+   "clicks": 5,
+   "invalid": 183,
+   "impressions": 212,
+   "cost": 188.07,
+   "raw_clicks": 188,
+   "invalid_pct": 97.34
+  },
+  "2026-08-27": {
+   "clicks": 17,
+   "invalid": 178,
+   "impressions": 585,
+   "cost": 379.92,
+   "raw_clicks": 195,
+   "invalid_pct": 91.28
+  },
+  "2026-08-19": {
+   "clicks": 12,
+   "invalid": 161,
+   "impressions": 368,
+   "cost": 609.06,
+   "raw_clicks": 173,
+   "invalid_pct": 93.06
+  },
+  "2026-08-24": {
+   "clicks": 18,
+   "invalid": 150,
+   "impressions": 466,
+   "cost": 802.03,
+   "raw_clicks": 168,
+   "invalid_pct": 89.29
+  },
+  "2026-08-29": {
+   "clicks": 5,
+   "invalid": 145,
+   "impressions": 46,
+   "cost": 496.41,
+   "raw_clicks": 150,
+   "invalid_pct": 96.67
+  },
+  "2026-08-28": {
+   "clicks": 15,
+   "invalid": 140,
+   "impressions": 392,
+   "cost": 685.46,
+   "raw_clicks": 155,
+   "invalid_pct": 90.32
+  },
+  "2026-08-31": {
+   "clicks": 5,
+   "invalid": 108,
+   "impressions": 152,
+   "cost": 460.89,
+   "raw_clicks": 113,
+   "invalid_pct": 95.58
+  },
+  "2026-08-25": {
+   "clicks": 17,
+   "invalid": 105,
+   "impressions": 421,
+   "cost": 750.09,
+   "raw_clicks": 122,
+   "invalid_pct": 86.07
+  },
+  "2026-08-18": {
+   "clicks": 7,
+   "invalid": 49,
+   "impressions": 285,
+   "cost": 331.99,
+   "raw_clicks": 56,
+   "invalid_pct": 87.5
+  },
+  "2026-09-02": {
+   "clicks": 7,
+   "invalid": 43,
+   "impressions": 306,
+   "cost": 448.36,
+   "raw_clicks": 50,
+   "invalid_pct": 86.0
+  },
+  "2026-09-04": {
+   "clicks": 1,
+   "invalid": 32,
+   "impressions": 128,
+   "cost": 33.4,
+   "raw_clicks": 33,
+   "invalid_pct": 96.97
+  },
+  "2026-09-03": {
+   "clicks": 4,
+   "invalid": 29,
+   "impressions": 134,
+   "cost": 350.39,
+   "raw_clicks": 33,
+   "invalid_pct": 87.88
+  },
+  "2026-09-01": {
+   "clicks": 6,
+   "invalid": 15,
+   "impressions": 290,
+   "cost": 383.63,
+   "raw_clicks": 21,
+   "invalid_pct": 71.43
+  },
+  "2026-08-21": {
+   "clicks": 16,
+   "invalid": 9,
+   "impressions": 400,
+   "cost": 808.11,
+   "raw_clicks": 25,
+   "invalid_pct": 36.0
+  },
+  "2026-09-07": {
+   "clicks": 1,
+   "invalid": 7,
+   "impressions": 77,
+   "cost": 23.62,
+   "raw_clicks": 8,
+   "invalid_pct": 87.5
+  },
+  "2026-08-14": {
+   "clicks": 1,
+   "invalid": 4,
+   "impressions": 28,
+   "cost": 2.34,
+   "raw_clicks": 5,
+   "invalid_pct": 80.0
+  },
+  "2026-08-16": {
+   "clicks": 1,
+   "invalid": 3,
+   "impressions": 65,
+   "cost": 20.34,
+   "raw_clicks": 4,
+   "invalid_pct": 75.0
+  },
+  "2026-09-08": {
+   "clicks": 0,
+   "invalid": 2,
+   "impressions": 63,
+   "cost": 0.0,
+   "raw_clicks": 2,
+   "invalid_pct": 100.0
+  },
+  "2026-09-05": {
+   "clicks": 1,
+   "invalid": 1,
+   "impressions": 14,
+   "cost": 21.46,
+   "raw_clicks": 2,
+   "invalid_pct": 50.0
+  },
+  "2026-08-15": {
+   "clicks": 0,
+   "invalid": 0,
+   "impressions": 37,
+   "cost": 0.0,
+   "raw_clicks": 0,
+   "invalid_pct": 0
+  },
+  "2026-08-17": {
+   "clicks": 3,
+   "invalid": 0,
+   "impressions": 106,
+   "cost": 69.5,
+   "raw_clicks": 3,
+   "invalid_pct": 0.0
+  }
+ },
+ "C_by_device": {
+  "MOBILE": {
+   "clicks": 126,
+   "invalid": 1743,
+   "impressions": 3027,
+   "cost": 6454.8,
+   "raw_clicks": 1869,
+   "invalid_pct": 93.26
+  },
+  "DESKTOP": {
+   "clicks": 49,
+   "invalid": 30,
+   "impressions": 2562,
+   "cost": 1648.85,
+   "raw_clicks": 79,
+   "invalid_pct": 37.97
+  }
+ },
+ "D_by_network": {
+  "SEARCH": {
+   "clicks": 175,
+   "invalid": 1773,
+   "impressions": 5589,
+   "cost": 8103.66,
+   "raw_clicks": 1948,
+   "invalid_pct": 91.02
+  }
+ },
+ "E_by_click_type": {
+  "LOCATION_EXPANSION": {
+   "clicks": 34,
+   "invalid": 1706,
+   "impressions": 2937,
+   "cost": 2003.44,
+   "raw_clicks": 1740,
+   "invalid_pct": 98.05
+  },
+  "URL_CLICKS": {
+   "clicks": 99,
+   "invalid": 63,
+   "impressions": 5589,
+   "cost": 4039.03,
+   "raw_clicks": 162,
+   "invalid_pct": 38.89
+  },
+  "CALLS": {
+   "clicks": 10,
+   "invalid": 4,
+   "impressions": 1698,
+   "cost": 576.51,
+   "raw_clicks": 14,
+   "invalid_pct": 28.57
+  },
+  "SITELINKS": {
+   "clicks": 26,
+   "invalid": 0,
+   "impressions": 1595,
+   "cost": 1284.8,
+   "raw_clicks": 26,
+   "invalid_pct": 0.0
+  },
+  "GET_DIRECTIONS": {
+   "clicks": 6,
+   "invalid": 0,
+   "impressions": 335,
+   "cost": 199.88,
+   "raw_clicks": 6,
+   "invalid_pct": 0.0
+  },
+  "STORE_LOCATOR": {
+   "clicks": 0,
+   "invalid": 0,
+   "impressions": 5,
+   "cost": 0.0,
+   "raw_clicks": 0,
+   "invalid_pct": 0
+  }
+ },
+ "account_total": {
+  "impressions": 5589,
+  "clicks": 175,
+  "invalid_clicks": 1773,
+  "raw_clicks": 1948,
+  "invalid_pct": 91.02,
+  "cost": 8103.66
+ },
+ "ip_blocks": {
+  "account": 2796,
+  "on_the_five": 0
+ },
+ "clickcease_attribution": "NOT CLAIMED - no independent ClickCease evidence available"
+}

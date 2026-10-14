@@ -1,0 +1,967 @@
+change_plan:
+  version: 1
+  phase: PHASE 3 round 1 - month-to-date search-term hygiene. Follows the executed Phase 1 remediation
+    and Phase 2 creative work.
+  generated_on: '2026-08-21'
+  mode: draft
+  prepared_by: Green Marketing Google Ads implementation agent
+  approval_owner: Green Marketing
+  target:
+    exact_child_account_name: Pro Green - Austin - Live
+    child_customer_id: '7380491929'
+    manager_customer_id: '3373711342'
+    exact_service: outdoor design & build
+    vertical: hardscaping
+    search_term_window: 2026-08-01..2026-08-21
+    search_term_source: clients/pro-green-austin/snapshots/search-terms-mtd-2026-08-21.json
+    negative_inventory_read: live, 2026-08-21, after Phase 1 and Phase 2 execution
+    account_timezone: America/New_York
+    currency: USD
+  external_writes_performed: NONE
+  findings:
+    window: 2026-08-01 to 2026-08-21
+    corpus:
+      search_term_rows: 349
+      distinct_terms: 307
+      term_visible_cost: 555.45
+      campaign_total_cost: 1281.1
+      share_of_spend_visible: 43.4%
+      limitation: Google withholds low-volume queries, so 56.6% of this month's spend has no visible search
+        term. No claim here assumes the export is complete, and no preventive list can cover the unlimited
+        universe of future queries.
+    verdict_counts:
+      KEEP: 9
+      WATCH: 215
+      NEGATIVE_PHRASE: 11
+      INSUFFICIENT_DATA: 90
+    families_proposed:
+      competitor_brand: 25
+      wrong_service_or_material: 3
+    families_deliberately_not_negatived:
+    - family: generic_landscaping
+      size: 81 rows, 242 impressions, 5 clicks, $104.83 - the largest single leakage family this month,
+        19% of visible spend
+      examples:
+      - landscapers near me
+      - landscape companies near me
+      - landscaping services near me
+      - backyard landscaping services
+      - landscaping near me
+      - landscaper near me
+      why_not: It has direct counter-evidence. 'landscaper near me' CONVERTED once, at $47.22, in the
+        very same ad group (Landscape Design | Near Me) where 'landscapers near me' is now spending $38.40.
+        Those are singular and plural forms of one query, so a phrase negative on 'landscapers' would
+        very likely suppress 'landscaper' through close variants and kill a path that produced one of
+        only four recorded conversions on this account. Green Marketing policy requires an intent check
+        before any negative and forbids blocking a profitable buyer journey.
+      recommended_instead: Treat it as a structure question, not a negative question. 'landscape designers
+        near me' on EXACT is pulling generic 'landscapers near me' through close variants. The clean fix
+        is a dedicated ad group for the generic landscaping intent with its own bid and its own destination,
+        so it can be judged on its own merits. That is a Phase 3 structure change and is not proposed
+        here.
+      decision_needed: If Green Marketing decides the client does NOT want generic landscaping enquiries
+        at all, say so and I will regenerate this plan with those negatives included and a fresh fingerprint.
+        I do not recommend it on the current evidence.
+    - family: client_own_brand
+      size: observed historically
+      why_not: '''progreen landscape solutions'' has converted. The client''s own brand must never be
+        negatived.'
+    - family: ambiguous_adjacent_services
+      examples:
+      - paving contractors near me
+      - paving companies near me
+      - architecture landscape near me
+      - deck builder near me
+      why_not: '''paving'' can mean paver installation. ''architecture landscape'' is adjacent to landscape
+        design. Deck construction IS a verified first-party Pro Green Austin service, it is simply not
+        advertised, so ''deck builder near me'' is a landing-page gap and an expansion candidate, not
+        waste.'
+    - family: protected_terms
+      why_not: One term this month hit a protected-term override. Green Marketing policy protects near
+        me, quote, price, pricing, cost, best, hire, local, emergency and free. None was negatived.
+    already_covered_by_phase_1: Five competitor names that took clicks this month - agc turf $24.51, ulm
+      austin $24.24, garden goat $19.42, agave landscaping $18.87 and astoria lighting $10.29 - are already
+      blocked. Those clicks were bought BEFORE the Phase 1 negatives went live on 2026-08-19, so they
+      are historical cost, not an ongoing leak. They are correctly excluded from this plan as duplicates.
+    scope_note: 'Negatives are proposed at AD GROUP level as instructed, only in the ad groups where the
+      query was actually observed. Campaign level would give broader future coverage with far fewer objects:
+      27 distinct tokens x 2 campaigns = 54 objects instead of 28, but it would protect all 24 ad groups
+      rather than the 9 where the query has appeared so far. Say the word and I will regenerate at campaign
+      level with a fresh fingerprint.'
+  subplans:
+    STATUS:
+      actions: []
+      empty_reason: No status change.
+    BUDGET:
+      actions: []
+      empty_reason: No budget change. $65.78/day stands.
+    EXISTING_RESOURCES:
+      actions:
+      - action_id: NEG-001
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: terra landscaping
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'terra landscaping' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "terra landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 2 impressions, 1 clicks,
+          $21.60 cost, 0 conversions. Queries: [''terra landscaping''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: high
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-002
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686896'
+        resource_name: Pergolas | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: apollo pergola
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'apollo pergola' [PHRASE] exists on ad group 199051686896,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "apollo pergola"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 1 impressions, 1 clicks,
+          $20.26 cost, 0 conversions. Queries: [''apollo pergola''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: high
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-003
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051687176'
+        resource_name: Landscape Lighting | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: biggadike
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'biggadike' [PHRASE] exists on ad group 199051687176, and
+          none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "biggadike"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 1 impressions, 1 clicks,
+          $14.79 cost, 0 conversions. Queries: [''biggadike landscape lighting''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: high
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-004
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686456'
+        resource_name: Outdoor Living | Near Me
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: handrail
+        match_type: PHRASE
+        level: ad_group
+        family: wrong_service_or_material
+        current_state: no ad-group negative 'handrail' [PHRASE] exists on ad group 199051686456, and none
+          is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "handrail"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 5 impressions, 1 clicks,
+          $12.40 cost, 0 conversions. Queries: [''outdoor handrail installation near me''].'
+        reason: handrails are not a verified Pro Green Austin service
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: high
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-005
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051685456'
+        resource_name: Hardscaping | BOFU
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: allied outdoor solutions
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'allied outdoor solutions' [PHRASE] exists on ad group 199051685456,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "allied outdoor solutions"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 5 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''allied outdoor solutions austin'', ''allied outdoor solutions
+          austin tx'', ''allied outdoor solutions san antonio''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-006
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: allied outdoor solutions
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'allied outdoor solutions' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "allied outdoor solutions"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 1 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''allied outdoor solutions austin''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-007
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051685736'
+        resource_name: Pavers | BOFU
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: asphalt
+        match_type: PHRASE
+        level: ad_group
+        family: wrong_service_or_material
+        current_state: no ad-group negative 'asphalt' [PHRASE] exists on ad group 199051685736, and none
+          is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "asphalt"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 33 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''asphalt and concrete paving'', ''asphalt paving austin'',
+          ''asphalt paving austin tx'', ''asphalt paving contractors'', ''texas asphalt paving''].'
+        reason: asphalt is not paver installation
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-008
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: casas landscaping
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'casas landscaping' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "casas landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 4 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''casas landscaping''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-009
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: cedarcrest
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'cedarcrest' [PHRASE] exists on ad group 199051686416, and
+          none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "cedarcrest"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 4 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''cedarcrest landscaping''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-010
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686376'
+        resource_name: Landscape Design | Near Me
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: clean scapes
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'clean scapes' [PHRASE] exists on ad group 199051686376, and
+          none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "clean scapes"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 4 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''clean scapes near me''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-011
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: cooper and company
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'cooper and company' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "cooper and company"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 10 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''cooper and company austin''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-012
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051685416'
+        resource_name: Hardscaping | Near Me
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: curbing
+        match_type: PHRASE
+        level: ad_group
+        family: wrong_service_or_material
+        current_state: no ad-group negative 'curbing' [PHRASE] exists on ad group 199051685416, and none
+          is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "curbing"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 5 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''curbing company near me''].'
+        reason: concrete curbing is not a verified Pro Green Austin service
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-013
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: cutters landscaping
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'cutters landscaping' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "cutters landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 15 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''cutters landscaping austin'', ''cutters landscaping austin
+          tx''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-014
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: design ecology
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'design ecology' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "design ecology"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 3 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''design ecology austin''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-015
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: dl landscaping
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'dl landscaping' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "dl landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 4 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''dl landscaping''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-016
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: ecotopes
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'ecotopes' [PHRASE] exists on ad group 199051686416, and none
+          is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "ecotopes"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 3 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''ecotopes''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-017
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: four roots
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'four roots' [PHRASE] exists on ad group 199051686416, and
+          none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "four roots"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 4 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''four roots landscaping''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-018
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: ground and garden
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'ground and garden' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "ground and garden"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 6 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''ground and garden austin''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-019
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051687096'
+        resource_name: Artificial Turf | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: hellas turf
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'hellas turf' [PHRASE] exists on ad group 199051687096, and
+          none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "hellas turf"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 3 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''hellas turf''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-020
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051687096'
+        resource_name: Artificial Turf | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: magnolia turf
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'magnolia turf' [PHRASE] exists on ad group 199051687096,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "magnolia turf"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 6 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''magnolia turf austin''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-021
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: ps landscapes
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'ps landscapes' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "ps landscapes"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 5 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''ps landscapes austin''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-022
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: ranchers landscaping
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'ranchers landscaping' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "ranchers landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 5 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''ranchers landscaping''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-023
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051687096'
+        resource_name: Artificial Turf | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: southern turf
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'southern turf' [PHRASE] exists on ad group 199051687096,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "southern turf"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 5 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''southern turf co'', ''southern turf co austin''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-024
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051685456'
+        resource_name: Hardscaping | BOFU
+        campaign_id: '24053505501'
+        campaign_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: stones and scapes
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'stones and scapes' [PHRASE] exists on ad group 199051685456,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "stones and scapes"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 3 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''stones and scapes''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-025
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: the mark landscapes
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'the mark landscapes' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "the mark landscapes"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 4 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''the mark landscapes''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-026
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: twelve point landscaping
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'twelve point landscaping' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "twelve point landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 4 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''twelve point landscaping''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-027
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051686416'
+        resource_name: Landscape Design | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: waldemar landscaping
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'waldemar landscaping' [PHRASE] exists on ad group 199051686416,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "waldemar landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 3 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''waldemar landscaping''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+      - action_id: NEG-028
+        priority: P1
+        operation: ADD_AD_GROUP_NEGATIVE_KEYWORD
+        resource_type: ad_group_criterion (negative keyword)
+        resource_id: '199051687096'
+        resource_name: Artificial Turf | BOFU
+        campaign_id: '24053505504'
+        campaign_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: waterloo turf
+        match_type: PHRASE
+        level: ad_group
+        family: competitor_brand
+        current_state: no ad-group negative 'waterloo turf' [PHRASE] exists on ad group 199051687096,
+          and none is inherited from the campaign, a linked shared list or the account-level list
+        proposed_state: ad-group negative PHRASE "waterloo turf"
+        field_mask: n/a (criterion creation)
+        evidence: 'Observed on this ad group between 2026-08-01 and 2026-08-21: 20 impressions, 0 clicks,
+          $0.00 cost, 0 conversions. Queries: [''waterloo turf austin''].'
+        reason: named local competitor; brand searches carry no design-and-build buying intent for Pro
+          Green
+        expected_effect: Stops this query family serving in this ad group. Does not guarantee a lower
+          cost per lead.
+        risk: Low. Phrase scope, ad-group level only, so no other ad group, campaign or future service
+          is affected. Reversible by removing the criterion.
+        conflict_check: 'Checked 2026-08-21 against all 48 live positive keywords and all 50 queries that
+          ever converted: no conflict. Also checked against every negative already reaching this ad group
+          at campaign, shared list and account level: not a duplicate.'
+        confidence: medium
+        rollback: Remove the ad_group_criterion by the criterion_id returned at readback.
+        object_count: 1
+    CONVERSIONS:
+      actions: []
+      empty_reason: No conversion change. Three primary actions stand.
+    CREATE_PAUSED:
+      actions: []
+      empty_reason: Nothing is created that serves. Negative keywords do not serve.
+    SITE_OR_TRACKING:
+      actions: []
+      empty_reason: No website change. SPEC-001, SPEC-002 and SPEC-005 remain open and unchanged.
+    ENABLE:
+      actions: []
+      empty_reason: Nothing to enable. Negative keywords take effect on creation.
+  outstanding_items:
+  - id: SPEC-001
+    status: OPEN
+    item: Add GCLID, GBRAID, WBRAID, UTMs and unique lead IDs to the offer-page forms
+  - id: SPEC-002
+    status: OPEN
+    item: Verify and repair the offer-page form conversion tag
+  - id: SPEC-005
+    status: OPEN
+    item: Correct 'Confirm the Landscape Plan' on the Pergola and Artificial Turf pages
+  - id: BLK-001
+    status: BLOCKED
+    item: Resolve the ClickCease destination configuration inside ClickCease
+  - id: BLK-002
+    status: BLOCKED
+    item: Sitelink repointing, until offer-page attribution is repaired

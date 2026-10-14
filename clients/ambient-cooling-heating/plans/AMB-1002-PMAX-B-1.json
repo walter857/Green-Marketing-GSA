@@ -1,0 +1,303 @@
+{
+ "plan_name": "AMB-1002-PMAX-B-1",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "approval_class": "create-paused",
+ "work_order": "work-orders/work-order-pmax-heat-pump-geothermal-2026-10-02.yaml",
+ "campaign_name": "PMax | Heat Pump & Geothermal | Central MD | 2026-10 | HELD",
+ "portfolio": [
+  "Heat pump replacement -> /heat-pump-replacement/",
+  "Heat pump installation -> /heat-pump-installation/",
+  "Geothermal -> HELD payload"
+ ],
+ "hp_install_payload": {
+  "name": "Heat Pump Installation",
+  "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-installation/",
+  "path1": "Heat-Pump",
+  "path2": "Installation",
+  "headlines": [
+   [
+    "id",
+    "310563102573"
+   ],
+   "Install a Heat Pump",
+   [
+    "id",
+    "424734001132"
+   ],
+   "Heat Pump Installers",
+   "Free Installation Quote",
+   "Severn Heat Pump Install",
+   [
+    "id",
+    "424666402908"
+   ],
+   [
+    "id",
+    "424632150596"
+   ],
+   [
+    "id",
+    "424734004471"
+   ],
+   [
+    "id",
+    "424734013285"
+   ],
+   [
+    "id",
+    "424734010534"
+   ],
+   [
+    "id",
+    "409521516376"
+   ],
+   [
+    "id",
+    "422477367425"
+   ],
+   "Heat Pump Options Explained",
+   "New Heat Pumps"
+  ],
+  "long_headlines": [
+   "Heat pump installation for homes in Severn, Severna Park and Columbia, MD",
+   "Request a free heat pump installation quote from Ambient Cooling & Heating",
+   "Considering a heat pump? Plan the installation with trained technicians",
+   [
+    "id",
+    "424734013318"
+   ],
+   "Compare heat pump installation options clearly before you decide"
+  ],
+  "descriptions": [
+   "Request a free heat pump installation quote.",
+   "Trained technicians assess your home and explain heat pump options clearly.",
+   "Heat pump installation for Severn, Severna Park and Columbia homes.",
+   [
+    "id",
+    "424734004492"
+   ],
+   [
+    "id",
+    "424734013138"
+   ]
+  ],
+  "images": "COPY_FROM_HP_SOURCE",
+  "search_themes": [
+   "heat pump installation",
+   "heat pump installation near me",
+   "install heat pump",
+   "new heat pump installation",
+   "heat pump installer",
+   "heat pump installation cost",
+   "air source heat pump installation",
+   "heat pump for house",
+   "convert to heat pump",
+   "electric heat pump installation"
+  ]
+ },
+ "hp_replacement_assets_linked": [
+  [
+   "92011805521",
+   "HEADLINE"
+  ],
+  [
+   "218982354502",
+   "CALL_TO_ACTION_SELECTION"
+  ],
+  [
+   "310563102573",
+   "HEADLINE"
+  ],
+  [
+   "409521516376",
+   "HEADLINE"
+  ],
+  [
+   "422477367425",
+   "HEADLINE"
+  ],
+  [
+   "423727600114",
+   "HEADLINE"
+  ],
+  [
+   "423809914800",
+   "HEADLINE"
+  ],
+  [
+   "424632150560",
+   "SQUARE_MARKETING_IMAGE"
+  ],
+  [
+   "424632150596",
+   "HEADLINE"
+  ],
+  [
+   "424632150617",
+   "DESCRIPTION"
+  ],
+  [
+   "424666402803",
+   "HEADLINE"
+  ],
+  [
+   "424666402908",
+   "HEADLINE"
+  ],
+  [
+   "424666402965",
+   "HEADLINE"
+  ],
+  [
+   "424734001078",
+   "HEADLINE"
+  ],
+  [
+   "424734001132",
+   "HEADLINE"
+  ],
+  [
+   "424734004438",
+   "SQUARE_MARKETING_IMAGE"
+  ],
+  [
+   "424734004471",
+   "HEADLINE"
+  ],
+  [
+   "424734004492",
+   "DESCRIPTION"
+  ],
+  [
+   "424734005911",
+   "SQUARE_MARKETING_IMAGE"
+  ],
+  [
+   "424734005944",
+   "LONG_HEADLINE"
+  ],
+  [
+   "424734010402",
+   "SQUARE_MARKETING_IMAGE"
+  ],
+  [
+   "424734010486",
+   "PORTRAIT_MARKETING_IMAGE"
+  ],
+  [
+   "424734010498",
+   "MARKETING_IMAGE"
+  ],
+  [
+   "424734010510",
+   "MARKETING_IMAGE"
+  ],
+  [
+   "424734010534",
+   "HEADLINE"
+  ],
+  [
+   "424734010555",
+   "LONG_HEADLINE"
+  ],
+  [
+   "424734010573",
+   "LONG_HEADLINE"
+  ],
+  [
+   "424734010597",
+   "DESCRIPTION"
+  ],
+  [
+   "424734013138",
+   "DESCRIPTION"
+  ],
+  [
+   "424734013162",
+   "PORTRAIT_MARKETING_IMAGE"
+  ],
+  [
+   "424734013243",
+   "MARKETING_IMAGE"
+  ],
+  [
+   "424734013252",
+   "MARKETING_IMAGE"
+  ],
+  [
+   "424734013285",
+   "HEADLINE"
+  ],
+  [
+   "424734013297",
+   "LONG_HEADLINE"
+  ],
+  [
+   "424734013318",
+   "LONG_HEADLINE"
+  ],
+  [
+   "424734013339",
+   "DESCRIPTION"
+  ]
+ ],
+ "geothermal_held": {
+  "name": "Geothermal Heat Pump",
+  "final_url": "https://offer.ambientcoolingandheating.com/geothermal-heat-pump/",
+  "path1": "Geothermal",
+  "path2": "Heat-Pump",
+  "status": "HELD - not in any operation",
+  "blockers": [
+   "page shows a zeroed 'Offer Ends in' countdown (unverified time-limited offer)",
+   "no approved geothermal images in the account (page / Drive images not yet uploaded)",
+   "geothermal Search ads still under review"
+  ],
+  "headlines": [
+   "Geothermal Heat Pumps",
+   "Geothermal Heat Pump Service",
+   "Geothermal Heating & Cooling",
+   "New Geothermal System Quote",
+   "Plan A Geothermal Install",
+   "Geothermal Replacement Help",
+   "Free Geothermal Quote",
+   "Ground-Loop System Review"
+  ],
+  "search_themes": [
+   "geothermal heat pump installation",
+   "geothermal heating and cooling",
+   "geothermal system cost",
+   "geothermal heat pump replacement",
+   "ground source heat pump",
+   "geothermal hvac",
+   "geothermal heat pump cost"
+  ]
+ },
+ "actions": [
+  "create budget $32.89 (non-shared)",
+  "create PAUSED PMax campaign 'PMax | Heat Pump & Geothermal | Central MD | 2026-10 | HELD' (Max Conversions, presence, brand guidelines, 6 automation opt-outs incl. Final URL expansion + text customization)",
+  "75 locations, English, Mon-Fri 08-16 (5 rows), tablet bid_modifier 0",
+  "5 own-brand EXACT negatives",
+  "attach shared negative lists ['12249470554', '12252013691'] (contents unchanged)",
+  "17 campaign asset links (brand, call 415-9517, snippet, 4 offer-page sitelinks, 8 callouts)",
+  "PAUSED asset group 'Heat Pump Replacement' -> /heat-pump-replacement/ (36 existing assets linked, 8 themes + audience)",
+  "PAUSED asset group 'Heat Pump Installation' -> /heat-pump-installation/ (36 asset links, 10 themes + audience)",
+  "AFTER CREATE (same executor, real campaign id): campaign_conversion_goal PHONE_CALL_LEAD/CALL_FROM_ADS biddable=false, mirroring shell A"
+ ],
+ "own_brand_exact_negatives": [
+  "ambient cooling and heating",
+  "ambient heating and cooling",
+  "ambient cooling",
+  "ambient heating",
+  "ambient hvac"
+ ],
+ "shared_lists_attached": [
+  "12249470554",
+  "12252013691"
+ ],
+ "stays_paused": true,
+ "operation_count": 215,
+ "fingerprint": "F4D888845B8E",
+ "preflight": "VALIDATED 215"
+}

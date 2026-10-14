@@ -1,0 +1,149 @@
+{
+ "plan_name": "AMB-0918-CONV-1",
+ "approval_class": "update-conversion-action-primary-flag",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-18",
+ "required_outcome": "One real lead = exactly one Primary bidding conversion.",
+ "nothing_is_deleted": true,
+ "historical_data_preserved": "Only primary_for_goal changes. Status stays ENABLED, no action is removed, and past conversions are not restated.",
+ "page_view_x2_cannot_be_resolved_by_api": {
+  "finding": "All five Google Business Profile (GOOGLE_HOSTED) conversion actions are system-managed and reject every mutate with mutate_error: MUTATE_NOT_ALLOWED. Verified individually by validate_only on 6954620053, 6640721230, 6641739327, 6642551975 and 6642544931 - all five REJECTED, while the two WhatConverts upload actions VALIDATED_OK.",
+  "affected": [
+   "PAGE_VIEW x2 (6641739327 Website visits, 6954620053 Menu views)"
+  ],
+  "why_it_is_not_a_defect": "Both sit on the PAGE_VIEW/GOOGLE_HOSTED customer conversion goal, which is already NON-BIDDABLE. They cannot influence Smart Bidding and report conversions = 0. The duplication is a reporting artefact with no bidding effect, and Google does not expose a way to change it.",
+  "if_the_owner_wants_it_gone": "It can only be changed in the Google Ads UI under Goals, or by unlinking the Google Business Profile. That is a separate decision and is NOT part of this plan."
+ },
+ "goal_layer_finding": {
+  "customer_conversion_goal_biddable": [
+   "PHONE_CALL_LEAD/WEBSITE",
+   "SUBMIT_LEAD_FORM/WEBSITE",
+   "CONTACT/WEBSITE",
+   "PHONE_CALL_LEAD/CALL_FROM_ADS",
+   "CONTACT/CALL_FROM_ADS"
+  ],
+  "customer_conversion_goal_not_biddable": [
+   "PAGE_VIEW/GOOGLE_HOSTED",
+   "GET_DIRECTIONS/GOOGLE_HOSTED",
+   "CONTACT/GOOGLE_HOSTED",
+   "ENGAGEMENT/GOOGLE_HOSTED"
+  ],
+  "why_it_matters": "The five Google Business Profile local-action Primaries sit on NON-BIDDABLE goals, so they never influenced bidding. Their duplication was cosmetic. The real defect was two WhatConverts upload actions sharing biddable goals with the native tags."
+ },
+ "changes": [
+  {
+   "id": "7643656486",
+   "name": "WC Lead",
+   "category": "CONTACT",
+   "origin": "WEBSITE",
+   "type": "UPLOAD_CLICKS",
+   "was": "PRIMARY",
+   "becomes": "SECONDARY",
+   "volume_90d_all": 8.0,
+   "volume_90d_conversions": 4.0,
+   "reason": "DOUBLE COUNT. A website form submission is already counted by 6885463625 on the biddable SUBMIT_LEAD_FORM/WEBSITE goal. This WhatConverts upload re-reports the same submission on the biddable CONTACT/WEBSITE goal, so one real lead produces two Primary conversions."
+  },
+  {
+   "id": "7643656075",
+   "name": "WC Calls",
+   "category": "CONTACT",
+   "origin": "CALL_FROM_ADS",
+   "type": "UPLOAD_CALLS",
+   "was": "PRIMARY",
+   "becomes": "SECONDARY",
+   "volume_90d_all": 0.0,
+   "volume_90d_conversions": 0.0,
+   "reason": "DOUBLE COUNT. A call placed from an ad is already counted by 1068114183 on the biddable PHONE_CALL_LEAD/CALL_FROM_ADS goal. This WhatConverts upload re-reports the same call on the biddable CONTACT/CALL_FROM_ADS goal."
+  }
+ ],
+ "primary_bidding_conversions_after": [
+  {
+   "id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "goal": "SUBMIT_LEAD_FORM / WEBSITE",
+   "type": "WEBPAGE",
+   "covers": "a form submitted on the website"
+  },
+  {
+   "id": "1068114183",
+   "name": "Calls from ads",
+   "goal": "PHONE_CALL_LEAD / CALL_FROM_ADS",
+   "type": "AD_CALL",
+   "covers": "a call placed from the ad's call asset"
+  },
+  {
+   "id": "6885576934",
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "goal": "PHONE_CALL_LEAD / WEBSITE",
+   "type": "WEBSITE_CALL",
+   "covers": "a call placed from a number on the website"
+  }
+ ],
+ "non_biddable_primaries_left_alone": [
+  {
+   "id": "6640721230",
+   "name": "Clicks to call",
+   "goal": "CONTACT / GOOGLE_HOSTED",
+   "note": "immutable via API; non-biddable; becomes the only CONTACT Primary"
+  },
+  {
+   "id": "6641739327",
+   "name": "Local actions - Website visits",
+   "goal": "PAGE_VIEW / GOOGLE_HOSTED",
+   "note": "immutable via API; non-biddable"
+  },
+  {
+   "id": "6954620053",
+   "name": "Local actions - Menu views",
+   "goal": "PAGE_VIEW / GOOGLE_HOSTED",
+   "note": "immutable via API; non-biddable; 0 events in 90 days"
+  },
+  {
+   "id": "6642551975",
+   "name": "Local actions - Other engagements",
+   "goal": "ENGAGEMENT / GOOGLE_HOSTED"
+  },
+  {
+   "id": "6642544931",
+   "name": "Local actions - Directions",
+   "goal": "GET_DIRECTIONS / GOOGLE_HOSTED"
+  }
+ ],
+ "deliberate_deviation": {
+  "item": "PHONE_CALL_LEAD keeps two Primary actions, not one.",
+  "why": "1068114183 (AD_CALL, origin CALL_FROM_ADS) and 6885576934 (WEBSITE_CALL, origin WEBSITE) cannot both fire for the same interaction: a caller who taps the ad's call asset never reaches the website, and a caller who dials a number on the page did not use the ad's call asset. They are two distinct lead events on two distinct biddable goals. Collapsing them to one would stop counting a real lead type. The binding requirement - one real lead equals exactly one Primary bidding conversion - is fully satisfied."
+ },
+ "operations": [
+  {
+   "op": "SET_CONVERSION_ACTION_SECONDARY",
+   "conversion_action_id": "7643656486",
+   "name": "WC Lead",
+   "from": "primary_for_goal=true",
+   "to": "primary_for_goal=false",
+   "field_mask": "primary_for_goal"
+  },
+  {
+   "op": "SET_CONVERSION_ACTION_SECONDARY",
+   "conversion_action_id": "7643656075",
+   "name": "WC Calls",
+   "from": "primary_for_goal=true",
+   "to": "primary_for_goal=false",
+   "field_mask": "primary_for_goal"
+  }
+ ],
+ "counts": {
+  "enabled_primary_before": 10,
+  "enabled_primary_after": 8,
+  "biddable_primary_before": 5,
+  "biddable_primary_after": 3,
+  "contact_primary_before": 3,
+  "contact_primary_after": 1,
+  "phone_call_lead_primary": 2,
+  "page_view_primary_unchanged_non_biddable": 2
+ },
+ "reversible": "Each change is a single primary_for_goal boolean and can be set back.",
+ "operation_count": 2,
+ "fingerprint": "A3370F96FA6E"
+}

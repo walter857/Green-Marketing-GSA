@@ -1,0 +1,297 @@
+{
+ "hard_daily_max": 427.6315789,
+ "prior_package_check": {
+  "daily": 433.33,
+  "x30": 12999.9,
+  "x30_4": 13173.23,
+  "overrun_vs_max": 173.23,
+  "compliant": false
+ },
+ "budget_changes": [
+  {
+   "ts": "2026-08-22 01:23:35.488943",
+   "rn": "customers/2401959466/campaignBudgets/15787409441",
+   "client_type": "GOOGLE_ADS_API",
+   "user_email": "access@greenmarketingfl.com",
+   "op": "UPDATE",
+   "campaign": "24132507747",
+   "old": 138160000,
+   "new": 176150000
+  }
+ ],
+ "september_budget_changes": [],
+ "september_served": {
+  "by_campaign": {
+   "24132507741": {
+    "served_cost": 534.28,
+    "impressions": 364,
+    "clicks": 5
+   },
+   "24132507744": {
+    "served_cost": 0.0,
+    "impressions": 29,
+    "clicks": 0
+   },
+   "24132507747": {
+    "served_cost": 498.43,
+    "impressions": 429,
+    "clicks": 11
+   },
+   "24132507750": {
+    "served_cost": 286.78,
+    "impressions": 140,
+    "clicks": 6
+   },
+   "24132507753": {
+    "served_cost": 0.0,
+    "impressions": 104,
+    "clicks": 0
+   }
+  },
+  "five_total": 1319.49,
+  "account_total": 1319.49
+ },
+ "account_budget": [
+  {
+   "id": "6948564758",
+   "name": "",
+   "status": "APPROVED",
+   "approved_limit_type": "INFINITE",
+   "approved_limit": null,
+   "adjusted_limit_type": "INFINITE",
+   "amount_served": 187016.31,
+   "total_adjustments": 477.32,
+   "start": "2023-04-22 03:21:57",
+   "end": ""
+  }
+ ],
+ "billing_setup": [
+  {
+   "id": "6948489955",
+   "status": "APPROVED"
+  }
+ ],
+ "invalid_clicks": [
+  {
+   "camp": "24132507741",
+   "invalid_clicks": 941,
+   "invalid_rate": 97.01,
+   "clicks": 29,
+   "cost": 3084.87
+  },
+  {
+   "camp": "24132507744",
+   "invalid_clicks": 42,
+   "invalid_rate": 100.0,
+   "clicks": 0,
+   "cost": 0.0
+  },
+  {
+   "camp": "24132507747",
+   "invalid_clicks": 93,
+   "invalid_rate": 44.93,
+   "clicks": 114,
+   "cost": 2972.96
+  },
+  {
+   "camp": "24132507750",
+   "invalid_clicks": 621,
+   "invalid_rate": 95.54,
+   "clicks": 29,
+   "cost": 1951.94
+  },
+  {
+   "camp": "24132507753",
+   "invalid_clicks": 82,
+   "invalid_rate": 94.25,
+   "clicks": 5,
+   "cost": 152.52
+  }
+ ],
+ "impression_share_windows": {
+  "all launch-to-settled 08-14..09-08": {
+   "AC Repair": {
+    "cost": 3084.87,
+    "impressions": 879,
+    "is": 47.77,
+    "lost_budget": 6.36,
+    "lost_rank": 45.88
+   },
+   "Gas Boiler Repair": {
+    "cost": 0.0,
+    "impressions": 34,
+    "is": 51.61,
+    "lost_budget": 0.0,
+    "lost_rank": 48.39
+   },
+   "HVAC Installation": {
+    "cost": 2914.33,
+    "impressions": 3419,
+    "is": 36.51,
+    "lost_budget": 53.16,
+    "lost_rank": 10.32
+   },
+   "HVAC Repair": {
+    "cost": 1951.94,
+    "impressions": 1058,
+    "is": 33.87,
+    "lost_budget": 8.8,
+    "lost_rank": 57.33
+   },
+   "HVAC Replacement": {
+    "cost": 152.52,
+    "impressions": 199,
+    "is": 54.46,
+    "lost_budget": 0.0,
+    "lost_rank": 45.54
+   }
+  },
+  "CONTAMINATED 'hvac installers' era 08-14..08-28": {
+   "AC Repair": {
+    "cost": 1987.29,
+    "impressions": 477,
+    "is": 46.9,
+    "lost_budget": 4.3,
+    "lost_rank": 48.8
+   },
+   "Gas Boiler Repair": {
+    "cost": 0.0,
+    "impressions": 8,
+    "is": 33.33,
+    "lost_budget": 0.0,
+    "lost_rank": 66.67
+   },
+   "HVAC Installation": {
+    "cost": 2430.35,
+    "impressions": 2994,
+    "is": 35.77,
+    "lost_budget": 55.49,
+    "lost_rank": 8.73
+   },
+   "HVAC Repair": {
+    "cost": 1315.34,
+    "impressions": 808,
+    "is": 33.21,
+    "lost_budget": 8.78,
+    "lost_rank": 58.01
+   },
+   "HVAC Replacement": {
+    "cost": 152.52,
+    "impressions": 92,
+    "is": 47.3,
+    "lost_budget": 0.0,
+    "lost_rank": 52.7
+   }
+  },
+  "CLEAN post-swap 08-29..09-03 (pre-ceiling)": {
+   "AC Repair": {
+    "cost": 1064.18,
+    "impressions": 320,
+    "is": 56.64,
+    "lost_budget": 20.98,
+    "lost_rank": 22.38
+   },
+   "Gas Boiler Repair": {
+    "cost": 0.0,
+    "impressions": 13,
+    "is": 80.0,
+    "lost_budget": 0.0,
+    "lost_rank": 20.0
+   },
+   "HVAC Installation": {
+    "cost": 483.98,
+    "impressions": 309,
+    "is": 60.0,
+    "lost_budget": 4.38,
+    "lost_rank": 35.62
+   },
+   "HVAC Repair": {
+    "cost": 591.52,
+    "impressions": 203,
+    "is": 36.36,
+    "lost_budget": 10.33,
+    "lost_rank": 53.31
+   },
+   "HVAC Replacement": {
+    "cost": 0.0,
+    "impressions": 83,
+    "is": 71.43,
+    "lost_budget": 0.0,
+    "lost_rank": 28.57
+   }
+  },
+  "post-ceiling 09-05..09-08": {
+   "AC Repair": {
+    "cost": 0.0,
+    "impressions": 21,
+    "is": 13.64,
+    "lost_budget": 0.0,
+    "lost_rank": 86.36
+   },
+   "Gas Boiler Repair": {
+    "cost": 0.0,
+    "impressions": 13,
+    "is": 100.0,
+    "lost_budget": 0.0,
+    "lost_rank": 0.0
+   },
+   "HVAC Installation": {
+    "cost": 0.0,
+    "impressions": 63,
+    "is": 23.26,
+    "lost_budget": 0.0,
+    "lost_rank": 76.74
+   },
+   "HVAC Repair": {
+    "cost": 45.08,
+    "impressions": 36,
+    "is": 24.14,
+    "lost_budget": 0.0,
+    "lost_rank": 75.86
+   },
+   "HVAC Replacement": {
+    "cost": 0.0,
+    "impressions": 21,
+    "is": 75.0,
+    "lost_budget": 0.0,
+    "lost_rank": 25.0
+   }
+  }
+ },
+ "september_daily": {
+  "2026-09-01": {
+   "AC Repair": 112.63,
+   "HVAC Installation": 181.49,
+   "HVAC Repair": 89.51,
+   "TOTAL": 383.63
+  },
+  "2026-09-02": {
+   "AC Repair": 166.36,
+   "HVAC Installation": 199.86,
+   "HVAC Repair": 82.14,
+   "TOTAL": 448.36
+  },
+  "2026-09-03": {
+   "AC Repair": 221.89,
+   "HVAC Installation": 58.45,
+   "HVAC Repair": 70.05,
+   "TOTAL": 350.39
+  },
+  "2026-09-04": {
+   "AC Repair": 33.4,
+   "TOTAL": 33.4
+  },
+  "2026-09-05": {
+   "HVAC Repair": 21.46,
+   "TOTAL": 21.46
+  },
+  "2026-09-07": {
+   "HVAC Repair": 23.62,
+   "TOTAL": 23.62
+  },
+  "2026-09-09": {
+   "HVAC Installation": 58.63,
+   "TOTAL": 58.63
+  }
+ }
+}

@@ -1,0 +1,57 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # Fresh read-only identity check required before any account read in this work order
+    # (exact name 'Ambient Cooling - Live' and child 2401959466; the MCC 3373711342 is never the child).
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Gas Boiler Repair
+    related_services:
+      - Boiler Repair
+  task:
+    type: campaign-revamp
+    mode: draft
+    request: >-
+      STANDBY CPL containment for the gas/boiler repair service under the client CPL requirement
+      recorded 2026-09-30 (target $280, hard ceiling $350). Campaign 24132507744 'Search | NonBrand |
+      Boiler Services | Central MD | BOFU | 2026-09' is in the FREEZE band. Prepare a precise plan to
+      pause ad groups 204129718047 'SKAG | Boiler Repair' and 202339087594 'SKAG | Gas Boiler Repair'
+      (both land on /gas-boiler-repair/) that may execute only when a fresh reconciliation confirms
+      its trigger. Boiler Replacement 204129718207 is a separate exact service and is not touched.
+      READ + DRAFT ONLY. Any status, budget, bid, keyword or asset change needs its own
+      fingerprinted plan and explicit approval. No website, tracking, call-asset or conversion
+      change is authorized.
+    date_range: >-
+      CURRENT AS AT 2026-09-30. Last complete day 2026-09-29; 2026-09-30 is PARTIAL and is shown
+      only as provisional exposure. Evaluation is cumulative from the ad group's first spend (no
+      start-date reset), with since-migration (2026-09-24..29) and last-7 views alongside.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/gas-boiler-repair/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: null
+    primary_conversion_goal: "unique genuine paid boiler repair lead (form or call)"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-transition-2026-09.yaml
+      - reports/ambient-cooling-heating/2026-09-30-maintenance-evaluation-and-plan.md
+    campaign_id: "24132507744"
+    ad_group_ids: ["204129718047", "202339087594"]
+    target_cpl_usd: 280
+    cpl_ceiling_usd: 350
+    cpl_requirement_source: "Explicit Green Marketing instruction in the Claude Code working session"
+    cpl_requirement_recorded_on: "2026-09-30"
+    cpl_definition: "all ad spend in scope and period / unique genuine paid leads (click-ID or matched Google call record); QA, spam, wrong numbers, duplicates and non-paid channels excluded"
+    spending_limits_are_maximums_not_targets: true
+    containment_authorized: false
+  approval_owner: Green Marketing

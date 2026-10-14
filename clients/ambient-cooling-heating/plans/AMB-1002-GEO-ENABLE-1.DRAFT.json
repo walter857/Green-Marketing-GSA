@@ -1,0 +1,15 @@
+{
+ "plan_name": "AMB-1002-GEO-ENABLE-1",
+ "status": "DRAFT - not approvable until AMB-1002-GEO-CREATE-1 executes, reads back 0 FAIL and both RSAs are APPROVED; developer removes the zeroed 'Offer Ends in' countdown from /geothermal-heat-pump/ first",
+ "gates": [
+  "/geothermal-heat-pump/ no longer shows the 'Offer Ends in 00 DAY 00 HRS 00 MIN 00 SEC' countdown (an unverified time-limited offer); re-checked in Chrome desktop + 390 px",
+  "Both new RSAs APPROVED (or APPROVED_LIMITED)",
+  "Readback 0 FAIL and baseline hash unchanged"
+ ],
+ "operations": [
+  "enable RSA A (id from CREATE receipt)",
+  "enable RSA B (id from CREATE receipt)",
+  "remove label WAITING_LP (customers/2401959466/labels/22294515713)"
+ ],
+ "note": "Ad group, 5 keywords and campaign are already ENABLED; the $20/day budget is already inside the enabled total. Enabling the two RSAs is the only switch that starts geothermal delivery."
+}

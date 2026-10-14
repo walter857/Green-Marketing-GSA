@@ -1,0 +1,279 @@
+# VOID 2026-08-26 - fingerprint 701E8E5ED639
+# Bundled a read-only inspection with a live form test and a live phone test under a single fingerprint. One approval would have authorised three different risk classes.
+
+change_plan:
+  plan_id: PLAN-A
+  plan_title: Conversion tracking verification protocol
+  approval_type: MEASUREMENT_AND_TESTING
+  priority: P0
+  approval_status: VOID - DO NOT APPROVE
+  execution_status: VOID - DO NOT EXECUTE
+  recommended_approval_order: 1
+  ads_mutation_count: 0
+  requires_separate_enable_approval: false
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  evidence:
+  - Zero conversions and zero all_conversions on every action, all time (conversion_action_performance,
+    metrics-2026-08-25.json).
+  - Only 6 charged clicks life-to-date. At a 3-12% conversion rate the expected lead count is
+    0.2-0.7, so zero is fully consistent with working tracking. The API cannot distinguish the
+    two states.
+  - segments.conversion_action_name returns zero rows for the whole period.
+  - metrics.phone_calls = 0 across 107 phone impressions; CALLS click type recorded 35 impressions
+    and 0 clicks.
+  - No AW-#/label conversion-label pattern is observable in the initial DOM of any landing page,
+    which is expected if the form conversion fires as a GTM event on submit rather than on page
+    view. Page-load inspection therefore cannot confirm the form conversion fires.
+  - A second Google Ads tag AW-17878095007 fires on all six offer pages alongside the account's
+    own AW-18369652705.
+  conversion_actions_under_test:
+  - id: '7708725995'
+    name: Softwind Power Washing | Submission Lead Form
+    type: WEBPAGE
+    category: SUBMIT_LEAD_FORM
+    counting: ONE_PER_CLICK
+    click_through_lookback_days: 90
+    tag_snippets: 4
+    primary_for_goal: true
+    biddable_on_both_campaigns: true
+  - id: '7708765130'
+    name: Softwind Power Washing | Website Phone Call Lead
+    type: WEBSITE_CALL
+    category: PHONE_CALL_LEAD
+    counting: ONE_PER_CLICK
+    click_through_lookback_days: 30
+    phone_call_duration_seconds: 60
+    tag_snippets: 1
+    primary_for_goal: true
+    biddable_on_both_campaigns: true
+  - id: '7711699090'
+    name: Softwind Power Washing | Call Asset Lead
+    type: AD_CALL
+    category: PHONE_CALL_LEAD
+    counting: ONE_PER_CLICK
+    click_through_lookback_days: 30
+    phone_call_duration_seconds: 60
+    tag_snippets: 0
+    primary_for_goal: true
+    biddable_on_both_campaigns: true
+  creates_or_replaces_conversion_actions: false
+  actions:
+  - action_id: P0-A01
+    priority: P0
+    stage: 1
+    stage_name: READ-ONLY VALIDATION - creates no lead, no call, no artifact
+    resource_type: GOOGLE_TAG_MANAGER
+    operation: INSPECT
+    customer_id: '1521725229'
+    campaign_id: null
+    ad_group_id: null
+    resource_id: GTM-P3LD97NN
+    current_value: Container observed loading on all six offer landing pages
+    proposed_value: Open GTM Preview mode and load an offer page. Record every tag that fires
+      on page view and on form-submit trigger evaluation.
+    why: Preview mode shows whether the Google Ads conversion tag has a submit-triggered rule
+      at all. This is the single highest-information check available without creating a lead.
+    evidence: landing-pages-2026-08-25.json trackers.gtm_container
+    expected_effect: Determines whether a form-submit conversion trigger exists, and which AW
+      account each tag reports to.
+    risk: None. Preview mode is a private session and fires no live conversion.
+    rollback: Not applicable - nothing is changed.
+    approval_required: YES - requires Google Tag Manager access, which this work order does
+      not currently hold.
+    object_count: 1
+    creates_artifact: false
+  - action_id: P0-A02
+    priority: P0
+    stage: 1
+    stage_name: READ-ONLY VALIDATION - creates no lead, no call, no artifact
+    resource_type: GOOGLE_ADS_DIAGNOSTIC
+    operation: READ
+    customer_id: '1521725229'
+    campaign_id: null
+    ad_group_id: null
+    resource_id: conversion_action.status / tag status
+    current_value: All four actions status=ENABLED. No tag-status field is exposed by the Google
+      Ads API.
+    proposed_value: In the Google Ads UI read Goals > Conversions > Summary for the per-action
+      tag status label (Recording / No recent conversions / Tag inactive / Unverified) for actions
+      7708725995, 7708765130, 7711699090.
+    why: The UI surfaces a tag-health label that the API does not expose. It distinguishes 'tag
+      never seen' from 'tag seen, no conversions yet' - exactly the ambiguity this plan exists
+      to resolve.
+    evidence: deep-read-2026-08-25.json conversion_actions; the API returns no tag-status field.
+    expected_effect: Resolves the ambiguity without creating any artifact.
+    risk: None. Read-only UI inspection.
+    rollback: Not applicable.
+    approval_required: NO - read-only, inside existing account access.
+    object_count: 1
+    creates_artifact: false
+  - action_id: P0-A03
+    priority: P0
+    stage: 1
+    stage_name: READ-ONLY VALIDATION - creates no lead, no call, no artifact
+    resource_type: THIRD_PARTY_PLATFORM
+    operation: READ
+    customer_id: '1521725229'
+    campaign_id: null
+    ad_group_id: null
+    resource_id: WhatConverts
+    current_value: WhatConverts script observed on all six offer landing pages and on the main
+      site. Its lead log has not been inspected.
+    proposed_value: Read the WhatConverts lead log for 2026-08-05 to date. Confirm whether any
+      form submission or call was captured, and whether GCLID/GBRAID and campaign, ad group
+      and keyword are stored per lead.
+    why: WhatConverts is an independent record. If it shows a lead that Google Ads does not,
+      the defect is isolated to the Google Ads tag rather than to the form. If it shows no lead
+      either, the honest conclusion is that six clicks simply produced no lead.
+    evidence: landing-pages-2026-08-25.json trackers.whatconverts
+    expected_effect: Independent confirmation of whether any lead exists at all, and whether
+      click IDs reach the CRM.
+    risk: None. Read-only.
+    rollback: Not applicable.
+    approval_required: YES - requires WhatConverts access, not currently held.
+    object_count: 1
+    creates_artifact: false
+  - action_id: P0-A04
+    priority: P0
+    stage: 1
+    stage_name: READ-ONLY VALIDATION - creates no lead, no call, no artifact
+    resource_type: GOOGLE_ADS_TAG_OWNERSHIP
+    operation: READ
+    customer_id: '1521725229'
+    campaign_id: null
+    ad_group_id: null
+    resource_id: AW-17878095007
+    current_value: Fires on all six offer landing pages alongside the account's own AW-18369652705.
+      Owner UNKNOWN.
+    proposed_value: Identify the owner of Google Ads customer 17878095007. Check the Green Marketing
+      MCC 3373711342 account list first, then ask the client. Record which conversion events
+      it receives.
+    why: A second Google Ads account is receiving this client's conversion and audience signals.
+      Until ownership is known, neither removal nor retention can be justified, and any conversion
+      count could be contaminated.
+    evidence: landing-pages-2026-08-25.json trackers.google_ads_gtag on all six offer pages
+      plus the three paused-SKAG pages.
+    expected_effect: Establishes whether duplicate or contaminating conversion signals are possible.
+    risk: None at this stage. NO TAG IS REMOVED by this plan.
+    rollback: Not applicable.
+    approval_required: NO for the MCC lookup. Client confirmation needed if it is not a Green
+      Marketing account.
+    object_count: 1
+    creates_artifact: false
+  - action_id: P0-A05
+    priority: P0
+    stage: 2
+    stage_name: END-TO-END FORM TEST - CREATES A REAL LEAD - SEPARATE APPROVAL
+    resource_type: LANDING_PAGE_FORM
+    operation: SUBMIT_TEST_LEAD
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: null
+    resource_id: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+    current_value: 'Gravity Form gform_1. Fields: Full Name*, Phone Number*, Email Address*,
+      project note (optional). Never test-submitted.'
+    proposed_value: Submit ONE clearly-marked test lead. Name 'GM TEST DO NOT CONTACT'. Client-supplied
+      test phone and email only. Project note 'Green Marketing conversion test 2026-08-2X -
+      not a customer'. Arrive at the page via a real ad click if possible, otherwise with a
+      synthetic gclid. Then verify within 24h that conversion action 7708725995 increments.
+    why: The only way to prove the form conversion fires. Page-load inspection cannot see a
+      submit-triggered tag.
+    evidence: Plan A evidence block; conversion-audit finding C-6.
+    expected_effect: Definitively proves or disproves the form conversion path.
+    risk: MEDIUM. Creates a real lead record in Gravity Forms, WhatConverts and any connected
+      CRM, and may trigger a sales follow-up. Also inserts one false conversion into account
+      history, which slightly contaminates a conversion-starved account.
+    rollback: Delete the test lead from the CRM and WhatConverts after verification. The Google
+      Ads conversion cannot be deleted; it must be annotated and remembered when reading August
+      data.
+    approval_required: YES - END-TO-END TEST REQUIRES SEPARATE APPROVAL. Must not run until
+      Stage 1 is complete, and must not run until the client has supplied a test name, phone
+      and email and has been told to expect it.
+    object_count: 1
+    creates_artifact: true
+    blocked_on:
+    - Stage 1 complete
+    - Client-supplied test identity
+    - Client notified so nobody chases the fake lead
+  - action_id: P0-A06
+    priority: P0
+    stage: 3
+    stage_name: PHONE CALL TEST - CREATES A REAL CALL - SEPARATE APPROVAL
+    resource_type: CALL_TRACKING
+    operation: PLACE_TEST_CALL
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: null
+    resource_id: (631) 502-7946
+    current_value: 'Call asset 403335872180 and every offer-page tel: link use (631) 502-7946.
+      Zero calls recorded across 35 call-asset impressions.'
+    proposed_value: Place ONE test call to (631) 502-7946 lasting more than 60 seconds, so it
+      clears the qualified-call threshold on actions 7708765130 and 7711699090. Identify immediately
+      as a Green Marketing test. Verify within 24h that the correct action increments.
+    why: Both call actions use a 60-second minimum. A shorter call proves nothing. This is the
+      only way to prove the call path end to end.
+    evidence: deep-read-2026-08-25.json conversion_actions phone_call_duration_seconds=60; click_type
+      CALLS 35 impressions 0 clicks.
+    expected_effect: Proves or disproves the call conversion path and confirms which of the
+      two call actions receives the event.
+    risk: MEDIUM. Rings the client's real phone, consumes staff time, and creates a billable
+      tracked call plus one false conversion in history.
+    rollback: Annotate the call in WhatConverts as a test. The Google Ads conversion cannot
+      be deleted.
+    approval_required: YES - END-TO-END TEST REQUIRES SEPARATE APPROVAL. Must be scheduled inside
+      published hours (Mon-Fri 08:00-18:00) and the client must be told in advance.
+    object_count: 1
+    creates_artifact: true
+    blocked_on:
+    - Stage 1 complete
+    - Client agreement on a call window
+  stage_gating:
+    stage_1: Read-only. No lead, no call, no artifact. Approve and run first.
+    stage_2: Creates a real lead. Separate approval. Do not run before Stage 1.
+    stage_3: Creates a real call. Separate approval. Do not run before Stage 1.
+    rule: If Stage 1 proves the tags are recording, Stages 2 and 3 may not be needed at all.
+      Run Stage 1 first precisely so the client may avoid the cost and contamination of a live
+      test.
+  downstream_dependencies:
+  - PLAN-B (bidding) does not depend on this plan. A CPC ceiling on Maximize Clicks needs no
+    conversion signal.
+  - Any future move to Maximize Conversions or tCPA is BLOCKED until this plan passes. Smart
+    Bidding on a signal that has never fired would hand bidding to a model with no training
+    data.
+  - Setting conversion values (audit finding C-2) is blocked on client economics, which are
+    UNKNOWN, not on this plan.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 0
+    external_test_artifacts_created: 2
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  void_status:
+    state: VOID
+    voided_on: '2026-08-26'
+    fingerprint_voided: 701E8E5ED639
+    replaced_by:
+    - PLAN-A1
+    - PLAN-A2
+    - PLAN-A3
+    reason: Bundled a read-only inspection with a live form test and a live phone test under
+      a single fingerprint. One approval would have authorised three different risk classes.

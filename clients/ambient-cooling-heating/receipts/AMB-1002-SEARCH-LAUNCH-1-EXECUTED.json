@@ -1,0 +1,182 @@
+{
+ "plan": "AMB-1002-SEARCH-LAUNCH-1",
+ "fingerprint": "C903F9B1F413",
+ "started_local": "2026-10-02T08:36:14.314137-04:00",
+ "stage_A": [
+  "customers/2401959466/ads/825585199649",
+  "customers/2401959466/ads/825585199652",
+  "customers/2401959466/adGroupAds/204129718527~826714155502",
+  "customers/2401959466/adGroupAds/204129718727~826714155505",
+  "customers/2401959466/adGroupAds/204129718247~826714155508",
+  "customers/2401959466/adGroupAds/204129718247~826714155511",
+  "customers/2401959466/assets/426109948970"
+ ],
+ "new_ad_ids": {
+  "MAINT_FTU_B": [
+   "204129718527",
+   "826714155502"
+  ],
+  "MAINT_HSI_B": [
+   "204129718727",
+   "826714155505"
+  ],
+  "BOILER_INST_A": [
+   "204129718247",
+   "826714155508"
+  ],
+  "BOILER_INST_B": [
+   "204129718247",
+   "826714155511"
+  ]
+ },
+ "geo_sitelink_asset": "426109948970",
+ "stage_B_readback": [
+  {
+   "check": "ad 825585199649 URL -> heating-services, still PAUSED",
+   "pass": true
+  },
+  {
+   "check": "ad 825585199652 URL -> heating-services, still PAUSED",
+   "pass": true
+  },
+  {
+   "check": "MAINT_FTU_B 826714155502 PAUSED, URL, 15H/4D, paths",
+   "pass": true
+  },
+  {
+   "check": "MAINT_HSI_B 826714155505 PAUSED, URL, 15H/4D, paths",
+   "pass": true
+  },
+  {
+   "check": "BOILER_INST_A 826714155508 PAUSED, URL, 15H/4D, paths",
+   "pass": true
+  },
+  {
+   "check": "BOILER_INST_B 826714155511 PAUSED, URL, 15H/4D, paths",
+   "pass": true
+  },
+  {
+   "check": "geothermal sitelink text + URL",
+   "pass": true
+  }
+ ],
+ "stage_C": 41,
+ "stage_C_readback": [
+  {
+   "check": "16 ads ENABLED",
+   "pass": true
+  },
+  {
+   "check": "4 keywords ENABLED",
+   "pass": true
+  },
+  {
+   "check": "Housing-limited + unverified-claim ads still PAUSED",
+   "pass": true
+  },
+  {
+   "check": "campaign 24132507747 CALLOUT 407418595411 PAUSED",
+   "pass": true
+  },
+  {
+   "check": "campaign 24274160783 CALLOUT 422577777430 PAUSED",
+   "pass": true
+  },
+  {
+   "check": "campaign 24279798229 sitelinks enabled ['424583525083', '424481123441', '424481133551', '410638278156']",
+   "pass": true
+  },
+  {
+   "check": "campaign 24274160783 sitelinks enabled ['424666395915', '424481139482']",
+   "pass": true
+  },
+  {
+   "check": "campaign 24268690038 sitelinks enabled ['426109948970']",
+   "pass": true
+  }
+ ],
+ "policy_after_enable": {
+  "826714155508": [
+   "ENABLED",
+   "UNKNOWN",
+   "REVIEW_IN_PROGRESS"
+  ],
+  "826714155511": [
+   "ENABLED",
+   "UNKNOWN",
+   "REVIEW_IN_PROGRESS"
+  ],
+  "824781897834": [
+   "ENABLED",
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "824781897837": [
+   "ENABLED",
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "826785945725": [
+   "ENABLED",
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "826785945728": [
+   "ENABLED",
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "825585199649": [
+   "ENABLED",
+   "UNKNOWN",
+   "REVIEW_IN_PROGRESS"
+  ],
+  "825585199652": [
+   "ENABLED",
+   "UNKNOWN",
+   "REVIEW_IN_PROGRESS"
+  ],
+  "825585199655": [
+   "ENABLED",
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "825585199658": [
+   "ENABLED",
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "825585199661": [
+   "ENABLED",
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "825585199667": [
+   "ENABLED",
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "825585199670": [
+   "ENABLED",
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "825585199673": [
+   "ENABLED",
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "826714155502": [
+   "ENABLED",
+   "UNKNOWN",
+   "REVIEW_IN_PROGRESS"
+  ],
+  "826714155505": [
+   "ENABLED",
+   "UNKNOWN",
+   "REVIEW_IN_PROGRESS"
+  ]
+ },
+ "status": "EXECUTED",
+ "finished_local": "2026-10-02T08:36:32.175946-04:00"
+}

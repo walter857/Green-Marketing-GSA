@@ -1,0 +1,82 @@
+{
+ "package": "ambient-cooling-heating-KEYWORD-GAS-BOILER-EXPANSION",
+ "version": "2026-08-21",
+ "priority": "P2",
+ "run_class": "DRAFT + VALIDATE-ONLY. Not executed.",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD",
+  "vertical": "heating-cooling"
+ },
+ "campaign_id": "24132507744",
+ "ad_group_id": "202339087594",
+ "problem": "Gas Boiler Repair has recorded ZERO impressions since launch. Its only keyword 'gas boiler repair' averages 10 monthly searches in the service area, which is Google's minimum reported bucket. Its $42.76 daily budget has never been used.",
+ "evidence": {
+  "gas boiler repair": {
+   "avg_monthly": 10,
+   "competition": "LOW",
+   "index": 0
+  },
+  "boiler repair": {
+   "avg_monthly": 30,
+   "competition": "LOW",
+   "index": 15
+  },
+  "note": "boiler repair is 3x the volume at LOW competition. It is the only boiler term in the researched set above the 10-search floor."
+ },
+ "additions": [
+  {
+   "text": "boiler repair",
+   "match": "PHRASE",
+   "status": "ENABLED"
+  },
+  {
+   "text": "boiler repair",
+   "match": "EXACT",
+   "status": "ENABLED"
+  }
+ ],
+ "cross_service_control": {
+  "concern": "'boiler repair' as Phrase will match oil boilers, commercial and industrial boilers, water heaters, parts, installation and replacement intent, none of which the gas-boiler landing page serves.",
+  "mitigation": "Ten AD-GROUP-SCOPED Phrase negatives are created in the same request: 'oil boiler', 'commercial boiler', 'water heater', 'boiler parts', 'boiler installation', 'boiler replacement', 'industrial boiler', 'boiler jobs', 'boiler manual', 'diy boiler'.",
+  "why_ad_group_scoped": "They are confined to ad group 202339087594 so they cannot affect AC Repair, HVAC Repair, HVAC Installation or HVAC Replacement, and they cannot touch any legacy campaign.",
+  "conflict_test": "Each negative was checked against all five active keywords: none blocks 'gas boiler repair', 'boiler repair', 'ac repair near me', 'hvac repair near me', 'hvac installers' or 'hvac replacement near me'. In particular 'boiler installation' and 'boiler replacement' do not contain and are not contained by 'boiler repair'.",
+  "protected_intent_preserved": "near me, quote, price, pricing, cost, best, hire, local and emergency are NOT negated anywhere."
+ },
+ "why_not_more_terms": "Every other boiler variant researched (residential boiler repair, boiler repair near me, boiler service, gas boiler service, boiler technician, boiler not working, steam boiler repair) returns the 10-search floor. Adding them would add management surface without measurable volume. 'boiler technician' is also HIGH competition at index 100.",
+ "mutation_counts": {
+  "creates": 12,
+  "updates": 0,
+  "removals": 0,
+  "total_mutations": 12,
+  "positive_keywords": 2,
+  "negative_keywords": 10,
+  "broad_match_added": 0,
+  "campaigns_touched": 0,
+  "budgets_touched": 0,
+  "ads_touched": 0
+ },
+ "expected_impact": "Roughly triples the addressable monthly volume for this campaign, from about 10 searches to about 40. Honest scale: that is still very small and may produce only a handful of impressions per week. The campaign budget already exists and is unused, so incremental cost is bounded by the existing $42.76/day.",
+ "risk": "LOW-MEDIUM. Phrase 'boiler repair' is broader than the current keyword. The ten negatives bound it. Fully reversible.",
+ "rollback_plan": "Remove the 12 created criteria by resource name. 12 mutations.",
+ "readback_verification": [
+  "ASSERT 2 positive keywords exist in ad group 202339087594 with match types PHRASE and EXACT and status ENABLED.",
+  "ASSERT 10 negative keywords exist in the same ad group.",
+  "ASSERT no keyword or negative was created in any other ad group.",
+  "ASSERT account keyword count rose by exactly 12.",
+  "ASSERT the account-level negative list 11252984411 is unchanged at 59 members."
+ ],
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 12,
+  "errors": 0
+ },
+ "drift_assumptions": "Assumes ad group 202339087594 still holds exactly 2 keywords and 0 negatives at execution time.",
+ "plan_fingerprint": "E6D25322E35F3E62",
+ "VOID": true,
+ "VOID_ON": "2026-08-21",
+ "VOID_REASON": "Negated 'commercial boiler' while the landing page states 'Gas boiler repair for homes and businesses'. Superseded by 44145A2CE26A811B"
+}

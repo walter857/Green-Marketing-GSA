@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lead attribution record",
+  "type": "object",
+  "required": ["lead_id", "created_at", "customer_id", "source", "consent"],
+  "properties": {
+    "lead_id": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "format": "date-time"},
+    "customer_id": {"type": "string", "pattern": "^[0-9]{10}$"},
+    "source": {"enum": ["form", "call", "chat", "lsa", "other"]},
+    "gclid": {"type": ["string", "null"]},
+    "gbraid": {"type": ["string", "null"]},
+    "wbraid": {"type": ["string", "null"]},
+    "utm_source": {"type": ["string", "null"]},
+    "utm_medium": {"type": ["string", "null"]},
+    "utm_campaign": {"type": ["string", "null"]},
+    "utm_term": {"type": ["string", "null"]},
+    "campaign_id": {"type": ["string", "null"]},
+    "ad_group_id": {"type": ["string", "null"]},
+    "keyword": {"type": ["string", "null"]},
+    "landing_page": {"type": ["string", "null"]},
+    "crm_stage": {"type": ["string", "null"]},
+    "revenue": {"type": ["number", "null"], "minimum": 0},
+    "gross_profit": {"type": ["number", "null"]},
+    "consent": {
+      "type": "object",
+      "required": ["ad_user_data"],
+      "properties": {
+        "ad_user_data": {"enum": ["GRANTED", "DENIED", "UNKNOWN"]},
+        "ad_personalization": {"enum": ["GRANTED", "DENIED", "UNKNOWN"]}
+      }
+    }
+  }
+}
+

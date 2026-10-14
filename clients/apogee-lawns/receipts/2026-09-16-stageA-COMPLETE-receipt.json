@@ -1,0 +1,124 @@
+{
+ "plans": [
+  "APG-0916-CONV-A (9BA1F4AE3CCA)",
+  "APG-0916-CONV-A2 (D1CAB205DDDA)"
+ ],
+ "executed_local": "2026-09-16T22:58:08.861384-05:00",
+ "customer_id": "8164626278",
+ "account_name": "Apogee Lawns LLC - Live",
+ "scope_approved_by": "Walter",
+ "total_mutations": 3,
+ "deletes_or_removes": 0,
+ "enables": 0,
+ "created_this_run": [
+  {
+   "ordinal": 2,
+   "name": "Call | Permanent Lights | Ads | 60s",
+   "resource_name": "customers/8164626278/conversionActions/7773013199",
+   "id": "7773013199"
+  },
+  {
+   "ordinal": 3,
+   "name": "Call | Permanent Lights | Website | 60s",
+   "resource_name": "customers/8164626278/conversionActions/7773043879",
+   "id": "7773043879"
+  }
+ ],
+ "readback": [
+  {
+   "id": "7772803337",
+   "resource_name": "customers/8164626278/conversionActions/7772803337",
+   "name": "Lead | Permanent Lights | Form Submit | Thank You",
+   "status": "ENABLED",
+   "type": "WEBPAGE",
+   "category": "SUBMIT_LEAD_FORM",
+   "origin": "WEBSITE",
+   "primary_for_goal": false,
+   "counting_type": "ONE_PER_CLICK",
+   "click_window_days": 30,
+   "view_window_days": 1,
+   "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "ddm_status": "AVAILABLE",
+   "default_value": 0.0,
+   "always_use_default_value": false,
+   "phone_call_duration_seconds": 60,
+   "include_in_conversions_metric": false,
+   "owner": "8164626278",
+   "send_to": [
+    "AW-18453077620/KOL7CImirvocEPS8jt9E"
+   ],
+   "qa": "PASS"
+  },
+  {
+   "id": "7773013199",
+   "resource_name": "customers/8164626278/conversionActions/7773013199",
+   "name": "Call | Permanent Lights | Ads | 60s",
+   "status": "ENABLED",
+   "type": "AD_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "CALL_FROM_ADS",
+   "primary_for_goal": false,
+   "counting_type": "ONE_PER_CLICK",
+   "click_window_days": 30,
+   "view_window_days": 30,
+   "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "ddm_status": "AVAILABLE",
+   "default_value": 0.0,
+   "always_use_default_value": true,
+   "phone_call_duration_seconds": 60,
+   "include_in_conversions_metric": false,
+   "owner": "8164626278",
+   "send_to": [],
+   "qa": "PASS"
+  },
+  {
+   "id": "7773043879",
+   "resource_name": "customers/8164626278/conversionActions/7773043879",
+   "name": "Call | Permanent Lights | Website | 60s",
+   "status": "ENABLED",
+   "type": "WEBSITE_CALL",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "WEBSITE",
+   "primary_for_goal": false,
+   "counting_type": "ONE_PER_CLICK",
+   "click_window_days": 30,
+   "view_window_days": 30,
+   "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+   "ddm_status": "AVAILABLE",
+   "default_value": 0.0,
+   "always_use_default_value": true,
+   "phone_call_duration_seconds": 60,
+   "include_in_conversions_metric": false,
+   "owner": "8164626278",
+   "send_to": [
+    "AW-18453077620/lp3jCKf5vPocEPS8jt9E"
+   ],
+   "qa": "PASS"
+  }
+ ],
+ "readback_field_failures": 0,
+ "conversion_tracking_status": "CONVERSION_TRACKING_MANAGED_BY_SELF",
+ "call_reporting_enabled": true,
+ "call_conversion_action_pointer": "customers/8164626278/conversionActions/179",
+ "customer_conversion_goals": [
+  {
+   "category": "PHONE_CALL_LEAD",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "category": "PHONE_CALL_LEAD",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "category": "SUBMIT_LEAD_FORM",
+   "origin": "WEBSITE",
+   "biddable": true
+  }
+ ],
+ "biddable_goal_categories": [
+  "PHONE_CALL_LEAD",
+  "SUBMIT_LEAD_FORM"
+ ]
+}

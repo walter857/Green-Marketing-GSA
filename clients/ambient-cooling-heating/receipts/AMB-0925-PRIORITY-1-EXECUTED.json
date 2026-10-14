@@ -1,0 +1,124 @@
+{
+ "plan": "AMB-0925-PRIORITY-1",
+ "fingerprint": "9A9292508AD5",
+ "started_local": "2026-09-25T13:15:41.952541-04:00",
+ "stages": [
+  {
+   "S1_create_labels": "OK",
+   "resources": [
+    "customers/2401959466/labels/22294514681",
+    "customers/2401959466/labels/22294514684",
+    "customers/2401959466/labels/22294514687",
+    "customers/2401959466/labels/22294514690",
+    "customers/2401959466/labels/22294515713",
+    "customers/2401959466/labels/22294515716",
+    "customers/2401959466/labels/22294515719",
+    "customers/2401959466/labels/22294515722"
+   ]
+  },
+  {
+   "S2_pause_held_ads": "OK",
+   "resources": [
+    "customers/2401959466/adGroupAds/199797580746~825056834775",
+    "customers/2401959466/adGroupAds/199797580746~825056834778",
+    "customers/2401959466/adGroupAds/204129717567~825863405664",
+    "customers/2401959466/adGroupAds/204129717567~825863405667",
+    "customers/2401959466/adGroupAds/204129717727~825585199613",
+    "customers/2401959466/adGroupAds/204129717727~825585199616",
+    "customers/2401959466/adGroupAds/204129718447~825585199649",
+    "customers/2401959466/adGroupAds/204129718447~825585199652",
+    "customers/2401959466/adGroupAds/204129718487~825585199655",
+    "customers/2401959466/adGroupAds/204129718487~825585199658",
+    "customers/2401959466/adGroupAds/204129718527~825585199661",
+    "customers/2401959466/adGroupAds/204129718527~825585199664",
+    "customers/2401959466/adGroupAds/204129718687~825585199667",
+    "customers/2401959466/adGroupAds/204129718687~825585199670",
+    "customers/2401959466/adGroupAds/204129718727~825585199673",
+    "customers/2401959466/adGroupAds/204129718727~825585199676",
+    "customers/2401959466/adGroupAds/204129719007~825585199679",
+    "customers/2401959466/adGroupAds/204129719007~825585199802"
+   ]
+  },
+  {
+   "S3_enable_groups_and_label": "OK",
+   "resources": [
+    "customers/2401959466/adGroups/199797580746",
+    "customers/2401959466/adGroups/204129717047",
+    "customers/2401959466/adGroups/204129717727",
+    "customers/2401959466/adGroups/204129718247",
+    "customers/2401959466/adGroups/204129718287",
+    "customers/2401959466/adGroups/204129718447",
+    "customers/2401959466/adGroups/204129718487",
+    "customers/2401959466/adGroups/204129718527",
+    "customers/2401959466/adGroups/204129718687",
+    "customers/2401959466/adGroups/204129718727",
+    "customers/2401959466/adGroups/204129719007",
+    "customers/2401959466/adGroupLabels/204129717087~22294514681",
+    "customers/2401959466/adGroupLabels/204129717007~22294514681",
+    "customers/2401959466/adGroupLabels/199797580706~22294514681",
+    "customers/2401959466/adGroupLabels/204129717247~22294514681",
+    "customers/2401959466/adGroupLabels/204129717287~22294514681",
+    "customers/2401959466/adGroupLabels/204129717327~22294514681",
+    "customers/2401959466/adGroupLabels/204129717807~22294514681",
+    "customers/2401959466/adGroupLabels/204129717767~22294514681",
+    "customers/2401959466/adGroupLabels/204129717967~22294514681",
+    "customers/2401959466/adGroupLabels/204129718007~22294514681",
+    "customers/2401959466/adGroupLabels/204129717527~22294514681",
+    "customers/2401959466/adGroupLabels/204129717487~22294514681",
+    "customers/2401959466/adGroupLabels/204129718047~22294514681",
+    "customers/2401959466/adGroupLabels/202339087594~22294514681",
+    "customers/2401959466/adGroupLabels/204129718207~22294514681",
+    "customers/2401959466/adGroupLabels/204129718767~22294514681",
+    "customers/2401959466/adGroupLabels/204129718927~22294514681",
+    "customers/2401959466/adGroupLabels/204129718967~22294514681",
+    "customers/2401959466/adGroupLabels/204129718247~22294515713",
+    "customers/2401959466/adGroupLabels/204129719007~22294514684",
+    "customers/2401959466/adGroupLabels/204129719007~22294515713",
+    "customers/2401959466/adGroupLabels/199797580746~22294514687",
+    "customers/2401959466/adGroupLabels/199797580746~22294514690",
+    "customers/2401959466/adGroupLabels/199797580746~22294515713",
+    "customers/2401959466/adGroupLabels/204129717727~22294514687",
+    "customers/2401959466/adGroupLabels/204129717727~22294515713",
+    "customers/2401959466/adGroupLabels/204129717567~22294514687",
+    "customers/2401959466/adGroupLabels/204129718287~22294514687",
+    "customers/2401959466/adGroupLabels/204129718287~22294515713",
+    "customers/2401959466/adGroupLabels/204129718447~22294514687",
+    "customers/2401959466/adGroupLabels/204129718447~22294515713",
+    "customers/2401959466/adGroupLabels/204129718527~22294514687",
+    "customers/2401959466/adGroupLabels/204129718527~22294515713",
+    "customers/2401959466/adGroupLabels/204129718487~22294514687",
+    "customers/2401959466/adGroupLabels/204129718487~22294515713",
+    "customers/2401959466/adGroupLabels/204129718687~22294514687",
+    "customers/2401959466/adGroupLabels/204129718687~22294515713",
+    "customers/2401959466/adGroupLabels/204129718727~22294514687",
+    "customers/2401959466/adGroupLabels/204129718727~22294515713",
+    "customers/2401959466/adGroupLabels/204129717047~22294515713",
+    "customers/2401959466/adGroupLabels/204129717047~22294515722"
+   ]
+  },
+  {
+   "S4_asset_hygiene": "OK",
+   "resources": [
+    "customers/2401959466/assets/424717815118",
+    "customers/2401959466/assets/424717815121",
+    "customers/2401959466/campaignAssets/24268690038~424717815118~STRUCTURED_SNIPPET",
+    "customers/2401959466/campaignAssets/24274160783~424717815121~STRUCTURED_SNIPPET",
+    "customers/2401959466/campaignAssets/24268690038~424481133551~SITELINK",
+    "customers/2401959466/campaignAssets/24268690038~422577777442~CALLOUT",
+    "customers/2401959466/campaignAssets/24268690041~422577777442~CALLOUT",
+    "customers/2401959466/campaignAssets/24274160783~422577777442~CALLOUT",
+    "customers/2401959466/campaignAssets/24268690038~423727603969~STRUCTURED_SNIPPET",
+    "customers/2401959466/campaignAssets/24274160783~423727603972~STRUCTURED_SNIPPET"
+   ]
+  }
+ ],
+ "readback_gate": {
+  "held_groups": 12,
+  "enabled_ads_in_held_groups": []
+ },
+ "finished_local": "2026-09-25T13:15:46.532601-04:00",
+ "readback": {
+  "fails": [],
+  "groups_checked": 30
+ }
+}

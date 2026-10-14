@@ -1,0 +1,303 @@
+plan_id: APG-1005-ADS
+plan_kind: rsa_and_callout_create_paused
+generated: '2026-10-05'
+external_writes_performed: NONE
+target:
+  exact_child_account_name: Apogee Lawns LLC - Live
+  child_customer_id: '8164626278'
+  manager_customer_id: '3373711342'
+  manager_never_mutated: true
+  exact_primary_service: Permanent Christmas light installation
+  vertical: similar-local-service
+  scope_approval: Walter, 2026-09-16 (recorded, not re-requested)
+  work_order: clients/apogee-lawns/work-order.yaml (validator PASS 2026-10-05)
+  campaign:
+    id: '24257151015'
+    name: S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026
+    status: ENABLED (unchanged by this bundle)
+    budget_id: '15884926233'
+    daily_budget_micros: 16440000
+    monthly_cap_at_30_4_days_usd: 499.78
+    bidding: MAXIMIZE_CLICKS (TARGET_SPEND) ceiling 8000000 micros (unchanged)
+    locations_presence:
+    - '1021635'
+    - '1021647'
+    - '1021696'
+    - '1021783'
+    - '9024651'
+    - '9024671'
+    - '9024703'
+    - '9024728'
+    - '9024746'
+    - '9024748'
+    - '9024753'
+    - '9024754'
+    - '9195288'
+    - '9233865'
+    schedule: 24/7, 0 ad-schedule criteria (unchanged)
+    tablet: -100% (unchanged)
+    final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/
+    conversions: 7772803337 Primary, 7773013199 Primary, 7773043879 Secondary (unchanged)
+evidence:
+  snapshot: clients/apogee-lawns/snapshots/2026-10-05-conversion-plan-snapshot.json
+  snapshot_run_at_utc: '2026-10-05T16:14:18+00:00'
+  browser_qa: clients/apogee-lawns/audits/2026-10-05-conversion-plan/browser-qa/
+claim_sources_verified_today:
+  CL1_professional_installation:
+  - - lp
+    - leave the installation to a pro
+  - - lp
+    - professional permanent-light installation
+  - - main
+    - professional install
+  CL2_roofline_or_eaves:
+  - - lp
+    - along the property’s roofline or eaves
+  CL3_app_colors_patterns_schedules:
+  - - lp
+    - app-controlled colors, patterns, and schedules
+  CL4_year_round_holidays_game_days:
+  - - lp
+    - christmas, celebrations, game days, and everyday accent lighting
+  CL5_homes_and_businesses:
+  - - lp
+    - options for homes and businesses
+  - - main
+    - homes & businesses
+  CL6_free_estimate:
+  - - lp
+    - request a free estimate
+  - - lp
+    - get my free quote
+  CL7_not_annual_hanging:
+  - - lp
+    - not annual light hanging, removal, or storage
+  CL8_lincoln_area:
+  - - lp
+    - installation in lincoln, ne
+  CL9_free_consultation_custom_design:
+  - - main
+    - free consultation and custom design
+  - - lp
+    - designed around your property
+  CL10_pricing_roofline_footage:
+  - - main
+    - linear footage of your roofline
+  - - main
+    - complexity of your home
+objects:
+- ordinal: 1
+  resource: ad_group_ad
+  operation: create
+  ad_group: AG | Permanent Light Installation
+  responsive_search_ad:
+    ad_group_id: '200347713516'
+    final_urls:
+    - https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/
+    path1: permanent
+    path2: installation
+    status: PAUSED
+    headlines:
+    - text: Permanent Light Installation
+      pinned_field: HEADLINE_1
+      claims:
+      - CL1_professional_installation
+    - text: Permanent Lights Installed
+      pinned_field: HEADLINE_1
+      claims:
+      - CL1_professional_installation
+    - text: Pro Permanent Light Installers
+      pinned_field: HEADLINE_1
+      claims:
+      - CL1_professional_installation
+    - text: Installed Along Your Roofline
+      pinned_field: null
+      claims:
+      - CL2_roofline_or_eaves
+    - text: Lincoln-Area Installation
+      pinned_field: null
+      claims:
+      - CL8_lincoln_area
+      - CL1_professional_installation
+    - text: Free Custom Lighting Design
+      pinned_field: null
+      claims:
+      - CL9_free_consultation_custom_design
+    - text: Request a Free Estimate
+      pinned_field: null
+      claims:
+      - CL6_free_estimate
+    - text: Homes and Businesses
+      pinned_field: null
+      claims:
+      - CL5_homes_and_businesses
+    - text: App-Controlled Colors
+      pinned_field: null
+      claims:
+      - CL3_app_colors_patterns_schedules
+    - text: Lights for Every Holiday
+      pinned_field: null
+      claims:
+      - CL4_year_round_holidays_game_days
+    - text: No Yearly Hanging or Removal
+      pinned_field: null
+      claims:
+      - CL7_not_annual_hanging
+    - text: Installed Once, Used All Year
+      pinned_field: null
+      claims:
+      - CL4_year_round_holidays_game_days
+      - CL7_not_annual_hanging
+    descriptions:
+    - text: Apogee Lawns professionally installs permanent lights along your roofline. Free estimate.
+      claims:
+      - CL1_professional_installation
+      - CL2_roofline_or_eaves
+      - CL6_free_estimate
+    - text: Get a free consultation and custom lighting design for your Lincoln-area home or business.
+      claims:
+      - CL9_free_consultation_custom_design
+      - CL8_lincoln_area
+      - CL5_homes_and_businesses
+    - text: Choose colors, patterns and schedules in the app for holidays, game days and every day.
+      claims:
+      - CL3_app_colors_patterns_schedules
+      - CL4_year_round_holidays_game_days
+    - text: A permanent lighting system, not yearly hanging, removal or storage. Request an estimate.
+      claims:
+      - CL7_not_annual_hanging
+      - CL6_free_estimate
+  role: 'treatment: every pinned H1 option signals installation; comparator kept = 825023783007'
+- ordinal: 2
+  resource: ad_group_ad
+  operation: create
+  ad_group: AG | Permanent Christmas Lights Exact
+  responsive_search_ad:
+    ad_group_id: '200347713556'
+    final_urls:
+    - https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/
+    path1: permanent
+    path2: installation
+    status: PAUSED
+    headlines:
+    - text: Pro-Installed Permanent Lights
+      pinned_field: HEADLINE_1
+      claims:
+      - CL1_professional_installation
+    - text: Permanent Light Installation
+      pinned_field: HEADLINE_1
+      claims:
+      - CL1_professional_installation
+    - text: Permanent Lights Installed
+      pinned_field: HEADLINE_1
+      claims:
+      - CL1_professional_installation
+    - text: Permanent Christmas Lights
+      pinned_field: null
+      claims:
+      - KW_keyword_relevance
+    - text: Skip the DIY Light Kit
+      pinned_field: null
+      claims:
+      - POS_skip_diy
+    - text: Installed Along Your Roofline
+      pinned_field: null
+      claims:
+      - CL2_roofline_or_eaves
+    - text: Free Custom Lighting Design
+      pinned_field: null
+      claims:
+      - CL9_free_consultation_custom_design
+    - text: Request a Free Estimate
+      pinned_field: null
+      claims:
+      - CL6_free_estimate
+    - text: Lincoln Permanent Lighting
+      pinned_field: null
+      claims:
+      - CL8_lincoln_area
+    - text: App-Controlled Colors
+      pinned_field: null
+      claims:
+      - CL3_app_colors_patterns_schedules
+    - text: Christmas and Every Holiday
+      pinned_field: null
+      claims:
+      - CL4_year_round_holidays_game_days
+    - text: Homes and Businesses
+      pinned_field: null
+      claims:
+      - CL5_homes_and_businesses
+    descriptions:
+    - text: Get permanent Christmas lights professionally installed on your Lincoln-area home.
+      claims:
+      - CL1_professional_installation
+      - CL8_lincoln_area
+    - text: Compare options with a free estimate and a lighting design built around your property.
+      claims:
+      - CL6_free_estimate
+      - CL9_free_consultation_custom_design
+    - text: Choose colors, patterns and schedules from the app after professional installation.
+      claims:
+      - CL3_app_colors_patterns_schedules
+      - CL1_professional_installation
+    - text: Pricing is based on your roofline footage and home's architecture. Get a free estimate.
+      claims:
+      - CL10_pricing_roofline_footage
+      - CL6_free_estimate
+  role: 'treatment: installation-focused copy for the head-term trial; comparator kept = 825023783016'
+- ordinal: 3
+  resource: asset
+  operation: create
+  type: CALLOUT
+  callout_text: Free Estimates
+  claims:
+  - CL6_free_estimate
+- ordinal: 4
+  resource: campaign_asset
+  operation: create
+  campaign_id: '24257151015'
+  field_type: CALLOUT
+  asset: temporary resource from ordinal 3
+  status: PAUSED
+mutation_counts:
+  creates: 4
+  rsa_creates_paused: 2
+  asset_creates: 1
+  campaign_asset_links_paused: 1
+  updates: 0
+  removes: 0
+  enables: 0
+  status_changes: 0
+  budget_changes: 0
+  bid_changes: 0
+  conversion_changes: 0
+  total_operations: 4
+after_creation_counts:
+  ad_group_200347713516_rsas: 2 ENABLED + 1 PAUSED (cap 3)
+  ad_group_200347713556_rsas: 2 ENABLED + 1 PAUSED (cap 3)
+preconditions_at_execution:
+- fresh identity gate PASS (exact name + child ID, not manager, not test)
+- work-order validator PASS
+- every resource name below re-read and unchanged since the snapshot; any drift = STOP
+- campaign budget 16440000 micros, ceiling 8000000 micros, 14 locations, tablet 0.0 unchanged
+- each ad group still has exactly 2 non-removed RSAs
+readback_assertions:
+- 2 new RSAs PAUSED with exactly the headlines, pins, descriptions, paths and final URL above
+- callout asset text exact; campaign_asset link PAUSED
+- existing 4 RSAs still ENABLED and unchanged
+- existing 8 campaign asset links unchanged
+qa_requirements:
+- validate_only accepted the exact operations on 2026-10-05
+- every pinned H1 option contains 'install'; headlines <=30, descriptions <=90, paths <=15
+- every claim found in today's captured text of the paid page or apogeelawns.com permanent-lights page
+- no price, warranty, rating, review, EverLights brand, Veteran, Omaha, response-time or product-spec claim
+recovery_plan: 'If any operation fails, the batch is atomic (partial_failure=false) and nothing is written; if a
+  non-atomic partial success is ever observed: STOP, inventory every created/removed resource name from the response
+  and a fresh read, write a PARTIAL-FAILURE receipt, and propose a recovery plan before any retry.'
+rollback: remove the 2 paused RSAs, the callout link and the callout asset (none serve while PAUSED)
+enablement: 'separate approval after readback (APG-1005-ADS-TRANSITION): enable both new RSAs and the callout link,
+  and pause 825023783010 and 825023783013 so each ad group keeps exactly two distinct enabled RSAs'
+approval_grant:
+  required_line: APPROVE APG ADS CREATE-PAUSED <fingerprint>
+  fingerprint_scope: gm_gsa.safety.approval_code over this file as loaded

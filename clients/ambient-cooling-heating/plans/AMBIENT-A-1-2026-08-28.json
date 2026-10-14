@@ -1,0 +1,370 @@
+{
+ "plan_name": "AMBIENT-A1-COMPETITOR-NEGATIVES-2026-08-28",
+ "supersedes": "the ADJ-1 package inside ACE80A09AC134C85",
+ "approval_class": "campaign-criterion CREATE, reversible",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "target_campaign_id": "24132507747",
+ "object_count": 7,
+ "operations": [
+  {
+   "operation_type": "CREATE campaign_criterion (negative keyword)",
+   "package": "A-1",
+   "campaign_id": "24132507747",
+   "campaign_name": "HVAC Installation",
+   "resource_targeted": "customers/2401959466/campaigns/24132507747",
+   "current_value": "no such negative exists on this campaign",
+   "proposed_value": "negative keyword 'croppmetcalfe' [PHRASE] at campaign level",
+   "reason": "competitor company name reached by phrase same-meaning expansion of the keyword 'hvac installers'",
+   "supporting_metrics": {
+    "terms_covered": 5,
+    "impressions": 31,
+    "clicks": 4,
+    "cost": 105.14,
+    "primary_conversions": 0.0,
+    "secondary_all_conversions": 0.0,
+    "example_terms": [
+     "croppmetcalfe columbia",
+     "croppmetcalfe fairfax",
+     "croppmetcalfe linthicum heights",
+     "croppmetcalfe hvac",
+     "croppmetcalfe service experts"
+    ]
+   },
+   "conflict_test_active_keywords": [],
+   "conflict_test_five_services": [],
+   "strict_rule_screen": "ALLOW",
+   "strict_rule_reasons": [],
+   "already_covered_by_existing_negative": [],
+   "risk": "Blocks the exact phrase only. Zero live keywords and zero of the 54 service probes are affected. Reversible in one REMOVE.",
+   "rollback": "REMOVE the returned campaign_criterion resource name.",
+   "unrelated_resource_assertion": "creates one campaign_criterion; touches no budget, bid, keyword, ad, asset, schedule, location, conversion or manager link"
+  },
+  {
+   "operation_type": "CREATE campaign_criterion (negative keyword)",
+   "package": "A-1",
+   "campaign_id": "24132507747",
+   "campaign_name": "HVAC Installation",
+   "resource_targeted": "customers/2401959466/campaigns/24132507747",
+   "current_value": "no such negative exists on this campaign",
+   "proposed_value": "negative keyword 'michael and sons' [PHRASE] at campaign level",
+   "reason": "competitor company name reached by phrase same-meaning expansion of the keyword 'hvac installers'",
+   "supporting_metrics": {
+    "terms_covered": 2,
+    "impressions": 9,
+    "clicks": 1,
+    "cost": 32.44,
+    "primary_conversions": 0.0,
+    "secondary_all_conversions": 0.0,
+    "example_terms": [
+     "michael and sons hvac",
+     "hvac michael and sons"
+    ]
+   },
+   "conflict_test_active_keywords": [],
+   "conflict_test_five_services": [],
+   "strict_rule_screen": "ALLOW",
+   "strict_rule_reasons": [],
+   "already_covered_by_existing_negative": [],
+   "risk": "Blocks the exact phrase only. Zero live keywords and zero of the 54 service probes are affected. Reversible in one REMOVE.",
+   "rollback": "REMOVE the returned campaign_criterion resource name.",
+   "unrelated_resource_assertion": "creates one campaign_criterion; touches no budget, bid, keyword, ad, asset, schedule, location, conversion or manager link"
+  },
+  {
+   "operation_type": "CREATE campaign_criterion (negative keyword)",
+   "package": "A-1",
+   "campaign_id": "24132507747",
+   "campaign_name": "HVAC Installation",
+   "resource_targeted": "customers/2401959466/campaigns/24132507747",
+   "current_value": "no such negative exists on this campaign",
+   "proposed_value": "negative keyword 'michael & sons' [PHRASE] at campaign level",
+   "reason": "competitor company name reached by phrase same-meaning expansion of the keyword 'hvac installers'",
+   "supporting_metrics": {
+    "terms_covered": 1,
+    "impressions": 2,
+    "clicks": 0,
+    "cost": 0.0,
+    "primary_conversions": 0.0,
+    "secondary_all_conversions": 0.0,
+    "example_terms": [
+     "michael & sons hvac"
+    ]
+   },
+   "conflict_test_active_keywords": [],
+   "conflict_test_five_services": [],
+   "strict_rule_screen": "ALLOW",
+   "strict_rule_reasons": [],
+   "already_covered_by_existing_negative": [],
+   "risk": "Blocks the exact phrase only. Zero live keywords and zero of the 54 service probes are affected. Reversible in one REMOVE.",
+   "rollback": "REMOVE the returned campaign_criterion resource name.",
+   "unrelated_resource_assertion": "creates one campaign_criterion; touches no budget, bid, keyword, ad, asset, schedule, location, conversion or manager link"
+  },
+  {
+   "operation_type": "CREATE campaign_criterion (negative keyword)",
+   "package": "A-1",
+   "campaign_id": "24132507747",
+   "campaign_name": "HVAC Installation",
+   "resource_targeted": "customers/2401959466/campaigns/24132507747",
+   "current_value": "no such negative exists on this campaign",
+   "proposed_value": "negative keyword 'armbridge' [PHRASE] at campaign level",
+   "reason": "competitor company name reached by phrase same-meaning expansion of the keyword 'hvac installers'",
+   "supporting_metrics": {
+    "terms_covered": 1,
+    "impressions": 2,
+    "clicks": 1,
+    "cost": 29.76,
+    "primary_conversions": 0.0,
+    "secondary_all_conversions": 0.0,
+    "example_terms": [
+     "armbridge hvac"
+    ]
+   },
+   "conflict_test_active_keywords": [],
+   "conflict_test_five_services": [],
+   "strict_rule_screen": "ALLOW",
+   "strict_rule_reasons": [],
+   "already_covered_by_existing_negative": [],
+   "risk": "Blocks the exact phrase only. Zero live keywords and zero of the 54 service probes are affected. Reversible in one REMOVE.",
+   "rollback": "REMOVE the returned campaign_criterion resource name.",
+   "unrelated_resource_assertion": "creates one campaign_criterion; touches no budget, bid, keyword, ad, asset, schedule, location, conversion or manager link"
+  },
+  {
+   "operation_type": "CREATE campaign_criterion (negative keyword)",
+   "package": "A-1",
+   "campaign_id": "24132507747",
+   "campaign_name": "HVAC Installation",
+   "resource_targeted": "customers/2401959466/campaigns/24132507747",
+   "current_value": "no such negative exists on this campaign",
+   "proposed_value": "negative keyword 'bluedot' [PHRASE] at campaign level",
+   "reason": "competitor company name reached by phrase same-meaning expansion of the keyword 'hvac installers'",
+   "supporting_metrics": {
+    "terms_covered": 1,
+    "impressions": 3,
+    "clicks": 1,
+    "cost": 29.39,
+    "primary_conversions": 0.0,
+    "secondary_all_conversions": 0.0,
+    "example_terms": [
+     "bluedot hvac"
+    ]
+   },
+   "conflict_test_active_keywords": [],
+   "conflict_test_five_services": [],
+   "strict_rule_screen": "ALLOW",
+   "strict_rule_reasons": [],
+   "already_covered_by_existing_negative": [],
+   "risk": "Blocks the exact phrase only. Zero live keywords and zero of the 54 service probes are affected. Reversible in one REMOVE.",
+   "rollback": "REMOVE the returned campaign_criterion resource name.",
+   "unrelated_resource_assertion": "creates one campaign_criterion; touches no budget, bid, keyword, ad, asset, schedule, location, conversion or manager link"
+  },
+  {
+   "operation_type": "CREATE campaign_criterion (negative keyword)",
+   "package": "A-1",
+   "campaign_id": "24132507747",
+   "campaign_name": "HVAC Installation",
+   "resource_targeted": "customers/2401959466/campaigns/24132507747",
+   "current_value": "no such negative exists on this campaign",
+   "proposed_value": "negative keyword 'blauch' [PHRASE] at campaign level",
+   "reason": "competitor company name reached by phrase same-meaning expansion of the keyword 'hvac installers'",
+   "supporting_metrics": {
+    "terms_covered": 1,
+    "impressions": 2,
+    "clicks": 1,
+    "cost": 24.5,
+    "primary_conversions": 0.0,
+    "secondary_all_conversions": 0.0,
+    "example_terms": [
+     "blauch brothers harrisonburg va"
+    ]
+   },
+   "conflict_test_active_keywords": [],
+   "conflict_test_five_services": [],
+   "strict_rule_screen": "ALLOW",
+   "strict_rule_reasons": [],
+   "already_covered_by_existing_negative": [],
+   "risk": "Blocks the exact phrase only. Zero live keywords and zero of the 54 service probes are affected. Reversible in one REMOVE.",
+   "rollback": "REMOVE the returned campaign_criterion resource name.",
+   "unrelated_resource_assertion": "creates one campaign_criterion; touches no budget, bid, keyword, ad, asset, schedule, location, conversion or manager link"
+  },
+  {
+   "operation_type": "CREATE campaign_criterion (negative keyword)",
+   "package": "A-1",
+   "campaign_id": "24132507747",
+   "campaign_name": "HVAC Installation",
+   "resource_targeted": "customers/2401959466/campaigns/24132507747",
+   "current_value": "no such negative exists on this campaign",
+   "proposed_value": "negative keyword 'hugee' [PHRASE] at campaign level",
+   "reason": "competitor company name reached by phrase same-meaning expansion of the keyword 'hvac installers'",
+   "supporting_metrics": {
+    "terms_covered": 2,
+    "impressions": 2,
+    "clicks": 1,
+    "cost": 17.28,
+    "primary_conversions": 0.0,
+    "secondary_all_conversions": 0.0,
+    "example_terms": [
+     "hugee corp",
+     "hugee hvac"
+    ]
+   },
+   "conflict_test_active_keywords": [],
+   "conflict_test_five_services": [],
+   "strict_rule_screen": "ALLOW",
+   "strict_rule_reasons": [],
+   "already_covered_by_existing_negative": [],
+   "risk": "Blocks the exact phrase only. Zero live keywords and zero of the 54 service probes are affected. Reversible in one REMOVE.",
+   "rollback": "REMOVE the returned campaign_criterion resource name.",
+   "unrelated_resource_assertion": "creates one campaign_criterion; touches no budget, bid, keyword, ad, asset, schedule, location, conversion or manager link"
+  }
+ ],
+ "excluded_by_strict_rule": [
+  {
+   "text": "amazing heating",
+   "cost_forgone": 30.68,
+   "reasons": [
+    "'heating' is a generic service word"
+   ]
+  },
+  {
+   "text": "amazing plumbing",
+   "cost_forgone": 56.72,
+   "reasons": [
+    "'plumbing' is a generic service word"
+   ]
+  },
+  {
+   "text": "bahr",
+   "cost_forgone": 29.36,
+   "reasons": [
+    "'bahr' is a single ambiguous token (surname or retail brand)"
+   ]
+  },
+  {
+   "text": "barstow",
+   "cost_forgone": 29.21,
+   "reasons": [
+    "'barstow' is a place name"
+   ]
+  },
+  {
+   "text": "beltway hvac",
+   "cost_forgone": 20.9,
+   "reasons": [
+    "'beltway' is a place name",
+    "'hvac' is a generic service word"
+   ]
+  },
+  {
+   "text": "elmar mechanical",
+   "cost_forgone": 20.98,
+   "reasons": [
+    "'mechanical' is a generic service word"
+   ]
+  },
+  {
+   "text": "furr",
+   "cost_forgone": 112.98,
+   "reasons": [
+    "'furr' is a single ambiguous token (surname or retail brand)"
+   ]
+  },
+  {
+   "text": "horizon services",
+   "cost_forgone": 0.0,
+   "reasons": [
+    "'services' is a generic service word"
+   ]
+  },
+  {
+   "text": "hvac precision services",
+   "cost_forgone": 16.9,
+   "reasons": [
+    "'hvac' is a generic service word",
+    "'services' is a generic service word"
+   ]
+  },
+  {
+   "text": "kirkland",
+   "cost_forgone": 17.57,
+   "reasons": [
+    "'kirkland' is a place name"
+   ]
+  },
+  {
+   "text": "len the plumber",
+   "cost_forgone": 0.0,
+   "reasons": [
+    "'plumber' is a generic service word"
+   ]
+  },
+  {
+   "text": "maryland mechanical",
+   "cost_forgone": 50.17,
+   "reasons": [
+    "'maryland' is a place name",
+    "'mechanical' is a generic service word"
+   ]
+  },
+  {
+   "text": "mccrea",
+   "cost_forgone": 22.01,
+   "reasons": [
+    "'mccrea' is a single ambiguous token (surname or retail brand)"
+   ]
+  },
+  {
+   "text": "michaels",
+   "cost_forgone": 35.8,
+   "reasons": [
+    "'michaels' is a single ambiguous token (surname or retail brand)"
+   ]
+  },
+  {
+   "text": "supreme service today",
+   "cost_forgone": 23.56,
+   "reasons": [
+    "'service' is a generic service word"
+   ]
+  },
+  {
+   "text": "total comfort",
+   "cost_forgone": 16.26,
+   "reasons": [
+    "'comfort' is a generic service word"
+   ]
+  },
+  {
+   "text": "woodfin",
+   "cost_forgone": 38.67,
+   "reasons": [
+    "'woodfin' is a place name"
+   ]
+  }
+ ],
+ "totals": {
+  "cost_covered": 238.51,
+  "clicks_covered": 9,
+  "primary_conversions_covered": 0.0
+ },
+ "honest_limitation": "This recovers $238.51 of the $760.28 competitor spend. The other $521.77 sits behind names that are ambiguous, contain a place name, or contain a generic service word, and are not safe to block. The durable fix is to replace the keyword 'hvac installers', not to keep adding names.",
+ "fingerprint": "82ACD4953536C020",
+ "validate_only": {
+  "status": "VALIDATE_OK",
+  "operations": 7,
+  "results_returned": 0
+ },
+ "executed": true,
+ "executed_local": "2026-08-27T19:28:01.250700-04:00",
+ "execution_status": "EXECUTED 2026-08-28, readback PASS. 7 PHRASE negatives live on campaign 24132507747. Do not re-execute.",
+ "do_not_execute": true,
+ "executed_resource_names": [
+  "customers/2401959466/campaignCriteria/24132507747~299839338603",
+  "customers/2401959466/campaignCriteria/24132507747~2437152438",
+  "customers/2401959466/campaignCriteria/24132507747~302549263138",
+  "customers/2401959466/campaignCriteria/24132507747~2489735546094",
+  "customers/2401959466/campaignCriteria/24132507747~149260703",
+  "customers/2401959466/campaignCriteria/24132507747~801509855",
+  "customers/2401959466/campaignCriteria/24132507747~304510676052"
+ ],
+ "readback_pass": true
+}

@@ -1,0 +1,23 @@
+{
+ "customer_id": "9487471092",
+ "exact_account_name": "MasterGrass - Live",
+ "never_write_to_mcc": "3373711342",
+ "package": "MG-0927-LAND",
+ "campaign": "23905193676",
+ "bidding": {
+  "from": "MAXIMIZE_CONVERSIONS",
+  "to": "TARGET_SPEND (Maximize Clicks)",
+  "cpc_bid_ceiling": 25.0
+ },
+ "budget": {
+  "id": "15630863938",
+  "from": 132.0,
+  "to": 28.0
+ },
+ "approval_basis": "owner chat 2026-09-27: Max Clicks $25 cap approved; budget delegated inside a $1,500/month goal",
+ "rollback": {
+  "bidding": "MAXIMIZE_CONVERSIONS (no tCPA)",
+  "budget": 132.0
+ },
+ "fingerprint": "6F168643DE36"
+}

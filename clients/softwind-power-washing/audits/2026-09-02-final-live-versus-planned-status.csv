@@ -1,0 +1,56 @@
+area,item,live_state_2026_09_02,planned_state,status,note
+GOOGLE ADS,Campaign count,2 live (24103511039 + 24145053510),1 long-term,LIVE BUT NEEDS DATA,consolidation needs its own approval
+GOOGLE ADS,Campaign names,Power Washing / Pressure Washing,unchanged,LIVE AND VERIFIED,
+GOOGLE ADS,Campaign status,both ENABLED,both ENABLED during transition,LIVE AND VERIFIED,
+GOOGLE ADS,Final ad groups,6 ENABLED in 24103511039,6,LIVE AND VERIFIED,readback 29/29
+GOOGLE ADS,Final positive keywords,28 new ENABLED + 10 reused = 38 objects,38,LIVE AND VERIFIED,
+GOOGLE ADS,Match types,Phrase + Exact only,Phrase + Exact,LIVE AND VERIFIED,no Broad anywhere
+GOOGLE ADS,Final RSAs,"12 ENABLED, 2 per group",12,LIVE AND VERIFIED,all APPROVED
+GOOGLE ADS,Headlines,15 per RSA,15,LIVE AND VERIFIED,
+GOOGLE ADS,Descriptions,4 per RSA,4,LIVE AND VERIFIED,
+GOOGLE ADS,Final URLs,"6 mapped, all HTTP 200",6,LIVE AND VERIFIED,
+GOOGLE ADS,CPC ceilings,$30.00 both,evidence-based lower ceiling,LIVE BUT NEEDS DATA,PLAN-GA-BID-1
+GOOGLE ADS,Bidding strategy,Maximize Clicks both,Maximize Clicks until conversions verified,LIVE AND VERIFIED,
+GOOGLE ADS,Campaign negatives,132 per campaign,unchanged,LIVE AND VERIFIED,
+GOOGLE ADS,Ad-group routing negatives,0,103 at launch,DRAFTED ONLY,PLAN-GA-LAUNCH-2A
+GOOGLE ADS,Assets,4 sitelinks + 4 callouts + 1 snippet + 1 call per campaign,complete,LIVE AND VERIFIED,
+GOOGLE ADS,Image assets,0,client-supplied rights-cleared,BLOCKED,no approved images exist
+GOOGLE ADS,Business-name asset,0,1 verified,BLOCKED,business identity unresolved
+GOOGLE ADS,Logo asset,1 at customer level (BUSINESS_LOGO),campaign-level review,LIVE BUT NEEDS DATA,
+GOOGLE ADS,Audience observations,0,12 Observation @0%,DRAFTED ONLY,PLAN-GA-AUD-1
+GOOGLE ADS,Demographic criteria,0,0 - reporting only,LIVE AND VERIFIED,"no exclusions, by design"
+GOOGLE ADS,Call schedule,"asset stops 17:00, campaigns run to 18:00",match answered hours,BLOCKED,answered hours unverified
+GOOGLE ADS,Old ad groups,24 legacy remain,retire later,DEFERRED,PLAN-GA-RETIRE-1
+GOOGLE ADS,Old keywords,30 displaced duplicates + 2 paused guards,retire later,DEFERRED,
+GOOGLE ADS,Old RSAs,"6 paused by 3B/3C, others live in campaign B",retire later,DEFERRED,
+GOOGLE ADS,Second campaign,24145053510 ENABLED,retire last,DEFERRED,separate approval
+LANDING PAGES,Browser titles,'Softwind Landscape & Masonry' on all 6,service + correct brand,DRAFTED ONLY,final copy written
+LANDING PAGES,H1s,city-locked to 3 hamlets,Long Island wording,DRAFTED ONLY,
+LANDING PAGES,Hero copy,generic,service-specific,DRAFTED ONLY,
+LANDING PAGES,Service-area copy,3 hamlets,Long Island / Nassau and Suffolk,DRAFTED ONLY,
+LANDING PAGES,CTA copy,present,Request A Free Quote,DRAFTED ONLY,
+LANDING PAGES,Phone numbers,(631) 502-7946 rendered,unchanged,LIVE AND VERIFIED,
+LANDING PAGES,Phone links,malformed tel:(631) on all 7,valid tel:+16315027946,NOT IMPLEMENTED,ClickUp P0
+LANDING PAGES,Forms,"2 copies of form#gform_1, 22 duplicate IDs",exactly one,NOT IMPLEMENTED,ClickUp P0
+LANDING PAGES,Reviews,none verified,3 relevant per page,BLOCKED,CLIENT REVIEW NEEDED
+LANDING PAGES,Images,no approved files found locally,rights-cleared client images,BLOCKED,IMAGE-GAPS.md
+LANDING PAGES,Countdown,"resetting, unsupported",REMOVE,DRAFTED ONLY,
+LANDING PAGES,FAQs,present,service-specific,DRAFTED ONLY,
+LANDING PAGES,Mobile layout,parity MATCH,unchanged,LIVE AND VERIFIED,
+LANDING PAGES,Page speed,"~165KB HTML, not measured",measure,NOT IMPLEMENTED,
+LANDING PAGES,Tracking,GA4 + GTM + WhatConverts + ClickCease loading,unchanged,LIVE AND VERIFIED,
+LANDING PAGES,Thank-you behavior,fires conversion on any visit,gate on real submission,OWNER-ACCEPTED TEMPORARY EXCEPTION,EXC-1
+MEASUREMENT,Google Ads form conversion,fires after submission - PROVEN,gated on success event,OWNER-ACCEPTED TEMPORARY EXCEPTION,
+MEASUREMENT,Website-call conversion,0 wcm for 18369652705,Softwind owns the call path,NOT IMPLEMENTED,architecture deferred
+MEASUREMENT,Call-asset conversion,0 call_view rows ever,working,NOT IMPLEMENTED,no call has occurred
+MEASUREMENT,WhatConverts,"attribution cookies working, DNI broken",DNI repaired,BLOCKED,empty API token
+MEASUREMENT,GCLID,reaches form POST,preserved,LIVE AND VERIFIED,
+MEASUREMENT,GBRAID,reaches form POST,preserved,LIVE AND VERIFIED,
+MEASUREMENT,WBRAID,reaches form POST,preserved,LIVE AND VERIFIED,
+MEASUREMENT,UTMs,all five reach form POST,preserved,LIVE AND VERIFIED,
+MEASUREMENT,Sibling-account tag,AW-17878095007 active on all 7 pages,scoped off Power Washing URLs,BLOCKED,needs sibling work order
+MEASUREMENT,GTM duplicate load,2 bootstraps per page,1,NOT IMPLEMENTED,ClickUp P0
+MEASUREMENT,Duplicate form,2 per offer page,1,NOT IMPLEMENTED,ClickUp P0
+MEASUREMENT,Duplicate HTML IDs,22 per offer page,0,NOT IMPLEMENTED,ClickUp P0
+MEASUREMENT,iconnode,"POST on every page, owner unknown",identified,BLOCKED,ClickUp P2
+MEASUREMENT,Test-lead cleanup,GM TEST DO NOT CONTACT still present,removed,NOT IMPLEMENTED,ClickUp P0

@@ -1,0 +1,453 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-24",
+ "plan_name": "AMB-0924-LP-ENABLE-2A",
+ "approval_class": "enable",
+ "authorized_by": "owner instruction 2026-09-24 (this run), after CREATE-2 readback 107/0 FAIL",
+ "operations": [
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129717087",
+   "ad_id": "825863405640"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129717087",
+   "ad_id": "825863405643"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129717327",
+   "ad_id": "825863405646"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129717327",
+   "ad_id": "825863405649"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129717487",
+   "ad_id": "825863405652"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129717487",
+   "ad_id": "825863405655"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129717527",
+   "ad_id": "825863405658"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129717527",
+   "ad_id": "825863405661"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129717567",
+   "ad_id": "825863405664"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129717567",
+   "ad_id": "825863405667"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129718207",
+   "ad_id": "825863405670"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129718207",
+   "ad_id": "825863405673"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129718767",
+   "ad_id": "825863405676"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129718767",
+   "ad_id": "825863405679"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129718927",
+   "ad_id": "825863405682"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129718927",
+   "ad_id": "825863405685"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129718967",
+   "ad_id": "825863405688"
+  },
+  {
+   "op": "ENABLE_RSA",
+   "ad_group_id": "204129718967",
+   "ad_id": "825863405691"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717087",
+   "criterion_id": "429882189727",
+   "text": "no heat repair",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717087",
+   "criterion_id": "577762646085",
+   "text": "no heat repair",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717327",
+   "criterion_id": "215238074",
+   "text": "heat pump repair",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717327",
+   "criterion_id": "570008738",
+   "text": "heat pump repair",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717327",
+   "criterion_id": "1928568102",
+   "text": "heat pump service",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717327",
+   "criterion_id": "299213020987",
+   "text": "heat pump not heating",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717487",
+   "criterion_id": "314711675",
+   "text": "heat pump replacement",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717487",
+   "criterion_id": "714767380",
+   "text": "heat pump replacement",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717487",
+   "criterion_id": "1437464209",
+   "text": "replace heat pump",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717527",
+   "criterion_id": "314278570",
+   "text": "heat pump installation",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717527",
+   "criterion_id": "314713295",
+   "text": "heat pump installation",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717527",
+   "criterion_id": "314439795071",
+   "text": "heat pump installers near me",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717567",
+   "criterion_id": "314713475",
+   "text": "heat pump maintenance",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717567",
+   "criterion_id": "1460863200",
+   "text": "heat pump maintenance",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717567",
+   "criterion_id": "14273503331",
+   "text": "heat pump tune up",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718207",
+   "criterion_id": "102974176",
+   "text": "boiler replacement",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718207",
+   "criterion_id": "102974356",
+   "text": "boiler replacement",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718207",
+   "criterion_id": "548255964",
+   "text": "replace boiler",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718207",
+   "criterion_id": "3654924422",
+   "text": "new boiler cost",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718767",
+   "criterion_id": "357706288",
+   "text": "thermostat repair",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718767",
+   "criterion_id": "357707008",
+   "text": "thermostat repair",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718927",
+   "criterion_id": "300177770601",
+   "text": "thermostat replacement",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718927",
+   "criterion_id": "300429932098",
+   "text": "thermostat replacement",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718927",
+   "criterion_id": "300877435172",
+   "text": "replace thermostat",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718967",
+   "criterion_id": "302429978155",
+   "text": "smart thermostat installation",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129718967",
+   "criterion_id": "328545401488",
+   "text": "smart thermostat installation",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group_id": "204129717087",
+   "name": "SKAG | No Heat Repair"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group_id": "204129717327",
+   "name": "SKAG | Heat Pump Repair"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group_id": "204129717487",
+   "name": "SKAG | Heat Pump Replacement"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group_id": "204129717527",
+   "name": "SKAG | Heat Pump Installation"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group_id": "204129717567",
+   "name": "SKAG | Heat Pump Maintenance"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group_id": "204129718207",
+   "name": "SKAG | Boiler Replacement"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group_id": "204129718767",
+   "name": "SKAG | Thermostat Repair"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group_id": "204129718927",
+   "name": "SKAG | Thermostat Replacement"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group_id": "204129718967",
+   "name": "SKAG | Smart Thermostat Installation"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24257819463",
+   "asset_id": "424583525083",
+   "sitelink": "SL_FURNACE"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24257819463",
+   "asset_id": "424481123441",
+   "sitelink": "SL_NOHEAT"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24257819463",
+   "asset_id": "424666378863",
+   "sitelink": "SL_HPREP"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24257819463",
+   "asset_id": "410638280067",
+   "sitelink": "SL_HVACREP"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24257819466",
+   "asset_id": "424666395915",
+   "sitelink": "SL_HPINS"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24257819466",
+   "asset_id": "424481139482",
+   "sitelink": "SL_HPREPL"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24257819466",
+   "asset_id": "410638276380",
+   "sitelink": "SL_HVACINST"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24257819466",
+   "asset_id": "410638278156",
+   "sitelink": "SL_HVACREPL"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24268690038",
+   "asset_id": "424666378863",
+   "sitelink": "SL_HPREP"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24268690038",
+   "asset_id": "424666395915",
+   "sitelink": "SL_HPINS"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24268690038",
+   "asset_id": "424481139482",
+   "sitelink": "SL_HPREPL"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24268690038",
+   "asset_id": "424481133551",
+   "sitelink": "SL_HPMAINT"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24132507744",
+   "asset_id": "424666371474",
+   "sitelink": "SL_BOILREPL"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24132507744",
+   "asset_id": "410465469923",
+   "sitelink": "SL_GASBOIL"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24268690041",
+   "asset_id": "424666369737",
+   "sitelink": "SL_TREP"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24268690041",
+   "asset_id": "424666395918",
+   "sitelink": "SL_TREPL"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24268690041",
+   "asset_id": "424666395924",
+   "sitelink": "SL_SMART"
+  },
+  {
+   "op": "ENABLE_SITELINK_LINK",
+   "campaign_id": "24268690041",
+   "asset_id": "424481123441",
+   "sitelink": "SL_NOHEAT"
+  },
+  {
+   "op": "ENABLE_CAMPAIGN",
+   "campaign_id": "24268690041",
+   "name": "Thermostat Services",
+   "budget": 15.0
+  }
+ ],
+ "order": "RSAs and keywords first, then ad groups, then sitelink links, campaign last",
+ "budget_effect": "enabled heating budget $290.00 -> $305.00/day (cap $325.00)",
+ "operation_count": 72,
+ "preflight": {
+  "RSAs": "VALIDATED 18",
+  "keywords": "VALIDATED 26",
+  "ad groups": "VALIDATED 9",
+  "sitelink links": "VALIDATED 18",
+  "campaign": "VALIDATED 1"
+ },
+ "fingerprint": "AFE5CF64007C"
+}

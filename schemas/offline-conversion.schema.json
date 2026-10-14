@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Offline conversion event",
+  "type": "object",
+  "required": ["lead_id", "customer_id", "conversion_action_id", "conversion_time", "conversion_value", "currency"],
+  "properties": {
+    "lead_id": {"type": "string", "minLength": 1},
+    "customer_id": {"type": "string", "pattern": "^[0-9]{10}$"},
+    "conversion_action_id": {"type": "string", "pattern": "^[0-9]+$"},
+    "conversion_time": {"type": "string", "format": "date-time"},
+    "conversion_value": {"type": "number", "minimum": 0},
+    "currency": {"type": "string", "pattern": "^[A-Z]{3}$"},
+    "gclid": {"type": ["string", "null"]},
+    "gbraid": {"type": ["string", "null"]},
+    "wbraid": {"type": ["string", "null"]},
+    "transaction_id": {"type": "string", "minLength": 1},
+    "email_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "phone_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "consent": {
+      "type": "object",
+      "required": ["ad_user_data"],
+      "properties": {
+        "ad_user_data": {"enum": ["GRANTED", "DENIED"]},
+        "ad_personalization": {"enum": ["GRANTED", "DENIED", "UNKNOWN"]}
+      }
+    }
+  },
+  "anyOf": [
+    {"required": ["gclid"]},
+    {"required": ["gbraid"]},
+    {"required": ["wbraid"]},
+    {"required": ["email_sha256"]},
+    {"required": ["phone_sha256"]}
+  ]
+}
+

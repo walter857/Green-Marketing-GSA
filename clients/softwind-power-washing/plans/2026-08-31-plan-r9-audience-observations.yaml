@@ -1,0 +1,183 @@
+# PLAN-R9 - AUDIENCE OBSERVATIONS
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# Built 2026-08-31 from the read-only forensic snapshot. NOT APPROVED.
+change_plan:
+  plan_id: PLAN-R9
+  plan_title: Add six audience segments in OBSERVATION mode at 0% bid modifier
+  approval_type: LIVE_CAMPAIGN_AUDIENCE_OBSERVATION
+  priority: P2
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 12
+  object_count_total: 12
+  requires_separate_enable_approval: false
+  recommended_approval_order: 9
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  the_demographic_rule_this_plan_obeys:
+    rule: >-
+      DO NOT EXCLUDE WOMEN. Do not exclude Female. Do not exclude Unknown gender.
+      Do not narrow Search delivery to men.
+    current_state: >-
+      VERIFIED CLEAN. campaign_criterion returns ZERO GENDER, ZERO AGE_RANGE and
+      ZERO INCOME_RANGE criteria on both campaigns. There is no demographic
+      exclusion anywhere in this account and nothing to undo.
+    and_the_data_agrees:
+      - segment: FEMALE
+        impressions: 39
+        clicks: 7
+        ctr_pct: 17.95
+        cost_usd: 179.41
+        avg_cpc_usd: 25.63
+      - segment: MALE
+        impressions: 141
+        clicks: 13
+        ctr_pct: 9.22
+        cost_usd: 421.95
+        avg_cpc_usd: 32.46
+      - segment: UNDETERMINED
+        impressions: 66
+        clicks: 2
+        ctr_pct: 3.03
+        cost_usd: 111.79
+        avg_cpc_usd: 55.90
+    gender_reading: >-
+        Women click at roughly twice the rate of men (17.95% vs 9.22%) and cost 21%
+        LESS per click ($25.63 vs $32.46). Excluding women would remove the
+        account best-performing and cheapest gender segment. The sample is small -
+        7 clicks - so this is not proof that women are better customers. It is
+        proof that there is no evidence whatsoever for an exclusion, in an account
+        that cannot afford to lose reach.
+    age_note:
+      - segment: AGE_RANGE_65_UP
+        impressions: 33
+        clicks: 11
+        ctr_pct: 33.33
+        cost_usd: 301.54
+        avg_cpc_usd: 27.41
+      - segment: AGE_RANGE_18_24
+        impressions: 28
+        clicks: 3
+        ctr_pct: 10.71
+        cost_usd: 123.82
+        avg_cpc_usd: 41.27
+      - segment: AGE_RANGE_UNDETERMINED
+        impressions: 66
+        clicks: 2
+        ctr_pct: 3.03
+        cost_usd: 111.79
+        avg_cpc_usd: 55.90
+    age_reading: >-
+        65+ is 42.3% of all account spend at a 33.33% CTR on 33 impressions. That
+        CTR is far outside the normal range for a search result and, on this
+        sample, is as consistent with accidental mobile taps as with high intent.
+        It is a WATCH item, not an action. No age modifier and no age exclusion is
+        proposed. Revisit once the account has conversion signal to judge it with.
+
+  why_observation_and_not_targeting:
+    - >-
+      TARGETING mode would restrict delivery to list members. In an account that
+      takes roughly one click a day and holds 61-75% impression share, restricting
+      reach is the opposite of the required move.
+    - >-
+      OBSERVATION at 0% bid modifier changes NOTHING about who sees the ad or what
+      is paid. It only adds a reporting dimension.
+    - >-
+      Both campaigns already carry targeting_setting.target_restrictions with
+      dimension AUDIENCE and bid_only = true, so the campaigns are already
+      configured for observation. There are simply zero audience criteria attached.
+    - >-
+      Audience observations are NOT a substitute for BOFU keywords. PLAN-R6 is the
+      demand fix; this plan is instrumentation.
+
+  segment_ids_resolved_from_the_live_account:
+    method: >-
+      Read from user_list and user_interest on customer 1521725229 on 2026-08-31.
+      No segment ID or name is guessed.
+    remarketing_lists:
+      - {id: "9446096870", name: "All visitors (AdWords)", type: RULE_BASED, size_for_search: 160, eligible_for_search: true, membership_days: 30}
+      - {id: "9446168598", name: "All Converters", type: RULE_BASED, size_for_search: 16, eligible_for_search: true, membership_days: 180}
+      - {id: "9446154938", name: "AdWords optimized list", type: LOGICAL, size_for_search: 160, eligible_for_search: true}
+      - {id: "9447544308", name: "All visitors (AdWords) (system-defined)", type: RULE_BASED, size_for_search: 160, eligible_for_search: true}
+    in_market_segments:
+      - {id: "80241", name: "Home Improvement", taxonomy: IN_MARKET}
+      - {id: "80483", name: "Home & Garden Services", taxonomy: IN_MARKET}
+      - {id: "80490", name: "General Contracting & Remodeling Services", taxonomy: IN_MARKET}
+      - {id: "80491", name: "Home Cleaning Services", taxonomy: IN_MARKET}
+    affinity_segments:
+      - {id: "92946", name: "Home & Garden", taxonomy: AFFINITY}
+    not_selected:
+      - {id: "80494", name: "Landscape Design", reason: "belongs to the Softwind Landscape & Masonry scope fence"}
+      - {id: "80495", name: "Lawn & Garden Maintenance", reason: "lawn care is on this work order excluded_services list"}
+      - {id: "80500", name: "Roofing Services", reason: "roof cleaning is excluded by the work order"}
+      - {id: "80923", name: "Household Cleaning Supplies", reason: "product shopping, not a service buyer"}
+      - {id: "80263", name: "Lawn Mowers", reason: "equipment shopping"}
+    not_available:
+      - >-
+        "Homeowners" is a detailed-demographic HOMEOWNERSHIP_STATUS criterion, not
+        a user_interest, and it did not resolve in this account taxonomy read. It
+        is deliberately NOT included rather than guessed. Add it in a follow-up
+        once its criterion ID is read from the live account.
+      - >-
+        Form starters and phone-click visitors do not exist as lists in this
+        account. Creating them needs GTM event definitions first, which is a
+        separate piece of work.
+
+  actions:
+    - {action_id: R9-01, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24103511039", resource_id: null, current_value: "absent", proposed_value: "USER_LIST 9446096870 All visitors (AdWords), OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-02, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24103511039", resource_id: null, current_value: "absent", proposed_value: "USER_LIST 9446168598 All Converters, OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-03, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24103511039", resource_id: null, current_value: "absent", proposed_value: "USER_INTEREST 80241 In-market Home Improvement, OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-04, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24103511039", resource_id: null, current_value: "absent", proposed_value: "USER_INTEREST 80483 In-market Home & Garden Services, OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-05, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24103511039", resource_id: null, current_value: "absent", proposed_value: "USER_INTEREST 80491 In-market Home Cleaning Services, OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-06, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24103511039", resource_id: null, current_value: "absent", proposed_value: "USER_INTEREST 80490 In-market General Contracting & Remodeling Services, OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-07, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24145053510", resource_id: null, current_value: "absent", proposed_value: "USER_LIST 9446096870 All visitors (AdWords), OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-08, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24145053510", resource_id: null, current_value: "absent", proposed_value: "USER_LIST 9446168598 All Converters, OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-09, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24145053510", resource_id: null, current_value: "absent", proposed_value: "USER_INTEREST 80241 In-market Home Improvement, OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-10, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24145053510", resource_id: null, current_value: "absent", proposed_value: "USER_INTEREST 80483 In-market Home & Garden Services, OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-11, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24145053510", resource_id: null, current_value: "absent", proposed_value: "USER_INTEREST 80491 In-market Home Cleaning Services, OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+    - {action_id: R9-12, priority: P2, resource_type: campaign_criterion, operation: CREATE, customer_id: "1521725229", campaign_id: "24145053510", resource_id: null, current_value: "absent", proposed_value: "USER_INTEREST 80490 In-market General Contracting & Remodeling Services, OBSERVATION, bid_modifier 1.0 (0%)", object_count: 1}
+
+  explicitly_not_in_this_plan:
+    - ANY gender criterion, positive or negative
+    - ANY age range criterion, positive or negative
+    - ANY household income criterion, positive or negative
+    - ANY bid modifier other than 1.0, which is 0%
+    - ANY change to targeting_setting.target_restrictions
+    - TARGETING mode on any segment
+
+  qa_after_execution:
+    - >-
+      Read back campaign_criterion for both campaigns and assert exactly 6 new rows
+      each, all with bid_modifier 1.0 and status ENABLED.
+    - >-
+      Assert campaign.targeting_setting.target_restrictions still reads
+      dimension AUDIENCE, bid_only TRUE on both campaigns. If bid_only flipped to
+      FALSE the observations became TARGETING and must be rolled back immediately.
+    - >-
+      Assert GENDER, AGE_RANGE and INCOME_RANGE criterion counts are still ZERO on
+      both campaigns.
+    - >-
+      Assert impressions on the following day are within the normal daily range. A
+      collapse would mean observation was applied as targeting.
+
+  risk: >-
+    LOW, but not zero. Observation at 0% is delivery-neutral BY DESIGN, and the
+    campaigns are already in bid_only AUDIENCE mode. The one real risk is a
+    misapplied targeting_setting turning observation into targeting, which the QA
+    step above is written specifically to catch on the next day of delivery.
+  rollback: >-
+    Remove the twelve campaign_criterion rows created by R9-01 through R9-12.
+    Twelve mutations.
+  value_note: >-
+    This plan produces no leads. It produces the reporting dimension the account
+    needs in order to judge, in 30 days, whether any audience is worth a positive
+    bid modifier. It is P2 for that reason and should not be approved ahead of
+    PLAN-R3, PLAN-R2 or PLAN-R6.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does not grant permission.

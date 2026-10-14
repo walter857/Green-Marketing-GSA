@@ -1,0 +1,102 @@
+change_plan:
+  plan_name: PLAN-SLM-TRK-B1
+  plan_version: 1
+  generated_at: '2026-09-03T23:52:21.709742-04:00'
+  target:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: '2429758629'
+    manager_customer_id: '3373711342'
+    currency: USD
+    time_zone: America/New_York
+    exact_service: patio construction (Patio) and paver installation (Pavers)
+    identity_receipt: clients/softwind-landscape-masonry/snapshots/identity-gate-2026-09-03-1959.json
+    baseline_snapshot: recovery/2026-09-patio-pavers/01e-baseline-2.json
+    baseline_evidence_sha256_short: 3D9E3199DD183E79
+  subplan_used: SITE_OR_TRACKING
+  subplans:
+    STATUS:
+      actions: []
+      empty_reason: not part of this package
+    BUDGET:
+      actions: []
+      empty_reason: not part of this package
+    EXISTING_RESOURCES:
+      actions: []
+      empty_reason: not part of this package
+    CONVERSIONS:
+      actions: []
+      empty_reason: not part of this package
+    CREATE_PAUSED:
+      actions: []
+      empty_reason: not part of this package
+    SITE_OR_TRACKING:
+      actions:
+      - action_id: TRK-01
+        operation: SET_CAMPAIGN_FINAL_URL_SUFFIX
+        resource_type: campaign
+        resource_id: '23484806108'
+        resource_name: Patio
+        campaign_id: '23484806108'
+        campaign_name: Patio
+        current_state: final_url_suffix = UNSET
+        proposed_state: final_url_suffix = utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}&utm_matchtype={matchtype}&utm_device={device}
+        rollback_state: final_url_suffix = UNSET (clear the field)
+        object_count: 1
+        suffix_length: 147
+      - action_id: TRK-02
+        operation: SET_CAMPAIGN_FINAL_URL_SUFFIX
+        resource_type: campaign
+        resource_id: '23489296528'
+        resource_name: Pavers
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        current_state: final_url_suffix = UNSET
+        proposed_state: final_url_suffix = utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}&utm_matchtype={matchtype}&utm_device={device}
+        rollback_state: final_url_suffix = UNSET (clear the field)
+        object_count: 1
+        suffix_length: 147
+    ENABLE:
+      actions: []
+      empty_reason: not part of this package
+  approval_basis: 'User instruction 2026-09-03, section 3 item 8: campaign-level UTM attribution authorised
+    as the FALLBACK, because the preferred WhatConverts-to-Google-Ads integration route is BLOCKED-ACCESS
+    - no usable WhatConverts credential exists in this project and the vendor API returns HTTP 401 on
+    every auth form attempted.'
+  summary: Add a campaign-level final URL suffix to Patio and Pavers so WhatConverts receives campaign,
+    ad group and keyword.
+  suffix: utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}&utm_matchtype={matchtype}&utm_device={device}
+  deviation_from_the_proposed_suffix:
+    changes_made:
+    - utm_content={creative} -> utm_content={adgroupid}. The A/B probe proved WhatConverts reads utm_content
+      into the slot immediately after campaign. Sending the AD ID there would have delivered campaign
+      + keyword + ad and NOT ad group, and ad group is one of the three fields this repair exists to restore.
+    - dropped utm_adgroup={adgroupid} - not a standard UTM field, not read by WhatConverts, and redundant
+      once {adgroupid} occupies utm_content.
+    - dropped utm_network={network} - not read by WhatConverts and ClickCease already captures nw={network}
+      in its own template.
+    retained: utm_matchtype and utm_device are valid, useful in GA4, and device was explicitly named as
+      a field to capture.
+  validation:
+    valuetrack_parameters_valid: '{campaignid} {adgroupid} {keyword} {matchtype} {device} are all valid
+      ValueTrack'
+    no_duplication_on_the_landing_page: ClickCease's account template carries adgrp, kw, nw, cpn, device,
+      pl, adpos, locphisical and locinterest as ITS OWN tracker parameters. They are consumed by the ClickCease
+      tracker and never reach the landing page except inside url={lpurl}. No landing-page parameter is
+      duplicated.
+    clickcease_template_untouched: customer.tracking_url_template is not in this plan and the executor's
+      SITE_OR_TRACKING branch is structurally unable to write it.
+    no_existing_suffix_overwritten: account suffix and both campaign suffixes are currently UNSET
+    landing_pages_receive_parameters: Proven by direct non-paid probe using the account's own real campaign
+      and ad group IDs. Both pages HTTP 200; WhatConverts captured campaign, ad group and keyword. Evidence
+      42-suffix-validation-probe.json.
+    whatconverts_mapping: campaign<-utm_campaign, ad group<-utm_content, keyword<-utm_term
+    scope: Patio and Pavers only
+  residual_risk: Whether ClickCease's redirect preserves the suffix inside url={lpurl} cannot be proven
+    without a real paid click. Google appends the suffix to the final URL before encoding it into {lpurl},
+    so it should survive. Labelled FUTURE-DATA-REQUIRED and confirmed at the 24-72h checkpoint. The failure
+    mode is silent - no UTMs arrive, exactly as today - not a broken landing page, because both pages
+    are proven to accept these parameters.
+  rollback: Clear campaign.final_url_suffix on both campaigns; restores the recorded prior state.
+  dependencies: []
+  object_count: 2
+  fingerprint: 699CC103CAD0

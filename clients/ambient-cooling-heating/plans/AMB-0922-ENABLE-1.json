@@ -1,0 +1,312 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-22",
+ "plan_name": "AMB-0922-ENABLE-1",
+ "approval_class": "enable-delivery",
+ "runs_only_after": "AMB-0922-BUILD-1 executed and read back, and AMB-0922-COOLPAUSE-BUDGET-1 executed.",
+ "enables_only_ready": true,
+ "held_not_enabled": {
+  "SKAG | Emergency Heating Repair": "Ambient publishes Mon-Fri 08:00-16:00 and is CLOSED Saturday and Sunday (contact page text and schema.org OpeningHoursSpecification, read 2026-09-22). The owner confirms calls are answered during business hours only. An emergency searcher expects availability this business does not offer, so the ad group is built and held. RSA payload is prepared but deliberately makes NO availability, dispatch, arrival-time or same-day promise; it must not be uploaded until both a destination and a verified emergency offering exist.",
+  "SKAG | No Heat Repair": "Same gate as Emergency Heating Repair. A 'no heat' searcher in winter expects a same-day visit; Ambient answers Mon-Fri 08:00-16:00 only. Held.",
+  "SKAG | Heat Pump Repair": "The heat-pumps URL fails Google's destination check: DESTINATION_NOT_WORKING, 0/3 trials on 2026-09-22, a fourth consecutive failing day, while EIGHT other Ambient destinations passed 3/3 in the same run with the IDENTICAL ad body. The page itself is healthy (HTTP 200 desktop and mobile, correct H1, working form). The API rejects any ad carrying this URL, so the RSA payloads below are PREPARED, NOT CREATED. No URL variant is substituted. Remedy is a policy re-review requested in the Google Ads interface.",
+  "SKAG | Heat Pump Replacement": "The heat-pumps URL fails Google's destination check: DESTINATION_NOT_WORKING, 0/3 trials on 2026-09-22, a fourth consecutive failing day, while EIGHT other Ambient destinations passed 3/3 in the same run with the IDENTICAL ad body. The page itself is healthy (HTTP 200 desktop and mobile, correct H1, working form). The API rejects any ad carrying this URL, so the RSA payloads below are PREPARED, NOT CREATED. No URL variant is substituted. Remedy is a policy re-review requested in the Google Ads interface.",
+  "SKAG | Heat Pump Installation": "The heat-pumps URL fails Google's destination check: DESTINATION_NOT_WORKING, 0/3 trials on 2026-09-22, a fourth consecutive failing day, while EIGHT other Ambient destinations passed 3/3 in the same run with the IDENTICAL ad body. The page itself is healthy (HTTP 200 desktop and mobile, correct H1, working form). The API rejects any ad carrying this URL, so the RSA payloads below are PREPARED, NOT CREATED. No URL variant is substituted. Remedy is a policy re-review requested in the Google Ads interface.",
+  "SKAG | Heat Pump Maintenance": "The heat-pumps URL fails Google's destination check: DESTINATION_NOT_WORKING, 0/3 trials on 2026-09-22, a fourth consecutive failing day, while EIGHT other Ambient destinations passed 3/3 in the same run with the IDENTICAL ad body. The page itself is healthy (HTTP 200 desktop and mobile, correct H1, working form). The API rejects any ad carrying this URL, so the RSA payloads below are PREPARED, NOT CREATED. No URL variant is substituted. Remedy is a policy re-review requested in the Google Ads interface.",
+  "SKAG | Boiler Replacement": "The boiler-repair page has ZERO real installation sentences and ZERO real replacement sentences once nav and footer are excluded; its only maintenance hits are the phrase 'boiler repair services'. It is a repair page. RSA payload PREPARED, awaiting the dedicated boiler installation / replacement / maintenance page.",
+  "SKAG | Boiler Installation": "The boiler-repair page has ZERO real installation sentences and ZERO real replacement sentences once nav and footer are excluded; its only maintenance hits are the phrase 'boiler repair services'. It is a repair page. RSA payload PREPARED, awaiting the dedicated boiler installation / replacement / maintenance page.",
+  "SKAG | Boiler Maintenance": "The boiler-repair page has ZERO real installation sentences and ZERO real replacement sentences once nav and footer are excluded; its only maintenance hits are the phrase 'boiler repair services'. It is a repair page. RSA payload PREPARED, awaiting the dedicated boiler installation / replacement / maintenance page.",
+  "SKAG | Thermostat Repair": "Capability is CONFIRMED by the owner (2026-09-22), which clears the previous capability gate. The remaining blocker is purely the destination: NO page on either domain covers thermostat work as a service. The nearest mention is the offer HVAC Repair page listing 'thermostat problems' as a diagnostic symptom, which is not a thermostat service page. RSA payload PREPARED, awaiting URL. No brand is named in any headline, because brands serviced are not verified.",
+  "SKAG | Thermostat Replacement": "Capability is CONFIRMED by the owner (2026-09-22), which clears the previous capability gate. The remaining blocker is purely the destination: NO page on either domain covers thermostat work as a service. The nearest mention is the offer HVAC Repair page listing 'thermostat problems' as a diagnostic symptom, which is not a thermostat service page. RSA payload PREPARED, awaiting URL. No brand is named in any headline, because brands serviced are not verified.",
+  "SKAG | Smart Thermostat Installation": "Capability is CONFIRMED by the owner (2026-09-22), which clears the previous capability gate. The remaining blocker is purely the destination: NO page on either domain covers thermostat work as a service. The nearest mention is the offer HVAC Repair page listing 'thermostat problems' as a diagnostic symptom, which is not a thermostat service page. RSA payload PREPARED, awaiting URL. No brand is named in any headline, because brands serviced are not verified."
+ },
+ "enabled_daily_total_after": 290.0,
+ "september": {
+  "read_on": "2026-09-21",
+  "mtd": 1746.4,
+  "days_left": 10,
+  "remaining_allowance": 8253.6,
+  "projection_worst_case": 4646.4
+ },
+ "operations": [
+  {
+   "op": "ENABLE_CAMPAIGN",
+   "campaign_key": "C1",
+   "campaign_id": "24257819463",
+   "name": "Search | NonBrand | Heating Repair | Central MD | BOFU | 2026-09"
+  },
+  {
+   "op": "ENABLE_CAMPAIGN",
+   "campaign_key": "C2",
+   "campaign_id": null,
+   "name": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09"
+  },
+  {
+   "op": "ENABLE_CAMPAIGN",
+   "campaign_key": "C3",
+   "campaign_id": "24257819466",
+   "name": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09"
+  },
+  {
+   "op": "ENABLE_CAMPAIGN",
+   "campaign_key": "C4",
+   "campaign_id": "24132507744",
+   "name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08"
+  },
+  {
+   "op": "ENABLE_CAMPAIGN",
+   "campaign_key": "C5",
+   "campaign_id": null,
+   "name": "Search | NonBrand | Heating Maintenance & Inspection | Central MD | BOFU | 2026-09"
+  },
+  {
+   "op": "ENABLE_CAMPAIGN",
+   "campaign_key": "C7",
+   "campaign_id": null,
+   "name": "Search | NonBrand | Geothermal Heat Pump | Central MD | BOFU | 2026-09"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Furnace Repair",
+   "campaign_key": "C1"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Heating Repair",
+   "campaign_key": "C1"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "campaign_key": "C1"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "campaign_key": "C1"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Ductless Heating Repair",
+   "campaign_key": "C2"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Furnace Replacement",
+   "campaign_key": "C3"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Furnace Installation",
+   "campaign_key": "C3"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Heating Installation",
+   "campaign_key": "C3"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Heating Replacement",
+   "campaign_key": "C3"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Ductless Heating Installation",
+   "campaign_key": "C3"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Gas Boiler Repair",
+   "campaign_key": "C4"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Boiler Repair",
+   "campaign_key": "C4"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Furnace Maintenance",
+   "campaign_key": "C5"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Heating Maintenance",
+   "campaign_key": "C5"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Furnace Tune-Up",
+   "campaign_key": "C5"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Heating Tune-Up",
+   "campaign_key": "C5"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Heating System Inspection",
+   "campaign_key": "C5"
+  },
+  {
+   "op": "ENABLE_AD_GROUP",
+   "ad_group": "SKAG | Geothermal Heat Pump",
+   "campaign_key": "C7"
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Heating Repair",
+   "count": 6
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Ductless Heating Repair",
+   "count": 5
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Furnace Replacement",
+   "count": 4
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Furnace Installation",
+   "count": 3
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Heating Installation",
+   "count": 4
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Heating Replacement",
+   "count": 5
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Boiler Repair",
+   "count": 4
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Furnace Maintenance",
+   "count": 3
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Heating Maintenance",
+   "count": 3
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Furnace Tune-Up",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Heating Tune-Up",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Heating System Inspection",
+   "count": 4
+  },
+  {
+   "op": "ENABLE_KEYWORDS",
+   "ad_group": "SKAG | Geothermal Heat Pump",
+   "count": 5
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Heating Repair",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Ductless Heating Repair",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Furnace Replacement",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Furnace Installation",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Heating Installation",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Heating Replacement",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Boiler Repair",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Furnace Maintenance",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Heating Maintenance",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Furnace Tune-Up",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Heating Tune-Up",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Heating System Inspection",
+   "count": 2
+  },
+  {
+   "op": "ENABLE_RSAS",
+   "ad_group": "SKAG | Geothermal Heat Pump",
+   "count": 2
+  }
+ ],
+ "operation_count": 54,
+ "fingerprint": "6493C57EDAC1"
+}

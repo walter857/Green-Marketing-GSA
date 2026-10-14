@@ -1,0 +1,118 @@
+# =============================================================================
+# APG-0917-CONV-J  --  demote ONE conversion action back to Secondary
+# =============================================================================
+# Smallest possible correction. 1 update. Nothing else.
+#
+# Walter promoted the conversion actions manually. Two of the three landed on the
+# intended state. The third, 7773043879, was promoted as well and must not stay
+# Primary.
+# =============================================================================
+plan_id: APG-0917-CONV-J
+plan_kind: conversion_action_update
+generated: "2026-09-17"
+
+target:
+  exact_child_account_name: "Apogee Lawns LLC - Live"
+  child_customer_id: "8164626278"
+  manager_customer_id: "3373711342"
+  manager_never_mutated: true
+  vertical: similar-local-service
+  exact_primary_service: Permanent Christmas light installation
+
+context:
+  conv_g_status: SATISFIED_EXTERNALLY_BY_VERIFIED_MANUAL_STATE
+  conv_g_fingerprint: FEB175ADDEEA
+  conv_g_note: >-
+    APG-0917-CONV-G is NOT executed and must not be. Its two intended promotions were
+    already performed manually by Walter and verified by readback on 2026-09-17.
+  observed_state_2026_09_17:
+    "7772803337": {state: PRIMARY, required: PRIMARY, verdict: CORRECT}
+    "7773013199": {state: PRIMARY, required: PRIMARY, verdict: CORRECT}
+    "7773043879": {state: PRIMARY, required: SECONDARY, verdict: OVERSHOT}
+
+# -----------------------------------------------------------------------------
+objects:
+  - ordinal: 1
+    resource: conversion_action
+    operation: update
+    resource_name: "customers/8164626278/conversionActions/7773043879"
+    id: "7773043879"
+    name: "Call | Permanent Lights | Website | 60s"
+    update_mask: ["primary_for_goal"]
+    field_changes:
+      primary_for_goal: {from: true, to: false}
+    final_state: SECONDARY
+    unchanged_fields:
+      name: "Call | Permanent Lights | Website | 60s"
+      status: ENABLED
+      type: WEBSITE_CALL
+      category: PHONE_CALL_LEAD
+      origin: WEBSITE
+      counting_type: ONE_PER_CLICK
+      click_through_lookback_window_days: 30
+      phone_call_duration_seconds: 60
+      attribution_model: GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+      value_settings.default_value: 0.0
+    why: >-
+      This action has NO data source. Its Google Ads Calls from Website tag was
+      deliberately never built, because WhatConverts owns website-call measurement and the
+      WhatConverts script is confirmed live on the paid landing page. Leaving it Primary
+      makes it a biddable conversion that can never fire, which would skew Maximize Clicks
+      and later any conversion-based bidding, and would put a permanently empty column in
+      the client's reporting.
+    readback_assertions:
+      - "conversion_action.primary_for_goal == false"
+      - "conversion_action.name == 'Call | Permanent Lights | Website | 60s'"
+      - "conversion_action.status == ENABLED"
+      - "conversion_action.type == WEBSITE_CALL"
+      - "conversion_action.category == PHONE_CALL_LEAD"
+      - "conversion_action.phone_call_duration_seconds == 60"
+      - "conversion_action.counting_type == ONE_PER_CLICK"
+      - "conversion_action.value_settings.default_value == 0.0"
+
+not_updated:
+  - id: "7772803337"
+    required_final_state: PRIMARY
+    operation: NONE
+    assert_only: ["conversion_action.primary_for_goal == true"]
+  - id: "7773013199"
+    required_final_state: PRIMARY
+    operation: NONE
+    assert_only: ["conversion_action.primary_for_goal == true"]
+
+object_counts:
+  conversion_action.update: 1
+  conversion_action.create: 0
+  conversion_action.delete: 0
+  status_changes: 0
+  name_changes: 0
+  category_changes: 0
+  origin_changes: 0
+  counting_changes: 0
+  window_changes: 0
+  attribution_changes: 0
+  value_changes: 0
+  campaign_changes: 0
+  gtm_changes: 0
+  TOTAL_MUTATIONS: 1
+
+expected_side_effects:
+  include_in_conversions_metric: >-
+    Expected to flip from true back to false on 7773043879, because a Secondary action does
+    not count in the Conversions column. Derived by Google, asserted at readback, not written.
+
+gates_before_execution:
+  - "fresh identity re-read confirming Apogee Lawns LLC - Live / 8164626278"
+  - "fresh read confirming 7773043879 primary_for_goal is still true"
+  - "fresh read confirming 7772803337 and 7773013199 are still true"
+  - "explicit approval: APPROVE APG CONV-FIX <fingerprint>"
+
+rollback:
+  method: "set primary_for_goal back to true on the same resource name"
+  blast_radius: "None. No campaign exists, nothing is serving, no spend."
+
+out_of_scope_for_this_plan:
+  - "any change to 7772803337 or 7773013199"
+  - "any campaign creation, change or enablement"
+  - "any GTM change, version or publication"
+  - "any custom conversion goal"

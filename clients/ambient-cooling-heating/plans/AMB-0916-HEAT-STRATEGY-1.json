@@ -1,0 +1,229 @@
+{
+ "plan_name": "AMB-0916-HEAT-STRATEGY-1",
+ "approval_class": "strategy-approval (no external write)",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "exact_service": "Heating Repair (anchor of a 3-ad-group Heating Services campaign)",
+ "summary": "Approve the heating portfolio selection: 3 Tier A ad groups inside one new Heating Services Search campaign, funded entirely by reallocation inside the existing $13,000/month cap.",
+ "tier_a": [
+  "Furnace & Heating Repair",
+  "Heat Pump & Ductless",
+  "Heating Installation & Replacement"
+ ],
+ "tier_b": [
+  "Heating Maintenance",
+  "Boiler (expand the EXISTING campaign, do not duplicate)",
+  "Oil Furnace"
+ ],
+ "hold_or_excluded": {
+  "HOLD - capability not verified": [
+   "Thermostat repair",
+   "Thermostat replacement",
+   "Smart thermostat installation",
+   "Electric furnace repair"
+  ],
+  "HOLD - barred claim": [
+   "Emergency heating repair"
+  ],
+  "EXCLUDE - proven uneconomic": [
+   "Water heater / tankless ($6,265.89 CPA)",
+   "Geothermal (0 conversions)"
+  ]
+ },
+ "requested_campaign_label": "HEATING SERVICES",
+ "proposed_exact_campaign_name": "Search | NonBrand | Heating Services | Central MD | BOFU | 2026-10",
+ "naming_reason": "Matches the existing five-campaign convention 'Search | NonBrand | <Service> | Central MD | BOFU | <YYYY-MM>', which keeps reporting filters and the repository's plan lineage consistent.",
+ "campaign_settings": {
+  "channel": "SEARCH only",
+  "google_search": true,
+  "search_partners": false,
+  "display_expansion": false,
+  "ai_max": false,
+  "dsa": false,
+  "final_url_expansion": false,
+  "automatically_created_assets": false,
+  "text_customization": false,
+  "broad_match": false,
+  "match_types": [
+   "PHRASE",
+   "EXACT"
+  ],
+  "location_option": "PRESENCE",
+  "locations": "inherit the verified 75 Central MD targets (28 City, 5 Neighborhood, 42 Postal Code, zero containment)",
+  "schedule": "Mon-Fri 08:00-20:00 + Sat 08:00-13:00 America/New_York, no Sunday - identical to the five live campaigns",
+  "no_overnight": "Ambient cannot answer and qualify overnight leads; the approved schedule already excludes it",
+  "bidding": "Maximize Clicks (TARGET_SPEND) with a per-ad-group-informed CPC ceiling",
+  "cpc_ceiling_rationale": "NOT the arbitrary $25/$30 used on the cooling campaigns. Derived from actual auction history: Heating Repair ran at $18.76 average CPC and Heating Installation at $16.47 over 1,962 combined clicks. Planner shows LOW competition on nearly every heating term. Proposed ceiling $45.00 - roughly 2.4x the historical average CPC, leaving headroom for the December-January seasonal premium (historical Nov-Jan CPC reached $78-$90) without reopening uncapped bidding.",
+  "proposed_cpc_ceiling_usd": 45.0
+ },
+ "ad_groups": [
+  {
+   "name": "SKAG | Furnace & Heating Repair",
+   "canonical": "Furnace & Heating Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-heating-repair/",
+   "h1": "Furnace & Heating Repair in Central Maryland",
+   "budget_share_pct": 45,
+   "launch_order": 1,
+   "keywords_phrase": [
+    "furnace repair",
+    "furnace repair near me",
+    "heating repair near me",
+    "heating system repair",
+    "gas furnace repair",
+    "furnace not working",
+    "heating repair",
+    "no heat repair"
+   ],
+   "keywords_exact": [
+    "furnace repair",
+    "furnace repair near me",
+    "heating repair near me",
+    "heating repair"
+   ],
+   "expected_cpc_usd": [
+    16,
+    25,
+    40
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "name": "SKAG | Heat Pump & Ductless",
+   "canonical": "Heat Pump & Ductless",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-mini-split/",
+   "h1": "Heat Pump & Ductless Mini-Split Service in Central Maryland",
+   "budget_share_pct": 35,
+   "launch_order": 2,
+   "keywords_phrase": [
+    "heat pump repair",
+    "heat pump repair near me",
+    "heat pump installation",
+    "heat pump replacement",
+    "ductless mini split installation",
+    "mini split installation",
+    "ductless heating installation"
+   ],
+   "keywords_exact": [
+    "heat pump repair",
+    "heat pump installation",
+    "mini split installation",
+    "ductless mini split installation"
+   ],
+   "expected_cpc_usd": [
+    13,
+    25,
+    45
+   ],
+   "confidence": "HIGH"
+  },
+  {
+   "name": "SKAG | Heating Installation & Replacement",
+   "canonical": "Heating Installation & Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/furnace-installation-replacement/",
+   "h1": "Furnace Installation & Replacement in Central Maryland",
+   "budget_share_pct": 20,
+   "launch_order": 3,
+   "keywords_phrase": [
+    "furnace installation",
+    "furnace installation near me",
+    "furnace replacement",
+    "new furnace installation",
+    "heating system installation",
+    "heating system replacement",
+    "oil furnace installation"
+   ],
+   "keywords_exact": [
+    "furnace installation",
+    "furnace replacement",
+    "furnace installation near me",
+    "heating system replacement"
+   ],
+   "expected_cpc_usd": [
+    15,
+    22,
+    40
+   ],
+   "confidence": "MEDIUM-HIGH"
+  }
+ ],
+ "negatives_and_routing": {
+  "principle": "Every negative reviewed individually. NO one-word BROAD negatives. near me / quote / price / pricing / cost / best / hire / local / emergency are NEVER auto-negatived.",
+  "campaign_level_phrase_negatives": [
+   "air conditioning repair",
+   "ac repair",
+   "ac installation",
+   "water heater",
+   "tankless water heater",
+   "hot water heater",
+   "geothermal",
+   "pool heater",
+   "hvac school",
+   "hvac training",
+   "hvac jobs",
+   "hvac salary",
+   "furnace filter",
+   "furnace parts",
+   "diy furnace",
+   "used furnace",
+   "furnace manual"
+  ],
+  "cross_negatives_into_existing_campaigns": [
+   {
+    "campaign": "HVAC Repair 24132507750",
+    "add_phrase_negative": "furnace repair",
+    "reason": "route furnace-repair intent to the new heating ad group"
+   },
+   {
+    "campaign": "HVAC Repair 24132507750",
+    "add_phrase_negative": "heating repair",
+    "reason": "same"
+   },
+   {
+    "campaign": "HVAC Installation 24132507747",
+    "add_phrase_negative": "furnace installation",
+    "reason": "route furnace-install intent to the heating campaign"
+   },
+   {
+    "campaign": "HVAC Installation 24132507747",
+    "add_phrase_negative": "heat pump installation",
+    "reason": "route heat-pump intent to the heating campaign"
+   },
+   {
+    "campaign": "HVAC Replacement 24132507753",
+    "add_phrase_negative": "furnace replacement",
+    "reason": "route furnace-replacement intent to the heating campaign"
+   }
+  ],
+  "cross_negatives_into_heating": [
+   {
+    "add_phrase_negative": "boiler",
+    "reason": "the ENABLED Gas Boiler Repair campaign 24132507744 already owns boiler intent"
+   }
+  ],
+  "explicitly_not_negatived": [
+   "near me",
+   "quote",
+   "price",
+   "pricing",
+   "cost",
+   "best",
+   "hire",
+   "local",
+   "emergency",
+   "company",
+   "companies",
+   "contractor",
+   "contractors"
+  ]
+ },
+ "gas_boiler_audit": {
+  "existing_campaign": "24132507744 Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+  "status": "ENABLED, $5.00/day, $25 ceiling, 1 ad group, 2 keywords, 2 ENABLED+APPROVED ads, 1,131 campaign negatives",
+  "all_time": "39 impressions, 0 clicks, $0.00 spend, 0 conversions",
+  "verdict": "DO NOT DUPLICATE. Boiler intent stays with this campaign. Tier B expansion would raise its budget, not create a second boiler structure."
+ },
+ "external_writes_authorized": 0,
+ "risk": "NONE - this is a strategy approval with no external write.",
+ "next_stage": "landing-page content approval, then create-paused plan, then budget reallocation, then readback, then enablement - each separately fingerprinted.",
+ "fingerprint": "9EC0CE017DE7"
+}

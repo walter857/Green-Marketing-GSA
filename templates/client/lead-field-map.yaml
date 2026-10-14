@@ -1,0 +1,43 @@
+identity:
+  lead_id: required
+  client_slug: required
+  google_ads_customer_id: required
+  created_at: required
+  source: required
+
+contact:
+  name: optional
+  phone: optional
+  email: optional
+  consent_ad_user_data: required
+  consent_ad_personalization: optional
+
+attribution:
+  gclid: optional
+  gbraid: optional
+  wbraid: optional
+  utm_source: optional
+  utm_medium: optional
+  utm_campaign: optional
+  utm_term: optional
+  utm_content: optional
+  campaign_id: optional
+  ad_group_id: optional
+  keyword: optional
+  device: optional
+  landing_page: required
+  referrer: optional
+
+sales:
+  service: required
+  location: required
+  owner: optional
+  first_response_at: optional
+  qualified_at: optional
+  booked_at: optional
+  sold_at: optional
+  revenue: optional
+  fulfillment_cost: optional
+  gross_profit: optional
+  lost_reason: optional
+

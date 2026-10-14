@@ -1,0 +1,332 @@
+{
+  "subplan": "EXISTING_RESOURCES",
+  "fingerprint": "2B3D1DD13155",
+  "customer_id": "7380491929",
+  "exact_child_account_name": "Pro Green - Austin - Live",
+  "mode": "LIVE WRITE",
+  "executed_at_utc": "2026-08-19T12:50:50.318167+00:00",
+  "approved_actions": 31,
+  "approved_objects": 55,
+  "api_operations": 53,
+  "partial_failure": false,
+  "results": [
+    {
+      "index": 0,
+      "type": "campaign_result",
+      "resource_name": "customers/7380491929/campaigns/24053505501",
+      "log": "EXR-001+EXR-007 UPDATE campaign 24053505501 mask=['excluded_parent_asset_field_types', 'target_spend.cpc_bid_ceiling_micros']"
+    },
+    {
+      "index": 1,
+      "type": "campaign_result",
+      "resource_name": "customers/7380491929/campaigns/24053505504",
+      "log": "EXR-002+EXR-008 UPDATE campaign 24053505504 mask=['excluded_parent_asset_field_types', 'target_spend.cpc_bid_ceiling_micros']"
+    },
+    {
+      "index": 2,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~303268",
+      "log": "EXR-003 REMOVE ad_schedule 24053505501~303268 (MONDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 3,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~313268",
+      "log": "EXR-003 REMOVE ad_schedule 24053505501~313268 (TUESDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 4,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~323268",
+      "log": "EXR-003 REMOVE ad_schedule 24053505501~323268 (WEDNESDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 5,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~333268",
+      "log": "EXR-003 REMOVE ad_schedule 24053505501~333268 (THURSDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 6,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~343268",
+      "log": "EXR-003 REMOVE ad_schedule 24053505501~343268 (FRIDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 7,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~353268",
+      "log": "EXR-003 REMOVE ad_schedule 24053505501~353268 (SATURDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 8,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~363268",
+      "log": "EXR-003 REMOVE ad_schedule 24053505501~363268 (SUNDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 9,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~303268",
+      "log": "EXR-005 REMOVE ad_schedule 24053505504~303268 (MONDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 10,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~313268",
+      "log": "EXR-005 REMOVE ad_schedule 24053505504~313268 (TUESDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 11,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~323268",
+      "log": "EXR-005 REMOVE ad_schedule 24053505504~323268 (WEDNESDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 12,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~333268",
+      "log": "EXR-005 REMOVE ad_schedule 24053505504~333268 (THURSDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 13,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~343268",
+      "log": "EXR-005 REMOVE ad_schedule 24053505504~343268 (FRIDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 14,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~353268",
+      "log": "EXR-005 REMOVE ad_schedule 24053505504~353268 (SATURDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 15,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~363268",
+      "log": "EXR-005 REMOVE ad_schedule 24053505504~363268 (SUNDAY 08:00 -> 17:00 account time)"
+    },
+    {
+      "index": 16,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~303672",
+      "log": "EXR-004 CREATE ad_schedule 24053505501 MONDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 17,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~313672",
+      "log": "EXR-004 CREATE ad_schedule 24053505501 TUESDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 18,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~323672",
+      "log": "EXR-004 CREATE ad_schedule 24053505501 WEDNESDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 19,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~333672",
+      "log": "EXR-004 CREATE ad_schedule 24053505501 THURSDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 20,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~343672",
+      "log": "EXR-004 CREATE ad_schedule 24053505501 FRIDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 21,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~353672",
+      "log": "EXR-004 CREATE ad_schedule 24053505501 SATURDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 22,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~363672",
+      "log": "EXR-004 CREATE ad_schedule 24053505501 SUNDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 23,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~303672",
+      "log": "EXR-006 CREATE ad_schedule 24053505504 MONDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 24,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~313672",
+      "log": "EXR-006 CREATE ad_schedule 24053505504 TUESDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 25,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~323672",
+      "log": "EXR-006 CREATE ad_schedule 24053505504 WEDNESDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 26,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~333672",
+      "log": "EXR-006 CREATE ad_schedule 24053505504 THURSDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 27,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~343672",
+      "log": "EXR-006 CREATE ad_schedule 24053505504 FRIDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 28,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~353672",
+      "log": "EXR-006 CREATE ad_schedule 24053505504 SATURDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 29,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~363672",
+      "log": "EXR-006 CREATE ad_schedule 24053505504 SUNDAY 09:00-18:00 account time (08:00 -> 17:00 America/Chicago)"
+    },
+    {
+      "index": 30,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~319280741252",
+      "log": "EXR-009 CREATE negative PHRASE 'agave landscaping' on 24053505501"
+    },
+    {
+      "index": 31,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~319280741252",
+      "log": "EXR-010 CREATE negative PHRASE 'agave landscaping' on 24053505504"
+    },
+    {
+      "index": 32,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2263499322378",
+      "log": "EXR-011 CREATE negative PHRASE 'agc turf' on 24053505501"
+    },
+    {
+      "index": 33,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2263499322378",
+      "log": "EXR-012 CREATE negative PHRASE 'agc turf' on 24053505504"
+    },
+    {
+      "index": 34,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~407148363509",
+      "log": "EXR-013 CREATE negative PHRASE 'astoria lighting' on 24053505501"
+    },
+    {
+      "index": 35,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~407148363509",
+      "log": "EXR-014 CREATE negative PHRASE 'astoria lighting' on 24053505504"
+    },
+    {
+      "index": 36,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2944521563",
+      "log": "EXR-015 CREATE negative PHRASE 'garden goat' on 24053505501"
+    },
+    {
+      "index": 37,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2944521563",
+      "log": "EXR-016 CREATE negative PHRASE 'garden goat' on 24053505504"
+    },
+    {
+      "index": 38,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~1685553275976",
+      "log": "EXR-017 CREATE negative PHRASE 'mcdugald steele' on 24053505501"
+    },
+    {
+      "index": 39,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~1685553275976",
+      "log": "EXR-018 CREATE negative PHRASE 'mcdugald steele' on 24053505504"
+    },
+    {
+      "index": 40,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~359380791354",
+      "log": "EXR-019 CREATE negative PHRASE 'mirror lake landscaping' on 24053505501"
+    },
+    {
+      "index": 41,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~359380791354",
+      "log": "EXR-020 CREATE negative PHRASE 'mirror lake landscaping' on 24053505504"
+    },
+    {
+      "index": 42,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~205177662",
+      "log": "EXR-021 CREATE negative PHRASE 'spring texas' on 24053505501"
+    },
+    {
+      "index": 43,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~205177662",
+      "log": "EXR-022 CREATE negative PHRASE 'spring texas' on 24053505504"
+    },
+    {
+      "index": 44,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2437574967591",
+      "log": "EXR-023 CREATE negative PHRASE 'ulm austin' on 24053505501"
+    },
+    {
+      "index": 45,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2437574967591",
+      "log": "EXR-024 CREATE negative PHRASE 'ulm austin' on 24053505504"
+    },
+    {
+      "index": 46,
+      "type": "shared_criterion_result",
+      "resource_name": "customers/7380491929/sharedCriteria/11260450591~10023121",
+      "log": "EXR-025 REMOVE shared_criterion customers/7380491929/sharedCriteria/11260450591~10023121 ('cost' [BROAD])"
+    },
+    {
+      "index": 47,
+      "type": "shared_criterion_result",
+      "resource_name": "customers/7380491929/sharedCriteria/10670796064~62617751",
+      "log": "EXR-026 REMOVE shared_criterion customers/7380491929/sharedCriteria/10670796064~62617751 ('hire' [PHRASE])"
+    },
+    {
+      "index": 48,
+      "type": "shared_criterion_result",
+      "resource_name": "customers/7380491929/sharedCriteria/10670796064~100398664",
+      "log": "EXR-027 REMOVE shared_criterion customers/7380491929/sharedCriteria/10670796064~100398664 ('shade' [PHRASE])"
+    },
+    {
+      "index": 49,
+      "type": "shared_criterion_result",
+      "resource_name": "customers/7380491929/sharedCriteria/11260450591~10066610",
+      "log": "EXR-028 REMOVE shared_criterion customers/7380491929/sharedCriteria/11260450591~10066610 ('oasis' [BROAD])"
+    },
+    {
+      "index": 50,
+      "type": "shared_criterion_result",
+      "resource_name": "customers/7380491929/sharedCriteria/11260450591~10063811",
+      "log": "EXR-029 REMOVE shared_criterion customers/7380491929/sharedCriteria/11260450591~10063811 ('keystone' [BROAD])"
+    },
+    {
+      "index": 51,
+      "type": "shared_criterion_result",
+      "resource_name": "customers/7380491929/sharedCriteria/11260450591~10090111",
+      "log": "EXR-030 REMOVE shared_criterion customers/7380491929/sharedCriteria/11260450591~10090111 ('black' [BROAD])"
+    },
+    {
+      "index": 52,
+      "type": "shared_criterion_result",
+      "resource_name": "customers/7380491929/sharedCriteria/11260450591~10073261",
+      "log": "EXR-031 REMOVE shared_criterion customers/7380491929/sharedCriteria/11260450591~10073261 ('replacement' [BROAD])"
+    }
+  ]
+}

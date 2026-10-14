@@ -1,0 +1,209 @@
+client:
+  slug: apogee-lawns
+  business_name: Apogee Lawns LLC
+  # ---------------------------------------------------------------------------
+  # VERTICAL: similar-local-service.
+  # Permanent Christmas / architectural roofline light installation is not
+  # landscaping, hardscaping, or heating-cooling. config/verticals.yaml marks
+  # similar-local-service as requires_scope_approval: true, so the work order
+  # must carry scope_approval.approved: true, an approver, and a reason before
+  # ANY external write. That approval is NOT yet on file. See work-order.yaml.
+  # ---------------------------------------------------------------------------
+  vertical: similar-local-service
+  primary_service: Permanent Christmas light installation
+  google_ads:
+    # -------------------------------------------------------------------------
+    # IDENTITY GATE: PASSED 2026-09-16 by fresh read-only API lookup.
+    #   Requested name  : "Apogee Lawns LLC - Live"
+    #   API observed    : "Apogee Lawns LLC - Live"        <- exact match
+    #   Requested ID    : 816-462-6278
+    #   API observed ID : 8164626278                       <- exact match
+    #   '- live' marker : present (case-insensitive)
+    #   manager         : false      test_account : false   status : ENABLED
+    #   currency        : USD        time_zone    : America/Chicago
+    #   Manager link    : 3373711342 "Green Marketing", level 1, ACTIVE
+    #   Discovery       : 1 of 10 '- live' children under manager 3373711342;
+    #                     exactly one row matched ID 8164626278.
+    # Evidence: reports/apogee-lawns/evidence/2026-09-16-identity.json
+    # -------------------------------------------------------------------------
+    child_customer_id: "8164626278"
+    exact_child_account_name: "Apogee Lawns LLC - Live"
+    manager_customer_id: "3373711342"
+    must_contain_live_marker: true
+    currency: USD
+    timezone: America/Chicago
+  website:
+    primary_url: "https://apogeelawns.com/"
+    # HISTORY 2026-09-16: the planned slug returned 404 on apogeelawns.com.
+    # RECONCILED 2026-10-05: the paid page lives on the offer. subdomain. It returned 200
+    # on 2026-09-17 (page source) and rendered in a browser on 2026-09-28; it is the final
+    # URL on all four RSAs. The dedicated thank-you page did NOT exist on 2026-09-28.
+    landing_page_base_url: "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+    thank_you_url_required: "https://offer.apogeelawns.com/thank-you/permanent-christmas-lights/"
+    # Owner ruling 2026-09-17 (settled): 402-526-5754 is the advertising, landing-page and
+    # WhatConverts "GSA Traffic" number; it appears on the paid page (2026-09-17). History:
+    # on 2026-09-16 it appeared nowhere on apogeelawns.com. Routing is still untested.
+    phone_display: "402-526-5754"
+    phone_e164: "+14025265754"
+    # The number actually published sitewide today. Recorded as an observed fact
+    # only; it is not approved for paid use and must not be substituted.
+    observed_site_phone_display: "402-202-7261"
+    observed_site_phone_e164: "+14022027261"
+  offer:
+    services_in_scope:
+      - Permanent Christmas light installation
+    services_excluded:
+      - Seasonal Christmas light hanging, removal, and storage
+      - Lawn mowing, fertilization, aeration, overseeding
+      - Commercial lawn care
+      - Leaf removal
+      - Irrigation repair
+      - Paver and outdoor kitchen hardscaping
+    # Nothing below is verified. Every value stays an explicit placeholder until
+    # the client confirms it in writing. Never publish an unverified claim.
+    verified_usps: []
+    verified_offers: []
+    average_job_revenue: null      # [[AVERAGE_GROSS_PROFIT]] input, unresolved
+    gross_margin_pct: null
+    close_rate_pct: null           # [[LEAD_TO_SALE_RATE]], unresolved
+    target_cpl: null               # [[TARGET_CPL]], unresolved
+    target_cpql: null
+    target_cac: null
+  service_area:
+    country_code: US
+    target_type: mixed
+    location_option: PRESENCE
+    # -------------------------------------------------------------------------
+    # RESOLVED 2026-09-16 by GeoTargetConstantService.suggest + a confirming
+    # geo_target_constant read. All 14 are ENABLED and all have parent 21162
+    # (Nebraska). Selection was made by EXACT canonical-name match, NOT by the
+    # suggest API's reach ordering: reach ordering silently proposed ZIP 68104
+    # (Omaha) for "Waverly", the "Northwest Omaha" neighborhood for "Eagle",
+    # and ZIP 68333 for "Crete".
+    # Evidence: reports/apogee-lawns/evidence/2026-09-16-geo-resolution.json
+    #           reports/apogee-lawns/evidence/2026-09-16-geo-picked.json
+    # -------------------------------------------------------------------------
+    geo_target_constant_ids:
+      - 9024671   # 68372,Nebraska,United States          Postal Code   reach 9000
+      - 9024703   # 68430,Nebraska,United States          Postal Code   reach 13000
+      - 9024754   # 68527,Nebraska,United States          Postal Code   reach 10000
+      - 9024651   # 68347,Nebraska,United States          Postal Code   reach 5000
+      - 9024753   # 68526,Nebraska,United States          Postal Code   reach 25000
+      - 9024728   # 68461,Nebraska,United States          Postal Code   reach 2000
+      - 9024746   # 68516,Nebraska,United States          Postal Code   reach 284000
+      - 9024748   # 68520,Nebraska,United States          Postal Code   reach 9000
+      - 1021783   # Waverly,Nebraska,United States        City          reach 9000
+      - 1021647   # Eagle,Nebraska,United States          City          reach 1000
+      - 1021696   # Lincoln,Nebraska,United States        City          reach 728000
+      - 9195288   # Ashland Township,Nebraska,US          Municipality  reach 8000
+      - 1021635   # Crete,Nebraska,United States          City          reach 53000
+      - 9233865   # Nemaha Precinct,Nebraska,US           Municipality  reach 2000
+    postal_codes: ["68372", "68430", "68527", "68347", "68526", "68461", "68516", "68520"]
+    cities:
+      - "Waverly, Nebraska, United States"
+      - "Eagle, Nebraska, United States"
+      - "Lincoln, Nebraska, United States"
+      - "Crete, Nebraska, United States"
+    municipalities:
+      - "Ashland Township, Nebraska, United States"
+      - "Nemaha Precinct, Nebraska, United States"
+    exclusions: []
+    radius:
+      latitude: null
+      longitude: null
+      distance: null
+      unit: MILES
+    geo_open_questions:
+      nemaha_precinct: >-
+        "Nemaha Precinct, Nebraska" is unique in the geo constant table (exactly one
+        US match, 9233865). Nebraska has a Nemaha Precinct in Lancaster County and a
+        Nemaha County in far southeast Nebraska ~70 miles from Lincoln. The API does
+        not expose the county; parent is the state. The surrounding requested ZIPs
+        (68372 Sprague, 68430 Hickman) are southern Lancaster County, which is
+        consistent with the Lancaster County precinct. Confirm before enablement.
+      waverly_alternative: >-
+        "Waverly Precinct, Nebraska" (9241965, reach 21000) also exists and is larger
+        than Waverly city (1021783, reach 9000). The literal city was selected.
+  schedule:
+    timezone: America/Chicago
+    # Live-answer hours supplied by the owner 2026-09-16 (work-order schedule_policy_2026_09_16).
+    # After-hours and no-answer handling is NOT verified (call-flow No Answer branch unseen).
+    can_answer_after_hours: false
+    windows:
+      - {day: MONDAY, start: "08:00", end: "17:00"}
+      - {day: TUESDAY, start: "08:00", end: "17:00"}
+      - {day: WEDNESDAY, start: "08:00", end: "17:00"}
+      - {day: THURSDAY, start: "08:00", end: "17:00"}
+      - {day: FRIDAY, start: "08:00", end: "17:00"}
+      - {day: SATURDAY, start: "08:00", end: "12:00"}
+  conversions:
+    # VERIFIED 2026-09-16: the account has ZERO conversion actions, ZERO customer
+    # conversion goals, ZERO custom goals and ZERO product links (no GA4 link).
+    # customer.conversion_tracking_setting.conversion_tracking_status =
+    # NOT_CONVERSION_TRACKED. There is nothing to duplicate and nothing to reuse.
+    # RECONCILED 2026-10-05 (history above preserved): three actions exist since 2026-09-16/17.
+    primary:
+      - "7772803337 Lead | Permanent Lights | Form Submit | Thank You (WEBPAGE, AW-18453077620/KOL7CImirvocEPS8jt9E)"
+      - "7773013199 Call | Permanent Lights | Ads | 60s (AD_CALL)"
+    secondary:
+      - "7773043879 Call | Permanent Lights | Website | 60s (WEBSITE_CALL, AW-18453077620/lp3jCKf5vPocEPS8jt9E) - Secondary until routing and attribution are verified"
+    call_minimum_seconds: 60
+    conversion_ownership: OWNED_BY_THIS_CHILD
+    conversion_tracking_id: "18453077620"
+    cross_account_conversion_tracking_id: "0"
+    expected_gtm_ads_destination: "AW-18453077620"
+    expected_gtm_ads_destination_note: >-
+      Derived from customer.conversion_tracking_setting.conversion_tracking_id on this
+      child, NOT from the customer ID. It must still be re-read from the tag snippet of
+      the first conversion action created before any GTM tag uses it.
+    accepted_customer_data_terms: false
+    enhanced_conversions_for_leads_enabled: false
+    crm_stage_mapping:
+      lead: ""
+      # Owner definition, 2026-09-28 (verbatim): "A qualified lead is someone who asks for the service on the
+      # form or on the call." For this campaign the service is permanent Christmas light installation.
+      # No appointment, estimate, budget, property-size, install-date or call-duration requirement is implied.
+      qualified: "asks for permanent Christmas light installation on the form or on the call (owner, 2026-09-28)"
+      sold: ""   # not defined by the owner; do not infer
+    offline_route: DATA_MANAGER_API
+  integrations:
+    crm: "Service Autopilot (my.serviceautopilot.com linked from the live site)"
+    # HISTORY 2026-09-16 (apogeelawns.com): no call tracking, no analytics, GTM not installed,
+    # Forminator 1611. RECONCILED 2026-10-05 for the paid page on offer.apogeelawns.com:
+    call_tracking: "WhatConverts account 119788 / profile 174313: paid page carries static number 402-526-5754 ('GSA Traffic', call flow 'Apogee Lawns - ICF' records then dials 402-202-7261); main-site pool 402-783-8482 swaps 402-202-7261 (verified 2026-09-28)"
+    analytics: "NONE DETECTED (no GA4) - verified 2026-09-16/17"
+    tag_manager: "GTM-M545Z8T2 installed on offer.apogeelawns.com (2026-09-17); published version 3 'Add Conversion Linker tag' (2026-09-28; unchanged 2026-10-05)"
+    consent_platform: "NONE DETECTED - no CookieYes, Cookiebot, OneTrust, Complianz, Termly, Iubenda or Usercentrics (2026-09-16)"
+    form_platform: "Paid page: Gravity Forms form 1 (gform_1). Main site: Forminator module 1611 (2026-09-16)"
+    website_platform: "WordPress + Elementor 4.2.4"
+    website_developer: "siliconprairiemarketing.com"
+    speed_to_lead: ""
+    review_url: ""
+    form_webhook_env_key: CRM_WEBHOOK_URL
+  permissions:
+    # Scope approver recorded in work-order.yaml (Walter, 2026-09-16). Every external write
+    # still needs its own exact, fingerprinted approval; the flags below stay false.
+    approvers:
+      - Walter (Green Marketing)
+    allow_create_paused: false
+    allow_enable: false
+    allow_budget_changes: false
+    allow_deletions: false
+  identity_gate:
+    checked_at: "2026-09-16"
+    method: "fresh read-only Google Ads API lookup (customer + customer_client + customer_manager_link)"
+    result: PASS
+    evidence: reports/apogee-lawns/evidence/2026-09-16-identity.json
+  # ---------------------------------------------------------------------------
+  # OWNER DECISIONS 2026-09-28 (owner-provided; recorded verbatim; not website evidence)
+  # ---------------------------------------------------------------------------
+  owner_decisions_2026_09_28:
+    tablets:
+      statement: "Landing pages are not tablet optimized so I excluded them."
+      decision: EXCLUDE_TABLETS
+      applies_to: "campaign 24257151015 (campaign device criterion + both ad-group device modifiers)"
+      restoration_requires: "completed tablet-layout QA and a separately approved plan"
+    customer_supplied_lights:
+      statement: "yes (installs customer-supplied lights)"
+      scope_limits: "owner-provided only; website does not state it; no product-compatibility, warranty, seasonal-hanging or other-service claim follows"
+    omaha: "EXCLUDED - settled 2026-09-16, unchanged"

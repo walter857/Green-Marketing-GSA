@@ -1,0 +1,53 @@
+plan_id: APG-1005-TEST
+plan_kind: controlled_form_and_call_tests_DRAFT
+approval_ready: false
+blockers:
+- APG-1005-WEB-REPAIR R1-R8 deployed and confirmed read-only
+- Green Marketing test identity supplied via the approved secure method and registered in client.yaml qa_exclusions
+tests:
+- T1 desktop submission
+- T2 mobile submission
+- T3 negative cases (validation error, direct thank-you visit, refresh, clicks)
+- T4 routing call to 402-526-5754 in staffed hours (+ optional after-hours)
+rules:
+- never click live ads
+- never create or type click IDs
+- test leads marked as tests and excluded from reporting
+- a direct test proves tag delivery and de-duplication, not an attributed Google Ads conversion
+spec: 03_measurement_and_friction_repair_spec.md sections C and D
+target:
+  exact_child_account_name: Apogee Lawns LLC - Live
+  child_customer_id: '8164626278'
+  manager_customer_id: '3373711342'
+  manager_never_mutated: true
+  exact_primary_service: Permanent Christmas light installation
+  vertical: similar-local-service
+  scope_approval: Walter, 2026-09-16 (recorded, not re-requested)
+  work_order: clients/apogee-lawns/work-order.yaml (validator PASS 2026-10-05)
+  campaign:
+    id: '24257151015'
+    name: S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026
+    status: ENABLED (unchanged by this bundle)
+    budget_id: '15884926233'
+    daily_budget_micros: 16440000
+    monthly_cap_at_30_4_days_usd: 499.78
+    bidding: MAXIMIZE_CLICKS (TARGET_SPEND) ceiling 8000000 micros (unchanged)
+    locations_presence:
+    - '1021635'
+    - '1021647'
+    - '1021696'
+    - '1021783'
+    - '9024651'
+    - '9024671'
+    - '9024703'
+    - '9024728'
+    - '9024746'
+    - '9024748'
+    - '9024753'
+    - '9024754'
+    - '9195288'
+    - '9233865'
+    schedule: 24/7, 0 ad-schedule criteria (unchanged)
+    tablet: -100% (unchanged)
+    final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/
+    conversions: 7772803337 Primary, 7773013199 Primary, 7773043879 Secondary (unchanged)

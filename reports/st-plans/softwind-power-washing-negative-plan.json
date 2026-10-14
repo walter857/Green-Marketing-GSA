@@ -1,0 +1,383 @@
+{
+  "slug": "softwind-power-washing",
+  "customer_id": "1521725229",
+  "account_name": "Softwind Power Washing - Live",
+  "negative_universe_core": [
+    {
+      "text": "cleaning",
+      "match_type": "PHRASE",
+      "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+      "evidence_hits": 2,
+      "tier": "ROOT"
+    },
+    {
+      "text": "roof washing",
+      "match_type": "PHRASE",
+      "category": "EXCLUDED_SERVICE",
+      "evidence_hits": 1,
+      "tier": "ROOT"
+    }
+  ],
+  "negative_universe_hardened_extra": [
+    {
+      "text": "jet wash near me",
+      "match_type": "EXACT",
+      "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+      "evidence_hits": 1,
+      "tier": "T3_impressed"
+    }
+  ],
+  "layer_a_campaign_level": [
+    {
+      "campaign_id": "24103511039",
+      "campaign_name": "Power Washing",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "campaign_id": "24145053510",
+      "campaign_name": "Power Washing #2",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    }
+  ],
+  "layer_b_ad_group_level": [
+    {
+      "ad_group_id": "202870585390",
+      "ad_group_name": "Power Washing Near Me",
+      "campaign_id": "24103511039",
+      "campaign_name": "Power Washing",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "202870585430",
+      "ad_group_name": "Power Washing Services Near Me",
+      "campaign_id": "24103511039",
+      "campaign_name": "Power Washing",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "202870585590",
+      "ad_group_name": "Power Washing Company Near Me",
+      "campaign_id": "24103511039",
+      "campaign_name": "Power Washing",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "202870585630",
+      "ad_group_name": "Power Washing Islip",
+      "campaign_id": "24103511039",
+      "campaign_name": "Power Washing",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "202870585670",
+      "ad_group_name": "Power Washing West Islip",
+      "campaign_id": "24103511039",
+      "campaign_name": "Power Washing",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "202870585830",
+      "ad_group_name": "Power Washing Dix Hills",
+      "campaign_id": "24103511039",
+      "campaign_name": "Power Washing",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "198082078703",
+      "ad_group_name": "Soft House Washing Near Me",
+      "campaign_id": "24145053510",
+      "campaign_name": "Power Washing #2",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "198082078783",
+      "ad_group_name": "Power Washing Services Near Me",
+      "campaign_id": "24145053510",
+      "campaign_name": "Power Washing #2",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "198082078983",
+      "ad_group_name": "House Pressure Washing Estimate",
+      "campaign_id": "24145053510",
+      "campaign_name": "Power Washing #2",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "198082079023",
+      "ad_group_name": "Driveway Pressure Washing Near Me",
+      "campaign_id": "24145053510",
+      "campaign_name": "Power Washing #2",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "198082079183",
+      "ad_group_name": "Patio Pressure Washing Near Me",
+      "campaign_id": "24145053510",
+      "campaign_name": "Power Washing #2",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    },
+    {
+      "ad_group_id": "198082079423",
+      "ad_group_name": "Residential Pressure Washing Near Me",
+      "campaign_id": "24145053510",
+      "campaign_name": "Power Washing #2",
+      "negatives": [
+        {
+          "text": "cleaning",
+          "match_type": "PHRASE",
+          "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+          "evidence_hits": 2,
+          "tier": "ROOT"
+        },
+        {
+          "text": "roof washing",
+          "match_type": "PHRASE",
+          "category": "EXCLUDED_SERVICE",
+          "evidence_hits": 1,
+          "tier": "ROOT"
+        }
+      ]
+    }
+  ],
+  "layer_x_cross_negatives": [
+    {
+      "ad_group_id": "202870585430",
+      "ad_group_name": "Power Washing Services Near Me",
+      "campaign_name": "Power Washing",
+      "negatives": [
+        {
+          "text": "power washing company",
+          "match_type": "PHRASE",
+          "category": "CROSS_NEGATIVE_STEER",
+          "steers_to_ad_group": "Power Washing Company Near Me",
+          "observed_leak_terms": 1
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "universe_core": 2,
+    "universe_hardened": 3,
+    "layer_a_objects": 4,
+    "layer_b_objects": 24,
+    "layer_x_objects": 1,
+    "live_campaigns": 2,
+    "live_ad_groups": 12
+  },
+  "coverage": {
+    "negative_terms": 5,
+    "wasted_spend_usd": 0.0,
+    "spend_blocked_usd": 0.0,
+    "roots": 2,
+    "tiers": {
+      "T1_spent": 0,
+      "T2_clicked": 0,
+      "T3_impressed": 1,
+      "T4_tail": 0
+    },
+    "rejected": 0
+  },
+  "excluded_label_evidence": {
+    "excluded_rows": 0,
+    "by_ad_group_negative": 0,
+    "by_campaign_negative_only": 0,
+    "by_shared_list_only": 0,
+    "unexplained": 0
+  }
+}

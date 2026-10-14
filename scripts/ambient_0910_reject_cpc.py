@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+"""Formally record AMB-0909C-CPC-INST-2 as REJECTED on measured evidence.
+Writes a sidecar rejection record. The plan JSON's operations block is left byte-identical
+so its fingerprint stays verifiable."""
+from __future__ import annotations
+import sys, json, datetime
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ambient_0909_lib import *  # noqa
+from gm_gsa.safety import approval_code
+
+PLAN = CLIENT_DIR / "plans" / "AMB-0909C-CPC-INST-2.json"
+p = json.load(open(PLAN, encoding="utf-8"))
+fp = approval_code({"target": p["target"], "plan": p["plan_name"],
+                    "operations": p["operations"]})
+print(f"plan {p['plan_name']}  recomputed fingerprint {fp}  (expected 5D57E0EF3B70)")
+assert fp == "5D57E0EF3B70", f"fingerprint drift: {fp}"
+
+rej = {
+ "plan_name": p["plan_name"],
+ "fingerprint": fp,
+ "status": "REJECTED",
+ "status_recorded_local": datetime.datetime.now(TZ).isoformat(),
+ "recorded_by": "Green Marketing implementation agent",
+ "prior_status": "BLOCKED pending proof (session 2026-09-10 execution-authority run)",
+ "target": p["target"],
+ "proposed_operation_restated":
+   "HVAC Installation campaign 24132507747: target_spend.cpc_bid_ceiling_micros "
+   "30000000 ($30.00) -> 65000000 ($65.00). ONE operation. NOT EXECUTED.",
+ "gate_that_was_set":
+   "At least 2 of the 3 HVAC Installation Primary conversion RECORDS dated 2026-09-01 had to "
+   "be proven unique qualified leads before the ceiling could be raised.",
+ "gate_result": "FAILED",
+ "measured_evidence": {
+  "source": "WhatConverts API v1 profile 105803, joined to Google Ads click_view by GCLID; "
+            "counts only, no PII retained",
+  "window": ["2026-08-14", "2026-09-10"],
+  "hvac_installation_unique_qualified_leads": 1,
+  "hvac_installation_required": 2,
+  "hvac_installation_cost_2026_08_14_to_09_09": 2972.96,
+  "hvac_installation_cpql_measured": 2972.96,
+  "hvac_installation_cpql_limit": 280.00,
+  "cpql_overrun_multiple": 10.6,
+  "detail": "Two WhatConverts leads carry a GCLID that resolves to HVAC Installation. One is a "
+            "Web Form lead from a 2026-09-01 click and qualifies. One is a Phone Call from a "
+            "2026-08-21 click that does not meet the 60-second qualified-call rule. That is "
+            "1 unique qualified lead, not the 2 the gate required."},
+ "second_independent_reason_to_reject": {
+  "finding": "The $30.00 ceiling this package wanted to raise did not exist during the window "
+             "whose economics were used to justify raising it.",
+  "evidence": "change_event 2026-09-04 16:56:51 America/New_York, client_type "
+              "GOOGLE_ADS_WEB_CLIENT, user access@greenmarketingfl.com, field "
+              "target_spend.cpc_bid_ceiling_micros, old_resource EMPTY -> new_resource "
+              "30000000. AC Repair and HVAC Repair received $25.00 ceilings in the same "
+              "minute (16:56:20 and 16:56:34), also from an empty old_resource.",
+  "consequence": "Every click cited in the package's rationale - the $50.00-$62.13 converting "
+                 "clicks of 2026-09-01 - was bought under UNCAPPED Maximize Clicks. Raising "
+                 "the ceiling from $30 to $65 moves the campaign back toward the regime that "
+                 "produced $46.66 per valid click account-wide and a $2,972.96 measured CPQL "
+                 "against a $280 limit. The package's own premise is therefore inverted: "
+                 "those clicks are evidence against the raise, not for it."},
+ "what_would_reopen_this":
+   "A capped-regime measurement: at least 14 settled days and at least 40 valid clicks under "
+   "the live $30.00 ceiling, joined GCLID-to-lead through WhatConverts, showing HVAC "
+   "Installation CPQL at or below $280 AND impression share still losing materially to rank "
+   "rather than budget. Absent that, no ceiling raise on any campaign is justified.",
+ "supersedes_chain": ["AMB-0909B-CPC-INST-1 DE376F91F449 - SUPERSEDED, DO_NOT_EXECUTE",
+                      "AMB-0909C-CPC-INST-2 5D57E0EF3B70 - REJECTED, DO_NOT_EXECUTE"],
+ "executed": False,
+ "google_ads_operations_performed": 0}
+
+outp = CLIENT_DIR / "plans" / "AMB-0909C-CPC-INST-2.REJECTED.json"
+outp.write_text(json.dumps(rej, indent=1, default=str), encoding="utf-8")
+print(f"WROTE {outp.relative_to(ROOT)}")
+print(f"\nSTATUS: {p['plan_name']} {fp} -> REJECTED (0 operations performed)")

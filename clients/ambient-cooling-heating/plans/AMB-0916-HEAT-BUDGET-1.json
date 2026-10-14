@@ -1,0 +1,139 @@
+{
+ "plan_name": "AMB-0916-HEAT-BUDGET-1",
+ "approval_class": "budget-reallocation",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "summary": "Fund the Heating Services test entirely by reallocation inside the $13,000/month cap. Combined daily stays at $421.55. 6 operations.",
+ "hard_cap": {
+  "monthly_usd": 13000.0,
+  "max_combined_daily_usd": 427.63,
+  "basis": "daily x 30.4, never x 30"
+ },
+ "view_1_current_pre_heating": {
+  "AC Repair 24132507741": 141.45,
+  "HVAC Repair 24132507750": 78.95,
+  "HVAC Installation 24132507747": 176.15,
+  "HVAC Replacement 24132507753": 20.0,
+  "Gas Boiler Repair 24132507744": 5.0,
+  "Heating Services (new)": 0.0,
+  "total_daily": 421.55,
+  "total_monthly_30_4": 12815.12,
+  "headroom_monthly": 184.88
+ },
+ "view_2_initial_heating_test_october": {
+  "changes": [
+   {
+    "campaign": "AC Repair 24132507741",
+    "from": 141.45,
+    "to": 70.0,
+    "delta": -71.45,
+    "reason": "August proved AC Repair returns 0.51:1 on revenue alone - $2,550.59 spent for ~$1,298 of pipeline. It is the largest budget line and the weakest economics. Cooling demand also falls from October.",
+    "risk": "MEDIUM - reduces the campaign that produced 3 of 7 August qualified leads, though they were the lowest-value ones.",
+    "stop_loss": "restore if AC Repair qualified leads fall to zero for 14 settled days while impression share holds"
+   },
+   {
+    "campaign": "HVAC Repair 24132507750",
+    "from": 78.95,
+    "to": 40.0,
+    "delta": -38.95,
+    "reason": "$1,665.16 spent in August with ZERO qualified leads traceable to it. Keywords sit at Quality Score 2 with below-average landing-page experience.",
+    "risk": "LOW",
+    "stop_loss": "n/a - it is not currently producing"
+   },
+   {
+    "campaign": "HVAC Installation 24132507747",
+    "from": 176.15,
+    "to": 176.15,
+    "delta": 0.0,
+    "reason": "UNCHANGED. Best performer - carries the commercial ad group and produced the highest-value August leads.",
+    "risk": "NONE",
+    "stop_loss": "n/a"
+   },
+   {
+    "campaign": "HVAC Replacement 24132507753",
+    "from": 20.0,
+    "to": 20.0,
+    "delta": 0.0,
+    "reason": "UNCHANGED. High ticket, minimal spend.",
+    "risk": "NONE",
+    "stop_loss": "n/a"
+   },
+   {
+    "campaign": "Gas Boiler Repair 24132507744",
+    "from": 5.0,
+    "to": 5.0,
+    "delta": 0.0,
+    "reason": "UNCHANGED. Dormant but it is the designated boiler route; do not duplicate it elsewhere.",
+    "risk": "NONE",
+    "stop_loss": "n/a"
+   },
+   {
+    "campaign": "Heating Services (NEW)",
+    "from": 0.0,
+    "to": 110.4,
+    "delta": 110.4,
+    "reason": "Funded entirely by the two reductions above (71.45 + 38.95 = 110.40). Splits 45/35/20 across the three Tier A ad groups.",
+    "risk": "MEDIUM - a new campaign with no account history in its current form.",
+    "stop_loss": "$450 incremental spend per ad group with zero verified qualified lead"
+   }
+  ],
+  "total_daily": 421.55,
+  "total_monthly_30_4": 12815.12,
+  "within_cap": true,
+  "heating_share_monthly": 3356.16
+ },
+ "view_3_colder_season_november_february": {
+  "changes": [
+   {
+    "campaign": "AC Repair 24132507741",
+    "from": 70.0,
+    "to": 40.0,
+    "delta": -30.0,
+    "reason": "Cooling demand troughs Nov-Feb; historical AC search volume collapses."
+   },
+   {
+    "campaign": "HVAC Repair 24132507750",
+    "from": 40.0,
+    "to": 30.0,
+    "delta": -10.0,
+    "reason": "Continued underperformance; keep a floor for year-round HVAC repair intent."
+   },
+   {
+    "campaign": "HVAC Installation 24132507747",
+    "from": 176.15,
+    "to": 130.0,
+    "delta": -46.15,
+    "reason": "Retains the commercial ad group and year-round install intent at a reduced winter level."
+   },
+   {
+    "campaign": "HVAC Replacement 24132507753",
+    "from": 20.0,
+    "to": 20.0,
+    "delta": 0.0,
+    "reason": "UNCHANGED."
+   },
+   {
+    "campaign": "Gas Boiler Repair 24132507744",
+    "from": 5.0,
+    "to": 15.0,
+    "delta": 10.0,
+    "reason": "Tier B expansion of the EXISTING boiler campaign during peak boiler season. Not a new campaign."
+   },
+   {
+    "campaign": "Heating Services",
+    "from": 110.4,
+    "to": 186.55,
+    "delta": 76.15,
+    "reason": "Planner shows furnace repair peaking at 720/mo in January versus 110 in September - a 6.5x seasonal swing. WhatConverts heating leads peaked at 57 in December."
+   }
+  ],
+  "total_daily": 421.55,
+  "total_monthly_30_4": 12815.12,
+  "within_cap": true,
+  "heating_share_monthly": 5671.12
+ },
+ "operation_count": 6,
+ "unrelated_resource_assertion": "Only campaign_budget.amount_micros changes on the named budgets. No bid, ceiling, status, network, geo, schedule, keyword, negative, ad, asset or conversion setting is touched.",
+ "HARD_GATE": "DO NOT EXECUTE until the Heating Services campaign exists paused AND the measurement prerequisites in section 17 pass. Reallocating budget to a campaign that does not exist would simply cut cooling for nothing.",
+ "fingerprint": "54613304B752"
+}

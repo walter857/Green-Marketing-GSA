@@ -1,0 +1,95 @@
+{
+  "plan_name": "PLAN-SLM-BUD-1",
+  "version": 1,
+  "operation_class": "CAMPAIGN_BUDGET_CHANGE",
+  "approval_label": "APPROVE-BUDGETS",
+  "generated_at": "2026-09-03T18:32:29.249387-04:00",
+  "source_snapshot": "2026-09-03T18:14:13.987015-04:00",
+  "target": {
+    "exact_child_account_name": "Softwind Landscape & Masonry - Live",
+    "child_customer_id": "2429758629",
+    "manager_customer_id": "3373711342",
+    "currency": "USD",
+    "time_zone": "America/New_York",
+    "identity_receipt": "snapshots/identity-gate-2026-09-03-1809.json",
+    "work_orders": [
+      "work-order-a-patio-construction.yaml (patio construction, campaign Patio)",
+      "work-order-b-paver-installation.yaml (paver installation, campaign Pavers)"
+    ]
+  },
+  "summary": "Bring projected September spend under the $2,000 account-wide hard cap with headroom for Maximize Clicks overdelivery, cutting Patio exposure first.",
+  "actions": [
+    {
+      "resource_type": "campaign_budget",
+      "resource_id": "15309303030",
+      "campaign_id": "23484806108",
+      "campaign_name": "Patio",
+      "field": "campaign_budget.amount_micros",
+      "current_value": 33000000,
+      "current_value_display": "$33.00/day",
+      "proposed_value": 24000000,
+      "proposed_value_display": "$24.00/day",
+      "budget_is_explicitly_shared": false,
+      "budget_reference_count": 1,
+      "object_count": 1
+    },
+    {
+      "resource_type": "campaign_budget",
+      "resource_id": "15314089588",
+      "campaign_id": "23489296528",
+      "campaign_name": "Pavers",
+      "field": "campaign_budget.amount_micros",
+      "current_value": 33000000,
+      "current_value_display": "$33.00/day",
+      "proposed_value": 32000000,
+      "proposed_value_display": "$32.00/day",
+      "budget_is_explicitly_shared": false,
+      "budget_reference_count": 1,
+      "object_count": 1
+    }
+  ],
+  "pacing": {
+    "account_month": "2026-09",
+    "timezone": "America/New_York",
+    "read_at": "2026-09-03T18:16:17.781299-04:00",
+    "hard_cap_usd": 2000.0,
+    "account_mtd_spend": 248.36,
+    "mtd_days_recorded": 3,
+    "today_is_partial": true,
+    "avg_daily_complete_days_only": 62.88,
+    "avg_daily_including_partial_today": 82.79,
+    "remaining_days_excluding_today": 27,
+    "remaining_budget": 1751.64,
+    "remaining_daily_allowance": 64.88,
+    "current_combined_daily_budget": 66.0,
+    "projected_at_current_budget": 2030.36,
+    "projected_at_complete_day_run_rate": 1946.12,
+    "projected_at_run_rate_including_today": 2483.69,
+    "proposed_combined_daily_budget": 56.0,
+    "projected_at_proposed_budget": 1760.36,
+    "headroom_for_maximize_clicks_overdelivery": 239.64,
+    "formulas": {
+      "remaining_budget": "max(0, 2000 - account_MTD_spend)",
+      "remaining_daily_allowance": "remaining_budget / remaining_days",
+      "projected_month_end": "account_MTD_spend + daily_rate * remaining_days"
+    },
+    "missing_costs_not_included": [
+      "agency management fee",
+      "ClickCease subscription",
+      "WhatConverts subscription",
+      "landing-page hosting"
+    ]
+  },
+  "evidence": {
+    "cap_is_already_breached_on_paper": "At the current $66.00/day combined budget the projection is $2030.36, which is $30.36 over the $2,000 cap before any overdelivery.",
+    "maximize_clicks_overdelivers": "Observed daily account spend above the $66 combined budget on 2026-08-22 ($103.21) and 2026-09-03 ($122.59, still partial).",
+    "why_patio_is_cut_first": "August Patio spent $949.84 for 1 raw credit at 1.16% CVR. All-time, Patio is $586 per credit against Pavers' $296 ($457 after removing Pavers' 3 wrong-service credits).",
+    "counter_evidence_recorded": "Patio buys cheaper clicks ($13.98 vs $22.76 in September), carries a smaller wrong-service share ($234.01 vs $331.78 of visible spend), and holds the account's best converting keyword, 'patio pavers contractor' PHRASE, at 3 credits on $314.39. The cut is deliberately modest for that reason: Patio keeps 73% of its budget."
+  },
+  "risk": "Lower budgets reduce daily click volume in an account already buying only 3-6 clicks a day. This is accepted because the cap is an owner instruction and PLAN-SLM-NEG-1 plus PLAN-SLM-BID-1 recover click volume per dollar.",
+  "rollback": "Restore 33000000 on both budgets through a new approved plan.",
+  "validation": "google-ads validate_only on the two campaign_budget mutations",
+  "dependencies": [],
+  "unchanged": "bidding, delivery method, the four paused campaigns and their budgets, all keywords, negatives, ads, conversions",
+  "fingerprint": "D82341B7238E"
+}

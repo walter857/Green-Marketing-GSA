@@ -1,0 +1,394 @@
+{
+ "v2": {
+  "version": "2",
+  "macros": [
+   {
+    "function": "__e"
+   },
+   {
+    "function": "__u",
+    "vtp_component": "HOST",
+    "vtp_enableMultiQueryKeys": false,
+    "vtp_enableIgnoreEmptyQueryParam": false
+   },
+   {
+    "function": "__u",
+    "vtp_component": "PATH",
+    "vtp_enableMultiQueryKeys": false,
+    "vtp_enableIgnoreEmptyQueryParam": false
+   },
+   {
+    "function": "__v",
+    "vtp_dataLayerVersion": 2,
+    "vtp_setDefaultValue": true,
+    "vtp_defaultValue": "",
+    "vtp_name": "lead_id"
+   },
+   {
+    "function": "__u",
+    "vtp_enableMultiQueryKeys": false,
+    "vtp_enableIgnoreEmptyQueryParam": false
+   },
+   {
+    "function": "__u",
+    "vtp_component": "URL",
+    "vtp_enableMultiQueryKeys": false,
+    "vtp_enableIgnoreEmptyQueryParam": false
+   },
+   {
+    "function": "__f",
+    "vtp_component": "URL"
+   },
+   {
+    "function": "__e"
+   }
+  ],
+  "tags": [
+   {
+    "function": "__googtag",
+    "metadata": [
+     "map"
+    ],
+    "once_per_event": true,
+    "vtp_tagId": "AW-18453077620",
+    "tag_id": 6
+   },
+   {
+    "function": "__awct",
+    "metadata": [
+     "map"
+    ],
+    "once_per_event": true,
+    "vtp_enableNewCustomerReporting": false,
+    "vtp_enableConversionLinker": true,
+    "vtp_orderId": [
+     "macro",
+     3
+    ],
+    "vtp_enableProductReporting": false,
+    "vtp_enableShippingData": false,
+    "vtp_conversionId": "18453077620",
+    "vtp_conversionLabel": "KOL7CImirvocEPS8jt9E",
+    "vtp_rdp": false,
+    "vtp_url": [
+     "macro",
+     4
+    ],
+    "vtp_enableProductReportingCheckbox": true,
+    "vtp_enableNewCustomerReportingCheckbox": true,
+    "vtp_enableEnhancedConversionsCheckbox": false,
+    "vtp_enableRdpCheckbox": true,
+    "vtp_enableTransportUrl": false,
+    "vtp_enableCustomParams": false,
+    "vtp_enableEventParameters": true,
+    "tag_id": 7
+   },
+   {
+    "function": "__awcc",
+    "metadata": [
+     "map"
+    ],
+    "once_per_event": true,
+    "vtp_phoneConversionNumber": "402-526-5754",
+    "vtp_conversionId": "18453077620",
+    "vtp_conversionLabel": "lp3jCKf5vPocEPS8jt9E",
+    "vtp_enableEventParameters": false,
+    "tag_id": 9
+   }
+  ],
+  "predicates": [
+   {
+    "function": "_eq",
+    "arg0": [
+     "macro",
+     0
+    ],
+    "arg1": "gtm.init"
+   },
+   {
+    "function": "_eq",
+    "arg0": [
+     "macro",
+     1
+    ],
+    "arg1": "offer.apogeelawns.com"
+   },
+   {
+    "function": "_re",
+    "arg0": [
+     "macro",
+     2
+    ],
+    "arg1": "^/thank-you/permanent-christmas-lights/?$"
+   },
+   {
+    "function": "_re",
+    "arg0": [
+     "macro",
+     3
+    ],
+    "arg1": ".+"
+   },
+   {
+    "function": "_eq",
+    "arg0": [
+     "macro",
+     0
+    ],
+    "arg1": "apg_permanent_lights_lead"
+   },
+   {
+    "function": "_re",
+    "arg0": [
+     "macro",
+     2
+    ],
+    "arg1": "^/permanent-christmas-lights-lincoln-ne/?$"
+   },
+   {
+    "function": "_eq",
+    "arg0": [
+     "macro",
+     0
+    ],
+    "arg1": "gtm.js"
+   }
+  ],
+  "rules": [
+   [
+    [
+     "if",
+     0
+    ],
+    [
+     "add",
+     0
+    ]
+   ],
+   [
+    [
+     "if",
+     1,
+     2,
+     3,
+     4
+    ],
+    [
+     "add",
+     1
+    ]
+   ],
+   [
+    [
+     "if",
+     1,
+     5,
+     6
+    ],
+    [
+     "add",
+     2
+    ]
+   ]
+  ]
+ },
+ "v3": {
+  "version": "3",
+  "macros": [
+   {
+    "function": "__e"
+   },
+   {
+    "function": "__u",
+    "vtp_component": "HOST",
+    "vtp_enableMultiQueryKeys": false,
+    "vtp_enableIgnoreEmptyQueryParam": false
+   },
+   {
+    "function": "__u",
+    "vtp_component": "PATH",
+    "vtp_enableMultiQueryKeys": false,
+    "vtp_enableIgnoreEmptyQueryParam": false
+   },
+   {
+    "function": "__v",
+    "vtp_dataLayerVersion": 2,
+    "vtp_setDefaultValue": true,
+    "vtp_defaultValue": "",
+    "vtp_name": "lead_id"
+   },
+   {
+    "function": "__u",
+    "vtp_enableMultiQueryKeys": false,
+    "vtp_enableIgnoreEmptyQueryParam": false
+   },
+   {
+    "function": "__u",
+    "vtp_component": "URL",
+    "vtp_enableMultiQueryKeys": false,
+    "vtp_enableIgnoreEmptyQueryParam": false
+   },
+   {
+    "function": "__f",
+    "vtp_component": "URL"
+   },
+   {
+    "function": "__e"
+   }
+  ],
+  "tags": [
+   {
+    "function": "__googtag",
+    "metadata": [
+     "map"
+    ],
+    "once_per_event": true,
+    "vtp_tagId": "AW-18453077620",
+    "tag_id": 6
+   },
+   {
+    "function": "__awct",
+    "metadata": [
+     "map"
+    ],
+    "once_per_event": true,
+    "vtp_enableNewCustomerReporting": false,
+    "vtp_enableConversionLinker": true,
+    "vtp_orderId": [
+     "macro",
+     3
+    ],
+    "vtp_enableProductReporting": false,
+    "vtp_enableShippingData": false,
+    "vtp_conversionId": "18453077620",
+    "vtp_conversionLabel": "KOL7CImirvocEPS8jt9E",
+    "vtp_rdp": false,
+    "vtp_url": [
+     "macro",
+     4
+    ],
+    "vtp_enableProductReportingCheckbox": true,
+    "vtp_enableNewCustomerReportingCheckbox": true,
+    "vtp_enableEnhancedConversionsCheckbox": false,
+    "vtp_enableRdpCheckbox": true,
+    "vtp_enableTransportUrl": false,
+    "vtp_enableCustomParams": false,
+    "vtp_enableEventParameters": true,
+    "tag_id": 7
+   },
+   {
+    "function": "__awcc",
+    "metadata": [
+     "map"
+    ],
+    "once_per_event": true,
+    "vtp_phoneConversionNumber": "402-526-5754",
+    "vtp_conversionId": "18453077620",
+    "vtp_conversionLabel": "lp3jCKf5vPocEPS8jt9E",
+    "vtp_enableEventParameters": false,
+    "tag_id": 9
+   },
+   {
+    "function": "__gclidw",
+    "vtp_enableCrossDomain": true,
+    "tag_id": 10
+   }
+  ],
+  "predicates": [
+   {
+    "function": "_eq",
+    "arg0": [
+     "macro",
+     0
+    ],
+    "arg1": "gtm.init"
+   },
+   {
+    "function": "_eq",
+    "arg0": [
+     "macro",
+     1
+    ],
+    "arg1": "offer.apogeelawns.com"
+   },
+   {
+    "function": "_re",
+    "arg0": [
+     "macro",
+     2
+    ],
+    "arg1": "^/thank-you/permanent-christmas-lights/?$"
+   },
+   {
+    "function": "_re",
+    "arg0": [
+     "macro",
+     3
+    ],
+    "arg1": ".+"
+   },
+   {
+    "function": "_eq",
+    "arg0": [
+     "macro",
+     0
+    ],
+    "arg1": "apg_permanent_lights_lead"
+   },
+   {
+    "function": "_re",
+    "arg0": [
+     "macro",
+     2
+    ],
+    "arg1": "^/permanent-christmas-lights-lincoln-ne/?$"
+   },
+   {
+    "function": "_eq",
+    "arg0": [
+     "macro",
+     0
+    ],
+    "arg1": "gtm.js"
+   }
+  ],
+  "rules": [
+   [
+    [
+     "if",
+     0
+    ],
+    [
+     "add",
+     0,
+     3
+    ]
+   ],
+   [
+    [
+     "if",
+     1,
+     2,
+     3,
+     4
+    ],
+    [
+     "add",
+     1
+    ]
+   ],
+   [
+    [
+     "if",
+     1,
+     5,
+     6
+    ],
+    [
+     "add",
+     2
+    ]
+   ]
+  ]
+ }
+}

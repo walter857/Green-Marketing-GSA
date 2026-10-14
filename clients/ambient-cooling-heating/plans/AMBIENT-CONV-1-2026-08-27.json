@@ -1,0 +1,196 @@
+{
+ "plan_name": "AMBIENT-CONV-1-2026-08-27",
+ "approval_class": "conversion / bidding-goal change - SEPARATE approval",
+ "generated_local": "2026-08-27T17:33:10.740496-04:00",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "problem": "The customer conversion goals CONTACT/WEBSITE and CONTACT/CALL_FROM_ADS are biddable. Every conversion action inside a biddable goal is counted in the Conversions column and feeds Maximize Clicks conversion reporting, regardless of the action's primary_for_goal flag. That pulls the WhatConverts upload actions and the raw call-button click into the same totals as the landing-page form and the call-from-ads action.",
+ "proof": {
+  "wc_lead_action": "7643656486 'WC Lead' reads primary_for_goal=False and include_in_conversions_metric=False, yet contributed 1.0 to metrics.conversions on 'hvac companies near me open now'.",
+  "observed_double_counted_queries": {
+   "hvac companies near me open now": [
+    [
+     "Ambient Cooling - LP -Submit Lead Forms",
+     1.0
+    ],
+    [
+     "WC Lead",
+     1.0
+    ]
+   ]
+  },
+  "primary_conversions_reported": 6.0,
+  "primary_conversions_duplicated": 1.0,
+  "inflation": "16.7% overstated",
+  "actions_pulled_in_by_the_two_goals": {
+   "CONTACT/WEBSITE": [
+    {
+     "id": "6498555484",
+     "name": "Call BTN Click",
+     "category": "CONTACT",
+     "origin": "WEBSITE",
+     "status": "ENABLED",
+     "type": "WEBPAGE",
+     "primary_for_goal": false,
+     "include_in_conversions_metric": false
+    },
+    {
+     "id": "7643656486",
+     "name": "WC Lead",
+     "category": "CONTACT",
+     "origin": "WEBSITE",
+     "status": "ENABLED",
+     "type": "UPLOAD_CLICKS",
+     "primary_for_goal": false,
+     "include_in_conversions_metric": false
+    }
+   ],
+   "CONTACT/CALL_FROM_ADS": [
+    {
+     "id": "7643656075",
+     "name": "WC Calls",
+     "category": "CONTACT",
+     "origin": "CALL_FROM_ADS",
+     "status": "ENABLED",
+     "type": "UPLOAD_CALLS",
+     "primary_for_goal": false,
+     "include_in_conversions_metric": false
+    }
+   ]
+  }
+ },
+ "proposed_change": {
+  "operation": "UPDATE campaign_conversion_goal.biddable = false",
+  "targets": [
+   "24132507741~CONTACT~WEBSITE",
+   "24132507744~CONTACT~WEBSITE",
+   "24132507747~CONTACT~WEBSITE",
+   "24132507750~CONTACT~WEBSITE",
+   "24132507753~CONTACT~WEBSITE",
+   "24132507741~CONTACT~CALL_FROM_ADS",
+   "24132507744~CONTACT~CALL_FROM_ADS",
+   "24132507747~CONTACT~CALL_FROM_ADS",
+   "24132507750~CONTACT~CALL_FROM_ADS",
+   "24132507753~CONTACT~CALL_FROM_ADS"
+  ],
+  "object_count": 10,
+  "before": [
+   {
+    "campaign_id": "24132507741",
+    "campaign": "AC Repair",
+    "category": "CONTACT",
+    "origin": "WEBSITE",
+    "biddable": true,
+    "resource_name": "customers/2401959466/campaignConversionGoals/24132507741~CONTACT~WEBSITE"
+   },
+   {
+    "campaign_id": "24132507741",
+    "campaign": "AC Repair",
+    "category": "CONTACT",
+    "origin": "CALL_FROM_ADS",
+    "biddable": true,
+    "resource_name": "customers/2401959466/campaignConversionGoals/24132507741~CONTACT~CALL_FROM_ADS"
+   },
+   {
+    "campaign_id": "24132507744",
+    "campaign": "Gas Boiler Repair",
+    "category": "CONTACT",
+    "origin": "WEBSITE",
+    "biddable": true,
+    "resource_name": "customers/2401959466/campaignConversionGoals/24132507744~CONTACT~WEBSITE"
+   },
+   {
+    "campaign_id": "24132507744",
+    "campaign": "Gas Boiler Repair",
+    "category": "CONTACT",
+    "origin": "CALL_FROM_ADS",
+    "biddable": true,
+    "resource_name": "customers/2401959466/campaignConversionGoals/24132507744~CONTACT~CALL_FROM_ADS"
+   },
+   {
+    "campaign_id": "24132507747",
+    "campaign": "HVAC Installation",
+    "category": "CONTACT",
+    "origin": "WEBSITE",
+    "biddable": true,
+    "resource_name": "customers/2401959466/campaignConversionGoals/24132507747~CONTACT~WEBSITE"
+   },
+   {
+    "campaign_id": "24132507747",
+    "campaign": "HVAC Installation",
+    "category": "CONTACT",
+    "origin": "CALL_FROM_ADS",
+    "biddable": true,
+    "resource_name": "customers/2401959466/campaignConversionGoals/24132507747~CONTACT~CALL_FROM_ADS"
+   },
+   {
+    "campaign_id": "24132507750",
+    "campaign": "HVAC Repair",
+    "category": "CONTACT",
+    "origin": "WEBSITE",
+    "biddable": true,
+    "resource_name": "customers/2401959466/campaignConversionGoals/24132507750~CONTACT~WEBSITE"
+   },
+   {
+    "campaign_id": "24132507750",
+    "campaign": "HVAC Repair",
+    "category": "CONTACT",
+    "origin": "CALL_FROM_ADS",
+    "biddable": true,
+    "resource_name": "customers/2401959466/campaignConversionGoals/24132507750~CONTACT~CALL_FROM_ADS"
+   },
+   {
+    "campaign_id": "24132507753",
+    "campaign": "HVAC Replacement",
+    "category": "CONTACT",
+    "origin": "WEBSITE",
+    "biddable": true,
+    "resource_name": "customers/2401959466/campaignConversionGoals/24132507753~CONTACT~WEBSITE"
+   },
+   {
+    "campaign_id": "24132507753",
+    "campaign": "HVAC Replacement",
+    "category": "CONTACT",
+    "origin": "CALL_FROM_ADS",
+    "biddable": true,
+    "resource_name": "customers/2401959466/campaignConversionGoals/24132507753~CONTACT~CALL_FROM_ADS"
+   }
+  ],
+  "after": "biddable=false on those 10 campaign conversion goals",
+  "kept_biddable": [
+   "SUBMIT_LEAD_FORM/WEBSITE",
+   "PHONE_CALL_LEAD/WEBSITE",
+   "PHONE_CALL_LEAD/CALL_FROM_ADS"
+  ],
+  "effect": "Primary conversions become exactly the landing-page form lead, the landing-page website call and the call-from-ads action. WhatConverts uploads and the raw call-button click stay visible as secondary diagnostics and stop inflating the bidding total."
+ },
+ "risks": [
+  "Reported Conversions will step DOWN. That is the correction, not a loss.",
+  "Maximize Clicks does not bid to conversions, so bidding behaviour does not change today. The correction matters before any move to a conversion-based strategy.",
+  "No conversion action is removed, paused or edited. Only goal biddability at campaign level changes."
+ ],
+ "rollback": "Set biddable=true on the same 10 campaign conversion goals.",
+ "unrelated_resource_assertions": [
+  "no conversion action created, removed, paused or edited",
+  "customer-level conversion goals untouched",
+  "the known duplicate form action 6498555481 stays ENABLED and secondary",
+  "WhatConverts actions 7643656075 and 7643656486 stay ENABLED",
+  "campaigns, budgets, keywords, ads and assets untouched"
+ ],
+ "fingerprint": "EE6CFAD6667A95A1",
+ "validate_only": {
+  "status": "VALIDATE_OK",
+  "operations": 10,
+  "results_returned": 0
+ },
+ "void": true,
+ "voided_on": "2026-08-27T19:01:52.147362-04:00",
+ "void_reason": "VOID. WC Lead is already excluded from the Conversions column. No mutation needed.",
+ "evidence_that_voided_it": [
+  "WC Lead conversions by date: 2026-08-20 conversions=1.0; 2026-08-21 x2, 2026-08-22 and 2026-08-25 all conversions=0.0 with all_conversions=1.0 each.",
+  "PLAN-B 03F125C189679E35 executed 2026-08-21 00:09 ET. Every WC Lead conversion after that timestamp is correctly excluded.",
+  "This also DISPROVES the earlier inference that a biddable CONTACT/WEBSITE goal overrides include_in_conversions_metric=false. CONTACT/WEBSITE is biddable=true on all five campaigns right now, yet the four post-fix conversions did not count.",
+  "The single counted conversion is a historical reporting artifact. Google does not restate the historical Conversions column after this configuration change."
+ ],
+ "do_not_execute": true
+}

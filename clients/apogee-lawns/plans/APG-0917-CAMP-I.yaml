@@ -1,0 +1,476 @@
+# =============================================================================
+# APG-0917-CAMP-I  --  paused Search campaign, FINAL URL HOST CORRECTED
+# =============================================================================
+# SUPERSEDES APG-0917-CAMP-E (F0C6FA2128A9), which must not be executed.
+# ONLY the Primary/Secondary PRECONDITION text changed. The 121-mutation payload
+# is byte-identical to the approved CAMP-E content: same campaign, budget, bid,
+# locations, ad groups, keywords, negatives, RSAs, assets, URLs and goal config.
+# CAMP-E asserted "All three stay Secondary", which becomes false once
+# APG-0917-CONV-G promotes two actions. That assertion is corrected here.
+# SUPERSEDES APG-0916-CAMP-C (7BC3407302B2), which must not be executed.
+# Correction: the goal architecture is now expressed as STANDARD campaign-specific
+# goals by category and origin, with the website-call goal explicitly set
+# biddable: false. No CustomConversionGoal is used anywhere. See
+# campaign_conversion_goals below for why that distinction matters.
+# =============================================================================
+# SUPERSEDES APG-0916-CAMP-B (849EAED2873F), which is VOID and must never execute.
+# What changed since B: keyword architecture settled by forecast evidence, CPC
+# ceiling approved at $8.00, campaign schedule set to 24/7, call asset gated on
+# routing verification, and the three conversion actions now exist with real IDs.
+#
+# STATUS: NOT EXECUTABLE YET. Blocked on the landing page and thank-you page,
+# both HTTP 404. Published now so the structure can be approved and the developer
+# handoff can proceed in parallel.
+# =============================================================================
+plan_id: APG-0917-CAMP-I
+plan_kind: search_campaign
+generated: "2026-09-17"
+supersedes: APG-0917-CAMP-H
+supersedes_fingerprint: 136E939A3206
+supersedes_reason: >-
+  URL-dependent change only. The owner confirmed the paid landing page lives on the
+  subdomain offer.apogeelawns.com, not apogeelawns.com. A final-URL change invalidates the
+  previous fingerprint, so 136E939A3206 must not be executed. Nothing else changed.
+depends_on: "APG-0917-CONV-G must execute FIRST so the two Primary actions exist"
+payload_unchanged_from: "APG-0917-CAMP-E - only precondition/assertion text differs"
+supersedes_reason: "conversion-goal configuration required correction; website-call ownership moved to WhatConverts"
+also_voids: "APG-0916-CAMP-B (849EAED2873F) remains VOID"
+
+target:
+  exact_child_account_name: "Apogee Lawns LLC - Live"
+  child_customer_id: "8164626278"
+  manager_customer_id: "3373711342"
+  vertical: similar-local-service
+  exact_primary_service: Permanent Christmas light installation
+
+# -----------------------------------------------------------------------------
+live_conversion_actions:
+  form_lead:
+    id: "7772803337"
+    name: "Lead | Permanent Lights | Form Submit | Thank You"
+    send_to: "AW-18453077620/KOL7CImirvocEPS8jt9E"
+    state_before_conv_g: SECONDARY
+    state_required_at_execution: PRIMARY
+  calls_from_ads:
+    id: "7773013199"
+    name: "Call | Permanent Lights | Ads | 60s"
+    send_to: null
+    state_before_conv_g: SECONDARY
+    state_required_at_execution: PRIMARY
+  calls_from_website:
+    id: "7773043879"
+    name: "Call | Permanent Lights | Website | 60s"
+    send_to: "AW-18453077620/lp3jCKf5vPocEPS8jt9E"
+    state_before_conv_g: SECONDARY
+    state_required_at_execution: SECONDARY
+    never_promote: true
+    disposition: RETAINED_BUT_UNUSED
+    disposition_note: >-
+      Not deleted. Excluded from every campaign goal and from every custom goal. No GTM
+      tag will be created or fired for it. WhatConverts owns website-call measurement.
+
+account_default_goals_warning:
+  observed_after_stage_a: 3
+  all_biddable: true
+  categories: ["SUBMIT_LEAD_FORM/WEBSITE", "PHONE_CALL_LEAD/WEBSITE", "PHONE_CALL_LEAD/CALL_FROM_ADS"]
+  consequence: >-
+    Google auto-created these when the conversion actions were created. They are all
+    biddable. This campaign MUST use campaign-specific conversion goals, never account
+    defaults, so that bidding is scoped to the three approved permanent-lighting actions
+    and nothing else can leak in later.
+
+# -----------------------------------------------------------------------------
+campaigns:
+  - name: "S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026"
+    status: PAUSED
+    advertising_channel_type: SEARCH
+    goal: LEADS
+    daily_budget: 16.44
+    budget_basis: "16.44 x 30.4 = 499.78, under a $500 recurring monthly limit"
+    budget_name: "B | Permanent Christmas Lights | Apogee Lawns | 09_2026"
+    budget_explicitly_shared: false
+    budget_delivery_method: STANDARD
+    bidding_strategy_type: TARGET_SPEND          # Maximize Clicks
+    cpc_bid_ceiling: 8.00
+    cpc_bid_ceiling_status: APPROVED_CONTROLLED_INITIAL_CEILING
+    cpc_bid_ceiling_note: >-
+      A ceiling, not an expected CPC. Forecast clearing CPC is $4.85, which at a 5%
+      landing-page conversion rate models a $97 CPL against a $100 target. Target CPL
+      $100 x 5% = $5.00 affordable CPC, so the ceiling sits deliberately above the
+      economics-implied bid to buy delivery in a thin market.
+    language: "languageConstants/1000"
+    start_date: DEFERRED_UNTIL_READY
+    start_date_note: "Never backdate. Set a future date at creation time based on actual readiness."
+    final_url: "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+    final_url_status_2026_09_17: 404
+    final_url_evidence_2026_09_17: >-
+      https://offer.apogeelawns.com/ returns 200 for both a normal browser and AdsBot and
+      already carries the approved H1 "Permanent Christmas Light Installation in Lincoln,
+      NE", the PPC number 402-526-5754 with tel:+14025265754, noindex/nofollow, GTM-M545Z8T2
+      installed, a WhatConverts script, Privacy Policy and Terms links, zero Omaha mentions
+      and zero rating claims. The SLUG is not yet published: the approved final URL
+      https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/ returns 404 for
+      both a browser and AdsBot. The owner has asked the developer to move the page to the
+      slug. Creating the campaign PAUSED against the approved slug is correct; enabling it
+      is not, until the slug returns 200.
+    final_url_suffix: "utm_source=google&utm_medium=cpc&utm_campaign=apogee_permanent_lights_2026&utm_term={keyword}&utm_content={creative}&utm_matchtype={matchtype}&utm_device={device}&utm_network={network}&utm_adgroup={adgroupid}"
+
+    network_settings:
+      target_google_search: true
+      target_search_network: false
+      target_content_network: false
+      target_partner_search_network: false
+    ai_max: false
+    keyword_match_expansion: false
+    dynamic_search_ads: false
+    final_url_expansion: OPTED_OUT
+    url_inclusions: false
+    text_customization: OPTED_OUT
+    automatically_created_assets: OPTED_OUT
+    ad_rotation: OPTIMIZE
+    audience_setting: OBSERVATION_ONLY
+
+    location:
+      option: PRESENCE
+      option_note: "People IN or regularly in the targeted locations. NOT presence-or-interest."
+      geo_target_constant_ids:
+        - 9024671    # 68372,Nebraska
+        - 9024703    # 68430,Nebraska
+        - 9024754    # 68527,Nebraska
+        - 9024651    # 68347,Nebraska
+        - 9024753    # 68526,Nebraska
+        - 9024728    # 68461,Nebraska
+        - 9024746    # 68516,Nebraska
+        - 9024748    # 68520,Nebraska
+        - 1021783    # Waverly,Nebraska            City
+        - 1021647    # Eagle,Nebraska              City
+        - 1021696    # Lincoln,Nebraska            City
+        - 9195288    # Ashland Township,Nebraska   Municipality
+        - 1021635    # Crete,Nebraska              City
+        - 9233865    # Nemaha Precinct,Nebraska    Municipality
+      nemaha_precinct_rule_check: >-
+        RE-VERIFIED 2026-09-16: geo_target_constant 9233865 canonical_name is exactly
+        "Nemaha Precinct,Nebraska,United States", status ENABLED, target_type Municipality.
+        The owner's condition is met. County not inferred, targeting not broadened.
+      omaha: EXCLUDED
+      excluded_geo_target_constant_ids: []
+      state_of_nebraska_targeted: false
+
+    # CAMPAIGN SCHEDULE: 24/7 by owner decision. Form traffic stays eligible at all
+    # hours; only the call asset is restricted to live-answer hours.
+    schedule: []
+    schedule_policy: >-
+      NO ad_schedule campaign criteria are created. In Google Ads, absence of an ad
+      schedule means all days, all hours, which is exactly the owner's instruction.
+      Creating seven 00:00-23:45 rows would be a 15-minute-per-day REDUCTION in
+      eligibility, so it is deliberately not done.
+    ad_schedule_criteria_count: 0
+
+    negatives_match_broad:
+      [diy, tutorial, tutorials, instructions, job, jobs, career, careers, salary,
+       wholesale, supplier, suppliers, distributor, distributors, kit, kits,
+       wreath, wreaths, garland, garlands, inflatable, inflatables, projector,
+       projectors, laser, lasers, rent, rental, rentals, indoor, amazon, walmart,
+       lowes, menards, costco, ebay, temu]
+    negatives_match_phrase:
+      ["how to", "do it yourself", "where to buy", "home depot", "light show",
+       "lights show", "christmas lights map", "holiday lights map",
+       "christmas light tour", "holiday light tour", "drive through", "zoo lights",
+       "christmas at the zoo", "holiday event", "christmas parade",
+       "lighting festival", "best christmas displays", "customer supplied",
+       "my own lights", "labor only", "app download", "app not working",
+       "christmas lights for sale", "holiday lights for sale",
+       "christmas light hanging service", "christmas light removal",
+       "take down christmas lights", "christmas light storage",
+       "seasonal light installation", "replacement christmas bulbs",
+       "christmas light repair", "target christmas lights",
+       govee, trimlight, jellyfish, gemstone, oelo, celebright]
+    negatives_deliberately_kept_eligible:
+      [cost, price, pricing, "how much", quote, estimate, "near me", company,
+       installer, service, reviews, best, hire, local, emergency, financing]
+    shared_negative_lists_attached: []
+    shared_negative_lists_attached_note: >-
+      NONE. All 7 pre-existing lists stay detached. List 11807294063
+      "Christmas Lights Install" contains PHRASE "permanent christmas lights", which
+      would block AG2's only keyword outright.
+
+    # -------------------------------------------------------------------------
+    # CONVERSION GOALS - CORRECTED 2026-09-17
+    #
+    # NO CustomConversionGoal is used. A custom goal names individual conversion
+    # actions and Google bids on every action inside it REGARDLESS of
+    # primary_for_goal, so attaching one containing a Secondary action would make
+    # that action biddable. Standard goals do not behave that way: they operate at
+    # category and origin level and count only PRIMARY actions.
+    #
+    # Standard goals cannot exclude one action inside a category. The exclusion of
+    # 7773043879 is achieved two ways at once:
+    #   1. its (category, origin) pair PHONE_CALL_LEAD / WEBSITE is set
+    #      biddable: false at campaign level, and
+    #   2. it stays Secondary, so it could not feed a standard goal even if that
+    #      pair were biddable.
+    # -------------------------------------------------------------------------
+    campaign_conversion_goals:
+      uses_custom_conversion_goal: false
+      custom_conversion_goal_rationale: >-
+        Deliberately not used. Google bids on every action inside an attached custom
+        goal regardless of primary_for_goal, so a custom goal cannot safely contain a
+        Secondary action.
+      conversion_goal_campaign_config:
+        goal_config_level: CAMPAIGN
+        custom_conversion_goal: null
+        effect: "detaches this campaign from the three biddable account-default goals"
+      standard_goals:
+        - category: SUBMIT_LEAD_FORM
+          origin: WEBSITE
+          biddable: true
+          includes_action: "7772803337 Lead | Permanent Lights | Form Submit | Thank You"
+          action_state_required: PRIMARY
+          note: "the only form conversion sent to Google Ads; PRIMARY after CONV-G"
+        - category: PHONE_CALL_LEAD
+          origin: CALL_FROM_ADS
+          biddable: true
+          includes_action: "7773013199 Call | Permanent Lights | Ads | 60s"
+          action_state_required: PRIMARY
+          note: "native calls from the call asset, 60 second minimum; PRIMARY after CONV-G"
+        - category: PHONE_CALL_LEAD
+          origin: WEBSITE
+          biddable: false
+          excludes_action: "7773043879 Call | Permanent Lights | Website | 60s"
+          action_state_required: SECONDARY
+          note: >-
+            Explicitly non-biddable. WhatConverts owns website-call measurement, so no
+            Google Ads Calls from Website tag exists to feed this action. When the
+            WhatConverts conversion action is eventually created, check which category
+            and origin Google assigns it before changing this flag, because it may land
+            in this same pair.
+      whatconverts_action:
+        status: NOT_CREATED_THIS_SESSION
+        reason: >-
+          The WhatConverts application requires an interactive login that this browser
+          profile does not have, and Claude does not enter credentials. The integration
+          and its conversion action could not be created or read back.
+        consequence: >-
+          This campaign is built around the form goal and the native calls-from-ads goal
+          only. Adding the WhatConverts website-call action to the campaign goals is a
+          MANDATORY PRE-ENABLEMENT TASK and needs its own validated plan and fingerprint.
+      excluded_from_bidding:
+        - "page views, button clicks, phone-link clicks, form starts, scroll depth, gallery interaction"
+        - "7773043879, via biddable: false and Secondary state"
+      promotion_to_primary: >-
+        This plan promotes NOTHING. Promotion is done separately by APG-0917-CONV-G, which
+        must run first. At execution time 7772803337 and 7773013199 must already be PRIMARY
+        so the two biddable goals below have a live action behind them, and 7773043879 must
+        still be SECONDARY.
+      precondition_assertions:
+        - "conversion_action 7772803337 primary_for_goal == true"
+        - "conversion_action 7773013199 primary_for_goal == true"
+        - "conversion_action 7773043879 primary_for_goal == false"
+        - "custom_conversion_goal count == 0"
+
+    ad_groups:
+      # ---------------------------------------------------------------- AG1
+      - name: "AG | Permanent Light Installation"
+        status: ENABLED           # inside a PAUSED campaign, nothing can serve
+        canonical_keyword: "permanent christmas light installation"
+        secondary_theme: "permanent christmas lights installer"
+        demand_evidence: >-
+          installation bucket 10/mo avg, ~50 searches Sep-Dec; installer bucket 10/mo avg
+          but only 10 searches in the last 12 months. Forecast for this group alone at an
+          $8 cap is 0.1 clicks across the whole 91-day season. Kept because it carries the
+          highest hiring intent and costs almost nothing to run.
+        path1: permanent
+        path2: install
+        keywords:
+          - {text: "permanent christmas light installation", match_type: EXACT}
+          - {text: "permanent christmas light installation", match_type: PHRASE}
+          - {text: "permanent christmas lights installer", match_type: EXACT}
+          - {text: "permanent christmas lights installer", match_type: PHRASE}
+        ads:
+          - label: "RSA A - direct response"
+            headlines:
+              - {text: "Permanent Light Installation", pin: HEADLINE_1}
+              - {text: "Permanent Christmas Lights", pin: HEADLINE_1}
+              - {text: "Lincoln Permanent Lights", pin: HEADLINE_1}
+              - {text: "Professional Installation"}
+              - {text: "One Install, Year-Round Use"}
+              - {text: "App-Controlled Lighting"}
+              - {text: "Custom Colors and Schedules"}
+              - {text: "No Annual Light Setup"}
+              - {text: "Homes and Businesses"}
+              - {text: "Request a Free Estimate"}
+              - {text: "Installed Once, Used All Year"}
+              - {text: "Plan Your Lighting Project"}
+            descriptions:
+              - {text: "Professional permanent Christmas light installation in Lincoln. Request a free estimate."}
+              - {text: "One professional install replaces yearly hanging, removal and storage."}
+              - {text: "Choose colors, patterns and schedules from the app after installation."}
+              - {text: "Tell Apogee Lawns about your home or business and get a custom estimate."}
+          - label: "RSA B - benefits"
+            headlines:
+              - {text: "Permanent Christmas Lighting", pin: HEADLINE_1}
+              - {text: "Permanent Lights Installed", pin: HEADLINE_1}
+              - {text: "Lincoln Lighting Installer", pin: HEADLINE_1}
+              - {text: "One Install, Year-Round Use"}
+              - {text: "No Annual Light Setup"}
+              - {text: "Lights Ready Every Season"}
+              - {text: "Control Lights From Your Phone"}
+              - {text: "Custom Colors and Schedules"}
+              - {text: "Lighting for Every Occasion"}
+              - {text: "Professional Installation"}
+              - {text: "Homes and Businesses"}
+              - {text: "Request Your Free Estimate"}
+            descriptions:
+              - {text: "Install the lighting once and use it for Christmas, events and everyday accents."}
+              - {text: "Professional installation along the roofline, then control it from your phone."}
+              - {text: "Skip the yearly setup, removal and storage with a permanent lighting system."}
+              - {text: "Request a free permanent-lighting estimate for your Lincoln-area property."}
+        assets:
+          callouts:
+            ["App-Controlled Lights", "Year-Round Use", "Professional Installation",
+             "Homes and Businesses", "Custom Colors and Scenes", "Local Installation"]
+          structured_snippets:
+            - header: "Service catalog"
+              values: ["Permanent Light Install", "Residential Lighting", "Commercial Lighting"]
+          sitelinks: []
+
+      # ---------------------------------------------------------------- AG2
+      - name: "AG | Permanent Christmas Lights Exact"
+        status: ENABLED
+        canonical_keyword: "permanent christmas lights"
+        demand_evidence: >-
+          90/mo avg in the approved area, 480 in NOV 2025, ~840 searches Sep-Dec, and the
+          ONLY bucket in the entire research set that returned top-of-page bid data
+          ($4.66-$13.76, HIGH competition). Forecast 11.0 clicks / $53.20 at an $8 cap
+          across the season.
+        match_type_decision: >-
+          EXACT ONLY. Phrase is deliberately withheld. A seeded intent scan of 159 ideas
+          around this term found that of the 43 terms a PHRASE keyword would reach, only
+          14 carry a service-hiring marker (120 summed volume) while 29 carry none
+          (250 summed volume) - govee, trimlight, gemstone, minleon, reddit, tiktok, best.
+          Phrase buys about 5 extra clicks per season for roughly two-thirds irrelevant
+          reach. Revisit only when real search-term data justifies it.
+        path1: christmas
+        path2: lights
+        keywords:
+          - {text: "permanent christmas lights", match_type: EXACT}
+        ads:
+          - label: "RSA A - direct response"
+            headlines:
+              - {text: "Permanent Christmas Lights", pin: HEADLINE_1}
+              - {text: "Lincoln Permanent Lights", pin: HEADLINE_1}
+              - {text: "Permanent Light Installation", pin: HEADLINE_1}
+              - {text: "Professional Installation"}
+              - {text: "One Install, Year-Round Use"}
+              - {text: "App-Controlled Lighting"}
+              - {text: "Custom Colors and Schedules"}
+              - {text: "No Annual Light Setup"}
+              - {text: "Homes and Businesses"}
+              - {text: "Request a Free Estimate"}
+              - {text: "Built for Year-Round Use"}
+              - {text: "Apogee Lawns Lighting"}
+            descriptions:
+              - {text: "Permanent Christmas lights installed in Lincoln. Request a free estimate."}
+              - {text: "A permanent system, not annual hanging and removal. Installed once, used all year."}
+              - {text: "Use app-controlled colors, patterns and schedules for Christmas and every season."}
+              - {text: "Tell us about your home or business and get a custom permanent-lighting estimate."}
+          - label: "RSA B - benefits"
+            headlines:
+              - {text: "Permanent Christmas Lighting", pin: HEADLINE_1}
+              - {text: "Year-Round Christmas Lights", pin: HEADLINE_1}
+              - {text: "Permanent Lights in Lincoln", pin: HEADLINE_1}
+              - {text: "One Install, Year-Round Use"}
+              - {text: "No Annual Light Setup"}
+              - {text: "Control Lights From Your Phone"}
+              - {text: "Custom Colors and Schedules"}
+              - {text: "Lighting for Every Occasion"}
+              - {text: "Professional Installation"}
+              - {text: "Homes and Businesses"}
+              - {text: "See Lighting Possibilities"}
+              - {text: "Request Your Free Estimate"}
+            descriptions:
+              - {text: "One permanent lighting system for Christmas, events and everyday accent lighting."}
+              - {text: "Change colors, patterns and schedules from your phone after professional installation."}
+              - {text: "No yearly setup or takedown. The system stays installed and ready every season."}
+              - {text: "Request a free custom estimate from Apogee Lawns for your Lincoln-area property."}
+        assets:
+          callouts:
+            ["App-Controlled Lights", "Year-Round Use", "Professional Installation",
+             "Homes and Businesses", "Custom Colors and Scenes", "Local Installation"]
+          structured_snippets:
+            - header: "Service catalog"
+              values: ["Permanent Light Install", "Residential Lighting", "Commercial Lighting"]
+          sitelinks: []
+
+# -----------------------------------------------------------------------------
+deferred_assets:
+  call_asset:
+    decision: NOT_BUILT_YET
+    blocker: "routing verification on 402-526-5754"
+    when_built:
+      phone: "402-526-5754"
+      country_code: US
+      level: CAMPAIGN
+      call_conversion_reporting_state: USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION
+      call_conversion_action: "7773013199"   # Call | Permanent Lights | Ads | 60s
+      schedule_rows: 6
+      schedule:
+        - {day: MONDAY,    start: "08:00", end: "17:00"}
+        - {day: TUESDAY,   start: "08:00", end: "17:00"}
+        - {day: WEDNESDAY, start: "08:00", end: "17:00"}
+        - {day: THURSDAY,  start: "08:00", end: "17:00"}
+        - {day: FRIDAY,    start: "08:00", end: "17:00"}
+        - {day: SATURDAY,  start: "08:00", end: "12:00"}
+      sunday: NO_ROW - closed
+      warning: >-
+        A call asset's schedule lives on the ASSET, not the campaign link. If this asset
+        is ever shared with another campaign, editing its hours rewrites them everywhere.
+        Keep it exclusive to this campaign.
+      double_forwarding_note: >-
+        402-526-5754 is a WhatConverts tracking number forwarding to 402-202-7261. With a
+        Google call asset the chain becomes Google forwarding number -> WhatConverts ->
+        Apogee. Two hops. See DNI-CONFLICT-DECISION-2026-09-16.md for the one-hop
+        alternative.
+  sitelinks:
+    decision: NOT_BUILT
+    blocker: "all four anchors live on a page that returns 404"
+  image_assets:
+    decision: NOT_BUILT
+    blocker: "zero-delivery account will not meet Search image-asset eligibility at launch"
+
+object_counts_if_executed:
+  campaign_budget.create: 1
+  campaign.create: 1
+  campaign_criterion.create_location: 14
+  campaign_criterion.create_negative_keyword: 75
+  campaign_criterion.create_ad_schedule: 0
+  campaign_criterion.create_language: 1
+  ad_group.create: 2
+  ad_group_criterion.create_keyword: 5
+  ad_group_ad.create: 4
+  asset.create_callout: 6
+  asset.create_structured_snippet: 1
+  campaign_asset.create: 7
+  asset.create_call: 0
+  asset.create_sitelink: 0
+  conversion_goal_campaign_config.update: 1
+  campaign_conversion_goal.update: 3
+  custom_conversion_goal.create: 0
+  conversion_action.update: 0
+  any_delete_or_remove: 0
+  any_enable_operation: 0
+  any_promotion_to_primary: 0   # promotion belongs to APG-0917-CONV-G, not here
+  TOTAL_MUTATIONS: 121
+
+blockers_before_execution:
+  - "landing page https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/ must return 200"
+  - "thank-you page https://offer.apogeelawns.com/thank-you/permanent-christmas-lights/ must return 200"
+  - "dedicated PPC form must deliver and redirect only on verified success"
+  - "GTM-M545Z8T2 installed sitewide"
+  - "GTM Preview QA passed"
+  - "402-526-5754 routing verified (for the call asset only)"
+
+rollback:
+  method: "campaign.status = REMOVED, then remove the budget by resource name; unlink created campaign_assets"
+  blast_radius: "None - created paused, never served, no spend"
+  partial_failure_rule: "STOP on first failure, inventory created IDs, write receipt, report BEFORE any retry"

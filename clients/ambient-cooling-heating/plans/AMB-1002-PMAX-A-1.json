@@ -1,0 +1,94 @@
+{
+ "plan_name": "AMB-1002-PMAX-A-1",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "approval_class": "create-paused",
+ "work_order": "work-orders/work-order-pmax-furnace-boiler-replacement-2026-10-02.yaml",
+ "campaign": "24295088845",
+ "campaign_name_after": "PMax | Furnace & Boiler Replacement | Central MD | 2026-10 | HELD",
+ "portfolio": [
+  "Furnace & heating replacement -> /hvac-replacement/ (existing group 6751612859)",
+  "Boiler replacement -> /boiler-replacement/ (new)"
+ ],
+ "heat_pump_group_in_A": "6751752096 stays PAUSED permanently - heat pump moves to campaign B",
+ "boiler_payload": {
+  "name": "Boiler Replacement",
+  "final_url": "https://offer.ambientcoolingandheating.com/boiler-replacement/",
+  "path1": "Boiler",
+  "path2": "Replacement",
+  "headlines": [
+   "Boiler Replacement",
+   "Replace Your Boiler",
+   "New Boiler Quote",
+   "Gas Boiler Replacement",
+   "Severn Boiler Replacement",
+   "Columbia Boiler Replacement",
+   "Severna Park Boilers",
+   "Central Maryland Boilers",
+   "Boiler Upgrade Options",
+   "New Boiler",
+   "Plan Your Boiler Upgrade",
+   [
+    "id",
+    "424734001078"
+   ],
+   [
+    "id",
+    "409521516376"
+   ],
+   [
+    "id",
+    "422477367425"
+   ],
+   [
+    "id",
+    "423809914800"
+   ]
+  ],
+  "long_headlines": [
+   "Boiler replacement for homes in Severn, Severna Park and Columbia, MD",
+   "Request a free boiler replacement quote from Ambient Cooling & Heating",
+   "Old boiler failing? Plan a replacement with trained technicians",
+   "Boiler replacement across Central Maryland, planned around your home",
+   "Compare boiler replacement options clearly before you decide"
+  ],
+  "descriptions": [
+   "Request a free boiler replacement quote.",
+   "Trained technicians assess your boiler and explain replacement options clearly.",
+   "Boiler replacement for Severn, Severna Park and Columbia homes.",
+   "Plan a new boiler with Ambient Cooling & Heating in Central Maryland.",
+   [
+    "id",
+    "424734013138"
+   ]
+  ],
+  "images": {
+   "424734010279": "SQUARE_MARKETING_IMAGE",
+   "424734010297": "PORTRAIT_MARKETING_IMAGE",
+   "424632150521": "MARKETING_IMAGE"
+  },
+  "search_themes": [
+   "boiler replacement",
+   "boiler replacement near me",
+   "replace boiler",
+   "new boiler installation",
+   "gas boiler replacement",
+   "boiler replacement cost",
+   "new boiler cost",
+   "residential boiler replacement",
+   "boiler installer near me",
+   "new boiler"
+  ]
+ },
+ "actions": [
+  "rename campaign 24295088845 -> PMax | Furnace & Boiler Replacement | Central MD | 2026-10 | HELD",
+  "budget 15897049193 $20.00 -> $32.89 (campaign stays PAUSED)",
+  "tablet device criterion 30002 bid_modifier = 0 (exclude tablets)",
+  "create PAUSED asset group 'Boiler Replacement' -> https://offer.ambientcoolingandheating.com/boiler-replacement/ (29 asset links, 10 themes + audience)"
+ ],
+ "stays_paused": true,
+ "operation_count": 64,
+ "fingerprint": "02556803100C",
+ "preflight": "VALIDATED 64"
+}

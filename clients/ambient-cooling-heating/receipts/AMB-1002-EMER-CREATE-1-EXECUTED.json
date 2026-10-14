@@ -1,0 +1,108 @@
+{
+ "plan": "AMB-1002-EMER-CREATE-1",
+ "fingerprint": "AF13621050E2",
+ "started_local": "2026-10-02T07:00:29.698562-04:00",
+ "created": [
+  {
+   "type": "AD_GROUP_AD",
+   "resource": "customers/2401959466/adGroupAds/204129717047~826702584886",
+   "label": "RSA A - keyword and location led",
+   "policy": {
+    "approval": "UNKNOWN",
+    "review": "REVIEW_IN_PROGRESS"
+   }
+  },
+  {
+   "type": "AD_GROUP_AD",
+   "resource": "customers/2401959466/adGroupAds/204129717047~826702584889",
+   "label": "RSA B - problem led",
+   "policy": {
+    "approval": "UNKNOWN",
+    "review": "REVIEW_IN_PROGRESS"
+   }
+  },
+  {
+   "type": "AD_GROUP_CRITERION",
+   "resource": "customers/2401959466/adGroupCriteria/204129717047~4213560696",
+   "text": "emergency furnace repair",
+   "match": "PHRASE"
+  }
+ ],
+ "updated": [],
+ "status": "EXECUTED",
+ "finished_local": "2026-10-02T07:00:31.670325-04:00",
+ "readback": [
+  {
+   "check": "ad 826702584886 status PAUSED",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584886 ad group 204129717047",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584886 final URL",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584886 no mobile URL / tracking template / suffix",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584886 15 headlines + pins",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584886 4 descriptions + pins",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584886 paths",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584889 status PAUSED",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584889 ad group 204129717047",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584889 final URL",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584889 no mobile URL / tracking template / suffix",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584889 15 headlines + pins",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584889 4 descriptions + pins",
+   "pass": true
+  },
+  {
+   "check": "ad 826702584889 paths",
+   "pass": true
+  },
+  {
+   "check": "keyword 4213560696 text/match",
+   "pass": true
+  },
+  {
+   "check": "keyword 4213560696 PAUSED positive",
+   "pass": true
+  },
+  {
+   "check": "unrelated-resource baseline unchanged",
+   "pass": true
+  },
+  {
+   "check": "nothing ENABLED by this plan",
+   "pass": true
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+field,value,evidence
+Authenticated API access,UNAVAILABLE - WHATCONVERTS_API_TOKEN present but EMPTY,read from .env; length 0
+Master account,ACCESS UNAVAILABLE - NOT INSPECTED,
+Profile name,ACCESS UNAVAILABLE - NOT INSPECTED,
+Profile ID,158931 (PROBABLE),tracking script s.ksrndkehqnwntyxlhgto.com/158931.js and wc_visitor cookie prefix 158931-
+Profile domain,ACCESS UNAVAILABLE - NOT INSPECTED,
+Profile time zone,ACCESS UNAVAILABLE - NOT INSPECTED,
+Google Ads integrations,ACCESS UNAVAILABLE - NOT INSPECTED,
+Connected Google Ads customer IDs,ACCESS UNAVAILABLE - NOT INSPECTED,
+Conversion-action mappings,ACCESS UNAVAILABLE - NOT INSPECTED,
+Tracking numbers,PARTIAL - wc_swap nominates 6315025402 and 6315535927,"wc_swap cookie, identical on all 7 pages"
+Dynamic Number Pools / pool id / size / numbers,ACCESS UNAVAILABLE - NOT INSPECTED,
+Destination numbers,ACCESS UNAVAILABLE - NOT INSPECTED,
+Number-replacement source number,UNKNOWN - the displayed (631) 502-7946 is never replaced,DOM shows the static number in body text and tel: href on all 7 pages
+Source / medium / paid-search rules,ACCESS UNAVAILABLE - NOT INSPECTED,
+Swap selectors / text-matching / tel: rules,ACCESS UNAVAILABLE - NOT INSPECTED,
+Included / excluded domains,ACCESS UNAVAILABLE - NOT INSPECTED,
+Cookie configuration,"wc_visitor, wc_client, wc_client_current, wc_swap all set","browser cookie jar, all 7 pages"
+GCLID capture,WORKING,wc_client carries GM-TEST-SYNTHETIC-GCLID-20260901
+GBRAID / WBRAID capture,reached the form POST; WhatConverts storage not verifiable,
+UTM capture,"WORKING - source, medium, campaign, content, term",wc_client cookie chain
+Campaign / ad group / keyword / landing page capture,ACCESS UNAVAILABLE - NOT INSPECTED,
+Form tracking,PROBABLE - POSTs to p.ksrndkehqnwntyxlhgto.com/lead/form and /keyword/ at submission,PLAN-R1B network capture 2026-09-02
+Gravity Forms integration,ACCESS UNAVAILABLE - NOT INSPECTED,
+Call recording,ACCESS UNAVAILABLE - NOT INSPECTED,
+Lead intelligence / Quotable,ACCESS UNAVAILABLE - NOT INSPECTED,
+Spam filtering,ACCESS UNAVAILABLE - NOT INSPECTED,
+Duplicate handling,ACCESS UNAVAILABLE - NOT INSPECTED,
+Minimum call duration,ACCESS UNAVAILABLE - NOT INSPECTED,
+Qualified-call criteria,ACCESS UNAVAILABLE - NOT INSPECTED,
+Google Ads conversion upload,ACCESS UNAVAILABLE - NOT INSPECTED,
+Qualified-lead upload,ACCESS UNAVAILABLE - NOT INSPECTED,
+Sold-job upload,ACCESS UNAVAILABLE - NOT INSPECTED,
+Unique lead / transaction ID,ACCESS UNAVAILABLE - NOT INSPECTED,
+Last successful lead capture,ACCESS UNAVAILABLE - NOT INSPECTED - test lead lookup NOT possible,
+Last successful conversion upload,ACCESS UNAVAILABLE - NOT INSPECTED,
+DNI ROOT CAUSE,NOT DETERMINED - requires authenticated WhatConverts read. Cookie evidence alone is insufficient and the brief forbids inferring from cookies.,

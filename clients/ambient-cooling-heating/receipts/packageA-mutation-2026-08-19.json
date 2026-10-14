@@ -1,0 +1,221 @@
+{
+ "executed_utc": "2026-08-20T02:19:17.168485Z",
+ "completed_utc": "2026-08-20T02:19:17.472128Z",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "approved_fingerprint": "44D14DA4714BB6E8",
+ "package": "PACKAGE A - delivery and call schedule",
+ "execution_shape": "GoogleAdsService.Mutate, 31 mutate_operations, partial_failure=false, validate_only=false",
+ "operations_sent": 31,
+ "responses_returned": 31,
+ "asset_update": {
+  "resource_name": "customers/2401959466/assets/407995613637",
+  "update_mask": [
+   "call_asset.ad_schedule_targets"
+  ],
+  "schedule_applied": [
+   {
+    "day_of_week": "MONDAY",
+    "start_hour": 8,
+    "end_hour": 20
+   },
+   {
+    "day_of_week": "TUESDAY",
+    "start_hour": 8,
+    "end_hour": 20
+   },
+   {
+    "day_of_week": "WEDNESDAY",
+    "start_hour": 8,
+    "end_hour": 20
+   },
+   {
+    "day_of_week": "THURSDAY",
+    "start_hour": 8,
+    "end_hour": 20
+   },
+   {
+    "day_of_week": "FRIDAY",
+    "start_hour": 8,
+    "end_hour": 20
+   },
+   {
+    "day_of_week": "SATURDAY",
+    "start_hour": 8,
+    "end_hour": 13
+   }
+  ]
+ },
+ "criteria_removed": [
+  "customers/2401959466/campaignCriteria/24132507741~303280",
+  "customers/2401959466/campaignCriteria/24132507741~313280",
+  "customers/2401959466/campaignCriteria/24132507741~323280",
+  "customers/2401959466/campaignCriteria/24132507741~333280",
+  "customers/2401959466/campaignCriteria/24132507741~343280",
+  "customers/2401959466/campaignCriteria/24132507741~353252",
+  "customers/2401959466/campaignCriteria/24132507744~303280",
+  "customers/2401959466/campaignCriteria/24132507744~313280",
+  "customers/2401959466/campaignCriteria/24132507744~323280",
+  "customers/2401959466/campaignCriteria/24132507744~333280",
+  "customers/2401959466/campaignCriteria/24132507744~343280",
+  "customers/2401959466/campaignCriteria/24132507744~353252",
+  "customers/2401959466/campaignCriteria/24132507747~303280",
+  "customers/2401959466/campaignCriteria/24132507747~313280",
+  "customers/2401959466/campaignCriteria/24132507747~323280",
+  "customers/2401959466/campaignCriteria/24132507747~333280",
+  "customers/2401959466/campaignCriteria/24132507747~343280",
+  "customers/2401959466/campaignCriteria/24132507747~353252",
+  "customers/2401959466/campaignCriteria/24132507750~303280",
+  "customers/2401959466/campaignCriteria/24132507750~313280",
+  "customers/2401959466/campaignCriteria/24132507750~323280",
+  "customers/2401959466/campaignCriteria/24132507750~333280",
+  "customers/2401959466/campaignCriteria/24132507750~343280",
+  "customers/2401959466/campaignCriteria/24132507750~353252",
+  "customers/2401959466/campaignCriteria/24132507753~303280",
+  "customers/2401959466/campaignCriteria/24132507753~313280",
+  "customers/2401959466/campaignCriteria/24132507753~323280",
+  "customers/2401959466/campaignCriteria/24132507753~333280",
+  "customers/2401959466/campaignCriteria/24132507753~343280",
+  "customers/2401959466/campaignCriteria/24132507753~353252"
+ ],
+ "returned_resource_names": [
+  {
+   "type": "asset_result",
+   "resource_name": "customers/2401959466/assets/407995613637"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~303280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~313280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~323280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~333280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~343280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507741~353252"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~303280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~313280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~323280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~333280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~343280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507744~353252"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~303280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~313280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~323280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~333280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~343280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507747~353252"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~303280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~313280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~323280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~333280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~343280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507750~353252"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~303280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~313280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~323280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~333280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~343280"
+  },
+  {
+   "type": "campaign_criterion_result",
+   "resource_name": "customers/2401959466/campaignCriteria/24132507753~353252"
+  }
+ ],
+ "pre_write_counts": {
+  "campaigns_non_removed": 23,
+  "ad_groups_non_removed": 68,
+  "ads_non_removed": 113,
+  "campaign_assets_non_removed": 271,
+  "conversion_actions": 16,
+  "campaign_criteria_non_removed": 13810
+ },
+ "pre_write_state": {
+  "ad_schedule_total": 139,
+  "ad_schedule_on_five": 30,
+  "call_asset_schedule_rows": 0,
+  "call_asset_phone": "(410)705-6354"
+ }
+}

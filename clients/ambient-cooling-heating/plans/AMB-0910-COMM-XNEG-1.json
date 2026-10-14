@@ -1,0 +1,46 @@
+{
+ "approval_class": "reversible-GATED",
+ "summary": "Add BROAD 'commercial' as an AD-GROUP negative on the residential HVAC Installation SKAG only. 1 operation.",
+ "operations": [
+  {
+   "operation": "ADD_AD_GROUP_NEGATIVE_KEYWORD",
+   "resource": "ad_group_criterion",
+   "resource_id": "202339087634",
+   "resource_name": "SKAG | HVAC Installation",
+   "campaign_id": "24132507747",
+   "keyword_text": "commercial",
+   "match_type": "BROAD",
+   "current_state": "ad group 202339087634 has no ad-group negative containing 'commercial'",
+   "proposed_state": "BROAD negative 'commercial' on ad group 202339087634 only",
+   "reason": "Routes commercial intent to the new commercial SKAG instead of the residential one. Scoped to the ad group so it can never suppress the commercial ad group or any other campaign.",
+   "rollback": "remove the created ad_group_criterion by its returned resource name",
+   "risk": "MEDIUM - applied before the commercial ad group serves, this would suppress commercial queries entirely instead of redirecting them",
+   "unrelated_resource_assertion": "no campaign-level or account-level negative is added; the account-level set 11252984411 must stay at 271 members with 'commercial' absent"
+  }
+ ],
+ "notes": {
+  "HARD_GATE": "Execute ONLY after the commercial ad group, its destination, its keywords and its ads are ENABLED and ELIGIBLE. Applying it earlier suppresses commercial demand rather than redirecting it.",
+  "scope": "Ad-group level only. The instruction explicitly forbids a campaign-level or account-level 'commercial' negative here, and AMB-0909C-NEG-COMMERCIAL 9F88FEE76803 removed the account-level one on 2026-09-10.",
+  "requires_new_approval": true
+ },
+ "plan_name": "AMB-0910-COMM-XNEG-1",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "HVAC Installation",
+  "related_services": [
+   "AC Repair",
+   "HVAC Repair",
+   "HVAC Replacement",
+   "Gas Boiler Repair",
+   "Commercial HVAC Installation"
+  ]
+ },
+ "generated_local": "2026-09-10T13:34:01.526680-04:00",
+ "object_count": 1,
+ "partial_failure": false,
+ "atomic": true,
+ "fingerprint": "A70260017DAD"
+}

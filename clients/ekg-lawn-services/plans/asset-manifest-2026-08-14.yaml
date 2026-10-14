@@ -1,0 +1,242 @@
+# EKG Lawn Services - asset reuse-versus-create manifest
+#
+# DRAFT. No asset created, edited, or associated. Based on a fresh read-only inventory of
+# 989 existing account assets (39 SITELINK, 18 CALLOUT, 3 STRUCTURED_SNIPPET, 2 CALL,
+# 225 IMAGE, 1 PROMOTION, 1 LOCATION, 663 TEXT, 36 YOUTUBE_VIDEO).
+#
+# Limits applied: sitelink link_text <= 25, sitelink description1/description2 <= 35 each,
+# callout <= 25, structured-snippet value <= 25.
+
+asset_manifest:
+  client_slug: ekg-lawn-services
+  campaign: "Aeration & Overseeding"
+  inventory_source: clients/ekg-lawn-services/snapshots/assets-and-conversions-2026-08-14.json
+  association_level: CAMPAIGN     # no AdGroupAsset associations planned
+  status: DRAFT_NOTHING_CREATED
+
+  # -------------------------------------------------------------------------
+  # SITELINKS - 4 new. No existing sitelink is reused.
+  # -------------------------------------------------------------------------
+  sitelinks:
+    reuse: []
+    reuse_rejected:
+      - ids: [278964766823, 278964766826, 278964766829, 278964766832]
+        texts: ["Core Aeration Service", "Aeration And Overseeding",
+                "Seasonal Aeration Plans", "Midlothian VA Aeration"]
+        reason: >-
+          All four point at https://offer.ekglawn.com/aeration/ with query strings. That is
+          the legacy page this build must leave untouched, and it is not either approved
+          destination. "Seasonal Aeration Plans" additionally implies seasonal availability,
+          which is not verified.
+      - ids: [84651355661, 84651355664, 84651355667, 84651355670, 84651355673, 84651355676]
+        reason: >-
+          Point at business.google.com profile deep links including a Directions link and a
+          Testimonials link. Directions conflicts with the unresolved address; Testimonials
+          conflicts with the unverified-review rule.
+      - ids: [345608932986, 345608932989, 345608932992, 345608932995, 345608932998, 345608933001]
+        reason: Employment/recruitment sitelinks for the hiring campaign. Wrong intent.
+      - ids: [39846545596, 39846545599, 39846545602, 39846545605, 47223326879, 47223326882,
+              50145226001, 50145226004, 50145226010, 81374700734, 81374700737, 81374700740,
+              81374700743, 81374700746, 241236867690, 260059951856, 260059951859,
+              260059951862, 260059951865, 260061940064, 260063645996, 260136663469,
+              260166270156]
+        reason: >-
+          Other service lines (mowing, mulch, landscaping, leaf removal, shrub, cleanups)
+          or generic site pages. Off-intent for a BOFU aeration campaign, and most carry
+          empty description lines.
+    create:
+      - ref: SL-1
+        link_text: "Lawn Aeration"
+        link_text_chars: 13
+        description1: "Aeration to relieve"
+        description1_chars: 19
+        description2: "compacted soil."
+        description2_chars: 15
+        final_url: "https://offer.ekglawn.com/lawn-aeration/"
+      - ref: SL-2
+        link_text: "Aeration & Overseeding"
+        link_text_chars: 22
+        description1: "Aerate and overseed"
+        description1_chars: 19
+        description2: "for a thicker lawn."
+        description2_chars: 19
+        final_url: "https://offer.ekglawn.com/aeration-overseeding/"
+      - ref: SL-3
+        link_text: "Request a Free Quote"
+        link_text_chars: 20
+        description1: "Tell us about your lawn"
+        description1_chars: 23
+        description2: "and we'll send a quote."
+        description2_chars: 23
+        final_url: "https://offer.ekglawn.com/lawn-aeration/"
+      - ref: SL-4
+        link_text: "Contact EKG Lawn"
+        link_text_chars: 16
+        description1: "Call or send a message."
+        description1_chars: 23
+        description2: "Open 8am to 4:30pm daily."
+        description2_chars: 25
+        final_url: "https://ekglawn.com/contact-us/"
+    new_assets: 4
+    campaign_associations: 4
+
+  # -------------------------------------------------------------------------
+  # CALLOUTS - 2 reused + 6 new = 8 associated
+  # -------------------------------------------------------------------------
+  callouts:
+    reuse:
+      - id: 279041242351
+        text: "Local Midlothian Pros"
+        chars: 21
+        evidence: "Midlothian is in the published service-area wording on ekglawn.com."
+      - id: 279041242357
+        text: "Overseeding Available"
+        chars: 21
+        evidence: >-
+          Pairing aeration with overseeding is supported by the official aeration article
+          and the client-approved service scope. States availability, not an offer.
+    reuse_rejected:
+      - id: 94530956715
+        text: "Get Free Online Quote"
+        reason: >-
+          NOT an approved phrase. The approved CTA language is exactly "Request a Free
+          Quote" or "Get My Free Quote". Similarity is not sufficient. Asset is left
+          untouched, neither edited nor removed.
+      - id: 81374700734
+        text: "Get A Free Estimate"
+        type: SITELINK
+        reason: '"Free Estimate" is explicitly outside the approved CTA language.'
+      - id: 46889694799
+        text: "Licensed & Insured"
+        reason: BARRED - licence and insurance claims are not sufficiently documented.
+      - id: 279041242360
+        text: "Fast Quotes Today"
+        reason: BARRED - implies a response-time promise.
+      - id: 279041242354
+        text: "Core Aeration Only"
+        reason: >-
+          Reads as a restriction and contradicts the combined ad group. Confusing rather
+          than unsafe, but not worth associating.
+      - ids: [39852266201, 39852266204, 39852266207, 94530956712]
+        texts: ["Premium Quality", "Detail Oriented", "Education Experts", "Hassle-Free Service"]
+        reason: >-
+          Unsupported puffery with no factual basis. "Education Experts" is also off-topic.
+      - ids: [345558828163, 345558828166, 345558828169, 345558828172, 345558828175,
+              345558828178, 345558828181, 345558828184]
+        reason: Employment callouts (pay, PTO, licence requirements). Wrong campaign.
+    create:
+      - {ref: CO-1, text: "Lawn Aeration Service", chars: 21}
+      - {ref: CO-2, text: "Aeration & Overseeding", chars: 22}
+      - {ref: CO-3, text: "Woodlake & Brandermill", chars: 22}
+      - {ref: CO-4, text: "Open 7 Days A Week", chars: 18}
+      - {ref: CO-5, text: "Get My Free Quote", chars: 17}
+      - {ref: CO-6, text: "Accepting New Customers", chars: 23}
+    create_evidence:
+      CO-1: "Aeration is a current published service. No method claim is made."
+      CO-2: "Approved exact primary service."
+      CO-3: "Both appear in the published service-area wording."
+      CO-4: >-
+        Cited first-party source: https://ekglawn.com/contact-us/ publishes hours of
+        8:00 a.m. - 4:30 p.m., Monday through Sunday. This states opening hours ONLY and
+        must not be read as a promise that phone calls are answered seven days a week.
+        Call-answering coverage is unconfirmed, which is why the call asset stays withheld
+        and no call schedule is set from these hours.
+      CO-5: "USER_APPROVED_TEMPLATE_CTA. Zero exact matches existed in the account."
+      CO-6: >-
+        Previously observed first-party website evidence at https://ekglawn.com/contact-us/
+        states EKG is currently taking on new customers. Observed 2026-08-14. This is a
+        website observation, not a user attestation of the business fact. Re-fetch failed
+        this run (ECONNREFUSED). Reverify immediately before the asset is allowed to serve.
+    new_assets: 6
+    reused_assets: 2
+    campaign_associations: 8
+
+  # -------------------------------------------------------------------------
+  # STRUCTURED SNIPPET - 1 new
+  # -------------------------------------------------------------------------
+  structured_snippets:
+    reuse: []
+    reuse_rejected:
+      - id: 279040743781
+        header: "Service catalog"
+        values: ["Aeration & Overseeding", "Virginia Aeration Service", "Seasonal Aeration",
+                 "Core Aeration"]
+        reason: >-
+          "Seasonal Aeration" implies seasonal availability, which is explicitly not to be
+          claimed.
+      - id: 47203648588
+        reason: >-
+          Full nine-service company catalog including mulching, landscaping and shrub
+          maintenance. Off-intent for a focused BOFU campaign.
+      - id: 345468387752
+        reason: "Types: Lawn Maintenance/Mowing/Trimming. Wrong service line."
+    create:
+      - ref: SS-1
+        header: "Services"
+        values:
+          - {text: "Lawn Aeration", chars: 13}
+          - {text: "Aeration with Overseeding", chars: 25}
+          - {text: "Overseeding", chars: 11}
+          - {text: "Aeration & Overseeding", chars: 22}
+        evidence: "Every value is a verified in-scope service. No seasonal or offer claim."
+    new_assets: 1
+    campaign_associations: 1
+
+  # -------------------------------------------------------------------------
+  # WITHHELD
+  # -------------------------------------------------------------------------
+  withheld:
+    - type: CALL
+      existing_ids: [47151330518, 84651346613]
+      reason: >-
+        Call-answering hours are unconfirmed. Published opening hours do not prove a human
+        answers throughout them. Withheld until confirmed.
+    - type: IMAGE
+      existing_count: 225
+      reason: >-
+        No image is verified as a genuine EKG project photo for this service. Existing
+        assets include stock-named files (e.g. "shutterstock ..."). Withheld.
+    - type: PROMOTION
+      existing_ids: [1 promotion asset present]
+      reason: No verified offer, discount, or price. Withheld.
+    - type: PRICE
+      reason: No verified pricing. Withheld.
+    - type: LOCATION
+      existing_count: 1
+      reason: >-
+        Physical address is an UNRESOLVED_CONFLICT between the contact/footer address and
+        the privacy-page address. Withheld.
+    - type: RATING / REVIEW
+      reason: >-
+        No directly verified GBP review evidence. Direct GBP access was attempted and
+        failed. Withheld.
+
+  totals:
+    new_asset_resources: 11          # 4 sitelinks + 6 callouts + 1 snippet
+    reused_asset_resources: 2        # callouts 279041242351, 279041242357
+    campaign_asset_associations: 13  # 4 sitelink + 8 callout + 1 snippet
+    ad_group_asset_associations: 0
+    campaign_asset_status_on_create: PAUSED
+    existing_associations_altered: 0
+
+  restored_in_c6:
+    - text: "Accepting New Customers"
+      ref: CO-6
+      status: RESTORED
+      source: "https://ekglawn.com/contact-us/"
+      retrieval_date: "2026-08-14"
+      note: >-
+        Previously removed in C.4 as unverified. Restored on previously observed first-party
+        website evidence. No existing asset or association altered.
+
+  removed_in_c4_superseded:
+    - text: "Accepting New Customers"
+      former_ref: CO-4
+      reason: >-
+        Business-status claim that is neither verified nor explicitly approved. Removed
+        rather than replaced. Seven callout associations is acceptable; no filler callout
+        was invented to restore a count of eight.
+      also_removed_from: >-
+        Both landing pages. It had populated the [OFFER_BADGE] template placeholder at
+        paragraphs 25 and 53. The placeholder is retained and now carries
+        "[UNRESOLVED: NO VERIFIED OFFER OR BUSINESS-STATUS BADGE]".

@@ -1,0 +1,100 @@
+# PLAN-GA-LAUNCH-2 - AD-GROUP ROUTING NEGATIVES
+# STATUS: PROVISIONAL / BLOCKED UNTIL OWNER GROUPS ARE LIVE. NO FINGERPRINT. NO APPROVAL COMMAND.
+
+change_plan:
+  plan_id: PLAN-GA-LAUNCH-2
+  plan_title: Ad-group routing negatives
+  approval_type: NEGATIVE_KEYWORDS
+  status: 'PROVISIONAL / BLOCKED UNTIL OWNER GROUPS ARE LIVE'
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: null
+  fingerprint_withheld_because: >-
+    No negative may be fingerprinted for execution before its intended owner ad group is
+    enabled and verified serving. The plan would also be invalid if PLAN-GA-LAUNCH-1 or
+    PLAN-GA-LAUNCH-3 changed the owner set.
+  target:
+    child_customer_id: '1521725229'
+    campaign_id: '24103511039'
+
+  counts_recalculated_2026_09_02:
+    source: clients/softwind-power-washing/audits/2026-09-01-final-routing-negative-matrix.csv
+    unique_owned_texts: 19
+    sibling_groups_per_text: 5
+    layer_1_sibling_exact_mirror: 95
+    layer_2_modifier_phrase_deployed: 8
+    layer_2_modifier_phrase_deferred: 11
+    layer_3_historical_rogue_query_deferred: 2
+    total_at_launch: 103
+    self_block_failures: 0
+    arithmetic_check: '19 texts x 5 siblings = 95, + 8 collision-tested modifiers = 103'
+
+  layers:
+    - layer: '1 - SIBLING EXACT MIRROR'
+      criteria: 95
+      deploy_at_launch: true
+      rule: >-
+        Every one of the 19 owned texts is added as negative EXACT in each of the five sibling
+        ad groups, never in its own owner. Zero blocking risk - a negative EXACT blocks only
+        the literal string and every text has exactly one owner.
+    - layer: '2 - MODIFIER PHRASE'
+      criteria: 8
+      deploy_at_launch: true
+      rule: >-
+        house washing, soft washing, driveway, patio - applied ONLY to Power Washing and
+        Pressure Washing, the two groups owning the loose head terms that would otherwise
+        vacuum sibling queries. Collision-tested: no owned text in either target contains any
+        of the four phrases.
+    - layer: '2 - MODIFIER PHRASE (DEFERRED)'
+      criteria: 11
+      deploy_at_launch: false
+      rule: >-
+        Applying these to the four narrow groups is theoretical routing against a leak nobody
+        has observed. Their own Phrase and Exact texts already scope them.
+    - layer: '3 - HISTORICAL ROGUE QUERY'
+      criteria: 2
+      deploy_at_launch: false
+      rule: >-
+        pressure washer near me and commercial pressure washing near me, both observed
+        2026-09-01 as NEAR_EXACT close variants at 1 impression, 0 clicks, $0.00. No paid
+        misrouting yet, so defer 14 days.
+
+  preserved_rules:
+    - Routing negatives stay at AD GROUP level
+    - The 132-per-campaign universal fence stays SEPARATE at campaign level
+    - No owner keyword blocks itself - validated, 0 violations
+    - No approved buying-intent query is removed
+    - No routing negative is applied before its owner ad group is enabled and verified serving
+    - >-
+      Negative keywords cannot perfectly control positive close variants. An EXACT negative
+      blocks only the literal string; an unseen close variant slips past regardless. Residual
+      risk is permanent and is managed by continuous Search Terms review.
+    - Search Terms must continue to be reviewed after launch
+
+  blocked_until:
+    - PLAN-GA-LAUNCH-1 executed and readback QA passed
+    - PLAN-GA-LAUNCH-3 executed - the six owner groups ENABLED and verified serving
+
+  real_ids_confirmed_2026_09_02:
+    note: >-
+      The six owner ad groups are confirmed live in campaign 24103511039 and all 19 owned
+      keyword texts are confirmed present as PHRASE + EXACT objects. The routing negatives
+      themselves are CREATE operations, so their own IDs do not exist yet.
+    owner_ad_groups:
+      Power Washing: '202870585390'
+      Pressure Washing: '202870585870'
+      House Washing: '202870585910'
+      Soft Washing: '202870586310'
+      Driveway Pressure Washing: '202870586110'
+      Patio Pressure Washing: '202870586150'
+    owned_keyword_objects_live: 38
+    unique_owned_texts: 19
+    sibling_mirror_arithmetic: '19 texts x 5 sibling groups = 95 negative EXACT criteria'
+    modifier_phrase_collision_tested: 8
+    total_at_launch: 103
+    deferred: '11 modifier PHRASE + 2 historical rogue-query = 13'
+  stage_position: >-
+    Immediate next stage AFTER successful PLAN-GA-LAUNCH-3A enablement readback. Not
+    before - no routing negative may be applied until its owner ad group is verified
+    serving.
+  approval_owner: Walter Correa

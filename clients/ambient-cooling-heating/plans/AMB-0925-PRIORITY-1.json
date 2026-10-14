@@ -1,0 +1,449 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "plan_name": "AMB-0925-PRIORITY-1",
+ "built_local": "2026-09-25",
+ "authority": "owner instruction 2026-09-25 (service priorities; authorized in-run)",
+ "labels_to_create": [
+  "CORE_ACTIVE",
+  "GEOTHERMAL_TEST",
+  "DEFERRED_BUDGET",
+  "EVALUATE_DUCTLESS",
+  "WAITING_LP",
+  "WAITING_TRACKING",
+  "WAITING_POLICY",
+  "WAITING_AVAILABILITY"
+ ],
+ "ads_to_pause": [
+  {
+   "ad_group_id": "199797580746",
+   "ad_group": "Ductless Heating Installation",
+   "ad_id": "825056834775"
+  },
+  {
+   "ad_group_id": "199797580746",
+   "ad_group": "Ductless Heating Installation",
+   "ad_id": "825056834778"
+  },
+  {
+   "ad_group_id": "204129717567",
+   "ad_group": "Heat Pump Maintenance",
+   "ad_id": "825863405664"
+  },
+  {
+   "ad_group_id": "204129717567",
+   "ad_group": "Heat Pump Maintenance",
+   "ad_id": "825863405667"
+  },
+  {
+   "ad_group_id": "204129717727",
+   "ad_group": "Ductless Heating Repair",
+   "ad_id": "825585199613"
+  },
+  {
+   "ad_group_id": "204129717727",
+   "ad_group": "Ductless Heating Repair",
+   "ad_id": "825585199616"
+  },
+  {
+   "ad_group_id": "204129718447",
+   "ad_group": "Furnace Maintenance",
+   "ad_id": "825585199649"
+  },
+  {
+   "ad_group_id": "204129718447",
+   "ad_group": "Furnace Maintenance",
+   "ad_id": "825585199652"
+  },
+  {
+   "ad_group_id": "204129718487",
+   "ad_group": "Heating Maintenance",
+   "ad_id": "825585199655"
+  },
+  {
+   "ad_group_id": "204129718487",
+   "ad_group": "Heating Maintenance",
+   "ad_id": "825585199658"
+  },
+  {
+   "ad_group_id": "204129718527",
+   "ad_group": "Furnace Tune-Up",
+   "ad_id": "825585199661"
+  },
+  {
+   "ad_group_id": "204129718527",
+   "ad_group": "Furnace Tune-Up",
+   "ad_id": "825585199664"
+  },
+  {
+   "ad_group_id": "204129718687",
+   "ad_group": "Heating Tune-Up",
+   "ad_id": "825585199667"
+  },
+  {
+   "ad_group_id": "204129718687",
+   "ad_group": "Heating Tune-Up",
+   "ad_id": "825585199670"
+  },
+  {
+   "ad_group_id": "204129718727",
+   "ad_group": "Heating System Inspection",
+   "ad_id": "825585199673"
+  },
+  {
+   "ad_group_id": "204129718727",
+   "ad_group": "Heating System Inspection",
+   "ad_id": "825585199676"
+  },
+  {
+   "ad_group_id": "204129719007",
+   "ad_group": "Geothermal Heat Pump",
+   "ad_id": "825585199679"
+  },
+  {
+   "ad_group_id": "204129719007",
+   "ad_group": "Geothermal Heat Pump",
+   "ad_id": "825585199802"
+  }
+ ],
+ "groups_to_enable_after_readback": [
+  {
+   "ad_group_id": "199797580746",
+   "ad_group": "Ductless Heating Installation"
+  },
+  {
+   "ad_group_id": "204129717047",
+   "ad_group": "Emergency Heating Repair"
+  },
+  {
+   "ad_group_id": "204129717727",
+   "ad_group": "Ductless Heating Repair"
+  },
+  {
+   "ad_group_id": "204129718247",
+   "ad_group": "Boiler Installation"
+  },
+  {
+   "ad_group_id": "204129718287",
+   "ad_group": "Boiler Maintenance"
+  },
+  {
+   "ad_group_id": "204129718447",
+   "ad_group": "Furnace Maintenance"
+  },
+  {
+   "ad_group_id": "204129718487",
+   "ad_group": "Heating Maintenance"
+  },
+  {
+   "ad_group_id": "204129718527",
+   "ad_group": "Furnace Tune-Up"
+  },
+  {
+   "ad_group_id": "204129718687",
+   "ad_group": "Heating Tune-Up"
+  },
+  {
+   "ad_group_id": "204129718727",
+   "ad_group": "Heating System Inspection"
+  },
+  {
+   "ad_group_id": "204129719007",
+   "ad_group": "Geothermal Heat Pump"
+  }
+ ],
+ "group_labels": {
+  "204129717087": {
+   "name": "No Heat Repair",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core repair; /no-heat-repair/ passes"
+  },
+  "204129717007": {
+   "name": "Heating Repair",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core repair; /hvac-repair/ passes"
+  },
+  "199797580706": {
+   "name": "Furnace Repair",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core repair; /furnace-repair/ passes"
+  },
+  "204129717247": {
+   "name": "Gas Furnace Repair",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core repair; 1 of 2 ads FULLY_LIMITED (housing)"
+  },
+  "204129717287": {
+   "name": "Electric Furnace Repair",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core repair; /furnace-repair/ passes"
+  },
+  "204129717327": {
+   "name": "Heat Pump Repair",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core repair; /heat-pump-repair/ passes"
+  },
+  "204129717807": {
+   "name": "Furnace Installation",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core install; /hvac-installation/ passes"
+  },
+  "204129717767": {
+   "name": "Furnace Replacement",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core replace; /hvac-replacement/ passes"
+  },
+  "204129717967": {
+   "name": "Heating Installation",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core install; /hvac-installation/ passes"
+  },
+  "204129718007": {
+   "name": "Heating Replacement",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core replace; /hvac-replacement/ passes"
+  },
+  "204129717527": {
+   "name": "Heat Pump Installation",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core install; D4 heading defect only"
+  },
+  "204129717487": {
+   "name": "Heat Pump Replacement",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core replace; D4 heading defect only"
+  },
+  "204129718047": {
+   "name": "Boiler Repair",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core repair; /gas-boiler-repair/ passes"
+  },
+  "202339087594": {
+   "name": "Gas Boiler Repair",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core repair; /gas-boiler-repair/ passes"
+  },
+  "204129718207": {
+   "name": "Boiler Replacement",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "core replace; D4 FAQ heading defect only"
+  },
+  "204129718767": {
+   "name": "Thermostat Repair",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "existing thermostat traffic kept at $15; 1 of 2 ads FULLY_LIMITED (housing)"
+  },
+  "204129718927": {
+   "name": "Thermostat Replacement",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "existing thermostat traffic kept at $15"
+  },
+  "204129718967": {
+   "name": "Smart Thermostat Installation",
+   "labels": [
+    "CORE_ACTIVE"
+   ],
+   "reason": "existing thermostat traffic kept at $15"
+  },
+  "204129718247": {
+   "name": "Boiler Installation",
+   "labels": [
+    "WAITING_LP"
+   ],
+   "reason": "core service; /boiler-installation/ still shows Boiler MAINTENANCE content (D2)"
+  },
+  "204129719007": {
+   "name": "Geothermal Heat Pump",
+   "labels": [
+    "GEOTHERMAL_TEST",
+    "WAITING_LP"
+   ],
+   "reason": "$20 test; /geothermal-heat-pump/ returns 404"
+  },
+  "199797580746": {
+   "name": "Ductless Heating Installation",
+   "labels": [
+    "DEFERRED_BUDGET",
+    "EVALUATE_DUCTLESS",
+    "WAITING_LP"
+   ],
+   "reason": "review not passed; page 404"
+  },
+  "204129717727": {
+   "name": "Ductless Heating Repair",
+   "labels": [
+    "DEFERRED_BUDGET",
+    "WAITING_LP"
+   ],
+   "reason": "deferred; page 404"
+  },
+  "204129717567": {
+   "name": "Heat Pump Maintenance",
+   "labels": [
+    "DEFERRED_BUDGET"
+   ],
+   "reason": "deferred; page published and correct"
+  },
+  "204129718287": {
+   "name": "Boiler Maintenance",
+   "labels": [
+    "DEFERRED_BUDGET",
+    "WAITING_LP"
+   ],
+   "reason": "deferred; page body is Boiler INSTALLATION content (D2)"
+  },
+  "204129718447": {
+   "name": "Furnace Maintenance",
+   "labels": [
+    "DEFERRED_BUDGET",
+    "WAITING_LP"
+   ],
+   "reason": "deferred; page 404"
+  },
+  "204129718527": {
+   "name": "Furnace Tune-Up",
+   "labels": [
+    "DEFERRED_BUDGET",
+    "WAITING_LP"
+   ],
+   "reason": "deferred; page 404"
+  },
+  "204129718487": {
+   "name": "Heating Maintenance",
+   "labels": [
+    "DEFERRED_BUDGET",
+    "WAITING_LP"
+   ],
+   "reason": "deferred; page 404"
+  },
+  "204129718687": {
+   "name": "Heating Tune-Up",
+   "labels": [
+    "DEFERRED_BUDGET",
+    "WAITING_LP"
+   ],
+   "reason": "deferred; page 404"
+  },
+  "204129718727": {
+   "name": "Heating System Inspection",
+   "labels": [
+    "DEFERRED_BUDGET",
+    "WAITING_LP"
+   ],
+   "reason": "deferred; page 404"
+  },
+  "204129717047": {
+   "name": "Emergency Heating Repair",
+   "labels": [
+    "WAITING_LP",
+    "WAITING_AVAILABILITY"
+   ],
+   "reason": "no page; emergency availability unverified (barred claim)"
+  }
+ },
+ "snippets_to_create": {
+  "SNIP_HP": {
+   "header": "Services",
+   "values": [
+    "Heat Pump Repair",
+    "Heat Pump Replacement",
+    "Heat Pump Installation"
+   ],
+   "campaign": "24268690038",
+   "replaces": "423727603969"
+  },
+  "SNIP_GEO": {
+   "header": "Services",
+   "values": [
+    "Geothermal Heat Pump",
+    "Heat Pump Installation",
+    "Heating Installation"
+   ],
+   "campaign": "24274160783",
+   "replaces": "423727603972"
+  }
+ },
+ "campaign_asset_links_to_pause": [
+  {
+   "campaign": "24268690038",
+   "asset": "424481133551",
+   "field_type": "SITELINK",
+   "why": "Heat Pump Maintenance sitelink promotes a deferred service"
+  },
+  {
+   "campaign": "24268690038",
+   "asset": "422577777442",
+   "field_type": "CALLOUT",
+   "why": "'Repair and Maintenance' promotes a deferred service"
+  },
+  {
+   "campaign": "24268690041",
+   "asset": "422577777442",
+   "field_type": "CALLOUT",
+   "why": "'Repair and Maintenance' promotes a deferred service"
+  },
+  {
+   "campaign": "24274160783",
+   "asset": "422577777442",
+   "field_type": "CALLOUT",
+   "why": "'Repair and Maintenance' promotes a deferred service"
+  },
+  {
+   "campaign": "24268690038",
+   "asset": "423727603969",
+   "field_type": "STRUCTURED_SNIPPET",
+   "why": "snippet lists Ductless Heating + Mini Split Service"
+  },
+  {
+   "campaign": "24274160783",
+   "asset": "423727603972",
+   "field_type": "STRUCTURED_SNIPPET",
+   "why": "snippet lists Ductless Heating"
+  }
+ ],
+ "unchanged": [
+  "all budgets",
+  "all campaign statuses",
+  "all keywords",
+  "core ads",
+  "conversion actions"
+ ],
+ "errors": [],
+ "operation_count": 88,
+ "fingerprint": "9A9292508AD5"
+}

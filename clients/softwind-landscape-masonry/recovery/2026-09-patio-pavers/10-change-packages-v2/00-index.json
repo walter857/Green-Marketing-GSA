@@ -1,0 +1,39 @@
+{
+  "PLAN-SLM-BID-2": {
+    "file": "clients/softwind-landscape-masonry/recovery/2026-09-patio-pavers/10-change-packages-v2/PLAN-SLM-BID-2.yaml",
+    "subplan": "EXISTING_RESOURCES",
+    "actions": 2,
+    "fingerprint": "8C71888E09CC",
+    "dependencies": []
+  },
+  "PLAN-SLM-BUD-2": {
+    "file": "clients/softwind-landscape-masonry/recovery/2026-09-patio-pavers/10-change-packages-v2/PLAN-SLM-BUD-2.yaml",
+    "subplan": "BUDGET",
+    "actions": 2,
+    "fingerprint": "BB9869E17E37",
+    "dependencies": []
+  },
+  "PLAN-SLM-KW-2": {
+    "file": "clients/softwind-landscape-masonry/recovery/2026-09-patio-pavers/10-change-packages-v2/PLAN-SLM-KW-2.yaml",
+    "subplan": "STATUS",
+    "actions": 7,
+    "fingerprint": "B7A11B246D74",
+    "dependencies": []
+  },
+  "PLAN-SLM-NEG-2": {
+    "file": "clients/softwind-landscape-masonry/recovery/2026-09-patio-pavers/10-change-packages-v2/PLAN-SLM-NEG-2.yaml",
+    "subplan": "EXISTING_RESOURCES",
+    "actions": 99,
+    "fingerprint": "2CD5644B5504",
+    "dependencies": [
+      "PLAN-SLM-KW-2 must execute and read back FIRST. One negative ('asphalt' PHRASE on Pavers) collides with the seven keywords that plan pauses. Google's validate_only does NOT catch this - only the local collision test does."
+    ]
+  },
+  "PLAN-SLM-CONV-2": {
+    "file": "clients/softwind-landscape-masonry/recovery/2026-09-patio-pavers/10-change-packages-v2/PLAN-SLM-CONV-2.yaml",
+    "subplan": "CONVERSIONS",
+    "actions": 1,
+    "fingerprint": "852D47BE6133",
+    "dependencies": []
+  }
+}

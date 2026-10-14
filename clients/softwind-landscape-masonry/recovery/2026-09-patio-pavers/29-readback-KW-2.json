@@ -1,0 +1,86 @@
+{
+  "readback_at": "2026-09-03T23:07:58.901361-04:00",
+  "rows": [
+    {
+      "action_id": "KW-01",
+      "criterion_id": "543919818878",
+      "ad_group_id": "196134824089",
+      "text": "local asphalt companies near me",
+      "match_type": "PHRASE",
+      "status_before": "ENABLED",
+      "status_after": "PAUSED",
+      "still_exists": true,
+      "ok": true
+    },
+    {
+      "action_id": "KW-02",
+      "criterion_id": "297075223566",
+      "ad_group_id": "196134824089",
+      "text": "asphalt contractor near me",
+      "match_type": "PHRASE",
+      "status_before": "ENABLED",
+      "status_after": "PAUSED",
+      "still_exists": true,
+      "ok": true
+    },
+    {
+      "action_id": "KW-03",
+      "criterion_id": "309567954442",
+      "ad_group_id": "196134824089",
+      "text": "asphalt paving services near me",
+      "match_type": "PHRASE",
+      "status_before": "ENABLED",
+      "status_after": "PAUSED",
+      "still_exists": true,
+      "ok": true
+    },
+    {
+      "action_id": "KW-04",
+      "criterion_id": "300588535183",
+      "ad_group_id": "196134824089",
+      "text": "asphalt services near me",
+      "match_type": "PHRASE",
+      "status_before": "ENABLED",
+      "status_after": "PAUSED",
+      "still_exists": true,
+      "ok": true
+    },
+    {
+      "action_id": "KW-05",
+      "criterion_id": "298883953673",
+      "ad_group_id": "196134824089",
+      "text": "local asphalt paving companies",
+      "match_type": "PHRASE",
+      "status_before": "ENABLED",
+      "status_after": "PAUSED",
+      "still_exists": true,
+      "ok": true
+    },
+    {
+      "action_id": "KW-06",
+      "criterion_id": "303329780817",
+      "ad_group_id": "196134824089",
+      "text": "local asphalt paving contractors",
+      "match_type": "PHRASE",
+      "status_before": "ENABLED",
+      "status_after": "PAUSED",
+      "still_exists": true,
+      "ok": true
+    },
+    {
+      "action_id": "KW-07",
+      "criterion_id": "356532888916",
+      "ad_group_id": "196134824089",
+      "text": "asphalt and paving companies near me",
+      "match_type": "PHRASE",
+      "status_before": "ENABLED",
+      "status_after": "PAUSED",
+      "still_exists": true,
+      "ok": true
+    }
+  ],
+  "verdict": "PASS",
+  "unrelated_changes": [],
+  "count_before": 695,
+  "count_after": 695
+}

@@ -1,0 +1,77 @@
+# PLAN-R7A4-CROSS-ACCOUNT - SIBLING-ACCOUNT TAG SCOPING AND MEASUREMENT IMPACT
+#
+# STATUS: BLOCKED - SEPARATE SIBLING-ACCOUNT WORK ORDER AND APPROVAL REQUIRED
+# This is a DECISION RECORD, not an executable plan. NO FINGERPRINT.
+
+decision_record:
+  plan_id: PLAN-R7A4-CROSS-ACCOUNT
+  plan_title: Sibling-account tag scoping and measurement impact
+  status: 'BLOCKED - SEPARATE SIBLING-ACCOUNT WORK ORDER AND APPROVAL REQUIRED'
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: null
+  fingerprint_withheld_because: >-
+    A cross-account action cannot be fingerprinted under the Power Washing work order. Any
+    change affecting measurement for customer 2429758629 requires its own identity gate, work
+    order, approval owner and fingerprint.
+
+  current_work_order_scope:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    exact_service: Power Washing
+
+  sibling_account:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: '2429758629'
+    conversion_tracking_id: '17878095007'
+    relationship: 'level 1 under the same authorized MCC 3373711342'
+    ownership_state: 'B - GREEN-MARKETING-OWNED AND DOCUMENTED'
+    campaign_performance_audited: false
+    note: >-
+      Only the single field conversion_tracking_setting.conversion_tracking_id was read, to
+      resolve tag ownership. No campaign, keyword, ad or performance data from 2429758629 was
+      read, and none is reproduced anywhere.
+
+  findings:
+    aw_17878095007_source: >-
+      googletagmanager.com/gtag/js?id=AW-17878095007&cx=c&gtm=4e68v1, async-injected. The
+      literal ID appears exactly ONCE in the rendered source and only inside that URL. There is
+      no hardcoded gtag config block. Consistent with GTM or a Google tag linked destination.
+      PUBLIC EFFECT PROVEN - EXACT CONFIGURATION SOURCE REQUIRES AUTHENTICATED GTM READ.
+    current_page_scope: 'all 7 Power Washing paid URLs plus /thank-you/'
+    current_triggers_observed:
+      - page_view / viewthroughconversion
+      - rmkt/collect and 1p-user-list remarketing
+      - 'website-call replacement wcm, dn=6315027946, label SFv1CLSo--UbEJ-p-MxC, on all 7 pages'
+      - 'en=form_start and en=form_submit - proven at submission 2026-09-02'
+      - 'POST pagead/form-data and ccm/form-data - proven at submission 2026-09-02'
+    proposed_page_scope: >-
+      The tag stops on the six Power Washing paid URLs and /thank-you/. It remains wherever
+      Softwind Landscape & Masonry legitimately advertises.
+    unknown_and_must_be_answered_first:
+      - Does the same GTM container also serve the Masonry brand pages?
+      - Is the Masonry account currently counting conversions from these Power Washing pages?
+      - Would a page-path exception break Masonry measurement on its own pages?
+
+  impact_if_scoped_off_power_washing_urls:
+    effect_on_1521725229: >-
+      POSITIVE. Unblocks the Power Washing website-call path, stops form interactions and form
+      data leaving for another account, and removes a competing number replacement.
+    effect_on_2429758629: >-
+      Its reported conversions, remarketing list membership and website-call volume from these
+      pages will DROP. That is a scope correction, not a loss - but the owner of that account
+      must agree before it happens.
+    form_event_impact: 'form_start and form_submit stop reaching 2429758629'
+    website_call_impact: 'wcm replacement stops; Power Washing can then claim its own calls'
+    remarketing_impact: 'Power Washing visitors stop joining Masonry audiences'
+    user_list_impact: 'same'
+    rollback: 'remove the page-path exception and the tag resumes'
+
+  required_before_any_execution:
+    - Separate mandatory identity gate on Softwind Landscape & Masonry - Live / 2429758629
+    - Exact service for that account
+    - similar-local-service scope approval for that account if applicable
+    - Separate work order
+    - Separate approval owner
+    - Separate fingerprint
+  approval_owner: 'Walter Correa - plus the sibling account owner'

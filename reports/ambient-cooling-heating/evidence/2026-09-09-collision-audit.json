@@ -1,0 +1,5185 @@
+{
+ "bofu_probe_collisions": [
+  {
+   "campaign": "AC Repair",
+   "probe": "commercial hvac repair near me",
+   "match": "BROAD",
+   "negative": "commercial"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "ac replacement near me",
+   "match": "EXACT",
+   "negative": "ac replacement near me"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "tankless water heater installation near me",
+   "match": "EXACT",
+   "negative": "tankless water heater installation near me"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "thermostat replacement near me",
+   "match": "BROAD",
+   "negative": "thermostat"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "whole house humidifier installation",
+   "match": "PHRASE",
+   "negative": "humidifier"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "dehumidifier installation near me",
+   "match": "PHRASE",
+   "negative": "dehumidifier"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "air duct cleaning and repair near me",
+   "match": "PHRASE",
+   "negative": "air duct cleaning"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "lennox dealer near me",
+   "match": "BROAD",
+   "negative": "lennox"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "carrier hvac repair near me",
+   "match": "BROAD",
+   "negative": "carrier"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "trane furnace repair",
+   "match": "BROAD",
+   "negative": "trane"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "goodman ac repair near me",
+   "match": "BROAD",
+   "negative": "goodman"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "mitsubishi mini split installer near me",
+   "match": "BROAD",
+   "negative": "mitsubishi"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "rheem water heater repair near me",
+   "match": "BROAD",
+   "negative": "rheem"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "licensed hvac contractor near me",
+   "match": "PHRASE",
+   "negative": "licensed"
+  },
+  {
+   "campaign": "AC Repair",
+   "probe": "hvac free estimate near me",
+   "match": "PHRASE",
+   "negative": "free"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "commercial hvac repair near me",
+   "match": "BROAD",
+   "negative": "commercial"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "tankless water heater installation near me",
+   "match": "EXACT",
+   "negative": "tankless water heater installation near me"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "thermostat replacement near me",
+   "match": "BROAD",
+   "negative": "thermostat"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "whole house humidifier installation",
+   "match": "PHRASE",
+   "negative": "humidifier"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "dehumidifier installation near me",
+   "match": "PHRASE",
+   "negative": "dehumidifier"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "air duct cleaning and repair near me",
+   "match": "PHRASE",
+   "negative": "air duct cleaning"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "lennox dealer near me",
+   "match": "BROAD",
+   "negative": "lennox"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "carrier hvac repair near me",
+   "match": "BROAD",
+   "negative": "carrier"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "trane furnace repair",
+   "match": "BROAD",
+   "negative": "trane"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "goodman ac repair near me",
+   "match": "BROAD",
+   "negative": "goodman"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "mitsubishi mini split installer near me",
+   "match": "BROAD",
+   "negative": "mitsubishi"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "rheem water heater repair near me",
+   "match": "BROAD",
+   "negative": "rheem"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "licensed hvac contractor near me",
+   "match": "PHRASE",
+   "negative": "licensed"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "probe": "hvac free estimate near me",
+   "match": "PHRASE",
+   "negative": "free"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "hvac repair near me",
+   "match": "EXACT",
+   "negative": "hvac repair near me"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "commercial hvac repair near me",
+   "match": "BROAD",
+   "negative": "commercial"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "tankless water heater installation near me",
+   "match": "EXACT",
+   "negative": "tankless water heater installation near me"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "thermostat replacement near me",
+   "match": "BROAD",
+   "negative": "thermostat"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "whole house humidifier installation",
+   "match": "PHRASE",
+   "negative": "humidifier"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "dehumidifier installation near me",
+   "match": "PHRASE",
+   "negative": "dehumidifier"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "air duct cleaning and repair near me",
+   "match": "PHRASE",
+   "negative": "air duct cleaning"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "lennox dealer near me",
+   "match": "BROAD",
+   "negative": "lennox"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "carrier hvac repair near me",
+   "match": "BROAD",
+   "negative": "carrier"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "trane furnace repair",
+   "match": "BROAD",
+   "negative": "trane"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "goodman ac repair near me",
+   "match": "BROAD",
+   "negative": "goodman"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "mitsubishi mini split installer near me",
+   "match": "BROAD",
+   "negative": "mitsubishi"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "rheem water heater repair near me",
+   "match": "BROAD",
+   "negative": "rheem"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "licensed hvac contractor near me",
+   "match": "PHRASE",
+   "negative": "licensed"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "probe": "hvac free estimate near me",
+   "match": "PHRASE",
+   "negative": "free"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "commercial hvac repair near me",
+   "match": "BROAD",
+   "negative": "commercial"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "furnace replacement near me",
+   "match": "EXACT",
+   "negative": "furnace replacement near me"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "tankless water heater installation near me",
+   "match": "EXACT",
+   "negative": "tankless water heater installation near me"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "thermostat replacement near me",
+   "match": "BROAD",
+   "negative": "thermostat"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "whole house humidifier installation",
+   "match": "PHRASE",
+   "negative": "humidifier"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "dehumidifier installation near me",
+   "match": "PHRASE",
+   "negative": "dehumidifier"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "air duct cleaning and repair near me",
+   "match": "PHRASE",
+   "negative": "air duct cleaning"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "lennox dealer near me",
+   "match": "BROAD",
+   "negative": "lennox"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "carrier hvac repair near me",
+   "match": "BROAD",
+   "negative": "carrier"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "trane furnace repair",
+   "match": "BROAD",
+   "negative": "trane"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "goodman ac repair near me",
+   "match": "BROAD",
+   "negative": "goodman"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "mitsubishi mini split installer near me",
+   "match": "BROAD",
+   "negative": "mitsubishi"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "rheem water heater repair near me",
+   "match": "BROAD",
+   "negative": "rheem"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "licensed hvac contractor near me",
+   "match": "PHRASE",
+   "negative": "licensed"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "probe": "hvac free estimate near me",
+   "match": "PHRASE",
+   "negative": "free"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "commercial hvac repair near me",
+   "match": "BROAD",
+   "negative": "commercial"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "hvac ductwork installation near me",
+   "match": "EXACT",
+   "negative": "hvac ductwork installation near me"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "tankless water heater installation near me",
+   "match": "EXACT",
+   "negative": "tankless water heater installation near me"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "thermostat replacement near me",
+   "match": "BROAD",
+   "negative": "thermostat"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "whole house humidifier installation",
+   "match": "PHRASE",
+   "negative": "humidifier"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "dehumidifier installation near me",
+   "match": "PHRASE",
+   "negative": "dehumidifier"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "air duct cleaning and repair near me",
+   "match": "PHRASE",
+   "negative": "air duct cleaning"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "lennox dealer near me",
+   "match": "BROAD",
+   "negative": "lennox"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "carrier hvac repair near me",
+   "match": "BROAD",
+   "negative": "carrier"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "trane furnace repair",
+   "match": "BROAD",
+   "negative": "trane"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "goodman ac repair near me",
+   "match": "BROAD",
+   "negative": "goodman"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "mitsubishi mini split installer near me",
+   "match": "BROAD",
+   "negative": "mitsubishi"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "rheem water heater repair near me",
+   "match": "BROAD",
+   "negative": "rheem"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "licensed hvac contractor near me",
+   "match": "PHRASE",
+   "negative": "licensed"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "probe": "hvac free estimate near me",
+   "match": "PHRASE",
+   "negative": "free"
+  }
+ ],
+ "positive_keyword_collisions": [],
+ "converting_term_collisions": [
+  {
+   "campaign": "AC Repair",
+   "term": "ac store near me",
+   "match": "PHRASE",
+   "negative": "store",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "acrepair",
+   "match": "PHRASE",
+   "negative": "acrepair",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "aerco near me",
+   "match": "EXACT",
+   "negative": "aerco near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "air duct cleaning",
+   "match": "PHRASE",
+   "negative": "air duct cleaning",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "aireco gaithersburg",
+   "match": "EXACT",
+   "negative": "aireco gaithersburg",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "aireco millersville md",
+   "match": "EXACT",
+   "negative": "aireco millersville md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "airtron",
+   "match": "EXACT",
+   "negative": "airtron",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "amazing heating and air conditioning inc reviews",
+   "match": "BROAD",
+   "negative": "inc",
+   "conversions": 0.0,
+   "all_conversions": 4.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "barstow and sons annapolis",
+   "match": "EXACT",
+   "negative": "barstow and sons annapolis",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "beltway heating and air",
+   "match": "BROAD",
+   "negative": "beltway",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "blue dot heating and air conditioning",
+   "match": "BROAD",
+   "negative": "dot",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "boland gaithersburg",
+   "match": "BROAD",
+   "negative": "boland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "carrier alexandria",
+   "match": "PHRASE",
+   "negative": "alexandria",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "carrier enterprise laurel",
+   "match": "EXACT",
+   "negative": "carrier enterprise laurel",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "carrier mid atlantic hanover maryland",
+   "match": "EXACT",
+   "negative": "carrier mid atlantic hanover maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "carrier mid atlantic near me",
+   "match": "EXACT",
+   "negative": "carrier mid atlantic near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "ce carrier enterprise near me",
+   "match": "EXACT",
+   "negative": "ce carrier enterprise near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "chilltrol annapolis",
+   "match": "EXACT",
+   "negative": "chilltrol annapolis",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "closest re michaels",
+   "match": "EXACT",
+   "negative": "closest re michaels",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "commercial ac repair near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "commercial boiler repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.33,
+   "all_conversions": 0.33,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "commercial ductwork installation near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "commercial furnace repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "commercial hvac companies near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "commercial hvac near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "commercial radiator repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.5,
+   "all_conversions": 0.5,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "cornett heating and air",
+   "match": "BROAD",
+   "negative": "cornett",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "croft metcalf",
+   "match": "BROAD",
+   "negative": "metcalf",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "daikin cerca de mi",
+   "match": "EXACT",
+   "negative": "daikin cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "daikin comfort technologies locations",
+   "match": "EXACT",
+   "negative": "daikin comfort technologies locations",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "daikin elkridge md",
+   "match": "EXACT",
+   "negative": "daikin elkridge md",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "elmar services",
+   "match": "BROAD",
+   "negative": "elmar",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Maintenance"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "energy audit near me",
+   "match": "EXACT",
+   "negative": "energy audit near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "f h furr alexandria va",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "f h furr plumbing heating air conditioning & electrical cerca de mi",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 4.0,
+   "seen_in": [
+    "HVAC Repair",
+    "Search | NonBrand | HVAC Repair | "
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "ferguson hvac white marsh",
+   "match": "BROAD",
+   "negative": "white",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "fh furr delaware",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "geothermal in maryland",
+   "match": "EXACT",
+   "negative": "geothermal in maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "geothermal maryland",
+   "match": "EXACT",
+   "negative": "geothermal maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "geothermal technician near me",
+   "match": "EXACT",
+   "negative": "geothermal technician near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "haller hvac york pa",
+   "match": "BROAD",
+   "negative": "haller",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "heat pump with humidifier",
+   "match": "PHRASE",
+   "negative": "humidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "heat pumps for sale",
+   "match": "PHRASE",
+   "negative": "for sale",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "hobbs and associates jessup md",
+   "match": "EXACT",
+   "negative": "hobbs and associates jessup md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "home depot mini split installation cost",
+   "match": "PHRASE",
+   "negative": "home depot",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "home heater service",
+   "match": "EXACT",
+   "negative": "home heater service",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "home radiator repair",
+   "match": "EXACT",
+   "negative": "home radiator repair",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "hvac chestertown md",
+   "match": "BROAD",
+   "negative": "chestertown",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "hvac contractor cerca de mi",
+   "match": "EXACT",
+   "negative": "hvac contractor cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "hvac montgomery county",
+   "match": "BROAD",
+   "negative": "montgomery county",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "AC Install & Replacement"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "hvac precision services inc gaithersburg md",
+   "match": "BROAD",
+   "negative": "inc",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "hvac store near me",
+   "match": "PHRASE",
+   "negative": "store",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "hvac thermostat installation",
+   "match": "BROAD",
+   "negative": "thermostat",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "j c warner",
+   "match": "BROAD",
+   "negative": "warner",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "AC Install & Replacement"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "jc warner queenstown md",
+   "match": "BROAD",
+   "negative": "warner",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "mccrea",
+   "match": "BROAD",
+   "negative": "mccrea",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "mechanical contractor near me",
+   "match": "EXACT",
+   "negative": "mechanical contractor near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "michaels and sons hvac",
+   "match": "BROAD",
+   "negative": "michaels",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "mitsubishi ac service near me",
+   "match": "BROAD",
+   "negative": "mitsubishi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "mold remediation water damage hvac near me",
+   "match": "PHRASE",
+   "negative": "mold remediation",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "pool room dehumidifier",
+   "match": "PHRASE",
+   "negative": "dehumidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Pool Room Dehumidifier"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "r e michel company",
+   "match": "EXACT",
+   "negative": "r e michel company",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "r e michel company near me",
+   "match": "EXACT",
+   "negative": "r e michel company near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "AC Install & Replacement",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "r e michel fairfax",
+   "match": "PHRASE",
+   "negative": "fairfax",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "re michaels glen burnie",
+   "match": "EXACT",
+   "negative": "re michaels glen burnie",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "re michel glen burnie md",
+   "match": "EXACT",
+   "negative": "re michel glen burnie md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "re michel landover md",
+   "match": "PHRASE",
+   "negative": "landover",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "re michel near me",
+   "match": "EXACT",
+   "negative": "re michel near me",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "re michels near me",
+   "match": "BROAD",
+   "negative": "michels",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "remichel near me",
+   "match": "PHRASE",
+   "negative": "remichel",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "ron air dayton md",
+   "match": "BROAD",
+   "negative": "dayton",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "shore hvac chestertown md",
+   "match": "BROAD",
+   "negative": "chestertown",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "smith hvac",
+   "match": "BROAD",
+   "negative": "smith",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "smo glen burnie md",
+   "match": "PHRASE",
+   "negative": "smo",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "sweeney's hvac",
+   "match": "BROAD",
+   "negative": "sweeney",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "trane authorized dealers near me",
+   "match": "EXACT",
+   "negative": "trane authorized dealers near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "AC Repair",
+   "term": "trane installers near me",
+   "match": "EXACT",
+   "negative": "trane installers near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "ac store near me",
+   "match": "PHRASE",
+   "negative": "store",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "acrepair",
+   "match": "PHRASE",
+   "negative": "acrepair",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "aerco near me",
+   "match": "EXACT",
+   "negative": "aerco near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "air duct cleaning",
+   "match": "PHRASE",
+   "negative": "air duct cleaning",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "aireco gaithersburg",
+   "match": "EXACT",
+   "negative": "aireco gaithersburg",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "aireco millersville md",
+   "match": "EXACT",
+   "negative": "aireco millersville md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "airtron",
+   "match": "EXACT",
+   "negative": "airtron",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "amazing heating and air conditioning inc reviews",
+   "match": "BROAD",
+   "negative": "inc",
+   "conversions": 0.0,
+   "all_conversions": 4.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "barstow and sons annapolis",
+   "match": "EXACT",
+   "negative": "barstow and sons annapolis",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "beltway heating and air",
+   "match": "BROAD",
+   "negative": "beltway",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "blue dot heating and air conditioning",
+   "match": "BROAD",
+   "negative": "dot",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "boland gaithersburg",
+   "match": "BROAD",
+   "negative": "boland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "carrier alexandria",
+   "match": "PHRASE",
+   "negative": "alexandria",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "carrier enterprise laurel",
+   "match": "EXACT",
+   "negative": "carrier enterprise laurel",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "carrier mid atlantic hanover maryland",
+   "match": "EXACT",
+   "negative": "carrier mid atlantic hanover maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "carrier mid atlantic near me",
+   "match": "EXACT",
+   "negative": "carrier mid atlantic near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "ce carrier enterprise near me",
+   "match": "EXACT",
+   "negative": "ce carrier enterprise near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "chilltrol annapolis",
+   "match": "EXACT",
+   "negative": "chilltrol annapolis",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "closest re michaels",
+   "match": "EXACT",
+   "negative": "closest re michaels",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "commercial ac repair near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "commercial boiler repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.33,
+   "all_conversions": 0.33,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "commercial ductwork installation near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "commercial furnace repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "commercial hvac companies near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "commercial hvac near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "commercial radiator repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.5,
+   "all_conversions": 0.5,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "cornett heating and air",
+   "match": "BROAD",
+   "negative": "cornett",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "croft metcalf",
+   "match": "BROAD",
+   "negative": "metcalf",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "daikin cerca de mi",
+   "match": "EXACT",
+   "negative": "daikin cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "daikin comfort technologies locations",
+   "match": "EXACT",
+   "negative": "daikin comfort technologies locations",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "daikin elkridge md",
+   "match": "EXACT",
+   "negative": "daikin elkridge md",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "elmar services",
+   "match": "BROAD",
+   "negative": "elmar",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Maintenance"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "energy audit near me",
+   "match": "EXACT",
+   "negative": "energy audit near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "f h furr alexandria va",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "f h furr plumbing heating air conditioning & electrical cerca de mi",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 4.0,
+   "seen_in": [
+    "HVAC Repair",
+    "Search | NonBrand | HVAC Repair | "
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "ferguson hvac white marsh",
+   "match": "BROAD",
+   "negative": "white",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "fh furr delaware",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "geothermal in maryland",
+   "match": "EXACT",
+   "negative": "geothermal in maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "geothermal maryland",
+   "match": "EXACT",
+   "negative": "geothermal maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "geothermal technician near me",
+   "match": "EXACT",
+   "negative": "geothermal technician near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "haller hvac york pa",
+   "match": "BROAD",
+   "negative": "haller",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "heat pump with humidifier",
+   "match": "PHRASE",
+   "negative": "humidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "heat pumps for sale",
+   "match": "PHRASE",
+   "negative": "for sale",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "hobbs and associates jessup md",
+   "match": "EXACT",
+   "negative": "hobbs and associates jessup md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "home depot mini split installation cost",
+   "match": "PHRASE",
+   "negative": "home depot",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "home heater service",
+   "match": "EXACT",
+   "negative": "home heater service",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "home radiator repair",
+   "match": "EXACT",
+   "negative": "home radiator repair",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "hvac chestertown md",
+   "match": "BROAD",
+   "negative": "chestertown",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "hvac contractor cerca de mi",
+   "match": "EXACT",
+   "negative": "hvac contractor cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "hvac montgomery county",
+   "match": "BROAD",
+   "negative": "montgomery county",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "AC Install & Replacement"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "hvac precision services inc gaithersburg md",
+   "match": "BROAD",
+   "negative": "inc",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "hvac store near me",
+   "match": "PHRASE",
+   "negative": "store",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "hvac thermostat installation",
+   "match": "BROAD",
+   "negative": "thermostat",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "j c warner",
+   "match": "BROAD",
+   "negative": "warner",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "AC Install & Replacement"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "jc warner queenstown md",
+   "match": "BROAD",
+   "negative": "warner",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "mccrea",
+   "match": "BROAD",
+   "negative": "mccrea",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "mechanical contractor near me",
+   "match": "EXACT",
+   "negative": "mechanical contractor near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "michaels and sons hvac",
+   "match": "BROAD",
+   "negative": "michaels",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "mitsubishi ac service near me",
+   "match": "BROAD",
+   "negative": "mitsubishi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "mold remediation water damage hvac near me",
+   "match": "PHRASE",
+   "negative": "mold remediation",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "pool room dehumidifier",
+   "match": "PHRASE",
+   "negative": "dehumidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Pool Room Dehumidifier"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "r e michel company",
+   "match": "EXACT",
+   "negative": "r e michel company",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "r e michel company near me",
+   "match": "EXACT",
+   "negative": "r e michel company near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "AC Install & Replacement",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "r e michel fairfax",
+   "match": "PHRASE",
+   "negative": "fairfax",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "re michaels glen burnie",
+   "match": "EXACT",
+   "negative": "re michaels glen burnie",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "re michel glen burnie md",
+   "match": "EXACT",
+   "negative": "re michel glen burnie md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "re michel landover md",
+   "match": "PHRASE",
+   "negative": "landover",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "re michel near me",
+   "match": "EXACT",
+   "negative": "re michel near me",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "re michels near me",
+   "match": "BROAD",
+   "negative": "michels",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "remichel near me",
+   "match": "PHRASE",
+   "negative": "remichel",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "ron air dayton md",
+   "match": "BROAD",
+   "negative": "dayton",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "shore hvac chestertown md",
+   "match": "BROAD",
+   "negative": "chestertown",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "smith hvac",
+   "match": "BROAD",
+   "negative": "smith",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "smo glen burnie md",
+   "match": "PHRASE",
+   "negative": "smo",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "sweeney's hvac",
+   "match": "BROAD",
+   "negative": "sweeney",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "trane authorized dealers near me",
+   "match": "EXACT",
+   "negative": "trane authorized dealers near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "term": "trane installers near me",
+   "match": "EXACT",
+   "negative": "trane installers near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "ac store near me",
+   "match": "PHRASE",
+   "negative": "store",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "acrepair",
+   "match": "PHRASE",
+   "negative": "acrepair",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "aerco near me",
+   "match": "EXACT",
+   "negative": "aerco near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "air duct cleaning",
+   "match": "PHRASE",
+   "negative": "air duct cleaning",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "aireco gaithersburg",
+   "match": "EXACT",
+   "negative": "aireco gaithersburg",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "aireco millersville md",
+   "match": "EXACT",
+   "negative": "aireco millersville md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "airtron",
+   "match": "BROAD",
+   "negative": "airtron",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "amazing heating and air conditioning inc reviews",
+   "match": "BROAD",
+   "negative": "inc",
+   "conversions": 0.0,
+   "all_conversions": 4.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "barstow and sons annapolis",
+   "match": "BROAD",
+   "negative": "barstow",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "beltway heating and air",
+   "match": "BROAD",
+   "negative": "beltway",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "blue dot heating and air conditioning",
+   "match": "BROAD",
+   "negative": "dot",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "boland gaithersburg",
+   "match": "BROAD",
+   "negative": "boland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "carrier alexandria",
+   "match": "BROAD",
+   "negative": "carrier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "carrier enterprise laurel",
+   "match": "BROAD",
+   "negative": "carrier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "carrier mid atlantic hanover maryland",
+   "match": "BROAD",
+   "negative": "carrier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "carrier mid atlantic near me",
+   "match": "BROAD",
+   "negative": "carrier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "ce carrier enterprise near me",
+   "match": "BROAD",
+   "negative": "carrier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "chilltrol annapolis",
+   "match": "BROAD",
+   "negative": "chilltrol",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "closest re michaels",
+   "match": "BROAD",
+   "negative": "michaels",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "commercial ac repair near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "commercial boiler repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.33,
+   "all_conversions": 0.33,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "commercial ductwork installation near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "commercial furnace repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "commercial hvac companies near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "commercial hvac near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "commercial radiator repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.5,
+   "all_conversions": 0.5,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "cornett heating and air",
+   "match": "BROAD",
+   "negative": "cornett",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "croft metcalf",
+   "match": "BROAD",
+   "negative": "croft",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "daikin cerca de mi",
+   "match": "BROAD",
+   "negative": "daikin",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "daikin comfort technologies locations",
+   "match": "BROAD",
+   "negative": "daikin",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "daikin elkridge md",
+   "match": "BROAD",
+   "negative": "daikin",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "elmar services",
+   "match": "BROAD",
+   "negative": "elmar",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Maintenance"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "energy audit near me",
+   "match": "EXACT",
+   "negative": "energy audit near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "f h furr alexandria va",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "f h furr plumbing heating air conditioning & electrical cerca de mi",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 4.0,
+   "seen_in": [
+    "HVAC Repair",
+    "Search | NonBrand | HVAC Repair | "
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "ferguson hvac white marsh",
+   "match": "BROAD",
+   "negative": "white",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "fh furr delaware",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "geothermal in maryland",
+   "match": "EXACT",
+   "negative": "geothermal in maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "geothermal maryland",
+   "match": "EXACT",
+   "negative": "geothermal maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "geothermal technician near me",
+   "match": "EXACT",
+   "negative": "geothermal technician near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "haller hvac york pa",
+   "match": "BROAD",
+   "negative": "haller",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "heat pump with humidifier",
+   "match": "PHRASE",
+   "negative": "humidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "heat pumps for sale",
+   "match": "PHRASE",
+   "negative": "for sale",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "hobbs and associates jessup md",
+   "match": "BROAD",
+   "negative": "hobbs",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "home depot mini split installation cost",
+   "match": "BROAD",
+   "negative": "depot",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "home heater service",
+   "match": "EXACT",
+   "negative": "home heater service",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "home radiator repair",
+   "match": "EXACT",
+   "negative": "home radiator repair",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "hvac chestertown md",
+   "match": "BROAD",
+   "negative": "chestertown",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "hvac contractor cerca de mi",
+   "match": "EXACT",
+   "negative": "hvac contractor cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "hvac direct catonsville",
+   "match": "PHRASE",
+   "negative": "hvac direct",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "hvac montgomery county",
+   "match": "BROAD",
+   "negative": "montgomery county",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "AC Install & Replacement"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "hvac precision services inc gaithersburg md",
+   "match": "BROAD",
+   "negative": "inc",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "hvac repair near me",
+   "match": "EXACT",
+   "negative": "hvac repair near me",
+   "conversions": 5.0,
+   "all_conversions": 15.0,
+   "seen_in": [
+    "HVAC Install",
+    "HVAC Repair",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "hvac store near me",
+   "match": "PHRASE",
+   "negative": "store",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "hvac thermostat installation",
+   "match": "BROAD",
+   "negative": "thermostat",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "j c warner",
+   "match": "BROAD",
+   "negative": "warner",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "AC Install & Replacement"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "jc warner queenstown md",
+   "match": "BROAD",
+   "negative": "warner",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "max air glen burnie",
+   "match": "PHRASE",
+   "negative": "max air glen burnie",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "mccrea",
+   "match": "BROAD",
+   "negative": "mccrea",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "mechanical contractor near me",
+   "match": "EXACT",
+   "negative": "mechanical contractor near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "michaels and sons hvac",
+   "match": "BROAD",
+   "negative": "sons",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "mitsubishi ac service near me",
+   "match": "BROAD",
+   "negative": "mitsubishi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "mold remediation water damage hvac near me",
+   "match": "BROAD",
+   "negative": "mold",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "pool room dehumidifier",
+   "match": "PHRASE",
+   "negative": "dehumidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Pool Room Dehumidifier"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "r e michel company",
+   "match": "EXACT",
+   "negative": "r e michel company",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "r e michel company near me",
+   "match": "EXACT",
+   "negative": "r e michel company near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "AC Install & Replacement",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "r e michel fairfax",
+   "match": "PHRASE",
+   "negative": "fairfax",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "re michaels glen burnie",
+   "match": "BROAD",
+   "negative": "michaels",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "re michel glen burnie md",
+   "match": "EXACT",
+   "negative": "re michel glen burnie md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "re michel landover md",
+   "match": "PHRASE",
+   "negative": "landover",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "re michel near me",
+   "match": "EXACT",
+   "negative": "re michel near me",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "re michels near me",
+   "match": "BROAD",
+   "negative": "michels",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "remichel near me",
+   "match": "PHRASE",
+   "negative": "remichel",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "ron air dayton md",
+   "match": "BROAD",
+   "negative": "dayton",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "shore hvac chestertown md",
+   "match": "BROAD",
+   "negative": "chestertown",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "smith hvac",
+   "match": "BROAD",
+   "negative": "smith",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "smo glen burnie md",
+   "match": "PHRASE",
+   "negative": "smo",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "sweeney's hvac",
+   "match": "BROAD",
+   "negative": "sweeney",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "trane authorized dealers near me",
+   "match": "BROAD",
+   "negative": "trane",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Installation",
+   "term": "trane installers near me",
+   "match": "BROAD",
+   "negative": "trane",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "ac store near me",
+   "match": "PHRASE",
+   "negative": "store",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "acrepair",
+   "match": "PHRASE",
+   "negative": "acrepair",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "aerco near me",
+   "match": "EXACT",
+   "negative": "aerco near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "air duct cleaning",
+   "match": "PHRASE",
+   "negative": "air duct cleaning",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "aireco gaithersburg",
+   "match": "EXACT",
+   "negative": "aireco gaithersburg",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "aireco millersville md",
+   "match": "EXACT",
+   "negative": "aireco millersville md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "airtron",
+   "match": "EXACT",
+   "negative": "airtron",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "amazing heating and air conditioning inc reviews",
+   "match": "BROAD",
+   "negative": "inc",
+   "conversions": 0.0,
+   "all_conversions": 4.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "barstow and sons annapolis",
+   "match": "EXACT",
+   "negative": "barstow and sons annapolis",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "beltway heating and air",
+   "match": "BROAD",
+   "negative": "beltway",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "blue dot heating and air conditioning",
+   "match": "BROAD",
+   "negative": "dot",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "boland gaithersburg",
+   "match": "BROAD",
+   "negative": "boland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "carrier alexandria",
+   "match": "PHRASE",
+   "negative": "alexandria",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "carrier enterprise laurel",
+   "match": "EXACT",
+   "negative": "carrier enterprise laurel",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "carrier mid atlantic hanover maryland",
+   "match": "EXACT",
+   "negative": "carrier mid atlantic hanover maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "carrier mid atlantic near me",
+   "match": "EXACT",
+   "negative": "carrier mid atlantic near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "ce carrier enterprise near me",
+   "match": "EXACT",
+   "negative": "ce carrier enterprise near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "chilltrol annapolis",
+   "match": "EXACT",
+   "negative": "chilltrol annapolis",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "closest re michaels",
+   "match": "EXACT",
+   "negative": "closest re michaels",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "commercial ac repair near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "commercial boiler repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.33,
+   "all_conversions": 0.33,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "commercial ductwork installation near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "commercial furnace repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "commercial hvac companies near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "commercial hvac near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "commercial radiator repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.5,
+   "all_conversions": 0.5,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "cornett heating and air",
+   "match": "BROAD",
+   "negative": "cornett",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "croft metcalf",
+   "match": "BROAD",
+   "negative": "metcalf",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "daikin cerca de mi",
+   "match": "EXACT",
+   "negative": "daikin cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "daikin comfort technologies locations",
+   "match": "EXACT",
+   "negative": "daikin comfort technologies locations",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "daikin elkridge md",
+   "match": "EXACT",
+   "negative": "daikin elkridge md",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "elmar services",
+   "match": "BROAD",
+   "negative": "elmar",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Maintenance"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "energy audit near me",
+   "match": "EXACT",
+   "negative": "energy audit near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "f h furr alexandria va",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "f h furr plumbing heating air conditioning & electrical cerca de mi",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 4.0,
+   "seen_in": [
+    "HVAC Repair",
+    "Search | NonBrand | HVAC Repair | "
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "ferguson hvac white marsh",
+   "match": "BROAD",
+   "negative": "white",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "fh furr delaware",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "geothermal in maryland",
+   "match": "EXACT",
+   "negative": "geothermal in maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "geothermal maryland",
+   "match": "EXACT",
+   "negative": "geothermal maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "geothermal technician near me",
+   "match": "EXACT",
+   "negative": "geothermal technician near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "haller hvac york pa",
+   "match": "BROAD",
+   "negative": "haller",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "heat pump with humidifier",
+   "match": "PHRASE",
+   "negative": "humidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "heat pumps for sale",
+   "match": "PHRASE",
+   "negative": "for sale",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "hobbs and associates jessup md",
+   "match": "EXACT",
+   "negative": "hobbs and associates jessup md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "home depot mini split installation cost",
+   "match": "PHRASE",
+   "negative": "home depot",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "home heater service",
+   "match": "EXACT",
+   "negative": "home heater service",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "home radiator repair",
+   "match": "EXACT",
+   "negative": "home radiator repair",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "hvac chestertown md",
+   "match": "BROAD",
+   "negative": "chestertown",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "hvac contractor cerca de mi",
+   "match": "EXACT",
+   "negative": "hvac contractor cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "hvac montgomery county",
+   "match": "BROAD",
+   "negative": "montgomery county",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "AC Install & Replacement"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "hvac precision services inc gaithersburg md",
+   "match": "BROAD",
+   "negative": "inc",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "hvac store near me",
+   "match": "PHRASE",
+   "negative": "store",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "hvac thermostat installation",
+   "match": "BROAD",
+   "negative": "thermostat",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "j c warner",
+   "match": "BROAD",
+   "negative": "warner",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "AC Install & Replacement"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "jc warner queenstown md",
+   "match": "BROAD",
+   "negative": "warner",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "mccrea",
+   "match": "BROAD",
+   "negative": "mccrea",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "mechanical contractor near me",
+   "match": "EXACT",
+   "negative": "mechanical contractor near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "michaels and sons hvac",
+   "match": "BROAD",
+   "negative": "michaels",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "mitsubishi ac service near me",
+   "match": "BROAD",
+   "negative": "mitsubishi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "mold remediation water damage hvac near me",
+   "match": "PHRASE",
+   "negative": "mold remediation",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "pool room dehumidifier",
+   "match": "PHRASE",
+   "negative": "dehumidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Pool Room Dehumidifier"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "r e michel company",
+   "match": "EXACT",
+   "negative": "r e michel company",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "r e michel company near me",
+   "match": "EXACT",
+   "negative": "r e michel company near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "AC Install & Replacement",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "r e michel fairfax",
+   "match": "PHRASE",
+   "negative": "fairfax",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "re michaels glen burnie",
+   "match": "EXACT",
+   "negative": "re michaels glen burnie",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "re michel glen burnie md",
+   "match": "EXACT",
+   "negative": "re michel glen burnie md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "re michel landover md",
+   "match": "PHRASE",
+   "negative": "landover",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "re michel near me",
+   "match": "EXACT",
+   "negative": "re michel near me",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "re michels near me",
+   "match": "BROAD",
+   "negative": "michels",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "remichel near me",
+   "match": "PHRASE",
+   "negative": "remichel",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "ron air dayton md",
+   "match": "BROAD",
+   "negative": "dayton",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "shore hvac chestertown md",
+   "match": "BROAD",
+   "negative": "chestertown",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "smith hvac",
+   "match": "BROAD",
+   "negative": "smith",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "smo glen burnie md",
+   "match": "PHRASE",
+   "negative": "smo",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "sweeney's hvac",
+   "match": "BROAD",
+   "negative": "sweeney",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "trane authorized dealers near me",
+   "match": "EXACT",
+   "negative": "trane authorized dealers near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "trane installers near me",
+   "match": "EXACT",
+   "negative": "trane installers near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "ac store near me",
+   "match": "PHRASE",
+   "negative": "store",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "acrepair",
+   "match": "PHRASE",
+   "negative": "acrepair",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "aerco near me",
+   "match": "EXACT",
+   "negative": "aerco near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "air duct cleaning",
+   "match": "PHRASE",
+   "negative": "air duct cleaning",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "aireco gaithersburg",
+   "match": "EXACT",
+   "negative": "aireco gaithersburg",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "aireco millersville md",
+   "match": "EXACT",
+   "negative": "aireco millersville md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "airtron",
+   "match": "BROAD",
+   "negative": "airtron",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "amazing heating and air conditioning inc reviews",
+   "match": "BROAD",
+   "negative": "inc",
+   "conversions": 0.0,
+   "all_conversions": 4.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "barstow and sons annapolis",
+   "match": "BROAD",
+   "negative": "barstow",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "beltway heating and air",
+   "match": "BROAD",
+   "negative": "beltway",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "blue dot heating and air conditioning",
+   "match": "BROAD",
+   "negative": "dot",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "boland gaithersburg",
+   "match": "BROAD",
+   "negative": "boland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "carrier alexandria",
+   "match": "BROAD",
+   "negative": "carrier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "carrier enterprise laurel",
+   "match": "BROAD",
+   "negative": "carrier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "carrier mid atlantic hanover maryland",
+   "match": "BROAD",
+   "negative": "carrier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "carrier mid atlantic near me",
+   "match": "BROAD",
+   "negative": "carrier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "ce carrier enterprise near me",
+   "match": "BROAD",
+   "negative": "carrier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "chilltrol annapolis",
+   "match": "BROAD",
+   "negative": "chilltrol",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "closest re michaels",
+   "match": "BROAD",
+   "negative": "michaels",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "commercial ac repair near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "commercial boiler repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.33,
+   "all_conversions": 0.33,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "commercial ductwork installation near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "commercial furnace repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "commercial hvac companies near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "commercial hvac near me",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "commercial radiator repair",
+   "match": "BROAD",
+   "negative": "commercial",
+   "conversions": 0.5,
+   "all_conversions": 0.5,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "cornett heating and air",
+   "match": "BROAD",
+   "negative": "cornett",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "croft metcalf",
+   "match": "BROAD",
+   "negative": "croft",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "daikin cerca de mi",
+   "match": "BROAD",
+   "negative": "daikin",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "daikin comfort technologies locations",
+   "match": "BROAD",
+   "negative": "daikin",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "daikin elkridge md",
+   "match": "BROAD",
+   "negative": "daikin",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "elmar services",
+   "match": "BROAD",
+   "negative": "elmar",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Maintenance"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "energy audit near me",
+   "match": "EXACT",
+   "negative": "energy audit near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "f h furr alexandria va",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "f h furr plumbing heating air conditioning & electrical cerca de mi",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 4.0,
+   "seen_in": [
+    "HVAC Repair",
+    "Search | NonBrand | HVAC Repair | "
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "ferguson hvac white marsh",
+   "match": "BROAD",
+   "negative": "white",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "fh furr delaware",
+   "match": "BROAD",
+   "negative": "furr",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "geothermal in maryland",
+   "match": "EXACT",
+   "negative": "geothermal in maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "geothermal maryland",
+   "match": "EXACT",
+   "negative": "geothermal maryland",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "geothermal technician near me",
+   "match": "EXACT",
+   "negative": "geothermal technician near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "haller hvac york pa",
+   "match": "BROAD",
+   "negative": "haller",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "heat pump with humidifier",
+   "match": "PHRASE",
+   "negative": "humidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "heat pumps for sale",
+   "match": "PHRASE",
+   "negative": "for sale",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "hobbs and associates jessup md",
+   "match": "BROAD",
+   "negative": "hobbs",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "home depot mini split installation cost",
+   "match": "BROAD",
+   "negative": "depot",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "home heater service",
+   "match": "EXACT",
+   "negative": "home heater service",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "home radiator repair",
+   "match": "EXACT",
+   "negative": "home radiator repair",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "hvac chestertown md",
+   "match": "BROAD",
+   "negative": "chestertown",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "hvac contractor cerca de mi",
+   "match": "EXACT",
+   "negative": "hvac contractor cerca de mi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "hvac ductwork installation near me",
+   "match": "EXACT",
+   "negative": "hvac ductwork installation near me",
+   "conversions": 2.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "hvac montgomery county",
+   "match": "BROAD",
+   "negative": "montgomery county",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "AC Install & Replacement"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "hvac precision services inc gaithersburg md",
+   "match": "BROAD",
+   "negative": "inc",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Installation",
+    "Search | NonBrand | HVAC Installat"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "hvac store near me",
+   "match": "PHRASE",
+   "negative": "store",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "hvac thermostat installation",
+   "match": "BROAD",
+   "negative": "thermostat",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "j c warner",
+   "match": "BROAD",
+   "negative": "warner",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "AC Install & Replacement"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "jc warner queenstown md",
+   "match": "BROAD",
+   "negative": "warner",
+   "conversions": 1.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "mccrea",
+   "match": "BROAD",
+   "negative": "mccrea",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "mechanical contractor near me",
+   "match": "EXACT",
+   "negative": "mechanical contractor near me",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating & Boiler Repair - Calls"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "michaels and sons hvac",
+   "match": "BROAD",
+   "negative": "sons",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "mitsubishi ac service near me",
+   "match": "BROAD",
+   "negative": "mitsubishi",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "mold remediation water damage hvac near me",
+   "match": "BROAD",
+   "negative": "mold",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "pool room dehumidifier",
+   "match": "PHRASE",
+   "negative": "dehumidifier",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Pool Room Dehumidifier"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "r e michel company",
+   "match": "EXACT",
+   "negative": "r e michel company",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Repair"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "r e michel company near me",
+   "match": "EXACT",
+   "negative": "r e michel company near me",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "AC Install & Replacement",
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "r e michel fairfax",
+   "match": "PHRASE",
+   "negative": "fairfax",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "re michaels glen burnie",
+   "match": "BROAD",
+   "negative": "michaels",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "re michel glen burnie md",
+   "match": "EXACT",
+   "negative": "re michel glen burnie md",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "re michel landover md",
+   "match": "PHRASE",
+   "negative": "landover",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "re michel near me",
+   "match": "EXACT",
+   "negative": "re michel near me",
+   "conversions": 0.0,
+   "all_conversions": 3.0,
+   "seen_in": [
+    "Heating Installation"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "re michels near me",
+   "match": "BROAD",
+   "negative": "michels",
+   "conversions": 0.0,
+   "all_conversions": 2.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "remichel near me",
+   "match": "PHRASE",
+   "negative": "remichel",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "ron air dayton md",
+   "match": "BROAD",
+   "negative": "dayton",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "shore hvac chestertown md",
+   "match": "BROAD",
+   "negative": "chestertown",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "smith hvac",
+   "match": "BROAD",
+   "negative": "smith",
+   "conversions": 1.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Mini Split"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "smo glen burnie md",
+   "match": "PHRASE",
+   "negative": "smo",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "sweeney's hvac",
+   "match": "BROAD",
+   "negative": "sweeney",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "Heating Installation (#2)"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "trane authorized dealers near me",
+   "match": "BROAD",
+   "negative": "trane",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "term": "trane installers near me",
+   "match": "BROAD",
+   "negative": "trane",
+   "conversions": 0.0,
+   "all_conversions": 1.0,
+   "seen_in": [
+    "HVAC Install"
+   ]
+  }
+ ],
+ "blocking_negatives_ranked": [
+  {
+   "match": "BROAD",
+   "negative": "commercial",
+   "n_terms": 35
+  },
+  {
+   "match": "BROAD",
+   "negative": "furr",
+   "n_terms": 15
+  },
+  {
+   "match": "PHRASE",
+   "negative": "store",
+   "n_terms": 10
+  },
+  {
+   "match": "BROAD",
+   "negative": "inc",
+   "n_terms": 10
+  },
+  {
+   "match": "BROAD",
+   "negative": "chestertown",
+   "n_terms": 10
+  },
+  {
+   "match": "BROAD",
+   "negative": "warner",
+   "n_terms": 10
+  },
+  {
+   "match": "BROAD",
+   "negative": "carrier",
+   "n_terms": 10
+  },
+  {
+   "match": "BROAD",
+   "negative": "michaels",
+   "n_terms": 7
+  },
+  {
+   "match": "BROAD",
+   "negative": "daikin",
+   "n_terms": 6
+  },
+  {
+   "match": "PHRASE",
+   "negative": "acrepair",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "aerco near me",
+   "n_terms": 5
+  },
+  {
+   "match": "PHRASE",
+   "negative": "air duct cleaning",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "aireco gaithersburg",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "aireco millersville md",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "beltway",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "dot",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "boland",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "cornett",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "elmar",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "energy audit near me",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "white",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "geothermal in maryland",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "geothermal maryland",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "geothermal technician near me",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "haller",
+   "n_terms": 5
+  },
+  {
+   "match": "PHRASE",
+   "negative": "humidifier",
+   "n_terms": 5
+  },
+  {
+   "match": "PHRASE",
+   "negative": "for sale",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "home heater service",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "home radiator repair",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "hvac contractor cerca de mi",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "montgomery county",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "thermostat",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "mccrea",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "mechanical contractor near me",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "mitsubishi",
+   "n_terms": 5
+  },
+  {
+   "match": "PHRASE",
+   "negative": "dehumidifier",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "r e michel company",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "r e michel company near me",
+   "n_terms": 5
+  },
+  {
+   "match": "PHRASE",
+   "negative": "fairfax",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "re michel glen burnie md",
+   "n_terms": 5
+  },
+  {
+   "match": "PHRASE",
+   "negative": "landover",
+   "n_terms": 5
+  },
+  {
+   "match": "EXACT",
+   "negative": "re michel near me",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "michels",
+   "n_terms": 5
+  },
+  {
+   "match": "PHRASE",
+   "negative": "remichel",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "dayton",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "smith",
+   "n_terms": 5
+  },
+  {
+   "match": "PHRASE",
+   "negative": "smo",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "sweeney",
+   "n_terms": 5
+  },
+  {
+   "match": "BROAD",
+   "negative": "trane",
+   "n_terms": 4
+  },
+  {
+   "match": "EXACT",
+   "negative": "airtron",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "barstow and sons annapolis",
+   "n_terms": 3
+  },
+  {
+   "match": "PHRASE",
+   "negative": "alexandria",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "carrier enterprise laurel",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "carrier mid atlantic hanover maryland",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "carrier mid atlantic near me",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "ce carrier enterprise near me",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "chilltrol annapolis",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "closest re michaels",
+   "n_terms": 3
+  },
+  {
+   "match": "BROAD",
+   "negative": "metcalf",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "daikin cerca de mi",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "daikin comfort technologies locations",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "daikin elkridge md",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "hobbs and associates jessup md",
+   "n_terms": 3
+  },
+  {
+   "match": "PHRASE",
+   "negative": "home depot",
+   "n_terms": 3
+  },
+  {
+   "match": "PHRASE",
+   "negative": "mold remediation",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "re michaels glen burnie",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "trane authorized dealers near me",
+   "n_terms": 3
+  },
+  {
+   "match": "EXACT",
+   "negative": "trane installers near me",
+   "n_terms": 3
+  },
+  {
+   "match": "BROAD",
+   "negative": "airtron",
+   "n_terms": 2
+  },
+  {
+   "match": "BROAD",
+   "negative": "barstow",
+   "n_terms": 2
+  },
+  {
+   "match": "BROAD",
+   "negative": "chilltrol",
+   "n_terms": 2
+  },
+  {
+   "match": "BROAD",
+   "negative": "croft",
+   "n_terms": 2
+  },
+  {
+   "match": "BROAD",
+   "negative": "hobbs",
+   "n_terms": 2
+  },
+  {
+   "match": "BROAD",
+   "negative": "depot",
+   "n_terms": 2
+  },
+  {
+   "match": "BROAD",
+   "negative": "sons",
+   "n_terms": 2
+  },
+  {
+   "match": "BROAD",
+   "negative": "mold",
+   "n_terms": 2
+  },
+  {
+   "match": "PHRASE",
+   "negative": "hvac direct",
+   "n_terms": 1
+  },
+  {
+   "match": "EXACT",
+   "negative": "hvac repair near me",
+   "n_terms": 1
+  },
+  {
+   "match": "PHRASE",
+   "negative": "max air glen burnie",
+   "n_terms": 1
+  },
+  {
+   "match": "EXACT",
+   "negative": "hvac ductwork installation near me",
+   "n_terms": 1
+  }
+ ]
+}

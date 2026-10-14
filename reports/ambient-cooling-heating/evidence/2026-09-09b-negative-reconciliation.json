@@ -1,0 +1,51 @@
+{
+ "collisions_converting_only": 80,
+ "collisions_probe_only": 18,
+ "collisions_union_88": 88,
+ "campaign_triage": {
+  "ROUTING": 5,
+  "REMOVE": 23,
+  "KEEP": 60
+ },
+ "rm1_ops": 89,
+ "rm1_texts": 22,
+ "rm2_ops": 18,
+ "rm2_texts": 18,
+ "overlap_texts": [
+  "carrier",
+  "daikin",
+  "goodman",
+  "lennox",
+  "mitsubishi",
+  "rheem",
+  "trane"
+ ],
+ "distinct_texts_33": 33,
+ "total_ops_107": 107,
+ "placements_per_text": {
+  "carrier": 2,
+  "daikin": 2,
+  "daikin elkridge md": 5,
+  "trane": 2,
+  "carrier enterprise laurel": 5,
+  "carrier mid atlantic hanover maryland": 5,
+  "carrier mid atlantic near me": 5,
+  "ce carrier enterprise near me": 5,
+  "daikin cerca de mi": 5,
+  "daikin comfort technologies locations": 5,
+  "geothermal maryland": 5,
+  "humidifier": 5,
+  "mitsubishi": 2,
+  "dehumidifier": 5,
+  "trane authorized dealers near me": 5,
+  "trane installers near me": 5,
+  "lennox": 2,
+  "goodman": 2,
+  "rheem": 2,
+  "licensed": 5,
+  "free": 5,
+  "savage": 5
+ },
+ "row_evidence_file": "reports\\ambient-cooling-heating\\evidence\\2026-09-09b-removal-row-evidence.csv",
+ "row_count": 107
+}

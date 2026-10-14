@@ -1,0 +1,106 @@
+{
+  "status": "DRAFT - not approved, not created",
+  "customer_id": "9487471092",
+  "rules": [
+    "Second RSA per ad group (agency default is two). The existing RSA stays live as the control.",
+    "Only claims verified on the client's own pages: Master Grass, the named services, free quote/estimate, Ames and Ankeny (targeted), landscaping combined with hardscaping, one team for the outdoors.",
+    "Altoona omitted: named on the client site but NOT in the campaigns' location targets.",
+    "Held until the client confirms: years in business, review rating/count, licensed/insured, warranty, 'Callback <10 min', 'Install start <=7 days', financing.",
+    "Pins: none except H1 pinned to the keyword-matching headlines, to lift expected CTR (below average on every keyword with a Quality Score)."
+  ],
+  "ads": [
+    {
+      "campaign": "Landscaping Search - BOFU",
+      "ad_group": "Landscaping Contractor",
+      "ad_group_id": "195877148086",
+      "final_url": "https://offer.mastergrasslawncare.com/landscaping-contractor/",
+      "path1": "Landscaping",
+      "path2": "Free-Quote",
+      "headlines": [
+        {"text": "Landscaping Contractor Ames", "pin": "HEADLINE_1"},
+        {"text": "Ankeny Landscaping Company", "pin": "HEADLINE_1"},
+        {"text": "Local Landscaping Contractor", "pin": "HEADLINE_1"},
+        {"text": "Master Grass Landscaping"},
+        {"text": "Free Landscaping Quote"},
+        {"text": "Landscape Installation Pros"},
+        {"text": "New Landscape Beds & Borders"},
+        {"text": "Landscaping + Hardscaping"},
+        {"text": "One Team For Your Outdoors"},
+        {"text": "Get A Clear Project Quote"},
+        {"text": "Plan Your Yard Project Today"},
+        {"text": "Serving Ames & Ankeny Homes"},
+        {"text": "Yard Drainage & Grading Too"},
+        {"text": "Talk To A Local Landscaper"},
+        {"text": "Request Your Free Estimate"}
+      ],
+      "descriptions": [
+        {"text": "Landscape installation, new beds, borders and yard upgrades in Ames and Ankeny."},
+        {"text": "Tell us what you want your yard to look like and get a clear, free quote."},
+        {"text": "Pair new landscaping with a patio, wall or drainage fix. One local team, one plan."},
+        {"text": "Call or request your free landscaping estimate online from Master Grass today."}
+      ]
+    },
+    {
+      "campaign": "Landscaping Search - BOFU",
+      "ad_group": "French Drain Installation",
+      "ad_group_id": "195877148126",
+      "final_url": "https://offer.mastergrasslawncare.com/french-drain/",
+      "path1": "French-Drains",
+      "path2": "Free-Quote",
+      "headlines": [
+        {"text": "French Drain Installation", "pin": "HEADLINE_1"},
+        {"text": "French Drain Contractor Ames", "pin": "HEADLINE_1"},
+        {"text": "Ankeny French Drain Installer", "pin": "HEADLINE_1"},
+        {"text": "Standing Water In Your Yard?"},
+        {"text": "Fix Soggy Yard Areas"},
+        {"text": "Free French Drain Quote"},
+        {"text": "Yard Drainage Solutions"},
+        {"text": "Master Grass Drainage"},
+        {"text": "Stop Pooling Water Near Home"},
+        {"text": "Drainage + Yard Grading"},
+        {"text": "Local Drainage Contractor"},
+        {"text": "Get A Clear Drainage Plan"},
+        {"text": "Request Your Free Estimate"},
+        {"text": "Serving Ames & Ankeny Homes"},
+        {"text": "Wet Yard? Talk To Us Today"}
+      ],
+      "descriptions": [
+        {"text": "We find where the water collects and where it needs to go, then quote the fix."},
+        {"text": "French drains and yard drainage for Ames and Ankeny homeowners. Free quote."},
+        {"text": "Soggy lawn or pooling water? Get a clear drainage plan from a local team."},
+        {"text": "Call or request your free French drain estimate online from Master Grass today."}
+      ]
+    },
+    {
+      "campaign": "Hardscaping Search - BOFU",
+      "ad_group": "Retaining Walls",
+      "ad_group_id": "194944952817",
+      "final_url": "https://offer.mastergrasslawncare.com/retaining-walls/",
+      "path1": "Retaining-Walls",
+      "path2": "Free-Quote",
+      "headlines": [
+        {"text": "Retaining Wall Contractor", "pin": "HEADLINE_1"},
+        {"text": "Retaining Walls In Ames", "pin": "HEADLINE_1"},
+        {"text": "Ankeny Retaining Wall Builder", "pin": "HEADLINE_1"},
+        {"text": "Free Retaining Wall Quote"},
+        {"text": "Walls For Slopes & Drainage"},
+        {"text": "Make Your Sloped Yard Usable"},
+        {"text": "Master Grass Hardscapes"},
+        {"text": "Retaining Wall Installation"},
+        {"text": "Walls, Patios & Pavers"},
+        {"text": "Local Hardscape Contractor"},
+        {"text": "Get A Clear Project Quote"},
+        {"text": "Request Your Free Estimate"},
+        {"text": "Serving Ames & Ankeny Homes"},
+        {"text": "Plan Your Wall Project Today"},
+        {"text": "One Team For Your Outdoors"}
+      ],
+      "descriptions": [
+        {"text": "Retaining walls built around your yard layout, slope and drainage. Free quote."},
+        {"text": "Turn a sloped or washing-out yard into usable space. Ames and Ankeny homeowners."},
+        {"text": "Combine your wall with a patio, pavers or new landscaping. One local team."},
+        {"text": "Call or request your free retaining wall estimate online from Master Grass today."}
+      ]
+    }
+  ]
+}

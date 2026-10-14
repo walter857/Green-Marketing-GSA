@@ -1,0 +1,186 @@
+{
+ "stage": "EXECUTION",
+ "customer_id": "2401959466",
+ "approved_fingerprints": {
+  "A-1": "82ACD4953536C020",
+  "A-2": "6F2B6ABBCEB992E4",
+  "D-1": "E50EDFE7644A9B5F"
+ },
+ "started_local": "2026-08-27T19:27:58.289446-04:00",
+ "executions": {
+  "A-1": {
+   "fingerprint": "82ACD4953536C020",
+   "campaign_id": "24132507747",
+   "operations_sent": 7,
+   "results_returned": 7,
+   "executed_local": "2026-08-27T19:28:01.250700-04:00",
+   "resource_names": [
+    "customers/2401959466/campaignCriteria/24132507747~299839338603",
+    "customers/2401959466/campaignCriteria/24132507747~2437152438",
+    "customers/2401959466/campaignCriteria/24132507747~302549263138",
+    "customers/2401959466/campaignCriteria/24132507747~2489735546094",
+    "customers/2401959466/campaignCriteria/24132507747~149260703",
+    "customers/2401959466/campaignCriteria/24132507747~801509855",
+    "customers/2401959466/campaignCriteria/24132507747~304510676052"
+   ],
+   "partial_failure_error": "",
+   "readback": [
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507747~149260703",
+     "criterion_id": "149260703",
+     "text": "bluedot",
+     "match": "PHRASE",
+     "negative": true,
+     "status": "ENABLED"
+    },
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507747~801509855",
+     "criterion_id": "801509855",
+     "text": "blauch",
+     "match": "PHRASE",
+     "negative": true,
+     "status": "ENABLED"
+    },
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507747~2437152438",
+     "criterion_id": "2437152438",
+     "text": "michael and sons",
+     "match": "PHRASE",
+     "negative": true,
+     "status": "ENABLED"
+    },
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507747~299839338603",
+     "criterion_id": "299839338603",
+     "text": "croppmetcalfe",
+     "match": "PHRASE",
+     "negative": true,
+     "status": "ENABLED"
+    },
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507747~302549263138",
+     "criterion_id": "302549263138",
+     "text": "michael & sons",
+     "match": "PHRASE",
+     "negative": true,
+     "status": "ENABLED"
+    },
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507747~304510676052",
+     "criterion_id": "304510676052",
+     "text": "hugee",
+     "match": "PHRASE",
+     "negative": true,
+     "status": "ENABLED"
+    },
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507747~2489735546094",
+     "criterion_id": "2489735546094",
+     "text": "armbridge",
+     "match": "PHRASE",
+     "negative": true,
+     "status": "ENABLED"
+    }
+   ],
+   "readback_pass": true
+  },
+  "A-2": {
+   "fingerprint": "6F2B6ABBCEB992E4",
+   "campaign_id": "24132507741",
+   "classification": "proactive traffic protection, observed cost $0.00",
+   "operations_sent": 1,
+   "results_returned": 1,
+   "executed_local": "2026-08-27T19:28:02.572907-04:00",
+   "resource_names": [
+    "customers/2401959466/campaignCriteria/24132507741~10008471"
+   ],
+   "readback": [
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507741~10000390",
+     "criterion_id": "10000390",
+     "text": "auto",
+     "match": "BROAD",
+     "negative": true,
+     "status": "ENABLED"
+    },
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507741~10008241",
+     "criterion_id": "10008241",
+     "text": "car",
+     "match": "BROAD",
+     "negative": true,
+     "status": "ENABLED"
+    },
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507741~10008471",
+     "criterion_id": "10008471",
+     "text": "automotive",
+     "match": "BROAD",
+     "negative": true,
+     "status": "ENABLED"
+    },
+    {
+     "resource_name": "customers/2401959466/campaignCriteria/24132507741~10019071",
+     "criterion_id": "10019071",
+     "text": "boat",
+     "match": "BROAD",
+     "negative": true,
+     "status": "ENABLED"
+    }
+   ],
+   "readback_pass": true
+  },
+  "D-1": {
+   "fingerprint": "E50EDFE7644A9B5F",
+   "members_before": 59,
+   "target": "customers/2401959466/sharedCriteria/11252984411~11143481",
+   "operations_sent": 1,
+   "results_returned": 1,
+   "executed_local": "2026-08-27T19:28:04.702808-04:00",
+   "resource_names": [
+    "customers/2401959466/sharedCriteria/11252984411~11143481"
+   ],
+   "members_after": 58,
+   "criterion_11143481_gone": true,
+   "removed_criterion_ids": [
+    "11143481"
+   ],
+   "added_criterion_ids": [],
+   "changed_members": [],
+   "hanover_geo_still_targeted_on": [
+    "AC Repair",
+    "Gas Boiler Repair",
+    "HVAC Installation",
+    "HVAC Repair",
+    "HVAC Replacement"
+   ],
+   "campaign_shared_sets_on_five": 0,
+   "held_members_still_present": [
+    "ducane",
+    "ecobee",
+    "frigidaire",
+    "rudd",
+    "ruud",
+    "thermostat",
+    "thermostats"
+   ],
+   "readback_pass": true
+  }
+ },
+ "created_resource_names": [
+  "customers/2401959466/campaignCriteria/24132507747~299839338603",
+  "customers/2401959466/campaignCriteria/24132507747~2437152438",
+  "customers/2401959466/campaignCriteria/24132507747~302549263138",
+  "customers/2401959466/campaignCriteria/24132507747~2489735546094",
+  "customers/2401959466/campaignCriteria/24132507747~149260703",
+  "customers/2401959466/campaignCriteria/24132507747~801509855",
+  "customers/2401959466/campaignCriteria/24132507747~304510676052",
+  "customers/2401959466/campaignCriteria/24132507741~10008471"
+ ],
+ "removed_resource_names": [
+  "customers/2401959466/sharedCriteria/11252984411~11143481"
+ ],
+ "status": "COMPLETE",
+ "total_operations_executed": 9,
+ "ended_local": "2026-08-27T19:28:06.322859-04:00"
+}

@@ -1,0 +1,220 @@
+{
+ "plan_name": "AMB-0915-LP-1",
+ "document": "AMBIENT COOLING - LANDING PAGE REMEDIATION (specification only)",
+ "approval_class": "website-change-specification",
+ "status": "NOT AUTHORIZED FOR PRODUCTION DEPLOYMENT BY THIS SESSION",
+ "why_not_deployable": "This session has no website source, no WordPress or SiteGround credential, no SFTP/SSH access and no staging environment. No environment variable, MCP server or client code in this repository can reach the site. Publishing is therefore impossible here and must not be improvised. This document is the exact specification the web developer implements, on staging, with a backup and a tested diff, before a separate production deployment approval.",
+ "account": {
+  "customer_id": "2401959466",
+  "exact_account_name": "Ambient Cooling - Live",
+  "service": "Commercial HVAC Installation + five existing services"
+ },
+ "pages": [
+  "/ac-repair/",
+  "/hvac-repair/",
+  "/hvac-installation/",
+  "/hvac-replacement/",
+  "/gas-boiler-repair/",
+  "/commercial-hvac-installation/"
+ ],
+ "defects": [
+  {
+   "id": "LP-1",
+   "severity": "P0",
+   "pages": "all 6",
+   "issue": "Proxy cache serves one visitor's attribution values to every later visitor",
+   "evidence": "response headers x-cache-enabled: True, x-proxy-cache: HIT. Raw server HTML for /hvac-installation/ requested with gclid=ZZZFRESH999 and utm_campaign=zzz-camp returned input_14='QA0915COMMTEST' and input_11='qa-readonly' - values from a different, earlier visit. 0 of 24 fresh-context loads captured the visitor's own GCLID.",
+   "root_cause": "Gravity Forms hidden fields input_9..input_15 are populated SERVER-SIDE from the query string, and the rendered page is then stored by the full-page proxy cache. Server-side population and full-page caching are mutually incompatible.",
+   "required_correction": [
+    "1. Purge SiteGround Dynamic Cache for all six URLs immediately.",
+    "2. Stop emitting visitor-specific values into cacheable server HTML. The hidden inputs must ship with value=\"\" in the cached document.",
+    "3. Populate them client-side on DOMContentLoaded from location.search; when a parameter is absent from the current URL, fall back to a first-party cookie scoped to the registrable domain (ambientcoolingandheating.com) written on first paid landing; never from a cached value.",
+    "4. First-party persistence must not overwrite a newer valid value with an older stored one: last-touch wins when the current URL carries a click id.",
+    "5. A direct visit with no parameters and no cookie must leave the fields EMPTY, never inherit another visitor's data.",
+    "6. Inspect and document the real Gravity Forms field map before editing. Do not assume IDs. Field 16 is the honeypot and its label rotates (LinkedIn / X-Twitter / Comments) - never populate it.",
+    "7. TEMPORARY FALLBACK if (3) cannot ship immediately: exclude the six paid URLs from full-page dynamic caching. This is a stopgap, not the fix - a cache purge alone lets the very next visitor poison it again."
+   ],
+   "fields_to_capture": [
+    "gclid",
+    "gbraid",
+    "wbraid",
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_term",
+    "utm_content",
+    "landing_url",
+    "first_landing_url",
+    "campaign",
+    "adgroup",
+    "keyword",
+    "device",
+    "lead_id_or_transaction_id",
+    "consent_state"
+   ],
+   "owner": "web developer",
+   "launch_blocker": true,
+   "retest": "ambient_0915_gclid_probe.py - require 24/24 own-GCLID capture"
+  },
+  {
+   "id": "LP-2",
+   "severity": "P0",
+   "pages": "/commercial-hvac-installation/",
+   "issue": "Internal developer instruction published as customer-facing body copy",
+   "evidence": "Live under the gallery heading: 'These images illustrate commercial HVAC equipment and installation settings. Use them for the page layout without presenting them as completed Ambient projects.'",
+   "required_correction": [
+    "Delete the second sentence in full. It is an instruction to the builder, not copy."
+   ],
+   "owner": "web developer",
+   "launch_blocker": true,
+   "retest": "render the page and assert the string is absent"
+  },
+  {
+   "id": "LP-3",
+   "severity": "P0",
+   "pages": "/commercial-hvac-installation/",
+   "issue": "Gallery section contains zero images",
+   "evidence": "0 <img> elements within the gallery section scope",
+   "required_correction": [
+    "EITHER populate it with the four supplied commercial HVAC images IF their advertising-use rights are verified, captioned only as illustrative commercial HVAC equipment or installation settings,",
+    "OR remove the entire gallery section.",
+    "Never identify these images as completed Ambient projects.",
+    "If rights cannot be verified, remove the section - do not ship an empty one."
+   ],
+   "owner": "web developer + client",
+   "launch_blocker": true,
+   "retest": "render; gallery either has >=1 image with a compliant caption or is absent"
+  },
+  {
+   "id": "LP-4",
+   "severity": "P0",
+   "pages": "/commercial-hvac-installation/",
+   "issue": "Countdown timer advertising an offer that does not exist",
+   "evidence": "Live text: 'Offer Ends in 15 DAY 10 HRS 15 MIN 06 SEC'",
+   "why_it_matters": "No discount, price or promotion appears anywhere on the page. client.yaml bars discount_or_dollar_offer and records the only verified offer as a free quote with no dollar value. An evergreen countdown on a non-existent offer is an unverified promotional claim and a Google Ads misrepresentation risk on a page our ads point to.",
+   "required_correction": [
+    "Remove the countdown entirely.",
+    "Do NOT substitute another urgency or scarcity device.",
+    "A real dated offer may replace it only with written client approval of the exact terms."
+   ],
+   "owner": "web developer + client",
+   "launch_blocker": true,
+   "retest": "render; assert no countdown and no 'Offer Ends' string"
+  },
+  {
+   "id": "LP-5",
+   "severity": "P1",
+   "pages": "all 6",
+   "issue": "form#gform_1 rendered 3x per page; 34 duplicate DOM ids",
+   "evidence": "document.querySelectorAll('form#gform_1').length === 3 on every page",
+   "required_correction": [
+    "Preferred: ONE canonical Gravity Form instance per page; every other CTA scrolls to it via the existing #quote-form anchor.",
+    "If more than one instance must remain, every form, wrapper, field, label, validation and confirmation id must be unique per instance.",
+    "One submission must produce exactly one lead record, one GTM form-success event and one Google Ads conversion.",
+    "GTM listeners must bind once, not once per duplicate form.",
+    "Never populate the honeypot (field 16)."
+   ],
+   "owner": "web developer + GTM",
+   "launch_blocker": true,
+   "retest": "single controlled QA submission; assert 1 CRM record, 1 GTM event, 1 conversion; reload and back-button must not add another"
+  },
+  {
+   "id": "LP-6",
+   "severity": "P1",
+   "pages": "/commercial-hvac-installation/",
+   "issue": "Testimonials rendered 3x; doubled opening quotation mark",
+   "evidence": "9 testimonial blocks for 3 unique quotes; '““Quality work at reasonable rates.”' repeated 3x",
+   "required_correction": [
+    "Render each testimonial once.",
+    "Correct the doubled opening quote.",
+    "Keep attribution accurate and verifiable."
+   ],
+   "owner": "web developer",
+   "launch_blocker": false,
+   "retest": "render and count"
+  },
+  {
+   "id": "LP-7",
+   "severity": "P2",
+   "pages": "all 6",
+   "issue": "tel:+14109141456 present in the DOM (wrong number)",
+   "evidence": "hidden anchor with text 'Call Now' -> tel:+14109141456 on every page",
+   "required_correction": [
+    "Remove it, including hidden elements.",
+    "410-914-1456 is the MIXED-SOURCE number and must never be static on a paid page."
+   ],
+   "owner": "web developer",
+   "launch_blocker": false,
+   "retest": "assert the string 4109141456 appears nowhere in the HTML"
+  },
+  {
+   "id": "LP-8",
+   "severity": "P2",
+   "pages": "all 6",
+   "issue": "tel: hrefs are not E.164 and one is malformed",
+   "evidence": "tel:4107056354 (no +1) and tel:(410) 705-6354 (unencoded parens/space)",
+   "required_correction": [
+    "Every clickable telephone link must be tel:+14107056354.",
+    "Displayed text stays (410) 705-6354.",
+    "410-761-0932 must never appear publicly.",
+    "DNI must not replace the paid number with an unapproved one."
+   ],
+   "owner": "web developer",
+   "launch_blocker": false,
+   "retest": "assert every a[href^=tel:] equals tel:+14107056354"
+  },
+  {
+   "id": "LP-9",
+   "severity": "P2",
+   "pages": "/commercial-hvac-installation/",
+   "issue": "Meta description duplicates the title",
+   "evidence": "observed 'Commercial HVAC Installation in Central Maryland | Ambient Cooling & Heating'",
+   "required_correction": [
+    "Set: 'Request commercial HVAC installation or replacement for your Central Maryland property from Ambient Cooling & Heating.'"
+   ],
+   "owner": "web developer",
+   "launch_blocker": false,
+   "retest": "render and compare"
+  },
+  {
+   "id": "LP-10",
+   "severity": "P3",
+   "pages": "all 6",
+   "issue": "No canonical tag",
+   "evidence": "link[rel=canonical] absent on all six",
+   "required_correction": [
+    "Add a self-referencing canonical to each page.",
+    "PRESERVE the intended noindex,nofollow on these paid pages.",
+    "PRESERVE the Privacy and Terms links.",
+    "PRESERVE GTM-PQTPQ436, AW-11155434808, G-9X9ZHNCRWF and the WhatConverts script exactly as they are."
+   ],
+   "owner": "web developer",
+   "launch_blocker": false,
+   "retest": "render and assert"
+  }
+ ],
+ "must_not_change": [
+  "GTM container GTM-PQTPQ436",
+  "Google Ads tag AW-11155434808",
+  "GA4 G-9X9ZHNCRWF",
+  "the WhatConverts script and all number routing",
+  "displayed paid number (410) 705-6354",
+  "the noindex,nofollow behaviour of the paid pages",
+  "the Privacy Policy and Terms links",
+  "commercial-only content and the verified claims on the commercial page"
+ ],
+ "deployment_rule": "Do not publish without: website source, a staging implementation, a tested diff, a confirmed backup, a written rollback, and a NEW deployment approval fingerprint issued after staging evidence is returned.",
+ "developer_must_return": [
+  "staging URL with all ten defects corrected",
+  "the exact diff",
+  "backup confirmation and rollback procedure",
+  "screenshot evidence desktop + mobile for all six pages",
+  "24/24 GCLID probe result from staging",
+  "proof one submission = 1 CRM record + 1 GTM event + 1 conversion",
+  "confirmation the honeypot is untouched",
+  "confirmation GTM/AW/GA4/WhatConverts are unchanged",
+  "cache configuration evidence for the six URLs",
+  "confirmation no synthetic QA marker remains in cached HTML"
+ ],
+ "fingerprint": "5354E1E2F576"
+}

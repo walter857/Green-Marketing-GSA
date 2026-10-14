@@ -1,0 +1,143 @@
+{
+ "plan_name": "AMB-0915-COMM-RSA-1",
+ "approval_class": "create-paused",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "exact_service": "Commercial HVAC Installation",
+ "supersedes": "AMB-0910-COMM-RSA-2 / 41C183D15C93 - DRIFTED. Drafted while the destination returned 404, the ad group was PAUSED and the ad group held 0 negatives. All three facts have changed. Copy is also revised: 'Commercial RTU Installation' and 'Systems Built for Businesses' in RSA A and 'Keep Business Comfort in Mind' in RSA B were replaced with wording that appears verbatim on the live page.",
+ "summary": "Create two materially distinct RSAs PAUSED in ad group 199748801029. 2 operations. Nothing serves until a separate enablement approval.",
+ "before_state": {
+  "ad_group_id": "199748801029",
+  "ad_group_name": "SKAG | Commercial HVAC Installation",
+  "ad_group_status": "ENABLED",
+  "ad_group_cpc_bid_micros": 10000,
+  "ads_in_ad_group": 0,
+  "positive_keywords": [
+   "EXACT:commercial hvac installation",
+   "PHRASE:commercial hvac installation"
+  ],
+  "ad_group_negatives_count": 17,
+  "ad_group_asset_links": 0,
+  "campaign_id": "24132507747",
+  "campaign_status": "ENABLED",
+  "campaign_cpc_ceiling_usd": 30.0,
+  "campaign_daily_budget_usd": 176.15,
+  "residential_ad_group_id": "202339087634",
+  "residential_ads": [
+   "820900825434:PAUSED:DISAPPROVED",
+   "820900825437:PAUSED:DISAPPROVED",
+   "821319509197:ENABLED:APPROVED",
+   "821319509200:ENABLED:APPROVED"
+  ],
+  "landing_page_http_status": 200
+ },
+ "operations": [
+  {
+   "operation": "CREATE_RSA_PAUSED",
+   "resource": "ad_group_ad",
+   "ad_group_id": "199748801029",
+   "ad_group_name": "SKAG | Commercial HVAC Installation",
+   "campaign_id": "24132507747",
+   "ad_label": "RSA A - keyword-first, three openers pinned to HEADLINE_1",
+   "status": "PAUSED",
+   "final_url": "https://offer.ambientcoolingandheating.com/commercial-hvac-installation/",
+   "path1": "commercial-hvac",
+   "path2": "installation",
+   "tracking_url_template": null,
+   "final_url_suffix": null,
+   "url_custom_parameters": [],
+   "headlines_pinned_headline_1": [
+    "Commercial HVAC Installation",
+    "Commercial HVAC Installers",
+    "HVAC Installation for Business"
+   ],
+   "headlines_unpinned": [
+    "Free Commercial HVAC Quote",
+    "Rooftop Unit Installation",
+    "Commercial Rooftop Units",
+    "Commercial AC Installation",
+    "Commercial Heat Pump Install",
+    "Sized for Your Building",
+    "Central Maryland HVAC Team",
+    "Plan Around Your Operations",
+    "Transparent Commercial Pricing",
+    "Flexible Project Scheduling",
+    "Ambient Cooling & Heating",
+    "Request a Commercial Quote"
+   ],
+   "descriptions": [
+    "Request a free commercial HVAC installation quote for your Central Maryland property.",
+    "Install rooftop units, packaged systems, heat pumps, or central air for your business.",
+    "Plan equipment, ductwork, ventilation, and controls around your building and operations.",
+    "Get clear options, transparent pricing, and scheduling designed around your business."
+   ]
+  },
+  {
+   "operation": "CREATE_RSA_PAUSED",
+   "resource": "ad_group_ad",
+   "ad_group_id": "199748801029",
+   "ad_group_name": "SKAG | Commercial HVAC Installation",
+   "campaign_id": "24132507747",
+   "ad_label": "RSA B - unpinned commercial control",
+   "status": "PAUSED",
+   "final_url": "https://offer.ambientcoolingandheating.com/commercial-hvac-installation/",
+   "path1": "commercial-hvac",
+   "path2": "installation",
+   "tracking_url_template": null,
+   "final_url_suffix": null,
+   "url_custom_parameters": [],
+   "headlines_pinned_headline_1": [],
+   "headlines_unpinned": [
+    "HVAC Systems for Businesses",
+    "Central MD Commercial HVAC",
+    "Commercial System Installation",
+    "Replace Aging HVAC Equipment",
+    "Rooftop & Packaged Systems",
+    "Business Heating & Cooling",
+    "Commercial HVAC Planning",
+    "Free Installation Quote",
+    "HVAC Options for Your Building",
+    "Schedule a Site Evaluation",
+    "Ventilation, Ducts & Controls",
+    "Professional HVAC Installation",
+    "Central Air for Your Business",
+    "Heat Pumps for Businesses",
+    "Request Your HVAC Quote"
+   ],
+   "descriptions": [
+    "Replace or install commercial HVAC equipment with a plan built around your property.",
+    "Request a free consultation for rooftop, packaged, central air, or heat pump systems.",
+    "Ambient serves Central Maryland businesses with clear pricing and flexible scheduling.",
+    "Discuss building needs, equipment options, ductwork, controls, and project timing."
+   ]
+  }
+ ],
+ "operation_count": 2,
+ "reason": "The commercial ad group has 2 ENABLED, APPROVED, ELIGIBLE keywords, 17 correct ad-group negatives and a live HTTP 200 destination, but zero ads, so it cannot serve. Two RSAs are the minimum to launch and to let Google rotate creative.",
+ "risk": "MEDIUM. The ad group was switched to ENABLED on 2026-09-15 08:42:16 by access@greenmarketingfl.com via GOOGLE_ADS_WEB_CLIENT. Because the parent is ENABLED, any ad created ENABLED would serve immediately. Both ads are therefore created PAUSED and readback asserts PAUSED.",
+ "rollback": "Set both created ad_group_ad resources to REMOVED by returned resource name.",
+ "dependencies": [
+  "landing page HTTP 200 - VERIFIED 2026-09-15",
+  "17 ad-group negatives present - VERIFIED",
+  "both keywords ENABLED + APPROVED + ELIGIBLE - VERIFIED"
+ ],
+ "validation": {
+  "headline_limit": 30,
+  "description_limit": 90,
+  "headlines_per_ad": [
+   15,
+   15
+  ],
+  "descriptions_per_ad": [
+   4,
+   4
+  ],
+  "duplicate_copy_between_ads": false,
+  "barred_claims_found": 0,
+  "claims_unsupported_by_live_page": 0
+ },
+ "monitoring": "Poll ad policy approval_status daily; do not enable before APPROVED.",
+ "stop_loss": "N/A - paused ads cannot spend.",
+ "unrelated_resource_assertion": "No change to: campaign 24132507747 status/budget $176.15/ceiling $30.00/schedule/locations/networks/conversion goals; residential ad group 202339087634 and its two ENABLED APPROVED ads 821319509197 and 821319509200; the other four campaigns; the 17 ad-group negatives; the 2 positive keywords; any campaign or account negative; any existing asset.",
+ "fingerprint": "6C32B210CF5B"
+}

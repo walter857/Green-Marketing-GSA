@@ -1,0 +1,30 @@
+{
+  "slug": "softwind-power-washing",
+  "customer_id": "1521725229",
+  "roots": [
+    {
+      "text": "cleaning",
+      "match_type": "PHRASE",
+      "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+      "source": "mined_gram",
+      "corpus_hits": 2
+    },
+    {
+      "text": "roof washing",
+      "match_type": "PHRASE",
+      "category": "EXCLUDED_SERVICE",
+      "source": "matched_span",
+      "corpus_hits": 1
+    }
+  ],
+  "exacts": [
+    {
+      "text": "jet wash near me",
+      "match_type": "EXACT",
+      "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+      "source": "residual_exact",
+      "corpus_hits": 1
+    }
+  ],
+  "rejected": []
+}

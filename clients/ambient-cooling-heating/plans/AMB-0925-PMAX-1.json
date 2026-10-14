@@ -1,0 +1,229 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "plan_name": "AMB-0925-PMAX-1",
+ "built_local": "2026-09-25",
+ "campaign_name": "PMax | Heating Replacement Pilot | Central MD | 2026-09 | HELD",
+ "status_on_create": "PAUSED",
+ "budget": {
+  "amount_staged": 20.0,
+  "shared": false,
+  "why_20": "unallocated headroom ($325 cap - $305 enabled); an accidental enable cannot breach the cap",
+  "launch_plan": "AMB-0925-PMAX-LAUNCH: pause 24279798229 Heating Maintenance ($45 donor), raise this budget to $45, enable"
+ },
+ "bidding": "MAXIMIZE_CONVERSIONS, no target CPA",
+ "goals": {
+  "biddable": [
+   "CONTACT/WEBSITE (WC Lead)",
+   "CONTACT/CALL_FROM_ADS (WC Calls)"
+  ],
+  "not_biddable_for_this_campaign": [
+   "PHONE_CALL_LEAD/CALL_FROM_ADS (Calls from ads) - the same call-asset call is also uploaded as WC Lead"
+  ]
+ },
+ "geo": {
+  "source_campaign": "24257819466",
+  "criteria": 75,
+  "type": "PRESENCE"
+ },
+ "schedule": "Mon-Fri 08:00-16:00",
+ "negatives": {
+  "own_brand": [
+   "ambient cooling",
+   "ambient heating",
+   "ambient hvac"
+  ],
+  "employment": [
+   "job",
+   "jobs",
+   "career",
+   "careers",
+   "salary",
+   "hiring",
+   "apprentice"
+  ],
+  "training": [
+   "hvac school",
+   "hvac training",
+   "hvac course",
+   "hvac certification"
+  ],
+  "diy_parts": [
+   "diy",
+   "how to",
+   "youtube",
+   "manual",
+   "parts",
+   "filters"
+  ]
+ },
+ "asset_automation_opted_out": [
+  "TEXT_ASSET_AUTOMATION",
+  "FINAL_URL_EXPANSION_TEXT_ASSET_AUTOMATION",
+  "GENERATE_IMAGE_EXTRACTION",
+  "GENERATE_IMAGE_ENHANCEMENT",
+  "GENERATE_DESIGN_VERSIONS_FOR_IMAGES",
+  "GENERATE_ENHANCED_YOUTUBE_VIDEOS"
+ ],
+ "brand_guidelines_enabled": true,
+ "campaign_assets": {
+  "business_name": "80516971145",
+  "logo": "218982449635",
+  "landscape_logo": "218984456832",
+  "call": "407995613637",
+  "callouts": {
+   "422577771364": "Trained Technicians",
+   "407418646876": "Professional Technicians",
+   "422577760603": "Central Maryland Service",
+   "349923938310": "Local Maryland Service",
+   "407418627430": "Clear Recommendations",
+   "407418646882": "Clear Service Options",
+   "422477374526": "Homes and Businesses",
+   "89063098370": "Get Free Online Quote"
+  },
+  "sitelinks": {
+   "410638278156": "HVAC Replacement",
+   "410638276380": "HVAC Installation",
+   "424481139482": "Heat Pump Replacement",
+   "424666395915": "Heat Pump Installation",
+   "424666371474": "Boiler Replacement"
+  },
+  "snippet": [
+   "Services",
+   [
+    "Furnace Replacement",
+    "Heating Replacement",
+    "Heating Installation",
+    "Heat Pump Replacement",
+    "Heat Pump Installation"
+   ]
+  ]
+ },
+ "sitelink_shortfall": "5 of 6: only five ready, in-scope replacement/installation destinations exist",
+ "asset_groups_payload": {
+  "AG_HEAT": {
+   "name": "Heating & Furnace Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+   "path1": "Heating",
+   "path2": "Replacement",
+   "headlines": [
+    "Furnace Replacement",
+    "Heating Replacement",
+    "Replace Your Furnace",
+    "New Furnace Installation",
+    "Heating System Replacement",
+    "Free Replacement Quote",
+    "Central Maryland HVAC",
+    "Severn Furnace Replacement",
+    "Columbia Heating Replacement",
+    "Severna Park Furnace Install",
+    "Trained HVAC Technicians",
+    "Clear Replacement Options",
+    "Request a Free Quote",
+    "New Furnace",
+    "Talk to a Technician"
+   ],
+   "long_headlines": [
+    "Furnace and heating replacement for homes in Severn, Severna Park and Columbia, MD",
+    "Request a free replacement quote from Ambient Cooling & Heating",
+    "Old furnace failing? Plan a heating system replacement with trained technicians",
+    "Heating replacement across Central Maryland, planned around your home",
+    "Compare replacement options clearly before you choose a new furnace"
+   ],
+   "descriptions": [
+    "Request a free heating replacement quote.",
+    "Trained technicians assess your current system and explain replacement options clearly.",
+    "Furnace and heating replacement for Severn, Severna Park and Columbia homes.",
+    "Plan a new furnace installation with Ambient Cooling & Heating in Central Maryland.",
+    "Call Mon-Fri, 8 a.m. to 4 p.m., or request your free quote online."
+   ],
+   "search_themes": [
+    "furnace replacement",
+    "furnace replacement near me",
+    "new furnace installation",
+    "replace furnace",
+    "heating system replacement",
+    "heating replacement",
+    "gas furnace replacement",
+    "furnace installation",
+    "furnace replacement cost",
+    "new furnace cost",
+    "heating system installation",
+    "furnace installation near me"
+   ]
+  },
+  "AG_HP": {
+   "name": "Heat Pump Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-replacement/",
+   "path1": "Heat-Pump",
+   "path2": "Replacement",
+   "headlines": [
+    "Heat Pump Replacement",
+    "Replace Your Heat Pump",
+    "Heat Pump Installation",
+    "New Heat Pump Quote",
+    "Free Replacement Quote",
+    "Severn Heat Pump Service",
+    "Columbia Heat Pump Install",
+    "Severna Park Heat Pumps",
+    "Central Maryland Heat Pumps",
+    "Trained HVAC Technicians",
+    "Clear Replacement Options",
+    "Request a Free Quote",
+    "Talk to a Technician",
+    "Heat Pumps",
+    "Plan Your Heat Pump Upgrade"
+   ],
+   "long_headlines": [
+    "Heat pump replacement for homes in Severn, Severna Park and Columbia, MD",
+    "Request a free heat pump replacement quote from Ambient Cooling & Heating",
+    "Heat pump not keeping up? Plan a replacement with trained technicians",
+    "Heat pump installation and replacement across Central Maryland",
+    "Compare heat pump replacement options clearly before you decide"
+   ],
+   "descriptions": [
+    "Request a free heat pump replacement quote.",
+    "Trained technicians assess your heat pump and explain replacement options clearly.",
+    "Heat pump replacement for Severn, Severna Park and Columbia homes.",
+    "Plan a new heat pump installation with Ambient Cooling & Heating in Central Maryland.",
+    "Call Mon-Fri, 8 a.m. to 4 p.m., or request your free quote online."
+   ],
+   "search_themes": [
+    "heat pump replacement",
+    "heat pump installation",
+    "replace heat pump",
+    "new heat pump",
+    "heat pump replacement cost",
+    "heat pump installation near me",
+    "heat pump system replacement",
+    "heat pump installer",
+    "air source heat pump installation",
+    "heat pump replacement near me"
+   ]
+  }
+ },
+ "images_required_per_group": {
+  "MARKETING_IMAGE": [
+   4,
+   "1200x628"
+  ],
+  "SQUARE_MARKETING_IMAGE": [
+   4,
+   "1200x1200"
+  ],
+  "PORTRAIT_MARKETING_IMAGE": [
+   2,
+   "960x1200"
+  ]
+ },
+ "images_status": "PENDING REVIEW - no verified service-specific imagery available (stock previews blocked, offer-site images carry unverified 'Ambient technician' captions)",
+ "videos": "none supplied; automatic video generation opted out",
+ "audience_signal": {
+  "user_list": "7950039478",
+  "name": "All Converters"
+ },
+ "errors": [],
+ "operation_count_shell": 122,
+ "fingerprint": "73EB8E63B5FA"
+}

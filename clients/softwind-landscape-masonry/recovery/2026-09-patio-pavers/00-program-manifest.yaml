@@ -1,0 +1,232 @@
+program:
+  name: 2026-09 Patio and Pavers recovery
+  opened: '2026-09-03'
+  stage: 'P0 COMPLETE + MEASUREMENT REPAIRED 2026-09-03/04. Six packages applied: BID-2, BUD-2, KW-2,
+    NEG-3, CONV-2, TRK-B1. All read back. TRACK-A and the native WhatConverts integration remain BLOCKED-ACCESS.'
+  mode: READ + LOCAL DRAFT + validate_only + SIX APPROVED LIVE WRITES, each executed under explicit approval
+    and read back against a full unchanged-resource proof.
+  identity:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: '2429758629'
+    manager_customer_id: '3373711342'
+    currency: USD
+    time_zone: America/New_York
+    account_status: ENABLED
+    manager: false
+    test_account: false
+    auto_tagging_enabled: true
+    conversion_tracking_id: '17878095007'
+    verified_by: scripts/slm_identity_gate.py
+    verified_at: '2026-09-03T23:03:52-04:00'
+    receipt: clients/softwind-landscape-masonry/snapshots/identity-gate-2026-09-03-2303.json
+    gate: PASS
+    all_prompt_values_matched: true
+  work_orders:
+  - file: clients/softwind-landscape-masonry/work-order-a-patio-construction.yaml
+    exact_service: patio construction
+    related_service: paver patio installation
+    campaign: Patio
+    campaign_id: '23484806108'
+    campaign_id_matches_audit_crosscheck: true
+    validator: PASS
+  - file: clients/softwind-landscape-masonry/work-order-b-paver-installation.yaml
+    exact_service: paver installation
+    campaign: Pavers
+    campaign_id: '23489296528'
+    campaign_id_matches_audit_crosscheck: true
+    validator: PASS
+  superseded_work_order: clients/softwind-landscape-masonry/work-order.yaml
+  budget_control:
+    account_monthly_hard_cap_usd: 2000
+    basis: account-wide, all campaigns, calendar month, America/New_York
+    account_level_spending_limit_in_google_ads: INFINITE (no platform cap exists)
+    enforcement: campaign daily budgets only
+  scope:
+    in_scope_campaigns:
+    - name: Patio
+      id: '23484806108'
+      status: ENABLED
+    - name: Pavers
+      id: '23489296528'
+      status: ENABLED
+    read_only_reconciliation_only:
+    - name: Hardscaping
+      id: '23484545411'
+      status: PAUSED
+    - name: Paver Sealing
+      id: '23914857298'
+      status: PAUSED
+    - name: Power Washing
+      id: '23914859260'
+      status: PAUSED
+    - name: Retaining Walls
+      id: '23489591905'
+      status: PAUSED
+    note: All four out-of-scope campaigns are already PAUSED. Nothing in this program touches them, and
+      none will be reactivated to improve blended reporting.
+  account_wide_changes_affecting_both_work_orders:
+  - PLAN-SLM-BID-2 and PLAN-SLM-BUD-2 - APPLIED, both campaigns, one cap
+  - PLAN-SLM-CONV-2 - DEFERRED (conversion actions are account-level objects)
+  - any WhatConverts or landing-page repair (one site serves both)
+  change_packages:
+  - plan: PLAN-SLM-BID-2
+    label: EXISTING_RESOURCES
+    fingerprint: 8C71888E09CC
+    objects: 2
+    validate_only: PASS
+    status: APPLIED 2026-09-03
+    readback: PASS 2/2
+    depends_on: []
+  - plan: PLAN-SLM-BUD-2
+    label: BUDGET
+    fingerprint: BB9869E17E37
+    objects: 2
+    validate_only: PASS
+    status: APPLIED 2026-09-03
+    readback: PASS 2/2
+    depends_on: []
+  - plan: PLAN-SLM-KW-2
+    label: STATUS
+    fingerprint: B7A11B246D74
+    objects: 7
+    validate_only: PASS
+    status: APPLIED 2026-09-03
+    readback: PASS 7/7
+    depends_on: []
+  - plan: PLAN-SLM-NEG-2
+    label: EXISTING_RESOURCES
+    fingerprint: 2CD5644B5504
+    objects: 99
+    validate_only: PASS
+    status: SUPERSEDED by PLAN-SLM-NEG-3 - blocked at preflight, never executed
+    readback: n/a
+    depends_on:
+    - PLAN-SLM-KW-2
+  - plan: PLAN-SLM-NEG-3
+    label: EXISTING_RESOURCES
+    fingerprint: C58644338C89
+    objects: 96
+    validate_only: PASS
+    status: APPLIED 2026-09-03
+    readback: PASS 96/96
+    depends_on:
+    - PLAN-SLM-KW-2 (satisfied)
+  - plan: PLAN-SLM-CONV-2
+    label: CONVERSIONS
+    fingerprint: 852D47BE6133
+    objects: 1
+    validate_only: PASS
+    status: APPLIED 2026-09-03
+    readback: PASS 1/1
+    depends_on: []
+  - plan: PLAN-SLM-P1A-GUARD
+    label: STATUS
+    fingerprint: 00FA45112351
+    objects: 7
+    validate_only: PASS
+    status: DEFERRED - no safety benefit; ad group already paused, keywords are relevant high-intent paver-patio
+      terms retained for a future controlled consolidation
+    readback: n/a
+    depends_on: []
+  - plan: PLAN-SLM-TRK-B1
+    label: SITE_OR_TRACKING
+    fingerprint: 699CC103CAD0
+    objects: 2
+    validate_only: PASS
+    status: APPLIED 2026-09-03
+    readback: PASS 2/2
+    depends_on: []
+  drafted_not_approval_ready:
+  - plan: PLAN-SLM-TRK-1
+    what: Final URL suffix carrying UTMs on both campaigns
+    blocked_by: The preferred fix needs no Google Ads write at all - connect the WhatConverts Google Ads
+      integration so it resolves GCLIDs. Confirm that route first. The suffix touches the same URL path
+      ClickCease uses.
+  - plan: PLAN-SLM-ADS-1
+    what: Replacement RSAs for the three canonical ad groups, created paused
+    blocked_by: Question SLM-Q6. Both the serving and the paused RSAs carry unverified licence, insurance,
+      certification, warranty, guarantee and response-time claims. Drafted copy in 09-rsa-copy-and-url-plan.csv
+      deliberately uses none of them and is ready the moment the claims are confirmed or dropped.
+  - plan: PLAN-SLM-P1-STRUCT-1
+    what: Three canonical ad groups created paused, plus keyword migration
+    blocked_by: Question SLM-Q5. 17.0% of live keyword spend sits in the unresolved driveway/paving family
+      and its canonical owner cannot be fixed until the owner says whether driveway paver installation
+      is offered.
+  open_questions:
+  - SLM-Q3
+  - SLM-Q5
+  - SLM-Q6
+  - SLM-Q7
+  - SLM-Q8
+  - SLM-Q9
+  - SLM-Q11
+  - NEG-3 approval
+  artifacts:
+    00-program-manifest.yaml: this file
+    01-before-snapshot.json: structural read, 0 query errors
+    01b-before-performance.json: performance and measurement read, 0 query errors
+    01c-probe.json: targeting setting, asset automation, account budget, billing
+    01d-geo-targets.json: 110 resolved location targets
+    02-before-snapshot.md: human-readable before state
+    03-service-truth-decisions.yaml: offered / excluded / unknown with source
+    04-measurement-map.csv: all 16 conversion actions, role today and proposed
+    05-search-term-verdicts.csv: 5,401 rows, KEEP/WATCH/UNRESOLVED/NEGATIVE
+    06-negative-plan.csv: 154 accepted negatives with blocked cost
+    06b-negative-rejected.csv: 4 rejected with the exact collision
+    06c-coverage.json: wrong-service coverage per campaign
+    07-keyword-migration-map.csv: all 161 Patio/Pavers keywords
+    08-budget-pacing-plan.csv: pacing inputs and formulas
+    09-rsa-copy-and-url-plan.csv: 6 RSAs, 114 assets, all validated
+    10-change-packages/: 5 normalized plans, fingerprints, validate receipts
+    10-lp-qa.json: real-browser landing-page QA
+    11-write-receipts/: 10 validate-only receipts plus 3 LIVE WRITE receipts (WRITE-BID-2.json, WRITE-BUD-2.json,
+      WRITE-KW-2.json)
+    12-quality-loop-template.csv: weekly search-to-sold schema
+    13-monitoring-log.csv: checkpoint schema
+    14-final-recovery-report.md: the report
+    25-pre-execution-snapshot-2026-09-03-2303.json: pre-execution snapshot, sha256 456C8511EEA5258C20B3F38666EE052F
+    26-preflight-exec.json: 8.5/8.6 preflight assertions per package
+    27-readback-BID-2.json: BID-2 readback PASS
+    28-readback-BUD-2.json: BUD-2 readback PASS + pacing
+    29-readback-KW-2.json: KW-2 readback PASS, 7/7
+    30-post-execution-snapshot.json: post-execution snapshot, sha256 E95EDFDE94F298C43E133545C3AECD87
+    31-unchanged-proof.json: 11 differences, 0 unexpected
+    32-waf-browser-matrix.json: 5 user agents x 2 pages
+    33-P2-monitoring-plan.md: future checkpoint dates and gates
+    34-FINAL-EXECUTION-REPORT.md: the authoritative final report
+    10-change-packages-v2/: 7 normalized plans in the executor's own schema
+    35-pre-NEG3-snapshot.json: pre-NEG3 snapshot; 0 target-resource drift since NEG-3 generation
+    36-readback-NEG-3.json / .csv: 96-row readback, 96/96 PASS
+    37-post-NEG3-snapshot.json: post-NEG3 snapshot, sha256 9079C86805A1025F211C39074C5F97F8
+    38-unchanged-proof-NEG3.json: 0 differences, 96 added, 0 removed
+    39-remaining-approvals.md: per-operation detail for CONV-2 and P1A-GUARD, plus TRACK-A/B
+    40-preflight-snapshot.json: preflight snapshot for this run
+    41-readback-CONV-2.json: CONV-2 readback PASS, derived-field note
+    42-suffix-validation-probe.json: non-paid live proof the suffix populates WhatConverts
+    43-readback-TRK-B1.json: TRK-B1 readback PASS, ClickCease intact
+    44-final-snapshot.json: final snapshot, sha256 9C4751B5E118420AF43C3FAD3BFF2062
+    45-FINAL-COMPLETION-REPORT.md: the authoritative completion report
+  pii_policy: No lead name, phone number, email address, recording or unredacted WhatConverts record is
+    stored in this repository. The quality loop keys on a hashed lead ID and the Google click ID only.
+  live_state_after_run:
+    patio_cpc_ceiling: $16.00
+    pavers_cpc_ceiling: $18.00
+    patio_daily_budget: $24.00
+    pavers_daily_budget: $32.00
+    asphalt_keywords_paused: 7
+    projected_september_spend: 1760.36
+    headroom_under_cap: 239.64
+    negatives_created: 96
+    conversion_actions_changed: 0
+    unchanged_proof: PASS - 11 differences, all approved, 0 unexpected
+    campaign_negatives_total: 1771
+    negatives_per_campaign: Patio +48, Pavers +48
+    unchanged_proof_neg3: PASS - 0 campaign/keyword/conversion differences, 96 added, 0 removed
+    projection_sum_of_budgets: 1760.36
+    projection_simple_run_rate: 1946.26
+    final_url_suffix: SET on Patio and Pavers (147 chars, utm_content={adgroupid})
+    primary_counting_conversion_actions: 6
+    demoted_conversion_action: 7461619140 Softwind Submit lead form
+    attribution_route_selected: campaign-level UTM suffix (fallback); native WhatConverts integration
+      BLOCKED-ACCESS
+    clickcease: intact, template unmodified

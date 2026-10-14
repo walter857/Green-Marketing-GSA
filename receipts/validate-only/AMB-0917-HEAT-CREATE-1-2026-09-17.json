@@ -1,0 +1,16 @@
+{
+ "plan": "AMB-0917-HEAT-CREATE-1",
+ "fingerprint": "7DE31D6B6A88",
+ "when": "2026-09-17T17:55:12.781216-04:00",
+ "validate_only": true,
+ "nothing_created": true,
+ "checks": {
+  "campaign_budgets": "VALIDATED_OK",
+  "rsas": "VALIDATED_OK (4)",
+  "final_urls": {
+   "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/": "OK",
+   "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/": "OK"
+  },
+  "keywords": "VALIDATED_OK (18)"
+ }
+}

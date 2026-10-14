@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "green-marketing-gsa"
+version = "0.2.0"
+description = "Safety-first Google Ads operating system for Green Marketing local-service clients"
+requires-python = ">=3.11"
+dependencies = [
+  "google-ads>=27.0.0",
+  "google-ads-datamanager>=0.2.0",
+  "python-dotenv>=1.0.1",
+  "PyYAML>=6.0.2",
+  "jsonschema>=4.23.0",
+  "requests>=2.32.0",
+  "google-api-python-client>=2.190.0",
+  "google-auth-httplib2>=0.2.0",
+  "google-auth-oauthlib>=1.2.0",
+  # Landing-page image preparation: crop-to-fill, sRGB conversion, HEIC originals.
+  "Pillow>=11.0.0",
+  "pillow-heif>=0.18.0",
+  # Windows has no system tz database; zoneinfo needs this for America/New_York.
+  "tzdata>=2024.1",
+]
+
+[project.scripts]
+gm-gsa = "gm_gsa.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

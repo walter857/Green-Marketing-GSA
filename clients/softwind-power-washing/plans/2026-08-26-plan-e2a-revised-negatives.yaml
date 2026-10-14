@@ -1,0 +1,323 @@
+# PLAN-E2A - REVISED OUT-OF-SCOPE NEGATIVES
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+# Supersedes PLAN-E2 (fingerprint 09E91EA674C8, now VOID).
+# All six go LIVE on creation. No paused state, no second gate.
+
+change_plan:
+  plan_id: PLAN-E2A
+  plan_title: Revised out-of-scope negatives - house cleaning narrowed to Exact
+  approval_type: LIVE_NEGATIVE_KEYWORDS
+  priority: R2
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  recommended_approval_order: 2
+  ads_mutation_count: 6
+  requires_separate_enable_approval: false
+  supersedes:
+    plan_id: PLAN-E2
+    fingerprint: 09E91EA674C8
+    status: VOID
+    voided_on: '2026-08-26'
+    reason: PHRASE 'house cleaning' was too broad. Under modern matching it could block legitimate
+      exterior phrasings such as 'exterior house cleaning' or 'house cleaning power wash'. Narrowed
+      to EXACT [house cleaning services near me], which blocks only the single observed interior-maid
+      query.
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  what_changed: Removed PHRASE 'house cleaning'. Replaced with EXACT [house cleaning services near
+    me] in both campaigns.
+  policy_check: Green Marketing protected terms - near me, quote, price, pricing, cost, best, hire,
+    local, emergency - are NOT used as standalone negatives. The one EXACT negative contains 'near
+    me' only as part of a complete, literal, out-of-scope query string; it blocks that exact phrase
+    and nothing else, so no protected term is broadly suppressed.
+  not_a_pacing_tool: Total exposure across all six mutations is 8 impressions and $0.00 spend account-wide
+    since launch. These cannot and are not intended to influence pacing.
+  conditional_on: Walter confirming roof cleaning is out of scope. If Softwind DOES offer roof cleaning,
+    drop actions 01, 02, 04 and 05 and re-fingerprint with only the two EXACT negatives.
+  keyword_universe_checked:
+  - driveway pressure washing near me
+  - house pressure washing estimate
+  - house washing company near me
+  - patio pressure washing near me
+  - power washing company near me
+  - power washing dix hills
+  - power washing islip
+  - power washing near me
+  - power washing services near me
+  - power washing west islip
+  - pressure washing near me
+  - residential pressure washing near me
+  - soft house washing near me
+  blocks_zero_approved_keywords: true
+  blocks_zero_planned_skag_keywords: true
+  actions:
+  - action_id: R3-E2A-01
+    priority: R2
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: roof cleaning
+    match_type: PHRASE
+    level: CAMPAIGN
+    current_value: 47 campaign negatives; none blocks this term
+    proposed_value:
+      text: roof cleaning
+      match_type: PHRASE
+      negative: true
+    current_matching_search_terms:
+    - search_term: slate roof cleaning near me
+      impressions: 1
+      clicks: 0
+      cost: 0.0
+      conversions: 0.0
+      matched_keyword: house washing company near me
+      ad_group: House Washing Company Near Me
+      campaign: Power Washing
+    impressions: 1
+    clicks: 0
+    cost: 0.0
+    conversions: 0.0
+    why: Roof cleaning is listed under services_excluded in both work-order.yaml and client.yaml.
+      Out of scope for this work order. CONDITIONAL on Walter confirming roof cleaning is genuinely
+      not offered.
+    blocks_approved_keywords: NONE
+    blocks_planned_skag_keywords: NONE
+    goes_live_immediately: true
+    expected_effect: Blocks the observed out-of-scope query. Total account-wide exposure across
+      all six mutations is 8 impressions and $0.00 - it cannot move pacing in either direction.
+    rollback: Remove the campaign_criterion. Immediate, no residue.
+    approval_required: YES - LIVE CHANGE, effective on creation
+    object_count: 1
+  - action_id: R3-E2A-02
+    priority: R2
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: roof washing
+    match_type: PHRASE
+    level: CAMPAIGN
+    current_value: 47 campaign negatives; none blocks this term
+    proposed_value:
+      text: roof washing
+      match_type: PHRASE
+      negative: true
+    current_matching_search_terms:
+    - search_term: roof washing near me
+      impressions: 2
+      clicks: 0
+      cost: 0.0
+      conversions: 0.0
+      matched_keyword: power washing company near me
+      ad_group: Power Washing Company Near Me
+      campaign: Power Washing
+    impressions: 2
+    clicks: 0
+    cost: 0.0
+    conversions: 0.0
+    why: Same out-of-scope service, alternative phrasing. CONDITIONAL on the same confirmation.
+    blocks_approved_keywords: NONE
+    blocks_planned_skag_keywords: NONE
+    goes_live_immediately: true
+    expected_effect: Blocks the observed out-of-scope query. Total account-wide exposure across
+      all six mutations is 8 impressions and $0.00 - it cannot move pacing in either direction.
+    rollback: Remove the campaign_criterion. Immediate, no residue.
+    approval_required: YES - LIVE CHANGE, effective on creation
+    object_count: 1
+  - action_id: R3-E2A-03
+    priority: R2
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: house cleaning services near me
+    match_type: EXACT
+    level: CAMPAIGN
+    current_value: 47 campaign negatives; none blocks this term
+    proposed_value:
+      text: house cleaning services near me
+      match_type: EXACT
+      negative: true
+    current_matching_search_terms:
+    - search_term: house cleaning services near me
+      impressions: 1
+      clicks: 0
+      cost: 0.0
+      conversions: 0.0
+      matched_keyword: house washing company near me
+      ad_group: House Washing Company Near Me
+      campaign: Power Washing
+    impressions: 1
+    clicks: 0
+    cost: 0.0
+    conversions: 0.0
+    why: Interior maid service - a different industry. Narrowed from the previous PHRASE 'house
+      cleaning' to EXACT so it blocks only the one observed query and cannot catch legitimate exterior
+      phrasings such as 'exterior house cleaning' or 'house cleaning power wash'.
+    blocks_approved_keywords: NONE
+    blocks_planned_skag_keywords: NONE
+    goes_live_immediately: true
+    expected_effect: Blocks the observed out-of-scope query. Total account-wide exposure across
+      all six mutations is 8 impressions and $0.00 - it cannot move pacing in either direction.
+    rollback: Remove the campaign_criterion. Immediate, no residue.
+    approval_required: YES - LIVE CHANGE, effective on creation
+    object_count: 1
+  - action_id: R3-E2A-04
+    priority: R2
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: roof cleaning
+    match_type: PHRASE
+    level: CAMPAIGN
+    current_value: 47 campaign negatives; none blocks this term
+    proposed_value:
+      text: roof cleaning
+      match_type: PHRASE
+      negative: true
+    current_matching_search_terms:
+    - search_term: slate roof cleaning near me
+      impressions: 1
+      clicks: 0
+      cost: 0.0
+      conversions: 0.0
+      matched_keyword: house washing company near me
+      ad_group: House Washing Company Near Me
+      campaign: Power Washing
+    impressions: 1
+    clicks: 0
+    cost: 0.0
+    conversions: 0.0
+    why: Roof cleaning is listed under services_excluded in both work-order.yaml and client.yaml.
+      Out of scope for this work order. CONDITIONAL on Walter confirming roof cleaning is genuinely
+      not offered.
+    blocks_approved_keywords: NONE
+    blocks_planned_skag_keywords: NONE
+    goes_live_immediately: true
+    expected_effect: Blocks the observed out-of-scope query. Total account-wide exposure across
+      all six mutations is 8 impressions and $0.00 - it cannot move pacing in either direction.
+    rollback: Remove the campaign_criterion. Immediate, no residue.
+    approval_required: YES - LIVE CHANGE, effective on creation
+    object_count: 1
+  - action_id: R3-E2A-05
+    priority: R2
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: roof washing
+    match_type: PHRASE
+    level: CAMPAIGN
+    current_value: 47 campaign negatives; none blocks this term
+    proposed_value:
+      text: roof washing
+      match_type: PHRASE
+      negative: true
+    current_matching_search_terms:
+    - search_term: roof washing near me
+      impressions: 2
+      clicks: 0
+      cost: 0.0
+      conversions: 0.0
+      matched_keyword: power washing company near me
+      ad_group: Power Washing Company Near Me
+      campaign: Power Washing
+    impressions: 2
+    clicks: 0
+    cost: 0.0
+    conversions: 0.0
+    why: Same out-of-scope service, alternative phrasing. CONDITIONAL on the same confirmation.
+    blocks_approved_keywords: NONE
+    blocks_planned_skag_keywords: NONE
+    goes_live_immediately: true
+    expected_effect: Blocks the observed out-of-scope query. Total account-wide exposure across
+      all six mutations is 8 impressions and $0.00 - it cannot move pacing in either direction.
+    rollback: Remove the campaign_criterion. Immediate, no residue.
+    approval_required: YES - LIVE CHANGE, effective on creation
+    object_count: 1
+  - action_id: R3-E2A-06
+    priority: R2
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: house cleaning services near me
+    match_type: EXACT
+    level: CAMPAIGN
+    current_value: 47 campaign negatives; none blocks this term
+    proposed_value:
+      text: house cleaning services near me
+      match_type: EXACT
+      negative: true
+    current_matching_search_terms:
+    - search_term: house cleaning services near me
+      impressions: 1
+      clicks: 0
+      cost: 0.0
+      conversions: 0.0
+      matched_keyword: house washing company near me
+      ad_group: House Washing Company Near Me
+      campaign: Power Washing
+    impressions: 1
+    clicks: 0
+    cost: 0.0
+    conversions: 0.0
+    why: Interior maid service - a different industry. Narrowed from the previous PHRASE 'house
+      cleaning' to EXACT so it blocks only the one observed query and cannot catch legitimate exterior
+      phrasings such as 'exterior house cleaning' or 'house cleaning power wash'.
+    blocks_approved_keywords: NONE
+    blocks_planned_skag_keywords: NONE
+    goes_live_immediately: true
+    expected_effect: Blocks the observed out-of-scope query. Total account-wide exposure across
+      all six mutations is 8 impressions and $0.00 - it cannot move pacing in either direction.
+    rollback: Remove the campaign_criterion. Immediate, no residue.
+    approval_required: YES - LIVE CHANGE, effective on creation
+    object_count: 1
+  verification_after_execution:
+  - Read back campaign_criterion on both campaigns and assert 50 negatives each.
+  - Re-check the search terms report after 7 days; confirm no in-scope query disappeared.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 6
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 6
+    objects_that_go_live_immediately: 6
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com

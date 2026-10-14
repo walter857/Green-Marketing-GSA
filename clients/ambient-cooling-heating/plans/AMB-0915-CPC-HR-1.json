@@ -1,0 +1,87 @@
+{
+ "plan_name": "AMB-0915-CPC-HR-1",
+ "approval_class": "bid-change",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "exact_service": "HVAC Repair",
+ "summary": "Raise the HVAC Repair Maximize Clicks CPC ceiling from $25.00 to $65.00. 1 operation. One campaign, one variable.",
+ "campaign_id": "24132507750",
+ "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+ "before_state": {
+  "cpc_bid_ceiling_usd": 25.0,
+  "daily_budget_usd": 78.95,
+  "status": "ENABLED",
+  "all_five_budgets": {
+   "24132507741": 141.45,
+   "24132507744": 5.0,
+   "24132507747": 176.15,
+   "24132507750": 78.95,
+   "24132507753": 20.0
+  },
+  "combined_daily": 421.55,
+  "planning_30_4": 12815.12,
+  "monthly_maximum": 13000.0,
+  "headroom": 184.88
+ },
+ "operations": [
+  {
+   "operation": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "resource": "campaign",
+   "campaign_id": "24132507750",
+   "field_mask": "target_spend.cpc_bid_ceiling_micros",
+   "before_micros": 25000000,
+   "after_micros": 65000000,
+   "before_usd": 25.0,
+   "after_usd": 65.0
+  }
+ ],
+ "operation_count": 1,
+ "why_65_and_not_30": [
+  "Google Keyword Planner top-of-page bid estimate for the live keyword `hvac repair near me`, measured against the campaign's own 75-target Central Maryland geo: LOW $49.47, HIGH $126.18. The current $25.00 ceiling sits BELOW Google's own LOW estimate.",
+  "`ac repair near me` estimates LOW $38.98 / HIGH $118.07 - also above $25.00.",
+  "HVAC Repair's August average CPC when uncapped was $106.27 and it produced 4 of the account's conversions.",
+  "Of the 13 clicks that have ever converted in this account, 12 cost more than every ceiling now in place; the cheapest converting click above $25 was $59.44.",
+  "$65.00 sits between Google's LOW and HIGH top-of-page estimates - deliberately mid-band, not a return to uncapped bidding.",
+  "A +20% step to $30.00 is rejected: it remains below the LOW estimate and would almost certainly reproduce the current zero-delivery result while consuming a test cycle."
+ ],
+ "guardrails": {
+  "daily_budget": "UNCHANGED at $78.95",
+  "stop_loss": "$250.00 incremental spend with zero verified qualified lead",
+  "max_exposure_before_review": "$250.00",
+  "monitoring": [
+   "technical health at ~24h and ~72h",
+   "review EVERY new search term",
+   "valid vs invalid click rate",
+   "impression share, lost-IS rank, lost-IS budget",
+   "no performance verdict before 14 settled days"
+  ],
+  "rollback": "set target_spend.cpc_bid_ceiling_micros back to 25000000",
+  "rollback_triggers": [
+   "$250 incremental spend with no verified qualified lead",
+   "irrelevant search terms appearing at volume",
+   "any ad policy change",
+   "tracking failure",
+   "abnormal invalid-click rate"
+  ],
+  "do_not_change_during_the_test": [
+   "any RSA in HVAC Repair",
+   "any keyword in HVAC Repair",
+   "any negative in HVAC Repair",
+   "locations",
+   "schedule",
+   "the HVAC Repair landing page",
+   "any other campaign's ceiling"
+  ]
+ },
+ "budget_safety": {
+  "ceiling_change_does_not_alter_daily_budget": true,
+  "combined_daily_after": 421.55,
+  "planning_30_4_after": 12815.12,
+  "within_13000_monthly_maximum": true
+ },
+ "HARD_GATE": "DO NOT EXECUTE until: (1) AMB-0915-LP-1 is deployed, (2) the attribution probe returns 24/24, and (3) AMB-0915-CONV-1 is executed or a reliable manual qualified-lead verification path is agreed. Raising a bid while form attribution is broken buys traffic that cannot be measured.",
+ "economic_warning": "Measured paid-search CPQL over the last 90 settled days is $827.45 upper bound ($8,274.54 spend / 10 WhatConverts quotable=Yes paid-search leads). Even the most generous correction for click-id loss leaves it near $394. Every provisional guardrail is $150-$280. This test is therefore a DELIVERY and MEASUREMENT test - does volume return and can we see it - not a profitability claim. If volume returns at a CPQL still far above guardrail, the correct next move is landing-page conversion rate, not more bid.",
+ "risk": "MEDIUM. Bounded by the $78.95 daily budget and the $250 stop-loss.",
+ "unrelated_resource_assertion": "Only campaign 24132507750's target_spend.cpc_bid_ceiling_micros changes. Budget, status, networks, geo, schedule, keywords, negatives, ads, assets and conversion settings are untouched, on this and all other campaigns.",
+ "fingerprint": "14BD03817042"
+}

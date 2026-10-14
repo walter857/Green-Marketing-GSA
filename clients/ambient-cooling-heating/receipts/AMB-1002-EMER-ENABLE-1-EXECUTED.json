@@ -1,0 +1,66 @@
+{
+ "plan": "AMB-1002-EMER-ENABLE-1",
+ "fingerprint": "BFBD1315E210",
+ "started_local": "2026-10-02T08:21:48.451492-04:00",
+ "done": [
+  {
+   "step": "enable 2 RSAs",
+   "results": [
+    "customers/2401959466/adGroupAds/204129717047~826702584886",
+    "customers/2401959466/adGroupAds/204129717047~826702584889"
+   ]
+  },
+  {
+   "step": "enable 6 keywords",
+   "results": [
+    "customers/2401959466/adGroupCriteria/204129717047~3304047112",
+    "customers/2401959466/adGroupCriteria/204129717047~320791640594",
+    "customers/2401959466/adGroupCriteria/204129717047~777693505",
+    "customers/2401959466/adGroupCriteria/204129717047~1734598708",
+    "customers/2401959466/adGroupCriteria/204129717047~299713058575",
+    "customers/2401959466/adGroupCriteria/204129717047~4213560696"
+   ]
+  },
+  {
+   "step": "remove 2 holding labels",
+   "results": [
+    "customers/2401959466/adGroupLabels/204129717047~22294515713",
+    "customers/2401959466/adGroupLabels/204129717047~22294515722"
+   ]
+  }
+ ],
+ "finished_local": "2026-10-02T08:21:49.955530-04:00",
+ "readback": [
+  {
+   "check": "2 ads ENABLED",
+   "pass": true
+  },
+  {
+   "check": "6 keywords ENABLED",
+   "pass": true
+  },
+  {
+   "check": "holding labels removed",
+   "pass": true
+  },
+  {
+   "check": "campaign unchanged",
+   "pass": true
+  },
+  {
+   "check": "URL unchanged",
+   "pass": true
+  }
+ ],
+ "policy_at_readback": {
+  "826702584886": [
+   "APPROVED",
+   "REVIEWED"
+  ],
+  "826702584889": [
+   "APPROVED",
+   "REVIEWED"
+  ]
+ },
+ "status": "EXECUTED"
+}

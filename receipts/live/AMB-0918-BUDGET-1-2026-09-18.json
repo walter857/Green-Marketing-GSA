@@ -1,0 +1,33 @@
+{
+ "plan": "AMB-0918-BUDGET-1",
+ "fingerprint": "39097845F5F4",
+ "customer_id": "2401959466",
+ "mcc_never_written": "3373711342",
+ "started": "2026-09-18T10:53:28.150782-04:00",
+ "committed": {
+  "budgets": [
+   "customers/2401959466/campaignBudgets/15787409441",
+   "customers/2401959466/campaignBudgets/15787409435",
+   "customers/2401959466/campaignBudgets/15787409444",
+   "customers/2401959466/campaignBudgets/15787409447",
+   "customers/2401959466/campaignBudgets/15787409438"
+  ]
+ },
+ "nothing_enabled": true,
+ "before": {
+  "15787409441": 176.15,
+  "15787409435": 141.45,
+  "15787409444": 78.95,
+  "15787409447": 20.0,
+  "15787409438": 5.0
+ },
+ "finished": "2026-09-18T10:53:29.170620-04:00",
+ "readback": {
+  "pass": 27,
+  "fail": 0,
+  "enabled_daily": 237.0,
+  "heating_daily": 90.0,
+  "future_total": 327.0,
+  "monthly_equiv": 9940.8
+ }
+}

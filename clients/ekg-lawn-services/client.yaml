@@ -1,0 +1,245 @@
+client:
+  slug: ekg-lawn-services
+  # VERIFIED 2026-08-14 from the official website.
+  # Public brand: "EKG Lawn". Legal name in website consent language:
+  # "EKG Lawn Services LLC". Source: https://ekglawn.com/ , /contact-us/
+  business_name: EKG Lawn Services
+  public_brand: "EKG Lawn"
+  legal_name: "EKG Lawn Services LLC"
+  vertical: landscaping
+  primary_service: Aeration & Overseeding
+  google_ads:
+    child_customer_id: "7478932848"
+    exact_child_account_name: EKG Lawn Services - Live
+    manager_customer_id: "3373711342"
+    must_contain_live_marker: true
+    # VERIFIED 2026-08-14 by fresh read-only API lookup on customer 7478932848.
+    currency: USD
+    timezone: America/New_York
+    account_status: ENABLED
+    auto_tagging_enabled: true
+    # A second manager link is also ACTIVE on this account alongside the configured
+    # Green Marketing MCC. Recorded for awareness; not used for any operation.
+    additional_active_manager_links: 1
+  website:
+    # VERIFIED 2026-08-14 from live account final URLs (an authoritative source under
+    # LANDING_PAGE_CONTENT_WORKFLOW section 7): ekglawn.com appears in serving ad final
+    # URLs, e.g. /lawn-maintenance/ and /career/.
+    primary_url: "https://ekglawn.com/"
+    landing_page_base_url: "https://offer.ekglawn.com/"
+    # Existing offer-subdomain pages already referenced by live ads. An aeration page
+    # ALREADY EXISTS at /aeration/, which conflicts with the proposed /lawn-aeration/ slug.
+    observed_offer_pages:
+      - "https://offer.ekglawn.com/"
+      - "https://offer.ekglawn.com/aeration/"
+      - "https://offer.ekglawn.com/landscaping-brandermill/"
+      - "https://offer.ekglawn.com/landscaping-hallsboro/"
+      - "https://offer.ekglawn.com/lawn-care-brandermill/"
+      - "https://offer.ekglawn.com/lawn-maintenance-brandermill/"
+    # VERIFIED 2026-08-14. Source: https://ekglawn.com/contact-us/
+    phone_display: "(804) 690-8512"
+    phone_e164: "+18046908512"
+    email: "info@ekglawn.com"
+    privacy_policy_url: "https://ekglawn.com/privacy-policy/"
+    terms_url: "https://ekglawn.com/terms-and-conditions/"
+    reviews_page: "https://ekglawn.com/reviews/"
+    # Physical address is deliberately absent. See address_conflict below.
+  offer:
+    services_in_scope:
+      - Aeration & Overseeding
+      - Lawn Aeration
+      - Lawn Overseeding
+    services_excluded: []
+    # Verified only as accurate service descriptions, not as promotional claims.
+    verified_usps:
+      - "Aeration is a current, published service."
+      - "Currently taking on new customers. First-party website evidence observed 2026-08-14 at https://ekglawn.com/contact-us/. Reverify before the asset serves."
+      - "Aeration paired with overseeding is supported by the official aeration article."
+    verified_offers: []            # NONE. No offer, price, or discount is verified.
+    # Explicitly BARRED from ad and landing-page copy - not sufficiently documented:
+    barred_claims:
+      - offer_or_discount
+      - price_or_pricing
+      - response_time_promise
+      - years_in_business
+      - license_claim
+      - insurance_claim
+      - rating_or_review_count
+      - guarantee_or_warranty
+    average_job_revenue: null
+    gross_margin_pct: null
+    close_rate_pct: null
+    target_cpl: null
+    target_cpql: null
+    target_cac: null
+  service_area:
+    # Six user-approved positive Google Ads targets: five 2.0-mile proximity radii and
+    # postal code 23114. The authoritative structured record is location-targets.yaml.
+    # These are TARGETING criteria only; they do not authorize public-facing city,
+    # neighborhood, county, or regional wording anywhere.
+    manifest: clients/ekg-lawn-services/location-targets.yaml
+    country_code: US
+    target_type: mixed_proximity_and_postal
+    # RESOLVED 2026-08-14: geoTargetConstants/9008421, canonical name
+    # "23114,Virginia,United States", Postal Code, US, ENABLED, targetable.
+    geo_target_constant_ids: [9008421]
+    # VERIFIED published service-area wording. Source: https://ekglawn.com/
+    # This is PUBLISHED WORDING, separate from the six approved Google Ads geo targets.
+    published_service_area_wording: "Midlothian, Woodlake, Brandermill, and surrounding service areas"
+    cities:
+      - Midlothian
+      - Woodlake
+      - Brandermill
+    postal_codes:
+      - "23114"
+    # The template's single `radius` object cannot hold five distinct proximity targets.
+    # It is left null on purpose: picking one would silently drop the other four.
+    # Read proximity_targets below, or location-targets.yaml, instead.
+    radius:
+      latitude: null
+      longitude: null
+      distance: null
+      unit: MILES
+    proximity_targets:
+      - {id: prox-1, distance: 2.0, unit: MILES, latitude: 37.441924, longitude: -77.704566}
+      - {id: prox-2, distance: 2.0, unit: MILES, latitude: 37.387932, longitude: -77.701819}
+      - {id: prox-3, distance: 2.0, unit: MILES, latitude: 37.417932, longitude: -77.750571}
+      - {id: prox-4, distance: 2.0, unit: MILES, latitude: 37.435133, longitude: -77.663776}
+      - {id: prox-5, distance: 2.0, unit: MILES, latitude: 37.450549, longitude: -77.751945}
+    exclusions: []
+    location_option: PRESENCE
+  schedule:
+    timezone: America/New_York
+    # VERIFIED published hours. Source: https://ekglawn.com/contact-us/
+    published_hours: "8:00 a.m. - 4:30 p.m., Monday through Sunday"
+    published_hours_24h: {start: "08:00", end: "16:30", days: ALL}
+    # Published opening hours do NOT prove calls are answered throughout them.
+    call_answering_hours_confirmed: false
+    can_answer_after_hours: null                      # UNCONFIRMED
+    windows: []
+  conversions:
+    primary: []                                       # UNVERIFIED - audit pending
+    secondary: []
+    call_minimum_seconds: null
+    crm_stage_mapping:
+      lead: ""
+      qualified: ""
+      sold: ""
+    offline_route: DATA_MANAGER_API
+  # UNRESOLVED CONFLICT - do not choose, infer, or publish either address.
+  address_conflict:
+    status: UNRESOLVED_CONFLICT
+    contact_and_footer_shows: "12703 Raven Wing Ct, Chesterfield, VA 23832"
+    privacy_page_shows: "5605 Beacon Hill Dr, Midlothian, VA 23112"
+    rule: >-
+      No street address on either landing page. No Google Ads location asset. No GBP edit.
+      This does not affect the six approved campaign location targets.
+
+  reviews:
+    # UPDATED 2026-08-15 on explicit Green Marketing instruction. GBP was attempted first and
+    # is still unreachable read-only; the official EKG website was used as the approved
+    # fallback. Three testimonials are extracted verbatim and are live in both landing-page
+    # documents. They are presented as WEBSITE TESTIMONIALS, never as Google reviews.
+    status: VERIFIED_WEBSITE_TESTIMONIALS
+    source_of_record: "https://ekglawn.com/reviews/"
+    retrieved_via: "Internet Archive snapshot 20260414023414 (ekglawn.com is DNS-blocked in the build environment)"
+    gbp_short_link: "https://g.page/r/CWaRDNHgOF3rEAE"
+    google_place_id: "ChIJu033GLlxsYkRZpEM0eA4Xes"
+    gbp_direct_access: UNREACHABLE_READ_ONLY
+    website_reviews_page: "https://ekglawn.com/reviews/"
+    approved_displayed_names:
+      - "CHELLY"
+      - "DONNA, W."
+      - "RANDALL, L."
+    displayed_star_rating: 5
+    star_rating_basis: >-
+      Per-card graphic on the source page could not be pixel-verified (not archived).
+      Supported by EKG's own five-star asset 5-star-1-1.png, by the reviews page's own
+      schema.org ratingValue of 5, and by the master template default.
+    customer_facing_label: "EKG Lawn Customer"
+    rule: >-
+      These are website testimonials. They must never be called Google reviews unless each
+      text and reviewer is matched directly to that exact GBP. Text must be used COMPLETE and
+      verbatim - never paraphrased, combined, corrected, or shortened to fit a character
+      budget. No aggregate rating and no review count may be published. Source URLs and
+      retrieval provenance stay in the internal manifest and must never appear in a
+      customer-facing review card.
+    note_on_pricing_bar: >-
+      The verbatim DONNA, W. testimonial contains the customer's own sentence about
+      competitive prices. That is a quoted third-party opinion, not an EKG or Green Marketing
+      price claim, so it does not breach the price_or_pricing bar in barred_claims.
+
+  # EKG-owned Drive photo archive, supplied 2026-08-15. Recorded so the IDs are not lost.
+  # NOT YET READABLE by this application: it holds the least-privilege drive.file scope,
+  # which only sees files the app itself created. All ten return "File not found", and none
+  # is link-shared. Do not widen the OAuth scope without separate written approval.
+  drive_photo_archive:
+    # RESOLVED 2026-08-15 after OAuth re-consent. Two fixes were needed: a freshly minted
+    # token carrying drive.readonly, AND Shared Drive parameters on every call
+    # (supportsAllDrives on files.get; corpora='drive' + driveId on files.list).
+    # All ten folder IDs now resolve. 1,222 media files inventoried, including 165
+    # full-resolution 4032x3024 HEIC originals.
+    access_status: READABLE
+    probed_on: "2026-08-15"
+    shared_drive_name: "GM - Team Folder"
+    shared_drive_id: "0AAIRw8wjFATCUk9PVA"
+    inventory:
+      media_files: 1222
+      full_resolution_originals: 165
+      original_dimensions: "4032x3024 HEIC"
+    finding: >-
+      EKG's own photography contains NO core aerator, NO soil plugs and NO seed spreader at
+      any resolution. The only authentic EKG aeration evidence is the 320x320 four-panel
+      before/after composite, whose ~160px quadrants may never be enlarged. The
+      high-resolution originals behind those panels are NOT in the archive; recovering them
+      from EKG is the highest-value action for the project gallery.
+    # HARD BAR. Every high-res aeration/overseeding image in this Shared Drive belongs to a
+    # different Green Marketing client, or is stock. None may ever be used for EKG.
+    other_client_aeration_assets_do_not_use:
+      - owner: "Divine Lawns LLC"
+        assets: ["Aerating.jpg", "Green Aerator.jpg", "Green Aerator closeup_.jpg",
+                 "AERATION.jpg", "LAWN AERATION AND OVERSEEDING.jpg",
+                 "Z20230727 Grass Seed.jpg", "Z09122023 - Overseeding.jpg"]
+      - owner: "Softwind Landscape & Masonry - NY"
+        assets: ["21 aeration"]
+      - owner: "Perfection Lawn & Landscape LLC"
+        assets: ["aerator.jpg"]
+      - owner: "Iowa Lawn and Landscape LLC"
+        assets: ["AERATION.jpg (1500x1500)"]
+      - owner: "Shutterstock stock library"
+        assets: ["SHUTTERSTOCK Z09202023 - Aeration.jpg"]
+    client_root: "1lGbq4Xqg5nqRNnqtqnxZsghhUHpdqziG"
+    folders:
+      photos: "1awxUJtGgnSWggOD6N9y5dn61bebPrQ16"
+      photos_2023: "1dq568JgjxrUOwwq2my62Nl0_vA5D-u68"
+      landscaping_originals: "14lt_DuyNliyBeCBjCh4MPRf5teoFmSXI"
+      lawn_maintenance_originals: "14rYP-JgGz78q9ybWyJfWb4-ZFtD-KCWT"
+      vehicles_equipment_originals: "14vgw-7oi2NgSjT-WI_delZn0IFQfNXkD"
+      website_image_optimization: "14vckiexqjYHtZUW9rKwLZu16WHRRM94h"
+      our_work_optimized: "15sLDiOMdazBNg3lappeuGPJ2A0TFxRec"
+      before_after_optimized: "1tLE0fKUfZ8WU1NLFM7BPaI8f2eeM6hTM"
+    aeration_overseeding_composite: "168GYbmqi-w4tFXq65F1tbwsFpETfCb5n"
+    composite_rule: >-
+      The composite is a REFERENCE for locating high-resolution originals. Its quadrants are
+      roughly 160px and must never be enlarged into final gallery images.
+    excluded_assets:
+      - asset: "EKG Aeration Video.mp4"
+        reason: >-
+          Assembled from iStock imagery per its own source document. Must never be used as
+          authentic EKG project evidence, and no frame from it may fill a gallery position.
+
+  integrations:
+    crm: ""
+    call_tracking: ""
+    analytics: ""
+    tag_manager: ""
+    speed_to_lead: ""
+    review_url: ""
+    form_webhook_env_key: CRM_WEBHOOK_URL
+  permissions:
+    approvers:
+      - Green Marketing
+    allow_create_paused: false
+    allow_enable: false
+    allow_budget_changes: false
+    allow_deletions: false

@@ -1,0 +1,371 @@
+{
+ "plan": "AMB-0930-CPL-CONTAIN-2",
+ "target": {
+  "child_customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live"
+ },
+ "work_order": "clients/ambient-cooling-heating/work-orders/work-order-gas-boiler-repair-cpl-standby-2026-09-30.yaml",
+ "approval_type": "STANDBY APPROVAL: executable only when the trigger is confirmed by a fresh reconciliation run",
+ "trigger": {
+  "any_of": [
+   "campaign 24132507744 CPL > $350 on complete days with >= 1 verified lead",
+   "ad group 204129718047 zero-lead spend >= $260 (= min($300, $350 - 2 x $45))"
+  ],
+  "evaluated_on": "complete days + reconciled leads; provisional today is exposure only"
+ },
+ "preconditions": {
+  "campaign": {
+   "id": "24132507744",
+   "status": "ENABLED",
+   "budget_micros": 45000000
+  },
+  "ad_groups": {
+   "204129718047": {
+    "name": "SKAG | Boiler Repair",
+    "status": "ENABLED",
+    "enabled_ads": 2
+   },
+   "202339087594": {
+    "name": "SKAG | Gas Boiler Repair",
+    "status": "ENABLED",
+    "enabled_ads": 2
+   }
+  },
+  "untouched": {
+   "204129718207": {
+    "name": "SKAG | Boiler Replacement",
+    "status": "ENABLED"
+   }
+  }
+ },
+ "operations": [
+  {
+   "op": "UPDATE",
+   "resource": "ad_group",
+   "id": "204129718047",
+   "field": "status",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  },
+  {
+   "op": "UPDATE",
+   "resource": "ad_group",
+   "id": "202339087594",
+   "field": "status",
+   "from": "ENABLED",
+   "to": "PAUSED"
+  }
+ ],
+ "effect": {
+  "budget_change": "none",
+  "boiler_replacement": "keeps serving on the same $45 budget"
+ },
+ "readback_assertions": [
+  "ad groups 204129718047 and 202339087594 PAUSED",
+  "Boiler Replacement 204129718207 unchanged",
+  "no budget, bid, keyword, ad, asset or conversion change"
+ ],
+ "restart_rule": "never automatic; same requirements as CONTAIN-1",
+ "fingerprint": "7267DEE648C0",
+ "operation_count": 2,
+ "validate_only": "VALIDATE_OK",
+ "errors": [],
+ "generated_local": "2026-09-30T14:07:21.233313-04:00",
+ "evidence_not_hashed": {
+  "file": "cpl-reconciliation-2026-09-30.json",
+  "scopes": {
+   "C 24257819463": {
+    "launch_to_date": {
+     "spend": 469.9,
+     "clicks": 17,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "sept_mtd": {
+     "spend": 469.9,
+     "clicks": 17,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "heating_build_to_date": {
+     "spend": 469.9,
+     "clicks": 17,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "since_migration": {
+     "spend": 469.9,
+     "clicks": 17,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "last7": {
+     "spend": 469.9,
+     "clicks": 17,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "last14": {
+     "spend": 469.9,
+     "clicks": 17,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "today_provisional": {
+     "spend": 169.21,
+     "clicks": 6,
+     "leads": 0,
+     "cpl": null,
+     "band": "PROVISIONAL"
+    }
+   },
+   "G 204129717007": {
+    "launch_to_date": {
+     "spend": 406.12,
+     "clicks": 15,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "sept_mtd": {
+     "spend": 406.12,
+     "clicks": 15,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "heating_build_to_date": {
+     "spend": 406.12,
+     "clicks": 15,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "since_migration": {
+     "spend": 406.12,
+     "clicks": 15,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "last7": {
+     "spend": 406.12,
+     "clicks": 15,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "last14": {
+     "spend": 406.12,
+     "clicks": 15,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_STOP"
+    },
+    "today_provisional": {
+     "spend": 169.21,
+     "clicks": 6,
+     "leads": 0,
+     "cpl": null,
+     "band": "PROVISIONAL"
+    }
+   },
+   "C 24132507744": {
+    "launch_to_date": {
+     "spend": 346.49,
+     "clicks": 10,
+     "leads": 1,
+     "cpl": 346.49,
+     "band": "FREEZE"
+    },
+    "cooling_capped": {
+     "spend": 12.84,
+     "clicks": 1,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "sept_mtd": {
+     "spend": 346.49,
+     "clicks": 10,
+     "leads": 1,
+     "cpl": 346.49,
+     "band": "FREEZE"
+    },
+    "heating_build_to_date": {
+     "spend": 346.49,
+     "clicks": 10,
+     "leads": 1,
+     "cpl": 346.49,
+     "band": "FREEZE"
+    },
+    "since_migration": {
+     "spend": 333.65,
+     "clicks": 9,
+     "leads": 1,
+     "cpl": 333.65,
+     "band": "FREEZE"
+    },
+    "last7": {
+     "spend": 333.65,
+     "clicks": 9,
+     "leads": 1,
+     "cpl": 333.65,
+     "band": "FREEZE"
+    },
+    "last14": {
+     "spend": 346.49,
+     "clicks": 10,
+     "leads": 1,
+     "cpl": 346.49,
+     "band": "FREEZE"
+    }
+   },
+   "G 204129718047": {
+    "launch_to_date": {
+     "spend": 242.87,
+     "clicks": 6,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "sept_mtd": {
+     "spend": 242.87,
+     "clicks": 6,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "heating_build_to_date": {
+     "spend": 242.87,
+     "clicks": 6,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "since_migration": {
+     "spend": 242.87,
+     "clicks": 6,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "last7": {
+     "spend": 242.87,
+     "clicks": 6,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "last14": {
+     "spend": 242.87,
+     "clicks": 6,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    }
+   },
+   "G 202339087594": {
+    "launch_to_date": {
+     "spend": 82.41,
+     "clicks": 3,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "cooling_capped": {
+     "spend": 12.84,
+     "clicks": 1,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "sept_mtd": {
+     "spend": 82.41,
+     "clicks": 3,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "heating_build_to_date": {
+     "spend": 82.41,
+     "clicks": 3,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "since_migration": {
+     "spend": 69.57,
+     "clicks": 2,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "last7": {
+     "spend": 69.57,
+     "clicks": 2,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    },
+    "last14": {
+     "spend": 82.41,
+     "clicks": 3,
+     "leads": 0,
+     "cpl": null,
+     "band": "ZERO_LEAD_WATCH"
+    }
+   },
+   "G 204129718207": {
+    "launch_to_date": {
+     "spend": 21.21,
+     "clicks": 1,
+     "leads": 1,
+     "cpl": 21.21,
+     "band": "MET"
+    },
+    "sept_mtd": {
+     "spend": 21.21,
+     "clicks": 1,
+     "leads": 1,
+     "cpl": 21.21,
+     "band": "MET"
+    },
+    "heating_build_to_date": {
+     "spend": 21.21,
+     "clicks": 1,
+     "leads": 1,
+     "cpl": 21.21,
+     "band": "MET"
+    },
+    "since_migration": {
+     "spend": 21.21,
+     "clicks": 1,
+     "leads": 1,
+     "cpl": 21.21,
+     "band": "MET"
+    },
+    "last7": {
+     "spend": 21.21,
+     "clicks": 1,
+     "leads": 1,
+     "cpl": 21.21,
+     "band": "MET"
+    },
+    "last14": {
+     "spend": 21.21,
+     "clicks": 1,
+     "leads": 1,
+     "cpl": 21.21,
+     "band": "MET"
+    }
+   }
+  }
+ }
+}

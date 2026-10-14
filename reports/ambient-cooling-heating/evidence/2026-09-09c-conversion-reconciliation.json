@@ -1,0 +1,1138 @@
+{
+ "generated_local": "2026-09-09T23:46:21.484393-04:00",
+ "identity": {
+  "descriptive_name == 'Ambient Cooling - Live'": true,
+  "customer.id == 2401959466": true,
+  "not a manager account": true,
+  "not a test account": true,
+  "time_zone == America/New_York": true,
+  "currency_code == USD": true,
+  "Green Marketing manager 3373711342 ACTIVE": true,
+  "ClickCease manager 2815082755 ACTIVE": true
+ },
+ "today_partial": "2026-09-09",
+ "last_settled": "2026-09-08",
+ "layer1_customer": {
+  "conversion_tracking_id": "11155434808",
+  "google_ads_conversion_customer": "customers/2401959466",
+  "cross_account_conversion_tracking_id": "0",
+  "accepted_customer_data_terms": true,
+  "conversion_tracking_status": "CONVERSION_TRACKING_MANAGED_BY_SELF",
+  "enhanced_conversions_for_leads_enabled": true
+ },
+ "layer2_goal_config_level": [
+  {
+   "campaign": "AC Repair",
+   "campaign_id": "24132507741",
+   "goal_config_level": "CUSTOMER",
+   "custom_conversion_goal": null
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "campaign_id": "24132507744",
+   "goal_config_level": "CUSTOMER",
+   "custom_conversion_goal": null
+  },
+  {
+   "campaign": "HVAC Installation",
+   "campaign_id": "24132507747",
+   "goal_config_level": "CUSTOMER",
+   "custom_conversion_goal": null
+  },
+  {
+   "campaign": "HVAC Repair",
+   "campaign_id": "24132507750",
+   "goal_config_level": "CUSTOMER",
+   "custom_conversion_goal": null
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "campaign_id": "24132507753",
+   "goal_config_level": "CUSTOMER",
+   "custom_conversion_goal": null
+  }
+ ],
+ "layer3_customer_conversion_goal": [
+  {
+   "category": "PAGE_VIEW",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "category": "PHONE_CALL_LEAD",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "category": "PHONE_CALL_LEAD",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "category": "SUBMIT_LEAD_FORM",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "category": "GET_DIRECTIONS",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "category": "CONTACT",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "category": "CONTACT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "category": "CONTACT",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "category": "ENGAGEMENT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  }
+ ],
+ "layer3b_campaign_conversion_goal": [
+  {
+   "campaign": "AC Repair",
+   "category": "PAGE_VIEW",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "AC Repair",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "AC Repair",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "campaign": "AC Repair",
+   "category": "SUBMIT_LEAD_FORM",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "AC Repair",
+   "category": "GET_DIRECTIONS",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "AC Repair",
+   "category": "CONTACT",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "AC Repair",
+   "category": "CONTACT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "AC Repair",
+   "category": "CONTACT",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "campaign": "AC Repair",
+   "category": "ENGAGEMENT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "category": "PAGE_VIEW",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "category": "SUBMIT_LEAD_FORM",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "category": "GET_DIRECTIONS",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "category": "CONTACT",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "category": "CONTACT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "category": "CONTACT",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "category": "ENGAGEMENT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Installation",
+   "category": "PAGE_VIEW",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Installation",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Installation",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Installation",
+   "category": "SUBMIT_LEAD_FORM",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Installation",
+   "category": "GET_DIRECTIONS",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Installation",
+   "category": "CONTACT",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Installation",
+   "category": "CONTACT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Installation",
+   "category": "CONTACT",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Installation",
+   "category": "ENGAGEMENT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Repair",
+   "category": "PAGE_VIEW",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Repair",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Repair",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Repair",
+   "category": "SUBMIT_LEAD_FORM",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Repair",
+   "category": "GET_DIRECTIONS",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Repair",
+   "category": "CONTACT",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Repair",
+   "category": "CONTACT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Repair",
+   "category": "CONTACT",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Repair",
+   "category": "ENGAGEMENT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "category": "PAGE_VIEW",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "category": "PHONE_CALL_LEAD",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "category": "SUBMIT_LEAD_FORM",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "category": "GET_DIRECTIONS",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "category": "CONTACT",
+   "origin": "WEBSITE",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "category": "CONTACT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "category": "CONTACT",
+   "origin": "CALL_FROM_ADS",
+   "biddable": true
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "category": "ENGAGEMENT",
+   "origin": "GOOGLE_HOSTED",
+   "biddable": false
+  }
+ ],
+ "layer4_conversion_actions": [
+  {
+   "id": "1068114183",
+   "resource_name": "customers/2401959466/conversionActions/1068114183",
+   "name": "Calls from ads",
+   "status": "ENABLED",
+   "category": "PHONE_CALL_LEAD",
+   "type": "AD_CALL",
+   "primary_for_goal": true,
+   "include_in_conversions_metric": true,
+   "counting_type": "ONE_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "CALL_FROM_ADS",
+   "click_window_days": 30,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "6498555481",
+   "resource_name": "customers/2401959466/conversionActions/6498555481",
+   "name": "Visit Thank you page - Submit Form",
+   "status": "ENABLED",
+   "category": "SUBMIT_LEAD_FORM",
+   "type": "WEBPAGE",
+   "primary_for_goal": false,
+   "include_in_conversions_metric": false,
+   "counting_type": "ONE_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "WEBSITE",
+   "click_window_days": 30,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "6498555484",
+   "resource_name": "customers/2401959466/conversionActions/6498555484",
+   "name": "Call BTN Click",
+   "status": "ENABLED",
+   "category": "CONTACT",
+   "type": "WEBPAGE",
+   "primary_for_goal": false,
+   "include_in_conversions_metric": false,
+   "counting_type": "ONE_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "WEBSITE",
+   "click_window_days": 30,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "6636693088",
+   "resource_name": "customers/2401959466/conversionActions/6636693088",
+   "name": "Ambient Cooling and Heating (web) purchase",
+   "status": "HIDDEN",
+   "category": "PURCHASE",
+   "type": "GOOGLE_ANALYTICS_4_PURCHASE",
+   "primary_for_goal": false,
+   "include_in_conversions_metric": false,
+   "counting_type": "MANY_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "WEBSITE",
+   "click_window_days": 90,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "6640721230",
+   "resource_name": "customers/2401959466/conversionActions/6640721230",
+   "name": "Clicks to call",
+   "status": "ENABLED",
+   "category": "CONTACT",
+   "type": "GOOGLE_HOSTED",
+   "primary_for_goal": true,
+   "include_in_conversions_metric": false,
+   "counting_type": "MANY_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "GOOGLE_HOSTED",
+   "click_window_days": 30,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "6641739327",
+   "resource_name": "customers/2401959466/conversionActions/6641739327",
+   "name": "Local actions - Website visits",
+   "status": "ENABLED",
+   "category": "PAGE_VIEW",
+   "type": "GOOGLE_HOSTED",
+   "primary_for_goal": true,
+   "include_in_conversions_metric": false,
+   "counting_type": "MANY_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "GOOGLE_HOSTED",
+   "click_window_days": 30,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "6642544931",
+   "resource_name": "customers/2401959466/conversionActions/6642544931",
+   "name": "Local actions - Directions",
+   "status": "ENABLED",
+   "category": "GET_DIRECTIONS",
+   "type": "GOOGLE_HOSTED",
+   "primary_for_goal": true,
+   "include_in_conversions_metric": false,
+   "counting_type": "MANY_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "GOOGLE_HOSTED",
+   "click_window_days": 30,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "6642551975",
+   "resource_name": "customers/2401959466/conversionActions/6642551975",
+   "name": "Local actions - Other engagements",
+   "status": "ENABLED",
+   "category": "ENGAGEMENT",
+   "type": "GOOGLE_HOSTED",
+   "primary_for_goal": true,
+   "include_in_conversions_metric": false,
+   "counting_type": "MANY_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "GOOGLE_HOSTED",
+   "click_window_days": 30,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "6684124701",
+   "resource_name": "customers/2401959466/conversionActions/6684124701",
+   "name": "Ambient Cooling and Heating (web) form_submit",
+   "status": "HIDDEN",
+   "category": "SUBMIT_LEAD_FORM",
+   "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "primary_for_goal": false,
+   "include_in_conversions_metric": false,
+   "counting_type": "MANY_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "WEBSITE",
+   "click_window_days": 90,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "6885463625",
+   "resource_name": "customers/2401959466/conversionActions/6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "status": "ENABLED",
+   "category": "SUBMIT_LEAD_FORM",
+   "type": "WEBPAGE",
+   "primary_for_goal": true,
+   "include_in_conversions_metric": true,
+   "counting_type": "ONE_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "WEBSITE",
+   "click_window_days": 30,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "6885576934",
+   "resource_name": "customers/2401959466/conversionActions/6885576934",
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "status": "ENABLED",
+   "category": "PHONE_CALL_LEAD",
+   "type": "WEBSITE_CALL",
+   "primary_for_goal": true,
+   "include_in_conversions_metric": true,
+   "counting_type": "ONE_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "WEBSITE",
+   "click_window_days": 30,
+   "phone_call_duration_seconds": 30
+  },
+  {
+   "id": "6954620053",
+   "resource_name": "customers/2401959466/conversionActions/6954620053",
+   "name": "Local actions - Menu views",
+   "status": "ENABLED",
+   "category": "PAGE_VIEW",
+   "type": "GOOGLE_HOSTED",
+   "primary_for_goal": true,
+   "include_in_conversions_metric": false,
+   "counting_type": "MANY_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "GOOGLE_HOSTED",
+   "click_window_days": 30,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "7389995485",
+   "resource_name": "customers/2401959466/conversionActions/7389995485",
+   "name": "Ambient Cooling and Heating (web) form_submission",
+   "status": "ENABLED",
+   "category": "SUBMIT_LEAD_FORM",
+   "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "primary_for_goal": false,
+   "include_in_conversions_metric": false,
+   "counting_type": "MANY_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "WEBSITE",
+   "click_window_days": 90,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "7389995488",
+   "resource_name": "customers/2401959466/conversionActions/7389995488",
+   "name": "Ambient Cooling and Heating (web) phone_call_click",
+   "status": "ENABLED",
+   "category": "PHONE_CALL_LEAD",
+   "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "primary_for_goal": false,
+   "include_in_conversions_metric": false,
+   "counting_type": "MANY_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "WEBSITE",
+   "click_window_days": 90,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "7643656075",
+   "resource_name": "customers/2401959466/conversionActions/7643656075",
+   "name": "WC Calls",
+   "status": "ENABLED",
+   "category": "CONTACT",
+   "type": "UPLOAD_CALLS",
+   "primary_for_goal": true,
+   "include_in_conversions_metric": true,
+   "counting_type": "ONE_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "CALL_FROM_ADS",
+   "click_window_days": 60,
+   "phone_call_duration_seconds": 60
+  },
+  {
+   "id": "7643656486",
+   "resource_name": "customers/2401959466/conversionActions/7643656486",
+   "name": "WC Lead",
+   "status": "ENABLED",
+   "category": "CONTACT",
+   "type": "UPLOAD_CLICKS",
+   "primary_for_goal": true,
+   "include_in_conversions_metric": true,
+   "counting_type": "ONE_PER_CLICK",
+   "owner_customer": "2401959466",
+   "origin": "WEBSITE",
+   "click_window_days": 60,
+   "phone_call_duration_seconds": 60
+  }
+ ],
+ "daily_rows": [
+  {
+   "date": "2026-08-20",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "1068114183",
+   "action_name": "Calls from ads",
+   "category": "PHONE_CALL_LEAD",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-20",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "6642544931",
+   "action_name": "Local actions - Directions",
+   "category": "GET_DIRECTIONS",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-21",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "6642551975",
+   "action_name": "Local actions - Other engagements",
+   "category": "ENGAGEMENT",
+   "conversions": 0.0,
+   "all_conversions": 13.0
+  },
+  {
+   "date": "2026-08-21",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "7643656486",
+   "action_name": "WC Lead",
+   "category": "CONTACT",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-22",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "6885463625",
+   "action_name": "Ambient Cooling - LP -Submit Lead Forms",
+   "category": "SUBMIT_LEAD_FORM",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-22",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "7389995485",
+   "action_name": "Ambient Cooling and Heating (web) form_submission",
+   "category": "SUBMIT_LEAD_FORM",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-22",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "7643656486",
+   "action_name": "WC Lead",
+   "category": "CONTACT",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-25",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "6885463625",
+   "action_name": "Ambient Cooling - LP -Submit Lead Forms",
+   "category": "SUBMIT_LEAD_FORM",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-25",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "7389995485",
+   "action_name": "Ambient Cooling and Heating (web) form_submission",
+   "category": "SUBMIT_LEAD_FORM",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-25",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "7643656486",
+   "action_name": "WC Lead",
+   "category": "CONTACT",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-31",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "1068114183",
+   "action_name": "Calls from ads",
+   "category": "PHONE_CALL_LEAD",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-31",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "6642551975",
+   "action_name": "Local actions - Other engagements",
+   "category": "ENGAGEMENT",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-09-01",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "1068114183",
+   "action_name": "Calls from ads",
+   "category": "PHONE_CALL_LEAD",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-09-04",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "action_id": "6641739327",
+   "action_name": "Local actions - Website visits",
+   "category": "PAGE_VIEW",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-19",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6641739327",
+   "action_name": "Local actions - Website visits",
+   "category": "PAGE_VIEW",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-20",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6642544931",
+   "action_name": "Local actions - Directions",
+   "category": "GET_DIRECTIONS",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-21",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6642544931",
+   "action_name": "Local actions - Directions",
+   "category": "GET_DIRECTIONS",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-21",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "7643656486",
+   "action_name": "WC Lead",
+   "category": "CONTACT",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-24",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6642544931",
+   "action_name": "Local actions - Directions",
+   "category": "GET_DIRECTIONS",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-25",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6642544931",
+   "action_name": "Local actions - Directions",
+   "category": "GET_DIRECTIONS",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-25",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6642551975",
+   "action_name": "Local actions - Other engagements",
+   "category": "ENGAGEMENT",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-25",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "7389995488",
+   "action_name": "Ambient Cooling and Heating (web) phone_call_click",
+   "category": "PHONE_CALL_LEAD",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-26",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6642551975",
+   "action_name": "Local actions - Other engagements",
+   "category": "ENGAGEMENT",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "date": "2026-09-01",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6640721230",
+   "action_name": "Clicks to call",
+   "category": "CONTACT",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-09-01",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6641739327",
+   "action_name": "Local actions - Website visits",
+   "category": "PAGE_VIEW",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "date": "2026-09-01",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6885463625",
+   "action_name": "Ambient Cooling - LP -Submit Lead Forms",
+   "category": "SUBMIT_LEAD_FORM",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-09-01",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "7389995485",
+   "action_name": "Ambient Cooling and Heating (web) form_submission",
+   "category": "SUBMIT_LEAD_FORM",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "date": "2026-09-01",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "7643656486",
+   "action_name": "WC Lead",
+   "category": "CONTACT",
+   "conversions": 2.0,
+   "all_conversions": 2.0
+  },
+  {
+   "date": "2026-09-02",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6642551975",
+   "action_name": "Local actions - Other engagements",
+   "category": "ENGAGEMENT",
+   "conversions": 0.0,
+   "all_conversions": 7.0
+  },
+  {
+   "date": "2026-09-03",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "action_id": "6641739327",
+   "action_name": "Local actions - Website visits",
+   "category": "PAGE_VIEW",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-19",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "6642551975",
+   "action_name": "Local actions - Other engagements",
+   "category": "ENGAGEMENT",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-20",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "6885463625",
+   "action_name": "Ambient Cooling - LP -Submit Lead Forms",
+   "category": "SUBMIT_LEAD_FORM",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-20",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "7389995485",
+   "action_name": "Ambient Cooling and Heating (web) form_submission",
+   "category": "SUBMIT_LEAD_FORM",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-20",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "7643656486",
+   "action_name": "WC Lead",
+   "category": "CONTACT",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-24",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "1068114183",
+   "action_name": "Calls from ads",
+   "category": "PHONE_CALL_LEAD",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-27",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "1068114183",
+   "action_name": "Calls from ads",
+   "category": "PHONE_CALL_LEAD",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-27",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "6642551975",
+   "action_name": "Local actions - Other engagements",
+   "category": "ENGAGEMENT",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-28",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "6641739327",
+   "action_name": "Local actions - Website visits",
+   "category": "PAGE_VIEW",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-28",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "6885463625",
+   "action_name": "Ambient Cooling - LP -Submit Lead Forms",
+   "category": "SUBMIT_LEAD_FORM",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-28",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "7389995485",
+   "action_name": "Ambient Cooling and Heating (web) form_submission",
+   "category": "SUBMIT_LEAD_FORM",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-28",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "7389995488",
+   "action_name": "Ambient Cooling and Heating (web) phone_call_click",
+   "category": "PHONE_CALL_LEAD",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "date": "2026-08-28",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "7643656486",
+   "action_name": "WC Lead",
+   "category": "CONTACT",
+   "conversions": 1.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-08-29",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "6642551975",
+   "action_name": "Local actions - Other engagements",
+   "category": "ENGAGEMENT",
+   "conversions": 0.0,
+   "all_conversions": 2.0
+  },
+  {
+   "date": "2026-08-31",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "6641739327",
+   "action_name": "Local actions - Website visits",
+   "category": "PAGE_VIEW",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-09-01",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "6642551975",
+   "action_name": "Local actions - Other engagements",
+   "category": "ENGAGEMENT",
+   "conversions": 0.0,
+   "all_conversions": 5.0
+  },
+  {
+   "date": "2026-09-02",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "6641739327",
+   "action_name": "Local actions - Website visits",
+   "category": "PAGE_VIEW",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  },
+  {
+   "date": "2026-09-03",
+   "campaign_id": "24132507750",
+   "campaign": "HVAC Repair",
+   "action_id": "6641739327",
+   "action_name": "Local actions - Website visits",
+   "category": "PAGE_VIEW",
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  }
+ ],
+ "per_action_totals": {
+  "1068114183|Calls from ads": {
+   "conversions": 5.0,
+   "all_conversions": 5.0
+  },
+  "6642544931|Local actions - Directions": {
+   "conversions": 0.0,
+   "all_conversions": 5.0
+  },
+  "6642551975|Local actions - Other engagements": {
+   "conversions": 0.0,
+   "all_conversions": 33.0
+  },
+  "7643656486|WC Lead": {
+   "conversions": 4.0,
+   "all_conversions": 8.0
+  },
+  "6885463625|Ambient Cooling - LP -Submit Lead Forms": {
+   "conversions": 5.0,
+   "all_conversions": 5.0
+  },
+  "7389995485|Ambient Cooling and Heating (web) form_submission": {
+   "conversions": 0.0,
+   "all_conversions": 6.0
+  },
+  "6641739327|Local actions - Website visits": {
+   "conversions": 0.0,
+   "all_conversions": 9.0
+  },
+  "7389995488|Ambient Cooling and Heating (web) phone_call_click": {
+   "conversions": 0.0,
+   "all_conversions": 3.0
+  },
+  "6640721230|Clicks to call": {
+   "conversions": 0.0,
+   "all_conversions": 1.0
+  }
+ },
+ "wc_lead_split": {
+  "on_or_before_2026_08_21": {
+   "primary": 1.0,
+   "all": 3.0,
+   "rows": 3
+  },
+  "after_2026_08_21": {
+   "primary": 3.0,
+   "all": 5.0,
+   "rows": 4
+  }
+ }
+}

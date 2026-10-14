@@ -1,0 +1,22 @@
+{
+ "plan_name": "AMB-1002-EMER-ENABLE-1",
+ "status": "DRAFT - not approvable until AMB-1002-EMER-CREATE-1 executes, reads back 0 FAIL, both RSAs are APPROVED, and the availability fact below is confirmed",
+ "gates": [
+  "Owner confirms: Ambient takes urgent no-heat / heating-breakdown repair calls Mon-Fri 08:00-16:00 and books the next available technician visit (no time promise). Answering is already published; dispatch is the missing fact.",
+  "Both new RSAs APPROVED (or APPROVED_LIMITED) by Google policy review",
+  "Readback of the CREATE plan 0 FAIL and unrelated-resource baseline hash unchanged"
+ ],
+ "operations": [
+  "enable RSA A (id from CREATE receipt)",
+  "enable RSA B (id from CREATE receipt)",
+  "enable keyword emergency furnace repair EXACT (currently PAUSED)",
+  "enable keyword emergency heat repair EXACT (currently PAUSED)",
+  "enable keyword emergency heater repair PHRASE (currently PAUSED)",
+  "enable keyword emergency heating repair EXACT (currently PAUSED)",
+  "enable keyword emergency heating repair PHRASE (currently PAUSED)",
+  "enable new PHRASE emergency furnace repair",
+  "remove label WAITING_LP (customers/2401959466/labels/22294515713)",
+  "remove label WAITING_AVAILABILITY (customers/2401959466/labels/22294515722)"
+ ],
+ "note": "Ad group 204129717047 and campaign 24257819463 are already ENABLED; nothing else changes."
+}

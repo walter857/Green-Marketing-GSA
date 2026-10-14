@@ -1,0 +1,127 @@
+{
+ "account": {
+  "name": "Ray Lawns - Live",
+  "customer_id": "5587528194"
+ },
+ "account_total": {
+  "impressions": 29963,
+  "clicks": 1353,
+  "ctr": 0.04515569202015819,
+  "conversions": 1.0,
+  "cost_micros": 134101789,
+  "cost_per_conversion": 134101789.0,
+  "conversions_from_interactions_rate": 0.0007067137809187279,
+  "absolute_top_impression_percentage": 0.0
+ },
+ "campaigns": [
+  {
+   "campaign_id": "23803643256",
+   "campaign": "Ray Lawns Retargeting - Feeding Stage",
+   "status": "ENABLED",
+   "channel": "DEMAND_GEN",
+   "daily_budget": 5.0,
+   "impressions": 29963,
+   "clicks": 1353,
+   "ctr": 0.04515569202015819,
+   "conversions": 1.0,
+   "cost_micros": 134101789,
+   "cost_per_conversion": 134101789.0,
+   "conversions_from_interactions_rate": 0.0007067137809187279,
+   "absolute_top_impression_percentage": 0.0,
+   "search_absolute_top_impression_share": null,
+   "search_rank_lost_absolute_top_impression_share": null,
+   "search_budget_lost_absolute_top_impression_share": null,
+   "search_impression_share": null
+  }
+ ],
+ "ad_groups": [
+  {
+   "campaign": "Ray Lawns Retargeting - Feeding Stage",
+   "ad_group_id": "195326659119",
+   "ad_group": "Sod & Landscape Design",
+   "status": "ENABLED",
+   "impressions": 29963,
+   "clicks": 1353,
+   "ctr": 0.04515569202015819,
+   "conversions": 1.0,
+   "cost_micros": 134101789,
+   "cost_per_conversion": 134101789.0,
+   "conversions_from_interactions_rate": 0.0007067137809187279,
+   "absolute_top_impression_percentage": 0.0,
+   "search_absolute_top_impression_share": null,
+   "search_rank_lost_absolute_top_impression_share": null,
+   "search_impression_share": null
+  }
+ ],
+ "ads": [
+  {
+   "campaign": "Ray Lawns Retargeting - Feeding Stage",
+   "ad_group": "Sod & Landscape Design",
+   "ad_id": "807446256914",
+   "status": "ENABLED",
+   "ad_type": "DEMAND_GEN_MULTI_ASSET_AD",
+   "ad_strength": "GOOD",
+   "headlines": [],
+   "impressions": 18092,
+   "clicks": 634,
+   "ctr": 0.03504311297811187,
+   "conversions": 1.0,
+   "cost_micros": 63257327,
+   "cost_per_conversion": 63257327.0,
+   "conversions_from_interactions_rate": 0.0015772870662460567,
+   "absolute_top_impression_percentage": 0.0
+  },
+  {
+   "campaign": "Ray Lawns Retargeting - Feeding Stage",
+   "ad_group": "Sod & Landscape Design",
+   "ad_id": "807446256917",
+   "status": "ENABLED",
+   "ad_type": "DEMAND_GEN_MULTI_ASSET_AD",
+   "ad_strength": "GOOD",
+   "headlines": [],
+   "impressions": 7060,
+   "clicks": 656,
+   "ctr": 0.09291784702549576,
+   "conversions": 0.0,
+   "cost_micros": 64523504,
+   "cost_per_conversion": 0.0,
+   "conversions_from_interactions_rate": 0.0,
+   "absolute_top_impression_percentage": 0.0
+  },
+  {
+   "campaign": "Ray Lawns Retargeting - Feeding Stage",
+   "ad_group": "Sod & Landscape Design",
+   "ad_id": "808584262692",
+   "status": "ENABLED",
+   "ad_type": "DEMAND_GEN_VIDEO_RESPONSIVE_AD",
+   "ad_strength": "GOOD",
+   "headlines": [],
+   "impressions": 2135,
+   "clicks": 29,
+   "ctr": 0.013583138173302109,
+   "conversions": 0.0,
+   "cost_micros": 2751735,
+   "cost_per_conversion": 0.0,
+   "conversions_from_interactions_rate": 0.0,
+   "absolute_top_impression_percentage": 0.0
+  },
+  {
+   "campaign": "Ray Lawns Retargeting - Feeding Stage",
+   "ad_group": "Sod & Landscape Design",
+   "ad_id": "808622611576",
+   "status": "ENABLED",
+   "ad_type": "DEMAND_GEN_VIDEO_RESPONSIVE_AD",
+   "ad_strength": "GOOD",
+   "headlines": [],
+   "impressions": 2676,
+   "clicks": 34,
+   "ctr": 0.012705530642750373,
+   "conversions": 0.0,
+   "cost_micros": 3569223,
+   "cost_per_conversion": 0.0,
+   "conversions_from_interactions_rate": 0.0,
+   "absolute_top_impression_percentage": 0.0
+  }
+ ],
+ "keywords": []
+}

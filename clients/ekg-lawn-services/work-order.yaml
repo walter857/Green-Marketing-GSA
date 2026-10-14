@@ -1,0 +1,63 @@
+work_order:
+  client_slug: ekg-lawn-services
+  business_name: EKG Lawn Services
+  account:
+    exact_child_account_name: EKG Lawn Services - Live
+    child_customer_id: "7478932848"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: landscaping
+    exact_primary_service: Aeration & Overseeding
+    related_services:
+      - Lawn Aeration
+      - Lawn Overseeding
+  task:
+    type: full-system
+    mode: draft
+    request: >-
+      Full-system build for the single combined primary service Aeration &
+      Overseeding. Read-only all-time account analysis first, including search
+      terms from every historical campaign in this child account, because prior
+      campaigns may hold aeration and overseeding demand. Then draft exactly one
+      standard Search campaign named "Aeration & Overseeding" containing exactly
+      two user-approved ad groups, "Lawn Aeration" and "Lawn Overseeding", with
+      Phrase and Exact keywords only, two RSAs per ad group, negatives with
+      evidence, assets, two landing-page content documents copied from the
+      sanitized master template, and a developer handoff. The two-ad-group split
+      is user-approved and is not evidence-driven: research selects the canonical
+      keyword inside each approved ad group but may not add a third ad group.
+      Six approved positive location targets apply at campaign level under
+      PRESENCE targeting; see location-targets.yaml. Aeration and Overseeding are
+      components of one combined service, not two campaigns. Nothing is created
+      or enabled in this mode.
+    date_range: >-
+      all_time = earliest available through 2026-08-14, subject to Google Ads API
+      retention limits; comparison windows last_30, last_90, last_365, and
+      month_to_date to be recorded once the account read succeeds
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. landscaping is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ekglawn.com/
+    # Six approved positive Google Ads location targets, verbatim as supplied.
+    # Google Ads TARGETING only - these do not authorize public-facing city or
+    # service-area wording. The authoritative structured record, including the
+    # pending geo-target-constant lookup for 23114, is location-targets.yaml.
+    service_area:
+      - "2.0|mi|37.441924,-77.704566"
+      - "23114, Virginia, United States"
+      - "2.0|mi|37.387932,-77.701819"
+      - "2.0|mi|37.417932,-77.750571"
+      - "2.0|mi|37.435133,-77.663776"
+      - "2.0|mi|37.450549,-77.751945"
+    daily_budget: 16.45
+    primary_conversion_goal: new qualified customers
+    source_files:
+      - clients/ekg-lawn-services/location-targets.yaml
+    # Extra non-schema inputs recorded verbatim from the approved assignment.
+    landing_page_base_url: https://offer.ekglawn.com/
+    monthly_budget: 500
+    daily_budget_basis: "500 / 30.4 = 16.45 ongoing full-month average"
+    first_month_daily_budget: null  # pending the month-to-date spend read in section 8
+  approval_owner: Green Marketing

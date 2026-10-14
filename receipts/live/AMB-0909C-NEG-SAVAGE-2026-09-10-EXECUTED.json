@@ -1,0 +1,37 @@
+{
+ "plan_name": "AMB-0909C-NEG-SAVAGE",
+ "fingerprint": "10F76004E1B6",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "validate_only": false,
+ "partial_failure": false,
+ "operation_count": 5,
+ "operations_log": [
+  "REMOVE negative [PHRASE] 'savage' from AC Repair (customers/2401959466/campaignCriteria/24132507741~138360213)",
+  "REMOVE negative [PHRASE] 'savage' from Gas Boiler Repair (customers/2401959466/campaignCriteria/24132507744~138360213)",
+  "REMOVE negative [PHRASE] 'savage' from HVAC Installation (customers/2401959466/campaignCriteria/24132507747~138360213)",
+  "REMOVE negative [PHRASE] 'savage' from HVAC Repair (customers/2401959466/campaignCriteria/24132507750~138360213)",
+  "REMOVE negative [PHRASE] 'savage' from HVAC Replacement (customers/2401959466/campaignCriteria/24132507753~138360213)"
+ ],
+ "identity": {
+  "descriptive_name == 'Ambient Cooling - Live'": true,
+  "customer.id == 2401959466": true,
+  "not a manager account": true,
+  "not a test account": true,
+  "time_zone == America/New_York": true,
+  "currency_code == USD": true,
+  "Green Marketing manager 3373711342 ACTIVE": true,
+  "ClickCease manager 2815082755 ACTIVE": true
+ },
+ "started_local": "2026-09-10T00:42:03.288283-04:00",
+ "status": "EXECUTED_OK",
+ "results_returned": 5,
+ "resource_names": [
+  "customers/2401959466/campaignCriteria/24132507741~138360213",
+  "customers/2401959466/campaignCriteria/24132507744~138360213",
+  "customers/2401959466/campaignCriteria/24132507747~138360213",
+  "customers/2401959466/campaignCriteria/24132507750~138360213",
+  "customers/2401959466/campaignCriteria/24132507753~138360213"
+ ],
+ "finished_local": "2026-09-10T00:42:03.807756-04:00"
+}

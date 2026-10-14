@@ -1,0 +1,860 @@
+# SOFTWIND POWER WASHING - RECOVERY EXECUTION LEDGER
+#
+# THE PERSISTENT CONTROLLING CONTEXT. Walter never has to restate the objective.
+# Read this file plus the master plan before any further Softwind work.
+#
+# Account: Softwind Power Washing - Live / 1521725229 / Power Washing
+# Surviving campaign: 24103511039
+# Generated 2026-09-01 America/New_York. READ + DRAFT. Zero external changes.
+#
+# RULE: one approval at a time. Present one exact action, wait for Walter's exact
+# approval, execute only that, read back, QA, update this ledger, prepare the next
+# plan, present only the next approval, stop.
+#
+# NEVER combine measurement tests, website changes, campaign creation, ad creation,
+# enablement, negatives, bidding, pauses or budget into one fingerprint.
+
+ledger:
+  version: 1
+  generated_account_local: "2026-09-01T20:20:00-04:00"
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+    surviving_campaign_id: "24103511039"
+    retiring_campaign_id: "24145053510"
+  objective:
+    primary: >-
+      Generate qualified Power Washing and Pressure Washing leads at the lowest
+      defensible cost per qualified lead.
+    economics_status: UNKNOWN
+    economics_note: >-
+      Target CPL, CPQL, close rate, job revenue, gross margin and lead value are
+      all UNKNOWN and must be reported as UNKNOWN until the client supplies
+      verified figures or the CRM is connected. Never infer them.
+  current_position:
+    lifetime_spend_usd: 595.87
+    lifetime_valid_clicks: 18
+    lifetime_conversions: 0
+    lifetime_confirmed_relevant_leads: 0
+    whatconverts: >-
+      USER-SUPPLIED WHATCONVERTS RECORDS REVIEWED - ZERO CONFIRMED RELEVANT POWER
+      WASHING OR PRESSURE WASHING LEADS IN THE SUPPLIED ROWS.
+    september_1_partial: "19 impressions, 1 valid click at $29.50, 11 invalid clicks, 0 conversions"
+
+  owner_accepted_exceptions:
+    - id: EXC-1
+      title: 'OWNER-ACCEPTED TEMPORARY MEASUREMENT EXCEPTION - DOES NOT BLOCK GOOGLE ADS ENABLEMENT'
+      recorded: '2026-09-02'
+      decided_by: Walter Correa
+      decision: >-
+        The existing form-conversion behaviour attached to /thank-you/ stays unchanged for
+        now. A direct visit to /thank-you/ may fire the current form-conversion event.
+        Google Ads enablement is NOT blocked by this.
+      accepted_because:
+        - The account has recorded zero real Power Washing or Pressure Washing conversions.
+        - The controlled form test proved the form submits successfully.
+        - >-
+          The controlled test proved the Softwind Google Ads conversion event fires after a
+          successful submission.
+        - The immediate priority is putting the rebuilt inventory into delivery.
+        - The thank-you trigger is corrected later via the developer and GTM workflow.
+      safeguards_in_force_while_the_exception_stands:
+        - Keep Maximize Clicks. Do NOT switch to Maximize Conversions.
+        - Do NOT use Target CPA. Do NOT use Target ROAS.
+        - Do NOT treat an unverified Google Ads conversion as a qualified lead.
+        - Reconcile every reported conversion against WhatConverts and the real lead record.
+        - Keep developer ticket DEV-R7A3-04 / ClickUp Task 1 OPEN.
+        - Do not change the website, GTM, WhatConverts or any conversion action.
+      review_trigger: >-
+        Revisit when the gm_power_washing_form_success event ships and the GTM trigger is
+        repointed. Until then conversion-based bidding remains prohibited.
+
+  stages:
+
+    - stage: 1
+      plan_id: PLAN-R1B
+      task: Controlled instrumented form-conversion test
+      status: COMPLETE - EXECUTED 2026-09-02
+      dependency: none
+      approval_type: CONTROLLED_LIVE_TEST_FORM
+      fingerprint: B7AD76CB16F8
+      action_count: 8
+      object_count: 8
+      mutation_count: 0
+      external_test_actions: 8
+      website_actions: 0
+      expected_effect: >-
+        Zero leads directly. Establishes whether the form conversion event fires
+        at all, exactly once, with the correct label, and whether the foreign tag
+        AW-17878095007 also receives it. Every later measurement judgement depends
+        on it.
+      risk: >-
+        VERY LOW inside Google Ads - zero mutations. External risk is one test lead
+        reaching the client's systems, mitigated by a reserved fictitious phone
+        number, an unmistakable test name, advance notice and a named cleanup owner.
+      rollback: >-
+        Delete the Gravity Forms entry, archive the WhatConverts lead, delete any
+        CRM record. Nothing is written to Google Ads.
+      qa_requirements:
+        - Real Chromium with JavaScript - SG-Captcha serves non-JS clients a stub
+        - Full network capture of every conversion beacon
+        - Exactly one submission
+        - Re-read Google Ads all_conversions 24 hours later
+      completion_status: COMPLETE 2026-09-02 - ALL EIGHT ACTIONS
+      form_submissions: 1
+      submitted_account_local: "2026-09-02T09:24:37.155-04:00"
+      result_headline: >-
+        The Softwind form conversion event DOES fire. On successful submission the
+        thank-you page sends en=conversion to pagead/conversion/18369652705 and
+        pagead/1p-conversion/18369652705 - one logical event over the standard
+        endpoint pair, no duplication. The form path is alive. Google Ads
+        all_conversions correctly remains 0.0 because a synthetic GCLID cannot
+        join to a real click - EXPECTED, not a failure.
+      corrections_made_during_execution:
+        - >-
+          input_9 is a Gravity Forms HONEYPOT (gfield--type-honeypot, display:none,
+          labelled "Comments"), not the Full Name field. PLAN-R1B and PLAN-A2 both
+          mislabel it. Filling it would have marked the lead as SPAM and silently
+          discarded it, producing a false "form is broken" conclusion. Left empty.
+          The real name field is input_1. Field map is not fingerprinted, so
+          B7AD76CB16F8 is unchanged.
+        - >-
+          The T-1/T-2 receipt's "5 visible fields, none required" was wrong. There
+          are 4 real fields, 3 required.
+        - >-
+          The T-1/T-2 receipt's SG-Captcha claim is softened: it did NOT appear on
+          this run (HTTP 200). It is INTERMITTENT, not a constant blocker. P0 -> P2.
+        - >-
+          utm_term DOES reach the submission POST; the earlier "missing" reading
+          was a pre-submit storage artefact.
+        - >-
+          WhatConverts IS capturing full attribution including the GCLID via
+          wc_client; its script is proxied rather than served from a whatconverts
+          host, which the earlier receipt had flagged as possibly not recording.
+      approved_by: Walter Correa
+      approval_received: "2026-09-02 - APPROVE PLAN-R1B B7AD76CB16F8 FOR 1521725229"
+      approval_still_live: true
+      approval_needs_reissue: false
+      actions_complete: [T-1, T-2]
+      actions_pending: [T-3, T-4, T-5, T-6, T-7, T-8]
+      halted_at: T-3
+      halt_reason: >-
+        T-3 is an EXTERNAL WRITE gated by the plan's own preconditions R1B-PRE-2
+        (test email), R1B-PRE-3 (client notified) and R1B-PRE-4 (named cleanup
+        owner). All three remain NOT MET. No write was attempted, so there is
+        nothing to inventory or recover - this is a clean stop at a defined gate,
+        not a partial failure.
+      unblocks_with: [IN-1, IN-2]
+      completion_status_detail: >-
+        T-1 and T-2 already delivered the plan's stated highest-value output -
+        whether AW-17878095007 receives the conversion event - WITHOUT submitting
+        anything. It does, and it also receives the GCLID and the phone number.
+      evidence_file: clients/softwind-power-washing/receipts/2026-09-02-plan-r1b-execution-continuation-receipt.md
+      evidence_file_part1: clients/softwind-power-washing/receipts/2026-09-02-plan-r1b-t1-t2-execution-receipt.md
+      next_action: >-
+        NONE - plan complete. Cleanup of the test record is Walter's, per plan.
+      cleanup_owner_todo: >-
+        Delete the Gravity Forms entry and archive/mark the WhatConverts lead named
+        GM TEST DO NOT CONTACT submitted 2026-09-02 09:24:37 ET. Nothing to clean
+        in Google Ads 1521725229 - conversion history remains clean.
+
+    - stage: 2
+      plan_id: PLAN-R7A
+      drafted: "2026-09-02"
+      plan_file: clients/softwind-power-washing/plans/2026-09-02-plan-r7a-website-tracking-form-call-repair.yaml
+      fingerprint_r7a: 65A748A51E48
+      approval_command: APPROVE PLAN-R7A 65A748A51E48 FOR 1521725229
+      status_2026_09_02: APPROVAL READY - NEXT APPROVAL CANDIDATE
+      proven_by_plan_r1b:
+        - PLAN-R1B COMPLETE - one form submitted 2026-09-02 09:24:37 ET
+        - Softwind form conversion event PROVEN to fire (AW-18369652705)
+        - >-
+          Sibling-account tag conflict PROVEN. AW-17878095007 resolved 2026-09-02 as the
+          conversion_tracking_id of Softwind Landscape & Masonry - Live (2429758629), under
+          the SAME authorized MCC. NOT a third-party leak - the earlier "foreign account"
+          framing in the 2026-09-01 and 2026-09-02 receipts is CORRECTED.
+        - >-
+          Website-call path conflict PROVEN. Masonry runs conversion/17878095007/wcm on all
+          7 pages; Softwind Power Washing runs ZERO. Its own action 7708765130 carries a
+          ready snippet (label ReAcCMrX6dscEOHPqrdE, phone (631) 502-7946) that was never
+          deployed. Sufficient explanation for 0 call_view rows.
+        - WhatConverts attribution cookies PROVEN working - full chain including GCLID
+        - WhatConverts DNI number replacement BROKEN - swap never reaches the DOM
+        - Duplicate form DOM PROVEN - 2x form#gform_1, 22 duplicate ids per offer page
+        - Malformed phone link PROVEN - tel:(631) on all 7 pages
+        - SG-Captcha INTERMITTENT - P2 monitor only, earlier P0 framing withdrawn
+        - process.iconnode.com OWNER UNKNOWN - blocked action R7A-9, IN-10 raised
+        - >-
+          NEW 2026-09-02 - /thank-you/ fires the Softwind conversion on ANY page view with no
+          form submission. ONE_PER_CLICK absorbs most of the exposure; action R7A-4 addresses it.
+        - NEW - GTM-P3LD97NN container loader requested TWICE per page
+      call_architecture_selected: >-
+        OPTION A - Google website-call replacement on Softwind Power Washing's own account.
+        WhatConverts keeps attribution cookies but stands down the number swap.
+      later_plan: >-
+        PLAN-R7B - landing-page message match and CRO. NOT built or fingerprinted. Carries the
+        browser titles, H1 city lock, service-area copy, countdown, reviews, images and mobile
+        CTA hierarchy.
+      execution_note: >-
+        Green Marketing holds no WordPress, GTM or WhatConverts credentials. PLAN-R7A is a
+        DEVELOPER HANDOFF specification; approval authorises the change set, not agent execution.
+
+      update_2026_09_02_split:
+        old_plan_r7a_fingerprint: 65A748A51E48
+        old_plan_r7a_state: 'SUPERSEDED - DO NOT HONOR'
+        old_plan_file_preserved: clients/softwind-power-washing/plans/2026-09-02-plan-r7a-website-tracking-form-call-repair.yaml
+        superseded_reason: >-
+          Combined GTM, WhatConverts, WordPress and sibling-account changes under one
+          fingerprint; selected a call architecture before any authenticated WhatConverts read;
+          treated unavailable WordPress access as an execution dependency instead of a
+          developer ticket.
+        access_reality_verified_2026_09_02:
+          google_ads: AVAILABLE
+          google_tag_manager: >-
+            NOT AVAILABLE. The Google OAuth refresh token returns exactly one granted scope,
+            https://www.googleapis.com/auth/adwords. No tagmanager scope, no separate GTM
+            credential, no stored session. CLAUDE.md forbids broadening the Ads token.
+            GTM-P3LD97NN COULD NOT BE READ.
+          whatconverts: >-
+            NOT AVAILABLE. WHATCONVERTS_API_TOKEN exists as a key in .env but its value is
+            EMPTY (length 0).
+          wordpress: 'NO ACCESS BY DESIGN - developer tickets required'
+        proven_2026_09_02:
+          - 'Live paid Final URLs re-read: /house-pressure-washing-estimate/ is live; /house-washing-company/ is NOT a paid URL. Earlier scope list corrected.'
+          - 'Direct /thank-you/ conversion defect RE-PROVEN - bare visit fires en=conversion to 18369652705 on both endpoints; the 6 offer pages fire zero.'
+          - 'Duplicate GTM load CAUSE IDENTIFIED (option B) - TWO inline bootstraps, TWO gtm.js tags, TWO noscript iframes, dataLayer shows gtm.js twice. Two separate injectors. DEVELOPER TICKET.'
+          - 'Duplicate Gravity Form RE-PROVEN - 2x form#gform_1, 22 duplicate HTML ids per offer page. Honeypot verified present, hidden and EMPTY on all pages.'
+          - 'Malformed tel:(631) RE-PROVEN on all 7 pages including /thank-you/.'
+          - 'Sibling wcm RE-PROVEN 7/7 pages; Power Washing wcm 0/7. Its own snippet (label ReAcCMrX6dscEOHPqrdE, phone (631)502-7946) exists in Google Ads and was NEVER deployed.'
+          - 'process.iconnode.com - zero occurrences in rendered source, 1 POST per page. Runtime-injected, consistent with a GTM Custom HTML tag. Authorization UNKNOWN.'
+          - 'CORRECTION - WhatConverts is loaded by a WordPress plugin from s.ksrndkehqnwntyxlhgto.com/158931.js. That obfuscated domain is WHATCONVERTS, not ClickCease as earlier receipts said. ClickCease is separately present at clickcease.com/monitor/stat.js. The /lead/form POST at submission was WhatConverts capturing the lead.'
+          - 'WhatConverts attribution PROVEN working (wc_client carries source, medium, campaign, content, term, GCLID). Only DNI number replacement fails.'
+          - 'WhatConverts DNI ROOT CAUSE - NOT DETERMINED. Requires authenticated read. Must not be inferred from cookies.'
+          - 'SG-Captcha absent on all 7 pages this run - INTERMITTENT confirmed, P2 monitor only.'
+        call_architecture_selection: >-
+          DEFERRED to PLAN-R7A2. The superseded plan chose an architecture before reading
+          WhatConverts; selecting again from the same evidence would repeat that error.
+        tracks:
+          - 'TRACK A PLAN-R7A1-GTM - BLOCKED, no GTM credential, 0 executable actions, NO FINGERPRINT'
+          - 'TRACK B PLAN-R7A2-WHATCONVERTS - BLOCKED, no WhatConverts credential, 0 executable actions, NO FINGERPRINT'
+          - 'TRACK C DEV-R7A3 - 8 developer tickets READY TO SEND, never fingerprinted'
+          - 'TRACK D PLAN-R7A4-CROSS-ACCOUNT - BLOCKED, separate sibling work order and approval required, NO FINGERPRINT'
+        google_ads_mutations_all_tracks: 0
+        approval_commands_emitted: 0
+        next_action: >-
+          DEVELOPER TICKET dev-tickets/2026-09-02-dev-r7a-04-form-success-event.md - add a
+          verified gm_power_washing_form_success dataLayer event. Highest measurement impact,
+          smallest blast radius, and the only critical-path action needing neither GTM nor
+          WhatConverts credentials. No fingerprint and no approval command.
+      task: >-
+        Landing-page P0 and P1 repair - foreign tag REMOVAL, SG-Captcha in the paid
+        click path, titles, city lock, countdown
+      status: BLOCKED - ESCALATED 2026-09-02
+      escalation: >-
+        PROVEN 2026-09-02 by PLAN-R1B T-1: Google Ads account AW-17878095007 runs
+        website call conversion / number replacement on the landing page, receiving
+        Softwind's approved phone number 6315027946, its own conversion label
+        SFv1CLSo--UbEJ-p-MxC, and the visitor's GCLID. NO equivalent wcm request is
+        made for Softwind's own account 18369652705, which is a sufficient
+        explanation for zero all_conversions on conversion action 7708765130 and
+        zero call_view rows. The foreign account also receives 1p-user-list and
+        rmkt/collect calls, so it is building remarketing audiences from Softwind's
+        paid traffic. Separately, HTTP 202 and the echoed ref parameter prove
+        SG-Captcha intercepts the paid landing-page click via
+        /.well-known/sgcaptcha/, though the 2026-09-02 submission run did NOT hit
+        it (HTTP 200), so SG-Captcha is INTERMITTENT and is downgraded to P2.
+        ESCALATED FURTHER 2026-09-02 by T-3/T-6: the foreign account also receives
+        en=form_start, en=form_submit and TWO POSTs each to
+        google.com/pagead/form-data/17878095007 and ccm/form-data/17878095007 -
+        user-entered FORM DATA. Softwind's own account receives NO form-interaction
+        and NO form-data events at all. New P1 defects found in the same run:
+        form#gform_1 is DUPLICATED with every DOM id duplicated page-wide, and an
+        unknown vendor process.iconnode.com/google-ads/ receives a POST at submit.
+      dependency: >-
+        IN-7 - ownership of AW-17878095007 - is now the gating input for a proven
+        live leak, not a backlog question.
+      approval_type: WEBSITE_DEPLOYMENT
+      fingerprint: null
+      action_count: 24
+      object_count: 6
+      mutation_count: 0
+      external_test_actions: 0
+      website_actions: 24
+      expected_effect: >-
+        Directly targets the landing-page-experience Quality Score component,
+        which reads BELOW_AVERAGE on both highest-spend keywords. Expected to
+        improve landing-page experience and conversion rate. Magnitude UNKNOWN.
+      risk: MEDIUM - live website edits on six revenue pages.
+      rollback: Restore the previous page revision from WordPress revision history.
+      qa_requirements:
+        - HTTPS and HTTP 200 on all six pages
+        - Mobile QA, form QA, phone-link QA, thank-you QA
+        - Tracking QA and attribution QA
+        - No placeholder text, no fake countdown, no unrelated reviews
+      completion_status: NOT STARTED
+      evidence_file: clients/softwind-power-washing/audits/2026-09-01-unfinished-improvements-gap-report.md
+      next_action: Draft the exact page-by-page copy plan after Stage 1 reports.
+
+    - stage: 2.5
+      plan_id: PLAN-GA-LAUNCH-1
+      task: Final Power Washing create-paused build - 28 keywords + 12 RSAs
+      status: COMPLETE - EXECUTED 2026-09-02
+      created: "2026-09-02"
+      plan_file: clients/softwind-power-washing/plans/2026-09-02-plan-ga-launch-1-create-paused.yaml
+      fingerprint: 92FFF603CAFD
+      approval_command: APPROVE PLAN-GA-LAUNCH-1 92FFF603CAFD FOR 1521725229
+      supersedes_draft: PLAN-R6A
+      action_count: 40
+      object_count: 40
+      mutation_count: 40
+      validate_only: 'PASS - 28 keyword ops and 12 RSA ops validated, 0 created'
+      key_finding: >-
+        All six final ad groups ALREADY EXIST inside surviving campaign 24103511039 - five
+        paused with correct names, four already carrying their canonical keyword. ZERO ad
+        groups need creating.
+      counts_verified_2026_09_02:
+        ad_groups_created: 0
+        ad_groups_reused: 6
+        keyword_objects_reused: 10
+        keyword_objects_created_paused: 28
+        keyword_objects_final: 38
+        unique_keyword_texts: 19
+        rsas_created_paused: 12
+        blocking_conflicts: 0
+        displaced_duplicates_detected_not_touched: 30
+      landing_pages_http_200_checked: '2026-09-02 - all six return 200'
+      dependency: none
+      expected_effect: >-
+        No delivery change. Everything is created PAUSED. Builds the final six-group
+        single-intent structure inside the surviving campaign.
+      risk: LOW - all objects created paused, no existing resource altered
+      rollback: pause-and-remove the created criteria and ads by returned ID
+      qa_requirements:
+        - stop on partial failure, inventory every created resource ID
+        - read back 28 keywords - text, match type, status PAUSED
+        - read back 12 RSAs - headlines, descriptions, paths, Final URLs
+        - verify policy approval status
+        - verify counts exactly 28 + 12
+        - verify no pre-existing resource changed and campaign 24145053510 untouched
+      completion_status: COMPLETE - EXECUTED 2026-09-02 13:33:04 ET
+      approval_received: 'APPROVE PLAN-GA-LAUNCH-1 92FFF603CAFD FOR 1521725229'
+      execution_result: >-
+        40 resources created, all PAUSED. 28 keyword criteria and 12 RSAs. Both batches atomic
+        with partial_failure=False; no partial failure occurred.
+      readback_qa: '23 checks, 0 failed, ALL PASS'
+      before_after:
+        positive_keywords: '214 -> 242'
+        ads: '54 -> 66'
+        ad_groups: '30 -> 30 (none created)'
+        ad_group_negatives: '0 -> 0'
+      verified_unchanged:
+        - campaign names, statuses and $30.00 ceilings on both campaigns
+        - 'campaign 24145053510 still ENABLED and untouched'
+        - 'the 5 target ad groups still PAUSED - nothing was enabled'
+        - '202870585390 still ENABLED as before'
+        - pre-existing 54 ads untouched
+        - conversion goals unchanged, GET_DIRECTIONS still false
+        - 30 displaced duplicate keywords left in place for PLAN-GA-LAUNCH-4
+      open_item: >-
+        RSA policy approval status reads UNKNOWN on all 12 created ads - normal for newly
+        created paused ads. Re-read before enablement; fix any DISAPPROVED ad first.
+      evidence_file: clients/softwind-power-washing/receipts/2026-09-02-plan-ga-launch-1-execution-receipt.md
+      next_action: >-
+        NONE for this plan - complete. The program's next action is ClickUp Task 1
+        (form-success tracking), which is a developer ticket, not an approval.
+
+    - stage: 2.55
+      plan_id: PLAN-GA-LAUNCH-3B
+      task: Pre-enablement legacy guard - pause 4 resources that would activate accidentally
+      status: COMPLETE - EXECUTED 2026-09-02
+      created: '2026-09-02'
+      plan_file: clients/softwind-power-washing/plans/2026-09-02-plan-ga-launch-3b-legacy-guard.yaml
+      fingerprint: B9EDA34DA712
+      approval_command: APPROVE PLAN-GA-LAUNCH-3B B9EDA34DA712 FOR 1521725229
+      action_count: 4
+      object_count: 4
+      mutation_count: 4
+      validate_only: 'PASS - 2 keyword pauses + 2 ad pauses validated, 0 applied'
+      why_it_exists: >-
+        The fresh read found FOUR resources ENABLED inside PAUSED ad groups that are NOT in
+        the authoritative final inventory. They would begin serving the instant their parent
+        ad group is enabled. The standing rule requires stopping and reporting before
+        fingerprinting the enablement plan when a new pause mutation is needed.
+      resources:
+        - '384030528226 house washing company near me PHRASE in 202870585910 - non-final, bucket collapse with house washing near me'
+        - '502487923397 house washing company near me EXACT in 202870585910 - same'
+        - '819975939528 legacy RSA in 202870586310 Soft Washing - would make four ads in one group'
+        - '819975939531 legacy RSA in 202870586310 Soft Washing - same'
+      dependency: none - executable on approval
+      risk: 'LOW - status-only field mask, fully reversible, nothing goes dark because it enables nothing'
+      rollback: set each resource back to ENABLED
+      completion_status: COMPLETE - EXECUTED 2026-09-02 16:50:59 ET
+      approval_received: 'APPROVE PLAN-GA-LAUNCH-3B B9EDA34DA712 FOR 1521725229'
+      execution_result: '4 resources paused. Readback 8 checks, 0 failed.'
+      before_after:
+        enabled_keywords: '214 -> 212'
+        enabled_ads: '44 -> 42'
+        enabled_ad_groups: '12 -> 12 (unchanged)'
+      gate2_cleared_during_this_run: >-
+        All 12 new RSAs moved from REVIEW_IN_PROGRESS to APPROVED / REVIEWED, zero
+        DISAPPROVED. Legacy activation conflicts re-verified at ZERO.
+      evidence_file: clients/softwind-power-washing/receipts/2026-09-02-plan-ga-launch-3b-execution-receipt.md
+      next_action: NONE - complete
+
+    - stage: 2.58
+      plan_id: PLAN-GA-LAUNCH-3C
+      task: RSA limit guard - pause the 2 legacy Power Washing RSAs
+      status: COMPLETE - EXECUTED 2026-09-02
+      created: '2026-09-02'
+      plan_file: clients/softwind-power-washing/plans/2026-09-02-plan-ga-launch-3c-rsa-limit-guard.yaml
+      fingerprint: 40F940130E6D
+      approval_command: APPROVE PLAN-GA-LAUNCH-3C 40F940130E6D FOR 1521725229
+      action_count: 2
+      object_count: 2
+      mutation_count: 2
+      validate_only: 'PASS - 2 pause operations validated, 0 applied'
+      why_it_exists: >-
+        Discovered during validate_only for PLAN-GA-LAUNCH-3A. Google Ads limits an ad group
+        to THREE enabled RSAs. Ad group 202870585390 already has two enabled legacy RSAs, so
+        enabling both replacements would make four and the batch fails with
+        resource_count_limit_exceeded_error RESOURCE_LIMIT at operations[1]. Only that one
+        ad group is affected; the other five land at two because their legacy ads are paused.
+      resources:
+        - '819975939342 legacy RSA in 202870585390 - hamlet-heavy copy, BELOW_AVERAGE ad relevance'
+        - '819975939345 legacy RSA in 202870585390 - same'
+      coverage_gap: >-
+        202870585390 has no other enabled ad, so it goes dark until 3A runs. Low cost - these
+        two produced zero leads across 19 lifetime billable clicks. Approve 3A in the same
+        sitting to keep the gap to minutes.
+      dependency: none - executable on approval
+      completion_status: COMPLETE - EXECUTED 2026-09-02 17:12 ET
+      approval_received: 'APPROVE PLAN-GA-LAUNCH-3C 40F940130E6D FOR 1521725229'
+      execution_result: '2 legacy RSAs paused. Readback 4 checks, 0 failed. ENABLED ads 42 -> 40.'
+      effect: >-
+        Projected enabled RSAs per ad group after enablement is now 2 in all six groups. The
+        3-RSA limit that blocked PLAN-GA-LAUNCH-3A is cleared.
+      evidence_file: clients/softwind-power-washing/receipts/2026-09-02-plan-ga-launch-3c-execution-receipt.md
+      next_action: NONE - complete
+
+    - stage: 2.65
+      plan_id: PLAN-GA-LAUNCH-3A
+      task: Final Google Ads resource enablement - 45 actions
+      status: COMPLETE - EXECUTED 2026-09-02
+      execution:
+        executed_account_local: '2026-09-02T17:39:49-04:00'
+        approval_received: 'APPROVE PLAN-GA-LAUNCH-3A F91589D9EA2A FOR 1521725229'
+        result: '5 ad groups + 28 keywords + 12 RSAs ENABLED. Atomic per batch, no partial failure.'
+        readback: '29 assertions, 0 failed'
+        totals_after: 'ad groups 30 (17 enabled) | keyword rows 242 (240 enabled, 2 paused guards) | ads 66 (52 enabled)'
+        readback_bug_caught: >-
+          The first readback reported 2 false failures because it keyed keywords on
+          criterion_id alone. criterion_id is NOT unique for keywords - the same id is reused
+          by every ad group carrying the same text and match type, which collapsed 242 rows
+          into 125. Re-verified on (ad_group_id, criterion_id): 28/28 created keywords ENABLED
+          and both guards still PAUSED in 202870585910. Script fixed; 29/29 pass.
+        evidence_file: clients/softwind-power-washing/receipts/2026-09-02-plan-ga-launch-3a-execution-receipt.md
+      created: '2026-09-02'
+      plan_file: clients/softwind-power-washing/plans/2026-09-02-plan-ga-launch-3a-enablement.yaml
+      supersedes: PLAN-GA-LAUNCH-3
+      fingerprint: null
+      fingerprint_withheld_because: >-
+        A new pause mutation is required first (PLAN-GA-LAUNCH-3B), and the twelve new RSAs
+        are still under review.
+      action_count: 45
+      breakdown: '5 ad groups + 28 keyword criteria + 12 RSAs'
+      recalculated_from_live_account: true
+      gates:
+        - 'GATE-1 PLAN-GA-LAUNCH-3B executed and read back - MET 2026-09-02'
+        - 'GATE-2 all 12 new RSAs out of review, none DISAPPROVED - MET 2026-09-02, all 12 APPROVED / REVIEWED'
+        - 'GATE-3 PLAN-GA-LAUNCH-3C executed - MET 2026-09-02 17:12'
+      status_2026_09_02_final: APPROVAL READY
+      fingerprint_final: F91589D9EA2A
+      approval_command_final: APPROVE PLAN-GA-LAUNCH-3A F91589D9EA2A FOR 1521725229
+      validate_only_final: 'PASS on all three batches - 5 ad groups, 28 keywords, 12 ads, 0 applied'
+      fingerprint_correction: >-
+        An earlier ledger note called F91589D9EA2A VOID. THAT NOTE WAS WRONG and is retracted.
+        The payload was always correct - 5 ad groups + 28 keywords + 12 RSAs. Its first
+        validate_only failed only because of the live 3-RSA-per-ad-group limit, which
+        PLAN-GA-LAUNCH-3C has now removed. The identical payload re-derives the identical
+        code and validates cleanly.
+      voided_fingerprint: >-
+        D04DBC638033 is VOID - DO NOT HONOUR. A 47-action variant from a rebuild that selected
+        ALL paused keywords in the six ad groups rather than only those created by
+        PLAN-GA-LAUNCH-1. It wrongly included criteria 384030528226 and 502487923397, the two
+        `house washing company near me` keywords 3B had just paused; executing it would have
+        undone 3B.
+      preflight_passing:
+        - all six Final URLs HTTPS 200, no redirect, form present, phone CTA present
+        - no BROAD match keyword anywhere in the enable set
+        - no DISAPPROVED RSA in the enable set
+        - every target belongs to campaign 24103511039
+        - campaign 24145053510 still ENABLED, ceilings still $30.00, both MAXIMIZE CLICKS
+
+    - stage: 2.6
+      plan_id: PLAN-GA-LAUNCH-2
+      task: Ad-group routing negatives - 103 at launch
+      status: 'PROVISIONAL / BLOCKED UNTIL OWNER GROUPS ARE LIVE'
+      fingerprint: null
+      recount_2026_09_02: '95 sibling EXACT + 8 collision-tested modifier PHRASE = 103 at launch; 11 + 2 deferred; 0 self-block failures'
+      dependency: PLAN-GA-LAUNCH-3 - owner groups must be enabled and verified serving first
+
+    - stage: 2.7
+      plan_id: PLAN-GA-LAUNCH-3
+      task: Final resource enablement
+      status: 'SUPERSEDED BY PLAN-GA-LAUNCH-3A (2026-09-02)'
+      fingerprint: null
+      fingerprint_policy: >-
+        Generated at approval time against a fresh read, so no stale code can be honoured.
+      dependency: >-
+        PLAN-GA-LAUNCH-1 is DONE. The remaining blocker is the website go-live gate - the
+        form-success event, the direct /thank-you/ conversion fix, and the title/H1 publish.
+      enable_action_count: 45
+      real_ids_recorded: '2026-09-02'
+
+    - stage: 2.8
+      plan_id: PLAN-GA-LAUNCH-4
+      task: Old resource retirement - PAUSE only, campaign 24145053510 LAST
+      status: BLOCKED
+      fingerprint: null
+      dependency: replacements verified serving
+
+    - stage: 2.9
+      plan_id: PLAN-GA-BID-1
+      task: Interim CPC control
+      status: 'DRAFT - BLOCKED ON THE LANDING-PAGE GATE'
+      fingerprint: null
+      derived_ceiling_usd: 14.00
+      derivation: >-
+        Lowest ceiling covering the local top-of-page LOW estimate for 18 of 19 owned texts
+        (exception soft washing near me at $15.09, 10/mo). Sits below the second-lowest real
+        observed click price $22.11 and roughly halves the $29.57 median. $12, $15, $18 and
+        $22 were NOT carried forward from earlier plans.
+      bidding_strategy: MAXIMIZE_CLICKS retained - zero verified qualified conversions
+      gate: landing-page P0 published, then one settled serving day
+
+    - stage: 3
+      plan_id: PLAN-R6A
+      task: Create-paused build - 28 keyword objects + 12 replacement RSAs
+      status: CREATE-PAUSED READY (draft complete, fingerprint withheld)
+      dependency: Stage 2 landing pages fixed - RSAs and pages must ship aligned
+      approval_type: CREATE_PAUSED
+      fingerprint: null
+      fingerprint_note: >-
+        Deliberately NOT generated in this run. It must be generated against a
+        fresh read immediately before the approval is presented, so no stale
+        fingerprint can be honoured.
+      action_count: 40
+      object_count: 40
+      mutation_count: 40
+      external_test_actions: 0
+      website_actions: 0
+      expected_effect: >-
+        Creates the full six-group single-intent structure inside the surviving
+        campaign. No delivery change - everything is created paused.
+      risk: LOW - all objects created paused; nothing serves.
+      rollback: Pause or remove the created resources; no existing resource is altered.
+      qa_requirements:
+        - Stop on partial failure, inventory every created resource ID
+        - Read back every keyword text, match type and status
+        - Read back every RSA headline, description, path and final URL
+        - Verify policy approval status
+        - Verify object counts exactly match the plan
+      completion_status: NOT STARTED
+      evidence_file: clients/softwind-power-washing/audits/2026-09-01-authoritative-final-architecture.md
+      next_action: Regenerate against fresh state when Stages 1-2 are complete.
+
+    - stage: 4
+      plan_id: PLAN-R8A
+      task: Sibling routing negatives - 103 ad-group negatives at launch
+      status: BLOCKED
+      dependency: >-
+        Stage 5 must be complete. NO routing negative may be added before its
+        intended owner ad group is created, approved, enabled, eligible and
+        verified serving.
+      approval_type: NEGATIVE_KEYWORDS
+      fingerprint: null
+      action_count: 103
+      object_count: 103
+      mutation_count: 103
+      external_test_actions: 0
+      website_actions: 0
+      expected_effect: >-
+        Enforces Walter's strict one-owner-per-text rule. 95 sibling EXACT mirrors
+        plus 8 collision-tested modifier PHRASE negatives on the two loose-head
+        groups only.
+      risk: >-
+        LOW. Every negative was collision-tested: no negative is placed in its own
+        owner group and no modifier phrase blocks an owned text in its target group.
+      rollback: Remove the added ad-group negative criteria.
+      qa_requirements:
+        - Re-run the collision test against the as-built ad groups
+        - Confirm no owner group is blocked by its own text
+        - Confirm campaign-level universal negatives are untouched
+      completion_status: NOT STARTED
+      evidence_file: clients/softwind-power-washing/audits/2026-09-01-final-routing-negative-matrix.csv
+      next_action: Hold until Stage 5 readback confirms every owner group is serving.
+
+    - stage: 5
+      plan_id: PLAN-R10A
+      task: Staged enablement of the six final ad groups
+      status: PROVISIONAL
+      dependency: Stage 3 create-paused readback QA must pass with real resource IDs
+      approval_type: ENABLE
+      fingerprint: null
+      fingerprint_note: >-
+        Cannot be fingerprinted until Stage 3 creates real resource IDs. Any
+        placeholder fingerprint is void by construction.
+      action_count: 11
+      object_count: 11
+      mutation_count: 11
+      external_test_actions: 0
+      website_actions: 0
+      expected_effect: >-
+        Brings the new structure into delivery. Enabling requires a SECOND explicit
+        approval separate from the create-paused approval.
+      risk: MEDIUM - this is the point at which spend resumes against new structure.
+      rollback: Pause the enabled ad groups and keywords.
+      qa_requirements:
+        - Confirm eligibility, impressions, Search Terms, ads serving
+        - Confirm correct final URLs and no policy problem
+        - Confirm no owner group is blocked by a negative
+        - Confirm phone and form paths work
+      completion_status: NOT STARTED
+      evidence_file: null
+      next_action: Regenerate with real IDs after Stage 3.
+
+    - stage: 6
+      plan_id: PLAN-R3C
+      task: Evidence-based CPC ceiling on the surviving campaign
+      status: BLOCKED
+      dependency: >-
+        Stage 5 complete AND at least one settled serving day with billable clicks
+        under the new structure. The ceiling must be chosen against post-structure,
+        post-RSA, post-landing-page evidence, not against August's.
+      approval_type: BIDDING
+      fingerprint: null
+      fingerprint_note: >-
+        No number is pre-committed. NOT $12, NOT $15, NOT $18, NOT $22. The figure
+        is derived fresh at plan time.
+      action_count: 1
+      object_count: 1
+      mutation_count: 1
+      external_test_actions: 0
+      website_actions: 0
+      expected_effect: >-
+        Lower cost per click. Delivery risk is real - campaign 24103511039 already
+        loses 47.74% of impression share to rank at $30.
+      risk: MEDIUM - a ceiling cut raises Lost IS to rank.
+      rollback: Restore the prior ceiling with one mutation.
+      qa_requirements:
+        - Re-read the valid CPC distribution and settled invalid-click adjustments
+        - Re-read Search IS, Lost IS rank, Lost IS budget, top and absolute-top rate
+        - Symmetric on both campaigns while both are live; single after consolidation
+      completion_status: NOT STARTED
+      evidence_file: null
+      next_action: Derive the ceiling from fresh evidence when Stage 5 is verified.
+
+    - stage: 7
+      plan_id: PLAN-R11A
+      task: Retire displaced resources, campaign 24145053510 LAST
+      status: BLOCKED
+      dependency: Stage 5 verified serving AND Stage 4 routing verified
+      approval_type: PAUSE
+      fingerprint: null
+      action_count: 22
+      object_count: 22
+      mutation_count: 22
+      external_test_actions: 0
+      website_actions: 0
+      expected_effect: Removes duplicate and mixed-intent containers competing with the new structure.
+      risk: MEDIUM - pausing too early removes the account's only live delivery.
+      rollback: Re-enable the paused resources.
+      qa_requirements:
+        - Evidence each replacement is live and serving before its predecessor pauses
+        - PAUSE only, never remove; deletion needs a separate destructive approval
+      completion_status: NOT STARTED
+      evidence_file: null
+      next_action: Hold.
+
+    - stage: 8
+      plan_id: PLAN-R13
+      task: Asset completion - business name, logo, images, call schedule, location asset
+      status: BLOCKED
+      dependency: Client-supplied rights-cleared photographs and verified answered-call hours
+      approval_type: ASSETS
+      fingerprint: null
+      action_count: 6
+      object_count: 6
+      mutation_count: 6
+      external_test_actions: 0
+      website_actions: 0
+      expected_effect: Better ad real estate and relevance. Magnitude UNKNOWN.
+      risk: >-
+        LOW in Ads. HIGH reputational if unverified images or claims are used.
+        The single call asset 403335872180 is shared by BOTH campaigns - editing
+        its schedule rewrites hours on every linked campaign.
+      rollback: Unlink the added assets.
+      qa_requirements:
+        - Images must be client-supplied and rights-cleared; no stock landscaping,
+          no fabricated project photos, no AI images as completed-project proof
+        - Call-asset hours must match real answered-call hours; never invent
+          Saturday, Sunday or evening coverage
+      completion_status: NOT STARTED
+      evidence_file: null
+      next_action: Request client inputs.
+
+    - stage: 9
+      plan_id: PLAN-R2A
+      task: Search-term quality control - universal negatives
+      status: DEFERRED
+      dependency: 14 days of routing evidence under the new structure
+      approval_type: NEGATIVE_KEYWORDS
+      fingerprint: null
+      action_count: 10
+      object_count: 10
+      mutation_count: 10
+      external_test_actions: 0
+      website_actions: 0
+      expected_effect: Blocks equipment, DIY, jobs and out-of-scope service queries.
+      risk: >-
+        LOW if each term is reviewed individually. NEVER blindly negative near me,
+        quote, estimate, cost, price, pricing, best, hire, local, company or services.
+      rollback: Remove the added campaign negatives.
+      qa_requirements:
+        - Every proposed negative shows term, matched keyword, campaign, ad group,
+          impressions, clicks, spend, conversions, WhatConverts status, blocking
+          risk and rollback
+      completion_status: NOT STARTED
+      evidence_file: clients/softwind-power-washing/audits/2026-09-01-final-routing-negative-matrix.csv
+      next_action: Hold for routing evidence.
+
+    - stage: 10
+      plan_id: PLAN-R14
+      task: Measurement and attribution completion backlog
+      status: BLOCKED
+      dependency: PLAN-R1B outcome
+      approval_type: MIXED - split into separate plans per item
+      fingerprint: null
+      action_count: 9
+      object_count: 9
+      mutation_count: 0
+      external_test_actions: 4
+      website_actions: 5
+      expected_effect: Trustworthy lead attribution end to end.
+      risk: LOW individually; each item becomes its own plan.
+      rollback: Per item.
+      qa_requirements:
+        - Never combine a website change with a Google Ads change in one fingerprint
+      completion_status: NOT STARTED
+      evidence_file: clients/softwind-power-washing/audits/2026-09-01-conversion-measurement-decision.md
+      next_action: Sequence after Stage 1.
+
+    - stage: 11
+      plan_id: PLAN-R9A
+      task: Audience observations - Observation mode only, 0% modifiers
+      status: DEFERRED
+      dependency: The consolidated structure must have enough volume to interpret
+      approval_type: AUDIENCES
+      fingerprint: null
+      action_count: 12
+      object_count: 12
+      mutation_count: 12
+      external_test_actions: 0
+      website_actions: 0
+      expected_effect: >-
+        Reporting enhancement only. Produces zero leads by design at 0% modifiers.
+      risk: VERY LOW - Observation never restricts reach.
+      rollback: Remove the audience criteria.
+      qa_requirements:
+        - Observation mode only, never Targeting
+        - Verify current audience segment IDs before use
+        - Do not exclude women; do not exclude Unknown gender
+      completion_status: NOT STARTED
+      evidence_file: null
+      next_action: Hold until volume exists.
+
+    - stage: 12
+      plan_id: PLAN-R15
+      task: Lead response, sales feedback and the daily recovery dashboard
+      status: BLOCKED
+      dependency: Client and CRM inputs
+      approval_type: REPORTING - no Google Ads mutation
+      fingerprint: null
+      action_count: 13
+      object_count: 13
+      mutation_count: 0
+      external_test_actions: 0
+      website_actions: 0
+      expected_effect: >-
+        Connects search term to keyword to ad group to campaign to landing page to
+        qualified lead to sold job to revenue and gross profit.
+      risk: NONE in the account.
+      rollback: n/a
+      qa_requirements:
+        - Never promise a response time operations cannot meet
+        - Protect lead PII in general reports
+        - State every formula and every missing cost
+      completion_status: NOT STARTED
+      evidence_file: null
+      next_action: Request client operational inputs.
+
+  blocked_on_client_or_owner_input:
+    - id: IN-1
+      item: Test email address for PLAN-R1B
+      detail: >-
+        Client-controlled plus-addressed alias, or an RFC 2606 reserved fallback
+        such as gm-test@example.com. Carried forward from PLAN-A2 precondition A2-PRE-2.
+    - id: IN-2
+      item: Named cleanup owner for the test record
+    - id: IN-3
+      item: Which CRM or webhook receives Gravity Forms submissions
+      detail: Recorded UNKNOWN since 2026-08-26. Stage 1 T-6 can discover it.
+    - id: IN-4
+      item: Rights-cleared project photographs
+    - id: IN-5
+      item: Verified answered-call hours, including whether 17:00-18:00 Mon-Fri is answered
+    - id: IN-6
+      item: Verified trust facts - reviews, rating, years, licence, insurance
+      detail: >-
+        Until verified, NO rating, licence, guarantee, response time or years claim
+        may appear in any ad or on any page.
+    - id: IN-7
+      item: Ownership of Google Ads account AW-17878095007
+      priority: URGENT - escalated 2026-09-02
+      detail: >-
+        No longer a backlog question. The account is proven to be taking Softwind's
+        GCLIDs and occupying the website-call conversion path. Needed before the
+        tag can be removed, because removal could break something the client
+        knowingly relies on.
+    - id: IN-8
+      item: Verified economics - close rate, job revenue, gross margin
+      detail: All currently UNKNOWN. Do not infer.
+    - id: IN-9
+      item: Confirmation of the two-campaign-versus-one decision
+      detail: >-
+        Walter renamed 24145053510 to "Pressure Washing" on 2026-09-01. The
+        recommendation remains ONE campaign. If the rename signals intent to keep
+        two, that overrides the technical recommendation and changes Stages 3-7.
+
+  # ---------------------------------------------------------------- 2026-09-02 late
+  - stage: PLAN-GA-BID-2
+    title: Final interim Maximize Clicks CPC control
+    status: EXECUTED
+    fingerprint: 3F1AB2CCFBDA
+    executed_at: '2026-09-02T23:59:24-04:00'
+    approved_by: Walter Correa
+    what_changed: >-
+      cpc_bid_ceiling_micros 30000000 -> 18000000 on campaigns 24103511039 and 24145053510.
+      Two mutations, atomic, readback 20/20 PASS. Nothing else touched.
+    why_18_not_14: >-
+      Localized Planner sweep found a top-of-page-LOW cliff at $15.09 gating five of eleven
+      priced keyword families, including every keyword in the House Washing and Soft Washing
+      ad groups. $18 is the lowest compared ceiling holding 11/11 TOPlow.
+    supersedes: [PLAN-GA-BID-1]
+    rollback: restore 30000000 micros via a new separately approved plan
+    next_checkpoint: >-
+      2026-09-03 after >=5 full serving hours. Revisit if lost-IS-to-rank exceeds ~65% on
+      either campaign without a compensating rise in click volume.

@@ -1,0 +1,1638 @@
+{
+ "when": "2026-09-21T12:23:19.951605-04:00",
+ "after_stage": "A",
+ "read_only": true,
+ "assertions": [
+  {
+   "check": "C1 exists",
+   "pass": true,
+   "detail": "24257819463"
+  },
+  {
+   "check": "C1 name",
+   "pass": true,
+   "detail": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09 != Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "C1 channel SEARCH",
+   "pass": true,
+   "detail": "SEARCH"
+  },
+  {
+   "check": "C1 search partners OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C1 display OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C1 geo PRESENCE",
+   "pass": true,
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "C1 budget not shared",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C1 PAUSED after stage A",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "C2 exists",
+   "pass": true,
+   "detail": "24268690038"
+  },
+  {
+   "check": "C2 name",
+   "pass": true,
+   "detail": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09 != Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "C2 channel SEARCH",
+   "pass": true,
+   "detail": "SEARCH"
+  },
+  {
+   "check": "C2 search partners OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C2 display OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C2 geo PRESENCE",
+   "pass": true,
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "C2 budget not shared",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C2 PAUSED after stage A",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "C3 exists",
+   "pass": true,
+   "detail": "24257819466"
+  },
+  {
+   "check": "C3 name",
+   "pass": true,
+   "detail": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09 != Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "C3 channel SEARCH",
+   "pass": true,
+   "detail": "SEARCH"
+  },
+  {
+   "check": "C3 search partners OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C3 display OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C3 geo PRESENCE",
+   "pass": true,
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "C3 budget not shared",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C3 PAUSED after stage A",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "C4 exists",
+   "pass": true,
+   "detail": "24132507744"
+  },
+  {
+   "check": "C4 name",
+   "pass": true,
+   "detail": "Search | NonBrand | Boiler Services | Central MD | BOFU | 2026-09 != Search | NonBrand | Boiler Services | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "C4 channel SEARCH",
+   "pass": true,
+   "detail": "SEARCH"
+  },
+  {
+   "check": "C4 search partners OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C4 display OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C4 geo PRESENCE",
+   "pass": true,
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "C4 budget not shared",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C4 PAUSED after stage A",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "C5 exists",
+   "pass": true,
+   "detail": "24279798229"
+  },
+  {
+   "check": "C5 name",
+   "pass": true,
+   "detail": "Search | NonBrand | Heating Maintenance & Inspection | Central MD | BOFU | 2026-09 != Search | NonBrand | Heating Maintenance & Inspection | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "C5 channel SEARCH",
+   "pass": true,
+   "detail": "SEARCH"
+  },
+  {
+   "check": "C5 search partners OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C5 display OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C5 geo PRESENCE",
+   "pass": true,
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "C5 budget not shared",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C5 PAUSED after stage A",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "C6 exists",
+   "pass": true,
+   "detail": "24268690041"
+  },
+  {
+   "check": "C6 name",
+   "pass": true,
+   "detail": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09 != Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "C6 channel SEARCH",
+   "pass": true,
+   "detail": "SEARCH"
+  },
+  {
+   "check": "C6 search partners OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C6 display OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C6 geo PRESENCE",
+   "pass": true,
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "C6 budget not shared",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C6 PAUSED after stage A",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "C7 exists",
+   "pass": true,
+   "detail": "24274160783"
+  },
+  {
+   "check": "C7 name",
+   "pass": true,
+   "detail": "Search | NonBrand | Geothermal Heat Pump | Central MD | BOFU | 2026-09 != Search | NonBrand | Geothermal Heat Pump | Central MD | BOFU | 2026-09"
+  },
+  {
+   "check": "C7 channel SEARCH",
+   "pass": true,
+   "detail": "SEARCH"
+  },
+  {
+   "check": "C7 search partners OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C7 display OFF",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C7 geo PRESENCE",
+   "pass": true,
+   "detail": "PRESENCE"
+  },
+  {
+   "check": "C7 budget not shared",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "C7 PAUSED after stage A",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "C1 5 schedule rows",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C1 no weekend",
+   "pass": true,
+   "detail": "['FRIDAY', 'MONDAY', 'THURSDAY', 'TUESDAY', 'WEDNESDAY']"
+  },
+  {
+   "check": "C1 hours 08-16",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C2 5 schedule rows",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C2 no weekend",
+   "pass": true,
+   "detail": "['FRIDAY', 'MONDAY', 'THURSDAY', 'TUESDAY', 'WEDNESDAY']"
+  },
+  {
+   "check": "C2 hours 08-16",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C3 5 schedule rows",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C3 no weekend",
+   "pass": true,
+   "detail": "['FRIDAY', 'MONDAY', 'THURSDAY', 'TUESDAY', 'WEDNESDAY']"
+  },
+  {
+   "check": "C3 hours 08-16",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C4 5 schedule rows",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C4 no weekend",
+   "pass": true,
+   "detail": "['FRIDAY', 'MONDAY', 'THURSDAY', 'TUESDAY', 'WEDNESDAY']"
+  },
+  {
+   "check": "C4 hours 08-16",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C5 5 schedule rows",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C5 no weekend",
+   "pass": true,
+   "detail": "['FRIDAY', 'MONDAY', 'THURSDAY', 'TUESDAY', 'WEDNESDAY']"
+  },
+  {
+   "check": "C5 hours 08-16",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C6 5 schedule rows",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C6 no weekend",
+   "pass": true,
+   "detail": "['FRIDAY', 'MONDAY', 'THURSDAY', 'TUESDAY', 'WEDNESDAY']"
+  },
+  {
+   "check": "C6 hours 08-16",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C7 5 schedule rows",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C7 no weekend",
+   "pass": true,
+   "detail": "['FRIDAY', 'MONDAY', 'THURSDAY', 'TUESDAY', 'WEDNESDAY']"
+  },
+  {
+   "check": "C7 hours 08-16",
+   "pass": true,
+   "detail": "[('FRIDAY', 8, 16), ('MONDAY', 8, 16), ('THURSDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16)]"
+  },
+  {
+   "check": "C1 75 locations",
+   "pass": true,
+   "detail": "75"
+  },
+  {
+   "check": "C2 75 locations",
+   "pass": true,
+   "detail": "75"
+  },
+  {
+   "check": "C3 75 locations",
+   "pass": true,
+   "detail": "75"
+  },
+  {
+   "check": "C4 75 locations",
+   "pass": true,
+   "detail": "75"
+  },
+  {
+   "check": "C5 75 locations",
+   "pass": true,
+   "detail": "75"
+  },
+  {
+   "check": "C6 75 locations",
+   "pass": true,
+   "detail": "75"
+  },
+  {
+   "check": "C7 75 locations",
+   "pass": true,
+   "detail": "75"
+  },
+  {
+   "check": "30 ad groups exist",
+   "pass": true,
+   "detail": "30"
+  },
+  {
+   "check": "ad group name SKAG | Furnace Repair",
+   "pass": true,
+   "detail": "SKAG | Furnace Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | Furnace Repair",
+   "pass": true,
+   "detail": "24257819463 != 24257819463"
+  },
+  {
+   "check": "pre-existing ad group untouched SKAG | Furnace Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Ductless Heating Installation",
+   "pass": true,
+   "detail": "SKAG | Ductless Heating Installation"
+  },
+  {
+   "check": "ad group campaign SKAG | Ductless Heating Installation",
+   "pass": true,
+   "detail": "24257819466 != 24257819466"
+  },
+  {
+   "check": "pre-existing ad group untouched SKAG | Ductless Heating Installation",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Gas Boiler Repair",
+   "pass": true,
+   "detail": "SKAG | Gas Boiler Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | Gas Boiler Repair",
+   "pass": true,
+   "detail": "24132507744 != 24132507744"
+  },
+  {
+   "check": "pre-existing ad group untouched SKAG | Gas Boiler Repair",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "ad group name SKAG | Heating Repair",
+   "pass": true,
+   "detail": "SKAG | Heating Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | Heating Repair",
+   "pass": true,
+   "detail": "24257819463 != 24257819463"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Heating Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Emergency Heating Repair",
+   "pass": true,
+   "detail": "SKAG | Emergency Heating Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | Emergency Heating Repair",
+   "pass": true,
+   "detail": "24257819463 != 24257819463"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Emergency Heating Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | No Heat Repair",
+   "pass": true,
+   "detail": "SKAG | No Heat Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | No Heat Repair",
+   "pass": true,
+   "detail": "24257819463 != 24257819463"
+  },
+  {
+   "check": "ad group PAUSED SKAG | No Heat Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Gas Furnace Repair",
+   "pass": true,
+   "detail": "SKAG | Gas Furnace Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | Gas Furnace Repair",
+   "pass": true,
+   "detail": "24257819463 != 24257819463"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Gas Furnace Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Electric Furnace Repair",
+   "pass": true,
+   "detail": "SKAG | Electric Furnace Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | Electric Furnace Repair",
+   "pass": true,
+   "detail": "24257819463 != 24257819463"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Electric Furnace Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Heat Pump Repair",
+   "pass": true,
+   "detail": "SKAG | Heat Pump Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | Heat Pump Repair",
+   "pass": true,
+   "detail": "24268690038 != 24268690038"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Heat Pump Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Heat Pump Replacement",
+   "pass": true,
+   "detail": "SKAG | Heat Pump Replacement"
+  },
+  {
+   "check": "ad group campaign SKAG | Heat Pump Replacement",
+   "pass": true,
+   "detail": "24268690038 != 24268690038"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Heat Pump Replacement",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Heat Pump Installation",
+   "pass": true,
+   "detail": "SKAG | Heat Pump Installation"
+  },
+  {
+   "check": "ad group campaign SKAG | Heat Pump Installation",
+   "pass": true,
+   "detail": "24268690038 != 24268690038"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Heat Pump Installation",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Heat Pump Maintenance",
+   "pass": true,
+   "detail": "SKAG | Heat Pump Maintenance"
+  },
+  {
+   "check": "ad group campaign SKAG | Heat Pump Maintenance",
+   "pass": true,
+   "detail": "24268690038 != 24268690038"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Heat Pump Maintenance",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Ductless Heating Repair",
+   "pass": true,
+   "detail": "SKAG | Ductless Heating Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | Ductless Heating Repair",
+   "pass": true,
+   "detail": "24268690038 != 24268690038"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Ductless Heating Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Furnace Replacement",
+   "pass": true,
+   "detail": "SKAG | Furnace Replacement"
+  },
+  {
+   "check": "ad group campaign SKAG | Furnace Replacement",
+   "pass": true,
+   "detail": "24257819466 != 24257819466"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Furnace Replacement",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Furnace Installation",
+   "pass": true,
+   "detail": "SKAG | Furnace Installation"
+  },
+  {
+   "check": "ad group campaign SKAG | Furnace Installation",
+   "pass": true,
+   "detail": "24257819466 != 24257819466"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Furnace Installation",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Heating Installation",
+   "pass": true,
+   "detail": "SKAG | Heating Installation"
+  },
+  {
+   "check": "ad group campaign SKAG | Heating Installation",
+   "pass": true,
+   "detail": "24257819466 != 24257819466"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Heating Installation",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Heating Replacement",
+   "pass": true,
+   "detail": "SKAG | Heating Replacement"
+  },
+  {
+   "check": "ad group campaign SKAG | Heating Replacement",
+   "pass": true,
+   "detail": "24257819466 != 24257819466"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Heating Replacement",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Boiler Repair",
+   "pass": true,
+   "detail": "SKAG | Boiler Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | Boiler Repair",
+   "pass": true,
+   "detail": "24132507744 != 24132507744"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Boiler Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Boiler Replacement",
+   "pass": true,
+   "detail": "SKAG | Boiler Replacement"
+  },
+  {
+   "check": "ad group campaign SKAG | Boiler Replacement",
+   "pass": true,
+   "detail": "24132507744 != 24132507744"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Boiler Replacement",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Boiler Installation",
+   "pass": true,
+   "detail": "SKAG | Boiler Installation"
+  },
+  {
+   "check": "ad group campaign SKAG | Boiler Installation",
+   "pass": true,
+   "detail": "24132507744 != 24132507744"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Boiler Installation",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Boiler Maintenance",
+   "pass": true,
+   "detail": "SKAG | Boiler Maintenance"
+  },
+  {
+   "check": "ad group campaign SKAG | Boiler Maintenance",
+   "pass": true,
+   "detail": "24132507744 != 24132507744"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Boiler Maintenance",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Furnace Maintenance",
+   "pass": true,
+   "detail": "SKAG | Furnace Maintenance"
+  },
+  {
+   "check": "ad group campaign SKAG | Furnace Maintenance",
+   "pass": true,
+   "detail": "24279798229 != 24279798229"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Furnace Maintenance",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Heating Maintenance",
+   "pass": true,
+   "detail": "SKAG | Heating Maintenance"
+  },
+  {
+   "check": "ad group campaign SKAG | Heating Maintenance",
+   "pass": true,
+   "detail": "24279798229 != 24279798229"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Heating Maintenance",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Furnace Tune-Up",
+   "pass": true,
+   "detail": "SKAG | Furnace Tune-Up"
+  },
+  {
+   "check": "ad group campaign SKAG | Furnace Tune-Up",
+   "pass": true,
+   "detail": "24279798229 != 24279798229"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Furnace Tune-Up",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Heating Tune-Up",
+   "pass": true,
+   "detail": "SKAG | Heating Tune-Up"
+  },
+  {
+   "check": "ad group campaign SKAG | Heating Tune-Up",
+   "pass": true,
+   "detail": "24279798229 != 24279798229"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Heating Tune-Up",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Heating System Inspection",
+   "pass": true,
+   "detail": "SKAG | Heating System Inspection"
+  },
+  {
+   "check": "ad group campaign SKAG | Heating System Inspection",
+   "pass": true,
+   "detail": "24279798229 != 24279798229"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Heating System Inspection",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Thermostat Repair",
+   "pass": true,
+   "detail": "SKAG | Thermostat Repair"
+  },
+  {
+   "check": "ad group campaign SKAG | Thermostat Repair",
+   "pass": true,
+   "detail": "24268690041 != 24268690041"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Thermostat Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Thermostat Replacement",
+   "pass": true,
+   "detail": "SKAG | Thermostat Replacement"
+  },
+  {
+   "check": "ad group campaign SKAG | Thermostat Replacement",
+   "pass": true,
+   "detail": "24268690041 != 24268690041"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Thermostat Replacement",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Smart Thermostat Installation",
+   "pass": true,
+   "detail": "SKAG | Smart Thermostat Installation"
+  },
+  {
+   "check": "ad group campaign SKAG | Smart Thermostat Installation",
+   "pass": true,
+   "detail": "24268690041 != 24268690041"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Smart Thermostat Installation",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "ad group name SKAG | Geothermal Heat Pump",
+   "pass": true,
+   "detail": "SKAG | Geothermal Heat Pump"
+  },
+  {
+   "check": "ad group campaign SKAG | Geothermal Heat Pump",
+   "pass": true,
+   "detail": "24274160783 != 24274160783"
+  },
+  {
+   "check": "ad group PAUSED SKAG | Geothermal Heat Pump",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "cross-negatives SKAG | Furnace Repair",
+   "pass": true,
+   "detail": "15 != 15"
+  },
+  {
+   "check": "cross-negatives SKAG | Ductless Heating Installation",
+   "pass": true,
+   "detail": "9 != 9"
+  },
+  {
+   "check": "cross-negatives SKAG | Gas Boiler Repair",
+   "pass": true,
+   "detail": "11 != 11"
+  },
+  {
+   "check": "cross-negatives SKAG | Heating Repair",
+   "pass": true,
+   "detail": "14 != 14"
+  },
+  {
+   "check": "keywords SKAG | Heating Repair",
+   "pass": true,
+   "detail": "6 < 6"
+  },
+  {
+   "check": "cross-negatives SKAG | Emergency Heating Repair",
+   "pass": true,
+   "detail": "11 != 11"
+  },
+  {
+   "check": "keywords SKAG | Emergency Heating Repair",
+   "pass": true,
+   "detail": "5 < 5"
+  },
+  {
+   "check": "cross-negatives SKAG | No Heat Repair",
+   "pass": true,
+   "detail": "11 != 11"
+  },
+  {
+   "check": "keywords SKAG | No Heat Repair",
+   "pass": true,
+   "detail": "4 < 4"
+  },
+  {
+   "check": "cross-negatives SKAG | Gas Furnace Repair",
+   "pass": true,
+   "detail": "13 != 13"
+  },
+  {
+   "check": "keywords SKAG | Gas Furnace Repair",
+   "pass": true,
+   "detail": "2 < 2"
+  },
+  {
+   "check": "cross-negatives SKAG | Electric Furnace Repair",
+   "pass": true,
+   "detail": "13 != 13"
+  },
+  {
+   "check": "keywords SKAG | Electric Furnace Repair",
+   "pass": true,
+   "detail": "2 < 2"
+  },
+  {
+   "check": "cross-negatives SKAG | Heat Pump Repair",
+   "pass": true,
+   "detail": "11 != 11"
+  },
+  {
+   "check": "keywords SKAG | Heat Pump Repair",
+   "pass": true,
+   "detail": "4 < 4"
+  },
+  {
+   "check": "cross-negatives SKAG | Heat Pump Replacement",
+   "pass": true,
+   "detail": "11 != 11"
+  },
+  {
+   "check": "keywords SKAG | Heat Pump Replacement",
+   "pass": true,
+   "detail": "3 < 3"
+  },
+  {
+   "check": "cross-negatives SKAG | Heat Pump Installation",
+   "pass": true,
+   "detail": "11 != 11"
+  },
+  {
+   "check": "keywords SKAG | Heat Pump Installation",
+   "pass": true,
+   "detail": "3 < 3"
+  },
+  {
+   "check": "cross-negatives SKAG | Heat Pump Maintenance",
+   "pass": true,
+   "detail": "10 != 10"
+  },
+  {
+   "check": "keywords SKAG | Heat Pump Maintenance",
+   "pass": true,
+   "detail": "3 < 3"
+  },
+  {
+   "check": "cross-negatives SKAG | Ductless Heating Repair",
+   "pass": true,
+   "detail": "11 != 11"
+  },
+  {
+   "check": "keywords SKAG | Ductless Heating Repair",
+   "pass": true,
+   "detail": "5 < 5"
+  },
+  {
+   "check": "cross-negatives SKAG | Furnace Replacement",
+   "pass": true,
+   "detail": "13 != 13"
+  },
+  {
+   "check": "keywords SKAG | Furnace Replacement",
+   "pass": true,
+   "detail": "4 < 4"
+  },
+  {
+   "check": "cross-negatives SKAG | Furnace Installation",
+   "pass": true,
+   "detail": "12 != 12"
+  },
+  {
+   "check": "keywords SKAG | Furnace Installation",
+   "pass": true,
+   "detail": "3 < 3"
+  },
+  {
+   "check": "cross-negatives SKAG | Heating Installation",
+   "pass": true,
+   "detail": "12 != 12"
+  },
+  {
+   "check": "keywords SKAG | Heating Installation",
+   "pass": true,
+   "detail": "4 < 4"
+  },
+  {
+   "check": "cross-negatives SKAG | Heating Replacement",
+   "pass": true,
+   "detail": "13 != 13"
+  },
+  {
+   "check": "keywords SKAG | Heating Replacement",
+   "pass": true,
+   "detail": "5 < 5"
+  },
+  {
+   "check": "cross-negatives SKAG | Boiler Repair",
+   "pass": true,
+   "detail": "11 != 11"
+  },
+  {
+   "check": "keywords SKAG | Boiler Repair",
+   "pass": true,
+   "detail": "4 < 4"
+  },
+  {
+   "check": "cross-negatives SKAG | Boiler Replacement",
+   "pass": true,
+   "detail": "9 != 9"
+  },
+  {
+   "check": "keywords SKAG | Boiler Replacement",
+   "pass": true,
+   "detail": "4 < 4"
+  },
+  {
+   "check": "cross-negatives SKAG | Boiler Installation",
+   "pass": true,
+   "detail": "8 != 8"
+  },
+  {
+   "check": "keywords SKAG | Boiler Installation",
+   "pass": true,
+   "detail": "3 < 3"
+  },
+  {
+   "check": "cross-negatives SKAG | Boiler Maintenance",
+   "pass": true,
+   "detail": "7 != 7"
+  },
+  {
+   "check": "keywords SKAG | Boiler Maintenance",
+   "pass": true,
+   "detail": "4 < 4"
+  },
+  {
+   "check": "cross-negatives SKAG | Furnace Maintenance",
+   "pass": true,
+   "detail": "13 != 13"
+  },
+  {
+   "check": "keywords SKAG | Furnace Maintenance",
+   "pass": true,
+   "detail": "3 < 3"
+  },
+  {
+   "check": "cross-negatives SKAG | Heating Maintenance",
+   "pass": true,
+   "detail": "13 != 13"
+  },
+  {
+   "check": "keywords SKAG | Heating Maintenance",
+   "pass": true,
+   "detail": "3 < 3"
+  },
+  {
+   "check": "cross-negatives SKAG | Furnace Tune-Up",
+   "pass": true,
+   "detail": "12 != 12"
+  },
+  {
+   "check": "keywords SKAG | Furnace Tune-Up",
+   "pass": true,
+   "detail": "2 < 2"
+  },
+  {
+   "check": "cross-negatives SKAG | Heating Tune-Up",
+   "pass": true,
+   "detail": "13 != 13"
+  },
+  {
+   "check": "keywords SKAG | Heating Tune-Up",
+   "pass": true,
+   "detail": "2 < 2"
+  },
+  {
+   "check": "cross-negatives SKAG | Heating System Inspection",
+   "pass": true,
+   "detail": "13 != 13"
+  },
+  {
+   "check": "keywords SKAG | Heating System Inspection",
+   "pass": true,
+   "detail": "4 < 4"
+  },
+  {
+   "check": "cross-negatives SKAG | Thermostat Repair",
+   "pass": true,
+   "detail": "10 != 10"
+  },
+  {
+   "check": "keywords SKAG | Thermostat Repair",
+   "pass": true,
+   "detail": "2 < 2"
+  },
+  {
+   "check": "cross-negatives SKAG | Thermostat Replacement",
+   "pass": true,
+   "detail": "10 != 10"
+  },
+  {
+   "check": "keywords SKAG | Thermostat Replacement",
+   "pass": true,
+   "detail": "3 < 3"
+  },
+  {
+   "check": "cross-negatives SKAG | Smart Thermostat Installation",
+   "pass": true,
+   "detail": "6 != 6"
+  },
+  {
+   "check": "keywords SKAG | Smart Thermostat Installation",
+   "pass": true,
+   "detail": "3 < 3"
+  },
+  {
+   "check": "cross-negatives SKAG | Geothermal Heat Pump",
+   "pass": true,
+   "detail": "8 != 8"
+  },
+  {
+   "check": "keywords SKAG | Geothermal Heat Pump",
+   "pass": true,
+   "detail": "5 < 5"
+  },
+  {
+   "check": "gas furnace repair removed from Furnace Repair",
+   "pass": true,
+   "detail": "['furnace repair', 'furnace repair', 'furnace repair service', 'residential furnace repair', 'furnace not working', 'furnace repair service', 'furnace repair near me', 'furnace repair near me']"
+  },
+  {
+   "check": "ads exist SKAG | Furnace Repair",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Furnace Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/'] != https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+  },
+  {
+   "check": "ad url SKAG | Furnace Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/'] != https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+  },
+  {
+   "check": "ads exist SKAG | Ductless Heating Installation",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Ductless Heating Installation",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/cooling-services/mini-splits/'] != https://ambientcoolingandheating.com/services/cooling-services/mini-splits/"
+  },
+  {
+   "check": "ad url SKAG | Ductless Heating Installation",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/cooling-services/mini-splits/'] != https://ambientcoolingandheating.com/services/cooling-services/mini-splits/"
+  },
+  {
+   "check": "ads exist SKAG | Gas Boiler Repair",
+   "pass": true,
+   "detail": "4"
+  },
+  {
+   "check": "ad url SKAG | Gas Boiler Repair",
+   "pass": true,
+   "detail": "['https://offer.ambientcoolingandheating.com/gas-boiler-repair/'] != https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+  },
+  {
+   "check": "ad url SKAG | Gas Boiler Repair",
+   "pass": true,
+   "detail": "['https://offer.ambientcoolingandheating.com/gas-boiler-repair/'] != https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+  },
+  {
+   "check": "ad url SKAG | Gas Boiler Repair",
+   "pass": true,
+   "detail": "['https://offer.ambientcoolingandheating.com/gas-boiler-repair/'] != https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+  },
+  {
+   "check": "ad url SKAG | Gas Boiler Repair",
+   "pass": true,
+   "detail": "['https://offer.ambientcoolingandheating.com/gas-boiler-repair/'] != https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+  },
+  {
+   "check": "ads exist SKAG | Heating Repair",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Heating Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/'] != https://ambientcoolingandheating.com/services/heating-services/"
+  },
+  {
+   "check": "ad url SKAG | Heating Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/'] != https://ambientcoolingandheating.com/services/heating-services/"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Emergency Heating Repair",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | No Heat Repair",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "ads exist SKAG | Gas Furnace Repair",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Gas Furnace Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/'] != https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+  },
+  {
+   "check": "ad url SKAG | Gas Furnace Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/'] != https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+  },
+  {
+   "check": "ads exist SKAG | Electric Furnace Repair",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Electric Furnace Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/'] != https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+  },
+  {
+   "check": "ad url SKAG | Electric Furnace Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/'] != https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Heat Pump Repair",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Heat Pump Replacement",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Heat Pump Installation",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Heat Pump Maintenance",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "ads exist SKAG | Ductless Heating Repair",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Ductless Heating Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/cooling-services/mini-splits/'] != https://ambientcoolingandheating.com/services/cooling-services/mini-splits/"
+  },
+  {
+   "check": "ad url SKAG | Ductless Heating Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/cooling-services/mini-splits/'] != https://ambientcoolingandheating.com/services/cooling-services/mini-splits/"
+  },
+  {
+   "check": "ads exist SKAG | Furnace Replacement",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Furnace Replacement",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/'] != https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+  },
+  {
+   "check": "ad url SKAG | Furnace Replacement",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/'] != https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+  },
+  {
+   "check": "ads exist SKAG | Furnace Installation",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Furnace Installation",
+   "pass": true,
+   "detail": "['https://offer.ambientcoolingandheating.com/hvac-installation/'] != https://offer.ambientcoolingandheating.com/hvac-installation/"
+  },
+  {
+   "check": "ad url SKAG | Furnace Installation",
+   "pass": true,
+   "detail": "['https://offer.ambientcoolingandheating.com/hvac-installation/'] != https://offer.ambientcoolingandheating.com/hvac-installation/"
+  },
+  {
+   "check": "ads exist SKAG | Heating Installation",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Heating Installation",
+   "pass": true,
+   "detail": "['https://offer.ambientcoolingandheating.com/hvac-installation/'] != https://offer.ambientcoolingandheating.com/hvac-installation/"
+  },
+  {
+   "check": "ad url SKAG | Heating Installation",
+   "pass": true,
+   "detail": "['https://offer.ambientcoolingandheating.com/hvac-installation/'] != https://offer.ambientcoolingandheating.com/hvac-installation/"
+  },
+  {
+   "check": "ads exist SKAG | Heating Replacement",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Heating Replacement",
+   "pass": true,
+   "detail": "['https://offer.ambientcoolingandheating.com/hvac-replacement/'] != https://offer.ambientcoolingandheating.com/hvac-replacement/"
+  },
+  {
+   "check": "ad url SKAG | Heating Replacement",
+   "pass": true,
+   "detail": "['https://offer.ambientcoolingandheating.com/hvac-replacement/'] != https://offer.ambientcoolingandheating.com/hvac-replacement/"
+  },
+  {
+   "check": "ads exist SKAG | Boiler Repair",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Boiler Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/boiler-repair/'] != https://ambientcoolingandheating.com/services/heating-services/boiler-repair/"
+  },
+  {
+   "check": "ad url SKAG | Boiler Repair",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/boiler-repair/'] != https://ambientcoolingandheating.com/services/heating-services/boiler-repair/"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Boiler Replacement",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Boiler Installation",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Boiler Maintenance",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "ads exist SKAG | Furnace Maintenance",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Furnace Maintenance",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/'] != https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+  },
+  {
+   "check": "ad url SKAG | Furnace Maintenance",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/furnace-repair/'] != https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+  },
+  {
+   "check": "ads exist SKAG | Heating Maintenance",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Heating Maintenance",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/'] != https://ambientcoolingandheating.com/services/heating-services/"
+  },
+  {
+   "check": "ad url SKAG | Heating Maintenance",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/'] != https://ambientcoolingandheating.com/services/heating-services/"
+  },
+  {
+   "check": "ads exist SKAG | Furnace Tune-Up",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Furnace Tune-Up",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/'] != https://ambientcoolingandheating.com/services/heating-services/"
+  },
+  {
+   "check": "ad url SKAG | Furnace Tune-Up",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/'] != https://ambientcoolingandheating.com/services/heating-services/"
+  },
+  {
+   "check": "ads exist SKAG | Heating Tune-Up",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Heating Tune-Up",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/'] != https://ambientcoolingandheating.com/services/heating-services/"
+  },
+  {
+   "check": "ad url SKAG | Heating Tune-Up",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/'] != https://ambientcoolingandheating.com/services/heating-services/"
+  },
+  {
+   "check": "ads exist SKAG | Heating System Inspection",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Heating System Inspection",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/'] != https://ambientcoolingandheating.com/services/heating-services/"
+  },
+  {
+   "check": "ad url SKAG | Heating System Inspection",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/heating-services/'] != https://ambientcoolingandheating.com/services/heating-services/"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Thermostat Repair",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Thermostat Replacement",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "NO ads on held ad group SKAG | Smart Thermostat Installation",
+   "pass": true,
+   "detail": "0 ads present on a held ad group"
+  },
+  {
+   "check": "ads exist SKAG | Geothermal Heat Pump",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "check": "ad url SKAG | Geothermal Heat Pump",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/'] != https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/"
+  },
+  {
+   "check": "ad url SKAG | Geothermal Heat Pump",
+   "pass": true,
+   "detail": "['https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/'] != https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/"
+  },
+  {
+   "check": "C2 call asset",
+   "pass": true,
+   "detail": "['407995613637']"
+  },
+  {
+   "check": "C2 business name",
+   "pass": true,
+   "detail": "['80516971145']"
+  },
+  {
+   "check": "C2 5 callouts",
+   "pass": true,
+   "detail": "5"
+  },
+  {
+   "check": "C2 3 sitelinks",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "check": "C2 snippet",
+   "pass": true,
+   "detail": "1"
+  },
+  {
+   "check": "C5 call asset",
+   "pass": true,
+   "detail": "['407995613637']"
+  },
+  {
+   "check": "C5 business name",
+   "pass": true,
+   "detail": "['80516971145']"
+  },
+  {
+   "check": "C5 5 callouts",
+   "pass": true,
+   "detail": "5"
+  },
+  {
+   "check": "C5 3 sitelinks",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "check": "C5 snippet",
+   "pass": true,
+   "detail": "1"
+  },
+  {
+   "check": "C6 call asset",
+   "pass": true,
+   "detail": "['407995613637']"
+  },
+  {
+   "check": "C6 business name",
+   "pass": true,
+   "detail": "['80516971145']"
+  },
+  {
+   "check": "C6 5 callouts",
+   "pass": true,
+   "detail": "5"
+  },
+  {
+   "check": "C6 3 sitelinks",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "check": "C6 snippet",
+   "pass": true,
+   "detail": "1"
+  },
+  {
+   "check": "C7 call asset",
+   "pass": true,
+   "detail": "['407995613637']"
+  },
+  {
+   "check": "C7 business name",
+   "pass": true,
+   "detail": "['80516971145']"
+  },
+  {
+   "check": "C7 5 callouts",
+   "pass": true,
+   "detail": "5"
+  },
+  {
+   "check": "C7 3 sitelinks",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "check": "C7 snippet",
+   "pass": true,
+   "detail": "1"
+  },
+  {
+   "check": "call asset 5 rows",
+   "pass": true,
+   "detail": "[('MONDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16), ('THURSDAY', 8, 16), ('FRIDAY', 8, 16)]"
+  },
+  {
+   "check": "call asset no weekend",
+   "pass": true,
+   "detail": "[('MONDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16), ('THURSDAY', 8, 16), ('FRIDAY', 8, 16)]"
+  },
+  {
+   "check": "call asset 08-16",
+   "pass": true,
+   "detail": "[('MONDAY', 8, 16), ('TUESDAY', 8, 16), ('WEDNESDAY', 8, 16), ('THURSDAY', 8, 16), ('FRIDAY', 8, 16)]"
+  },
+  {
+   "check": "call asset phone unchanged",
+   "pass": true,
+   "detail": "(410)705-6354"
+  },
+  {
+   "check": "cooling still ENABLED after stage A",
+   "pass": true,
+   "detail": "{'24132507741': {'status': 'ENABLED', 'daily': 45.0}, '24132507747': {'status': 'ENABLED', 'daily': 95.0}, '24132507750': {'status': 'ENABLED', 'daily': 70.0}, '24132507753': {'status': 'ENABLED', 'daily': 15.0}}"
+  }
+ ],
+ "FAIL": 0
+}

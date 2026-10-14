@@ -1,0 +1,330 @@
+# PLAN-R3 - BIDDING CONTROL
+#
+# *** VOID - SUPERSEDED BY PLAN-R3A ON 2026-08-31 ***
+# Fingerprint 97D8B268A80A must NOT be approved, honoured or executed.
+# Replaced by clients/softwind-power-washing/plans/2026-08-31-plan-r3a-controlled-12-cpc-test.yaml
+# Retained as evidence only. See change_plan.superseded_by below.
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# Built 2026-08-31 from the read-only forensic snapshot. NOT APPROVED.
+change_plan:
+  plan_id: PLAN-R3
+  plan_title: Lower the Maximize Clicks CPC ceiling from $30.00 to $22.00
+  approval_type: LIVE_CAMPAIGN_BIDDING
+  priority: P0
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 2
+  object_count_total: 2
+  requires_separate_enable_approval: false
+  recommended_approval_order: null
+  superseded_by:
+    plan_id: PLAN-R3A
+    file: 2026-08-31-plan-r3a-controlled-12-cpc-test.yaml
+    on_account_local: "2026-08-31T17:30 America/New_York"
+    state: VOID - SUPERSEDED
+    fingerprint_of_this_plan: 97D8B268A80A
+    do_not_honour: true
+    reason: >-
+      Walter did not approve a $22 ceiling and asked for the number to be selected
+      from local Keyword Planner data, valid-click history, rank loss, impression
+      share and campaign performance. The completed CPC ceiling analysis found
+      $12.00 to be the lowest defensible test ceiling: $10 clears roughly 15.8% of
+      measured local demand, $12 clears roughly 98.2%, and $18 and $22 add almost
+      no additional measured keyword coverage over $12. This plan also changed BOTH
+      campaigns at once, which would have destroyed the control group and restarted
+      campaign B's learning window a second time. Replaced by PLAN-R3A: one field,
+      one campaign, campaign B held at $30.00 as the control.
+    superseding_action: >-
+      campaign 24103511039 target_spend.cpc_bid_ceiling_micros 30000000 -> 12000000
+      (1 mutation), campaign 24145053510 unchanged.
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  headline_finding: >-
+    The $30.00 ceiling is not protecting the account from occasional expensive
+    clicks. It IS the price. Since the ceiling went in at 2026-08-27 12:25:35,
+    every one of the five billable clicks priced between $29.04 and $29.72 - a
+    range $0.68 wide, sitting directly under a $30.00 cap. Google is bidding the
+    cap on essentially every auction because Quality Score is 1 to 5 and Ad Rank
+    has to be bought.
+  restated_on_corrected_data: >-
+    These figures were recomputed at 2026-08-31 16:40 after Google retroactively
+    invalidated four of the five clicks recorded that morning on the query
+    "power washing services" and credited back $117.28. The account ledger moved
+    from 22 billable clicks / $713.15 to 18 billable clicks / $595.87. The
+    conclusion did not weaken - it sharpened, because the four reversed clicks
+    were duplicates at an identical $29.32 and were inflating the sample.
+
+  the_question_the_brief_asked:
+    question: >-
+      Is the account paying more because it is winning MORE QUALIFIED AUCTIONS, or
+      because GOOGLE IS BIDDING MORE FOR THE SAME AUCTIONS?
+    answer: >-
+      GOOGLE IS BIDDING MORE FOR THE SAME AUCTIONS. Decisively.
+    proof:
+      - >-
+        With a $5.00 ceiling in force 2026-08-07 to 2026-08-16 the account took
+        zero clicks in twelve consecutive days.
+      - >-
+        Uncapped from 2026-08-16 23:42 to 2026-08-27 12:25, individual clicks
+        priced $5.71, $22.11, $22.13, $26.66, $40.07, $54.49 and $82.22. The
+        $82.22 was exactly 2x the then-$41.11 daily budget - the overdelivery cap
+        was the only brake on price.
+      - >-
+        Capped at $30.00, the price collapsed onto the cap. Every post-ceiling
+        billable click: $29.57, $29.57, $29.72, $29.04, $29.32. Range $0.68.
+      - >-
+        The price tracks the cap in all three regimes. It does not track the
+        market. Keyword Planner top-of-page LOW for the serving keyword set is
+        $8.75 to $13.49; the account pays roughly 2.2x to 3.4x that.
+
+  evidence:
+    - id: R3-E1
+      metric: CPC distribution over all 18 billable clicks (corrected 16:40)
+      values:
+        n: 18
+        min: 5.71
+        p25: 28.73
+        median: 29.57
+        mean: 33.10
+        p75: 35.31
+        p90: 54.49
+        max: 82.22
+      post_ceiling_subset:
+        n: 5
+        clicks: [29.57, 29.57, 29.72, 29.04, 29.32]
+        range_usd: 0.68
+        mean: 29.44
+        ceiling: 30.00
+      reading: >-
+        Across the whole life of the account the distribution is wide, because it
+        spans three bidding regimes. Restrict it to the post-ceiling window and it
+        collapses: five clicks spanning $29.04 to $29.72 under a $30.00 cap. That
+        is a capped distribution, not a market distribution.
+    - id: R3-E2
+      metric: Quality Score on the six keywords Google has scored
+      values:
+        - keyword: power washing near me (PHRASE and EXACT, campaign A)
+          qs: 1
+          expected_ctr: BELOW_AVERAGE
+          ad_relevance: BELOW_AVERAGE
+          landing_page: BELOW_AVERAGE
+        - keyword: power washing services near me (PHRASE and EXACT, campaign A)
+          qs: 3
+          expected_ctr: BELOW_AVERAGE
+          ad_relevance: ABOVE_AVERAGE
+          landing_page: BELOW_AVERAGE
+        - keyword: power washing services near me (PHRASE and EXACT, campaign B)
+          qs: 5
+          expected_ctr: BELOW_AVERAGE
+          ad_relevance: ABOVE_AVERAGE
+          landing_page: AVERAGE
+      reading: >-
+        The account biggest keyword carries Quality Score 1 with BELOW_AVERAGE on
+        all three components. A QS-1 keyword has to bid far above a QS-8
+        competitor to hold the same position. Paying top-of-market price with
+        bottom-of-market Quality Score is the definition of overpaying.
+    - id: R3-E3
+      metric: Keyword Planner top-of-page range for the serving keyword set, 80-target footprint
+      values:
+        - bucket: power washing near me / power washing company near me / pressure washing services near me
+          monthly: 260
+          low: 10.90
+          high: 28.32
+        - bucket: power washing services / pressure washing services
+          monthly: 140
+          low: 11.55
+          high: 23.34
+        - bucket: pressure washing near me
+          monthly: 90
+          low: 8.75
+          high: 24.66
+        - bucket: house washing near me
+          monthly: 40
+          low: 10.46
+          high: 24.75
+        - bucket: power washing services near me
+          monthly: 30
+          low: 10.62
+          high: 28.70
+        - bucket: house power washing near me / house pressure washing near me
+          monthly: 20
+          low: 13.49
+          high: 32.86
+      reading: >-
+        $22.00 sits above every LOW in the set and below every HIGH except the
+        head terms. Eligibility survives; absolute-top position is what is given
+        up, and with zero measured conversions absolute-top is not worth a premium.
+    - id: R3-E4
+      metric: Impression share and where it is lost
+      values:
+        campaign_24103511039_search_is_impression_weighted_pct: 53.55
+        campaign_24145053510_search_is_impression_weighted_pct: 66.30
+        campaign_24103511039_lost_is_budget_pct: 2.01
+        campaign_24145053510_lost_is_budget_pct: 2.00
+        campaign_24103511039_lost_is_rank_pct: 31.45
+        campaign_24145053510_lost_is_rank_pct: 17.70
+        campaign_24103511039_abs_top_share_pct: 31.35
+        campaign_24145053510_abs_top_share_pct: 45.67
+        restated: >-
+          Recomputed 2026-08-31 16:40 on the corrected ledger. The earlier values
+          (61.24 / 75.34 IS) were computed before the day's later impressions
+          landed and before the click reversal.
+        reading: >-
+          Lost IS to budget is 0.00% on 24 of the 30 campaign-days that delivered,
+          and the impression-weighted average of 2.3% is driven almost entirely by
+          2026-08-27, the single day the geo expansion first delivered. Budget is
+          effectively never the constraint. Lost IS to rank is the whole gap, and
+          rank is a Quality Score problem, not a bid problem, once the bid already
+          sits at the market high. Meanwhile the account holds 36-52%
+          absolute-top impression share: it is buying premium position with
+          Quality Score 1 to 5 and no measured conversion to justify it.
+
+  options_considered:
+    - option: Leave the ceiling at $30.00
+      verdict: REJECTED
+      reason: >-
+        It is the price, not a guard rail. Doing nothing means continuing to buy
+        clicks at $29 that have produced no measured lead across 18 attempts.
+    - option: Return to uncapped Maximize Clicks
+      verdict: REJECTED
+      reason: >-
+        Proven to produce $54.49 and $82.22 clicks. The only brake would be the 2x
+        daily overdelivery cap, which is a spend brake, not a price brake.
+    - option: Switch to Maximize Conversions or tCPA
+      verdict: REJECTED
+      reason: >-
+        Smart Bidding needs conversion signal. The account has zero recorded
+        conversions and its account-level goal configuration currently zeroes the
+        Conversions column entirely (PLAN-R1, R1-E1). Handing bidding to an
+        algorithm with no signal would make the account worse, not better.
+    - option: Manual CPC
+      verdict: REJECTED
+      reason: >-
+        Adds 214 bid decisions and a maintenance burden for a benefit a ceiling on
+        Maximize Clicks already delivers, and forfeits Google auction-time signals.
+    - option: Ceiling at $24.00 (the original PLAN-B value)
+      verdict: SUPERSEDED
+      reason: >-
+        $24.00 was rejected on 2026-08-27 because it sat below the then-documented
+        $28.23 top-of-page high. That was a defensible call on 6 clicks with no CPC
+        history. It is no longer defensible on 18 clicks, $595.87 and zero leads.
+    - option: Ceiling at $22.00
+      verdict: SELECTED
+      reason: >-
+        Above every top-of-page LOW in the serving set, so the account stays
+        eligible on every core keyword. Roughly 25% below the current effective
+        price, so the same money buys roughly a third more clicks. Fully reversible
+        with a single field write.
+
+  expected_effect:
+    method: >-
+      Applies the proposed ceiling to the 22 observed billable clicks, capping each
+      at the lower of its actual price and the new ceiling. This is an upper bound
+      on saving and a lower bound on click gain, because it ignores auctions the
+      lower bid would lose.
+    recomputed_account_local: "2026-08-31T16:40"
+    observed_spend_usd: 595.87
+    observed_clicks: 18
+    observed_avg_cpc_usd: 33.10
+    modelled_spend_at_22_usd: 379.71
+    modelled_avg_cpc_usd: 21.10
+    modelled_saving_usd: 216.16
+    modelled_clicks_at_same_spend: 28.2
+    modelled_extra_clicks_same_spend: 10.2
+    comparison_other_ceilings:
+      - {ceiling: 30.00, modelled_spend: 491.11, modelled_avg_cpc: 27.28, clicks_at_same_spend: 21.8}
+      - {ceiling: 24.00, modelled_spend: 409.95, modelled_avg_cpc: 22.77, clicks_at_same_spend: 26.2}
+      - {ceiling: 22.00, modelled_spend: 379.71, modelled_avg_cpc: 21.10, clicks_at_same_spend: 28.2}
+      - {ceiling: 20.00, modelled_spend: 345.71, modelled_avg_cpc: 19.21, clicks_at_same_spend: 31.0}
+      - {ceiling: 18.00, modelled_spend: 311.71, modelled_avg_cpc: 17.32, clicks_at_same_spend: 34.4}
+    superseded_model: >-
+      An earlier version of this block modelled 22 clicks / $713.15 / $467.71 at a
+      $22 ceiling. It was computed at 10:21 and is superseded by the 16:40 read.
+      The recommended ceiling is unchanged at $22.00 and the ACTION LIST is
+      unchanged, so the approval fingerprint is unaffected - the canonical payload
+      covers target and actions, never narrative or evidence.
+    confidence: MEDIUM
+    caveat: >-
+      The model cannot price the auctions a $22 bid would lose. Expect impression
+      share to fall from 54-66% and lost IS to rank to rise from 18-31%. The correct success measure is cost per qualified lead, not
+      impression share.
+
+  actions:
+    - action_id: R3-01
+      priority: P0
+      resource_type: campaign
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      resource_id: "customers/1521725229/campaigns/24103511039"
+      field_mask: target_spend.cpc_bid_ceiling_micros
+      current_value: 30000000
+      proposed_value: 22000000
+      object_count: 1
+      rationale: >-
+        Campaign Power Washing. Current ceiling set 2026-08-27 12:25:35 by
+        PLAN-K1. No other field on this campaign may change.
+    - action_id: R3-02
+      priority: P0
+      resource_type: campaign
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24145053510"
+      resource_id: "customers/1521725229/campaigns/24145053510"
+      field_mask: target_spend.cpc_bid_ceiling_micros
+      current_value: 30000000
+      proposed_value: 22000000
+      object_count: 1
+      rationale: >-
+        Campaign Power Washing #2. Same ceiling, same origin. Note this campaign
+        is currently primary_status LEARNING with
+        bidding_strategy_system_status LEARNING_SETTING_CHANGE; this write will
+        restart that learning window.
+
+  explicitly_not_touched:
+    - campaign_budget 15764226923 amount_micros (currently 41500000)
+    - campaign_budget 15802443075 amount_micros (currently 41110000)
+    - campaign.bidding_strategy_type (stays TARGET_SPEND on both)
+    - campaign.status, ad_group.status, ad_group_ad.status
+    - any keyword, negative, location, schedule or asset
+
+  qa_after_execution:
+    - >-
+      Read back campaign.target_spend.cpc_bid_ceiling_micros on both campaigns and
+      assert exactly 22000000.
+    - >-
+      Field-level before/after diff on both campaign resources; assert the ceiling
+      is the only changed field.
+    - >-
+      Do NOT use change_event to corroborate. It lags by hours and returned zero
+      rows for a confirmed PLAN-K1 write two hours after execution.
+    - >-
+      Watch the first three billable clicks after execution. If any exceeds
+      $22.00 more than 2 hours after the write, the ceiling is not binding and
+      this plan must be revisited (the equivalent watch item K1-W1 resolved
+      correctly for the $30 ceiling; bid propagation delay is expected).
+
+  review_gate:
+    review_after_days: 14
+    revert_if: >-
+      Total impressions over 14 days fall below 60% of the trailing 14-day
+      baseline AND no qualified lead has been produced. In that case the lower
+      ceiling has bought neither volume nor leads and $30.00 should be restored
+      while the Quality Score work in PLAN-R5 and PLAN-R7 takes effect.
+
+  risk: >-
+    MEDIUM-LOW. One field on two campaigns. The downside is lost impression share
+    in an account that is already impression-starved; the upside is roughly a
+    third more clicks for the same money. Fully reversible in one write.
+  rollback: >-
+    Set campaign.target_spend.cpc_bid_ceiling_micros back to 30000000 on
+    24103511039 and 24145053510. Two mutations, field mask
+    target_spend.cpc_bid_ceiling_micros.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does not grant permission.

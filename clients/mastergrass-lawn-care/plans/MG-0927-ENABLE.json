@@ -1,0 +1,42 @@
+{
+ "customer_id": "9487471092",
+ "exact_account_name": "MasterGrass - Live",
+ "never_write_to_mcc": "3373711342",
+ "package": "MG-0927-ENABLE",
+ "enable": {
+  "pmax_campaign": "24287457516",
+  "asset_group": "6752116688",
+  "rsas": [
+   "customers/9487471092/adGroupAds/194944952537~826087764192",
+   "customers/9487471092/adGroupAds/194944952537~826087764195",
+   "customers/9487471092/adGroupAds/194944952577~826087764198",
+   "customers/9487471092/adGroupAds/194944952577~826087764201",
+   "customers/9487471092/adGroupAds/194944952617~826087764204",
+   "customers/9487471092/adGroupAds/194944952617~826087764207",
+   "customers/9487471092/adGroupAds/194944952777~826087764210",
+   "customers/9487471092/adGroupAds/194944952777~826087764213",
+   "customers/9487471092/adGroupAds/194944952817~826087764216",
+   "customers/9487471092/adGroupAds/194944952817~826087764219",
+   "customers/9487471092/adGroupAds/194944952857~826087764222",
+   "customers/9487471092/adGroupAds/194944952857~826087764225",
+   "customers/9487471092/adGroupAds/195877148086~826087764168",
+   "customers/9487471092/adGroupAds/195877148086~826087764171",
+   "customers/9487471092/adGroupAds/195877148126~826087764174",
+   "customers/9487471092/adGroupAds/195877148126~826087764177",
+   "customers/9487471092/adGroupAds/195877148286~826087764180",
+   "customers/9487471092/adGroupAds/195877148286~826087764183",
+   "customers/9487471092/adGroupAds/195877148326~826087764186",
+   "customers/9487471092/adGroupAds/195877148326~826087764189"
+  ],
+  "callout_links": [
+   "customers/9487471092/campaignAssets/23905193676~424890496511~CALLOUT",
+   "customers/9487471092/campaignAssets/23905193676~424992850717~CALLOUT",
+   "customers/9487471092/campaignAssets/23905193676~424992850720~CALLOUT",
+   "customers/9487471092/campaignAssets/23914692658~424890496511~CALLOUT",
+   "customers/9487471092/campaignAssets/23914692658~424992850717~CALLOUT",
+   "customers/9487471092/campaignAssets/23914692658~424992850720~CALLOUT"
+  ]
+ },
+ "precondition": "readback MG-0926-READBACK-2026-09-27.json 27 PASS / 0 FAIL",
+ "fingerprint": "9B4EE116C022"
+}

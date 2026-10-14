@@ -1,0 +1,284 @@
+{
+ "run_at_utc": "2026-09-28T21:17:22+00:00",
+ "errors": {},
+ "identity_pass": true,
+ "timezone": "America/Chicago",
+ "clock": {
+  "yesterday": [
+   "2026-09-27"
+  ],
+  "today": [
+   "2026-09-28"
+  ]
+ },
+ "campaign": {
+  "resource_name": "customers/8164626278/campaigns/24257151015",
+  "status": "ENABLED",
+  "network_settings": {
+   "target_google_search": true,
+   "target_search_network": false,
+   "target_content_network": false
+  },
+  "serving_status": "SERVING",
+  "bidding_strategy_type": "TARGET_SPEND",
+  "target_spend": {
+   "cpc_bid_ceiling_micros": "8000000"
+  },
+  "id": "24257151015",
+  "primary_status": "LEARNING",
+  "primary_status_reasons": [
+   "BIDDING_STRATEGY_LEARNING"
+  ],
+  "budget_micros": 16440000,
+  "budget_shared": false
+ },
+ "device_modifiers": [
+  {
+   "level": "campaign",
+   "resource": "customers/8164626278/campaignCriteria/24257151015~30000",
+   "device": "DESKTOP",
+   "bid_modifier_set": false,
+   "bid_modifier": 0.0
+  },
+  {
+   "level": "campaign",
+   "resource": "customers/8164626278/campaignCriteria/24257151015~30001",
+   "device": "MOBILE",
+   "bid_modifier_set": false,
+   "bid_modifier": 0.0
+  },
+  {
+   "level": "campaign",
+   "resource": "customers/8164626278/campaignCriteria/24257151015~30002",
+   "device": "TABLET",
+   "bid_modifier_set": true,
+   "bid_modifier": 0.0
+  },
+  {
+   "level": "ad_group",
+   "resource": "customers/8164626278/adGroupBidModifiers/200347713516~30000",
+   "device": "DESKTOP",
+   "bid_modifier_set": false,
+   "bid_modifier": 0.0
+  },
+  {
+   "level": "ad_group",
+   "resource": "customers/8164626278/adGroupBidModifiers/200347713516~30001",
+   "device": "MOBILE",
+   "bid_modifier_set": false,
+   "bid_modifier": 0.0
+  },
+  {
+   "level": "ad_group",
+   "resource": "customers/8164626278/adGroupBidModifiers/200347713516~30002",
+   "device": "TABLET",
+   "bid_modifier_set": true,
+   "bid_modifier": 0.0
+  },
+  {
+   "level": "ad_group",
+   "resource": "customers/8164626278/adGroupBidModifiers/200347713556~30000",
+   "device": "DESKTOP",
+   "bid_modifier_set": false,
+   "bid_modifier": 0.0
+  },
+  {
+   "level": "ad_group",
+   "resource": "customers/8164626278/adGroupBidModifiers/200347713556~30001",
+   "device": "MOBILE",
+   "bid_modifier_set": false,
+   "bid_modifier": 0.0
+  },
+  {
+   "level": "ad_group",
+   "resource": "customers/8164626278/adGroupBidModifiers/200347713556~30002",
+   "device": "TABLET",
+   "bid_modifier_set": true,
+   "bid_modifier": 0.0
+  }
+ ],
+ "change_events": [
+  {
+   "t": "2026-09-25 08:26:21.072255",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "UPDATE",
+   "client": "GOOGLE_ADS_WEB_CLIENT",
+   "fields": [],
+   "res": "customers/8164626278/campaignCriteria/24257151015~30002",
+   "old": {
+    "campaign_criterion": {}
+   },
+   "new": {
+    "campaign_criterion": {}
+   }
+  }
+ ],
+ "change_status": [
+  {
+   "resource_name": "customers/8164626278/changeStatus/1790342781072255-6-24257151015-30002",
+   "resource_type": "CAMPAIGN_CRITERION",
+   "resource_status": "CHANGED",
+   "last_change_date_time": "2026-09-25 08:26:21.072255"
+  },
+  {
+   "resource_name": "customers/8164626278/changeStatus/1790580838095704-7-15884926233",
+   "resource_type": "CAMPAIGN_BUDGET",
+   "resource_status": "CHANGED",
+   "last_change_date_time": "2026-09-28 02:33:58.095704"
+  },
+  {
+   "resource_name": "customers/8164626278/changeStatus/1790614043720847-2-24257151015-200347713516",
+   "resource_type": "AD_GROUP",
+   "resource_status": "CHANGED",
+   "last_change_date_time": "2026-09-28 11:47:23.720847"
+  },
+  {
+   "resource_name": "customers/8164626278/changeStatus/1790614043720847-2-24257151015-200347713556",
+   "resource_type": "AD_GROUP",
+   "resource_status": "CHANGED",
+   "last_change_date_time": "2026-09-28 11:47:23.720847"
+  },
+  {
+   "resource_name": "customers/8164626278/changeStatus/1790614043720847-5-24257151015",
+   "resource_type": "CAMPAIGN",
+   "resource_status": "CHANGED",
+   "last_change_date_time": "2026-09-28 11:47:23.720847"
+  }
+ ],
+ "completed_days_09_21_to_09_27": [
+  {
+   "clicks": "3",
+   "search_budget_lost_impression_share": 0.18518518518518517,
+   "search_click_share": 0.19591131595178887,
+   "search_impression_share": 0.7222222222222222,
+   "search_rank_lost_impression_share": 0.09259259259259259,
+   "conversions": 0.0,
+   "cost_micros": "18690000",
+   "all_conversions": 0.0,
+   "impressions": "52"
+  }
+ ],
+ "partial_today": [
+  {
+   "clicks": "0",
+   "search_budget_lost_impression_share": 0.0,
+   "search_impression_share": 1.0,
+   "search_rank_lost_impression_share": 0.0,
+   "conversions": 0.0,
+   "cost_micros": "0",
+   "all_conversions": 0.0,
+   "impressions": "17"
+  }
+ ],
+ "all_conv_by_action_since_09_16": [
+  {
+   "id": "7772803337",
+   "all_conversions": 0.0
+  },
+  {
+   "id": "7773013199",
+   "all_conversions": 0.0
+  },
+  {
+   "id": "7773043879",
+   "all_conversions": 0.0
+  }
+ ],
+ "conversion_actions": [
+  {
+   "resource_name": "customers/8164626278/conversionActions/7772803337",
+   "status": "ENABLED",
+   "type_": "WEBPAGE",
+   "counting_type": "ONE_PER_CLICK",
+   "id": "7772803337",
+   "name": "Lead | Permanent Lights | Form Submit | Thank You",
+   "include_in_conversions_metric": true,
+   "phone_call_duration_seconds": "60",
+   "primary_for_goal": true
+  },
+  {
+   "resource_name": "customers/8164626278/conversionActions/7773013199",
+   "status": "ENABLED",
+   "type_": "AD_CALL",
+   "counting_type": "ONE_PER_CLICK",
+   "id": "7773013199",
+   "name": "Call | Permanent Lights | Ads | 60s",
+   "include_in_conversions_metric": true,
+   "phone_call_duration_seconds": "60",
+   "primary_for_goal": true
+  },
+  {
+   "resource_name": "customers/8164626278/conversionActions/7773043879",
+   "status": "ENABLED",
+   "type_": "WEBSITE_CALL",
+   "counting_type": "ONE_PER_CLICK",
+   "id": "7773043879",
+   "name": "Call | Permanent Lights | Website | 60s",
+   "include_in_conversions_metric": false,
+   "phone_call_duration_seconds": "60",
+   "primary_for_goal": false
+  }
+ ],
+ "call_assets": [
+  {
+   "campaign": "24257151015",
+   "link_status": "ENABLED",
+   "resource_name": "customers/8164626278/assets/422649064971",
+   "id": "422649064971",
+   "policy_summary": {
+    "approval_status": "APPROVED"
+   },
+   "call_asset": {
+    "country_code": "US",
+    "phone_number": "4025265754",
+    "call_conversion_reporting_state": "USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION",
+    "call_conversion_action": "customers/8164626278/conversionActions/7773013199",
+    "ad_schedule_targets": [
+     {
+      "start_minute": "ZERO",
+      "end_minute": "ZERO",
+      "day_of_week": "MONDAY",
+      "start_hour": 8,
+      "end_hour": 17
+     },
+     {
+      "start_minute": "ZERO",
+      "end_minute": "ZERO",
+      "day_of_week": "TUESDAY",
+      "start_hour": 8,
+      "end_hour": 17
+     },
+     {
+      "start_minute": "ZERO",
+      "end_minute": "ZERO",
+      "day_of_week": "WEDNESDAY",
+      "start_hour": 8,
+      "end_hour": 17
+     },
+     {
+      "start_minute": "ZERO",
+      "end_minute": "ZERO",
+      "day_of_week": "THURSDAY",
+      "start_hour": 8,
+      "end_hour": 17
+     },
+     {
+      "start_minute": "ZERO",
+      "end_minute": "ZERO",
+      "day_of_week": "FRIDAY",
+      "start_hour": 8,
+      "end_hour": 17
+     },
+     {
+      "start_minute": "ZERO",
+      "end_minute": "ZERO",
+      "day_of_week": "SATURDAY",
+      "start_hour": 8,
+      "end_hour": 12
+     }
+    ]
+   }
+  }
+ ],
+ "call_view": 0
+}

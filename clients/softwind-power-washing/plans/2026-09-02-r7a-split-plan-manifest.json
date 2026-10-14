@@ -1,0 +1,79 @@
+{
+  "generated_account_local": "2026-09-02T12:04:12.228261-04:00",
+  "series": "R7A split package - 2026-09-02",
+  "target": {
+    "exact_child_account_name": "Softwind Power Washing - Live",
+    "child_customer_id": "1521725229",
+    "exact_service": "Power Washing",
+    "manager_customer_id": "3373711342"
+  },
+  "access_reality": {
+    "google_ads": "AVAILABLE - used",
+    "google_tag_manager": "NOT AVAILABLE - the Google OAuth refresh token carries only https://www.googleapis.com/auth/adwords. No tagmanager scope, no separate GTM credential, no stored browser session. CLAUDE.md forbids broadening the Ads OAuth token.",
+    "whatconverts": "NOT AVAILABLE - WHATCONVERTS_API_TOKEN exists as a key in .env but its value is EMPTY (length 0).",
+    "wordpress": "NO ACCESS BY DESIGN - developer tickets required"
+  },
+  "void_registry": [
+    {
+      "plan_id": "PLAN-R7A",
+      "fingerprint": "65A748A51E48",
+      "state": "SUPERSEDED - DO NOT HONOR",
+      "do_not_honour": true,
+      "superseded_on": "2026-09-02",
+      "reason": "Combined GTM, WhatConverts, WordPress and sibling-account changes in one fingerprint; selected a call architecture before any authenticated WhatConverts read; treated unavailable WordPress access as an execution dependency rather than a developer ticket. Replaced by the split package.",
+      "original_file_preserved": "clients/softwind-power-washing/plans/2026-09-02-plan-r7a-website-tracking-form-call-repair.yaml"
+    }
+  ],
+  "tracks": [
+    {
+      "track": "A",
+      "plan_id": "PLAN-R7A1-GTM",
+      "file": "clients/softwind-power-washing/plans/2026-09-02-plan-r7a1-gtm-form-measurement.yaml",
+      "status": "BLOCKED - NO GTM CREDENTIAL",
+      "executable_actions": 0,
+      "object_count": 0,
+      "mutation_count": 0,
+      "fingerprint": null,
+      "fingerprint_withheld_because": "rule 18 - exact tag, trigger and variable IDs and current values are unknown without an authenticated GTM read; a plan with zero executable actions and placeholder IDs must not be fingerprinted"
+    },
+    {
+      "track": "B",
+      "plan_id": "PLAN-R7A2-WHATCONVERTS",
+      "file": "clients/softwind-power-washing/plans/2026-09-02-plan-r7a2-whatconverts-call-attribution.yaml",
+      "status": "BLOCKED - NO WHATCONVERTS CREDENTIAL",
+      "executable_actions": 0,
+      "object_count": 0,
+      "mutation_count": 0,
+      "fingerprint": null,
+      "fingerprint_withheld_because": "rule 18 - profile, pool, number and rule IDs and current values are unknown; the DNI root cause was not determined and must not be inferred from cookies"
+    },
+    {
+      "track": "C",
+      "plan_id": "DEV-R7A3",
+      "file": "clients/softwind-power-washing/dev-tickets/2026-09-02-r7a-developer-ticket-index.md",
+      "status": "READY TO SEND",
+      "tickets": 8,
+      "fingerprint": null,
+      "fingerprint_withheld_because": "developer tickets are never fingerprinted"
+    },
+    {
+      "track": "D",
+      "plan_id": "PLAN-R7A4-CROSS-ACCOUNT",
+      "file": "clients/softwind-power-washing/plans/2026-09-02-plan-r7a4-sibling-tag-scoping.yaml",
+      "status": "BLOCKED - SEPARATE SIBLING-ACCOUNT WORK ORDER AND APPROVAL REQUIRED",
+      "executable_actions": 0,
+      "mutation_count": 0,
+      "fingerprint": null,
+      "fingerprint_withheld_because": "cross-account action cannot be fingerprinted under the Power Washing work order"
+    }
+  ],
+  "google_ads_mutation_count_all_tracks": 0,
+  "approval_commands_emitted": 0,
+  "next_action": {
+    "type": "DEVELOPER TICKET",
+    "ticket": "clients/softwind-power-washing/dev-tickets/2026-09-02-dev-r7a-04-form-success-event.md",
+    "reason": "Highest measurement impact with the smallest blast radius, and the only action on the critical path that needs neither GTM nor WhatConverts credentials. A verified dataLayer form-success event is the prerequisite for fixing the proven direct-/thank-you/ conversion defect, and every later GTM correction depends on having a trustworthy success signal.",
+    "fingerprint": null,
+    "approval_command": null
+  }
+}

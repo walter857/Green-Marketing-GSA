@@ -1,0 +1,316 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # ---------------------------------------------------------------------------
+    # IDENTITY GATE: PASSED 2026-08-17 (second fresh lookup).
+    #
+    # User-confirmed name : "Ambient Cooling - Live"
+    # Fresh API observed  : "Ambient Cooling - Live"   <- exact match
+    # Child customer ID   : 2401959466                 <- exact match
+    # '- live' marker     : present
+    # Manager (verified)  : 3373711342 "Green Marketing", child at level 1
+    #
+    # The account was renamed in Google Ads between the first and second lookup.
+    # The first lookup returned "Ambient Cooling" and correctly blocked the audit.
+    # This name is recorded because it is what Google Ads now returns, NOT because
+    # it was asserted. See client.yaml identity_gate for the full evidence.
+    #
+    # NOTE ON THE MANAGER ID: the assignment supplied 1247547723 from a Google Ads
+    # link. That ID is NOT reachable and is NOT a manager of this child. The manager
+    # verified through the hierarchy is 3373711342. Recorded below accordingly.
+    # ---------------------------------------------------------------------------
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    # Five services are in scope for this audit. Agency policy keeps one primary
+    # service per work order, so AC Repair (the largest planned allocation, $4,300)
+    # is primary and the other four are recorded as related services.
+    exact_primary_service: AC Repair
+    related_services:
+      - HVAC Repair
+      - HVAC Installation
+      - HVAC Replacement
+      - Gas Boiler Repair
+  task:
+    type: campaign-revamp
+    mode: draft
+    request: >-
+      Launch remediation for the five Search campaigns launched 2026-08-14 for AC Repair,
+      HVAC Repair, HVAC Installation, HVAC Replacement and Gas Boiler Repair. Covers a
+      fresh identity check and pre-change snapshot, tracking and phone QA on the five paid
+      landing pages, six policy-safe replacement RSAs for the CONSUMER_FINANCE
+      disapprovals, conversion and attribution cleanup, a rebuilt historical
+      search-term and negative-keyword package superseding fingerprint
+      12E7572A25B9AFF0, campaign configuration corrections, and landing-page
+      remediation drafts.
+      SUPERSEDED SCOPE, 2026-08-27: full current-month account audit of the same five
+      services. Fresh identity gate, full structural snapshot, August performance and
+      pacing, before/after review of the 2026-08-22 budget and automotive-negative
+      changes, complete search-term verdict pass, negative and shared-list conflict
+      audit, real-browser landing-page and tracking QA, and three approval-gated
+      adjustment plans: ACE80A09AC134C85 consolidated, EE6CFAD6667A95A1 conversion
+      goals, C3038EDD9E621944 destructive negative removals.
+      READ AND DRAFT ONLY on this pass. Every external write is deferred to a separate
+      explicit approval tied to a named plan fingerprint. Nothing was created, enabled,
+      paused, edited, or deleted in Google Ads, Google Tag Manager, the website, forms,
+      the CRM, or call tracking. No form was submitted and no telephone link was clicked.
+      The authorized ClickCease manager link 281-508-2755 is protected and untouched.
+    date_range: >-
+      CURRENT AS AT 2026-08-27. Latest fully settled day = 2026-08-26. 2026-08-27 is
+      PARTIAL and is never mixed into a settled comparison.
+      august_mtd_settled = 2026-08-01..2026-08-26; today_partial = 2026-08-27;
+      since_last_audit = 2026-08-22..2026-08-26;
+      before_change = 2026-08-18..2026-08-21; change_day_partial = 2026-08-22;
+      after_change = 2026-08-23..2026-08-26; launch_to_date = 2026-08-14..2026-08-26;
+      last_30; last_90; last_365; and all available history (2019-01-01 onward).
+      VERIFIED 2026-08-27: last_30, last_90, last_365 and all_history all return the
+      same totals as launch_to_date plus the partial day, because the five campaigns
+      have no delivery before 2026-08-14. The identity gate was re-verified on
+      2026-08-27 by a fresh read-only lookup.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: null
+    primary_conversion_goal: "qualified HVAC service leads (form submissions and qualified phone calls)"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+    # Extra non-schema inputs recorded verbatim from the assignment.
+    # PHONE-TRACKING TAXONOMY, SUPPLIED 2026-08-18. See client.yaml phone_taxonomy.
+    phone_roles:
+      approved_paid_hardcoded_base_and_fallback: "(410) 705-6354 / +14107056354"
+      whatconverts_dni_pool_runtime: "(410) 914-1456 - intended, acceptable, not an error"
+      main_site_never_on_paid_paths: "(410) 761-0932 - must not appear in any paid path"
+      unexplained_google_wcm: "(410) 415-9517 - RESOLVED 2026-09-25: owner approved reuse as the HEATING CALL-ASSET number. WhatConverts type Google Call Extension (was Offline google/cpc), forwarding to 410-761-0932 unchanged; Google Ads call asset 424764337810 (Mon-Fri 8-16) replaces 407995613637 on the 8 heating campaigns (AMB-0925-CALL-9517-1). Legacy callers still dial it, so its label alone is not proof of a paid interaction. NOT for pages, Maps or GBP."
+    whatconverts_intended: true
+    whatconverts_profile: "105803"
+    whatconverts_must_not_be_removed: true
+    approved_paid_phone_display: "(410) 705-6354"
+    approved_paid_phone_e164: "+14107056354"
+    approved_paid_phone_tel_link: "tel:+14107056354"
+    approved_tag_manager_platform: "Google Tag Manager"
+    approved_tag_manager_container_id: "GTM-PQTPQ436"
+    # PHONE ARCHITECTURE re-confirmed by Green Marketing 2026-08-21.
+    whatconverts_landing_number_display: "(410) 914-1456"
+    whatconverts_landing_number_e164: "+14109141456"
+    whatconverts_landing_number_is_intentional: true
+    main_website_url: "https://ambientcoolingandheating.com/"
+    main_site_number_difference_is_not_a_defect: true
+    intermittent_exposure_under_investigation: "+14107610932 - race-condition candidate, not a confirmed constant defect"
+    barred_claims_reconfirmed:
+      - "Open 24/7"
+      - "24/7 live answering"
+      - "emergency service"
+      - "guaranteed response time"
+      - "same-day service"
+    paid_form_acquisition_note: >-
+      Landing pages and forms remain technically reachable at all times, but paid ads only
+      serve inside the campaign schedule. Do not report paid form acquisition as 24/7.
+    august_budget_maximum_usd: 13000
+    august_budget_is_a_maximum_not_a_quota: true
+    campaign_launch_date: "2026-08-14"
+    account_timezone: "America/New_York"
+    expected_location_target_count: 75
+    # VERIFIED 2026-08-21. Published BUSINESS hours are Monday-Friday 08:00-16:00, but the
+    # approved paid DELIVERY schedule is wider and was restored by Package C
+    # C6C3DFFC9BD5AF9B. The two are different facts and must not be conflated.
+    published_business_hours: "Monday-Friday 08:00-16:00 America/New_York"
+    expected_ad_schedule: "Monday-Friday 08:00-20:00 + Saturday 08:00-13:00 America/New_York"
+    expected_ad_schedule_row_count: 6
+    sunday_delivery: false
+    unanswered_calls: "go to voicemail and are returned promptly"
+    # RESOLVED 2026-08-21: the owner decision was made. Package C C6C3DFFC9BD5AF9B set the
+    # approved delivery schedule, re-verified live on 2026-08-21 (6 rows per campaign, zero
+    # duplicates, no Sunday row, all minutes ZERO). The call asset carries the same 6 rows.
+    observed_ad_schedule: "Monday-Friday 08:00-20:00 + Saturday 08:00-13:00 America/New_York"
+    observed_ad_schedule_row_count: 6
+    observed_ad_schedule_duplicates: 0
+    # CONFIRMED CLIENT FACT supplied 2026-08-18 and re-verified by API.
+    authorized_clickcease_manager_customer_id: "2815082755"
+    authorized_clickcease_manager_display: "281-508-2755"
+    authorized_clickcease_manager_protected: true
+    planning_allocation_usd:
+      ac_repair: 4300
+      hvac_repair: 2400
+      hvac_installation: 4200
+      hvac_replacement: 800
+      gas_boiler_repair: 1300
+      total: 13000
+    expected_campaign_defaults:
+      network: search_only
+      search_partners: false
+      display: false
+      ai_max: false
+      broad_match_expansion: false
+      dynamic_search_ads: false
+      final_url_expansion: false
+      automatically_created_assets: false
+      location_option: PRESENCE
+    landing_pages:
+      - "https://offer.ambientcoolingandheating.com/ac-repair/"
+      - "https://offer.ambientcoolingandheating.com/hvac-repair/"
+      - "https://offer.ambientcoolingandheating.com/hvac-installation/"
+      - "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+      - "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+
+    # -------------------------------------------------------------------------
+    # OBSERVED ACCOUNT STATE, VERIFIED 2026-08-27 BY FRESH READ-ONLY API LOOKUP.
+    # Recorded as observed facts. None of this is an approval to change anything.
+    # -------------------------------------------------------------------------
+    verified_2026_08_27:
+      live_search_campaign_ids:
+        ac_repair: "24132507741"
+        gas_boiler_repair: "24132507744"
+        hvac_installation: "24132507747"
+        hvac_repair: "24132507750"
+        hvac_replacement: "24132507753"
+      budget_ids_and_daily_amounts_usd:
+        "15787409435": 141.45   # AC Repair
+        "15787409438": 42.76    # Gas Boiler Repair
+        "15787409441": 176.15   # HVAC Installation, executed 2026-08-22
+        "15787409444": 78.95    # HVAC Repair
+        "15787409447": 26.32    # HVAC Replacement
+        sum_of_five_daily: 465.63
+      bidding_strategy_all_five: TARGET_SPEND
+      cpc_bid_ceiling_all_five_micros: 0
+      cpc_bid_ceiling_is_uncapped: true
+      networks_all_five:
+        google_search: true
+        search_partners: false
+        display: false
+      ai_max_all_five: false
+      text_asset_automation_all_five: OPTED_OUT
+      final_url_expansion_all_five: OPTED_OUT
+      location_targets_per_campaign: 75
+      excluded_locations_per_campaign: 0
+      location_option: PRESENCE
+      ad_schedule_rows_per_campaign: 6
+      live_positive_keywords_total: 10
+      live_ad_groups_total: 5
+      # An additional ad group 202339087874 'SKAG | HVAC Replacement Near Me' exists
+      # inside the AC Repair campaign but its status is REMOVED, so it cannot serve.
+      # Its child keywords and ads still report ENABLED. Counting children without
+      # excluding REMOVED parents overstates the live structure. This is a query
+      # definition difference, not account drift.
+      removed_ad_group_inside_ac_repair: "202339087874"
+      campaign_level_negatives:
+        ac_repair: ["auto", "boat", "car"]
+        other_four: []
+      account_level_negative_list_id: "11252984411"
+      account_level_negative_list_member_count: 59
+      account_level_negative_list_member_count_reported_by_api: 0
+      shared_negative_lists_attached_to_the_five: 0
+      clickcease_ip_exclusions_account_total: 2796
+      clickcease_ip_exclusions_on_the_five: 0
+      # The 2796 exclusions sit on campaign_criterion of the 18 legacy campaigns.
+      # customer_negative_criterion holds none. Reading the wrong resource returns 0
+      # and looks like drift.
+      business_profile_location_asset_set: "8620443109"
+      business_profile_location_asset_set_status: ENABLED
+      manager_links_active: ["3373711342", "2815082755"]
+      last_account_change_event: "2026-08-22T09:36:07 America/New_York"
+      # LANDING PAGE FACTS, VERIFIED 2026-08-27 IN A REAL JS BROWSER, DESKTOP+MOBILE.
+      landing_page_paid_number_displayed: "(410) 705-6354"
+      landing_page_whatconverts_tel_href_observed: "+14109141456"
+      landing_page_main_site_number_observed: false
+      landing_page_unexplained_number_observed: false
+      landing_page_gtm_container_observed: "GTM-PQTPQ436"
+      landing_page_google_ads_id_observed: "AW-11155434808"
+      landing_page_ga4_id_observed: "G-9X9ZHNCRWF"
+      landing_page_whatconverts_script_observed: true
+      landing_page_clickcease_script_observed: false
+      landing_page_barred_claims_observed: 0
+      landing_page_privacy_or_terms_link_observed: false
+      landing_page_duplicate_dom_ids_observed: true
+      gas_boiler_step_heading_observed: "Your HVAC Replacement in 3 Simple Steps"
+      gas_boiler_step_heading_expected: "Your Gas Boiler Repair in 3 Simple Steps"
+      gas_boiler_landing_page_gate: FAIL
+      whatconverts_api_token_present: false
+      lead_quality_verifiable: false
+
+    # -------------------------------------------------------------------------
+    # CLIENT CONFIRMATIONS RECORDED 2026-09-10 (supplied by the approval owner in
+    # writing during the 2026-09-10 execution session). These are durable client
+    # facts, not agency inference.
+    # -------------------------------------------------------------------------
+    commercial_hvac_in_paid_scope: true
+    commercial_hvac_confirmed_by: "Green Marketing approval owner, 2026-09-10"
+    commercial_hvac_supporting_evidence:
+      - "ambientcoolingandheating.com/services/heating-services/furnace-repair/ - 'serve residential and commercial properties throughout the area'"
+      - "ambientcoolingandheating.com/service-areas/crofton/ - 'residential and commercial properties in Crofton, Maryland'"
+      - "ambientcoolingandheating.com/service-areas/bowie/ - 'residential and commercial customers in the region'"
+      - "ambientcoolingandheating.com/blogs/ - 'Commercial HVAC Planning For Maryland BEPS Rules'"
+      - "chamberofcommerce.com directory listing - 'residential and commercial customer service'"
+    commercial_hvac_open_gap: >-
+      No dedicated commercial landing page exists and none of the five paid landing pages
+      names commercial intake. Phone and form intake are truthful because Ambient does serve
+      commercial, but message match is weak until a commercial destination is built.
+    licensed_and_insured_claim_authorized: false
+    licensed_and_insured_status: WITHDRAWN_FROM_THIS_WORKSTREAM
+    licensed_and_insured_withdrawn_by: "Green Marketing approval owner, 2026-09-10 (session C) - do not use Licensed & Insured in ads, assets or landing-page copy in this workstream"
+    licensed_and_insured_withdrawal_effect: >-
+      Every approval fingerprint whose assets contain the claim is stale. AMB-0910-RSA-ACR-1
+      (19E2F2FFC311) is SUPERSEDED and must not be executed; AMB-0910-RSA-ACR-2 (1F166DE17017)
+      replaces it with the claim removed and the 3-pin structure kept. No licence number and no
+      certificate of insurance is required, because the claim will not be used.
+    licensed_and_insured_prior_authorization_2026_09_10a: >-
+      Earlier the same day the claim was authorized on the basis that the client could provide
+      proof. That authorization is superseded, not contradicted - the claim is simply no longer
+      needed. The site evidence below is retained only as a record of what was checked.
+    licensed_and_insured_supporting_evidence_RETAINED_FOR_RECORD_ONLY:
+      - "ambientcoolingandheating.com/service-areas/annapolis/ - 'licensed and insured for HVAC in Annapolis'"
+      - "ambientcoolingandheating.com/service-areas/elkridge/ - 'Our licensed and insured technicians'"
+      - "ambientcoolingandheating.com/service-areas/severn/ - 'Fully licensed and trained'"
+      - "ambientcoolingandheating.com/service-areas/severna-park/, /ellicott-city/, /arbutus/, /bowie/ - licensed/insured FAQ entries"
+      - "Maryland law requires a Master HVACR licence for HVAC contractors (labor.maryland.gov/license/hvacr)"
+    licensed_and_insured_outstanding: >-
+      NONE. Previously this required obtaining the Maryland Master HVACR licence number and the
+      certificate of insurance. That requirement is closed by withdrawal of the claim, not by
+      obtaining the documents. If the claim is ever reinstated, the documents become required again.
+    whatconverts_profile: "Ambient Cooling & Heating"
+    whatconverts_profile_id: "105803"
+    whatconverts_paid_tracking_number: "410-705-6354"
+    whatconverts_paid_tracking_number_name: "GSA Cooling Traffic"
+    whatconverts_paid_tracking_number_note: >-
+      GSA Cooling Traffic is the name of the TRACKING NUMBER, not a WhatConverts profile.
+      A 2026-09-10 report recorded it as a missing profile name; that was incorrect and is
+      corrected here.
+    google_ads_call_asset_id: "407995613637"
+    google_ads_call_asset_number: "410-705-6354"
+    forwarding_destination_number: "410-761-0932"
+    forwarding_destination_note: >-
+      Forwarding destination only. Every tracking number rings to it (233 of 272 leads
+      measured 2026-06-01..2026-09-10). It must never appear publicly, in rendered text or in
+      HTML source, on any paid landing page.
+    mixed_source_tracking_number: "410-914-1456"
+    mixed_source_tracking_number_note: >-
+      A real, intentionally configured tracking number that routes correctly, but MIXED
+      source (google 4, GBP 4, direct 3, referral 1). Must not be static on paid landing
+      pages. Currently present as tel:+14109141456 on all five paid pages - a defect to fix.
+    whatconverts_routing_policy: PRESERVE_ALL_CURRENT_ROUTING
+    local_services_ads_scope: OUT_OF_SCOPE_FOR_THIS_PROJECT
+    local_services_ads_note: >-
+      Local Services Ads belong to another department and another budget. Do not inspect,
+      recommend, alter, forecast, or count LSA activity in this project. The $13,000/month
+      maximum applies to Google Search campaigns only. WhatConverts rows whose lead_source
+      names LSA are excluded from paid-search analysis rather than reassigned to Search.
+    search_monthly_maximum_usd: 13000
+    search_monthly_maximum_basis: "daily budget x 30.4, never x 30"
+    # CLIENT CPL REQUIREMENT, recorded 2026-09-30 (explicit Green Marketing instruction in the
+    # working session). Mirrors client.yaml offer.target_cpl / offer.cpl_ceiling / offer.cpl_policy.
+    target_cpl_usd: 280
+    cpl_ceiling_usd: 350
+    cpl_requirement_source: "Explicit Green Marketing instruction in the Claude Code working session"
+    cpl_requirement_recorded_on: "2026-09-30"
+    cpl_definition: "all ad spend in scope and period / unique genuine paid leads (click-ID or matched Google call record); QA, spam, wrong numbers, duplicates and non-paid channels excluded"
+    spending_limits_are_maximums_not_targets: true
+  approval_owner: Green Marketing

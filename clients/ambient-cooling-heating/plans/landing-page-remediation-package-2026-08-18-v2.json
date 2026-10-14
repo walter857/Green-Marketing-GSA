@@ -1,0 +1,274 @@
+{
+ "package": "ambient-cooling-heating-landing-page-remediation",
+ "version": "2026-08-18-v2",
+ "supersedes": "BA865C2A697C5296",
+ "supersede_reason": "v1 framed (410) 914-1456 as an unapproved number to be replaced. Green Marketing has since confirmed WhatConverts DNI is INTENTIONAL and the pool number is acceptable. The defect is not the pool number - it is that the hardcoded BASE number underneath it is the main-site number (410) 761-0932 instead of the approved (410) 705-6354.",
+ "phase": "draft-only",
+ "approval_state": "NOT APPROVED - no website scope granted. Nothing will be published.",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342"
+ },
+ "platform": "WordPress + Divi 5.10.1 + Gravity Forms 3.0.2 on SiteGround",
+ "phone_taxonomy": {
+  "approved_paid_hardcoded_base_and_fallback": {
+   "display": "(410) 705-6354",
+   "e164": "+14107056354",
+   "tel": "tel:+14107056354",
+   "role": "Approved WhatConverts tracking number. Hardcoded base and fallback on every paid landing page, and the number on call asset 407995613637.",
+   "status": "APPROVED - SUPPLIED by Green Marketing"
+  },
+  "whatconverts_dni_pool_runtime": {
+   "display": "(410) 914-1456",
+   "e164": "+14109141456",
+   "role": "WhatConverts dynamic number insertion pool number, injected at runtime by profile 105803. Session-level tracking number.",
+   "status": "ACCEPTABLE - not an error. Valid while it belongs to the correct WhatConverts profile and routes to the intended Ambient destination.",
+   "observed_swap_rule": "wc_swap cookie = '4109141456 .. 4107610932 .. 230773' - the pool number 4109141456 is bound to TARGET number 4107610932."
+  },
+  "main_site_not_for_paid": {
+   "display": "(410) 761-0932",
+   "e164": "+14107610932",
+   "role": "Main information site number.",
+   "status": "MUST NOT APPEAR on any paid conversion path: not in paid landing-page source HTML, mobile CTA, FAQ, structured data, or form confirmation.",
+   "observed": "PRESENT in the server HTML of all five paid pages as the base href of the mobile Call Now button, masked at runtime by the WhatConverts swap."
+  },
+  "unexplained_google_wcm": {
+   "display": "(410) 415-9517",
+   "e164": "+14104159517",
+   "role": "Number configured in Google Ads website-call reporting (pagead/conversion/11155434808/wcm?dn=4104159517).",
+   "status": "UNEXPLAINED - do not use and do not change until ownership and purpose are identified.",
+   "observed": "Appears nowhere on the paid pages. Google returns {\"errorCode\":2,\"backoff\":3600}, so no swap occurs there."
+  }
+ },
+ "intended_end_state": [
+  "Server HTML and JavaScript-disabled fallback: (410) 705-6354",
+  "Visible fallback phone: (410) 705-6354",
+  "Every base tel: link: tel:+14107056354",
+  "Mobile CTA fallback: tel:+14107056354",
+  "FAQ and structured-data fallback: (410) 705-6354",
+  "WhatConverts remains installed and is NOT removed",
+  "WhatConverts may replace the fallback with an approved session-level pool number",
+  "The displayed runtime number and the tel: destination must match",
+  "No paid-page source occurrence of (410) 761-0932"
+ ],
+ "per_page_phone_plan": [
+  {
+   "page": "https://offer.ambientcoolingandheating.com/ac-repair/",
+   "current_source_numbers": {
+    "tel:4107056354": "approved, but missing +1 country code",
+    "tel:(410) 705-6354": "approved, but malformed href (parentheses and space)",
+    "tel:+14107610932": "MAIN-SITE number - must be removed"
+   },
+   "current_rendered_numbers": {
+    "desktop_1440x900": [
+     "tel:4107056354 (visible)",
+     "tel:(410) 705-6354 (visible)",
+     "tel:+14109141456 (0x0, unreachable)"
+    ],
+    "mobile_390x844": [
+     "tel:4107056354 (visible 143x30)",
+     "tel:(410) 705-6354 (visible 240x41)",
+     "tel:+14109141456 (visible 175x37, tappable)"
+    ]
+   },
+   "proposed_source_numbers": {
+    "all_three_tel_links": "tel:+14107056354",
+    "all_visible_text": "(410) 705-6354"
+   },
+   "expected_rendered_dni_behavior": "After the WhatConverts profile is reconfigured to target 4107056354, WhatConverts replaces the visible text and the tel: href with an approved session pool number, keeping display and dial target identical. With JavaScript disabled, or if WhatConverts fails, the page falls back to (410) 705-6354.",
+   "exact_modules_affected": [
+    "a.et_pb_button_0_tb_header  (header CALL button, currently tel:4107056354)",
+    "a.ctacall                   (body Call Now link, currently tel:(410) 705-6354)",
+    "a.et_pb_button_5            (phone-only mobile CTA in et_pb_button_5_wrapper > et_pb_column_26 > et_pb_row_17, currently tel:+14107610932) <-- the critical one"
+   ],
+   "website_changes_on_this_page": 3
+  },
+  {
+   "page": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+   "current_source_numbers": {
+    "tel:4107056354": "approved, but missing +1 country code",
+    "tel:(410) 705-6354": "approved, but malformed href (parentheses and space)",
+    "tel:+14107610932": "MAIN-SITE number - must be removed"
+   },
+   "current_rendered_numbers": {
+    "desktop_1440x900": [
+     "tel:4107056354 (visible)",
+     "tel:(410) 705-6354 (visible)",
+     "tel:+14109141456 (0x0, unreachable)"
+    ],
+    "mobile_390x844": [
+     "tel:4107056354 (visible 143x30)",
+     "tel:(410) 705-6354 (visible 240x41)",
+     "tel:+14109141456 (visible 175x37, tappable)"
+    ]
+   },
+   "proposed_source_numbers": {
+    "all_three_tel_links": "tel:+14107056354",
+    "all_visible_text": "(410) 705-6354"
+   },
+   "expected_rendered_dni_behavior": "After the WhatConverts profile is reconfigured to target 4107056354, WhatConverts replaces the visible text and the tel: href with an approved session pool number, keeping display and dial target identical. With JavaScript disabled, or if WhatConverts fails, the page falls back to (410) 705-6354.",
+   "exact_modules_affected": [
+    "a.et_pb_button_0_tb_header  (header CALL button, currently tel:4107056354)",
+    "a.ctacall                   (body Call Now link, currently tel:(410) 705-6354)",
+    "a.et_pb_button_5            (phone-only mobile CTA in et_pb_button_5_wrapper > et_pb_column_26 > et_pb_row_17, currently tel:+14107610932) <-- the critical one"
+   ],
+   "website_changes_on_this_page": 3
+  },
+  {
+   "page": "https://offer.ambientcoolingandheating.com/hvac-installation/",
+   "current_source_numbers": {
+    "tel:4107056354": "approved, but missing +1 country code",
+    "tel:(410) 705-6354": "approved, but malformed href (parentheses and space)",
+    "tel:+14107610932": "MAIN-SITE number - must be removed"
+   },
+   "current_rendered_numbers": {
+    "desktop_1440x900": [
+     "tel:4107056354 (visible)",
+     "tel:(410) 705-6354 (visible)",
+     "tel:+14109141456 (0x0, unreachable)"
+    ],
+    "mobile_390x844": [
+     "tel:4107056354 (visible 143x30)",
+     "tel:(410) 705-6354 (visible 240x41)",
+     "tel:+14109141456 (visible 175x37, tappable)"
+    ]
+   },
+   "proposed_source_numbers": {
+    "all_three_tel_links": "tel:+14107056354",
+    "all_visible_text": "(410) 705-6354"
+   },
+   "expected_rendered_dni_behavior": "After the WhatConverts profile is reconfigured to target 4107056354, WhatConverts replaces the visible text and the tel: href with an approved session pool number, keeping display and dial target identical. With JavaScript disabled, or if WhatConverts fails, the page falls back to (410) 705-6354.",
+   "exact_modules_affected": [
+    "a.et_pb_button_0_tb_header  (header CALL button, currently tel:4107056354)",
+    "a.ctacall                   (body Call Now link, currently tel:(410) 705-6354)",
+    "a.et_pb_button_5            (phone-only mobile CTA in et_pb_button_5_wrapper > et_pb_column_26 > et_pb_row_17, currently tel:+14107610932) <-- the critical one"
+   ],
+   "website_changes_on_this_page": 3
+  },
+  {
+   "page": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+   "current_source_numbers": {
+    "tel:4107056354": "approved, but missing +1 country code",
+    "tel:(410) 705-6354": "approved, but malformed href (parentheses and space)",
+    "tel:+14107610932": "MAIN-SITE number - must be removed"
+   },
+   "current_rendered_numbers": {
+    "desktop_1440x900": [
+     "tel:4107056354 (visible)",
+     "tel:(410) 705-6354 (visible)",
+     "tel:+14109141456 (0x0, unreachable)"
+    ],
+    "mobile_390x844": [
+     "tel:4107056354 (visible 143x30)",
+     "tel:(410) 705-6354 (visible 240x41)",
+     "tel:+14109141456 (visible 175x37, tappable)"
+    ]
+   },
+   "proposed_source_numbers": {
+    "all_three_tel_links": "tel:+14107056354",
+    "all_visible_text": "(410) 705-6354"
+   },
+   "expected_rendered_dni_behavior": "After the WhatConverts profile is reconfigured to target 4107056354, WhatConverts replaces the visible text and the tel: href with an approved session pool number, keeping display and dial target identical. With JavaScript disabled, or if WhatConverts fails, the page falls back to (410) 705-6354.",
+   "exact_modules_affected": [
+    "a.et_pb_button_0_tb_header  (header CALL button, currently tel:4107056354)",
+    "a.ctacall                   (body Call Now link, currently tel:(410) 705-6354)",
+    "a.et_pb_button_5            (phone-only mobile CTA in et_pb_button_5_wrapper > et_pb_column_26 > et_pb_row_17, currently tel:+14107610932) <-- the critical one"
+   ],
+   "website_changes_on_this_page": 3
+  },
+  {
+   "page": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+   "current_source_numbers": {
+    "tel:4107056354": "approved, but missing +1 country code",
+    "tel:(410) 705-6354": "approved, but malformed href (parentheses and space)",
+    "tel:+14107610932": "MAIN-SITE number - must be removed"
+   },
+   "current_rendered_numbers": {
+    "desktop_1440x900": [
+     "tel:4107056354 (visible)",
+     "tel:(410) 705-6354 (visible)",
+     "tel:+14109141456 (0x0, unreachable)"
+    ],
+    "mobile_390x844": [
+     "tel:4107056354 (visible 143x30)",
+     "tel:(410) 705-6354 (visible 240x41)",
+     "tel:+14109141456 (visible 175x37, tappable)"
+    ]
+   },
+   "proposed_source_numbers": {
+    "all_three_tel_links": "tel:+14107056354",
+    "all_visible_text": "(410) 705-6354"
+   },
+   "expected_rendered_dni_behavior": "After the WhatConverts profile is reconfigured to target 4107056354, WhatConverts replaces the visible text and the tel: href with an approved session pool number, keeping display and dial target identical. With JavaScript disabled, or if WhatConverts fails, the page falls back to (410) 705-6354.",
+   "exact_modules_affected": [
+    "a.et_pb_button_0_tb_header  (header CALL button, currently tel:4107056354)",
+    "a.ctacall                   (body Call Now link, currently tel:(410) 705-6354)",
+    "a.et_pb_button_5            (phone-only mobile CTA in et_pb_button_5_wrapper > et_pb_column_26 > et_pb_row_17, currently tel:+14107610932) <-- the critical one"
+   ],
+   "website_changes_on_this_page": 3
+  }
+ ],
+ "website_change_count": {
+  "pages": 5,
+  "tel_links_per_page": 3,
+  "total_tel_link_edits": 15,
+  "visible_text_edits_per_page": "up to 3",
+  "note": "Structured data and FAQ fallbacks are additive items LP-14 and LP-09; counted separately."
+ },
+ "BLOCKING_PREREQUISITE_whatconverts_reconfiguration": {
+  "severity": "CRITICAL - do not publish the phone change before this is done",
+  "finding": "The WhatConverts swap rule is NUMBER-SPECIFIC and currently bound to the MAIN-SITE number. OBSERVED: the wc_swap cookie reads '4109141456 .. 4107610932 .. 230773', meaning pool number 4109141456 is mapped to target number 4107610932 under swap rule 230773. Corroborating evidence: the two existing (410) 705-6354 links on the same pages are NOT swapped, while the single 4107610932 link IS.",
+  "consequence_if_ignored": "Changing the base number to +14107056354 without reconfiguring the profile will make the DNI swap STOP FIRING. The page would show the static approved number with no session-level tracking number, and WhatConverts would lose call attribution on the mobile CTA. The site would look correct and the measurement would silently degrade.",
+  "required_action_in_whatconverts": [
+   "In WhatConverts profile 105803, update swap rule 230773 (or create its replacement) so the TARGET number is 4107056354 rather than 4107610932.",
+   "Confirm the pool number assigned to that rule forwards to the intended Ambient destination.",
+   "Confirm the rule applies to all five offer.ambientcoolingandheating.com paid pages.",
+   "Re-verify after publishing that wc_swap shows '<pool> .. 4107056354 .. <ruleid>'."
+  ],
+  "sequencing": "Reconfigure WhatConverts FIRST, then publish the site change, then re-verify."
+ },
+ "other_items_carried_forward_from_v1": [
+  "LP-02 populate the seven Gravity Forms attribution fields (CRITICAL)",
+  "LP-03 remove duplicate #gform_1 instances (HIGH)",
+  "LP-04 one lead = one conversion, fire on gform_confirmation_loaded with entry ID (HIGH)",
+  "LP-06 add Privacy Policy and Terms links (HIGH)",
+  "LP-07 remove the countdown and manufactured daily deadline on all five pages (HIGH)",
+  "LP-08 fix the optional-vs-required field mismatch (MEDIUM)",
+  "LP-09 correct cross-service H2s on /hvac-repair/ and /gas-boiler-repair/ (MEDIUM)",
+  "LP-10 replace 'Call Now' and 'Prompt' availability wording; KEEP the gas-safety notice (MEDIUM)",
+  "LP-11 verify review-quote provenance and de-duplicate (MEDIUM)",
+  "LP-12 remove 'honest, upfront pricing' from /hvac-installation/ (MEDIUM)",
+  "LP-13 confirm intent and consent coverage for UET, Meta and Nextdoor pixels (MEDIUM)",
+  "LP-14 add LocalBusiness/Service JSON-LD with telephone +1-410-705-6354 and real 08:00-16:00 openingHours; do NOT publish 24/7 hours (LOW)",
+  "LP-15 measure Core Web Vitals after LP-03; TLS already verified healthy (LOW)"
+ ],
+ "test_procedure": [
+  "1. Reconfigure WhatConverts swap rule 230773 to target 4107056354. Do not publish yet.",
+  "2. Publish the source change on ONE page first (/ac-repair/) as a canary.",
+  "3. Render that page in a JavaScript-capable browser at 1440x900 and 390x844. A non-JS client sees only the SiteGround SG-Captcha stub and yields false results.",
+  "4. ASSERT server HTML (JS disabled or same-origin fetch) contains tel:+14107056354 and ZERO occurrences of 4107610932.",
+  "5. ASSERT at runtime that wc_swap reads '<pool> .. 4107056354 .. <ruleid>'.",
+  "6. ASSERT the visible number and the tel: href are the SAME number at both viewports.",
+  "7. ASSERT the mobile CTA is visible and tappable and dials the swapped pool number.",
+  "8. Load with ?gclid=...&gbraid=...&wbraid=...&utm_* and ASSERT the wc_client cookie captures the gclid (already proven working today).",
+  "9. Only after the canary passes, publish the remaining four pages and repeat 3-8 on each.",
+  "10. Re-render all five at both widths and archive the evidence."
+ ],
+ "rollback_procedure": {
+  "site": "Restore each page from its pre-change WordPress revision; per-page and per-item.",
+  "whatconverts": "Revert swap rule 230773 to target 4107610932.",
+  "order": "Roll back the SITE first, then WhatConverts, so the rule always matches a number that exists on the page.",
+  "capture_before_editing": "Export the Gravity Forms configuration and screenshot the WhatConverts swap rule before any change."
+ },
+ "counts": {
+  "pages": 5,
+  "critical_items": 2,
+  "high_items": 4,
+  "medium_items": 6,
+  "low_items": 2,
+  "blocking_prerequisites": 1
+ },
+ "no_google_ads_mutation": true,
+ "plan_fingerprint": "1ACC048F5CA530D8"
+}

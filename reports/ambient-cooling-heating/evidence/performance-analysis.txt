@@ -1,0 +1,156 @@
+
+======================================================================================================================
+### WINDOW: launch_to_date
+======================================================================================================================
+CAMPAIGN                IMPR  CLICKS       COST     CTR   AvgCPC   CONV  ALLCONV      IS  LostBud  LostRank   TopIS  AbsTop
+HVAC Repair              133       1 $    20.34    0.8% $  20.34    0.0      0.0   13.9%     0.0%     86.1%   10.0%   10.0%
+AC Repair                 33       1 $     2.34    3.0% $   2.34    0.0      0.0   10.0%     0.0%     90.0%   10.0%   10.0%
+Gas Boiler Repair          0       0 $     0.00     n/a $   0.00    0.0      0.0     n/a      n/a       n/a     n/a     n/a
+HVAC Installation         12       0 $     0.00    0.0% $   0.00    0.0      0.0   18.2%     0.0%     81.8%   13.6%   10.0%
+HVAC Replacement           0       0 $     0.00     n/a $   0.00    0.0      0.0     n/a      n/a       n/a     n/a     n/a
+TOTAL (5 new)            178       2 $    22.68                     0.0      0.0
+
+  OTHER campaigns with spend > $0 in launch_to_date: 0
+
+======================================================================================================================
+### WINDOW: today
+======================================================================================================================
+CAMPAIGN                IMPR  CLICKS       COST     CTR   AvgCPC   CONV  ALLCONV      IS  LostBud  LostRank   TopIS  AbsTop
+AC Repair                 15       0 $     0.00    0.0% $   0.00    0.0      0.0   50.0%     0.0%     50.0%   10.0%   10.0%
+Gas Boiler Repair          0       0 $     0.00     n/a $   0.00    0.0      0.0     n/a      n/a       n/a     n/a     n/a
+HVAC Installation          0       0 $     0.00     n/a $   0.00    0.0      0.0     n/a      n/a       n/a     n/a     n/a
+HVAC Repair               33       0 $     0.00    0.0% $   0.00    0.0      0.0   30.4%     0.0%     69.6%   17.4%   10.0%
+HVAC Replacement           0       0 $     0.00     n/a $   0.00    0.0      0.0     n/a      n/a       n/a     n/a     n/a
+TOTAL (5 new)             48       0 $     0.00                     0.0      0.0
+
+  OTHER campaigns with spend > $0 in today: 0
+
+======================================================================================================================
+### WINDOW: last_7
+======================================================================================================================
+CAMPAIGN                IMPR  CLICKS       COST     CTR   AvgCPC   CONV  ALLCONV      IS  LostBud  LostRank   TopIS  AbsTop
+HVAC Repair              100       1 $    20.34    1.0% $  20.34    0.0      0.0   11.9%     0.0%     88.1%   10.0%   10.0%
+AC Repair                 18       1 $     2.34    5.6% $   2.34    0.0      0.0   10.0%     0.0%     90.0%   10.0%   10.0%
+Gas Boiler Repair          0       0 $     0.00     n/a $   0.00    0.0      0.0     n/a      n/a       n/a     n/a     n/a
+HVAC Installation         12       0 $     0.00    0.0% $   0.00    0.0      0.0   18.2%     0.0%     81.8%   13.6%   10.0%
+HVAC Replacement           0       0 $     0.00     n/a $   0.00    0.0      0.0     n/a      n/a       n/a     n/a     n/a
+TOTAL (5 new)            130       2 $    22.68                     0.0      0.0
+
+  OTHER campaigns with spend > $0 in last_7: 0
+
+======================================================================================================================
+### WINDOW: last_365
+======================================================================================================================
+CAMPAIGN                IMPR  CLICKS       COST     CTR   AvgCPC   CONV  ALLCONV      IS  LostBud  LostRank   TopIS  AbsTop
+HVAC Repair              100       1 $    20.34    1.0% $  20.34    0.0      0.0   11.9%     0.0%     88.1%   10.0%   10.0%
+AC Repair                 18       1 $     2.34    5.6% $   2.34    0.0      0.0   10.0%     0.0%     90.0%   10.0%   10.0%
+Gas Boiler Repair          0       0 $     0.00     n/a $   0.00    0.0      0.0     n/a      n/a       n/a     n/a     n/a
+HVAC Installation         12       0 $     0.00    0.0% $   0.00    0.0      0.0   18.2%     0.0%     81.8%   13.6%   10.0%
+HVAC Replacement           0       0 $     0.00     n/a $   0.00    0.0      0.0     n/a      n/a       n/a     n/a     n/a
+TOTAL (5 new)            130       2 $    22.68                     0.0      0.0
+
+  OTHER campaigns with spend > $0 in last_365: 16
+    'Mini Split' status=PAUSED cost=$18.77 clicks=1 impr=23
+    'HVAC Install' status=PAUSED cost=$8716.95 clicks=125 impr=5280
+    'AC Install & Replacement' status=PAUSED cost=$516.28 clicks=13 impr=496
+    'Heating Repair' status=PAUSED cost=$825.29 clicks=107 impr=2353
+    'Heating Installation' status=PAUSED cost=$5454.24 clicks=162 impr=1511
+    'Heating Maintenance' status=PAUSED cost=$127.82 clicks=6 impr=186
+    'HVAC Repair' status=PAUSED cost=$7563.27 clicks=107 impr=3904
+    'Leads-Performance Max-HVAC & A/C Install' status=PAUSED cost=$13612.58 clicks=11744 impr=974994
+    'Leads-Performance Max-Furnace-Repair' status=PAUSED cost=$4754.57 clicks=2796 impr=272126
+    'Tankless Water Heaters' status=PAUSED cost=$12531.77 clicks=268 impr=5965
+    'Gas Boilers Installs' status=PAUSED cost=$9436.70 clicks=89 impr=1375
+    'Gas Boilers Repair' status=PAUSED cost=$6383.12 clicks=71 impr=785
+    'Geothermal HVAC' status=PAUSED cost=$151.80 clicks=4 impr=168
+    'Air Quality And Purification' status=PAUSED cost=$214.08 clicks=6 impr=90
+    'Pool Room Dehumidifier' status=PAUSED cost=$1192.08 clicks=36 impr=1341
+    'Leads-Performance Max-HVAC & A/C Install #2' status=PAUSED cost=$1478.26 clicks=877 impr=45899
+
+======================================================================================================================
+### DAILY SERIES SINCE LAUNCH (five new campaigns)
+======================================================================================================================
+  2026-08-14: spend=$   2.34 clicks=   1 impr=    28   AC Repair=$2.34
+  2026-08-15: spend=$   0.00 clicks=   0 impr=    37   
+  2026-08-16: spend=$  20.34 clicks=   1 impr=    65   HVAC Repair=$20.34
+  2026-08-17: spend=$   0.00 clicks=   0 impr=    48   
+
+======================================================================================================================
+### HOUR-OF-DAY DELIVERY SINCE LAUNCH (schedule compliance)
+======================================================================================================================
+  FRIDAY     13:00  impr=   21 clicks=  1 cost=$   2.34
+  FRIDAY     14:00  impr=    1 clicks=  0 cost=$   0.00
+  FRIDAY     16:00  impr=    1 clicks=  0 cost=$   0.00
+  FRIDAY     17:00  impr=    1 clicks=  0 cost=$   0.00
+  FRIDAY     20:00  impr=    3 clicks=  0 cost=$   0.00  <== OUTSIDE 08:00-20:00
+  FRIDAY     22:00  impr=    1 clicks=  0 cost=$   0.00  <== OUTSIDE 08:00-20:00
+  MONDAY      0:00  impr=    2 clicks=  0 cost=$   0.00  <== OUTSIDE 08:00-20:00
+  MONDAY      5:00  impr=    1 clicks=  0 cost=$   0.00  <== OUTSIDE 08:00-20:00
+  MONDAY      6:00  impr=    9 clicks=  0 cost=$   0.00  <== OUTSIDE 08:00-20:00
+  MONDAY      8:00  impr=    3 clicks=  0 cost=$   0.00
+  MONDAY      9:00  impr=    3 clicks=  0 cost=$   0.00
+  MONDAY     10:00  impr=    2 clicks=  0 cost=$   0.00
+  MONDAY     11:00  impr=    5 clicks=  0 cost=$   0.00
+  MONDAY     12:00  impr=   20 clicks=  0 cost=$   0.00
+  MONDAY     13:00  impr=    3 clicks=  0 cost=$   0.00
+  SATURDAY    4:00  impr=    1 clicks=  0 cost=$   0.00  <== WEEKEND  <== OUTSIDE 08:00-20:00
+  SATURDAY    8:00  impr=    2 clicks=  0 cost=$   0.00  <== WEEKEND
+  SATURDAY    9:00  impr=    2 clicks=  0 cost=$   0.00  <== WEEKEND
+  SATURDAY   13:00  impr=    3 clicks=  0 cost=$   0.00  <== WEEKEND
+  SATURDAY   14:00  impr=    2 clicks=  0 cost=$   0.00  <== WEEKEND
+  SATURDAY   15:00  impr=    4 clicks=  0 cost=$   0.00  <== WEEKEND
+  SATURDAY   16:00  impr=    5 clicks=  0 cost=$   0.00  <== WEEKEND
+  SATURDAY   18:00  impr=    2 clicks=  0 cost=$   0.00  <== WEEKEND
+  SATURDAY   19:00  impr=    8 clicks=  0 cost=$   0.00  <== WEEKEND
+  SATURDAY   20:00  impr=    4 clicks=  0 cost=$   0.00  <== WEEKEND  <== OUTSIDE 08:00-20:00
+  SATURDAY   21:00  impr=    4 clicks=  0 cost=$   0.00  <== WEEKEND  <== OUTSIDE 08:00-20:00
+  SUNDAY      0:00  impr=    5 clicks=  0 cost=$   0.00  <== WEEKEND  <== OUTSIDE 08:00-20:00
+  SUNDAY      3:00  impr=    1 clicks=  0 cost=$   0.00  <== WEEKEND  <== OUTSIDE 08:00-20:00
+  SUNDAY      7:00  impr=    1 clicks=  0 cost=$   0.00  <== WEEKEND  <== OUTSIDE 08:00-20:00
+  SUNDAY      8:00  impr=    6 clicks=  0 cost=$   0.00  <== WEEKEND
+  SUNDAY      9:00  impr=    5 clicks=  0 cost=$   0.00  <== WEEKEND
+  SUNDAY     10:00  impr=    3 clicks=  0 cost=$   0.00  <== WEEKEND
+  SUNDAY     11:00  impr=    4 clicks=  0 cost=$   0.00  <== WEEKEND
+  SUNDAY     12:00  impr=    7 clicks=  0 cost=$   0.00  <== WEEKEND
+  SUNDAY     13:00  impr=    3 clicks=  0 cost=$   0.00  <== WEEKEND
+  SUNDAY     14:00  impr=    2 clicks=  0 cost=$   0.00  <== WEEKEND
+  SUNDAY     17:00  impr=    8 clicks=  1 cost=$  20.34  <== WEEKEND
+  SUNDAY     18:00  impr=    1 clicks=  0 cost=$   0.00  <== WEEKEND
+  SUNDAY     19:00  impr=    4 clicks=  0 cost=$   0.00  <== WEEKEND
+  SUNDAY     20:00  impr=    6 clicks=  0 cost=$   0.00  <== WEEKEND  <== OUTSIDE 08:00-20:00
+  SUNDAY     21:00  impr=    3 clicks=  0 cost=$   0.00  <== WEEKEND  <== OUTSIDE 08:00-20:00
+  SUNDAY     22:00  impr=    5 clicks=  0 cost=$   0.00  <== WEEKEND  <== OUTSIDE 08:00-20:00
+  SUNDAY     23:00  impr=    1 clicks=  0 cost=$   0.00  <== WEEKEND  <== OUTSIDE 08:00-20:00
+
+======================================================================================================================
+### DEVICE / NETWORK SINCE LAUNCH
+======================================================================================================================
+
+  by device:
+    DESKTOP                impr=    37 clicks=   1 cost=$   20.34 conv=0.0
+    MOBILE                 impr=   141 clicks=   1 cost=$    2.34 conv=0.0
+
+  by network:
+    UNSPECIFIED            impr=   178 clicks=   2 cost=$   22.68 conv=0.0
+
+======================================================================================================================
+### KEYWORD PERFORMANCE SINCE LAUNCH (new campaigns)
+======================================================================================================================
+  HVAC Installation   [PHRASE ] 'hvac installers'              impr=   12 clicks=  0 cost=$   0.00 conv=0.0 IS=18.2% lostRank=81.8%
+  HVAC Repair         [PHRASE ] 'hvac repair near me'          impr=  107 clicks=  1 cost=$  20.34 conv=0.0 IS=12.8% lostRank=87.2%
+  HVAC Repair         [EXACT  ] 'hvac repair near me'          impr=   26 clicks=  0 cost=$   0.00 conv=0.0 IS=16.4% lostRank=83.6%
+  AC Repair           [PHRASE ] 'ac repair near me'            impr=   25 clicks=  1 cost=$   2.34 conv=0.0 IS=10.0% lostRank=90.0%
+  AC Repair           [EXACT  ] 'ac repair near me'            impr=    8 clicks=  0 cost=$   0.00 conv=0.0 IS=10.0% lostRank=90.0%
+
+======================================================================================================================
+### CONVERSION ACTIONS WITH ACTIVITY (last_365)
+======================================================================================================================
+  'Ambient Cooling and Heating (web) phone_call_click'       cat=PHONE_CALL_LEAD conv=    0.0 all_conv=   352.0
+  'Local actions - Other engagements'                        cat=ENGAGEMENT     conv=    0.0 all_conv=   121.0
+  'Local actions - Website visits'                           cat=PAGE_VIEW      conv=    0.0 all_conv=    62.0
+  'Calls from ads'                                           cat=PHONE_CALL_LEAD conv=   57.0 all_conv=    57.0
+  'Ambient Cooling - LP -Submit Lead Forms'                  cat=SUBMIT_LEAD_FORM conv=   36.0 all_conv=    37.0
+  'Ambient Cooling and Heating (web) form_submission'        cat=SUBMIT_LEAD_FORM conv=    0.0 all_conv=    36.0
+  'Local actions - Directions'                               cat=GET_DIRECTIONS conv=    0.0 all_conv=    29.0
+  'Ambient Cooling - Lp - Phone call leads'                  cat=PHONE_CALL_LEAD conv=   19.0 all_conv=    19.0
+  'Clicks to call'                                           cat=CONTACT        conv=    0.0 all_conv=    18.0

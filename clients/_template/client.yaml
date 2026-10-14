@@ -1,0 +1,68 @@
+client:
+  slug: replace-me
+  business_name: ""
+  vertical: ""
+  primary_service: ""
+  google_ads:
+    child_customer_id: ""
+    exact_child_account_name: ""
+    manager_customer_id: ""
+    must_contain_live_marker: true
+    currency: USD
+    timezone: America/New_York
+  website:
+    primary_url: ""
+    landing_page_base_url: ""
+    phone_display: ""
+    phone_e164: ""
+  offer:
+    services_in_scope: []
+    services_excluded: []
+    verified_usps: []
+    verified_offers: []
+    average_job_revenue: null
+    gross_margin_pct: null
+    close_rate_pct: null
+    target_cpl: null
+    target_cpql: null
+    target_cac: null
+  service_area:
+    country_code: US
+    target_type: cities
+    geo_target_constant_ids: []
+    cities: []
+    postal_codes: []
+    radius:
+      latitude: null
+      longitude: null
+      distance: null
+      unit: MILES
+    exclusions: []
+    location_option: PRESENCE
+  schedule:
+    timezone: America/New_York
+    can_answer_after_hours: false
+    windows: []
+  conversions:
+    primary: []
+    secondary: []
+    call_minimum_seconds: null
+    crm_stage_mapping:
+      lead: ""
+      qualified: ""
+      sold: ""
+    offline_route: DATA_MANAGER_API
+  integrations:
+    crm: ""
+    call_tracking: ""
+    analytics: ""
+    tag_manager: ""
+    speed_to_lead: ""
+    review_url: ""
+    form_webhook_env_key: CRM_WEBHOOK_URL
+  permissions:
+    approvers: []
+    allow_create_paused: false
+    allow_enable: false
+    allow_budget_changes: false
+    allow_deletions: false

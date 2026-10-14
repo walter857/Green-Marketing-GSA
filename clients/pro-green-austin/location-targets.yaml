@@ -1,0 +1,395 @@
+location_targets:
+  client_slug: pro-green-austin
+  child_customer_id: '7380491929'
+  exact_child_account_name: Pro Green - Austin - Live
+  resolved_on: '2026-08-18'
+  resolution_method: GeoTargetConstantService.suggest_geo_target_constants for each supplied label, cross-checked
+    against the geo_target_constant records for the 24 constants the live campaigns actually target.
+  geo_target_type_setting:
+    positive_geo_target_type: PRESENCE
+    negative_geo_target_type: PRESENCE
+  total_positive_targets: 24
+  proximity_targets: []
+  postal_code_targets:
+  - id: supplied-78642
+    as_supplied: 78642, Texas, United States
+    geo_target_constant_id: '9028250'
+    geo_target_constant_resource_name: geoTargetConstants/9028250
+    canonical_name: 78642,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78642'
+  - id: supplied-78681
+    as_supplied: 78681, Texas, United States
+    geo_target_constant_id: '9028275'
+    geo_target_constant_resource_name: geoTargetConstants/9028275
+    canonical_name: 78681,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78681'
+  - id: supplied-78732
+    as_supplied: 78732, Texas, United States
+    geo_target_constant_id: '9028298'
+    geo_target_constant_resource_name: geoTargetConstants/9028298
+    canonical_name: 78732,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78732'
+  - id: supplied-78703
+    as_supplied: 78703, Texas, United States
+    geo_target_constant_id: '9028278'
+    geo_target_constant_resource_name: geoTargetConstants/9028278
+    canonical_name: 78703,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78703'
+  - id: supplied-78726
+    as_supplied: 78726, Texas, United States
+    geo_target_constant_id: '9028292'
+    geo_target_constant_resource_name: geoTargetConstants/9028292
+    canonical_name: 78726,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78726'
+  - id: supplied-78613
+    as_supplied: 78613, Texas, United States
+    geo_target_constant_id: '9028226'
+    geo_target_constant_resource_name: geoTargetConstants/9028226
+    canonical_name: 78613,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78613'
+  - id: supplied-78717
+    as_supplied: 78717, Texas, United States
+    geo_target_constant_id: '9028284'
+    geo_target_constant_resource_name: geoTargetConstants/9028284
+    canonical_name: 78717,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78717'
+  - id: supplied-78738
+    as_supplied: 78738, Texas, United States
+    geo_target_constant_id: '9028304'
+    geo_target_constant_resource_name: geoTargetConstants/9028304
+    canonical_name: 78738,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78738'
+  - id: supplied-78746
+    as_supplied: 78746, Texas, United States
+    geo_target_constant_id: '9028310'
+    geo_target_constant_resource_name: geoTargetConstants/9028310
+    canonical_name: 78746,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78746'
+  - id: supplied-78733
+    as_supplied: 78733, Texas, United States
+    geo_target_constant_id: '9028299'
+    geo_target_constant_resource_name: geoTargetConstants/9028299
+    canonical_name: 78733,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78733'
+  - id: supplied-78628
+    as_supplied: 78628, Texas, United States
+    geo_target_constant_id: '9028239'
+    geo_target_constant_resource_name: geoTargetConstants/9028239
+    canonical_name: 78628,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78628'
+  - id: supplied-78750
+    as_supplied: 78750, Texas, United States
+    geo_target_constant_id: '9028314'
+    geo_target_constant_resource_name: geoTargetConstants/9028314
+    canonical_name: 78750,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78750'
+  - id: supplied-78730
+    as_supplied: 78730, Texas, United States
+    geo_target_constant_id: '9028296'
+    geo_target_constant_resource_name: geoTargetConstants/9028296
+    canonical_name: 78730,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78730'
+  - id: supplied-78756
+    as_supplied: 78756, Texas, United States
+    geo_target_constant_id: '9028319'
+    geo_target_constant_resource_name: geoTargetConstants/9028319
+    canonical_name: 78756,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78756'
+  - id: supplied-78734
+    as_supplied: 78734, Texas, United States
+    geo_target_constant_id: '9028300'
+    geo_target_constant_resource_name: geoTargetConstants/9028300
+    canonical_name: 78734,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78734'
+  - id: supplied-78757
+    as_supplied: 78757, Texas, United States
+    geo_target_constant_id: '9028320'
+    geo_target_constant_resource_name: geoTargetConstants/9028320
+    canonical_name: 78757,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78757'
+  - id: supplied-78731
+    as_supplied: 78731, Texas, United States
+    geo_target_constant_id: '9028297'
+    geo_target_constant_resource_name: geoTargetConstants/9028297
+    canonical_name: 78731,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78731'
+  - id: supplied-78641
+    as_supplied: 78641, Texas, United States
+    geo_target_constant_id: '9028249'
+    geo_target_constant_resource_name: geoTargetConstants/9028249
+    canonical_name: 78641,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78641'
+  - id: supplied-78645
+    as_supplied: 78645, Texas, United States
+    geo_target_constant_id: '9028253'
+    geo_target_constant_resource_name: geoTargetConstants/9028253
+    canonical_name: 78645,Texas,United States
+    target_type: Postal Code
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+    postal_code: '78645'
+  named_targets:
+  - id: supplied-barton-creek
+    as_supplied: Barton Creek, Texas, United States
+    geo_target_constant_id: '9051551'
+    geo_target_constant_resource_name: geoTargetConstants/9051551
+    canonical_name: Barton Creek,Texas,United States
+    target_type: City
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+  - id: supplied-cedar-park
+    as_supplied: Cedar Park, Texas, United States
+    geo_target_constant_id: '1026276'
+    geo_target_constant_resource_name: geoTargetConstants/1026276
+    canonical_name: Cedar Park,Texas,United States
+    target_type: City
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+  - id: supplied-georgetown
+    as_supplied: Georgetown, Texas, United States
+    geo_target_constant_id: '1026424'
+    geo_target_constant_resource_name: geoTargetConstants/1026424
+    canonical_name: Georgetown,Texas,United States
+    target_type: City
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+  - id: supplied-west-university
+    as_supplied: West University, Texas, United States
+    geo_target_constant_id: '9060226'
+    geo_target_constant_resource_name: geoTargetConstants/9060226
+    canonical_name: West University,Texas,United States
+    target_type: Neighborhood
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED_AMBIGUITY_FLAGGED
+    ambiguity:
+      note: Google returns two Texas candidates for the label 'West University'. The account targets the
+        Neighborhood. No geo mutation is proposed for this target, so no guess is being made.
+      candidates:
+      - id: '9060226'
+        target_type: Neighborhood
+        canonical_name: West University,Texas,United States
+        state: CURRENTLY TARGETED
+      - id: '9053129'
+        target_type: City
+        canonical_name: West University Place,Texas,United States
+        state: NOT TARGETED - this is a Houston-area city (ZIP 77005) and must not be added
+      parent_lookup: geo_target_constant.parent_geo_target for 9060226 resolves to Texas (21176) then
+        United States (2840). Google does not expose a parent city for either candidate, so the Austin-versus-Houston
+        question cannot be settled from the Google Ads API alone.
+      delivery_evidence: All 45 geographic_view and user_location_view rows for the live campaigns over
+        their full life resolve to metro 200635 (Austin) and region 21176 (Texas). No Houston-area delivery
+        was observed, so the current target is not producing out-of-market traffic.
+      action: REPORT_ONLY. Confirm intent with Green Marketing before any future change.
+  - id: supplied-leander
+    as_supplied: Leander, Texas, United States
+    geo_target_constant_id: '1026553'
+    geo_target_constant_resource_name: geoTargetConstants/1026553
+    canonical_name: Leander,Texas,United States
+    target_type: City
+    resolved_country_code: US
+    status: ENABLED
+    targetable: true
+    lookup_status: RESOLVED
+    currently_targeted_on_both_live_campaigns: true
+    verdict: CORRECTLY_TARGETED
+  negative_location_criteria: []
+  audit_result:
+    supplied_count: 24
+    targeted_count_per_campaign: 24
+    exact_matches: 24
+    missing_from_account: []
+    targeted_but_outside_the_approved_set: []
+    duplicates: []
+    overlaps_flagged_but_preserved:
+    - pair:
+      - Cedar Park, Texas, United States (1026276)
+      - 78613, Texas, United States (9028226)
+      note: 78613 is a Cedar Park ZIP. Both are on the approved list; both retained.
+    - pair:
+      - Leander, Texas, United States (1026553)
+      - 78641, Texas, United States (9028249) and 78645 (9028253)
+      note: Both ZIPs sit inside Leander. All three are on the approved list; all retained.
+    - pair:
+      - Georgetown, Texas, United States (1026424)
+      - 78628, Texas, United States (9028239)
+      note: 78628 is a Georgetown ZIP. Both are on the approved list; both retained.
+    - pair:
+      - Barton Creek, Texas, United States (9051551)
+      - 78746, Texas, United States (9028310) and 78733 (9028299)
+      note: Google's own suggestion service returns these ZIPs for the label 'Barton Creek'. All are on
+        the approved list; all retained.
+    excluded_locations_blocking_a_target: []
+    verdict: PASS. All 24 approved locations resolve to exactly the 24 geo target constants the live campaigns
+      target, on both campaigns, with Presence targeting and no location exclusions. No geo mutation is
+      proposed.
+  as_supplied:
+  - 78642, Texas, United States
+  - 78681, Texas, United States
+  - 78732, Texas, United States
+  - 78703, Texas, United States
+  - 78726, Texas, United States
+  - Barton Creek, Texas, United States
+  - 78613, Texas, United States
+  - 78717, Texas, United States
+  - 78738, Texas, United States
+  - 78746, Texas, United States
+  - 78733, Texas, United States
+  - 78628, Texas, United States
+  - Cedar Park, Texas, United States
+  - 78750, Texas, United States
+  - Georgetown, Texas, United States
+  - 78730, Texas, United States
+  - 78756, Texas, United States
+  - 78734, Texas, United States
+  - 78757, Texas, United States
+  - 78731, Texas, United States
+  - West University, Texas, United States
+  - 78641, Texas, United States
+  - Leander, Texas, United States
+  - 78645, Texas, United States

@@ -1,0 +1,78 @@
+{
+  "readback_at": "2026-09-03T23:06:37.507924-04:00",
+  "rows": [
+    {
+      "campaign_id": "23484545411",
+      "name": "Hardscaping",
+      "ceiling_before": null,
+      "ceiling_after": null,
+      "expected": null,
+      "strategy": "TARGET_SPEND",
+      "strategy_unchanged": true,
+      "budget_unchanged": true,
+      "networks_unchanged": true,
+      "ok": true
+    },
+    {
+      "campaign_id": "23484806108",
+      "name": "Patio",
+      "ceiling_before": null,
+      "ceiling_after": 16.0,
+      "expected": 16.0,
+      "strategy": "TARGET_SPEND",
+      "strategy_unchanged": true,
+      "budget_unchanged": true,
+      "networks_unchanged": true,
+      "ok": true
+    },
+    {
+      "campaign_id": "23914857298",
+      "name": "Paver Sealing",
+      "ceiling_before": 7.5,
+      "ceiling_after": 7.5,
+      "expected": null,
+      "strategy": "TARGET_SPEND",
+      "strategy_unchanged": true,
+      "budget_unchanged": true,
+      "networks_unchanged": true,
+      "ok": true
+    },
+    {
+      "campaign_id": "23489296528",
+      "name": "Pavers",
+      "ceiling_before": null,
+      "ceiling_after": 18.0,
+      "expected": 18.0,
+      "strategy": "TARGET_SPEND",
+      "strategy_unchanged": true,
+      "budget_unchanged": true,
+      "networks_unchanged": true,
+      "ok": true
+    },
+    {
+      "campaign_id": "23914859260",
+      "name": "Power Washing",
+      "ceiling_before": null,
+      "ceiling_after": null,
+      "expected": null,
+      "strategy": "TARGET_SPEND",
+      "strategy_unchanged": true,
+      "budget_unchanged": true,
+      "networks_unchanged": true,
+      "ok": true
+    },
+    {
+      "campaign_id": "23489591905",
+      "name": "Retaining Walls",
+      "ceiling_before": null,
+      "ceiling_after": null,
+      "expected": null,
+      "strategy": "TARGET_SPEND",
+      "strategy_unchanged": true,
+      "budget_unchanged": true,
+      "networks_unchanged": true,
+      "ok": true
+    }
+  ],
+  "verdict": "PASS"
+}

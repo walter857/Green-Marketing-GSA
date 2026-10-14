@@ -1,0 +1,69 @@
+{
+ "generated_local": "2026-09-10T10:40:26.512776-04:00",
+ "asset_sets": [
+  {
+   "id": "7135012864",
+   "type": "LOCATION_SYNC",
+   "status": "REMOVED",
+   "name": "Business Profile locations"
+  },
+  {
+   "id": "7744462455",
+   "type": "LOCATION_SYNC",
+   "status": "REMOVED",
+   "name": "Business Profile"
+  },
+  {
+   "id": "8620443109",
+   "type": "LOCATION_SYNC",
+   "status": "ENABLED",
+   "name": "Business Profile"
+  }
+ ],
+ "customer_asset_sets": [
+  {
+   "asset_set": "customers/2401959466/assetSets/7135012864",
+   "status": "REMOVED"
+  },
+  {
+   "asset_set": "customers/2401959466/assetSets/7744462455",
+   "status": "REMOVED"
+  },
+  {
+   "asset_set": "customers/2401959466/assetSets/8620443109",
+   "status": "ENABLED"
+  }
+ ],
+ "by_click_type": {
+  "URL_CLICKS": {
+   "clicks": 99,
+   "cost": 4039.03,
+   "conv": 5.0,
+   "all": 28.5
+  },
+  "CALLS": {
+   "clicks": 10,
+   "cost": 576.51,
+   "conv": 3.0,
+   "all": 3.0
+  },
+  "SITELINKS": {
+   "clicks": 26,
+   "cost": 1284.8,
+   "conv": 1.0,
+   "all": 2.5
+  },
+  "GET_DIRECTIONS": {
+   "clicks": 6,
+   "cost": 199.88,
+   "conv": 0.0,
+   "all": 7.0
+  },
+  "LOCATION_EXPANSION": {
+   "clicks": 36,
+   "cost": 2062.07,
+   "conv": 4.0,
+   "all": 35.0
+  }
+ }
+}

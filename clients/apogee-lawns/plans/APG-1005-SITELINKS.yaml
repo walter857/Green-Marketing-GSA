@@ -1,0 +1,71 @@
+plan_id: APG-1005-SITELINKS
+plan_kind: sitelink_assets_DRAFT
+approval_ready: false
+blockers:
+- 'the paid page has no section anchors today (only theme container IDs); R6 adds #estimate, #how-it-works, #design,
+  #app-control, #faq, #homes-businesses'
+- anchors must be verified live in a browser before final URLs are fixed
+why_not_main_site: apogeelawns.com pages carry no GTM, no WhatConverts and show 402-202-7261, so sitelink clicks
+  there lose paid call and form attribution
+sitelinks:
+- link_text: Request a Free Estimate
+  description1: Free estimate for permanent lights
+  description2: Tell us about your property
+  final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/#estimate
+- link_text: How Installation Works
+  description1: Request, plan, then install
+  description2: Installed along your roofline
+  final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/#how-it-works
+- link_text: Custom Lighting Design
+  description1: Designed around your property
+  description2: Free consultation and design
+  final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/#design
+- link_text: App-Controlled Colors
+  description1: Colors, patterns and schedules
+  description2: For every holiday and occasion
+  final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/#app-control
+- link_text: Permanent Lighting FAQ
+  description1: Year-round use and controls
+  description2: How estimates are priced
+  final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/#faq
+- link_text: Homes and Businesses
+  description1: Residential lighting options
+  description2: Commercial lighting options
+  final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/#homes-businesses
+creation_status_when_ready: assets + campaign links created PAUSED; separate enablement approval
+target:
+  exact_child_account_name: Apogee Lawns LLC - Live
+  child_customer_id: '8164626278'
+  manager_customer_id: '3373711342'
+  manager_never_mutated: true
+  exact_primary_service: Permanent Christmas light installation
+  vertical: similar-local-service
+  scope_approval: Walter, 2026-09-16 (recorded, not re-requested)
+  work_order: clients/apogee-lawns/work-order.yaml (validator PASS 2026-10-05)
+  campaign:
+    id: '24257151015'
+    name: S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026
+    status: ENABLED (unchanged by this bundle)
+    budget_id: '15884926233'
+    daily_budget_micros: 16440000
+    monthly_cap_at_30_4_days_usd: 499.78
+    bidding: MAXIMIZE_CLICKS (TARGET_SPEND) ceiling 8000000 micros (unchanged)
+    locations_presence:
+    - '1021635'
+    - '1021647'
+    - '1021696'
+    - '1021783'
+    - '9024651'
+    - '9024671'
+    - '9024703'
+    - '9024728'
+    - '9024746'
+    - '9024748'
+    - '9024753'
+    - '9024754'
+    - '9195288'
+    - '9233865'
+    schedule: 24/7, 0 ad-schedule criteria (unchanged)
+    tablet: -100% (unchanged)
+    final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/
+    conversions: 7772803337 Primary, 7773013199 Primary, 7773043879 Secondary (unchanged)

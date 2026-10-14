@@ -1,0 +1,204 @@
+{
+  "batches": [
+    {
+      "batch": "D-new-keywords",
+      "operations": [
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "151125103616",
+          "kw": "sprinkler head repair",
+          "match": "EXACT",
+          "rollback": "remove the created criterion"
+        },
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "151125103616",
+          "kw": "sprinkler head replacement",
+          "match": "EXACT",
+          "rollback": "remove the created criterion"
+        },
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "151125103616",
+          "kw": "sprinkler head repair",
+          "match": "PHRASE",
+          "rollback": "remove the created criterion"
+        },
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "191996690566",
+          "kw": "sprinkler valve repair",
+          "match": "EXACT",
+          "rollback": "remove the created criterion"
+        },
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "191996690566",
+          "kw": "sprinkler valve replacement",
+          "match": "EXACT",
+          "rollback": "remove the created criterion"
+        },
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "191996690566",
+          "kw": "sprinkler valve repair",
+          "match": "PHRASE",
+          "rollback": "remove the created criterion"
+        },
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "190202910461",
+          "kw": "irrigation valve repair",
+          "match": "EXACT",
+          "rollback": "remove the created criterion"
+        },
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "190202910461",
+          "kw": "irrigation valve repair",
+          "match": "PHRASE",
+          "rollback": "remove the created criterion"
+        }
+      ],
+      "results": [
+        "customers/8735782888/adGroupCriteria/151125103616~297166525151",
+        "customers/8735782888/adGroupCriteria/151125103616~1442898236",
+        "customers/8735782888/adGroupCriteria/151125103616~479035710",
+        "customers/8735782888/adGroupCriteria/191996690566~659133866",
+        "customers/8735782888/adGroupCriteria/191996690566~3039926666",
+        "customers/8735782888/adGroupCriteria/191996690566~659157206",
+        "customers/8735782888/adGroupCriteria/190202910461~297166524631",
+        "customers/8735782888/adGroupCriteria/190202910461~297659066555"
+      ],
+      "readback": [
+        {
+          "ad_group": "Sprinkler Repair Near Me",
+          "id": "479035710",
+          "kw": "sprinkler head repair",
+          "match": "PHRASE",
+          "status": "PAUSED"
+        },
+        {
+          "ad_group": "Sprinkler Repair Near Me",
+          "id": "1442898236",
+          "kw": "sprinkler head replacement",
+          "match": "EXACT",
+          "status": "PAUSED"
+        },
+        {
+          "ad_group": "Sprinkler Repair Near Me",
+          "id": "297166525151",
+          "kw": "sprinkler head repair",
+          "match": "EXACT",
+          "status": "PAUSED"
+        },
+        {
+          "ad_group": "Irrigation Repair Near Me",
+          "id": "297166524631",
+          "kw": "irrigation valve repair",
+          "match": "EXACT",
+          "status": "PAUSED"
+        },
+        {
+          "ad_group": "Irrigation Repair Near Me",
+          "id": "297659066555",
+          "kw": "irrigation valve repair",
+          "match": "PHRASE",
+          "status": "PAUSED"
+        },
+        {
+          "ad_group": "Sprinkler System Repair",
+          "id": "659133866",
+          "kw": "sprinkler valve repair",
+          "match": "EXACT",
+          "status": "PAUSED"
+        },
+        {
+          "ad_group": "Sprinkler System Repair",
+          "id": "659157206",
+          "kw": "sprinkler valve repair",
+          "match": "PHRASE",
+          "status": "PAUSED"
+        },
+        {
+          "ad_group": "Sprinkler System Repair",
+          "id": "3039926666",
+          "kw": "sprinkler valve replacement",
+          "match": "EXACT",
+          "status": "PAUSED"
+        }
+      ],
+      "note": "verified PAUSED"
+    },
+    {
+      "batch": "E-challenger-rsas",
+      "operations": [
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "151125103616",
+          "final_url": "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/",
+          "headlines": 15,
+          "descriptions": 4,
+          "pinned": "headline 1 only",
+          "rollback": "remove the created ad"
+        },
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "190202910461",
+          "final_url": "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+          "headlines": 15,
+          "descriptions": 4,
+          "pinned": "headline 1 only",
+          "rollback": "remove the created ad"
+        },
+        {
+          "action": "CREATE_PAUSED",
+          "ad_group_id": "191996690566",
+          "final_url": "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+          "headlines": 15,
+          "descriptions": 4,
+          "pinned": "headline 1 only",
+          "rollback": "remove the created ad"
+        }
+      ],
+      "results": [
+        "customers/8735782888/adGroupAds/151125103616~820553894577",
+        "customers/8735782888/adGroupAds/190202910461~820553894580",
+        "customers/8735782888/adGroupAds/191996690566~820553894583"
+      ],
+      "readback": [
+        {
+          "ad_group": "Sprinkler Repair Near Me",
+          "ad_id": "820553894577",
+          "status": "PAUSED",
+          "strength": "PENDING",
+          "final_url": [
+            "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/"
+          ],
+          "approval": "UNKNOWN"
+        },
+        {
+          "ad_group": "Irrigation Repair Near Me",
+          "ad_id": "820553894580",
+          "status": "PAUSED",
+          "strength": "PENDING",
+          "final_url": [
+            "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/"
+          ],
+          "approval": "UNKNOWN"
+        },
+        {
+          "ad_group": "Sprinkler System Repair",
+          "ad_id": "820553894583",
+          "status": "PAUSED",
+          "strength": "PENDING",
+          "final_url": [
+            "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/"
+          ],
+          "approval": "UNKNOWN"
+        }
+      ],
+      "note": "verified PAUSED"
+    }
+  ]
+}

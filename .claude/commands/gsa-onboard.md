@@ -1,0 +1,1 @@
+Read `CLAUDE.md` and `prompts/00-onboard-client.md`. Ask first for the exact child account name, 10-digit child customer ID, and exact service. Then onboard the client, create a draft client profile and work order, validate both, and make no external changes.

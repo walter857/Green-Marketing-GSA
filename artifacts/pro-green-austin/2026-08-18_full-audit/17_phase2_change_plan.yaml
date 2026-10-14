@@ -1,0 +1,1610 @@
+change_plan:
+  version: 1
+  phase: PHASE 2 of 2 - creative and assets. Follows the executed Phase 1 plan v2.
+  generated_on: '2026-08-19'
+  mode: draft
+  prepared_by: Green Marketing Google Ads implementation agent
+  approval_owner: Green Marketing
+  target:
+    exact_child_account_name: Pro Green - Austin - Live
+    child_customer_id: '7380491929'
+    manager_customer_id: '3373711342'
+    exact_service: outdoor design & build
+    vertical: hardscaping
+    snapshot: clients/pro-green-austin/snapshots/phase2-read-2026-08-19.json
+    landing_page_copy_source: clients/pro-green-austin/snapshots/lp-copy-2026-08-19.json
+    sitelink_destination_audit: clients/pro-green-austin/snapshots/sitelink-destinations-2026-08-19.json
+    read_on: '2026-08-19'
+    account_timezone: America/New_York
+    currency: USD
+  external_writes_performed: NONE
+  standing_caveat: Measurement is still incomplete. SPEC-001 and SPEC-002 from Phase 1 are outstanding,
+    so the landing-page form still captures no click identifier and the form-submit conversion tag is
+    unverified. A creative test started now will be hard to read on conversions until those land; CTR
+    will be readable sooner. Green Marketing asked for this work with that understood.
+  findings:
+    theme_map:
+      themes: 12
+      ad_groups: 24
+      ads: 24
+      unique_destinations: 13
+      structure: each theme has a BOFU and a Near Me ad group, one RSA each, both pointing at the same
+        destination, except Hardscaping where the Near Me ad group points at the main site instead of
+        the offer page
+    existing_ads_verdict:
+      verdict: KEEP ALL 24. No rebuild is warranted.
+      evidence: All 24 carry the full 15 headlines and 4 descriptions, all are APPROVED and REVIEWED,
+        none is pinned, none exceeds a character limit, none repeats a headline inside its own ad, and
+        283 distinct headlines fill 360 slots. The only cross-ad reuse is the two shared calls to action,
+        which is appropriate.
+      claim_audit: 'Zero occurrences of experience-years, licensed, insured, bonded, certified, warranty,
+        guarantee, rating, review, award, financing, response-time or price claims across all 360 headlines
+        and 96 descriptions. 96 ''free'' mentions, all supported: every landing page offers a free quote.
+        97 geography mentions, all Austin, Round Rock or Cedar Park, and zero out-of-market mentions.'
+      ad_strength_note: 11 EXCELLENT and 1 GOOD across the BOFU ad groups; 11 AVERAGE and 1 POOR across
+        the Near Me ad groups. The POOR ad, Outdoor Living | Near Me 817941409345, leads 8 of 15 headlines
+        with the words 'Outdoor Living', which Google penalises for low headline variety. Ad Strength
+        is a diagnostic, not a business KPI, and Green Marketing policy forbids degrading verified copy
+        to chase it, so the existing ad is left alone and the new second RSA supplies the missing variety
+        at ad-group level.
+    quality_score:
+      populated: 6 of 48 keywords; the other 42 report 0, which means not enough data
+      expected_ctr: BELOW_AVERAGE on all 6 scored keywords
+      ad_relevance: AVERAGE on 4, ABOVE_AVERAGE on 2
+      landing_page_experience: AVERAGE on 4, BELOW_AVERAGE on 2
+      reading: The ads are relevant to the keywords and the landing pages are broadly acceptable. The
+        weak component is expected CTR, which is a creative problem, not a relevance problem. That is
+        exactly what the second RSA tests. The two BELOW_AVERAGE landing-page scores are both on 'paver
+        installation near me', pointing at the pavers-2 offer page.
+      scored_keywords:
+      - keyword: paver installation near me
+        match: PHRASE/EXACT
+        qs: 2
+      - keyword: landscape designers near me
+        match: PHRASE/EXACT
+        qs: 4
+      - keyword: patio contractors near me
+        match: PHRASE/EXACT
+        qs: 5
+    assets_verdict:
+      sitelinks: 12, six per campaign, all ADVERTISER, all within character limits, all returning HTTP
+        200 with Austin-market H1s and no cross-market content. Zero conversions from 4 sitelink clicks
+        costing $153.72. NO CHANGE PROPOSED; see blocked_proposals BLK-002 for the destination question.
+      callouts: 16, eight per campaign, all ADVERTISER, all 16 to 24 characters against a 25 limit, all
+        content verified. NO CHANGE PROPOSED.
+      structured_snippets: 2, one per campaign, header 'Service catalog', values exactly matching each
+        campaign's six themes. Near-zero impressions because six sitelinks and eight callouts win the
+        slot. Content is accurate. NO CHANGE PROPOSED.
+      call_asset: (512) 890-2716 on both campaigns, USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION. Matches
+        the number displayed on all 12 offer pages. NO CHANGE PROPOSED.
+      business_logo: AUTOMATICALLY_CREATED and ENABLED on both campaigns. Green Marketing policy defaults
+        automatically created assets to off, so this is a deviation either way. It makes no claim and
+        a logo generally helps CTR, which is the weak Quality Score component. Raised as an open question
+        rather than changed.
+      ad_group_assets: 26 links, all already REMOVED. Nothing to do.
+    url_and_market_validation:
+      ad_destinations: 13 of 13 reached, all HTTP 200, all Austin, no cross-market content
+      sitelink_destinations: '11 additional main-site URLs validated on 2026-08-19: all HTTP 200, all
+        H1s read ''in Austin, Round Rock & Cedar Park, TX'', gclid preserved on every one, zero Dallas
+        or Houston mentions, zero cross-market links'
+      attribution_contrast: The sitelink destinations use main-site form gform_1, which DOES capture gclid.
+        The ad destinations use gform_3 on the offer subdomain, which does NOT. Sitelink traffic is currently
+        better attributed than the primary ad traffic.
+      ga4_precision: Every main-site page loads only G-MHX199EBNJ. The duplicate second GA4 property G-HL5EFB8XKJ
+        is confined to the offeraustin.* offer subdomain. This narrows SPEC-003.
+      phone_numbers: Offer pages show (512) 890-2716, matching the Google Ads call asset. Main-site pages
+        showed (512) 559-1315 on this pass and (512) 277-9435 on 2026-08-18. WhatConverts dynamic number
+        insertion, working as intended. Not a defect and must not be standardised.
+      landing_page_defect: On the pergola and artificial-turf offer pages the three-step section ends
+        with 'Confirm the Landscape Plan', copy left over from the landscape-design page. Cosmetic, but
+        it is wrong copy on a live paid destination. Logged as SPEC-005.
+  subplans:
+    STATUS:
+      actions: []
+      empty_reason: No status change. All 24 existing ads are compliant and stay ENABLED. The new ads
+        are created PAUSED, which is a creation attribute, not a status change to an existing resource.
+    BUDGET:
+      actions: []
+      empty_reason: No budget change. The Phase 1 allocation of $39.47 and $26.31, totalling $65.78 a
+        day and $1,999.71 per 30.4 days, stands.
+    EXISTING_RESOURCES:
+      actions: []
+      empty_reason: 'No change to any existing ad, sitelink, callout, structured snippet or call asset.
+        The audit found them compliant: no unverified claim, no character-limit breach, no out-of-market
+        content, no broken destination. Manufacturing edits to assets that pass audit would add risk without
+        evidence. The one destination question is held in blocked_proposals BLK-002.'
+    CONVERSIONS:
+      actions: []
+      empty_reason: 'No conversion change. The Phase 1 result stands: exactly three primary actions, one
+        per real lead event.'
+    CREATE_PAUSED:
+      actions:
+      - action_id: RSA-001
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686216'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Driveways | BOFU
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051686216 has exactly 1 enabled RSA (817941409336, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/paver-driveway/
+        path1: driveways
+        path2: free-quote
+        headlines:
+        - Paver Driveways In Austin
+        - Austin Driveway Projects
+        - Plan For Vehicle Access
+        - Improve The Entrance
+        - Planned From The Base Up
+        - Driveway Layout Planning
+        - Choose A Custom Look
+        - Designed For Daily Use
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - A paver driveway designed for daily use and vehicle access.
+        - Paver driveways planned from the base up, around your property entrance.
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Layout planning, surface selection and borders. Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 25
+          max_description_chars: 72
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-002
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686176'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Driveways | Near Me
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051686176 has exactly 1 enabled RSA (817941409333, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/paver-driveway/
+        path1: driveways
+        path2: austin
+        headlines:
+        - Paver Driveways Near You
+        - Austin Driveway Projects
+        - Plan For Vehicle Access
+        - Improve The Entrance
+        - Planned From The Base Up
+        - Driveway Layout Planning
+        - Choose A Custom Look
+        - Designed For Daily Use
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - A paver driveway designed for daily use and vehicle access.
+        - Paver driveways planned from the base up, around your property entrance.
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Layout planning, surface selection and borders. Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 24
+          max_description_chars: 72
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-003
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051685456'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Hardscaping | BOFU
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051685456 has exactly 1 enabled RSA (817941409186, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/hardscaping/
+        path1: hardscaping
+        path2: free-quote
+        headlines:
+        - Hardscaping In Austin
+        - Austin Hardscape Team
+        - One Team For Your Outdoors
+        - Improve Property Flow
+        - Add A Finished Look
+        - Paver Patios & Walkways
+        - Retaining Wall Options
+        - Improve Your Outdoor Space
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Create more usable space with hardscaping planned around your property.
+        - 'Three steps: request a Free Quote, review the plan, schedule the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Paver patios, walkways and retaining walls. Get your Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 26
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-004
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051685416'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Hardscaping | Near Me
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051685416 has exactly 1 enabled RSA (817941409183, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://progreenlandscapesolutions.com/austin/services/hardscaping/
+        path1: hardscaping
+        path2: austin
+        headlines:
+        - Hardscaping Near You
+        - Austin Hardscape Team
+        - One Team For Your Outdoors
+        - Improve Property Flow
+        - Add A Finished Look
+        - Paver Patios & Walkways
+        - Retaining Wall Options
+        - Improve Your Outdoor Space
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Create more usable space with hardscaping planned around your property.
+        - 'Three steps: request a Free Quote, review the plan, schedule the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Paver patios, walkways and retaining walls. Get your Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 26
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-005
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051685936'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Patios | BOFU
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051685936 has exactly 1 enabled RSA (817941409324, ad strength GOOD),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/patio-2/
+        path1: patios
+        path2: free-quote
+        headlines:
+        - Paver Patios In Austin
+        - Austin Patio Projects
+        - Room For Outdoor Dining
+        - Comfortable Seating Areas
+        - A Layout That Fits Your Yard
+        - Outdoor Dining Patios
+        - Multi-Use Patios
+        - A Patio You Will Use
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Create a patio you will actually use, planned around how you live.
+        - 'Three steps: request a Free Quote, review and plan, schedule the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Dining patios, seating patios and multi-use layouts. Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 28
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-006
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051685896'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Patios | Near Me
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051685896 has exactly 1 enabled RSA (817941409321, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/patio-2/
+        path1: patios
+        path2: austin
+        headlines:
+        - Patio Contractors Near You
+        - Austin Patio Projects
+        - Room For Outdoor Dining
+        - Comfortable Seating Areas
+        - A Layout That Fits Your Yard
+        - Outdoor Dining Patios
+        - Multi-Use Patios
+        - A Patio You Will Use
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Create a patio you will actually use, planned around how you live.
+        - 'Three steps: request a Free Quote, review and plan, schedule the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Dining patios, seating patios and multi-use layouts. Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 28
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-007
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051685736'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Pavers | BOFU
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051685736 has exactly 1 enabled RSA (817941409198, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/pavers-2/
+        path1: pavers
+        path2: free-quote
+        headlines:
+        - Paver Installation Austin
+        - Austin Paver Projects
+        - Flexible Layout Options
+        - Defined Borders And Edges
+        - Base And Drainage Prep
+        - Paver Pattern Planning
+        - A Coordinated Look
+        - A Finished Outdoor Surface
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Pavers designed for a finished outdoor surface that lasts.
+        - Paver installation starts below the surface with base and drainage prep.
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Pattern planning, borders and edge design. Get your Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 26
+          max_description_chars: 72
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-008
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051685696'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Pavers | Near Me
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051685696 has exactly 1 enabled RSA (817941409195, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/pavers-2/
+        path1: pavers
+        path2: austin
+        headlines:
+        - Paver Installers Near You
+        - Austin Paver Projects
+        - Flexible Layout Options
+        - Defined Borders And Edges
+        - Base And Drainage Prep
+        - Paver Pattern Planning
+        - A Coordinated Look
+        - A Finished Outdoor Surface
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Pavers designed for a finished outdoor surface that lasts.
+        - Paver installation starts below the surface with base and drainage prep.
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Pattern planning, borders and edge design. Get your Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 26
+          max_description_chars: 72
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-009
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051685656'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Retaining Walls | BOFU
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051685656 has exactly 1 enabled RSA (817941409192, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/retaining-walls/
+        path1: retaining-wall
+        path2: free-quote
+        headlines:
+        - Retaining Walls In Austin
+        - Austin Retaining Walls
+        - Support Changing Grades
+        - Create Defined Levels
+        - Built For Sloped Yards
+        - Grade Transition Walls
+        - Wall Finish Options
+        - Retaining Wall Planning
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Retaining walls planned for sloped properties and changing grades.
+        - 'Three steps: request a Free Quote, review the property, confirm the plan.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Slope walls, grade transitions and finish options. Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 25
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-010
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051685496'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Retaining Walls | Near Me
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051685496 has exactly 1 enabled RSA (817941409189, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/retaining-walls/
+        path1: retaining-wall
+        path2: austin
+        headlines:
+        - Retaining Walls Near You
+        - Austin Retaining Walls
+        - Support Changing Grades
+        - Create Defined Levels
+        - Built For Sloped Yards
+        - Grade Transition Walls
+        - Wall Finish Options
+        - Retaining Wall Planning
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Retaining walls planned for sloped properties and changing grades.
+        - 'Three steps: request a Free Quote, review the property, confirm the plan.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Slope walls, grade transitions and finish options. Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 24
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-011
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686136'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Walkways | BOFU
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051686136 has exactly 1 enabled RSA (817941409330, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/walkway/
+        path1: walkways
+        path2: free-quote
+        headlines:
+        - Walkway Installation Austin
+        - Austin Walkway Projects
+        - Clearer Property Access
+        - More Comfortable Movement
+        - Front Entry Walkways
+        - Side-Yard Walkways
+        - Backyard Walkways
+        - Improve Everyday Access
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Walkways that improve everyday access through your property.
+        - 'Three steps: request a Free Quote, review and plan, schedule the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Front entry, side-yard and backyard walkways. Get your Free Quote.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 27
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-012
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051685976'
+        resource_name: Progreen Austin | Search | Hardscape Construction > Walkways | Near Me
+        campaign_id: '24053505501'
+        created_status: PAUSED
+        current_state: ad group 199051685976 has exactly 1 enabled RSA (817941409327, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/walkway/
+        path1: walkways
+        path2: austin
+        headlines:
+        - Walkway Builders Near You
+        - Austin Walkway Projects
+        - Clearer Property Access
+        - More Comfortable Movement
+        - Front Entry Walkways
+        - Side-Yard Walkways
+        - Backyard Walkways
+        - Improve Everyday Access
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Walkways that improve everyday access through your property.
+        - 'Three steps: request a Free Quote, review and plan, schedule the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Front entry, side-yard and backyard walkways. Get your Free Quote.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 25
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-013
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051687096'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Artificial Turf | BOFU
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051687096 has exactly 1 enabled RSA (817941409366, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/artificial-turf/
+        path1: artificial-turf
+        path2: free-quote
+        headlines:
+        - Artificial Turf In Austin
+        - Austin Artificial Turf
+        - Consistent Green Look
+        - Less Routine Lawn Work
+        - A More Usable Surface
+        - Front And Backyard Turf
+        - Turf For Play Areas
+        - Less Lawn Maintenance
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - A greener appearance with less routine lawn work, all year.
+        - Artificial turf installation starts with proper surface preparation.
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Front yard, backyard, play and pet areas. Get your Free Quote.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 25
+          max_description_chars: 68
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-014
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686936'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Artificial Turf | Near Me
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051686936 has exactly 1 enabled RSA (817941409363, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/artificial-turf/
+        path1: artificial-turf
+        path2: austin
+        headlines:
+        - Turf Installers Near You
+        - Austin Artificial Turf
+        - Consistent Green Look
+        - Less Routine Lawn Work
+        - A More Usable Surface
+        - Front And Backyard Turf
+        - Turf For Play Areas
+        - Less Lawn Maintenance
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - A greener appearance with less routine lawn work, all year.
+        - Artificial turf installation starts with proper surface preparation.
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Front yard, backyard, play and pet areas. Get your Free Quote.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 24
+          max_description_chars: 68
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-015
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686696'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Fire Pits | BOFU
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051686696 has exactly 1 enabled RSA (817941409354, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/fire-pit/
+        path1: fire-pits
+        path2: free-quote
+        headlines:
+        - Fire Pit Install In Austin
+        - Austin Fire Pit Projects
+        - A Natural Gathering Point
+        - Create A Central Feature
+        - Plan Comfortable Spacing
+        - Fire Pit Placement
+        - Shape And Material Choice
+        - A Custom Fire Feature
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Give your outdoor area a natural gathering point with a custom fire pit.
+        - 'Three steps: request a Free Quote, review and plan, schedule the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Placement, shape, material and seating layout. Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 26
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-016
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686656'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Fire Pits | Near Me
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051686656 has exactly 1 enabled RSA (817941409351, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/fire-pit/
+        path1: fire-pits
+        path2: austin
+        headlines:
+        - Fire Pit Installers Near You
+        - Austin Fire Pit Projects
+        - A Natural Gathering Point
+        - Create A Central Feature
+        - Plan Comfortable Spacing
+        - Fire Pit Placement
+        - Shape And Material Choice
+        - A Custom Fire Feature
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Give your outdoor area a natural gathering point with a custom fire pit.
+        - 'Three steps: request a Free Quote, review and plan, schedule the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Placement, shape, material and seating layout. Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 28
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-017
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686416'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Landscape Design | BOFU
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051686416 has exactly 1 enabled RSA (817941409342, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/landscape-design/
+        path1: landscape
+        path2: design-quote
+        headlines:
+        - Landscape Design Austin
+        - Austin Landscape Design
+        - Start With A Clear Plan
+        - A Layout Based On Goals
+        - Better Visual Balance
+        - Front And Backyard Design
+        - Whole-Property Design
+        - Reimagine Your Landscape
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Start with a clear landscape plan based on real property conditions.
+        - 'Three steps: request a Free Quote, review and design, confirm the plan.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Front yard, backyard and whole-property design. Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 25
+          max_description_chars: 71
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-018
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686376'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Landscape Design | Near Me
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051686376 has exactly 1 enabled RSA (817941409339, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/landscape-design/
+        path1: landscape
+        path2: austin
+        headlines:
+        - Landscape Designers Near You
+        - Austin Landscape Design
+        - Start With A Clear Plan
+        - A Layout Based On Goals
+        - Better Visual Balance
+        - Front And Backyard Design
+        - Whole-Property Design
+        - Reimagine Your Landscape
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Start with a clear landscape plan based on real property conditions.
+        - 'Three steps: request a Free Quote, review and design, confirm the plan.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Front yard, backyard and whole-property design. Free Quote today.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 28
+          max_description_chars: 71
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-019
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051687176'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Landscape Lighting | BOFU
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051687176 has exactly 1 enabled RSA (817941409372, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/landscape-lighting/
+        path1: lighting
+        path2: free-quote
+        headlines:
+        - Landscape Lighting Austin
+        - Austin Outdoor Lighting
+        - Better Visibility After Dark
+        - Highlight Property Features
+        - A Balanced Appearance
+        - Austin Landscape Lighting
+        - Architectural Lighting
+        - Light Your Property
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Make your property work better after dark with custom outdoor lighting.
+        - 'Three steps: request a Free Quote, review and plan, schedule the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Pathway, accent and architectural lighting. Get your Free Quote.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 28
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-020
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051687136'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Landscape Lighting | Near
+          Me
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051687136 has exactly 1 enabled RSA (817941409369, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/landscape-lighting/
+        path1: lighting
+        path2: austin
+        headlines:
+        - Lighting Installers Near You
+        - Austin Outdoor Lighting
+        - Better Visibility After Dark
+        - Highlight Property Features
+        - A Balanced Appearance
+        - Pathway And Accent Lighting
+        - Architectural Lighting
+        - Light Your Property
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Make your property work better after dark with custom outdoor lighting.
+        - 'Three steps: request a Free Quote, review and plan, schedule the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Pathway, accent and architectural lighting. Get your Free Quote.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 28
+          max_description_chars: 73
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-021
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686616'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Outdoor Living | BOFU
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051686616 has exactly 1 enabled RSA (817941409348, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/outdoor-living/
+        path1: outdoor-living
+        path2: free-quote
+        headlines:
+        - Outdoor Living In Austin
+        - Austin Outdoor Living
+        - Space For Gathering
+        - Better Outdoor Flow
+        - Outdoor Living In Austin, TX
+        - Dining And Entertaining
+        - Multi-Use Layouts
+        - More From Your Backyard
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Make more of the space outside your home, designed around how you gather.
+        - 'Three steps: request a Free Quote, design and plan, coordinate the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Dining, entertaining and conversation areas. Get your Free Quote.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 28
+          max_description_chars: 75
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-022
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686456'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Outdoor Living | Near Me
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051686456 has exactly 1 enabled RSA (817941409345, ad strength POOR),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/outdoor-living/
+        path1: outdoor-living
+        path2: austin
+        headlines:
+        - Outdoor Living Near You
+        - Austin Outdoor Living
+        - Space For Gathering
+        - Better Outdoor Flow
+        - Built Around How You Gather
+        - Dining And Entertaining
+        - Multi-Use Layouts
+        - More From Your Backyard
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Make more of the space outside your home, designed around how you gather.
+        - 'Three steps: request a Free Quote, design and plan, coordinate the project.'
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Dining, entertaining and conversation areas. Get your Free Quote.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 27
+          max_description_chars: 75
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-023
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686896'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Pergolas | BOFU
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051686896 has exactly 1 enabled RSA (817941409360, ad strength EXCELLENT),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/pergola/
+        path1: pergolas
+        path2: free-quote
+        headlines:
+        - Custom Pergolas In Austin
+        - Austin Pergola Projects
+        - Add Partial Shade
+        - Define The Gathering Area
+        - Complement The Property
+        - Pergola Size And Proportion
+        - Style And Finish
+        - A More Defined Space
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Make your outdoor area feel more defined with a custom pergola.
+        - Pergolas planned around your outdoor space, placement and proportion.
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Placement, size, style and finish options. Get your Free Quote.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 27
+          max_description_chars: 69
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+      - action_id: RSA-024
+        priority: P2
+        operation: CREATE_RESPONSIVE_SEARCH_AD
+        resource_type: ad_group_ad
+        resource_id: '199051686856'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design > Pergolas | Near Me
+        campaign_id: '24053505504'
+        created_status: PAUSED
+        current_state: ad group 199051686856 has exactly 1 enabled RSA (817941409357, ad strength AVERAGE),
+          against the Green Marketing default of 2
+        proposed_state: a second RSA created PAUSED with 15 headlines and 4 descriptions, no pinning,
+          same final URL and display paths as the existing ad
+        field_mask: n/a (resource creation)
+        final_url: https://offeraustin.progreenlandscapesolutions.com/pergola/
+        path1: pergolas
+        path2: austin
+        headlines:
+        - Pergola Builders Near You
+        - Austin Pergola Projects
+        - Add Partial Shade
+        - Define The Gathering Area
+        - Complement The Property
+        - Pergola Size And Proportion
+        - Style And Finish
+        - A More Defined Space
+        - Start With A Free Quote
+        - Free Quote, Then A Plan
+        - Round Rock & Cedar Park
+        - Georgetown & Leander
+        - See Recent Projects
+        - Plan Your Project Today
+        - Get Your Free Quote
+        descriptions:
+        - Make your outdoor area feel more defined with a custom pergola.
+        - Pergolas planned around your outdoor space, placement and proportion.
+        - Serving Austin, Round Rock, Cedar Park, Georgetown and Leander.
+        - Placement, size, style and finish options. Get your Free Quote.
+        evidence: Every keyword with a populated Quality Score reports expected CTR BELOW_AVERAGE while
+          ad relevance is AVERAGE or ABOVE_AVERAGE, so the ads are on topic but not compelling. A second
+          ad is the only way to test a different angle. The existing ad in this ad group is feature and
+          process led; this one is outcome led and every line is drawn from the client's own landing-page
+          copy read on 2026-08-19.
+        reason: Closes the 1-of-2 RSA policy gap and creates a readable copy test without touching the
+          existing ad, which is compliant and stays live.
+        expected_effect: Gives Google a second creative to rotate and gives Green Marketing a CTR comparison.
+          No guarantee of a higher CTR or a lower CPL.
+        risk: Low. Created PAUSED, so nothing serves until a separate ENABLE approval. The existing ad
+          is unchanged. Enabling later adds a second ad to the rotation, which splits impressions between
+          two creatives while the test runs.
+        rollback: Remove the created ad by the resource name returned at readback.
+        validation:
+          headline_count: 15
+          description_count: 4
+          max_headline_chars: 27
+          max_description_chars: 69
+          duplicate_within_ad: false
+          duplicates_existing_ad: false
+          unverified_claims: none
+          out_of_market_geo: none
+        object_count: 1
+    SITE_OR_TRACKING:
+      actions: []
+      empty_reason: Website work remains a developer specification, never a fingerprinted change. SPEC-001
+        through SPEC-004 from Phase 1 are unchanged and still outstanding. This round adds SPEC-005, the
+        wrong three-step copy on the pergola and artificial-turf offer pages.
+    ENABLE:
+      actions: []
+      empty_reason: Enabling the 24 new ads requires a SEPARATE approval after create-paused readback
+        QA. Nothing may be created and enabled in the same operation.
+  blocked_proposals:
+  - proposal_id: BLK-002
+    priority: P2
+    status: BLOCKED - NOT FINGERPRINTED, NOT APPROVABLE IN THIS ROUND
+    operation: REPOINT_SITELINKS_TO_OFFER_PAGES
+    resource_type: asset (SITELINK final_urls)
+    object_count: 12
+    current_state: all 12 sitelinks point at main-site /austin/services/... pages, while all 24 ads point
+      at offeraustin.* offer pages
+    proposed_state: point each sitelink at the matching offer page, which exists for all 12 themes
+    why_blocked: The offer pages convert better by design but their form gform_3 captures NO gclid, while
+      the current main-site destinations use gform_1 which does. Repointing today would move sitelink
+      traffic from a well-attributed page to a badly-attributed one and would increase the number of leads
+      we cannot tie back. Green Marketing policy also forbids changing a final URL merely because another
+      page looks more relevant.
+    unblock_condition: SPEC-001 delivered and verified, so gform_3 captures gclid, gbraid, wbraid and
+      UTMs. Then this is regenerated with its own fingerprint.
+    evidence: 4 sitelink clicks costing $153.72 at a $38.43 CPC with zero conversions over the campaigns'
+      life. All 11 tested main-site destinations return HTTP 200 with correct Austin-market content.
+    rollback: restore the current main-site URLs, all recorded in 15_phase2_theme_ad_and_asset_audit.md
+  open_questions:
+  - id: Q1
+    question: The BUSINESS_LOGO asset on both campaigns is AUTOMATICALLY_CREATED, which deviates from
+      the Green Marketing default of automatically created assets off. Keep it or remove it?
+    recommendation: Keep it, and record the deviation as approved. It makes no claim, and CTR is the weakest
+      Quality Score component, so removing an asset that tends to help CTR would work against the goal.
+    blocks: nothing in this plan
+  - id: Q2
+    question: Hardscaping | Near Me still points at the main site while its 11 siblings point at offer
+      pages. Leave the unintended A/B running?
+    recommendation: Leave it. It produced 1 conversion from 3 clicks against 0 from 4 on the matching
+      offer page. The sample is far too small to call and it is the only live read we have on offer page
+      versus main site.
+    blocks: nothing in this plan
+  - id: Q3
+    question: Approve enabling the 24 new ads once they are created and read back?
+    recommendation: Enable all 24 together so the test starts cleanly across every ad group on the same
+      day. That needs its own ENABLE fingerprint after readback.
+    blocks: the ENABLE step only

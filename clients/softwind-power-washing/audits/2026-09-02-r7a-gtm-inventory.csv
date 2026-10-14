@@ -1,0 +1,33 @@
+field,value,evidence_source,public_evidence_substitute
+GTM account name,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Container name,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Container public ID,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,GTM-P3LD97NN - confirmed from delivered HTML
+Container numeric ID,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Published version,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Published timestamp,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Current workspace,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Unpublished changes,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Environments,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Consent configuration,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,no CSP header; consent-mode ccm/collect requests observed
+Conversion Linker,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Google tags,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,"gtag/js loaders observed for AW-18369652705, AW-17878095007, G-D4BZM40RYD"
+Google Ads conversion tags,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,conversion fires on /thank-you/ to 18369652705
+Google Ads website-call tags,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,wcm fires for 17878095007 on all 7 pages; zero for 18369652705
+Google Ads remarketing tags,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,viewthroughconversion + rmkt/collect + 1p-user-list for BOTH accounts
+GA4 tags,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,G-D4BZM40RYD observed
+WhatConverts tags,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,"loaded by a WordPress plugin, not GTM"
+ClickCease tags,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,clickcease.com/monitor/stat.js observed
+Custom HTML tags,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,process.iconnode.com POST has no HTML source - consistent with a GTM Custom HTML tag
+iconnode tags,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,"1 POST per page, zero source occurrences"
+Form listeners,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,en=form_start / en=form_submit observed for 17878095007 only
+Pageview triggers,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Thank-you-page triggers,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,PROVEN: bare /thank-you/ visit fires the conversion
+History-change triggers,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Gravity Forms triggers,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Custom-event triggers,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,"dataLayer carries only gtm.js x2, gtm.dom, gtm.load - NO custom form-success event exists"
+Variables for form success,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,none observable
+Variables for phone replacement,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Variables for click ids and UTMs,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,GCLID/GBRAID/WBRAID/UTMs all reach the form POST
+Tag firing priority,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Tag sequencing,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,
+Trigger exceptions,ACCESS UNAVAILABLE - NOT INSPECTED,no Tag Manager OAuth scope and no GTM credential,

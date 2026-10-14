@@ -1,0 +1,153 @@
+{
+ "package": "ambient-cooling-heating-NEGATIVES-AUTOMOTIVE-INTENT-AC-REPAIR",
+ "version": "2026-08-22",
+ "priority": "P1",
+ "run_class": "DRAFT + VALIDATE-ONLY. NOT EXECUTED. Requires its own approval.",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "scope": {
+  "campaign_id": "24132507741",
+  "campaign": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+  "level": "CAMPAIGN-level negative keywords",
+  "why_this_campaign_only": "All seven observed vehicle and marine AC search terms occurred in the AC Repair campaign. Applying the negatives to the other four campaigns would be speculative, because no automotive term has been observed there. If one appears later the monitoring plan catches it and the scope can be widened on evidence.",
+  "why_not_account_level": "The ACCOUNT_LEVEL_NEGATIVE_KEYWORDS set 11252984411 applies to all 23 campaigns in the account, including legacy campaigns outside this engagement. Campaign-level keeps the blast radius to the campaign that actually produced the waste.",
+  "why_not_a_shared_list": "No shared set is attached to any of the five campaigns today, and attaching one would change that property. Campaign-level negatives preserve it."
+ },
+ "the_operations": [
+  {
+   "seq": 1,
+   "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+   "operation": "create",
+   "type": "KEYWORD",
+   "negative": true,
+   "text": "car",
+   "match_type": "BROAD",
+   "campaign": "customers/2401959466/campaigns/24132507741",
+   "observed_terms_it_stops": [
+    "car air conditioner repair near me",
+    "ac car repair near me",
+    "bmw car ac repair near me",
+    "car ac repair near me",
+    "car ac service near me"
+   ],
+   "observed_clicks": 2,
+   "observed_cost_usd": 47.78,
+   "observed_conversions": 0.0,
+   "evidence_strength": "STRONG - 5 distinct observed terms, cost-bearing, repeated"
+  },
+  {
+   "seq": 2,
+   "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+   "operation": "create",
+   "type": "KEYWORD",
+   "negative": true,
+   "text": "auto",
+   "match_type": "BROAD",
+   "campaign": "customers/2401959466/campaigns/24132507741",
+   "observed_terms_it_stops": [
+    "auto ac repair near me"
+   ],
+   "observed_clicks": 0,
+   "observed_cost_usd": 0.0,
+   "observed_conversions": 0.0,
+   "evidence_strength": "MODERATE - 1 observed term, same vehicle-AC intent family as 'car'"
+  },
+  {
+   "seq": 3,
+   "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+   "operation": "create",
+   "type": "KEYWORD",
+   "negative": true,
+   "text": "boat",
+   "match_type": "BROAD",
+   "campaign": "customers/2401959466/campaigns/24132507741",
+   "observed_terms_it_stops": [
+    "boat air conditioner repair near me"
+   ],
+   "observed_clicks": 0,
+   "observed_cost_usd": 0.0,
+   "observed_conversions": 0.0,
+   "evidence_strength": "MODERATE - 1 observed term, marine-AC intent, no residential overlap"
+  }
+ ],
+ "evidence": {
+  "window": "since launch 2026-08-14 through 2026-08-21, all four windows checked",
+  "total_irrelevant_spend_identified_usd": 65.02,
+  "automotive_and_marine_spend_usd": 47.78,
+  "automotive_and_marine_terms_observed": 7,
+  "conversions_from_those_terms": 0.0,
+  "note": "Search-term corpus was classified with a service-intent whitelist. Full verdict table saved to exports/search-terms-verdicts-2026-08-21d.csv (1,612 rows across four windows)."
+ },
+ "conflict_testing_2026_08_22": {
+  "blocks_ambient_service_phrases": 0,
+  "service_phrases_tested": 31,
+  "carrier_brand_safety": "Negative keywords match on whole words. Negative broad 'car' does NOT block 'carrier ac repair', because 'carrier' is a different word. Explicitly tested.",
+  "blocks_active_positive_keywords": 0,
+  "active_positive_keywords_tested": [
+   "ac repair near me",
+   "gas boiler repair",
+   "hvac installers",
+   "hvac repair near me",
+   "hvac replacement near me"
+  ],
+  "already_in_account_level_set_11252984411": false,
+  "account_level_set_member_count": 59,
+  "shared_sets_attached_to_the_five": 0,
+  "existing_campaign_negatives_on_the_five": 0,
+  "existing_ad_group_negatives_on_the_five": 0,
+  "protected_terms_touched": 0,
+  "caution_list_terms_touched": 0,
+  "converting_terms_blocked": 0,
+  "verdict": "CLEAR on every test."
+ },
+ "terms_deliberately_NOT_negated": {
+  "goodman certified technician near me": "NOT negated. Goodman is an HVAC brand. A homeowner searching for a Goodman-certified technician may want service Ambient can perform. An earlier automated pass flagged it on the token 'certified'; that was too aggressive and is withdrawn.",
+  "home depot mini split installation cost": "NOT negated. $17.24, one click. Retailer-framed, but the searcher wants mini-split installation, which Ambient performs. Classified WATCH, not NEGATIVE. One click is not a repeated pattern.",
+  "lowes hvac installation": "NOT negated. Zero clicks, zero cost. WATCH.",
+  "midea hvac distributor near me": "NOT negated. Zero clicks. Distributor intent is weak but unproven at one occurrence.",
+  "single_word_service_terms": "repair, installation, replacement, boiler, furnace, ac, hvac, heating, commercial and residential were NOT considered. They are on the agency caution list and would block core demand.",
+  "protected_terms": "near me, quote, price, pricing, cost, best, hire, local and emergency were NOT considered. Agency policy protects them."
+ },
+ "expected_impact": "Prevents recurrence of vehicle and marine AC clicks in the AC Repair campaign. Based on the observed 8-day window this is roughly $47.78 of avoided waste, about 4.8% of AC Repair spend. It does not add reach and will not raise conversions by itself.",
+ "risk": "LOW. Three campaign-level negatives, fully reversible, zero conflict, zero converting terms blocked.",
+ "rollback_plan": "Remove the three created campaign criteria by resource name. 3 mutations.",
+ "readback_verification": [
+  "ASSERT campaign 24132507741 holds exactly 3 negative keyword criteria.",
+  "ASSERT each is BROAD, negative=true, text in {car, auto, boat}.",
+  "ASSERT the other four campaigns still hold 0 campaign-level negatives.",
+  "ASSERT no shared set became attached to any of the five campaigns.",
+  "ASSERT account-level set 11252984411 still reports 59 members via shared_criterion.",
+  "ASSERT active positive keyword count in the five is unchanged.",
+  "ASSERT campaign_criteria total rises by exactly 3."
+ ],
+ "monitoring": [
+  "24 hours: confirm no legitimate AC Repair query was blocked; check impressions did not fall more than the automotive share.",
+  "72 hours: review search terms for new vehicle or marine phrasings not covered by the three tokens, for example truck, van, rv, motorhome, tractor.",
+  "7 settled days: confirm AC Repair CTR and CPC improved or held, and that qualified lead flow did not fall."
+ ],
+ "mutation_counts": {
+  "creates": 3,
+  "updates": 0,
+  "removals": 0,
+  "total_mutations": 3,
+  "negative_keywords": 3,
+  "positive_keywords": 0,
+  "campaigns_touched": 1,
+  "budgets_touched": 0,
+  "ads_touched": 0,
+  "shared_lists_touched": 0,
+  "account_level_negatives_touched": 0
+ },
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 3,
+  "errors": 0
+ },
+ "drift_assumptions": "Assumes campaign 24132507741 still holds zero campaign-level negative keywords and that no shared negative list has been attached to it.",
+ "plan_fingerprint": "EACEC7CBAE85FF2B"
+}

@@ -1,0 +1,166 @@
+# VOID 2026-08-26 - fingerprint 5B9BCFA06FD5
+# Actions-empty specification awaiting demand inputs. Those inputs are now resolved, so it is replaced by the populated PLAN-I1B. A no-op plan must never carry an approval command.
+
+change_plan:
+  plan_id: PLAN-I1A
+  plan_title: August budget headroom, recalculated after demand is final
+  approval_type: BUDGET
+  priority: R1-DEFERRED
+  approval_status: VOID - DO NOT APPROVE
+  execution_status: VOID - DO NOT EXECUTE
+  recommended_approval_order: 8
+  ads_mutation_count: 2
+  requires_separate_enable_approval: false
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  supersedes:
+    plan_id: PLAN-I1
+    fingerprint: 9308DFCF8741
+    status: SUPERSEDED IN ORDER - NOT VOID
+    reason: PLAN-I1's normalized actions are unchanged and its fingerprint remains valid as
+      written, so it is not void. But its $299.93 / $88.21 split was derived from addressable-demand
+      ratios measured BEFORE PLAN-I2 was voided and BEFORE any geo decision. Executing it now
+      would allocate budget against a demand picture that no longer applies.
+  fingerprint_status:
+    state: NOT GENERATED
+    reason: A budget fingerprint hashes exact amount_micros values. Those values cannot be computed
+      until the demand inputs below are settled. Generating a fingerprint over provisional amounts
+      would create an approvable artifact that encodes assumptions already known to be stale
+      - the precise failure this plan exists to prevent.
+    generate_when: All six blocking inputs below are resolved.
+    generate_new_fingerprint_if: Either campaign budget differs from PLAN-I1's values ($299.93
+      for 24103511039, $88.21 for 24145053510). If both land identically, PLAN-I1's fingerprint
+      9308DFCF8741 may be used unchanged.
+  blocking_inputs:
+  - id: DEP-1
+    input: Walter's exact service-area confirmation
+    source: 2026-08-26-plan-i4-service-area-opportunity.md section 7
+    why_it_changes_the_budget: 'Measured demand multipliers: current 8 targets 360/month; +Town
+      of Islip +Oyster Bay 750 (2.08x); six towns 1,090 (3.03x); eight towns 1,650 (4.58x).
+      Addressable demand is the denominator of the whole allocation. A 4.58x demand increase
+      does not merely raise the budget - it changes WHICH campaign should hold it, because the
+      added towns do not distribute evenly across the two intent families.'
+    status: NOT SUPPLIED
+  - id: DEP-2
+    input: Final PLAN-I2A composition
+    source: PLAN-I2A-E, PLAN-I2A-C, PLAN-I2A-EN
+    why_it_changes_the_budget: PLAN-I2 would have put 140 distinct monthly searches into campaign
+      A and 60 into campaign B. PLAN-I2A-C instead puts Power Washing Service (70) and Power
+      Washing Long Island (40) into campaign A, and Pressure Washing Service (70) and House
+      Washing Near Me (40) into campaign B - a 110/110 split rather than 140/60. That alone
+      moves the allocation ratio from roughly 70/30 toward 50/50.
+    status: NOT FINAL - PLAN-I2A-C not approved
+  - id: DEP-3
+    input: Whether PLAN-I5 is approved and enabled
+    source: PLAN-I5 fingerprint A63D86DB3602
+    why_it_changes_the_budget: Adds 70 monthly searches to campaign B, which would tip the ratio
+      further toward B.
+    status: NOT APPROVED
+  - id: DEP-4
+    input: Whether PLAN-I3 schedule expansion is approved
+    source: PLAN-I3 fingerprint 7AE33D2F16C5, blocked on SCHED-Q1..Q6
+    why_it_changes_the_budget: Schedule reach moves from 53.1% to roughly 90% under Scenario
+      B. That multiplies daily spendable demand on BOTH campaigns and therefore raises the minimum
+      viable daily budget, without changing the split.
+    status: BLOCKED
+  - id: DEP-5
+    input: Fresh same-minute MTD spend at the moment of recalculation
+    source: scripts/softwind_rescue_snapshot.py
+    why_it_changes_the_budget: R = 2500 - S, and D shrinks by one every midnight. On 2026-08-26
+      the required daily figure was $388.14 across 6 days. On 2026-08-28 the same remaining
+      balance across 4 days would require $582.21/day. The number moves every single day, so
+      it must be recomputed at execution time, never carried over.
+    status: MUST BE RE-TAKEN AT EXECUTION TIME
+  - id: DEP-6
+    input: Fresh Search Lost IS (budget) and Lost IS (rank) per campaign
+    source: same snapshot
+    why_it_changes_the_budget: At 2026-08-26 the account showed lost IS (budget) 2.4% / none
+      and lost IS (rank) 58.3% / 30.0%. If lost IS (budget) is still near zero after any raise,
+      the budget is not the constraint and further increases only inflate CPC. If it rises above
+      roughly 20%, budget genuinely is binding and a further raise is justified.
+    status: MUST BE RE-TAKEN AT EXECUTION TIME
+  recalculation_procedure:
+    step_1_fresh_snapshot: Run scripts/softwind_rescue_snapshot.py. Record the exact account-local
+      timestamp, MTD spend S, and per-campaign impressions, clicks, cost, CTR, CPC, search impression
+      share, lost IS (budget) and lost IS (rank).
+    step_2_remaining_budget: R = 2500.00 - S
+    step_3_remaining_time: D = calendar days remaining including today. H = hours from the snapshot
+      timestamp to 2026-09-01 00:00 America/New_York.
+    step_4_minimum_combined_budget: 'minimum_combined_average_daily_budget = R / D. Verify the
+      Google mid-month rule: S + (proposed combined budget x D) must be >= 2500.'
+    step_5_addressable_demand_per_campaign: 'For each campaign compute addressable = impressions
+      / search_impression_share. Then ADD the newly approved demand: for each enabled or created
+      SKAG, add its distinct Planner monthly volume divided by 30.44, multiplied by the schedule
+      reach fraction in force (0.531 today, ~0.90 under PLAN-I3 Scenario B, 1.00 under 24/7).
+      Then multiply by the geo multiplier for the confirmed footprint (1.00 / 2.08 / 3.03 /
+      4.58).'
+    step_6_allocation: Split R/D in proportion to step 5. Re-present Model 1 (proportional),
+      Model 2 (primary weighted) and Model 3 (equal), and recommend one on the evidence rather
+      than on convention.
+    step_7_cross_campaign_ownership: 'Confirm every intent family is owned by exactly one campaign.
+      Under PLAN-I2A the split is: campaign A owns power-washing phrasing and the Long Island
+      region intent; campaign B owns pressure, house and soft washing. Budget must follow ownership,
+      not history.'
+    step_8_sanity_check: If lost IS (budget) is still below 5% at the previous budget level,
+      state plainly that the budget is NOT the binding constraint and that a further raise will
+      inflate CPC rather than volume.
+  provisional_values_do_not_approve:
+    note: Recorded only to show what changes. These are NOT the proposed values and must not
+      be executed.
+    plan_i1_as_modelled_2026_08_26:
+      campaign_24103511039: 299.93
+      campaign_24145053510: 88.21
+      combined: 388.14
+      basis: addressable 13.6/day vs 4.0/day = 77.3 / 22.7
+    indicative_after_plan_i2a_only_no_geo:
+      campaign_24103511039: approximately 220
+      campaign_24145053510: approximately 168
+      combined: 388.14
+      basis: PLAN-I2A-C adds 110 monthly searches to each campaign rather than PLAN-I2's 140/60,
+        moving the ratio from roughly 77/23 to roughly 57/43.
+      confidence: INDICATIVE ONLY - not computed from a fresh snapshot
+    if_geo_is_approved: Both figures rise and the ratio shifts again, because the added towns
+      do not distribute evenly across the two intent families. Not estimated here - it must
+      be measured after the footprint is confirmed.
+  budget_does_not_guarantee_spend: 'At the 2026-08-26 snapshot, lost IS (budget) was 2.4% on
+    campaign A and unreported on campaign B, while lost IS (rank) was 58.3% and 30.0%. Budget
+    was not the constraint then and raising it will not create auction demand. With PLAN-B on
+    hold and Maximize Clicks uncapped, a larger budget in a thin pool bids UP: this account
+    went from $5.71 to $54.49 CPC in eight days after its CPC ceiling was removed. Any budget
+    raise must be paired with the emergency high-CPC stop condition and watched from the first
+    checkpoint.'
+  actions: []
+  actions_note: Deliberately empty. Exact amount_micros values cannot be written until the six
+    blocking inputs are resolved. Populating them with provisional numbers would produce an
+    approvable artifact encoding stale assumptions.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 0
+    note: Zero until the plan is populated. The eventual plan will change exactly 2 budgets.
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  void_status:
+    state: VOID
+    voided_on: '2026-08-26'
+    fingerprint_voided: 5B9BCFA06FD5
+    reason: Actions-empty specification awaiting demand inputs. Those inputs are now resolved,
+      so it is replaced by the populated PLAN-I1B. A no-op plan must never carry an approval
+      command.

@@ -1,0 +1,195 @@
+{
+ "generated_local": "2026-09-10T10:28:02.738219-04:00",
+ "pinning_diagnostic": [
+  {
+   "camp": "HVAC Replacement",
+   "ad": "821319509203",
+   "strength": "GOOD",
+   "n": 15,
+   "pinned": 0,
+   "with_service_kw": 8,
+   "first3_have_service_kw": 3,
+   "h1": "HVAC Replacement in Severn"
+  },
+  {
+   "camp": "HVAC Replacement",
+   "ad": "821319509206",
+   "strength": "EXCELLENT",
+   "n": 15,
+   "pinned": 0,
+   "with_service_kw": 5,
+   "first3_have_service_kw": 2,
+   "h1": "HVAC Replacement Done Right"
+  },
+  {
+   "camp": "Gas Boiler Repair",
+   "ad": "821319509209",
+   "strength": "EXCELLENT",
+   "n": 15,
+   "pinned": 0,
+   "with_service_kw": 12,
+   "first3_have_service_kw": 3,
+   "h1": "Gas Boiler Repair in Severn"
+  },
+  {
+   "camp": "Gas Boiler Repair",
+   "ad": "821319509212",
+   "strength": "EXCELLENT",
+   "n": 15,
+   "pinned": 0,
+   "with_service_kw": 9,
+   "first3_have_service_kw": 3,
+   "h1": "Gas Boiler Repair Done Right"
+  },
+  {
+   "camp": "HVAC Installation",
+   "ad": "821319509197",
+   "strength": "POOR",
+   "n": 15,
+   "pinned": 0,
+   "with_service_kw": 10,
+   "first3_have_service_kw": 3,
+   "h1": "HVAC Installers in Severn"
+  },
+  {
+   "camp": "HVAC Installation",
+   "ad": "821319509200",
+   "strength": "EXCELLENT",
+   "n": 15,
+   "pinned": 0,
+   "with_service_kw": 6,
+   "first3_have_service_kw": 2,
+   "h1": "HVAC Installation Done Right"
+  },
+  {
+   "camp": "HVAC Repair",
+   "ad": "821714108336",
+   "strength": "EXCELLENT",
+   "n": 15,
+   "pinned": 0,
+   "with_service_kw": 6,
+   "first3_have_service_kw": 3,
+   "h1": "HVAC Repair in Severn, MD"
+  },
+  {
+   "camp": "HVAC Repair",
+   "ad": "821714108339",
+   "strength": "EXCELLENT",
+   "n": 15,
+   "pinned": 0,
+   "with_service_kw": 6,
+   "first3_have_service_kw": 3,
+   "h1": "HVAC Repair Recommendations"
+  },
+  {
+   "camp": "AC Repair",
+   "ad": "820900825416",
+   "strength": "AVERAGE",
+   "n": 15,
+   "pinned": 0,
+   "with_service_kw": 14,
+   "first3_have_service_kw": 3,
+   "h1": "AC Repair in Severn"
+  },
+  {
+   "camp": "AC Repair",
+   "ad": "820900825419",
+   "strength": "AVERAGE",
+   "n": 15,
+   "pinned": 0,
+   "with_service_kw": 8,
+   "first3_have_service_kw": 2,
+   "h1": "Stop Guessing About Your AC"
+  }
+ ],
+ "challenger": {
+  "plan_name": "AMB-0910-RSA-ACR-1",
+  "approval_class": "create-paused",
+  "generated_local": "2026-09-10T10:28:02.738219-04:00",
+  "target": {
+   "customer_id": "2401959466",
+   "exact_child_account_name": "Ambient Cooling - Live",
+   "manager_customer_id": "3373711342",
+   "vertical": "heating-cooling",
+   "primary_service": "AC Repair",
+   "related_services": [
+    "HVAC Repair",
+    "HVAC Installation",
+    "HVAC Replacement",
+    "Gas Boiler Repair"
+   ]
+  },
+  "summary": "Create ONE paused AC Repair RSA challenger with 3 headlines pinned to position 1. Nothing is enabled and no existing ad is edited.",
+  "object_count": 1,
+  "partial_failure": false,
+  "atomic": true,
+  "operations": [
+   {
+    "operation": "CREATE_RSA_PAUSED",
+    "resource": "ad_group_ad",
+    "resource_id": "202339087834",
+    "resource_name": "SKAG | AC Repair Near Me",
+    "campaign_id": "24132507741",
+    "campaign": "AC Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/ac-repair/",
+    "path1": "ac-repair",
+    "path2": "severn-md",
+    "status": "PAUSED",
+    "headlines_pinned_headline_1": [
+     "AC Repair in Severn, MD",
+     "AC Repair Near You Today",
+     "Air Conditioner Repair MD"
+    ],
+    "headlines_unpinned": [
+     "Licensed & Insured AC Repair",
+     "Free AC Repair Estimate",
+     "AC Not Cooling? We Can Help",
+     "Local Anne Arundel AC Repair",
+     "AC Repair in Severna Park",
+     "AC Repair in Columbia, MD",
+     "Book Your AC Repair Visit",
+     "Talk to a Real Technician",
+     "Straight AC Repair Pricing",
+     "Residential & Commercial AC",
+     "Fix My AC Unit",
+     "Call for AC Repair Help"
+    ],
+    "descriptions": [
+     "Licensed and insured AC repair across Severn, Severna Park and Columbia. Free estimates.",
+     "AC not cooling? Book a repair visit and get straight pricing before any work begins.",
+     "Local Anne Arundel County technicians. Residential and commercial air conditioning repair.",
+     "Request your free AC repair estimate today and get your home comfortable again."
+    ],
+    "current_state": "ad group 202339087834 holds 2 ENABLED APPROVED RSAs (820900825416, 820900825419)",
+    "proposed_state": "one additional RSA created PAUSED; both existing RSAs untouched",
+    "reason": "Challenger for ad 820900825419, whose 15 headlines are largely non-specific ('Stop Guessing About Your AC', 'Get Clear Answers First', 'Bring Comfortable Air Back') and which measured 2.77% CTR against 820900825416's 3.56% at equivalent auction position. Three headlines are pinned to position 1 so the service keyword always leads, while Google still chooses among the three.",
+    "rollback": "remove the created ad_group_ad by its returned resource name; it is created PAUSED so it can never serve before a separate enable approval",
+    "risk": "LOW - created PAUSED, no existing ad is edited",
+    "unrelated_resource_assertion": "ads 820900825416 and 820900825419 must remain ENABLED and APPROVED; ad group 202339087834 must hold 3 ads afterwards, exactly 2 of them ENABLED"
+   }
+  ],
+  "notes": {
+   "pinning_rationale": "Pinning exactly one headline to position 1 removes all variation from the most visible slot and stops Google testing openers. Pinning THREE to position 1 guarantees a service-keyword opener while preserving rotation. Three is the safer of the two options.",
+   "claims_used": [
+    "Licensed & Insured - authorized by the client 2026-09-10",
+    "Free Estimates - approved baseline claim",
+    "Residential & Commercial - corroborated on the live site and by a third-party directory"
+   ],
+   "claims_deliberately_avoided": [
+    "24/7",
+    "emergency service",
+    "same-day service",
+    "guaranteed response",
+    "financing",
+    "rebates",
+    "discounts",
+    "warranty",
+    "ratings or review counts"
+   ],
+   "outstanding_before_enable": "Obtain the Maryland Master HVACR licence number and the certificate of insurance and record them in work-order.yaml. The landing page also does not yet say licensed and insured; message match should be fixed before enabling.",
+   "measurement_plan": "Do not enable both challenger and control at once. After a separate enable approval, run at least 14 settled days and at least 500 impressions per ad, compare relevant CTR by device at equivalent position, and require no deterioration in unique qualified CVR and no breach of the $150 AC Repair CPQL.",
+   "requires_new_approval": true
+  },
+  "fingerprint": "19E2F2FFC311"
+ }
+}

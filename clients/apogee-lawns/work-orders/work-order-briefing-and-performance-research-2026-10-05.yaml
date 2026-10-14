@@ -1,0 +1,87 @@
+work_order:
+  client_slug: apogee-lawns
+  business_name: Apogee Lawns LLC
+  account:
+    # Supplied by the user 2026-10-05: "Apogee Lawns LLC - Live" and 816-462-6278.
+    # Re-checked by a fresh read-only API lookup in this run (scripts/apg_1005_snapshot.py).
+    # The '- live' marker identifies a candidate only and authorizes nothing.
+    exact_child_account_name: "Apogee Lawns LLC - Live"
+    child_customer_id: "8164626278"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: similar-local-service
+    # The user named "the service promoted"; the validated work order and client profile
+    # record exactly one service for this account.
+    exact_primary_service: Permanent Christmas light installation
+    related_services: []
+  task:
+    type: audit
+    # READ for every connected system (Google Ads API incl. Keyword Planner, public website,
+    # published GTM container script, WhatConverts API). DRAFT for local files only.
+    # This work order authorizes NO persistent external change of any kind.
+    mode: draft
+    request: >-
+      (1) Full handoff briefing of everything done on this account (strategy, structure,
+      keywords, every RSA headline and description with its final URL, sitelinks, structured
+      snippets, callouts, call and location assets, targeting, bidding, conversions, GTM,
+      WhatConverts, decisions, open items) so the owner can brief a new ChatGPT chat.
+      (2) Research why the campaign shows low CTR, few impressions, few clicks and no
+      conversions, including whether this is the season people search for the service.
+      (3) Keyword analysis and a search-term study to decide whether to replace keywords or
+      add new ones. No create, update, pause, enable, delete, publish, upload, form
+      submission, call, ad click, GTM, WordPress, WhatConverts, billing or Drive change.
+    date_range: >-
+      Campaign first serving 2026-09-21 through 2026-10-04 (completed days, America/Chicago).
+      2026-10-05 is a partial day and is reported separately. Keyword Planner monthly
+      history to the latest settled month.
+    raw_search_terms_in_deliverable: true
+    raw_search_terms_reason: >-
+      The request requires studying the actual search terms to judge whether keywords should
+      be replaced or added, and the briefing must carry them for the owner. Service is
+      permanent Christmas light installation; the massage-account isolation rule does not
+      apply. No caller, form or contact PII is included anywhere.
+  scope_approval:
+    # Reused, not re-requested: recorded 2026-09-16 in clients/apogee-lawns/work-order.yaml
+    # as CONFIRMED_BY_NAMED_APPROVER. Nothing here is inferred or newly attested.
+    approved: true
+    approved_by: "Walter"
+    reason: "it is a closely related local home-service installation service"
+  inputs:
+    website_or_final_url: "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+    service_area:
+      - "68372, Nebraska, United States"
+      - "68430, Nebraska, United States"
+      - "68527, Nebraska, United States"
+      - "68347, Nebraska, United States"
+      - "68526, Nebraska, United States"
+      - "68461, Nebraska, United States"
+      - "68516, Nebraska, United States"
+      - "68520, Nebraska, United States"
+      - "Waverly, Nebraska, United States"
+      - "Eagle, Nebraska, United States"
+      - "Lincoln, Nebraska, United States"
+      - "Ashland Township, Nebraska, United States"
+      - "Crete, Nebraska, United States"
+      - "Nemaha Precinct, Nebraska, United States"
+    # Approved total is $500/month. $16.44 x 30.4 = $499.78. Re-verified live in this run.
+    daily_budget: 16.44
+    primary_conversion_goal: >-
+      Qualified permanent-lighting leads: accepted form submission on the approved thank-you
+      state, calls from ads at 60 seconds, and website calls at 60 seconds. Owner definition
+      of qualified (2026-09-28): asks for permanent Christmas light installation on the form
+      or on the call.
+    source_files:
+      - clients/apogee-lawns/client.yaml
+      - clients/apogee-lawns/work-order.yaml
+      - clients/apogee-lawns/IMPLEMENTATION-RECORD.md
+      - clients/apogee-lawns/audits/2026-09-28-independent/
+      - clients/apogee-lawns/audits/2026-09-28-measurement-repair/
+      - clients/apogee-lawns/plans/
+      - clients/apogee-lawns/receipts/
+    settled_decisions_carried_forward:
+      omaha: "EXCLUDED - work-order.yaml location_decision_2026_09_16: settled, not to be reopened on search volume or website wording"
+      advertising_phone: "402-526-5754 is the advertising, landing-page and WhatConverts number; 402-202-7261 is the forwarding destination only (owner ruling 2026-09-17)"
+      head_term_match_type: "permanent christmas lights stays EXACT-only until search-term evidence justifies Phrase; the Phrase test APG-0928-KW-P is gated on verified measurement and 2026-10-15 or later"
+      tablets: "EXCLUDED by owner decision 2026-09-28 (landing pages not tablet optimized); DEV-T2 REJECTED"
+      budget_total_usd_per_month: 500
+  approval_owner: "Green Marketing"

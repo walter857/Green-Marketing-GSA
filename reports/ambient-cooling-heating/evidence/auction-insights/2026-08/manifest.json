@@ -1,0 +1,143 @@
+{
+ "generated_local": "2026-09-10T13:36:31.334029-04:00",
+ "account": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "date_range": {
+  "start": "2026-08-01",
+  "end": "2026-08-31",
+  "note": "EXACT range. Do NOT use 'Last 30 days'."
+ },
+ "required_columns": [
+  "Display URL domain",
+  "Impression share",
+  "Overlap rate",
+  "Position above rate",
+  "Top of page rate",
+  "Absolute top of page rate",
+  "Outranking share"
+ ],
+ "literal_preservation": "Preserve '<10%' literally. Do not coerce it to a number.",
+ "insufficient_activity_rule": "If Google reports insufficient activity, record status NOT_AVAILABLE_MINIMUM_ACTIVITY. Do NOT widen the window.",
+ "export_status": "NOT_EXPORTED",
+ "blocker": "Claude in Chrome is not connected to this session. No /chrome command and no browser-control tool (navigate/click/screenshot on an authenticated Chrome profile) is available. Auction Insights is also not exposed through the Google Ads API to this developer token: 'auction_insight' is an unrecognized resource and campaign_search_term_insight is a different report. A headless Playwright browser cannot be used because it carries no Google session, and requesting cookies, tokens or credentials is prohibited.",
+ "resolution": "Connect Claude in Chrome to the native Windows Chrome profile already signed in to Ambient Cooling - Live / 240-195-9466 under the Green Marketing manager, then re-run this workstream. Login, MFA and CAPTCHA stay with the user.",
+ "read_only_contract": "Read + download + analyze only. Never click Apply recommendations, Review campaigns, status controls, bid or budget fields, Edit, or pencil icons.",
+ "analysis_contract": "Auction Insights alone never justifies a competitor negative or a higher bid.",
+ "expected_files": [
+  {
+   "filename": "campaign-AC-Repair.csv",
+   "scope": "campaign",
+   "name": "AC Repair",
+   "id": "24132507741",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  },
+  {
+   "filename": "campaign-Gas-Boiler-Repair.csv",
+   "scope": "campaign",
+   "name": "Gas Boiler Repair",
+   "id": "24132507744",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  },
+  {
+   "filename": "campaign-HVAC-Installation.csv",
+   "scope": "campaign",
+   "name": "HVAC Installation",
+   "id": "24132507747",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  },
+  {
+   "filename": "campaign-HVAC-Repair.csv",
+   "scope": "campaign",
+   "name": "HVAC Repair",
+   "id": "24132507750",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  },
+  {
+   "filename": "campaign-HVAC-Replacement.csv",
+   "scope": "campaign",
+   "name": "HVAC Replacement",
+   "id": "24132507753",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  },
+  {
+   "filename": "ad_group-SKAG_AC-Repair-Near-Me.csv",
+   "scope": "ad_group",
+   "name": "SKAG | AC Repair Near Me",
+   "id": "202339087834",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  },
+  {
+   "filename": "ad_group-SKAG_HVAC-Repair-Near-Me.csv",
+   "scope": "ad_group",
+   "name": "SKAG | HVAC Repair Near Me",
+   "id": "202339087674",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  },
+  {
+   "filename": "ad_group-SKAG_HVAC-Installation.csv",
+   "scope": "ad_group",
+   "name": "SKAG | HVAC Installation",
+   "id": "202339087634",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  },
+  {
+   "filename": "ad_group-SKAG_HVAC-Replacement-Near-Me.csv",
+   "scope": "ad_group",
+   "name": "SKAG | HVAC Replacement Near Me",
+   "id": "200159223798",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  },
+  {
+   "filename": "ad_group-SKAG_Gas-Boiler-Repair.csv",
+   "scope": "ad_group",
+   "name": "SKAG | Gas Boiler Repair",
+   "id": "202339087594",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  },
+  {
+   "filename": "pooled-five-campaign-baseline-(optional).csv",
+   "scope": "pooled",
+   "name": "five-campaign baseline (optional)",
+   "id": "24132507741,24132507744,24132507747,24132507750,24132507753",
+   "status": "NOT_EXPORTED",
+   "row_count": null,
+   "headers": null,
+   "sha256": null
+  }
+ ]
+}

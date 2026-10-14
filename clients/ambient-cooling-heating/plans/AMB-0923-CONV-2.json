@@ -1,0 +1,77 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-09-23",
+ "plan_name": "AMB-0923-CONV-2",
+ "approval_class": "update-conversion-action-primary-flag",
+ "scope": "conversion_action.primary_for_goal ONLY",
+ "nothing_deleted": true,
+ "nothing_disabled": true,
+ "no_budget_bid_keyword_ad_targeting_or_status_change": true,
+ "bidding_impact": "NONE today. Every enabled campaign uses TARGET_SPEND (Maximize Clicks with a CPC ceiling), which does not consume conversion goals. This corrects REPORTING and prepares for conversion-based bidding later.",
+ "supersedes_note": "AMB-0918-CONV-1 / A3370F96FA6E demoted 7643656486 and 7643656075 on 2026-09-18. Both read primary_for_goal=true again on 2026-09-23. change_event returned no CONVERSION_ACTION rows for the window (it is capped near 30 days and lags), so the reversal mechanism is NOT proven from the API. The leading hypothesis is the WhatConverts Google Ads integration re-asserting its own actions when its configuration is saved, because the screenshots show WC Lead and WC Calls selected as the integration's Lead and Call conversion names. If that is right, this repair will revert again unless the WhatConverts side is corrected too.",
+ "keep_primary": {
+  "6885463625": "Ambient Cooling - LP -Submit Lead Forms (native form)",
+  "1068114183": "Calls from ads (native call-asset call)",
+  "6885576934": "Ambient Cooling - Lp - Phone call leads (native website call)"
+ },
+ "changes": [
+  {
+   "conversion_action_id": "7389995485",
+   "name": "Ambient Cooling and Heating (web) form_submission",
+   "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+   "category": "SUBMIT_LEAD_FORM",
+   "from_primary_for_goal": true,
+   "to_primary_for_goal": false,
+   "why": "A GA4 import of the SAME website form submission already counted by the native WEBPAGE action 6885463625. Two Primary actions on one form submission double-counts it. 6 all_conversions in 90 days, 0 in the Conversions column, so it adds no measurement the native action lacks."
+  },
+  {
+   "conversion_action_id": "7643656486",
+   "name": "WC Lead",
+   "type": "UPLOAD_CLICKS",
+   "category": "CONTACT",
+   "from_primary_for_goal": true,
+   "to_primary_for_goal": false,
+   "why": "WhatConverts uploads the SAME form submission that the native WEBPAGE action already counts, so on the offer subdomain one submission is counted twice. It is also incomplete: WhatConverts profile 105803 registers exactly one form selector, #gform_1, so it captures the offer subdomain and has NEVER captured a main-site #gform_2 submission. Proven by 7/7 web-form leads since 2026-08-01 originating on the offer subdomain, and by a controlled test on 2026-09-21 where the offer form produced lead 259273825 in 26 seconds and the main-site form produced nothing. Kept ENABLED as a Secondary diagnostic; capture is NOT disabled."
+  },
+  {
+   "conversion_action_id": "7643656075",
+   "name": "WC Calls",
+   "type": "UPLOAD_CALLS",
+   "category": "CONTACT",
+   "from_primary_for_goal": true,
+   "to_primary_for_goal": false,
+   "why": "Zero conversions for its entire lifetime (0 in the last 120 days, 0 in 90, 0 in September). UPLOAD_CALLS expects Google-forwarded call data; WhatConverts tracks calls on its OWN numbers, which are not Google forwarding numbers, so this action has no supported upload route and is structurally inert. Demoted rather than deleted so nothing is lost if the upload route is later corrected."
+  }
+ ],
+ "operations": [
+  {
+   "op": "SET_CONVERSION_ACTION_SECONDARY",
+   "conversion_action_id": "7389995485",
+   "name": "Ambient Cooling and Heating (web) form_submission",
+   "from": "primary_for_goal=True",
+   "to": "primary_for_goal=false",
+   "field_mask": "primary_for_goal"
+  },
+  {
+   "op": "SET_CONVERSION_ACTION_SECONDARY",
+   "conversion_action_id": "7643656486",
+   "name": "WC Lead",
+   "from": "primary_for_goal=True",
+   "to": "primary_for_goal=false",
+   "field_mask": "primary_for_goal"
+  },
+  {
+   "op": "SET_CONVERSION_ACTION_SECONDARY",
+   "conversion_action_id": "7643656075",
+   "name": "WC Calls",
+   "from": "primary_for_goal=True",
+   "to": "primary_for_goal=false",
+   "field_mask": "primary_for_goal"
+  }
+ ],
+ "rollback": "Set primary_for_goal=true on the same three ids. Nothing is removed, disabled or reconfigured, so reversal is a single flag flip each.",
+ "operation_count": 3,
+ "fingerprint": "2550EA4C9BDC"
+}

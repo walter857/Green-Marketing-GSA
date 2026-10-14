@@ -1,0 +1,181 @@
+{
+ "package": "ambient-cooling-heating-landing-page-remediation",
+ "version": "2026-08-18",
+ "phase": "draft-only",
+ "approval_state": "NOT APPROVED - no website scope has been granted",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466"
+ },
+ "platform": "WordPress + Divi 5.10.1 + Gravity Forms 3.0.2 on SiteGround",
+ "pages": [
+  "https://offer.ambientcoolingandheating.com/ac-repair/",
+  "https://offer.ambientcoolingandheating.com/hvac-repair/",
+  "https://offer.ambientcoolingandheating.com/hvac-installation/",
+  "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+  "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+ ],
+ "prerequisites_before_any_edit": [
+  "Explicit authorization for this exact website scope.",
+  "A rollback path: full page revision snapshot or a staging copy per page.",
+  "Confirmation of what (410) 914-1456 and (410) 415-9517 are, and where each forwards.",
+  "A decision on whether WhatConverts remains the call-tracking platform."
+ ],
+ "items": [
+  {
+   "id": "LP-01",
+   "severity": "CRITICAL",
+   "defect": "Mobile Call Now button dials the WhatConverts pool number (410) 914-1456",
+   "evidence": "SERVER HTML contains href='tel:+14107610932' (the MAIN-SITE number). At runtime WhatConverts rewrites it to tel:+14109141456. Proven by selective blocking: aborting s.ksrndkehqnwntyxlhgto.com and process.iconnode.com reverts the href to +14107610932, while blocking GTM, Google WCM and gstatic call-tracking does not.",
+   "element": "a.et_pb_button_5.et_pb_button.et_pb_bg_layout_light, text 'Call Now', inside div.et_pb_button_5_wrapper > div.et_pb_column_26 > div.et_pb_row_17",
+   "breakpoint": "Element present at both widths. Rendered 0x0 and unreachable at 1440x900; rendered 175x37 and tappable at 390x844. The Divi column carries et_flex_column_24_24_phone, so it is a phone-only CTA.",
+   "pages_affected": "all five, identical",
+   "fix": "Change the underlying Divi button href from tel:+14107610932 to tel:+14107056354 so that whichever number WhatConverts swaps in forwards to the APPROVED paid line rather than the main-site line.",
+   "risk_if_unfixed": "The most prominent mobile CTA on a mobile-dominant traffic mix routes through a pool number whose forwarding target is the un-approved main-site number.",
+   "blocked_by": "Ownership and routing confirmation for (410) 914-1456."
+  },
+  {
+   "id": "LP-02",
+   "severity": "CRITICAL",
+   "defect": "Seven Gravity Forms hidden attribution fields never populate",
+   "evidence": "input_9 through input_15 and gform_field_values are all empty on a click carrying gclid, gbraid, wbraid and five UTMs, even though the parameters survive in the URL and _gcl_aw is written.",
+   "fix": "Enable 'Allow field to be populated dynamically' on each of the seven fields and map: input_9=gclid, input_10=gbraid, input_11=wbraid, input_12=utm_source, input_13=utm_medium, input_14=utm_campaign, input_15=utm_term. Add a first-party persistence layer (cookie or localStorage, 90-day) so the values survive an internal navigation, and fall back to the _gcl_aw cookie when the URL has no gclid. utm_content needs an eighth field or must be concatenated.",
+   "risk_if_unfixed": "Offline conversion import is impossible: no click identifier ever reaches the CRM, so sold-job revenue can never be attributed.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-03",
+   "severity": "HIGH",
+   "defect": "Three instances of Gravity Form 1 per page, all with id='gform_1'",
+   "evidence": "Duplicate element IDs x3: gform_wrapper_1, gform_1, gform_fields_1, field_1_1, input_1_1, field_1_3, input_1_3, field_1_4, input_1_4, field_1_7, input_1_7, field_1_9..field_1_15. Plus et-boc x2. On mobile the third instance renders collapsed (input_1_1 at 0x0), consistent with a modal.",
+   "fix": "Keep one inline form and, if a modal is wanted, give it a distinct Gravity Forms ID so element IDs are unique. Remove the third embed.",
+   "risk_if_unfixed": "label[for] resolves only to the first match, so instances 2 and 3 have no usable label association for screen readers; and any GTM trigger targeting #gform_1 binds to one instance, so submissions from the others can be missed or double-counted.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-04",
+   "severity": "HIGH",
+   "defect": "One successful lead must create exactly one conversion event",
+   "fix": "Fire the conversion only on confirmed Gravity Forms success (gform_confirmation_loaded), never on submit-click. Pass the Gravity Forms entry ID as lead_id into the dataLayer and use it as the transaction/order ID so Google Ads deduplicates. Keep the action ONE_PER_CLICK.",
+   "risk_if_unfixed": "Duplicate or phantom conversions from three form instances.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-05",
+   "severity": "HIGH",
+   "defect": "All three tel: hrefs are malformed or wrong",
+   "evidence": "Observed: tel:4107056354 (no country code), tel:(410) 705-6354 (unencoded parentheses and a space), tel:+14109141456 (unapproved). None uses the approved E.164 form.",
+   "fix": "Normalize every paid-path telephone link to tel:+14107056354.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-06",
+   "severity": "HIGH",
+   "defect": "No Privacy Policy or Terms link on any of the five pages",
+   "evidence": "Zero privacy, terms, policy or disclaimer links at either viewport.",
+   "fix": "Publish Privacy Policy and Terms on the offer subdomain and link both from every page footer. The pages collect name, email, telephone and free text.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-07",
+   "severity": "HIGH",
+   "defect": "Artificial countdown and manufactured daily deadline on all five pages",
+   "evidence": "/ac-repair/ and /hvac-repair/: 'before today's timer reaches zero'. /gas-boiler-repair/, /hvac-installation/, /hvac-replacement/: 'before today ends' and 'Start planning today'. /ac-repair/ also: 'We are accepting new clients for AC repair'.",
+   "fix": "Remove the timer and every manufactured-deadline and scarcity line. There is no evidence of a real deadline or capacity limit.",
+   "risk_if_unfixed": "Under 24/7 ad delivery, overnight visitors meet a timer that has just expired or silently reset. Misleading urgency is also a policy risk.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-08",
+   "severity": "MEDIUM",
+   "defect": "Field labelled optional but enforced as required",
+   "evidence": "'Tell us about your project (optional)*' carries an asterisk and aria-required='true' on all five pages.",
+   "fix": "Decide one way and make the label, the asterisk and aria-required agree.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-09",
+   "severity": "MEDIUM",
+   "defect": "Cross-service H2 copy on two pages",
+   "evidence": "/hvac-repair/ H2 'Recent AC Repair Work'; /gas-boiler-repair/ H2 'Your HVAC Replacement in 3 Simple Steps'.",
+   "fix": "'Recent HVAC Repair Work'; 'Your Gas Boiler Repair in 3 Simple Steps'.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-10",
+   "severity": "MEDIUM",
+   "defect": "Availability and responsiveness claims incompatible with 08:00-16:00 staffing",
+   "evidence": "'Call Now: (410) 705-6354' on all five pages; 'Prompt, Customer-Focused Service' on /hvac-repair/.",
+   "fix": "Replace 'Call Now' with 'Call Ambient' and remove 'Prompt'. Ads are eligible 24/7 but live answering is not, so no availability or response-time claim is supportable. Do NOT add 'Open 24/7', '24/7 service', '24/7 live answering', 'emergency service' or a guaranteed-response claim anywhere.",
+   "explicitly_keep": "/gas-boiler-repair/ 'Smell gas? Leave immediately and call your gas utility or 911 from a safe location.' This is a correct safety notice.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-11",
+   "severity": "MEDIUM",
+   "defect": "Unverified review quotes, each rendered three times",
+   "evidence": "Three testimonials per page labelled 'Google Review' (/ac-repair/, /hvac-repair/) or 'Customer Review' (/gas-boiler-repair/), each appearing 3x alongside the duplicate sections. client.yaml bars rating_or_review_count until verified in writing.",
+   "fix": "Verify each quote against the source Google Business Profile, record provenance, and de-duplicate so each appears once. Remove any quote that cannot be sourced.",
+   "blocked_by": "Provenance verification by the client."
+  },
+  {
+   "id": "LP-12",
+   "severity": "MEDIUM",
+   "defect": "'honest, upfront pricing' in visible body copy on /hvac-installation/",
+   "evidence": "Visible text: 'plan professional HVAC installation with honest, upfront pricing'. This is the phrase the 2026-08-17 audit suspected in the ADS; it is actually on the PAGE, whose ads are disapproved for CONSUMER_FINANCE.",
+   "fix": "Remove the phrase as appeal hygiene so the destination is unambiguously HVAC service.",
+   "note": "This does NOT prove the policy trigger. /gas-boiler-repair/ has no finance language and its ads are disapproved anyway.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-13",
+   "severity": "MEDIUM",
+   "defect": "Undocumented third-party tags on paid pages",
+   "evidence": "Microsoft UET (bat.bing.com, action 187243235), Meta pixel (_fbp / connect.facebook.net), Nextdoor pixel (ads.nextdoor.com/ndp.js), WhatConverts (s.ksrndkehqnwntyxlhgto.com/105803.js, process.iconnode.com), Google call-tracking (gstatic.com/call-tracking, gstatic.com/wcm).",
+   "fix": "Confirm each is intended, is covered by the consent banner, and is documented in the measurement plan. Remove any that is not.",
+   "blocked_by": "Client confirmation of intent."
+  },
+  {
+   "id": "LP-14",
+   "severity": "LOW",
+   "defect": "No structured data on any page",
+   "fix": "Add LocalBusiness/HVACBusiness + Service JSON-LD with telephone +1-410-705-6354, the real 08:00-16:00 openingHours, and areaServed. Do NOT publish 24/7 openingHours.",
+   "blocked_by": null
+  },
+  {
+   "id": "LP-15",
+   "severity": "LOW",
+   "defect": "Core Web Vitals not yet measured",
+   "fix": "Measure after LP-03 lands, since removing two of three form instances changes the numbers. TLS is already verified healthy: TLS 1.3, Let's Encrypt, expiring 2026-11-11 (offer) and 2026-11-09 (main), 84 and 82 days remaining.",
+   "blocked_by": null
+  }
+ ],
+ "post_change_verification": [
+  "Re-render all five pages at 1440x900 AND 390x844 in a JavaScript-capable browser. A non-JS client sees only the SiteGround SG-Captcha stub and will produce false results.",
+  "Assert exactly one GTM head snippet, one noscript, one gtm.js 200, one container.",
+  "Assert every tel: href on every page equals tel:+14107056354 at both viewports.",
+  "Assert exactly one form instance and no duplicate element IDs.",
+  "Assert input_9..input_15 are POPULATED on a URL carrying gclid, gbraid, wbraid and UTMs.",
+  "Assert Privacy and Terms links resolve to 200 on the offer subdomain.",
+  "Assert no countdown, deadline, scarcity, 24/7, emergency or response-time claim remains.",
+  "Assert the gas-safety notice is still present on /gas-boiler-repair/.",
+  "Confirm one test submission creates exactly one conversion with a unique lead_id - REQUIRES separate controlled-test approval, and document the cleanup of the test lead."
+ ],
+ "rollback_plan": {
+  "method": "Restore each page from its pre-change WordPress revision or staging copy.",
+  "granularity": "Per page, per item; items are independent and can be reverted individually.",
+  "note": "Gravity Forms field mapping and the form-instance removal are configuration changes, not content revisions, so capture the form export before editing."
+ },
+ "counts": {
+  "pages": 5,
+  "items": 15,
+  "critical": 2,
+  "high": 5,
+  "medium": 6,
+  "low": 2,
+  "blocked_pending_client_input": 4
+ },
+ "no_google_ads_mutation": true,
+ "note_clickcease": "The ClickCease redirect test remains BLOCKED, not failed: monitor.clickcease.com resolves to 127.0.0.1 from the audit environment and www.clickcease.com refuses connection, while control lookups resolve normally and the local hosts file is empty. Re-run from an environment that can resolve the redirect. Do not alter manager 2815082755.",
+ "plan_fingerprint": "BA865C2A697C5296"
+}

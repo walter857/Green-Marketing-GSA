@@ -1,0 +1,26 @@
+{
+ "fails": [],
+ "warns": [],
+ "packages": {
+  "AMB-0909B-BUD-1": {
+   "fingerprint": "752BF95EBD7C",
+   "ops": 2,
+   "class": "reversible-budget-change"
+  },
+  "AMB-0909B-CPC-INST-1": {
+   "fingerprint": "DE376F91F449",
+   "ops": 1,
+   "class": "reversible-setting-change"
+  },
+  "AMB-0909B-NEG-A": {
+   "fingerprint": "18143479027D",
+   "ops": 16,
+   "class": "DESTRUCTIVE-removal"
+  },
+  "AMB-0909B-COMP-1": {
+   "fingerprint": "05FBCBD34B4A",
+   "ops": 3,
+   "class": "reversible-addition"
+  }
+ }
+}

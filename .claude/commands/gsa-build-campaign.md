@@ -1,0 +1,1 @@
+Read `CLAUDE.md` and `prompts/03-keyword-research-skag.md` through `prompts/05-generate-rsas-and-assets.md`. Require a validated work order with the exact child account name, 10-digit child customer ID, and exact service. Build a validated campaign plan for that service. Stop for approval before any external write; if approved, create paused and verify.

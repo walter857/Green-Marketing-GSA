@@ -1,0 +1,579 @@
+{
+ "generated_on": "2026-08-24",
+ "api_query_timestamp_utc": "2026-08-24T22:57:18.984859+00:00",
+ "mode": "READ-ONLY REPORTING. No external change was made.",
+ "identity": {
+  "id": "7380491929",
+  "name": "Pro Green - Austin - Live",
+  "currency": "USD",
+  "time_zone": "America/New_York",
+  "manager": false,
+  "test": false,
+  "tracking_url_template": "https://monitor.clickcease.com/tracker/tracker.aspx?id=Y6qzID4E9cPYCj&adpos={adposition}&locphisical={loc_physical_ms}&locinterest={loc_interest_ms}&adgrp={adgroupid}&kw={keyword}&nw={network}&url={lpurl}&cpn={campaignid}&device={device}&ccpturl=offeraustin.progreenlandscapesolutions.com&pl={placement}",
+  "auto_tagging": true,
+  "status": "ENABLED"
+ },
+ "account_timezone": "America/New_York",
+ "market_timezone": "America/Chicago (Austin)",
+ "enabled_campaigns": [
+  {
+   "id": "24053505501",
+   "name": "Progreen Austin | Search | Hardscape Construction",
+   "status": "ENABLED",
+   "channel": "SEARCH",
+   "sub_type": "UNSPECIFIED",
+   "bidding": "TARGET_SPEND",
+   "cpc_ceiling_micros": 22000000,
+   "excluded_parent_asset_field_types": [
+    "SITELINK",
+    "STRUCTURED_SNIPPET"
+   ],
+   "net_google_search": true,
+   "net_search_partners": false,
+   "net_content": false,
+   "net_partner_search": false,
+   "geo_positive": "PRESENCE",
+   "geo_negative": "PRESENCE",
+   "serving_status": "SERVING",
+   "optimization_score": 0.7990885937196062,
+   "budget_id": "15742409458",
+   "budget_micros": 26310000,
+   "budget_shared": false,
+   "budget_delivery": "STANDARD",
+   "budget_name": "Progreen Austin | Search | Hardscape Construction"
+  },
+  {
+   "id": "24053505504",
+   "name": "Progreen Austin | Search | Outdoor Living & Design",
+   "status": "ENABLED",
+   "channel": "SEARCH",
+   "sub_type": "UNSPECIFIED",
+   "bidding": "TARGET_SPEND",
+   "cpc_ceiling_micros": 22000000,
+   "excluded_parent_asset_field_types": [
+    "SITELINK",
+    "STRUCTURED_SNIPPET"
+   ],
+   "net_google_search": true,
+   "net_search_partners": false,
+   "net_content": false,
+   "net_partner_search": false,
+   "geo_positive": "PRESENCE",
+   "geo_negative": "PRESENCE",
+   "serving_status": "SERVING",
+   "optimization_score": 0.7908094813469091,
+   "budget_id": "15742409461",
+   "budget_micros": 39470000,
+   "budget_shared": false,
+   "budget_delivery": "STANDARD",
+   "budget_name": "Progreen Austin | Search | Outdoor Living & Design"
+  }
+ ],
+ "paused_campaigns": [
+  {
+   "id": "20330421274",
+   "name": "Sprinkler/Irrigation",
+   "status": "PAUSED"
+  },
+  {
+   "id": "21724429907",
+   "name": "Patio Installation",
+   "status": "PAUSED"
+  },
+  {
+   "id": "21769797726",
+   "name": "Winterization",
+   "status": "PAUSED"
+  },
+  {
+   "id": "22674877193",
+   "name": "Leads-Performance Max-Austin",
+   "status": "PAUSED"
+  },
+  {
+   "id": "23201816055",
+   "name": "Landscaping-Austin-call",
+   "status": "PAUSED"
+  },
+  {
+   "id": "23403782538",
+   "name": "Fire Pit Installation",
+   "status": "PAUSED"
+  },
+  {
+   "id": "23427249240",
+   "name": "Paver Installation",
+   "status": "PAUSED"
+  },
+  {
+   "id": "23427288165",
+   "name": "Outdoor Living",
+   "status": "PAUSED"
+  }
+ ],
+ "combined_daily_budget": 65.78,
+ "ad_groups": {
+  "count": 24,
+  "by_status": {
+   "ENABLED": 24
+  },
+  "by_campaign": {
+   "Progreen Austin | Search | Hardscape Construction": 12,
+   "Progreen Austin | Search | Outdoor Living & Design": 12
+  }
+ },
+ "positive_keywords": {
+  "count": 48,
+  "by_match": {
+   "PHRASE": 24,
+   "EXACT": 24
+  },
+  "by_status": {
+   "ENABLED": 48
+  },
+  "quality_score_populated": 6,
+  "quality_score_not_enough_data": 42,
+  "rarely_served": [
+   {
+    "keyword": "outdoor living design and build contractor",
+    "match": "PHRASE",
+    "ad_group": "Outdoor Living | BOFU"
+   },
+   {
+    "keyword": "outdoor living design and build contractor",
+    "match": "EXACT",
+    "ad_group": "Outdoor Living | BOFU"
+   },
+   {
+    "keyword": "outdoor fire pit installation company",
+    "match": "PHRASE",
+    "ad_group": "Fire Pits | BOFU"
+   },
+   {
+    "keyword": "outdoor fire pit installation company",
+    "match": "EXACT",
+    "ad_group": "Fire Pits | BOFU"
+   }
+  ]
+ },
+ "negative_keywords": {
+  "campaign_level_total": 156,
+  "campaign_level_by_campaign": {
+   "24053505501": 78,
+   "24053505504": 78
+  },
+  "ad_group_level_total": 246,
+  "linked_shared_sets": [
+   {
+    "id": "10670794921",
+    "name": "States",
+    "campaign": "24053505501"
+   },
+   {
+    "id": "10670796064",
+    "name": "General",
+    "campaign": "24053505501"
+   },
+   {
+    "id": "10673711933",
+    "name": "Names",
+    "campaign": "24053505501"
+   },
+   {
+    "id": "10670794921",
+    "name": "States",
+    "campaign": "24053505504"
+   },
+   {
+    "id": "10670796064",
+    "name": "General",
+    "campaign": "24053505504"
+   },
+   {
+    "id": "10673711933",
+    "name": "Names",
+    "campaign": "24053505504"
+   }
+  ],
+  "account_level_list": {
+   "id": "11260450591",
+   "note": "ACCOUNT_LEVEL_NEGATIVE_KEYWORDS applies account-wide, never appears in campaign_shared_set, and reports member_count 0 while holding 290 criteria.",
+   "member_count_reported": 0,
+   "criteria_observed": 290
+  },
+  "plan_34_phrase_68_object": {
+   "status": "LIVE AND VERIFIED",
+   "executed_at_utc": "2026-08-22T14:09:42Z",
+   "effective_from_account_time": "2026-08-22 10:09:43 America/New_York",
+   "phrases_live_on_both_campaigns": 34,
+   "phrases_missing": 0,
+   "objects": 68,
+   "families": {
+    "COMPETITOR": 54,
+    "WRONG_MATERIAL": 2,
+    "WRONG_MARKET": 10,
+    "WRONG_SERVICE": 2
+   }
+  }
+ },
+ "ads": {
+  "total": 48,
+  "by_status": {
+   "ENABLED": 48
+  },
+  "by_approval": {
+   "APPROVED": 48
+  },
+  "by_review": {
+   "REVIEWED": 48
+  },
+  "ad_strength_diagnostic_only": {
+   "AVERAGE": 22,
+   "GOOD": 5,
+   "EXCELLENT": 19,
+   "POOR": 2
+  },
+  "disapproved": 0,
+  "limited": 0,
+  "per_ad_group": {
+   "2": 24
+  },
+  "original_cohort_ad_ids": [
+   "817941409183",
+   "817941409186",
+   "817941409189",
+   "817941409192",
+   "817941409195",
+   "817941409198",
+   "817941409321",
+   "817941409324",
+   "817941409327",
+   "817941409330",
+   "817941409333",
+   "817941409336",
+   "817941409339",
+   "817941409342",
+   "817941409345",
+   "817941409348",
+   "817941409351",
+   "817941409354",
+   "817941409357",
+   "817941409360",
+   "817941409363",
+   "817941409366",
+   "817941409369",
+   "817941409372"
+  ],
+  "new_cohort_ad_ids": [
+   "821598464387",
+   "821598464390",
+   "821598464393",
+   "821598464396",
+   "821598464399",
+   "821598464522",
+   "821598464525",
+   "821598464528",
+   "821598464531",
+   "821598464534",
+   "821598464537",
+   "821598464540",
+   "821598464543",
+   "821598464546",
+   "821598464549",
+   "821598464552",
+   "821598464555",
+   "821598464558",
+   "821598464561",
+   "821598464564",
+   "821598464567",
+   "821598464570",
+   "821598464573",
+   "821598464576"
+  ]
+ },
+ "final_urls": {
+  "unique_destinations": 13,
+  "mapping": {
+   "https://offeraustin.progreenlandscapesolutions.com/artificial-turf/": [
+    "Artificial Turf | BOFU",
+    "Artificial Turf | Near Me"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/fire-pit/": [
+    "Fire Pits | BOFU",
+    "Fire Pits | Near Me"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/hardscaping/": [
+    "Hardscaping | BOFU"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/landscape-design/": [
+    "Landscape Design | BOFU",
+    "Landscape Design | Near Me"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/landscape-lighting/": [
+    "Landscape Lighting | BOFU",
+    "Landscape Lighting | Near Me"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/outdoor-living/": [
+    "Outdoor Living | BOFU",
+    "Outdoor Living | Near Me"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/patio-2/": [
+    "Patios | BOFU",
+    "Patios | Near Me"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/paver-driveway/": [
+    "Driveways | BOFU",
+    "Driveways | Near Me"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/pavers-2/": [
+    "Pavers | BOFU",
+    "Pavers | Near Me"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/pergola/": [
+    "Pergolas | BOFU",
+    "Pergolas | Near Me"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/retaining-walls/": [
+    "Retaining Walls | BOFU",
+    "Retaining Walls | Near Me"
+   ],
+   "https://offeraustin.progreenlandscapesolutions.com/walkway/": [
+    "Walkways | BOFU",
+    "Walkways | Near Me"
+   ],
+   "https://progreenlandscapesolutions.com/austin/services/hardscaping/": [
+    "Hardscaping | Near Me"
+   ]
+  }
+ },
+ "locations": {
+  "positive_per_campaign": 24,
+  "exclusions": 0,
+  "positive_geo_target_type": "PRESENCE",
+  "total_location_criteria": 48
+ },
+ "ad_schedule": {
+  "criteria": 14,
+  "per_campaign": 7,
+  "account_time": "09:00-18:00 America/New_York, all seven days",
+  "austin_local_time": "08:00-17:00 America/Chicago, all seven days",
+  "bid_modifiers": "none"
+ },
+ "network_settings": {
+  "google_search": true,
+  "search_partners": false,
+  "display": false
+ },
+ "languages": [
+  "en",
+  "en"
+ ],
+ "devices": [
+  "Desktop",
+  "HighEndMobile",
+  "Tablet"
+ ],
+ "ip_blocks": {
+  "count": 4,
+  "owner": "ClickCease (adwords%clickcease.com@gtempaccount.com)",
+  "note": "Created 2026-08-11 and 2026-08-14. Not a Green Marketing optimization."
+ },
+ "conversion_actions": {
+  "total": 16,
+  "counted_in_conversions_column": [
+   {
+    "id": "6566620547",
+    "name": "Calls from ads",
+    "type": "AD_CALL",
+    "call_seconds": 60
+   },
+   {
+    "id": "6885610317",
+    "name": "Progreen - Lp - Phone Call Leads",
+    "type": "WEBSITE_CALL",
+    "call_seconds": 30
+   },
+   {
+    "id": "7644242327",
+    "name": "WC leads",
+    "type": "UPLOAD_CLICKS",
+    "call_seconds": 60
+   }
+  ],
+  "primary_for_goal_flag_true": [
+   {
+    "id": "6566620547",
+    "name": "Calls from ads",
+    "type": "AD_CALL",
+    "counted": true
+   },
+   {
+    "id": "6607906201",
+    "name": "Clicks to call",
+    "type": "GOOGLE_HOSTED",
+    "counted": false
+   },
+   {
+    "id": "6607912702",
+    "name": "Local actions - Website visits",
+    "type": "GOOGLE_HOSTED",
+    "counted": false
+   },
+   {
+    "id": "6611700177",
+    "name": "Local actions - Other engagements",
+    "type": "GOOGLE_HOSTED",
+    "counted": false
+   },
+   {
+    "id": "6626900593",
+    "name": "Local actions - Directions",
+    "type": "GOOGLE_HOSTED",
+    "counted": false
+   },
+   {
+    "id": "6885610317",
+    "name": "Progreen - Lp - Phone Call Leads",
+    "type": "WEBSITE_CALL",
+    "counted": true
+   },
+   {
+    "id": "7030671029",
+    "name": "Local actions - Menu views",
+    "type": "GOOGLE_HOSTED",
+    "counted": false
+   },
+   {
+    "id": "7644242327",
+    "name": "WC leads",
+    "type": "UPLOAD_CLICKS",
+    "counted": true
+   }
+  ],
+  "note": "Eight actions still carry primary_for_goal = true, but only three carry include_in_conversions_metric = true. The five extra are Google-hosted Local actions and Clicks to call, which Google keeps flagged by default and which contribute nothing to the Conversions column. The biddable, reported definition is exactly three actions."
+ },
+ "assets": {
+  "campaign_level": {
+   "STRUCTURED_SNIPPET": 2,
+   "SITELINK": 12,
+   "CALLOUT": 16,
+   "CALL": 2,
+   "BUSINESS_LOGO": 2
+  },
+  "customer_level": {
+   "STRUCTURED_SNIPPET": 1,
+   "SITELINK": 3
+  },
+  "excluded_parent_asset_field_types": [
+   "SITELINK",
+   "STRUCTURED_SNIPPET"
+  ],
+  "auto_created_customer_assets_blocked": [
+   "Highlights",
+   "Services In Dallas",
+   "Services In Austin",
+   "Services In Houston"
+  ]
+ },
+ "shared_sets": [
+  {
+   "id": "10670794921",
+   "name": "States",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "member_count": 48
+  },
+  {
+   "id": "10670796064",
+   "name": "General",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "member_count": 729
+  },
+  {
+   "id": "10673711933",
+   "name": "Names",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "member_count": 484
+  },
+  {
+   "id": "11260450591",
+   "name": "account-level negative keywords list",
+   "type": "ACCOUNT_LEVEL_NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "member_count": 0
+  },
+  {
+   "id": "11676362245",
+   "name": "Exclusion Brand List",
+   "type": "BRANDS",
+   "status": "ENABLED",
+   "member_count": 27
+  },
+  {
+   "id": "11807294063",
+   "name": "Christmas Lights Install",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "member_count": 424
+  },
+  {
+   "id": "11811255121",
+   "name": "Leaf Removal initial",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "member_count": 386
+  },
+  {
+   "id": "11813144900",
+   "name": "General List",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "member_count": 1111
+  },
+  {
+   "id": "11840874961",
+   "name": "Paver",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "member_count": 387
+  },
+  {
+   "id": "11840890006",
+   "name": "Outdoor Kitchen",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "member_count": 386
+  },
+  {
+   "id": "12178646912",
+   "name": "General List - Irrigation Repair",
+   "type": "NEGATIVE_KEYWORDS",
+   "status": "ENABLED",
+   "member_count": 1107
+  }
+ ],
+ "tracking_url_template_present": true,
+ "auto_tagging": true,
+ "change_events_august": {
+  "total": 168,
+  "by_user": {
+   "access@greenmarketingfl.com": 164,
+   "adwords%clickcease.com@gtempaccount.com": 4
+  },
+  "by_day_and_type": {
+   "2026-08-22|CAMPAIGN_CRITERION|CREATE": 68,
+   "2026-08-20|AD_GROUP_AD|UPDATE": 24,
+   "2026-08-20|AD_GROUP_AD|CREATE": 24,
+   "2026-08-19|CAMPAIGN|UPDATE": 2,
+   "2026-08-19|CAMPAIGN_CRITERION|REMOVE": 14,
+   "2026-08-19|CAMPAIGN_CRITERION|CREATE": 30,
+   "2026-08-19|CAMPAIGN_BUDGET|UPDATE": 2,
+   "2026-08-14|CAMPAIGN_CRITERION|CREATE": 2,
+   "2026-08-11|CAMPAIGN_CRITERION|CREATE": 2
+  },
+  "latest_change": "2026-08-22 10:09:43.122831",
+  "concurrent_process_detected": false
+ }
+}

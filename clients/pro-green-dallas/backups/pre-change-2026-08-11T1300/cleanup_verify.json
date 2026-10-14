@@ -1,0 +1,294 @@
+[
+  {
+    "item": "identity + authorized manager ACTIVE",
+    "intended": {
+      "id": "8735782888",
+      "name": "Pro Green - Dallas - Live",
+      "cur": "USD",
+      "mgr": false,
+      "test": false,
+      "auth": true
+    },
+    "actual": {
+      "id": "8735782888",
+      "name": "Pro Green - Dallas - Live",
+      "cur": "USD",
+      "mgr": false,
+      "test": false,
+      "auth": true
+    },
+    "PASS": true
+  },
+  {
+    "item": "[sprinkler head replacement] ENABLED",
+    "intended": "ENABLED",
+    "actual": "ENABLED",
+    "PASS": true
+  },
+  {
+    "item": "match type still EXACT",
+    "intended": "EXACT",
+    "actual": "EXACT",
+    "PASS": true
+  },
+  {
+    "item": "text unchanged",
+    "intended": "sprinkler head replacement",
+    "actual": "sprinkler head replacement",
+    "PASS": true
+  },
+  {
+    "item": "campaign correct + ENABLED",
+    "intended": [
+      "20315156610",
+      "ENABLED"
+    ],
+    "actual": [
+      "20315156610",
+      "ENABLED"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "ad group correct + ENABLED",
+    "intended": [
+      "151125103616",
+      "ENABLED"
+    ],
+    "actual": [
+      "151125103616",
+      "ENABLED"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "final URL still inherited (no override)",
+    "intended": [],
+    "actual": [],
+    "PASS": true
+  },
+  {
+    "item": "effective status permits serving (campaign+adgroup+keyword all ENABLED)",
+    "intended": true,
+    "actual": true,
+    "PASS": true
+  },
+  {
+    "item": "the 2 targeted negatives no longer active",
+    "intended": 0,
+    "actual": 0,
+    "PASS": true
+  },
+  {
+    "item": "campaign negatives 657 -> 655 (exactly 2 removed)",
+    "intended": 655,
+    "actual": 655,
+    "PASS": true
+  },
+  {
+    "item": "no campaign negative still blocks the keyword",
+    "intended": [],
+    "actual": [],
+    "PASS": true
+  },
+  {
+    "item": "no ad-group keyword negative blocks it",
+    "intended": [],
+    "actual": [],
+    "PASS": true
+  },
+  {
+    "item": "no negative other than the 2 was touched",
+    "intended": true,
+    "actual": true,
+    "PASS": true
+  },
+  {
+    "item": "exactly 1 enabled [sprinkler head replacement]",
+    "intended": 1,
+    "actual": 1,
+    "PASS": true
+  },
+  {
+    "item": "budget still $45.00",
+    "intended": 45.0,
+    "actual": 45.0,
+    "PASS": true
+  },
+  {
+    "item": "bidding TARGET_SPEND",
+    "intended": "TARGET_SPEND",
+    "actual": "TARGET_SPEND",
+    "PASS": true
+  },
+  {
+    "item": "partners/display off",
+    "intended": [
+      false,
+      false
+    ],
+    "actual": [
+      false,
+      false
+    ],
+    "PASS": true
+  },
+  {
+    "item": "presence targeting",
+    "intended": "PRESENCE",
+    "actual": "PRESENCE",
+    "PASS": true
+  },
+  {
+    "item": "74 location criteria",
+    "intended": 74,
+    "actual": 74,
+    "PASS": true
+  },
+  {
+    "item": "call asset (214) 301-3385",
+    "intended": [
+      [
+        "(214) 301-3385",
+        "ENABLED"
+      ]
+    ],
+    "actual": [
+      [
+        "(214) 301-3385",
+        "ENABLED"
+      ]
+    ],
+    "PASS": true
+  },
+  {
+    "item": "3 challenger RSAs still ENABLED",
+    "intended": [
+      "ENABLED",
+      "ENABLED",
+      "ENABLED"
+    ],
+    "actual": [
+      "ENABLED",
+      "ENABLED",
+      "ENABLED"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "3 control RSAs still ENABLED",
+    "intended": [
+      "ENABLED",
+      "ENABLED",
+      "ENABLED"
+    ],
+    "actual": [
+      "ENABLED",
+      "ENABLED",
+      "ENABLED"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "serving final URLs unchanged",
+    "intended": [
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/"
+    ],
+    "actual": [
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "3 verified callouts still ENABLED",
+    "intended": [
+      "ENABLED",
+      "ENABLED",
+      "ENABLED"
+    ],
+    "actual": [
+      "ENABLED",
+      "ENABLED",
+      "ENABLED"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "discount callout still PAUSED",
+    "intended": "PAUSED",
+    "actual": "PAUSED",
+    "PASS": true
+  },
+  {
+    "item": "3 working conversion actions unchanged",
+    "intended": [
+      [
+        true,
+        true,
+        "ENABLED"
+      ],
+      [
+        true,
+        true,
+        "ENABLED"
+      ],
+      [
+        true,
+        true,
+        "ENABLED"
+      ]
+    ],
+    "actual": [
+      [
+        true,
+        true,
+        "ENABLED"
+      ],
+      [
+        true,
+        true,
+        "ENABLED"
+      ],
+      [
+        true,
+        true,
+        "ENABLED"
+      ]
+    ],
+    "PASS": true
+  },
+  {
+    "item": "both WhatConverts actions still SECONDARY",
+    "intended": [
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ]
+    ],
+    "actual": [
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ]
+    ],
+    "PASS": true
+  },
+  {
+    "item": "conversion action count 14",
+    "intended": 14,
+    "actual": 14,
+    "PASS": true
+  }
+]

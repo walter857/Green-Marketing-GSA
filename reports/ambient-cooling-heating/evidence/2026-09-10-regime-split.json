@@ -1,0 +1,159 @@
+{
+ "generated_local": "2026-09-10T10:37:08.044294-04:00",
+ "ceiling_set_at": "2026-09-04 16:56 America/New_York, GOOGLE_ADS_WEB_CLIENT, user access@greenmarketingfl.com",
+ "ceilings_now": {
+  "AC Repair": 25.0,
+  "HVAC Repair": 25.0,
+  "HVAC Installation": 30.0,
+  "HVAC Replacement": "NONE - still uncapped",
+  "Gas Boiler Repair": "NONE - still uncapped"
+ },
+ "regimes": {
+  "UNCAPPED": {
+   "window": [
+    "2026-08-14",
+    "2026-09-03"
+   ],
+   "days": 21,
+   "cost": 8025.18,
+   "valid": 172,
+   "invalid": 1731,
+   "per_campaign": {
+    "AC Repair": {
+     "cost": 3051.47,
+     "valid": 28,
+     "invalid": 917,
+     "impr": 797,
+     "per_valid": 108.98
+    },
+    "Gas Boiler Repair": {
+     "cost": 0.0,
+     "valid": 0,
+     "invalid": 42,
+     "impr": 21,
+     "per_valid": null
+    },
+    "HVAC Installation": {
+     "cost": 2914.33,
+     "valid": 112,
+     "invalid": 83,
+     "impr": 3303,
+     "per_valid": 26.02
+    },
+    "HVAC Repair": {
+     "cost": 1906.86,
+     "valid": 27,
+     "invalid": 607,
+     "impr": 1011,
+     "per_valid": 70.62
+    },
+    "HVAC Replacement": {
+     "cost": 152.52,
+     "valid": 5,
+     "invalid": 82,
+     "impr": 175,
+     "per_valid": 30.5
+    }
+   },
+   "spend_per_day": 382.15,
+   "implied_monthly": 11617.4,
+   "cost_per_valid_click": 46.66
+  },
+  "MIXED DAY": {
+   "window": [
+    "2026-09-04",
+    "2026-09-04"
+   ],
+   "days": 1,
+   "cost": 33.4,
+   "valid": 1,
+   "invalid": 32,
+   "per_campaign": {
+    "AC Repair": {
+     "cost": 33.4,
+     "valid": 1,
+     "invalid": 20,
+     "impr": 61,
+     "per_valid": 33.4
+    },
+    "HVAC Installation": {
+     "cost": 0.0,
+     "valid": 0,
+     "invalid": 7,
+     "impr": 53,
+     "per_valid": null
+    },
+    "HVAC Repair": {
+     "cost": 0.0,
+     "valid": 0,
+     "invalid": 5,
+     "impr": 11,
+     "per_valid": null
+    },
+    "HVAC Replacement": {
+     "cost": 0.0,
+     "valid": 0,
+     "invalid": 0,
+     "impr": 3,
+     "per_valid": null
+    }
+   },
+   "spend_per_day": 33.4,
+   "implied_monthly": 1015.36,
+   "cost_per_valid_click": 33.4
+  },
+  "CAPPED": {
+   "window": [
+    "2026-09-05",
+    "2026-09-09"
+   ],
+   "days": 5,
+   "cost": 103.71,
+   "valid": 4,
+   "invalid": 16,
+   "per_campaign": {
+    "AC Repair": {
+     "cost": 0.0,
+     "valid": 0,
+     "invalid": 4,
+     "impr": 37,
+     "per_valid": null
+    },
+    "Gas Boiler Repair": {
+     "cost": 0.0,
+     "valid": 0,
+     "invalid": 0,
+     "impr": 17,
+     "per_valid": null
+    },
+    "HVAC Installation": {
+     "cost": 58.63,
+     "valid": 2,
+     "invalid": 3,
+     "impr": 94,
+     "per_valid": 29.32
+    },
+    "HVAC Repair": {
+     "cost": 45.08,
+     "valid": 2,
+     "invalid": 9,
+     "impr": 59,
+     "per_valid": 22.54
+    },
+    "HVAC Replacement": {
+     "cost": 0.0,
+     "valid": 0,
+     "invalid": 0,
+     "impr": 29,
+     "per_valid": null
+    }
+   },
+   "spend_per_day": 20.74,
+   "implied_monthly": 630.56,
+   "cost_per_valid_click": 25.93
+  }
+ },
+ "leads_by_regime": {
+  "UNCAPPED": 5
+ }
+}

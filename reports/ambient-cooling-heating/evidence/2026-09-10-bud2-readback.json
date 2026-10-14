@@ -1,0 +1,172 @@
+{
+ "read_local": "2026-09-10T10:17:43.661803-04:00",
+ "fails": [
+  "no explicitly-shared budget exists anywhere (2)"
+ ],
+ "budgets": {
+  "12905177993": {
+   "micros": 33330000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "12910083564": {
+   "micros": 39000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "12910237134": {
+   "micros": 38000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "13433692985": {
+   "micros": 200000000,
+   "shared": true,
+   "refs": 0,
+   "status": "ENABLED"
+  },
+  "13562244959": {
+   "micros": 100000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "13568162355": {
+   "micros": 90000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "14428443767": {
+   "micros": 90000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "14428964106": {
+   "micros": 100000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "14784875995": {
+   "micros": 100000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "14810347898": {
+   "micros": 100000000,
+   "shared": true,
+   "refs": 0,
+   "status": "ENABLED"
+  },
+  "14811877188": {
+   "micros": 10000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "14874373911": {
+   "micros": 30000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15040320138": {
+   "micros": 60000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15044731597": {
+   "micros": 87000000,
+   "shared": false,
+   "refs": 0,
+   "status": "ENABLED"
+  },
+  "15044845177": {
+   "micros": 100000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15047821637": {
+   "micros": 60000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15186721121": {
+   "micros": 60000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15466378777": {
+   "micros": 5000000,
+   "shared": false,
+   "refs": 0,
+   "status": "ENABLED"
+  },
+  "15488517816": {
+   "micros": 100000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15501555481": {
+   "micros": 33330000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15502384748": {
+   "micros": 33000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15602032773": {
+   "micros": 33000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15787409435": {
+   "micros": 141450000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15787409438": {
+   "micros": 5000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15787409441": {
+   "micros": 176150000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15787409444": {
+   "micros": 78950000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  },
+  "15787409447": {
+   "micros": 20000000,
+   "shared": false,
+   "refs": 1,
+   "status": "ENABLED"
+  }
+ },
+ "combined_daily": 421.55,
+ "steady_state": 12815.12
+}

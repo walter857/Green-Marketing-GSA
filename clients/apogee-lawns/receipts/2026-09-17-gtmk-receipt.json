@@ -1,0 +1,106 @@
+{
+  "plan_id": "APG-0917-GTM-K",
+  "fingerprint": "2871DD2A5227",
+  "approval": "APPROVE APG GTM BUILD 2871DD2A5227",
+  "executed": "2026-09-17",
+  "signed_in_as": "access@greenmarketingfl.com",
+  "container": {
+    "account_id": "6377231045",
+    "container_id": "264326944",
+    "public_id": "GTM-M545Z8T2",
+    "name": "Apogee Lawns",
+    "domain": "apogeelawns.com"
+  },
+  "workspace": {
+    "id": "3",
+    "name": "Apogee | PPC Tracking | 2026-09",
+    "url": "https://tagmanager.google.com/#/container/accounts/6377231045/containers/264326944/workspaces/3",
+    "workspace_changes": 5
+  },
+  "folder": {
+    "name": "Google Ads | Permanent Lights",
+    "id": "not exposed in list view",
+    "created": "earlier run"
+  },
+  "built_in_variables_enabled": {
+    "Page URL": "2147481602",
+    "Page Hostname": "2147481603",
+    "Page Path": "2147481604",
+    "Referrer": "2147481605",
+    "Event": "2147481606"
+  },
+  "created_this_run": [
+    {
+      "object": "DLV | lead_id",
+      "id": "4",
+      "type": "Data Layer Variable",
+      "data_layer_variable_name": "lead_id",
+      "version": "Version 2",
+      "set_default_value": false,
+      "folder": "Google Ads | Permanent Lights"
+    },
+    {
+      "object": "TR | Custom Event | apg_permanent_lights_lead",
+      "id": "not exposed in list view",
+      "type": "Custom Event",
+      "event_name": "apg_permanent_lights_lead",
+      "use_regex_matching": false,
+      "fires_on": "Some Custom Events",
+      "conditions": [
+        "Page Hostname equals offer.apogeelawns.com",
+        "Page Path matches RegEx ^/thank-you/permanent-christmas-lights/?$"
+      ],
+      "folder": "Google Ads | Permanent Lights",
+      "referencing_tags": 1
+    },
+    {
+      "object": "Google tag | AW-18453077620 | All Pages",
+      "id": "6",
+      "type": "Google Tag",
+      "tag_id": "AW-18453077620",
+      "trigger": "Initialization - All Pages",
+      "folder": "Google Ads | Permanent Lights"
+    },
+    {
+      "object": "Google Ads | Lead | Permanent Lights Thank You",
+      "id": "7",
+      "type": "Google Ads Conversion Tracking",
+      "conversion_id": "18453077620",
+      "conversion_label": "KOL7CImirvocEPS8jt9E",
+      "transaction_id": "{{DLV | lead_id}}",
+      "conversion_value": "empty",
+      "currency_code": "empty",
+      "trigger": "TR | Custom Event | apg_permanent_lights_lead",
+      "folder": "Google Ads | Permanent Lights",
+      "validation": "GTM reported 'Google tag found in this container'"
+    }
+  ],
+  "deliberately_absent": [
+    "Google Ads Calls from Website tag",
+    "website-call trigger",
+    "calls-from-ads GTM tag",
+    "WhatConverts placeholder",
+    "standalone Conversion Linker",
+    "Custom HTML",
+    "GA4 tag",
+    "test tag",
+    "second Google tag"
+  ],
+  "duplicate_check": "0 tags, 0 triggers, 0 user-defined variables existed before this run",
+  "default_workspace": "ID 2 untouched",
+  "container_versions_created": 0,
+  "container_versions_published": 0,
+  "submit_used": "No",
+  "live_container_state": "Empty Container is Live - 0 tags, 0 triggers, 0 variables",
+  "existing_versions": [
+    {
+      "id": 1,
+      "name": "Empty Container",
+      "created": "09/16/2026",
+      "published": "09/16/2026",
+      "by": "access@greenmarketingfl.com",
+      "note": "container's own initial version, NOT created by this run"
+    }
+  ],
+  "blocking_dependency": "apg_permanent_lights_lead appears 0 times on offer.apogeelawns.com; developer must implement the dataLayer push before Preview can pass"
+}

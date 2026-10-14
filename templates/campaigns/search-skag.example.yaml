@@ -1,0 +1,108 @@
+plan_version: 1
+target:
+  child_customer_id: "0000000000"
+  exact_child_account_name: "Example Hardscape - live"
+  vertical: hardscaping
+  exact_primary_service: paver patio installation
+
+campaigns:
+  - name: "Search | Paver Patios | Aug 2026"
+    daily_budget: 32.89
+    currency: USD
+    status: PAUSED
+    final_url: "https://example.com/paver-patios/"
+    bidding:
+      strategy: MAXIMIZE_CONVERSIONS
+      target_cpa: null
+    location:
+      option: PRESENCE
+      geo_target_constant_ids: []
+      radius:
+        latitude: 40.7891
+        longitude: -73.1350
+        distance: 20
+        unit: MILES
+      exclusions: []
+    language_constant_ids:
+      - "1000"
+    schedule:
+      - day: MONDAY
+        start: "08:00"
+        end: "18:00"
+      - day: TUESDAY
+        start: "08:00"
+        end: "18:00"
+      - day: WEDNESDAY
+        start: "08:00"
+        end: "18:00"
+      - day: THURSDAY
+        start: "08:00"
+        end: "18:00"
+      - day: FRIDAY
+        start: "08:00"
+        end: "18:00"
+    negatives:
+      - jobs
+      - careers
+      - diy
+      - how to
+      - training
+    ad_groups:
+      - name: "Paver Patio Installation"
+        canonical_keyword: "paver patio installation"
+        keywords:
+          - text: "paver patio installation"
+            match_type: PHRASE
+          - text: "paver patio installation"
+            match_type: EXACT
+        path1: "paver-patios"
+        path2: "installation"
+        ads:
+          - headlines:
+              - text: "Paver Patio Installation"
+                pin: HEADLINE_1
+              - text: "Request Your Patio Quote"
+              - text: "Local Hardscape Contractors"
+              - text: "Plan Your New Outdoor Space"
+              - text: "Built For Lasting Enjoyment"
+              - text: "Custom Paver Patio Designs"
+              - text: "Call For An Estimate"
+              - text: "Professional Installation"
+              - text: "Upgrade Your Backyard"
+              - text: "Schedule A Consultation"
+              - text: "Paver Options For Your Home"
+              - text: "Careful Site Preparation"
+              - text: "Experienced Local Crew"
+              - text: "Clear Project Communication"
+              - text: "Start Your Patio Project"
+            descriptions:
+              - "Request a quote for a paver patio planned around your home and outdoor space."
+              - "Discuss layout, paver options, site preparation, and installation with a local team."
+              - "Get clear next steps and responsive communication for your patio project."
+              - "Call or complete the short form to request your paver patio consultation."
+          - headlines:
+              - text: "Local Paver Patio Installers"
+                pin: HEADLINE_1
+              - text: "Get A Paver Patio Quote"
+              - text: "Patio Contractors Near You"
+              - text: "Create A Better Backyard"
+              - text: "Professional Local Team"
+              - text: "Reliable Project Scheduling"
+              - text: "Request An Estimate Today"
+              - text: "Custom Patio Layouts"
+              - text: "Pavers For Outdoor Living"
+              - text: "Responsive Project Team"
+              - text: "Improve Your Outdoor Space"
+              - text: "A Patio Designed For You"
+              - text: "Detailed Site Preparation"
+              - text: "Talk With Our Team"
+              - text: "Book Your Consultation"
+            descriptions:
+              - "Talk with a local paver patio team about your outdoor project today."
+              - "Request clear next steps for design, materials, preparation, and installation."
+              - "Plan a patio with responsive communication and careful project coordination."
+              - "Call or submit the form to request your paver patio estimate."
+        assets:
+          sitelinks: []
+          callouts: []
+          structured_snippets: []

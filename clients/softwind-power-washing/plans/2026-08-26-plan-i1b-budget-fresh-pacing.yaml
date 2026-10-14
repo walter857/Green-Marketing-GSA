@@ -1,0 +1,189 @@
+# PLAN-I1B - AUGUST BUDGET HEADROOM ON FRESH PACING
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+# Supersedes PLAN-I1 (9308DFCF8741 VOID) and PLAN-I1A (5B9BCFA06FD5 VOID).
+# Budget-only. Read honest_projection before approving.
+
+change_plan:
+  plan_id: PLAN-I1B
+  plan_title: August budget headroom on fresh 2026-08-26 16:01 pacing
+  approval_type: BUDGET
+  priority: R1
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  recommended_approval_order: 4
+  ads_mutation_count: 2
+  requires_separate_enable_approval: false
+  supersedes:
+  - plan_id: PLAN-I1
+    fingerprint: 9308DFCF8741
+    status: VOID
+    reason: Its $299.93/$88.21 split was derived from a 10:02 snapshot and from PLAN-I2's demand
+      assumptions, both now superseded.
+  - plan_id: PLAN-I1A
+    fingerprint: 5B9BCFA06FD5
+    status: VOID - replaced by this populated plan
+    reason: 'PLAN-I1A was an actions-empty specification awaiting demand inputs. Those inputs are
+      now resolved: PLAN-I2A-C is void, so no new SKAG serves in August, and PLAN-I5 is a routing
+      fix that adds no incremental demand. The budget can therefore be computed.'
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  fresh_snapshot:
+    snapshot_account_local: '2026-08-26T16:01:33.526787-04:00'
+    identity_gate:
+      name_ok: true
+      id_ok: true
+      manager_false: true
+      test_false: true
+      currency_ok: true
+      tz_ok: true
+    mtd_spend_S: 171.17
+    remaining_budget_R: 2328.83
+    remaining_calendar_days_D: 6
+    remaining_hours_H: 127.97
+    required_average_per_remaining_calendar_day: 388.14
+    required_rolling_24_hour_pace: 436.74
+    per_campaign:
+      '24103511039':
+        campaign: Power Washing
+        impressions: 113
+        clicks: 4
+        cost: 108.99
+        avg_cpc: 27.25
+        search_impression_share: 0.4166666666666667
+        lost_is_budget: 0.022727272727272728
+        lost_is_rank: 0.5606060606060606
+      '24145053510':
+        campaign: 'Power Washing #2'
+        impressions: 14
+        clicks: 2
+        cost: 62.18
+        avg_cpc: 31.09
+        search_impression_share: 0.7
+        lost_is_budget: null
+        lost_is_rank: 0.3
+  demand_basis:
+    rule: Allocation follows ADDRESSABLE DEMAND, not rank-loss headroom. With Maximize Clicks uncapped,
+      budget aimed at rank headroom is spent by bidding UP, not by finding more queries.
+    addressable:
+      '24103511039':
+        impressions: 113
+        search_is: 0.4166666666666667
+        total_addressable_mtd: 271.2
+        active_days: 22
+        addressable_per_day: 12.33
+      '24145053510':
+        impressions: 14
+        search_is: 0.7
+        total_addressable_mtd: 20.0
+        active_days: 8
+        addressable_per_day: 2.5
+    share_campaign_A: 0.8314
+    share_campaign_B: 0.1686
+    resources_actually_enabled_in_august: Only what is live today, plus - if approved - PLAN-I2A-E's
+      House Washing Company Near Me, which Keyword Planner shows carries NO reportable local volume.
+      PLAN-I2A-C is VOID. PLAN-I5 is create-paused and is a routing fix that adds ZERO incremental
+      impressions. No approved geo expansion exists. Therefore the demand denominator is essentially
+      unchanged from today.
+    approved_geo_footprint: UNCHANGED - the current 8 targets. No geo expansion is approved, so
+      no geo multiplier is applied to this budget.
+  actions:
+  - action_id: R1-I1B-01
+    priority: R1
+    resource_type: CAMPAIGN_BUDGET
+    operation: UPDATE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: customers/1521725229/campaignBudgets/15764226923
+    field_mask: amount_micros
+    current_value:
+      budget_id: '15764226923'
+      amount_micros: 41110000
+      amount_usd: 41.11
+      capacity_remaining_6_days: 246.66
+    proposed_value:
+      amount_micros: 322710000
+      amount_usd: 322.71
+      capacity_remaining_6_days: 1936.26
+      two_x_daily_ceiling: 645.42
+    change_amount_usd: 281.6
+    why: Campaign A holds 12.33 addressable impressions/day against B's 2.5 - a 83.1% share. It
+      also carries 113 of the account's 127 MTD impressions and held 100% impression share today.
+    evidence: snapshots/rescue-snapshot-2026-08-26.json at 16:01:33
+    expected_effect: Makes $1936.26 billable on this campaign. Expected ACTUAL spend is far lower
+      - see the honest_projection block.
+    risk: HIGH on efficiency. Uncapped Maximize Clicks with 7.8x the budget in a pool that held
+      100% impression share today will bid UP, not find more queries.
+    rollback: Set amount_micros back to 41110000 ($41.11).
+    approval_required: YES - budget change, separate approval
+    object_count: 1
+  - action_id: R1-I1B-02
+    priority: R1
+    resource_type: CAMPAIGN_BUDGET
+    operation: UPDATE
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: customers/1521725229/campaignBudgets/15802443075
+    field_mask: amount_micros
+    current_value:
+      budget_id: '15802443075'
+      amount_micros: 41110000
+      amount_usd: 41.11
+      capacity_remaining_6_days: 246.66
+    proposed_value:
+      amount_micros: 65430000
+      amount_usd: 65.43
+      capacity_remaining_6_days: 392.58
+      two_x_daily_ceiling: 130.86
+    change_amount_usd: 24.32
+    why: Campaign B holds 70.0% impression share with only 30.0% rank loss and 2.5 addressable impressions/day
+      - the least unclaimed volume in the account. $65.43/day already exceeds anything it has ever
+      spent ($62.18 across 8 days).
+    evidence: same snapshot
+    expected_effect: Makes $392.58 billable on this campaign.
+    risk: LOW-MEDIUM. At 100% top impression share, extra budget mostly raises price.
+    rollback: Set amount_micros back to 41110000 ($41.11).
+    approval_required: YES - budget change, separate approval
+    object_count: 1
+  mid_month_rule_check:
+    formula: MTD + combined budget x remaining days
+    calculation: 171.17 + 388.14 x 6 = 2500.01
+    meets_2500: true
+  honest_projection:
+    headline: This budget will almost certainly NOT be spent, and the corrected demand analysis
+      is the reason.
+    detail: 'Every demand-side plan has now been reclassified as a ROUTING or RELEVANCE improvement
+      rather than net-new volume: all five proposed keywords are already matched by enabled keywords
+      today. PLAN-I2A-C is void. No geo expansion is approved. Campaign A held 100% impression share
+      on 24 impressions today - there is nothing further to buy at any budget. Raising the budget
+      from $82.22 to $388.14 creates headroom; it does not create auction demand.'
+    expected_actual_august_spend: $350-$500 without a geo decision, against a $2,500 target.
+    what_would_actually_change_it: Walter's service-area confirmation. It is the only lever with
+      a measured multiplier (up to 4.58x) attached to it.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 2
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 2
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com

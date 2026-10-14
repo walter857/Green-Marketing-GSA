@@ -1,0 +1,292 @@
+{
+ "plan_name": "AMB-0924-LP-ENABLE-1",
+ "status": "DRAFT - not approvable until CREATE-1 executes, reads back clean and its ads are APPROVED",
+ "order": [
+  "1 pause the 12 old main-site RSAs",
+  "2 enable the 12 migration copies",
+  "3 enable 12 launch RSAs",
+  "4 enable 19 keywords",
+  "5 enable 6 launch ad groups",
+  "6 enable 14 sitelink links"
+ ],
+ "old_ads_to_pause": [
+  {
+   "ad_group_id": "199797580706",
+   "ad_id": "825056834769",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+   ]
+  },
+  {
+   "ad_group_id": "199797580706",
+   "ad_id": "825056834772",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+   ]
+  },
+  {
+   "ad_group_id": "204129717247",
+   "ad_id": "825585199601",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+   ]
+  },
+  {
+   "ad_group_id": "204129717247",
+   "ad_id": "825585199604",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+   ]
+  },
+  {
+   "ad_group_id": "204129717287",
+   "ad_id": "825585199607",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+   ]
+  },
+  {
+   "ad_group_id": "204129717287",
+   "ad_id": "825585199610",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+   ]
+  },
+  {
+   "ad_group_id": "204129717007",
+   "ad_id": "825585199595",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/"
+   ]
+  },
+  {
+   "ad_group_id": "204129717007",
+   "ad_id": "825585199598",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/"
+   ]
+  },
+  {
+   "ad_group_id": "204129717767",
+   "ad_id": "825585199619",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+   ]
+  },
+  {
+   "ad_group_id": "204129717767",
+   "ad_id": "825585199622",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/"
+   ]
+  },
+  {
+   "ad_group_id": "204129718047",
+   "ad_id": "825585199643",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/"
+   ]
+  },
+  {
+   "ad_group_id": "204129718047",
+   "ad_id": "825585199646",
+   "old_url": [
+    "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/"
+   ]
+  }
+ ],
+ "keywords_to_enable": [
+  {
+   "ad_group_id": "204129717087",
+   "ad_group": "SKAG | No Heat Repair",
+   "criterion_id": "429882189727",
+   "text": "no heat repair",
+   "match": "EXACT",
+   "campaign_id": "24257819463"
+  },
+  {
+   "ad_group_id": "204129717087",
+   "ad_group": "SKAG | No Heat Repair",
+   "criterion_id": "577762646085",
+   "text": "no heat repair",
+   "match": "PHRASE",
+   "campaign_id": "24257819463"
+  },
+  {
+   "ad_group_id": "204129717327",
+   "ad_group": "SKAG | Heat Pump Repair",
+   "criterion_id": "215238074",
+   "text": "heat pump repair",
+   "match": "PHRASE",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717327",
+   "ad_group": "SKAG | Heat Pump Repair",
+   "criterion_id": "570008738",
+   "text": "heat pump repair",
+   "match": "EXACT",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717327",
+   "ad_group": "SKAG | Heat Pump Repair",
+   "criterion_id": "1928568102",
+   "text": "heat pump service",
+   "match": "EXACT",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717327",
+   "ad_group": "SKAG | Heat Pump Repair",
+   "criterion_id": "299213020987",
+   "text": "heat pump not heating",
+   "match": "EXACT",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717487",
+   "ad_group": "SKAG | Heat Pump Replacement",
+   "criterion_id": "314711675",
+   "text": "heat pump replacement",
+   "match": "PHRASE",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717487",
+   "ad_group": "SKAG | Heat Pump Replacement",
+   "criterion_id": "714767380",
+   "text": "heat pump replacement",
+   "match": "EXACT",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717487",
+   "ad_group": "SKAG | Heat Pump Replacement",
+   "criterion_id": "1437464209",
+   "text": "replace heat pump",
+   "match": "EXACT",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717527",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "criterion_id": "314278570",
+   "text": "heat pump installation",
+   "match": "EXACT",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717527",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "criterion_id": "314713295",
+   "text": "heat pump installation",
+   "match": "PHRASE",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717527",
+   "ad_group": "SKAG | Heat Pump Installation",
+   "criterion_id": "314439795071",
+   "text": "heat pump installers near me",
+   "match": "EXACT",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717567",
+   "ad_group": "SKAG | Heat Pump Maintenance",
+   "criterion_id": "314713475",
+   "text": "heat pump maintenance",
+   "match": "PHRASE",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717567",
+   "ad_group": "SKAG | Heat Pump Maintenance",
+   "criterion_id": "1460863200",
+   "text": "heat pump maintenance",
+   "match": "EXACT",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129717567",
+   "ad_group": "SKAG | Heat Pump Maintenance",
+   "criterion_id": "14273503331",
+   "text": "heat pump tune up",
+   "match": "EXACT",
+   "campaign_id": "24268690038"
+  },
+  {
+   "ad_group_id": "204129718207",
+   "ad_group": "SKAG | Boiler Replacement",
+   "criterion_id": "102974176",
+   "text": "boiler replacement",
+   "match": "EXACT",
+   "campaign_id": "24132507744"
+  },
+  {
+   "ad_group_id": "204129718207",
+   "ad_group": "SKAG | Boiler Replacement",
+   "criterion_id": "102974356",
+   "text": "boiler replacement",
+   "match": "PHRASE",
+   "campaign_id": "24132507744"
+  },
+  {
+   "ad_group_id": "204129718207",
+   "ad_group": "SKAG | Boiler Replacement",
+   "criterion_id": "548255964",
+   "text": "replace boiler",
+   "match": "EXACT",
+   "campaign_id": "24132507744"
+  },
+  {
+   "ad_group_id": "204129718207",
+   "ad_group": "SKAG | Boiler Replacement",
+   "criterion_id": "3654924422",
+   "text": "new boiler cost",
+   "match": "EXACT",
+   "campaign_id": "24132507744"
+  }
+ ],
+ "ad_groups_to_enable": [
+  {
+   "id": "204129717087",
+   "name": "SKAG | No Heat Repair"
+  },
+  {
+   "id": "204129717327",
+   "name": "SKAG | Heat Pump Repair"
+  },
+  {
+   "id": "204129717487",
+   "name": "SKAG | Heat Pump Replacement"
+  },
+  {
+   "id": "204129717527",
+   "name": "SKAG | Heat Pump Installation"
+  },
+  {
+   "id": "204129717567",
+   "name": "SKAG | Heat Pump Maintenance"
+  },
+  {
+   "id": "204129718207",
+   "name": "SKAG | Boiler Replacement"
+  }
+ ],
+ "held_not_enabled": [
+  {
+   "id": "204129718247",
+   "name": "SKAG | Boiler Installation",
+   "url": "https://offer.ambientcoolingandheating.com/boiler-installation/",
+   "reason": "page body is Boiler MAINTENANCE content (H1 'Boiler Maintenance in Central MD', 0 'install' mentions)"
+  },
+  {
+   "id": "204129718287",
+   "name": "SKAG | Boiler Maintenance",
+   "url": "https://offer.ambientcoolingandheating.com/boiler-maintenance/",
+   "reason": "H1 says maintenance but the body is Boiler INSTALLATION content (23 install vs 4 maintenance mentions) - the two pages are swapped"
+  }
+ ]
+}

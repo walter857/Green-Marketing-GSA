@@ -1,0 +1,861 @@
+{
+ "generated_local": "2026-09-10T13:54:44.158841-04:00",
+ "read_only": true,
+ "note": "No WhatConverts configuration was modified.",
+ "endpoints": {
+  "accounts": {
+   "status": 200,
+   "shape": "['page_number', 'accounts_per_page', 'total_pages', 'total_accounts', 'accounts']"
+  },
+  "profiles": {
+   "status": 400,
+   "shape": "['error']"
+  },
+  "profiles?account_id=105803": {
+   "status": 400,
+   "shape": "['error']"
+  },
+  "tracking-numbers": {
+   "status": 404,
+   "shape": "['error']"
+  },
+  "tracking-numbers?profile_id=105803": {
+   "status": 404,
+   "shape": "['error']"
+  },
+  "phone-numbers?profile_id=105803": {
+   "status": 404,
+   "shape": "['error']"
+  },
+  "numbers?profile_id=105803": {
+   "status": 404,
+   "shape": "['error']"
+  }
+ },
+ "payloads": {
+  "accounts": {
+   "page_number": 1,
+   "accounts_per_page": 25,
+   "total_pages": 2,
+   "total_accounts": 47,
+   "accounts": [
+    {
+     "account_id": 119935,
+     "account_name": "Meredith & Kull Family Outdoor Services",
+     "date_created": "2026-09-02T19:33:31Z",
+     "profiles": [
+      {
+       "profile_id": 174540,
+       "profile_name": "Meredith & Kull Family Outdoor Services",
+       "date_created": "2026-09-02T19:33:31Z"
+      }
+     ]
+    },
+    {
+     "account_id": 119788,
+     "account_name": "Apogee Lawns LLC",
+     "date_created": "2026-08-31T19:44:22Z",
+     "profiles": [
+      {
+       "profile_id": 174313,
+       "profile_name": "Apogee Lawns LLC",
+       "date_created": "2026-08-31T19:44:22Z"
+      }
+     ]
+    },
+    {
+     "account_id": 119094,
+     "account_name": "G's Landscaping - Georgetown",
+     "date_created": "2026-08-17T17:15:20Z",
+     "profiles": [
+      {
+       "profile_id": 173417,
+       "profile_name": "G's Landscaping - Georgetown",
+       "date_created": "2026-08-17T17:15:20Z"
+      }
+     ]
+    },
+    {
+     "account_id": 118258,
+     "account_name": "Flores Landscape Service",
+     "date_created": "2026-07-28T18:29:12Z",
+     "profiles": [
+      {
+       "profile_id": 172263,
+       "profile_name": "Flores Landscape Service",
+       "date_created": "2026-07-28T18:29:12Z"
+      }
+     ]
+    },
+    {
+     "account_id": 116417,
+     "account_name": "Longview Land Clearing LLC",
+     "date_created": "2026-06-16T15:16:40Z",
+     "profiles": [
+      {
+       "profile_id": 169943,
+       "profile_name": "Longview Land Clearing LLC",
+       "date_created": "2026-06-16T15:16:40Z"
+      }
+     ]
+    },
+    {
+     "account_id": 116390,
+     "account_name": "Marbia Landscape Design",
+     "date_created": "2026-06-15T18:12:26Z",
+     "profiles": [
+      {
+       "profile_id": 169908,
+       "profile_name": "Marbia Landscape Design",
+       "date_created": "2026-06-15T18:12:26Z"
+      }
+     ]
+    },
+    {
+     "account_id": 115814,
+     "account_name": "Ambient Cooling & Heating",
+     "date_created": "2026-06-03T18:17:48Z",
+     "profiles": [
+      {
+       "profile_id": 105803,
+       "profile_name": "Ambient Cooling & Heating",
+       "date_created": "2023-01-16T19:18:29Z"
+      }
+     ]
+    },
+    {
+     "account_id": 112986,
+     "account_name": "Ray Lawns",
+     "date_created": "2026-04-10T16:50:47Z",
+     "profiles": [
+      {
+       "profile_id": 165931,
+       "profile_name": "Ray Lawns",
+       "date_created": "2026-04-10T16:50:47Z"
+      }
+     ]
+    },
+    {
+     "account_id": 112298,
+     "account_name": "Powers Lawn & Landscape, LLC",
+     "date_created": "2026-03-27T16:15:13Z",
+     "profiles": [
+      {
+       "profile_id": 164976,
+       "profile_name": "Powers Lawn & Landscape, LLC",
+       "date_created": "2026-03-27T16:15:13Z"
+      }
+     ]
+    },
+    {
+     "account_id": 110977,
+     "account_name": "Poison Ivy Landscaping LLC",
+     "date_created": "2026-03-03T15:47:54Z",
+     "profiles": [
+      {
+       "profile_id": 163288,
+       "profile_name": "Poison Ivy Landscaping LLC",
+       "date_created": "2026-03-03T15:47:54Z"
+      }
+     ]
+    },
+    {
+     "account_id": 110122,
+     "account_name": "LMD Solutions",
+     "date_created": "2026-02-12T19:40:54Z",
+     "profiles": [
+      {
+       "profile_id": 162181,
+       "profile_name": "LMD Solutions",
+       "date_created": "2026-02-12T19:40:54Z"
+      }
+     ]
+    },
+    {
+     "account_id": 109355,
+     "account_name": "SGT Majors Lawn Care",
+     "date_created": "2026-01-29T18:22:43Z",
+     "profiles": [
+      {
+       "profile_id": 161082,
+       "profile_name": "SGT Majors Lawn Care",
+       "date_created": "2026-01-29T18:22:43Z"
+      }
+     ]
+    },
+    {
+     "account_id": 109283,
+     "account_name": "Adam's Lawn Service Austin",
+     "date_created": "2026-01-28T18:30:02Z",
+     "profiles": [
+      {
+       "profile_id": 160956,
+       "profile_name": "Adam's Lawn Service Austin",
+       "date_created": "2026-01-28T18:30:02Z"
+      }
+     ]
+    },
+    {
+     "account_id": 109064,
+     "account_name": "Modern Lawn and Property Solutions",
+     "date_created": "2026-01-23T20:00:16Z",
+     "profiles": [
+      {
+       "profile_id": 160655,
+       "profile_name": "Modern Lawn and Property Solutions",
+       "date_created": "2026-01-23T20:00:16Z"
+      }
+     ]
+    },
+    {
+     "account_id": 108800,
+     "account_name": "Insignia - Clearwater",
+     "date_created": "2026-01-19T17:58:25Z",
+     "profiles": [
+      {
+       "profile_id": 160329,
+       "profile_name": "Insignia - Clearwater",
+       "date_created": "2026-01-19T17:58:25Z"
+      }
+     ]
+    },
+    {
+     "account_id": 107963,
+     "account_name": "Iowa Lawn and Landscape LLC",
+     "date_created": "2025-12-23T18:36:34Z",
+     "profiles": [
+      {
+       "profile_id": 159042,
+       "profile_name": "Iowa Lawn and Landscape LLC",
+       "date_created": "2025-12-23T18:36:34Z"
+      }
+     ]
+    },
+    {
+     "account_id": 107898,
+     "account_name": "Softwind Landscape & Masonry - NY",
+     "date_created": "2025-12-22T17:17:42Z",
+     "profiles": [
+      {
+       "profile_id": 158931,
+       "profile_name": "Softwind Landscape & Masonry",
+       "date_created": "2025-12-22T17:17:42Z"
+      }
+     ]
+    },
+    {
+     "account_id": 106903,
+     "account_name": "Tallahassee Lawn Salon",
+     "date_created": "2025-12-01T17:41:43Z",
+     "profiles": [
+      {
+       "profile_id": 157591,
+       "profile_name": "Tallahassee Lawn Salon",
+       "date_created": "2025-12-01T17:41:43Z"
+      }
+     ]
+    },
+    {
+     "account_id": 104827,
+     "account_name": "Greener Pastures Lawn Care LLC",
+     "date_created": "2025-11-06T17:54:44Z",
+     "profiles": [
+      {
+       "profile_id": 155160,
+       "profile_name": "Greener Pastures Lawn Care LLC",
+       "date_created": "2025-11-06T17:54:44Z"
+      }
+     ]
+    },
+    {
+     "account_id": 103972,
+     "account_name": "Castillos Lawn Care & Landscaping LLC",
+     "date_created": "2025-10-17T17:05:19Z",
+     "profiles": [
+      {
+       "profile_id": 153956,
+       "profile_name": "Castillos Lawn Care & Landscaping LLC",
+       "date_created": "2025-10-17T17:05:19Z"
+      }
+     ]
+    },
+    {
+     "account_id": 101939,
+     "account_name": "Pristine Lawn Care",
+     "date_created": "2025-09-01T17:52:35Z",
+     "profiles": []
+    },
+    {
+     "account_id": 101834,
+     "account_name": "JT's Lawn Care & Landscaping",
+     "date_created": "2025-08-28T17:29:47Z",
+     "profiles": [
+      {
+       "profile_id": 151096,
+       "profile_name": "JT's Lawn Care & Landscaping",
+       "date_created": "2025-08-28T17:29:47Z"
+      }
+     ]
+    },
+    {
+     "account_id": 100622,
+     "account_name": "Emerald Oasis",
+     "date_created": "2025-07-29T17:43:34Z",
+     "profiles": [
+      {
+       "profile_id": 149544,
+       "profile_name": "Emerald Oasis",
+       "date_created": "2025-07-29T17:43:34Z"
+      }
+     ]
+    },
+    {
+     "account_id": 96840,
+     "account_name": "Perfect Edge Outdoor Services, LLC",
+     "date_created": "2025-04-22T19:36:03Z",
+     "profiles": [
+      {
+       "profile_id": 144496,
+       "profile_name": "Perfect Edge Outdoor Services, LLC",
+       "date_created": "2025-04-22T19:36:03Z"
+      }
+     ]
+    },
+    {
+     "account_id": 94161,
+     "account_name": "Greenway Lawn Care",
+     "date_created": "2025-03-03T17:11:08Z",
+     "profiles": [
+      {
+       "profile_id": 141351,
+       "profile_name": "Greenway Lawn Care",
+       "date_created": "2025-03-03T17:11:08Z"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "number_roles_in_lead_data": {
+  "4104297280": {
+   "TRACKING NUMBER (what the caller dialled)": 39
+  },
+  "4107610932": {
+   "DESTINATION (where the call was routed)": 86
+  },
+  "4106152945": {
+   "SOURCE/CALLER-SIDE field": 2
+  },
+  "4104494021": {
+   "TRACKING NUMBER (what the caller dialled)": 31
+  },
+  "4107038549": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4109141456": {
+   "TRACKING NUMBER (what the caller dialled)": 9
+  },
+  "4107702087": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2402099712": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2402213167": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4102133047": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "9704048757": {
+   "SOURCE/CALLER-SIDE field": 2
+  },
+  "4439009769": {
+   "SOURCE/CALLER-SIDE field": 3
+  },
+  "4108440745": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "5707022521": {
+   "SOURCE/CALLER-SIDE field": 2
+  },
+  "6509933680": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "9179957566": {
+   "SOURCE/CALLER-SIDE field": 2
+  },
+  "2406268791": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "7608191279": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4105933261": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "6312979292": {
+   "SOURCE/CALLER-SIDE field": 2
+  },
+  "4105109316": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4102922156": {
+   "SOURCE/CALLER-SIDE field": 2
+  },
+  "3219866641": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2133719027": {
+   "SOURCE/CALLER-SIDE field": 2
+  },
+  "9179149762": {
+   "SOURCE/CALLER-SIDE field": 2
+  },
+  "2026699068": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4433369053": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4432558156": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4434658109": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4104984240": {
+   "TRACKING NUMBER (what the caller dialled)": 3
+  },
+  "3013959311": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4108419804": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4153543252": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "9175392516": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4107339261": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "5733094520": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2013381541": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4104159517": {
+   "TRACKING NUMBER (what the caller dialled)": 2
+  },
+  "6402059798": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "6032194354": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "9857055178": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "7719990779": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4107056354": {
+   "TRACKING NUMBER (what the caller dialled)": 6
+  },
+  "4438312348": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4105139803": {
+   "TRACKING NUMBER (what the caller dialled)": 2
+  },
+  "6179013045": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4438440690": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4437928149": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4108021764": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "6198864173": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4433333091": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4438520366": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2402015386": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2034049652": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "3012130494": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "3023731067": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4109032509": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "3072074991": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "6822867821": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4432380061": {
+   "TRACKING NUMBER (what the caller dialled)": 1
+  },
+  "4433707001": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "6072057778": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2404787900": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2487025712": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4122931956": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "3195418917": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4103768519": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4432408779": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2092676682": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4439357285": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2405275457": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4102020206": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "7034776298": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2252051088": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4105830708": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "8885915930": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2406043874": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4437311353": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4104297756": {
+   "TRACKING NUMBER (what the caller dialled)": 1
+  },
+  "6362456542": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4437311117": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4104067267": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4436042135": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4109918629": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "6186903257": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4102164650": {
+   "TRACKING NUMBER (what the caller dialled)": 1
+  },
+  "4438525629": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4437583760": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4704709974": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4109033925": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2395230744": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "8088243555": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "4102244500": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "6167801307": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "6674178227": {
+   "SOURCE/CALLER-SIDE field": 1
+  },
+  "2403742889": {
+   "SOURCE/CALLER-SIDE field": 1
+  }
+ },
+ "call_assets": [
+  {
+   "asset_id": "80497290055",
+   "number": "(410) 415-9517",
+   "digits": "4104159517",
+   "country": "US",
+   "conversion_action": "customers/2401959466/conversionActions/179",
+   "reporting": "USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION"
+  },
+  {
+   "asset_id": "98498198415",
+   "number": "(410) 415-9517",
+   "digits": "4104159517",
+   "country": "US",
+   "conversion_action": "customers/2401959466/conversionActions/179",
+   "reporting": "USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION"
+  },
+  {
+   "asset_id": "343054924787",
+   "number": "(410) 705-6354",
+   "digits": "4107056354",
+   "country": "US",
+   "conversion_action": "customers/2401959466/conversionActions/179",
+   "reporting": "USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION"
+  },
+  {
+   "asset_id": "369249814267",
+   "number": "4107056354",
+   "digits": "4107056354",
+   "country": "US",
+   "conversion_action": "customers/2401959466/conversionActions/179",
+   "reporting": "USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION"
+  },
+  {
+   "asset_id": "407995613637",
+   "number": "(410)705-6354",
+   "digits": "4107056354",
+   "country": "US",
+   "conversion_action": "customers/2401959466/conversionActions/179",
+   "reporting": "USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION"
+  }
+ ],
+ "campaign_call_links": [
+  {
+   "campaign": "AC Repair",
+   "asset_id": "349923938310",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "asset_id": "349923938310",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "asset_id": "349923938310",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "asset_id": "349923938310",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "asset_id": "349923938310",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "AC Repair",
+   "asset_id": "407418595411",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "asset_id": "407418595411",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "asset_id": "407418595411",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "asset_id": "407418595411",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "asset_id": "407418595411",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "AC Repair",
+   "asset_id": "407418627430",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "asset_id": "407418627430",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "asset_id": "407418627430",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "asset_id": "407418627430",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "asset_id": "407418627430",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "AC Repair",
+   "asset_id": "407418646876",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "asset_id": "407418646876",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "asset_id": "407418646876",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "asset_id": "407418646876",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "asset_id": "407418646876",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "AC Repair",
+   "asset_id": "407418646882",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "asset_id": "407418646882",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "asset_id": "407418646882",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "asset_id": "407418646882",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "asset_id": "407418646882",
+   "number": null,
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "AC Repair",
+   "asset_id": "407995613637",
+   "number": "(410)705-6354",
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "asset_id": "407995613637",
+   "number": "(410)705-6354",
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "asset_id": "407995613637",
+   "number": "(410)705-6354",
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "asset_id": "407995613637",
+   "number": "(410)705-6354",
+   "status": "ENABLED"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "asset_id": "407995613637",
+   "number": "(410)705-6354",
+   "status": "ENABLED"
+  }
+ ],
+ "verdict": {
+  "paid_number_is_a_call_asset": true,
+  "unapproved_number_is_a_call_asset": false,
+  "unapproved_number_in_lead_records": true,
+  "unapproved_number_roles": {
+   "TRACKING NUMBER (what the caller dialled)": 9
+  }
+ }
+}

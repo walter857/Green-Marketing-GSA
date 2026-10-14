@@ -1,0 +1,266 @@
+# PLAN-R11 - OLD RESOURCE PAUSES
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# BLOCKED until PLAN-R10 is executed and verified. NOT APPROVED.
+change_plan:
+  plan_id: PLAN-R11
+  plan_title: Retire the duplicated and displaced containers, after replacements are live
+  approval_type: PAUSE_AND_UNLINK_AFTER_REPLACEMENT
+  priority: P1
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 11
+  object_count_total: 11
+  requires_separate_enable_approval: false
+  recommended_approval_order: 11
+  depends_on: [PLAN-R4, PLAN-R6, PLAN-R10]
+  blocking_status:
+    state: BLOCKED
+    reason: >-
+      Nothing here may execute until the replacement resources from PLAN-R6 are
+      ENABLED, verified serving, and have accumulated at least seven serving days
+      of data. Pausing a container before its replacement is proven means the
+      account loses coverage it currently has.
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  nothing_here_is_a_deletion: >-
+    Every action is a PAUSE or an UNLINK. No campaign, ad group, keyword, ad,
+    conversion action, audience or asset is deleted. Deletion would require a
+    separate destructive-action approval and none is requested.
+
+  actions:
+    - action_id: R11-01
+      priority: P1
+      resource_type: ad_group
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24145053510"
+      ad_group_id: "198082078783"
+      resource_id: "customers/1521725229/adGroups/198082078783"
+      current_value: ENABLED
+      proposed_value: PAUSED
+      object_count: 1
+      rationale: >-
+        Power Washing Services Near Me in campaign B. The ONE ad group enabled in
+        both campaigns with the same keyword texts. Campaign A twin (202870585430)
+        holds 94 impressions and 4 clicks against this one 13 impressions and 1
+        click. Direct duplication; campaign A keeps it.
+      lifetime: 13 impressions, 1 click, $29.04, 0 conversions
+    - action_id: R11-02
+      priority: P1
+      resource_type: ad_group
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24145053510"
+      ad_group_id: "198082079423"
+      resource_id: "customers/1521725229/adGroups/198082079423"
+      current_value: ENABLED
+      proposed_value: PAUSED
+      object_count: 1
+      rationale: >-
+        Residential Pressure Washing Near Me in campaign B. $176.17 on 6 clicks and
+        7 recorded impressions - an 85.7% CTR that is not a plausible human
+        search-result rate. It is the container that absorbed the 2026-08-31 event
+        of five billable clicks on one recorded impression, $146.60, from a single
+        query and a single postal code. Its intent is replaced by the new Pressure
+        Washing Near Me SKAG in campaign A (PLAN-R6, R6-01).
+      lifetime: 7 impressions, 6 clicks, $176.17, 0 conversions
+      execute_only_after: PLAN-R10 R10-03 has been serving for 7 days
+    - action_id: R11-03
+      priority: P1
+      resource_type: ad_group
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24145053510"
+      ad_group_id: "198082078983"
+      resource_id: "customers/1521725229/adGroups/198082078983"
+      current_value: ENABLED
+      proposed_value: PAUSED
+      object_count: 1
+      rationale: >-
+        House Pressure Washing Estimate in campaign B. $104.85 on 3 clicks, and
+        every search term it attracted is price research rather than an estimate
+        request - powerwash cost, average cost to power wash a house, cost to power
+        wash, house wash price, how much does power washing a house cost, power
+        washing costs, price to powerwash house. The token "estimate" pulls
+        researchers. Nothing on the landing page answers a price question, so the
+        traffic cannot convert. Retire the container; the cost cluster gets a
+        content answer in PLAN-R7 F7 or it gets nothing.
+      lifetime: 24 impressions, 3 clicks, $104.85, 0 conversions
+    - action_id: R11-04
+      priority: P2
+      resource_type: ad_group
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      ad_group_id: "202870585630"
+      resource_id: "customers/1521725229/adGroups/202870585630"
+      current_value: ENABLED
+      proposed_value: PAUSED
+      object_count: 1
+      rationale: >-
+        Power Washing Islip. Zero impressions in the account entire life. Its
+        keyword power washing islip returns no reportable local volume, and the
+        three-hamlet framing it was built for now covers 3 of 80 targeted places.
+      lifetime: 0 impressions, 0 clicks, $0.00
+    - action_id: R11-05
+      priority: P2
+      resource_type: ad_group
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      ad_group_id: "202870585830"
+      resource_id: "customers/1521725229/adGroups/202870585830"
+      current_value: ENABLED
+      proposed_value: PAUSED
+      object_count: 1
+      rationale: Power Washing Dix Hills. Zero impressions in the account entire life.
+      lifetime: 0 impressions, 0 clicks, $0.00
+    - action_id: R11-06
+      priority: P2
+      resource_type: ad_group
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      ad_group_id: "202870585670"
+      resource_id: "customers/1521725229/adGroups/202870585670"
+      current_value: ENABLED
+      proposed_value: PAUSED
+      object_count: 1
+      rationale: >-
+        Power Washing West Islip. One impression, one click, $5.71 - the cheapest
+        click the account has ever taken. That is a single data point on a single
+        impression and is not repeatable evidence. Same three-hamlet framing
+        problem as R11-04 and R11-05.
+      lifetime: 1 impression, 1 click, $5.71, 0 conversions
+      note: >-
+        If the owner would rather keep the three geo SKAGs for local-copy testing,
+        R11-04 through R11-06 can be dropped from this plan at a cost of $0.00 in
+        measured waste. They are included because they add three containers to an
+        account that has 22 lifetime clicks, not because they are wasting money.
+    - action_id: R11-07
+      priority: P1
+      resource_type: campaign
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24145053510"
+      resource_id: "customers/1521725229/campaigns/24145053510"
+      current_value: ENABLED
+      proposed_value: PAUSED
+      object_count: 1
+      rationale: >-
+        Power Washing #2. Once R11-01 through R11-03 have retired its three
+        material ad groups, the campaign holds only zero-impression containers.
+        Pausing the campaign consolidates all delivery into 24103511039, ends the
+        close-variant routing contest between two mirrored campaigns, and stops
+        fragmenting conversion data across two containers that have produced none.
+      lifetime: 44 impressions, 10 clicks, $310.06, 0 conversions
+      execute_only_after: [R11-01, R11-02, R11-03]
+      not_a_deletion: >-
+        PAUSED, not REMOVED. Every ad group, keyword, ad and asset link inside it
+        survives untouched and the campaign can be re-enabled with one mutation.
+    - action_id: R11-08
+      priority: P2
+      resource_type: customer_asset
+      operation: REMOVE
+      customer_id: "1521725229"
+      resource_id: "customers/1521725229/customerAssets/403497568748~SITELINK"
+      current_value: "ENABLED account-level sitelink Service Areas -> https://softwindli.com/service-areas/"
+      proposed_value: REMOVED
+      object_count: 1
+      rationale: >-
+        Points at a page that renders the UNTRACKED (631) 502-5402. A call from it
+        is invisible to Google Ads and to WhatConverts.
+      blast_radius: >-
+        The account contains exactly two non-removed campaigns and both are under
+        this work order and both carry campaign-level sitelinks that override this
+        one. Verified against campaign_asset and ad_group_asset, not assumed.
+      not_a_deletion_of_the_asset: >-
+        This removes the LINK. Asset 403497568748 survives and can be re-linked.
+    - action_id: R11-09
+      priority: P2
+      resource_type: customer_asset
+      operation: REMOVE
+      customer_id: "1521725229"
+      resource_id: "customers/1521725229/customerAssets/403497573329~SITELINK"
+      current_value: "ENABLED account-level sitelink Request A Quote -> https://softwindli.com/contact-us/"
+      proposed_value: REMOVED
+      object_count: 1
+      rationale: same untracked-number leak as R11-08
+    - action_id: R11-10
+      priority: P2
+      resource_type: customer_asset
+      operation: REMOVE
+      customer_id: "1521725229"
+      resource_id: "customers/1521725229/customerAssets/403497584582~SITELINK"
+      current_value: "ENABLED account-level sitelink Our Work -> https://softwindli.com/our-work/"
+      proposed_value: REMOVED
+      object_count: 1
+      rationale: same untracked-number leak as R11-08
+    - action_id: R11-11
+      priority: P2
+      resource_type: ad_group_ad
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      ad_group_id: "202870585390"
+      resource_id: "customers/1521725229/ads/819975939342"
+      current_value: ENABLED
+      proposed_value: PAUSED
+      object_count: 1
+      rationale: >-
+        The weaker of the two existing RSAs in Power Washing Near Me - 45
+        impressions, 1 click, 2.22% CTR, $82.22, against its stablemate 36
+        impressions, 6 clicks, 16.67% CTR. Retiring it leaves three serving ads in
+        the ad group (819975939345 plus the two from PLAN-R5), which is the right
+        number for an ad group taking roughly one click a day.
+      execute_only_after: PLAN-R10 R10-01 and R10-02 have been serving for 7 days
+      deliberately_kept: >-
+        819975939345 stays ENABLED. It is the account best-performing ad and there
+        is no evidence for retiring it.
+
+  ordering_is_the_safety_story:
+    - >-
+      Pause the campaign-B ad groups (R11-01, R11-02, R11-03) only after their
+      campaign-A replacements have served for seven days.
+    - >-
+      Pause campaign B itself (R11-07) only after all three of its material ad
+      groups are paused.
+    - >-
+      Pause the old RSA (R11-11) only after both replacements have served for seven
+      days, and never leave the ad group with fewer than two ENABLED ads.
+    - >-
+      Remove the account-level sitelinks (R11-08 to R11-10) only after confirming
+      both campaigns still carry four campaign-level sitelinks each. Never a window
+      with zero sitelinks.
+
+  qa_after_execution:
+    - Read back every paused resource and assert status PAUSED.
+    - >-
+      Assert campaign 24103511039 is still ENABLED, still primary_status ELIGIBLE,
+      and its budget is unchanged.
+    - >-
+      Assert campaign_asset SITELINK count is 4 on 24103511039 before and after the
+      customer_asset removals.
+    - >-
+      Assert every ad group left ENABLED has at least two ENABLED ads.
+    - >-
+      Watch next-day impressions. A total collapse means the consolidation removed
+      more coverage than it consolidated, and R11-07 should be reverted first.
+
+  risk: >-
+    MEDIUM-HIGH if executed early, LOW if the ordering is respected. The material
+    risk is pausing campaign B before campaign A demonstrably covers its four
+    unique intents, which would drop account coverage rather than consolidate it.
+  rollback: >-
+    Set each paused resource back to ENABLED (8 mutations) and re-create the three
+    customer_asset links (3 mutations). Eleven mutations, fully reversing this plan.
+    No asset or resource is deleted, so rollback is complete.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does not grant permission. This plan
+    is BLOCKED on PLAN-R10 regardless of approval.

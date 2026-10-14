@@ -1,0 +1,164 @@
+# Service truth for Softwind Landscape & Masonry (2429758629), Patio and Pavers.
+#
+# Every decision below carries its source. OFFERED means an authoritative source
+# says the account sells it. NOT_OFFERED means an authoritative source excludes
+# it. UNKNOWN means no authoritative source resolves it - those themes are
+# neither negated nor promoted, and each one that costs real money is raised as
+# a question.
+#
+# Sources used, in the project's priority order:
+#   USER-2026-09-03  the recovery prompt's explicit service scope
+#   OWNER-2026-08-28 the owner's account/campaign mapping statement
+#   ACCOUNT          a fresh read of 2429758629 on 2026-09-03
+#   LP               live read of the two offer landing pages on 2026-09-03
+
+service_truth:
+  resolved_offered:
+    - service: patio construction
+      status: OFFERED
+      source: USER-2026-09-03 (work order A) + LP (offer.softwindli.com/patio/ H1)
+      evidence: >-
+        Landing-page H1: "Patio Installation By A Local Patio Contractor You Can
+        Trust". Campaign Patio has been serving since 2026-01-21.
+    - service: paver patio installation
+      status: OFFERED
+      source: USER-2026-09-03 (related service, work order A) + LP
+      evidence: >-
+        Live ad headline "Paver Patio Installation" is APPROVED and serving; the
+        Patio landing page FAQ asks "Do you install paver patios and concrete
+        patios".
+    - service: paver installation
+      status: OFFERED
+      source: USER-2026-09-03 (work order B) + LP
+      evidence: >-
+        Landing-page H1: "Paver Installation Near You In Long Island, NY".
+        Campaign Pavers serving since 2026-01-21.
+    - service: paver walkways and steps
+      status: OFFERED
+      source: LP + ACCOUNT
+      evidence: >-
+        Live ad headline "Walkways Steps Seating Walls"; enabled keyword
+        "paver walkway installation" in both match types.
+      note: In scope as part of paver installation, work order B.
+
+  resolved_not_offered_for_this_program:
+    # Sibling-account scope. Owner-confirmed 2026-08-28.
+    - {service: power washing,   status: NOT_OFFERED, source: OWNER-2026-08-28, owner_account: "1521725229"}
+    - {service: pressure washing, status: NOT_OFFERED, source: OWNER-2026-08-28, owner_account: "1521725229"}
+    - {service: soft washing,     status: NOT_OFFERED, source: OWNER-2026-08-28, owner_account: "1521725229"}
+    - {service: house washing,    status: NOT_OFFERED, source: OWNER-2026-08-28, owner_account: "1521725229"}
+    - {service: roof cleaning,    status: NOT_OFFERED, source: OWNER-2026-08-28, owner_account: "1521725229"}
+    - {service: gutter cleaning,  status: NOT_OFFERED, source: OWNER-2026-08-28, owner_account: "1521725229"}
+    - {service: window cleaning,  status: NOT_OFFERED, source: OWNER-2026-08-28, owner_account: "1521725229"}
+    # Recovery-scope exclusions. USER-2026-09-03 section 2.
+    - {service: asphalt paving,   status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: asphalt repair,   status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: blacktop,         status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: sealcoating,      status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: tar-and-chip driveways, status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: paver restoration, status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: paver resanding,   status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: paver leveling,    status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: patio covers,      status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: patio roofs,       status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: patio enclosures,  status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: screened patios,   status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: pergolas,          status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: gazebos,           status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: decks,             status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: material-only or retail paver sales, status: NOT_OFFERED, source: USER-2026-09-03}
+    - {service: DIY instruction,   status: NOT_OFFERED, source: USER-2026-09-03}
+
+  resolved_out_of_scope_but_offered_elsewhere_in_this_account:
+    - service: paver sealing
+      status: NOT_IN_THIS_WORK_ORDER
+      source: ACCOUNT
+      evidence: >-
+        This account contains its own PAUSED campaign "Paver Sealing"
+        (23914857298) with three ad groups - Paver Sealing, Paver Cleaning &
+        Sealing, Paver Sanding & Resealing - and its own landing page
+        offer.softwindli.com/paver-cleaning-sealing/. It spent $881.88 and
+        recorded 7 credits between June and August.
+      consequence: >-
+        Sealing demand is blocked on Patio and Pavers by PLAN-SLM-NEG-1 and
+        routed nowhere, because the owning campaign is paused. This is correct
+        for these two work orders. It also resolves SLM-Q4 in this direction:
+        paver sealing belongs to 2429758629, not to 1521725229.
+    - service: hardscaping / retaining walls
+      status: NOT_IN_THIS_WORK_ORDER
+      source: ACCOUNT
+      evidence: >-
+        Separate PAUSED campaigns Hardscaping (23484545411) and Retaining Walls
+        (23489591905) exist with their own landing pages. 63 of the 161 Patio and
+        Pavers keywords are hardscape-contractor texts that duplicate the
+        Hardscaping campaign; all 63 are PAUSED and stay paused.
+
+  unknown_must_be_resolved:
+    - service: driveway paver installation
+      status: UNKNOWN
+      question_id: SLM-Q5
+      cost_at_stake_visible: 346.05
+      share_of_visible_patio_pavers_spend: "13.5%"
+      raw_credits_produced: 0
+      live_keywords_affected:
+        - {text: "paver driveway installation near me", match: EXACT,  cost: 147.79, clicks: 4, credits: 0}
+        - {text: "paver driveway installation near me", match: PHRASE, cost: 0.00,   clicks: 0, credits: 0}
+        - {text: "local driveway companies",            match: PHRASE, cost: 89.92,  clicks: 5, credits: 0}
+        - {text: "driveway companies near me",          match: PHRASE, cost: 68.17,  clicks: 3, credits: 0}
+      recommendation: >-
+        If driveway pavers ARE offered, keep "paver driveway installation near
+        me" and pause the two unqualified "driveway companies" texts, which carry
+        no paver word and pull asphalt-driveway intent. If they are NOT offered,
+        pause all four and add "driveway" as a PHRASE negative on both campaigns.
+      blocks: the driveway half of the negative plan and the canonical routing of
+        17.0% of live keyword spend
+    - service: concrete patio installation
+      status: UNKNOWN
+      question_id: SLM-Q5
+      cost_at_stake_visible: 173.24
+      raw_credits_produced: 0
+      evidence_for: >-
+        The Patio landing-page FAQ asks "Do you install paver patios and concrete
+        patios" and a live RSA headline reads "Concrete & Paver Patios". Both are
+        agency-produced assets, so neither is independent confirmation.
+      evidence_against: none
+      recommendation: Treat as OFFERED once the owner confirms the FAQ is accurate.
+    - service: bluestone patio installation
+      status: UNKNOWN
+      question_id: SLM-Q5
+      cost_at_stake_visible: 22.74
+      raw_credits_produced: 0
+      recommendation: Low financial stakes. Resolve with the rest, do not block work on it.
+    - service: masonry repair
+      status: UNKNOWN
+      question_id: SLM-Q5
+      cost_at_stake_visible: 62.01
+      raw_credits_produced: 0
+      note: >-
+        The account is named "Landscape & Masonry" but no masonry campaign
+        exists. Related to open question SLM-Q3.
+    - service: patio resurfacing
+      status: UNKNOWN_LEANING_NOT_OFFERED
+      question_id: SLM-Q5
+      cost_at_stake_visible: 12.50
+      note: >-
+        PLAN-SLM-NEG-1 DOES block resurfacing, because USER-2026-09-03 lists
+        "patio resurfacing" among the themes not to assume and the recovery scope
+        is new construction. If the owner says resurfacing is offered, remove the
+        7 resurfacing negatives before executing.
+    - service: pool deck and pool coping
+      status: UNKNOWN_LEANING_OFFERED
+      question_id: SLM-Q5
+      cost_at_stake_visible: 27.51
+      evidence_for: >-
+        Enabled keyword "pool paver installation" in both match types; paused
+        keyword "pool patio pavers". Pool surrounds are ordinary paver work.
+      note: Not blocked by any negative in this plan.
+
+  total_unknown_visible_spend: 662.48
+  total_unknown_share_of_visible_patio_pavers_spend: "25.9%"
+  total_unknown_raw_credits: 0.0
+  headline: >-
+    A quarter of visible Patio and Pavers spend has gone to service themes nobody
+    has confirmed the client sells, and that quarter has produced no conversion
+    credit at all. Answering SLM-Q5 is worth more than any other single input.

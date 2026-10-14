@@ -1,0 +1,184 @@
+{
+ "plan_name": "AMB-0909B-COMP-1",
+ "approval_class": "reversible-addition",
+ "generated_local": "2026-09-09T18:05:19.723631-04:00",
+ "supersedes": "AMB-0909-NEG-ADD-1 (23BE8FF0F24C) - SUPERSEDED, DO_NOT_EXECUTE",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "AC Repair",
+  "related_services": [
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "summary": "Verified competitors only: 3 negatives on HVAC Installation - two EXACT for Arundel Cooling & Heating brand queries and one PHRASE for Maryland Mechanical Heating & Cooling.",
+ "object_count": 3,
+ "partial_failure": false,
+ "atomic": true,
+ "operations": [
+  {
+   "operation": "ADD_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_id": "24132507747",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "match_type": "EXACT",
+   "negative_text": "arundel cooling and heating reviews",
+   "current_state": "not present at campaign, ad group or account level",
+   "proposed_state": "negative KEYWORD [EXACT] 'arundel cooling and heating reviews' ENABLED",
+   "reason": "Verified competing HVAC contractor: Arundel Cooling & Heating Co., Inc.. Linthicum Heights is one of Ambient's 75 live location targets. Operating since 1971, now part of Service Experts. Residential and light commercial HVAC across Baltimore, Columbia, Annapolis, Ellicott City and Bowie - direct footprint overlap. Also a Carrier dealer.",
+   "entity_verification": {
+    "entity": "Arundel Cooling & Heating Co., Inc.",
+    "address": "707 Nursery Rd, Linthicum Heights, MD 21090",
+    "note": "Linthicum Heights is one of Ambient's 75 live location targets. Operating since 1971, now part of Service Experts. Residential and light commercial HVAC across Baltimore, Columbia, Annapolis, Ellicott City and Bowie - direct footprint overlap. Also a Carrier dealer.",
+    "sources": [
+     "https://www.bbb.org/us/md/linthicum/profile/heating-and-air-conditioning/arundel-cooling-heating-co-inc-0011-563",
+     "https://www.yelp.com/biz/arundel-cooling-and-heating-linthicum-heights-2",
+     "https://www.carrier.com/us/en/residential/dealers/md/linthicum-heights/707-nursery-rd-3274-loc"
+    ],
+    "match_choice": "EXACT, not PHRASE and never BROAD. Local preflight proved that PHRASE 'arundel cooling and heating' also blocks 'anne arundel cooling and heating', which produced a primary phone-call conversion in the legacy Heating Maintenance campaign, and sits one word away from 'hvac anne arundel county'. Anne Arundel County is Ambient's core service area. EXACT on the two unambiguous brand queries leaves both county queries free.",
+    "deliberately_not_blocked": [
+     "anne arundel cooling and heating - 1 primary conversion (Calls from ads)",
+     "hvac anne arundel county - county intent",
+     "arundel cooling and heating - too close to the county queries; 6 impressions, 0 clicks, $0.00, not worth the risk"
+    ],
+    "observed": {
+     "rows": 2,
+     "impressions": 8,
+     "clicks": 1,
+     "cost": 20.44,
+     "conversions": 0.0,
+     "terms": [
+      "arundel cooling and heating reviews"
+     ]
+    },
+    "why_this_one": "Unambiguous brand-research query and the only Arundel term that took a click. It carries all $20.44 of the measured Arundel waste."
+   },
+   "word_count": 5,
+   "char_count": 35,
+   "conflict_tests": {
+    "active_positive_keywords": "clear - the only live positives are 'hvac installers near me' PHRASE and EXACT",
+    "converting_terms_all_time_account_wide": "clear - 0 of 304 blocked",
+    "bofu_probes": "clear - 0 of 67 blocked",
+    "service_area": "clear - blocks none of the 80 live Maryland place tokens, none of the 67 BOFU probes and none of the 304 account-wide converting terms, including 'anne arundel cooling and heating'",
+    "manufacturers": "clear - contains no manufacturer token"
+   },
+   "rollback": "remove the campaign negative 'arundel cooling and heating reviews' [EXACT] from 24132507747",
+   "risk": "LOW",
+   "unrelated_resource_assertion": "HVAC Installation ENABLED campaign negatives must rise from 1435 to 1437 (or from 1420 to 1422 if AMB-0909B-NEG-A ran first); no other campaign changes"
+  },
+  {
+   "operation": "ADD_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_id": "24132507747",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "match_type": "EXACT",
+   "negative_text": "arundel heating and cooling maryland",
+   "current_state": "not present at campaign, ad group or account level",
+   "proposed_state": "negative KEYWORD [EXACT] 'arundel heating and cooling maryland' ENABLED",
+   "reason": "Verified competing HVAC contractor: Arundel Cooling & Heating Co., Inc.. Linthicum Heights is one of Ambient's 75 live location targets. Operating since 1971, now part of Service Experts. Residential and light commercial HVAC across Baltimore, Columbia, Annapolis, Ellicott City and Bowie - direct footprint overlap. Also a Carrier dealer.",
+   "entity_verification": {
+    "entity": "Arundel Cooling & Heating Co., Inc.",
+    "address": "707 Nursery Rd, Linthicum Heights, MD 21090",
+    "note": "Linthicum Heights is one of Ambient's 75 live location targets. Operating since 1971, now part of Service Experts. Residential and light commercial HVAC across Baltimore, Columbia, Annapolis, Ellicott City and Bowie - direct footprint overlap. Also a Carrier dealer.",
+    "sources": [
+     "https://www.bbb.org/us/md/linthicum/profile/heating-and-air-conditioning/arundel-cooling-heating-co-inc-0011-563",
+     "https://www.yelp.com/biz/arundel-cooling-and-heating-linthicum-heights-2",
+     "https://www.carrier.com/us/en/residential/dealers/md/linthicum-heights/707-nursery-rd-3274-loc"
+    ],
+    "match_choice": "EXACT, not PHRASE and never BROAD. Local preflight proved that PHRASE 'arundel cooling and heating' also blocks 'anne arundel cooling and heating', which produced a primary phone-call conversion in the legacy Heating Maintenance campaign, and sits one word away from 'hvac anne arundel county'. Anne Arundel County is Ambient's core service area. EXACT on the two unambiguous brand queries leaves both county queries free.",
+    "deliberately_not_blocked": [
+     "anne arundel cooling and heating - 1 primary conversion (Calls from ads)",
+     "hvac anne arundel county - county intent",
+     "arundel cooling and heating - too close to the county queries; 6 impressions, 0 clicks, $0.00, not worth the risk"
+    ],
+    "observed": {
+     "rows": 1,
+     "impressions": 1,
+     "clicks": 0,
+     "cost": 0.0,
+     "conversions": 0.0,
+     "terms": [
+      "arundel heating and cooling maryland"
+     ]
+    },
+    "why_this_one": "Unambiguous brand-plus-state query. Zero cost so far, but a clear competitor-brand pattern and EXACT carries no collision risk."
+   },
+   "word_count": 5,
+   "char_count": 36,
+   "conflict_tests": {
+    "active_positive_keywords": "clear - the only live positives are 'hvac installers near me' PHRASE and EXACT",
+    "converting_terms_all_time_account_wide": "clear - 0 of 304 blocked",
+    "bofu_probes": "clear - 0 of 67 blocked",
+    "service_area": "clear - blocks none of the 80 live Maryland place tokens, none of the 67 BOFU probes and none of the 304 account-wide converting terms, including 'anne arundel cooling and heating'",
+    "manufacturers": "clear - contains no manufacturer token"
+   },
+   "rollback": "remove the campaign negative 'arundel heating and cooling maryland' [EXACT] from 24132507747",
+   "risk": "LOW",
+   "unrelated_resource_assertion": "HVAC Installation ENABLED campaign negatives must rise from 1435 to 1437 (or from 1420 to 1422 if AMB-0909B-NEG-A ran first); no other campaign changes"
+  },
+  {
+   "operation": "ADD_CAMPAIGN_NEGATIVE_KEYWORD",
+   "resource": "campaign_criterion",
+   "resource_id": "24132507747",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "match_type": "PHRASE",
+   "negative_text": "maryland mechanical heating",
+   "current_state": "not present at campaign, ad group or account level",
+   "proposed_state": "negative KEYWORD [PHRASE] 'maryland mechanical heating' ENABLED",
+   "reason": "Verified competing HVAC contractor: Maryland Mechanical Heating & Cooling LLC. A separate company, Maryland Mechanical Services LLC (mmshvacllc.com), also trades in MD/VA/DC. The PHRASE covers the observed brand query for both.",
+   "entity_verification": {
+    "entity": "Maryland Mechanical Heating & Cooling LLC",
+    "address": "Maryland; HVACR licence #22169; marylandhvacs.com; founded 2023",
+    "note": "A separate company, Maryland Mechanical Services LLC (mmshvacllc.com), also trades in MD/VA/DC. The PHRASE covers the observed brand query for both.",
+    "sources": [
+     "https://marylandhvacs.com/",
+     "https://mmshvacllc.com/",
+     "https://www.labor.maryland.gov/license/hvacr/"
+    ],
+    "observed": {
+     "rows": 1,
+     "impressions": 4,
+     "clicks": 1,
+     "cost": 50.17,
+     "conversions": 0.0,
+     "terms": [
+      "maryland mechanical heating & cooling"
+     ]
+    },
+    "match_choice": "PHRASE on the three-word brand fragment. The individual words maryland, mechanical and heating are all left usable."
+   },
+   "word_count": 3,
+   "char_count": 27,
+   "conflict_tests": {
+    "active_positive_keywords": "clear - the only live positives are 'hvac installers near me' PHRASE and EXACT",
+    "converting_terms_all_time_account_wide": "clear - 0 of 304 blocked",
+    "bofu_probes": "clear - 0 of 67 blocked",
+    "service_area": "clear - blocks none of the 80 live Maryland place tokens, none of the 67 BOFU probes and none of the 304 account-wide converting terms, including 'anne arundel cooling and heating'",
+    "manufacturers": "clear - contains no manufacturer token"
+   },
+   "rollback": "remove the campaign negative 'maryland mechanical heating' [PHRASE] from 24132507747",
+   "risk": "LOW",
+   "unrelated_resource_assertion": "HVAC Installation ENABLED campaign negatives must rise from 1435 to 1437 (or from 1420 to 1422 if AMB-0909B-NEG-A ran first); no other campaign changes"
+  }
+ ],
+ "notes": {
+  "supersedes": "AMB-0909-NEG-ADD-1 (23BE8FF0F24C) - SUPERSEDED, DO_NOT_EXECUTE",
+  "dropped_from_the_prior_package": {
+   "\"sq ft house\"": "WITHDRAWN. Square-footage sizing queries are legitimate installation research from prospective buyers.",
+   "[how much is hvac system]": "WITHDRAWN. A price question is buyer research, not an irrelevant query.",
+   "\"all about air\"": "NOT ADDED. Could not be verified as a Maryland HVAC contractor. 4 impressions, 0 clicks, $0.00.",
+   "\"home comfort hvac\"": "NOT ADDED. No uniquely identifiable 'Home Comfort HVAC' entity in Maryland; several unrelated 'Comfort'-named contractors exist and 'home comfort' is generic trade language. 3 impressions, 0 clicks, $0.00."
+  },
+  "no_broad_negatives": "No operation uses BROAD. No negative is created from home, comfort, maryland, mechanical, heating, air or cooling.",
+  "preflight_caught": "The first draft used PHRASE 'arundel cooling and heating'. Local preflight proved it blocks 'anne arundel cooling and heating', a term that produced a primary phone-call conversion. The package was narrowed to EXACT before any API quota was spent."
+ },
+ "fingerprint": "05FBCBD34B4A"
+}

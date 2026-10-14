@@ -1,0 +1,574 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-B-v2-staged-august-budget",
+ "version": "2026-08-19",
+ "phase": "modify-existing",
+ "run_class": "READ + DRAFT + VALIDATE-ONLY. No mutation performed.",
+ "supersedes": {
+  "EF9FBA55926545F2": "REJECTED by Green Marketing. It scaled all five budgets pro-rata to $997.22/day purely to reach the $13,000 cap, including three campaigns whose constraint is demand, quality or eligibility rather than budget. That fingerprint must never be executed or reused."
+ },
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "manager_account_name": "Green Marketing",
+  "account_timezone": "America/New_York",
+  "currency": "USD",
+  "identity_verified_account_local": "2026-08-19T22:28:48-04:00"
+ },
+ "principle": "Increase a budget only where search lost impression share from budget proves budget is the binding constraint. Never increase a budget to reach a spend target.",
+ "package_a_status": "Package A 44D14DA4714BB6E8 was EXECUTED and read back on 2026-08-19 with 31/31 checks passing. All five campaigns now carry zero AD_SCHEDULE criteria and are eligible 24/7; the call asset 407995613637 carries Mon-Fri 08:00-20:00 and Sat 08:00-13:00 with no Sunday row. The delivery uplift from 65 to 168 eligible hours a week is reflected in the projections below.",
+ "diagnosis": {
+  "24132507747": {
+   "verdict": "BUDGET-LIMITED. The only campaign in the account where budget is the binding constraint.",
+   "search_lost_is_budget": {
+    "august_mtd_pct": 32.47,
+    "2026-08-19_pct": 53.01
+   },
+   "search_lost_is_rank": {
+    "august_mtd_pct": 15.5,
+    "2026-08-19_pct": 0.0
+   },
+   "search_impression_share": {
+    "august_mtd_pct": 52.03,
+    "2026-08-19_pct": 46.99
+   },
+   "keyword_eligibility": "'hvac installers' Phrase + Exact, both ENABLED, system_serving_status ELIGIBLE, approval APPROVED.",
+   "search_volume": "'hvac installers' averages 10 searches per month across the 10 core service-area cities, but Phrase match is capturing far wider install intent: 76 distinct search terms and 118 impressions since launch. The seed volume understates reach.",
+   "quality_score": "Not yet computed by Google (insufficient impression volume on the keyword itself). Expected CTR, ad relevance and landing page experience all return UNSPECIFIED.",
+   "expected_ctr": "UNSPECIFIED (no Quality Score yet)",
+   "ad_relevance": "UNSPECIFIED (no Quality Score yet)",
+   "landing_page_experience": "UNSPECIFIED (no Quality Score yet)",
+   "observed_ctr_pct": 3.7,
+   "cpc": {
+    "august_mtd": 42.18,
+    "2026-08-18": 45.93,
+    "2026-08-19": 38.96
+   },
+   "search_terms": {
+    "in_scope_service_terms": 24,
+    "in_scope_equipment_terms": 44,
+    "out_of_scope_terms": 8,
+    "out_of_scope_clicks": 0,
+    "out_of_scope_cost": 0.0,
+    "note": "Out-of-scope terms took 14 impressions, zero clicks and zero cost. There is no waste to negate out."
+   },
+   "policy_and_serving": "Campaign ENABLED / SERVING. primary_status LIMITED with reasons BIDDING_STRATEGY_LEARNING and HAS_ADS_DISAPPROVED; the latter counts only the two PAUSED CONSUMER_FINANCE originals. Both ENABLED RSAs (821319509197, 821319509200) are APPROVED and REVIEWED with no policy topics.",
+   "negative_conflicts": "NONE. Zero campaign negatives, zero ad-group negatives, no negative list attached. The account-level list 11252984411 (59 BROAD members, applies account-wide and is invisible in campaign_shared_set) blocks none of the five keywords.",
+   "post_rsa_delivery": "Replacement RSAs became eligible 2026-08-18 15:17. Spend immediately went to $275.58 on 2026-08-18 and $272.75 on 2026-08-19, which is 199.5% and 197.4% of the $138.16 daily budget. The campaign hit Google's 2x overdelivery ceiling on both clean days.",
+   "supported_increase": "YES"
+  },
+  "24132507741": {
+   "verdict": "AD RANK LIMITED, not budget limited. NO INCREASE.",
+   "search_lost_is_budget": {
+    "august_mtd_pct": 0.0,
+    "2026-08-19_pct": 0.0
+   },
+   "search_lost_is_rank": {
+    "august_mtd_pct": 78.16,
+    "2026-08-19_pct": 63.04
+   },
+   "search_impression_share": {
+    "august_mtd_pct": 21.84,
+    "2026-08-19_pct": 36.96
+   },
+   "keyword_eligibility": "'ac repair near me' Phrase + Exact in ad group 202339087834, both ELIGIBLE and APPROVED.",
+   "search_volume": "'ac repair near me' averages 260 searches per month across the 10 core service-area cities with HIGH competition (index 74). This is the highest-volume keyword of the five.",
+   "quality_score": 4,
+   "expected_ctr": "BELOW_AVERAGE",
+   "ad_relevance": "AVERAGE",
+   "landing_page_experience": "AVERAGE",
+   "observed_ctr_pct": 5.79,
+   "cpc": {
+    "august_mtd": 47.45,
+    "2026-08-17": 23.89,
+    "2026-08-19": 70.52
+   },
+   "search_terms": {
+    "in_scope_service_terms": 30,
+    "in_scope_equipment_terms": 1,
+    "out_of_scope_terms": 0,
+    "out_of_scope_clicks": 0,
+    "out_of_scope_cost": 0.0
+   },
+   "policy_and_serving": "Campaign ENABLED / SERVING, primary_status LEARNING (BIDDING_STRATEGY_LEARNING). Both ENABLED RSAs APPROVED.",
+   "negative_conflicts": "NONE.",
+   "post_rsa_delivery": "Not affected by the RSA disapprovals. Spent $282.06 on 2026-08-19 against a $141.45 budget, which is 199.4%.",
+   "why_no_increase": "It spent 199.4% of budget today yet budget-lost impression share is 0.00%, because Google absorbed the demand through the 2x overdelivery allowance rather than dropping impressions. The 63-78% rank-lost impression share, Quality Score 4 and BELOW_AVERAGE expected CTR identify Ad Rank as the ceiling. More budget cannot buy an auction this campaign is losing on rank. The fix is expected CTR and Quality Score, not money.",
+   "supported_increase": "NO"
+  },
+  "24132507750": {
+   "verdict": "QUALITY LIMITED. Worst Quality Score in the account. NO INCREASE.",
+   "search_lost_is_budget": {
+    "august_mtd_pct": 0.0,
+    "2026-08-19_pct": 0.0
+   },
+   "search_lost_is_rank": {
+    "august_mtd_pct": 76.96,
+    "2026-08-19_pct": 75.61
+   },
+   "search_impression_share": {
+    "august_mtd_pct": 23.04,
+    "2026-08-19_pct": 24.39
+   },
+   "keyword_eligibility": "'hvac repair near me' Phrase + Exact, both ELIGIBLE and APPROVED.",
+   "search_volume": "'hvac repair near me' averages 70 searches per month across the 10 core service-area cities, HIGH competition (index 79).",
+   "quality_score": 2,
+   "expected_ctr": "BELOW_AVERAGE",
+   "ad_relevance": "AVERAGE",
+   "landing_page_experience": "BELOW_AVERAGE",
+   "observed_ctr_pct": 0.99,
+   "cpc": {
+    "august_mtd": 38.18,
+    "2026-08-18": 56.41,
+    "2026-08-19": 54.25
+   },
+   "search_terms": {
+    "in_scope_service_terms": 73,
+    "in_scope_equipment_terms": 6,
+    "out_of_scope_terms": 3,
+    "out_of_scope_clicks": 0,
+    "out_of_scope_cost": 0.0
+   },
+   "policy_and_serving": "Campaign ENABLED / SERVING, primary_status LEARNING. Both ENABLED RSAs APPROVED, though ad 820900825560 has ad strength POOR.",
+   "negative_conflicts": "NONE.",
+   "post_rsa_delivery": "Not affected by the RSA disapprovals. Used only 68.7% of its daily budget on 2026-08-19.",
+   "why_no_increase": "Quality Score 2 with BELOW_AVERAGE expected CTR and BELOW_AVERAGE landing page experience. It generated 404 impressions but only 4 clicks, a 0.99% CTR, the weakest of the five. It cannot spend the budget it already has. Budget is provably not the constraint; ad relevance and landing-page experience are.",
+   "supported_increase": "NO"
+  },
+  "24132507753": {
+   "verdict": "DEMAND LIMITED. NO INCREASE.",
+   "search_lost_is_budget": {
+    "august_mtd_pct": 0.0,
+    "2026-08-19_pct": 0.0
+   },
+   "search_lost_is_rank": {
+    "august_mtd_pct": 86.96,
+    "2026-08-19_pct": 86.36
+   },
+   "search_impression_share": {
+    "august_mtd_pct": 13.04,
+    "2026-08-19_pct": 13.64
+   },
+   "keyword_eligibility": "'hvac replacement near me' Phrase + Exact in ad group 200159223798, both ELIGIBLE and APPROVED.",
+   "search_volume": "'hvac replacement near me' averages 10 searches per month across the 10 core service-area cities. 10 is Google's minimum reported bucket, so true volume is at or below 10.",
+   "quality_score": "Not yet computed (5 impressions total).",
+   "expected_ctr": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "landing_page_experience": "UNSPECIFIED",
+   "observed_ctr_pct": 0.0,
+   "cpc": {
+    "august_mtd": null,
+    "note": "No clicks, so no CPC exists."
+   },
+   "search_terms": {
+    "in_scope_service_terms": 2,
+    "in_scope_equipment_terms": 0,
+    "out_of_scope_terms": 0,
+    "out_of_scope_clicks": 0,
+    "out_of_scope_cost": 0.0
+   },
+   "policy_and_serving": "Campaign ENABLED / SERVING, primary_status LIMITED (HAS_ADS_DISAPPROVED, referring to the two PAUSED originals). Both ENABLED RSAs APPROVED.",
+   "negative_conflicts": "NONE.",
+   "post_rsa_delivery": "Replacement RSAs eligible from 2026-08-18 15:17. In the clean window it recorded 5 impressions, 0 clicks and $0.00 spend.",
+   "why_no_increase": "5 impressions in 19 days on a keyword with 10 or fewer monthly searches. It has never spent a cent of its existing $26.32 budget. A larger budget has nothing to buy.",
+   "supported_increase": "NO"
+  },
+  "24132507744": {
+   "verdict": "ZERO ELIGIBLE AUCTIONS. NO INCREASE.",
+   "search_lost_is_budget": {
+    "august_mtd_pct": 0.0,
+    "2026-08-19_pct": 0.0
+   },
+   "search_lost_is_rank": {
+    "august_mtd_pct": 0.0,
+    "2026-08-19_pct": 0.0
+   },
+   "search_impression_share": {
+    "august_mtd_pct": 0.0,
+    "2026-08-19_pct": 0.0
+   },
+   "root_cause_analysis": {
+    "question": "Why is search impression share 0.00% rather than merely low?",
+    "eliminated_1_keyword_eligibility": "NOT the cause. 'gas boiler repair' Phrase and Exact are both status ENABLED, system_serving_status ELIGIBLE, approval_status APPROVED.",
+    "eliminated_2_negatives": "NOT the cause. Zero campaign negatives, zero ad-group negatives, no negative list attached to the campaign. The account-level negative list 11252984411 holds 59 BROAD members and none of them blocks 'gas boiler repair'.",
+    "eliminated_3_policy": "NOT the cause. Campaign ENABLED and SERVING; ad group 202339087594 ENABLED; both ENABLED RSAs (821319509209, 821319509212) APPROVED, REVIEWED, ad strength EXCELLENT, no policy topics.",
+    "eliminated_4_ad_disapproval_window": "NOT the current cause. The originals were disapproved until 2026-08-18 15:17, but in the clean window since then the campaign still recorded zero impressions.",
+    "eliminated_5_budget": "NOT the cause. Budget-lost impression share is 0.00% and the campaign has never spent any of its $42.76 daily budget.",
+    "eliminated_6_ad_schedule": "NOT the cause going forward. Package A removed the campaign schedule on 2026-08-19, so the campaign is now eligible 24/7. Before that it was still eligible 65 hours a week and recorded nothing.",
+    "CONFIRMED_CAUSE": "SEARCH VOLUME. 'gas boiler repair' averages 10 searches per month across the 10 core service-area cities, which is Google's minimum reported bucket, so true volume is at or below 10 per month. The broader head term 'boiler repair' is only 30 per month in the same geography. With Presence-only targeting across 75 tight local targets, English only, and Phrase/Exact match on a boiler-specific phrase, an expected count of well under one query per day makes zero impressions across 19 days the statistically ordinary outcome, not an anomaly.",
+    "corroboration": "search_term_view returned ZERO rows for this campaign since launch. Not low-performing terms, no terms at all. Google never matched a single query.",
+    "implication": "Impression share is undefined-as-zero because the denominator, eligible impressions, is itself zero. No budget change can move a metric whose denominator is zero."
+   },
+   "quality_score": "Not computed. Google needs impressions and there have been none.",
+   "expected_ctr": "UNSPECIFIED",
+   "ad_relevance": "UNSPECIFIED",
+   "landing_page_experience": "UNSPECIFIED",
+   "cpc": {
+    "august_mtd": null,
+    "note": "No clicks and no impressions."
+   },
+   "search_terms": {
+    "rows_returned": 0
+   },
+   "post_rsa_delivery": "Zero impressions, zero clicks, $0.00 since the replacement RSAs became eligible.",
+   "why_no_increase": "Raising a budget that has never been touched, on a campaign with no eligible auctions, cannot produce spend. The only levers that would are a broader keyword footprint or wider geography, and both are explicitly out of scope.",
+   "supported_increase": "NO"
+  }
+ },
+ "diagnostic_method": {
+  "keyword_eligibility": "ad_group_criterion.status, .system_serving_status and .approval_status on all 12 non-removed keywords.",
+  "search_volume": "KeywordPlanIdeaService.GenerateKeywordHistoricalMetrics, read-only, GOOGLE_SEARCH network, English, scoped to the 10 core service-area city geo targets. Postal-code and neighbourhood targets are not accepted by the planner, so 42 postal codes and 5 neighbourhoods of the 75 campaign targets are excluded; the city set is the closest supported proxy.",
+  "quality_components": "ad_group_criterion.quality_info.quality_score, .search_predicted_ctr (expected CTR), .creative_quality_score (ad relevance) and .post_click_quality_score (landing page experience).",
+  "impression_share": "metrics.search_impression_share, .search_budget_lost_impression_share and .search_rank_lost_impression_share at campaign level, both August month to date and for 2026-08-19 alone.",
+  "cpc_distribution": "Daily average CPC on the five since launch, plus 807 legacy days from 2025-08-01 to 2026-08-13, plus all-time totals split by advertising channel.",
+  "search_terms": "search_term_view since launch, classified on disk against a positive HVAC-intent whitelist. Only counts, click shares and cost shares were read back; no raw query string entered the analysis context. 191 rows, sha256 prefix 1c2224ab15e81311.",
+  "negatives": "ad_group_criterion negatives, campaign_criterion negatives, campaign_shared_set attachments, and every shared_set enumerated through shared_criterion. The ACCOUNT_LEVEL_NEGATIVE_KEYWORDS set 11252984411 reports member_count 0 but actually holds 59 BROAD members and applies account-wide without any campaign attachment, so it was tested separately against all five keywords.",
+  "post_rsa_delivery": "Hour-segmented spend for 2026-08-18 and 2026-08-19 to isolate the window after the replacement RSAs became eligible at 15:17 account time."
+ },
+ "structural_findings_not_actioned": [
+  {
+   "finding": "Ad group 202339087874 'SKAG | HVAC Replacement Near Me' sits inside the AC REPAIR campaign 24132507741 and is REMOVED, but still holds two non-removed keywords ('hvac replacement near me' Phrase and Exact) and two ENABLED ads with AREA_OF_INTEREST_ONLY approval and a CONSUMER_FINANCE policy topic. Nothing there can serve because the ad group is removed.",
+   "impact": "Cosmetic today. It inflates the AC Repair keyword count from 2 to 4 and is the reason AC Repair appears to carry HVAC Replacement keywords.",
+   "action": "NOT actioned. Out of scope for a budget package and it changes no delivery. Flagged for a future structural cleanup approval."
+  },
+  {
+   "finding": "Three campaigns report primary_status LIMITED with reason HAS_ADS_DISAPPROVED. This counts the six PAUSED CONSUMER_FINANCE originals, which cannot serve.",
+   "impact": "Cosmetic. Every ENABLED RSA is APPROVED and REVIEWED.",
+   "action": "NOT actioned. Clearing it would require REMOVING the six originals, which is a destructive action needing its own approval."
+  },
+  {
+   "finding": "Zero primary conversions have been recorded in August across the whole account, and the two WhatConverts upload actions (7643656075 WC Calls, 7643656486 WC Lead) have recorded zero conversions all-time.",
+   "impact": "No CPL, CPQL, CAC or ROAS can be computed for the new campaigns, and no target CPC can be derived from them.",
+   "action": "NOT actioned. Out of scope. It is the single most valuable fix available and is the input that would unlock a defensible CPC ceiling."
+  }
+ ],
+ "stage_1_immediate": {
+  "effective": "2026-08-20",
+  "execution_shape": "ONE GoogleAdsService.Mutate request containing 1 mutate_operation, partial_failure=false.",
+  "operations": [
+   {
+    "seq": 1,
+    "service": "CampaignBudgetService (via GoogleAdsService.Mutate)",
+    "operation": "update",
+    "resource_name": "customers/2401959466/campaignBudgets/15787409441",
+    "update_mask": [
+     "amount_micros"
+    ],
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Installation",
+    "budget_id": "15787409441",
+    "budget_explicitly_shared": false,
+    "budget_reference_count": 1,
+    "delivery_method": "STANDARD",
+    "period": "DAILY",
+    "before_amount_usd": 138.16,
+    "before_amount_micros": 138160000,
+    "after_amount_usd": 276.32,
+    "after_amount_micros": 276320000,
+    "delta_usd": 138.16,
+    "delta_pct": 100.0,
+    "multiple_of_current": 2.0,
+    "sizing_method": "Set to exactly 2.0x the current daily budget, which is the level the campaign has ALREADY demonstrated it consumes: it spent $275.58 (199.5%) on 2026-08-18 and $272.75 (197.4%) on 2026-08-19 by using Google's 2x overdelivery allowance. This is an observed consumption figure, not a projection. It converts proven overdelivery into a planned budget and removes budget as the binding constraint at the current demand level.",
+    "why_not_larger": "Closing the 53.01% budget-lost impression share outright implies about $580 a day of available demand ($272.75 / 0.4699). Jumping straight there is a 4.2x step on a campaign whose primary_status is still BIDDING_STRATEGY_LEARNING. Large single-step budget changes extend the learning period and typically spike cost per click. The staged plan reaches that level by 2026-08-22 if, and only if, the evidence at each checkpoint supports it."
+   }
+  ],
+  "unchanged_campaigns": [
+   {
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "AC Repair",
+    "budget_id": "15787409435",
+    "current_daily_budget_usd": 141.45,
+    "proposed_daily_budget_usd": 141.45,
+    "change": "NONE",
+    "mutation_included": false,
+    "reason": "It spent 199.4% of budget today yet budget-lost impression share is 0.00%, because Google absorbed the demand through the 2x overdelivery allowance rather than dropping impressions. The 63-78% rank-lost impression share, Quality Score 4 and BELOW_AVERAGE expected CTR identify Ad Rank as the ceiling. More budget cannot buy an auction this campaign is losing on rank. The fix is expected CTR and Quality Score, not money.",
+    "binding_constraint": "AD RANK LIMITED, not budget limited. NO INCREASE."
+   },
+   {
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Repair",
+    "budget_id": "15787409444",
+    "current_daily_budget_usd": 78.95,
+    "proposed_daily_budget_usd": 78.95,
+    "change": "NONE",
+    "mutation_included": false,
+    "reason": "Quality Score 2 with BELOW_AVERAGE expected CTR and BELOW_AVERAGE landing page experience. It generated 404 impressions but only 4 clicks, a 0.99% CTR, the weakest of the five. It cannot spend the budget it already has. Budget is provably not the constraint; ad relevance and landing-page experience are.",
+    "binding_constraint": "QUALITY LIMITED. Worst Quality Score in the account. NO INCREASE."
+   },
+   {
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "service_name": "HVAC Replacement",
+    "budget_id": "15787409447",
+    "current_daily_budget_usd": 26.32,
+    "proposed_daily_budget_usd": 26.32,
+    "change": "NONE",
+    "mutation_included": false,
+    "reason": "5 impressions in 19 days on a keyword with 10 or fewer monthly searches. It has never spent a cent of its existing $26.32 budget. A larger budget has nothing to buy.",
+    "binding_constraint": "DEMAND LIMITED. NO INCREASE."
+   },
+   {
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "service_name": "Gas Boiler Repair",
+    "budget_id": "15787409438",
+    "current_daily_budget_usd": 42.76,
+    "proposed_daily_budget_usd": 42.76,
+    "change": "NONE",
+    "mutation_included": false,
+    "reason": "Raising a budget that has never been touched, on a campaign with no eligible auctions, cannot produce spend. The only levers that would are a broader keyword footprint or wider geography, and both are explicitly out of scope.",
+    "binding_constraint": "ZERO ELIGIBLE AUCTIONS. NO INCREASE."
+   }
+  ],
+  "totals": {
+   "current_total_daily_budget_usd": 427.64,
+   "proposed_total_daily_budget_usd": 565.8,
+   "delta_total_daily_usd": 138.16,
+   "campaigns_changed": 1,
+   "campaigns_unchanged": 4
+  },
+  "mutation_counts": {
+   "creates": 0,
+   "updates": 1,
+   "removals": 0,
+   "total_mutations": 1,
+   "campaigns_modified": 0,
+   "bids_touched": 0,
+   "bidding_strategies_touched": 0,
+   "keywords_touched": 0,
+   "match_types_touched": 0,
+   "locations_touched": 0,
+   "networks_touched": 0,
+   "conversion_goals_touched": 0,
+   "ads_touched": 0,
+   "assets_touched": 0,
+   "negatives_touched": 0,
+   "schedules_touched": 0,
+   "manager_links_touched": 0,
+   "other_campaigns_touched": 0
+  }
+ },
+ "checkpoint_24h": {
+  "run_at": "2026-08-21 09:00 America/New_York",
+  "measures": "the full day 2026-08-20, the first complete day at the Stage 1 budget",
+  "read_only_query": "SELECT campaign.id, metrics.cost_micros, metrics.clicks, metrics.average_cpc, metrics.impressions, metrics.conversions, metrics.search_impression_share, metrics.search_budget_lost_impression_share, metrics.search_rank_lost_impression_share FROM campaign WHERE campaign.id IN (the five) AND segments.date = '2026-08-20'",
+  "baseline_for_comparison": {
+   "hvac_installation_cpc_post_rsa_usd": 42.18,
+   "hvac_installation_spend_per_day_usd": 274.17,
+   "hvac_installation_budget_lost_is_pct": 53.01
+  },
+  "advance_to_stage_2_if_ALL": [
+   "HVAC Installation search_budget_lost_impression_share on 2026-08-20 is >= 20%",
+   "HVAC Installation average CPC on 2026-08-20 is <= $52.73 (baseline $42.18 +25%)",
+   "HVAC Installation clicks on 2026-08-20 are >= 13 (its post-RSA daily click rate)",
+   "Cumulative August spend for the five is <= the daily guardrail for 2026-08-20"
+  ],
+  "hold_at_stage_1_if_ANY": [
+   "budget-lost impression share falls between 5% and 20%",
+   "average CPC lands between $52.73 and $63.27 (+25% to +50%)",
+   "clicks fall below the post-RSA rate while spend rises"
+  ],
+  "roll_back_to_138_16_if_ANY": [
+   "average CPC exceeds $63.27 (+50% over baseline) without a matching rise in clicks",
+   "single-day spend exceeds $552.64 (2x the Stage 1 budget)",
+   "cumulative August spend for the five exceeds the daily guardrail by more than 20%"
+  ]
+ },
+ "checkpoint_48h": {
+  "run_at": "2026-08-22 09:00 America/New_York",
+  "measures": "the full day 2026-08-21",
+  "advance_to_stage_3_if_ALL": [
+   "HVAC Installation search_budget_lost_impression_share on 2026-08-21 is still >= 20%",
+   "average CPC is still <= $52.73",
+   "cost per click has not risen more than 25% over the Stage 1 baseline for two consecutive days",
+   "cumulative August spend for the five is <= the daily guardrail for 2026-08-21"
+  ],
+  "otherwise": "HOLD at whatever stage is then live. Do not advance on a single favourable day if CPC is trending up."
+ },
+ "stage_2_conditional": {
+  "campaign": "HVAC Installation 24132507747",
+  "daily_budget_usd": 414.48,
+  "multiple_of_original": 3.0,
+  "new_total_daily_budget_usd": 703.96,
+  "gate": "24-hour checkpoint passes all four advance conditions.",
+  "approval": "REQUIRES ITS OWN EXPLICIT APPROVAL AND ITS OWN FINGERPRINT. This package does NOT authorize it."
+ },
+ "stage_3_conditional": {
+  "campaign": "HVAC Installation 24132507747",
+  "daily_budget_usd": 552.64,
+  "multiple_of_original": 4.0,
+  "new_total_daily_budget_usd": 842.12,
+  "rationale": "Approximately the level at which budget-lost impression share reaches zero, derived from 2026-08-19: $272.75 spend at 46.99% impression share implies about $580 a day of available demand.",
+  "gate": "48-hour checkpoint passes all four advance conditions.",
+  "approval": "REQUIRES ITS OWN EXPLICIT APPROVAL AND ITS OWN FINGERPRINT. This package does NOT authorize it."
+ },
+ "august_projection": {
+  "cap_usd": 13000.0,
+  "fresh_august_spend_five_campaigns_usd": 1033.23,
+  "remaining_budget_usd": 11966.77,
+  "remaining_days_a_new_budget_applies": 12,
+  "remaining_days_basis": "2026-08-20 through 2026-08-31 inclusive. 2026-08-19 is treated as spent: it is 22:28 account time and two campaigns are already at ~199% of their daily budgets.",
+  "stage_1_budget_bounded_projection_usd": 7822.83,
+  "stage_1_budget_bounded_formula": "1033.23 + (565.8 x 12) = 7822.83",
+  "demand_bounded_central_estimate_usd": 7033,
+  "demand_bounded_range_usd": [
+   5593,
+   7823
+  ],
+  "demand_bounded_construction": {
+   "HVAC Installation": {
+    "expected_daily_usd": 300,
+    "basis": "Consumed $274/day at the 2x cap on a $138.16 budget. At $276.32 the 2x cap rises to $552.64 and 53% budget-lost impression share means there is demand above the current spend."
+   },
+   "AC Repair": {
+    "expected_daily_usd": 140,
+    "basis": "Averaged $109.95/day across 2026-08-17 to 2026-08-19 against a $141.45 budget, trending up. Rank-limited, so it should settle near, not above, its budget."
+   },
+   "HVAC Repair": {
+    "expected_daily_usd": 45,
+    "basis": "Averaged $38.18/day across four serving days against a $78.95 budget, 48% utilisation, Quality Score 2."
+   },
+   "HVAC Replacement": {
+    "expected_daily_usd": 3,
+    "basis": "$0.00 in 19 days, 5 impressions."
+   },
+   "Gas Boiler Repair": {
+    "expected_daily_usd": 0,
+    "basis": "$0.00 and zero impressions in 19 days."
+   },
+   "subtotal_daily_usd": 488,
+   "package_a_24_7_uplift": "Campaign eligibility rose from 65 to 168 hours a week on 2026-08-19. Before the schedule was imposed the five took 88 of 881 impressions outside 08:00-20:00 and 65 impressions on Sunday 2026-08-16. A 10-20% impression uplift on the three delivering campaigns is the reasonable range, applied as +15% central.",
+   "central_daily_with_uplift_usd": 561,
+   "note": "The central daily estimate of about $561 sits just under the Stage 1 total daily budget of $565.80, which is the expected outcome when budget has been set to match demand rather than to chase a target."
+  },
+  "expected_shortfall_vs_cap_usd": [
+   5177,
+   7407
+  ],
+  "headline": "This plan is expected to land August between about $5,600 and $7,800 against the $13,000 cap. That shortfall is the correct outcome, not a failure: four of the five campaigns are limited by demand, Ad Rank, quality or eligibility, and buying more budget for them would spend money without buying auctions.",
+  "what_would_close_the_gap": "Only more eligible auction volume: additional keyword themes, additional services, wider geography, or a material Quality Score improvement on AC Repair and HVAC Repair. Every one of these is out of scope for this task and none is proposed."
+ },
+ "daily_spend_guardrail": {
+  "hard_cap_usd": 13000.0,
+  "hard_cap_scope": "The five in-scope campaigns. No other campaign in the account is enabled and none spent anything in August, so the account total and the five-campaign total are the same number.",
+  "cadence": "Read-only pacing check every day at or after 09:00 America/New_York.",
+  "allowed_cumulative_formula": "allowed(D) = 1033.23 + (stage_total_daily_budget x days_elapsed_since_2026-08-19) x 1.20",
+  "stage_1_allowed_cumulative": {
+   "2026-08-20": 1712.19,
+   "2026-08-21": 2391.15,
+   "2026-08-24": 4428.03,
+   "2026-08-27": 6464.91,
+   "2026-08-31": 9180.75
+  },
+  "breach_action": "If cumulative August spend for the five exceeds allowed(D), immediately propose a budget reduction for approval and do not advance any stage.",
+  "absolute_stop": "If cumulative August spend for the five reaches $12,400, propose reducing all five daily budgets so the remainder of the month cannot cross $13,000.",
+  "maximum_daily_overdelivery": {
+   "rule": "Google may spend up to 2x a campaign's daily budget on a single day.",
+   "stage_1_per_campaign_usd": {
+    "AC Repair": 282.9,
+    "HVAC Repair": 157.9,
+    "HVAC Installation": 552.64,
+    "HVAC Replacement": 52.64,
+    "Gas Boiler Repair": 85.52
+   },
+   "stage_1_total_per_day_usd": 1131.6,
+   "stage_1_arithmetic_ceiling_aug20_31_usd": 13579.2,
+   "stage_1_arithmetic_august_total_usd": 14612.43,
+   "honest_statement": "Even at Stage 1 the arithmetic worst case of $14612.43 exceeds the $13,000 cap. Google's monthly charging limit is computed per campaign and is recalculated when a budget changes mid-month, so Google does not enforce a $13,000 account-level cap. Observed demand makes the worst case unreachable, but the daily guardrail above is what actually enforces the cap and it must be run."
+  }
+ },
+ "cpc_ceiling_proposal": {
+  "status": "NOT PROPOSED",
+  "instruction": "A Maximize Clicks CPC ceiling was to be proposed only if historical conversion rate, qualified-lead data or a target CPL supports a defensible maximum. No number is invented here.",
+  "evidence_available": {
+   "search_conversion_rate_trailing_365d_pre_launch_pct": 5.47,
+   "search_cpa_trailing_365d_pre_launch_usd": 915.96,
+   "search_avg_cpc_trailing_365d_pre_launch_usd": 50.14,
+   "search_all_time_conversion_rate_pct": 3.25,
+   "search_all_time_cpa_usd": 544.74,
+   "search_all_time_avg_cpc_usd": 17.73,
+   "new_campaign_conversion_rate": "UNDEFINED - 0 conversions on 24 clicks"
+  },
+  "evidence_missing": {
+   "target_cpl": "NOT SUPPLIED (client.yaml offer.target_cpl is null)",
+   "target_cpql": "NOT SUPPLIED (client.yaml offer.target_cpql is null)",
+   "target_cac": "NOT SUPPLIED",
+   "average_job_revenue": "NOT SUPPLIED",
+   "gross_margin_pct": "NOT SUPPLIED",
+   "close_rate_pct": "NOT SUPPLIED",
+   "qualified_lead_data": "NOT AVAILABLE - no CRM or closed-won feed reaches Google Ads, and both WhatConverts upload actions have recorded zero conversions all-time"
+  },
+  "why_not_proposed": "A maximum CPC is target CPL multiplied by conversion rate. A conversion rate exists, but no target CPL, target CPQL, job value, margin or close rate exists anywhere in the client record. Deriving a ceiling would mean inventing the target CPL, which is exactly what was ruled out. A further caution: the 5.47% rate comes from legacy Search campaigns with different keywords and different landing pages, so applying it to these five would itself be an assumption.",
+  "correction_to_earlier_analysis": "The rejected package EF9FBA55926545F2 described the current $43.05 average CPC as evidence of bid inflation. That framing was wrong. This account's own Search channel averaged $50.14 per click over the trailing year before launch, and the keyword planner puts top-of-page bids for 'ac repair near me' at $19.94 to $94.04 and 'hvac repair near me' at $23.32 to $107.10 in this geography. $43.05 is below the account's own recent Search norm and inside the market range. High CPC here is the market, not a bidding error.",
+  "derivation_available_on_one_input": {
+   "formula": "max_cpc = target_cpl x conversion_rate",
+   "conversion_rate_used": 0.0547,
+   "worked_examples": {
+    "target_cpl_300": 16.41,
+    "target_cpl_500": 27.35,
+    "target_cpl_750": 41.03,
+    "target_cpl_916_matches_trailing_cpa": 50.1
+   },
+   "reading": "A ceiling that merely matches the trailing-year CPA sits near $50.10, which is ABOVE the current $43.05 blended CPC and would barely bind. A ceiling that actually restrains spend needs a target CPL below roughly $790. Supply one number, a target CPL or an acceptable CPA, and a defensible ceiling follows immediately."
+  },
+  "risk_of_guessing": "A ceiling set below the market top-of-page range would not reduce cost per lead. It would stop delivery on the only campaign that is currently working."
+ },
+ "explicitly_not_included": [
+  "Any keyword addition, removal, or match-type change. No Broad Match.",
+  "Any location, network, Search Partners, or Display change.",
+  "Any bidding strategy change and any CPC bid ceiling.",
+  "Any conversion goal change.",
+  "Any change to the four campaigns whose constraint is not budget.",
+  "Any change to any campaign outside the five.",
+  "Any ad, asset, negative, schedule, or landing-page change.",
+  "Applying any Google recommendation.",
+  "Stage 2 and Stage 3, which are defined and gated here but each require their own separate approval and fingerprint."
+ ],
+ "validate_only_result": {
+  "run_utc": "2026-08-20T02:32:49.809437Z",
+  "shape": "GoogleAdsService.Mutate, 1 mutate_operation, partial_failure=false, validate_only=true",
+  "operation": "update customers/2401959466/campaignBudgets/15787409441 amount_micros 138160000 -> 276320000",
+  "status": "VALIDATE_OK",
+  "errors": 0,
+  "post_probe_no_change_check": {
+   "five_daily_budgets_usd": [
+    141.45,
+    42.76,
+    138.16,
+    78.95,
+    26.32
+   ],
+   "verdict": "Unchanged. validate_only performed no write."
+  },
+  "receipt": "clients/ambient-cooling-heating/snapshots/validate-only-stage1-2026-08-19.json"
+ },
+ "readback_verification": [
+  "SELECT campaign.id, campaign_budget.id, campaign_budget.amount_micros FROM campaign WHERE campaign.id IN (the five). ASSERT budget 15787409441 is 276320000 and the other four are unchanged at 141450000, 78950000, 26320000 and 42760000.",
+  "ASSERT campaign_budget.explicitly_shared is false and reference_count is 1 on 15787409441, so no other campaign inherits the change.",
+  "ASSERT delivery_method STANDARD and period DAILY are unchanged on all five.",
+  "ASSERT campaign.bidding_strategy_type is still TARGET_SPEND and campaign.target_spend.cpc_bid_ceiling_micros is still 0 on all five.",
+  "ASSERT all five campaigns remain ENABLED and SERVING with search-only networks and PRESENCE location targeting.",
+  "ASSERT the five campaigns still carry ZERO AD_SCHEDULE criteria (Package A intact).",
+  "ASSERT call asset 407995613637 still carries exactly 6 schedule rows with no SUNDAY row (Package A intact).",
+  "ASSERT the 12 tracked ad IDs, 6968 keywords, all negatives, all assets, all conversion actions, all locations and both manager links are unchanged.",
+  "ASSERT the mutate response returned exactly 1 resource name."
+ ],
+ "rollback_plan": {
+  "trigger": "Any readback assertion fails, the 24-hour checkpoint hits a roll-back condition, or the daily guardrail is breached.",
+  "method": "One GoogleAdsService.Mutate request with a single CampaignBudget update, update_mask ['amount_micros'], restoring 138160000 micros on customers/2401959466/campaignBudgets/15787409441.",
+  "restore_mutations": 1,
+  "data_loss": "NONE. Budget amounts hold no history and recorded spend is unaffected.",
+  "reversibility": "Immediate. A budget change takes effect within minutes.",
+  "pre_change_evidence": "clients/ambient-cooling-heating/snapshots/preflight-structure-2026-08-19.json, pacing-audit-2026-08-19.json, diagnosis-2026-08-19.json and keyword-volume-2026-08-19.json."
+ },
+ "partial_write_protocol": "One operation, partial_failure=false. If it fails, STOP, re-read the budget, and report. Do not rerun blindly.",
+ "approval_note": "A budget increase requires its own exact approval. Nothing here has been applied. Approving this package authorizes STAGE 1 ONLY: a single budget update on HVAC Installation from $138.16 to $276.32 per day.",
+ "plan_fingerprint": "93A1EA55973F7A94",
+ "VOID": true,
+ "VOID_ON": "2026-08-20",
+ "VOID_REASON": "WITHDRAWN AND VOID 2026-08-20 by Green Marketing. Its premise that budget was the binding constraint is outranked by the 92.5% filtered-invalid click finding. Never execute.",
+ "VOID_NOTE": "The plan_fingerprint below is retained ONLY for traceability. It must never be presented for approval or executed."
+}

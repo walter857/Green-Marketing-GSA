@@ -1,0 +1,962 @@
+{
+ "plan_name": "AMB-0917-HEAT-CREATE-1",
+ "approval_class": "create-paused",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "services": "Residential heating repair, heating installation, heating replacement",
+ "account_timezone": "America/New_York",
+ "monthly_cap_usd": 10000.0,
+ "max_combined_enabled_daily_usd": 328.94,
+ "supersedes_permanently": [
+  "AMB-0916-HEAT-STRATEGY-1 / 9EC0CE017DE7 - VOID, never execute",
+  "AMB-0916-HEAT-BUDGET-1 / 54613304B752 - VOID, never execute",
+  "AMB-0915-CPC-HR-1 / 14BD03817042 - VOID, never execute"
+ ],
+ "summary": "Create 2 PAUSED Search campaigns, 3 PAUSED ad groups, 26 Phrase+Exact keywords, 6 PAUSED RSAs and a PAUSED asset set, all pointing at existing verified pages on ambientcoolingandheating.com. Nothing serves. No budget is changed. No existing campaign is touched.",
+ "final_url_mapping": {
+  "SKAG | Furnace Repair": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+  "SKAG | Mini Split Installation": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/"
+ },
+ "campaigns": {
+  "REPAIR": {
+   "name": "Search | NonBrand | Heating Repair | Central MD | BOFU | 2026-09",
+   "daily_budget": 55.0,
+   "cpc_ceiling": 38.0,
+   "ceiling_basis": "historical Furnace Repair keyword cluster average CPC $54.08 across 114 clicks and 17 conversions ($362.64 CPA); converting furnace queries priced $39.93 and $54.12; Planner shows LOW competition and returned no bid estimate at this volume. $38.00 trims the top of the historical distribution while staying above the conservative CPQL-derived figure, so delivery is not strangled.",
+   "cpql_math": "provisional repair CPQL target $250; measured click->conversion 14.9% is an UPPER BOUND because duplicate Primary actions inflate it. At a de-duplicated ~7.5% the theoretical max CPC is $18.75; at the raw 14.9% it is $37.25. $38.00 sits at the top of that band, and the stop-loss protects the downside."
+  },
+  "INSTALL": {
+   "name": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09",
+   "daily_budget": 35.0,
+   "cpc_ceiling": 24.0,
+   "ceiling_basis": "historical Heat Pump Install cluster $14.37 CPC over 370 clicks and Mini Split Install $14.47 over 26 clicks; Planner returned real bids for mini split terms: $4.01-$31.91, $3.88-$14.24, $6.52-$16.11. $24.00 sits under the highest top-of-page estimate and ~1.7x the historical average.",
+   "cpql_math": "provisional installation CPQL target $280; measured click->conversion 3.0% (upper bound) gives a theoretical max CPC of $8.40. The historical auction cleared at $14.37, so a theory-only cap would buy nothing. $24.00 is set from observed auction price, with the stop-loss carrying the risk."
+  }
+ },
+ "ad_groups": [
+  {
+   "campaign": "REPAIR",
+   "name": "SKAG | Furnace Repair",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "cpc_bid": 38.0,
+   "phrase": [
+    "furnace repair",
+    "furnace repair near me",
+    "gas furnace repair",
+    "furnace repair service",
+    "furnace not working",
+    "residential furnace repair"
+   ],
+   "exact": [
+    "furnace repair",
+    "furnace repair near me",
+    "gas furnace repair",
+    "furnace repair service"
+   ],
+   "ag_negatives": [],
+   "evidence": "Planner: furnace repair 320/mo, furnace repair near me 140/mo, gas furnace repair 20/mo, LOW competition, January peak 720 (6.5x the September level). Account history: Furnace Repair keyword cluster 114 clicks, 17 conversions, $362.64 CPA - the best CPA of any heating cluster with real volume. Converting queries on record include 'furnace repair near me' and 'furnace repair'."
+  },
+  {
+   "campaign": "INSTALL",
+   "name": "SKAG | Mini Split Installation",
+   "final_url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "cpc_bid": 24.0,
+   "phrase": [
+    "mini split installation",
+    "ductless mini split installation",
+    "mini split installers near me",
+    "ductless installation",
+    "mini split install cost"
+   ],
+   "exact": [
+    "mini split installation",
+    "ductless mini split installation",
+    "mini split installers near me"
+   ],
+   "ag_negatives": [],
+   "evidence": "Planner: ductless mini split installation 40/mo, mini split installation 20/mo with a real top-of-page range $4.01-$31.91, mini split install cost 20/mo $3.88-$14.24. Account history: Mini Split Install cluster 26 clicks at $14.47 CPC, 1 conversion - thin, which is why the ceiling is set from Planner rather than from account history alone."
+  }
+ ],
+ "keyword_total": 18,
+ "campaign_negatives": [
+  {
+   "text": "air conditioning repair",
+   "match": "PHRASE"
+  },
+  {
+   "text": "ac repair",
+   "match": "PHRASE"
+  },
+  {
+   "text": "ac installation",
+   "match": "PHRASE"
+  },
+  {
+   "text": "air conditioner installation",
+   "match": "PHRASE"
+  },
+  {
+   "text": "water heater",
+   "match": "PHRASE"
+  },
+  {
+   "text": "tankless water heater",
+   "match": "PHRASE"
+  },
+  {
+   "text": "hot water heater",
+   "match": "PHRASE"
+  },
+  {
+   "text": "geothermal",
+   "match": "PHRASE"
+  },
+  {
+   "text": "boiler",
+   "match": "PHRASE"
+  },
+  {
+   "text": "thermostat",
+   "match": "PHRASE"
+  },
+  {
+   "text": "furnace filter",
+   "match": "PHRASE"
+  },
+  {
+   "text": "furnace parts",
+   "match": "PHRASE"
+  },
+  {
+   "text": "furnace manual",
+   "match": "PHRASE"
+  },
+  {
+   "text": "used furnace",
+   "match": "PHRASE"
+  },
+  {
+   "text": "diy furnace",
+   "match": "PHRASE"
+  },
+  {
+   "text": "hvac school",
+   "match": "PHRASE"
+  },
+  {
+   "text": "hvac training",
+   "match": "PHRASE"
+  },
+  {
+   "text": "hvac jobs",
+   "match": "PHRASE"
+  },
+  {
+   "text": "hvac salary",
+   "match": "PHRASE"
+  },
+  {
+   "text": "hvac certification",
+   "match": "PHRASE"
+  },
+  {
+   "text": "how to",
+   "match": "PHRASE"
+  },
+  {
+   "text": "pool heater",
+   "match": "PHRASE"
+  }
+ ],
+ "cross_negatives": {
+  "REPAIR": [
+   {
+    "text": "heat pump installation",
+    "match": "PHRASE"
+   },
+   {
+    "text": "mini split installation",
+    "match": "PHRASE"
+   }
+  ],
+  "INSTALL": [
+   {
+    "text": "furnace repair",
+    "match": "PHRASE"
+   }
+  ]
+ },
+ "rsas": {
+  "SKAG | Furnace Repair": [
+   {
+    "label": "RSA A - service-first, 3 pinned openers",
+    "path1": "furnace",
+    "path2": "repair",
+    "pin1": [
+     "Furnace Repair in Central MD",
+     "Furnace Repair Severn MD",
+     "Furnace Repair Service"
+    ],
+    "unpinned": [
+     "Gas Furnace Repair",
+     "Furnace Not Working?",
+     "We Diagnose the Problem",
+     "Qualified Heating Techs",
+     "Honest Assessment First",
+     "Repair & Maintenance",
+     "Homes and Businesses",
+     "Severna Park & Columbia",
+     "Ambient Cooling & Heating",
+     "Call for Furnace Repair",
+     "Book Furnace Service"
+    ],
+    "desc": [
+     "Furnace repair for homes and businesses in Severn, Severna Park and Columbia.",
+     "Our qualified technicians diagnose the issue and explain what they found.",
+     "Honest assessments and clear recommendations before any repair work begins.",
+     "Gas furnace repair and maintenance across the surrounding Maryland communities."
+    ]
+   },
+   {
+    "label": "RSA B - symptom-led, unpinned",
+    "path1": "furnace",
+    "path2": "repair",
+    "pin1": [],
+    "unpinned": [
+     "Furnace Blowing Cold Air?",
+     "Furnace Will Not Start?",
+     "Is Your Furnace Noisy?",
+     "Heating System Diagnosis",
+     "Gas Furnace Specialists",
+     "Maryland Furnace Repair",
+     "Trained Technicians",
+     "Repair Done Efficiently",
+     "Clear Recommendations",
+     "Furnace Repair Near You",
+     "Serving Anne Arundel Co.",
+     "Talk to a Technician",
+     "Schedule Furnace Repair",
+     "Residential & Commercial",
+     "Book a Service Visit"
+    ],
+    "desc": [
+     "Furnace trouble in Severn, Severna Park or Columbia? Our technicians can help.",
+     "We diagnose the fault and recommend the repair, with transparency throughout.",
+     "Prompt, efficient furnace repair and maintenance from trained technicians.",
+     "Ambient serves homes and businesses across the surrounding Maryland area."
+    ]
+   }
+  ],
+  "SKAG | Mini Split Installation": [
+   {
+    "label": "RSA A - service-first, 3 pinned openers",
+    "path1": "mini-splits",
+    "path2": "installation",
+    "pin1": [
+     "Mini Split Installation MD",
+     "Ductless Mini Split Install",
+     "Mini Split Installers"
+    ],
+    "unpinned": [
+     "Ductless System Installation",
+     "Zoned Comfort by Room",
+     "Energy-Efficient Units",
+     "Installed to Local Codes",
+     "Trained Professionals",
+     "Severn & Severna Park",
+     "Columbia, Maryland Service",
+     "Homes and Businesses",
+     "Ambient Cooling & Heating",
+     "Book a Mini Split Visit",
+     "Talk to Our Technicians"
+    ],
+    "desc": [
+     "Ductless mini split installation for Central Maryland homes and businesses.",
+     "Mini splits give efficient air control exactly where you need it most.",
+     "Installation is carried out by trained professionals to local codes.",
+     "Serving Severn, Severna Park, Columbia and the surrounding Maryland area."
+    ]
+   },
+   {
+    "label": "RSA B - application-led, unpinned",
+    "path1": "mini-splits",
+    "path2": "installation",
+    "pin1": [],
+    "unpinned": [
+     "Ductless for Any Room",
+     "Comfort in Additions",
+     "No Ductwork Required",
+     "Mini Splits for Garages",
+     "Room-by-Room Control",
+     "Energy-Efficient Cooling",
+     "Ductless Heating Too",
+     "Maryland Ductless Team",
+     "Code-Compliant Installs",
+     "Advanced Equipment Used",
+     "Serving Anne Arundel Co.",
+     "Ask About Mini Splits",
+     "Schedule an Assessment",
+     "Residential & Commercial",
+     "Book Your Install"
+    ],
+    "desc": [
+     "Mini splits bring comfort to rooms and additions that ductwork cannot reach.",
+     "Ductless systems provide efficient air control room by room, heating and cooling.",
+     "Installation is a multi-step process handled by trained professionals.",
+     "Ambient installs energy-efficient mini splits across Central Maryland."
+    ]
+   }
+  ]
+ },
+ "callouts": [
+  "Diagnosis Explained",
+  "Trained Technicians",
+  "Homes and Businesses",
+  "Central Maryland Service",
+  "Repair and Maintenance"
+ ],
+ "structured_snippet": {
+  "header": "Services",
+  "values": [
+   "Furnace Repair",
+   "Mini Split Installation",
+   "Boiler Repair",
+   "Heating Maintenance",
+   "Ductless Systems"
+  ]
+ },
+ "sitelinks": [
+  {
+   "text": "Furnace Repair",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "d1": "Diagnosis and repair for gas",
+   "d2": "and oil furnaces in Central MD."
+  },
+  {
+   "text": "Mini Splits",
+   "url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "d1": "Ductless comfort for rooms",
+   "d2": "ductwork cannot reach well."
+  },
+  {
+   "text": "Heating Services",
+   "url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "d1": "See the full range of Ambient",
+   "d2": "heating services for your property."
+  }
+ ],
+ "operations": [
+  {
+   "op": "CREATE_CAMPAIGN_BUDGET",
+   "campaign_key": "REPAIR",
+   "amount_usd": 55.0,
+   "explicitly_shared": false,
+   "delivery": "STANDARD"
+  },
+  {
+   "op": "CREATE_CAMPAIGN_PAUSED",
+   "campaign_key": "REPAIR",
+   "name": "Search | NonBrand | Heating Repair | Central MD | BOFU | 2026-09",
+   "status": "PAUSED",
+   "channel": "SEARCH",
+   "bidding": "TARGET_SPEND (Maximize Clicks)",
+   "cpc_bid_ceiling_usd": 38.0,
+   "ceiling_basis": "historical Furnace Repair keyword cluster average CPC $54.08 across 114 clicks and 17 conversions ($362.64 CPA); converting furnace queries priced $39.93 and $54.12; Planner shows LOW competition and returned no bid estimate at this volume. $38.00 trims the top of the historical distribution while staying above the conservative CPQL-derived figure, so delivery is not strangled.",
+   "cpql_math": "provisional repair CPQL target $250; measured click->conversion 14.9% is an UPPER BOUND because duplicate Primary actions inflate it. At a de-duplicated ~7.5% the theoretical max CPC is $18.75; at the raw 14.9% it is $37.25. $38.00 sits at the top of that band, and the stop-loss protects the downside.",
+   "search_partners": false,
+   "display": false,
+   "ai_max": false,
+   "dsa": false,
+   "url_expansion": false,
+   "automatically_created_assets": false,
+   "text_customization": false,
+   "location_option": "PRESENCE",
+   "start_date_time": "on enablement, not now"
+  },
+  {
+   "op": "ADD_CAMPAIGN_LOCATIONS",
+   "campaign_key": "REPAIR",
+   "geo_target_constant_count": 75,
+   "source": "exact reuse of the 75 live targets on campaign 24132507747"
+  },
+  {
+   "op": "ADD_CAMPAIGN_AD_SCHEDULE",
+   "campaign_key": "REPAIR",
+   "rows": [
+    {
+     "day": "MONDAY",
+     "start": 8,
+     "end": 20
+    },
+    {
+     "day": "TUESDAY",
+     "start": 8,
+     "end": 20
+    },
+    {
+     "day": "WEDNESDAY",
+     "start": 8,
+     "end": 20
+    },
+    {
+     "day": "THURSDAY",
+     "start": 8,
+     "end": 20
+    },
+    {
+     "day": "FRIDAY",
+     "start": 8,
+     "end": 20
+    },
+    {
+     "day": "SATURDAY",
+     "start": 8,
+     "end": 13
+    }
+   ],
+   "row_count": 6
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVES",
+   "campaign_key": "REPAIR",
+   "negatives": [
+    {
+     "text": "air conditioning repair",
+     "match": "PHRASE"
+    },
+    {
+     "text": "ac repair",
+     "match": "PHRASE"
+    },
+    {
+     "text": "ac installation",
+     "match": "PHRASE"
+    },
+    {
+     "text": "air conditioner installation",
+     "match": "PHRASE"
+    },
+    {
+     "text": "water heater",
+     "match": "PHRASE"
+    },
+    {
+     "text": "tankless water heater",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hot water heater",
+     "match": "PHRASE"
+    },
+    {
+     "text": "geothermal",
+     "match": "PHRASE"
+    },
+    {
+     "text": "boiler",
+     "match": "PHRASE"
+    },
+    {
+     "text": "thermostat",
+     "match": "PHRASE"
+    },
+    {
+     "text": "furnace filter",
+     "match": "PHRASE"
+    },
+    {
+     "text": "furnace parts",
+     "match": "PHRASE"
+    },
+    {
+     "text": "furnace manual",
+     "match": "PHRASE"
+    },
+    {
+     "text": "used furnace",
+     "match": "PHRASE"
+    },
+    {
+     "text": "diy furnace",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hvac school",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hvac training",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hvac jobs",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hvac salary",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hvac certification",
+     "match": "PHRASE"
+    },
+    {
+     "text": "how to",
+     "match": "PHRASE"
+    },
+    {
+     "text": "pool heater",
+     "match": "PHRASE"
+    },
+    {
+     "text": "heat pump installation",
+     "match": "PHRASE"
+    },
+    {
+     "text": "mini split installation",
+     "match": "PHRASE"
+    }
+   ],
+   "count": 24
+  },
+  {
+   "op": "CREATE_CAMPAIGN_BUDGET",
+   "campaign_key": "INSTALL",
+   "amount_usd": 35.0,
+   "explicitly_shared": false,
+   "delivery": "STANDARD"
+  },
+  {
+   "op": "CREATE_CAMPAIGN_PAUSED",
+   "campaign_key": "INSTALL",
+   "name": "Search | NonBrand | Heating Installation | Central MD | BOFU | 2026-09",
+   "status": "PAUSED",
+   "channel": "SEARCH",
+   "bidding": "TARGET_SPEND (Maximize Clicks)",
+   "cpc_bid_ceiling_usd": 24.0,
+   "ceiling_basis": "historical Heat Pump Install cluster $14.37 CPC over 370 clicks and Mini Split Install $14.47 over 26 clicks; Planner returned real bids for mini split terms: $4.01-$31.91, $3.88-$14.24, $6.52-$16.11. $24.00 sits under the highest top-of-page estimate and ~1.7x the historical average.",
+   "cpql_math": "provisional installation CPQL target $280; measured click->conversion 3.0% (upper bound) gives a theoretical max CPC of $8.40. The historical auction cleared at $14.37, so a theory-only cap would buy nothing. $24.00 is set from observed auction price, with the stop-loss carrying the risk.",
+   "search_partners": false,
+   "display": false,
+   "ai_max": false,
+   "dsa": false,
+   "url_expansion": false,
+   "automatically_created_assets": false,
+   "text_customization": false,
+   "location_option": "PRESENCE",
+   "start_date_time": "on enablement, not now"
+  },
+  {
+   "op": "ADD_CAMPAIGN_LOCATIONS",
+   "campaign_key": "INSTALL",
+   "geo_target_constant_count": 75,
+   "source": "exact reuse of the 75 live targets on campaign 24132507747"
+  },
+  {
+   "op": "ADD_CAMPAIGN_AD_SCHEDULE",
+   "campaign_key": "INSTALL",
+   "rows": [
+    {
+     "day": "MONDAY",
+     "start": 8,
+     "end": 20
+    },
+    {
+     "day": "TUESDAY",
+     "start": 8,
+     "end": 20
+    },
+    {
+     "day": "WEDNESDAY",
+     "start": 8,
+     "end": 20
+    },
+    {
+     "day": "THURSDAY",
+     "start": 8,
+     "end": 20
+    },
+    {
+     "day": "FRIDAY",
+     "start": 8,
+     "end": 20
+    },
+    {
+     "day": "SATURDAY",
+     "start": 8,
+     "end": 13
+    }
+   ],
+   "row_count": 6
+  },
+  {
+   "op": "ADD_CAMPAIGN_NEGATIVES",
+   "campaign_key": "INSTALL",
+   "negatives": [
+    {
+     "text": "air conditioning repair",
+     "match": "PHRASE"
+    },
+    {
+     "text": "ac repair",
+     "match": "PHRASE"
+    },
+    {
+     "text": "ac installation",
+     "match": "PHRASE"
+    },
+    {
+     "text": "air conditioner installation",
+     "match": "PHRASE"
+    },
+    {
+     "text": "water heater",
+     "match": "PHRASE"
+    },
+    {
+     "text": "tankless water heater",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hot water heater",
+     "match": "PHRASE"
+    },
+    {
+     "text": "geothermal",
+     "match": "PHRASE"
+    },
+    {
+     "text": "boiler",
+     "match": "PHRASE"
+    },
+    {
+     "text": "thermostat",
+     "match": "PHRASE"
+    },
+    {
+     "text": "furnace filter",
+     "match": "PHRASE"
+    },
+    {
+     "text": "furnace parts",
+     "match": "PHRASE"
+    },
+    {
+     "text": "furnace manual",
+     "match": "PHRASE"
+    },
+    {
+     "text": "used furnace",
+     "match": "PHRASE"
+    },
+    {
+     "text": "diy furnace",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hvac school",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hvac training",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hvac jobs",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hvac salary",
+     "match": "PHRASE"
+    },
+    {
+     "text": "hvac certification",
+     "match": "PHRASE"
+    },
+    {
+     "text": "how to",
+     "match": "PHRASE"
+    },
+    {
+     "text": "pool heater",
+     "match": "PHRASE"
+    },
+    {
+     "text": "furnace repair",
+     "match": "PHRASE"
+    }
+   ],
+   "count": 23
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "campaign_key": "REPAIR",
+   "name": "SKAG | Furnace Repair",
+   "status": "PAUSED",
+   "cpc_bid_usd": 38.0,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "evidence": "Planner: furnace repair 320/mo, furnace repair near me 140/mo, gas furnace repair 20/mo, LOW competition, January peak 720 (6.5x the September level). Account history: Furnace Repair keyword cluster 114 clicks, 17 conversions, $362.64 CPA - the best CPA of any heating cluster with real volume. Converting queries on record include 'furnace repair near me' and 'furnace repair'."
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Furnace Repair",
+   "phrase": [
+    "furnace repair",
+    "furnace repair near me",
+    "gas furnace repair",
+    "furnace repair service",
+    "furnace not working",
+    "residential furnace repair"
+   ],
+   "exact": [
+    "furnace repair",
+    "furnace repair near me",
+    "gas furnace repair",
+    "furnace repair service"
+   ],
+   "count": 10
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Furnace Repair",
+   "label": "RSA A - service-first, 3 pinned openers",
+   "status": "PAUSED",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "path1": "furnace",
+   "path2": "repair",
+   "headlines_pinned_h1": [
+    "Furnace Repair in Central MD",
+    "Furnace Repair Severn MD",
+    "Furnace Repair Service"
+   ],
+   "headlines_unpinned": [
+    "Gas Furnace Repair",
+    "Furnace Not Working?",
+    "We Diagnose the Problem",
+    "Qualified Heating Techs",
+    "Honest Assessment First",
+    "Repair & Maintenance",
+    "Homes and Businesses",
+    "Severna Park & Columbia",
+    "Ambient Cooling & Heating",
+    "Call for Furnace Repair",
+    "Book Furnace Service"
+   ],
+   "descriptions": [
+    "Furnace repair for homes and businesses in Severn, Severna Park and Columbia.",
+    "Our qualified technicians diagnose the issue and explain what they found.",
+    "Honest assessments and clear recommendations before any repair work begins.",
+    "Gas furnace repair and maintenance across the surrounding Maryland communities."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Furnace Repair",
+   "label": "RSA B - symptom-led, unpinned",
+   "status": "PAUSED",
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "path1": "furnace",
+   "path2": "repair",
+   "headlines_pinned_h1": [],
+   "headlines_unpinned": [
+    "Furnace Blowing Cold Air?",
+    "Furnace Will Not Start?",
+    "Is Your Furnace Noisy?",
+    "Heating System Diagnosis",
+    "Gas Furnace Specialists",
+    "Maryland Furnace Repair",
+    "Trained Technicians",
+    "Repair Done Efficiently",
+    "Clear Recommendations",
+    "Furnace Repair Near You",
+    "Serving Anne Arundel Co.",
+    "Talk to a Technician",
+    "Schedule Furnace Repair",
+    "Residential & Commercial",
+    "Book a Service Visit"
+   ],
+   "descriptions": [
+    "Furnace trouble in Severn, Severna Park or Columbia? Our technicians can help.",
+    "We diagnose the fault and recommend the repair, with transparency throughout.",
+    "Prompt, efficient furnace repair and maintenance from trained technicians.",
+    "Ambient serves homes and businesses across the surrounding Maryland area."
+   ]
+  },
+  {
+   "op": "CREATE_AD_GROUP_PAUSED",
+   "campaign_key": "INSTALL",
+   "name": "SKAG | Mini Split Installation",
+   "status": "PAUSED",
+   "cpc_bid_usd": 24.0,
+   "final_url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "evidence": "Planner: ductless mini split installation 40/mo, mini split installation 20/mo with a real top-of-page range $4.01-$31.91, mini split install cost 20/mo $3.88-$14.24. Account history: Mini Split Install cluster 26 clicks at $14.47 CPC, 1 conversion - thin, which is why the ceiling is set from Planner rather than from account history alone."
+  },
+  {
+   "op": "ADD_KEYWORDS_PAUSED",
+   "ad_group": "SKAG | Mini Split Installation",
+   "phrase": [
+    "mini split installation",
+    "ductless mini split installation",
+    "mini split installers near me",
+    "ductless installation",
+    "mini split install cost"
+   ],
+   "exact": [
+    "mini split installation",
+    "ductless mini split installation",
+    "mini split installers near me"
+   ],
+   "count": 8
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Mini Split Installation",
+   "label": "RSA A - service-first, 3 pinned openers",
+   "status": "PAUSED",
+   "final_url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "path1": "mini-splits",
+   "path2": "installation",
+   "headlines_pinned_h1": [
+    "Mini Split Installation MD",
+    "Ductless Mini Split Install",
+    "Mini Split Installers"
+   ],
+   "headlines_unpinned": [
+    "Ductless System Installation",
+    "Zoned Comfort by Room",
+    "Energy-Efficient Units",
+    "Installed to Local Codes",
+    "Trained Professionals",
+    "Severn & Severna Park",
+    "Columbia, Maryland Service",
+    "Homes and Businesses",
+    "Ambient Cooling & Heating",
+    "Book a Mini Split Visit",
+    "Talk to Our Technicians"
+   ],
+   "descriptions": [
+    "Ductless mini split installation for Central Maryland homes and businesses.",
+    "Mini splits give efficient air control exactly where you need it most.",
+    "Installation is carried out by trained professionals to local codes.",
+    "Serving Severn, Severna Park, Columbia and the surrounding Maryland area."
+   ]
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group": "SKAG | Mini Split Installation",
+   "label": "RSA B - application-led, unpinned",
+   "status": "PAUSED",
+   "final_url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "path1": "mini-splits",
+   "path2": "installation",
+   "headlines_pinned_h1": [],
+   "headlines_unpinned": [
+    "Ductless for Any Room",
+    "Comfort in Additions",
+    "No Ductwork Required",
+    "Mini Splits for Garages",
+    "Room-by-Room Control",
+    "Energy-Efficient Cooling",
+    "Ductless Heating Too",
+    "Maryland Ductless Team",
+    "Code-Compliant Installs",
+    "Advanced Equipment Used",
+    "Serving Anne Arundel Co.",
+    "Ask About Mini Splits",
+    "Schedule an Assessment",
+    "Residential & Commercial",
+    "Book Your Install"
+   ],
+   "descriptions": [
+    "Mini splits bring comfort to rooms and additions that ductwork cannot reach.",
+    "Ductless systems provide efficient air control room by room, heating and cooling.",
+    "Installation is a multi-step process handled by trained professionals.",
+    "Ambient installs energy-efficient mini splits across Central Maryland."
+   ]
+  },
+  {
+   "op": "CREATE_CALLOUTS_AND_LINK_PAUSED",
+   "scope": "both new campaigns",
+   "callouts": [
+    "Diagnosis Explained",
+    "Trained Technicians",
+    "Homes and Businesses",
+    "Central Maryland Service",
+    "Repair and Maintenance"
+   ],
+   "count": 5,
+   "link_status": "PAUSED"
+  },
+  {
+   "op": "CREATE_STRUCTURED_SNIPPET_AND_LINK_PAUSED",
+   "scope": "both new campaigns",
+   "header": "Services",
+   "values": [
+    "Furnace Repair",
+    "Mini Split Installation",
+    "Boiler Repair",
+    "Heating Maintenance",
+    "Ductless Systems"
+   ],
+   "link_status": "PAUSED"
+  },
+  {
+   "op": "CREATE_SITELINKS_AND_LINK_PAUSED",
+   "scope": "both new campaigns",
+   "sitelinks": [
+    {
+     "text": "Furnace Repair",
+     "url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+     "d1": "Diagnosis and repair for gas",
+     "d2": "and oil furnaces in Central MD."
+    },
+    {
+     "text": "Mini Splits",
+     "url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+     "d1": "Ductless comfort for rooms",
+     "d2": "ductwork cannot reach well."
+    },
+    {
+     "text": "Heating Services",
+     "url": "https://ambientcoolingandheating.com/services/heating-services/",
+     "d1": "See the full range of Ambient",
+     "d2": "heating services for your property."
+    }
+   ],
+   "count": 3,
+   "link_status": "PAUSED"
+  },
+  {
+   "op": "REUSE_EXISTING_CALL_ASSET",
+   "asset_id": "407995613637",
+   "number": "410-705-6354",
+   "action": "LINK ONLY, link status PAUSED",
+   "note": "do NOT create a second call asset and do NOT edit its schedule - the schedule lives on the Asset and is shared with five campaigns"
+  },
+  {
+   "op": "REUSE_EXISTING_BUSINESS_NAME_ASSET",
+   "asset_id": "80516971145",
+   "action": "no new asset created"
+  }
+ ],
+ "operation_count": 23,
+ "held_services": {
+  "Generic Heating Repair ad group": "Planner 70+20/mo only; the sole relevant page is the heating-services hub, which contains the word 'emergency' - a barred claim. Hold until a repair-specific generic page exists or the hub copy is reviewed.",
+  "Furnace installation / replacement": "Account history: 33 clicks, ZERO conversions. Planner shows 'furnace installation near me' and 'furnace replacement near me' share ONE volume bucket (identical monthly series). No furnace-installation page exists and the furnace-repair page must not be used for install intent.",
+  "Oil Heating campaign (Campaign 3)": "Planner: oil furnace installation 10/mo, oil heating system replacement 0/mo. Account history: 36 clicks, 3 conversions over several years at $43.17 CPC. Demand does not justify a campaign or budget. DOCUMENTED HOLD.",
+  "SKAG | Heat Pump Installation (WHOLE AD GROUP)": "BLOCKED BY GOOGLE POLICY. validate_only on the exact canonical final URL https://ambientcoolingandheating.com/services/heating-services/heat-pumps/ returns policy topic DESTINATION_NOT_WORKING (PROHIBITED) on 4 of 4 attempts. The page itself returns HTTP 200 and 338,002 bytes to AdsBot-Google and AdsBot-Google-Mobile on every fetch, and non-canonical variants of the same URL validate OK - so this is a persistent policy verdict cached against that exact URL string, not a live page fault. The URL was NOT swapped for a passing variant, because that would be evading policy review rather than resolving it. Next action: appeal / request re-review of that URL in the Google Ads UI, then add this ad group under a new fingerprint.",
+  "Heat pump repair / mini split repair": "pages do not clearly support repair.",
+  "Boiler installation / replacement": "page does not support those services.",
+  "Thermostat, electric furnace, geothermal, tankless, maintenance-only, emergency/no-heat": "held or excluded per the operator instruction and measured performance."
+ },
+ "existing_campaign_not_duplicated": {
+  "campaign": "24132507744 Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+  "status": "ENABLED, $5.00/day, 2 keywords, 2 ENABLED APPROVED ads, all-time 39 impressions 0 clicks $0.00",
+  "action": "NOT duplicated. Boiler intent is excluded from both new campaigns by a PHRASE negative 'boiler'. Optimisation of this campaign is a separate plan."
+ },
+ "risk": "MEDIUM. Everything is created PAUSED so nothing can serve or spend. The material risk is that the destination pages FAIL the tracking gate, so enablement must not follow creation.",
+ "rollback": "Set the 2 campaigns to REMOVED; all children follow.",
+ "unrelated_resource_assertion": "No existing campaign, ad group, keyword, negative, ad, asset, budget, bid, schedule, location or conversion action is created, edited, paused, enabled or removed. The five live campaigns keep their current budgets totalling $421.55/day and their current ceilings. The Gas Boiler Repair campaign is untouched.",
+ "launch_gate": "SEE THE TRACKING QA - THE DESTINATION PAGES CURRENTLY FAIL. CREATION IS SAFE; ENABLEMENT IS NOT AUTHORISED BY THIS PLAN.",
+ "fingerprint": "7DE31D6B6A88"
+}

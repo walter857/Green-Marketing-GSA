@@ -1,0 +1,497 @@
+{
+ "generated": "2026-08-28",
+ "supersedes": "receipts/fingerprint-manifest-2026-08-27.json",
+ "note": "Rebuilt after the 2026-08-28 execution of the three approved fingerprints.",
+ "executed_2026_08_28_do_not_re_execute": {
+  "82ACD4953536C020": {
+   "package": "A-1",
+   "operations": 7,
+   "resource_names": [
+    "customers/2401959466/campaignCriteria/24132507747~299839338603",
+    "customers/2401959466/campaignCriteria/24132507747~2437152438",
+    "customers/2401959466/campaignCriteria/24132507747~302549263138",
+    "customers/2401959466/campaignCriteria/24132507747~2489735546094",
+    "customers/2401959466/campaignCriteria/24132507747~149260703",
+    "customers/2401959466/campaignCriteria/24132507747~801509855",
+    "customers/2401959466/campaignCriteria/24132507747~304510676052"
+   ]
+  },
+  "6F2B6ABBCEB992E4": {
+   "package": "A-2",
+   "operations": 1,
+   "resource_names": [
+    "customers/2401959466/campaignCriteria/24132507741~10008471"
+   ]
+  },
+  "E50EDFE7644A9B5F": {
+   "package": "D-1",
+   "operations": 1,
+   "removed": [
+    "customers/2401959466/sharedCriteria/11252984411~11143481"
+   ]
+  }
+ },
+ "void_never_execute": {
+  "ACE80A09AC134C85": "superseded and split; packages B and C void on evidence",
+  "EE6CFAD6667A95A1": "void - WC Lead is a historical artifact, not an active defect",
+  "C3038EDD9E621944": "superseded and split into E50EDFE7644A9B5F and 4D7AF1C9CFCA27F9"
+ },
+ "hold": {
+  "4D7AF1C9CFCA27F9": "D-2, 7 equipment-brand removals, zero observed evidence"
+ },
+ "blocked": {
+  "3D823A10CB3C0B25": "Gas Boiler landing-page heading still names HVAC Replacement",
+  "93A9DF4AA19675E8": "no website source, staging, backup or deploy authority"
+ },
+ "do_not_execute_legacy": [
+  "011EA574B826F45B",
+  "12E7572A25B9AFF0",
+  "18AA929B46A83104",
+  "1A0737BCFD1B980D",
+  "24243FC484DDAF64",
+  "44145A2CE26A811B",
+  "5DA7527B19276C0D",
+  "6A2DE7A6589CA2B7",
+  "80868F985D33B756",
+  "86EEAE3CB04B73AD",
+  "93A1EA55973F7A94",
+  "E6D25322E35F3E62",
+  "EF9FBA55926545F2",
+  "F6B00478EC422BCD"
+ ],
+ "plan_files_on_disk": 54,
+ "plans": [
+  {
+   "file": "account-level-negative-cleanup-2026-08-18-v2.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "6e087b89dd884cd6150bbf936893c125a94e6b0da9e4ed3ea98330da5176b98a"
+  },
+  {
+   "file": "account-level-negative-cleanup-2026-08-18-v3.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "6b5c5571cb3cafd5d8c69933745952432ad58b96aee2b5d9badafe9a4be29c14"
+  },
+  {
+   "file": "account-level-negative-cleanup-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "05806129e54f106dd1bcca670aa01fc6dc4e7e6d19383f6a7c5d55143b2c00c8"
+  },
+  {
+   "file": "ad-schedule-24-7-only-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "a52fe070c38b207db55b60207e50551737b7ae6b8178e7e345b47297b0b4c32a"
+  },
+  {
+   "file": "AMBIENT-A-1-2026-08-28.json",
+   "fingerprint_in_file": "82ACD4953536C020",
+   "void": false,
+   "executed": true,
+   "status": "EXECUTED 2026-08-28, readback PASS. 7 PHRASE negatives live on campaign 24132507747. Do not re-execute.",
+   "file_sha256": "da420551b78c29b8dfac14a5cef506ebaafdfb95ec472a6502101285ea2d3dd0"
+  },
+  {
+   "file": "AMBIENT-A-2-2026-08-28.json",
+   "fingerprint_in_file": "6F2B6ABBCEB992E4",
+   "void": false,
+   "executed": true,
+   "status": "EXECUTED 2026-08-28, readback PASS. 'automotive' BROAD live on campaign 24132507741. Do not re-execute.",
+   "file_sha256": "390196c2684fcd7df8d693674ed42b6f6d7653fc3e6ca5cea7005a48c1c8dcd0"
+  },
+  {
+   "file": "AMBIENT-CONSOLIDATED-2026-08-27.json",
+   "fingerprint_in_file": "ACE80A09AC134C85",
+   "void": true,
+   "executed": false,
+   "status": "SUPERSEDED AND VOID. Bundled four unrelated change types under one fingerprint. Split into 82ACD4953536C020 (A-1), 6F2B6ABBCEB992E4 (A-2); package B (CPC ceilings) and package C (location asset) are VOID on evidence, see below.",
+   "file_sha256": "4b0dcf3a6960fea2a8000701fc583f2e7420320a51b2a3904cca7a5b1ba5ad33"
+  },
+  {
+   "file": "AMBIENT-CONV-1-2026-08-27.json",
+   "fingerprint_in_file": "EE6CFAD6667A95A1",
+   "void": true,
+   "executed": false,
+   "status": "VOID. WC Lead is already excluded from the Conversions column. No mutation needed.",
+   "file_sha256": "1a368c9e855bf419a03bac1fba5195efca206b60d7d303d9e1f44a78df0d7e1d"
+  },
+  {
+   "file": "AMBIENT-D-1-2026-08-28.json",
+   "fingerprint_in_file": "E50EDFE7644A9B5F",
+   "void": false,
+   "executed": true,
+   "status": "EXECUTED 2026-08-28, readback PASS. Account-level criterion 11143481 removed. Do not re-execute.",
+   "file_sha256": "01c61777d7ca1dd73083858f482e65980128758038658abadb22a6261de48bb5"
+  },
+  {
+   "file": "AMBIENT-D-2-2026-08-28.json",
+   "fingerprint_in_file": "4D7AF1C9CFCA27F9",
+   "void": false,
+   "executed": false,
+   "status": "HOLD",
+   "file_sha256": "08afd589eea1153eb583c86037b114078c2340c21cf5dc9b4063c9308bc45dfa"
+  },
+  {
+   "file": "AMBIENT-DEL-1-2026-08-27.json",
+   "fingerprint_in_file": "C3038EDD9E621944",
+   "void": true,
+   "executed": false,
+   "status": "SUPERSEDED AND VOID. Bundled the one verified removal with seven unverified ones. Split into E50EDFE7644A9B5F (hanover only) and 4D7AF1C9CFCA27F9 (equipment brands, HELD).",
+   "file_sha256": "0f303412737badc1b2455ca16afe869c893f325bd7ed14c1d798fa2db9309c4a"
+  },
+  {
+   "file": "august-budget-pacing-package-2026-08-19.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "456e05898ca7d8f0f11fd15fc9a15dd5d2ff5e75b141fe8f5229492774b2df4a"
+  },
+  {
+   "file": "august-budget-staged-package-2026-08-19-v2.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "f31faf6b4bb36e88f65db71596d9c581580fa6060c7ff82c23e910e174dfe0d9"
+  },
+  {
+   "file": "BUDGET-STAGE1-HVAC-INSTALLATION-2026-08-21-v2.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "9778a05450b170934f7b960231cba24ac1de2d9d0c84cf128c9c7f4207a108c6"
+  },
+  {
+   "file": "BUDGET-STAGE1-HVAC-INSTALLATION-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "1df2cc5407cb0f38868469b912950755b8081145788b1c613bf8110e1a98a759"
+  },
+  {
+   "file": "campaign-configuration-package-2026-08-18-v2.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "5eff011f50840ca5db4d19c815f37f80dbc81d60558385f21ad73312edbad5ab"
+  },
+  {
+   "file": "campaign-configuration-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "b1024601b407702b50e2074d4f19a58fd9a2b13b50000f915c27fd077b713fa9"
+  },
+  {
+   "file": "conversion-goal-package-2026-08-18-v2.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "eee0e7e1d32dff3ded2651c9309ac3af54995d258c219da997dc0a38c3fcdf40"
+  },
+  {
+   "file": "conversion-goal-package-2026-08-18-v3.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "bc62af6983a203e598fa8ace7ba9780706a9c66c1675ccee47cb2975d3e9a602"
+  },
+  {
+   "file": "conversion-goal-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "73ffa3cc468dea4259718d52ab54cf0dba26ce5264fbb73e91a6ffc13330c55f"
+  },
+  {
+   "file": "delivery-and-call-schedule-package-2026-08-19.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "eadd17ac847ee6fcc9248ae5d96775b7a8e062dff6ed4e384ef6a00460767a68"
+  },
+  {
+   "file": "DEVELOPER-HANDOFF-ADDENDUM-B-2026-08-22.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "54475331d41b37f332eefb0856d0b36cbd1ea47a7fff4a8e0d8db2c4b0127c5e"
+  },
+  {
+   "file": "DEVELOPER-HANDOFF-ADDENDUM-C-2026-08-22.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "70d48dd5fd5449614ede35482470386de3517284874c2093f3b06d34f6b8c532"
+  },
+  {
+   "file": "DEVELOPER-HANDOFF-landing-pages-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "43345a695236503f50e5b5aa56766e2435da9fa55ba52dc4856aca10bfee4183"
+  },
+  {
+   "file": "HVAC-REPAIR-RSA-SWAP-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "592b871822708e37c9e9bfd60e1ed01507b8e6e53f7d7d57ef2ecec4009a570b"
+  },
+  {
+   "file": "KEYWORD-GAS-BOILER-EXPANSION-2026-08-21-v2.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "e0b0e7bce606f91ed8147804d452e9751dd90b7caf6bac470af66a32590452a3"
+  },
+  {
+   "file": "KEYWORD-GAS-BOILER-EXPANSION-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "a0bde906f1ba555cc8681e2ee8e8c6a673b1fbd961a65f959faa5afde7f44632"
+  },
+  {
+   "file": "KEYWORD-GAS-BOILER-STAGE1-EXACT-2026-08-21-v2.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "21a1f01be5602c6e32631a33c471dd25099e200c21306f29778119f88c33578c"
+  },
+  {
+   "file": "KEYWORD-GAS-BOILER-STAGE1-EXACT-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "71c3ac93e1d55bbbffdce173df0fef0b11cf073b1b8bd02f93f40e4411355d94"
+  },
+  {
+   "file": "LANDING-PAGE-PRODUCTION-DEPLOYMENT-2026-08-21.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "13db8e5724e39691da6a8f3c8778ba00a2ad7cac707a864fcd6c972c84cf5bf7"
+  },
+  {
+   "file": "landing-page-remediation-package-2026-08-18-v2.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "c04fa1639e9d2eb4e611f101a12d233a03acdc0d4751b341dc3880d90e413906"
+  },
+  {
+   "file": "landing-page-remediation-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "d7c260b46de5efc8bccc2d2bc307435b99980af78370c60ff55db2b328973c12"
+  },
+  {
+   "file": "LP1-landing-page-remediation-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "b70201521141a4c7ce9a22a32fd7f892fa9521dbdd928602270404257c00d2e1"
+  },
+  {
+   "file": "LP2-landing-page-implementation-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "7d5b81c2db8f44381697aadf18906e64e33918742c9fb685c56052fd5b0d7ed4"
+  },
+  {
+   "file": "LP3-landing-page-corrected-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "5cd1cfcf92d27ebdbf269737e83326f33d82a64b031ae55c6d02d6292d4e7b70"
+  },
+  {
+   "file": "LP4-implementation-plan-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "3b062f6c013012fd7981c1d95b0272027fecbf5ca0703252dad11c7307290255"
+  },
+  {
+   "file": "negative-keyword-approval-package-2026-08-17.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "23ddff67df1bef50411f21971726eaec463a88c81a65a0f8b3b32dd66a8ead7d"
+  },
+  {
+   "file": "negative-keyword-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "b095b5b589d60f9e80802379b361f7be6caec3f2e5c6d4e07e4ddc32269a49e5"
+  },
+  {
+   "file": "NEGATIVES-AUTOMOTIVE-AC-REPAIR-2026-08-22.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "3db7f9f30fc31877f2415efecd7e5221dd2e17685977a219cb084e9727d37120"
+  },
+  {
+   "file": "P0-conversion-deduplication-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "2bc96f861d30b1caba066f797a3121576393cdb85781bd030dd2fd1df08036c0"
+  },
+  {
+   "file": "P0-primary-conversion-set-cleanup-2026-08-20-v2.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "12a27c27196c3fe6b2c74f2e36b5dff8899fc9974e63f15b0e5b618288a050a1"
+  },
+  {
+   "file": "P0-remove-unverified-callouts-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "8dc9e538530179e82653d7b67a2160adb35c03a4f5d3facab20736509be4d4cc"
+  },
+  {
+   "file": "P1-hvac-repair-rsas-diversified-2026-08-20-v3.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "b682a69459217c16cd2a5b3d7586f3621461a64edcc2f40721103a8a7e7d4bcc"
+  },
+  {
+   "file": "P1-hvac-repair-rsas-paused-2026-08-20-v2.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "f1304ed6d8c374b678472ed405ec1f1b3fb7a43e5df5fe833cd623fc18196d6b"
+  },
+  {
+   "file": "P1-replacement-rsas-paused-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "f7ed47f52a8cffb60405f18eb8b794fbf9f4f4b9970b371810fb207fc2971dc2"
+  },
+  {
+   "file": "P1-sitelinks-to-offer-subdomain-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "515795c0cc9b217834b6190ea4b8c1f1cae6465914bb94efbd60b1a0a93aecdb"
+  },
+  {
+   "file": "PLAN-A-conversion-whatconverts-qualified-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "457a1c2e9e8c931d2f3343f2b1d369027bc8e7b64daa77311e546e66f30c9a8d"
+  },
+  {
+   "file": "PLAN-B-conversion-whatconverts-raw-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "5468d27b854cbb943852c5bf5afe3d470b13db6d498b2aaab5f34bc2a4993f6b"
+  },
+  {
+   "file": "protective-campaign-schedule-package-2026-08-20.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "a76d99279706a78d6809855ac487499929669ba64f0c93cdc5ecda7171924738"
+  },
+  {
+   "file": "rsa-enablement-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "c4017bd3c26ae2c3b100bfdf73c2322ce6ad8f95a3d13fa2b3897778a85c0845"
+  },
+  {
+   "file": "rsa-partial-enable-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "5841ca0e052391a456bedecacd170bc402f982f28a8a14172d6e82f2d6426585"
+  },
+  {
+   "file": "rsa-replacement-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "efec7ef58393fd50a324ca677cf37c2df89bd36af2a2f8367fe6a76c8e58bd4d"
+  },
+  {
+   "file": "rsa-swap-in-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "944b34d89fd9b14b54f9c01571a59b22335cd1264a1292a92dbf90f07cf26d0b"
+  },
+  {
+   "file": "sitelinks-only-package-2026-08-18.json",
+   "fingerprint_in_file": "",
+   "void": false,
+   "executed": false,
+   "status": "historical",
+   "file_sha256": "318bf48702e96f9419c371c86d3ffb12bd08e439b83dc667cd1420a353b00df9"
+  }
+ ]
+}

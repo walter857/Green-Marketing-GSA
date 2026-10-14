@@ -1,0 +1,63 @@
+plan_id: APG-1005-WEB-REPAIR
+plan_kind: website_measurement_and_friction_repair_handoff
+generated: '2026-10-05'
+external_writes_performed: NONE
+target:
+  exact_child_account_name: Apogee Lawns LLC - Live
+  child_customer_id: '8164626278'
+  manager_customer_id: '3373711342'
+  manager_never_mutated: true
+  exact_primary_service: Permanent Christmas light installation
+  vertical: similar-local-service
+  scope_approval: Walter, 2026-09-16 (recorded, not re-requested)
+  work_order: clients/apogee-lawns/work-order.yaml (validator PASS 2026-10-05)
+  campaign:
+    id: '24257151015'
+    name: S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026
+    status: ENABLED (unchanged by this bundle)
+    budget_id: '15884926233'
+    daily_budget_micros: 16440000
+    monthly_cap_at_30_4_days_usd: 499.78
+    bidding: MAXIMIZE_CLICKS (TARGET_SPEND) ceiling 8000000 micros (unchanged)
+    locations_presence:
+    - '1021635'
+    - '1021647'
+    - '1021696'
+    - '1021783'
+    - '9024651'
+    - '9024671'
+    - '9024703'
+    - '9024728'
+    - '9024746'
+    - '9024748'
+    - '9024753'
+    - '9024754'
+    - '9195288'
+    - '9233865'
+    schedule: 24/7, 0 ad-schedule criteria (unchanged)
+    tablet: -100% (unchanged)
+    final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/
+    conversions: 7772803337 Primary, 7773013199 Primary, 7773043879 Secondary (unchanged)
+evidence:
+  snapshot: clients/apogee-lawns/snapshots/2026-10-05-conversion-plan-snapshot.json
+  snapshot_run_at_utc: '2026-10-05T16:14:18+00:00'
+  browser_qa: clients/apogee-lawns/audits/2026-10-05-conversion-plan/browser-qa/
+executor: Apogee's website developer (siliconprairiemarketing.com) on the owner's authorization; Green Marketing
+  does not edit WordPress
+spec: clients/apogee-lawns/audits/2026-10-05-conversion-plan/03_measurement_and_friction_repair_spec.md
+spec_sha256: 608b765f84026141f1d5deea0932b5283521bd579762bdfc8537c7f533450676
+gtm_changes: 'NONE required: published version 3 already expects this exact path, event and lead_id key'
+google_ads_changes: NONE
+items:
+- R1 thank-you page
+- R2 cache exclusion + client-side attribution
+- R3 accepted-entry-only redirect with token
+- R4 server-verified success push with lead_id
+- R5 remove drafting notes C1-C5 and align FAQ/form
+- R6 one form instance
+- R7 click-ID/UTM/landing/referrer/consent capture
+- R8 lead delivery confirmation
+approval_grant:
+  required_line: APPROVE APG WEB REPAIR HANDOFF <fingerprint>
+  meaning: authorizes sending this exact spec to the developer; it does not authorize any Google Ads, GTM or WhatConverts
+    change

@@ -1,0 +1,65 @@
+{
+ "started": "2026-09-21T12:21:33.721871-04:00",
+ "customer_id": "2401959466",
+ "mcc_never_written": "3373711342",
+ "stages": [
+  {
+   "stage": "A",
+   "when": "2026-09-21T12:21:47.649371-04:00",
+   "dry": false
+  }
+ ],
+ "committed": {
+  "budgets": {
+   "C2": "15887323562",
+   "C5": "15887323565",
+   "C6": "15887323568",
+   "C7": "15887323571"
+  },
+  "campaigns": {
+   "C2": "24268690038",
+   "C5": "24279798229",
+   "C6": "24268690041",
+   "C7": "24274160783"
+  },
+  "ad_groups": {
+   "SKAG | Furnace Repair": "199797580706",
+   "SKAG | Ductless Heating Installation": "199797580746",
+   "SKAG | Gas Boiler Repair": "202339087594",
+   "SKAG | Heating Repair": "204129717007",
+   "SKAG | Emergency Heating Repair": "204129717047",
+   "SKAG | No Heat Repair": "204129717087",
+   "SKAG | Gas Furnace Repair": "204129717247",
+   "SKAG | Electric Furnace Repair": "204129717287",
+   "SKAG | Heat Pump Repair": "204129717327",
+   "SKAG | Heat Pump Replacement": "204129717487",
+   "SKAG | Heat Pump Installation": "204129717527",
+   "SKAG | Heat Pump Maintenance": "204129717567",
+   "SKAG | Ductless Heating Repair": "204129717727",
+   "SKAG | Furnace Replacement": "204129717767",
+   "SKAG | Furnace Installation": "204129717807",
+   "SKAG | Heating Installation": "204129717967",
+   "SKAG | Heating Replacement": "204129718007",
+   "SKAG | Boiler Repair": "204129718047",
+   "SKAG | Boiler Replacement": "204129718207",
+   "SKAG | Boiler Installation": "204129718247",
+   "SKAG | Boiler Maintenance": "204129718287",
+   "SKAG | Furnace Maintenance": "204129718447",
+   "SKAG | Heating Maintenance": "204129718487",
+   "SKAG | Furnace Tune-Up": "204129718527",
+   "SKAG | Heating Tune-Up": "204129718687",
+   "SKAG | Heating System Inspection": "204129718727",
+   "SKAG | Thermostat Repair": "204129718767",
+   "SKAG | Thermostat Replacement": "204129718927",
+   "SKAG | Smart Thermostat Installation": "204129718967",
+   "SKAG | Geothermal Heat Pump": "204129719007"
+  },
+  "snippets": {
+   "C2": "423727603969",
+   "C5": "423627638717",
+   "C6": "423627657416",
+   "C7": "423727603972"
+  }
+ },
+ "mode": "EXECUTE stage A"
+}

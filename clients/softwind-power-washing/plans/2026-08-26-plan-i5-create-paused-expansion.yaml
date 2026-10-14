@@ -1,0 +1,335 @@
+# PLAN-I5 - CREATE PAUSED: PRESSURE WASHING NEAR ME
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+# CORRECTED 2026-08-26: reclassified from NET-NEW DEMAND to ROUTING /
+# RELEVANCE IMPROVEMENT. Actions unchanged, so fingerprint A63D86DB3602
+# is preserved. Moved out of the August path to September.
+
+change_plan:
+  plan_id: PLAN-I5
+  plan_title: Create paused - Pressure Washing Near Me (single SKAG)
+  approval_type: CREATE_PAUSED
+  priority: SEPTEMBER - structural, not part of the August rescue
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  recommended_approval_order: NOT APPROVABLE - status SEPTEMBER
+  ads_mutation_count: 5
+  requires_separate_enable_approval: true
+  supersedes:
+    plan_id: PLAN-E1
+    fingerprint: 40385B68584E
+    status: SUPERSEDED - NOT VOID
+    reason: 'PLAN-E1 proposed TWO new SKAGs: Pressure Washing Near Me and House Washing Near Me.
+      Re-checked on 2026-08-26 against PLAN-I2. The House Washing Near Me SKAG is now REDUNDANT:
+      the keyword text ''house washing near me'' lives inside the paused legacy Soft & House Washing
+      ad group, which PLAN-I2 proposes to ENABLE. Enabling that group delivers the same 40/month
+      text with ZERO build and no create-paused/enable cycle, so building a duplicate SKAG for it
+      would put two ad groups in the same campaign auction for one query. PLAN-E1''s fingerprint
+      is unchanged and it remains valid if PLAN-I2 is rejected.'
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  rescope_decision:
+    checked: 2026-08-26 against fresh Keyword Planner and PLAN-I2 selection
+    kept:
+    - skag: Pressure Washing Near Me
+      keyword: pressure washing near me
+      local_monthly_volume: 70
+      competition: HIGH
+      top_of_page_low: 8.75
+      top_of_page_high: 24.53
+      why_still_needed: Verified against every live AND every paused keyword text in both campaigns
+        on 2026-08-26. The exact text 'pressure washing near me' appears NOWHERE. The legacy Pressure
+        & Power Washing group that PLAN-I2 enables contains pressure washing service / company /
+        contractor / estimate / quote / long island - all non-'near me' query shapes. A Phrase keyword
+        "pressure washing service" does not match a query lacking the word 'service'. The gap is
+        real and survives PLAN-I2.
+      account_evidence: Search terms using 'pressure wash' phrasing have produced 15 impressions
+        and ZERO clicks - 0% CTR - while 'power wash' phrasing runs 7.25%. Eleven of those fifteen
+        were served by a power-washing ad group showing power-washing copy. This is a copy-match
+        failure, not only a coverage gap.
+    dropped:
+    - skag: House Washing Near Me
+      keyword: house washing near me
+      local_monthly_volume: 40
+      recent_trend_pct: -73.3
+      why_dropped: Delivered faster and at zero build cost by PLAN-I2's enablement of the Soft &
+        House Washing legacy group, which already contains this exact text with an approved RSA.
+        Building a parallel SKAG would create an intra-campaign duplicate. Fresh Planner also shows
+        this term's recent trend at -73.3%, so it is a weaker opportunity than it looked on 2026-08-25.
+      reinstate_if: PLAN-I2 is rejected, in which case PLAN-E1 stands as written.
+  rsa_validation:
+    validator: scripts/softwind_validate_plan_e_rsas.py
+    result: ALL PLAN-E RSA VALIDATION PASSED
+    checks: 15 headlines and 4 descriptions per ad; longest headline 29; longest description 86;
+      no duplicate asset within an ad; display paths within 15 characters; sibling headline overlap
+      1 of 15 (7%) and that single shared headline is the intentionally pinned HEADLINE_1 variant;
+      every headline and description screened against a banned-claims filter covering licensing,
+      insurance, guarantees, years in business, ratings, review counts, prices, discounts, same-day
+      and 24/7 promises, and out-of-scope services.
+    verified_claim_vocabulary_only: pressure washing, power washing, soft washing, house washing,
+      residential, siding, trim, fences, driveways, patios, walkways, pavers, concrete, surface-specific
+      method selection, Islip, West Islip, Dix Hills, Long Island, free quote / free estimate, (631)
+      502-7946, local.
+  rsas:
+  - ad_group: Pressure Washing Near Me
+    rsa: 1
+    final_url: https://offer.softwindli.com/residential-pressure-washing/
+    path1: pressure-wash
+    path2: free-quote
+    headlines:
+    - text: Pressure Washing Near You
+      len: 25
+      pinned: HEADLINE_1
+    - text: Local Pressure Washing
+      len: 22
+      pinned: HEADLINE_1
+    - text: Pressure Washing In Islip
+      len: 25
+    - text: Long Island Pressure Wash
+      len: 25
+    - text: Free Pressure Washing Quote
+      len: 27
+    - text: Residential Pressure Wash
+      len: 25
+    - text: Driveways, Patios & Siding
+      len: 26
+    - text: Pavers, Concrete & Walkways
+      len: 27
+    - text: Method Matched To Surface
+      len: 25
+    - text: Soft Washing For Siding
+      len: 23
+    - text: Serving Islip & West Islip
+      len: 26
+    - text: Pressure Washing Dix Hills
+      len: 26
+    - text: Call (631) 502-7946
+      len: 19
+    - text: Request Your Free Quote
+      len: 23
+    - text: Softwind Pressure Washing
+      len: 25
+    descriptions:
+    - text: Local pressure washing for driveways, patios, pavers and siding. Request a free quote.
+      len: 86
+    - text: The washing method is chosen for the surface, from hard concrete to delicate siding.
+      len: 83
+    - text: Serving Islip, West Islip and Dix Hills homeowners. Free quote, no obligation.
+      len: 78
+    - text: Pressure washing near you on Long Island. Call (631) 502-7946 or request a quote.
+      len: 81
+  - ad_group: Pressure Washing Near Me
+    rsa: 2
+    final_url: https://offer.softwindli.com/residential-pressure-washing/
+    path1: pressure-wash
+    path2: islip
+    headlines:
+    - text: Pressure Washing Near You
+      len: 25
+      pinned: HEADLINE_1
+    - text: Exterior Washing Near You
+      len: 25
+      pinned: HEADLINE_1
+    - text: Right Pressure, Right Surface
+      len: 29
+    - text: Low-Pressure Siding Washing
+      len: 27
+    - text: Driveway And Patio Washing
+      len: 26
+    - text: Paver And Concrete Washing
+      len: 26
+    - text: Walkway And Fence Washing
+      len: 25
+    - text: Cleaner Home Exteriors
+      len: 22
+    - text: Free Quote On Your Project
+      len: 26
+    - text: Tell Us What Needs Cleaning
+      len: 27
+    - text: Islip Pressure Washing
+      len: 22
+    - text: West Islip Pressure Wash
+      len: 24
+    - text: Dix Hills Pressure Wash
+      len: 23
+    - text: Local Long Island Team
+      len: 22
+    - text: Softwind Exterior Washing
+      len: 25
+    descriptions:
+    - text: We match the washing method to the material, so siding is treated gently.
+      len: 72
+    - text: Driveways, patios, walkways, pavers and concrete washed and refreshed.
+      len: 69
+    - text: Tell us what needs cleaning and where. We will send you a free quote.
+      len: 68
+    - text: Residential pressure washing for Long Island homes. Free quote available.
+      len: 72
+  cross_campaign_check:
+    keyword: pressure washing near me
+    campaign_A_24103511039: No live or paused keyword text matches. After PLAN-I2 enables Pressure
+      & Power Washing into A, still no exact match - that group has no 'near me' text.
+    campaign_B_24145053510: No live or paused keyword text matches. Proposed here.
+    currently_enabled_duplicate: false
+    paused_duplicate: false
+    recommended_ownership: 'campaign 24145053510 (Power Washing #2) - EXCLUSIVE'
+    ownership_rationale: Campaign B owns the pressure / residential / house / soft washing family.
+      Placing it in B keeps the pressure intent in one campaign. Note PLAN-I2 places the legacy
+      Pressure & Power Washing group in campaign A; those are non-'near me' texts, so the two do
+      not compete for the same query, but this pairing should be reviewed at the first pacing checkpoint.
+    residual_risk: MEDIUM against campaign B's own live 'residential pressure washing near me' SKAG,
+      which shares the substring. Intra-campaign, resolved by Ad Rank, acceptable.
+  actions:
+  - action_id: R5-I5-01
+    priority: R5
+    resource_type: AD_GROUP
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW ad_group 'Pressure Washing Near Me'
+    current_value: does not exist
+    proposed_value:
+      name: Pressure Washing Near Me
+      status: PAUSED
+      type: SEARCH_STANDARD
+      cpc_bid_micros: 24000000
+    why: 70 local searches/month at $8.75-$24.53 with no live or paused keyword covering the text;
+      15 impressions of pressure-phrasing demand currently convert at 0% CTR because they are served
+      power-washing copy.
+    evidence: keyword-planner-2026-08-25.json; metrics-2026-08-25.json search_terms; demand-model-2026-08-25.json
+    expected_effect: Creates the container. No delivery until a separate ENABLE approval.
+    risk: LOW. Created paused; cannot serve.
+    rollback: Remove the ad group. Nothing else references it.
+    approval_required: YES - create-paused approval tied to this fingerprint.
+    object_count: 1
+  - action_id: R5-I5-02
+    priority: R5
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: NEW from P1-E01
+    resource_id: NEW keywords x2
+    current_value: does not exist
+    proposed_value:
+    - text: pressure washing near me
+      match_type: PHRASE
+      status: ENABLED
+    - text: pressure washing near me
+      match_type: EXACT
+      status: ENABLED
+    why: Phrase + Exact per Green Marketing default. No Broad Match.
+    evidence: config/agency.yaml search_defaults.match_types
+    expected_effect: No delivery while the parent ad group is paused.
+    risk: LOW.
+    rollback: Remove both criteria.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: R5-I5-03
+    priority: R5
+    resource_type: AD_GROUP_AD
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: NEW from P1-E01
+    resource_id: NEW RSAs x2
+    current_value: does not exist
+    proposed_value: Two RSAs as drafted under rsas[] - 15 headlines and 4 descriptions each, HEADLINE_1
+      pinned to two interchangeable near-you variants, Final URL /residential-pressure-washing/
+    why: Two distinct RSAs per ad group per SOP. HEADLINE_1 is pinned so the searched service always
+      appears first - directly targeting the Below Average expected-CTR and ad-relevance components
+      seen on the account's existing keywords.
+    evidence: scripts/softwind_validate_plan_e_rsas.py - ALL PLAN-E RSA VALIDATION PASSED
+    expected_effect: No delivery while paused.
+    risk: LOW.
+    rollback: Remove both ads.
+    approval_required: 'YES'
+    object_count: 2
+  post_creation_requirements:
+  - 'READBACK QA: re-read the ad group, both keywords and both RSAs from the API.'
+  - Provide the created resource IDs.
+  - Verify keyword match types are exactly PHRASE and EXACT.
+  - Verify 2 RSAs present.
+  - Verify 15 headlines and 4 descriptions on each RSA.
+  - Verify Final URL is https://offer.softwindli.com/residential-pressure-washing/
+  - Verify policy approval status.
+  - ONLY THEN build a separate ENABLEMENT fingerprint. Creation and enablement must never share
+    an approval.
+  timing_warning: Create-paused plus readback QA plus a separate enable approval cannot realistically
+    complete before 2026-08-28. That leaves at most 4 of the 6 remaining days of delivery, which
+    is why this sits at R5 rather than higher. If the month-end objective is the priority, PLAN-I1,
+    I2 and I3 deliver more spend sooner than this plan can.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 1
+    keywords_enabled: 0
+    keywords_created_paused: 2
+    rsas_created_paused: 2
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 5
+    objects_that_can_serve_immediately: 0
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  incrementality_correction_2026_08_26:
+    what_was_wrong: 'This plan previously claimed ''pressure washing near me'' was genuinely uncovered
+      because a Phrase keyword "pressure washing service" could not match a query lacking the word
+      ''service''. That reasoning is WRONG under current Google Ads matching: modern Phrase Match
+      matches the MEANING of the keyword, and Exact Match matches same-meaning close variants.'
+    what_the_search_term_history_actually_shows:
+      exact_query_pressure_washing_near_me_observed: 3
+      impressions_already_covered_by_enabled_keywords: 16
+      clicks_on_those_impressions: 0
+      already_matched_by:
+      - keyword: power washing services near me
+        match_types:
+        - EXACT
+        - PHRASE
+        impressions: 10
+        clicks: 0
+      - keyword: residential pressure washing near me
+        match_types:
+        - EXACT
+        impressions: 4
+        clicks: 0
+      - keyword: power washing near me
+        match_types:
+        - EXACT
+        impressions: 1
+        clicks: 0
+      - keyword: power washing company near me
+        match_types:
+        - PHRASE
+        impressions: 1
+        clicks: 0
+    corrected_classification: ROUTING / RELEVANCE IMPROVEMENT - not NET-NEW DEMAND
+    corrected_expected_effect: 'ZERO incremental impressions. The query space is already reachable.
+      What changes is WHICH ad serves: today these 16 impressions are answered by power-washing
+      copy and have produced 0 clicks. A dedicated pressure-washing SKAG serves matching copy. Credit
+      it as a CTR and Quality Score fix only.'
+    does_the_70_per_month_planner_volume_still_apply: NO. It must not be added to the demand model
+      as incremental. It describes the size of a query space the account can ALREADY reach.
+    is_the_plan_still_worth_building: YES, but not for August. It has the strongest routing evidence
+      of the five candidates - the exact query was observed 3 times and every impression on that
+      space converted to 0 clicks. But it is create-paused, needs readback QA and a separate enable
+      approval, and adds no incremental impressions, so it cannot help the month-end spend objective.
+      Reclassified as a SEPTEMBER structural improvement.
+    fingerprint_impact: NONE. The ad group, both keywords, both RSAs, the Final URL and the display
+      paths are all unchanged - only the justification and expected-effect language changed. The
+      normalized action list is byte-identical, so A63D86DB3602 remains valid.

@@ -1,0 +1,3155 @@
+{
+  "read_only": true,
+  "mutations_issued": 0,
+  "timestamp_account_local": "2026-08-27T17:32:42.396113-04:00",
+  "corpus": {
+    "distinct_terms": 45,
+    "ad_group_term_pairs": 56,
+    "total_impressions": 155,
+    "total_clicks": 10,
+    "total_cost": 318.05
+  },
+  "buckets": {
+    "COMMERCIAL_INDUSTRIAL": {
+      "pairs": 2,
+      "impressions": 6,
+      "clicks": 1,
+      "cost": 35.31
+    },
+    "EXCLUDED_SERVICE": {
+      "pairs": 2,
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0
+    },
+    "IN_SCOPE_SERVICE": {
+      "pairs": 49,
+      "impressions": 140,
+      "clicks": 9,
+      "cost": 282.74
+    },
+    "IN_SCOPE_SURFACE": {
+      "pairs": 2,
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0
+    },
+    "UNCLASSIFIED": {
+      "pairs": 1,
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0
+    }
+  },
+  "records": [
+    {
+      "campaign_id": "24145053510",
+      "campaign": "Power Washing #2",
+      "ad_group_id": "198082078783",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washing services near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "EXACT"
+      ],
+      "search_term_status": [
+        "ADDED"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24145053510",
+      "campaign": "Power Washing #2",
+      "ad_group_id": "198082078983",
+      "ad_group": "House Pressure Washing Estimate",
+      "ad_group_status": "ENABLED",
+      "search_term": "average cost to power wash a house",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 1,
+      "cost": 22.11,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "house pressure washing estimate"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/house-pressure-washing-estimate/"
+      ]
+    },
+    {
+      "campaign_id": "24145053510",
+      "campaign": "Power Washing #2",
+      "ad_group_id": "198082078983",
+      "ad_group": "House Pressure Washing Estimate",
+      "ad_group_status": "ENABLED",
+      "search_term": "cost to power wash",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "house pressure washing estimate"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/house-pressure-washing-estimate/"
+      ]
+    },
+    {
+      "campaign_id": "24145053510",
+      "campaign": "Power Washing #2",
+      "ad_group_id": "198082078983",
+      "ad_group": "House Pressure Washing Estimate",
+      "ad_group_status": "ENABLED",
+      "search_term": "powerwash cost",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 1,
+      "cost": 40.07,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "house pressure washing estimate"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/house-pressure-washing-estimate/"
+      ]
+    },
+    {
+      "campaign_id": "24145053510",
+      "campaign": "Power Washing #2",
+      "ad_group_id": "198082078983",
+      "ad_group": "House Pressure Washing Estimate",
+      "ad_group_status": "ENABLED",
+      "search_term": "price to powerwash house",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "house pressure washing estimate"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/house-pressure-washing-estimate/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washing near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 6,
+      "clicks": 1,
+      "cost": 54.49,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "EXACT"
+      ],
+      "search_term_status": [
+        "ADDED"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "soft power washing company near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "soft wash power washing near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "house washing services",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "jet wash near me",
+      "verdict": "REVIEW",
+      "bucket": "UNCLASSIFIED",
+      "rule": "fails whitelist, matches no out-of-scope rule",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "local power washers",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power wash near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 4,
+      "clicks": 1,
+      "cost": 26.66,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washer near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 4,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washing",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 9,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washing companies near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "powerwashing near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 4,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "pressure washing",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 3,
+      "clicks": 2,
+      "cost": 59.82,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "commercial power washing company near me",
+      "verdict": "NEGATIVE",
+      "bucket": "COMMERCIAL_INDUSTRIAL",
+      "rule": "\\bcommercial\\b",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "gas station pressure washing near me",
+      "verdict": "NEGATIVE",
+      "bucket": "COMMERCIAL_INDUSTRIAL",
+      "rule": "\\bgas\\s*station",
+      "impressions": 4,
+      "clicks": 1,
+      "cost": 35.31,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washing repair near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power wash my house",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washing service near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "powerwash near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "pressure washer near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "pressure washing service near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 4,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "house washing services",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washing",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 18,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "powerwashing near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 4,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "pressure washing near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 5,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "affordable power washing near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "outdoor house cleaning services near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SURFACE",
+      "rule": "approved surface, no service verb",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washing services near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "EXACT"
+      ],
+      "search_term_status": [
+        "ADDED"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "best power wash company near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "best power washing company",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "house exterior power washing",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "local services pressure washing",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power wash companies near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power wash near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washing companies near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 7,
+      "clicks": 2,
+      "cost": 57.46,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "power washing services",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "powerwash company",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "powerwashing companies near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 1,
+      "cost": 22.13,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585430",
+      "ad_group": "Power Washing Services Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "pressure washing service near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 7,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing services near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585590",
+      "ad_group": "Power Washing Company Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "pressure washing companies near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing company near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585590",
+      "ad_group": "Power Washing Company Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "roof washing near me",
+      "verdict": "NEGATIVE",
+      "bucket": "EXCLUDED_SERVICE",
+      "rule": "\\broof\\b",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing company near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585590",
+      "ad_group": "Power Washing Company Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "powerwashing companies near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing company near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585590",
+      "ad_group": "Power Washing Company Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "professional power washing",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing company near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585870",
+      "ad_group": "Residential Pressure Washing Near Me",
+      "ad_group_status": "PAUSED",
+      "search_term": "power wash near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "residential pressure washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": []
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585870",
+      "ad_group": "Residential Pressure Washing Near Me",
+      "ad_group_status": "PAUSED",
+      "search_term": "pressure washer service near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "residential pressure washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": []
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585870",
+      "ad_group": "Residential Pressure Washing Near Me",
+      "ad_group_status": "PAUSED",
+      "search_term": "pressure washing near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "residential pressure washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": []
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585870",
+      "ad_group": "Residential Pressure Washing Near Me",
+      "ad_group_status": "PAUSED",
+      "search_term": "pressure washing service",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "residential pressure washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": []
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585870",
+      "ad_group": "Residential Pressure Washing Near Me",
+      "ad_group_status": "PAUSED",
+      "search_term": "powerwash near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "residential pressure washing near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": []
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585910",
+      "ad_group": "House Washing Company Near Me",
+      "ad_group_status": "PAUSED",
+      "search_term": "house cleaning services near me",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SURFACE",
+      "rule": "approved surface, no service verb",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "house washing company near me"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": []
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585910",
+      "ad_group": "House Washing Company Near Me",
+      "ad_group_status": "PAUSED",
+      "search_term": "slate roof cleaning near me",
+      "verdict": "NEGATIVE",
+      "bucket": "EXCLUDED_SERVICE",
+      "rule": "\\broof\\b",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "house washing company near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": []
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870586070",
+      "ad_group": "House Pressure Washing Estimate",
+      "ad_group_status": "PAUSED",
+      "search_term": "how much is powerwashing a house",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "house pressure washing estimate"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": []
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "205713509744",
+      "ad_group": "Soft & House Washing",
+      "ad_group_status": "PAUSED",
+      "search_term": "house soft wash cost",
+      "verdict": "KEEP",
+      "bucket": "IN_SCOPE_SERVICE",
+      "rule": "matches approved service vocabulary",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "soft washing estimate"
+      ],
+      "match_types": [
+        "NEAR_EXACT"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-soft-washing/"
+      ]
+    }
+  ],
+  "proposals_safe": [
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "commercial power washing company near me",
+      "verdict": "NEGATIVE",
+      "bucket": "COMMERCIAL_INDUSTRIAL",
+      "rule": "\\bcommercial\\b",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ],
+      "blocks_live_keyword": false,
+      "protected_tokens_present": [
+        "near me",
+        "company"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585390",
+      "ad_group": "Power Washing Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "gas station pressure washing near me",
+      "verdict": "NEGATIVE",
+      "bucket": "COMMERCIAL_INDUSTRIAL",
+      "rule": "\\bgas\\s*station",
+      "impressions": 4,
+      "clicks": 1,
+      "cost": 35.31,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ],
+      "blocks_live_keyword": false,
+      "protected_tokens_present": [
+        "near me"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585590",
+      "ad_group": "Power Washing Company Near Me",
+      "ad_group_status": "ENABLED",
+      "search_term": "roof washing near me",
+      "verdict": "NEGATIVE",
+      "bucket": "EXCLUDED_SERVICE",
+      "rule": "\\broof\\b",
+      "impressions": 2,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "power washing company near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ],
+      "blocks_live_keyword": false,
+      "protected_tokens_present": [
+        "near me"
+      ]
+    },
+    {
+      "campaign_id": "24103511039",
+      "campaign": "Power Washing",
+      "ad_group_id": "202870585910",
+      "ad_group": "House Washing Company Near Me",
+      "ad_group_status": "PAUSED",
+      "search_term": "slate roof cleaning near me",
+      "verdict": "NEGATIVE",
+      "bucket": "EXCLUDED_SERVICE",
+      "rule": "\\broof\\b",
+      "impressions": 1,
+      "clicks": 0,
+      "cost": 0.0,
+      "conversions": 0.0,
+      "matched_keywords": [
+        "house washing company near me"
+      ],
+      "match_types": [
+        "NEAR_PHRASE"
+      ],
+      "search_term_status": [
+        "NONE"
+      ],
+      "already_negative_exact": false,
+      "landing_pages": [],
+      "blocks_live_keyword": false,
+      "protected_tokens_present": [
+        "near me"
+      ]
+    }
+  ],
+  "proposals_unsafe": [],
+  "ad_group_context": {
+    "198082078463": {
+      "meta": {
+        "name": "Power Washing Near Me",
+        "campaign": "24145053510",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "power washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "198082078503": {
+      "meta": {
+        "name": "Power Washing Company Near Me",
+        "campaign": "24145053510",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "power washing company near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing company near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "198082078543": {
+      "meta": {
+        "name": "Power Washing Islip",
+        "campaign": "24145053510",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "power washing islip",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "198082078703": {
+      "meta": {
+        "name": "Soft House Washing Near Me",
+        "campaign": "24145053510",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "soft house washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft house washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/soft-house-washing/"
+      ]
+    },
+    "198082078743": {
+      "meta": {
+        "name": "Driveway Patio Concrete Washing",
+        "campaign": "24145053510",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "driveway cleaning service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete cleaning service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway cleaning service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete cleaning service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete power washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio cleaning service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio cleaning service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio power washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio power washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete power washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "walkway pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway power washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway power washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "walkway pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "paver pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "paver pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "outdoor surface cleaning service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "outdoor surface cleaning service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-soft-washing/"
+      ]
+    },
+    "198082078783": {
+      "meta": {
+        "name": "Power Washing Services Near Me",
+        "campaign": "24145053510",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "power washing services near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing services near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "198082078943": {
+      "meta": {
+        "name": "Soft & House Washing",
+        "campaign": "24145053510",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "house washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing company",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing contractor",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing company",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing contractor",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house soft washing",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing long island",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing long island",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house soft washing",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing company",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing contractor",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing company",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing contractor",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing quote",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing quote",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing estimate",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing quote",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing estimate",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing quote",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing long island",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing long island",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-soft-washing/"
+      ]
+    },
+    "198082078983": {
+      "meta": {
+        "name": "House Pressure Washing Estimate",
+        "campaign": "24145053510",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "house pressure washing estimate",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house pressure washing estimate",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/house-pressure-washing-estimate/"
+      ]
+    },
+    "198082079023": {
+      "meta": {
+        "name": "Driveway Pressure Washing Near Me",
+        "campaign": "24145053510",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "driveway pressure washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway pressure washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/driveway-pressure-washing/"
+      ]
+    },
+    "198082079183": {
+      "meta": {
+        "name": "Patio Pressure Washing Near Me",
+        "campaign": "24145053510",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "patio pressure washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio pressure washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/patio-power-washing/"
+      ]
+    },
+    "198082079223": {
+      "meta": {
+        "name": "Power Washing West Islip",
+        "campaign": "24145053510",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "power washing west islip",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "198082079263": {
+      "meta": {
+        "name": "Power Washing Dix Hills",
+        "campaign": "24145053510",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "power washing dix hills",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "198082079423": {
+      "meta": {
+        "name": "Residential Pressure Washing Near Me",
+        "campaign": "24145053510",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "residential pressure washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "residential pressure washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/residential-pressure-washing/"
+      ]
+    },
+    "198082079463": {
+      "meta": {
+        "name": "House Washing Company Near Me",
+        "campaign": "24145053510",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "house washing company near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing company near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/house-washing-company/"
+      ]
+    },
+    "198082079503": {
+      "meta": {
+        "name": "Pressure & Power Washing",
+        "campaign": "24145053510",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "professional pressure washing",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing company",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing company",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing contractor",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing company",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing company",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing contractor",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing contractor",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing contractor",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing quote",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "residential pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing estimate",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "residential pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "exterior pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "exterior pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "residential power washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "residential power washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing estimate",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing long island",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing long island",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "professional pressure washing",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing quote",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing quote",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing long island",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing long island",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing estimate",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing quote",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing estimate",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing service long island",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing service long island",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-soft-washing/"
+      ]
+    },
+    "202870585390": {
+      "meta": {
+        "name": "Power Washing Near Me",
+        "campaign": "24103511039",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "power washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "202870585430": {
+      "meta": {
+        "name": "Power Washing Services Near Me",
+        "campaign": "24103511039",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "power washing services near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing services near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "202870585590": {
+      "meta": {
+        "name": "Power Washing Company Near Me",
+        "campaign": "24103511039",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "power washing company near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing company near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "202870585630": {
+      "meta": {
+        "name": "Power Washing Islip",
+        "campaign": "24103511039",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "power washing islip",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "202870585670": {
+      "meta": {
+        "name": "Power Washing West Islip",
+        "campaign": "24103511039",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "power washing west islip",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "202870585830": {
+      "meta": {
+        "name": "Power Washing Dix Hills",
+        "campaign": "24103511039",
+        "status": "ENABLED"
+      },
+      "keywords": [
+        {
+          "text": "power washing dix hills",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/"
+      ]
+    },
+    "202870585870": {
+      "meta": {
+        "name": "Residential Pressure Washing Near Me",
+        "campaign": "24103511039",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "residential pressure washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "residential pressure washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": []
+    },
+    "202870585910": {
+      "meta": {
+        "name": "House Washing Company Near Me",
+        "campaign": "24103511039",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "house washing company near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing company near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": []
+    },
+    "202870586070": {
+      "meta": {
+        "name": "House Pressure Washing Estimate",
+        "campaign": "24103511039",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "house pressure washing estimate",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house pressure washing estimate",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": []
+    },
+    "202870586110": {
+      "meta": {
+        "name": "Driveway Pressure Washing Near Me",
+        "campaign": "24103511039",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "driveway pressure washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway pressure washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": []
+    },
+    "202870586150": {
+      "meta": {
+        "name": "Patio Pressure Washing Near Me",
+        "campaign": "24103511039",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "patio pressure washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio pressure washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": []
+    },
+    "202870586310": {
+      "meta": {
+        "name": "Soft House Washing Near Me",
+        "campaign": "24103511039",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "soft house washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft house washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/soft-house-washing/"
+      ]
+    },
+    "205713509664": {
+      "meta": {
+        "name": "Driveway Patio Concrete Washing",
+        "campaign": "24103511039",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "driveway cleaning service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete cleaning service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway cleaning service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete cleaning service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete power washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio cleaning service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio cleaning service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio power washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio power washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete power washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "concrete pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "patio pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "walkway pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway power washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway power washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "driveway pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "walkway pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "paver pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "paver pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "outdoor surface cleaning service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "outdoor surface cleaning service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-soft-washing/"
+      ]
+    },
+    "205713509704": {
+      "meta": {
+        "name": "Pressure & Power Washing",
+        "campaign": "24103511039",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "professional pressure washing",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing company",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing company",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing contractor",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing company",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing company",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing contractor",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing contractor",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing contractor",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing quote",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "residential pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing estimate",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "residential pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "exterior pressure washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "exterior pressure washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "residential power washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "residential power washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing estimate",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing long island",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing long island",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "professional pressure washing",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing quote",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "pressure washing quote",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing long island",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing long island",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing estimate",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing quote",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing estimate",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing service long island",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "power washing service long island",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-soft-washing/"
+      ]
+    },
+    "205713509744": {
+      "meta": {
+        "name": "Soft & House Washing",
+        "campaign": "24103511039",
+        "status": "PAUSED"
+      },
+      "keywords": [
+        {
+          "text": "house washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing company",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing contractor",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing company",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing contractor",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing service",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house soft washing",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing long island",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing long island",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house soft washing",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing company",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing contractor",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing near me",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing company",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing contractor",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing near me",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing service",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing quote",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "house washing quote",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing estimate",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing quote",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing estimate",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing quote",
+          "match": "EXACT",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing long island",
+          "match": "PHRASE",
+          "status": "ENABLED"
+        },
+        {
+          "text": "soft washing long island",
+          "match": "EXACT",
+          "status": "ENABLED"
+        }
+      ],
+      "landing_pages": [
+        "https://offer.softwindli.com/power-washing-soft-washing/"
+      ]
+    }
+  },
+  "existing_ad_group_negatives": {},
+  "existing_campaign_negatives_count": {
+    "24103511039": 47,
+    "24145053510": 47
+  }
+}

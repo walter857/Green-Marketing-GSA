@@ -1,0 +1,33 @@
+{
+ "plan": "AMB-0918-CONV-1",
+ "fingerprint": "A3370F96FA6E",
+ "customer_id": "2401959466",
+ "mcc_never_written": "3373711342",
+ "started": "2026-09-18T10:53:30.826937-04:00",
+ "committed": {
+  "conversion_actions": [
+   "customers/2401959466/conversionActions/7643656486",
+   "customers/2401959466/conversionActions/7643656075"
+  ]
+ },
+ "nothing_deleted": true,
+ "before": {
+  "7643656075": {
+   "primary_for_goal": true,
+   "status": "ENABLED",
+   "name": "WC Calls"
+  },
+  "7643656486": {
+   "primary_for_goal": true,
+   "status": "ENABLED",
+   "name": "WC Lead"
+  }
+ },
+ "finished": "2026-09-18T10:53:32.564152-04:00",
+ "readback": {
+  "pass": 8,
+  "fail": 0,
+  "biddable_primary": 3,
+  "enabled_primary": 8
+ }
+}

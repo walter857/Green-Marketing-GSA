@@ -1,0 +1,261 @@
+# PLAN-A2 - CONTROLLED FORM TEST
+#
+# STATUS: APPROVED IN PRINCIPLE, DEFERRED TO SEPTEMBER by the owner
+# on 2026-08-27. DO NOT EXECUTE IN AUGUST. Nothing was submitted.
+# Fingerprint 3B30BD017E0C verified and unchanged; the approval stands
+# for September once the remaining preconditions are met.
+
+change_plan:
+  plan_id: PLAN-A2
+  plan_title: Controlled single form-submission conversion test
+  approval_type: CONTROLLED_LIVE_TEST_FORM
+  priority: P0
+  approval_status: APPROVED IN PRINCIPLE - DEFERRED TO SEPTEMBER by owner 2026-08-27
+  execution_status: DO NOT EXECUTE IN AUGUST
+  recommended_approval_order: 1
+  ads_mutation_count: 0
+  requires_separate_enable_approval: false
+  supersedes:
+    plan_id: PLAN-A
+    fingerprint: 701E8E5ED639
+    status: VOID
+  blocked_on:
+  - PLAN-A1 complete and its findings reviewed
+  - Client-supplied test identity (name, phone, email)
+  - Client notified in advance so nobody chases the fake lead
+  - Named cleanup owner agreed
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  test_identity_procedure:
+    principle: The test identity must be unmistakably a test to any human who sees it, and must never
+      be a real person's details. Green Marketing staff details are not used either, because a real
+      inbox and a real phone attract real follow-up.
+    required_from_client_before_execution:
+    - 'A test full name. Proposed: ''GM TEST DO NOT CONTACT''.'
+    - A test phone number the client controls and will not answer as a lead. Must NOT be (631) 502-7946
+      or (631) 502-5402.
+    - A test email address the client controls, ideally a plus-addressed alias so it filters cleanly,
+      e.g. name+gmtest@domain.
+    project_note_field: '"Green Marketing conversion tracking test - not a customer - submitted <date>
+      - please delete after verification."'
+    arrival_path:
+      preferred: Arrive by clicking a real live ad, so the click carries a genuine GCLID and the whole
+        paid path is exercised end to end. This costs one real click at up to the prevailing CPC (currently
+        up to $54.49 uncapped, or up to $24.00 if PLAN-B has been approved first).
+      fallback: Navigate directly with a synthetic gclid parameter. Cheaper, but does NOT prove the
+        GCLID-to-conversion join, which is the main thing being tested.
+      recommendation: Approve PLAN-B first so the test click is capped, then use the real-ad path.
+        Testing the real path is the entire point of this plan.
+    page_under_test: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+    form_identifier: Gravity Forms gform_1
+    form_fields:
+    - field: input_9
+      label: Full Name
+      required: true
+    - field: input_1
+      label: (second text field)
+      required: true
+    - field: input_4
+      label: Phone Number
+      type: tel
+      required: true
+    - field: input_3
+      label: Email Address
+      type: email
+      required: true
+    - field: input_7
+      label: Tell us about your project
+      type: textarea
+      required: false
+    submissions_permitted: 1
+    note: Exactly ONE submission. A second submission would be counted once by ONE_PER_CLICK if it
+      shares a click, and separately if it does not, which would make the result ambiguous.
+  expected_conversion:
+    conversion_action_id: '7708725995'
+    conversion_action_name: Softwind Power Washing | Submission Lead Form
+    type: WEBPAGE
+    category: SUBMIT_LEAD_FORM
+    counting_type: ONE_PER_CLICK
+    click_through_lookback_window_days: 90
+    expected_count: 1
+    expected_value: 0.0
+    expected_value_note: value_settings.default_value is 0.0 with always_use_default_value true, so
+      the test conversion will correctly report $0.00. That is existing configuration, not a test
+      defect.
+    verification_window: Within 24 hours. Google Ads conversion reporting lags; do not declare failure
+      before 24h have elapsed.
+    verification_method:
+    - 'GAQL: metrics.all_conversions segmented by segments.conversion_action_name for the test date.'
+    - 'Google Ads UI: Goals > Conversions > the named action.'
+    - 'WhatConverts lead log: confirm the lead appears and carries the GCLID.'
+    also_expected_to_fire:
+    - GA4 G-D4BZM40RYD form event.
+    - Facebook Pixel event.
+    - 'POSSIBLY a duplicate conversion in the FOREIGN Google Ads account AW-17878095007. This is one
+      of the most valuable outputs of the test: if that account also records a conversion, the tag
+      contamination in PLAN-F F-3 is proven rather than suspected.'
+  crm_impact:
+    systems_written_to:
+    - system: Gravity Forms (WordPress entry table)
+      record_created: 1 form entry
+      deletable: true
+    - system: WhatConverts
+      record_created: 1 lead, with GCLID and UTM attribution
+      deletable: Can be marked as spam/test and archived. Retention depends on client plan.
+    - system: Client CRM (UNKNOWN - not yet identified)
+      record_created: Unknown. May trigger an automated sales notification or an auto-responder email
+        to the test address.
+      deletable: UNKNOWN until the CRM is identified.
+    - system: Google Ads conversion history
+      record_created: 1 conversion on action 7708725995
+      deletable: false
+    irreversibility_warning: The Google Ads conversion CANNOT be deleted. It permanently enters the
+      account's conversion history. In an account with ZERO conversions to date, one artificial conversion
+      is 100% of the conversion history and will distort any conversion-rate or cost-per-conversion
+      figure calculated for August. It must be annotated and subtracted in every report.
+    speed_to_lead_risk: If the client operates any speed-to-lead automation, the test may trigger
+      an immediate outbound call or SMS to the test number. The client must be told BEFORE the submission,
+      not after.
+  cleanup_procedure:
+    owner: To be named by the approval owner before execution.
+    deadline: Within 24 hours of verification.
+    steps:
+    - 1. Verify the conversion registered (or did not) and record the result.
+    - 2. Delete the Gravity Forms entry in WordPress.
+    - 3. Mark the WhatConverts lead as a test and archive it so it is excluded from lead counts.
+    - 4. Delete or mark the CRM record once the CRM is identified.
+    - '5. Add a Google Ads account annotation on the test date: ''GM conversion test - 1 artificial
+      form conversion on action 7708725995 - exclude from reporting''.'
+    - 6. Record the test in clients/softwind-power-washing/receipts/ with the date, the exact conversion
+      count added, and the cleanup confirmation.
+    what_cannot_be_cleaned: The Google Ads conversion itself, and the click cost if the real-ad arrival
+      path is used. Both are permanent.
+  actions:
+  - action_id: A2-01
+    priority: P0
+    resource_type: LANDING_PAGE_FORM
+    operation: SUBMIT_TEST_LEAD
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: null
+    resource_id: 'https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+      :: gform_1'
+    current_value: Never test-submitted. Conversion action 7708725995 has recorded 0 conversions all
+      time.
+    proposed_value: Exactly ONE form submission using the client-supplied test identity, arriving
+      via a real ad click, followed by 24h verification against conversion action 7708725995.
+    why: The only way to prove the form conversion path fires. Page-load inspection cannot observe
+      a submit-triggered tag, which PLAN-A1 will confirm.
+    evidence: PLAN-A1 findings; conversion-audit finding C-6
+    expected_effect: Proves or disproves the form conversion path, and simultaneously tests whether
+      the foreign AW-17878095007 tag also records the event.
+    risk: MEDIUM. Creates a real lead in up to four systems, one permanent Google Ads conversion,
+      and possibly one real ad click cost. May trigger sales follow-up.
+    rollback: Cleanup procedure above. The Google Ads conversion cannot be reversed.
+    approval_required: YES - CONTROLLED LIVE TEST. Separate approval, separate fingerprint, blocked
+      behind PLAN-A1.
+    object_count: 1
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 0
+    forms_submitted: 1
+    calls_placed: 0
+    crm_records_created: 1 to 4 depending on integrations
+    permanent_google_ads_conversions_added: 1
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  approval_record:
+    phrase_received: APPROVE PLAN-A2 3B30BD017E0C FOR 1521725229
+    received_account_local: 2026-08-27T12:32-04:00
+    fingerprint_recomputed: 3B30BD017E0C
+    fingerprint_match: true
+    identity_verified: true
+    held_because: The approval phrase is valid and the fingerprint matches, but this plan's own blocked_on
+      list names four preconditions and only one is satisfied. The plan authorises the action; it
+      does not supply the inputs the action requires. Nothing was submitted.
+    preconditions:
+      A2-PRE-1_plan_a1_complete:
+        satisfied: true
+        evidence: snapshots/plan-a1-inspection-2026-08-26.json, reviewed 2026-08-27
+        key_findings:
+        - All four conversion actions are primary_for_goal TRUE but include_in_conversions_metric
+          FALSE - A2 verification must use metrics.all_conversions, not metrics.conversions.
+        - 'Action 7708725995 is technically configured: 4 tag snippets, global site tag plus event
+          snippet, label AW-18369652705/FddkCOul59scEOHPqrdE. Whether it FIRES on submit is exactly
+          what A1 could not observe and A2 exists to answer.'
+        - Both AW-18369652705 and the FOREIGN AW-17878095007 load gtag/js on the exact page under
+          test, so the submission will also reveal whether the foreign account records the conversion.
+        - 'any_action_has_ever_recorded: false - zero conversions all time.'
+      A2-PRE-2_test_identity:
+        satisfied: false
+        needed: test full name, client-controlled test phone, client-controlled test email
+      A2-PRE-3_client_notified:
+        satisfied: false
+        needed: confirmation Softwind has been told before submission
+      A2-PRE-4_cleanup_owner:
+        satisfied: false
+        needed: a named person accountable for 24h cleanup across up to 4 systems
+    arrival_path_constraint_discovered:
+      issue: Both campaigns use PRESENCE location targeting across 80 New York locations. The real-ad
+        arrival path therefore requires a person PHYSICALLY on Long Island to run the search and click
+        the ad during Mon-Sat 08:00-18:00. Neither the agent nor a Florida-based approver can produce
+        that click.
+      consequence: Without a real ad click there is no real GCLID, and Google will not record a conversion
+        at all - the GCLID-to-conversion join, the main thing being tested, cannot be proven remotely.
+      cost_control_now_in_place: The plan recommended capping the test click first and named PLAN-B
+        ($24). PLAN-K1 executed today caps both campaigns at $30.00, so a real test click now costs
+        at most $30.00.
+    irreversible_if_executed:
+    - 1 permanent Google Ads conversion on action 7708725995 - cannot be deleted
+    - In an account with 0 conversions all time, that is 100% of August conversion history and permanently
+      distorts every August conversion rate and cost-per-conversion figure
+    - Up to $30.00 of real click cost if the real-ad path is used
+  owner_decision_2026_08_27:
+    decided_by: Walter Correa
+    decided_account_local: 2026-08-27T12:35-04:00
+    arrival_path: HOLD UNTIL SEPTEMBER
+    rationale: The real-ad path needs a click from a person physically inside the PRESENCE-targeted
+      Long Island footprint during Mon-Sat 08:00-18:00, which cannot be produced remotely. Rather
+      than fall back to the weaker no-GCLID variant, the whole test is deferred so that no fake lead
+      and no permanent Google Ads conversion enter the record during the month-end push.
+    august_consequence: 'August measurement stays UNVERIFIED. Zero conversions on 10 clicks and $374.04
+      remains uninterpretable: it is not known whether the form conversion path fires. No August report
+      may claim the account has ''no leads'' - only that no conversion was RECORDED, which is a different
+      statement.'
+    settled_test_identity_defaults:
+      note: Settled 2026-08-27 so September does not have to re-litigate it. Still requires A2-PRE-3
+        client notification and A2-PRE-4 named cleanup owner before execution.
+      full_name: GM TEST DO NOT CONTACT
+      phone: A number in the NANP reserved fictitious range 555-0100 to 555-0199, e.g. (631) 555-0147.
+        Chosen because it cannot ring any real person, so speed-to-lead automation cannot dial a stranger.
+        A2 tests the FORM path only; the phone path is PLAN-A3's job, so a non-routable number costs
+        nothing here.
+      email: STILL REQUIRED - a client-controlled, plus-addressed alias.
+      project_note: Green Marketing conversion tracking test - not a customer - submitted <date> -
+        please delete after verification.
+    september_preconditions_remaining:
+    - 'A2-PRE-2 email: a client-controlled plus-addressed test address'
+    - 'A2-PRE-3: Softwind notified before submission'
+    - 'A2-PRE-4: named cleanup owner for 24h cleanup across up to 4 systems'
+    - A Softwind person on Long Island available to click the live ad
+    verification_reminder: All four conversion actions are include_in_conversions_metric FALSE, so
+      verification must query metrics.all_conversions segmented by segments.conversion_action_name
+      - NOT metrics.conversions, which will read 0.00 even on a successful test.

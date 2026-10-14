@@ -1,0 +1,126 @@
+{
+ "plan_name": "AMB-0910-BUD-2",
+ "approval_class": "reversible-budget-change",
+ "generated_local": "2026-09-10T00:44:18.797871-04:00",
+ "supersedes": "AMB-0909C-BUD-1 (A7118436590B) - SUPERSEDED, DO_NOT_EXECUTE",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "AC Repair",
+  "related_services": [
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "summary": "Gas Boiler Repair $42.76 -> $5.00 and HVAC Replacement $26.32 -> $20.00. Identical mutation payload to A7118436590B; the hashed calculation metadata is corrected. Combined daily $465.63 -> $421.55.",
+ "object_count": 2,
+ "partial_failure": false,
+ "atomic": true,
+ "operations": [
+  {
+   "operation": "UPDATE_CAMPAIGN_BUDGET",
+   "resource": "campaign_budget",
+   "resource_id": "15787409438",
+   "resource_name": "customers/2401959466/campaignBudgets/15787409438",
+   "campaign": "Gas Boiler Repair",
+   "current_state": "amount_micros = 42760000 ($42.76/day)",
+   "proposed_state": "amount_micros = 5000000 ($5.00/day)",
+   "field_mask": [
+    "amount_micros"
+   ],
+   "budget_is_individual": true,
+   "reason": "Fresh settled data 2026-08-14..2026-09-09: 34 impressions, 0 clicks, $0.00, 0 Primary conversion records. Search lost impression share to BUDGET is 0.00% and to RANK is 48.39%. September spend through the 2026-09-10 preflight is $0.00. Budget has never been this campaign's constraint, so the reduction cannot cost delivery.",
+   "current_month_limit_CORRECTED": {
+    "method": "September spend before the edit + (new average daily budget x remaining CALENDAR days INCLUDING the edit day). The highest budget in force on the edit day affects that single day's daily delivery limit; it does NOT replace the latest budget in the remaining-month formula.",
+    "september_spend_before_edit": 0.0,
+    "edit_day": "2026-09-10",
+    "remaining_calendar_days_incl_edit_day": 21,
+    "campaign_september_maximum": 105.0
+   },
+   "steady_state_monthly_max_30_4": 152.0,
+   "rollback": "NOT a blind restore. Gas Boiler Repair + HVAC Replacement combined must stay at or below $31.08/day while AC Repair $141.45, HVAC Installation $176.15 and HVAC Repair $78.95 are unchanged. Any restoration above that needs an offsetting reduction, a fresh cap calculation and a NEW approval fingerprint.",
+   "risk": "LOW",
+   "risk_reason": "0.00% Search lost IS (budget) in every measured window",
+   "unrelated_resource_assertion": "budgets 15787409435 ($141.45), 15787409441 ($176.15) and 15787409444 ($78.95) must be unchanged; combined daily total must read $421.55; no budget may become explicitly_shared"
+  },
+  {
+   "operation": "UPDATE_CAMPAIGN_BUDGET",
+   "resource": "campaign_budget",
+   "resource_id": "15787409447",
+   "resource_name": "customers/2401959466/campaignBudgets/15787409447",
+   "campaign": "HVAC Replacement",
+   "current_state": "amount_micros = 26320000 ($26.32/day)",
+   "proposed_state": "amount_micros = 20000000 ($20.00/day)",
+   "field_mask": [
+    "amount_micros"
+   ],
+   "budget_is_individual": true,
+   "reason": "Fresh settled data 2026-08-14..2026-09-09: 199 impressions, 5 clicks, $152.52, 0 Primary conversion records. Search lost impression share to BUDGET is 0.00% and to RANK is 45.54%. September spend through the 2026-09-10 preflight is $0.00. Budget has never been this campaign's constraint, so the reduction cannot cost delivery.",
+   "current_month_limit_CORRECTED": {
+    "method": "September spend before the edit + (new average daily budget x remaining CALENDAR days INCLUDING the edit day). The highest budget in force on the edit day affects that single day's daily delivery limit; it does NOT replace the latest budget in the remaining-month formula.",
+    "september_spend_before_edit": 0.0,
+    "edit_day": "2026-09-10",
+    "remaining_calendar_days_incl_edit_day": 21,
+    "campaign_september_maximum": 420.0
+   },
+   "steady_state_monthly_max_30_4": 608.0,
+   "rollback": "NOT a blind restore. Gas Boiler Repair + HVAC Replacement combined must stay at or below $31.08/day while AC Repair $141.45, HVAC Installation $176.15 and HVAC Repair $78.95 are unchanged. Any restoration above that needs an offsetting reduction, a fresh cap calculation and a NEW approval fingerprint.",
+   "risk": "LOW",
+   "risk_reason": "0.00% Search lost IS (budget) in every measured window",
+   "unrelated_resource_assertion": "budgets 15787409435 ($141.45), 15787409441 ($176.15) and 15787409444 ($78.95) must be unchanged; combined daily total must read $421.55; no budget may become explicitly_shared"
+  }
+ ],
+ "notes": {
+  "why_A7118436590B_was_superseded": "Its hashed operations embedded per_campaign_limits.september_campaign_maximum of 142.76 (Gas Boiler) and 426.32 (HVAC Replacement), computed by the retracted method 'September spend + highest budget in force on the edit day + new daily x remaining days after the edit day'. The corrected figures are 105.00 and 420.00. Because the retracted assertion sat inside a hashed plan field and was a mandatory precondition, the fingerprint was superseded rather than executed.",
+  "retracted_combined_figure": {
+   "prior": 10216.12,
+   "corrected": 12580.12,
+   "understatement": 2364.0,
+   "why": "The prior method also applied spend-to-date plus one budget per remaining day to the three UNCHANGED campaigns. A campaign with no September budget edit carries its own applicable monthly charging limit instead."
+  },
+  "current_month_september": {
+   "unchanged_campaign_monthly_limits": {
+    "AC Repair": {
+     "budget_id": "15787409435",
+     "daily": 141.45,
+     "monthly_limit": 4300.08
+    },
+    "HVAC Installation": {
+     "budget_id": "15787409441",
+     "daily": 176.15,
+     "monthly_limit": 5354.96
+    },
+    "HVAC Repair": {
+     "budget_id": "15787409444",
+     "daily": 78.95,
+     "monthly_limit": 2400.08
+    }
+   },
+   "unchanged_subtotal": 12055.12,
+   "gas_boiler_september_maximum": 105.0,
+   "hvac_replacement_september_maximum": 420.0,
+   "conservative_account_september_upper_bound": 12580.12,
+   "headroom_under_13000": 419.88,
+   "cost_basis": "SERVED cost. Google Ads exposes no per-month BILLED figure through this API surface without monthly invoicing. Served cost can still be restated by invalid-activity credits."
+  },
+  "steady_state_future_month": {
+   "combined_daily": 421.55,
+   "x30_4": 12815.12,
+   "headroom_under_13000": 184.88
+  },
+  "compliant_rollback_envelope": {
+   "blind_restore_forbidden": true,
+   "blind_restore_daily": 465.63,
+   "blind_restore_x30_4": 14155.15,
+   "blind_restore_breach": 1155.15,
+   "two_campaign_envelope_daily": 31.08,
+   "example_compliant_partial_restore": "Gas Boiler $10.00 + HVAC Replacement $21.00 = $31.00 combined, $427.55/day, $12,997.52 over 30.4 days"
+  },
+  "requires_new_approval": true
+ },
+ "fingerprint": "93541FBB5D7F"
+}

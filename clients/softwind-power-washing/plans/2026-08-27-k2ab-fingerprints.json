@@ -1,0 +1,99 @@
+{
+  "PLAN-K2A": {
+    "fingerprint": "A43B407B84F9",
+    "file": "2026-08-27-plan-k2a-unambiguous-negatives.yaml",
+    "actions": 5,
+    "objects": 5,
+    "approval_phrase": "APPROVE PLAN-K2A A43B407B84F9 FOR 1521725229"
+  },
+  "PLAN-K2B": {
+    "fingerprint": "1833A2B64E57",
+    "file": "2026-08-27-plan-k2b-commercial-scope.yaml",
+    "actions": 2,
+    "objects": 2,
+    "approval_phrase": "APPROVE PLAN-K2B 1833A2B64E57 FOR 1521725229"
+  },
+  "voided": {
+    "plan_id": "PLAN-K2",
+    "fingerprint": "57FECB3D6901",
+    "status": "VOID",
+    "voided_on": "2026-08-27T18:00:04.077553-04:00"
+  },
+  "collision_check": {
+    "roof cleaning [PHRASE]": {
+      "live_keywords_blocked": [],
+      "live_keyword_block_count": 0,
+      "served_terms_matched": [
+        "slate roof cleaning near me"
+      ],
+      "served_terms_matched_count": 1,
+      "served_terms_detail": {
+        "slate roof cleaning near me": {
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    "roof washing [PHRASE]": {
+      "live_keywords_blocked": [],
+      "live_keyword_block_count": 0,
+      "served_terms_matched": [
+        "roof washing near me"
+      ],
+      "served_terms_matched_count": 1,
+      "served_terms_detail": {
+        "roof washing near me": {
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    "house cleaning services near me [EXACT]": {
+      "live_keywords_blocked": [],
+      "live_keyword_block_count": 0,
+      "served_terms_matched": [
+        "house cleaning services near me"
+      ],
+      "served_terms_matched_count": 1,
+      "served_terms_detail": {
+        "house cleaning services near me": {
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    "gas station pressure washing near me [EXACT]": {
+      "live_keywords_blocked": [],
+      "live_keyword_block_count": 0,
+      "served_terms_matched": [
+        "gas station pressure washing near me"
+      ],
+      "served_terms_matched_count": 1,
+      "served_terms_detail": {
+        "gas station pressure washing near me": {
+          "impressions": 4,
+          "clicks": 1,
+          "cost": 35.31
+        }
+      }
+    },
+    "commercial power washing company near me [EXACT]": {
+      "live_keywords_blocked": [],
+      "live_keyword_block_count": 0,
+      "served_terms_matched": [
+        "commercial power washing company near me"
+      ],
+      "served_terms_matched_count": 1,
+      "served_terms_detail": {
+        "commercial power washing company near me": {
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0
+        }
+      }
+    }
+  }
+}

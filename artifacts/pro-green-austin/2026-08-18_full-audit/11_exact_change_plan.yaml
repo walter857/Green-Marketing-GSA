@@ -1,0 +1,1444 @@
+change_plan:
+  version: 2
+  supersedes: version 1 dated 2026-08-18, master fingerprint 38314B507F47. REJECTED by Green Marketing.
+    Every v1 fingerprint is void and must not be executed.
+  generated_on: '2026-08-19'
+  phase: PHASE 1 of 2. Safety, market integrity and measurement only. This plan adds no keyword, writes
+    no RSA and does not restructure the 24 ad groups. See phase_2_recommendation.
+  mode: draft
+  prepared_by: Green Marketing Google Ads implementation agent
+  approval_owner: Green Marketing
+  target:
+    exact_child_account_name: Pro Green - Austin - Live
+    child_customer_id: '7380491929'
+    manager_customer_id: '3373711342'
+    exact_service: outdoor design & build
+    vertical: hardscaping
+    snapshot: clients/pro-green-austin/snapshots/deep-read-2026-08-18.json
+    preflight_reverification: clients/pro-green-austin/snapshots/reverify-2026-08-19.json
+    reverified_on: '2026-08-19'
+    drift_since_2026_08_18: NONE. tracking_url_template, both budgets ($32.89 each), bidding (TARGET_SPEND,
+      ceiling 0), excluded_parent_asset_field_types (empty) and all 14 ad-schedule criteria are byte-identical
+      to the 2026-08-18 snapshot.
+    account_timezone: America/New_York
+    market_timezone: America/Chicago
+    currency: USD
+  external_writes_performed: NONE
+  changes_from_v1:
+  - EXR-003 (clear customer.tracking_url_template) WITHDRAWN. ClickCease is active and stays. Replaced
+    by blocked_proposals.BLK-001, which preserves the whole template and changes only ccpturl, and which
+    is deliberately NOT fingerprinted.
+  - Ad schedule is no longer removed. The campaigns do NOT become eligible 24/7. The two removal actions
+    are replaced by four actions that remove the 14 existing criteria and recreate 14 at 09:00-18:00 account
+    time, which is 08:00-17:00 America/Chicago.
+  - '''emergency'' removal WITHDRAWN. Emergency intent is not supported for outdoor design-and-build work,
+    so the existing negative is correct and is retained.'
+  - Negative additions cut from 21 distinct terms to 8. The 13 terms with impressions but no click and
+    no cost are recorded as WATCH in 06_negative_keyword_plan.csv and are not added. 'asphalt' and 'asphalt
+    paving' are both WATCH; the broader single word would make the second redundant, so neither is added
+    on impression-only evidence.
+  - CONVERSIONS grows from 4 demotions to 6. 'Progreen - Lp - Submit Lead Form' and 'WC calls' are added
+    because the four-action version still allowed one real lead event to be counted twice.
+  - SITE_OR_TRACKING is no longer a fingerprinted subplan. It is a developer remediation specification
+    only.
+  - 'A corrected count: nine enabled actions feed the Conversions column, not eight as stated in v1, and
+    fourteen actions are ENABLED, not thirteen.'
+  subplans:
+    STATUS:
+      actions: []
+      empty_reason: No status change is justified. Every live ad group's low delivery is explained by
+        a $65.78 daily budget spread across 24 ad groups at a $27.85 average CPC, not by ad-group quality.
+        Pausing ad groups would free no budget, which is held at campaign level. Four keywords are RARELY_SERVED
+        (criterion ids 2542011462207, 2542011463367, 901633727725, 1432027531385) and already serve nothing,
+        so pausing them would change nothing.
+    BUDGET:
+      actions:
+      - action_id: BUD-001
+        priority: P2
+        operation: UPDATE_CAMPAIGN_BUDGET_AMOUNT
+        resource_type: campaign_budget
+        resource_id: '15742409461'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        campaign_id: '24053505504'
+        current_state: amount_micros = 32890000 ($32.89/day)
+        proposed_state: amount_micros = 39470000 ($39.47/day)
+        field_mask: amount_micros
+        evidence: Over the campaigns' full 27-day life this campaign lost 31.8% of impression share to
+          budget versus 17.7% for Hardscape Construction, produced 41 of 63 clicks at $22.41 CPC versus
+          $37.98, and produced 2 of the 3 conversions.
+        reason: Move spend to the campaign limited by budget rather than by rank.
+        expected_effect: Recovers part of the 31.8% impression share lost to budget. No guarantee of more
+          leads or a lower cost per lead.
+        risk: Hardscape Construction loses about 20% of its daily budget.
+        rollback: Set amount_micros back to 32890000.
+        object_count: 1
+      - action_id: BUD-002
+        priority: P2
+        operation: UPDATE_CAMPAIGN_BUDGET_AMOUNT
+        resource_type: campaign_budget
+        resource_id: '15742409458'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        campaign_id: '24053505501'
+        current_state: amount_micros = 32890000 ($32.89/day)
+        proposed_state: amount_micros = 26310000 ($26.31/day)
+        field_mask: amount_micros
+        evidence: 54.7% impression share with only 17.7% lost to budget and 27.7% lost to rank. Extra
+          budget cannot buy rank-lost share.
+        reason: Fund the budget-constrained campaign without raising the approved total.
+        expected_effect: Combined ceiling unchanged at $65.78/day, $1,999.71 per 30.4 days.
+        risk: Fewer impressions on hardscape terms until Quality Score improves.
+        rollback: Set amount_micros back to 32890000.
+        object_count: 1
+    EXISTING_RESOURCES:
+      actions:
+      - action_id: EXR-001
+        priority: P0
+        operation: UPDATE_CAMPAIGN_EXCLUDED_PARENT_ASSET_FIELD_TYPES
+        resource_type: campaign
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        current_state: excluded_parent_asset_field_types = [] (account-level assets serve)
+        proposed_state: excluded_parent_asset_field_types = [SITELINK, STRUCTURED_SNIPPET]
+        field_mask: excluded_parent_asset_field_types
+        evidence: 'Three ENABLED account-level AUTOMATICALLY_CREATED sitelinks serve on this campaign:
+          ''Services In Dallas'' to /dfw/, ''Services In Houston'' to /houston/ and ''Services In Austin''
+          to /austin/, with 63, 57 and 142 attributed impressions and zero conversions each. click_type=SITELINKS
+          separately shows 4 clicks costing $153.72 at a $38.43 CPC, the highest CPC of any click type,
+          with zero conversions. An account-level AUTOMATICALLY_CREATED structured snippet also serves
+          ''Over 20 Years Of Experience'', which appears nowhere on the first-party Austin site read on
+          2026-08-18.'
+        reason: Stops out-of-market destinations and an unverified experience claim from serving on Austin
+          ads. This campaign already carries six advertiser sitelinks and its own advertiser structured
+          snippet, so no asset coverage is lost.
+        expected_effect: Removes cross-market leakage and one unsupported claim from live ads.
+        risk: Low. Campaign-scoped and reversible; the account assets themselves are untouched.
+        rollback: Set excluded_parent_asset_field_types back to [].
+        object_count: 1
+      - action_id: EXR-002
+        priority: P0
+        operation: UPDATE_CAMPAIGN_EXCLUDED_PARENT_ASSET_FIELD_TYPES
+        resource_type: campaign
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        current_state: excluded_parent_asset_field_types = [] (account-level assets serve)
+        proposed_state: excluded_parent_asset_field_types = [SITELINK, STRUCTURED_SNIPPET]
+        field_mask: excluded_parent_asset_field_types
+        evidence: 'Three ENABLED account-level AUTOMATICALLY_CREATED sitelinks serve on this campaign:
+          ''Services In Dallas'' to /dfw/, ''Services In Houston'' to /houston/ and ''Services In Austin''
+          to /austin/, with 63, 57 and 142 attributed impressions and zero conversions each. click_type=SITELINKS
+          separately shows 4 clicks costing $153.72 at a $38.43 CPC, the highest CPC of any click type,
+          with zero conversions. An account-level AUTOMATICALLY_CREATED structured snippet also serves
+          ''Over 20 Years Of Experience'', which appears nowhere on the first-party Austin site read on
+          2026-08-18.'
+        reason: Stops out-of-market destinations and an unverified experience claim from serving on Austin
+          ads. This campaign already carries six advertiser sitelinks and its own advertiser structured
+          snippet, so no asset coverage is lost.
+        expected_effect: Removes cross-market leakage and one unsupported claim from live ads.
+        risk: Low. Campaign-scoped and reversible; the account assets themselves are untouched.
+        rollback: Set excluded_parent_asset_field_types back to [].
+        object_count: 1
+      - action_id: EXR-003
+        priority: P1
+        operation: REMOVE_CAMPAIGN_AD_SCHEDULE_CRITERIA
+        resource_type: campaign_criterion (AD_SCHEDULE)
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        current_state: 7 AD_SCHEDULE criteria, Monday to Sunday, start_hour 8 end_hour 17, start_minute
+          ZERO end_minute ZERO, no bid modifier, all ENABLED. Interpreted in the account timezone America/New_York,
+          so they run 07:00-16:00 in the Austin market.
+        proposed_state: all 7 removed, immediately replaced by the 7 criteria in the paired action
+        field_mask: n/a (criterion removal)
+        exact_criteria_removed:
+        - day: MONDAY
+          criterion_id: '303268'
+          resource_name: customers/7380491929/campaignCriteria/24053505501~303268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: TUESDAY
+          criterion_id: '313268'
+          resource_name: customers/7380491929/campaignCriteria/24053505501~313268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: WEDNESDAY
+          criterion_id: '323268'
+          resource_name: customers/7380491929/campaignCriteria/24053505501~323268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: THURSDAY
+          criterion_id: '333268'
+          resource_name: customers/7380491929/campaignCriteria/24053505501~333268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: FRIDAY
+          criterion_id: '343268'
+          resource_name: customers/7380491929/campaignCriteria/24053505501~343268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: SATURDAY
+          criterion_id: '353268'
+          resource_name: customers/7380491929/campaignCriteria/24053505501~353268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: SUNDAY
+          criterion_id: '363268'
+          resource_name: customers/7380491929/campaignCriteria/24053505501~363268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        evidence: Google interprets an ad schedule in the ACCOUNT timezone. The account is America/New_York;
+          the market is Austin, America/Chicago. Hour-of-day data confirms delivery exists only in account
+          hours 8 through 16 and is exactly zero outside them, so the campaign is dark from 4pm Central
+          every day. The apparent intent was a local 8:00 AM - 5:00 PM window.
+        reason: Correct the one-hour timezone offset while preserving the intended Austin business-hours
+          schedule. The schedule is not removed and the campaign does not become eligible 24/7.
+        expected_effect: Serving moves from 07:00-16:00 Central to 08:00-17:00 Central, recovering the
+          4pm-5pm Central hour and dropping the 7am hour.
+        risk: Criterion removal and creation are separate operations. If the create half fails, the campaign
+          would be left with no schedule and would run all day. Both halves must be sent in one atomic
+          mutate with partial failure disabled, and the readback must confirm exactly 7 criteria before
+          the operation is called done.
+        rollback: Remove the new 09:00-18:00 criteria and recreate the 7 listed above with start_hour
+          8, end_hour 17, start_minute ZERO, end_minute ZERO, no bid modifier.
+        object_count: 7
+      - action_id: EXR-004
+        priority: P1
+        operation: CREATE_CAMPAIGN_AD_SCHEDULE_CRITERIA
+        resource_type: campaign_criterion (AD_SCHEDULE)
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        current_state: after the paired removal this campaign has 0 AD_SCHEDULE criteria
+        proposed_state: 7 AD_SCHEDULE criteria, Monday to Sunday, start_hour 9 end_hour 18, start_minute
+          ZERO end_minute ZERO, no bid modifier. In the account timezone America/New_York this is 09:00-18:00,
+          which is 08:00-17:00 in the Austin market.
+        field_mask: n/a (criterion creation)
+        exact_criteria_created:
+        - day: MONDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: TUESDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: WEDNESDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: THURSDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: FRIDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: SATURDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: SUNDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        evidence: America/Chicago is one hour behind America/New_York year-round; both observe US daylight
+          saving on the same dates, so a fixed +1 hour offset holds all year and no seasonal correction
+          is needed.
+        reason: Restores the intended Monday-Sunday 8:00 AM - 5:00 PM Austin window.
+        expected_effect: The campaign serves 08:00-17:00 local, every day. Daily budget, not the schedule,
+          still caps spend.
+        risk: Ad-schedule criterion ids are assigned by Google and are not knowable before creation, so
+          the readback must match on day and hour values rather than on id.
+        rollback: Remove the 7 created criteria and restore the previous 08:00-17:00 set.
+        object_count: 7
+      - action_id: EXR-005
+        priority: P1
+        operation: REMOVE_CAMPAIGN_AD_SCHEDULE_CRITERIA
+        resource_type: campaign_criterion (AD_SCHEDULE)
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        current_state: 7 AD_SCHEDULE criteria, Monday to Sunday, start_hour 8 end_hour 17, start_minute
+          ZERO end_minute ZERO, no bid modifier, all ENABLED. Interpreted in the account timezone America/New_York,
+          so they run 07:00-16:00 in the Austin market.
+        proposed_state: all 7 removed, immediately replaced by the 7 criteria in the paired action
+        field_mask: n/a (criterion removal)
+        exact_criteria_removed:
+        - day: MONDAY
+          criterion_id: '303268'
+          resource_name: customers/7380491929/campaignCriteria/24053505504~303268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: TUESDAY
+          criterion_id: '313268'
+          resource_name: customers/7380491929/campaignCriteria/24053505504~313268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: WEDNESDAY
+          criterion_id: '323268'
+          resource_name: customers/7380491929/campaignCriteria/24053505504~323268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: THURSDAY
+          criterion_id: '333268'
+          resource_name: customers/7380491929/campaignCriteria/24053505504~333268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: FRIDAY
+          criterion_id: '343268'
+          resource_name: customers/7380491929/campaignCriteria/24053505504~343268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: SATURDAY
+          criterion_id: '353268'
+          resource_name: customers/7380491929/campaignCriteria/24053505504~353268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        - day: SUNDAY
+          criterion_id: '363268'
+          resource_name: customers/7380491929/campaignCriteria/24053505504~363268
+          current: 08:00 -> 17:00 account time
+          bid_modifier: 0.0
+          status: ENABLED
+        evidence: Google interprets an ad schedule in the ACCOUNT timezone. The account is America/New_York;
+          the market is Austin, America/Chicago. Hour-of-day data confirms delivery exists only in account
+          hours 8 through 16 and is exactly zero outside them, so the campaign is dark from 4pm Central
+          every day. The apparent intent was a local 8:00 AM - 5:00 PM window.
+        reason: Correct the one-hour timezone offset while preserving the intended Austin business-hours
+          schedule. The schedule is not removed and the campaign does not become eligible 24/7.
+        expected_effect: Serving moves from 07:00-16:00 Central to 08:00-17:00 Central, recovering the
+          4pm-5pm Central hour and dropping the 7am hour.
+        risk: Criterion removal and creation are separate operations. If the create half fails, the campaign
+          would be left with no schedule and would run all day. Both halves must be sent in one atomic
+          mutate with partial failure disabled, and the readback must confirm exactly 7 criteria before
+          the operation is called done.
+        rollback: Remove the new 09:00-18:00 criteria and recreate the 7 listed above with start_hour
+          8, end_hour 17, start_minute ZERO, end_minute ZERO, no bid modifier.
+        object_count: 7
+      - action_id: EXR-006
+        priority: P1
+        operation: CREATE_CAMPAIGN_AD_SCHEDULE_CRITERIA
+        resource_type: campaign_criterion (AD_SCHEDULE)
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        current_state: after the paired removal this campaign has 0 AD_SCHEDULE criteria
+        proposed_state: 7 AD_SCHEDULE criteria, Monday to Sunday, start_hour 9 end_hour 18, start_minute
+          ZERO end_minute ZERO, no bid modifier. In the account timezone America/New_York this is 09:00-18:00,
+          which is 08:00-17:00 in the Austin market.
+        field_mask: n/a (criterion creation)
+        exact_criteria_created:
+        - day: MONDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: TUESDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: WEDNESDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: THURSDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: FRIDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: SATURDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        - day: SUNDAY
+          start_hour: 9
+          start_minute: ZERO
+          end_hour: 18
+          end_minute: ZERO
+          bid_modifier: null
+          account_time: 09:00 -> 18:00 America/New_York
+          market_time: 08:00 -> 17:00 America/Chicago
+        evidence: America/Chicago is one hour behind America/New_York year-round; both observe US daylight
+          saving on the same dates, so a fixed +1 hour offset holds all year and no seasonal correction
+          is needed.
+        reason: Restores the intended Monday-Sunday 8:00 AM - 5:00 PM Austin window.
+        expected_effect: The campaign serves 08:00-17:00 local, every day. Daily budget, not the schedule,
+          still caps spend.
+        risk: Ad-schedule criterion ids are assigned by Google and are not knowable before creation, so
+          the readback must match on day and hour values rather than on id.
+        rollback: Remove the 7 created criteria and restore the previous 08:00-17:00 set.
+        object_count: 7
+      - action_id: EXR-007
+        priority: P1
+        operation: SET_MAXIMIZE_CLICKS_CPC_BID_CEILING
+        resource_type: campaign
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        current_state: bidding_strategy_type = TARGET_SPEND (Maximize Clicks); target_spend.cpc_bid_ceiling_micros
+          = 0, meaning no ceiling
+        proposed_state: target_spend.cpc_bid_ceiling_micros = 22000000 ($22.00 maximum CPC)
+        field_mask: target_spend.cpc_bid_ceiling_micros
+        evidence: Average CPC over the campaigns' full life is $27.85, with individual clicks at $42.61,
+          $48.15 and $55.31. At $65.78 a day that buys 2.3 clicks a day across 24 ad groups. Outdoor Living
+          & Design already averages $22.41 and produced 2 of the 3 conversions.
+        reason: A ceiling is the one bid control that raises click volume inside a fixed budget without
+          a strategy change, without a learning reset, and without asking Smart Bidding to trust a conversion
+          set that is not yet reliable.
+        expected_effect: More clicks per dollar. Expect some loss of top-of-page share on the most expensive
+          terms. No guarantee of a lower cost per lead.
+        risk: Impression share may fall further on rank-limited terms. Reversible in a single field edit.
+        rollback: Set target_spend.cpc_bid_ceiling_micros back to 0.
+        object_count: 1
+      - action_id: EXR-008
+        priority: P1
+        operation: SET_MAXIMIZE_CLICKS_CPC_BID_CEILING
+        resource_type: campaign
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        current_state: bidding_strategy_type = TARGET_SPEND (Maximize Clicks); target_spend.cpc_bid_ceiling_micros
+          = 0, meaning no ceiling
+        proposed_state: target_spend.cpc_bid_ceiling_micros = 22000000 ($22.00 maximum CPC)
+        field_mask: target_spend.cpc_bid_ceiling_micros
+        evidence: Average CPC over the campaigns' full life is $27.85, with individual clicks at $42.61,
+          $48.15 and $55.31. At $65.78 a day that buys 2.3 clicks a day across 24 ad groups. Outdoor Living
+          & Design already averages $22.41 and produced 2 of the 3 conversions.
+        reason: A ceiling is the one bid control that raises click volume inside a fixed budget without
+          a strategy change, without a learning reset, and without asking Smart Bidding to trust a conversion
+          set that is not yet reliable.
+        expected_effect: More clicks per dollar. Expect some loss of top-of-page share on the most expensive
+          terms. No guarantee of a lower cost per lead.
+        risk: Impression share may fall further on rank-limited terms. Reversible in a single field edit.
+        rollback: Set target_spend.cpc_bid_ceiling_micros back to 0.
+        object_count: 1
+      - action_id: EXR-009
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: agave landscaping
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "agave landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=2 impressions=3 clicks=1
+          cost=$18.87 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-010
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: agave landscaping
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "agave landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=2 impressions=3 clicks=1
+          cost=$18.87 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-011
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: agc turf
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "agc turf"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=1 impressions=3 clicks=1
+          cost=$24.51 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-012
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: agc turf
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "agc turf"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=1 impressions=3 clicks=1
+          cost=$24.51 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-013
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: astoria lighting
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "astoria lighting"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=2 impressions=10 clicks=1
+          cost=$10.29 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-014
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: astoria lighting
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "astoria lighting"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=2 impressions=10 clicks=1
+          cost=$10.29 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-015
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: garden goat
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "garden goat"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=1 impressions=2 clicks=1
+          cost=$19.42 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-016
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: garden goat
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "garden goat"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=1 impressions=2 clicks=1
+          cost=$19.42 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-017
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: mcdugald steele
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "mcdugald steele"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=1 impressions=2 clicks=1
+          cost=$35.1 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-018
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: mcdugald steele
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "mcdugald steele"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=1 impressions=2 clicks=1
+          cost=$35.1 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-019
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: mirror lake landscaping
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "mirror lake landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=1 impressions=1 clicks=1
+          cost=$29.17 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-020
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: mirror lake landscaping
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "mirror lake landscaping"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=1 impressions=1 clicks=1
+          cost=$29.17 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-021
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: spring texas
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "spring texas"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=wrong_market_houston_area; observed on live campaigns: rows=1 impressions=1
+          clicks=1 cost=$29.17 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-022
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: spring texas
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "spring texas"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=wrong_market_houston_area; observed on live campaigns: rows=1 impressions=1
+          clicks=1 cost=$29.17 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-023
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505501'
+        resource_name: Progreen Austin | Search | Hardscape Construction
+        negative_text: ulm austin
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "ulm austin"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=1 impressions=4 clicks=1
+          cost=$24.24 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-024
+        priority: P1
+        operation: ADD_CAMPAIGN_NEGATIVE_KEYWORD
+        resource_type: campaign_criterion (negative keyword)
+        resource_id: '24053505504'
+        resource_name: Progreen Austin | Search | Outdoor Living & Design
+        negative_text: ulm austin
+        match_type: PHRASE
+        current_state: not present as a campaign negative on this campaign
+        proposed_state: campaign negative PHRASE "ulm austin"
+        field_mask: n/a (criterion creation)
+        evidence: 'family=competitor_brand; observed on live campaigns: rows=1 impressions=4 clicks=1
+          cost=$24.24 conversions=0.0. Conflict recheck on 2026-08-19: no conflict detected.'
+        reason: Stops paid clicks on this query family in the two design-and-build campaigns. Does not
+          guarantee a lower cost per lead.
+        expected_effect: Stops paid clicks on this query family in the two design-and-build campaigns.
+          Does not guarantee a lower cost per lead.
+        risk: Low. Phrase scope only, campaign level only, so no other campaign and no future service
+          is affected.
+        rollback: Remove the campaign_criterion by its returned criterion_id.
+        object_count: 1
+      - action_id: EXR-025
+        priority: P1
+        operation: REMOVE_SHARED_LIST_NEGATIVE
+        resource_type: shared_criterion (negative keyword list member)
+        resource_id: '10023121'
+        resource_name: account-level negative keywords list (shared_set 11260450591)
+        shared_criterion_resource_name: customers/7380491929/sharedCriteria/11260450591~10023121
+        negative_text: cost
+        match_type: BROAD
+        current_state: BROAD negative "cost" is a member of "account-level negative keywords list"
+        proposed_state: member removed
+        field_mask: n/a (shared criterion removal)
+        evidence: 'family=protected_term_blocked_account_wide. Green Marketing policy protects ''cost''.
+          As a BROAD account-level negative it blocks every cost query on every campaign, including ''paver
+          patio cost'' and ''outdoor kitchen cost austin''. For a design-and-build business with large
+          tickets, cost queries are buyers, not researchers. Invisible in the campaign UI. Conflict recheck
+          on 2026-08-19: removal cannot block traffic; it restores eligibility. NOTE: this criterion_id
+          is also a member of other shared sets that are REMOVED or not linked to a live campaign; only
+          the membership named here is removed, addressed by its full shared_criterion resource name.'
+        reason: Green Marketing policy protects 'cost'. As a BROAD account-level negative it blocks every
+          cost query on every campaign, including 'paver patio cost' and 'outdoor kitchen cost austin'.
+          For a design-and-build business with large tickets, cost queries are buyers, not researchers.
+          Invisible in the campaign UI.
+        expected_effect: Green Marketing policy protects 'cost'. As a BROAD account-level negative it
+          blocks every cost query on every campaign, including 'paver patio cost' and 'outdoor kitchen
+          cost austin'. For a design-and-build business with large tickets, cost queries are buyers, not
+          researchers. Invisible in the campaign UI.
+        risk: Restores eligibility for the described queries on every campaign the list is attached to.
+          All such campaigns except the two design-and-build campaigns are PAUSED, so no other live spend
+          can change.
+        rollback: Re-add "cost" [BROAD] to shared set 11260450591.
+        object_count: 1
+      - action_id: EXR-026
+        priority: P1
+        operation: REMOVE_SHARED_LIST_NEGATIVE
+        resource_type: shared_criterion (negative keyword list member)
+        resource_id: '62617751'
+        resource_name: General (shared_set 10670796064)
+        shared_criterion_resource_name: customers/7380491929/sharedCriteria/10670796064~62617751
+        negative_text: hire
+        match_type: PHRASE
+        current_state: PHRASE negative "hire" is a member of "General"
+        proposed_state: member removed
+        field_mask: n/a (shared criterion removal)
+        evidence: 'family=protected_term_blocked_on_live_campaigns. Green Marketing policy protects ''hire''.
+          Blocks ''hire a hardscape contractor'' and ''hire landscape designer'' on both live campaigns.
+          Conflict recheck on 2026-08-19: removal cannot block traffic; it restores eligibility. NOTE:
+          this criterion_id is also a member of other shared sets that are REMOVED or not linked to a
+          live campaign; only the membership named here is removed, addressed by its full shared_criterion
+          resource name.'
+        reason: Green Marketing policy protects 'hire'. Blocks 'hire a hardscape contractor' and 'hire
+          landscape designer' on both live campaigns.
+        expected_effect: Green Marketing policy protects 'hire'. Blocks 'hire a hardscape contractor'
+          and 'hire landscape designer' on both live campaigns.
+        risk: Restores eligibility for the described queries on every campaign the list is attached to.
+          All such campaigns except the two design-and-build campaigns are PAUSED, so no other live spend
+          can change.
+        rollback: Re-add "hire" [PHRASE] to shared set 10670796064.
+        object_count: 1
+      - action_id: EXR-027
+        priority: P2
+        operation: REMOVE_SHARED_LIST_NEGATIVE
+        resource_type: shared_criterion (negative keyword list member)
+        resource_id: '100398664'
+        resource_name: General (shared_set 10670796064)
+        shared_criterion_resource_name: customers/7380491929/sharedCriteria/10670796064~100398664
+        negative_text: shade
+        match_type: PHRASE
+        current_state: PHRASE negative "shade" is a member of "General"
+        proposed_state: member removed
+        field_mask: n/a (shared criterion removal)
+        evidence: 'family=blocks_verified_service_demand. Blocks ''shade structure'', ''shade sail'' and
+          ''patio shade cover''. Those are direct pergola and shade-structure queries and both live campaigns
+          run Pergolas ad groups. Conflict recheck on 2026-08-19: removal cannot block traffic; it restores
+          eligibility. NOTE: this criterion_id is also a member of other shared sets that are REMOVED
+          or not linked to a live campaign; only the membership named here is removed, addressed by its
+          full shared_criterion resource name.'
+        reason: Blocks 'shade structure', 'shade sail' and 'patio shade cover'. Those are direct pergola
+          and shade-structure queries and both live campaigns run Pergolas ad groups.
+        expected_effect: Blocks 'shade structure', 'shade sail' and 'patio shade cover'. Those are direct
+          pergola and shade-structure queries and both live campaigns run Pergolas ad groups.
+        risk: Restores eligibility for the described queries on every campaign the list is attached to.
+          All such campaigns except the two design-and-build campaigns are PAUSED, so no other live spend
+          can change.
+        rollback: Re-add "shade" [PHRASE] to shared set 10670796064.
+        object_count: 1
+      - action_id: EXR-028
+        priority: P2
+        operation: REMOVE_SHARED_LIST_NEGATIVE
+        resource_type: shared_criterion (negative keyword list member)
+        resource_id: '10066610'
+        resource_name: account-level negative keywords list (shared_set 11260450591)
+        shared_criterion_resource_name: customers/7380491929/sharedCriteria/11260450591~10066610
+        negative_text: oasis
+        match_type: BROAD
+        current_state: BROAD negative "oasis" is a member of "account-level negative keywords list"
+        proposed_state: member removed
+        field_mask: n/a (shared criterion removal)
+        evidence: 'family=blocks_verified_service_demand. Blocks ''backyard oasis'' and ''backyard oasis
+          design'', a common outdoor-living buying phrase, on every campaign. Conflict recheck on 2026-08-19:
+          removal cannot block traffic; it restores eligibility. NOTE: this criterion_id is also a member
+          of other shared sets that are REMOVED or not linked to a live campaign; only the membership
+          named here is removed, addressed by its full shared_criterion resource name.'
+        reason: Blocks 'backyard oasis' and 'backyard oasis design', a common outdoor-living buying phrase,
+          on every campaign.
+        expected_effect: Blocks 'backyard oasis' and 'backyard oasis design', a common outdoor-living
+          buying phrase, on every campaign.
+        risk: Restores eligibility for the described queries on every campaign the list is attached to.
+          All such campaigns except the two design-and-build campaigns are PAUSED, so no other live spend
+          can change.
+        rollback: Re-add "oasis" [BROAD] to shared set 11260450591.
+        object_count: 1
+      - action_id: EXR-029
+        priority: P2
+        operation: REMOVE_SHARED_LIST_NEGATIVE
+        resource_type: shared_criterion (negative keyword list member)
+        resource_id: '10063811'
+        resource_name: account-level negative keywords list (shared_set 11260450591)
+        shared_criterion_resource_name: customers/7380491929/sharedCriteria/11260450591~10063811
+        negative_text: keystone
+        match_type: BROAD
+        current_state: BROAD negative "keystone" is a member of "account-level negative keywords list"
+        proposed_state: member removed
+        field_mask: n/a (shared criterion removal)
+        evidence: 'family=blocks_verified_service_demand. Keystone is a mainstream retaining-wall block
+          brand. Blocks ''keystone retaining wall installation'' account-wide while Retaining Walls ad
+          groups are live. Conflict recheck on 2026-08-19: removal cannot block traffic; it restores eligibility.
+          NOTE: this criterion_id is also a member of other shared sets that are REMOVED or not linked
+          to a live campaign; only the membership named here is removed, addressed by its full shared_criterion
+          resource name.'
+        reason: Keystone is a mainstream retaining-wall block brand. Blocks 'keystone retaining wall installation'
+          account-wide while Retaining Walls ad groups are live.
+        expected_effect: Keystone is a mainstream retaining-wall block brand. Blocks 'keystone retaining
+          wall installation' account-wide while Retaining Walls ad groups are live.
+        risk: Restores eligibility for the described queries on every campaign the list is attached to.
+          All such campaigns except the two design-and-build campaigns are PAUSED, so no other live spend
+          can change.
+        rollback: Re-add "keystone" [BROAD] to shared set 11260450591.
+        object_count: 1
+      - action_id: EXR-030
+        priority: P2
+        operation: REMOVE_SHARED_LIST_NEGATIVE
+        resource_type: shared_criterion (negative keyword list member)
+        resource_id: '10090111'
+        resource_name: account-level negative keywords list (shared_set 11260450591)
+        shared_criterion_resource_name: customers/7380491929/sharedCriteria/11260450591~10090111
+        negative_text: black
+        match_type: BROAD
+        current_state: BROAD negative "black" is a member of "account-level negative keywords list"
+        proposed_state: member removed
+        field_mask: n/a (shared criterion removal)
+        evidence: 'family=blocks_verified_service_demand. Blocks common Austin hardscape material queries
+          such as ''black star gravel'' and ''black limestone patio'' account-wide. Conflict recheck on
+          2026-08-19: removal cannot block traffic; it restores eligibility. NOTE: this criterion_id is
+          also a member of other shared sets that are REMOVED or not linked to a live campaign; only the
+          membership named here is removed, addressed by its full shared_criterion resource name.'
+        reason: Blocks common Austin hardscape material queries such as 'black star gravel' and 'black
+          limestone patio' account-wide.
+        expected_effect: Blocks common Austin hardscape material queries such as 'black star gravel' and
+          'black limestone patio' account-wide.
+        risk: Restores eligibility for the described queries on every campaign the list is attached to.
+          All such campaigns except the two design-and-build campaigns are PAUSED, so no other live spend
+          can change.
+        rollback: Re-add "black" [BROAD] to shared set 11260450591.
+        object_count: 1
+      - action_id: EXR-031
+        priority: P2
+        operation: REMOVE_SHARED_LIST_NEGATIVE
+        resource_type: shared_criterion (negative keyword list member)
+        resource_id: '10073261'
+        resource_name: account-level negative keywords list (shared_set 11260450591)
+        shared_criterion_resource_name: customers/7380491929/sharedCriteria/11260450591~10073261
+        negative_text: replacement
+        match_type: BROAD
+        current_state: BROAD negative "replacement" is a member of "account-level negative keywords list"
+        proposed_state: member removed
+        field_mask: n/a (shared criterion removal)
+        evidence: 'family=blocks_verified_service_demand. Blocks ''paver replacement'', ''patio replacement''
+          and ''driveway replacement'', all of which are design-and-build rebuild work. Conflict recheck
+          on 2026-08-19: removal cannot block traffic; it restores eligibility. NOTE: this criterion_id
+          is also a member of other shared sets that are REMOVED or not linked to a live campaign; only
+          the membership named here is removed, addressed by its full shared_criterion resource name.'
+        reason: Blocks 'paver replacement', 'patio replacement' and 'driveway replacement', all of which
+          are design-and-build rebuild work.
+        expected_effect: Blocks 'paver replacement', 'patio replacement' and 'driveway replacement', all
+          of which are design-and-build rebuild work.
+        risk: Restores eligibility for the described queries on every campaign the list is attached to.
+          All such campaigns except the two design-and-build campaigns are PAUSED, so no other live spend
+          can change.
+        rollback: Re-add "replacement" [BROAD] to shared set 11260450591.
+        object_count: 1
+    CONVERSIONS:
+      actions:
+      - action_id: CNV-001
+        priority: P0
+        operation: SET_CONVERSION_ACTION_SECONDARY
+        resource_type: conversion_action
+        resource_id: '6557277268'
+        resource_name: GA Submit Form
+        action_shape: WEBPAGE / SUBMIT_LEAD_FORM / WEBSITE
+        family: duplicate_form_lead
+        current_state: primary_for_goal = true, include_in_conversions_metric = true (counts in the Conversions
+          column)
+        proposed_state: primary_for_goal = false (secondary, observation only)
+        field_mask: primary_for_goal
+        evidence: Legacy on-page form action. 14 conversions all-time, first 2023-07-08, last 2024-09-13,
+          none since. It was superseded by 'Progreen - Lp - Submit Lead Form', which began firing 2024-09-17,
+          four days after this one stopped. Zero same-day co-occurrence across the two actions' 14 and
+          134 active days.
+        reason: Nine enabled actions currently feed the Conversions column across three form-lead definitions,
+          five call-or-phone-click definitions and one upload. After this change exactly three remain,
+          one per real lead event.
+        expected_effect: The Conversions column stops double counting. Historical totals are not restated;
+          only future reporting changes.
+        risk: Reported conversion counts will fall. That is the intended correction, not a performance
+          decline. All six remain ENABLED and fully measurable as secondary actions.
+        custom_goal_check: PASS. custom_conversion_goal returns 0 rows for this account and conversion_goal_campaign_config
+          shows goal_config_level = CAMPAIGN with custom_conversion_goal empty on both live campaigns.
+          Google documents that a custom conversion goal can keep an action biddable despite primary_for_goal
+          = false; no custom goal exists here, so that override cannot apply.
+        rollback: Set conversion_action 6557277268 primary_for_goal back to true.
+        readback_assertion: Re-read primary_for_goal AND include_in_conversions_metric. If include_in_conversions_metric
+          does not follow to false, stop and plan a separate mutation on that field rather than assuming.
+          Also re-read custom_conversion_goal to confirm it is still empty.
+        object_count: 1
+      - action_id: CNV-002
+        priority: P0
+        operation: SET_CONVERSION_ACTION_SECONDARY
+        resource_type: conversion_action
+        resource_id: '6557280400'
+        resource_name: GA Call Btn Click
+        action_shape: WEBPAGE / CONTACT / WEBSITE
+        family: phone_click_only
+        current_state: primary_for_goal = true, include_in_conversions_metric = true (counts in the Conversions
+          column)
+        proposed_state: primary_for_goal = false (secondary, observation only)
+        field_mask: primary_for_goal
+        evidence: Measures a click on a phone link, not a connected call. Zero conversions all-time. Carries
+          no call-duration semantics.
+        reason: Nine enabled actions currently feed the Conversions column across three form-lead definitions,
+          five call-or-phone-click definitions and one upload. After this change exactly three remain,
+          one per real lead event.
+        expected_effect: The Conversions column stops double counting. Historical totals are not restated;
+          only future reporting changes.
+        risk: Reported conversion counts will fall. That is the intended correction, not a performance
+          decline. All six remain ENABLED and fully measurable as secondary actions.
+        custom_goal_check: PASS. custom_conversion_goal returns 0 rows for this account and conversion_goal_campaign_config
+          shows goal_config_level = CAMPAIGN with custom_conversion_goal empty on both live campaigns.
+          Google documents that a custom conversion goal can keep an action biddable despite primary_for_goal
+          = false; no custom goal exists here, so that override cannot apply.
+        rollback: Set conversion_action 6557280400 primary_for_goal back to true.
+        readback_assertion: Re-read primary_for_goal AND include_in_conversions_metric. If include_in_conversions_metric
+          does not follow to false, stop and plan a separate mutation on that field rather than assuming.
+          Also re-read custom_conversion_goal to confirm it is still empty.
+        object_count: 1
+      - action_id: CNV-003
+        priority: P0
+        operation: SET_CONVERSION_ACTION_SECONDARY
+        resource_type: conversion_action
+        resource_id: '7389543347'
+        resource_name: Progreen Landscape Solutions - Austin (web) form_submission
+        action_shape: GOOGLE_ANALYTICS_4_CUSTOM / SUBMIT_LEAD_FORM / WEBSITE
+        family: duplicate_form_lead
+        current_state: primary_for_goal = true, include_in_conversions_metric = true (counts in the Conversions
+          column)
+        proposed_state: primary_for_goal = false (secondary, observation only)
+        field_mask: primary_for_goal
+        evidence: GA4 imported event, MANY_PER_CLICK counting and a 90-day click window against 30 days
+          elsewhere, so one lead can be counted repeatedly and inside a different window. Three GA4 properties
+          fire across these hosts (_ga_HL5EFB8XKJ, _ga_MHX199EBNJ and _ga_JDFF195TRG cookies all observed),
+          and the account holds one imported pair per property.
+        reason: Nine enabled actions currently feed the Conversions column across three form-lead definitions,
+          five call-or-phone-click definitions and one upload. After this change exactly three remain,
+          one per real lead event.
+        expected_effect: The Conversions column stops double counting. Historical totals are not restated;
+          only future reporting changes.
+        risk: Reported conversion counts will fall. That is the intended correction, not a performance
+          decline. All six remain ENABLED and fully measurable as secondary actions.
+        custom_goal_check: PASS. custom_conversion_goal returns 0 rows for this account and conversion_goal_campaign_config
+          shows goal_config_level = CAMPAIGN with custom_conversion_goal empty on both live campaigns.
+          Google documents that a custom conversion goal can keep an action biddable despite primary_for_goal
+          = false; no custom goal exists here, so that override cannot apply.
+        rollback: Set conversion_action 7389543347 primary_for_goal back to true.
+        readback_assertion: Re-read primary_for_goal AND include_in_conversions_metric. If include_in_conversions_metric
+          does not follow to false, stop and plan a separate mutation on that field rather than assuming.
+          Also re-read custom_conversion_goal to confirm it is still empty.
+        object_count: 1
+      - action_id: CNV-004
+        priority: P0
+        operation: SET_CONVERSION_ACTION_SECONDARY
+        resource_type: conversion_action
+        resource_id: '7389543053'
+        resource_name: Progreen Landscape Solutions - Austin (web) phone_call_click
+        action_shape: GOOGLE_ANALYTICS_4_CUSTOM / PHONE_CALL_LEAD / WEBSITE
+        family: phone_click_only
+        current_state: primary_for_goal = true, include_in_conversions_metric = true (counts in the Conversions
+          column)
+        proposed_state: primary_for_goal = false (secondary, observation only)
+        field_mask: primary_for_goal
+        evidence: 'The GA4 event name is phone_call_click: a click on a tel: link, not a connected call.
+          MANY_PER_CLICK counting compounds it.'
+        reason: Nine enabled actions currently feed the Conversions column across three form-lead definitions,
+          five call-or-phone-click definitions and one upload. After this change exactly three remain,
+          one per real lead event.
+        expected_effect: The Conversions column stops double counting. Historical totals are not restated;
+          only future reporting changes.
+        risk: Reported conversion counts will fall. That is the intended correction, not a performance
+          decline. All six remain ENABLED and fully measurable as secondary actions.
+        custom_goal_check: PASS. custom_conversion_goal returns 0 rows for this account and conversion_goal_campaign_config
+          shows goal_config_level = CAMPAIGN with custom_conversion_goal empty on both live campaigns.
+          Google documents that a custom conversion goal can keep an action biddable despite primary_for_goal
+          = false; no custom goal exists here, so that override cannot apply.
+        rollback: Set conversion_action 7389543053 primary_for_goal back to true.
+        readback_assertion: Re-read primary_for_goal AND include_in_conversions_metric. If include_in_conversions_metric
+          does not follow to false, stop and plan a separate mutation on that field rather than assuming.
+          Also re-read custom_conversion_goal to confirm it is still empty.
+        object_count: 1
+      - action_id: CNV-005
+        priority: P0
+        operation: SET_CONVERSION_ACTION_SECONDARY
+        resource_type: conversion_action
+        resource_id: '6885608055'
+        resource_name: Progreen - Lp - Submit Lead Form
+        action_shape: WEBPAGE / SUBMIT_LEAD_FORM / WEBSITE
+        family: duplicate_form_lead
+        current_state: primary_for_goal = true, include_in_conversions_metric = true (counts in the Conversions
+          column)
+        proposed_state: primary_for_goal = false (secondary, observation only)
+        field_mask: primary_for_goal
+        evidence: 'Measures the same event as ''WC leads'': a website form submission on the Pro Green
+          Austin properties. 196 conversions from 2024-09-17 to 2026-01-18, then nothing; ''WC leads''
+          began 2026-07-27. Zero same-day co-occurrence across 134 and 2 active days. The two have never
+          been simultaneously functional, so no double count has happened YET, but repairing the on-page
+          tag under SIT-002 would create one immediately. ''WC leads'' is retained as the single form-lead
+          system of record because it is the only source currently producing, it deduplicates at source,
+          and it is the path that will later carry qualified-lead and sold-job status.'
+        reason: Nine enabled actions currently feed the Conversions column across three form-lead definitions,
+          five call-or-phone-click definitions and one upload. After this change exactly three remain,
+          one per real lead event.
+        expected_effect: The Conversions column stops double counting. Historical totals are not restated;
+          only future reporting changes.
+        risk: Reported conversion counts will fall. That is the intended correction, not a performance
+          decline. All six remain ENABLED and fully measurable as secondary actions.
+        custom_goal_check: PASS. custom_conversion_goal returns 0 rows for this account and conversion_goal_campaign_config
+          shows goal_config_level = CAMPAIGN with custom_conversion_goal empty on both live campaigns.
+          Google documents that a custom conversion goal can keep an action biddable despite primary_for_goal
+          = false; no custom goal exists here, so that override cannot apply.
+        rollback: Set conversion_action 6885608055 primary_for_goal back to true.
+        readback_assertion: Re-read primary_for_goal AND include_in_conversions_metric. If include_in_conversions_metric
+          does not follow to false, stop and plan a separate mutation on that field rather than assuming.
+          Also re-read custom_conversion_goal to confirm it is still empty.
+        object_count: 1
+      - action_id: CNV-006
+        priority: P0
+        operation: SET_CONVERSION_ACTION_SECONDARY
+        resource_type: conversion_action
+        resource_id: '7644612703'
+        resource_name: WC calls
+        action_shape: UPLOAD_CALLS / CONTACT / CALL_FROM_ADS
+        family: duplicate_call_lead
+        current_state: primary_for_goal = true, include_in_conversions_metric = true (counts in the Conversions
+          column)
+        proposed_state: primary_for_goal = false (secondary, observation only)
+        field_mask: primary_for_goal
+        evidence: 'Zero conversions all-time. Would duplicate both retained call actions: ''Calls from
+          ads'' for a call placed from the ad and ''Progreen - Lp - Phone Call Leads'' for a connected
+          call from the website. Its category CONTACT / CALL_FROM_ADS is also NOT biddable on either live
+          campaign, so it contributes nothing to bidding even while primary.'
+        reason: Nine enabled actions currently feed the Conversions column across three form-lead definitions,
+          five call-or-phone-click definitions and one upload. After this change exactly three remain,
+          one per real lead event.
+        expected_effect: The Conversions column stops double counting. Historical totals are not restated;
+          only future reporting changes.
+        risk: Reported conversion counts will fall. That is the intended correction, not a performance
+          decline. All six remain ENABLED and fully measurable as secondary actions.
+        custom_goal_check: PASS. custom_conversion_goal returns 0 rows for this account and conversion_goal_campaign_config
+          shows goal_config_level = CAMPAIGN with custom_conversion_goal empty on both live campaigns.
+          Google documents that a custom conversion goal can keep an action biddable despite primary_for_goal
+          = false; no custom goal exists here, so that override cannot apply.
+        rollback: Set conversion_action 7644612703 primary_for_goal back to true.
+        readback_assertion: Re-read primary_for_goal AND include_in_conversions_metric. If include_in_conversions_metric
+          does not follow to false, stop and plan a separate mutation on that field rather than assuming.
+          Also re-read custom_conversion_goal to confirm it is still empty.
+        object_count: 1
+      remaining_primary_after_this_change:
+      - id: '7644242327'
+        name: WC leads
+        type: UPLOAD_CLICKS
+        category: CONTACT
+        origin: WEBSITE
+        counting: ONE_PER_CLICK
+        biddable_on_both_live_campaigns: true
+        real_event_measured: one website form submission
+        why_retained: The only form-lead source producing anything in the live window, 2 conversions.
+          WhatConverts deduplicates at source and is the path that will carry qualified-lead and sold-job
+          status.
+      - id: '6885610317'
+        name: Progreen - Lp - Phone Call Leads
+        type: WEBSITE_CALL
+        category: PHONE_CALL_LEAD
+        origin: WEBSITE
+        counting: ONE_PER_CLICK
+        phone_call_duration_seconds: 30
+        biddable_on_both_live_campaigns: true
+        real_event_measured: one connected call of at least 30 seconds placed from the website
+        why_retained: Type WEBSITE_CALL with a 30-second duration threshold. A duration threshold is only
+          meaningful for a connected call, so this is NOT a phone-link click. It produced 12 conversions
+          between 2024-10-22 and 2025-11-10, proving it can fire, and it is biddable.
+      - id: '6566620547'
+        name: Calls from ads
+        type: AD_CALL
+        category: PHONE_CALL_LEAD
+        origin: CALL_FROM_ADS
+        counting: MANY_PER_CLICK
+        phone_call_duration_seconds: 60
+        biddable_on_both_live_campaigns: true
+        real_event_measured: one connected call of at least 60 seconds placed from the ad itself
+        why_retained: 'Retained per instruction. Distinct surface from the website call, so no overlap.
+          The 60-second threshold demonstrably works: of the three calls on live campaigns, the 85-second
+          call counted and the 4-second and 11-second calls correctly did not.'
+    CREATE_PAUSED:
+      actions: []
+      empty_reason: Phase 1 creates nothing. Green Marketing policy expects two RSAs per ad group and
+        each of the 24 live ad groups has one, which is a real gap, but a second RSA is an experiment
+        that cannot be read while measurement is broken and cannot reach a readable result at 2.3 clicks
+        a day. See phase_2_recommendation.
+    SITE_OR_TRACKING:
+      actions: []
+      empty_reason: Deliberately not fingerprinted. Website and tag work is a developer remediation specification,
+        not an executable Google Ads mutation, and vague website instructions must never be presented
+        as an approvable change. See site_or_tracking_specification.
+    ENABLE:
+      actions: []
+      empty_reason: Nothing new is created in this round, so nothing needs enabling. Enabling always requires
+        a separate approval after create-paused readback QA.
+  blocked_proposals:
+  - proposal_id: BLK-001
+    priority: P0
+    status: BLOCKED - NOT FINGERPRINTED, NOT APPROVABLE IN THIS ROUND
+    supersedes: EXR-003 in the rejected v1 plan, which proposed clearing the template. WITHDRAWN.
+    operation: CORRECT_CCPTURL_PARAMETER_ONLY
+    resource_type: customer
+    resource_id: '7380491929'
+    resource_name: Pro Green - Austin - Live
+    field_mask: tracking_url_template
+    clickcease_status: ACTIVE and must remain. ClickCease is NOT to be cleared, disabled, queried or modified,
+      and the ClickCease manager account is NOT to be touched. This proposal changes one query-string
+      parameter and nothing else.
+    current_state_verbatim: https://monitor.clickcease.com/tracker/tracker.aspx?id=Y6qzID4E9cPYCj&adpos={adposition}&locphisical={loc_physical_ms}&locinterest={loc_interest_ms}&adgrp={adgroupid}&kw={keyword}&nw={network}&url={lpurl}&cpn={campaignid}&device={device}&ccpturl=offer.sehydroseed.com&pl={placement}
+    proposed_state_verbatim: https://monitor.clickcease.com/tracker/tracker.aspx?id=Y6qzID4E9cPYCj&adpos={adposition}&locphisical={loc_physical_ms}&locinterest={loc_interest_ms}&adgrp={adgroupid}&kw={keyword}&nw={network}&url={lpurl}&cpn={campaignid}&device={device}&ccpturl=offeraustin.progreenlandscapesolutions.com&pl={placement}
+    only_difference: ccpturl=offer.sehydroseed.com  ->  ccpturl=offeraustin.progreenlandscapesolutions.com
+    characters_changed: one parameter value; every other character is preserved byte for byte
+    preserved_unchanged:
+    - https://monitor.clickcease.com/tracker/tracker.aspx
+    - id=Y6qzID4E9cPYCj
+    - adpos={adposition}
+    - locphisical={loc_physical_ms}
+    - locinterest={loc_interest_ms}
+    - adgrp={adgroupid}
+    - kw={keyword}
+    - nw={network}
+    - url={lpurl}
+    - cpn={campaignid}
+    - device={device}
+    - pl={placement}
+    - parameter order
+    proposed_value_is_unverified: true
+    why_blocked: offeraustin.progreenlandscapesolutions.com is the host of all 12 live ad destinations,
+      which makes it the likely correct value, but ClickCease's ccpturl must match the domain actually
+      registered in the ClickCease account. That cannot be read from Google Ads and must not be guessed.
+      Applying a second wrong value would be no better than the current one.
+    unblock_condition: Green Marketing confirms, from the ClickCease account itself, the exact domain
+      registered for Pro Green Austin. On confirmation this proposal is regenerated with the verified
+      value and issued its own fingerprint for separate approval.
+    evidence: Read five times across 2026-08-18 and 2026-08-19; the value is stable. The ccpturl parameter
+      names offer.sehydroseed.com, a domain belonging to a different business. Neither live campaign sets
+      its own tracking template, so this account-level template governs every paid click. No ClickCease
+      script was found on any of the 13 live destinations inspected in a real browser.
+    risk_if_left_as_is: Every Austin paid click is attributed inside ClickCease against another company's
+      domain, so ClickCease's protection and reporting for this account cannot be relied on.
+    risk_of_the_change: 'Low if the domain is correct: the redirect and every macro are preserved. A wrong
+      domain leaves ClickCease misattributed exactly as it is today.'
+    rollback: Restore current_state_verbatim, recorded above in full.
+    object_count: 1
+  site_or_tracking_specification:
+    status: DEVELOPER REMEDIATION SPECIFICATION ONLY. Not fingerprinted, not approvable as an executable
+      change, and not a Google Ads mutation. Each item needs its own scoped implementation ticket and,
+      where noted, a separate client approval.
+    priority_order:
+    - spec_id: SPEC-001
+      priority: P0
+      title: Capture full attribution in Gravity Forms gform_3
+      applies_to: all 12 offeraustin.progreenlandscapesolutions.com landing pages, which are 100% of live
+        ad destinations
+      observed: The only content hidden input is input_6, whose value is the literal unresolved merge
+        tag '{Referer}'. A real-browser load carrying ?gclid=TESTGCLID_readonly_audit&wbraid=TESTWBRAID
+        showed both values present in the rendered HTML and neither reaching the form. The main-site form
+        gform_1 already captures gclid into input_15, utm_medium into input_11 and utm_campaign into input_18.
+      required_fields:
+      - gclid
+      - gbraid
+      - wbraid
+      - utm_source
+      - utm_medium
+      - utm_campaign
+      - utm_term
+      - utm_content
+      - landing_page_url
+      - referrer
+      - consent_state
+      - unique_lead_id
+      acceptance_criteria: A submission carrying a gclid stores that gclid against the lead record, and
+        unique_lead_id is unique per submission so the lead can be deduplicated downstream.
+      note: Repairing the '{Referer}' merge tag is part of this item, not a separate one.
+    - spec_id: SPEC-002
+      priority: P0
+      title: Verify the Google Ads form-submit conversion tag on the offer sub-pages
+      observed: AW-11240766632 is present on every landing page and matches the account conversion_tracking_id,
+        and GTM-54Q4TVXF loads, but 'Progreen - Lp - Submit Lead Form' recorded zero conversions in the
+        live window while 'WC leads' recorded two. The action has 196 conversions historically, from the
+        era when the destination was the offeraustin.* root, so the tag has worked before and does not
+        appear to fire on the current sub-pages.
+      requires: ONE controlled end-to-end test submission carrying a clear test identifier. Prohibited
+        in READ mode. Needs its own client approval because it creates a real record in the client's systems.
+        The five-step protocol is in 07_conversion_and_tracking_audit.md section 11.
+      acceptance_criteria: The test submission appears in exactly one of 'Progreen - Lp - Submit Lead
+        Form' or 'WC leads', never both.
+    - spec_id: SPEC-003
+      priority: P1
+      title: Identify the GA4 system-of-record property BEFORE removing any property
+      observed: G-HL5EFB8XKJ and G-MHX199EBNJ both load on every offeraustin.* page. The main site loads
+        only G-MHX199EBNJ but adds container GTM-PS42RNC, and its cookie jar also shows _ga_JDFF195TRG.
+        Three GA4 properties are in play across two hosts.
+      required_first: Determine which property is the system of record, including which one feeds the
+        two imported GA4 conversion actions and which carries the reporting history the client relies
+        on.
+      explicitly_not_proposed: Removal of any property. No removal may be specified until the system of
+        record is identified and named.
+      acceptance_criteria: A named system-of-record property, agreed in writing.
+    - spec_id: SPEC-004
+      priority: P2
+      title: Record consent state with each lead
+      observed: 'Consent Mode is initialised (google_tag_data.ics present) but no consent management platform
+        was detected: no TCF __tcfapi, no __uspapi, no Cookiebot, OneTrust, Complianz or CookieYes, and
+        no cookie banner on the landing pages. Marketing cookies including _fbp, IDE and Nextdoor identifiers
+        are set on load. The landing-page form carries no consent checkbox; the main-site form carries
+        marketing and non-marketing checkboxes.'
+      explicitly_not_proposed: Any change to consent configuration. Green Marketing proposes no consent
+        change without an exact client-approved implementation, because consent posture is a legal decision
+        for the client, not an advertising decision.
+      action: Refer to the client's legal or privacy owner. If and only if they return an exact implementation,
+        it will be specified and approved separately.
+  phase_2_recommendation:
+    status: RECOMMENDATION ONLY. Nothing here is created, enabled or fingerprinted now. Phase 2 does not
+      begin until the Phase 1 measurement repairs are live and one form-lead definition and one call-lead
+      definition together produce at least 15 conversions in a rolling 30 days.
+    why_phase_1_does_not_touch_ads_or_keywords: Phase 1 adds no keyword, writes no RSA and does not restructure
+      the 24 ad groups. Each of those is an experiment, and an experiment cannot be read while the Conversions
+      column is missing most of its leads. At 2.3 clicks a day spread across 24 ad groups there is also
+      not enough traffic for a second ad or a new keyword to reach a readable result. Doing this work
+      now would spend the RSA slot and the budget before the measurement exists to judge either.
+    entry_gate:
+    - SPEC-001 and SPEC-002 delivered and verified
+    - exactly one form-lead and one call-lead definition in the Conversions column
+    - 15 or more conversions in a rolling 30 days from those definitions
+    - the ClickCease ccpturl question closed
+    themes_recommended_to_keep:
+    - theme: Landscape Design
+      ad_groups:
+      - Landscape Design | BOFU
+      - Landscape Design | Near Me
+      evidence: $630.29 of $1,754.48 total spend, 28 of 63 clicks, and 2 of the 3 conversions. 869 of
+        1,899 impressions. Clearly the strongest demand pocket in the account.
+      verified_first_party_service: true
+    - theme: Hardscaping
+      ad_groups:
+      - Hardscaping | BOFU
+      - Hardscaping | Near Me
+      evidence: $251.85, 8 clicks, 224 impressions, 1 conversion. Also the umbrella term that catches
+        walkway, driveway and block-wall queries the narrower ad groups miss.
+      verified_first_party_service: true
+    - theme: Pavers and Patios
+      ad_groups:
+      - Pavers | BOFU
+      - Pavers | Near Me
+      - Patios | BOFU
+      - Patios | Near Me
+      evidence: $520.18 combined, 12 clicks, 399 impressions, 0 conversions but the second-largest impression
+        pool. Highest CPCs on the account ($42.61 and $48.15), so this theme benefits most from the $22.00
+        ceiling.
+      verified_first_party_service: true
+    - theme: Outdoor Living
+      ad_groups:
+      - Outdoor Living | Near Me
+      evidence: $150.13, 6 clicks, 94 impressions. Note that 'Outdoor Living | BOFU' is RARELY_SERVED
+        and needs a higher-volume head term before it is worth keeping.
+      verified_first_party_service: true
+    themes_recommended_to_retire_or_park:
+    - theme: Fire Pits
+      reason: Zero impressions and zero clicks across both ad groups in 27 days. Both keywords are RARELY_SERVED.
+    - theme: Walkways
+      reason: 2 impressions, 0 clicks across both ad groups.
+    - theme: Driveways
+      reason: 9 impressions, 0 clicks across both ad groups.
+    - theme: Pergolas
+      reason: 57 impressions, 1 click. Worth reconsidering only after the 'shade' negative is removed,
+        since that negative currently blocks shade-structure demand.
+    - theme: Artificial Turf
+      reason: 99 impressions, 2 clicks, $54.28, 0 conversions. Verified service, but arguably not design-and-build;
+        confirm scope.
+    - theme: Landscape Lighting
+      reason: 97 impressions, 4 clicks, $63.98, 0 conversions. Lowest CPC on the account at $15.99, so
+        cheap to keep testing.
+    - theme: Retaining Walls
+      reason: 49 impressions, 2 clicks, $63.51. Keep only if removing the 'keystone' account negative
+        materially increases eligible demand.
+    expansion_candidates_verified_but_never_advertised:
+    - outdoor kitchens
+    - concrete
+    - masonry
+    - deck construction
+    expansion_note: All four are real first-party Austin services confirmed from the /austin/services/
+      link graph on 2026-08-18. None is proposed now. At $65.78 a day the account cannot support more
+      themes; concentration, not expansion, is the Phase 2 lever.
+    other_phase_2_items:
+    - a second RSA per surviving ad group, once claims are client-verified
+    - replace the four RARELY_SERVED keywords with higher-volume BOFU head terms (criterion ids 2542011462207,
+      2542011463367, 901633727725, 1432027531385)
+    - add the 5 ADD_AS_PHRASE and 2 ADD_AS_EXACT search terms identified in 05_search_term_verdicts.csv
+    - re-evaluate the 13 WATCH negatives once any of them takes a click
+    - reconsider Maximize Conversions only after the entry gate above is met
+    - 'stand up the offline path: qualified lead, estimate scheduled, sold job and revenue, uploaded through
+      the Google Data Manager API'

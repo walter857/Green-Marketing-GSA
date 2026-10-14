@@ -1,0 +1,27 @@
+work_order:
+  client_slug: replace-me
+  business_name: ""
+  account:
+    exact_child_account_name: ""
+    child_customer_id: ""
+    manager_customer_id: ""
+  service:
+    vertical: ""
+    exact_primary_service: ""
+    related_services: []
+  task:
+    type: ""
+    mode: read
+    request: ""
+    date_range: ""
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: ""
+  inputs:
+    website_or_final_url: ""
+    service_area: []
+    daily_budget: null
+    primary_conversion_goal: ""
+    source_files: []
+  approval_owner: ""

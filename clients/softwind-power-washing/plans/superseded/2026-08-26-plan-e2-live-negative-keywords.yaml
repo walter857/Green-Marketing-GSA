@@ -1,0 +1,325 @@
+# VOID 2026-08-26 - fingerprint 09E91EA674C8
+# PHRASE 'house cleaning' was too broad under modern matching. Replaced by PLAN-E2A with EXACT [house cleaning services near me].
+
+change_plan:
+  plan_id: PLAN-E2
+  plan_title: Live out-of-scope negative keywords (3 terms x 2 campaigns)
+  approval_type: LIVE_NEGATIVE_KEYWORDS
+  priority: P1
+  approval_status: VOID - DO NOT APPROVE
+  execution_status: VOID - DO NOT EXECUTE
+  recommended_approval_order: 6
+  ads_mutation_count: 6
+  requires_separate_enable_approval: false
+  supersedes:
+    plan_id: PLAN-E
+    fingerprint: F453AD249497
+    status: VOID
+  split_rationale: Separated from PLAN-E1 because a negative keyword goes LIVE the instant it
+    is created. It is not a paused resource and it has no second enable gate, so bundling it
+    with create-paused work would have let one approval authorise an immediate delivery change.
+  immediate_effect_warning: Every action in this plan changes live delivery on creation. There
+    is no paused intermediate state and no second approval gate.
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  policy_check: Green Marketing policy forbids auto-negativing near me, quote, price, pricing,
+    cost, best, hire, local and emergency (config/agency.yaml negative_keyword_policy.protected_terms).
+    NONE of those appears here. All three terms are out-of-scope SERVICES, not buyer-intent
+    modifiers.
+  not_proposed_as_negatives: The cost-research cluster - average cost to power wash a house,
+    powerwash cost, cost to power wash, price to powerwash house, how much is powerwashing a
+    house - carries 36% of all account spend across 2 clicks with no lead. It stays WATCH, not
+    NEGATIVE. Two clicks prove nothing and agency policy protects cost terms.
+  separate_observation: The existing campaign negative 'how to' is at BROAD match, so it blocks
+    any query containing both 'how' and 'to' - including 'how much does it cost TO power wash
+    a house'. Narrowing it to PHRASE is a real improvement but it modifies an EXISTING negative
+    rather than adding one, so it is deliberately excluded from this plan.
+  actions:
+  - action_id: P1-E2-01
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: roof cleaning
+    match_type: PHRASE
+    level: CAMPAIGN
+    current_value: 47 campaign negatives on this campaign; none blocks this term
+    proposed_value:
+      text: roof cleaning
+      match_type: PHRASE
+      negative: true
+    current_matching_search_terms:
+    - search_term: slate roof cleaning near me
+      impressions: 1
+      clicks: 0
+      cost: 0.0
+      matched_keyword: house washing company near me
+      ad_group: House Washing Company Near Me
+      campaign: Power Washing
+    why: Roof cleaning is explicitly listed under services_excluded in work-order.yaml and client.yaml.
+      It is outside the approved Power Washing scope for this work order and Softwind is not
+      being advertised for it.
+    risk_of_blocking_valid_demand: LOW. A PHRASE negative matches only the exact word sequence
+      'roof cleaning'. It cannot block any live keyword - all 11 live keyword texts were checked
+      and none contains both words. The residual risk is a query like 'house and roof cleaning
+      near me' from a homeowner who wants both services; that query would be blocked, and the
+      house-washing half of the job would be lost. Given roof cleaning is out of scope and cannot
+      be quoted, that is an acceptable trade.
+    live_keywords_this_negative_would_block: NONE - verified against all 11 live keyword texts
+    goes_live_immediately: true
+    expected_effect: Blocks a small number of out-of-scope impressions. Total observed exposure
+      across the whole account is 4 impressions and 0 clicks, so the measurable saving is near
+      zero; the value is preventing out-of-scope spend as volume grows.
+    rollback: Remove the campaign_criterion. Negative keywords are removable in one operation
+      and leave no residue. Delivery on the previously-blocked queries resumes immediately.
+    approval_required: YES - LIVE CHANGE. These take effect the moment they are created; they
+      are not paused resources.
+    object_count: 1
+  - action_id: P1-E2-02
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: roof washing
+    match_type: PHRASE
+    level: CAMPAIGN
+    current_value: 47 campaign negatives on this campaign; none blocks this term
+    proposed_value:
+      text: roof washing
+      match_type: PHRASE
+      negative: true
+    current_matching_search_terms:
+    - search_term: roof washing near me
+      impressions: 2
+      clicks: 0
+      cost: 0.0
+      matched_keyword: power washing company near me
+      ad_group: Power Washing Company Near Me
+      campaign: Power Washing
+    why: Same out-of-scope service, different phrasing. 'roof washing near me' reached the account
+      through the power washing company near me PHRASE keyword, so the phrasing is demonstrably
+      reachable.
+    risk_of_blocking_valid_demand: LOW. Same mechanics. Residual risk is a combined 'roof and
+      house washing' query, same trade-off as above.
+    live_keywords_this_negative_would_block: NONE - verified against all 11 live keyword texts
+    goes_live_immediately: true
+    expected_effect: Blocks a small number of out-of-scope impressions. Total observed exposure
+      across the whole account is 4 impressions and 0 clicks, so the measurable saving is near
+      zero; the value is preventing out-of-scope spend as volume grows.
+    rollback: Remove the campaign_criterion. Negative keywords are removable in one operation
+      and leave no residue. Delivery on the previously-blocked queries resumes immediately.
+    approval_required: YES - LIVE CHANGE. These take effect the moment they are created; they
+      are not paused resources.
+    object_count: 1
+  - action_id: P1-E2-03
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: house cleaning
+    match_type: PHRASE
+    level: CAMPAIGN
+    current_value: 47 campaign negatives on this campaign; none blocks this term
+    proposed_value:
+      text: house cleaning
+      match_type: PHRASE
+      negative: true
+    current_matching_search_terms:
+    - search_term: house cleaning services near me
+      impressions: 1
+      clicks: 0
+      cost: 0.0
+      matched_keyword: house washing company near me
+      ad_group: House Washing Company Near Me
+      campaign: Power Washing
+    why: '''house cleaning'' reads as interior maid service, a different industry entirely.
+      It is not exterior house washing and Softwind does not offer it.'
+    risk_of_blocking_valid_demand: LOW-MEDIUM, and the one worth watching. A PHRASE negative
+      on 'house cleaning' will NOT block 'house washing' - different words - and none of the
+      11 live keyword texts contains both 'house' and 'cleaning'. But if a future SKAG ever
+      used the phrasing 'exterior house cleaning', which is a legitimate service phrasing, this
+      negative would block it. If PLAN-E1's House Washing Near Me SKAG is later extended with
+      cleaning phrasing, revisit this negative first.
+    live_keywords_this_negative_would_block: NONE - verified against all 11 live keyword texts
+    goes_live_immediately: true
+    expected_effect: Blocks a small number of out-of-scope impressions. Total observed exposure
+      across the whole account is 4 impressions and 0 clicks, so the measurable saving is near
+      zero; the value is preventing out-of-scope spend as volume grows.
+    rollback: Remove the campaign_criterion. Negative keywords are removable in one operation
+      and leave no residue. Delivery on the previously-blocked queries resumes immediately.
+    approval_required: YES - LIVE CHANGE. These take effect the moment they are created; they
+      are not paused resources.
+    object_count: 1
+  - action_id: P1-E2-04
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: roof cleaning
+    match_type: PHRASE
+    level: CAMPAIGN
+    current_value: 47 campaign negatives on this campaign; none blocks this term
+    proposed_value:
+      text: roof cleaning
+      match_type: PHRASE
+      negative: true
+    current_matching_search_terms:
+    - search_term: slate roof cleaning near me
+      impressions: 1
+      clicks: 0
+      cost: 0.0
+      matched_keyword: house washing company near me
+      ad_group: House Washing Company Near Me
+      campaign: Power Washing
+    why: Roof cleaning is explicitly listed under services_excluded in work-order.yaml and client.yaml.
+      It is outside the approved Power Washing scope for this work order and Softwind is not
+      being advertised for it.
+    risk_of_blocking_valid_demand: LOW. A PHRASE negative matches only the exact word sequence
+      'roof cleaning'. It cannot block any live keyword - all 11 live keyword texts were checked
+      and none contains both words. The residual risk is a query like 'house and roof cleaning
+      near me' from a homeowner who wants both services; that query would be blocked, and the
+      house-washing half of the job would be lost. Given roof cleaning is out of scope and cannot
+      be quoted, that is an acceptable trade.
+    live_keywords_this_negative_would_block: NONE - verified against all 11 live keyword texts
+    goes_live_immediately: true
+    expected_effect: Blocks a small number of out-of-scope impressions. Total observed exposure
+      across the whole account is 4 impressions and 0 clicks, so the measurable saving is near
+      zero; the value is preventing out-of-scope spend as volume grows.
+    rollback: Remove the campaign_criterion. Negative keywords are removable in one operation
+      and leave no residue. Delivery on the previously-blocked queries resumes immediately.
+    approval_required: YES - LIVE CHANGE. These take effect the moment they are created; they
+      are not paused resources.
+    object_count: 1
+  - action_id: P1-E2-05
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: roof washing
+    match_type: PHRASE
+    level: CAMPAIGN
+    current_value: 47 campaign negatives on this campaign; none blocks this term
+    proposed_value:
+      text: roof washing
+      match_type: PHRASE
+      negative: true
+    current_matching_search_terms:
+    - search_term: roof washing near me
+      impressions: 2
+      clicks: 0
+      cost: 0.0
+      matched_keyword: power washing company near me
+      ad_group: Power Washing Company Near Me
+      campaign: Power Washing
+    why: Same out-of-scope service, different phrasing. 'roof washing near me' reached the account
+      through the power washing company near me PHRASE keyword, so the phrasing is demonstrably
+      reachable.
+    risk_of_blocking_valid_demand: LOW. Same mechanics. Residual risk is a combined 'roof and
+      house washing' query, same trade-off as above.
+    live_keywords_this_negative_would_block: NONE - verified against all 11 live keyword texts
+    goes_live_immediately: true
+    expected_effect: Blocks a small number of out-of-scope impressions. Total observed exposure
+      across the whole account is 4 impressions and 0 clicks, so the measurable saving is near
+      zero; the value is preventing out-of-scope spend as volume grows.
+    rollback: Remove the campaign_criterion. Negative keywords are removable in one operation
+      and leave no residue. Delivery on the previously-blocked queries resumes immediately.
+    approval_required: YES - LIVE CHANGE. These take effect the moment they are created; they
+      are not paused resources.
+    object_count: 1
+  - action_id: P1-E2-06
+    priority: P1
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE_NEGATIVE_KEYWORD
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW negative keyword
+    exact_term: house cleaning
+    match_type: PHRASE
+    level: CAMPAIGN
+    current_value: 47 campaign negatives on this campaign; none blocks this term
+    proposed_value:
+      text: house cleaning
+      match_type: PHRASE
+      negative: true
+    current_matching_search_terms:
+    - search_term: house cleaning services near me
+      impressions: 1
+      clicks: 0
+      cost: 0.0
+      matched_keyword: house washing company near me
+      ad_group: House Washing Company Near Me
+      campaign: Power Washing
+    why: '''house cleaning'' reads as interior maid service, a different industry entirely.
+      It is not exterior house washing and Softwind does not offer it.'
+    risk_of_blocking_valid_demand: LOW-MEDIUM, and the one worth watching. A PHRASE negative
+      on 'house cleaning' will NOT block 'house washing' - different words - and none of the
+      11 live keyword texts contains both 'house' and 'cleaning'. But if a future SKAG ever
+      used the phrasing 'exterior house cleaning', which is a legitimate service phrasing, this
+      negative would block it. If PLAN-E1's House Washing Near Me SKAG is later extended with
+      cleaning phrasing, revisit this negative first.
+    live_keywords_this_negative_would_block: NONE - verified against all 11 live keyword texts
+    goes_live_immediately: true
+    expected_effect: Blocks a small number of out-of-scope impressions. Total observed exposure
+      across the whole account is 4 impressions and 0 clicks, so the measurable saving is near
+      zero; the value is preventing out-of-scope spend as volume grows.
+    rollback: Remove the campaign_criterion. Negative keywords are removable in one operation
+      and leave no residue. Delivery on the previously-blocked queries resumes immediately.
+    approval_required: YES - LIVE CHANGE. These take effect the moment they are created; they
+      are not paused resources.
+    object_count: 1
+  verification_after_execution:
+  - Read back campaign_criterion on both campaigns and assert 50 negative keywords each (47
+    existing + 3 new).
+  - Re-check the search terms report after 7 days and confirm no in-scope query disappeared.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 6
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 6
+    objects_that_go_live_immediately: 6
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  void_status:
+    state: VOID
+    voided_on: '2026-08-26'
+    fingerprint_voided: 09E91EA674C8
+    reason: PHRASE 'house cleaning' was too broad under modern matching. Replaced by PLAN-E2A
+      with EXACT [house cleaning services near me].

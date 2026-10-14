@@ -1,0 +1,177 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "plan_name": "AMB-0926-NEG-HEAT-1",
+ "built_local": "2026-09-26",
+ "window": "2026-09-17..today",
+ "authority": "owner request 2026-09-26: add bad search terms on the new heating campaigns as negatives",
+ "campaigns": [
+  "24257819463",
+  "24268690038",
+  "24257819466",
+  "24132507744",
+  "24279798229",
+  "24268690041",
+  "24274160783"
+ ],
+ "shared_list": "Heating | Out-of-scope search terms (EXACT) | 2026-09",
+ "match_type": "EXACT",
+ "existing_list": [],
+ "negatives": [
+  "12000 btu mini split electrical requirements",
+  "4 ton propane furnace",
+  "59sc6a100m21",
+  "60 000 btu furnace 96 efficiency",
+  "ac maintenance service",
+  "ace hvac virginia",
+  "aciq installers near me",
+  "advanced heating and cooling oakland md",
+  "all about air hvac",
+  "allied phillips hvac",
+  "any day heating and cooling",
+  "are hvac maintenance plans worth it",
+  "average cost to convert oil to gas heat",
+  "beckett honeywell r7184b flashing green light",
+  "belair engineering hvac",
+  "best reviewed hvac companies near me",
+  "black horse heating and air",
+  "bmc installation heating & a c",
+  "boothe's heating air plumbing & drains",
+  "call dad",
+  "changing gas heating to electric",
+  "changing the furnace filter",
+  "cii hvac",
+  "classic air waldorf md",
+  "climate care crofton md",
+  "compass energy laurel de",
+  "converting oil to electric heat cost",
+  "cost of new furnace for 1200 sq ft house",
+  "ctxs07lvju installation manual",
+  "del air heating",
+  "fireplace repair",
+  "fireplace repair near me",
+  "fireplace service and repair near me",
+  "fireplace technician",
+  "furnace fault codes",
+  "gas fireplace insert maintenance near me",
+  "gas fireplace maintenance service near me",
+  "gas fireplace repair",
+  "gas fireplace repair near me",
+  "gas fireplace repair specialists",
+  "gas fireplace service",
+  "gas fireplace service and repair near me",
+  "gas fireplace service near me",
+  "gas log fireplace repair near me",
+  "gas log fireplace service near me",
+  "geo heating",
+  "gr9s800603an",
+  "handyman hvac",
+  "heat n glo fireplace service near me",
+  "heatilator fireplace service",
+  "heatilator gas fireplace maintenance",
+  "heating and air conditioning co",
+  "how much does it cost to put in hvac",
+  "kg7sc furnace",
+  "kiel heating",
+  "mini split diy install",
+  "mini split installation cost calculator",
+  "mini split installation diagram",
+  "mini split on roof",
+  "minnick hvac",
+  "modern comfort westminster md",
+  "multi fuel burner installation near me",
+  "petro oil service",
+  "prestige total comfort",
+  "pro tech hvac",
+  "ptac service near me",
+  "radiant floor heat manifold setup",
+  "right way heating",
+  "s9x1b080u4psba",
+  "scotty's heating and cooling",
+  "services offered by perry hall heating and air",
+  "tevis modern comfort",
+  "update baseboard heaters",
+  "velocity hvac easton md",
+  "water heater inspection checklist",
+  "what are the power requirements for a mini split",
+  "what is the average cost of a gas furnace",
+  "who fixes hot water heaters near me"
+ ],
+ "negatives_sha1": "8329ba717384",
+ "buckets": {
+  "HOLD": {
+   "terms": 33,
+   "impr": 65,
+   "clicks": 0,
+   "cost": 0.0
+  },
+  "KEEP": {
+   "terms": 42,
+   "impr": 69,
+   "clicks": 3,
+   "cost": 70.49
+  },
+  "OUT_OF_SCOPE": {
+   "terms": 78,
+   "impr": 177,
+   "clicks": 5,
+   "cost": 109.15
+  },
+  "KEEP_CONV": {
+   "terms": 18,
+   "impr": 73,
+   "clicks": 3,
+   "cost": 71.19
+  },
+  "DEFERRED": {
+   "terms": 18,
+   "impr": 32,
+   "clicks": 2,
+   "cost": 24.7
+  },
+  "COOLING": {
+   "terms": 1,
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0
+  }
+ },
+ "skipped": {
+  "too_long_for_keyword": 1
+ },
+ "per_campaign": {
+  "24132507744": {
+   "HOLD": 2,
+   "KEEP": 2
+  },
+  "24257819463": {
+   "KEEP": 14,
+   "OUT_OF_SCOPE": 32,
+   "KEEP_CONV": 12,
+   "HOLD": 9
+  },
+  "24279798229": {
+   "KEEP_CONV": 9,
+   "OUT_OF_SCOPE": 22,
+   "HOLD": 15,
+   "COOLING": 1,
+   "KEEP": 11,
+   "DEFERRED": 9
+  },
+  "24257819466": {
+   "OUT_OF_SCOPE": 25,
+   "DEFERRED": 4,
+   "KEEP": 15,
+   "HOLD": 6,
+   "KEEP_CONV": 1
+  },
+  "24274160783": {
+   "DEFERRED": 5,
+   "OUT_OF_SCOPE": 1,
+   "HOLD": 1
+  }
+ },
+ "operation_count": 86,
+ "fingerprint": "F3FD3D5429F3"
+}

@@ -1,0 +1,53 @@
+# TEMPORARY LOCAL READ-ONLY QA WORK ORDER
+# ---------------------------------------------------------------------------
+# This is a WEBSITE-ONLY QA work order. It deliberately does NOT use the Google
+# Ads work-order schema (schemas/work-order.schema.json) and will NOT pass
+# scripts/validate_work_order.py, because that validator requires a 10-digit
+# child customer ID and a validated client profile.
+#
+# No Google Ads child account name or customer ID is recorded here because
+# NONE IS KNOWN for Master Grass Lawn Care and the operator instruction is
+# explicit: "Do not guess any client or advertising account IDs."
+#
+# No Google Ads API call of any kind is made under this work order.
+# ---------------------------------------------------------------------------
+qa_work_order:
+  type: website-attribution-qa
+  scope: READ-ONLY browser QA of one public landing page
+  created_local: "2026-09-17"
+  expires: "on completion of the cleanup purge for this test"
+  temporary: true
+
+  target:
+    business_name_as_supplied: "Master Grass Lawn Care"
+    url: "https://offer.mastergrasslawncare.com/landscaping-contractor/"
+    google_ads_child_account_name: NOT_SUPPLIED_DO_NOT_GUESS
+    google_ads_child_customer_id: NOT_SUPPLIED_DO_NOT_GUESS
+    google_ads_actions_authorized: 0
+
+  authorization:
+    granted_by: "operator instruction, 2026-09-17"
+    cache_purge_before_test: "confirmed by the operator - performed by Ahmad"
+    cache_purge_after_test: "Ahmad remains available; REQUIRED before this work order closes"
+    cache_must_remain_enabled: true
+    first_request_after_purge_must_be_visitor_a: true
+
+  permitted:
+    - parameterized GET navigations in a real browser
+    - reading response headers, raw server HTML and the live DOM
+    - reading cookies, localStorage and sessionStorage
+    - taking screenshots
+
+  forbidden:
+    - submitting any form
+    - activating any telephone link
+    - any website, GTM, WhatConverts, Gravity Forms or Google Ads change
+    - purging or altering the cache myself
+    - retaining any real visitor value un-hashed
+
+  synthetic_values_only: true
+  marker_prefix: "QA-MASTERGRASS-"
+  cleanup_requirement: >-
+    Every QA- marker written into the Master Grass cache by this test must be
+    removed by Ahmad's cleanup purge, and absence must be verified afterwards in
+    a clean no-parameter session before this work order is considered closed.

@@ -1,0 +1,168 @@
+{
+  "ambient-cooling-heating": {
+    "customer_id": "2401959466",
+    "account_name": "Ambient Cooling - Live",
+    "layers": {
+      "A_campaign": {
+        "operations": 4252,
+        "validated_ok": 4252,
+        "errors": []
+      },
+      "B_ad_group": {
+        "operations": 4252,
+        "validated_ok": 3252,
+        "errors": [
+          {
+            "batch": 3,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46082 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\202\\350\\002\\022\\026cTFBcfj8kCpQwbKhWz0p5A\"\n]"
+          }
+        ]
+      }
+    }
+  },
+  "pro-green-austin": {
+    "customer_id": "7380491929",
+    "account_name": "Pro Green - Austin - Live",
+    "layers": {
+      "A_campaign": {
+        "operations": 1054,
+        "validated_ok": 54,
+        "errors": [
+          {
+            "batch": 0,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46081 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\201\\350\\002\\022\\026dQynGuDlY89RXj58c6hOJA\"\n]"
+          }
+        ]
+      },
+      "B_ad_group": {
+        "operations": 12120,
+        "validated_ok": 0,
+        "errors": [
+          {
+            "batch": 0,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46080 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\200\\350\\002\\022\\026zlJT32KDoctBQKnQHNkXiw\"\n]"
+          },
+          {
+            "batch": 1,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46079 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\377\\347\\002\\022\\02620AYu8TSvPilo7q7n1_otw\"\n]"
+          },
+          {
+            "batch": 2,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46079 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\377\\347\\002\\022\\026gRsjfkzzLZvfD7LiLGfv4Q\"\n]"
+          },
+          {
+            "batch": 3,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46079 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\377\\347\\002\\022\\0265lMO9q_7TP9IEb7hL6RTbw\"\n]"
+          },
+          {
+            "batch": 4,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46079 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\377\\347\\002\\022\\026rEYT6ILJV-oIqsgtPvblQQ\"\n]"
+          },
+          {
+            "batch": 5,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46079 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\377\\347\\002\\022\\026-zpLJXysDM1JJyiVZPHa9g\"\n]"
+          },
+          {
+            "batch": 6,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46078 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\376\\347\\002\\022\\026lJu8bpmtPsFT2p6nJ0sZ2Q\"\n]"
+          },
+          {
+            "batch": 7,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46078 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\376\\347\\002\\022\\026Q7si5k-4wTNI3cUlb_bvbQ\"\n]"
+          },
+          {
+            "batch": 8,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46078 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\376\\347\\002\\022\\026bb5fK-KYtevnGh2009hpqQ\"\n]"
+          },
+          {
+            "batch": 9,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46078 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\376\\347\\002\\022\\026qmUEkVLcPxo9zzOrRARFZg\"\n]"
+          },
+          {
+            "batch": 10,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46078 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\376\\347\\002\\022\\026FfuN1WS4aRK1_OlwuM3TMQ\"\n]"
+          },
+          {
+            "batch": 11,
+            "size": 1000,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46077 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\375\\347\\002\\022\\026YJFUIg9LsOjCD4hbR9rdgg\"\n]"
+          },
+          {
+            "batch": 12,
+            "size": 120,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46077 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\375\\347\\002\\022\\026-u6IP-hNp0lxft18_TDeJw\"\n]"
+          }
+        ]
+      }
+    }
+  },
+  "softwind-landscape-masonry": {
+    "customer_id": "2429758629",
+    "account_name": "Softwind Landscape & Masonry - Live",
+    "layers": {
+      "A_campaign": {
+        "operations": 377,
+        "validated_ok": 0,
+        "errors": [
+          {
+            "batch": 0,
+            "size": 377,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46077 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\375\\347\\002\\022\\026JnO__bNd0E6oTIgWqgnzEg\"\n]"
+          }
+        ]
+      },
+      "B_ad_group": {
+        "operations": 940,
+        "validated_ok": 0,
+        "errors": [
+          {
+            "batch": 0,
+            "size": 940,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46076 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\374\\347\\002\\022\\026dUx3bjLjS9YdCZRWeUxenQ\"\n]"
+          }
+        ]
+      }
+    }
+  },
+  "softwind-power-washing": {
+    "customer_id": "1521725229",
+    "account_name": "Softwind Power Washing - Live",
+    "layers": {
+      "A_campaign": {
+        "operations": 4,
+        "validated_ok": 0,
+        "errors": [
+          {
+            "batch": 0,
+            "size": 4,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46076 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\374\\347\\002\\022\\02648wSUKRLYkoM_OoHy2hqOQ\"\n]"
+          }
+        ]
+      },
+      "B_ad_group": {
+        "operations": 24,
+        "validated_ok": 0,
+        "errors": [
+          {
+            "batch": 0,
+            "size": 24,
+            "error": "429 Resource has been exhausted (e.g. check quota). [type_url: \"type.googleapis.com/google.ads.googleads.v25.errors.GoogleAdsFailure\"\nvalue: \"\\nc\\n\\002X\\002\\022*Too many requests. Retry in 46076 seconds.*1\\\"/\\010\\003\\022%Number of operations for basic access\\032\\004\\010\\374\\347\\002\\022\\026gPRs4pinQ4HmHxWEBx5T8g\"\n]"
+          }
+        ]
+      }
+    }
+  }
+}

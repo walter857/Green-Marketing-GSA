@@ -1,0 +1,285 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-E-sitelinks-to-offer-subdomain",
+ "version": "2026-08-20",
+ "priority": "P1",
+ "run_class": "READ + DRAFT + VALIDATE-ONLY. No mutation performed.",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "problem": "All 9 sitelinks currently serving on the five paid campaigns point at the MAIN website ambientcoolingandheating.com, not the tracked offer subdomain. Sitelink clicks cost $215.98 of charged spend between 2026-08-14 and 2026-08-20 and sent paid visitors off the measured landing pages.",
+ "why_it_matters": [
+  "The main site carries the main-site phone number (410) 761-0932, which client.yaml marks MUST_NOT_APPEAR_ON_ANY_PAID_CONVERSION_PATH.",
+  "The offer subdomain carries GTM-PQTPQ436 and WhatConverts profile 105803, both confirmed live by browser render on 2026-08-20. The main site is not the measured paid path.",
+  "One of the two primary conversions recorded on 2026-08-20 was attributed half to a SITELINK click, so sitelinks are already carrying real conversion weight."
+ ],
+ "design": "Each campaign receives the four offer-subdomain sitelinks for the OTHER four services. A sitelink may not duplicate the ad's own final URL, so a campaign never links to its own offer page. This keeps paid visitors on the tracked subdomain and cross-sells the other four services.",
+ "kept_on_main_site_deliberately": [
+  {
+   "sitelink": "Contact Ambient",
+   "url": "ambientcoolingandheating.com/contact-us/",
+   "reason": "No offer-subdomain equivalent exists."
+  },
+  {
+   "sitelink": "Customer Reviews",
+   "url": "ambientcoolingandheating.com/reviews/",
+   "reason": "No offer-subdomain equivalent exists."
+  },
+  {
+   "sitelink": "Service Areas",
+   "url": "ambientcoolingandheating.com/service-areas/",
+   "reason": "No offer-subdomain equivalent exists."
+  },
+  {
+   "sitelink": "View Our Work",
+   "url": "ambientcoolingandheating.com/our-work/",
+   "reason": "No offer-subdomain equivalent exists."
+  }
+ ],
+ "creates_new_sitelink_assets": [
+  {
+   "temp_resource": "customers/2401959466/assets/-1",
+   "link_text": "AC Repair",
+   "description1": "Free AC repair quote",
+   "description2": "Severn, Severna Park, Columbia",
+   "final_url": "https://offer.ambientcoolingandheating.com/ac-repair/",
+   "link_text_len": 9,
+   "description1_len": 20,
+   "description2_len": 30
+  },
+  {
+   "temp_resource": "customers/2401959466/assets/-2",
+   "link_text": "Gas Boiler Repair",
+   "description1": "Free boiler repair quote",
+   "description2": "Severn, Severna Park, Columbia",
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+   "link_text_len": 17,
+   "description1_len": 24,
+   "description2_len": 30
+  },
+  {
+   "temp_resource": "customers/2401959466/assets/-3",
+   "link_text": "HVAC Installation",
+   "description1": "Free installation quote",
+   "description2": "Severn, Severna Park, Columbia",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-installation/",
+   "link_text_len": 17,
+   "description1_len": 23,
+   "description2_len": 30
+  },
+  {
+   "temp_resource": "customers/2401959466/assets/-4",
+   "link_text": "HVAC Repair",
+   "description1": "Free HVAC repair quote",
+   "description2": "Severn, Severna Park, Columbia",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+   "link_text_len": 11,
+   "description1_len": 22,
+   "description2_len": 30
+  },
+  {
+   "temp_resource": "customers/2401959466/assets/-5",
+   "link_text": "HVAC Replacement",
+   "description1": "Free replacement quote",
+   "description2": "Severn, Severna Park, Columbia",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+   "link_text_len": 16,
+   "description1_len": 22,
+   "description2_len": 30
+  }
+ ],
+ "campaign_links_to_create": [
+  {
+   "campaign": "AC Repair",
+   "campaign_id": "24132507741",
+   "sitelink": "Gas Boiler Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+  },
+  {
+   "campaign": "AC Repair",
+   "campaign_id": "24132507741",
+   "sitelink": "HVAC Installation",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-installation/"
+  },
+  {
+   "campaign": "AC Repair",
+   "campaign_id": "24132507741",
+   "sitelink": "HVAC Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/"
+  },
+  {
+   "campaign": "AC Repair",
+   "campaign_id": "24132507741",
+   "sitelink": "HVAC Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "campaign_id": "24132507744",
+   "sitelink": "AC Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/ac-repair/"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "campaign_id": "24132507744",
+   "sitelink": "HVAC Installation",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-installation/"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "campaign_id": "24132507744",
+   "sitelink": "HVAC Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "campaign_id": "24132507744",
+   "sitelink": "HVAC Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "campaign_id": "24132507747",
+   "sitelink": "AC Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/ac-repair/"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "campaign_id": "24132507747",
+   "sitelink": "Gas Boiler Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "campaign_id": "24132507747",
+   "sitelink": "HVAC Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "campaign_id": "24132507747",
+   "sitelink": "HVAC Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "campaign_id": "24132507750",
+   "sitelink": "AC Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/ac-repair/"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "campaign_id": "24132507750",
+   "sitelink": "Gas Boiler Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "campaign_id": "24132507750",
+   "sitelink": "HVAC Installation",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-installation/"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "campaign_id": "24132507750",
+   "sitelink": "HVAC Replacement",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "campaign_id": "24132507753",
+   "sitelink": "AC Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/ac-repair/"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "campaign_id": "24132507753",
+   "sitelink": "Gas Boiler Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "campaign_id": "24132507753",
+   "sitelink": "HVAC Installation",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-installation/"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "campaign_id": "24132507753",
+   "sitelink": "HVAC Repair",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/"
+  }
+ ],
+ "campaign_links_to_remove": [
+  {
+   "campaign": "HVAC Installation",
+   "sitelink": "AC Installation",
+   "asset_id": "407494735425",
+   "resource_name": "customers/2401959466/campaignAssets/24132507747~407494735425~SITELINK"
+  },
+  {
+   "campaign": "AC Repair",
+   "sitelink": "AC Repair Service",
+   "asset_id": "407319490556",
+   "resource_name": "customers/2401959466/campaignAssets/24132507741~407319490556~SITELINK"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "sitelink": "Boiler Repair",
+   "asset_id": "407319490571",
+   "resource_name": "customers/2401959466/campaignAssets/24132507744~407319490571~SITELINK"
+  },
+  {
+   "campaign": "HVAC Installation",
+   "sitelink": "HVAC Services",
+   "asset_id": "407418567061",
+   "resource_name": "customers/2401959466/campaignAssets/24132507747~407418567061~SITELINK"
+  },
+  {
+   "campaign": "HVAC Repair",
+   "sitelink": "HVAC Services",
+   "asset_id": "407418567061",
+   "resource_name": "customers/2401959466/campaignAssets/24132507750~407418567061~SITELINK"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "sitelink": "HVAC Services",
+   "asset_id": "407418567061",
+   "resource_name": "customers/2401959466/campaignAssets/24132507753~407418567061~SITELINK"
+  },
+  {
+   "campaign": "Gas Boiler Repair",
+   "sitelink": "Heating Services",
+   "asset_id": "407494691220",
+   "resource_name": "customers/2401959466/campaignAssets/24132507744~407494691220~SITELINK"
+  },
+  {
+   "campaign": "HVAC Replacement",
+   "sitelink": "Heating Services",
+   "asset_id": "407494691220",
+   "resource_name": "customers/2401959466/campaignAssets/24132507753~407494691220~SITELINK"
+  }
+ ],
+ "character_limits": "Sitelink link_text max 25, description1 and description2 max 35. Every value above is inside those limits, verified programmatically.",
+ "mutation_counts": {
+  "creates": 25,
+  "updates": 0,
+  "removals": 8,
+  "total_mutations": 33,
+  "new_assets": 5,
+  "campaign_links_created": 20,
+  "campaign_links_removed": 8
+ },
+ "expected_benefit": "Keeps sitelink clicks on the measured offer subdomain with the approved phone architecture and full GTM/WhatConverts tracking, and gives each campaign four relevant cross-service destinations.",
+ "risk": "MEDIUM-LOW. New sitelink assets enter review and may show PENDING briefly. The four main-site sitelinks that remain keep the campaigns above Google's minimum sitelink count throughout, so no campaign is ever left without sitelinks.",
+ "rollback_plan": "Remove the 20 new campaign links and re-create the 8 removed main-site sitelink links from the resource names recorded in this plan. 28 mutations. The 5 new assets can be left unlinked or removed separately.",
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 33,
+  "errors": 0
+ },
+ "plan_fingerprint": "FFD4FC4647539998"
+}

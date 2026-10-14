@@ -1,0 +1,412 @@
+# PLAN-K1 - AUGUST 27 CPC CONTROL AND DELIVERY DIAGNOSIS
+#
+# STATUS: APPROVED AND EXECUTED 2026-08-27.
+# BIDDING ONLY - two campaign CPC ceilings. No budget was touched.
+
+change_plan:
+  plan_id: PLAN-K1
+  plan_title: August 27 CPC control and delivery diagnosis
+  approval_type: BIDDING
+  priority: R1
+  approval_status: APPROVED - executed
+  execution_status: EXECUTED 2026-08-27T10:25 America/New_York
+  ads_mutation_count: 2
+  requires_separate_enable_approval: false
+  supersedes: null
+  reopens:
+    plan_id: PLAN-I1C
+    settled_decision: PLAN-I1C recorded 'No CPC ceiling. Adding one during the August rescue would
+      suppress spend, which is the opposite of the objective.'
+    new_material_evidence: On 2026-08-26 a SINGLE click on 'power washing near me' PHRASE cost $82.22
+      - the whole day's spend, and exactly the 2x daily ceiling of the then-$41.11 budget. That 2x
+      ceiling was the only thing bounding the price. PLAN-I1C raised campaign A to $333.33 at 18:00:30
+      that same day, which lifted the effective per-click brake from $82.22 to $666.66 while leaving
+      the CPC ceiling unset.
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  date_discrepancy_on_record:
+    owner_supplied_header: August 28, 2026 09:52 America/New_York
+    actual_account_local_at_snapshot: '2026-08-27T10:15:41.470248-04:00'
+    resolution: 'Four independent sources agree the account-local date is 2026-08-27: the host clock
+      in America/New_York; the same clock in UTC; the Google Ads API''s own ''segments.date DURING
+      YESTERDAY'', which returns 2026-08-26; and the newest change_event in the account, 2026-08-26
+      18:00:31. The owner''s MTD and remaining figures were correct; only the date line was one day
+      ahead. All math in this plan uses 2026-08-27.'
+  fresh_snapshot:
+    account_local_timestamp: '2026-08-27T10:11:14.098985-04:00'
+    mtd_spend_S: 253.39
+    per_campaign_mtd:
+      Power Washing: 191.21
+      'Power Washing #2': 62.18
+    target: 2500.0
+    remaining_budget_R: 2246.61
+    remaining_calendar_days_D_including_today: 5
+    remaining_hours_H_to_sept_1_0000: 109.81
+    required_average_per_calendar_day: 449.32
+    required_rolling_24_hour_pace: 491.02
+    remaining_scheduled_serving_hours: 37.81
+    required_spend_per_scheduled_serving_hour: 59.42
+    remaining_serving_days: 4
+    serving_hour_detail:
+    - date: '2026-08-27'
+      weekday: Thursday
+      from: '10:11'
+      to: '18:00'
+      hours: 7.81
+    - date: '2026-08-28'
+      weekday: Friday
+      from: 08:00
+      to: '18:00'
+      hours: 10.0
+    - date: '2026-08-29'
+      weekday: Saturday
+      from: 08:00
+      to: '18:00'
+      hours: 10.0
+    - date: '2026-08-31'
+      weekday: Monday
+      from: 08:00
+      to: '18:00'
+      hours: 10.0
+  primary_delivery_constraint:
+  - DEMAND LIMITED
+  - RANK LIMITED
+  - SCHEDULE LIMITED
+  constraint_evidence:
+    NOT_account_spending_limit: account_budget rows report approved/adjusted/proposed spending_limit_type
+      INFINITE; both billing_setup rows are APPROVED, the live one FOREVER with no end date; amount_served
+      $253.39 against no cap. The Google Ads API exposes no customer-level daily spending limit field
+      at all (GoogleAdsFieldService 'customer.%limit%' returns zero rows), so a UI-only new-account
+      cap cannot be positively excluded by API - but 0.00% Lost IS (budget) on both campaigns is inconsistent
+      with one binding.
+    NOT_billing_or_verification: customer.status ENABLED; two APPROVED billing setups; no payment-failure
+      or verification signal in any readable field.
+    NOT_budget_limited: campaign.primary_status is ELIGIBLE on both campaigns with an EMPTY primary_status_reasons
+      list - Google is not reporting 'Limited by budget'. Search Lost IS (budget) is 0.00% on both
+      campaigns for 2026-08-20..26.
+    NOT_policy_or_eligibility: 214 of 214 enabled keywords are system_serving_status ELIGIBLE and
+      approval_status APPROVED, with zero RARELY_SERVED. 44 of 44 enabled ads are APPROVED and REVIEWED.
+    NOT_negative_conflict: '94 campaign negatives checked against every enabled keyword text: 0 conflicts.
+      0 shared negative lists attached.'
+    IS_demand_limited: 'Campaign B bidding_strategy_system_status is LIMITED_BY_INVENTORY - Google''s
+      own term for insufficient inventory. Search impression share for 2026-08-20..26 is already 81.03%
+      (A) and 85.71% (B): the account wins roughly four of every five available impressions, so very
+      little remains to buy inside this footprint.'
+    IS_rank_limited: Search Lost IS (rank) 18.97% (A) / 14.29% (B) for 2026-08-20..26 is the entire
+      residual - all lost impressions are lost to rank, none to budget.
+    IS_schedule_limited: Only 37.81 of the 109.81 remaining clock hours are inside the live Mon-Sat
+      08:00-18:00 schedule - 34%. Sunday 2026-08-30 has no daypart at all, so 4 serving days remain,
+      not 5.
+  budget_decision_rule_stage_8:
+    1_remaining_month_billing_capacity_below_2500:
+      verdict: TRUE ONLY AT STANDARD DELIVERY
+      detail: 4 remaining serving days x $374.44 = $1,497.76 at 1x, which is below the $2,246.61 remaining.
+        At the 2x Maximize Clicks ceiling it is $2,995.52, which is above it. This is the only one
+        of the five criteria that can be read as true, and it is pure arithmetic - it says nothing
+        about whether demand exists to convert capacity into spend.
+    2_daily_spending_limit_below_required_pace:
+      verdict: 'FALSE'
+      detail: Combined 2x delivery ceiling $748.88/day exceeds the required $491.02 rolling-24h pace.
+    3_campaigns_currently_limited_by_budget:
+      verdict: 'FALSE'
+      detail: primary_status ELIGIBLE, primary_status_reasons empty, both.
+    4_lost_is_budget_shows_material_missed_demand:
+      verdict: 'FALSE'
+      detail: Search Lost IS (budget) 0.00% on both campaigns.
+    5_fresh_data_proves_demand_throttled_by_budget:
+      verdict: 'FALSE'
+      detail: Impression share 81-86%; campaign B explicitly LIMITED_BY_INVENTORY. Budget is not throttling.
+    conclusion: BUDGET IS NOT THE ACTIVE DELIVERY CONSTRAINT. Four of five evidence-based criteria
+      are false; the one arguable criterion is arithmetic capacity, which a budget rise cannot convert
+      into spend when impression share is already 81-86% and Google reports LIMITED_BY_INVENTORY.
+      PLAN-I1D is therefore NOT created.
+  cpc_evidence:
+    every_billable_click_since_2026_08_17:
+    - date: '2026-08-17'
+      campaign: Power Washing
+      ad_group: Power Washing West Islip
+      keyword: power washing west islip
+      match: EXACT
+      impressions: 1
+      clicks: 1
+      cost: 5.71
+      avg_cpc: 5.71
+    - date: '2026-08-19'
+      campaign: Power Washing
+      ad_group: Power Washing Services Near Me
+      keyword: power washing services near me
+      match: EXACT
+      impressions: 2
+      clicks: 1
+      cost: 22.13
+      avg_cpc: 22.13
+    - date: '2026-08-24'
+      campaign: 'Power Washing #2'
+      ad_group: House Pressure Washing Estimate
+      keyword: house pressure washing estimate
+      match: EXACT
+      impressions: 5
+      clicks: 1
+      cost: 22.11
+      avg_cpc: 22.11
+    - date: '2026-08-25'
+      campaign: Power Washing
+      ad_group: Power Washing Near Me
+      keyword: power washing near me
+      match: EXACT
+      impressions: 2
+      clicks: 1
+      cost: 54.49
+      avg_cpc: 54.49
+    - date: '2026-08-25'
+      campaign: 'Power Washing #2'
+      ad_group: House Pressure Washing Estimate
+      keyword: house pressure washing estimate
+      match: EXACT
+      impressions: 2
+      clicks: 1
+      cost: 40.07
+      avg_cpc: 40.07
+    - date: '2026-08-25'
+      campaign: Power Washing
+      ad_group: Power Washing Near Me
+      keyword: power washing near me
+      match: PHRASE
+      impressions: 0
+      clicks: 1
+      cost: 26.66
+      avg_cpc: 26.66
+    - date: '2026-08-26'
+      campaign: Power Washing
+      ad_group: Power Washing Near Me
+      keyword: power washing near me
+      match: PHRASE
+      impressions: 12
+      clicks: 1
+      cost: 82.22
+      avg_cpc: 82.22
+    click_count: 7
+    total_click_cost: 253.39
+    average_cpc: 36.2
+    escalation_sequence_usd:
+    - 5.71
+    - 22.13
+    - 22.11
+    - 26.66
+    - 40.07
+    - 54.49
+    - 82.22
+    documented_local_top_of_page_high: 28.23
+    top_of_page_high_source: Keyword Planner restricted to the twelve keyword texts the account actually
+      runs, read 2026-08-25; recorded in the 2026-08-26 correction round.
+    clicks_above_top_of_page_high: 3
+    worst_click_multiple_of_top_of_page_high: 2.91
+    emergency_stop_condition_from_2026_08_26: single click >=$40 investigate, >=$60 STOP; rolling
+      >=$38 investigate, >=$45 STOP
+    stop_condition_status: BREACHED. The $82.22 click on 2026-08-26 exceeds the $60 single-click STOP
+      line, and the $54.49 click on 2026-08-25 exceeds the $40 investigate line. The trailing-three-click
+      average of $49.65 exceeds the $45 rolling STOP line.
+    search_term_quality: The expensive clicks are NOT junk traffic. 'power washing near me', 'power
+      wash near me' and 'powerwashing companies near me' are all core BOFU intents inside the approved
+      service. The problem is the price paid, not the term bought.
+  why_a_ceiling_and_not_a_budget_change: 'A budget rise cannot buy impressions that do not exist:
+    impression share is 81-86% and Google reports LIMITED_BY_INVENTORY. What the $333.33 budget did
+    do is remove the only bound on price. Until 18:00 on 2026-08-26 the 2x ceiling on a $41.11 budget
+    capped any single day - and in practice any single click - at $82.22. That bound is now $666.66
+    on campaign A with no CPC ceiling set. A $30.00 ceiling restores price discipline without touching
+    either budget, so the geo expansion that went live at 17:49 on 2026-08-26 keeps its full headroom
+    to prove itself.'
+  ceiling_selection:
+    selected_usd: 30.0
+    basis: Set just above the $28.23 documented local top-of-page high so rank on the head terms is
+      preserved, while the tail is hard-capped. Lost IS (rank) has already fallen to 18.97%/14.29%,
+      so the account is winning most auctions at prices well under the ceiling; the ceiling binds
+      only the outliers.
+    rejected_24_00: PLAN-B's $24.00 sits BELOW the $28.23 top-of-page high and would cost head-term
+      rank in an account that is already rank-limited. PLAN-B stays on hold rather than being executed.
+    rejected_no_ceiling: Status quo. Leaves an unbounded per-click price behind a $333.33 budget with
+      a proven $82.22 click and a monotonically rising price trend. Rejected.
+    rejected_60_00: A ceiling at the observed worst click would ratify the outlier rather than prevent
+      it, and sits 2.1x above the top-of-page high. Rejected.
+    measured_cost_of_the_ceiling: Applied retroactively to the 7 clicks already bought, a $30.00 ceiling
+      would have cut spend from $253.39 to about $166.61 - it REDUCES August spend by roughly $87.
+      That is 4% of the $1,950+ gap to $2,500, a gap that is unreachable either way. Trading 4% of
+      an unreachable goal for a hard bound on a $200 click is the correct trade.
+  spend_goal_reality:
+    target: 2500.0
+    mtd: 253.39
+    required_rolling_24h_pace: 491.02
+    required_per_scheduled_serving_hour: 59.42
+    observed_run_rate_per_serving_day: 75.18
+    observed_per_serving_hour: 7.52
+    gap_multiple: 7.9
+    clicks_required_at_current_avg_cpc: 62
+    clicks_required_per_serving_day: 15.5
+    clicks_observed_per_serving_day: 0.7
+    impressions_required_per_serving_day_at_observed_ctr: 295
+    impressions_observed_per_serving_day: 13
+    current_impression_share: 81.03% (A) / 85.71% (B)
+    projection_floor_status_quo: 554.11
+    projection_with_geo_lift_at_capped_cpc: 628.0
+    projection_with_geo_lift_at_current_cpc: 705.0
+    projection_with_geo_lift_at_escalated_60_cpc: 1001.0
+    verdict: $2,500 IS NOT REACHABLE. The honest August ceiling is roughly $550-$1,000, and the top
+      of that range is only attainable by continuing to pay about $60 per click - which the work order's
+      own constraint forbids. Reaching $2,500 would need 62 more clicks in 4 serving days, 15.5 per
+      day against an observed 0.7, from an account that already wins 81-86% of available impressions.
+  explicitly_not_included:
+  - No budget change of any kind. Neither budget is raised or lowered.
+  - No bidding strategy change - Maximize Clicks (TARGET_SPEND) stays.
+  - No keyword, negative, ad, asset, location, schedule or conversion change.
+  - No campaign pause, and no enable of any paused resource.
+  - No Broad Match, Search Partners, Display, Performance Max, Demand Gen, AI Max, DSA, Final URL
+    expansion or automatically created assets.
+  actions:
+  - action_id: R1-K1-01
+    priority: R1
+    resource_type: CAMPAIGN
+    operation: UPDATE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    resource_id: '24103511039'
+    current_value:
+      bidding_strategy_type: TARGET_SPEND
+      target_spend_cpc_bid_ceiling_micros: null
+      target_spend_cpc_bid_ceiling_usd: null
+    proposed_value:
+      target_spend_cpc_bid_ceiling_micros: 30000000
+      target_spend_cpc_bid_ceiling_usd: 30.0
+      field_mask: target_spend.cpc_bid_ceiling_micros
+    rollback: Clear target_spend.cpc_bid_ceiling_micros (restore unset).
+    object_count: 1
+  - action_id: R1-K1-02
+    priority: R1
+    resource_type: CAMPAIGN
+    operation: UPDATE
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    resource_id: '24145053510'
+    current_value:
+      bidding_strategy_type: TARGET_SPEND
+      target_spend_cpc_bid_ceiling_micros: null
+      target_spend_cpc_bid_ceiling_usd: null
+    proposed_value:
+      target_spend_cpc_bid_ceiling_micros: 30000000
+      target_spend_cpc_bid_ceiling_usd: 30.0
+      field_mask: target_spend.cpc_bid_ceiling_micros
+    rollback: Clear target_spend.cpc_bid_ceiling_micros (restore unset).
+    object_count: 1
+  change_counts:
+    budgets_changed: 0
+    bidding_settings_changed: 2
+    cpc_ceilings_added: 2
+    locations_changed: 0
+    keywords_changed: 0
+    ads_changed: 0
+    assets_changed: 0
+    negatives_changed: 0
+    schedules_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 2
+  pre_execution_sequence:
+  - Fresh identity re-read; assert name, id, manager false, test false, USD, America/New_York.
+  - Fresh drift snapshot; assert both budgets still $333.33 / $41.11, both bidding TARGET_SPEND, both
+    ceilings still unset, 80 positive and 1 negative location each, schedule 6 dayparts each.
+  - Recompute the fingerprint and assert it still matches the approved one.
+  - Assert the update mask is exactly target_spend.cpc_bid_ceiling_micros.
+  - Run validate_only on the CampaignService mutate and require PASS.
+  - Apply the two campaign mutations. Stop on any partial failure.
+  readback_qa:
+  - Re-read both campaigns; assert target_spend.cpc_bid_ceiling_micros == 30000000.
+  - Assert bidding_strategy_type is still TARGET_SPEND on both.
+  - Assert campaign_budget.amount_micros is UNCHANGED at 333330000 and 41110000.
+  - Assert 80 positive and 1 negative location criteria per campaign, all ENABLED.
+  - Assert 214 enabled keywords, 44 enabled ads, 94 campaign negatives, 12 ad schedules, 4 conversion
+    actions, 30 ad groups - all unchanged.
+  - Run an immediate fresh pacing report.
+  monitoring_after_execution:
+  - Confirm the first billable click after the ceiling is <= $30.00.
+  - If Lost IS (rank) rises above 35% on either campaign for a full serving day, re-evaluate the ceiling
+    with fresh evidence.
+  - No automated budget or bid writes. Every further change needs a new snapshot, plan, fingerprint
+    and explicit approval.
+  open_questions_for_owner:
+  - id: K1-Q1
+    question: $2,500 is not reachable in the 4 remaining serving days. Confirm the August target should
+      be restated to the achievable $550-$1,000 range rather than chased.
+    recommendation: Restate the target. Do not chase.
+    effect_if_unanswered: Work proceeds on the achievable range; no spend-chasing action is taken.
+  - id: K1-Q2
+    question: 'Schedule expansion is the single largest remaining delivery lever - it would add roughly
+      66 servable hours. It stays BLOCKED on SCHED-Q1..Q6, chiefly: is (631) 502-7946 answered outside
+      Mon-Fri 08:00-18:00, and what is the callback commitment for an after-hours form lead?'
+    recommendation: Answer both. If after-hours calls are not answered, expand to form-capture hours
+      only rather than 24/7.
+    effect_if_unanswered: Schedule stays Mon-Sat 08:00-18:00 and 66 hours stay unusable.
+  - id: K1-Q3
+    question: 7 clicks and $253.39 have produced 0 conversions. WhatConverts DNI is proven broken
+      and a foreign tag AW-17878095007 is actively firing on the landing pages. Approve PLAN-A2/A3
+      controlled tests so measurement is trusted before September.
+    recommendation: Approve PLAN-A2 and PLAN-A3.
+    effect_if_unanswered: September spend continues against unverified conversion tracking.
+  no_automation_clause: No future budget or bid change is automated. Every further adjustment requires
+    a new snapshot, a new plan, a new fingerprint and a new explicit approval.
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  evidence_files:
+  - snapshots/snapshot-2026-08-28.json
+  - snapshots/pacing-2026-08-28.json
+  - snapshots/dateprobe-2026-08-27.json
+  - snapshots/constraint-2026-08-27.json
+  fingerprint: 3B77F0F4C879
+  approval_phrase: APPROVE PLAN-K1 3B77F0F4C879 FOR 1521725229
+  execution_record:
+    approved_phrase: APPROVE PLAN-K1 3B77F0F4C879 FOR 1521725229
+    fingerprint_verified_at_execution: 3B77F0F4C879
+    dry_run: PASSED
+    atomic_partial_failure: false
+    update_mask: target_spend.cpc_bid_ceiling_micros only
+    campaigns_changed: 2
+    budgets_changed: 0
+    changed_resource_names:
+    - customers/1521725229/campaigns/24103511039
+    - customers/1521725229/campaigns/24145053510
+    ceiling_after:
+      '24103511039': 30.0
+      '24145053510': 30.0
+    budget_after_unchanged:
+      '24103511039': 333.33
+      '24145053510': 41.11
+    gates: 75 of 76 passed
+    single_gate_failure:
+      gate: exactly 2 change events in window
+      cause: change_event INDEXING LAG, not a real failure
+      evidence: change_event returned 0 rows both at execution and on a re-query 2 hours later, while
+        the authoritative resource readback confirmed cpc_bid_ceiling_micros == 30000000 on both campaigns
+        twice. change_event is not suitable for same-session execution corroboration.
+      authoritative_evidence: campaign resource readback, verified twice
+    qa_passed: true
+    evidence:
+    - snapshots/k1-execution-2026-08-27.json
+    - snapshots/k1-verify-2026-08-27.json
+    open_watch_items:
+    - id: K1-W1
+      issue: Two clicks on 'house pressure washing estimate' EXACT averaged $42.67 in the 11:00 hour,
+        after the 10:25 ceiling. Cost per click cannot exceed the bid ceiling once it is in force,
+        so either bid propagation had not completed or the provisional same-day cost will be restated.
+      status: UNRESOLVED - the next click after 12:30 settles it
+      action_if_confirmed: 'If a click after 12:30 still exceeds $30.00, escalate: the ceiling is
+        not binding and the budget rollback becomes the live option.'
+    - id: K1-W2
+      issue: '''gas station pressure washing near me'' took 1 click for $35.31 - 29% of today''s spend
+        - matched by ''power washing near me'' PHRASE through a close variant. Commercial and industrial
+        intent is NOT in the verified service scope. ''commercial power washing company near me''
+        also took 4 impressions.'
+      status: NEGATIVE CANDIDATE - needs its own plan and approval
+      action: Draft PLAN-K2 negatives; ask whether Softwind serves commercial.

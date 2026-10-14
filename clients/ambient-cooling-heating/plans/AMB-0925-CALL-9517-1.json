@@ -1,0 +1,65 @@
+{
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "plan_name": "AMB-0925-CALL-9517-1",
+ "built_local": "2026-09-25",
+ "authority": "owner approval 2026-09-25 (reuse 410-415-9517, no purchase)",
+ "new_call_asset": {
+  "phone_number": "(410) 415-9517",
+  "country_code": "US",
+  "call_conversion_reporting_state": "USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION",
+  "schedule": "Mon-Fri 08:00-16:00 (mirrors 407995613637)"
+ },
+ "relinks": [
+  {
+   "campaign": "24257819463",
+   "new_link_status": "PAUSED",
+   "old_link": "PAUSED"
+  },
+  {
+   "campaign": "24268690038",
+   "new_link_status": "ENABLED",
+   "old_link": "PAUSED"
+  },
+  {
+   "campaign": "24257819466",
+   "new_link_status": "PAUSED",
+   "old_link": "PAUSED"
+  },
+  {
+   "campaign": "24132507744",
+   "new_link_status": "ENABLED",
+   "old_link": "PAUSED"
+  },
+  {
+   "campaign": "24279798229",
+   "new_link_status": "ENABLED",
+   "old_link": "PAUSED"
+  },
+  {
+   "campaign": "24268690041",
+   "new_link_status": "ENABLED",
+   "old_link": "PAUSED"
+  },
+  {
+   "campaign": "24274160783",
+   "new_link_status": "ENABLED",
+   "old_link": "PAUSED"
+  },
+  {
+   "campaign": "24295088845",
+   "new_link_status": "ENABLED",
+   "old_link": "PAUSED"
+  }
+ ],
+ "untouched": {
+  "24132507741": "ENABLED",
+  "24132507747": "ENABLED",
+  "24132507750": "ENABLED",
+  "24132507753": "ENABLED"
+ },
+ "errors": [],
+ "operation_count": 17,
+ "fingerprint": "011F2890625B"
+}

@@ -1,0 +1,80 @@
+{
+ "approval_class": "create-paused",
+ "summary": "Create the Commercial HVAC Installation SKAG PAUSED inside the existing HVAC Installation campaign, with Phrase + Exact 'commercial hvac installation'. 3 operations. No ad is created, nothing is enabled, no separate campaign.",
+ "operations": [
+  {
+   "operation": "CREATE_AD_GROUP_PAUSED",
+   "resource": "ad_group",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "resource_name": "SKAG | Commercial HVAC Installation",
+   "ad_group_type": "SEARCH_STANDARD",
+   "status": "PAUSED",
+   "cpc_bid_micros": 10000,
+   "current_state": "campaign 24132507747 holds exactly 1 ad group (202339087634 'SKAG | HVAC Installation', ENABLED)",
+   "proposed_state": "campaign 24132507747 holds 2 ad groups; the new one is PAUSED and empty of ads",
+   "reason": "Commercial HVAC installation is approved paid scope. It needs its own SKAG so the commercial query, the commercial ad and the commercial destination stay aligned, instead of routing commercial intent to a residential page.",
+   "inherits": "75 Maryland PRESENCE geo targets, the approved ad schedule, conversion configuration, account tracking template, call asset and the $30.00 Maximize Clicks ceiling, all from campaign 24132507747. None of these is modified by this package.",
+   "rollback": "remove the created ad_group by its returned resource name",
+   "risk": "LOW - created PAUSED with no ads, so it cannot serve",
+   "unrelated_resource_assertion": "ad group 202339087634 must remain ENABLED with its 2 ENABLED+APPROVED RSAs (821319509197, 821319509200) and its 2 ENABLED keywords; campaign 24132507747 budget stays 176150000 and ceiling stays 30000000"
+  },
+  {
+   "operation": "CREATE_AD_GROUP_KEYWORD",
+   "resource": "ad_group_criterion",
+   "ad_group_ref": "SKAG | Commercial HVAC Installation",
+   "campaign_id": "24132507747",
+   "keyword_text": "commercial hvac installation",
+   "match_type": "PHRASE",
+   "status": "ENABLED",
+   "current_state": "does not exist",
+   "proposed_state": "PHRASE 'commercial hvac installation' ENABLED in the new PAUSED ad group",
+   "reason": "The canonical BOFU commercial theme. Phrase and Exact only - no Broad at launch, per agency policy and the launch instruction.",
+   "rollback": "remove the created ad_group_criterion by its returned resource name",
+   "risk": "LOW - the parent ad group is PAUSED, so the keyword cannot serve",
+   "unrelated_resource_assertion": "the 10 serving positive keywords on the five campaigns must be unchanged"
+  },
+  {
+   "operation": "CREATE_AD_GROUP_KEYWORD",
+   "resource": "ad_group_criterion",
+   "ad_group_ref": "SKAG | Commercial HVAC Installation",
+   "campaign_id": "24132507747",
+   "keyword_text": "commercial hvac installation",
+   "match_type": "EXACT",
+   "status": "ENABLED",
+   "current_state": "does not exist",
+   "proposed_state": "EXACT 'commercial hvac installation' ENABLED in the new PAUSED ad group",
+   "reason": "The canonical BOFU commercial theme. Phrase and Exact only - no Broad at launch, per agency policy and the launch instruction.",
+   "rollback": "remove the created ad_group_criterion by its returned resource name",
+   "risk": "LOW - the parent ad group is PAUSED, so the keyword cannot serve",
+   "unrelated_resource_assertion": "the 10 serving positive keywords on the five campaigns must be unchanged"
+  }
+ ],
+ "notes": {
+  "no_ad_group_negatives_at_launch": "The launch instruction says to add only the reviewed ad-group negatives in the supplied pack. The pack is not present, so there are none to add. Independently, a SKAG carrying only Phrase and Exact 'commercial hvac installation' already requires that contiguous phrase in the query, so speculative negatives would buy little and risk blocking valid commercial intent. Barred categories are respected either way: no manufacturer name, city name, free, quote, estimate, cost, pricing, building or property manager negative is proposed.",
+  "commercial_is_not_blocked_anywhere": "Verified 2026-09-10: 0 campaign-level negatives containing 'commercial' on 24132507747; the account-level negative was removed by AMB-0909C-NEG-COMMERCIAL 9F88FEE76803. The 41 shared-set rows containing 'commercial' are landscaping/tree/masonry BROAD terms in sets 11807294063 / 11811255121 / 11840874961 / 11840890006, all of which have ZERO campaign links, and BROAD word-subset matching means none of them could block 'commercial hvac installation' even if attached.",
+  "why_paused": "Workflow step 10-11: create paused, read back, then a separate enable approval. Enabling additionally requires the landing page to exist.",
+  "requires_new_approval": true
+ },
+ "plan_name": "AMB-0910-COMM-1",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "HVAC Installation",
+  "related_services": [
+   "AC Repair",
+   "HVAC Repair",
+   "HVAC Replacement",
+   "Gas Boiler Repair",
+   "Commercial HVAC Installation"
+  ]
+ },
+ "generated_local": "2026-09-10T13:34:01.516119-04:00",
+ "object_count": 3,
+ "partial_failure": false,
+ "atomic": true,
+ "fingerprint": "A9173FADBA82"
+}

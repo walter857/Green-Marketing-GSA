@@ -1,0 +1,155 @@
+{
+  "keywords": [
+    {
+      "criterion_id": "479035710",
+      "text": "sprinkler head repair",
+      "match": "PHRASE",
+      "status": "ENABLED",
+      "campaign": "Irrigation & Sprinklers",
+      "ad_group": "Sprinkler Repair Near Me",
+      "final_url_inheritance": "inherits from ad"
+    },
+    {
+      "criterion_id": "297166525151",
+      "text": "sprinkler head repair",
+      "match": "EXACT",
+      "status": "ENABLED",
+      "campaign": "Irrigation & Sprinklers",
+      "ad_group": "Sprinkler Repair Near Me",
+      "final_url_inheritance": "inherits from ad"
+    },
+    {
+      "criterion_id": "297166524631",
+      "text": "irrigation valve repair",
+      "match": "EXACT",
+      "status": "ENABLED",
+      "campaign": "Irrigation & Sprinklers",
+      "ad_group": "Irrigation Repair Near Me",
+      "final_url_inheritance": "inherits from ad"
+    },
+    {
+      "criterion_id": "297659066555",
+      "text": "irrigation valve repair",
+      "match": "PHRASE",
+      "status": "ENABLED",
+      "campaign": "Irrigation & Sprinklers",
+      "ad_group": "Irrigation Repair Near Me",
+      "final_url_inheritance": "inherits from ad"
+    },
+    {
+      "criterion_id": "659133866",
+      "text": "sprinkler valve repair",
+      "match": "EXACT",
+      "status": "ENABLED",
+      "campaign": "Irrigation & Sprinklers",
+      "ad_group": "Sprinkler System Repair",
+      "final_url_inheritance": "inherits from ad"
+    },
+    {
+      "criterion_id": "659157206",
+      "text": "sprinkler valve repair",
+      "match": "PHRASE",
+      "status": "ENABLED",
+      "campaign": "Irrigation & Sprinklers",
+      "ad_group": "Sprinkler System Repair",
+      "final_url_inheritance": "inherits from ad"
+    },
+    {
+      "criterion_id": "3039926666",
+      "text": "sprinkler valve replacement",
+      "match": "EXACT",
+      "status": "ENABLED",
+      "campaign": "Irrigation & Sprinklers",
+      "ad_group": "Sprinkler System Repair",
+      "final_url_inheritance": "inherits from ad"
+    }
+  ],
+  "rsas": [
+    {
+      "ad_id": "820553894577",
+      "ad_group": "Sprinkler Repair Near Me",
+      "status": "ENABLED",
+      "strength": "PENDING",
+      "approval": "UNKNOWN",
+      "review": "REVIEW_IN_PROGRESS",
+      "final_url": "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/",
+      "headlines_pinned": 1,
+      "headlines": 15,
+      "descriptions_pinned": 0,
+      "descriptions": 4
+    },
+    {
+      "ad_id": "820553894580",
+      "ad_group": "Irrigation Repair Near Me",
+      "status": "ENABLED",
+      "strength": "PENDING",
+      "approval": "UNKNOWN",
+      "review": "REVIEW_IN_PROGRESS",
+      "final_url": "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "headlines_pinned": 1,
+      "headlines": 15,
+      "descriptions_pinned": 0,
+      "descriptions": 4
+    },
+    {
+      "ad_id": "820553894583",
+      "ad_group": "Sprinkler System Repair",
+      "status": "ENABLED",
+      "strength": "PENDING",
+      "approval": "UNKNOWN",
+      "review": "REVIEW_IN_PROGRESS",
+      "final_url": "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "headlines_pinned": 1,
+      "headlines": 15,
+      "descriptions_pinned": 0,
+      "descriptions": 4
+    }
+  ],
+  "callouts": [
+    {
+      "asset_id": "89872309308",
+      "text": "Claim Your Discount",
+      "status": "PAUSED",
+      "campaign": "Irrigation & Sprinklers",
+      "approval": "APPROVED",
+      "review": "REVIEWED"
+    },
+    {
+      "asset_id": "406472572838",
+      "text": "18-Point System Check",
+      "status": "ENABLED",
+      "campaign": "Irrigation & Sprinklers",
+      "approval": "APPROVED",
+      "review": "REVIEWED"
+    },
+    {
+      "asset_id": "406645681770",
+      "text": "Satisfaction Guaranteed",
+      "status": "ENABLED",
+      "campaign": "Irrigation & Sprinklers",
+      "approval": "APPROVED",
+      "review": "REVIEWED"
+    },
+    {
+      "asset_id": "406645684107",
+      "text": "Free Estimates",
+      "status": "ENABLED",
+      "campaign": "Irrigation & Sprinklers",
+      "approval": "APPROVED",
+      "review": "REVIEWED"
+    }
+  ],
+  "left_paused": [
+    {
+      "criterion_id": "1442898236",
+      "text": "sprinkler head replacement",
+      "match": "EXACT",
+      "ad_group": "Sprinkler Repair Near Me",
+      "ad_group_id": "151125103616",
+      "checks_failed": [
+        "blocked by negative(s): 'sprinkler head replacement'(BROAD,id 295473723839), 'head replacement'(BROAD,id 301794223657)"
+      ],
+      "action": "LEFT PAUSED"
+    }
+  ]
+}

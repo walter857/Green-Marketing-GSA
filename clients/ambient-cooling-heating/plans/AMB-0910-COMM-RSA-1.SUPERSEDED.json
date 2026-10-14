@@ -1,0 +1,12 @@
+{
+ "plan_name": "AMB-0910-COMM-RSA-1",
+ "fingerprint": "30312BC45992",
+ "status": "SUPERSEDED",
+ "status_recorded_local": "2026-09-10T15:25:40.171614-04:00",
+ "do_not_execute": true,
+ "executed": false,
+ "google_ads_operations_performed": 0,
+ "superseded_by": "AMB-0910-COMM-RSA-2 41C183D15C93",
+ "reason": "Drafted before the supplied launch pack was located. Three defects: (1) the copy was an agency draft, not the pack copy - RSA A's third pinned headline was 'Commercial HVAC in Maryland' instead of the pack's 'HVAC Installation for Business', and the unpinned sets and descriptions differ throughout; (2) path2 was 'maryland'/'install' instead of the pack's 'installation'; (3) the operations addressed the ad group by name because it did not exist yet - it now exists as 199748801029 and the replacement addresses it by id.",
+ "what_was_kept": "the create-paused class, the 3-pin RSA A / unpinned RSA B structure, the 404 destination gate, and the no-Licensed-&-Insured claim rule"
+}

@@ -1,0 +1,473 @@
+{
+ "generated_local": "2026-09-10T00:40:27.927148-04:00",
+ "gates": {
+  "AMB-0909C-BUD-1": {
+   "pass": false,
+   "checks": [
+    {
+     "check": "budget 15787409438 is an INDIVIDUAL budget (explicitly_shared=False, refs=1)",
+     "pass": true
+    },
+    {
+     "check": "budget 15787409438 before-state 42760000 matches live 42760000",
+     "pass": true
+    },
+    {
+     "check": "budget 15787409447 is an INDIVIDUAL budget (explicitly_shared=False, refs=1)",
+     "pass": true
+    },
+    {
+     "check": "budget 15787409447 before-state 26320000 matches live 26320000",
+     "pass": true
+    },
+    {
+     "check": "the three required-unchanged budgets hold their amounts",
+     "pass": true
+    },
+    {
+     "check": "Gas Boiler and HVAC Replacement show no material lost IS due to budget",
+     "pass": true
+    },
+    {
+     "check": "corrected September upper bound $12,580.12 < $13,000",
+     "pass": true
+    },
+    {
+     "check": "steady-state $12,815.12 < $13,000",
+     "pass": true
+    },
+    {
+     "check": "fingerprint reproduces (A7118436590B)",
+     "pass": true
+    },
+    {
+     "check": "the retracted current-month method is NOT embedded in a hashed plan field",
+     "pass": false
+    }
+   ]
+  },
+  "AMB-0909C-COMP-1": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "'arundel cooling and heating reviews' is still a verbatim observed query",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' is still a verbatim observed query",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' is still a verbatim observed query",
+     "pass": true
+    },
+    {
+     "check": "historical evidence still 13 impressions / 2 clicks / $70.61 / 0 Primary (observed 13/2/$70.61/0)",
+     "pass": true
+    },
+    {
+     "check": "zero Primary conversion records on the three target queries",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' not present at campaign scope",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' not present at account scope",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' not present at ad-group scope",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' is EXACT",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' targets HVAC Installation 24132507747",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' not present at campaign scope",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' not present at account scope",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' not present at ad-group scope",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' is EXACT",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' targets HVAC Installation 24132507747",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' not present at campaign scope",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' not present at account scope",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' not present at ad-group scope",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' is EXACT",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' targets HVAC Installation 24132507747",
+     "pass": true
+    },
+    {
+     "check": "no shared negative list is attached to the five",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' blocks 0 of 67 BOFU probes",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' blocks 0 of 304 converting terms",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' blocks 0 of 80 MD places",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' blocks no Anne Arundel guard query",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' contains no manufacturer token",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' blocks 0 of 67 BOFU probes",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' blocks 0 of 304 converting terms",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' blocks 0 of 80 MD places",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' blocks no Anne Arundel guard query",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' contains no manufacturer token",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' blocks 0 of 67 BOFU probes",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' blocks 0 of 304 converting terms",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' blocks 0 of 80 MD places",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' blocks no Anne Arundel guard query",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' contains no manufacturer token",
+     "pass": true
+    },
+    {
+     "check": "'arundel cooling and heating reviews' conflicts with none of the 10 live positive keywords",
+     "pass": true
+    },
+    {
+     "check": "'arundel heating and cooling maryland' conflicts with none of the 10 live positive keywords",
+     "pass": true
+    },
+    {
+     "check": "'maryland mechanical heating & cooling' conflicts with none of the 10 live positive keywords",
+     "pass": true
+    },
+    {
+     "check": "fingerprint reproduces (D434D6F41747)",
+     "pass": true
+    },
+    {
+     "check": "exactly 3 operations",
+     "pass": true
+    }
+   ]
+  },
+  "AMB-0909-ADS-1": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "ad 820900825434 resolves in ad group 202339087634",
+     "pass": true
+    },
+    {
+     "check": "ad 820900825434 is ENABLED",
+     "pass": true
+    },
+    {
+     "check": "ad 820900825434 is DISAPPROVED",
+     "pass": true
+    },
+    {
+     "check": "ad group 202339087634 retains exactly 2 ENABLED+APPROVED RSAs (2)",
+     "pass": true
+    },
+    {
+     "check": "operation 820900825434 proposed_state is PAUSED",
+     "pass": true
+    },
+    {
+     "check": "operation 820900825434 carries no ad text, URL, pin, asset or tracking field",
+     "pass": true
+    },
+    {
+     "check": "ad 820944944368 resolves in ad group 200159223798",
+     "pass": true
+    },
+    {
+     "check": "ad 820944944368 is ENABLED",
+     "pass": true
+    },
+    {
+     "check": "ad 820944944368 is DISAPPROVED",
+     "pass": true
+    },
+    {
+     "check": "ad group 200159223798 retains exactly 2 ENABLED+APPROVED RSAs (2)",
+     "pass": true
+    },
+    {
+     "check": "operation 820944944368 proposed_state is PAUSED",
+     "pass": true
+    },
+    {
+     "check": "operation 820944944368 carries no ad text, URL, pin, asset or tracking field",
+     "pass": true
+    },
+    {
+     "check": "the executor's PAUSE_AD_GROUP_AD branch hard-codes mask(['status'])",
+     "pass": true
+    },
+    {
+     "check": "fingerprint reproduces (11A79347A296)",
+     "pass": true
+    },
+    {
+     "check": "exactly 2 operations",
+     "pass": true
+    }
+   ]
+  },
+  "AMB-0909C-NEG-SAVAGE": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "AC Repair criterion 138360213 still live ENABLED",
+     "pass": true
+    },
+    {
+     "check": "AC Repair target text is 'savage'",
+     "pass": true
+    },
+    {
+     "check": "AC Repair target match type is PHRASE",
+     "pass": true
+    },
+    {
+     "check": "Gas Boiler Repair criterion 138360213 still live ENABLED",
+     "pass": true
+    },
+    {
+     "check": "Gas Boiler Repair target text is 'savage'",
+     "pass": true
+    },
+    {
+     "check": "Gas Boiler Repair target match type is PHRASE",
+     "pass": true
+    },
+    {
+     "check": "HVAC Installation criterion 138360213 still live ENABLED",
+     "pass": true
+    },
+    {
+     "check": "HVAC Installation target text is 'savage'",
+     "pass": true
+    },
+    {
+     "check": "HVAC Installation target match type is PHRASE",
+     "pass": true
+    },
+    {
+     "check": "HVAC Repair criterion 138360213 still live ENABLED",
+     "pass": true
+    },
+    {
+     "check": "HVAC Repair target text is 'savage'",
+     "pass": true
+    },
+    {
+     "check": "HVAC Repair target match type is PHRASE",
+     "pass": true
+    },
+    {
+     "check": "HVAC Replacement criterion 138360213 still live ENABLED",
+     "pass": true
+    },
+    {
+     "check": "HVAC Replacement target text is 'savage'",
+     "pass": true
+    },
+    {
+     "check": "HVAC Replacement target match type is PHRASE",
+     "pass": true
+    },
+    {
+     "check": "Savage MD geo 1018704 ENABLED positive on all five (5/5)",
+     "pass": true
+    },
+    {
+     "check": "no remaining 'savage' blocker at account scope",
+     "pass": true
+    },
+    {
+     "check": "no remaining 'savage' blocker at ad-group scope on the five",
+     "pass": true
+    },
+    {
+     "check": "no untargeted 'savage' campaign negative on the FIVE",
+     "pass": true
+    },
+    {
+     "check": "no shared list attached to the five could reintroduce it",
+     "pass": true
+    },
+    {
+     "check": "every target belongs to one of the five campaigns",
+     "pass": true
+    },
+    {
+     "check": "exactly one removal per campaign, all five",
+     "pass": true
+    },
+    {
+     "check": "fingerprint reproduces (10F76004E1B6)",
+     "pass": true
+    }
+   ]
+  },
+  "AMB-0909C-NEG-COMMERCIAL": {
+   "pass": false,
+   "checks": [
+    {
+     "check": "target is still the bare token 'commercial' BROAD in set 11252984411",
+     "pass": true
+    },
+    {
+     "check": "populated client/work-order records explicitly authorize commercial HVAC as paid scope",
+     "pass": false
+    },
+    {
+     "check": "a truthful commercial intake route and destination exists for every live campaign that would become eligible",
+     "pass": false
+    },
+    {
+     "check": "separated from any Installation CPC change by >= 7 settled days (no CPC change executed, so the clock has not started)",
+     "pass": false
+    }
+   ]
+  },
+  "AMB-0909C-CPC-INST-2": {
+   "pass": false,
+   "checks": [
+    {
+     "check": "WhatConverts access available through configured local credentials",
+     "pass": false
+    },
+    {
+     "check": "a current anonymised lead export resolves unique lead status for Ambient",
+     "pass": false
+    },
+    {
+     "check": "LP Submit, WC Lead and GA4 records deduplicated into unique people",
+     "pass": false
+    },
+    {
+     "check": "at least 2 of the 3 September 1 Installation Primary records proven unique qualified leads",
+     "pass": false
+    },
+    {
+     "check": "budget-package readback passed",
+     "pass": false
+    },
+    {
+     "check": "competitor-negative package readback passed (checked after execution)",
+     "pass": false
+    },
+    {
+     "check": "Installation ceiling remains exactly $30 (30000000 micros)",
+     "pass": true
+    },
+    {
+     "check": "campaign uses Maximize Clicks and no portfolio strategy",
+     "pass": true
+    },
+    {
+     "check": "no positive bid adjustment can apply on top of the ceiling (0 found)",
+     "pass": true
+    },
+    {
+     "check": "'hvac installers near me' PHRASE + EXACT are the only live Installation keywords",
+     "pass": true
+    },
+    {
+     "check": "the unanchored 'hvac installers' keyword remains removed",
+     "pass": true
+    },
+    {
+     "check": "fingerprint reproduces (5D57E0EF3B70)",
+     "pass": true
+    }
+   ]
+  }
+ },
+ "corrected_budget": {
+  "unchanged_monthly_limits": {
+   "AC Repair": 4300.08,
+   "HVAC Installation": 5354.96,
+   "HVAC Repair": 2400.08
+  },
+  "unchanged_subtotal": 12055.12,
+  "edit_day": "2026-09-10",
+  "remaining_calendar_days_incl_edit_day": 21,
+  "gas_boiler_september_max": 105.0,
+  "hvac_replacement_september_max": 420.0,
+  "conservative_september_upper_bound": 12580.12,
+  "september_headroom": 419.88,
+  "steady_state": 12815.12,
+  "steady_headroom": 184.88,
+  "retracted_prior_figure": 10216.12,
+  "prior_understatement": 2364.0
+ }
+}

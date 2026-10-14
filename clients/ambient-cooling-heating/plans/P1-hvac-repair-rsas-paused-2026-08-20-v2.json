@@ -1,0 +1,271 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-F2-hvac-repair-rsas-paused",
+ "version": "2026-08-20",
+ "priority": "P1",
+ "run_class": "READ + DRAFT + VALIDATE-ONLY. No mutation performed.",
+ "supersedes": {
+  "18AA929B46A83104": "RETIRED AND VOID. That package also proposed two RSAs for HVAC Replacement. Withdrawn on inspection: the proposed copy duplicated 9 of 15 and 6 of 15 headlines of the PRESERVED replacement RSAs 821319509203 and 821319509206, which are protected from recreation. Those two ads are also only two days old and rated GOOD and EXCELLENT, so there is no evidence their copy is the problem. HVAC Replacement is left alone."
+ },
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "account_timezone": "America/New_York",
+  "currency": "USD"
+ },
+ "scope": "Create 2 RSAs PAUSED in the HVAC Repair ad group only. Nothing is enabled, paused, edited or removed.",
+ "target": {
+  "campaign": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+  "campaign_id": "24132507750",
+  "ad_group": "SKAG | HVAC Repair Near Me",
+  "ad_group_id": "202339087674",
+  "keywords_in_this_ad_group": "'hvac repair near me' PHRASE and EXACT, both ENABLED, ELIGIBLE and APPROVED"
+ },
+ "why_this_ad_group": "Quality Score 2, the lowest in the account, with BELOW_AVERAGE expected CTR and BELOW_AVERAGE landing page experience. Charged CTR 1.45% on 413 impressions and 6 charged clicks. Ad 820900825560 is rated POOR and 820900825563 AVERAGE, and both are original build ads, not preserved replacements. Rank-lost impression share is 71.46% against 0.00% budget-lost, so Ad Rank is the ceiling and expected CTR is the component ad copy can move.",
+ "why_hvac_replacement_was_dropped": "Its two enabled ads ARE preserved replacement RSAs 821319509203 (GOOD) and 821319509206 (EXCELLENT), created 2026-08-18 and protected from recreation. Its 0.00% CTR on 393 impressions is real, but with two days of history on EXCELLENT-rated copy there is no evidence the creative is at fault, and any rewrite would substantially duplicate protected ads. Recommend leaving it and re-reading CTR after the restored schedule has run a full week.",
+ "preserved_work_untouched": [
+  "821319509197, 821319509200, 821319509203, 821319509206, 821319509209, 821319509212 are NOT recreated, edited, paused or re-enabled.",
+  "The six PAUSED CONSUMER_FINANCE originals are not touched.",
+  "AC Repair, HVAC Installation, HVAC Replacement and Gas Boiler Repair ad groups are not touched by this package."
+ ],
+ "rsa_limit_compliance": {
+  "rule": "At most 3 ENABLED RSAs per ad group. PAUSED RSAs do not count.",
+  "ad_group_202339087674": "currently 2 ENABLED + 0 PAUSED. After this package: 2 ENABLED + 2 PAUSED. Compliant.",
+  "enabling_later": "Enabling both would make 4 enabled and be REJECTED unless 820900825560 and 820900825563 are paused in the SAME atomic request. That swap is a SEPARATE package needing its own approval and fingerprint, exactly as the 2026-08-18 swap 5026CAD20F45F581 did."
+ },
+ "duplicate_check": {
+  "against_preserved_rsas": "0 identical headlines and 0 identical descriptions against any of the six preserved replacement RSAs.",
+  "against_current_hvac_repair_ads": "No RSA in this ad group carries the same headline set. The two current ads are the original build creative."
+ },
+ "copy_rules_applied": [
+  "Two RSAs: one direct-response, one benefit/problem-resolution.",
+  "Main keyword 'hvac repair' appears in 11 of 15 headlines in A and 8 of 15 in B, naturally and without stuffing.",
+  "'Near You' used instead of awkward 'near me' phrasing.",
+  "No finance or CONSUMER_FINANCE language: no financing, credit, loan, payment plan, monthly payment, 0%, APR or affordability wording.",
+  "No barred claim: no price, discount, dollar value, response-time promise, same-day or emergency availability, years in business, licence, insurance, rating, review count, guarantee, warranty or manufacturer certification.",
+  "Only the verified offer (a free quote) and verified locations (Severn, Severna Park, Columbia, Central Maryland).",
+  "No pinning, so Google can test every combination.",
+  "15 headlines and 4 descriptions per ad; all headlines <= 30 and descriptions <= 90; path1 11 chars and path2 9 chars, both within the 15-character limit."
+ ],
+ "ads": [
+  {
+   "label": "A - direct response",
+   "campaign_id": "24132507750",
+   "ad_group_id": "202339087674",
+   "status_on_create": "PAUSED",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+   "path1": "hvac-repair",
+   "path2": "severn-md",
+   "headlines": [
+    {
+     "text": "HVAC Repair in Severn, MD",
+     "len": 25
+    },
+    {
+     "text": "HVAC Repair Near You",
+     "len": 20
+    },
+    {
+     "text": "Local HVAC Repair Team",
+     "len": 22
+    },
+    {
+     "text": "Request a Free Quote",
+     "len": 20
+    },
+    {
+     "text": "HVAC Repair Severna Park",
+     "len": 24
+    },
+    {
+     "text": "HVAC Repair in Columbia MD",
+     "len": 26
+    },
+    {
+     "text": "Book HVAC Repair Today",
+     "len": 22
+    },
+    {
+     "text": "Heating & Cooling Repair",
+     "len": 24
+    },
+    {
+     "text": "Talk to an HVAC Technician",
+     "len": 26
+    },
+    {
+     "text": "Free HVAC Repair Quote",
+     "len": 22
+    },
+    {
+     "text": "Central Maryland HVAC Repair",
+     "len": 28
+    },
+    {
+     "text": "Ambient Cooling & Heating",
+     "len": 25
+    },
+    {
+     "text": "Residential HVAC Repair",
+     "len": 23
+    },
+    {
+     "text": "Get Your HVAC Repaired",
+     "len": 22
+    },
+    {
+     "text": "HVAC Repair Diagnosis",
+     "len": 21
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Request a free quote for HVAC repair from Ambient's local Maryland team.",
+     "len": 72
+    },
+    {
+     "text": "Serving Severn, Severna Park, Columbia and nearby Central Maryland areas.",
+     "len": 73
+    },
+    {
+     "text": "Tell us what your system is doing and we will diagnose the repair needed.",
+     "len": 73
+    },
+    {
+     "text": "Ambient repairs residential heating and cooling systems in Central MD.",
+     "len": 70
+    }
+   ],
+   "pins": "none",
+   "keyword_occurrences_in_headlines": 11,
+   "keyword_occurrences_in_descriptions": 1
+  },
+  {
+   "label": "B - benefit / decision",
+   "campaign_id": "24132507750",
+   "ad_group_id": "202339087674",
+   "status_on_create": "PAUSED",
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+   "path1": "hvac-repair",
+   "path2": "severn-md",
+   "headlines": [
+    {
+     "text": "HVAC Repair Done Right",
+     "len": 22
+    },
+    {
+     "text": "Get Comfortable Again",
+     "len": 21
+    },
+    {
+     "text": "HVAC Repair Near You",
+     "len": 20
+    },
+    {
+     "text": "Clear HVAC Repair Options",
+     "len": 25
+    },
+    {
+     "text": "Start With a Free Quote",
+     "len": 23
+    },
+    {
+     "text": "Know the Problem First",
+     "len": 22
+    },
+    {
+     "text": "HVAC Repair in Severn MD",
+     "len": 24
+    },
+    {
+     "text": "Steady Heating & Cooling",
+     "len": 24
+    },
+    {
+     "text": "Repairs Explained Clearly",
+     "len": 25
+    },
+    {
+     "text": "Local HVAC Repair Team",
+     "len": 22
+    },
+    {
+     "text": "No Guesswork HVAC Repair",
+     "len": 24
+    },
+    {
+     "text": "Serving Central Maryland",
+     "len": 24
+    },
+    {
+     "text": "Free HVAC Repair Quote",
+     "len": 22
+    },
+    {
+     "text": "Fix Your HVAC System",
+     "len": 20
+    },
+    {
+     "text": "Ambient HVAC Repair",
+     "len": 19
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "We diagnose the fault first, then explain the repair options before we start.",
+     "len": 77
+    },
+    {
+     "text": "Get a clear picture of what your heating and cooling system actually needs.",
+     "len": 75
+    },
+    {
+     "text": "Ambient serves Severn, Severna Park, Columbia and Central Maryland homes.",
+     "len": 73
+    },
+    {
+     "text": "Request a free quote and talk your HVAC repair through with a technician.",
+     "len": 73
+    }
+   ],
+   "pins": "none",
+   "keyword_occurrences_in_headlines": 8,
+   "keyword_occurrences_in_descriptions": 1
+  }
+ ],
+ "mutation_counts": {
+  "creates": 2,
+  "updates": 0,
+  "removals": 0,
+  "total_mutations": 2,
+  "ads_enabled": 0,
+  "ads_paused": 0,
+  "ads_edited": 0,
+  "ads_removed": 0,
+  "keywords_touched": 0,
+  "budgets_touched": 0,
+  "assets_touched": 0,
+  "conversions_touched": 0
+ },
+ "expected_benefit": "Expected CTR is the only Quality Score component ad copy can move, and HVAC Repair is rank-limited rather than budget-limited. Lifting CTR from 1.45% is the single highest-leverage change available on this campaign.",
+ "risk": "LOW while paused. Nothing serves until a separate enablement approval. New ads enter policy review on creation, so any disapproval is visible before the swap and the swap simply would not proceed.",
+ "readback_verification": [
+  "ASSERT 2 new ad IDs exist in ad group 202339087674, status PAUSED, type RESPONSIVE_SEARCH_AD.",
+  "ASSERT each has exactly 15 headlines and 4 descriptions, byte-identical to this plan and in the same order.",
+  "ASSERT final_urls, path1 and path2 match exactly and no asset is pinned.",
+  "ASSERT the ENABLED ad count in 202339087674 is still exactly 2.",
+  "ASSERT the six preserved replacement RSAs are still ENABLED and APPROVED.",
+  "ASSERT total non-removed ads rose from 113 to 115 and nothing else changed."
+ ],
+ "rollback_plan": "Remove the 2 created ad IDs. 2 mutations. Nothing else is affected.",
+ "validate_only_result": {
+  "status": "VALIDATE_OK",
+  "operations": 2,
+  "errors": 0
+ },
+ "approval_note": "READ + DRAFT + VALIDATE-ONLY. Nothing applied. Creation is PAUSED; enabling and swapping require a separate approval and fingerprint.",
+ "plan_fingerprint": "86EEAE3CB04B73AD",
+ "VOID": true,
+ "VOID_ON": "2026-08-20",
+ "VOID_REASON": "Keyword density too high (11/15 and 8/15 headlines) and six claims not supported by the landing page. Superseded by 1D964296F5C7CE79"
+}

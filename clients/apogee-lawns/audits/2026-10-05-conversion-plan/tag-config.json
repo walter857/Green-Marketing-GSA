@@ -1,0 +1,39 @@
+{
+ "gtm": {
+  "version": "3",
+  "aw_ids": [
+   "AW-18453077620"
+  ],
+  "conversion_labels": [
+   "KOL7CImirvocEPS8jt9E",
+   "lp3jCKf5vPocEPS8jt9E"
+  ],
+  "regexes_mentioning_thank_you_or_lp": [],
+  "custom_event_present": true,
+  "lead_id_dlv": true,
+  "dot_plus_regex": true,
+  "hostname_offer": true,
+  "call_number_in_container": [
+   "402-526-5754"
+  ],
+  "conversion_linker": true,
+  "bytes": 445043
+ },
+ "whatconverts": {
+  "http": 200,
+  "bytes": 59549,
+  "entries": 1,
+  "swap_entries": [
+   {
+    "id": "233469",
+    "source": "default",
+    "medium": "default",
+    "swap_pages_idx9": "",
+    "dynamic_idx10": "0"
+   }
+  ],
+  "numbers_in_script": [],
+  "form_list_present": true,
+  "gform_1_tracked": true
+ }
+}

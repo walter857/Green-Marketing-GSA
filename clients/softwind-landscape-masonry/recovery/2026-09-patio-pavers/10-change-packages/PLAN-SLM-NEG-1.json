@@ -1,0 +1,138 @@
+{
+  "plan_name": "PLAN-SLM-NEG-1",
+  "version": 1,
+  "operation_class": "CAMPAIGN_NEGATIVE_KEYWORD_CREATE",
+  "approval_label": "APPROVE-NEGATIVES",
+  "generated_at": "2026-09-03T18:32:29.249387-04:00",
+  "source_snapshot": "2026-09-03T18:14:13.987015-04:00",
+  "target": {
+    "exact_child_account_name": "Softwind Landscape & Masonry - Live",
+    "child_customer_id": "2429758629",
+    "manager_customer_id": "3373711342",
+    "currency": "USD",
+    "time_zone": "America/New_York",
+    "identity_receipt": "snapshots/identity-gate-2026-09-03-1809.json",
+    "work_orders": [
+      "work-order-a-patio-construction.yaml (patio construction, campaign Patio)",
+      "work-order-b-paver-installation.yaml (paver installation, campaign Pavers)"
+    ]
+  },
+  "summary": "Create 154 campaign-level negative keywords across Patio and Pavers covering twelve confirmed wrong-service families. All PHRASE. No bare noun the account sells.",
+  "object_count": 154,
+  "placement": "CAMPAIGN level on 23484806108 and 23489296528 only",
+  "match_types_used": [
+    "PHRASE"
+  ],
+  "families": {
+    "asphalt": {
+      "negatives": 8,
+      "visible_cost_blocked": 169.77,
+      "raw_credits_blocked": 1.0
+    },
+    "patio-cover": {
+      "negatives": 18,
+      "visible_cost_blocked": 145.5,
+      "raw_credits_blocked": 0.0
+    },
+    "sealcoating": {
+      "negatives": 8,
+      "visible_cost_blocked": 117.29,
+      "raw_credits_blocked": 1.0
+    },
+    "enclosure": {
+      "negatives": 12,
+      "visible_cost_blocked": 48.61,
+      "raw_credits_blocked": 0.0
+    },
+    "restoration": {
+      "negatives": 12,
+      "visible_cost_blocked": 21.36,
+      "raw_credits_blocked": 0.0
+    },
+    "sealing": {
+      "negatives": 16,
+      "visible_cost_blocked": 13.73,
+      "raw_credits_blocked": 1.0
+    },
+    "resurfacing": {
+      "negatives": 7,
+      "visible_cost_blocked": 12.5,
+      "raw_credits_blocked": 0.0
+    },
+    "cleaning": {
+      "negatives": 14,
+      "visible_cost_blocked": 0.0,
+      "raw_credits_blocked": 0.0
+    },
+    "deck-structure": {
+      "negatives": 13,
+      "visible_cost_blocked": 0.0,
+      "raw_credits_blocked": 0.0
+    },
+    "retail-diy": {
+      "negatives": 26,
+      "visible_cost_blocked": 0.0,
+      "raw_credits_blocked": 0.0
+    },
+    "employment": {
+      "negatives": 10,
+      "visible_cost_blocked": 0.0,
+      "raw_credits_blocked": 0.0
+    },
+    "equipment": {
+      "negatives": 10,
+      "visible_cost_blocked": 0.0,
+      "raw_credits_blocked": 0.0
+    }
+  },
+  "coverage": {
+    "Patio": {
+      "wrong_service_terms": 102,
+      "covered_terms": 87,
+      "wrong_service_cost": 234.01,
+      "covered_cost": 219.61,
+      "covered_clicks": 23,
+      "covered_conversions": 0.0
+    },
+    "Pavers": {
+      "wrong_service_terms": 161,
+      "covered_terms": 131,
+      "wrong_service_cost": 331.78,
+      "covered_cost": 309.15,
+      "covered_clicks": 17,
+      "covered_conversions": 3.0
+    }
+  },
+  "actions_file": "06-negative-plan.csv",
+  "actions_digest": "C01C6964DE968B52",
+  "collision_testing": {
+    "tested_against_own_keyword_texts": "all 461 positive keywords in Patio and Pavers, ENABLED and PAUSED",
+    "tested_against_protected_search_terms": "every KEEP, WATCH, UNRESOLVED and UNCLASSIFIED term in the corpus",
+    "tested_against_existing_negatives": "1,452 (Patio) / 1,448 (Pavers) already blocking, for redundancy",
+    "google_limits_checked": "<=10 words and <=80 characters per negative",
+    "agency_protected_terms_never_used": [
+      "near me",
+      "quote",
+      "price",
+      "pricing",
+      "cost",
+      "best",
+      "hire",
+      "local",
+      "emergency"
+    ],
+    "candidates_rejected": 4,
+    "rejected_file": "06b-negative-rejected.csv"
+  },
+  "why_this_is_needed_despite_1452_existing_negatives": "Every existing campaign negative on Patio and Pavers is BROAD (420 and 416), and the linked 'General List' shared set is 1,109 BROAD of 1,111. A BROAD negative only blocks a query containing ALL of its words, so 'asphalt paving' never blocked 'asphalt contractor near me'. This plan is PHRASE throughout.",
+  "raw_credits_this_plan_blocks": 3.0,
+  "note_on_blocked_credits": "The plan blocks 3 historic credits on purpose: one sealcoating, one asphalt and one paver-sealing term. All three are outside both work orders. Paver sealing has its own PAUSED campaign in this account (23914857298).",
+  "risk": "A negative that is too broad blocks real demand. Mitigated by the collision test above: any candidate touching a live or paused own keyword, or any protected search term, was rejected rather than softened.",
+  "rollback": "Remove the created campaign_criterion rows. No other object changes.",
+  "validation": "local preflight then google-ads validate_only in batches",
+  "dependencies": [
+    "PLAN-SLM-KW-1 must execute and read back FIRST. The 'asphalt' PHRASE negative on Pavers collides with the seven keywords that plan pauses."
+  ],
+  "unchanged": "all positive keywords, the 1,452 existing negatives, the shared sets and their links, the 235 ClickCease IP blocks per campaign, budgets, bids, ads, assets, conversions, the other four campaigns",
+  "fingerprint": "0895911A8133"
+}

@@ -1,0 +1,80 @@
+# =============================================================================
+# APG-0928-GTM-LID  --  minimal GTM delta for the permanent-lights form conversion (DRAFT)
+# =============================================================================
+# NOT fingerprinted. NOT executable. No workspace edit, version or publication is authorized.
+# Publication requires the developer repair live + Preview QA + its own approval (see publication_gate).
+# =============================================================================
+plan_id: APG-0928-GTM-LID
+plan_kind: gtm_trigger_condition_update
+status: DRAFT_PUBLICATION_BLOCKED
+generated: "2026-09-28"
+external_writes_performed: NONE
+fingerprint: NONE
+
+container:
+  gtm_account_id: "6377231045"
+  container_id: "264326944"
+  public_id: GTM-M545Z8T2
+  live_version: 3                      # "Add Conversion Linker tag", published 2026-09-28 (gtm.js Last-Modified 19:38:53 GMT)
+  live_version_sha256_prefix: 894a8c6178df4a02
+  current_workspace: 5                 # workspace 3 no longer exists (consumed when version 2 was created)
+  workspace_changes_observed: 0        # read 2026-09-28 ~21:18 UTC, before and after view-only browsing
+
+inventory_verified_2026_09_28:        # workspace 5 == published v3 (4 tags, 2 triggers, 1 user variable)
+  tags:
+    - {id: "6",  name: "Google tag | AW-18453077620 | All Pages", type: Google Tag, trigger: "Initialization - All Pages"}
+    - {id: "7",  name: "Google Ads | Lead | Permanent Lights Thank You", type: Google Ads Conversion Tracking, conversion_id: "18453077620", label: KOL7CImirvocEPS8jt9E, transaction_id: "{{DLV | lead_id}}", trigger: "TR | Custom Event | apg_permanent_lights_lead", exceptions: none}
+    - {id: "9",  name: "Google Ads | Call | Permanent Lights Website", type: Google Ads Calls from Website Conversion, phone: "402-526-5754", label: lp3jCKf5vPocEPS8jt9E, trigger: "TR | Page View | Permanent Lights LP"}
+    - {id: "10", name: "Conversion Linker", type: Conversion Linker, trigger: "Initialization - All Pages", settings: "cross-domain enabled, no linker domains", folder: Unfiled}
+  triggers:
+    - name: "TR | Custom Event | apg_permanent_lights_lead"
+      id: "5 (historical, APG-0917-GTM-P receipt; the GTM UI does not display trigger IDs; confirm in the editor before any edit)"
+      event_name: apg_permanent_lights_lead
+      regex_matching_on_event_name: false
+      conditions:
+        - "Page Hostname equals offer.apogeelawns.com"
+        - "Page Path matches RegEx ^/thank-you/permanent-christmas-lights/?$"
+        - "DLV | lead_id matches RegEx .+"
+    - name: "TR | Page View | Permanent Lights LP"
+      id: "not recorded anywhere; not displayed by the UI"
+      conditions:
+        - "Page Hostname equals offer.apogeelawns.com"
+        - "Page Path matches RegEx ^/permanent-christmas-lights-lincoln-ne/?$"
+  variables:
+    - {id: "4", name: "DLV | lead_id", type: Data Layer Variable, key: lead_id, version: 2, default_value: ""}
+  consent: "no tag-level consent settings and no consent-default command in the published container"
+  paused_tags: none
+
+keep_unchanged_verified:
+  - "event name apg_permanent_lights_lead (matches the handoff contract)"
+  - "hostname and path conditions (the developer creates the page the path expects - the trigger is NOT widened)"
+  - "tag 7 conversion ID/label and transaction ID mapping to {{DLV | lead_id}}"
+  - "tag 9 website-call configuration"
+  - "Conversion Linker tag 10: redundant with the Google tag's own linking; no observed issue (one _gcl_au cookie, no linker decoration because no domains are listed); removal not proposed"
+
+change_fully_specified_now:
+  - ordinal: 1
+    object: "trigger 'TR | Custom Event | apg_permanent_lights_lead' (folder 'Google Ads | Permanent Lights')"
+    field: "condition 3"
+    before: "DLV | lead_id  matches RegEx  .+"
+    after:  "DLV | lead_id  matches RegEx (ignore case)  ^(?!(?:undefined|null|nan|none|false|true|0|lead_?id|entry_?id|test|example|placeholder|sample)$)[^\\s\"'<>{}\\[\\]%]{1,128}$"
+    why: >-
+      Format-independent guard. The live '.+' accepts 'undefined', 'null', whitespace, '{entry_id}', '0'.
+      The guard rejects those, merge-tag syntaxes and whitespace while accepting any plausible ID format
+      (numeric, alphanumeric, UUID, prefixed). Verified: Python model (tests/test_apg_lead_id_guard.py, 3 tests)
+      and JavaScript RegExp with the i flag (26 invalid rejected, 8 valid accepted).
+    limits: "cannot detect a stale but well-formed ID reused for another lead - enforced by the developer contract and acceptance test F08"
+
+change_dependent_on_developer_output:
+  - ordinal: 2
+    object: "same trigger, condition 3"
+    change: "replace the guard with the exact shipped format once the developer states it (e.g. ^[1-9][0-9]{0,11}$ ONLY if the ID is a Gravity Forms entry ID)"
+    dependency: "developer confirmation D-Q3 (lead ID format)"
+
+publication_gate:
+  requires:
+    - "developer items D1-D5 deployed on offer.apogeelawns.com"
+    - "GTM Preview: F01 fires tag 7 exactly once with the accepted lead's ID; F02-F09 behave as in the acceptance matrix"
+    - "workspace diff shows ONLY the condition change(s) above"
+    - "separate approval of an exact publication plan with its own fingerprint"
+  fingerprint_now: NONE   # untested publication bundles are never fingerprinted

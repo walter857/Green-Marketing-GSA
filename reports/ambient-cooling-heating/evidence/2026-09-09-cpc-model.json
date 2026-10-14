@@ -1,0 +1,627 @@
+{
+ "survival_model": {
+  "AC Repair": {
+   "n_clicks": 25,
+   "baseline_cost": 2872.48,
+   "baseline_conv": 5.0,
+   "rows": [
+    {
+     "cap": 25,
+     "clicks": 3,
+     "clicks_pct": 12.0,
+     "spend": 70.79,
+     "spend_pct": 2.5,
+     "conversions": 0.0,
+     "conv_pct": 0.0,
+     "cpa": null,
+     "cpc": 23.6
+    },
+    {
+     "cap": 30,
+     "clicks": 4,
+     "clicks_pct": 16.0,
+     "spend": 95.95,
+     "spend_pct": 3.3,
+     "conversions": 0.0,
+     "conv_pct": 0.0,
+     "cpa": null,
+     "cpc": 23.99
+    },
+    {
+     "cap": 40,
+     "clicks": 5,
+     "clicks_pct": 20.0,
+     "spend": 129.35,
+     "spend_pct": 4.5,
+     "conversions": 0.0,
+     "conv_pct": 0.0,
+     "cpa": null,
+     "cpc": 25.87
+    },
+    {
+     "cap": 50,
+     "clicks": 5,
+     "clicks_pct": 20.0,
+     "spend": 129.35,
+     "spend_pct": 4.5,
+     "conversions": 0.0,
+     "conv_pct": 0.0,
+     "cpa": null,
+     "cpc": 25.87
+    },
+    {
+     "cap": 60,
+     "clicks": 5,
+     "clicks_pct": 20.0,
+     "spend": 129.35,
+     "spend_pct": 4.5,
+     "conversions": 0.0,
+     "conv_pct": 0.0,
+     "cpa": null,
+     "cpc": 25.87
+    },
+    {
+     "cap": 75,
+     "clicks": 6,
+     "clicks_pct": 24.0,
+     "spend": 197.51,
+     "spend_pct": 6.9,
+     "conversions": 1.0,
+     "conv_pct": 20.0,
+     "cpa": 197.51,
+     "cpc": 32.92
+    },
+    {
+     "cap": 90,
+     "clicks": 8,
+     "clicks_pct": 32.0,
+     "spend": 363.29,
+     "spend_pct": 12.6,
+     "conversions": 1.0,
+     "conv_pct": 20.0,
+     "cpa": 363.29,
+     "cpc": 45.41
+    },
+    {
+     "cap": 110,
+     "clicks": 13,
+     "clicks_pct": 52.0,
+     "spend": 895.04,
+     "spend_pct": 31.2,
+     "conversions": 3.0,
+     "conv_pct": 60.0,
+     "cpa": 298.35,
+     "cpc": 68.85
+    },
+    {
+     "cap": 130,
+     "clicks": 15,
+     "clicks_pct": 60.0,
+     "spend": 1124.75,
+     "spend_pct": 39.2,
+     "conversions": 4.0,
+     "conv_pct": 80.0,
+     "cpa": 281.19,
+     "cpc": 74.98
+    },
+    {
+     "cap": 160,
+     "clicks": 20,
+     "clicks_pct": 80.0,
+     "spend": 1829.08,
+     "spend_pct": 63.7,
+     "conversions": 5.0,
+     "conv_pct": 100.0,
+     "cpa": 365.82,
+     "cpc": 91.45
+    },
+    {
+     "cap": null,
+     "clicks": 25,
+     "clicks_pct": 100.0,
+     "spend": 2872.48,
+     "spend_pct": 100.0,
+     "conversions": 5.0,
+     "conv_pct": 100.0,
+     "cpa": 574.5,
+     "cpc": 114.9
+    }
+   ],
+   "live_ceiling": 25.0
+  },
+  "Gas Boiler Repair": {
+   "n_clicks": 0
+  },
+  "HVAC Installation": {
+   "n_clicks": 62,
+   "baseline_cost": 1707.54,
+   "baseline_conv": 3.0,
+   "rows": [
+    {
+     "cap": 25,
+     "clicks": 33,
+     "clicks_pct": 53.2,
+     "spend": 600.15,
+     "spend_pct": 35.1,
+     "conversions": 0.0,
+     "conv_pct": 0.0,
+     "cpa": null,
+     "cpc": 18.19
+    },
+    {
+     "cap": 30,
+     "clicks": 47,
+     "clicks_pct": 75.8,
+     "spend": 987.67,
+     "spend_pct": 57.8,
+     "conversions": 0.0,
+     "conv_pct": 0.0,
+     "cpa": null,
+     "cpc": 21.01
+    },
+    {
+     "cap": 40,
+     "clicks": 51,
+     "clicks_pct": 82.3,
+     "spend": 1124.87,
+     "spend_pct": 65.9,
+     "conversions": 0.0,
+     "conv_pct": 0.0,
+     "cpa": null,
+     "cpc": 22.06
+    },
+    {
+     "cap": 50,
+     "clicks": 55,
+     "clicks_pct": 88.7,
+     "spend": 1305.59,
+     "spend_pct": 76.5,
+     "conversions": 0.0,
+     "conv_pct": 0.0,
+     "cpa": null,
+     "cpc": 23.74
+    },
+    {
+     "cap": 60,
+     "clicks": 61,
+     "clicks_pct": 98.4,
+     "spend": 1645.41,
+     "spend_pct": 96.4,
+     "conversions": 3.0,
+     "conv_pct": 100.0,
+     "cpa": 548.47,
+     "cpc": 26.97
+    },
+    {
+     "cap": 75,
+     "clicks": 62,
+     "clicks_pct": 100.0,
+     "spend": 1707.54,
+     "spend_pct": 100.0,
+     "conversions": 3.0,
+     "conv_pct": 100.0,
+     "cpa": 569.18,
+     "cpc": 27.54
+    },
+    {
+     "cap": 90,
+     "clicks": 62,
+     "clicks_pct": 100.0,
+     "spend": 1707.54,
+     "spend_pct": 100.0,
+     "conversions": 3.0,
+     "conv_pct": 100.0,
+     "cpa": 569.18,
+     "cpc": 27.54
+    },
+    {
+     "cap": 110,
+     "clicks": 62,
+     "clicks_pct": 100.0,
+     "spend": 1707.54,
+     "spend_pct": 100.0,
+     "conversions": 3.0,
+     "conv_pct": 100.0,
+     "cpa": 569.18,
+     "cpc": 27.54
+    },
+    {
+     "cap": 130,
+     "clicks": 62,
+     "clicks_pct": 100.0,
+     "spend": 1707.54,
+     "spend_pct": 100.0,
+     "conversions": 3.0,
+     "conv_pct": 100.0,
+     "cpa": 569.18,
+     "cpc": 27.54
+    },
+    {
+     "cap": 160,
+     "clicks": 62,
+     "clicks_pct": 100.0,
+     "spend": 1707.54,
+     "spend_pct": 100.0,
+     "conversions": 3.0,
+     "conv_pct": 100.0,
+     "cpa": 569.18,
+     "cpc": 27.54
+    },
+    {
+     "cap": null,
+     "clicks": 62,
+     "clicks_pct": 100.0,
+     "spend": 1707.54,
+     "spend_pct": 100.0,
+     "conversions": 3.0,
+     "conv_pct": 100.0,
+     "cpa": 569.18,
+     "cpc": 27.54
+    }
+   ],
+   "live_ceiling": 30.0
+  },
+  "HVAC Repair": {
+   "n_clicks": 25,
+   "baseline_cost": 1816.59,
+   "baseline_conv": 4.0,
+   "rows": [
+    {
+     "cap": 25,
+     "clicks": 6,
+     "clicks_pct": 24.0,
+     "spend": 116.67,
+     "spend_pct": 6.4,
+     "conversions": 1.0,
+     "conv_pct": 25.0,
+     "cpa": 116.67,
+     "cpc": 19.45
+    },
+    {
+     "cap": 30,
+     "clicks": 7,
+     "clicks_pct": 28.0,
+     "spend": 144.27,
+     "spend_pct": 7.9,
+     "conversions": 1.0,
+     "conv_pct": 25.0,
+     "cpa": 144.27,
+     "cpc": 20.61
+    },
+    {
+     "cap": 40,
+     "clicks": 7,
+     "clicks_pct": 28.0,
+     "spend": 144.27,
+     "spend_pct": 7.9,
+     "conversions": 1.0,
+     "conv_pct": 25.0,
+     "cpa": 144.27,
+     "cpc": 20.61
+    },
+    {
+     "cap": 50,
+     "clicks": 7,
+     "clicks_pct": 28.0,
+     "spend": 144.27,
+     "spend_pct": 7.9,
+     "conversions": 1.0,
+     "conv_pct": 25.0,
+     "cpa": 144.27,
+     "cpc": 20.61
+    },
+    {
+     "cap": 60,
+     "clicks": 13,
+     "clicks_pct": 52.0,
+     "spend": 474.06,
+     "spend_pct": 26.1,
+     "conversions": 1.0,
+     "conv_pct": 25.0,
+     "cpa": 474.06,
+     "cpc": 36.47
+    },
+    {
+     "cap": 75,
+     "clicks": 15,
+     "clicks_pct": 60.0,
+     "spend": 606.02,
+     "spend_pct": 33.4,
+     "conversions": 1.0,
+     "conv_pct": 25.0,
+     "cpa": 606.02,
+     "cpc": 40.4
+    },
+    {
+     "cap": 90,
+     "clicks": 18,
+     "clicks_pct": 72.0,
+     "spend": 845.57,
+     "spend_pct": 46.5,
+     "conversions": 1.0,
+     "conv_pct": 25.0,
+     "cpa": 845.57,
+     "cpc": 46.98
+    },
+    {
+     "cap": 110,
+     "clicks": 19,
+     "clicks_pct": 76.0,
+     "spend": 946.84,
+     "spend_pct": 52.1,
+     "conversions": 1.0,
+     "conv_pct": 25.0,
+     "cpa": 946.84,
+     "cpc": 49.83
+    },
+    {
+     "cap": 130,
+     "clicks": 20,
+     "clicks_pct": 80.0,
+     "spend": 1061.7,
+     "spend_pct": 58.4,
+     "conversions": 1.0,
+     "conv_pct": 25.0,
+     "cpa": 1061.7,
+     "cpc": 53.08
+    },
+    {
+     "cap": 160,
+     "clicks": 25,
+     "clicks_pct": 100.0,
+     "spend": 1816.59,
+     "spend_pct": 100.0,
+     "conversions": 4.0,
+     "conv_pct": 100.0,
+     "cpa": 454.15,
+     "cpc": 72.66
+    },
+    {
+     "cap": null,
+     "clicks": 25,
+     "clicks_pct": 100.0,
+     "spend": 1816.59,
+     "spend_pct": 100.0,
+     "conversions": 4.0,
+     "conv_pct": 100.0,
+     "cpa": 454.15,
+     "cpc": 72.66
+    }
+   ],
+   "live_ceiling": 25.0
+  },
+  "HVAC Replacement": {
+   "n_clicks": 4,
+   "baseline_cost": 130.05,
+   "baseline_conv": 0.0,
+   "rows": [
+    {
+     "cap": 25,
+     "clicks": 1,
+     "clicks_pct": 25.0,
+     "spend": 15.02,
+     "spend_pct": 11.5,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 15.02
+    },
+    {
+     "cap": 30,
+     "clicks": 2,
+     "clicks_pct": 50.0,
+     "spend": 43.24,
+     "spend_pct": 33.2,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 21.62
+    },
+    {
+     "cap": 40,
+     "clicks": 3,
+     "clicks_pct": 75.0,
+     "spend": 80.36,
+     "spend_pct": 61.8,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 26.79
+    },
+    {
+     "cap": 50,
+     "clicks": 4,
+     "clicks_pct": 100.0,
+     "spend": 130.05,
+     "spend_pct": 100.0,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 32.51
+    },
+    {
+     "cap": 60,
+     "clicks": 4,
+     "clicks_pct": 100.0,
+     "spend": 130.05,
+     "spend_pct": 100.0,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 32.51
+    },
+    {
+     "cap": 75,
+     "clicks": 4,
+     "clicks_pct": 100.0,
+     "spend": 130.05,
+     "spend_pct": 100.0,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 32.51
+    },
+    {
+     "cap": 90,
+     "clicks": 4,
+     "clicks_pct": 100.0,
+     "spend": 130.05,
+     "spend_pct": 100.0,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 32.51
+    },
+    {
+     "cap": 110,
+     "clicks": 4,
+     "clicks_pct": 100.0,
+     "spend": 130.05,
+     "spend_pct": 100.0,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 32.51
+    },
+    {
+     "cap": 130,
+     "clicks": 4,
+     "clicks_pct": 100.0,
+     "spend": 130.05,
+     "spend_pct": 100.0,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 32.51
+    },
+    {
+     "cap": 160,
+     "clicks": 4,
+     "clicks_pct": 100.0,
+     "spend": 130.05,
+     "spend_pct": 100.0,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 32.51
+    },
+    {
+     "cap": null,
+     "clicks": 4,
+     "clicks_pct": 100.0,
+     "spend": 130.05,
+     "spend_pct": 100.0,
+     "conversions": 0.0,
+     "conv_pct": null,
+     "cpa": null,
+     "cpc": 32.51
+    }
+   ],
+   "live_ceiling": null
+  }
+ },
+ "economic_bands": {
+  "AC Repair": {
+   "raw_primary_cvr_pct": 20.0,
+   "max_cpql": 150.0,
+   "bands": {
+    "conservative": {
+     "qualification_rate": 0.4,
+     "assumed_qualified_cvr": 8.0,
+     "economic_cpc": 12.0
+    },
+    "base": {
+     "qualification_rate": 0.6,
+     "assumed_qualified_cvr": 12.0,
+     "economic_cpc": 18.0
+    },
+    "optimistic": {
+     "qualification_rate": 0.8,
+     "assumed_qualified_cvr": 16.0,
+     "economic_cpc": 24.0
+    }
+   },
+   "observed_cpc": 114.9
+  },
+  "HVAC Installation": {
+   "raw_primary_cvr_pct": 4.84,
+   "max_cpql": 280.0,
+   "bands": {
+    "conservative": {
+     "qualification_rate": 0.4,
+     "assumed_qualified_cvr": 1.94,
+     "economic_cpc": 5.42
+    },
+    "base": {
+     "qualification_rate": 0.6,
+     "assumed_qualified_cvr": 2.9,
+     "economic_cpc": 8.13
+    },
+    "optimistic": {
+     "qualification_rate": 0.8,
+     "assumed_qualified_cvr": 3.87,
+     "economic_cpc": 10.84
+    }
+   },
+   "observed_cpc": 27.54
+  },
+  "HVAC Repair": {
+   "raw_primary_cvr_pct": 16.0,
+   "max_cpql": 250.0,
+   "bands": {
+    "conservative": {
+     "qualification_rate": 0.4,
+     "assumed_qualified_cvr": 6.4,
+     "economic_cpc": 16.0
+    },
+    "base": {
+     "qualification_rate": 0.6,
+     "assumed_qualified_cvr": 9.6,
+     "economic_cpc": 24.0
+    },
+    "optimistic": {
+     "qualification_rate": 0.8,
+     "assumed_qualified_cvr": 12.8,
+     "economic_cpc": 32.0
+    }
+   },
+   "observed_cpc": 72.66
+  },
+  "HVAC Replacement": {
+   "raw_primary_cvr_pct": 0.0,
+   "max_cpql": 280.0,
+   "bands": {
+    "conservative": {
+     "qualification_rate": 0.4,
+     "assumed_qualified_cvr": 0.0,
+     "economic_cpc": 0.0
+    },
+    "base": {
+     "qualification_rate": 0.6,
+     "assumed_qualified_cvr": 0.0,
+     "economic_cpc": 0.0
+    },
+    "optimistic": {
+     "qualification_rate": 0.8,
+     "assumed_qualified_cvr": 0.0,
+     "economic_cpc": 0.0
+    }
+   },
+   "observed_cpc": 32.51
+  }
+ },
+ "max_cpql": {
+  "AC Repair": 150.0,
+  "HVAC Repair": 250.0,
+  "HVAC Installation": 280.0,
+  "HVAC Replacement": 280.0,
+  "Gas Boiler Repair": 250.0
+ },
+ "live_ceilings": {
+  "AC Repair": 25.0,
+  "HVAC Repair": 25.0,
+  "HVAC Installation": 30.0,
+  "HVAC Replacement": null,
+  "Gas Boiler Repair": null
+ }
+}

@@ -1,0 +1,42 @@
+{
+  "validated_at": "2026-09-03T18:33:11.983162-04:00",
+  "customer_id": "2429758629",
+  "mode": "validate_only=True, partial_failure=False",
+  "results": {
+    "PLAN-SLM-CONV-1": {
+      "fingerprint": "FB9DA2D017AD",
+      "operations_submitted": 2,
+      "operations_validated": 2,
+      "verdict": "PASS",
+      "errors": []
+    },
+    "PLAN-SLM-BID-1": {
+      "fingerprint": "50C553579EF3",
+      "operations_submitted": 2,
+      "operations_validated": 2,
+      "verdict": "PASS",
+      "errors": []
+    },
+    "PLAN-SLM-BUD-1": {
+      "fingerprint": "D82341B7238E",
+      "operations_submitted": 2,
+      "operations_validated": 2,
+      "verdict": "PASS",
+      "errors": []
+    },
+    "PLAN-SLM-KW-1": {
+      "fingerprint": "19FA5CBBB1E5",
+      "operations_submitted": 7,
+      "operations_validated": 7,
+      "verdict": "PASS",
+      "errors": []
+    },
+    "PLAN-SLM-NEG-1": {
+      "fingerprint": "0895911A8133",
+      "operations_submitted": 154,
+      "operations_validated": 154,
+      "verdict": "PASS",
+      "errors": []
+    }
+  }
+}

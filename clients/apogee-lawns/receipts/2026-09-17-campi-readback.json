@@ -1,0 +1,136 @@
+{
+ "campaign": {
+  "id": "24257151015",
+  "name": "S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026",
+  "status": "PAUSED"
+ },
+ "policy_topics": [],
+ "campaign_id": "24257151015",
+ "campaign_status": "PAUSED",
+ "serving_status": "SERVING",
+ "primary_status": "PAUSED",
+ "primary_status_reasons": [
+  "CAMPAIGN_PAUSED",
+  "BIDDING_STRATEGY_LEARNING"
+ ],
+ "budget_id": "15884926233",
+ "daily_budget": 16.44,
+ "cpc_ceiling": 8.0,
+ "final_url": "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/",
+ "ad_groups": [
+  {
+   "id": "200347713516",
+   "name": "AG | Permanent Light Installation",
+   "status": "ENABLED"
+  },
+  {
+   "id": "200347713556",
+   "name": "AG | Permanent Christmas Lights Exact",
+   "status": "ENABLED"
+  }
+ ],
+ "keywords": [
+  {
+   "id": "385217173659",
+   "text": "permanent christmas light installation",
+   "match": "PHRASE",
+   "status": "ENABLED"
+  },
+  {
+   "id": "546844124143",
+   "text": "permanent christmas light installation",
+   "match": "EXACT",
+   "status": "ENABLED"
+  },
+  {
+   "id": "1968954080156",
+   "text": "permanent christmas lights installer",
+   "match": "PHRASE",
+   "status": "ENABLED"
+  },
+  {
+   "id": "2261056242205",
+   "text": "permanent christmas lights installer",
+   "match": "EXACT",
+   "status": "ENABLED"
+  },
+  {
+   "id": "306097636075",
+   "text": "permanent christmas lights",
+   "match": "EXACT",
+   "status": "ENABLED"
+  }
+ ],
+ "ads": [
+  {
+   "id": "825023783007",
+   "status": "ENABLED",
+   "approval": "UNKNOWN",
+   "review": "REVIEW_IN_PROGRESS",
+   "topics": []
+  },
+  {
+   "id": "825023783010",
+   "status": "ENABLED",
+   "approval": "UNKNOWN",
+   "review": "REVIEW_IN_PROGRESS",
+   "topics": []
+  },
+  {
+   "id": "825023783013",
+   "status": "ENABLED",
+   "approval": "UNKNOWN",
+   "review": "REVIEW_IN_PROGRESS",
+   "topics": []
+  },
+  {
+   "id": "825023783016",
+   "status": "ENABLED",
+   "approval": "UNKNOWN",
+   "review": "REVIEW_IN_PROGRESS",
+   "topics": []
+  }
+ ],
+ "locations": 14,
+ "languages": 1,
+ "negatives": 75,
+ "assets": [
+  {
+   "id": "422487159856",
+   "field_type": "STRUCTURED_SNIPPET"
+  },
+  {
+   "id": "422487159850",
+   "field_type": "CALLOUT"
+  },
+  {
+   "id": "422487181204",
+   "field_type": "CALLOUT"
+  },
+  {
+   "id": "422571032091",
+   "field_type": "CALLOUT"
+  },
+  {
+   "id": "422571064683",
+   "field_type": "CALLOUT"
+  },
+  {
+   "id": "422571064692",
+   "field_type": "CALLOUT"
+  },
+  {
+   "id": "422571077787",
+   "field_type": "CALLOUT"
+  }
+ ],
+ "campaign_conversion_goals": {
+  "PHONE_CALL_LEAD/WEBSITE": false,
+  "PHONE_CALL_LEAD/CALL_FROM_ADS": true,
+  "SUBMIT_LEAD_FORM/WEBSITE": true
+ },
+ "qa_failures": 0,
+ "eu_political_declaration": "DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING",
+ "forced_correction": "ad_serving_optimization_status omitted - deprecated at campaign level",
+ "read_local": "2026-09-17T12:33:25.888587-05:00"
+}

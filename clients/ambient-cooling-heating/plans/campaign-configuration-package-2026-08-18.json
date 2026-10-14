@@ -1,0 +1,94 @@
+{
+ "package": "ambient-cooling-heating-campaign-configuration",
+ "version": "2026-08-18",
+ "phase": "modify-existing",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342"
+ },
+ "items": {
+  "ad_schedule": {
+   "status": "BLOCKED - business decision required, no change proposed",
+   "observed": "All five campaigns carry SIX clean ad-schedule rows with no duplicates and no overlaps: Monday-Friday 08:00-20:00 and Saturday 08:00-13:00, America/New_York, no bid modifiers.",
+   "correction_to_prior_audit": "The corrective order asked to remove duplicate or unapproved schedule rows. There are NO duplicate rows. The only issue is that the live schedule differs from the work order's expected Monday-Friday 08:00-16:00.",
+   "options": {
+    "A_keep_current": "Mon-Fri 08:00-20:00 + Sat 08:00-13:00. No change, 0 mutations.",
+    "B_work_order": "Mon-Fri 08:00-16:00 only. Removes 6 rows, creates 5. Cuts evening and Saturday coverage, which is when HVAC emergencies peak.",
+    "C_hybrid": "Mon-Fri 08:00-18:00 + Sat 08:00-13:00. Removes 6 rows, creates 6."
+   },
+   "recommendation": "A - keep the current schedule. It is already clean, and evening plus Saturday coverage matches HVAC demand. Confirm only that calls are actually answered until 20:00 and on Saturday mornings.",
+   "objects_to_modify": 0
+  },
+  "sitelinks": {
+   "status": "PLAN READY - approval required",
+   "observed": "All 8 distinct sitelink assets across the five campaigns point to ambientcoolingandheating.com (the main site), which uses a different phone number and has no matching lead form.",
+   "assets": {
+    "407319490556": "AC Repair Service -> /services/cooling-services/air-conditioner-repair/",
+    "407319490559": "Customer Reviews -> /reviews/",
+    "407319490562": "View Our Work -> /our-work/",
+    "407319490571": "Boiler Repair -> /services/heating-services/boiler-repair/",
+    "407418567058": "Contact Ambient -> /contact-us/",
+    "407418567061": "HVAC Services -> /services/hvac/",
+    "407494691217": "Service Areas -> /service-areas/",
+    "407494691220": "Heating Services -> /services/heating-services/",
+    "407494735425": "AC Installation -> /services/cooling-services/ac-installation/"
+   },
+   "proposed": [
+    {
+     "action": "CREATE new sitelink assets pointing at existing offer. pages",
+     "detail": "Cross-sell within the offer subdomain: AC Repair -> /ac-repair/, HVAC Repair -> /hvac-repair/, HVAC Installation -> /hvac-installation/, HVAC Replacement -> /hvac-replacement/, Gas Boiler Repair -> /gas-boiler-repair/, each attached to the four campaigns that do not already own that service.",
+     "objects_to_create": 5
+    },
+    {
+     "action": "UNLINK the 9 main-site sitelinks from the five campaigns",
+     "detail": "Assets are not deleted, only detached, so they remain available to the paused legacy campaigns.",
+     "approval_class": "DESTRUCTIVE - unlinks existing campaign assets",
+     "objects_to_remove": 28
+    }
+   ],
+   "not_proposed": "Reviews, Our Work, Service Areas and Contact have no compliant offer-subdomain equivalent. Building them is a separate landing-page workflow under LANDING_PAGE_CONTENT_WORKFLOW.md, not an invented destination."
+  },
+  "network_and_automation_settings": {
+   "status": "VERIFIED CORRECT - no change proposed",
+   "observed": "All five campaigns: Google Search ON, Search Partners OFF, Display OFF, partner search network OFF, positive geo PRESENCE, negative geo PRESENCE, language en, 75 location targets, 3 device criteria with no bid modifiers, no DSA setting, no campaign tracking template or final URL suffix."
+  },
+  "rogue_ad_group_and_duplicate_keywords": {
+   "status": "PLAN READY - destructive approval required",
+   "observed": "Ad group 202339087874 'SKAG | HVAC Replacement Near Me' sits inside the AC Repair campaign 24132507741. The AD GROUP is already REMOVED, but it still holds 2 ENABLED ads (820900825422, 820900825425, both AREA_OF_INTEREST_ONLY for CONSUMER_FINANCE) and 2 ENABLED keyword criteria for 'hvac replacement near me'.",
+   "serving_impact": "NONE. A removed ad group cannot serve, so these objects cost nothing and are a hygiene issue, not a delivery issue.",
+   "recommendation": "Leave until after the replacement RSAs are live. Cleaning a removed ad group is cosmetic and every mutation carries risk during remediation.",
+   "objects_to_remove_if_approved": 4
+  },
+  "budgets": {
+   "status": "NO CHANGE PROPOSED",
+   "observed": "Daily budgets total $427.64 = $13,000/month at 30.4 days, exactly matching the approved allocation. AC Repair $141.45, HVAC Installation $138.16, HVAC Repair $78.95, Gas Boiler Repair $42.76, HVAC Replacement $26.32.",
+   "pacing_evidence": "Since launch the account spent $92.18 of a possible ~$2,138 across five days: 4.3% of available budget. Search impression share is 10-18% and search_budget_lost_impression_share is effectively zero. Budget is NOT the constraint; disapproved ads and low Quality Score are.",
+   "recommendation": "Do not change budgets. Re-assess only after ads serve for 14 days."
+  },
+  "landscaping_shared_lists": {
+   "status": "NO ACTION PROPOSED NOW",
+   "observed": "Christmas Lights Install (11807294063), Leaf Removal initial (11811255121), Outdoor Kitchen (11840890006), Paver (11840874961) and General List - Irrigation Repair (12178646912) are landscaping/hardscaping lists in an HVAC account. All have reference_count 0, so none affects delivery.",
+   "recommendation": "Leave in place. They are inert. Deleting them destroys data for no delivery benefit and would need destructive approval."
+  },
+  "rsa_end_state": {
+   "target": "Exactly two eligible, service-specific RSAs per active ad group",
+   "sequence": [
+    "1. Create 6 replacement RSAs PAUSED (fingerprint 0BCC73A397580856)",
+    "2. Read back every field against the approved package",
+    "3. Let policy review complete; report asset and ad level status",
+    "4. Separate approval to ENABLE the replacements",
+    "5. Confirm the replacements are serving",
+    "6. Destructive approval to pause the 6 disapproved originals",
+    "7. Verify exactly 2 eligible RSAs per ad group, no service interruption"
+   ]
+  }
+ },
+ "objects_to_modify_total": 0,
+ "objects_to_create_total": 5,
+ "objects_to_remove_total": 28,
+ "blocked_pending_decision": [
+  "ad_schedule"
+ ],
+ "plan_fingerprint": "3094F3F31663517F"
+}

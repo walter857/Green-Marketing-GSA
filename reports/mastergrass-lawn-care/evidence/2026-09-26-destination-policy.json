@@ -1,0 +1,4579 @@
+{
+"ad_policy": [
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/195877148126",
+"primary_status": "NOT_ELIGIBLE",
+"primary_status_reasons": [
+"HAS_ADS_DISAPPROVED"
+]
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/195877148126~811758936858",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936858",
+"id": "811758936858",
+"final_urls": [
+"https://offer.mastergrasslawncare.com/french-drain/"
+]
+},
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"primary_status": "ELIGIBLE"
+}
+}
+],
+"kw_policy": [
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~637111673",
+"status": "ENABLED",
+"keyword": {
+"text": "french drain installation"
+},
+"approval_status": "APPROVED",
+"criterion_id": "637111673",
+"primary_status": "UNKNOWN",
+"primary_status_reasons": [
+"AD_GROUP_CRITERION_LOW_QUALITY"
+]
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~15525576059",
+"status": "ENABLED",
+"keyword": {
+"text": "yard drainage solutions"
+},
+"approval_status": "APPROVED",
+"criterion_id": "15525576059",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~306606500789",
+"status": "ENABLED",
+"keyword": {
+"text": "french drain contractor"
+},
+"approval_status": "APPROVED",
+"criterion_id": "306606500789",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~328281032050",
+"status": "ENABLED",
+"keyword": {
+"text": "french drain installation near me"
+},
+"approval_status": "APPROVED",
+"criterion_id": "328281032050",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~335531153253",
+"status": "ENABLED",
+"keyword": {
+"text": "yard drainage contractors near me"
+},
+"approval_status": "APPROVED",
+"criterion_id": "335531153253",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~339412160550",
+"status": "ENABLED",
+"keyword": {
+"text": "french drain installers near me"
+},
+"approval_status": "APPROVED",
+"criterion_id": "339412160550",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~339412163750",
+"status": "ENABLED",
+"keyword": {
+"text": "french drains near me"
+},
+"approval_status": "APPROVED",
+"criterion_id": "339412163750",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~341191697673",
+"status": "ENABLED",
+"keyword": {
+"text": "french drain installer"
+},
+"approval_status": "APPROVED",
+"criterion_id": "341191697673",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~341968220593",
+"status": "PAUSED",
+"keyword": {
+"text": "wet yard drainage"
+},
+"approval_status": "APPROVED",
+"criterion_id": "341968220593",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"AD_GROUP_CRITERION_PAUSED"
+]
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~393588353732",
+"status": "ENABLED",
+"keyword": {
+"text": "french drain landscaping"
+},
+"approval_status": "APPROVED",
+"criterion_id": "393588353732",
+"primary_status": "UNKNOWN",
+"primary_status_reasons": [
+"AD_GROUP_CRITERION_LOW_QUALITY"
+]
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~397257756948",
+"status": "ENABLED",
+"keyword": {
+"text": "french drain contractors near me"
+},
+"approval_status": "APPROVED",
+"criterion_id": "397257756948",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~423760605755",
+"status": "ENABLED",
+"keyword": {
+"text": "residential drainage contractors"
+},
+"approval_status": "APPROVED",
+"criterion_id": "423760605755",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~533607963308",
+"status": "ENABLED",
+"keyword": {
+"text": "yard drainage systems near me"
+},
+"approval_status": "APPROVED",
+"criterion_id": "533607963308",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~550210515837",
+"status": "ENABLED",
+"keyword": {
+"text": "yard drainage systems near me"
+},
+"approval_status": "APPROVED",
+"criterion_id": "550210515837",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~822672154498",
+"status": "ENABLED",
+"keyword": {
+"text": "residential drainage contractors near me"
+},
+"approval_status": "APPROVED",
+"criterion_id": "822672154498",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~822672155978",
+"status": "ENABLED",
+"keyword": {
+"text": "water drainage solutions near me"
+},
+"approval_status": "APPROVED",
+"criterion_id": "822672155978",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group_criterion": {
+"resource_name": "customers/9487471092/adGroupCriteria/195877148126~822672156898",
+"status": "ENABLED",
+"keyword": {
+"text": "wet yard drainage solutions"
+},
+"approval_status": "APPROVED",
+"criterion_id": "822672156898",
+"primary_status": "ELIGIBLE"
+}
+}
+],
+"campaign_asset": [
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20188733468",
+"id": "20188733468"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84643394099",
+"id": "84643394099"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20188733468~84643394099~LOGO",
+"field_type": "LOGO",
+"status": "ENABLED"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84643394099",
+"id": "84643394099"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~84643394099~LOGO",
+"field_type": "LOGO",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20301913853",
+"id": "20301913853"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84643394102",
+"id": "84643394102"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20301913853~84643394102~LOGO",
+"field_type": "LOGO",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20490495985",
+"id": "20490495985"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84643394102",
+"id": "84643394102"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20490495985~84643394102~LOGO",
+"field_type": "LOGO",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/271781201982",
+"id": "271781201982"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~271781201982~LANDSCAPE_LOGO",
+"field_type": "LANDSCAPE_LOGO",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75101500446",
+"id": "75101500446",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~75101500446~STRUCTURED_SNIPPET",
+"field_type": "STRUCTURED_SNIPPET",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75101500446",
+"id": "75101500446",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~75101500446~STRUCTURED_SNIPPET",
+"field_type": "STRUCTURED_SNIPPET",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389031712013",
+"id": "389031712013",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389031712013~STRUCTURED_SNIPPET",
+"field_type": "STRUCTURED_SNIPPET",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389130249586",
+"id": "389130249586",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389130249586~STRUCTURED_SNIPPET",
+"field_type": "STRUCTURED_SNIPPET",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96434533256",
+"id": "96434533256",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/landscaping/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~96434533256~SITELINK",
+"field_type": "SITELINK",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96434533256",
+"id": "96434533256",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/landscaping/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~96434533256~SITELINK",
+"field_type": "SITELINK",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96434533256",
+"id": "96434533256",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/landscaping/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~96434533256~SITELINK",
+"field_type": "SITELINK",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96434533259",
+"id": "96434533259",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/hardscaping/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~96434533259~SITELINK",
+"field_type": "SITELINK",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96434533259",
+"id": "96434533259",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/hardscaping/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~96434533259~SITELINK",
+"field_type": "SITELINK",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96434533259",
+"id": "96434533259",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/hardscaping/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~96434533259~SITELINK",
+"field_type": "SITELINK",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96466559394",
+"id": "96466559394",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/hardscaping/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~96466559394~SITELINK",
+"field_type": "SITELINK",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96466559397",
+"id": "96466559397",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/retaining-walls/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~96466559397~SITELINK",
+"field_type": "SITELINK",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96466559400",
+"id": "96466559400",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/patios-and-walkways/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~96466559400~SITELINK",
+"field_type": "SITELINK",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96466559403",
+"id": "96466559403",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/fire-pits/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~96466559403~SITELINK",
+"field_type": "SITELINK",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/96466559403",
+"id": "96466559403",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/fire-pits/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~96466559403~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/271786577235",
+"id": "271786577235",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/services/patios/?freepatioquote"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~271786577235~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/271786577238",
+"id": "271786577238",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/services/patios/?process"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~271786577238~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/271786577241",
+"id": "271786577241",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/services/patios/?serviceareas"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~271786577241~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/271786577244",
+"id": "271786577244",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/services/patios/?patiogallery"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~271786577244~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389018280338",
+"id": "389018280338",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/landscaping-contractor/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389018280338~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389018280341",
+"id": "389018280341",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/french-drain/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389018280341~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389018280344",
+"id": "389018280344",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/yard-grading/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389018280344~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389018280347",
+"id": "389018280347",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/mulch-rock-installation/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389018280347~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389192654850",
+"id": "389192654850",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/hardscaping/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389192654850~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389192654853",
+"id": "389192654853",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/retaining-walls/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389192654853~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389192654856",
+"id": "389192654856",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/paver/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389192654856~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389192654859",
+"id": "389192654859",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/patio-installation/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389192654859~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389192654862",
+"id": "389192654862",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/fire-pit-installation/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389192654862~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389192654865",
+"id": "389192654865",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/outdoor-kitchen/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389192654865~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/416402744218",
+"id": "416402744218",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/services/patios/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~416402744218~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/421378509029",
+"id": "421378509029",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/yard-grading/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~421378509029~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/421488721318",
+"id": "421488721318",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/landscaping-contractor/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~421488721318~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253400",
+"id": "75060253400",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~75060253400~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20301913853",
+"id": "20301913853"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253400",
+"id": "75060253400",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20301913853~75060253400~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253400",
+"id": "75060253400",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~75060253400~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20490495985",
+"id": "20490495985"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253400",
+"id": "75060253400",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20490495985~75060253400~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253400",
+"id": "75060253400",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~75060253400~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253400",
+"id": "75060253400",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~75060253400~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253400",
+"id": "75060253400",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~75060253400~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253403",
+"id": "75060253403",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~75060253403~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20301913853",
+"id": "20301913853"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253403",
+"id": "75060253403",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20301913853~75060253403~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253403",
+"id": "75060253403",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~75060253403~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253403",
+"id": "75060253403",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~75060253403~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253403",
+"id": "75060253403",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~75060253403~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253403",
+"id": "75060253403",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~75060253403~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253406",
+"id": "75060253406",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~75060253406~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20301913853",
+"id": "20301913853"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253406",
+"id": "75060253406",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20301913853~75060253406~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253406",
+"id": "75060253406",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~75060253406~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20490495985",
+"id": "20490495985"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253406",
+"id": "75060253406",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20490495985~75060253406~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253406",
+"id": "75060253406",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~75060253406~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253406",
+"id": "75060253406",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~75060253406~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/75060253406",
+"id": "75060253406",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~75060253406~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/271776084961",
+"id": "271776084961",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~271776084961~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/271776084964",
+"id": "271776084964",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~271776084964~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389202648207",
+"id": "389202648207",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389202648207~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389202648210",
+"id": "389202648210",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389202648210~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389202648213",
+"id": "389202648213",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389202648213~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389202648216",
+"id": "389202648216",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389202648216~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389202648219",
+"id": "389202648219",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389202648219~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389202648222",
+"id": "389202648222",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389202648222~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389202648225",
+"id": "389202648225",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389202648225~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389202648228",
+"id": "389202648228",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389202648228~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"id": "23905193676"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389202648231",
+"id": "389202648231",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23905193676~389202648231~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389205053172",
+"id": "389205053172",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389205053172~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389205053175",
+"id": "389205053175",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389205053175~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389205053178",
+"id": "389205053178",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389205053178~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389205053181",
+"id": "389205053181",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389205053181~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389205053184",
+"id": "389205053184",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389205053184~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389205053187",
+"id": "389205053187",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389205053187~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389205053190",
+"id": "389205053190",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389205053190~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389205053193",
+"id": "389205053193",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389205053193~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"id": "23914692658"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/389205053196",
+"id": "389205053196",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/23914692658~389205053196~CALLOUT",
+"field_type": "CALLOUT",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19810115888",
+"id": "19810115888"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74734288036",
+"id": "74734288036",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19810115888~74734288036~PROMOTION",
+"field_type": "PROMOTION",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74734288036",
+"id": "74734288036",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~74734288036~PROMOTION",
+"field_type": "PROMOTION",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74734288036",
+"id": "74734288036",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~74734288036~PROMOTION",
+"field_type": "PROMOTION",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74734288036",
+"id": "74734288036",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~74734288036~PROMOTION",
+"field_type": "PROMOTION",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74734288036",
+"id": "74734288036",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://offer.mastergrasslawncare.com/"
+]
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~74734288036~PROMOTION",
+"field_type": "PROMOTION",
+"status": "PAUSED",
+"primary_status": "PAUSED",
+"primary_status_reasons": [
+"ASSET_LINK_PAUSED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84626553319",
+"id": "84626553319"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~84626553319~BUSINESS_NAME",
+"field_type": "BUSINESS_NAME",
+"status": "ENABLED",
+"primary_status": "NOT_ELIGIBLE",
+"primary_status_reasons": [
+"ASSET_DISAPPROVED"
+]
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/89191606463",
+"id": "89191606463"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~89191606463~BUSINESS_NAME",
+"field_type": "BUSINESS_NAME",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20301913853",
+"id": "20301913853"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/89191606463",
+"id": "89191606463"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20301913853~89191606463~BUSINESS_NAME",
+"field_type": "BUSINESS_NAME",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20490495985",
+"id": "20490495985"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/89191606463",
+"id": "89191606463"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20490495985~89191606463~BUSINESS_NAME",
+"field_type": "BUSINESS_NAME",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/89191606463",
+"id": "89191606463"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~89191606463~BUSINESS_NAME",
+"field_type": "BUSINESS_NAME",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/89191606463",
+"id": "89191606463"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~89191606463~BUSINESS_NAME",
+"field_type": "BUSINESS_NAME",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/271703655260",
+"id": "271703655260"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~271703655260~BUSINESS_NAME",
+"field_type": "BUSINESS_NAME",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19810115888",
+"id": "19810115888"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74342630128",
+"id": "74342630128",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19810115888~74342630128~CALL",
+"field_type": "CALL",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74342630128",
+"id": "74342630128",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~74342630128~CALL",
+"field_type": "CALL",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20301913853",
+"id": "20301913853"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74342630128",
+"id": "74342630128",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20301913853~74342630128~CALL",
+"field_type": "CALL",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20490495985",
+"id": "20490495985"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74342630128",
+"id": "74342630128",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20490495985~74342630128~CALL",
+"field_type": "CALL",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74342630128",
+"id": "74342630128",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~74342630128~CALL",
+"field_type": "CALL",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/74342630128",
+"id": "74342630128",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~74342630128~CALL",
+"field_type": "CALL",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20188733468",
+"id": "20188733468"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84626554909",
+"id": "84626554909",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20188733468~84626554909~CALL",
+"field_type": "CALL",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84626554909",
+"id": "84626554909",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~84626554909~CALL",
+"field_type": "CALL",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/22869760706",
+"id": "22869760706"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84626554909",
+"id": "84626554909",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/22869760706~84626554909~CALL",
+"field_type": "CALL",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84643394099",
+"id": "84643394099"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~84643394099~BUSINESS_LOGO",
+"field_type": "BUSINESS_LOGO",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84643394099",
+"id": "84643394099"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~84643394099~BUSINESS_LOGO",
+"field_type": "BUSINESS_LOGO",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84643394099",
+"id": "84643394099"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~84643394099~BUSINESS_LOGO",
+"field_type": "BUSINESS_LOGO",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84643394099",
+"id": "84643394099"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~84643394099~BUSINESS_LOGO",
+"field_type": "BUSINESS_LOGO",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/78879250328",
+"id": "78879250328"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~78879250328~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84626430736",
+"id": "84626430736"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~84626430736~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84626430736",
+"id": "84626430736"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~84626430736~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84626430736",
+"id": "84626430736"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~84626430736~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/84676540569",
+"id": "84676540569"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~84676540569~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/97472351303",
+"id": "97472351303"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~97472351303~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/97500836640",
+"id": "97500836640"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~97500836640~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/97500836643",
+"id": "97500836643"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~97500836643~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/97501473060",
+"id": "97501473060"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~97501473060~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"id": "20374388048"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/97501483656",
+"id": "97501483656"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/20374388048~97501483656~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/100297612258",
+"id": "100297612258"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~100297612258~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/100297612258",
+"id": "100297612258"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~100297612258~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/100344852453",
+"id": "100344852453"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~100344852453~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/100344852453",
+"id": "100344852453"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~100344852453~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/100344852453",
+"id": "100344852453"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~100344852453~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872673650",
+"id": "178872673650"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~178872673650~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872673650",
+"id": "178872673650"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~178872673650~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872673650",
+"id": "178872673650"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~178872673650~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"id": "19826691829"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872673695",
+"id": "178872673695"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/19826691829~178872673695~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872673695",
+"id": "178872673695"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~178872673695~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"id": "21952097946"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872673695",
+"id": "178872673695"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21952097946~178872673695~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872981099",
+"id": "178872981099"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~178872981099~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"id": "21876424763"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872982914",
+"id": "178872982914"
+},
+"campaign_asset": {
+"resource_name": "customers/9487471092/campaignAssets/21876424763~178872982914~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+}
+],
+"ad_group_asset": [
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167435096623",
+"id": "167435096623"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872981099",
+"id": "178872981099"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/167435096623~178872981099~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167435096623",
+"id": "167435096623"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872982914",
+"id": "178872982914"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/167435096623~178872982914~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167988207999",
+"id": "167988207999"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178848032150",
+"id": "178848032150"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/167988207999~178848032150~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167988207999",
+"id": "167988207999"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872914298",
+"id": "178872914298"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/167988207999~178872914298~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167988207999",
+"id": "167988207999"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872915909",
+"id": "178872915909"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/167988207999~178872915909~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167988207999",
+"id": "167988207999"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872916134",
+"id": "178872916134"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/167988207999~178872916134~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167988207999",
+"id": "167988207999"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872924705",
+"id": "178872924705"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/167988207999~178872924705~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167988207999",
+"id": "167988207999"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872924780",
+"id": "178872924780"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/167988207999~178872924780~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/170005907502",
+"id": "170005907502"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872981099",
+"id": "178872981099"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/170005907502~178872981099~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/170005907502",
+"id": "170005907502"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872982914",
+"id": "178872982914"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/170005907502~178872982914~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845196",
+"id": "171282845196"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872981099",
+"id": "178872981099"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/171282845196~178872981099~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845196",
+"id": "171282845196"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872982914",
+"id": "178872982914"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/171282845196~178872982914~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845236",
+"id": "171282845236"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178848032150",
+"id": "178848032150"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/171282845236~178848032150~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845236",
+"id": "171282845236"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872914298",
+"id": "178872914298"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/171282845236~178872914298~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845236",
+"id": "171282845236"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872915909",
+"id": "178872915909"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/171282845236~178872915909~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845236",
+"id": "171282845236"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872916134",
+"id": "178872916134"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/171282845236~178872916134~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845236",
+"id": "171282845236"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872924705",
+"id": "178872924705"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/171282845236~178872924705~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845236",
+"id": "171282845236"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872924780",
+"id": "178872924780"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/171282845236~178872924780~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521487",
+"id": "173655521487"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872981099",
+"id": "178872981099"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/173655521487~178872981099~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521487",
+"id": "173655521487"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872982914",
+"id": "178872982914"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/173655521487~178872982914~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521647",
+"id": "173655521647"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178848032150",
+"id": "178848032150"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/173655521647~178848032150~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521647",
+"id": "173655521647"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872914298",
+"id": "178872914298"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/173655521647~178872914298~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521647",
+"id": "173655521647"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872915909",
+"id": "178872915909"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/173655521647~178872915909~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521647",
+"id": "173655521647"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872916134",
+"id": "178872916134"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/173655521647~178872916134~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521647",
+"id": "173655521647"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872924705",
+"id": "178872924705"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/173655521647~178872924705~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521647",
+"id": "173655521647"
+},
+"asset": {
+"resource_name": "customers/9487471092/assets/178872924780",
+"id": "178872924780"
+},
+"ad_group_asset": {
+"resource_name": "customers/9487471092/adGroupAssets/173655521647~178872924780~AD_IMAGE",
+"field_type": "AD_IMAGE",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+}
+],
+"customer_asset": [
+{
+"asset": {
+"resource_name": "customers/9487471092/assets/286431833050",
+"id": "286431833050",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+},
+"final_urls": [
+"https://mastergrasslawncare.com/services/"
+]
+},
+"customer_asset": {
+"resource_name": "customers/9487471092/customerAssets/286431833050~SITELINK",
+"field_type": "SITELINK",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+},
+{
+"asset": {
+"resource_name": "customers/9487471092/assets/74342630128",
+"id": "74342630128",
+"policy_summary": {
+"review_status": "REVIEWED",
+"approval_status": "APPROVED"
+}
+},
+"customer_asset": {
+"resource_name": "customers/9487471092/customerAssets/74342630128~CALL",
+"field_type": "CALL",
+"status": "ENABLED",
+"primary_status": "ELIGIBLE"
+}
+}
+],
+"all_ad_topics": [
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19810115888",
+"name": "MG-Leads-Search-1"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/148519132682",
+"name": "Ad group 1"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/148519132682~651084242135",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/651084242135",
+"id": "651084242135"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/148617753282",
+"name": "Sod and Turf Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/148617753282~651320955094",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/651320955094",
+"id": "651320955094"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/145638364023",
+"name": "Ad group 3"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/145638364023~651325907029",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/651325907029",
+"id": "651325907029"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/147377992295",
+"name": "Lawn Care"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/147377992295~651394901039",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/651394901039",
+"id": "651394901039"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/148617753282",
+"name": "Sod and Turf Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/148617753282~659177000128",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/659177000128",
+"id": "659177000128"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/147377992295",
+"name": "Lawn Care"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/147377992295~659235236567",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/659235236567",
+"id": "659235236567"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20188733468",
+"name": "Smart Search"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/149885104015",
+"name": "Smart Campaign Managed AdGroup"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/149885104015~659790815681",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/659790815681",
+"id": "659790815681"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/151759969576",
+"name": "Hardscaping General"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/151759969576~665848593558",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/665848593558",
+"id": "665848593558"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/151759969576",
+"name": "Hardscaping General"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/151759969576~665943235829",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/665943235829",
+"id": "665943235829"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/159099653264",
+"name": "Firepits"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/159099653264~669282060852",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/669282060852",
+"id": "669282060852"
+},
+"policy_summary": {
+"approval_status": "UNKNOWN"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/152683763976",
+"name": "General Landscaping Services - Phrase"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/152683763976~669283749750",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/669283749750",
+"id": "669283749750"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/150981597054",
+"name": "Local Landscaping (Ames/Ankeny, Iowa)"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/150981597054~669283850304",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/669283850304",
+"id": "669283850304"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/155156742231",
+"name": "Retaining walls"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/155156742231~669313374676",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/669313374676",
+"id": "669313374676"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/159099599424",
+"name": "Patio, Pavers Firepits"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/159099599424~669313403038",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/669313403038",
+"id": "669313403038"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/161963417188",
+"name": "Lawn Care and Maintenance"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/161963417188~673753009361",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/673753009361",
+"id": "673753009361"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167988159519",
+"name": "Hardscaping and Design"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/167988159519~716784307908",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/716784307908",
+"id": "716784307908"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167435096623",
+"name": "Tree Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/167435096623~716879167617",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/716879167617",
+"id": "716879167617"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167988207999",
+"name": "Landscape Lighting"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/167988207999~716895891536",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/716895891536",
+"id": "716895891536"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167988159519",
+"name": "Hardscaping and Design"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/167988159519~716909227633",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/716909227633",
+"id": "716909227633"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167625681726",
+"name": "Hardscaping and Design"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/167625681726~717295625694",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/717295625694",
+"id": "717295625694"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167625681726",
+"name": "Hardscaping and Design"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/167625681726~717295625697",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/717295625697",
+"id": "717295625697"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521487",
+"name": "Tree Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521487~720035215187",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215187",
+"id": "720035215187"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521447",
+"name": "Hardscaping and Design"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521447~720035215190",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215190",
+"id": "720035215190"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521687",
+"name": "General Landscaping Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521687~720035215193",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215193",
+"id": "720035215193"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521727",
+"name": "Lawn Care and Maintenance"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521727~720035215196",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215196",
+"id": "720035215196"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521647",
+"name": "Landscape Lighting"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521647~720035215199",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215199",
+"id": "720035215199"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521207",
+"name": "Ad group 3"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521207~720035215322",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215322",
+"id": "720035215322"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521247",
+"name": "Lawn Care"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521247~720035215325",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215325",
+"id": "720035215325"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521407",
+"name": "Sod and Turf Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521407~720035215328",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215328",
+"id": "720035215328"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521247",
+"name": "Lawn Care"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521247~720035215331",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215331",
+"id": "720035215331"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521447",
+"name": "Hardscaping and Design"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521447~720035215334",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215334",
+"id": "720035215334"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521407",
+"name": "Sod and Turf Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521407~720035215337",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215337",
+"id": "720035215337"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173655521167",
+"name": "Local Landscaping (Ames/Ankeny, Iowa)"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173655521167~720035215340",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/720035215340",
+"id": "720035215340"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845436",
+"name": "Lawn Care and Maintenance - Phrase"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282845436~723253744215",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744215",
+"id": "723253744215"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282844996",
+"name": "Hardscaping and Design"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282844996~723253744218",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744218",
+"id": "723253744218"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845036",
+"name": "Local Landscaping (Ames/Ankeny, Iowa)"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282845036~723253744221",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744221",
+"id": "723253744221"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282844796",
+"name": "Lawn Care"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282844796~723253744224",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744224",
+"id": "723253744224"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282844756",
+"name": "Ad group 3"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282844756~723253744227",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744227",
+"id": "723253744227"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282844996",
+"name": "Hardscaping and Design"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282844996~723253744230",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744230",
+"id": "723253744230"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845196",
+"name": "Tree Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282845196~723253744233",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744233",
+"id": "723253744233"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845276",
+"name": "General Landscaping Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282845276~723253744236",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744236",
+"id": "723253744236"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282844956",
+"name": "Sod and Turf Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282844956~723253744239",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744239",
+"id": "723253744239"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282844796",
+"name": "Lawn Care"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282844796~723253744242",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744242",
+"id": "723253744242"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282845236",
+"name": "Landscape Lighting"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282845236~723253744245",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744245",
+"id": "723253744245"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/171282844956",
+"name": "Sod and Turf Services"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/171282844956~723253744248",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/723253744248",
+"id": "723253744248"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/173192146736",
+"name": "Local Landscaping (Ames/Ankeny, Iowa) - Broad"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/173192146736~726969696951",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/726969696951",
+"id": "726969696951"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/170005907502",
+"name": "Tree Services #2"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/170005907502~726971996313",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/726971996313",
+"id": "726971996313"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/170005907662",
+"name": "Sod and Turf Services #2"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/170005907662~726971996316",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/726971996316",
+"id": "726971996316"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21876424763",
+"name": "Landscaping #2"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/170005907662",
+"name": "Sod and Turf Services #2"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/170005907662~726971996319",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/726971996319",
+"id": "726971996319"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/19826691829",
+"name": "Landscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/170005535422",
+"name": "General Landscaping Services - Broad"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/170005535422~727008007129",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/727008007129",
+"id": "727008007129"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/172238628466",
+"name": "Patio, Pavers Firepits #2"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/172238628466~727009086145",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/727009086145",
+"id": "727009086145"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/177945140612",
+"name": "Retaining walls #2"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/177945140612~727009277929",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/727009277929",
+"id": "727009277929"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/172625315453",
+"name": "Hardscaping General #2"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/172625315453~727088214179",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/727088214179",
+"id": "727088214179"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/172625315453",
+"name": "Hardscaping General #2"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/172625315453~727088214182",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/727088214182",
+"id": "727088214182"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/21952097946",
+"name": "Landscaping #3"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167901216930",
+"name": "Lawn Care and Maintenance - Broad"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/167901216930~727090252529",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/727090252529",
+"id": "727090252529"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/20374388048",
+"name": "Hardscaping"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/167625681726",
+"name": "Hardscaping and Design"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/167625681726~733968476344",
+"status": "PAUSED",
+"ad": {
+"resource_name": "customers/9487471092/ads/733968476344",
+"id": "733968476344"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"name": "Landscaping Search - BOFU"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/195877148086",
+"name": "Landscaping Contractor"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/195877148086~811758936855",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936855",
+"id": "811758936855"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"name": "Landscaping Search - BOFU"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/195877148126",
+"name": "French Drain Installation"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/195877148126~811758936858",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936858",
+"id": "811758936858"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"name": "Landscaping Search - BOFU"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/195877148286",
+"name": "Yard Grading Regrading"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/195877148286~811758936861",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936861",
+"id": "811758936861"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23905193676",
+"name": "Landscaping Search - BOFU"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/195877148326",
+"name": "Mulch & Rock Installation"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/195877148326~811758936864",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936864",
+"id": "811758936864"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"name": "Hardscaping Search - BOFU"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/194944952537",
+"name": "Hardscaping Contractor"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/194944952537~811758936867",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936867",
+"id": "811758936867"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"name": "Hardscaping Search - BOFU"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/194944952577",
+"name": "Pavers"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/194944952577~811758936870",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936870",
+"id": "811758936870"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"name": "Hardscaping Search - BOFU"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/194944952617",
+"name": "Patios Installation"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/194944952617~811758936873",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936873",
+"id": "811758936873"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"name": "Hardscaping Search - BOFU"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/194944952777",
+"name": "Fire Pits Installation"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/194944952777~811758936876",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936876",
+"id": "811758936876"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"name": "Hardscaping Search - BOFU"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/194944952817",
+"name": "Retaining Walls"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/194944952817~811758936879",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936879",
+"id": "811758936879"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+},
+{
+"campaign": {
+"resource_name": "customers/9487471092/campaigns/23914692658",
+"name": "Hardscaping Search - BOFU"
+},
+"ad_group": {
+"resource_name": "customers/9487471092/adGroups/194944952857",
+"name": "Outdoor Kitchens"
+},
+"ad_group_ad": {
+"resource_name": "customers/9487471092/adGroupAds/194944952857~811758936882",
+"status": "ENABLED",
+"ad": {
+"resource_name": "customers/9487471092/ads/811758936882",
+"id": "811758936882"
+},
+"policy_summary": {
+"approval_status": "APPROVED"
+}
+}
+}
+]
+}

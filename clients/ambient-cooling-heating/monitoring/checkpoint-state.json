@@ -1,0 +1,295 @@
+{
+ "created": "2026-09-10T00:51:01.600312-04:00",
+ "checkpoints": [
+  {
+   "checked_local": "2026-09-10T00:50:57.640904-04:00",
+   "today_partial": null,
+   "last_settled": "2026-09-09",
+   "identity": {
+    "name": "Ambient Cooling - Live",
+    "id": "2401959466",
+    "manager_links": {
+     "2815082755": "ACTIVE",
+     "3373711342": "ACTIVE"
+    }
+   },
+   "campaigns": {
+    "AC Repair": {
+     "impressions": 895,
+     "reported_clicks": 29,
+     "ctr_pct": 3.24,
+     "avg_cpc": 106.37,
+     "cost": 3084.87,
+     "primary_records": 5.0,
+     "lost_is_budget_pct": 6.26,
+     "lost_is_rank_pct": 46.73
+    },
+    "Gas Boiler Repair": {
+     "impressions": 38,
+     "reported_clicks": 0,
+     "ctr_pct": 0.0,
+     "avg_cpc": 0.0,
+     "cost": 0.0,
+     "primary_records": 0.0,
+     "lost_is_budget_pct": 0.0,
+     "lost_is_rank_pct": 46.88
+    },
+    "HVAC Installation": {
+     "impressions": 3450,
+     "reported_clicks": 114,
+     "ctr_pct": 3.3,
+     "avg_cpc": 26.08,
+     "cost": 2972.96,
+     "primary_records": 3.0,
+     "lost_is_budget_pct": 52.83,
+     "lost_is_rank_pct": 10.74
+    },
+    "HVAC Repair": {
+     "impressions": 1081,
+     "reported_clicks": 29,
+     "ctr_pct": 2.68,
+     "avg_cpc": 67.31,
+     "cost": 1951.94,
+     "primary_records": 6.0,
+     "lost_is_budget_pct": 8.62,
+     "lost_is_rank_pct": 58.1
+    },
+    "HVAC Replacement": {
+     "impressions": 207,
+     "reported_clicks": 5,
+     "ctr_pct": 2.42,
+     "avg_cpc": 30.5,
+     "cost": 152.52,
+     "primary_records": 0.0,
+     "lost_is_budget_pct": 0.0,
+     "lost_is_rank_pct": 49.55
+    }
+   },
+   "conversion_actions": {
+    "Ambient Cooling - LP -Submit Lead Forms": {
+     "primary": 5.0,
+     "all": 5.0
+    },
+    "Ambient Cooling and Heating (web) form_submission": {
+     "primary": 0.0,
+     "all": 6.0
+    },
+    "Calls from ads": {
+     "primary": 5.0,
+     "all": 5.0
+    },
+    "Local actions - Directions": {
+     "primary": 0.0,
+     "all": 7.0
+    },
+    "Local actions - Other engagements": {
+     "primary": 0.0,
+     "all": 33.0
+    },
+    "Local actions - Website visits": {
+     "primary": 0.0,
+     "all": 9.0
+    },
+    "WC Lead": {
+     "primary": 4.0,
+     "all": 8.0
+    },
+    "Ambient Cooling and Heating (web) phone_call_click": {
+     "primary": 0.0,
+     "all": 3.0
+    },
+    "Clicks to call": {
+     "primary": 0.0,
+     "all": 1.0
+    }
+   },
+   "budget": {
+    "combined_daily": 465.63,
+    "steady_state": 14155.15,
+    "within_cap": false,
+    "mtd_served": 1319.49,
+    "ceilings_micros": {
+     "AC Repair": 25000000,
+     "Gas Boiler Repair": 0,
+     "HVAC Installation": 30000000,
+     "HVAC Repair": 25000000,
+     "HVAC Replacement": 0
+    }
+   },
+   "negatives": {
+    "by_campaign": {
+     "AC Repair": 1135,
+     "Gas Boiler Repair": 1131,
+     "HVAC Installation": 1437,
+     "HVAC Repair": 1137,
+     "HVAC Replacement": 1318
+    },
+    "account_level": 272,
+    "shared_lists_attached": 0,
+    "live_keywords": 10,
+    "eligible": 10
+   },
+   "new_search_terms": [
+    {
+     "camp": "AC Repair",
+     "term": "ac repair near me",
+     "impr": 15,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "AC Repair",
+     "term": "air conditioner repair service",
+     "impr": 1,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "Gas Boiler Repair",
+     "term": "boiler repair near me",
+     "impr": 2,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "Gas Boiler Repair",
+     "term": "burnham boiler repair near me",
+     "impr": 2,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Installation",
+     "term": "comfort hvac near me",
+     "impr": 1,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Repair",
+     "term": "comfort hvac near me",
+     "impr": 1,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Repair",
+     "term": "duct repair near me",
+     "impr": 1,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Repair",
+     "term": "furnace repair near me",
+     "impr": 6,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Installation",
+     "term": "heating and air conditioning places near me",
+     "impr": 1,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Repair",
+     "term": "heating and air conditioning services",
+     "impr": 2,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Installation",
+     "term": "hvac companies near me",
+     "impr": 10,
+     "clicks": 1,
+     "cost": 29.73,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Installation",
+     "term": "hvac company near me",
+     "impr": 3,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Installation",
+     "term": "hvac contractor near me",
+     "impr": 1,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Repair",
+     "term": "hvac contractor near me",
+     "impr": 1,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Installation",
+     "term": "hvac near",
+     "impr": 2,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Installation",
+     "term": "hvac near me",
+     "impr": 9,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Repair",
+     "term": "hvac repair near me",
+     "impr": 1,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Installation",
+     "term": "hydronic radiant floor heating installers near me",
+     "impr": 1,
+     "clicks": 1,
+     "cost": 28.9,
+     "records": 0.0
+    },
+    {
+     "camp": "HVAC Installation",
+     "term": "local hvac company near me",
+     "impr": 2,
+     "clicks": 0,
+     "cost": 0.0,
+     "records": 0.0
+    }
+   ],
+   "lead_outcomes": null,
+   "cpc_test": {
+    "running": false,
+    "ceiling_micros": 30000000
+   }
+  }
+ ],
+ "rollback_executed": false,
+ "rollback_receipt": null
+}

@@ -1,0 +1,141 @@
+{
+ "run_local": "2026-08-22T01:23:31.485027-04:00",
+ "fingerprint": "BFB9FD367F639CA4",
+ "customer_id": "2401959466",
+ "identity": {
+  "name": "Ambient Cooling - Live",
+  "id": "2401959466",
+  "tz": "America/New_York",
+  "cur": "USD",
+  "manager": false,
+  "test": false,
+  "gate": "PASS"
+ },
+ "manager_links_before": {
+  "2815082755": "ACTIVE",
+  "3373711342": "ACTIVE"
+ },
+ "fingerprint_reproduces": true,
+ "budgets_before": {
+  "15787409435": {
+   "campaign": "24132507741",
+   "micros": 141450000,
+   "status": "ENABLED",
+   "bidding": "TARGET_SPEND"
+  },
+  "15787409438": {
+   "campaign": "24132507744",
+   "micros": 42760000,
+   "status": "ENABLED",
+   "bidding": "TARGET_SPEND"
+  },
+  "15787409441": {
+   "campaign": "24132507747",
+   "micros": 138160000,
+   "status": "ENABLED",
+   "bidding": "TARGET_SPEND"
+  },
+  "15787409444": {
+   "campaign": "24132507750",
+   "micros": 78950000,
+   "status": "ENABLED",
+   "bidding": "TARGET_SPEND"
+  },
+  "15787409447": {
+   "campaign": "24132507753",
+   "micros": 26320000,
+   "status": "ENABLED",
+   "bidding": "TARGET_SPEND"
+  }
+ },
+ "pacing": {
+  "mtd": 2756.06,
+  "days_left": 10,
+  "total_daily_after": 465.63,
+  "worst_case": 12068.66,
+  "headroom": 931.34,
+  "method": "MTD + (total daily budget x 2 overdelivery x remaining days)"
+ },
+ "settlement": {
+  "last_delivery_close": "2026-08-21T20:00:00-04:00",
+  "hours_since_close": 5.39,
+  "aug21_cost_now": 808.11,
+  "aug21_cost_at_2057_read": 808.11,
+  "restated": false,
+  "verdict": "SETTLED - value unchanged across two reads 5.39 h apart"
+ },
+ "validate_only": {
+  "status": "VALIDATE_OK",
+  "operations": 1
+ },
+ "mutation": {
+  "executed_local": "2026-08-22T01:23:35.407294-04:00",
+  "operations": 1,
+  "partial_failure": false,
+  "resource_names": [
+   "customers/2401959466/campaignBudgets/15787409441"
+  ],
+  "partial_failure_error": null
+ },
+ "budgets_after": {
+  "15787409435": {
+   "campaign": "24132507741",
+   "micros": 141450000,
+   "status": "ENABLED",
+   "bidding": "STANDARD",
+   "bid_strategy": "TARGET_SPEND",
+   "shared": false,
+   "refs": 1
+  },
+  "15787409438": {
+   "campaign": "24132507744",
+   "micros": 42760000,
+   "status": "ENABLED",
+   "bidding": "STANDARD",
+   "bid_strategy": "TARGET_SPEND",
+   "shared": false,
+   "refs": 1
+  },
+  "15787409441": {
+   "campaign": "24132507747",
+   "micros": 176150000,
+   "status": "ENABLED",
+   "bidding": "STANDARD",
+   "bid_strategy": "TARGET_SPEND",
+   "shared": false,
+   "refs": 1
+  },
+  "15787409444": {
+   "campaign": "24132507750",
+   "micros": 78950000,
+   "status": "ENABLED",
+   "bidding": "STANDARD",
+   "bid_strategy": "TARGET_SPEND",
+   "shared": false,
+   "refs": 1
+  },
+  "15787409447": {
+   "campaign": "24132507753",
+   "micros": 26320000,
+   "status": "ENABLED",
+   "bidding": "STANDARD",
+   "bid_strategy": "TARGET_SPEND",
+   "shared": false,
+   "refs": 1
+  }
+ },
+ "readback_asserts": {
+  "target budget == 176150000": true,
+  "other four budgets unchanged": true,
+  "all five campaigns still ENABLED": true,
+  "bidding strategy unchanged (TARGET_SPEND)": true,
+  "budget count unchanged": true,
+  "target budget still unshared, refcount 1": true
+ },
+ "readback_pass": true,
+ "manager_links_after": {
+  "2815082755": "ACTIVE",
+  "3373711342": "ACTIVE"
+ },
+ "manager_links_unchanged": true
+}

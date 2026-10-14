@@ -1,0 +1,109 @@
+{
+  "read_only": true,
+  "mutations_issued": 0,
+  "timestamp_account_local": "2026-08-27T17:58:06.951666-04:00",
+  "window": "2026-08-01..2026-08-27",
+  "A_campaign_totals": {
+    "per_campaign": {
+      "Power Washing": {
+        "impressions": 179,
+        "clicks": 10,
+        "cost": 343.8
+      },
+      "Power Washing #2": {
+        "impressions": 17,
+        "clicks": 3,
+        "cost": 104.85
+      }
+    },
+    "impressions": 196,
+    "clicks": 13,
+    "cost": 448.65
+  },
+  "B_search_terms_no_keyword_segment": {
+    "row_count": 58,
+    "impressions": 163,
+    "clicks": 10,
+    "cost": 318.05,
+    "distinct_terms": 45,
+    "distinct_ad_group_term_pairs": 58
+  },
+  "C_search_terms_with_keyword_segment": {
+    "row_count": 70,
+    "impressions": 163,
+    "clicks": 10,
+    "cost": 318.05,
+    "distinct_ad_group_term_pairs": 58,
+    "pairs_matched_by_more_than_one_keyword": 0
+  },
+  "D_keyword_view_totals": {
+    "impressions": 196,
+    "clicks": 13,
+    "cost": 448.65
+  },
+  "duplication_test": {
+    "B_vs_C_impressions": [
+      163,
+      163
+    ],
+    "B_vs_C_clicks": [
+      10,
+      10
+    ],
+    "B_vs_C_cost": [
+      318.05,
+      318.05
+    ],
+    "identical": true,
+    "verdict": "The keyword segment SPLITS metrics across rows, it does not duplicate them. Row counts differ; summed totals do not."
+  },
+  "coverage_gap_A_minus_B": {
+    "impressions": 33,
+    "clicks": 3,
+    "cost": 130.6,
+    "clicks_coverage_pct": 76.9,
+    "impressions_coverage_pct": 83.2,
+    "explanation": "search_term_view withholds queries that do not meet Google's privacy threshold, and same-day rows lag the campaign aggregate. A positive gap is expected and is NOT a defect. It means the corpus is a SUBSET of campaign activity, so corpus percentages must never be presented as account-wide percentages."
+  },
+  "buckets_recomputed": {
+    "COMMERCIAL_INDUSTRIAL": {
+      "pairs": 2,
+      "impressions": 6,
+      "clicks": 1,
+      "cost": 35.31
+    },
+    "EXCLUDED_SERVICE": {
+      "pairs": 2,
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0
+    },
+    "IN_SCOPE_SERVICE": {
+      "pairs": 51,
+      "impressions": 148,
+      "clicks": 9,
+      "cost": 282.74
+    },
+    "IN_SCOPE_SURFACE": {
+      "pairs": 2,
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0
+    },
+    "UNCLASSIFIED": {
+      "pairs": 1,
+      "impressions": 3,
+      "clicks": 0,
+      "cost": 0.0
+    }
+  },
+  "disputed_claim": {
+    "as_written_in_plan_k2": "90 of 100 clicks and $282.74 of $318.05",
+    "true_values": "9 of 10 clicks and $282.74 of $318.05",
+    "click_figures_were": "WRONG by a factor of 10",
+    "cost_figures_were": "CORRECT",
+    "root_cause": "A hand-written narrative string in the plan builder. The classifier itself printed the correct '9 clicks' in its bucket table; the sentence in the plan was typed as '90 of 100' and never re-derived from the data. It is not a units error, not impressions, not duplication, and not a reporting defect - it is a transcription error in a narrative field.",
+    "is_it_impressions": "NO. Impressions in the same buckets are 151 in-scope of 163 total, which matches neither 90 nor 100.",
+    "does_it_change_the_conclusion": "No. The in-scope SHARE is what the argument rests on and it is unchanged: 90.0% of corpus clicks and 88.9% of corpus cost are in scope. But the absolute base is 10 clicks, not 100, so the corpus is far thinner than the sentence implied and every percentage drawn from it carries wide uncertainty."
+  }
+}

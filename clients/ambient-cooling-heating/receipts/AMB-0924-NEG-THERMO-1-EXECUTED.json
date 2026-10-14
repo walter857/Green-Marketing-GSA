@@ -1,0 +1,66 @@
+{
+ "plan": "AMB-0924-NEG-THERMO-1",
+ "fingerprint": "27A2CBA6A008",
+ "started_local": "2026-09-24T17:53:45.000743-04:00",
+ "committed": {
+  "campaign_negatives": [
+   "customers/2401959466/campaignCriteria/24132507744~101196837",
+   "customers/2401959466/campaignCriteria/24132507744~118560915",
+   "customers/2401959466/campaignCriteria/24274160783~101196837",
+   "customers/2401959466/campaignCriteria/24274160783~118560915",
+   "customers/2401959466/campaignCriteria/24132507747~101196837",
+   "customers/2401959466/campaignCriteria/24132507747~118560915",
+   "customers/2401959466/campaignCriteria/24268690038~101196837",
+   "customers/2401959466/campaignCriteria/24268690038~118560915",
+   "customers/2401959466/campaignCriteria/24257819466~118560915",
+   "customers/2401959466/campaignCriteria/24257819463~118560915",
+   "customers/2401959466/campaignCriteria/24279798229~101196837",
+   "customers/2401959466/campaignCriteria/24279798229~118560915",
+   "customers/2401959466/campaignCriteria/24132507741~101196837",
+   "customers/2401959466/campaignCriteria/24132507741~118560915",
+   "customers/2401959466/campaignCriteria/24132507750~101196837",
+   "customers/2401959466/campaignCriteria/24132507750~118560915",
+   "customers/2401959466/campaignCriteria/24132507753~101196837",
+   "customers/2401959466/campaignCriteria/24132507753~118560915"
+  ],
+  "account_negatives_removed": [
+   "customers/2401959466/sharedCriteria/11252984411~10624201",
+   "customers/2401959466/sharedCriteria/11252984411~10624211"
+  ]
+ },
+ "stages": [
+  {
+   "label": "NEG-1 add campaign PHRASE negatives",
+   "ops": 18,
+   "results": [
+    "customers/2401959466/campaignCriteria/24132507744~101196837",
+    "customers/2401959466/campaignCriteria/24132507744~118560915",
+    "customers/2401959466/campaignCriteria/24274160783~101196837",
+    "customers/2401959466/campaignCriteria/24274160783~118560915",
+    "customers/2401959466/campaignCriteria/24132507747~101196837",
+    "customers/2401959466/campaignCriteria/24132507747~118560915",
+    "customers/2401959466/campaignCriteria/24268690038~101196837",
+    "customers/2401959466/campaignCriteria/24268690038~118560915",
+    "customers/2401959466/campaignCriteria/24257819466~118560915",
+    "customers/2401959466/campaignCriteria/24257819463~118560915",
+    "customers/2401959466/campaignCriteria/24279798229~101196837",
+    "customers/2401959466/campaignCriteria/24279798229~118560915",
+    "customers/2401959466/campaignCriteria/24132507741~101196837",
+    "customers/2401959466/campaignCriteria/24132507741~118560915",
+    "customers/2401959466/campaignCriteria/24132507750~101196837",
+    "customers/2401959466/campaignCriteria/24132507750~118560915",
+    "customers/2401959466/campaignCriteria/24132507753~101196837",
+    "customers/2401959466/campaignCriteria/24132507753~118560915"
+   ]
+  },
+  {
+   "label": "NEG-2 remove account-level thermostat negatives",
+   "ops": 2,
+   "results": [
+    "customers/2401959466/sharedCriteria/11252984411~10624201",
+    "customers/2401959466/sharedCriteria/11252984411~10624211"
+   ]
+  }
+ ],
+ "finished_local": "2026-09-24T17:53:45.939536-04:00"
+}

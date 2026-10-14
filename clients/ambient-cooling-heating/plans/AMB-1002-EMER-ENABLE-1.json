@@ -1,0 +1,98 @@
+{
+ "plan_name": "AMB-1002-EMER-ENABLE-1",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "approval_class": "enable",
+ "exact_service": "Emergency Heating Repair",
+ "work_order": "work-orders/work-order-emergency-heating-repair-lp-2026-10-01.yaml",
+ "campaign": {
+  "id": "24257819463",
+  "name": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09"
+ },
+ "ad_group": {
+  "id": "204129717047",
+  "name": "SKAG | Emergency Heating Repair"
+ },
+ "effective_url_after": "https://offer.ambientcoolingandheating.com/emergency-heating-repair/",
+ "follows": "AMB-1002-EMER-CREATE-1 AF13621050E2 (EXECUTED, readback 18/18)",
+ "unchanged": {
+  "budget": "$85/day 15885327972 (shared by all six repair ad groups - Emergency now competes for it)",
+  "bidding": "Maximize Clicks, $18 ceiling",
+  "schedule": "Mon-Fri 08:00-16:00",
+  "locations": "75 PRESENCE",
+  "devices": "tablet -100%",
+  "conversions": "unchanged",
+  "negatives": "unchanged; Heating/Furnace Repair keep PHRASE 'emergency' (routing)"
+ },
+ "policy_note": "Ads may still be UNDER REVIEW at execution; they serve only after Google approves them.",
+ "experiment_note": "Activating Emergency changes traffic and budget competition inside 24257819463; from this timestamp the repair comparison is configuration optimization, not a pure $18-ceiling test.",
+ "operations": [
+  {
+   "op": "ENABLE_AD",
+   "ad_group_id": "204129717047",
+   "ad_id": "826702584886"
+  },
+  {
+   "op": "ENABLE_AD",
+   "ad_group_id": "204129717047",
+   "ad_id": "826702584889"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717047",
+   "criterion_id": "3304047112",
+   "text": "emergency furnace repair",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717047",
+   "criterion_id": "320791640594",
+   "text": "emergency heat repair",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717047",
+   "criterion_id": "777693505",
+   "text": "emergency heater repair",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717047",
+   "criterion_id": "1734598708",
+   "text": "emergency heating repair",
+   "match": "PHRASE"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717047",
+   "criterion_id": "299713058575",
+   "text": "emergency heating repair",
+   "match": "EXACT"
+  },
+  {
+   "op": "ENABLE_KEYWORD",
+   "ad_group_id": "204129717047",
+   "criterion_id": "4213560696",
+   "text": "emergency furnace repair",
+   "match": "PHRASE"
+  },
+  {
+   "op": "REMOVE_AD_GROUP_LABEL",
+   "ad_group_id": "204129717047",
+   "label_id": "22294515713",
+   "label": "WAITING_LP"
+  },
+  {
+   "op": "REMOVE_AD_GROUP_LABEL",
+   "ad_group_id": "204129717047",
+   "label_id": "22294515722",
+   "label": "WAITING_AVAILABILITY"
+  }
+ ],
+ "operation_count": 10,
+ "fingerprint": "BFBD1315E210"
+}

@@ -1,0 +1,67 @@
+{
+ "plan": "AMB-1002-BUD-OCT-2",
+ "fingerprint": "A21B8F53ABDC",
+ "started_local": "2026-10-02T08:44:53.002922-04:00",
+ "results": [
+  "customers/2401959466/campaignBudgets/15787409438",
+  "customers/2401959466/campaignBudgets/15887323571",
+  "customers/2401959466/campaignBudgets/15787409441",
+  "customers/2401959466/campaignBudgets/15887323562",
+  "customers/2401959466/campaignBudgets/15885327975",
+  "customers/2401959466/campaignBudgets/15885327972",
+  "customers/2401959466/campaignBudgets/15887323565",
+  "customers/2401959466/campaignBudgets/15887323568"
+ ],
+ "readback": [
+  {
+   "campaign": "24132507744",
+   "expected": 31.92,
+   "got": 31.92,
+   "pass": true
+  },
+  {
+   "campaign": "24274160783",
+   "expected": 33.33,
+   "got": 33.33,
+   "pass": true
+  },
+  {
+   "campaign": "24132507747",
+   "expected": 33.33,
+   "got": 33.33,
+   "pass": true
+  },
+  {
+   "campaign": "24268690038",
+   "expected": 32.52,
+   "got": 32.52,
+   "pass": true
+  },
+  {
+   "campaign": "24257819466",
+   "expected": 30.26,
+   "got": 30.26,
+   "pass": true
+  },
+  {
+   "campaign": "24257819463",
+   "expected": 31.76,
+   "got": 31.76,
+   "pass": true
+  },
+  {
+   "campaign": "24279798229",
+   "expected": 33.33,
+   "got": 33.33,
+   "pass": true
+  },
+  {
+   "campaign": "24268690041",
+   "expected": 32.5,
+   "got": 32.5,
+   "pass": true
+  }
+ ],
+ "status": "EXECUTED",
+ "intervention_timestamp": "2026-10-02T08:44:54.356930-04:00"
+}

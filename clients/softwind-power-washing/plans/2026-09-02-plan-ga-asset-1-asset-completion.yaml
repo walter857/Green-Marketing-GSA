@@ -1,0 +1,62 @@
+# PLAN-GA-ASSET-1 - FINAL SEARCH ASSET COMPLETION
+# STATUS: BLOCKED - NOT FINGERPRINTED. NOT APPROVED. DO NOT EXECUTE.
+
+change_plan:
+  plan_id: PLAN-GA-ASSET-1
+  plan_title: Final search asset completion
+  approval_type: ASSETS
+  priority: P2
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: null
+  fingerprint_withheld_because: >-
+    Every remaining gap is blocked on a client-supplied fact or file. Nothing can be specified
+    exactly, so nothing can be fingerprinted.
+  target: {child_customer_id: '1521725229', campaign_ids: ['24103511039', '24145053510']}
+
+  live_read_2026_09_02:
+    campaign_level: {"STRUCTURED_SNIPPET": 2, "SITELINK": 8, "CALLOUT": 8, "CALL": 2}
+    customer_level: {"STRUCTURED_SNIPPET": 1, "SITELINK": 3, "CALLOUT": 4, "BUSINESS_LOGO": 1}
+    parity: 'COMPLETE per campaign - 4 sitelinks, 4 callouts, 1 structured snippet, 1 call asset'
+    do_not_recreate: true
+
+  gaps:
+    - gap: Business-name asset
+      status: BLOCKED
+      blocker: >-
+        The verified business identity is genuinely ambiguous. client.yaml records
+        "Softwind Powerwashing & Paver Sealing", the Google Ads account is named
+        "Softwind Power Washing", and every landing page currently renders
+        "Softwind Landscape & Masonry". Paver sealing is an EXCLUDED service. Guessing between
+        these would put an unverified trading name in a live ad.
+      needed_from_client: the exact legal or trading name to use in ads
+    - gap: Business logo asset
+      status: LIVE BUT NEEDS REVIEW
+      detail: >-
+        A BUSINESS_LOGO asset already exists at CUSTOMER level. It is not linked at campaign
+        level. Confirm it is the correct Power Washing logo before promoting it.
+    - gap: Image assets
+      status: BLOCKED
+      blocker: >-
+        A repository-wide search found NO approved, rights-cleared Softwind project images.
+        Stock imagery is not permitted without Walter's explicit approval, AI imagery may never
+        be used as completed-project proof, and a public website image is not rights-cleared
+        merely because it is published.
+      needed_from_client: rights-cleared photographs of completed Power Washing work
+    - gap: Call-asset schedule
+      status: BLOCKED
+      detail: >-
+        The single call asset 403335872180 stops at 17:00 while both campaigns run to 18:00. The
+        asset is SHARED by both campaigns, so editing its schedule rewrites hours everywhere it
+        is linked. client.yaml records can_answer_after_hours as UNKNOWN.
+      needed_from_client: whether (631) 502-7946 is answered 17:00-18:00 Mon-Fri
+    - gap: Location asset
+      status: DEFERRED
+      detail: Requires a Business Profile link decision. Not launch-critical.
+    - gap: Sitelink destinations
+      status: DEFERRED
+      detail: >-
+        Sitelinks point at softwindli.com rather than the offer subdomain, which splits
+        attribution. Real but not launch-critical; keep account-level sitelink cleanup separate
+        from additions.
+  approval_owner: Walter Correa

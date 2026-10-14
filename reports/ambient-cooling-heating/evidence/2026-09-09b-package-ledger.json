@@ -1,0 +1,157 @@
+{
+ "generated_local": "2026-09-09T18:06:44.030155-04:00",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "run": "2026-09-09 CORRECTION RUN",
+ "mutations_executed": 0,
+ "superseded": {
+  "AMB-0909-CPC-1": {
+   "fingerprint": "46C39C6B7091",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE",
+   "replaced_by": "AMB-0909B-CPC-INST-1 (DE376F91F449)",
+   "reason": "Bundled HVAC Installation with HVAC Repair. The HVAC Repair $60 recommendation is withdrawn: $36.47 modelled CPC is ABOVE the $32 optimistic economic band, the $60 model retains only 1 of 4 visible conversions, and its modelled raw CPA of $474.06 exceeds the $250 maximum CPQL. Installation is re-issued alone.",
+   "object_count": 2,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-CPC-1.json",
+   "plan_file_sha256": "b3cd07ed20241baece975965ad20da61e7668fcf9e0e57abf5f78d3ec722588b",
+   "plan_file_preserved_unmodified": true,
+   "validate_only_receipt": "receipts/validate-only/AMB-0909-CPC-1-2026-09-09.json"
+  },
+  "AMB-0909-BUD-1": {
+   "fingerprint": "D448BFDE4650",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE",
+   "replaced_by": "AMB-0909B-BUD-1 (752BF95EBD7C)",
+   "reason": "Used a 30-day month. Google applies 30.4. $433.33 x 30.4 = $13,173.23, a $173.23 breach of the $13,000 maximum, so the package was NOT compliant as claimed. It also raised HVAC Installation's budget on a 53.16% lost-IS(budget) figure contaminated by the 'hvac installers' keyword period; the clean figure is 4.38%.",
+   "object_count": 2,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-BUD-1.json",
+   "plan_file_sha256": "0de38741fbfe2fce14b04765bf6dc652d8ce534c5bb22b0ccc975589243526a3",
+   "plan_file_preserved_unmodified": true,
+   "validate_only_receipt": "receipts/validate-only/AMB-0909-BUD-1-2026-09-09.json"
+  },
+  "AMB-0909-NEG-ADD-1": {
+   "fingerprint": "23BE8FF0F24C",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE",
+   "replaced_by": "AMB-0909B-COMP-1 (05FBCBD34B4A)",
+   "reason": "Contained \"sq ft house\" and [how much is hvac system], which are installation sizing and pricing research from prospective buyers, and two unverified entities.",
+   "object_count": 6,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-NEG-ADD-1.json",
+   "plan_file_sha256": "7fff9421599f8c44a90425daa3a0c2f68cdfd01fdedc181d2afc388f8ada4123",
+   "plan_file_preserved_unmodified": true,
+   "validate_only_receipt": "receipts/validate-only/AMB-0909-NEG-ADD-1-2026-09-09.json"
+  },
+  "AMB-0909-NEG-RM-1": {
+   "fingerprint": "CE289F3508A2",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE",
+   "replaced_by": "AMB-0909B-NEG-A (18143479027D) covers only the high-confidence subset; packages B, C and D are HOLD with no operations",
+   "reason": "89 bulk removals in one package mixed four different intents. It also removed six supply-house/corporate/location EXACT negatives that should be retained, and opened 11 manufacturers of which only York is evidenced on the live website.",
+   "object_count": 89,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-NEG-RM-1.json",
+   "plan_file_sha256": "53024fdd15d3d34cc5263d39f6feed117aefc38239e806ef7c422a4f1eb4583d",
+   "plan_file_preserved_unmodified": true,
+   "validate_only_receipt": "receipts/validate-only/AMB-0909-NEG-RM-1-2026-09-09.json"
+  },
+  "AMB-0909-NEG-RM-2": {
+   "fingerprint": "A435FA09AC97",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE",
+   "replaced_by": "AMB-0909B-NEG-A (18143479027D) takes only account-level BROAD 'commercial'",
+   "reason": "18 account-level removals opened 12 manufacturer tokens plus 'al', 'american' and 'mr' with no brand-eligibility evidence and no routing. Only 'commercial' survives on verified evidence.",
+   "object_count": 18,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-NEG-RM-2.json",
+   "plan_file_sha256": "41c6b22e4ef95fd972f3f6b2405c3e7e9de7ab52c90dedf92855422cfa349aa4",
+   "plan_file_preserved_unmodified": true,
+   "validate_only_receipt": "receipts/validate-only/AMB-0909-NEG-RM-2-2026-09-09.json"
+  },
+  "AMB-0909-ADS-1": {
+   "fingerprint": "11A79347A296",
+   "status": "AWAITING APPROVAL - VALID, DO NOT EXECUTE THIS RUN",
+   "replaced_by": "not superseded",
+   "reason": "Re-verified 2026-09-09: both ads still ENABLED + DISAPPROVED (FULLY_LIMITED), each ad group retains 2 ENABLED + APPROVED RSAs, and the update mask is status-only. This is inert-status cleanup, NOT a CTR or delivery improvement.",
+   "object_count": 2,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-ADS-1.json",
+   "plan_file_sha256": "684f40f7021d2ced4ed2e5ac0874cdddf0b1bdb7a7478cf82257f09584c1c543",
+   "plan_file_preserved_unmodified": true,
+   "validate_only_receipt": "receipts/validate-only/AMB-0909-ADS-1-2026-09-09.json"
+  }
+ },
+ "replacements": {
+  "AMB-0909B-BUD-1": {
+   "fingerprint": "752BF95EBD7C",
+   "status": "VALIDATED - AWAITING APPROVAL",
+   "object_count": 2,
+   "approval_class": "reversible-budget-change",
+   "supersedes": "AMB-0909-BUD-1 (D448BFDE4650) - SUPERSEDED, DO_NOT_EXECUTE",
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909B-BUD-1.json",
+   "plan_file_sha256": "3011cf29a7cf01fc11733584e38d200c953791354d8d27d90e68a103a7aea814",
+   "validate_only_receipt": "receipts/validate-only/AMB-0909B-BUD-1-2026-09-09b.json"
+  },
+  "AMB-0909B-CPC-INST-1": {
+   "fingerprint": "DE376F91F449",
+   "status": "VALIDATED - AWAITING APPROVAL",
+   "object_count": 1,
+   "approval_class": "reversible-setting-change",
+   "supersedes": "AMB-0909-CPC-1 (46C39C6B7091) - SUPERSEDED, DO_NOT_EXECUTE (it bundled HVAC Repair on a recommendation now withdrawn)",
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909B-CPC-INST-1.json",
+   "plan_file_sha256": "78b5869107766331eefcb361ed510531b756da13fe9371c625eb184cfa38bedd",
+   "validate_only_receipt": "receipts/validate-only/AMB-0909B-CPC-INST-1-2026-09-09b.json"
+  },
+  "AMB-0909B-NEG-A": {
+   "fingerprint": "18143479027D",
+   "status": "VALIDATED - AWAITING APPROVAL",
+   "object_count": 16,
+   "approval_class": "DESTRUCTIVE-removal",
+   "supersedes": "part of AMB-0909-NEG-RM-1 (CE289F3508A2) and AMB-0909-NEG-RM-2 (A435FA09AC97) - both SUPERSEDED, DO_NOT_EXECUTE",
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909B-NEG-A.json",
+   "plan_file_sha256": "d8d7429bcfae2782235aba718b8fed377cdaad8b0486e15a78af8112d93ef10a",
+   "validate_only_receipt": "receipts/validate-only/AMB-0909B-NEG-A-2026-09-09b.json"
+  },
+  "AMB-0909B-COMP-1": {
+   "fingerprint": "05FBCBD34B4A",
+   "status": "VALIDATED - AWAITING APPROVAL",
+   "object_count": 3,
+   "approval_class": "reversible-addition",
+   "supersedes": "AMB-0909-NEG-ADD-1 (23BE8FF0F24C) - SUPERSEDED, DO_NOT_EXECUTE",
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909B-COMP-1.json",
+   "plan_file_sha256": "f217c73f29f5ea0e352f2a45460e63f21b643b26f6a4bed4dbb35cb97e2da44e",
+   "validate_only_receipt": "receipts/validate-only/AMB-0909B-COMP-1-2026-09-09b.json"
+  }
+ },
+ "hold_no_operations": {
+  "Package B - manufacturers": "NO OPERATIONS. Ambient's live website names only YORK. 'york' is not blocked at token level anywhere, so nothing needs removing. The 11 blocked manufacturer tokens stay blocked until the client confirms which brands they install or service. The six supply-house/corporate/location EXACT negatives are RETAINED, as are ~40 multiword manufacturer price/dealer negatives.",
+  "Package C - additional services": "NO OPERATIONS. The live site advertises air duct cleaning (lead-form service picker), drying & dehumidification (dedicated page) and geothermal HVAC (dedicated page). Thermostats appear in body copy only; 'humidifier' is absent entirely. None of these has a paid campaign, ad group or landing page, so opening the terms across the five would route the demand to the wrong page.",
+  "Package D - dealer and installer": "NO OPERATIONS. [daikin cerca de mi] needs Spanish landing-page handling that does not exist; [trane authorized dealers near me] and [trane installers near me] need confirmed Trane eligibility; [geothermal maryland] is a real service but has no destination in the five campaigns."
+ },
+ "fingerprint_disjointness_verified": true,
+ "unchanged_proof": {
+  "campaigns_non_removed": 23,
+  "campaigns_enabled": 5,
+  "campaign_negatives_enabled_on_five": 6160,
+  "account_level_set_members": 272,
+  "geo_targets_on_five": 375,
+  "ad_schedules_on_five": 30,
+  "ip_blocks": 2796,
+  "shared_sets": 17,
+  "conversion_actions_non_removed": 16,
+  "cpc_ceilings": {
+   "AC Repair": 25000000,
+   "Gas Boiler Repair": 0,
+   "HVAC Installation": 30000000,
+   "HVAC Repair": 25000000,
+   "HVAC Replacement": 0
+  },
+  "five_budgets": {
+   "15787409435": 141.45,
+   "15787409438": 42.76,
+   "15787409441": 176.15,
+   "15787409444": 78.95,
+   "15787409447": 26.32
+  },
+  "daily_total": 465.63,
+  "descriptive_name": "Ambient Cooling - Live",
+  "tracking_template_is_clickcease": true,
+  "manager_links": {
+   "2815082755": "ACTIVE",
+   "3373711342": "ACTIVE"
+  },
+  "checked_local": "2026-09-09T18:06:53.288375-04:00",
+  "mutations_executed_this_run": 0
+ }
+}

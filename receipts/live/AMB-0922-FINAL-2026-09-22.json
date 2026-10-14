@@ -1,0 +1,826 @@
+{
+ "when": "2026-09-21T12:24:51.063813-04:00",
+ "read_only": true,
+ "FAIL": 0,
+ "assertions": [
+  {
+   "check": "enabled total <= 325",
+   "pass": true,
+   "detail": "290.0"
+  },
+  {
+   "check": "monthly equivalent <= 10000",
+   "pass": true,
+   "detail": "8816.0"
+  },
+  {
+   "check": "cooling 24132507741 PAUSED",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "cooling 24132507750 PAUSED",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "cooling 24132507753 PAUSED",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HVAC Installation campaign still ENABLED for Commercial",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "residential HVAC Installation ad group PAUSED",
+   "pass": true,
+   "detail": "('SKAG | HVAC Installation', 'PAUSED')"
+  },
+  {
+   "check": "Commercial HVAC Installation ad group still ENABLED",
+   "pass": true,
+   "detail": "('SKAG | Commercial HVAC Installation', 'ENABLED')"
+  },
+  {
+   "check": "READY enabled SKAG | Furnace Repair",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Ductless Heating Installation",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Gas Boiler Repair",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Heating Repair",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Gas Furnace Repair",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Electric Furnace Repair",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Ductless Heating Repair",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Furnace Replacement",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Furnace Installation",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Heating Installation",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Heating Replacement",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Boiler Repair",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Furnace Maintenance",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Heating Maintenance",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Furnace Tune-Up",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Heating Tune-Up",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Heating System Inspection",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "READY enabled SKAG | Geothermal Heat Pump",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "HELD not enabled SKAG | Emergency Heating Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Emergency Heating Repair",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | No Heat Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | No Heat Repair",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | Heat Pump Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Heat Pump Repair",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | Heat Pump Replacement",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Heat Pump Replacement",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | Heat Pump Installation",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Heat Pump Installation",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | Heat Pump Maintenance",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Heat Pump Maintenance",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | Boiler Replacement",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Boiler Replacement",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | Boiler Installation",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Boiler Installation",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | Boiler Maintenance",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Boiler Maintenance",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | Thermostat Repair",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Thermostat Repair",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | Thermostat Replacement",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Thermostat Replacement",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "HELD not enabled SKAG | Smart Thermostat Installation",
+   "pass": true,
+   "detail": "PAUSED"
+  },
+  {
+   "check": "HELD has no enabled ad SKAG | Smart Thermostat Installation",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "check": "September projection under cap",
+   "pass": true,
+   "detail": "4646.4"
+  }
+ ],
+ "enabled_campaigns": {
+  "24132507744": {
+   "name": "Search | NonBrand | Boiler Services | Central MD | BOFU | 2026-09",
+   "daily": 45.0,
+   "ceiling": 60.0,
+   "primary_status": "LIMITED",
+   "reasons": [
+    "HAS_ADS_DISAPPROVED"
+   ]
+  },
+  "24132507747": {
+   "name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "daily": 20.0,
+   "ceiling": 30.0,
+   "primary_status": "LIMITED",
+   "reasons": [
+    "BIDDING_STRATEGY_LIMITED",
+    "HAS_ADS_DISAPPROVED"
+   ]
+  },
+  "24257819463": {
+   "name": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "daily": 85.0,
+   "ceiling": 42.0,
+   "primary_status": "NOT_ELIGIBLE",
+   "reasons": [
+    "AD_GROUPS_PAUSED",
+    "KEYWORDS_PAUSED",
+    "AD_GROUP_ADS_PAUSED"
+   ]
+  },
+  "24257819466": {
+   "name": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "daily": 60.0,
+   "ceiling": 46.0,
+   "primary_status": "NOT_ELIGIBLE",
+   "reasons": [
+    "AD_GROUPS_PAUSED",
+    "KEYWORDS_PAUSED",
+    "AD_GROUP_ADS_PAUSED"
+   ]
+  },
+  "24268690038": {
+   "name": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "daily": 15.0,
+   "ceiling": 35.0,
+   "primary_status": "LEARNING",
+   "reasons": [
+    "BIDDING_STRATEGY_LEARNING"
+   ]
+  },
+  "24274160783": {
+   "name": "Search | NonBrand | Geothermal Heat Pump | Central MD | BOFU | 2026-09",
+   "daily": 20.0,
+   "ceiling": 38.0,
+   "primary_status": "LEARNING",
+   "reasons": [
+    "BIDDING_STRATEGY_LEARNING"
+   ]
+  },
+  "24279798229": {
+   "name": "Search | NonBrand | Heating Maintenance & Inspection | Central MD | BOFU | 2026-09",
+   "daily": 45.0,
+   "ceiling": 32.0,
+   "primary_status": "LEARNING",
+   "reasons": [
+    "BIDDING_STRATEGY_LEARNING"
+   ]
+  }
+ },
+ "enabled_daily_total": 290.0,
+ "ad_groups": [
+  {
+   "ad_group": "SKAG | Furnace Repair",
+   "ad_group_id": "199797580706",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 8,
+   "keywords_eligible": 8,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 2,
+   "ads_under_review": 0,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "can_serve": true,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Ductless Heating Installation",
+   "ad_group_id": "199797580746",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 8,
+   "keywords_eligible": 8,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 2,
+   "ads_under_review": 0,
+   "final_url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "can_serve": true,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Gas Boiler Repair",
+   "ad_group_id": "202339087594",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 2,
+   "keywords_eligible": 2,
+   "ads_total": 4,
+   "ads_enabled": 2,
+   "ads_approved": 2,
+   "ads_under_review": 0,
+   "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+   "can_serve": true,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Heating Repair",
+   "ad_group_id": "204129717007",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 6,
+   "keywords_eligible": 6,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Emergency Heating Repair",
+   "ad_group_id": "204129717047",
+   "verdict": "HOLD - SERVICE OFFERING ",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 5,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": null,
+   "can_serve": false,
+   "launch_gate": "Ambient publishes Mon-Fri 08:00-16:00 and is CLOSED Saturday and Sunday (contact page text and schema.org OpeningHoursSpecification, read 2026-09-22). The owner confirms calls are answered during business hours only. An emergency searcher expects availability this business does not offer, so the ad group is built and held. RSA payload is prepared but deliberately makes NO availability, dispatch, arrival-time or same-day promise; it must not be uploaded until both a destination and a verified emergency offering exist."
+  },
+  {
+   "ad_group": "SKAG | No Heat Repair",
+   "ad_group_id": "204129717087",
+   "verdict": "HOLD - SERVICE OFFERING ",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 4,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": null,
+   "can_serve": false,
+   "launch_gate": "Same gate as Emergency Heating Repair. A 'no heat' searcher in winter expects a same-day visit; Ambient answers Mon-Fri 08:00-16:00 only. Held."
+  },
+  {
+   "ad_group": "SKAG | Gas Furnace Repair",
+   "ad_group_id": "204129717247",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 2,
+   "keywords_eligible": 2,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Electric Furnace Repair",
+   "ad_group_id": "204129717287",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 2,
+   "keywords_eligible": 2,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "can_serve": false,
+   "launch_gate": "client.yaml still lists 'Electric furnace repair' under services_capability_not_verified. The owner's service list places it in scope and instructs no reconfirmation, so it is built and enabled; the capability flag is left in client.yaml as an open item rather than silently cleared."
+  },
+  {
+   "ad_group": "SKAG | Heat Pump Repair",
+   "ad_group_id": "204129717327",
+   "verdict": "HOLD - DESTINATION BLOCK",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 4,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "can_serve": false,
+   "launch_gate": "The heat-pumps URL fails Google's destination check: DESTINATION_NOT_WORKING, 0/3 trials on 2026-09-22, a fourth consecutive failing day, while EIGHT other Ambient destinations passed 3/3 in the same run with the IDENTICAL ad body. The page itself is healthy (HTTP 200 desktop and mobile, correct H1, working form). The API rejects any ad carrying this URL, so the RSA payloads below are PREPARED, NOT CREATED. No URL variant is substituted. Remedy is a policy re-review requested in the Google Ads interface."
+  },
+  {
+   "ad_group": "SKAG | Heat Pump Replacement",
+   "ad_group_id": "204129717487",
+   "verdict": "HOLD - DESTINATION BLOCK",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 3,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "can_serve": false,
+   "launch_gate": "The heat-pumps URL fails Google's destination check: DESTINATION_NOT_WORKING, 0/3 trials on 2026-09-22, a fourth consecutive failing day, while EIGHT other Ambient destinations passed 3/3 in the same run with the IDENTICAL ad body. The page itself is healthy (HTTP 200 desktop and mobile, correct H1, working form). The API rejects any ad carrying this URL, so the RSA payloads below are PREPARED, NOT CREATED. No URL variant is substituted. Remedy is a policy re-review requested in the Google Ads interface."
+  },
+  {
+   "ad_group": "SKAG | Heat Pump Installation",
+   "ad_group_id": "204129717527",
+   "verdict": "HOLD - DESTINATION BLOCK",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 3,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "can_serve": false,
+   "launch_gate": "The heat-pumps URL fails Google's destination check: DESTINATION_NOT_WORKING, 0/3 trials on 2026-09-22, a fourth consecutive failing day, while EIGHT other Ambient destinations passed 3/3 in the same run with the IDENTICAL ad body. The page itself is healthy (HTTP 200 desktop and mobile, correct H1, working form). The API rejects any ad carrying this URL, so the RSA payloads below are PREPARED, NOT CREATED. No URL variant is substituted. Remedy is a policy re-review requested in the Google Ads interface."
+  },
+  {
+   "ad_group": "SKAG | Heat Pump Maintenance",
+   "ad_group_id": "204129717567",
+   "verdict": "HOLD - DESTINATION BLOCK",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 3,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/heat-pumps/",
+   "can_serve": false,
+   "launch_gate": "The heat-pumps URL fails Google's destination check: DESTINATION_NOT_WORKING, 0/3 trials on 2026-09-22, a fourth consecutive failing day, while EIGHT other Ambient destinations passed 3/3 in the same run with the IDENTICAL ad body. The page itself is healthy (HTTP 200 desktop and mobile, correct H1, working form). The API rejects any ad carrying this URL, so the RSA payloads below are PREPARED, NOT CREATED. No URL variant is substituted. Remedy is a policy re-review requested in the Google Ads interface."
+  },
+  {
+   "ad_group": "SKAG | Ductless Heating Repair",
+   "ad_group_id": "204129717727",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 5,
+   "keywords_eligible": 5,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/cooling-services/mini-splits/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Furnace Replacement",
+   "ad_group_id": "204129717767",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 4,
+   "keywords_eligible": 4,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Furnace Installation",
+   "ad_group_id": "204129717807",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 3,
+   "keywords_eligible": 3,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-installation/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Heating Installation",
+   "ad_group_id": "204129717967",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 4,
+   "keywords_eligible": 4,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-installation/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Heating Replacement",
+   "ad_group_id": "204129718007",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 5,
+   "keywords_eligible": 5,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Boiler Repair",
+   "ad_group_id": "204129718047",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 4,
+   "keywords_eligible": 4,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/boiler-repair/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Boiler Replacement",
+   "ad_group_id": "204129718207",
+   "verdict": "HOLD - NO ADEQUATE PAGE",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 4,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": null,
+   "can_serve": false,
+   "launch_gate": "The boiler-repair page has ZERO real installation sentences and ZERO real replacement sentences once nav and footer are excluded; its only maintenance hits are the phrase 'boiler repair services'. It is a repair page. RSA payload PREPARED, awaiting the dedicated boiler installation / replacement / maintenance page."
+  },
+  {
+   "ad_group": "SKAG | Boiler Installation",
+   "ad_group_id": "204129718247",
+   "verdict": "HOLD - NO ADEQUATE PAGE",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 3,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": null,
+   "can_serve": false,
+   "launch_gate": "The boiler-repair page has ZERO real installation sentences and ZERO real replacement sentences once nav and footer are excluded; its only maintenance hits are the phrase 'boiler repair services'. It is a repair page. RSA payload PREPARED, awaiting the dedicated boiler installation / replacement / maintenance page."
+  },
+  {
+   "ad_group": "SKAG | Boiler Maintenance",
+   "ad_group_id": "204129718287",
+   "verdict": "HOLD - NO ADEQUATE PAGE",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 4,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": null,
+   "can_serve": false,
+   "launch_gate": "The boiler-repair page has ZERO real installation sentences and ZERO real replacement sentences once nav and footer are excluded; its only maintenance hits are the phrase 'boiler repair services'. It is a repair page. RSA payload PREPARED, awaiting the dedicated boiler installation / replacement / maintenance page."
+  },
+  {
+   "ad_group": "SKAG | Furnace Maintenance",
+   "ad_group_id": "204129718447",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 3,
+   "keywords_eligible": 3,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/furnace-repair/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Heating Maintenance",
+   "ad_group_id": "204129718487",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 3,
+   "keywords_eligible": 3,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Furnace Tune-Up",
+   "ad_group_id": "204129718527",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 2,
+   "keywords_eligible": 2,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Heating Tune-Up",
+   "ad_group_id": "204129718687",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 2,
+   "keywords_eligible": 2,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Heating System Inspection",
+   "ad_group_id": "204129718727",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 4,
+   "keywords_eligible": 4,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/heating-services/",
+   "can_serve": false,
+   "launch_gate": null
+  },
+  {
+   "ad_group": "SKAG | Thermostat Repair",
+   "ad_group_id": "204129718767",
+   "verdict": "HOLD - NO PAGE",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "PAUSED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 2,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": null,
+   "can_serve": false,
+   "launch_gate": "Capability is CONFIRMED by the owner (2026-09-22), which clears the previous capability gate. The remaining blocker is purely the destination: NO page on either domain covers thermostat work as a service. The nearest mention is the offer HVAC Repair page listing 'thermostat problems' as a diagnostic symptom, which is not a thermostat service page. RSA payload PREPARED, awaiting URL. No brand is named in any headline, because brands serviced are not verified."
+  },
+  {
+   "ad_group": "SKAG | Thermostat Replacement",
+   "ad_group_id": "204129718927",
+   "verdict": "HOLD - NO PAGE",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "PAUSED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 3,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": null,
+   "can_serve": false,
+   "launch_gate": "Capability is CONFIRMED by the owner (2026-09-22), which clears the previous capability gate. The remaining blocker is purely the destination: NO page on either domain covers thermostat work as a service. The nearest mention is the offer HVAC Repair page listing 'thermostat problems' as a diagnostic symptom, which is not a thermostat service page. RSA payload PREPARED, awaiting URL. No brand is named in any headline, because brands serviced are not verified."
+  },
+  {
+   "ad_group": "SKAG | Smart Thermostat Installation",
+   "ad_group_id": "204129718967",
+   "verdict": "HOLD - NO PAGE",
+   "ad_group_status": "PAUSED",
+   "campaign_status": "PAUSED",
+   "keywords_enabled": 0,
+   "keywords_eligible": 3,
+   "ads_total": 0,
+   "ads_enabled": 0,
+   "ads_approved": 0,
+   "ads_under_review": 0,
+   "final_url": null,
+   "can_serve": false,
+   "launch_gate": "Capability is CONFIRMED by the owner (2026-09-22), which clears the previous capability gate. The remaining blocker is purely the destination: NO page on either domain covers thermostat work as a service. The nearest mention is the offer HVAC Repair page listing 'thermostat problems' as a diagnostic symptom, which is not a thermostat service page. RSA payload PREPARED, awaiting URL. No brand is named in any headline, because brands serviced are not verified."
+  },
+  {
+   "ad_group": "SKAG | Geothermal Heat Pump",
+   "ad_group_id": "204129719007",
+   "verdict": "READY",
+   "ad_group_status": "ENABLED",
+   "campaign_status": "ENABLED",
+   "keywords_enabled": 5,
+   "keywords_eligible": 5,
+   "ads_total": 2,
+   "ads_enabled": 2,
+   "ads_approved": 0,
+   "ads_under_review": 2,
+   "final_url": "https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/",
+   "can_serve": false,
+   "launch_gate": null
+  }
+ ],
+ "can_serve_count": 3,
+ "under_review_ads": 30,
+ "september": {
+  "mtd": 1746.4,
+  "days_left": 10,
+  "remaining_allowance": 8253.6,
+  "projection_worst_case": 4646.4,
+  "projection_plus_reserve": 5471.76,
+  "under_cap": true
+ },
+ "change_events": {}
+}

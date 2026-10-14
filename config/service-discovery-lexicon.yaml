@@ -1,0 +1,532 @@
+# Read-only service-discovery lexicon.
+#
+# These terms are research prompts for classifying evidence that already exists
+# in a live account. A match proves only that the account mentions a phrase. It
+# is never proof that the client sells the service, and it never replaces the
+# exact service the user confirms before an audit, draft, build, or write.
+
+lexicon_version: 1
+
+services:
+  # ---------------------------------------------------------------- landscaping
+  - canonical: landscape design
+    vertical: landscaping
+    synonyms:
+      - landscape design
+      - landscaping design
+      - landscape designer
+      - landscape design build
+      - design build landscape
+      - backyard design
+      - yard design
+      - landscape architect
+  - canonical: landscape installation
+    vertical: landscaping
+    synonyms:
+      - landscape installation
+      - landscaping installation
+      - landscape install
+      - landscape renovation
+      - landscape makeover
+      - yard makeover
+      - front yard landscaping
+      - backyard landscaping
+  - canonical: general landscaping services
+    vertical: landscaping
+    generic: true
+    synonyms:
+      - landscaping
+      - landscaper
+      - landscapers
+      - landscaping company
+      - landscaping contractor
+      - landscaping services
+      - landscape company
+  - canonical: lawn care and mowing
+    vertical: landscaping
+    synonyms:
+      - lawn care
+      - lawn maintenance
+      - lawn service
+      - lawn mowing
+      - mowing service
+      - grass cutting
+      - yard maintenance
+      - yard care
+  - canonical: lawn fertilization and weed control
+    vertical: landscaping
+    synonyms:
+      - lawn fertilization
+      - fertilization
+      - weed control
+      - lawn treatment
+      - lawn fertilizer
+      - weed and feed
+      - grub control
+  - canonical: sod installation
+    vertical: landscaping
+    synonyms:
+      - sod installation
+      - sod install
+      - sod replacement
+      - new sod
+      - sodding
+      - lay sod
+  - canonical: artificial turf installation
+    vertical: landscaping
+    synonyms:
+      - artificial turf
+      - synthetic turf
+      - artificial grass
+      - synthetic grass
+      - turf installation
+      - turf install
+      - pet turf
+  - canonical: sprinkler and irrigation repair
+    vertical: landscaping
+    synonyms:
+      - sprinkler repair
+      - irrigation repair
+      - sprinkler system repair
+      - irrigation system repair
+      - sprinkler leak
+      - irrigation leak
+      - leak repair
+      - sprinkler head repair
+      - broken sprinkler head
+      - valve repair
+      - backflow repair
+      - sprinkler troubleshooting
+      - sprinkler system troubleshooting
+      - sprinklers not working
+      - sprinkler system not working
+      - sprinkler zone not working
+      - stuck zone
+  - canonical: irrigation and sprinkler system installation
+    vertical: landscaping
+    synonyms:
+      - irrigation installation
+      - irrigation system installation
+      - sprinkler installation
+      - sprinkler system installation
+      - new sprinkler system
+      - irrigation design
+      - drip irrigation
+  - canonical: irrigation winterization
+    vertical: landscaping
+    synonyms:
+      - irrigation winterization
+      - sprinkler winterization
+      - winterize sprinkler
+      - winterize irrigation
+      - sprinkler blowout
+      - system blowout
+  - canonical: irrigation and sprinkler systems (service not specified)
+    vertical: landscaping
+    generic: true
+    synonyms:
+      - irrigation
+      - irrigation service
+      - irrigation system
+      - irrigation company
+      - irrigation contractor
+      - sprinkler
+      - sprinkler system
+      - sprinkler service
+      - lawn irrigation
+  - canonical: yard drainage
+    vertical: landscaping
+    synonyms:
+      - yard drainage
+      - drainage solution
+      - drainage system
+      - drainage installation
+      - french drain
+      - drain installation
+      - standing water
+  - canonical: grading and leveling
+    vertical: landscaping
+    synonyms:
+      - yard grading
+      - land grading
+      - lawn leveling
+      - yard leveling
+      - regrading
+      - soil grading
+  - canonical: landscape lighting
+    vertical: landscaping
+    synonyms:
+      - landscape lighting
+      - outdoor lighting
+      - low voltage lighting
+      - garden lighting
+      - path lighting
+  - canonical: tree and shrub services
+    vertical: landscaping
+    synonyms:
+      - tree service
+      - tree trimming
+      - tree removal
+      - tree pruning
+      - tree planting
+      - shrub trimming
+      - shrub planting
+      - hedge trimming
+      - bush trimming
+      - stump grinding
+      - stump removal
+  - canonical: mulch and bed maintenance
+    vertical: landscaping
+    synonyms:
+      - mulch installation
+      - mulching
+      - mulch delivery
+      - flower bed
+      - landscape bed
+      - bed maintenance
+      - bed edging
+      - landscape edging
+  - canonical: aeration and overseeding
+    vertical: landscaping
+    synonyms:
+      - lawn aeration
+      - core aeration
+      - aeration
+      - overseeding
+      - overseed
+  - canonical: commercial grounds maintenance
+    vertical: landscaping
+    synonyms:
+      - commercial landscaping
+      - commercial lawn
+      - grounds maintenance
+      - commercial grounds
+      - hoa landscaping
+      - property maintenance
+  - canonical: drought-tolerant and native landscaping
+    vertical: landscaping
+    synonyms:
+      - xeriscape
+      - xeriscaping
+      - drought tolerant landscaping
+      - native landscaping
+      - water wise landscaping
+
+  # --------------------------------------------------------------- hardscaping
+  - canonical: paver patio installation
+    vertical: hardscaping
+    synonyms:
+      - paver patio
+      - patio paver
+      - paver installation
+      - pavers
+      - brick patio
+      - stone patio
+      - patio installation
+      - patio builder
+      - patio contractor
+      - patio construction
+  - canonical: retaining walls
+    vertical: hardscaping
+    synonyms:
+      - retaining wall
+      - seat wall
+      - garden wall
+      - block wall
+      - stone wall
+  - canonical: walkways and pathways
+    vertical: hardscaping
+    synonyms:
+      - walkway
+      - paver walkway
+      - pathway
+      - garden path
+      - sidewalk installation
+      - stepping stone
+  - canonical: driveway installation
+    vertical: hardscaping
+    synonyms:
+      - driveway pavers
+      - paver driveway
+      - driveway installation
+      - driveway replacement
+      - driveway contractor
+  - canonical: outdoor kitchens
+    vertical: hardscaping
+    synonyms:
+      - outdoor kitchen
+      - built in grill
+      - outdoor bar
+      - outdoor grill station
+  - canonical: fire pits and outdoor fireplaces
+    vertical: hardscaping
+    synonyms:
+      - fire pit
+      - firepit
+      - outdoor fireplace
+      - fire feature
+  - canonical: pool decks and surrounds
+    vertical: hardscaping
+    synonyms:
+      - pool deck
+      - pool patio
+      - pool coping
+      - pool surround
+  - canonical: concrete work
+    vertical: hardscaping
+    synonyms:
+      - concrete patio
+      - stamped concrete
+      - concrete driveway
+      - concrete contractor
+      - concrete installation
+      - concrete work
+      - concrete slab
+  - canonical: masonry and stonework
+    vertical: hardscaping
+    synonyms:
+      - masonry
+      - stonework
+      - stone work
+      - brickwork
+      - brick work
+      - masonry repair
+      - flagstone
+  - canonical: pergolas and patio covers
+    vertical: hardscaping
+    synonyms:
+      - pergola
+      - patio cover
+      - covered patio
+      - arbor
+      - gazebo
+      - shade structure
+  - canonical: outdoor living spaces
+    vertical: hardscaping
+    synonyms:
+      - outdoor living
+      - outdoor living space
+      - backyard living
+      - backyard remodel
+      - backyard renovation
+      - outdoor space design
+  - canonical: decks
+    vertical: hardscaping
+    synonyms:
+      - deck builder
+      - deck building
+      - deck installation
+      - composite deck
+      - wood deck
+  - canonical: putting greens
+    vertical: hardscaping
+    synonyms:
+      - putting green
+      - backyard putting green
+
+  # ------------------------------------------------------------ heating-cooling
+  - canonical: AC repair
+    vertical: heating-cooling
+    synonyms:
+      - ac repair
+      - air conditioning repair
+      - air conditioner repair
+      - ac service
+      - cooling repair
+      - ac not cooling
+      - ac not working
+  - canonical: AC installation and replacement
+    vertical: heating-cooling
+    synonyms:
+      - ac installation
+      - ac install
+      - ac replacement
+      - air conditioning installation
+      - air conditioning replacement
+      - air conditioner replacement
+      - new ac unit
+      - ac unit replacement
+  - canonical: furnace repair
+    vertical: heating-cooling
+    synonyms:
+      - furnace repair
+      - heating repair
+      - furnace service
+      - no heat
+      - heater repair
+  - canonical: furnace installation and replacement
+    vertical: heating-cooling
+    synonyms:
+      - furnace replacement
+      - furnace installation
+      - furnace install
+      - new furnace
+      - heating installation
+      - heater replacement
+  - canonical: heat pump services
+    vertical: heating-cooling
+    synonyms:
+      - heat pump
+      - heat pump repair
+      - heat pump installation
+      - heat pump replacement
+  - canonical: ductless mini-split installation
+    vertical: heating-cooling
+    synonyms:
+      - mini split
+      - minisplit
+      - ductless
+      - ductless installation
+      - mini split installation
+  - canonical: boiler services
+    vertical: heating-cooling
+    synonyms:
+      - boiler repair
+      - boiler installation
+      - boiler replacement
+      - boiler service
+  - canonical: HVAC maintenance and tune-ups
+    vertical: heating-cooling
+    synonyms:
+      - hvac maintenance
+      - ac tune up
+      - furnace tune up
+      - hvac tune up
+      - tune up
+      - maintenance plan
+      - preventative maintenance
+  - canonical: duct cleaning and duct repair
+    vertical: heating-cooling
+    synonyms:
+      - duct cleaning
+      - air duct cleaning
+      - duct repair
+      - duct replacement
+      - ductwork
+  - canonical: indoor air quality
+    vertical: heating-cooling
+    synonyms:
+      - indoor air quality
+      - air purifier
+      - whole home humidifier
+      - dehumidifier
+      - uv air
+  - canonical: thermostat installation
+    vertical: heating-cooling
+    synonyms:
+      - thermostat installation
+      - smart thermostat
+      - thermostat replacement
+  - canonical: emergency HVAC service
+    vertical: heating-cooling
+    synonyms:
+      - emergency ac
+      - emergency hvac
+      - emergency heating
+      - 24 hour hvac
+      - same day ac
+
+  # --------------------------------------------- adjacent / similar local service
+  - canonical: fencing
+    vertical: similar-local-service
+    synonyms:
+      - fence installation
+      - fence company
+      - fence repair
+      - fencing contractor
+      - privacy fence
+  - canonical: pressure washing
+    vertical: similar-local-service
+    synonyms:
+      - pressure washing
+      - power washing
+      - soft wash
+      - driveway cleaning
+  - canonical: holiday lighting
+    vertical: similar-local-service
+    synonyms:
+      - christmas light
+      - christmas lighting
+      - holiday lighting
+      - holiday light installation
+  - canonical: mosquito and pest control
+    vertical: similar-local-service
+    synonyms:
+      - mosquito control
+      - mosquito treatment
+      - pest control
+  - canonical: yard cleanup and junk removal
+    vertical: similar-local-service
+    synonyms:
+      - yard cleanup
+      - leaf removal
+      - storm cleanup
+      - junk removal
+      - debris removal
+      - brush removal
+  - canonical: swimming pool construction
+    vertical: similar-local-service
+    synonyms:
+      - pool builder
+      - pool construction
+      - swimming pool installation
+      - pool contractor
+
+# Structural, geographic, and funnel tokens that appear in account naming but do
+# not name a service. Used only to keep the unmatched-signal report readable.
+ignore_terms:
+  - search
+  - brand
+  - branded
+  - non brand
+  - nonbrand
+  - competitor
+  - generic
+  - exact
+  - phrase
+  - broad
+  - bofu
+  - mofu
+  - tofu
+  - funnel
+  - high intent
+  - low intent
+  - pmax
+  - performance max
+  - display
+  - video
+  - demand gen
+  - remarketing
+  - retargeting
+  - dsa
+  - lsa
+  - local services
+  - call only
+  - mobile
+  - desktop
+  - tablet
+  - test
+  - new
+  - old
+  - copy
+  - campaign
+  - ad group
+  - adgroup
+  - skag
+  - main
+  - primary
+  - default
+  - misc
+  - other
+  - leads
+  - lead gen
+  - conversions
+  - clicks
+  - budget
+  - near me
+  - free estimate
+  - free quote
+  - english
+  - spanish
+  - usa
+  - us

@@ -1,0 +1,649 @@
+{
+ "generated_local": "2026-09-17T10:18:26.067135-04:00",
+ "method": "passive no-parameter polling; NO parameters sent; no cache seeded",
+ "rounds": 16,
+ "gap_seconds": 45,
+ "observations": [
+  {
+   "round": 1,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:18:26.605180-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 1,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:18:27.091403-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 1,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:18:27.858004-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 1,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:18:30.752782-04:00",
+   "status": 200,
+   "cache": "EXPIRED",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 2,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:19:16.270405-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 2,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:19:16.784308-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 2,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:19:17.236603-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 2,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:19:18.233341-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 3,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:20:03.701179-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 3,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:20:04.192200-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 3,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:20:04.638485-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 3,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:20:05.110409-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 4,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:20:50.645298-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 4,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:20:51.125556-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 4,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:20:51.566117-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 4,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:20:52.011100-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 5,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:21:37.813414-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 5,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:21:38.335217-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 5,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:21:39.118349-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 5,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:21:39.575774-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 6,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:22:25.131004-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 6,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:22:25.688871-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 6,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:22:26.201820-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 6,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:22:27.504197-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 7,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:23:12.952350-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 7,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:23:13.437460-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 7,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:23:13.912721-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 7,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:23:14.399283-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 8,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:23:59.846315-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 8,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:24:00.325619-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 8,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:24:00.766536-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 8,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:24:01.251599-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 9,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:24:46.810938-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 9,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:24:47.307991-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 9,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:24:47.827075-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 9,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:24:48.324757-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 10,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:25:33.777706-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 10,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:25:34.256601-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 10,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:25:35.026762-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 10,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:25:35.483212-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 11,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:26:21.019280-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 11,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:26:21.547570-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 11,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:26:22.314672-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 11,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:26:22.768920-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 12,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:27:08.253759-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 12,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:27:08.782288-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 12,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:27:09.263057-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 12,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:27:09.708851-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 13,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:27:55.238009-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 13,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:27:56.823834-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 13,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:27:57.345262-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 13,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:27:57.789603-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 14,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:28:43.241577-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 14,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:28:43.732405-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 14,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:28:44.173221-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 14,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:28:44.631671-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 15,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:29:30.382549-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 15,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:29:30.875554-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 15,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:29:31.626362-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 15,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:29:32.109475-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 16,
+   "site": "BEAVER",
+   "at": "2026-09-17T10:30:17.575140-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 173204,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 16,
+   "site": "NOLTE",
+   "at": "2026-09-17T10:30:18.659769-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 316510,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 16,
+   "site": "MASTERGRASS",
+   "at": "2026-09-17T10:30:19.311338-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 145938,
+   "populated_fields": {},
+   "populated_count": 0
+  },
+  {
+   "round": 16,
+   "site": "AMBIENT_CONTROL",
+   "at": "2026-09-17T10:30:19.796584-04:00",
+   "status": 200,
+   "cache": "HIT",
+   "bytes": 169334,
+   "populated_fields": {},
+   "populated_count": 0
+  }
+ ],
+ "populated_events": []
+}

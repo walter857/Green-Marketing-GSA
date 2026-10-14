@@ -1,0 +1,178 @@
+{
+  "generated_account_local": "2026-08-27T17:35:42.269157-04:00",
+  "plan_id": "PLAN-K2",
+  "plan_file": "2026-08-27-plan-k2-search-term-cleaning.yaml",
+  "fingerprint": "57FECB3D6901",
+  "approval_type": "NEGATIVES",
+  "action_count": 9,
+  "object_count": 9,
+  "approval_status": "NOT APPROVED",
+  "execution_status": "DO NOT EXECUTE",
+  "approval_phrase": "APPROVE PLAN-K2 57FECB3D6901 FOR 1521725229",
+  "canonical_payload": {
+    "target": {
+      "exact_child_account_name": "Softwind Power Washing - Live",
+      "child_customer_id": "1521725229",
+      "exact_service": "Power Washing"
+    },
+    "plan_id": "PLAN-K2",
+    "approval_type": "NEGATIVES",
+    "actions": [
+      {
+        "action_id": "K2-01-01",
+        "priority": "P1",
+        "resource_type": "AD_GROUP_CRITERION",
+        "operation": "CREATE_NEGATIVE",
+        "customer_id": "1521725229",
+        "campaign_id": "24103511039",
+        "ad_group_id": "202870585390",
+        "resource_id": "ad_group 202870585390 negative keyword",
+        "current_value": "not present as a negative in this ad group",
+        "proposed_value": {
+          "keyword_text": "gas station pressure washing near me",
+          "match_type": "EXACT",
+          "negative": true
+        },
+        "object_count": 1
+      },
+      {
+        "action_id": "K2-01-02",
+        "priority": "P1",
+        "resource_type": "AD_GROUP_CRITERION",
+        "operation": "CREATE_NEGATIVE",
+        "customer_id": "1521725229",
+        "campaign_id": "24103511039",
+        "ad_group_id": "202870585390",
+        "resource_id": "ad_group 202870585390 negative keyword",
+        "current_value": "not present as a negative in this ad group",
+        "proposed_value": {
+          "keyword_text": "commercial power washing company near me",
+          "match_type": "EXACT",
+          "negative": true
+        },
+        "object_count": 1
+      },
+      {
+        "action_id": "K2-01-03",
+        "priority": "P1",
+        "resource_type": "AD_GROUP_CRITERION",
+        "operation": "CREATE_NEGATIVE",
+        "customer_id": "1521725229",
+        "campaign_id": "24103511039",
+        "ad_group_id": "202870585590",
+        "resource_id": "ad_group 202870585590 negative keyword",
+        "current_value": "not present as a negative in this ad group",
+        "proposed_value": {
+          "keyword_text": "roof washing near me",
+          "match_type": "EXACT",
+          "negative": true
+        },
+        "object_count": 1
+      },
+      {
+        "action_id": "K2-01-04",
+        "priority": "P1",
+        "resource_type": "AD_GROUP_CRITERION",
+        "operation": "CREATE_NEGATIVE",
+        "customer_id": "1521725229",
+        "campaign_id": "24103511039",
+        "ad_group_id": "202870585910",
+        "resource_id": "ad_group 202870585910 negative keyword",
+        "current_value": "not present as a negative in this ad group",
+        "proposed_value": {
+          "keyword_text": "slate roof cleaning near me",
+          "match_type": "EXACT",
+          "negative": true
+        },
+        "object_count": 1
+      },
+      {
+        "action_id": "K2-01-05",
+        "priority": "P1",
+        "resource_type": "AD_GROUP_CRITERION",
+        "operation": "CREATE_NEGATIVE",
+        "customer_id": "1521725229",
+        "campaign_id": "24103511039",
+        "ad_group_id": "202870585910",
+        "resource_id": "ad_group 202870585910 negative keyword",
+        "current_value": "not present as a negative in this ad group",
+        "proposed_value": {
+          "keyword_text": "house cleaning services near me",
+          "match_type": "EXACT",
+          "negative": true
+        },
+        "object_count": 1
+      },
+      {
+        "action_id": "K2-02-01-1039",
+        "priority": "P1",
+        "resource_type": "CAMPAIGN_CRITERION",
+        "operation": "CREATE_NEGATIVE",
+        "customer_id": "1521725229",
+        "campaign_id": "24103511039",
+        "ad_group_id": null,
+        "resource_id": "campaign 24103511039 negative keyword",
+        "current_value": "not present as a campaign negative",
+        "proposed_value": {
+          "keyword_text": "roof",
+          "match_type": "PHRASE",
+          "negative": true
+        },
+        "object_count": 1
+      },
+      {
+        "action_id": "K2-02-01-3510",
+        "priority": "P1",
+        "resource_type": "CAMPAIGN_CRITERION",
+        "operation": "CREATE_NEGATIVE",
+        "customer_id": "1521725229",
+        "campaign_id": "24145053510",
+        "ad_group_id": null,
+        "resource_id": "campaign 24145053510 negative keyword",
+        "current_value": "not present as a campaign negative",
+        "proposed_value": {
+          "keyword_text": "roof",
+          "match_type": "PHRASE",
+          "negative": true
+        },
+        "object_count": 1
+      },
+      {
+        "action_id": "K2-02-02-1039",
+        "priority": "P1",
+        "resource_type": "CAMPAIGN_CRITERION",
+        "operation": "CREATE_NEGATIVE",
+        "customer_id": "1521725229",
+        "campaign_id": "24103511039",
+        "ad_group_id": null,
+        "resource_id": "campaign 24103511039 negative keyword",
+        "current_value": "not present as a campaign negative",
+        "proposed_value": {
+          "keyword_text": "gas station",
+          "match_type": "PHRASE",
+          "negative": true
+        },
+        "object_count": 1
+      },
+      {
+        "action_id": "K2-02-02-3510",
+        "priority": "P1",
+        "resource_type": "CAMPAIGN_CRITERION",
+        "operation": "CREATE_NEGATIVE",
+        "customer_id": "1521725229",
+        "campaign_id": "24145053510",
+        "ad_group_id": null,
+        "resource_id": "campaign 24145053510 negative keyword",
+        "current_value": "not present as a campaign negative",
+        "proposed_value": {
+          "keyword_text": "gas station",
+          "match_type": "PHRASE",
+          "negative": true
+        },
+        "object_count": 1
+      }
+    ],
+    "action_count": 9,
+    "object_count": 9
+  }
+}

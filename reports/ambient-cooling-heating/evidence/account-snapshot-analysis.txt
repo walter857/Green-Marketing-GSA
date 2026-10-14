@@ -1,0 +1,2662 @@
+====================================================================================================
+IDENTITY
+====================================================================================================
+{
+  "customer_id": "2401959466",
+  "descriptive_name": "Ambient Cooling - Live",
+  "currency_code": "USD",
+  "time_zone": "America/New_York",
+  "manager": false,
+  "test_account": false
+}
+{
+  "manager_customer_id": "3373711342",
+  "child_customer_id": "2401959466",
+  "descriptive_name": "Ambient Cooling - Live",
+  "level": 1,
+  "manager": false,
+  "test_account": false,
+  "status": "ENABLED"
+}
+windows: [
+  {
+    "label": "last_30",
+    "start": "2026-07-18",
+    "end": "2026-08-16"
+  },
+  {
+    "label": "previous_30",
+    "start": "2026-06-18",
+    "end": "2026-07-17"
+  },
+  {
+    "label": "last_90",
+    "start": "2026-05-19",
+    "end": "2026-08-16"
+  }
+]
+read_errors: []
+
+====================================================================================================
+CAMPAIGN SETTINGS (all non-removed)
+====================================================================================================
+
+--- 'Mini Split' (id=20022417562)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUPS_PAUSED', 'AD_GROUP_ADS_PAUSED', 'HAS_ADS_DISAPPROVED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = MANUAL_CPC
+    bidding_strategy_system_status     = UNAVAILABLE
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2023-04-22 03:41:30
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = {lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20022417562
+    budget_id                          = 13562244959
+    budget_name                        = Mini Split
+    daily_budget                       = 100.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'HVAC Install' (id=20293627152)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUPS_PAUSED', 'AD_GROUP_ADS_PAUSED', 'HAS_ADS_DISAPPROVED', 'MISSING_CALL_EXTENSION']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = MAXIMIZE_CONVERSIONS
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = True
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2023-06-21 01:28:50
+    end_date_time                      = 
+    final_url_suffix                   = utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20293627152
+    tracking_url_template              = 
+    budget_id                          = 14874373911
+    budget_name                        = HVAC Install
+    daily_budget                       = 30.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'AC Install & Replacement' (id=20303048590)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUP_ADS_PAUSED', 'HAS_ADS_DISAPPROVED', 'MISSING_CALL_EXTENSION']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = MAXIMIZE_CONVERSIONS
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2023-06-21 01:33:53
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = {lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20303048590
+    budget_id                          = 13568162355
+    budget_name                        = AC Install & Replacement
+    daily_budget                       = 90.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Heating Repair' (id=20509039406)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUP_ADS_PAUSED', 'HAS_ADS_DISAPPROVED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = MANUAL_CPC
+    bidding_strategy_system_status     = UNAVAILABLE
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = True
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2023-08-31 09:31:39
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = {lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20509039406
+    budget_id                          = 12910237134
+    budget_name                        = Heating Repair
+    daily_budget                       = 38.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Heating Installation' (id=20509050656)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUPS_PAUSED', 'AD_GROUP_ADS_PAUSED', 'HAS_ADS_DISAPPROVED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = True
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2023-08-31 09:35:16
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = {lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20509050656
+    budget_id                          = 12905177993
+    budget_name                        = Heating Installation
+    daily_budget                       = 33.33
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Heating Maintenance' (id=20513589817)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUPS_PAUSED', 'AD_GROUP_ADS_PAUSED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2023-08-31 08:20:59
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = {lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20513589817
+    budget_id                          = 12910083564
+    budget_name                        = Heating Maintenance
+    daily_budget                       = 39.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'HVAC Repair' (id=22375264936)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUPS_PAUSED', 'AD_GROUP_ADS_PAUSED', 'HAS_ADS_DISAPPROVED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = MANUAL_CPC
+    bidding_strategy_system_status     = UNAVAILABLE
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2025-03-24 11:10:41
+    end_date_time                      = 
+    final_url_suffix                   = utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20293627152
+    tracking_url_template              = 
+    budget_id                          = 14428964106
+    budget_name                        = HVAC Repair
+    daily_budget                       = 100.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Leads-Performance Max-HVAC-Install' (id=22379067302)
+    status                             = PAUSED
+    serving_status                     = ENDED
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'CAMPAIGN_ENDED', 'NO_ASSET_GROUPS']
+    channel_type                       = PERFORMANCE_MAX
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = MAXIMIZE_CONVERSIONS
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = True
+    network_display                    = True
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE_OR_INTEREST
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = []
+    start_date_time                    = 2025-03-26 10:15:06
+    end_date_time                      = 2025-03-31 23:59:59
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 14428443767
+    budget_name                        = Leads-Performance Max-HVAC-Install
+    daily_budget                       = 90.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Leads-Performance Max-HVAC & A/C Install' (id=22822619680)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'HAS_ASSET_GROUPS_DISAPPROVED']
+    channel_type                       = PERFORMANCE_MAX
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = MAXIMIZE_CONVERSIONS
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = True
+    network_display                    = True
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = []
+    start_date_time                    = 2025-07-21 09:58:32
+    end_date_time                      = 
+    final_url_suffix                   = utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20293627152
+    tracking_url_template              = 
+    budget_id                          = 14784875995
+    budget_name                        = Leads-Performance Max-HVAC & A/C Install
+    daily_budget                       = 100.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Leads-Performance Max-Furnace-Repair' (id=22855140165)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'ASSET_GROUPS_PAUSED']
+    channel_type                       = PERFORMANCE_MAX
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = MAXIMIZE_CONVERSIONS
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = True
+    network_display                    = True
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = []
+    start_date_time                    = 2025-08-02 13:35:38
+    end_date_time                      = 
+    final_url_suffix                   = utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20293627152
+    tracking_url_template              = 
+    budget_id                          = 14811877188
+    budget_name                        = Leads-Performance Max-Furnace-Repair
+    daily_budget                       = 10.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Tankless Water Heaters' (id=23143116432)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUPS_PAUSED', 'AD_GROUP_ADS_PAUSED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2025-10-17 15:11:58
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15040320138
+    budget_name                        = Tankless Water Heaters
+    daily_budget                       = 60.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Tankless Boilers' (id=23152954036)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUPS_PAUSED', 'AD_GROUP_ADS_PAUSED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2025-10-17 16:11:31
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15044845177
+    budget_name                        = Tankless Boilers
+    daily_budget                       = 100.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Gas Boilers Installs' (id=23167679179)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUP_ADS_PAUSED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2025-10-21 12:54:56
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15047821637
+    budget_name                        = Gas Boilers Installs
+    daily_budget                       = 60.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Gas Boilers Repair' (id=23333871301)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUPS_PAUSED', 'AD_GROUP_ADS_PAUSED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2025-12-04 07:52:37
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15186721121
+    budget_name                        = Gas Boilers Repair
+    daily_budget                       = 60.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Geothermal HVAC' (id=23737117084)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUP_ADS_PAUSED', 'HAS_ADS_DISAPPROVED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2026-04-07 14:14:34
+    end_date_time                      = 
+    final_url_suffix                   = utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20293627152
+    tracking_url_template              = 
+    budget_id                          = 15488517816
+    budget_name                        = Geothermal HVAC
+    daily_budget                       = 100.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Air Quality And Purification' (id=23743023491)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUP_ADS_PAUSED', 'HAS_ADS_DISAPPROVED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2026-04-10 13:43:53
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15501555481
+    budget_name                        = Air Quality And Purification
+    daily_budget                       = 33.33
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Pool Room Dehumidifier' (id=23762582794)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'AD_GROUPS_PAUSED', 'AD_GROUP_ADS_PAUSED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = MAXIMIZE_CONVERSIONS
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE_OR_INTEREST
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2026-04-15 12:00:45
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15502384748
+    budget_name                        = Pool Room Dehumidifier
+    daily_budget                       = 33.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Leads-Performance Max-HVAC & A/C Install #2' (id=23883756382)
+    status                             = PAUSED
+    serving_status                     = SERVING
+    primary_status                     = PAUSED
+    primary_status_reasons             = ['CAMPAIGN_PAUSED', 'HAS_ASSET_GROUPS_DISAPPROVED']
+    channel_type                       = PERFORMANCE_MAX
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = MAXIMIZE_CONVERSIONS
+    bidding_strategy_system_status     = PAUSED
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = True
+    network_display                    = True
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.0
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = []
+    start_date_time                    = 2026-05-25 13:36:56
+    end_date_time                      = 
+    final_url_suffix                   = utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20293627152
+    tracking_url_template              = 
+    budget_id                          = 15602032773
+    budget_name                        = Leads-Performance Max-HVAC & A/C Install #2
+    daily_budget                       = 33.0
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08' (id=24132507741)
+    status                             = ENABLED
+    serving_status                     = SERVING
+    primary_status                     = LEARNING
+    primary_status_reasons             = ['BIDDING_STRATEGY_LEARNING']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = LEARNING_NEW
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.9678743877520318
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2026-08-14 13:04:40
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15787409435
+    budget_name                        = Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08
+    daily_budget                       = 141.45
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08' (id=24132507744)
+    status                             = ENABLED
+    serving_status                     = SERVING
+    primary_status                     = NOT_ELIGIBLE
+    primary_status_reasons             = ['BIDDING_STRATEGY_LEARNING', 'HAS_ADS_DISAPPROVED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = LEARNING_NEW
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.9753743652520994
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2026-08-14 13:04:40
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15787409438
+    budget_name                        = Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08
+    daily_budget                       = 42.76
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08' (id=24132507747)
+    status                             = ENABLED
+    serving_status                     = SERVING
+    primary_status                     = NOT_ELIGIBLE
+    primary_status_reasons             = ['BIDDING_STRATEGY_LEARNING', 'HAS_ADS_DISAPPROVED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = LEARNING_NEW
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.9753743652520994
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2026-08-14 13:04:40
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15787409441
+    budget_name                        = Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08
+    daily_budget                       = 138.16
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08' (id=24132507750)
+    status                             = ENABLED
+    serving_status                     = SERVING
+    primary_status                     = LEARNING
+    primary_status_reasons             = ['BIDDING_STRATEGY_LEARNING']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = LEARNING_NEW
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.9678743877520318
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2026-08-14 13:04:40
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15787409444
+    budget_name                        = Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08
+    daily_budget                       = 78.95
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+--- 'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08' (id=24132507753)
+    status                             = ENABLED
+    serving_status                     = SERVING
+    primary_status                     = NOT_ELIGIBLE
+    primary_status_reasons             = ['BIDDING_STRATEGY_LEARNING', 'HAS_ADS_DISAPPROVED']
+    channel_type                       = SEARCH
+    channel_sub_type                   = UNSPECIFIED
+    bidding_strategy_type              = TARGET_SPEND
+    bidding_strategy_system_status     = LEARNING_NEW
+    maximize_conversions_target_cpa    = 0.0
+    target_cpa                         = 0.0
+    target_roas                        = 0.0
+    network_google_search              = True
+    network_search_partners            = False
+    network_display                    = False
+    network_partner_search             = False
+    positive_geo_target_type           = PRESENCE
+    negative_geo_target_type           = PRESENCE
+    dsa_domain                         = 
+    ai_max_enabled                     = False
+    campaign_keyword_match_type        = UNSPECIFIED
+    optimization_score                 = 0.9753743652520994
+    ad_serving_optimization_status     = OPTIMIZE
+    target_restrictions                = [{'dimension': 'AUDIENCE', 'bid_only': True}]
+    start_date_time                    = 2026-08-14 13:04:40
+    end_date_time                      = 
+    final_url_suffix                   = 
+    tracking_url_template              = 
+    budget_id                          = 15787409447
+    budget_name                        = Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08
+    daily_budget                       = 26.32
+    budget_delivery                    = STANDARD
+    budget_shared                      = False
+
+====================================================================================================
+CONVERSION ACTIONS
+====================================================================================================
+
+--- 'Calls from ads' (id=1068114183)
+    status                             = ENABLED
+    type                               = AD_CALL
+    category                           = PHONE_CALL_LEAD
+    origin                             = CALL_FROM_ADS
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 30
+    phone_call_duration_seconds        = 60
+    default_value                      = 0.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Visit Thank you page - Submit Form' (id=6498555481)
+    status                             = ENABLED
+    type                               = WEBPAGE
+    category                           = SUBMIT_LEAD_FORM
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 1
+    phone_call_duration_seconds        = 60
+    default_value                      = 0.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Call BTN Click' (id=6498555484)
+    status                             = ENABLED
+    type                               = WEBPAGE
+    category                           = CONTACT
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 1
+    phone_call_duration_seconds        = 60
+    default_value                      = 0.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Ambient Cooling and Heating (web) purchase' (id=6636693088)
+    status                             = HIDDEN
+    type                               = GOOGLE_ANALYTICS_4_PURCHASE
+    category                           = PURCHASE
+    origin                             = WEBSITE
+    primary_for_goal                   = False
+    include_in_conversions_metric      = False
+    counting_type                      = MANY_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 90
+    view_through_lookback_days         = 1
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = False
+    owner_customer                     = 2401959466
+
+--- 'Clicks to call' (id=6640721230)
+    status                             = ENABLED
+    type                               = GOOGLE_HOSTED
+    category                           = CONTACT
+    origin                             = GOOGLE_HOSTED
+    primary_for_goal                   = True
+    include_in_conversions_metric      = False
+    counting_type                      = MANY_PER_CLICK
+    attribution_model                  = GOOGLE_ADS_LAST_CLICK
+    data_driven_model_status           = NEVER_GENERATED
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 7
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Local actions - Website visits' (id=6641739327)
+    status                             = ENABLED
+    type                               = GOOGLE_HOSTED
+    category                           = PAGE_VIEW
+    origin                             = GOOGLE_HOSTED
+    primary_for_goal                   = True
+    include_in_conversions_metric      = False
+    counting_type                      = MANY_PER_CLICK
+    attribution_model                  = GOOGLE_ADS_LAST_CLICK
+    data_driven_model_status           = NEVER_GENERATED
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 7
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Local actions - Directions' (id=6642544931)
+    status                             = ENABLED
+    type                               = GOOGLE_HOSTED
+    category                           = GET_DIRECTIONS
+    origin                             = GOOGLE_HOSTED
+    primary_for_goal                   = True
+    include_in_conversions_metric      = False
+    counting_type                      = MANY_PER_CLICK
+    attribution_model                  = GOOGLE_ADS_LAST_CLICK
+    data_driven_model_status           = NEVER_GENERATED
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 7
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Local actions - Other engagements' (id=6642551975)
+    status                             = ENABLED
+    type                               = GOOGLE_HOSTED
+    category                           = ENGAGEMENT
+    origin                             = GOOGLE_HOSTED
+    primary_for_goal                   = True
+    include_in_conversions_metric      = False
+    counting_type                      = MANY_PER_CLICK
+    attribution_model                  = GOOGLE_ADS_LAST_CLICK
+    data_driven_model_status           = NEVER_GENERATED
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 7
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Ambient Cooling and Heating (web) form_submit' (id=6684124701)
+    status                             = HIDDEN
+    type                               = GOOGLE_ANALYTICS_4_CUSTOM
+    category                           = SUBMIT_LEAD_FORM
+    origin                             = WEBSITE
+    primary_for_goal                   = False
+    include_in_conversions_metric      = False
+    counting_type                      = MANY_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 90
+    view_through_lookback_days         = 1
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = False
+    owner_customer                     = 2401959466
+
+--- 'Ambient Cooling - LP -Submit Lead Forms' (id=6885463625)
+    status                             = ENABLED
+    type                               = WEBPAGE
+    category                           = SUBMIT_LEAD_FORM
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 1
+    phone_call_duration_seconds        = 60
+    default_value                      = 0.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Ambient Cooling - Lp - Phone call leads' (id=6885576934)
+    status                             = ENABLED
+    type                               = WEBSITE_CALL
+    category                           = PHONE_CALL_LEAD
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 30
+    phone_call_duration_seconds        = 30
+    default_value                      = 0.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Local actions - Menu views' (id=6954620053)
+    status                             = ENABLED
+    type                               = GOOGLE_HOSTED
+    category                           = PAGE_VIEW
+    origin                             = GOOGLE_HOSTED
+    primary_for_goal                   = True
+    include_in_conversions_metric      = False
+    counting_type                      = MANY_PER_CLICK
+    attribution_model                  = GOOGLE_ADS_LAST_CLICK
+    data_driven_model_status           = NEVER_GENERATED
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 7
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Ambient Cooling and Heating (web) form_submission' (id=7389995485)
+    status                             = ENABLED
+    type                               = GOOGLE_ANALYTICS_4_CUSTOM
+    category                           = SUBMIT_LEAD_FORM
+    origin                             = WEBSITE
+    primary_for_goal                   = False
+    include_in_conversions_metric      = False
+    counting_type                      = MANY_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 90
+    view_through_lookback_days         = 1
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = False
+    owner_customer                     = 2401959466
+
+--- 'Ambient Cooling and Heating (web) phone_call_click' (id=7389995488)
+    status                             = ENABLED
+    type                               = GOOGLE_ANALYTICS_4_CUSTOM
+    category                           = PHONE_CALL_LEAD
+    origin                             = WEBSITE
+    primary_for_goal                   = False
+    include_in_conversions_metric      = False
+    counting_type                      = MANY_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 90
+    view_through_lookback_days         = 1
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = False
+    owner_customer                     = 2401959466
+
+--- '[Nombre del Cliente] | Website Phone Call Lead.' (id=7556469794)
+    status                             = REMOVED
+    type                               = WEBSITE_CALL
+    category                           = PHONE_CALL_LEAD
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 30
+    phone_call_duration_seconds        = 60
+    default_value                      = 0.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Call (14107056354)' (id=7556624863)
+    status                             = REMOVED
+    type                               = WEBSITE_CALL
+    category                           = PHONE_CALL_LEAD
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 30
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Ambient Cooling and  Heating Submit lead form' (id=7556633731)
+    status                             = REMOVED
+    type                               = WEBPAGE
+    category                           = SUBMIT_LEAD_FORM
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 90
+    view_through_lookback_days         = 1
+    phone_call_duration_seconds        = 60
+    default_value                      = 0.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- '[Nombre del Cliente] | Website Phone Call Lead. (1)' (id=7556640937)
+    status                             = REMOVED
+    type                               = WEBSITE_CALL
+    category                           = PHONE_CALL_LEAD
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 30
+    phone_call_duration_seconds        = 60
+    default_value                      = 0.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Ambient Cooling and Heating | Submission Lead Form.' (id=7556736957)
+    status                             = REMOVED
+    type                               = WEBPAGE
+    category                           = SUBMIT_LEAD_FORM
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 90
+    view_through_lookback_days         = 1
+    phone_call_duration_seconds        = 60
+    default_value                      = 0.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'Call (14107056354) (1)' (id=7556783514)
+    status                             = REMOVED
+    type                               = WEBSITE_CALL
+    category                           = PHONE_CALL_LEAD
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 30
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- '[Nombre del Cliente] | Website Phone Call Lead. (2)' (id=7556793753)
+    status                             = REMOVED
+    type                               = WEBSITE_CALL
+    category                           = PHONE_CALL_LEAD
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 30
+    view_through_lookback_days         = 30
+    phone_call_duration_seconds        = 60
+    default_value                      = 0.0
+    always_use_default_value           = True
+    owner_customer                     = 2401959466
+
+--- 'WC Calls' (id=7643656075)
+    status                             = ENABLED
+    type                               = UPLOAD_CALLS
+    category                           = CONTACT
+    origin                             = CALL_FROM_ADS
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 60
+    view_through_lookback_days         = 30
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = False
+    owner_customer                     = 2401959466
+
+--- 'WC Lead' (id=7643656486)
+    status                             = ENABLED
+    type                               = UPLOAD_CLICKS
+    category                           = CONTACT
+    origin                             = WEBSITE
+    primary_for_goal                   = True
+    include_in_conversions_metric      = True
+    counting_type                      = ONE_PER_CLICK
+    attribution_model                  = GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+    data_driven_model_status           = AVAILABLE
+    click_through_lookback_days        = 60
+    view_through_lookback_days         = 15
+    phone_call_duration_seconds        = 60
+    default_value                      = 1.0
+    always_use_default_value           = False
+    owner_customer                     = 2401959466
+
+====================================================================================================
+SHARED SETS / NEGATIVE LISTS
+====================================================================================================
+[
+  {
+    "id": "10664304544",
+    "name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 486
+  },
+  {
+    "id": "10664309518",
+    "name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 48
+  },
+  {
+    "id": "10667314427",
+    "name": "Names",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "REMOVED",
+    "member_count": 436
+  },
+  {
+    "id": "10720232972",
+    "name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 1148
+  },
+  {
+    "id": "11252984411",
+    "name": "account-level negative keywords list",
+    "type": "ACCOUNT_LEVEL_NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 0
+  },
+  {
+    "id": "11646241995",
+    "name": "Exclusion Brand List",
+    "type": "BRANDS",
+    "status": "ENABLED",
+    "member_count": 24
+  },
+  {
+    "id": "11807294063",
+    "name": "Christmas Lights Install",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 424
+  },
+  {
+    "id": "11811255121",
+    "name": "Leaf Removal initial",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 386
+  },
+  {
+    "id": "11813144900",
+    "name": "General List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 1111
+  },
+  {
+    "id": "11840874961",
+    "name": "Paver",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 387
+  },
+  {
+    "id": "11840890006",
+    "name": "Outdoor Kitchen",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 386
+  },
+  {
+    "id": "12021721179",
+    "name": "GM | Broad Poison",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 5
+  },
+  {
+    "id": "12021722439",
+    "name": "GM | Phrase Blockers",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 6
+  },
+  {
+    "id": "12022987128",
+    "name": "GM | Competitor Name Tokens",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 17
+  },
+  {
+    "id": "12025671131",
+    "name": "GM | Competitor Brands",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 17
+  },
+  {
+    "id": "12091293463",
+    "name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 968
+  },
+  {
+    "id": "12178646912",
+    "name": "General List - Irrigation Repair",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED",
+    "member_count": 1107
+  }
+]
+
+campaign_shared_sets:
+[
+  {
+    "campaign_name": "Mini Split",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Mini Split",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Mini Split",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Mini Split",
+    "shared_set_name": "GM | Broad Poison",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Mini Split",
+    "shared_set_name": "GM | Phrase Blockers",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Mini Split",
+    "shared_set_name": "GM | Competitor Name Tokens",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Mini Split",
+    "shared_set_name": "GM | Competitor Brands",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Mini Split",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Install",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Install",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Install",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Install",
+    "shared_set_name": "GM | Broad Poison",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Install",
+    "shared_set_name": "GM | Phrase Blockers",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Install",
+    "shared_set_name": "GM | Competitor Name Tokens",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Install",
+    "shared_set_name": "GM | Competitor Brands",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Install",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement",
+    "shared_set_name": "General List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement",
+    "shared_set_name": "GM | Broad Poison",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement",
+    "shared_set_name": "GM | Phrase Blockers",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement",
+    "shared_set_name": "GM | Competitor Name Tokens",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement",
+    "shared_set_name": "GM | Competitor Brands",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Repair",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Repair",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Repair",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Repair",
+    "shared_set_name": "GM | Broad Poison",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Repair",
+    "shared_set_name": "GM | Phrase Blockers",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Repair",
+    "shared_set_name": "GM | Competitor Name Tokens",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Repair",
+    "shared_set_name": "GM | Competitor Brands",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Repair",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation",
+    "shared_set_name": "GM | Broad Poison",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation",
+    "shared_set_name": "GM | Phrase Blockers",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation",
+    "shared_set_name": "GM | Competitor Name Tokens",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation",
+    "shared_set_name": "GM | Competitor Brands",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Maintenance",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Maintenance",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Maintenance",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Maintenance",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating & Boiler Repair - Calls",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating & Boiler Repair - Calls",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating & Boiler Repair - Calls",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation (#2)",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation (#2)",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Heating Installation (#2)",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Repair",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Repair",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Repair",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Repair",
+    "shared_set_name": "GM | Broad Poison",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Repair",
+    "shared_set_name": "GM | Phrase Blockers",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Repair",
+    "shared_set_name": "GM | Competitor Name Tokens",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Repair",
+    "shared_set_name": "GM | Competitor Brands",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "HVAC Repair",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Leads-Performance Max-HVAC-Install",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Leads-Performance Max-HVAC & A/C Install",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Leads-Performance Max-Furnace-Repair",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Tankless Water Heaters",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Tankless Boilers",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Gas Boilers Installs",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Gas Boilers Repair",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement #2",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement #2",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "AC Install & Replacement #2",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Geothermal HVAC",
+    "shared_set_name": "Names List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Geothermal HVAC",
+    "shared_set_name": "States List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Geothermal HVAC",
+    "shared_set_name": "General",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Geothermal HVAC",
+    "shared_set_name": "GM | Broad Poison",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Geothermal HVAC",
+    "shared_set_name": "GM | Phrase Blockers",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Geothermal HVAC",
+    "shared_set_name": "GM | Competitor Name Tokens",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Geothermal HVAC",
+    "shared_set_name": "GM | Competitor Brands",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Geothermal HVAC",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Air Quality And Purification",
+    "shared_set_name": "GM | Broad Poison",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Air Quality And Purification",
+    "shared_set_name": "GM | Phrase Blockers",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Air Quality And Purification",
+    "shared_set_name": "GM | Competitor Name Tokens",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Air Quality And Purification",
+    "shared_set_name": "GM | Competitor Brands",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Air Quality And Purification",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Pool Room Dehumidifier",
+    "shared_set_name": "GM | Broad Poison",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Pool Room Dehumidifier",
+    "shared_set_name": "GM | Phrase Blockers",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Pool Room Dehumidifier",
+    "shared_set_name": "GM | Competitor Name Tokens",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Pool Room Dehumidifier",
+    "shared_set_name": "GM | Competitor Brands",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Pool Room Dehumidifier",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  },
+  {
+    "campaign_name": "Leads-Performance Max-HVAC & A/C Install #2",
+    "shared_set_name": "Ambient - Neg Kwd List",
+    "type": "NEGATIVE_KEYWORDS",
+    "status": "ENABLED"
+  }
+]
+
+shared_criteria count: 7015
+  'Names List': 486 members, match types {'PHRASE': 486}
+  'States List': 48 members, match types {'PHRASE': 48}
+  'Names': 436 members, match types {'PHRASE': 436}
+  'General': 1148 members, match types {'PHRASE': 697, 'EXACT': 449, 'BROAD': 2}
+  'account-level negative keywords list': 59 members, match types {'BROAD': 59}
+  'Exclusion Brand List': 24 members, match types {'UNSPECIFIED': 24}
+  'Christmas Lights Install': 424 members, match types {'BROAD': 109, 'PHRASE': 294, 'EXACT': 21}
+  'Leaf Removal initial': 386 members, match types {'BROAD': 386}
+  'General List': 1111 members, match types {'BROAD': 1109, 'EXACT': 2}
+  'Paver': 387 members, match types {'BROAD': 387}
+  'Outdoor Kitchen': 386 members, match types {'BROAD': 386}
+  'GM | Broad Poison': 5 members, match types {'BROAD': 5}
+  'GM | Phrase Blockers': 6 members, match types {'PHRASE': 6}
+  'GM | Competitor Name Tokens': 17 members, match types {'BROAD': 17}
+  'GM | Competitor Brands': 17 members, match types {'PHRASE': 17}
+  'Ambient - Neg Kwd List': 968 members, match types {'BROAD': 929, 'EXACT': 10, 'PHRASE': 29}
+  'General List - Irrigation Repair': 1107 members, match types {'BROAD': 1105, 'EXACT': 2}
+
+====================================================================================================
+AD GROUP NEGATIVES
+====================================================================================================
+count: 4713
+  ('Mini Split', 'HVAC Installation'): 4
+  ('Mini Split', 'Mini Split'): 52
+  ('Heating Repair', 'Water Tank Repair'): 156
+  ('Mini Split', 'HVAC Repair'): 9
+  ('AC Install & Replacement', 'AC Installation'): 118
+  ('AC Install & Replacement', 'AC Replacement'): 31
+  ('Heating Repair', 'Boilers Repair'): 100
+  ('Heating Repair', 'Heat Pump Repair'): 13
+  ('Heating Repair', 'Furnace Repair'): 96
+  ('Heating Repair', 'Mini Split Repair'): 1
+  ('Heating Repair', 'Heating Repair'): 68
+  ('Heating Installation', 'Boilers Install'): 57
+  ('Heating Installation', 'Heat Pump Install'): 55
+  ('Heating Installation', 'Oil Furnace Install'): 83
+  ('Heating Installation', 'Mini Split Install'): 12
+  ('Heating Installation', 'Heating Install'): 60
+  ('HVAC Install', 'Dehumidification | Dectron | Desert Units'): 8
+  ('HVAC Install', 'Heating Repair service'): 10
+  ('Heating Maintenance', 'Boilers Maintenance'): 38
+  ('Heating Maintenance', 'Furnace Maintenance'): 18
+  ('Heating Maintenance', 'Mini Split Maintenance'): 10
+  ('Heating Maintenance', 'Heat Pump Maintenance'): 5
+  ('Heating Maintenance', 'Heating Maintenance'): 105
+  ('Heating Repair', 'Radiator/Exhaust/Ventilation'): 53
+  ('HVAC Install', 'HVAC Replacement'): 100
+  ('HVAC Install', 'HVAC Installation'): 298
+  ('HVAC Repair', 'Dehumidification | Dectron | Desert Units'): 8
+  ('HVAC Repair', 'Heating Repair service'): 57
+  ('HVAC Repair', 'General HVAC'): 85
+  ('HVAC Repair', 'HVAC Repair'): 196
+  ('HVAC Install', 'GEO Thermal'): 235
+  ('Gas Boilers Installs', 'Gas Boilers Installs'): 58
+  ('Tankless Water Heaters', 'Tankless Water Heater Installation & Replacement'): 751
+  ('Gas Boilers Installs', 'Gas Boilers Repair'): 30
+  ('Gas Boilers Repair', 'Gas Boilers Installs'): 34
+  ('Gas Boilers Repair', 'Gas Boilers Repair'): 40
+  ('Tankless Water Heaters', 'Tankless Water Heater Service, Repair & Quotes'): 407
+  ('HVAC Install', 'Commercial HVAC'): 298
+  ('Geothermal HVAC', 'Heating Repair service'): 10
+  ('Geothermal HVAC', 'HVAC Replacement'): 101
+  ('Geothermal HVAC', 'HVAC Installation'): 302
+  ('Geothermal HVAC', 'GEO Thermal'): 235
+  ('Geothermal HVAC', 'Dehumidification | Dectron | Desert Units'): 8
+  ('HVAC Install', 'Residential HVAC'): 298
+
+====================================================================================================
+CAMPAIGN CRITERIA SUMMARY
+====================================================================================================
+total criteria rows: 11583
+
+  'Mini Split'
+      type=AD_SCHEDULE            negative=False count=5
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=141
+      type=KEYWORD                negative=True  count=863
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=49
+      type=UNKNOWN                negative=False count=2
+      type=USER_INTEREST          negative=False count=18
+
+  'HVAC Install'
+      type=AD_SCHEDULE            negative=False count=7
+      type=BRAND_LIST             negative=True  count=1
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=141
+      type=KEYWORD                negative=True  count=228
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+      type=UNKNOWN                negative=False count=2
+      type=USER_INTEREST          negative=False count=18
+
+  'AC Install & Replacement'
+      type=AD_SCHEDULE            negative=False count=5
+      type=BRAND_LIST             negative=True  count=1
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=141
+      type=KEYWORD                negative=True  count=43
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=49
+      type=UNKNOWN                negative=False count=2
+      type=USER_INTEREST          negative=False count=3
+      type=USER_LIST              negative=False count=6
+
+  'Heating Repair'
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=141
+      type=KEYWORD                negative=True  count=353
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+      type=UNKNOWN                negative=False count=2
+      type=USER_INTEREST          negative=False count=18
+
+  'Heating Installation'
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=141
+      type=KEYWORD                negative=True  count=311
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+      type=UNKNOWN                negative=False count=2
+      type=USER_INTEREST          negative=False count=18
+
+  'Heating Maintenance'
+      type=AD_SCHEDULE            negative=False count=5
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=199
+      type=KEYWORD                negative=True  count=146
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=42
+      type=UNKNOWN                negative=False count=2
+      type=USER_INTEREST          negative=False count=18
+
+  'HVAC Repair'
+      type=AD_SCHEDULE            negative=False count=7
+      type=BRAND_LIST             negative=True  count=1
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=141
+      type=KEYWORD                negative=True  count=67
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+      type=UNKNOWN                negative=False count=2
+      type=USER_INTEREST          negative=False count=18
+
+  'Leads-Performance Max-HVAC-Install'
+      type=AD_SCHEDULE            negative=False count=6
+      type=DEVICE                 negative=False count=4
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=17
+
+  'Leads-Performance Max-HVAC & A/C Install'
+      type=AD_SCHEDULE            negative=False count=6
+      type=AGE_RANGE              negative=True  count=2
+      type=BRAND_LIST             negative=True  count=1
+      type=DEVICE                 negative=False count=4
+      type=KEYWORD                negative=True  count=1626
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=17
+
+  'Leads-Performance Max-Furnace-Repair'
+      type=AD_SCHEDULE            negative=False count=6
+      type=AGE_RANGE              negative=True  count=2
+      type=BRAND_LIST             negative=True  count=1
+      type=DEVICE                 negative=False count=4
+      type=KEYWORD                negative=True  count=283
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=17
+
+  'Tankless Water Heaters'
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=199
+      type=KEYWORD                negative=True  count=425
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+      type=USER_INTEREST          negative=False count=4
+
+  'Tankless Boilers'
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=199
+      type=KEYWORD                negative=True  count=479
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+      type=USER_INTEREST          negative=False count=4
+
+  'Gas Boilers Installs'
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=199
+      type=KEYWORD                negative=True  count=635
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+      type=USER_INTEREST          negative=False count=3
+
+  'Gas Boilers Repair'
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=137
+      type=KEYWORD                negative=True  count=635
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+      type=USER_INTEREST          negative=False count=3
+
+  'Geothermal HVAC'
+      type=AD_SCHEDULE            negative=False count=7
+      type=BRAND_LIST             negative=True  count=1
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=141
+      type=KEYWORD                negative=True  count=208
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+      type=UNKNOWN                negative=False count=2
+      type=USER_INTEREST          negative=False count=18
+
+  'Air Quality And Purification'
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=141
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+
+  'Pool Room Dehumidifier'
+      type=DEVICE                 negative=False count=3
+      type=IP_BLOCK               negative=True  count=141
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=46
+
+  'Leads-Performance Max-HVAC & A/C Install #2'
+      type=AD_SCHEDULE            negative=False count=6
+      type=AGE_RANGE              negative=True  count=2
+      type=BRAND_LIST             negative=True  count=1
+      type=DEVICE                 negative=False count=4
+      type=KEYWORD                negative=True  count=1626
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=17
+
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08'
+      type=AD_SCHEDULE            negative=False count=6
+      type=DEVICE                 negative=False count=3
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=75
+
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08'
+      type=AD_SCHEDULE            negative=False count=6
+      type=DEVICE                 negative=False count=3
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=75
+
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08'
+      type=AD_SCHEDULE            negative=False count=6
+      type=DEVICE                 negative=False count=3
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=75
+
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08'
+      type=AD_SCHEDULE            negative=False count=6
+      type=DEVICE                 negative=False count=3
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=75
+
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08'
+      type=AD_SCHEDULE            negative=False count=6
+      type=DEVICE                 negative=False count=3
+      type=LANGUAGE               negative=False count=1
+      type=LOCATION               negative=False count=75
+
+--- ad schedules ---
+  'Mini Split': MONDAY 7:00-16:00 bid_mod=None status=ENABLED
+  'Mini Split': TUESDAY 7:00-16:00 bid_mod=None status=ENABLED
+  'Mini Split': WEDNESDAY 7:00-16:00 bid_mod=None status=ENABLED
+  'Mini Split': THURSDAY 7:00-16:00 bid_mod=None status=ENABLED
+  'Mini Split': FRIDAY 7:00-16:00 bid_mod=None status=ENABLED
+  'HVAC Install': MONDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Install': TUESDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Install': WEDNESDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Install': THURSDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Install': FRIDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Install': SATURDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Install': SUNDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'AC Install & Replacement': MONDAY 7:00-16:00 bid_mod=None status=ENABLED
+  'AC Install & Replacement': TUESDAY 7:00-16:00 bid_mod=None status=ENABLED
+  'AC Install & Replacement': WEDNESDAY 7:00-16:00 bid_mod=None status=ENABLED
+  'AC Install & Replacement': THURSDAY 7:00-16:00 bid_mod=None status=ENABLED
+  'AC Install & Replacement': FRIDAY 7:00-16:00 bid_mod=None status=ENABLED
+  'Heating Maintenance': MONDAY 7:00-19:00 bid_mod=None status=ENABLED
+  'Heating Maintenance': TUESDAY 7:00-19:00 bid_mod=None status=ENABLED
+  'Heating Maintenance': WEDNESDAY 7:00-19:00 bid_mod=None status=ENABLED
+  'Heating Maintenance': THURSDAY 7:00-19:00 bid_mod=None status=ENABLED
+  'Heating Maintenance': FRIDAY 7:00-19:00 bid_mod=None status=ENABLED
+  'HVAC Repair': MONDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Repair': TUESDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Repair': WEDNESDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Repair': THURSDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Repair': FRIDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Repair': SATURDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'HVAC Repair': SUNDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC-Install': MONDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC-Install': TUESDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC-Install': WEDNESDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC-Install': THURSDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC-Install': FRIDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC-Install': SATURDAY 8:00-13:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install': MONDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install': TUESDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install': WEDNESDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install': THURSDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install': FRIDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install': SATURDAY 8:00-13:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-Furnace-Repair': MONDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-Furnace-Repair': TUESDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-Furnace-Repair': WEDNESDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-Furnace-Repair': THURSDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-Furnace-Repair': FRIDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-Furnace-Repair': SATURDAY 8:00-13:00 bid_mod=None status=ENABLED
+  'Geothermal HVAC': MONDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'Geothermal HVAC': TUESDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'Geothermal HVAC': WEDNESDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'Geothermal HVAC': THURSDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'Geothermal HVAC': FRIDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'Geothermal HVAC': SATURDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'Geothermal HVAC': SUNDAY 7:00-24:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install #2': MONDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install #2': TUESDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install #2': WEDNESDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install #2': THURSDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install #2': FRIDAY 7:00-17:00 bid_mod=None status=ENABLED
+  'Leads-Performance Max-HVAC & A/C Install #2': SATURDAY 8:00-13:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': MONDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': TUESDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': WEDNESDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': THURSDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': FRIDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': SATURDAY 8:00-13:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': MONDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': TUESDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': WEDNESDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': THURSDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': FRIDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': SATURDAY 8:00-13:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': MONDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': TUESDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': WEDNESDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': THURSDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': FRIDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': SATURDAY 8:00-13:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': MONDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': TUESDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': WEDNESDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': THURSDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': FRIDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': SATURDAY 8:00-13:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': MONDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': TUESDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': WEDNESDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': THURSDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': FRIDAY 8:00-20:00 bid_mod=None status=ENABLED
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': SATURDAY 8:00-13:00 bid_mod=None status=ENABLED
+
+--- device criteria ---
+  'Mini Split': DESKTOP bid_mod=0.0 set=True
+  'Mini Split': MOBILE bid_mod=2.0 set=True
+  'Mini Split': TABLET bid_mod=0.0 set=True
+  'HVAC Install': DESKTOP bid_mod=0.0 set=True
+  'HVAC Install': MOBILE bid_mod=None set=False
+  'HVAC Install': TABLET bid_mod=0.0 set=True
+  'AC Install & Replacement': DESKTOP bid_mod=0.0 set=True
+  'AC Install & Replacement': MOBILE bid_mod=None set=False
+  'AC Install & Replacement': TABLET bid_mod=0.0 set=True
+  'Heating Repair': DESKTOP bid_mod=0.0 set=True
+  'Heating Repair': MOBILE bid_mod=None set=False
+  'Heating Repair': TABLET bid_mod=0.0 set=True
+  'Heating Installation': DESKTOP bid_mod=0.0 set=True
+  'Heating Installation': MOBILE bid_mod=2.0 set=True
+  'Heating Installation': TABLET bid_mod=0.0 set=True
+  'Heating Maintenance': DESKTOP bid_mod=0.8999999761581421 set=True
+  'Heating Maintenance': MOBILE bid_mod=1.100000023841858 set=True
+  'Heating Maintenance': TABLET bid_mod=0.0 set=True
+  'HVAC Repair': DESKTOP bid_mod=0.0 set=True
+  'HVAC Repair': MOBILE bid_mod=None set=False
+  'HVAC Repair': TABLET bid_mod=0.0 set=True
+  'Leads-Performance Max-HVAC-Install': DESKTOP bid_mod=None set=False
+  'Leads-Performance Max-HVAC-Install': MOBILE bid_mod=None set=False
+  'Leads-Performance Max-HVAC-Install': TABLET bid_mod=None set=False
+  'Leads-Performance Max-HVAC-Install': CONNECTED_TV bid_mod=None set=False
+  'Leads-Performance Max-HVAC & A/C Install': DESKTOP bid_mod=None set=False
+  'Leads-Performance Max-HVAC & A/C Install': MOBILE bid_mod=None set=False
+  'Leads-Performance Max-HVAC & A/C Install': TABLET bid_mod=0.0 set=True
+  'Leads-Performance Max-HVAC & A/C Install': CONNECTED_TV bid_mod=0.0 set=True
+  'Leads-Performance Max-Furnace-Repair': DESKTOP bid_mod=0.0 set=True
+  'Leads-Performance Max-Furnace-Repair': MOBILE bid_mod=None set=False
+  'Leads-Performance Max-Furnace-Repair': TABLET bid_mod=0.0 set=True
+  'Leads-Performance Max-Furnace-Repair': CONNECTED_TV bid_mod=0.0 set=True
+  'Tankless Water Heaters': DESKTOP bid_mod=None set=False
+  'Tankless Water Heaters': MOBILE bid_mod=None set=False
+  'Tankless Water Heaters': TABLET bid_mod=0.0 set=True
+  'Tankless Boilers': DESKTOP bid_mod=None set=False
+  'Tankless Boilers': MOBILE bid_mod=None set=False
+  'Tankless Boilers': TABLET bid_mod=None set=False
+  'Gas Boilers Installs': DESKTOP bid_mod=None set=False
+  'Gas Boilers Installs': MOBILE bid_mod=None set=False
+  'Gas Boilers Installs': TABLET bid_mod=None set=False
+  'Gas Boilers Repair': DESKTOP bid_mod=None set=False
+  'Gas Boilers Repair': MOBILE bid_mod=None set=False
+  'Gas Boilers Repair': TABLET bid_mod=None set=False
+  'Geothermal HVAC': DESKTOP bid_mod=0.0 set=True
+  'Geothermal HVAC': MOBILE bid_mod=None set=False
+  'Geothermal HVAC': TABLET bid_mod=0.0 set=True
+  'Air Quality And Purification': DESKTOP bid_mod=0.0 set=True
+  'Air Quality And Purification': MOBILE bid_mod=None set=False
+  'Air Quality And Purification': TABLET bid_mod=0.0 set=True
+  'Pool Room Dehumidifier': DESKTOP bid_mod=0.0 set=True
+  'Pool Room Dehumidifier': MOBILE bid_mod=None set=False
+  'Pool Room Dehumidifier': TABLET bid_mod=0.0 set=True
+  'Leads-Performance Max-HVAC & A/C Install #2': DESKTOP bid_mod=None set=False
+  'Leads-Performance Max-HVAC & A/C Install #2': MOBILE bid_mod=None set=False
+  'Leads-Performance Max-HVAC & A/C Install #2': TABLET bid_mod=0.0 set=True
+  'Leads-Performance Max-HVAC & A/C Install #2': CONNECTED_TV bid_mod=0.0 set=True
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': DESKTOP bid_mod=None set=False
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': MOBILE bid_mod=None set=False
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': TABLET bid_mod=0.0 set=True
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': DESKTOP bid_mod=None set=False
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': MOBILE bid_mod=None set=False
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': TABLET bid_mod=0.0 set=True
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': DESKTOP bid_mod=None set=False
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': MOBILE bid_mod=None set=False
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': TABLET bid_mod=0.0 set=True
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': DESKTOP bid_mod=None set=False
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': MOBILE bid_mod=None set=False
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': TABLET bid_mod=0.0 set=True
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': DESKTOP bid_mod=None set=False
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': MOBILE bid_mod=None set=False
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': TABLET bid_mod=0.0 set=True
+
+--- language criteria ---
+  'Mini Split': languageConstants/1000
+  'HVAC Install': languageConstants/1000
+  'AC Install & Replacement': languageConstants/1000
+  'Heating Repair': languageConstants/1000
+  'Heating Installation': languageConstants/1000
+  'Heating Maintenance': languageConstants/1000
+  'HVAC Repair': languageConstants/1000
+  'Leads-Performance Max-HVAC-Install': languageConstants/1000
+  'Leads-Performance Max-HVAC & A/C Install': languageConstants/1000
+  'Leads-Performance Max-Furnace-Repair': languageConstants/1000
+  'Tankless Water Heaters': languageConstants/1000
+  'Tankless Boilers': languageConstants/1000
+  'Gas Boilers Installs': languageConstants/1000
+  'Gas Boilers Repair': languageConstants/1000
+  'Geothermal HVAC': languageConstants/1000
+  'Air Quality And Purification': languageConstants/1000
+  'Pool Room Dehumidifier': languageConstants/1000
+  'Leads-Performance Max-HVAC & A/C Install #2': languageConstants/1000
+  'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': languageConstants/1000
+  'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': languageConstants/1000
+  'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': languageConstants/1000
+  'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': languageConstants/1000
+  'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': languageConstants/1000
+
+--- campaign-level negative keywords ---
+  count: 7928
+    'Mini Split': 863
+    'HVAC Install': 228
+    'AC Install & Replacement': 43
+    'Heating Repair': 353
+    'Heating Installation': 311
+    'Heating Maintenance': 146
+    'HVAC Repair': 67
+    'Leads-Performance Max-HVAC & A/C Install': 1626
+    'Leads-Performance Max-Furnace-Repair': 283
+    'Tankless Water Heaters': 425
+    'Tankless Boilers': 479
+    'Gas Boilers Installs': 635
+    'Gas Boilers Repair': 635
+    'Geothermal HVAC': 208
+    'Leads-Performance Max-HVAC & A/C Install #2': 1626
+
+--- location criteria counts ---
+    'Mini Split': positive=49 negative=0
+    'HVAC Install': positive=46 negative=0
+    'AC Install & Replacement': positive=49 negative=0
+    'Heating Repair': positive=46 negative=0
+    'Heating Installation': positive=46 negative=0
+    'Heating Maintenance': positive=42 negative=0
+    'HVAC Repair': positive=46 negative=0
+    'Leads-Performance Max-HVAC-Install': positive=17 negative=0
+    'Leads-Performance Max-HVAC & A/C Install': positive=17 negative=0
+    'Leads-Performance Max-Furnace-Repair': positive=17 negative=0
+    'Tankless Water Heaters': positive=46 negative=0
+    'Tankless Boilers': positive=46 negative=0
+    'Gas Boilers Installs': positive=46 negative=0
+    'Gas Boilers Repair': positive=46 negative=0
+    'Geothermal HVAC': positive=46 negative=0
+    'Air Quality And Purification': positive=46 negative=0
+    'Pool Room Dehumidifier': positive=46 negative=0
+    'Leads-Performance Max-HVAC & A/C Install #2': positive=17 negative=0
+    'Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08': positive=75 negative=0
+    'Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08': positive=75 negative=0
+    'Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08': positive=75 negative=0
+    'Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08': positive=75 negative=0
+    'Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08': positive=75 negative=0
+
+--- resolved geo target constants: 83 ---
+        200512  DMA Region     US  Baltimore, MD,Maryland,United States
+       1018507  City           US  Annapolis,Maryland,United States
+       1018509  City           US  Arnold,Maryland,United States
+       1018519  City           US  Bowie,Maryland,United States
+       1018535  City           US  Catonsville,Maryland,United States
+       1018552  City           US  Columbia,Maryland,United States
+       1018557  City           US  Crofton,Maryland,United States
+       1018563  City           US  Davidsonville,Maryland,United States
+       1018574  City           US  Edgewater,Maryland,United States
+       1018576  City           US  Elkridge,Maryland,United States
+       1018578  City           US  Ellicott City,Maryland,United States
+       1018590  City           US  Fort Meade,Maryland,United States
+       1018592  City           US  Fulton,Maryland,United States
+       1018595  City           US  Gambrills,Maryland,United States
+       1018600  City           US  Glen Burnie,Maryland,United States
+       1018610  Neighborhood   US  Gwynn Oak,Maryland,United States
+       1018612  City           US  Halethorpe,Maryland,United States
+       1018614  City           US  Hanover,Maryland,United States
+       1018629  City           US  Jessup,Maryland,United States
+       1018636  City           US  Laurel,Maryland,United States
+       1018639  City           US  Linthicum Heights,Maryland,United States
+       1018643  City           US  Timonium,Maryland,United States
+       1018669  City           US  Odenton,Maryland,United States
+       1018677  City           US  Pasadena,Maryland,United States
+       1018704  Neighborhood   US  Savage,Savage,Maryland,United States
+       1018705  City           US  Severn,Maryland,United States
+       1018706  City           US  Severna Park,Maryland,United States
+       1018747  Neighborhood   US  Windsor Mill,Maryland,United States
+       1019285  City           US  Ferndale,Michigan,United States
+       9007726  Postal Code    US  20724,Maryland,United States
+       9007743  Postal Code    US  20755,Maryland,United States
+       9007748  Postal Code    US  20764,Maryland,United States
+       9007755  Postal Code    US  20776,Maryland,United States
+       9007757  Postal Code    US  20778,Maryland,United States
+       9007765  Postal Code    US  20794,Maryland,United States
+       9007818  Postal Code    US  21012,Maryland,United States
+       9007828  Postal Code    US  21032,Maryland,United States
+       9007830  Postal Code    US  21035,Maryland,United States
+       9007832  Postal Code    US  21037,Maryland,United States
+       9007835  Postal Code    US  21043,Maryland,United States
+       9007836  Postal Code    US  21044,Maryland,United States
+       9007837  Postal Code    US  21045,Maryland,United States
+       9007838  Postal Code    US  21046,Maryland,United States
+       9007845  Postal Code    US  21054,Maryland,United States
+       9007846  Postal Code    US  21056,Maryland,United States
+       9007848  Postal Code    US  21060,Maryland,United States
+       9007849  Postal Code    US  21061,Maryland,United States
+       9007852  Postal Code    US  21075,Maryland,United States
+       9007853  Postal Code    US  21076,Maryland,United States
+       9007854  Postal Code    US  21077,Maryland,United States
+       9007861  Postal Code    US  21090,Maryland,United States
+       9007862  Postal Code    US  21093,Maryland,United States
+       9007866  Postal Code    US  21108,Maryland,United States
+       9007868  Postal Code    US  21113,Maryland,United States
+       9007869  Postal Code    US  21114,Maryland,United States
+       9007872  Postal Code    US  21122,Maryland,United States
+       9007879  Postal Code    US  21140,Maryland,United States
+       9007880  Postal Code    US  21144,Maryland,United States
+       9007881  Postal Code    US  21146,Maryland,United States
+       9007895  Postal Code    US  21204,Maryland,United States
+       9007916  Postal Code    US  21225,Maryland,United States
+       9007917  Postal Code    US  21226,Maryland,United States
+       9007918  Postal Code    US  21227,Maryland,United States
+       9007919  Postal Code    US  21228,Maryland,United States
+       9007928  Postal Code    US  21240,Maryland,United States
+       9007934  Postal Code    US  21286,Maryland,United States
+       9007937  Postal Code    US  21401,Maryland,United States
+       9007938  Postal Code    US  21402,Maryland,United States
+       9007939  Postal Code    US  21403,Maryland,United States
+       9007940  Postal Code    US  21405,Maryland,United States
+       9007941  Postal Code    US  21409,Maryland,United States
+       9007970  Postal Code    US  21619,Maryland,United States
+       9007983  Postal Code    US  21638,Maryland,United States
+       9008000  Postal Code    US  21658,Maryland,United States
+       9008008  Postal Code    US  21666,Maryland,United States
+       9051516  City           US  Arbutus,Maryland,United States
+       9051655  City           US  Brooklyn Park,Maryland,United States
+       9051943  City           US  Ferndale,Maryland,United States
+       9052545  City           US  North Laurel,Maryland,United States
+       9052647  City           US  Parole,Maryland,United States
+       9053205  City           US  Woodlawn,Baltimore County,Maryland,United States
+       9195526  Neighborhood   US  Green Haven,Maryland,United States
+       9198809  Neighborhood   US  South Gate,Maryland,United States
+
+====================================================================================================
+ASSETS
+====================================================================================================
+
+  CALL: 5
+      {"asset_id": "80497290055", "approval_status": "APPROVED", "review_status": "REVIEWED", "call_phone_present": true, "call_country_code": "US"}
+      {"asset_id": "98498198415", "approval_status": "APPROVED", "review_status": "REVIEWED", "call_phone_present": true, "call_country_code": "US"}
+      {"asset_id": "343054924787", "approval_status": "APPROVED", "review_status": "REVIEWED", "call_phone_present": true, "call_country_code": "US"}
+      {"asset_id": "369249814267", "approval_status": "APPROVED", "review_status": "REVIEWED", "call_phone_present": true, "call_country_code": "US"}
+      {"asset_id": "407995613637", "approval_status": "APPROVED", "review_status": "REVIEWED", "call_phone_present": true, "call_country_code": "US"}
+
+  CALLOUT: 26
+      {"asset_id": "89063098370", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Get Free Online Quote"}
+      {"asset_id": "89063098373", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Licensed & Insured"}
+      {"asset_id": "89063098376", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Claim Your Discount"}
+      {"asset_id": "114360837948", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Dedicated Professionals"}
+      {"asset_id": "114360837951", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "See Our Work"}
+      {"asset_id": "114360837954", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Great Customer Service"}
+      {"asset_id": "348709829925", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Licensed And Insured"}
+      {"asset_id": "348709829928", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "100% Satisfaction"}
+      {"asset_id": "348709829931", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Honest Recommendations"}
+      {"asset_id": "348709829934", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Professional Installation"}
+      {"asset_id": "349923265882", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Free Quote"}
+      {"asset_id": "349923265885", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Serving Maryland"}
+      {"asset_id": "349923265888", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Repair & Installation"}
+      {"asset_id": "349923265891", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Replacement Options"}
+      {"asset_id": "349923265894", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Indoor Pool Solutions"}
+      {"asset_id": "349923265897", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Humidity Control Help"}
+      {"asset_id": "349923265900", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Residential & Commercial"}
+      {"asset_id": "349923265903", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Comfort Restored"}
+      {"asset_id": "349923938301", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Trusted Local Service"}
+      {"asset_id": "349923938304", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Built For Your HVAC"}
+      {"asset_id": "349923938307", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Honest Recommendations"}
+      {"asset_id": "349923938310", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Local Maryland Service"}
+      {"asset_id": "407418595411", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Prompt, Reliable Service"}
+      {"asset_id": "407418627430", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Clear Recommendations"}
+      {"asset_id": "407418646876", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Professional Technicians"}
+      {"asset_id": "407418646882", "approval_status": "APPROVED", "review_status": "REVIEWED", "callout_text": "Clear Service Options"}
+
+  CALL_TO_ACTION: 1
+      {"asset_id": "218982354502", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+
+  IMAGE: 130
+      {"asset_id": "143414844128", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183034280138", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183034280141", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183034280144", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183034280147", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183034280150", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183034280153", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183034280156", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183034280159", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183171248915", "name": "Free stock image - 2024-11-12 15:46:36_1.9108.111 (3)", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183171309389", "name": "Free stock image - 2024-11-12 15:46:36.112 (5)", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183171315353", "name": "Free stock image - 2024-11-12 15:46:36_1.112 (5)", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183171315386", "name": "Free stock image - 2024-11-12 15:46:36_1.9108.112 (5)", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183193690065", "name": "Free stock image - 2024-11-12 15:46:36.111 (3)", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183193701732", "name": "Free stock image - 2024-11-12 15:46:36_1.111 (3)", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "183762725038", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "190177034463", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "190177034466", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "190177034469", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "190177034472", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "191660558850", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "191828937973", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "191828937976", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "192662403843", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "193136165359", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "194216742217", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "195405719343", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "197624345582", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "199446458588", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "200223860974", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+
+  LOCATION: 3
+      {"asset_id": "102853408140", "approval_status": "APPROVED", "review_status": "REVIEWED"}
+      {"asset_id": "138665832571", "approval_status": "APPROVED", "review_status": "REVIEWED"}
+      {"asset_id": "245790011117", "approval_status": "APPROVED", "review_status": "REVIEWED"}
+
+  PROMOTION: 4
+      {"asset_id": "98503231290", "final_urls": ["https://offer.ambientcoolingandheating.com/"], "approval_status": "APPROVED", "review_status": "REVIEWED"}
+      {"asset_id": "108400822871", "final_urls": ["https://offer.ambientcoolingandheating.com/"], "approval_status": "APPROVED", "review_status": "REVIEWED"}
+      {"asset_id": "108407075617", "final_urls": ["https://offer.ambientcoolingandheating.com/"], "approval_status": "APPROVED", "review_status": "REVIEWED"}
+      {"asset_id": "271238974595", "final_urls": ["https://ambientcoolingandheating.com/services/ac-installation/?offer"], "approval_status": "APPROVED", "review_status": "REVIEWED"}
+
+  SITELINK: 123
+      {"asset_id": "154098728776", "final_urls": ["https://ambientcoolingandheating.com/blogs/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Blog Center"}
+      {"asset_id": "154098728779", "final_urls": ["https://ambientcoolingandheating.com/contact-us/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Request A Quote"}
+      {"asset_id": "154098728782", "final_urls": ["https://ambientcoolingandheating.com/services/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Our Services"}
+      {"asset_id": "154098728785", "final_urls": ["https://ambientcoolingandheating.com/reviews/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Our Reviews"}
+      {"asset_id": "154098728788", "final_urls": ["https://ambientcoolingandheating.com/our-work/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Our Work"}
+      {"asset_id": "154539836245", "final_urls": ["https://ambientcoolingandheating.com/blogs/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Blog Center"}
+      {"asset_id": "154539836248", "final_urls": ["https://ambientcoolingandheating.com/contact-us/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Request A Quote"}
+      {"asset_id": "154539836257", "final_urls": ["https://ambientcoolingandheating.com/our-work/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Our Work"}
+      {"asset_id": "154686544428", "final_urls": ["https://ambientcoolingandheating.com/services/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Services Offered"}
+      {"asset_id": "154686544431", "final_urls": ["https://ambientcoolingandheating.com/reviews/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Customer Reviews"}
+      {"asset_id": "183864693305", "final_urls": ["https://ambientcoolingandheating.com/services/hvac/air-filtration/"], "approval_status": "DISAPPROVED", "review_status": "REVIEWED", "sitelink_text": "Air Filtration"}
+      {"asset_id": "184940822408", "final_urls": ["https://ambientcoolingandheating.com/services/heating-services/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Heater Heating Services"}
+      {"asset_id": "184940822411", "final_urls": ["https://ambientcoolingandheating.com/services/hvac/desert-air-pool-hvac/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Desert Air & Pool HVAC"}
+      {"asset_id": "184940822414", "final_urls": ["https://ambientcoolingandheating.com/services/hvac/mini-splits/"], "approval_status": "DISAPPROVED", "review_status": "REVIEWED", "sitelink_text": "Mini Splits"}
+      {"asset_id": "185161619511", "final_urls": ["https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Geothermal HVAC"}
+      {"asset_id": "186596746635", "final_urls": ["https://ambientcoolingandheating.com/services/heating-services/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Heater Heating Services"}
+      {"asset_id": "186596746638", "final_urls": ["https://ambientcoolingandheating.com/services/hvac/desert-air-pool-hvac/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Desert Air & Pool HVAC"}
+      {"asset_id": "186596746641", "final_urls": ["https://ambientcoolingandheating.com/services/hvac/air-conditioner-repair/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Air Conditioner Repair"}
+      {"asset_id": "186596746644", "final_urls": ["https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Geothermal HVAC"}
+      {"asset_id": "186596746647", "final_urls": ["https://ambientcoolingandheating.com/services/hvac/air-filtration/"], "approval_status": "DISAPPROVED", "review_status": "REVIEWED", "sitelink_text": "Air Filtration"}
+      {"asset_id": "186596746650", "final_urls": ["https://ambientcoolingandheating.com/services/heating-services/heat-pumps/"], "approval_status": "DISAPPROVED", "review_status": "REVIEWED", "sitelink_text": "Heat Pumps"}
+      {"asset_id": "186596746653", "final_urls": ["https://ambientcoolingandheating.com/services/hvac/mini-splits/"], "approval_status": "DISAPPROVED", "review_status": "REVIEWED", "sitelink_text": "Mini Splits"}
+      {"asset_id": "186596746656", "final_urls": ["https://ambientcoolingandheating.com/services/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Services"}
+      {"asset_id": "189992410271", "final_urls": ["https://www.ambientcoolingandheating.com/residential-hvac-maintenance-plans/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Maintenance Plans"}
+      {"asset_id": "189992410274", "final_urls": ["https://www.ambientcoolingandheating.com/services/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Services"}
+      {"asset_id": "189992410277", "final_urls": ["https://www.ambientcoolingandheating.com/blog/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Blog"}
+      {"asset_id": "189992410280", "final_urls": ["https://www.ambientcoolingandheating.com/brands-we-install-and-carry/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "List Of Brands"}
+      {"asset_id": "189992410283", "final_urls": ["https://www.ambientcoolingandheating.com/contact-us/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Contact Us"}
+      {"asset_id": "192228627826", "final_urls": ["https://ambientcoolingandheating.com/services/hvac/air-filtration/"], "approval_status": "DISAPPROVED", "review_status": "REVIEWED", "sitelink_text": "Air Filtration"}
+      {"asset_id": "192228627829", "final_urls": ["https://www.ambientcoolingandheating.com/services/"], "approval_status": "APPROVED", "review_status": "REVIEWED", "sitelink_text": "Services"}
+
+  STRUCTURED_SNIPPET: 20
+      {"asset_id": "80553696690", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["AC Repair & Installation", "Indoor Air Quality Sol", "Goodman Equipment", "Boilers and Furnaces", "Heating and Cool
+      {"asset_id": "92362851133", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["Heat Pump Installation", "Heat Pump Maintenance", "Geothermal Installation", "Geothermal Heating"]}
+      {"asset_id": "114329942824", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Highlights", "snippet_values": ["Licensed And Insured Company", "Online Quote Available", "Providing Exceptional Customer Service"]}
+      {"asset_id": "114329942827", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Categories", "snippet_values": ["Home", "Commercial"]}
+      {"asset_id": "118062319774", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Highlights", "snippet_values": ["Licensed And Insured Company", "Online Quote Available", "Providing Exceptional Customer Service"]}
+      {"asset_id": "118062319777", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Categories", "snippet_values": ["Home", "Commercial"]}
+      {"asset_id": "308372431464", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Highlights", "snippet_values": ["We Offer A Range Of Services", "We Serve In Multiple Areas", "Chat Support Available"]}
+      {"asset_id": "348643359418", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["Home Assessments", "Air Filtration", "Airflow Improvements", "Indoor Air Upgrades"]}
+      {"asset_id": "349851509108", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["Dehumidifier Repair", "System Installation", "Unit Replacement", "Commercial Service"]}
+      {"asset_id": "349852327150", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["Air Purifier Installation", "Air Cleaner Installation", "Whole Home Air Purifiers", "Air Quality Consultation"]}
+      {"asset_id": "407319505376", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["HVAC Replacement", "Heating Replacement", "Cooling Replacement", "System Evaluation"]}
+      {"asset_id": "407418594898", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["Gas Boiler Repair", "Boiler Diagnostics", "No-Heat Boiler Service", "Boiler Leak Diagnosis"]}
+      {"asset_id": "407494691727", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["HVAC Repair", "Heating System Repair", "Cooling System Repair", "HVAC Diagnostics"]}
+      {"asset_id": "407494735920", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["HVAC Installation", "New HVAC Systems", "Heating Installation", "Cooling Installation"]}
+      {"asset_id": "407494761318", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["AC Repair", "Air Conditioner Repair", "Cooling Diagnostics", "AC Problem Diagnosis"]}
+      {"asset_id": "407820045167", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["Gas Boiler Repair", "Boiler Diagnostics", "No-Heat Boiler Service", "Boiler Leak Diagnosis"]}
+      {"asset_id": "407820091760", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["AC Repair", "Air Conditioner Repair", "Cooling Diagnostics", "AC Problem Diagnosis"]}
+      {"asset_id": "407919112525", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["HVAC Replacement", "Heating Replacement", "Cooling Replacement", "System Evaluation"]}
+      {"asset_id": "407995609569", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["HVAC Installation", "New HVAC Systems", "Heating Installation", "Cooling Installation"]}
+      {"asset_id": "407995613364", "approval_status": "APPROVED", "review_status": "REVIEWED", "snippet_header": "Service catalog", "snippet_values": ["HVAC Repair", "Heating System Repair", "Cooling System Repair", "HVAC Diagnostics"]}
+
+  TEXT: 1197
+      {"asset_id": "80498671615", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80498671618", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80498671621", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80498671624", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80498671627", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80498671630", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80498671633", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80498671636", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80498671639", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80499954244", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80499954247", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80499954250", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80499954253", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80499954256", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80499954259", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80499954262", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80499954265", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80499954268", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80516971145", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80516971148", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80516971151", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80516971154", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80516971157", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80516971160", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80516971163", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80516971166", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80516971169", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80516971172", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80556324531", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "80556324534", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+
+  YOUTUBE_VIDEO: 45
+      {"asset_id": "218917093886", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "218982957454", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "218982961375", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "218983019491", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "218983075372", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "218983512115", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "218985367845", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "218985378288", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "251456363335", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "265373213705", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "265453100347", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "265453760434", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "265466782224", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "265466824932", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "270637981216", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "270648467844", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "270648519972", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "270648729792", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "270648770826", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "271239581189", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "271239678212", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "271257476147", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "271257551609", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "271315763035", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "271315861831", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "271326510702", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "271333843660", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "271344399513", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "271344542979", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}
+      {"asset_id": "274939243517", "approval_status": "UNSPECIFIED", "review_status": "UNSPECIFIED"}

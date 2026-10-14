@@ -1,0 +1,132 @@
+{
+ "approval_class": "create-paused-GATED",
+ "summary": "Create the two commercial RSAs PAUSED. 2 operations. GATED: the final URL returns 404 today.",
+ "operations": [
+  {
+   "operation": "CREATE_RSA_PAUSED",
+   "resource": "ad_group_ad",
+   "ad_group_ref": "SKAG | Commercial HVAC Installation",
+   "campaign_id": "24132507747",
+   "resource_name": "Commercial RSA A - pinned",
+   "final_url": "https://offer.ambientcoolingandheating.com/commercial-hvac-installation/",
+   "path1": "commercial-hvac",
+   "path2": "maryland",
+   "status": "PAUSED",
+   "headlines_pinned_headline_1": [
+    "Commercial HVAC Installation",
+    "Commercial HVAC Installers",
+    "Commercial HVAC in Maryland"
+   ],
+   "headlines_unpinned": [
+    "Rooftop Unit Installation",
+    "Free Commercial HVAC Quote",
+    "Serving Central Maryland",
+    "Built for Business Uptime",
+    "Office & Retail HVAC",
+    "Request a Site Walkthrough",
+    "Talk to a Commercial Tech",
+    "Clear Project Pricing",
+    "Multi-Unit HVAC Projects",
+    "New System Installation",
+    "Schedule a Site Visit",
+    "HVAC for Your Building"
+   ],
+   "descriptions": [
+    "Commercial HVAC installation across Central Maryland. Request a free on-site quote.",
+    "Rooftop units and multi-zone installs for offices, retail and light industrial sites.",
+    "Talk to a commercial technician about your building. Free quote before any work begins.",
+    "Serving Severn, Severna Park, Columbia and nearby Maryland business districts."
+   ],
+   "current_state": "the commercial ad group does not exist yet",
+   "proposed_state": "one PAUSED RSA with 3 headlines pinned to HEADLINE_1",
+   "reason": "Guarantees a commercial service-keyword opener while leaving Google three candidates to rotate in the most visible slot.",
+   "rollback": "remove the created ad_group_ad by its returned resource name",
+   "risk": "MEDIUM - the final URL currently returns 404; creating it now would put a broken destination into policy review",
+   "unrelated_resource_assertion": "no existing ad is edited"
+  },
+  {
+   "operation": "CREATE_RSA_PAUSED",
+   "resource": "ad_group_ad",
+   "ad_group_ref": "SKAG | Commercial HVAC Installation",
+   "campaign_id": "24132507747",
+   "resource_name": "Commercial RSA B - unpinned control",
+   "final_url": "https://offer.ambientcoolingandheating.com/commercial-hvac-installation/",
+   "path1": "commercial-hvac",
+   "path2": "install",
+   "status": "PAUSED",
+   "headlines_pinned_headline_1": [],
+   "headlines_unpinned": [
+    "Commercial HVAC Installation",
+    "HVAC Install for Business",
+    "Commercial HVAC Contractor",
+    "Rooftop HVAC Installation",
+    "Office HVAC Installation",
+    "Retail Space HVAC Install",
+    "Free On-Site HVAC Quote",
+    "Central Maryland HVAC Team",
+    "Built for Business Uptime",
+    "Multi-Zone HVAC Systems",
+    "Book a Site Walkthrough",
+    "Commercial HVAC Upgrades",
+    "New Commercial HVAC System",
+    "Speak With a Technician",
+    "HVAC Projects Done Right"
+   ],
+   "descriptions": [
+    "Commercial HVAC installation for Maryland offices, retail and light industrial sites.",
+    "Request a free on-site quote and get clear project pricing before work begins.",
+    "Rooftop units, split systems and multi-zone installations for commercial buildings.",
+    "Serving Severn, Severna Park, Columbia and the surrounding Maryland service area."
+   ],
+   "current_state": "the commercial ad group does not exist yet",
+   "proposed_state": "one PAUSED RSA with no pins",
+   "reason": "Relevance/automation control against RSA A.",
+   "rollback": "remove the created ad_group_ad by its returned resource name",
+   "risk": "MEDIUM - same 404 destination gate as RSA A",
+   "unrelated_resource_assertion": "no existing ad is edited"
+  }
+ ],
+ "notes": {
+  "HARD_GATE": "Do not execute until https://offer.ambientcoolingandheating.com/commercial-hvac-installation/ returns HTTP 200 with the commercial content, the paid number (410) 705-6354, GTM GTM-PQTPQ436, WhatConverts, unique DOM ids, and Privacy + Terms links, all verified in a real browser on desktop and mobile.",
+  "copy_provenance": "AGENCY DRAFT written to the stated spec. The supplied Ambient_Commercial_HVAC_Installation_Launch_Pack.docx and COMMERCIAL_HVAC_COPY_PASTE.txt are not present on this machine. Reconcile against them before creating.",
+  "not_an_ab_test": "Two RSAs in one ad group is not an evenly allocated A/B test. Google allocates impressions unevenly. A true test needs Google Ads Experiments. Any comparison must control device, position, query mix and impression share.",
+  "images_not_used": "The four supplied images are landing-page assets. No image asset is created by this package. Generated images must never be presented as completed Ambient projects.",
+  "claims_avoided": [
+   "licensed",
+   "insured",
+   "24/7",
+   "emergency",
+   "same-day",
+   "financing",
+   "rebates",
+   "discounts",
+   "warranty",
+   "guarantees",
+   "guaranteed savings",
+   "#1",
+   "ratings",
+   "review counts"
+  ],
+  "requires_new_approval": true
+ },
+ "plan_name": "AMB-0910-COMM-RSA-1",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "HVAC Installation",
+  "related_services": [
+   "AC Repair",
+   "HVAC Repair",
+   "HVAC Replacement",
+   "Gas Boiler Repair",
+   "Commercial HVAC Installation"
+  ]
+ },
+ "generated_local": "2026-09-10T13:34:01.525674-04:00",
+ "object_count": 2,
+ "partial_failure": false,
+ "atomic": true,
+ "fingerprint": "30312BC45992"
+}

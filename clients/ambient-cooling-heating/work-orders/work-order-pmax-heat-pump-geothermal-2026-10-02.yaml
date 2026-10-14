@@ -1,0 +1,48 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    # PMax campaign 2 of 2: heat pump installation / replacement (+ geothermal only if its page and policy gates pass).
+    exact_primary_service: Heat Pump Installation
+    related_services:
+      - Heat Pump Replacement
+      - Geothermal Heat Pump
+  task:
+    type: campaign-build
+    mode: enable
+    request: >-
+      Owner instruction 2026-10-02: second Performance Max campaign, distinct portfolio from campaign 1: heat pump
+      installation and replacement, plus geothermal heat pump installation/replacement consultation only if service fit,
+      page readiness and evidence justify it (geothermal repair is excluded from paid scope). Build PAUSED, $1,000/month,
+      tablets excluded, Final URL expansion and text customization off, genuine lead goals only.
+    date_range: "CURRENT AS AT 2026-10-02"
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/heat-pump-installation/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: 32.89
+    primary_conversion_goal: "unique genuine paid heat pump / geothermal installation or replacement lead (form or call)"
+    tablets: excluded
+    test_leads: "declined by owner 2026-10-02"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-geothermal-heat-pump-lp-2026-10-01.yaml
+    change_authorized: true   # staged authorization 2026-10-02 (see authorization_2026_10_02_staged)
+  authorization_2026_10_02_staged:
+    source: "Green Marketing instruction in the Claude Code session, 2026-10-02 ('Complete the Account Cleanup and Launch the Approved Campaigns')"
+    sequence_authorized: "prepare + validate -> create PAUSED -> read back -> enable after successful QA, without a further confirmation between stages, for the defined scope only"
+    in_scope: "Emergency enable; Geothermal ads/sitelinks to /geothermal-heat-pump/ + enable; Heating Maintenance & Inspection on https://ambientcoolingandheating.com/services/heating-services/; complete + enable intended current resources in the 8 Search campaigns; high-confidence EXACT negatives; $1,000/month per campaign (8 Search + 2 PMax); launch the 2 PMax campaigns; tablet exclusions; policy-compatible targeting inside the approved service area"
+    excluded: "deletions; unrelated legacy campaigns or unsupported services; spend above the allocations; conversion-action, upload, tracking-number or Business Profile phone changes; Phrase/Broad negatives; test leads/forms/calls/uploads; new website deployments"
+    fingerprints_still_recorded: true
+  approval_owner: Green Marketing

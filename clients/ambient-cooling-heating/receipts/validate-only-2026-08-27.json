@@ -1,0 +1,18 @@
+{
+ "plan": "AMBIENT-CONSOLIDATED-2026-08-27",
+ "fingerprint": "ACE80A09AC134C85",
+ "customer_id": "2401959466",
+ "run_local": "2026-08-27T17:31:27.161230-04:00",
+ "results": {
+  "ADJ-1+ADJ-2 negatives": {
+   "status": "VALIDATE_OK",
+   "operations": 25,
+   "results_returned": 0
+  },
+  "ADJ-3+ADJ-4 campaign updates": {
+   "status": "VALIDATE_OK",
+   "operations": 5,
+   "results_returned": 0
+  }
+ }
+}

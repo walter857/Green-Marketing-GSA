@@ -1,0 +1,120 @@
+{
+ "plan_name": "AMB-0915-CONV-1",
+ "approval_class": "conversion-change",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "summary": "Reduce 10 ENABLED Primary conversion actions to 3 real lead outcomes and demote 7 to Secondary. 7 operations. Bidding is unaffected in practice because all five campaigns run Maximize Clicks, but the Conversions column stops double-counting.",
+ "principle": "Calls from ads and website calls are DIFFERENT lead sources and both stay Primary. What is removed is click-proxies, local actions and the WhatConverts uploads that re-report an event already counted.",
+ "before_state": {
+  "enabled_primary_actions": [
+   "1068114183",
+   "6640721230",
+   "6641739327",
+   "6642544931",
+   "6642551975",
+   "6885463625",
+   "6885576934",
+   "6954620053",
+   "7643656075",
+   "7643656486"
+  ],
+  "count": 10,
+  "observed_duplication": "2026-09-01, campaign 24132507747: WC Lead conversions=2.00 vs Ambient Cooling - LP -Submit Lead Forms conversions=1.00 on the same date and campaign",
+  "all_conversions_vs_primary_launch_to_date": {
+   "primary": 14.0,
+   "all": 81.0
+  }
+ },
+ "operations": [
+  {
+   "operation": "SET_PRIMARY_FOR_GOAL_FALSE",
+   "resource": "conversion_action",
+   "conversion_action_id": "6640721230",
+   "name": "Clicks to call",
+   "before": "primary_for_goal = true",
+   "after": "primary_for_goal = false",
+   "reason": "Clicks to call - MANY_PER_CLICK CONTACT. A click is not a completed call, and it double-counts both call actions."
+  },
+  {
+   "operation": "SET_PRIMARY_FOR_GOAL_FALSE",
+   "resource": "conversion_action",
+   "conversion_action_id": "6642544931",
+   "name": "Local actions - Directions",
+   "before": "primary_for_goal = true",
+   "after": "primary_for_goal = false",
+   "reason": "Local actions - Directions - not a lead."
+  },
+  {
+   "operation": "SET_PRIMARY_FOR_GOAL_FALSE",
+   "resource": "conversion_action",
+   "conversion_action_id": "6641739327",
+   "name": "Local actions - Website visits",
+   "before": "primary_for_goal = true",
+   "after": "primary_for_goal = false",
+   "reason": "Local actions - Website visits - not a lead."
+  },
+  {
+   "operation": "SET_PRIMARY_FOR_GOAL_FALSE",
+   "resource": "conversion_action",
+   "conversion_action_id": "6642551975",
+   "name": "Local actions - Other engagements",
+   "before": "primary_for_goal = true",
+   "after": "primary_for_goal = false",
+   "reason": "Local actions - Other engagements - not a lead."
+  },
+  {
+   "operation": "SET_PRIMARY_FOR_GOAL_FALSE",
+   "resource": "conversion_action",
+   "conversion_action_id": "6954620053",
+   "name": "Local actions - Menu views",
+   "before": "primary_for_goal = true",
+   "after": "primary_for_goal = false",
+   "reason": "Local actions - Menu views - not a lead."
+  },
+  {
+   "operation": "SET_PRIMARY_FOR_GOAL_FALSE",
+   "resource": "conversion_action",
+   "conversion_action_id": "7643656486",
+   "name": "WC Lead",
+   "before": "primary_for_goal = true",
+   "after": "primary_for_goal = false",
+   "reason": "WC Lead - UPLOAD_CLICKS. Duplicates the website form action: on 2026-09-01 in campaign 24132507747 WC Lead recorded 2.00 while the WEBPAGE form action recorded 1.00 for the same day and campaign."
+  },
+  {
+   "operation": "SET_PRIMARY_FOR_GOAL_FALSE",
+   "resource": "conversion_action",
+   "conversion_action_id": "7643656075",
+   "name": "WC Calls",
+   "before": "primary_for_goal = true",
+   "after": "primary_for_goal = false",
+   "reason": "WC Calls - UPLOAD_CALLS. Duplicates the two call actions above for the same physical call."
+  }
+ ],
+ "operation_count": 7,
+ "remains_primary": [
+  {
+   "conversion_action_id": "6885463625",
+   "reason": "Ambient Cooling - LP -Submit Lead Forms - the one canonical website form-lead action, WEBPAGE, ONE_PER_CLICK. This is the real form outcome."
+  },
+  {
+   "conversion_action_id": "6885576934",
+   "reason": "Ambient Cooling - Lp - Phone call leads - WEBSITE_CALL, ONE_PER_CLICK. Measures a completed website-sourced call, a distinct lead source."
+  },
+  {
+   "conversion_action_id": "1068114183",
+   "reason": "Calls from ads - AD_CALL, ONE_PER_CLICK. Measures a completed call placed from the call asset. A genuinely different lead source from a website call."
+  }
+ ],
+ "deduplication_requirements": [
+  "Verify every imported action carries a transaction or lead id before it is ever restored to Primary.",
+  "Verify the website-call action's minimum call duration is a real qualification threshold, not 0 seconds.",
+  "Confirm counting_type ONE_PER_CLICK on all three retained Primary actions.",
+  "Confirm click-through and view-through windows are identical across the three."
+ ],
+ "sequencing": "DO NOT EXECUTE until AMB-0915-LP-1 is deployed and the 24/24 attribution test passes. Changing conversion configuration while click ids are unreliable would re-baseline onto broken data.",
+ "historical_note": "A conversion counted before a fix stays in the historical column forever. This plan does not and cannot restate history. A clean baseline starts on the execution date.",
+ "risk": "MEDIUM - reporting changes immediately; bidding does not, because all five campaigns are Maximize Clicks and do not optimise to conversions.",
+ "rollback": "Set primary_for_goal back to true on the same 7 action ids.",
+ "unrelated_resource_assertion": "No conversion action is created, renamed, paused or removed. No counting_type, attribution model, lookback window or value setting is edited. No campaign goal override is touched. No WhatConverts configuration is changed.",
+ "fingerprint": "981A790ACDBB"
+}

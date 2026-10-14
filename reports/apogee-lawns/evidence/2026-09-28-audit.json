@@ -1,0 +1,2605 @@
+{
+ "work_order_errors": [],
+ "identity": {
+  "manager_view": [
+   {
+    "id": "8164626278",
+    "name": "Apogee Lawns LLC - Live",
+    "manager": false,
+    "test": false,
+    "status": "ENABLED"
+   }
+  ],
+  "child_view": {
+   "id": "8164626278",
+   "name": "Apogee Lawns LLC - Live",
+   "manager": false,
+   "test": false,
+   "status": "ENABLED",
+   "tz": "America/Chicago"
+  }
+ },
+ "billing": [
+  {
+   "id": 8584340188,
+   "status": "CANCELLED"
+  },
+  {
+   "id": 8584421311,
+   "status": "CANCELLED"
+  },
+  {
+   "id": 8587299012,
+   "status": "APPROVED"
+  }
+ ],
+ "campaigns": [
+  {
+   "id": 24257151015,
+   "name": "S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026",
+   "status": "ENABLED",
+   "primary_status": "LEARNING",
+   "reasons": [
+    "BIDDING_STRATEGY_LEARNING"
+   ]
+  }
+ ],
+ "keywords": [
+  {
+   "ag": "AG | Permanent Light Installation",
+   "id": 385217173659,
+   "text": "permanent christmas light installation",
+   "mt": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE",
+   "approval": "APPROVED",
+   "primary": "ELIGIBLE",
+   "reasons": [],
+   "qs": 0,
+   "ad_rel": "UNSPECIFIED",
+   "lp": "UNSPECIFIED",
+   "ectr": "UNSPECIFIED",
+   "first_page": 0.0,
+   "top": 0.0,
+   "first_pos": 0.0,
+   "eff_bid": 0.01
+  },
+  {
+   "ag": "AG | Permanent Light Installation",
+   "id": 546844124143,
+   "text": "permanent christmas light installation",
+   "mt": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE",
+   "approval": "APPROVED",
+   "primary": "ELIGIBLE",
+   "reasons": [],
+   "qs": 0,
+   "ad_rel": "UNSPECIFIED",
+   "lp": "UNSPECIFIED",
+   "ectr": "UNSPECIFIED",
+   "first_page": 0.0,
+   "top": 0.0,
+   "first_pos": 0.0,
+   "eff_bid": 0.01
+  },
+  {
+   "ag": "AG | Permanent Light Installation",
+   "id": 1968954080156,
+   "text": "permanent christmas lights installer",
+   "mt": "PHRASE",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE",
+   "approval": "APPROVED",
+   "primary": "ELIGIBLE",
+   "reasons": [],
+   "qs": 0,
+   "ad_rel": "UNSPECIFIED",
+   "lp": "UNSPECIFIED",
+   "ectr": "UNSPECIFIED",
+   "first_page": 0.0,
+   "top": 0.0,
+   "first_pos": 0.0,
+   "eff_bid": 0.01
+  },
+  {
+   "ag": "AG | Permanent Light Installation",
+   "id": 2261056242205,
+   "text": "permanent christmas lights installer",
+   "mt": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE",
+   "approval": "APPROVED",
+   "primary": "ELIGIBLE",
+   "reasons": [],
+   "qs": 0,
+   "ad_rel": "UNSPECIFIED",
+   "lp": "UNSPECIFIED",
+   "ectr": "UNSPECIFIED",
+   "first_page": 0.0,
+   "top": 0.0,
+   "first_pos": 0.0,
+   "eff_bid": 0.01
+  },
+  {
+   "ag": "AG | Permanent Christmas Lights Exact",
+   "id": 306097636075,
+   "text": "permanent christmas lights",
+   "mt": "EXACT",
+   "status": "ENABLED",
+   "serving": "ELIGIBLE",
+   "approval": "APPROVED",
+   "primary": "ELIGIBLE",
+   "reasons": [],
+   "qs": 6,
+   "ad_rel": "AVERAGE",
+   "lp": "AVERAGE",
+   "ectr": "AVERAGE",
+   "first_page": 0.0,
+   "top": 0.0,
+   "first_pos": 0.0,
+   "eff_bid": 0.01
+  }
+ ],
+ "ads": [
+  {
+   "ag": "AG | Permanent Light Installation",
+   "id": 825023783007,
+   "status": "ENABLED",
+   "primary": "ELIGIBLE",
+   "reasons": [],
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "urls": [
+    "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+   ],
+   "strength": "AVERAGE"
+  },
+  {
+   "ag": "AG | Permanent Light Installation",
+   "id": 825023783010,
+   "status": "ENABLED",
+   "primary": "ELIGIBLE",
+   "reasons": [],
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "urls": [
+    "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+   ],
+   "strength": "AVERAGE"
+  },
+  {
+   "ag": "AG | Permanent Christmas Lights Exact",
+   "id": 825023783013,
+   "status": "ENABLED",
+   "primary": "ELIGIBLE",
+   "reasons": [],
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "urls": [
+    "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+   ],
+   "strength": "AVERAGE"
+  },
+  {
+   "ag": "AG | Permanent Christmas Lights Exact",
+   "id": 825023783016,
+   "status": "ENABLED",
+   "primary": "ELIGIBLE",
+   "reasons": [],
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "urls": [
+    "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+   ],
+   "strength": "AVERAGE"
+  }
+ ],
+ "geo_targets": [
+  "geoTargetConstants/1021635",
+  "geoTargetConstants/1021647",
+  "geoTargetConstants/1021696",
+  "geoTargetConstants/1021783",
+  "geoTargetConstants/9024651",
+  "geoTargetConstants/9024671",
+  "geoTargetConstants/9024703",
+  "geoTargetConstants/9024728",
+  "geoTargetConstants/9024746",
+  "geoTargetConstants/9024748",
+  "geoTargetConstants/9024753",
+  "geoTargetConstants/9024754",
+  "geoTargetConstants/9195288",
+  "geoTargetConstants/9233865"
+ ],
+ "campaign_negatives": [
+  [
+   "job",
+   "BROAD"
+  ],
+  [
+   "jobs",
+   "BROAD"
+  ],
+  [
+   "laser",
+   "BROAD"
+  ],
+  [
+   "tutorial",
+   "BROAD"
+  ],
+  [
+   "rent",
+   "BROAD"
+  ],
+  [
+   "rental",
+   "BROAD"
+  ],
+  [
+   "wholesale",
+   "BROAD"
+  ],
+  [
+   "do it yourself",
+   "PHRASE"
+  ],
+  [
+   "costco",
+   "BROAD"
+  ],
+  [
+   "instructions",
+   "BROAD"
+  ],
+  [
+   "kit",
+   "BROAD"
+  ],
+  [
+   "ebay",
+   "BROAD"
+  ],
+  [
+   "lasers",
+   "BROAD"
+  ],
+  [
+   "rentals",
+   "BROAD"
+  ],
+  [
+   "tutorials",
+   "BROAD"
+  ],
+  [
+   "career",
+   "BROAD"
+  ],
+  [
+   "distributor",
+   "BROAD"
+  ],
+  [
+   "projector",
+   "BROAD"
+  ],
+  [
+   "projectors",
+   "BROAD"
+  ],
+  [
+   "walmart",
+   "BROAD"
+  ],
+  [
+   "inflatable",
+   "BROAD"
+  ],
+  [
+   "diy",
+   "BROAD"
+  ],
+  [
+   "careers",
+   "BROAD"
+  ],
+  [
+   "salary",
+   "BROAD"
+  ],
+  [
+   "wreath",
+   "BROAD"
+  ],
+  [
+   "kits",
+   "BROAD"
+  ],
+  [
+   "wreaths",
+   "BROAD"
+  ],
+  [
+   "garlands",
+   "BROAD"
+  ],
+  [
+   "distributors",
+   "BROAD"
+  ],
+  [
+   "amazon",
+   "BROAD"
+  ],
+  [
+   "suppliers",
+   "BROAD"
+  ],
+  [
+   "garland",
+   "BROAD"
+  ],
+  [
+   "inflatables",
+   "BROAD"
+  ],
+  [
+   "supplier",
+   "BROAD"
+  ],
+  [
+   "how to",
+   "PHRASE"
+  ],
+  [
+   "indoor",
+   "BROAD"
+  ],
+  [
+   "lowes",
+   "BROAD"
+  ],
+  [
+   "light show",
+   "PHRASE"
+  ],
+  [
+   "home depot",
+   "PHRASE"
+  ],
+  [
+   "gemstone",
+   "PHRASE"
+  ],
+  [
+   "where to buy",
+   "PHRASE"
+  ],
+  [
+   "menards",
+   "BROAD"
+  ],
+  [
+   "christmas lights for sale",
+   "PHRASE"
+  ],
+  [
+   "christmas parade",
+   "PHRASE"
+  ],
+  [
+   "jellyfish",
+   "PHRASE"
+  ],
+  [
+   "drive through",
+   "PHRASE"
+  ],
+  [
+   "replacement christmas bulbs",
+   "PHRASE"
+  ],
+  [
+   "temu",
+   "BROAD"
+  ],
+  [
+   "christmas light storage",
+   "PHRASE"
+  ],
+  [
+   "app download",
+   "PHRASE"
+  ],
+  [
+   "holiday lights for sale",
+   "PHRASE"
+  ],
+  [
+   "christmas light hanging service",
+   "PHRASE"
+  ],
+  [
+   "best christmas displays",
+   "PHRASE"
+  ],
+  [
+   "app not working",
+   "PHRASE"
+  ],
+  [
+   "labor only",
+   "PHRASE"
+  ],
+  [
+   "lights show",
+   "PHRASE"
+  ],
+  [
+   "christmas light repair",
+   "PHRASE"
+  ],
+  [
+   "holiday lights map",
+   "PHRASE"
+  ],
+  [
+   "zoo lights",
+   "PHRASE"
+  ],
+  [
+   "holiday event",
+   "PHRASE"
+  ],
+  [
+   "target christmas lights",
+   "PHRASE"
+  ],
+  [
+   "christmas lights map",
+   "PHRASE"
+  ],
+  [
+   "oelo",
+   "PHRASE"
+  ],
+  [
+   "christmas at the zoo",
+   "PHRASE"
+  ],
+  [
+   "christmas light removal",
+   "PHRASE"
+  ],
+  [
+   "lighting festival",
+   "PHRASE"
+  ],
+  [
+   "christmas light tour",
+   "PHRASE"
+  ],
+  [
+   "trimlight",
+   "PHRASE"
+  ],
+  [
+   "holiday light tour",
+   "PHRASE"
+  ],
+  [
+   "govee",
+   "PHRASE"
+  ],
+  [
+   "customer supplied",
+   "PHRASE"
+  ],
+  [
+   "celebright",
+   "PHRASE"
+  ],
+  [
+   "take down christmas lights",
+   "PHRASE"
+  ],
+  [
+   "my own lights",
+   "PHRASE"
+  ],
+  [
+   "seasonal light installation",
+   "PHRASE"
+  ]
+ ],
+ "geo_names": {
+  "geoTargetConstants/1021635": [
+   "Crete,Nebraska,United States",
+   "City",
+   "ENABLED"
+  ],
+  "geoTargetConstants/1021647": [
+   "Eagle,Nebraska,United States",
+   "City",
+   "ENABLED"
+  ],
+  "geoTargetConstants/1021696": [
+   "Lincoln,Nebraska,United States",
+   "City",
+   "ENABLED"
+  ],
+  "geoTargetConstants/1021783": [
+   "Waverly,Nebraska,United States",
+   "City",
+   "ENABLED"
+  ],
+  "geoTargetConstants/9024651": [
+   "68347,Nebraska,United States",
+   "Postal Code",
+   "ENABLED"
+  ],
+  "geoTargetConstants/9024671": [
+   "68372,Nebraska,United States",
+   "Postal Code",
+   "ENABLED"
+  ],
+  "geoTargetConstants/9024703": [
+   "68430,Nebraska,United States",
+   "Postal Code",
+   "ENABLED"
+  ],
+  "geoTargetConstants/9024728": [
+   "68461,Nebraska,United States",
+   "Postal Code",
+   "ENABLED"
+  ],
+  "geoTargetConstants/9024746": [
+   "68516,Nebraska,United States",
+   "Postal Code",
+   "ENABLED"
+  ],
+  "geoTargetConstants/9024748": [
+   "68520,Nebraska,United States",
+   "Postal Code",
+   "ENABLED"
+  ],
+  "geoTargetConstants/9024753": [
+   "68526,Nebraska,United States",
+   "Postal Code",
+   "ENABLED"
+  ],
+  "geoTargetConstants/9024754": [
+   "68527,Nebraska,United States",
+   "Postal Code",
+   "ENABLED"
+  ],
+  "geoTargetConstants/9195288": [
+   "Ashland Township,Nebraska,United States",
+   "Municipality",
+   "ENABLED"
+  ],
+  "geoTargetConstants/9233865": [
+   "Nemaha Precinct,Nebraska,United States",
+   "Municipality",
+   "ENABLED"
+  ]
+ },
+ "changes": [
+  {
+   "t": "2026-09-17 12:29:51.786182",
+   "type": "CAMPAIGN_BUDGET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "amount_micros",
+    "delivery_method",
+    "explicitly_shared",
+    "id",
+    "name",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignBudgets/15884926233",
+   "extra": " budget 0.0->16.44"
+  },
+  {
+   "t": "2026-09-17 12:31:52.798187",
+   "type": "CAMPAIGN",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "advertising_channel_type",
+    "campaign_budget",
+    "contains_eu_political_advertising",
+    "final_url_suffix",
+    "geo_target_type_setting.negative_geo_target_type",
+    "geo_target_type_setting.positive_geo_target_type",
+    "id",
+    "name",
+    "network_settings.target_content_network",
+    "network_settings.target_google_search",
+    "network_settings.target_partner_search_network",
+    "network_settings.target_search_network",
+    "resource_name",
+    "status",
+    "target_spend.cpc_bid_ceiling_micros"
+   ],
+   "res": "customers/8164626278/campaigns/24257151015",
+   "extra": " status UNSPECIFIED->PAUSED ceiling 0.0->8.0"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~9024671",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~9024703",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~9024754",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~9024651",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~9024753",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~9024728",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~9024746",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~9024748",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~1021783",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~1021647",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~1021696",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~9195288",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~1021635",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~9233865",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~1000",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10317231",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10013811",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10198071",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10119881",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10005011",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10005021",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10205881",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10317631",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10319341",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10028331",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~12448291",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10874040",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10206571",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10667101",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10125891",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10549631",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10534901",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10635691",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~11190766",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10661876",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10295291",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~11606761",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10272261",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10272361",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10009551",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10165971",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10019991",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10020011",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10182781",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~12712506",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10837581",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10286536",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~12720276",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~43336933",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10110710",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10154201",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~483590304",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~12471160",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~10057273",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~38938952",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~17273460",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~16848743",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~297906007663",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~301477363675",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~299057009899",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~345551175977",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~374760751870",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~287210488",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~299562336650",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~323199310029",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~300868002390",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~173487103",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~338093411457",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~18247234252",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~573042878059",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~2225874598953",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~296448593009",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~1762401065",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~295974718690",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~146652920",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~11030595947",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~13815997505",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~325789942795",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~1733687419372",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~490016994",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~2356007674300",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~341613963",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~298017287907",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~300870114918",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~492913282019",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~349377707943",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~276800692",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~17675643",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~313013329119",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.401545",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignCriteria/24257151015~948119661333",
+   "extra": " crit type=UNSPECIFIED neg=True"
+  },
+  {
+   "t": "2026-09-17 12:31:53.852794",
+   "type": "AD_GROUP",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "id",
+    "name",
+    "resource_name",
+    "status",
+    "type"
+   ],
+   "res": "customers/8164626278/adGroups/200347713516",
+   "extra": " ag status UNSPECIFIED->ENABLED"
+  },
+  {
+   "t": "2026-09-17 12:31:53.852794",
+   "type": "AD_GROUP",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "campaign",
+    "id",
+    "name",
+    "resource_name",
+    "status",
+    "type"
+   ],
+   "res": "customers/8164626278/adGroups/200347713556",
+   "extra": " ag status UNSPECIFIED->ENABLED"
+  },
+  {
+   "t": "2026-09-17 12:31:54.396915",
+   "type": "AD_GROUP_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "ad_group",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name",
+    "status"
+   ],
+   "res": "customers/8164626278/adGroupCriteria/200347713516~546844124143",
+   "extra": " kw 'permanent christmas light installation' EXACT neg=False status=ENABLED"
+  },
+  {
+   "t": "2026-09-17 12:31:54.396915",
+   "type": "AD_GROUP_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "ad_group",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name",
+    "status"
+   ],
+   "res": "customers/8164626278/adGroupCriteria/200347713516~385217173659",
+   "extra": " kw 'permanent christmas light installation' PHRASE neg=False status=ENABLED"
+  },
+  {
+   "t": "2026-09-17 12:31:54.396915",
+   "type": "AD_GROUP_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "ad_group",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name",
+    "status"
+   ],
+   "res": "customers/8164626278/adGroupCriteria/200347713516~2261056242205",
+   "extra": " kw 'permanent christmas lights installer' EXACT neg=False status=ENABLED"
+  },
+  {
+   "t": "2026-09-17 12:31:54.396915",
+   "type": "AD_GROUP_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "ad_group",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name",
+    "status"
+   ],
+   "res": "customers/8164626278/adGroupCriteria/200347713516~1968954080156",
+   "extra": " kw 'permanent christmas lights installer' PHRASE neg=False status=ENABLED"
+  },
+  {
+   "t": "2026-09-17 12:31:54.396915",
+   "type": "AD_GROUP_CRITERION",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "ad_group",
+    "criterion_id",
+    "keyword.match_type",
+    "keyword.text",
+    "negative",
+    "resource_name",
+    "status"
+   ],
+   "res": "customers/8164626278/adGroupCriteria/200347713556~306097636075",
+   "extra": " kw 'permanent christmas lights' EXACT neg=False status=ENABLED"
+  },
+  {
+   "t": "2026-09-17 12:31:55.279743",
+   "type": "AD_GROUP_AD",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "ad",
+    "ad_group",
+    "resource_name",
+    "status"
+   ],
+   "res": "customers/8164626278/adGroupAds/200347713516~825023783007",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:55.279743",
+   "type": "AD_GROUP_AD",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "ad",
+    "ad_group",
+    "resource_name",
+    "status"
+   ],
+   "res": "customers/8164626278/adGroupAds/200347713516~825023783010",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:55.279743",
+   "type": "AD_GROUP_AD",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "ad",
+    "ad_group",
+    "resource_name",
+    "status"
+   ],
+   "res": "customers/8164626278/adGroupAds/200347713556~825023783013",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:55.279743",
+   "type": "AD_GROUP_AD",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "ad",
+    "ad_group",
+    "resource_name",
+    "status"
+   ],
+   "res": "customers/8164626278/adGroupAds/200347713556~825023783016",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:55.802239",
+   "type": "ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "callout_asset.callout_text",
+    "id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/assets/422487181204",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:55.802239",
+   "type": "ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "callout_asset.callout_text",
+    "id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/assets/422571064683",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:55.802239",
+   "type": "ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "callout_asset.callout_text",
+    "id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/assets/422571064692",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:55.802239",
+   "type": "ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "callout_asset.callout_text",
+    "id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/assets/422487159850",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:55.802239",
+   "type": "ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "callout_asset.callout_text",
+    "id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/assets/422571032091",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:55.802239",
+   "type": "ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "callout_asset.callout_text",
+    "id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/assets/422571077787",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:55.802239",
+   "type": "ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "id",
+    "resource_name",
+    "structured_snippet_asset.header",
+    "structured_snippet_asset.values"
+   ],
+   "res": "customers/8164626278/assets/422487159856",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:56.300767",
+   "type": "CAMPAIGN_ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "asset",
+    "campaign",
+    "field_type",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignAssets/24257151015~422487181204~CALLOUT",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:56.300767",
+   "type": "CAMPAIGN_ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "asset",
+    "campaign",
+    "field_type",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignAssets/24257151015~422571064683~CALLOUT",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:56.300767",
+   "type": "CAMPAIGN_ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "asset",
+    "campaign",
+    "field_type",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignAssets/24257151015~422571064692~CALLOUT",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:56.300767",
+   "type": "CAMPAIGN_ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "asset",
+    "campaign",
+    "field_type",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignAssets/24257151015~422487159850~CALLOUT",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:56.300767",
+   "type": "CAMPAIGN_ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "asset",
+    "campaign",
+    "field_type",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignAssets/24257151015~422571032091~CALLOUT",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:56.300767",
+   "type": "CAMPAIGN_ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "asset",
+    "campaign",
+    "field_type",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignAssets/24257151015~422571077787~CALLOUT",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 12:31:56.300767",
+   "type": "CAMPAIGN_ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "asset",
+    "campaign",
+    "field_type",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/campaignAssets/24257151015~422487159856~STRUCTURED_SNIPPET",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 16:27:54.863167",
+   "type": "ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "call_asset.ad_schedule_targets",
+    "call_asset.call_conversion_action",
+    "call_asset.call_conversion_reporting_state",
+    "call_asset.country_code",
+    "call_asset.phone_number",
+    "id",
+    "resource_name"
+   ],
+   "res": "customers/8164626278/assets/422649064971",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-17 16:27:55.400079",
+   "type": "CAMPAIGN_ASSET",
+   "op": "CREATE",
+   "client": "GOOGLE_ADS_API",
+   "fields": [
+    "asset",
+    "campaign",
+    "field_type",
+    "resource_name",
+    "status"
+   ],
+   "res": "customers/8164626278/campaignAssets/24257151015~422649064971~CALL",
+   "extra": ""
+  },
+  {
+   "t": "2026-09-21 09:04:56.649571",
+   "type": "CAMPAIGN",
+   "op": "UPDATE",
+   "client": "GOOGLE_ADS_WEB_CLIENT",
+   "fields": [
+    "status"
+   ],
+   "res": "customers/8164626278/campaigns/24257151015",
+   "extra": " status PAUSED->ENABLED"
+  },
+  {
+   "t": "2026-09-25 08:26:21.072255",
+   "type": "CAMPAIGN_CRITERION",
+   "op": "UPDATE",
+   "client": "GOOGLE_ADS_WEB_CLIENT",
+   "fields": [],
+   "res": "customers/8164626278/campaignCriteria/24257151015~30002",
+   "extra": " crit type=UNSPECIFIED neg=False"
+  }
+ ],
+ "daily": {
+  "2026-09-21": {
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0,
+   "is": 0.4,
+   "lost_budget": 0.6,
+   "lost_rank": 0.0,
+   "top": 0.2,
+   "invalid": 0
+  },
+  "2026-09-22": {
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0,
+   "is": 0.6,
+   "lost_budget": 0.4,
+   "lost_rank": 0.0,
+   "top": 0.6,
+   "invalid": 0
+  },
+  "2026-09-23": {
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0,
+   "is": 1.0,
+   "lost_budget": 0.0,
+   "lost_rank": 0.0,
+   "top": 1.0,
+   "invalid": 0
+  },
+  "2026-09-24": {
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0,
+   "is": 0.667,
+   "lost_budget": 0.333,
+   "lost_rank": 0.0,
+   "top": 0.444,
+   "invalid": 0
+  },
+  "2026-09-25": {
+   "impr": 8,
+   "clicks": 1,
+   "cost": 5.52,
+   "conv": 0.0,
+   "is": 0.556,
+   "lost_budget": 0.111,
+   "lost_rank": 0.333,
+   "top": 0.444,
+   "invalid": 0
+  },
+  "2026-09-26": {
+   "impr": 15,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0,
+   "is": 0.909,
+   "lost_budget": 0.0,
+   "lost_rank": 0.091,
+   "top": 0.818,
+   "invalid": 0
+  },
+  "2026-09-27": {
+   "impr": 15,
+   "clicks": 2,
+   "cost": 13.17,
+   "conv": 0.0,
+   "is": 0.846,
+   "lost_budget": 0.077,
+   "lost_rank": 0.077,
+   "top": 0.538,
+   "invalid": 0
+  },
+  "2026-09-28": {
+   "impr": 9,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0,
+   "is": 0.0,
+   "lost_budget": 0.0,
+   "lost_rank": 0.0,
+   "top": 0.0,
+   "invalid": 0
+  }
+ },
+ "keyword_perf": [
+  {
+   "ag": "AG | Permanent Light Installation",
+   "text": "permanent christmas light installation",
+   "mt": "PHRASE",
+   "impr": 32,
+   "clicks": 3,
+   "cost": 18.69,
+   "is": 0.7333333333333333,
+   "lost_rank": 0.06666666666666667
+  },
+  {
+   "ag": "AG | Permanent Light Installation",
+   "text": "permanent christmas light installation",
+   "mt": "EXACT",
+   "impr": 0,
+   "clicks": 0,
+   "cost": 0.0,
+   "is": 0.0,
+   "lost_rank": 0.0
+  },
+  {
+   "ag": "AG | Permanent Light Installation",
+   "text": "permanent christmas lights installer",
+   "mt": "PHRASE",
+   "impr": 0,
+   "clicks": 0,
+   "cost": 0.0,
+   "is": 0.0,
+   "lost_rank": 0.0
+  },
+  {
+   "ag": "AG | Permanent Light Installation",
+   "text": "permanent christmas lights installer",
+   "mt": "EXACT",
+   "impr": 0,
+   "clicks": 0,
+   "cost": 0.0,
+   "is": 0.0,
+   "lost_rank": 0.0
+  },
+  {
+   "ag": "AG | Permanent Christmas Lights Exact",
+   "text": "permanent christmas lights",
+   "mt": "EXACT",
+   "impr": 29,
+   "clicks": 0,
+   "cost": 0.0,
+   "is": 0.7083333333333334,
+   "lost_rank": 0.125
+  }
+ ],
+ "user_locations": {
+  "geoTargetConstants/1021696|True": 2,
+  "geoTargetConstants/9024703|True": 6,
+  "geoTargetConstants/9024736|True": 4,
+  "geoTargetConstants/9024738|True": 7,
+  "geoTargetConstants/9024739|True": 2,
+  "geoTargetConstants/9024740|True": 3,
+  "geoTargetConstants/9024741|True": 4,
+  "geoTargetConstants/9024742|True": 3,
+  "geoTargetConstants/9024743|True": 2,
+  "geoTargetConstants/9024744|True": 2,
+  "geoTargetConstants/9024746|True": 14,
+  "geoTargetConstants/9024749|True": 4,
+  "geoTargetConstants/9024754|True": 2,
+  "geoTargetConstants/9190999|True": 3,
+  "geoTargetConstants/9193391|True": 1,
+  "geoTargetConstants/9194203|True": 2
+ }
+}

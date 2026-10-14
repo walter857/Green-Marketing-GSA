@@ -1,0 +1,81 @@
+{
+ "plan_name": "AMB-1002-BUD-OCT-1",
+ "valid_change_day": "2026-10-02",
+ "days_left_incl_change_day": 30,
+ "rule": "October daily = (1,000 - October spend before the change) / calendar days left incl. change day, rounded down to the cent",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "approval_class": "budget",
+ "work_order": "work-orders/work-order-budget-allocation-2026-10-02.yaml",
+ "unchanged": "bidding, CPC ceilings ($18 repair), schedules, locations, devices, statuses, conversions",
+ "monthly_basis": "Google monthly limit = average daily budget x 30.4; daily spend may reach 2x",
+ "operations": [
+  {
+   "op": "SET_BUDGET",
+   "campaign_id": "24132507744",
+   "campaign": "Search | NonBrand | Boiler Services | Central MD | BOFU | 2026-09",
+   "budget_id": "15787409438",
+   "from_usd": 45.0,
+   "to_usd": 31.92
+  },
+  {
+   "op": "SET_BUDGET",
+   "campaign_id": "24274160783",
+   "campaign": "Search | NonBrand | Geothermal Heat Pump | Central MD | BOFU | 2026-09",
+   "budget_id": "15887323571",
+   "from_usd": 20.0,
+   "to_usd": 33.33
+  },
+  {
+   "op": "SET_BUDGET",
+   "campaign_id": "24132507747",
+   "campaign": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "budget_id": "15787409441",
+   "from_usd": 20.0,
+   "to_usd": 33.33
+  },
+  {
+   "op": "SET_BUDGET",
+   "campaign_id": "24268690038",
+   "campaign": "Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU | 2026-09",
+   "budget_id": "15887323562",
+   "from_usd": 15.0,
+   "to_usd": 32.52
+  },
+  {
+   "op": "SET_BUDGET",
+   "campaign_id": "24257819466",
+   "campaign": "Search | NonBrand | Heating & Furnace Install & Replace | Central MD | BOFU | 2026-09",
+   "budget_id": "15885327975",
+   "from_usd": 60.0,
+   "to_usd": 30.26
+  },
+  {
+   "op": "SET_BUDGET",
+   "campaign_id": "24257819463",
+   "campaign": "Search | NonBrand | Heating & Furnace Repair | Central MD | BOFU | 2026-09",
+   "budget_id": "15885327972",
+   "from_usd": 85.0,
+   "to_usd": 31.76
+  },
+  {
+   "op": "SET_BUDGET",
+   "campaign_id": "24279798229",
+   "campaign": "Search | NonBrand | Heating Maintenance & Inspection | Central MD | BOFU | 2026-09",
+   "budget_id": "15887323565",
+   "from_usd": 45.0,
+   "to_usd": 33.33
+  },
+  {
+   "op": "SET_BUDGET",
+   "campaign_id": "24268690041",
+   "campaign": "Search | NonBrand | Thermostat Services | Central MD | BOFU | 2026-09",
+   "budget_id": "15887323568",
+   "from_usd": 15.0,
+   "to_usd": 32.5
+  }
+ ],
+ "operation_count": 8,
+ "fingerprint": "A1B9032D7D60"
+}

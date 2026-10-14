@@ -1,0 +1,67 @@
+{
+ "plan_name": "AMB-0909-ADS-1",
+ "approval_class": "reversible-status-change",
+ "generated_local": "2026-09-09T14:58:54.854563-04:00",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "AC Repair",
+  "related_services": [
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "summary": "Pause 2 ENABLED-but-DISAPPROVED RSAs in live ad groups (CONSUMER_FINANCE, FULLY_LIMITED). Each ad group keeps two ENABLED APPROVED RSAs, satisfying agency policy.",
+ "object_count": 2,
+ "partial_failure": false,
+ "atomic": true,
+ "operations": [
+  {
+   "operation": "PAUSE_AD_GROUP_AD",
+   "resource": "ad_group_ad",
+   "resource_name": "customers/2401959466/adGroupAds/202339087634~820900825434",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "ad_group_id": "202339087634",
+   "ad_id": "820900825434",
+   "current_state": "status = ENABLED, approval_status = DISAPPROVED (policy topic CONSUMER_FINANCE, FULLY_LIMITED)",
+   "proposed_state": "PAUSED",
+   "reason": "A FULLY_LIMITED disapproved ad cannot serve. Leaving it ENABLED hides the fact that the ad group is really running two RSAs, and keeps a policy-flagged asset attached to a serving ad group. The approved replacement RSAs created on 2026-08-21 are already live in the same ad group.",
+   "remaining_enabled_approved_ads_in_ad_group": [
+    "821319509197",
+    "821319509200"
+   ],
+   "rollback": "set ad_group_ad 202339087634~820900825434 status back to ENABLED",
+   "risk": "LOW - the ad cannot serve today",
+   "unrelated_resource_assertion": "each ad group must still hold at least two ENABLED APPROVED RSAs on readback"
+  },
+  {
+   "operation": "PAUSE_AD_GROUP_AD",
+   "resource": "ad_group_ad",
+   "resource_name": "customers/2401959466/adGroupAds/200159223798~820944944368",
+   "campaign_id": "24132507753",
+   "campaign": "HVAC Replacement",
+   "ad_group_id": "200159223798",
+   "ad_id": "820944944368",
+   "current_state": "status = ENABLED, approval_status = DISAPPROVED (policy topic CONSUMER_FINANCE, FULLY_LIMITED)",
+   "proposed_state": "PAUSED",
+   "reason": "A FULLY_LIMITED disapproved ad cannot serve. Leaving it ENABLED hides the fact that the ad group is really running two RSAs, and keeps a policy-flagged asset attached to a serving ad group. The approved replacement RSAs created on 2026-08-21 are already live in the same ad group.",
+   "remaining_enabled_approved_ads_in_ad_group": [
+    "821319509203",
+    "821319509206"
+   ],
+   "rollback": "set ad_group_ad 200159223798~820944944368 status back to ENABLED",
+   "risk": "LOW - the ad cannot serve today",
+   "unrelated_resource_assertion": "each ad group must still hold at least two ENABLED APPROVED RSAs on readback"
+  }
+ ],
+ "notes": {
+  "policy_topic": "CONSUMER_FINANCE / FULLY_LIMITED, review_status REVIEWED",
+  "not_included": "The two AREA_OF_INTEREST_ONLY ads in AC Repair sit in REMOVED ad group 202339087874 and cannot serve. No operation is needed."
+ },
+ "fingerprint": "11A79347A296"
+}

@@ -1,0 +1,281 @@
+{
+  "removals": [
+    {
+      "kw": "cost",
+      "match": "PHRASE",
+      "present": true,
+      "criterion_id": "40961223",
+      "resource_name": "customers/8735782888/campaignCriteria/20315156610~40961223"
+    },
+    {
+      "kw": "how much",
+      "match": "PHRASE",
+      "present": true,
+      "criterion_id": "101679803",
+      "resource_name": "customers/8735782888/campaignCriteria/20315156610~101679803"
+    },
+    {
+      "kw": "sprinkler valve replacement cost",
+      "match": "EXACT",
+      "present": true,
+      "criterion_id": "337388455191",
+      "resource_name": "customers/8735782888/campaignCriteria/20315156610~337388455191"
+    }
+  ],
+  "additions_safe": [
+    {
+      "kw": "lawn sense dallas",
+      "match": "EXACT",
+      "reason": "competitor",
+      "measured_waste_90d": 175.47
+    },
+    {
+      "kw": "lawn sense plano",
+      "match": "EXACT",
+      "reason": "competitor",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "lawn sense texas",
+      "match": "EXACT",
+      "reason": "competitor",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "lee engineering irrigation",
+      "match": "EXACT",
+      "reason": "competitor",
+      "measured_waste_90d": 44.22
+    },
+    {
+      "kw": "lee engineering arlington texas",
+      "match": "EXACT",
+      "reason": "competitor",
+      "measured_waste_90d": 35.91
+    },
+    {
+      "kw": "garden springs irrigation",
+      "match": "EXACT",
+      "reason": "competitor",
+      "measured_waste_90d": 19.85
+    },
+    {
+      "kw": "h20rx",
+      "match": "EXACT",
+      "reason": "competitor",
+      "measured_waste_90d": 19.11
+    },
+    {
+      "kw": "albuquerque",
+      "match": "PHRASE",
+      "reason": "out-of-market",
+      "measured_waste_90d": 37.93
+    },
+    {
+      "kw": "sioux falls",
+      "match": "PHRASE",
+      "reason": "out-of-market",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "austin",
+      "match": "PHRASE",
+      "reason": "out-of-market-separate-operation",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "round rock",
+      "match": "PHRASE",
+      "reason": "out-of-market-separate-operation",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "cedar park",
+      "match": "PHRASE",
+      "reason": "out-of-market-separate-operation",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "jobs",
+      "match": "PHRASE",
+      "reason": "employment",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "job openings",
+      "match": "PHRASE",
+      "reason": "employment",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "careers",
+      "match": "PHRASE",
+      "reason": "employment",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "salary",
+      "match": "PHRASE",
+      "reason": "employment",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "apprentice",
+      "match": "PHRASE",
+      "reason": "employment",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "how to",
+      "match": "PHRASE",
+      "reason": "diy-instructional",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "diy",
+      "match": "PHRASE",
+      "reason": "diy-instructional",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "tutorial",
+      "match": "PHRASE",
+      "reason": "diy-instructional",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "youtube",
+      "match": "PHRASE",
+      "reason": "diy-instructional",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "training",
+      "match": "PHRASE",
+      "reason": "training",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "certification",
+      "match": "PHRASE",
+      "reason": "training",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "license class",
+      "match": "PHRASE",
+      "reason": "training",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "home depot",
+      "match": "PHRASE",
+      "reason": "retail",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "lowes",
+      "match": "PHRASE",
+      "reason": "retail",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "amazon",
+      "match": "PHRASE",
+      "reason": "retail",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "for sale",
+      "match": "PHRASE",
+      "reason": "retail",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "buy online",
+      "match": "PHRASE",
+      "reason": "retail",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "parts store",
+      "match": "PHRASE",
+      "reason": "retail-parts",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "replacement parts",
+      "match": "PHRASE",
+      "reason": "retail-parts",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "free sprinkler system",
+      "match": "PHRASE",
+      "reason": "no-hire-intent",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "volunteer",
+      "match": "PHRASE",
+      "reason": "no-hire-intent",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "new install",
+      "match": "PHRASE",
+      "reason": "out-of-scope-install",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "new installation",
+      "match": "PHRASE",
+      "reason": "out-of-scope-install",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "install cost",
+      "match": "PHRASE",
+      "reason": "out-of-scope-install",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "system design",
+      "match": "PHRASE",
+      "reason": "out-of-scope-design",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "lawn mowing",
+      "match": "PHRASE",
+      "reason": "out-of-scope-landscaping",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "tree service",
+      "match": "PHRASE",
+      "reason": "out-of-scope-landscaping",
+      "measured_waste_90d": 0.0
+    },
+    {
+      "kw": "sod installation",
+      "match": "PHRASE",
+      "reason": "out-of-scope-landscaping",
+      "measured_waste_90d": 0.0
+    }
+  ],
+  "additions_blocked": [],
+  "current_negative_count": 620,
+  "converting_terms_protected": [
+    "dallas sprinkler company",
+    "home irrigation services",
+    "irrigation services near me",
+    "irrigation system company",
+    "sprinkler plano tx"
+  ],
+  "guard_rules": [
+    "never negative a term that produced a conversion",
+    "never negative text contained in an active keyword",
+    "never negative in-scope repair vocabulary unless competitor/out-of-scope/retail-parts"
+  ]
+}

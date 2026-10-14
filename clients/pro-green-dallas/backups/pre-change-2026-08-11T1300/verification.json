@@ -1,0 +1,270 @@
+[
+  {
+    "item": "identity",
+    "intended": {
+      "id": "8735782888",
+      "name": "Pro Green - Dallas - Live",
+      "currency": "USD",
+      "manager": false,
+      "test": false
+    },
+    "actual": {
+      "id": "8735782888",
+      "name": "Pro Green - Dallas - Live",
+      "currency": "USD",
+      "manager": false,
+      "test": false
+    },
+    "PASS": true
+  },
+  {
+    "item": "6617381255 preserved primary+inConv",
+    "intended": {
+      "primary": true,
+      "in_conv": true,
+      "status": "ENABLED"
+    },
+    "actual": {
+      "primary": true,
+      "in_conv": true,
+      "status": "ENABLED"
+    },
+    "PASS": true
+  },
+  {
+    "item": "6886101052 preserved primary+inConv",
+    "intended": {
+      "primary": true,
+      "in_conv": true,
+      "status": "ENABLED"
+    },
+    "actual": {
+      "primary": true,
+      "in_conv": true,
+      "status": "ENABLED"
+    },
+    "PASS": true
+  },
+  {
+    "item": "6886103719 preserved untouched",
+    "intended": {
+      "primary": true,
+      "in_conv": true,
+      "status": "ENABLED"
+    },
+    "actual": {
+      "primary": true,
+      "in_conv": true,
+      "status": "ENABLED"
+    },
+    "PASS": true
+  },
+  {
+    "item": "devices",
+    "intended": {
+      "DESKTOP": 1.0,
+      "MOBILE": null,
+      "TABLET": 0.0
+    },
+    "actual": {
+      "DESKTOP": 1.0,
+      "MOBILE": null,
+      "TABLET": 0.0
+    },
+    "PASS": true
+  },
+  {
+    "item": "removed 'cost' PHRASE",
+    "intended": false,
+    "actual": false,
+    "PASS": true
+  },
+  {
+    "item": "removed 'how much' PHRASE",
+    "intended": false,
+    "actual": false,
+    "PASS": true
+  },
+  {
+    "item": "removed 'sprinkler valve replacement cost' EXACT",
+    "intended": false,
+    "actual": false,
+    "PASS": true
+  },
+  {
+    "item": "all 40 additions present",
+    "intended": [],
+    "actual": [],
+    "PASS": true
+  },
+  {
+    "item": "targeted off-service cost negatives preserved",
+    "intended": true,
+    "actual": true,
+    "PASS": true
+  },
+  {
+    "item": "8 new keywords created PAUSED",
+    "intended": 8,
+    "actual": 8,
+    "PASS": true
+  },
+  {
+    "item": "3 challenger RSAs PAUSED",
+    "intended": [
+      "PAUSED",
+      "PAUSED",
+      "PAUSED"
+    ],
+    "actual": [
+      "PAUSED",
+      "PAUSED",
+      "PAUSED"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "SERVING final URLs unchanged",
+    "intended": [
+      "https://offerdfw.progreenlandscapesolutions.com/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/"
+    ],
+    "actual": [
+      "https://offerdfw.progreenlandscapesolutions.com/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "'Claim Your Discount' paused",
+    "intended": "PAUSED",
+    "actual": "PAUSED",
+    "PASS": true
+  },
+  {
+    "item": "'Licensed & Insured' still enabled",
+    "intended": "ENABLED",
+    "actual": "ENABLED",
+    "PASS": true
+  },
+  {
+    "item": "new callouts created PAUSED",
+    "intended": [
+      "PAUSED",
+      "PAUSED",
+      "PAUSED"
+    ],
+    "actual": [
+      "PAUSED",
+      "PAUSED",
+      "PAUSED"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "no winterization sitelink still enabled",
+    "intended": 0,
+    "actual": 0,
+    "PASS": true
+  },
+  {
+    "item": "call asset (214) 301-3385 untouched",
+    "intended": [
+      [
+        "(214) 301-3385",
+        "ENABLED"
+      ]
+    ],
+    "actual": [
+      [
+        "(214) 301-3385",
+        "ENABLED"
+      ]
+    ],
+    "PASS": true
+  },
+  {
+    "item": "utm_id corrected on 22027188372",
+    "intended": true,
+    "actual": true,
+    "PASS": true
+  },
+  {
+    "item": "utm_id corrected on 22255200632",
+    "intended": true,
+    "actual": true,
+    "PASS": true
+  },
+  {
+    "item": "utm_id corrected on 22379036365",
+    "intended": true,
+    "actual": true,
+    "PASS": true
+  },
+  {
+    "item": "live campaign template unchanged",
+    "intended": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20315156610",
+    "actual": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20315156610",
+    "PASS": true
+  },
+  {
+    "item": "daily budget 45.00",
+    "intended": 45.0,
+    "actual": 45.0,
+    "PASS": true
+  },
+  {
+    "item": "bidding unchanged (TARGET_SPEND)",
+    "intended": "TARGET_SPEND",
+    "actual": "TARGET_SPEND",
+    "PASS": true
+  },
+  {
+    "item": "search partners still off",
+    "intended": false,
+    "actual": false,
+    "PASS": true
+  },
+  {
+    "item": "display still off",
+    "intended": false,
+    "actual": false,
+    "PASS": true
+  },
+  {
+    "item": "presence targeting",
+    "intended": "PRESENCE",
+    "actual": "PRESENCE",
+    "PASS": true
+  },
+  {
+    "item": "74 location criteria preserved",
+    "intended": 74,
+    "actual": 74,
+    "PASS": true
+  },
+  {
+    "item": "schedule unchanged 7x 8-20 ET",
+    "intended": [
+      7,
+      [
+        8
+      ],
+      [
+        20
+      ]
+    ],
+    "actual": [
+      7,
+      [
+        8
+      ],
+      [
+        20
+      ]
+    ],
+    "PASS": true
+  }
+]

@@ -1,0 +1,216 @@
+change_plan:
+  plan_name: PLAN-SLM-KW-2
+  plan_version: 2
+  generated_at: '2026-09-03T20:10:43.052619-04:00'
+  target:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: '2429758629'
+    manager_customer_id: '3373711342'
+    currency: USD
+    time_zone: America/New_York
+    exact_service: patio construction (Patio) and paver installation (Pavers)
+    identity_receipt: clients/softwind-landscape-masonry/snapshots/identity-gate-2026-09-03-1959.json
+    baseline_snapshot: recovery/2026-09-patio-pavers/01e-baseline-2.json
+    baseline_evidence_sha256_short: 3D9E3199DD183E79
+  subplan_used: STATUS
+  subplans:
+    STATUS:
+      actions:
+      - action_id: KW-01
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '543919818878'
+        criterion_id: '543919818878'
+        ad_group_id: '196134824089'
+        ad_group_name: Paver Installation Near Me (Pharse)
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: local asphalt companies near me
+        match_type: PHRASE
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        alltime_cost: 132.69
+        alltime_clicks: 5
+        alltime_raw_credits: 1.0
+        qualified_leads: UNKNOWN - no CRM join exists
+        authority: 'USER-2026-09-03 recovery prompt, section 2: asphalt paving, asphalt repair and blacktop
+          are explicitly outside the approved service scope. This is a DECLARED-SCOPE exclusion, not a
+          performance judgement - the keyword set would be paused even if it converted well.'
+        reason: Keyword text names asphalt, a service outside both work orders.
+      - action_id: KW-02
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '297075223566'
+        criterion_id: '297075223566'
+        ad_group_id: '196134824089'
+        ad_group_name: Paver Installation Near Me (Pharse)
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: asphalt contractor near me
+        match_type: PHRASE
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        alltime_cost: 102.01
+        alltime_clicks: 4
+        alltime_raw_credits: 0.0
+        qualified_leads: UNKNOWN - no CRM join exists
+        authority: 'USER-2026-09-03 recovery prompt, section 2: asphalt paving, asphalt repair and blacktop
+          are explicitly outside the approved service scope. This is a DECLARED-SCOPE exclusion, not a
+          performance judgement - the keyword set would be paused even if it converted well.'
+        reason: Keyword text names asphalt, a service outside both work orders.
+      - action_id: KW-03
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '309567954442'
+        criterion_id: '309567954442'
+        ad_group_id: '196134824089'
+        ad_group_name: Paver Installation Near Me (Pharse)
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: asphalt paving services near me
+        match_type: PHRASE
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        alltime_cost: 13.21
+        alltime_clicks: 1
+        alltime_raw_credits: 0.0
+        qualified_leads: UNKNOWN - no CRM join exists
+        authority: 'USER-2026-09-03 recovery prompt, section 2: asphalt paving, asphalt repair and blacktop
+          are explicitly outside the approved service scope. This is a DECLARED-SCOPE exclusion, not a
+          performance judgement - the keyword set would be paused even if it converted well.'
+        reason: Keyword text names asphalt, a service outside both work orders.
+      - action_id: KW-04
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '300588535183'
+        criterion_id: '300588535183'
+        ad_group_id: '196134824089'
+        ad_group_name: Paver Installation Near Me (Pharse)
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: asphalt services near me
+        match_type: PHRASE
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        alltime_cost: 0.0
+        alltime_clicks: 0
+        alltime_raw_credits: 0.0
+        qualified_leads: UNKNOWN - no CRM join exists
+        authority: 'USER-2026-09-03 recovery prompt, section 2: asphalt paving, asphalt repair and blacktop
+          are explicitly outside the approved service scope. This is a DECLARED-SCOPE exclusion, not a
+          performance judgement - the keyword set would be paused even if it converted well.'
+        reason: Keyword text names asphalt, a service outside both work orders.
+      - action_id: KW-05
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '298883953673'
+        criterion_id: '298883953673'
+        ad_group_id: '196134824089'
+        ad_group_name: Paver Installation Near Me (Pharse)
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: local asphalt paving companies
+        match_type: PHRASE
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        alltime_cost: 0.0
+        alltime_clicks: 0
+        alltime_raw_credits: 0.0
+        qualified_leads: UNKNOWN - no CRM join exists
+        authority: 'USER-2026-09-03 recovery prompt, section 2: asphalt paving, asphalt repair and blacktop
+          are explicitly outside the approved service scope. This is a DECLARED-SCOPE exclusion, not a
+          performance judgement - the keyword set would be paused even if it converted well.'
+        reason: Keyword text names asphalt, a service outside both work orders.
+      - action_id: KW-06
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '303329780817'
+        criterion_id: '303329780817'
+        ad_group_id: '196134824089'
+        ad_group_name: Paver Installation Near Me (Pharse)
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: local asphalt paving contractors
+        match_type: PHRASE
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        alltime_cost: 0.0
+        alltime_clicks: 0
+        alltime_raw_credits: 0.0
+        qualified_leads: UNKNOWN - no CRM join exists
+        authority: 'USER-2026-09-03 recovery prompt, section 2: asphalt paving, asphalt repair and blacktop
+          are explicitly outside the approved service scope. This is a DECLARED-SCOPE exclusion, not a
+          performance judgement - the keyword set would be paused even if it converted well.'
+        reason: Keyword text names asphalt, a service outside both work orders.
+      - action_id: KW-07
+        operation: PAUSE_AD_GROUP_CRITERION
+        resource_type: ad_group_criterion
+        resource_id: '356532888916'
+        criterion_id: '356532888916'
+        ad_group_id: '196134824089'
+        ad_group_name: Paver Installation Near Me (Pharse)
+        campaign_id: '23489296528'
+        campaign_name: Pavers
+        keyword_text: asphalt and paving companies near me
+        match_type: PHRASE
+        current_state: ENABLED
+        proposed_state: PAUSED
+        rollback_state: ENABLED
+        object_count: 1
+        alltime_cost: 0.0
+        alltime_clicks: 0
+        alltime_raw_credits: 0.0
+        qualified_leads: UNKNOWN - no CRM join exists
+        authority: 'USER-2026-09-03 recovery prompt, section 2: asphalt paving, asphalt repair and blacktop
+          are explicitly outside the approved service scope. This is a DECLARED-SCOPE exclusion, not a
+          performance judgement - the keyword set would be paused even if it converted well.'
+        reason: Keyword text names asphalt, a service outside both work orders.
+    BUDGET:
+      actions: &id001 []
+      empty_reason: not part of this package
+    EXISTING_RESOURCES:
+      actions: *id001
+      empty_reason: not part of this package
+    CONVERSIONS:
+      actions: *id001
+      empty_reason: not part of this package
+    CREATE_PAUSED:
+      actions: *id001
+      empty_reason: not part of this package
+    SITE_OR_TRACKING:
+      actions: *id001
+      empty_reason: not part of this package
+    ENABLE:
+      actions: *id001
+      empty_reason: not part of this package
+  summary: Pause the seven ENABLED asphalt keywords added to Pavers on 2026-06-16. Paused, never removed.
+  totals:
+    spend: 247.91
+    clicks: 10
+    raw_credits: 1.0
+    qualified_leads: UNKNOWN
+  not_paused_and_why:
+    paving company near me (PHRASE + EXACT): 3 credits on $450.02 across 36 clicks. Ambiguous, not wrong-service.
+      The asphalt negative underneath it removes the asphalt queries and keeps the rest.
+    local paving companies (PHRASE): WATCH. Same treatment.
+    local driveway companies / driveway companies near me: $158.09, 0 credits, but driveway paver installation
+      is UNRESOLVED (SLM-Q5). Held out.
+    paver driveway installation near me (EXACT + PHRASE): Paver-qualified. Held for the same question.
+  supersedes: PLAN-SLM-KW-1 fingerprint 19FA5CBBB1E5 (OBSOLETE)
+  dependencies: []
+  executor_note: The STATUS subplan of execute_approved_plan.py is pause-only and refuses any operation
+    other than PAUSE_AD_GROUP_CRITERION or any proposed_state other than PAUSED. It cannot enable or remove
+    anything.
+  fingerprint: B7A11B246D74

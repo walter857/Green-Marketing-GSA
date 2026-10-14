@@ -1,0 +1,369 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-LP3-landing-page-implementation-corrected",
+ "version": "2026-08-20-v3",
+ "priority": "P1",
+ "supersedes": {
+  "F6B00478EC422BCD": "SUPERSEDED AND VOID. Its deduplication design was WRONG. It stated that setting transaction_id = lead_id on the Google Ads conversion would let a WhatConverts upload and the on-page tag deduplicate against each other. Google Ads does not deduplicate across different conversion actions, so that design would not have prevented the double count. Every other workstream in it remains valid and is carried forward here with corrected language.",
+  "56813A733CBA555A": "LP1, the original defect list. Superseded by LP2, now by LP3."
+ },
+ "run_class": "READ + DRAFT ONLY. No website change has been made and none is authorized.",
+ "change_control": "DO NOT PUBLISH ANY WEBSITE OR GTM CHANGE WITHOUT SEPARATE EXPLICIT AUTHORIZATION.",
+ "client": {
+  "account": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "platform": "WordPress + Divi 5.10.1 + Gravity Forms 3.0.2",
+  "gtm_container": "GTM-PQTPQ436",
+  "whatconverts_profile": "105803"
+ },
+ "pages": {
+  "AC Repair": "https://offer.ambientcoolingandheating.com/ac-repair/",
+  "HVAC Repair": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+  "HVAC Installation": "https://offer.ambientcoolingandheating.com/hvac-installation/",
+  "HVAC Replacement": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+  "Gas Boiler Repair": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+ },
+ "privacy": "Contains NO personal lead data. All test values are synthetic. The lead identifier must be an opaque backend-generated value and must never encode a name, email address, telephone number or any other personal datum.",
+ "CORRECTED_DEDUPLICATION_STATEMENT": {
+  "retraction": "An earlier statement in this engagement claimed a shared lead_id or transaction_id would deduplicate 'LP Submit Lead Forms' (6885463625) against 'WC Lead' (7643656486). THAT IS INCORRECT and is retracted.",
+  "what_lead_id_DOES_do": "It prevents the SAME conversion action from recording the same event more than once. Within one action, a repeat fire carrying an already-seen order_id or transaction_id is discarded. That is genuinely valuable: it stops a confirmation re-render, a page reload or a back-navigation from inflating the count.",
+  "what_lead_id_DOES_NOT_do": "It does NOT deduplicate two DIFFERENT conversion actions. Google Ads has no cross-action deduplication of any kind. Two actions each record independently regardless of any shared identifier.",
+  "why_merging_the_two_is_impossible_in_this_account": "Offline uploads require a conversion action of type UPLOAD_CLICKS or UPLOAD_CALLS. Verified from the Google Ads API: 6885463625 is WEBPAGE, 6885576934 is WEBSITE_CALL and 1068114183 is AD_CALL, so none of them can receive a WhatConverts upload. Only 7643656486 (UPLOAD_CLICKS) and 7643656075 (UPLOAD_CALLS) can. The tag signal and the upload signal therefore cannot be made to supplement one another.",
+  "enhanced_conversions_for_leads": "enhanced_conversions_for_leads_enabled is TRUE and accepted_customer_data_terms is TRUE on this customer. That mechanism supplements an EXISTING web action with hashed first-party identifiers for better matching. It is not a route to merging a third-party upload action with a tag action.",
+  "the_only_reliable_control": "Exactly ONE conversion action may be Primary AND included in the conversions metric per real-world lead event. That decision is made in Google Ads, in conversion Plan A or Plan B, NOT on the landing page.",
+  "so_what_is_this_package_for": "Attribution capture, single-fire integrity within the form action, unique DOM ids, correct telephone markup and legal links. It makes the form signal trustworthy. It does not and cannot resolve the cross-action double count."
+ },
+ "workstream_1_attribution_capture": {
+  "priority": "HIGHEST",
+  "problem": "The Gravity Form posts only gform_source_page_number_1. No click identifier reaches the form, so a lead in the CRM cannot be tied to the click that produced it and no offline conversion can be uploaded against a gclid.",
+  "capture_rule": "On FIRST pageview of a session read each field from the URL query string. Persist to a first-party cookie AND sessionStorage. On later pageviews do NOT overwrite a non-empty stored value: first touch wins within the session, matching how Google attributes the click.",
+  "storage": {
+   "cookie_name": "amb_attr",
+   "expiry_days": 90,
+   "domain": ".ambientcoolingandheating.com",
+   "samesite": "Lax",
+   "secure": true,
+   "fallback": "sessionStorage key amb_attr where cookies are blocked"
+  },
+  "fields": [
+   {
+    "name": "gclid",
+    "source": "URL param",
+    "meaning": "Google click id"
+   },
+   {
+    "name": "gbraid",
+    "source": "URL param",
+    "meaning": "iOS web-to-app click id"
+   },
+   {
+    "name": "wbraid",
+    "source": "URL param",
+    "meaning": "iOS app-to-web click id"
+   },
+   {
+    "name": "utm_source",
+    "source": "URL param",
+    "meaning": "source"
+   },
+   {
+    "name": "utm_medium",
+    "source": "URL param",
+    "meaning": "medium"
+   },
+   {
+    "name": "utm_campaign",
+    "source": "URL param",
+    "meaning": "campaign"
+   },
+   {
+    "name": "utm_term",
+    "source": "URL param",
+    "meaning": "keyword"
+   },
+   {
+    "name": "utm_content",
+    "source": "URL param",
+    "meaning": "creative"
+   },
+   {
+    "name": "campaign_id",
+    "source": "ValueTrack {campaignid}",
+    "meaning": "Google Ads campaign id"
+   },
+   {
+    "name": "adgroup_id",
+    "source": "ValueTrack {adgroupid}",
+    "meaning": "Google Ads ad group id"
+   },
+   {
+    "name": "matched_keyword",
+    "source": "ValueTrack {keyword}",
+    "meaning": "matched keyword"
+   },
+   {
+    "name": "device",
+    "source": "ValueTrack {device}",
+    "meaning": "m / t / c"
+   },
+   {
+    "name": "landing_page_url",
+    "source": "window.location.href at first pageview",
+    "meaning": "entry URL"
+   },
+   {
+    "name": "referrer",
+    "source": "document.referrer at first pageview",
+    "meaning": "referrer"
+   },
+   {
+    "name": "first_seen_timestamp",
+    "source": "ISO-8601 UTC",
+    "meaning": "session start"
+   },
+   {
+    "name": "submit_timestamp",
+    "source": "ISO-8601 UTC",
+    "meaning": "submission time"
+   },
+   {
+    "name": "lead_id",
+    "source": "BACKEND-generated opaque id returned on successful submission",
+    "meaning": "unique non-PII lead identifier and within-action dedup key"
+   }
+  ],
+  "lead_id_rule": "Generate the lead identifier on the BACKEND when the submission is accepted, not in the browser. It must be opaque, unique, non-PII, and returned to the page so the confirmation can pass it to the dataLayer. A server-generated UUID v4 is fine. Backend generation prevents a client replay from minting a fresh id and slipping past the single-fire guard.",
+  "preserve": "gclid, gbraid, wbraid and all five UTMs must continue to be captured exactly as they are today. WhatConverts already captures them in its own cookies; this makes the Gravity Forms post carry them too."
+ },
+ "workstream_2_single_fire_within_the_form_action": {
+  "problem": "Each page renders THREE Gravity Forms, all with DOM id gform_1. Duplicate ids are invalid HTML, break GTM triggers that select by id, and make it ambiguous which instance submitted.",
+  "fix_a": "Render exactly ONE functional Gravity Form per page. A second call to action must be an anchor to that form, never a second form instance.",
+  "fix_b": "Every rendered form and every field gets a unique DOM id. If more than one instance must render, suffix ids with the Gravity Forms instance number so no id repeats in the document.",
+  "fix_c": "Fire the conversion dataLayer event ONLY after a CONFIRMED SUCCESSFUL submission, that is after the backend has accepted the entry and returned a lead_id. Never on client-side validation success alone.",
+  "fix_d": "Guard the push with the returned lead_id so a confirmation re-render, reload or back-navigation cannot re-fire it: if (window.__ambFired === leadId) return; window.__ambFired = leadId;",
+  "scope_of_benefit": "This guarantees ONE fire of the FORM action per submission. It has no effect on any other conversion action."
+ },
+ "workstream_3_datalayer_contract": {
+  "event_name": "amb_lead_submit",
+  "fires_on": "confirmed successful submission only",
+  "payload_keys": [
+   "event",
+   "lead_id",
+   "form_id",
+   "form_instance",
+   "service",
+   "landing_page_url",
+   "referrer",
+   "gclid",
+   "gbraid",
+   "wbraid",
+   "utm_source",
+   "utm_medium",
+   "utm_campaign",
+   "utm_term",
+   "utm_content",
+   "campaign_id",
+   "adgroup_id",
+   "matched_keyword",
+   "device",
+   "first_seen_timestamp",
+   "submit_timestamp"
+  ],
+  "gtm_trigger": "Custom Event on amb_lead_submit with condition lead_id is not empty.",
+  "google_ads_tag": "Bind to conversion action 6885463625. Set transaction_id = lead_id. ACCURATE SCOPE: this prevents 6885463625 from counting the same submission twice. It does NOT prevent 7643656486 WC Lead from also counting that submission. Only the Primary/Secondary decision in conversion Plan A or Plan B controls that.",
+  "ga4_tag": "Send the same event to the existing G-9X9ZHNCRWF stream for diagnostics. GA4 actions are already Secondary and excluded from the conversions metric."
+ },
+ "workstream_4_phone_architecture": {
+  "approved_paid_number": {
+   "display": "(410) 705-6354",
+   "e164": "+14107056354",
+   "action": "KEEP as the hardcoded base and JavaScript-disabled fallback on all five offer pages, and as the number on Google Ads call asset 407995613637."
+  },
+  "whatconverts_dni_number": {
+   "display": "(410) 914-1456",
+   "action": "KEEP. Approved WhatConverts dynamic number insertion from profile 105803. This is CORRECT and is NOT a defect. Do not remove or 'fix' it."
+  },
+  "main_site_number": {
+   "display": "(410) 761-0932",
+   "action": "LEAVE ALONE on ambientcoolingandheating.com. It is the correct number for the main website and is NOT inherently incorrect. The only rule is that it must not appear on offer.ambientcoolingandheating.com or on the paid call asset."
+  },
+  "defect_to_fix": "Two of three tel hrefs on the offer pages are malformed: 'tel:4107056354' lacks the country code and 'tel:(410) 705-6354' has unencoded parentheses and a space. Normalise every HARDCODED tel href to tel:+14107056354. Do not touch the href WhatConverts rewrites at runtime."
+ },
+ "workstream_5_privacy_and_terms": {
+  "fix": "Add accessible Privacy Policy and Terms links immediately adjacent to the form submit button and in the footer of all five offer pages.",
+  "accessibility": "Real anchors, descriptive text, keyboard focusable, visible focus ring, contrast at least 4.5:1, touch target at least 44x44 CSS px.",
+  "inference_caveat": "Google rates the HVAC Repair landing-page experience BELOW_AVERAGE. Missing privacy and terms links are a PLAUSIBLE CONTRIBUTOR. This is an INFERENCE, not a confirmed cause. Google does not publish the inputs to that rating and no causal claim should be made."
+ },
+ "acceptance_tests": [
+  {
+   "id": "AT-1",
+   "name": "Attribution captured",
+   "steps": "Load <page>?gclid=TESTGCLID&gbraid=TESTGB&wbraid=TESTWB&utm_source=google&utm_medium=cpc&utm_campaign=t&utm_term=k&utm_content=c",
+   "expect": "amb_attr holds all eight values plus landing_page_url, referrer and first_seen_timestamp."
+  },
+  {
+   "id": "AT-2",
+   "name": "First touch wins",
+   "steps": "Load with gclid=A then a second offer page with gclid=B in the same session.",
+   "expect": "amb_attr.gclid is still A."
+  },
+  {
+   "id": "AT-3",
+   "name": "Hidden fields populated",
+   "steps": "Inspect the form after AT-1 before submitting.",
+   "expect": "Every hidden attribution field matches amb_attr exactly."
+  },
+  {
+   "id": "AT-4",
+   "name": "One form per page",
+   "steps": "document.querySelectorAll('form').length on each of the five pages.",
+   "expect": "1 on every page."
+  },
+  {
+   "id": "AT-5",
+   "name": "Unique DOM ids",
+   "steps": "W3C validator, and: const i=[...document.querySelectorAll('[id]')].map(e=>e.id); new Set(i).size===i.length",
+   "expect": "true and zero duplicate-id errors."
+  },
+  {
+   "id": "AT-6",
+   "name": "Backend lead_id returned",
+   "steps": "Submit a valid test entry and inspect the confirmation response.",
+   "expect": "An opaque non-PII lead_id is returned by the server and is present on the entry."
+  },
+  {
+   "id": "AT-7",
+   "name": "Single fire within the form action",
+   "steps": "Submit once, then reload the confirmation, press Back then Forward, and force a second confirmation render.",
+   "expect": "Exactly ONE amb_lead_submit event and exactly ONE 6885463625 conversion. NOTE: this test does not and cannot cover WC Lead 7643656486, which is a different conversion action."
+  },
+  {
+   "id": "AT-8",
+   "name": "transaction_id bound",
+   "steps": "GTM preview after AT-7.",
+   "expect": "The Google Ads tag payload carries transaction_id equal to the backend lead_id."
+  },
+  {
+   "id": "AT-9",
+   "name": "No fire on validation failure",
+   "steps": "Submit with a required field empty.",
+   "expect": "Zero amb_lead_submit events."
+  },
+  {
+   "id": "AT-10",
+   "name": "GTM installed once",
+   "steps": "Count GTM-PQTPQ436 in rendered HTML and inspect window.google_tag_manager.",
+   "expect": "One head snippet, one noscript iframe, exactly one container instance."
+  },
+  {
+   "id": "AT-11",
+   "name": "WhatConverts still operating",
+   "steps": "Load any offer page, inspect cookies and the displayed number.",
+   "expect": "wc_visitor, wc_client, wc_client_current, wc_swap present; number swapped to (410) 914-1456; profile 105803 script loads."
+  },
+  {
+   "id": "AT-12",
+   "name": "Phone architecture",
+   "steps": "Fetch raw server HTML of all five pages and inspect rendered tel hrefs.",
+   "expect": "Every hardcoded tel href is tel:+14107056354; zero occurrences of 4107610932 on the offer subdomain; the WhatConverts runtime swap still works."
+  },
+  {
+   "id": "AT-13",
+   "name": "Legal links reachable",
+   "steps": "Keyboard tab on desktop, tap on mobile.",
+   "expect": "Privacy and Terms visible near the form and in the footer, focusable with a visible ring, both HTTP 200."
+  },
+  {
+   "id": "AT-14",
+   "name": "No JS errors",
+   "steps": "Load each page with console open.",
+   "expect": "Zero uncaught errors."
+  },
+  {
+   "id": "AT-15",
+   "name": "Speed not regressed",
+   "steps": "Mobile emulation before and after.",
+   "expect": "FCP stays within the current 328-420 ms band and load within 1.8-2.1 s."
+  }
+ ],
+ "browser_qa_matrix": {
+  "note": "Every cell runs AT-1 through AT-15 on all five offer pages.",
+  "desktop": [
+   {
+    "browser": "Chrome current",
+    "os": "Windows 11",
+    "viewport": "1440x900"
+   },
+   {
+    "browser": "Edge current",
+    "os": "Windows 11",
+    "viewport": "1440x900"
+   },
+   {
+    "browser": "Safari current",
+    "os": "macOS",
+    "viewport": "1440x900"
+   },
+   {
+    "browser": "Firefox current",
+    "os": "Windows 11",
+    "viewport": "1440x900"
+   }
+  ],
+  "mobile": [
+   {
+    "browser": "Safari",
+    "os": "iOS current",
+    "device": "iPhone 15",
+    "viewport": "393x852"
+   },
+   {
+    "browser": "Chrome",
+    "os": "Android 14",
+    "device": "Pixel 7",
+    "viewport": "412x915"
+   },
+   {
+    "browser": "Samsung Internet",
+    "os": "Android 14",
+    "device": "Galaxy S23",
+    "viewport": "360x780"
+   }
+  ],
+  "privacy_modes": [
+   {
+    "case": "Safari iOS with ITP on",
+    "expect": "sessionStorage fallback carries attribution; lead_id still submitted"
+   },
+   {
+    "case": "Third-party cookies blocked",
+    "expect": "first-party amb_attr unaffected; full attribution captured"
+   },
+   {
+    "case": "All cookies blocked",
+    "expect": "sessionStorage fallback works; if both blocked the form still submits successfully with empty attribution and never errors"
+   }
+  ],
+  "accessibility": [
+   "keyboard-only submission",
+   "screen reader announces every label and both legal links",
+   "logical focus order, no focus trap"
+  ]
+ },
+ "must_not_change": [
+  "GTM-PQTPQ436 stays installed exactly once and keeps firing.",
+  "WhatConverts profile 105803 and its dynamic number insertion keep operating.",
+  "(410) 914-1456 stays as the approved WhatConverts DNI number.",
+  "(410) 705-6354 stays as the hardcoded paid base and fallback.",
+  "(410) 761-0932 stays on the main website, where it is correct.",
+  "H1 text on any offer page.",
+  "Page availability: all five reachable and submittable 24/7."
+ ],
+ "sequencing": "This package makes the FORM signal trustworthy. It does NOT resolve the cross-action double count between 6885463625 and 7643656486. That is resolved only by conversion Plan A or Plan B, which is a Google Ads change and depends on the WhatConverts console findings. The two workstreams are independent and can proceed in parallel.",
+ "google_ads_impact": {
+  "mutations": 0,
+  "note": "ZERO Google Ads mutations. The only Google Ads-adjacent item is a GTM tag configuration change, which is a GTM change, not a Google Ads API change."
+ },
+ "rollback_plan": "Snapshot the WordPress database and Divi child theme before any edit. Stage everything and run the full acceptance suite with a real test submission on staging before release. Rollback is a theme and Gravity Forms restore from that snapshot plus a GTM container version revert.",
+ "risk": "MEDIUM. Editing Gravity Forms and Divi templates on live lead-capture pages can break submissions. Staging is mandatory.",
+ "plan_fingerprint": "C99270C413C34431"
+}

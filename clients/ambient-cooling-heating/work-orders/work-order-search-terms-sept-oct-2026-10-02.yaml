@@ -1,0 +1,81 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    # The review covers every campaign that served Sep 1 - Oct 2. Each campaign's approved service is recorded below;
+    # recommendations apply only to the eight ENABLED Search campaigns. Paused cooling/legacy campaigns are history only.
+    exact_primary_service: Heating Repair
+    related_services:
+      - Furnace Repair
+      - Gas Furnace Repair
+      - Electric Furnace Repair
+      - No Heat Repair
+      - Emergency Heating Repair
+      - Furnace Replacement
+      - Furnace Installation
+      - Heating Replacement
+      - Heating Installation
+      - Boiler Repair
+      - Gas Boiler Repair
+      - Boiler Replacement
+      - Heat Pump Repair
+      - Heat Pump Installation
+      - Heat Pump Replacement
+      - Thermostat Repair
+      - Thermostat Replacement
+      - Smart Thermostat Installation
+      - Geothermal Heat Pump
+      - Commercial HVAC Installation
+  campaign_services:
+    "24257819463": "Heating & Furnace Repair - Heating Repair, Furnace Repair, Gas/Electric Furnace Repair, No Heat Repair, Emergency Heating Repair (business hours)"
+    "24257819466": "Heating & Furnace Install & Replace - Furnace/Heating Installation + Replacement (Ductless Heating Installation held)"
+    "24132507744": "Boiler Services - Boiler Repair, Gas Boiler Repair, Boiler Replacement (Installation/Maintenance held)"
+    "24268690038": "Heat Pump & Ductless Heating - Heat Pump Repair/Installation/Replacement (Ductless Repair + HP Maintenance held)"
+    "24268690041": "Thermostat Services - Thermostat Repair/Replacement, Smart Thermostat Installation"
+    "24279798229": "Heating Maintenance & Inspection - budget-deferred; every ad paused (owner 2026-09-25)"
+    "24274160783": "Geothermal Heat Pump - system inquiries + new install/replacement consultation; repair excluded"
+    "24132507747": "HVAC Installation - Commercial HVAC Installation only (residential group paused)"
+  task:
+    type: search-terms
+    mode: enable
+    request: >-
+      Green Marketing request 2026-10-02. Read every visible search term Sep 1-30 and Oct 1-to-date (Oct 2 PARTIAL) across
+      every campaign and ad group that served, including paused campaigns for history. Classify intent and service fit,
+      check every negative layer, and DRAFT a fingerprinted EXACT-only negative plan for the ENABLED campaigns (no Phrase,
+      no Broad, no shared/account list edits). Explicit verdicts for the owner-flagged model, competitor, 24-hour, local-HVAC,
+      thermostat-setup and price queries. Review (not remove) the account-level manufacturer BROAD negatives. Status matrix
+      for every intended active ad group. Verify tablet exclusion. No test leads.
+    date_range: "2026-09-01..2026-09-30 and 2026-10-01..2026-10-02 (10-02 PARTIAL), account time America/New_York"
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: null
+    primary_conversion_goal: "unique genuine paid heating lead (form or call); qualified = Quotable Yes"
+    negative_policy: "new negatives EXACT full-query only; existing Phrase/Broad/shared/account negatives reviewed, never modified"
+    raw_search_terms_in_deliverable: "Required by Green Marketing 2026-10-02 (actual query per row)."
+    tablets: "Owner requirement 2026-10-02: no tablet traffic on any campaign"
+    test_leads: "Owner declined 2026-10-02 - no test forms, calls or synthetic leads"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-transition-2026-09.yaml
+      - reports/ambient-cooling-heating/2026-10-01-search-terms-and-lp-activation.md
+    change_authorized: true   # staged authorization 2026-10-02 (see authorization_2026_10_02_staged)
+  authorization_2026_10_02_staged:
+    source: "Green Marketing instruction in the Claude Code session, 2026-10-02 ('Complete the Account Cleanup and Launch the Approved Campaigns')"
+    sequence_authorized: "prepare + validate -> create PAUSED -> read back -> enable after successful QA, without a further confirmation between stages, for the defined scope only"
+    in_scope: "Emergency enable; Geothermal ads/sitelinks to /geothermal-heat-pump/ + enable; Heating Maintenance & Inspection on https://ambientcoolingandheating.com/services/heating-services/; complete + enable intended current resources in the 8 Search campaigns; high-confidence EXACT negatives; $1,000/month per campaign (8 Search + 2 PMax); launch the 2 PMax campaigns; tablet exclusions; policy-compatible targeting inside the approved service area"
+    excluded: "deletions; unrelated legacy campaigns or unsupported services; spend above the allocations; conversion-action, upload, tracking-number or Business Profile phone changes; Phrase/Broad negatives; test leads/forms/calls/uploads; new website deployments"
+    fingerprints_still_recorded: true
+  approval_owner: Green Marketing

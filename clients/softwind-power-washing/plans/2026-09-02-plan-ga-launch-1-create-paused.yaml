@@ -1,0 +1,205 @@
+# PLAN-GA-LAUNCH-1 - FINAL POWER WASHING CREATE-PAUSED BUILD
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+# Fingerprint 92FFF603CAFD  (recomputed twice, identical)
+# validate_only PASSED against the exact payload. ZERO resources created.
+#
+# A fingerprint identifies an exact plan. It does NOT grant permission.
+# Creation is PAUSED ONLY. Enabling requires a separate later approval.
+
+change_plan:
+  plan_id: PLAN-GA-LAUNCH-1
+  plan_title: Final Power Washing create-paused build
+  approval_type: CREATE_PAUSED
+  priority: P0
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  fingerprint: 92FFF603CAFD
+  canonical_sha256_full: 92fff603cafd1e16bf67f97482d1c649eeca256fca23461bf7440a4223d5f6fb
+  approval_command: APPROVE PLAN-GA-LAUNCH-1 92FFF603CAFD FOR 1521725229
+  payload_file: clients/softwind-power-washing/plans/2026-09-02-plan-ga-launch-1-payload.json
+
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+    surviving_campaign_id: '24103511039'
+    surviving_campaign_name: Power Washing
+    retiring_campaign_id: '24145053510'
+    retiring_campaign_note: >-
+      Campaign 24145053510 remains LIVE and untouched throughout this plan. It is
+      paused LAST, in PLAN-GA-LAUNCH-4, only after replacements are verified serving.
+
+  identity_gate:
+    verified_account_local: '2026-09-02T12:51:54-04:00'
+    name: PASS
+    id: PASS
+    manager_false: PASS
+    test_account_false: PASS
+    status_enabled: PASS
+    currency_usd: PASS
+    timezone_america_new_york: PASS
+
+  counts:
+    action_count: 40
+    object_count: 40
+    mutation_count: 40
+    ad_groups_created: 0
+    ad_groups_reused_existing: 6
+    keyword_objects_created_paused: 28
+    keyword_objects_reused_existing: 10
+    keyword_objects_final: 38
+    unique_keyword_texts: 19
+    rsas_created_paused: 12
+    enablement_actions: 0
+    pause_actions: 0
+    negative_keyword_actions: 0
+    cpc_actions: 0
+    budget_actions: 0
+    asset_actions: 0
+    audience_actions: 0
+    schedule_actions: 0
+    conversion_actions: 0
+    website_actions: 0
+    gtm_actions: 0
+    whatconverts_actions: 0
+
+  validation:
+    duplicate_key_yaml: PASS
+    rsa_validators: 'PASS - 0 errors'
+    rsa_checks:
+      - every headline <= 30 characters
+      - every description <= 90 characters
+      - every path <= 15 characters
+      - no duplicate headline or description within an ad
+      - 'RSA1 vs RSA2 headline overlap 0% in every ad group - not minor rewrites'
+      - no banned or unverified claim
+      - 'no digit in any asset - phone-number guard'
+      - no awkward "near me" ad copy
+      - '>= 2 local headlines and >= 2 quote/estimate headlines per RSA'
+      - 'canonical service token in 3-8 headlines and >= 1 description per RSA'
+      - no pinning
+      - every Final URL returns HTTP 200, fresh-checked 2026-09-02
+    duplicate_ownership_check: 'PASS - each of the 19 texts has exactly one owner ad group'
+    validate_only:
+      keyword_request: 'PASS - 28 AdGroupCriterion operations validated, 0 created'
+      ad_request: 'PASS - 12 AdGroupAd operations validated, 0 created'
+      resources_created: 0
+      note: >-
+        validate_only was set on the request message, not as a call kwarg. It consumes the
+        same daily mutate quota as a real write, which is accepted here because the brief
+        requires validating the exact create payload before approval.
+    fingerprint_recomputed_twice: PASS
+
+  the_key_finding: >-
+    ALL SIX final ad groups ALREADY EXIST inside the surviving campaign 24103511039 - five of
+    them paused with the correct names, and four already carrying their canonical keyword.
+    ZERO ad groups need creating. The build is therefore 28 keyword objects plus 12 RSAs.
+
+  ad_groups_reused:
+    - {final_group: Power Washing, ad_group_id: '202870585390', live_name: Power Washing Near Me,
+       live_status: ENABLED, action: REUSE - NOT MODIFIED}
+    - {final_group: Pressure Washing, ad_group_id: '202870585870',
+       live_name: Residential Pressure Washing Near Me, live_status: PAUSED,
+       action: REUSE - NOT MODIFIED}
+    - {final_group: House Washing, ad_group_id: '202870585910',
+       live_name: House Washing Company Near Me, live_status: PAUSED,
+       action: REUSE - NOT MODIFIED}
+    - {final_group: Soft Washing, ad_group_id: '202870586310',
+       live_name: Soft House Washing Near Me, live_status: PAUSED,
+       action: REUSE - NOT MODIFIED}
+    - {final_group: Driveway Pressure Washing, ad_group_id: '202870586110',
+       live_name: Driveway Pressure Washing Near Me, live_status: PAUSED,
+       action: REUSE - NOT MODIFIED}
+    - {final_group: Patio Pressure Washing, ad_group_id: '202870586150',
+       live_name: Patio Pressure Washing Near Me, live_status: PAUSED,
+       action: REUSE - NOT MODIFIED}
+  ad_group_naming_note: >-
+    Existing names are KEPT. Renaming six containers costs six mutations and changes no
+    performance; ownership is enforced by keywords and routing negatives, not by the label.
+
+  keyword_objects_reused_not_in_plan:
+    - {ad_group_id: '202870585390', text: power washing near me, match: PHRASE + EXACT}
+    - {ad_group_id: '202870585870', text: residential pressure washing near me, match: PHRASE + EXACT}
+    - {ad_group_id: '202870586310', text: soft house washing near me, match: PHRASE + EXACT}
+    - {ad_group_id: '202870586110', text: driveway pressure washing near me, match: PHRASE + EXACT}
+    - {ad_group_id: '202870586150', text: patio pressure washing near me, match: PHRASE + EXACT}
+
+  objects_to_create:
+    all_created_with_status: PAUSED
+    keywords:
+      count: 28
+      note: >-
+        Created PAUSED so nothing can serve, including inside ad group 202870585390 which is
+        ENABLED. Full object list with match types is in the payload file.
+      by_ad_group:
+        '202870585390': ['power washing', 'power washing service',
+                         'power washing services near me', 'power washing company near me']
+        '202870585870': ['pressure washing', 'pressure washing near me']
+        '202870585910': ['house washing near me', 'house pressure washing near me',
+                         'house power washing near me', 'exterior house washing near me']
+        '202870586310': ['soft washing near me']
+        '202870586110': ['driveway power washing near me']
+        '202870586150': ['patio power washing near me', 'concrete pressure washing near me']
+      match_types: 'PHRASE and EXACT for every text. No Broad Match.'
+    rsas:
+      count: 12
+      per_ad_group: 2
+      status_on_create: PAUSED
+      note: >-
+        Old ads are NOT edited and NOT paused by this plan. Replacement happens later, in
+        PLAN-GA-LAUNCH-4, only after the new ads are verified serving.
+      copy_source: clients/softwind-power-washing/audits/2026-09-02-final-rsa-launch-qa.csv
+
+  final_url_map:
+    '202870585390': https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+    '202870585870': https://offer.softwindli.com/residential-pressure-washing/
+    '202870585910': https://offer.softwindli.com/house-washing-company/
+    '202870586310': https://offer.softwindli.com/soft-house-washing/
+    '202870586110': https://offer.softwindli.com/driveway-pressure-washing/
+    '202870586150': https://offer.softwindli.com/patio-power-washing/
+    http_status_checked_2026_09_02: 'all six return 200'
+    slug_changes: NONE
+
+  displaced_duplicates_detected_not_touched:
+    count: 30
+    note: >-
+      Thirty existing keyword objects across ten legacy ad groups carry texts whose final owner
+      is one of the six groups. They are NOT paused, removed or modified by this plan. They are
+      retired later in PLAN-GA-LAUNCH-4.
+    blocking_conflicts: 0
+
+  explicitly_excluded_from_this_plan:
+    - Enablement of anything
+    - Campaign, ad group, keyword or ad pauses
+    - Routing negatives and campaign negatives
+    - CPC ceiling and bidding changes
+    - Budget changes
+    - Audience or demographic changes
+    - Asset changes
+    - Schedule changes
+    - Conversion action or goal changes
+    - Landing-page, GTM and WhatConverts changes
+
+  dependency: NONE - this plan is executable on approval
+  rollback: >-
+    Every created object is PAUSED and newly created. Rollback is to pause-and-remove the
+    created criteria and ads by the IDs returned in the readback. No existing resource is
+    altered, so nothing needs restoring.
+
+  readback_qa_required_after_execution:
+    - Stop on any partial failure and inventory every created resource ID
+    - Read back all 28 keywords - verify text, match type, and status PAUSED
+    - Read back all 12 RSAs - verify every headline, description, path and Final URL
+    - Verify policy approval status on all 12 ads
+    - Verify object counts exactly match 28 + 12
+    - Verify no pre-existing resource changed status
+    - Verify campaign 24145053510 untouched
+    - Produce the readback QA report and update the ledger
+
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    NOT APPROVED. Creation is paused-only; enabling requires a separate approval after
+    readback QA passes and the go-live gate in the ledger is satisfied.

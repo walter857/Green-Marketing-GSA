@@ -1,0 +1,263 @@
+# PLAN B - BIDDING: MAXIMIZE CLICKS CPC CEILING
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+#
+# The bid strategy TYPE is not changed. This plan adds a Max CPC bid limit to the
+# existing TARGET_SPEND (Maximize Clicks) strategy on both campaigns.
+#
+# The audit suggested $22.00. Fresh evidence taken 2026-08-25 17:44 CHANGES that
+# recommendation to $24.00. The reasoning is recorded in full below so the
+# supersession is auditable.
+
+change_plan:
+  plan_id: PLAN-B
+  plan_title: Max CPC bid limit on both Maximize Clicks campaigns
+  approval_type: BIDDING
+  priority: P0
+  approval_status: NOT APPROVED - HOLD_UNTIL_MONTH_END_RESCUE_IS_RESOLVED
+  execution_status: DO NOT EXECUTE
+  recommended_approval_order: NOT APPROVABLE - status HOLD
+  hold_status:
+    state: HOLD_UNTIL_MONTH_END_RESCUE_IS_RESOLVED
+    set_on: '2026-08-26'
+    set_by: Walter Correa, operational priority change
+    reason: This plan's own impact model shows the $24.00 CPC ceiling LOWERS August spend - modelled
+      at $330.51 against $405.49 for doing nothing - because it buys the same clicks for less. With
+      the hard August objective now being to spend the full approved $2,500, applying a CPC ceiling
+      works directly against the month-end goal.
+    not_void: This plan is NOT void. Its normalized actions are unchanged and its fingerprint F80E8D398811
+      is still valid. It is preserved as the September efficiency optimisation.
+    early_invocation_condition: 'The ONLY circumstance in which this plan should be approved before
+      the month-end rescue resolves is a STOP-level trigger of the emergency high-CPC stop condition
+      in 2026-08-26-daily-pacing-control.md: a single click at or above $60.00, a rolling average
+      CPC at or above $45.00, or any click at or above $40.00 on a search term whose verdict is
+      not KEEP.'
+    september_note: Once the month-end objective is settled, re-validate the $24.00 value against
+      fresh auction data before approving. The number was derived on 2026-08-25 from live-keyword
+      top-of-page estimates of $28.23 and a post-cap-removal rank loss of 34.6%. Both will have
+      moved.
+  ads_mutation_count: 2
+  requires_separate_enable_approval: false
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  supersedes_audit_recommendation:
+    audit_value: 22.0
+    new_value: 24.0
+    reason: 'The audit derived $22.00 from a VOLUME-WEIGHTED top-of-page high of $23.91 computed
+      across all 49 BOFU buckets in the market. A fresh Keyword Planner read restricted to the twelve
+      keyword texts this account actually runs returns a materially higher ceiling: the two keywords
+      that drive the account, power washing near me and power washing company near me, both show
+      a top-of-page HIGH of $28.23, and the median high across the live set that returns bid data
+      is $28.23. A $22.00 cap would sit below the top-of-page high on the account''s two most important
+      terms. Second, and decisive: in the post-cap-removal window the account still loses 34.6%
+      and 33.3% of impression share to RANK while completely uncapped. It is not overwhelming the
+      auction even at $40 CPCs, so every dollar removed from the ceiling converts directly into
+      lost impressions in an account whose primary constraint is already a shortage of impressions.
+      Third, the downside of setting this too low is proven and severe in this exact account: the
+      $5.00 ceiling in force 2026-08-07 to 2026-08-16 produced twelve consecutive days with zero
+      clicks and 75.8% rank loss. $24.00 removes the indefensible tail ($26.66, $40.07, $54.49 -
+      three clicks that consumed $121.22, or 71% of all account spend) while preserving the observed
+      normal click band ($5.71, $22.11, $22.13) and staying within touching distance of the $28.23
+      head-term high.'
+  fresh_evidence_2026_08_25_1744:
+    charged_click_cpc_distribution:
+      n: 6
+      values:
+      - 5.71
+      - 22.11
+      - 22.13
+      - 26.66
+      - 40.07
+      - 54.49
+      min: 5.71
+      median: 24.395
+      mean: 28.53
+      max: 54.49
+    clicks_at_or_below:
+      '18.00': 1
+      '20.00': 1
+      '22.00': 1
+      '24.00': 3
+      '26.00': 3
+    planner_top_of_page_live_keywords_only:
+      power washing near me:
+        volume: 110
+        competition: HIGH
+        low: 10.89
+        high: 28.23
+      power washing company near me:
+        volume: 110
+        competition: HIGH
+        low: 10.89
+        high: 28.23
+      power washing services near me:
+        volume: 10
+        competition: HIGH
+        low: 8.75
+        high: 21.07
+      high_median: 28.23
+      low_min: 8.75
+      low_max: 10.89
+    auction_state_post_cap_removal_2026_08_17_onward:
+      campaign_24103511039:
+        impressions: 66
+        clicks: 4
+        cost: 108.99
+        avg_cpc: 27.25
+        search_impression_share: 0.654
+        lost_is_budget: null
+        lost_is_rank: 0.346
+        top_impression_pct: 0.913
+        abs_top_impression_pct: 0.652
+      campaign_24145053510:
+        impressions: 14
+        clicks: 2
+        cost: 62.18
+        avg_cpc: 31.09
+        search_impression_share: 0.667
+        lost_is_budget: null
+        lost_is_rank: 0.333
+        top_impression_pct: 1.0
+        abs_top_impression_pct: 1.0
+    auction_state_under_5usd_cap_2026_08_07_to_08_16:
+      campaign_24103511039:
+        impressions: 19
+        clicks: 0
+        cost: 0.0
+        search_impression_share: 0.152
+        lost_is_rank: 0.758
+        note: Twelve consecutive zero-click days. The cost of setting the ceiling too low is proven,
+          not theoretical.
+  ceiling_options_considered:
+  - ceiling: 18.0
+    verdict: REJECT
+    reason: Below the low top-of-page estimate on nothing, but below the HIGH on every live keyword
+      that reports bids. Only 1 of 6 observed clicks sat at or below it. With 34.6% rank loss already
+      present while uncapped, this would push rank loss sharply higher in a demand-starved account.
+  - ceiling: 20.0
+    verdict: REJECT
+    reason: Same objection as $18.00. Still below the $21.07 high on power washing services near
+      me, the single highest-impression ad group in the account (51 impressions).
+  - ceiling: 22.0
+    verdict: REJECT - supersedes the audit
+    reason: Sits above the $21.07 high for power washing services near me but well below the $28.23
+      high for the two head keywords. It also sits fractionally below the two most normally-priced
+      clicks the account has ever bought ($22.11 and $22.13), which is uncomfortably tight.
+  - ceiling: 24.0
+    verdict: RECOMMENDED
+    reason: Above the $21.07 high on the highest-impression ad group, so that term keeps full top-of-page
+      access. Roughly 85% of the $28.23 head-term high, so the head keywords stay competitive while
+      accepting some rank loss. Preserves the observed normal click band. Cuts the $26.66/$40.07/
+      $54.49 tail that consumed 71% of all account spend and produced nothing.
+  - ceiling: 26.0
+    verdict: REJECT
+    reason: Cuts only the two most extreme clicks and leaves $26.66 payable. Materially weaker cost
+      protection for no meaningful gain in eligibility over $24.00.
+  - ceiling: null
+    verdict: REJECT - this is the current state
+    reason: Uncapped Maximize Clicks in a pool of roughly 26 impressions per day has nothing to
+      spend budget on, so it bids up on the few auctions available. It produced a $54.49 click for
+      a service whose local top-of-page high is $28.23.
+  monitoring_and_reversal:
+    metric: metrics.search_rank_lost_impression_share
+    baseline_post_cap_removal:
+      campaign_24103511039: 0.346
+      campaign_24145053510: 0.333
+    review_after_days: 3
+    escalate_if: Lost IS (rank) rises above 0.50 on either campaign, or daily impressions fall below
+      15 for two consecutive serving days. Either signal means the ceiling is binding too hard;
+      raise to $26.00 and re-measure. Do NOT drop the ceiling below $24.00 without new auction evidence.
+  actions:
+  - action_id: P0-B01
+    priority: P0
+    resource_type: CAMPAIGN
+    operation: UPDATE
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: customers/1521725229/campaigns/24103511039
+    field_mask: target_spend.cpc_bid_ceiling_micros
+    current_value:
+      bidding_strategy_type: TARGET_SPEND
+      target_spend_cpc_bid_ceiling_micros: null
+      target_spend_cpc_bid_ceiling_usd: null
+    proposed_value:
+      bidding_strategy_type: TARGET_SPEND
+      target_spend_cpc_bid_ceiling_micros: 24000000
+      target_spend_cpc_bid_ceiling_usd: 24.0
+    why: Average CPC $27.25 on this campaign against a local top-of-page high of $28.23 for its
+      head keywords and $21.07 for its highest-impression ad group. Three of its four clicks were
+      bought above $24.00, including one at $54.49.
+    evidence: bid-ceiling-model-2026-08-25.json; drift-check-2026-08-25b.json campaign_aggregate_now.
+    expected_effect: Average CPC falls toward the $16-22 band. Click volume is broadly unchanged
+      because 3 of 4 clicks were tail-priced and winnable lower. August spend on this campaign will
+      DECREASE, not increase.
+    risk: LOW-MEDIUM. Rank loss is already 34.6% while uncapped, so some further loss is expected.
+      Reversible in a single field edit.
+    rollback: Set target_spend.cpc_bid_ceiling_micros back to null (unset) on campaign 24103511039.
+      Restores the exact current state.
+    approval_required: YES - bidding change, separate approval per config/agency.yaml approvals.budget_change_requires_separate_approval
+      and the Safety and Approval Model.
+    object_count: 1
+  - action_id: P0-B02
+    priority: P0
+    resource_type: CAMPAIGN
+    operation: UPDATE
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: customers/1521725229/campaigns/24145053510
+    field_mask: target_spend.cpc_bid_ceiling_micros
+    current_value:
+      bidding_strategy_type: TARGET_SPEND
+      target_spend_cpc_bid_ceiling_micros: null
+      target_spend_cpc_bid_ceiling_usd: null
+    proposed_value:
+      bidding_strategy_type: TARGET_SPEND
+      target_spend_cpc_bid_ceiling_micros: 24000000
+      target_spend_cpc_bid_ceiling_usd: 24.0
+    why: Average CPC $31.09 - the higher of the two campaigns - on only 2 clicks, one of which cost
+      $40.07. Top impression percentage is already 100% and absolute top 100%, so this campaign
+      is paying premium prices for positions it already wins comfortably.
+    evidence: bid-ceiling-model-2026-08-25.json auction_windows post_cap_removal; charged_clicks.
+    expected_effect: Average CPC falls materially. With 100% top and absolute top impression share,
+      a lower bid should retain position at lower cost.
+    risk: LOW. This campaign has the strongest position metrics in the account and the most headroom
+      to bid down. Reversible in a single field edit.
+    rollback: Set target_spend.cpc_bid_ceiling_micros back to null (unset) on campaign 24145053510.
+    approval_required: YES - bidding change, separate approval.
+    object_count: 1
+  explicitly_not_in_this_plan:
+  - Bid strategy TYPE is unchanged. Both campaigns stay on TARGET_SPEND (Maximize Clicks).
+  - NO move to Maximize Conversions or tCPA. Conversion volume is zero and tracking is unverified.
+    Blocked until PLAN-A passes.
+  - NO budget change. Lost IS (budget) is 2.5% and 0%; budget has never been the constraint. Budgets
+    stay at $41.11/day each.
+  - NO change to the $0.01 ad-group CPC bids. They are ignored by Maximize Clicks. They are a latent
+    trap only if bidding is ever switched to Manual CPC, and that is not proposed.
+  - NO device, audience or location bid modifiers.
+  change_counts:
+    campaigns_changed: 2
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 2
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 2
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com

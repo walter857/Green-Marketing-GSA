@@ -1,0 +1,1403 @@
+{
+ "generated_local": "2026-08-27T17:37:15.815230-04:00",
+ "customer_id": "2401959466",
+ "read_only": true,
+ "last_settled_day": "2026-08-26",
+ "partial_day": "2026-08-27",
+ "checkpoints": {
+  "2026-08-23": {
+   "checkpoint": "24 hours after the automotive negatives and the budget change",
+   "scheduled": "2026-08-23",
+   "run_on": "2026-08-27",
+   "status": "COMPLETE (late)",
+   "late_because": "This is the first audit run since 2026-08-22.",
+   "tests": {
+    "no legitimate AC Repair query blocked": {
+     "pass": true,
+     "detail": {
+      "car": {
+       "active_keywords_blocked": [],
+       "converting_terms_blocked": [],
+       "observed_terms_blocked": [
+        "car air conditioner repair near me",
+        "ac car repair near me",
+        "bmw car ac repair near me",
+        "car ac repair near me",
+        "car ac service near me"
+       ]
+      },
+      "auto": {
+       "active_keywords_blocked": [],
+       "converting_terms_blocked": [],
+       "observed_terms_blocked": [
+        "auto ac repair near me"
+       ]
+      },
+      "boat": {
+       "active_keywords_blocked": [],
+       "converting_terms_blocked": [],
+       "observed_terms_blocked": [
+        "boat air conditioner repair near me"
+       ]
+      }
+     }
+    },
+    "AC Repair impressions did not fall more than the automotive share": {
+     "before_impressions": 108,
+     "after_impressions": 143,
+     "change": 35,
+     "note": "Impressions ROSE from 108 to 143 across equal 4-day settled windows, so no impression loss is attributable to the negatives.",
+     "pass": true
+    },
+    "the three criteria exist exactly once each": {
+     "pass": true,
+     "criterion_ids": {
+      "car": "10008241",
+      "auto": "10000390",
+      "boat": "10019071"
+     }
+    }
+   },
+   "overall": "PASS"
+  },
+  "2026-08-25": {
+   "checkpoint": "72 hours - review for new vehicle or marine phrasings",
+   "scheduled": "2026-08-25",
+   "run_on": "2026-08-27",
+   "status": "COMPLETE (late)",
+   "variants_reviewed_individually": {
+    "truck": {
+     "observed_terms": 0,
+     "impressions": 0,
+     "clicks": 0,
+     "cost": 0,
+     "covered_already": false,
+     "examples": []
+    },
+    "trucks": {
+     "observed_terms": 0,
+     "impressions": 0,
+     "clicks": 0,
+     "cost": 0,
+     "covered_already": false,
+     "examples": []
+    },
+    "van": {
+     "observed_terms": 0,
+     "impressions": 0,
+     "clicks": 0,
+     "cost": 0,
+     "covered_already": false,
+     "examples": []
+    },
+    "rv": {
+     "observed_terms": 0,
+     "impressions": 0,
+     "clicks": 0,
+     "cost": 0,
+     "covered_already": false,
+     "examples": []
+    },
+    "motorhome": {
+     "observed_terms": 0,
+     "impressions": 0,
+     "clicks": 0,
+     "cost": 0,
+     "covered_already": false,
+     "examples": []
+    },
+    "cars": {
+     "observed_terms": 0,
+     "impressions": 0,
+     "clicks": 0,
+     "cost": 0,
+     "covered_already": false,
+     "examples": []
+    },
+    "boats": {
+     "observed_terms": 0,
+     "impressions": 0,
+     "clicks": 0,
+     "cost": 0,
+     "covered_already": false,
+     "examples": []
+    },
+    "vehicle": {
+     "observed_terms": 0,
+     "impressions": 0,
+     "clicks": 0,
+     "cost": 0,
+     "covered_already": false,
+     "examples": []
+    },
+    "vehicles": {
+     "observed_terms": 0,
+     "impressions": 0,
+     "clicks": 0,
+     "cost": 0,
+     "covered_already": false,
+     "examples": []
+    },
+    "marine": {
+     "observed_terms": 0,
+     "impressions": 0,
+     "clicks": 0,
+     "cost": 0,
+     "covered_already": false,
+     "examples": []
+    },
+    "automotive": {
+     "observed_terms": 2,
+     "impressions": 3,
+     "clicks": 0,
+     "cost": 0.0,
+     "covered_already": false,
+     "examples": [
+      "automotive air conditioning repair near me",
+      "automotive ac mechanic near me"
+     ]
+    }
+   },
+   "variants_that_generated_new_spend": {},
+   "finding": "Only 'automotive' leaked past the three live negatives, with 2 terms, 3 impressions, 0 clicks and $0.00 cost. truck, trucks, van, rv, motorhome, cars, boats, vehicle, vehicles and marine produced ZERO observed search terms. Negatives have no close variants, which is why 'auto' does not cover 'automotive'.",
+   "action": "'automotive' BROAD on AC Repair is package ADJ-2 inside plan ACE80A09AC134C85. No speculative negative is proposed for the variants with zero observed volume.",
+   "overall": "PASS"
+  },
+  "2026-08-29": {
+   "checkpoint": "7 settled days after the 2026-08-22 changes",
+   "scheduled": "2026-08-29",
+   "status": "NOT DUE - DO NOT MARK COMPLETE",
+   "settled_days_available_today": 4,
+   "settled_days_required": 7,
+   "interim_only": {
+    "window_before": "2026-08-18..2026-08-21 (4 settled days)",
+    "window_after": "2026-08-23..2026-08-26 (4 settled days)",
+    "ac_repair": {
+     "before": {
+      "impr": 108,
+      "clicks": 9,
+      "cost": 947.48,
+      "ctr": 8.33,
+      "cpc": 105.28,
+      "conv": 1.0,
+      "all_conv": 16.0,
+      "conv_value": 0.0,
+      "invalid_clicks": 210,
+      "invalid_click_rate": 95.89,
+      "cvr": 11.11,
+      "cpl": 947.48,
+      "search_is": 57.75,
+      "budget_lost_is": 10.33,
+      "rank_lost_is": 31.92,
+      "abs_top_is": 30.52
+     },
+     "after": {
+      "impr": 143,
+      "clicks": 6,
+      "cost": 653.57,
+      "ctr": 4.2,
+      "cpc": 108.93,
+      "conv": 1.0,
+      "all_conv": 3.0,
+      "conv_value": 0.0,
+      "invalid_clicks": 192,
+      "invalid_click_rate": 96.97,
+      "cvr": 16.67,
+      "cpl": 653.57,
+      "search_is": 55.14,
+      "budget_lost_is": 4.67,
+      "rank_lost_is": 40.19,
+      "abs_top_is": 18.69
+     }
+    },
+    "caveat": "6 clicks after versus 9 clicks before. At this sample size no CTR or CPC movement is statistically meaningful and none is claimed."
+   }
+  }
+ },
+ "rollback_triggers": {
+  "BUDGET rollback: CPC > $41.27 without more clicks": {
+   "threshold": 41.27,
+   "observed_after_change_cpc": 21.93,
+   "observed_launch_to_date_cpc": 25.16,
+   "clicks_before": 40,
+   "clicks_after": 35,
+   "met": false
+  },
+  "BUDGET rollback: single-day spend > $352.30": {
+   "threshold": 352.3,
+   "observed_max_settled_day": 312.85,
+   "met": false
+  },
+  "BUDGET rollback: cumulative August spend > $11,500 before 2026-08-29": {
+   "threshold": 11500.0,
+   "observed_august_to_date": 4943.69,
+   "met": false
+  },
+  "NEGATIVES rollback: a legitimate AC Repair query was blocked": {
+   "observed": "0 active keywords blocked, 0 converting terms blocked",
+   "met": false
+  }
+ },
+ "rollback_decision": "NO ROLLBACK",
+ "before_after_comparison": {
+  "AC Repair": {
+   "window_before": "2026-08-18..2026-08-21",
+   "window_after": "2026-08-23..2026-08-26",
+   "impressions": {
+    "before": 108,
+    "after": 143
+   },
+   "clicks": {
+    "before": 9,
+    "after": 6
+   },
+   "cost": {
+    "before": 947.48,
+    "after": 653.57
+   },
+   "ctr": {
+    "before": 8.33,
+    "after": 4.2
+   },
+   "cpc": {
+    "before": 105.28,
+    "after": 108.93
+   },
+   "primary_conversions": {
+    "before": 1.0,
+    "after": 1.0
+   },
+   "cpl": {
+    "before": 947.48,
+    "after": 653.57
+   },
+   "budget_lost_is": {
+    "before": 10.33,
+    "after": 4.67
+   },
+   "rank_lost_is": {
+    "before": 31.92,
+    "after": 40.19
+   },
+   "sample_adequate": false
+  },
+  "Gas Boiler Repair": {
+   "window_before": "2026-08-18..2026-08-21",
+   "window_after": "2026-08-23..2026-08-26",
+   "impressions": {
+    "before": 2,
+    "after": 4
+   },
+   "clicks": {
+    "before": 0,
+    "after": 0
+   },
+   "cost": {
+    "before": 0.0,
+    "after": 0.0
+   },
+   "ctr": {
+    "before": 0.0,
+    "after": 0.0
+   },
+   "cpc": {
+    "before": 0.0,
+    "after": 0.0
+   },
+   "primary_conversions": {
+    "before": 0.0,
+    "after": 0.0
+   },
+   "cpl": {
+    "before": null,
+    "after": null
+   },
+   "budget_lost_is": {
+    "before": 0.0,
+    "after": 0.0
+   },
+   "rank_lost_is": {
+    "before": 66.67,
+    "after": 69.23
+   },
+   "sample_adequate": false
+  },
+  "HVAC Installation": {
+   "window_before": "2026-08-18..2026-08-21",
+   "window_after": "2026-08-23..2026-08-26",
+   "impressions": {
+    "before": 1098,
+    "after": 1047
+   },
+   "clicks": {
+    "before": 40,
+    "after": 35
+   },
+   "cost": {
+    "before": 1100.44,
+    "after": 767.63
+   },
+   "ctr": {
+    "before": 3.64,
+    "after": 3.34
+   },
+   "cpc": {
+    "before": 27.51,
+    "after": 21.93
+   },
+   "primary_conversions": {
+    "before": 0.0,
+    "after": 0.0
+   },
+   "cpl": {
+    "before": null,
+    "after": null
+   },
+   "budget_lost_is": {
+    "before": 55.0,
+    "after": 63.28
+   },
+   "rank_lost_is": {
+    "before": 1.8,
+    "after": 3.22
+   },
+   "sample_adequate": true
+  },
+  "HVAC Repair": {
+   "window_before": "2026-08-18..2026-08-21",
+   "window_after": "2026-08-23..2026-08-26",
+   "impressions": {
+    "before": 256,
+    "after": 218
+   },
+   "clicks": {
+    "before": 5,
+    "after": 5
+   },
+   "cost": {
+    "before": 563.82,
+    "after": 405.1
+   },
+   "ctr": {
+    "before": 1.95,
+    "after": 2.29
+   },
+   "cpc": {
+    "before": 112.76,
+    "after": 81.02
+   },
+   "primary_conversions": {
+    "before": 2.0,
+    "after": 1.0
+   },
+   "cpl": {
+    "before": 281.91,
+    "after": 405.1
+   },
+   "budget_lost_is": {
+    "before": 6.79,
+    "after": 14.04
+   },
+   "rank_lost_is": {
+    "before": 57.5,
+    "after": 38.2
+   },
+   "sample_adequate": false
+  },
+  "HVAC Replacement": {
+   "window_before": "2026-08-18..2026-08-21",
+   "window_after": "2026-08-23..2026-08-26",
+   "impressions": {
+    "before": 61,
+    "after": 18
+   },
+   "clicks": {
+    "before": 2,
+    "after": 1
+   },
+   "cost": {
+    "before": 52.14,
+    "after": 49.69
+   },
+   "ctr": {
+    "before": 3.28,
+    "after": 5.56
+   },
+   "cpc": {
+    "before": 26.07,
+    "after": 49.69
+   },
+   "primary_conversions": {
+    "before": 0.0,
+    "after": 0.0
+   },
+   "cpl": {
+    "before": null,
+    "after": null
+   },
+   "budget_lost_is": {
+    "before": 0.0,
+    "after": 0.0
+   },
+   "rank_lost_is": {
+    "before": 54.55,
+    "after": 57.14
+   },
+   "sample_adequate": false
+  },
+  "_sample_note": "HVAC Installation clears 30 clicks in BOTH windows and is the only campaign where a before/after read carries weight. For AC Repair, Gas Boiler Repair, HVAC Repair, HVAC Replacement the click counts are single digits, so no improvement or regression is claimed."
+ },
+ "mtd_extract": {
+  "window_settled": "2026-08-01..2026-08-26",
+  "window_partial": "2026-08-27",
+  "account_totals_settled": {
+   "impr": 3403,
+   "clicks": 113,
+   "cost": 4820.12,
+   "conv": 6.0,
+   "all_conv": 36.0,
+   "conv_value": 0.0,
+   "invalid_clicks": 1073,
+   "ctr": 3.32,
+   "cpc": 42.66,
+   "cvr": 5.31,
+   "cpl": 803.35
+  },
+  "account_totals_partial": {
+   "impr": 808,
+   "clicks": 5,
+   "cost": 123.57,
+   "conv": 0.0,
+   "all_conv": 0.0,
+   "conv_value": 0.0,
+   "invalid_clicks": 171,
+   "ctr": 0.62,
+   "cpc": 24.71,
+   "cvr": 0.0,
+   "cpl": null
+  },
+  "per_campaign_settled": {
+   "AC Repair": {
+    "impr": 319,
+    "clicks": 19,
+    "cost": 1719.33,
+    "ctr": 5.96,
+    "cpc": 90.49,
+    "conv": 3.0,
+    "all_conv": 22.0,
+    "conv_value": 0.0,
+    "invalid_clicks": 509,
+    "invalid_click_rate": 96.4,
+    "cvr": 15.79,
+    "cpl": 573.11,
+    "search_is": 41.38,
+    "budget_lost_is": 4.8,
+    "rank_lost_is": 53.82,
+    "abs_top_is": 17.84
+   },
+   "Gas Boiler Repair": {
+    "impr": 8,
+    "clicks": 0,
+    "cost": 0.0,
+    "ctr": 0.0,
+    "cpc": 0.0,
+    "conv": 0.0,
+    "all_conv": 0.0,
+    "conv_value": 0.0,
+    "invalid_clicks": 26,
+    "invalid_click_rate": 100.0,
+    "cvr": 0.0,
+    "cpl": null,
+    "search_is": 35.0,
+    "budget_lost_is": 0.0,
+    "rank_lost_is": 65.0,
+    "abs_top_is": 10.0
+   },
+   "HVAC Installation": {
+    "impr": 2330,
+    "clicks": 79,
+    "cost": 1987.98,
+    "ctr": 3.39,
+    "cpc": 25.16,
+    "conv": 0.0,
+    "all_conv": 7.0,
+    "conv_value": 0.0,
+    "invalid_clicks": 69,
+    "invalid_click_rate": 46.62,
+    "cvr": 0.0,
+    "cpl": null,
+    "search_is": 38.22,
+    "budget_lost_is": 56.86,
+    "rank_lost_is": 4.92,
+    "abs_top_is": 17.72
+   },
+   "HVAC Repair": {
+    "impr": 666,
+    "clicks": 12,
+    "cost": 1010.98,
+    "ctr": 1.8,
+    "cpc": 84.25,
+    "conv": 3.0,
+    "all_conv": 7.0,
+    "conv_value": 0.0,
+    "invalid_clicks": 422,
+    "invalid_click_rate": 97.24,
+    "cvr": 25.0,
+    "cpl": 336.99,
+    "search_is": 32.03,
+    "budget_lost_is": 5.95,
+    "rank_lost_is": 62.03,
+    "abs_top_is": 13.65
+   },
+   "HVAC Replacement": {
+    "impr": 80,
+    "clicks": 3,
+    "cost": 101.83,
+    "ctr": 3.75,
+    "cpc": 33.94,
+    "conv": 0.0,
+    "all_conv": 0.0,
+    "conv_value": 0.0,
+    "invalid_clicks": 47,
+    "invalid_click_rate": 94.0,
+    "cvr": 0.0,
+    "cpl": null,
+    "search_is": 42.37,
+    "budget_lost_is": 0.0,
+    "rank_lost_is": 57.63,
+    "abs_top_is": 20.34
+   }
+  },
+  "per_campaign_partial": {
+   "AC Repair": {
+    "impr": 367,
+    "clicks": 0,
+    "cost": 0.0,
+    "ctr": 0.0,
+    "cpc": 0.0,
+    "conv": 0.0,
+    "all_conv": 0.0,
+    "conv_value": 0.0,
+    "invalid_clicks": 108,
+    "invalid_click_rate": 100.0,
+    "cvr": 0.0,
+    "cpl": null,
+    "search_is": 0.0,
+    "budget_lost_is": 0.0,
+    "rank_lost_is": 0.0,
+    "abs_top_is": 0.0
+   },
+   "Gas Boiler Repair": {
+    "impr": 12,
+    "clicks": 0,
+    "cost": 0.0,
+    "ctr": 0.0,
+    "cpc": 0.0,
+    "conv": 0.0,
+    "all_conv": 0.0,
+    "conv_value": 0.0,
+    "invalid_clicks": 5,
+    "invalid_click_rate": 100.0,
+    "cvr": 0.0,
+    "cpl": null,
+    "search_is": 0.0,
+    "budget_lost_is": 0.0,
+    "rank_lost_is": 0.0,
+    "abs_top_is": 0.0
+   },
+   "HVAC Installation": {
+    "impr": 244,
+    "clicks": 5,
+    "cost": 123.57,
+    "ctr": 2.05,
+    "cpc": 24.71,
+    "conv": 0.0,
+    "all_conv": 0.0,
+    "conv_value": 0.0,
+    "invalid_clicks": 7,
+    "invalid_click_rate": 58.33,
+    "cvr": 0.0,
+    "cpl": null,
+    "search_is": 0.0,
+    "budget_lost_is": 0.0,
+    "rank_lost_is": 0.0,
+    "abs_top_is": 0.0
+   },
+   "HVAC Repair": {
+    "impr": 166,
+    "clicks": 0,
+    "cost": 0.0,
+    "ctr": 0.0,
+    "cpc": 0.0,
+    "conv": 0.0,
+    "all_conv": 0.0,
+    "conv_value": 0.0,
+    "invalid_clicks": 43,
+    "invalid_click_rate": 100.0,
+    "cvr": 0.0,
+    "cpl": null,
+    "search_is": 0.0,
+    "budget_lost_is": 0.0,
+    "rank_lost_is": 0.0,
+    "abs_top_is": 0.0
+   },
+   "HVAC Replacement": {
+    "impr": 15,
+    "clicks": 0,
+    "cost": 0.0,
+    "ctr": 0.0,
+    "cpc": 0.0,
+    "conv": 0.0,
+    "all_conv": 0.0,
+    "conv_value": 0.0,
+    "invalid_clicks": 8,
+    "invalid_click_rate": 100.0,
+    "cvr": 0.0,
+    "cpl": null,
+    "search_is": 0.0,
+    "budget_lost_is": 0.0,
+    "rank_lost_is": 0.0,
+    "abs_top_is": 0.0
+   }
+  },
+  "daily": {
+   "2026-08-14": {
+    "cost": 2.34,
+    "clicks": 1,
+    "impr": 28,
+    "conv": 0.0
+   },
+   "2026-08-15": {
+    "cost": 0.0,
+    "clicks": 0,
+    "impr": 37,
+    "conv": 0.0
+   },
+   "2026-08-16": {
+    "cost": 20.34,
+    "clicks": 1,
+    "impr": 65,
+    "conv": 0.0
+   },
+   "2026-08-17": {
+    "cost": 69.5,
+    "clicks": 3,
+    "impr": 106,
+    "conv": 0.0
+   },
+   "2026-08-18": {
+    "cost": 331.99,
+    "clicks": 7,
+    "impr": 285,
+    "conv": 0.0
+   },
+   "2026-08-19": {
+    "cost": 609.06,
+    "clicks": 12,
+    "impr": 368,
+    "conv": 0.0
+   },
+   "2026-08-20": {
+    "cost": 914.72,
+    "clicks": 21,
+    "impr": 472,
+    "conv": 3.0
+   },
+   "2026-08-21": {
+    "cost": 808.11,
+    "clicks": 16,
+    "impr": 400,
+    "conv": 0.0
+   },
+   "2026-08-22": {
+    "cost": 188.07,
+    "clicks": 5,
+    "impr": 212,
+    "conv": 1.0
+   },
+   "2026-08-24": {
+    "cost": 802.03,
+    "clicks": 18,
+    "impr": 467,
+    "conv": 1.0
+   },
+   "2026-08-25": {
+    "cost": 750.09,
+    "clicks": 17,
+    "impr": 421,
+    "conv": 1.0
+   },
+   "2026-08-26": {
+    "cost": 323.87,
+    "clicks": 12,
+    "impr": 542,
+    "conv": 0.0
+   },
+   "2026-08-27": {
+    "cost": 123.57,
+    "clicks": 5,
+    "impr": 808,
+    "conv": 0.0
+   }
+  },
+  "pacing": {
+   "five_campaign_mtd_settled": 4820.12,
+   "five_campaign_today_partial": 123.57,
+   "whole_account_mtd_settled": 4820.12,
+   "whole_account_today_partial": 123.57,
+   "whole_account_august_to_date": 4943.69,
+   "settled_days_in_month": 26,
+   "live_days": 13,
+   "avg_daily_since_launch": 370.78,
+   "avg_daily_last_7_settled": 540.98,
+   "sum_of_five_daily_budgets": 465.63,
+   "remaining_days_after_today": 4,
+   "projection_realistic_last7_runrate": 7107.63,
+   "projection_conservative_2x_budget_cap": 8668.73,
+   "august_maximum": 13000.0,
+   "headroom_realistic": 5892.37,
+   "headroom_conservative": 4331.27
+  },
+  "device": {
+   "DESKTOP": {
+    "impr": 1476,
+    "clicks": 31,
+    "cost": 736.52,
+    "conv": 0.0
+   },
+   "MOBILE": {
+    "impr": 1927,
+    "clicks": 82,
+    "cost": 4083.59,
+    "conv": 6.0
+   }
+  },
+  "click_type": {
+   "URL_CLICKS": {
+    "impr": 3403,
+    "clicks": 73,
+    "cost": 2842.64
+   },
+   "CALLS": {
+    "impr": 1075,
+    "clicks": 5,
+    "cost": 306.83
+   },
+   "SITELINKS": {
+    "impr": 1057,
+    "clicks": 15,
+    "cost": 731.68
+   },
+   "GET_DIRECTIONS": {
+    "impr": 201,
+    "clicks": 6,
+    "cost": 199.88
+   },
+   "LOCATION_EXPANSION": {
+    "impr": 1661,
+    "clicks": 14,
+    "cost": 739.09
+   },
+   "STORE_LOCATOR": {
+    "impr": 3,
+    "clicks": 0,
+    "cost": 0.0
+   }
+  },
+  "invalid_clicks": {
+   "launch_to_date_settled": {
+    "AC Repair": {
+     "impr": 319,
+     "charged_clicks": 19,
+     "invalid_clicks": 509,
+     "invalid_click_rate_pct": 96.4,
+     "cost": 1719.33
+    },
+    "Gas Boiler Repair": {
+     "impr": 8,
+     "charged_clicks": 0,
+     "invalid_clicks": 26,
+     "invalid_click_rate_pct": 100.0,
+     "cost": 0.0
+    },
+    "HVAC Installation": {
+     "impr": 2330,
+     "charged_clicks": 79,
+     "invalid_clicks": 69,
+     "invalid_click_rate_pct": 46.62,
+     "cost": 1987.98
+    },
+    "HVAC Repair": {
+     "impr": 666,
+     "charged_clicks": 12,
+     "invalid_clicks": 422,
+     "invalid_click_rate_pct": 97.24,
+     "cost": 1010.98
+    },
+    "HVAC Replacement": {
+     "impr": 80,
+     "charged_clicks": 3,
+     "invalid_clicks": 47,
+     "invalid_click_rate_pct": 94.0,
+     "cost": 101.83
+    }
+   },
+   "before_change": {
+    "AC Repair": {
+     "impr": 108,
+     "charged_clicks": 9,
+     "invalid_clicks": 210,
+     "invalid_click_rate_pct": 95.89,
+     "cost": 947.48
+    },
+    "Gas Boiler Repair": {
+     "impr": 2,
+     "charged_clicks": 0,
+     "invalid_clicks": 4,
+     "invalid_click_rate_pct": 100.0,
+     "cost": 0.0
+    },
+    "HVAC Installation": {
+     "impr": 1098,
+     "charged_clicks": 40,
+     "invalid_clicks": 24,
+     "invalid_click_rate_pct": 37.5,
+     "cost": 1100.44
+    },
+    "HVAC Repair": {
+     "impr": 256,
+     "charged_clicks": 5,
+     "invalid_clicks": 177,
+     "invalid_click_rate_pct": 97.25,
+     "cost": 563.82
+    },
+    "HVAC Replacement": {
+     "impr": 61,
+     "charged_clicks": 2,
+     "invalid_clicks": 20,
+     "invalid_click_rate_pct": 90.91,
+     "cost": 52.14
+    }
+   },
+   "after_change": {
+    "AC Repair": {
+     "impr": 143,
+     "charged_clicks": 6,
+     "invalid_clicks": 192,
+     "invalid_click_rate_pct": 96.97,
+     "cost": 653.57
+    },
+    "Gas Boiler Repair": {
+     "impr": 4,
+     "charged_clicks": 0,
+     "invalid_clicks": 14,
+     "invalid_click_rate_pct": 100.0,
+     "cost": 0.0
+    },
+    "HVAC Installation": {
+     "impr": 1047,
+     "charged_clicks": 35,
+     "invalid_clicks": 38,
+     "invalid_click_rate_pct": 52.05,
+     "cost": 767.63
+    },
+    "HVAC Repair": {
+     "impr": 218,
+     "charged_clicks": 5,
+     "invalid_clicks": 187,
+     "invalid_click_rate_pct": 97.4,
+     "cost": 405.1
+    },
+    "HVAC Replacement": {
+     "impr": 18,
+     "charged_clicks": 1,
+     "invalid_clicks": 17,
+     "invalid_click_rate_pct": 94.44,
+     "cost": 49.69
+    }
+   },
+   "today_partial": {
+    "AC Repair": {
+     "impr": 367,
+     "charged_clicks": 0,
+     "invalid_clicks": 108,
+     "invalid_click_rate_pct": 100.0,
+     "cost": 0.0
+    },
+    "Gas Boiler Repair": {
+     "impr": 12,
+     "charged_clicks": 0,
+     "invalid_clicks": 5,
+     "invalid_click_rate_pct": 100.0,
+     "cost": 0.0
+    },
+    "HVAC Installation": {
+     "impr": 244,
+     "charged_clicks": 5,
+     "invalid_clicks": 7,
+     "invalid_click_rate_pct": 58.33,
+     "cost": 123.57
+    },
+    "HVAC Repair": {
+     "impr": 166,
+     "charged_clicks": 0,
+     "invalid_clicks": 43,
+     "invalid_click_rate_pct": 100.0,
+     "cost": 0.0
+    },
+    "HVAC Replacement": {
+     "impr": 15,
+     "charged_clicks": 0,
+     "invalid_clicks": 8,
+     "invalid_click_rate_pct": 100.0,
+     "cost": 0.0
+    }
+   }
+  },
+  "schedule_compliance": {
+   "pre_schedule_2026-08-14_to_2026-08-20": {
+    "violations": [
+     {
+      "day": "SUNDAY",
+      "hour": 0,
+      "campaign": "HVAC Repair",
+      "impr": 5,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 3,
+      "campaign": "AC Repair",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 7,
+      "campaign": "HVAC Repair",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 8,
+      "campaign": "HVAC Repair",
+      "impr": 6,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 9,
+      "campaign": "HVAC Repair",
+      "impr": 5,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 10,
+      "campaign": "HVAC Repair",
+      "impr": 3,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 11,
+      "campaign": "HVAC Repair",
+      "impr": 4,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 12,
+      "campaign": "HVAC Repair",
+      "impr": 7,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 13,
+      "campaign": "HVAC Repair",
+      "impr": 3,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 14,
+      "campaign": "HVAC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 17,
+      "campaign": "AC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 17,
+      "campaign": "HVAC Repair",
+      "impr": 6,
+      "clicks": 1,
+      "cost": 20.34
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 18,
+      "campaign": "HVAC Repair",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 19,
+      "campaign": "HVAC Repair",
+      "impr": 4,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 20,
+      "campaign": "HVAC Repair",
+      "impr": 6,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 21,
+      "campaign": "HVAC Repair",
+      "impr": 3,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 22,
+      "campaign": "HVAC Repair",
+      "impr": 5,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SUNDAY",
+      "hour": 23,
+      "campaign": "HVAC Repair",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "MONDAY",
+      "hour": 0,
+      "campaign": "HVAC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "MONDAY",
+      "hour": 5,
+      "campaign": "HVAC Repair",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "MONDAY",
+      "hour": 6,
+      "campaign": "HVAC Repair",
+      "impr": 9,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "WEDNESDAY",
+      "hour": 22,
+      "campaign": "HVAC Installation",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "WEDNESDAY",
+      "hour": 22,
+      "campaign": "HVAC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "WEDNESDAY",
+      "hour": 23,
+      "campaign": "HVAC Installation",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "WEDNESDAY",
+      "hour": 23,
+      "campaign": "HVAC Replacement",
+      "impr": 3,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 0,
+      "campaign": "AC Repair",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 0,
+      "campaign": "HVAC Installation",
+      "impr": 1,
+      "clicks": 1,
+      "cost": 29.06
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 0,
+      "campaign": "HVAC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 1,
+      "campaign": "HVAC Installation",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 2,
+      "campaign": "HVAC Installation",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 2,
+      "campaign": "HVAC Repair",
+      "impr": 3,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 3,
+      "campaign": "HVAC Installation",
+      "impr": 3,
+      "clicks": 1,
+      "cost": 21.31
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 4,
+      "campaign": "AC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 5,
+      "campaign": "HVAC Installation",
+      "impr": 8,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 6,
+      "campaign": "AC Repair",
+      "impr": 4,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 6,
+      "campaign": "HVAC Installation",
+      "impr": 8,
+      "clicks": 1,
+      "cost": 29.39
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 6,
+      "campaign": "HVAC Repair",
+      "impr": 2,
+      "clicks": 2,
+      "cost": 306.06
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 7,
+      "campaign": "AC Repair",
+      "impr": 13,
+      "clicks": 1,
+      "cost": 181.79
+     },
+     {
+      "day": "THURSDAY",
+      "hour": 7,
+      "campaign": "HVAC Installation",
+      "impr": 35,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "FRIDAY",
+      "hour": 20,
+      "campaign": "AC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "FRIDAY",
+      "hour": 20,
+      "campaign": "HVAC Repair",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "FRIDAY",
+      "hour": 22,
+      "campaign": "HVAC Repair",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 4,
+      "campaign": "HVAC Repair",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 13,
+      "campaign": "HVAC Repair",
+      "impr": 3,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 14,
+      "campaign": "HVAC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 15,
+      "campaign": "HVAC Repair",
+      "impr": 4,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 16,
+      "campaign": "HVAC Repair",
+      "impr": 5,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 18,
+      "campaign": "HVAC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 19,
+      "campaign": "HVAC Repair",
+      "impr": 8,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 20,
+      "campaign": "AC Repair",
+      "impr": 3,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 20,
+      "campaign": "HVAC Repair",
+      "impr": 1,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 21,
+      "campaign": "AC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     },
+     {
+      "day": "SATURDAY",
+      "hour": 21,
+      "campaign": "HVAC Repair",
+      "impr": 2,
+      "clicks": 0,
+      "cost": 0.0
+     }
+    ],
+    "out_of_schedule_cost": 587.95,
+    "out_of_schedule_clicks": 7,
+    "out_of_schedule_impressions": 207
+   },
+   "post_schedule_2026-08-21_to_2026-08-26_SETTLED": {
+    "violations": [],
+    "out_of_schedule_cost": 0,
+    "out_of_schedule_clicks": 0,
+    "out_of_schedule_impressions": 0
+   },
+   "today_partial_2026-08-27": {
+    "violations": [],
+    "out_of_schedule_cost": 0,
+    "out_of_schedule_clicks": 0,
+    "out_of_schedule_impressions": 0
+   }
+  }
+ }
+}

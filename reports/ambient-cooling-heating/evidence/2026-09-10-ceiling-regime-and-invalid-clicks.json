@@ -1,0 +1,617 @@
+{
+ "generated_local": "2026-09-10T10:34:13.629591-04:00",
+ "bid_changes": [],
+ "daily": {
+  "AC Repair": [
+   {
+    "date": "2026-08-14",
+    "cost": 2.34,
+    "valid": 1,
+    "invalid": 2,
+    "raw": 3,
+    "per_valid": 2.34,
+    "per_raw": 0.78
+   },
+   {
+    "date": "2026-08-17",
+    "cost": 47.78,
+    "valid": 2,
+    "invalid": 0,
+    "raw": 2,
+    "per_valid": 23.89,
+    "per_raw": 23.89
+   },
+   {
+    "date": "2026-08-18",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 3,
+    "raw": 3,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-08-19",
+    "cost": 282.06,
+    "valid": 4,
+    "invalid": 87,
+    "raw": 91,
+    "per_valid": 70.52,
+    "per_raw": 3.1
+   },
+   {
+    "date": "2026-08-20",
+    "cost": 280.27,
+    "valid": 2,
+    "invalid": 120,
+    "raw": 122,
+    "per_valid": 140.13,
+    "per_raw": 2.3
+   },
+   {
+    "date": "2026-08-21",
+    "cost": 385.15,
+    "valid": 3,
+    "invalid": 0,
+    "raw": 3,
+    "per_valid": 128.38,
+    "per_raw": 128.38
+   },
+   {
+    "date": "2026-08-22",
+    "cost": 68.16,
+    "valid": 1,
+    "invalid": 105,
+    "raw": 106,
+    "per_valid": 68.16,
+    "per_raw": 0.64
+   },
+   {
+    "date": "2026-08-24",
+    "cost": 281.64,
+    "valid": 2,
+    "invalid": 1,
+    "raw": 3,
+    "per_valid": 140.82,
+    "per_raw": 93.88
+   },
+   {
+    "date": "2026-08-25",
+    "cost": 371.93,
+    "valid": 4,
+    "invalid": 80,
+    "raw": 84,
+    "per_valid": 92.98,
+    "per_raw": 4.43
+   },
+   {
+    "date": "2026-08-26",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 111,
+    "raw": 111,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-08-27",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 113,
+    "raw": 113,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-08-28",
+    "cost": 267.96,
+    "valid": 1,
+    "invalid": 107,
+    "raw": 108,
+    "per_valid": 267.96,
+    "per_raw": 2.48
+   },
+   {
+    "date": "2026-08-29",
+    "cost": 283.84,
+    "valid": 2,
+    "invalid": 120,
+    "raw": 122,
+    "per_valid": 141.92,
+    "per_raw": 2.33
+   },
+   {
+    "date": "2026-08-31",
+    "cost": 279.46,
+    "valid": 2,
+    "invalid": 10,
+    "raw": 12,
+    "per_valid": 139.73,
+    "per_raw": 23.29
+   },
+   {
+    "date": "2026-09-01",
+    "cost": 112.63,
+    "valid": 1,
+    "invalid": 10,
+    "raw": 11,
+    "per_valid": 112.63,
+    "per_raw": 10.24
+   },
+   {
+    "date": "2026-09-02",
+    "cost": 166.36,
+    "valid": 1,
+    "invalid": 31,
+    "raw": 32,
+    "per_valid": 166.36,
+    "per_raw": 5.2
+   },
+   {
+    "date": "2026-09-03",
+    "cost": 221.89,
+    "valid": 2,
+    "invalid": 17,
+    "raw": 19,
+    "per_valid": 110.94,
+    "per_raw": 11.68
+   },
+   {
+    "date": "2026-09-04",
+    "cost": 33.4,
+    "valid": 1,
+    "invalid": 20,
+    "raw": 21,
+    "per_valid": 33.4,
+    "per_raw": 1.59
+   },
+   {
+    "date": "2026-09-05",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 1,
+    "raw": 1,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-09-07",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 1,
+    "raw": 1,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-09-09",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 2,
+    "raw": 2,
+    "per_valid": null,
+    "per_raw": 0.0
+   }
+  ],
+  "HVAC Repair": [
+   {
+    "date": "2026-08-14",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 1,
+    "raw": 1,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-08-16",
+    "cost": 20.34,
+    "valid": 1,
+    "invalid": 3,
+    "raw": 4,
+    "per_valid": 20.34,
+    "per_raw": 5.08
+   },
+   {
+    "date": "2026-08-17",
+    "cost": 21.72,
+    "valid": 1,
+    "invalid": 0,
+    "raw": 1,
+    "per_valid": 21.72,
+    "per_raw": 21.72
+   },
+   {
+    "date": "2026-08-18",
+    "cost": 56.41,
+    "valid": 1,
+    "invalid": 46,
+    "raw": 47,
+    "per_valid": 56.41,
+    "per_raw": 1.2
+   },
+   {
+    "date": "2026-08-19",
+    "cost": 54.25,
+    "valid": 1,
+    "invalid": 53,
+    "raw": 54,
+    "per_valid": 54.25,
+    "per_raw": 1.0
+   },
+   {
+    "date": "2026-08-20",
+    "cost": 306.06,
+    "valid": 2,
+    "invalid": 78,
+    "raw": 80,
+    "per_valid": 153.03,
+    "per_raw": 3.83
+   },
+   {
+    "date": "2026-08-21",
+    "cost": 147.1,
+    "valid": 1,
+    "invalid": 0,
+    "raw": 1,
+    "per_valid": 147.1,
+    "per_raw": 147.1
+   },
+   {
+    "date": "2026-08-22",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 54,
+    "raw": 54,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-08-24",
+    "cost": 157.85,
+    "valid": 2,
+    "invalid": 141,
+    "raw": 143,
+    "per_valid": 78.92,
+    "per_raw": 1.1
+   },
+   {
+    "date": "2026-08-25",
+    "cost": 148.67,
+    "valid": 1,
+    "invalid": 1,
+    "raw": 2,
+    "per_valid": 148.67,
+    "per_raw": 74.33
+   },
+   {
+    "date": "2026-08-26",
+    "cost": 98.58,
+    "valid": 2,
+    "invalid": 45,
+    "raw": 47,
+    "per_valid": 49.29,
+    "per_raw": 2.1
+   },
+   {
+    "date": "2026-08-27",
+    "cost": 105.0,
+    "valid": 3,
+    "invalid": 45,
+    "raw": 48,
+    "per_valid": 35.0,
+    "per_raw": 2.19
+   },
+   {
+    "date": "2026-08-28",
+    "cost": 199.36,
+    "valid": 3,
+    "invalid": 10,
+    "raw": 13,
+    "per_valid": 66.45,
+    "per_raw": 15.34
+   },
+   {
+    "date": "2026-08-29",
+    "cost": 212.57,
+    "valid": 3,
+    "invalid": 16,
+    "raw": 19,
+    "per_valid": 70.86,
+    "per_raw": 11.19
+   },
+   {
+    "date": "2026-08-31",
+    "cost": 137.25,
+    "valid": 2,
+    "invalid": 89,
+    "raw": 91,
+    "per_valid": 68.62,
+    "per_raw": 1.51
+   },
+   {
+    "date": "2026-09-01",
+    "cost": 89.51,
+    "valid": 2,
+    "invalid": 2,
+    "raw": 4,
+    "per_valid": 44.76,
+    "per_raw": 22.38
+   },
+   {
+    "date": "2026-09-02",
+    "cost": 82.14,
+    "valid": 1,
+    "invalid": 11,
+    "raw": 12,
+    "per_valid": 82.14,
+    "per_raw": 6.84
+   },
+   {
+    "date": "2026-09-03",
+    "cost": 70.05,
+    "valid": 1,
+    "invalid": 12,
+    "raw": 13,
+    "per_valid": 70.05,
+    "per_raw": 5.39
+   },
+   {
+    "date": "2026-09-04",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 5,
+    "raw": 5,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-09-05",
+    "cost": 21.46,
+    "valid": 1,
+    "invalid": 0,
+    "raw": 1,
+    "per_valid": 21.46,
+    "per_raw": 21.46
+   },
+   {
+    "date": "2026-09-07",
+    "cost": 23.62,
+    "valid": 1,
+    "invalid": 6,
+    "raw": 7,
+    "per_valid": 23.62,
+    "per_raw": 3.37
+   },
+   {
+    "date": "2026-09-08",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 1,
+    "raw": 1,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-09-09",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 2,
+    "raw": 2,
+    "per_valid": null,
+    "per_raw": 0.0
+   }
+  ],
+  "HVAC Installation": [
+   {
+    "date": "2026-08-14",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 1,
+    "raw": 1,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-08-18",
+    "cost": 275.58,
+    "valid": 6,
+    "invalid": 0,
+    "raw": 6,
+    "per_valid": 45.93,
+    "per_raw": 45.93
+   },
+   {
+    "date": "2026-08-19",
+    "cost": 272.75,
+    "valid": 7,
+    "invalid": 10,
+    "raw": 17,
+    "per_valid": 38.96,
+    "per_raw": 16.04
+   },
+   {
+    "date": "2026-08-20",
+    "cost": 276.25,
+    "valid": 15,
+    "invalid": 11,
+    "raw": 26,
+    "per_valid": 18.42,
+    "per_raw": 10.62
+   },
+   {
+    "date": "2026-08-21",
+    "cost": 275.86,
+    "valid": 12,
+    "invalid": 3,
+    "raw": 15,
+    "per_valid": 22.99,
+    "per_raw": 18.39
+   },
+   {
+    "date": "2026-08-22",
+    "cost": 119.91,
+    "valid": 4,
+    "invalid": 6,
+    "raw": 10,
+    "per_valid": 29.98,
+    "per_raw": 11.99
+   },
+   {
+    "date": "2026-08-24",
+    "cost": 312.85,
+    "valid": 13,
+    "invalid": 5,
+    "raw": 18,
+    "per_valid": 24.07,
+    "per_raw": 17.38
+   },
+   {
+    "date": "2026-08-25",
+    "cost": 229.49,
+    "valid": 12,
+    "invalid": 11,
+    "raw": 23,
+    "per_valid": 19.12,
+    "per_raw": 9.98
+   },
+   {
+    "date": "2026-08-26",
+    "cost": 225.29,
+    "valid": 10,
+    "invalid": 22,
+    "raw": 32,
+    "per_valid": 22.53,
+    "per_raw": 7.04
+   },
+   {
+    "date": "2026-08-27",
+    "cost": 224.23,
+    "valid": 12,
+    "invalid": 7,
+    "raw": 19,
+    "per_valid": 18.69,
+    "per_raw": 11.8
+   },
+   {
+    "date": "2026-08-28",
+    "cost": 218.14,
+    "valid": 11,
+    "invalid": 2,
+    "raw": 13,
+    "per_valid": 19.83,
+    "per_raw": 16.78
+   },
+   {
+    "date": "2026-08-31",
+    "cost": 44.18,
+    "valid": 1,
+    "invalid": 1,
+    "raw": 2,
+    "per_valid": 44.18,
+    "per_raw": 22.09
+   },
+   {
+    "date": "2026-09-01",
+    "cost": 181.49,
+    "valid": 3,
+    "invalid": 3,
+    "raw": 6,
+    "per_valid": 60.5,
+    "per_raw": 30.25
+   },
+   {
+    "date": "2026-09-02",
+    "cost": 199.86,
+    "valid": 5,
+    "invalid": 1,
+    "raw": 6,
+    "per_valid": 39.97,
+    "per_raw": 33.31
+   },
+   {
+    "date": "2026-09-03",
+    "cost": 58.45,
+    "valid": 1,
+    "invalid": 0,
+    "raw": 1,
+    "per_valid": 58.45,
+    "per_raw": 58.45
+   },
+   {
+    "date": "2026-09-04",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 7,
+    "raw": 7,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-09-08",
+    "cost": 0.0,
+    "valid": 0,
+    "invalid": 1,
+    "raw": 1,
+    "per_valid": null,
+    "per_raw": 0.0
+   },
+   {
+    "date": "2026-09-09",
+    "cost": 58.63,
+    "valid": 2,
+    "invalid": 2,
+    "raw": 4,
+    "per_valid": 29.32,
+    "per_raw": 14.66
+   }
+  ]
+ },
+ "reconciliation": {
+  "AC Repair": {
+   "cost": 3084.87,
+   "valid": 29,
+   "invalid": 941,
+   "per_valid": 106.37,
+   "per_raw": 3.18,
+   "ceiling": 25.0,
+   "verdict": "$/valid BREACHES ceiling; $/raw does not"
+  },
+  "Gas Boiler Repair": {
+   "cost": 0.0,
+   "valid": 0,
+   "invalid": 42,
+   "per_valid": null,
+   "per_raw": null,
+   "ceiling": 0.0,
+   "verdict": "no spend"
+  },
+  "HVAC Installation": {
+   "cost": 2972.96,
+   "valid": 114,
+   "invalid": 93,
+   "per_valid": 26.08,
+   "per_raw": 14.36,
+   "ceiling": 30.0,
+   "verdict": "$/valid within ceiling"
+  },
+  "HVAC Repair": {
+   "cost": 1951.94,
+   "valid": 29,
+   "invalid": 621,
+   "per_valid": 67.31,
+   "per_raw": 3.0,
+   "ceiling": 25.0,
+   "verdict": "$/valid BREACHES ceiling; $/raw does not"
+  },
+  "HVAC Replacement": {
+   "cost": 152.52,
+   "valid": 5,
+   "invalid": 82,
+   "per_valid": 30.5,
+   "per_raw": 1.75,
+   "ceiling": 0.0,
+   "verdict": "no ceiling set"
+  }
+ }
+}

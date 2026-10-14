@@ -1,0 +1,41 @@
+{
+ "plan_name": "AMB-0909B-NEG-A",
+ "fingerprint": "18143479027D",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "validate_only": true,
+ "partial_failure": false,
+ "operation_count": 16,
+ "operations_log": [
+  "REMOVE negative [PHRASE] 'free' from AC Repair (customers/2401959466/campaignCriteria/24132507741~15120770)",
+  "REMOVE negative [PHRASE] 'free' from Gas Boiler Repair (customers/2401959466/campaignCriteria/24132507744~15120770)",
+  "REMOVE negative [PHRASE] 'free' from HVAC Installation (customers/2401959466/campaignCriteria/24132507747~15120770)",
+  "REMOVE negative [PHRASE] 'free' from HVAC Repair (customers/2401959466/campaignCriteria/24132507750~15120770)",
+  "REMOVE negative [PHRASE] 'free' from HVAC Replacement (customers/2401959466/campaignCriteria/24132507753~15120770)",
+  "REMOVE negative [PHRASE] 'licensed' from AC Repair (customers/2401959466/campaignCriteria/24132507741~190023714)",
+  "REMOVE negative [PHRASE] 'licensed' from Gas Boiler Repair (customers/2401959466/campaignCriteria/24132507744~190023714)",
+  "REMOVE negative [PHRASE] 'licensed' from HVAC Installation (customers/2401959466/campaignCriteria/24132507747~190023714)",
+  "REMOVE negative [PHRASE] 'licensed' from HVAC Repair (customers/2401959466/campaignCriteria/24132507750~190023714)",
+  "REMOVE negative [PHRASE] 'licensed' from HVAC Replacement (customers/2401959466/campaignCriteria/24132507753~190023714)",
+  "REMOVE negative [PHRASE] 'savage' from AC Repair (customers/2401959466/campaignCriteria/24132507741~138360213)",
+  "REMOVE negative [PHRASE] 'savage' from Gas Boiler Repair (customers/2401959466/campaignCriteria/24132507744~138360213)",
+  "REMOVE negative [PHRASE] 'savage' from HVAC Installation (customers/2401959466/campaignCriteria/24132507747~138360213)",
+  "REMOVE negative [PHRASE] 'savage' from HVAC Repair (customers/2401959466/campaignCriteria/24132507750~138360213)",
+  "REMOVE negative [PHRASE] 'savage' from HVAC Replacement (customers/2401959466/campaignCriteria/24132507753~138360213)",
+  "REMOVE account-level negative [BROAD] 'commercial' (customers/2401959466/sharedCriteria/11252984411~10061081)"
+ ],
+ "identity": {
+  "descriptive_name == 'Ambient Cooling - Live'": true,
+  "customer.id == 2401959466": true,
+  "not a manager account": true,
+  "not a test account": true,
+  "time_zone == America/New_York": true,
+  "currency_code == USD": true,
+  "Green Marketing manager 3373711342 ACTIVE": true,
+  "ClickCease manager 2815082755 ACTIVE": true
+ },
+ "started_local": "2026-09-09T18:05:45.315154-04:00",
+ "status": "VALIDATED_OK",
+ "results_returned": 0,
+ "finished_local": "2026-09-09T18:05:45.835147-04:00"
+}

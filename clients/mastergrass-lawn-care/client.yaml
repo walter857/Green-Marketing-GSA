@@ -1,0 +1,83 @@
+# Created 2026-09-26 for a read-only whole-account audit.
+# Account name and child ID confirmed by the operator on 2026-09-26 in answer to
+# the client gate question (candidate "MasterGrass - Live / 9487471092").
+# The service catalog is NOT yet confirmed client truth. primary_service below
+# records the operator-approved AUDIT SCOPE, not a verified service offering.
+client:
+  slug: mastergrass-lawn-care
+  business_name: Master Grass Lawn Care
+  vertical: landscaping
+  primary_service: All services with spend (whole-account audit scope)
+  google_ads:
+    child_customer_id: "9487471092"
+    exact_child_account_name: MasterGrass - Live
+    manager_customer_id: "3373711342"
+    must_contain_live_marker: true
+    currency: USD
+    timezone: America/New_York
+  website:
+    primary_url: https://mastergrasslawncare.com/
+    landing_page_base_url: https://offer.mastergrasslawncare.com/
+    phone_display: ""
+    phone_e164: ""
+  offer:
+    services_in_scope:
+      - All services with spend (whole-account audit scope)
+      - French drain & yard drainage installation
+    services_excluded: []
+    verified_usps:
+      - "Licensed & insured (owner confirmed in chat 2026-09-26)"
+      - "4.9 stars from 83 Google reviews (GBP 'MasterGrass Landscape & Lawn Care', read 2026-09-26; ads say 80+)"
+      - "Free quote / free estimate (all offer landing pages)"
+      - "Landing-page testimonials Sarah M., Daniel R., Emily T. are real clients (owner confirmed 2026-09-26)"
+    verified_offers: []
+    average_job_revenue: null
+    gross_margin_pct: null
+    close_rate_pct: null
+    target_cpl: null
+    target_cpql: null
+    target_cac: null
+  service_area:
+    country_code: US
+    target_type: cities
+    geo_target_constant_ids: []
+    cities: []
+    postal_codes: []
+    radius:
+      latitude: null
+      longitude: null
+      distance: null
+      unit: MILES
+    exclusions: []
+    location_option: PRESENCE
+  schedule:
+    timezone: America/New_York
+    can_answer_after_hours: false
+    windows: []
+  conversions:
+    primary: []
+    secondary: []
+    call_minimum_seconds: null
+    crm_stage_mapping:
+      lead: ""
+      qualified: ""
+      sold: ""
+    offline_route: DATA_MANAGER_API
+  integrations:
+    crm: ""
+    call_tracking: WhatConverts (to be verified in this audit)
+    analytics: ""
+    tag_manager: ""
+    speed_to_lead: ""
+    review_url: ""
+    form_webhook_env_key: CRM_WEBHOOK_URL
+  permissions:
+    # Owner approvals in chat 2026-09-27: MG-0926-BUD 10CA8EBC91E2, MG-0926-NEG 262CDD6227F7,
+    # MG-0926-RSA E2D8869A71E6, MG-0926-PMAX B882AC1CB44B; Landscaping Max Clicks $25 cap with the
+    # budget set by the strategist inside a $1,500/month spend goal. Enabling still needs its own approval.
+    approvers:
+      - "Green Marketing account owner (access@greenmarketingfl.com)"
+    allow_create_paused: true
+    allow_enable: false
+    allow_budget_changes: true
+    allow_deletions: false

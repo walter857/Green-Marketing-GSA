@@ -1,0 +1,145 @@
+# Green Marketing work order - Softwind Power Washing
+#
+# Identity gate VERIFIED by fresh read-only Google Ads API lookup on
+# 2026-08-25 16:47:57 America/New_York:
+#   customer.descriptive_name -> "Softwind Power Washing - Live"  (exact match)
+#   customer.id               -> 1521725229                      (exact match)
+#   customer.manager          -> false
+#   customer.test_account     -> false
+#   currency USD | time zone America/New_York
+#   manager link (level 1) from 3373711342 "Green Marketing" MCC
+# Evidence: clients/softwind-power-washing/snapshots/identity-2026-08-25.json
+#
+# MODE IS READ. This work order authorizes SELECT queries and local drafts only.
+# It does NOT authorize any Google Ads mutation of any kind.
+
+work_order:
+  client_slug: softwind-power-washing
+  business_name: Softwind Powerwashing & Paver Sealing
+  account:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: similar-local-service
+    exact_primary_service: Power Washing
+    # Closely related exterior-washing purchase intents captured by the SAME
+    # approved Power Washing service family, through separate SKAG ad groups.
+    # These are intent variants of the approved service, not new services.
+    related_services:
+      - pressure washing
+      - residential pressure washing
+      - house washing
+      - soft washing
+      - driveway pressure washing
+      - patio pressure washing
+    # Explicitly OUT OF SCOPE for this work order.
+    excluded_services:
+      - roof cleaning
+      - gutter cleaning
+      - paver sealing
+      - landscaping
+      - masonry
+      - painting
+      - shrink wrapping
+      - party rentals
+      - lawn care
+  task:
+    type: recovery
+    mode: read
+    request: >-
+      Complete Google Ads recovery and optimization for Power Washing, including
+      measurement verification, campaign consolidation, BOFU keyword structure,
+      RSA replacement, landing-page conversion improvements, asset completion,
+      query routing, CPC control, audience observation, enablement QA, and
+      retirement of displaced resources. READ + DRAFT. No external mutation
+      under this work order; every external change requires its own separate,
+      exact, fingerprinted approval.
+    date_range: >-
+      All time since first campaign impression, with August 2026 (2026-08-01 ..
+      2026-08-31) reported as a closed month and September 2026 reported
+      separately from 2026-09-01 forward.
+  scope_approval:
+    approved: true
+    approved_by: Walter Correa
+    approver_email: access@greenmarketing.com
+    reason: >-
+      Power Washing is an approved similar local home service because it is a
+      local, estimate-driven service with a defined service area and
+      lead-generation sales process.
+  inputs:
+    website_or_final_url: https://softwindli.com/services/landscaping/pressure-washing/
+    landing_page_domain: https://offer.softwindli.com/
+    approved_landing_page_phone: "(631) 502-7946"
+    campaign_under_audit: Power Washing
+    service_area: []            # UNKNOWN - not yet verified; read from the account, never assumed.
+    daily_budget: null          # UNKNOWN until the fresh read; never asserted from a screenshot.
+    primary_conversion_goal: "" # UNKNOWN until the fresh conversion-action read.
+    source_files:
+      - clients/softwind-power-washing/client.yaml
+      - clients/softwind-power-washing/snapshots/identity-2026-08-25.json
+  # CLOSED 2026-08-31. Retained as historical evidence only. This block is NOT
+  # a September decision input anywhere. Final August result: $595.87 spent,
+  # 18 valid clicks, 0 conversions, 0 confirmed relevant leads.
+  historical_august_objective:
+    status: CLOSED - MONTH ENDED
+    closed_on: "2026-08-31"
+    month_end_date: "2026-08-31"
+    lead_goal: At least one qualified lead before 2026-08-31.
+    spend_goal_usd: 2500
+    actual_august_spend_usd: 595.87
+    outcome: NOT MET - zero qualified leads, zero conversions recorded.
+
+  current_objective:
+    effective_from: "2026-09-01"
+    primary_goal: >-
+      Generate qualified Power Washing and Pressure Washing leads at the lowest
+      defensible cost per qualified lead.
+    secondary_goals:
+      - Lower cost per qualified lead
+      - Higher landing-page conversion rate
+      - Higher qualified click-through rate
+      - Improve the three Quality Score components - expected CTR, ad relevance,
+        and landing-page experience - as diagnostics, never as the objective
+      - More sold jobs, higher revenue and gross profit, better profit after ad spend
+    do_not_optimize_for:
+      - Spend by itself
+      - Clicks by themselves
+      - Google Optimization Score
+      - Ad Strength by itself
+      - Quality Score as a vanity metric
+      - Maximum keyword or ad-group count
+      - Structural complexity or perfect-looking SKAG architecture that fragments data
+      - Low-intent traffic
+    spend_goal_usd: null      # UNKNOWN - no September spend target is set or assumed.
+    constraint: >-
+      Qualified BOFU Search demand only. No goal ever authorizes Broad Match,
+      Search Partners, Display, Performance Max, AI Max, DSA, out-of-area
+      targeting, low-intent keywords, or irrational bids.
+    economics:
+      # Never assert an unverified economic figure. All UNKNOWN until the client
+      # supplies verified figures or the CRM is connected.
+      target_cpl_usd: null              # UNKNOWN
+      target_cpql_usd: null             # UNKNOWN
+      lead_to_sale_close_rate: null     # UNKNOWN
+      average_job_revenue_usd: null     # UNKNOWN
+      gross_margin_pct: null            # UNKNOWN
+      lead_value_usd: null              # UNKNOWN
+      note: >-
+        UNKNOWN economics must be reported as UNKNOWN. Do not infer a target CPL
+        or lead value from industry averages, and do not compute ROAS or profit
+        after ad spend until verified costs exist.
+  source_requirements:
+    - CLAUDE.md
+    - START_HERE.md
+    - docs/OPERATING_WORKFLOWS.md
+    - docs/SAFETY_AND_APPROVALS.md
+    - config/agency.yaml
+    - config/verticals.yaml
+    - references/verticals/similar-local-services.md
+    - prompts/02-audit-account.md
+    - prompts/03-keyword-research-skag.md
+    - prompts/05-generate-rsas-and-assets.md
+    - prompts/07-setup-conversions.md
+    - prompts/08-clean-search-terms.md
+  approval_owner: Walter Correa

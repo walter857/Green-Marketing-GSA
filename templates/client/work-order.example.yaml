@@ -1,0 +1,28 @@
+work_order:
+  client_slug: example-hardscape
+  business_name: Example Hardscape
+  account:
+    exact_child_account_name: Example Hardscape - live
+    child_customer_id: "0000000000"
+    manager_customer_id: "1111111111"
+  service:
+    vertical: hardscaping
+    exact_primary_service: paver patio installation
+    related_services: []
+  task:
+    type: campaign-build
+    mode: draft
+    request: Build a paused-ready Search campaign plan for paver patio installation.
+    date_range: ""
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: ""
+  inputs:
+    website_or_final_url: https://example.com/paver-patios/
+    service_area:
+      - Example City
+    daily_budget: 32.89
+    primary_conversion_goal: form_lead
+    source_files: []
+  approval_owner: GM account owner

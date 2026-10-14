@@ -1,0 +1,278 @@
+{
+ "plan_name": "AMB-1002-GEO-CREATE-1",
+ "exact_service": "Geothermal Heat Pump",
+ "paid_sub_service": "geothermal heat pump system inquiries + new-system installation / replacement consultation; geothermal REPAIR stays out of paid scope (ad-group PHRASE negative 'repair' unchanged)",
+ "work_order": "work-orders/work-order-geothermal-heat-pump-lp-2026-10-01.yaml",
+ "campaign": {
+  "id": "24274160783",
+  "name": "Search | NonBrand | Geothermal Heat Pump | Central MD | BOFU | 2026-09"
+ },
+ "ad_group": {
+  "id": "204129719007",
+  "name": "SKAG | Geothermal Heat Pump"
+ },
+ "effective_url_before": "none serving - 2 PAUSED RSAs 825585199679, 825585199802 point at the main-site page https://ambientcoolingandheating.com/services/hvac/geothermal-hvac/ (left PAUSED and untouched)",
+ "effective_url_after_create": "none - new RSAs are PAUSED; after ENABLE: https://offer.ambientcoolingandheating.com/geothermal-heat-pump/",
+ "existing_keywords_untouched": [
+  [
+   "geothermal heat pump",
+   "EXACT",
+   "ENABLED",
+   "APPROVED"
+  ],
+  [
+   "geothermal heat pump",
+   "PHRASE",
+   "ENABLED",
+   "APPROVED"
+  ],
+  [
+   "geothermal heating",
+   "EXACT",
+   "ENABLED",
+   "APPROVED"
+  ],
+  [
+   "geothermal heating",
+   "PHRASE",
+   "ENABLED",
+   "APPROVED"
+  ],
+  [
+   "geothermal installation",
+   "EXACT",
+   "ENABLED",
+   "APPROVED"
+  ]
+ ],
+ "supersedes_copy": "AMB-0925-HELD-RSA-PAYLOADS geothermal entry (repair-led copy conflicts with the ad group's 'repair' negative)",
+ "customer_id": "2401959466",
+ "exact_account_name": "Ambient Cooling - Live",
+ "never_write_to_mcc": "3373711342",
+ "built_local": "2026-10-02",
+ "approval_class": "create-paused",
+ "everything_created_paused": true,
+ "nothing_enabled": true,
+ "nothing_removed": true,
+ "unchanged": {
+  "budget": "$85 repair (15885327972) / $20 geothermal (15887323571), unchanged",
+  "bidding": "Maximize Clicks (TARGET_SPEND); repair ceiling $18.00, geothermal ceiling $38.00, unchanged",
+  "locations": "75 PRESENCE targets on both campaigns, unchanged",
+  "schedule": "Mon-Fri 08:00-16:00 America/New_York, 5 rows, unchanged",
+  "conversions": "no conversion action or goal touched",
+  "negatives": "no negative added, removed or changed",
+  "tracking": "no tracking template / final URL suffix exists at account, campaign, ad group, ad or keyword level; none added",
+  "website": "no website, GTM, WhatConverts or Business Profile change"
+ },
+ "unrelated_resource_baseline_sha256_16": "ae1f1d999d90a549",
+ "operations": [
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group_id": "204129719007",
+   "final_url": "https://offer.ambientcoolingandheating.com/geothermal-heat-pump/",
+   "label": "RSA A - service and location led",
+   "path1": "Geothermal",
+   "path2": "Heat-Pump",
+   "headlines": [
+    {
+     "text": "Geothermal Heat Pumps",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Geothermal Heat Pump Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Geothermal Heating & Cooling",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "New Geothermal System Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Plan A Geothermal Install",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Geothermal Replacement Help",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central MD Geothermal",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Severn Geothermal Heat Pumps",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Columbia Geothermal Systems",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Annapolis Geothermal Systems",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Free Geothermal Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Property-Specific Review",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Ground-Loop System Review",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Clear Scope Before Work",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Talk To Our Geothermal Team",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Considering geothermal or replacing an existing system? Request a property review.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "We review your home, equipment and ground loop, then explain the options and scope.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Geothermal heat pump systems for homes in Severn, Severna Park and Columbia, MD.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request a free geothermal quote online or call to discuss your next step.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "status": "PAUSED",
+   "tracking_url_template": "",
+   "final_url_suffix": "",
+   "final_mobile_urls": []
+  },
+  {
+   "op": "CREATE_RSA_PAUSED",
+   "ad_group_id": "204129719007",
+   "final_url": "https://offer.ambientcoolingandheating.com/geothermal-heat-pump/",
+   "label": "RSA B - planning led",
+   "path1": "Geothermal",
+   "path2": "Heat-Pump",
+   "headlines": [
+    {
+     "text": "Considering Geothermal?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Geothermal Heat Pump Quotes",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Replacing A Geothermal Unit?",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "New Geothermal Consultation",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Geothermal For Your Home",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Maryland Geothermal Systems",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Assess Your Property First",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Geothermal Options Explained",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Glen Burnie Geothermal",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Crofton Geothermal Heat Pump",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Request Geothermal Service",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Get A Free Geothermal Quote",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Geothermal Project Planning",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Home Comfort Assessment",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Central Maryland Service",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "descriptions": [
+    {
+     "text": "Planning a new geothermal system? Start with an assessment of your home and property.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Replacing an older geothermal heat pump? Learn what must be evaluated first.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Confirm the work and schedule with our team before any geothermal project starts.",
+     "pin": "UNSPECIFIED"
+    },
+    {
+     "text": "Ambient Cooling & Heating serves Central Maryland homes. Request a free quote.",
+     "pin": "UNSPECIFIED"
+    }
+   ],
+   "status": "PAUSED",
+   "tracking_url_template": "",
+   "final_url_suffix": "",
+   "final_mobile_urls": []
+  },
+  {
+   "op": "PAUSE_AD_GROUP_ASSET_LINK",
+   "resource_name": "customers/2401959466/adGroupAssets/204129719007~290641223062~SITELINK",
+   "ad_group_id": "204129719007",
+   "asset_id": "290641223062",
+   "field_type": "SITELINK",
+   "before": {
+    "status": "ENABLED",
+    "field": "SITELINK",
+    "asset": "290641223062",
+    "urls": [
+     "https://ambientcoolingandheating.com/services/hvac/drying-dehumidification-services/"
+    ],
+    "text": "Dehumidification Services"
+   },
+   "after_status": "PAUSED",
+   "why": "main-site destination (owner rule 2026-09-24: paid destinations must be offer pages) and unrelated to geothermal; it would serve beside the new geothermal ads"
+  }
+ ],
+ "operation_count": 3,
+ "preflight": {
+  "GEO create 2 RSAs PAUSED": "VALIDATED 2",
+  "GEO pause stray ad-group sitelink link": "VALIDATED 1"
+ },
+ "fingerprint": "B7B7A99EA739"
+}

@@ -1,0 +1,290 @@
+# =============================================================================
+# APG-0916-CONV-A  --  Stage A: conversion architecture, create-paused
+# =============================================================================
+# Mode        : create-paused (external write)
+# Reversible  : yes. Every object is a conversion action that can be set to
+#               REMOVED. Nothing serves, nothing spends, no campaign is touched.
+# Prerequisite: BLK-001 (similar-local-service scope approval) must clear first.
+# =============================================================================
+plan_id: APG-0916-CONV-A
+plan_kind: conversion_actions
+generated: "2026-09-16"
+revision: 2
+supersedes_fingerprint: B62E6142E9CD
+revision_reason: >-
+  No mutation field changed. Revision 2 records the 2026-09-16 delta check, proves the
+  AW destination read-only, and adds a hard pre-execution gate to object 2 after the
+  delta check found account-level call reporting already enabled and pointing at a
+  conversion action that does not exist.
+
+delta_check_2026_09_16:
+  method: "fresh read-only API re-read of every recorded preflight finding"
+  result: "49 checks unchanged, 0 changed"
+  evidence: reports/apogee-lawns/evidence/2026-09-16-delta.json
+  website_recheck: "PPC page 404, thank-you 404, 0 GTM/gtag/dataLayer/AW/GA4 hits, 0 consent platform, 0 DNI, tel:+14022027261 only, 402-526-5754 absent"
+  still_true:
+    - "conversion_action count is 0 under every status filter"
+    - "customer_conversion_goal, campaign_conversion_goal, custom_conversion_goal all 0"
+    - "CALL assets 0; customer_asset, campaign_asset, ad_group_asset, asset all 0"
+    - "product_link 0 (no GA4 link); recommendation_subscription 0"
+    - "both billing setups CANCELLED, 0 approved or pending, 0 account budgets"
+    - "7 shared negative lists, 4,237 criteria, reference_count 0 on all of them"
+    - "lifetime impressions 0, clicks 0, cost $0.00"
+    - "change_status rows since 2026-09-01: 0"
+
+aw_destination_proof:
+  field: customer.remarketing_setting.google_global_site_tag
+  observed_ids: ["AW-18453077620"]
+  verdict: >-
+    CONFIRMED read-only. The account's own global site tag snippet contains
+    AW-18453077620, which matches conversion_tracking_id 18453077620. This is read from
+    the account, never derived from the customer ID. The per-action Conversion Label
+    still has to come from each action's tag snippet after creation.
+
+call_reporting_state_2026_09_16:
+  call_reporting_enabled: true
+  call_conversion_reporting_enabled: true
+  call_conversion_action_pointer: "customers/8164626278/conversionActions/179"
+  pointer_resolves: false
+  finding: >-
+    NEW. Account-level call reporting is ALREADY ON, and the setting points at
+    conversion action 179. That resource does not exist: conversion_action returns 0
+    rows with no filter and 0 rows for id = 179, under ENABLED, HIDDEN and REMOVED.
+    The manager account 3373711342 owns 4 actions and none is 179, and cross-account
+    conversion tracking is off, so the manager is not the source. ID 179 is far shorter
+    than a real conversion action ID (the manager's are 10 digits), which is consistent
+    with a system or default placeholder rather than a usable action.
+  two_possible_readings:
+    - "A: no Calls-from-ads action exists. The pointer is a default that will be replaced when a real call action is created. Supported by conversion_tracking_status = NOT_CONVERSION_TRACKED, 0 conversion actions and 0 conversion goals."
+    - "B: a default Calls-from-ads action exists but is not exposed through the conversion_action resource. Enabling account-level call reporting is exactly what normally creates one, and call reporting IS enabled here."
+  why_it_matters: >-
+    Reading B would make object 2 a DUPLICATE, which the brief forbids. The API cannot
+    settle this. A human looking at Goals > Conversions > Summary settles it in seconds.
+  resolution: "see gates_before_execution and execution_order below"
+
+call_recording_and_verification:
+  call_recording_enabled: "NOT EXPOSED BY THE GOOGLE ADS API - no selectable customer.* field. UI-only check."
+  advertiser_verification: "NOT EXPOSED BY THE GOOGLE ADS API. UI-only check."
+  note: >-
+    The enablement gate requires call recording OFF and advertiser verification ready.
+    Neither can be proven from the API, so both need a human readback in the Google Ads
+    UI before enablement. Call reporting ON is already proven by API.
+
+target:
+  exact_child_account_name: "Apogee Lawns LLC - Live"
+  child_customer_id: "8164626278"
+  manager_customer_id: "3373711342"
+  vertical: similar-local-service
+  exact_primary_service: Permanent Christmas light installation
+  identity_gate: PASS
+  identity_gate_method: "fresh read-only API lookup 2026-09-16"
+
+conversion_ownership:
+  google_ads_conversion_customer: "8164626278"
+  cross_account_conversion_tracking_id: "0"
+  verdict: OWNED_BY_THIS_CHILD
+  note: >-
+    Goals > Settings > Conversion account resolves to this child. There is no
+    manager-level cross-account conversion configuration, so the actions are
+    created here. No ownership setting is changed by this plan.
+
+duplicate_search:
+  rechecked: "2026-09-16 delta check"
+  conversion_actions_existing: 0
+  conversion_actions_existing_any_status: 0
+  customer_conversion_goals_existing: 0
+  campaign_conversion_goals_existing: 0
+  custom_conversion_goals_existing: 0
+  conversion_value_rules_existing: 0
+  default_calls_from_ads_action_found_by_api: false
+  default_calls_from_ads_action_ruled_out: false
+  verdict: >-
+    NO DUPLICATES VISIBLE TO THE API for objects 1 and 3. For object 2 the API shows no
+    duplicate, but the dangling call_conversion_action pointer means the API cannot
+    PROVE there is no default Calls-from-ads action. Object 2 therefore carries an
+    extra human gate.
+
+# -----------------------------------------------------------------------------
+# 3 objects created. All three are created SECONDARY (primary_for_goal: false).
+# Promotion to Primary is a SEPARATE approval after tracking QA.
+# -----------------------------------------------------------------------------
+objects:
+  - ordinal: 1
+    resource: conversion_action
+    operation: create
+    name: "Lead | Permanent Lights | Form Submit | Thank You"
+    fields:
+      type: WEBPAGE                     # manual Google Ads website conversion
+      category: SUBMIT_LEAD_FORM
+      status: ENABLED
+      primary_for_goal: false           # SECONDARY at creation
+      counting_type: ONE_PER_CLICK
+      click_through_lookback_window_days: 30
+      view_through_lookback_window_days: 1
+      attribution_model_settings.attribution_model: GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+      value_settings.default_value: 0.0
+      value_settings.always_use_default_value: false
+    attribution_fallback: >-
+      If the API rejects GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN on a zero-history
+      account, fall back to GOOGLE_ADS_LAST_CLICK and record the substitution in the
+      receipt. Do not silently accept a different model.
+    purpose: >-
+      Exists so Google Ads issues a real Conversion ID and Conversion Label for the
+      GTM tag. It is NOT a simplified URL-created conversion, NOT a URL-contains
+      rule, NOT a button click and NOT a form-start event.
+    no_value: "No revenue value is invented. default_value stays 0.00."
+    deduplication: >-
+      Transaction ID is left unset. The site exposes no unique lead ID today
+      (Forminator module 1611 returns no entry_id to the page). Pass a real lead ID
+      only when the platform exposes one. Never invent a static transaction ID.
+    readback_assertions:
+      - "conversion_action.type == WEBPAGE"
+      - "conversion_action.category == SUBMIT_LEAD_FORM"
+      - "conversion_action.primary_for_goal == false"
+      - "conversion_action.counting_type == ONE_PER_CLICK"
+      - "conversion_action.click_through_lookback_window_days == 30"
+      - "conversion_action.value_settings.default_value == 0.0"
+      - "tag_snippets is non-empty and yields a Conversion ID and Label"
+
+  - ordinal: 2
+    resource: conversion_action
+    operation: create
+    name: "Call | Permanent Lights | Ads | 60s"
+    fields:
+      type: AD_CALL                     # calls placed directly from the ad
+      category: PHONE_CALL_LEAD
+      status: ENABLED
+      primary_for_goal: false           # SECONDARY at creation
+      counting_type: ONE_PER_CLICK
+      phone_call_duration_seconds: 60
+      click_through_lookback_window_days: 30
+      attribution_model_settings.attribution_model: GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+      value_settings.default_value: 0.0
+      value_settings.always_use_default_value: false
+    gtm_tag: NONE - calls from ads are configured in Google Ads, never in GTM
+    duration_rule: >-
+      60 seconds implements the literal "longer than 59 seconds" requirement. Call
+      recording stays OFF so duration, not an AI qualification model, is the rule.
+      Turning recording on later requires separate approval and disclosure review.
+    readback_assertions:
+      - "conversion_action.type == AD_CALL"
+      - "conversion_action.category == PHONE_CALL_LEAD"
+      - "conversion_action.phone_call_duration_seconds == 60"
+      - "conversion_action.primary_for_goal == false"
+
+  - ordinal: 3
+    resource: conversion_action
+    operation: create
+    name: "Call | Permanent Lights | Website | 60s"
+    fields:
+      type: WEBSITE_CALL                # calls to a number on the website
+      category: PHONE_CALL_LEAD
+      status: ENABLED
+      primary_for_goal: false           # SECONDARY at creation
+      counting_type: ONE_PER_CLICK
+      phone_call_duration_seconds: 60
+      click_through_lookback_window_days: 30
+      attribution_model_settings.attribution_model: GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN
+      value_settings.default_value: 0.0
+      value_settings.always_use_default_value: false
+    gtm_tag_deferred: >-
+      The matching "Google Ads Calls from Website Conversion" GTM tag is NOT part of
+      this stage. It is blocked by BLK-003 (no GTM access), BLK-004 (container not
+      installed) and BLK-005 (PPC phone unverified and absent from the site).
+      Creating the action now only reserves the name and issues the identifiers.
+    not_a_phone_click: >-
+      This measures a completed call of 60+ seconds after an eligible ad visit. It is
+      NOT "someone clicks a number". A tel-link click proves nothing about duration
+      and stays a secondary observation.
+    readback_assertions:
+      - "conversion_action.type == WEBSITE_CALL"
+      - "conversion_action.category == PHONE_CALL_LEAD"
+      - "conversion_action.phone_call_duration_seconds == 60"
+      - "conversion_action.primary_for_goal == false"
+
+object_counts:
+  conversion_action.create: 3
+  conversion_action.update: 0
+  campaign.create: 0
+  campaign_budget.create: 0
+  ad_group.create: 0
+  ad_group_criterion.create: 0
+  ad_group_ad.create: 0
+  asset.create: 0
+  customer_asset.create: 0
+  campaign_criterion.create: 0
+  shared_set.create: 0
+  shared_set.attach: 0
+  customer_conversion_goal.update: 0
+  any_delete_or_remove: 0
+  TOTAL_MUTATIONS: 3
+
+explicitly_not_touched:
+  - "The 7 pre-existing negative shared lists (4,237 criteria). Not attached, not edited, not removed."
+  - "Account-level negative criterion 300090179 (CONTENT_LABEL PARKED_DOMAIN)."
+  - "customer.auto_tagging_enabled (already true)."
+  - "customer.conversion_tracking_setting ownership fields."
+  - "Account default conversion goals (none exist; none created)."
+  - "Billing setups 8584340188 and 8584421311."
+  - "Every Green Marketing manager-account setting."
+
+rollback:
+  method: "conversion_action.status = REMOVED on each created action, by resource name"
+  blast_radius: "None. No campaign references these actions; nothing is serving."
+  partial_failure_rule: >-
+    If the mutate partially succeeds, STOP. Inventory every created resource ID from
+    the partial response, write the receipt, and report before any retry. Do not
+    blindly rerun; a rerun would create duplicates under the same names.
+
+implementation_risk:
+  call_action_creatability: >-
+    ConversionActionType AD_CALL and WEBSITE_CALL are expected to be creatable through
+    ConversionActionService, but this has NOT been proven against this account. Proving
+    it would require a mutate call, and validate_only spends the same daily mutate quota
+    as a real write, so no such call was made on a READ pass.
+  fallback: >-
+    If the API rejects either call type on create, create that ONE action in the Google
+    Ads UI under Goals > Conversions > New conversion action > Phone calls, using the
+    identical name, category, 60-second minimum and Secondary state, then read it back by
+    API and assert every field in readback_assertions. Record the substitution in the
+    receipt. Do not change the other two actions and do not retry the failed mutate blindly.
+
+execution_order:
+  - step: 1
+    objects: [1, 3]
+    condition: UNCONDITIONAL
+    note: >-
+      Objects 1 and 3 have no duplicate risk. The API shows zero conversion actions of
+      any type or status, and neither is the kind of action Google creates by default.
+      Create these two first, read them back, and capture the Conversion ID and Label.
+  - step: 2
+    objects: [2]
+    condition: HUMAN_CONFIRMATION_REQUIRED
+    note: >-
+      Create object 2 ONLY after a human confirms in Goals > Conversions > Summary that
+      no "Calls from ads" action already exists on 8164626278. If one does exist, STOP:
+      object 2 becomes an EDIT (rename, set 60-second minimum, set Secondary) rather
+      than a create, which is a different plan and needs its own fingerprint. Do not
+      create alongside an existing one.
+  - step: 3
+    objects: []
+    condition: STOP
+    note: "Readback, receipt, report. Stage A ends here."
+
+gates_before_execution:
+  - "BLK-001 similar-local-service scope approval recorded in work-order.yaml and scripts/validate_work_order.py exiting 0"
+  - "Fresh identity re-read immediately before the mutate"
+  - "Fresh duplicate re-read of conversion_action immediately before the mutate"
+  - "For object 2 only: human confirmation that no Calls-from-ads action exists (see execution_order step 2)"
+  - "Explicit approval: APPROVE APG CREATE-PAUSED <fingerprint>"
+
+not_authorized_by_this_plan:
+  - "Any GTM change, workspace, tag, trigger, variable, or publication"
+  - "Any website change"
+  - "Campaign, budget, ad group, keyword, ad or asset creation"
+  - "Campaign enablement"
+  - "Call asset creation"
+  - "Promoting any action to Primary"
+  - "Account default or campaign conversion goal changes"
+  - "Any change to call recording, call reporting, or advertiser verification"
+  - "Any billing change, payment profile selection, or terms acceptance"

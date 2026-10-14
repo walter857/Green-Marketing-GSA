@@ -1,0 +1,199 @@
+{
+ "generated_local": "2026-09-09T23:57:45.245700-04:00",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "run": "2026-09-09 THIRD PASS",
+ "mutations_executed": 0,
+ "superseded_this_run": {
+  "AMB-0909B-BUD-1": {
+   "fingerprint": "752BF95EBD7C",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE",
+   "replaced_by": "AMB-0909C-BUD-1 (A7118436590B)",
+   "reason": "Computed the September maximum as account spend-to-date plus a COMBINED budget formula. Each campaign carries its own monthly limit. Rebuilt per campaign. Also lacked a compliant rollback: a blind restore of $42.76 + $26.32 returns the account to $14,155.15 over 30.4 days, a breach.",
+   "object_count": 2,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909B-BUD-1.json",
+   "plan_file_sha256": "3011cf29a7cf01fc11733584e38d200c953791354d8d27d90e68a103a7aea814",
+   "plan_file_preserved_unmodified": true
+  },
+  "AMB-0909B-CPC-INST-1": {
+   "fingerprint": "DE376F91F449",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE",
+   "replaced_by": "AMB-0909C-CPC-INST-2 (5D57E0EF3B70)",
+   "reason": "Quoted a $141.87 raw CPA that divided VISIBLE search-term cost ($425.60) by CAMPAIGN-level conversions (3) - two different measurement grains. Correct campaign-level raw CPA is $161.33. It also used a 30-click rollback trigger, which at a $65 ceiling permits up to $1,950 of spend before intervention.",
+   "object_count": 1,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909B-CPC-INST-1.json",
+   "plan_file_sha256": "78b5869107766331eefcb361ed510531b756da13fe9371c625eb184cfa38bedd",
+   "plan_file_preserved_unmodified": true
+  },
+  "AMB-0909B-COMP-1": {
+   "fingerprint": "05FBCBD34B4A",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE",
+   "replaced_by": "AMB-0909C-COMP-1 (D434D6F41747)",
+   "reason": "Used PHRASE 'maryland mechanical heating', which can overlap generic Maryland mechanical-heating intent. Replaced with EXACT on the verbatim observed query 'maryland mechanical heating & cooling'.",
+   "object_count": 3,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909B-COMP-1.json",
+   "plan_file_sha256": "f217c73f29f5ea0e352f2a45460e63f21b643b26f6a4bed4dbb35cb97e2da44e",
+   "plan_file_preserved_unmodified": true
+  },
+  "AMB-0909B-NEG-A": {
+   "fingerprint": "18143479027D",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE",
+   "replaced_by": "split into AMB-0909C-NEG-SAVAGE (10F76004E1B6) and AMB-0909C-NEG-COMMERCIAL (9F88FEE76803); 'licensed' and 'free' both HELD",
+   "reason": "Bundled four different intents into one 16-operation package. Split into independent packages. The 'licensed' removals failed their required proof and the 'free' removals lack search-term evidence.",
+   "object_count": 16,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909B-NEG-A.json",
+   "plan_file_sha256": "d8d7429bcfae2782235aba718b8fed377cdaad8b0486e15a78af8112d93ef10a",
+   "plan_file_preserved_unmodified": true
+  }
+ },
+ "superseded_earlier": {
+  "AMB-0909-CPC-1": {
+   "fingerprint": "46C39C6B7091",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE (second pass)",
+   "object_count": 2,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-CPC-1.json",
+   "plan_file_sha256": "b3cd07ed20241baece975965ad20da61e7668fcf9e0e57abf5f78d3ec722588b"
+  },
+  "AMB-0909-BUD-1": {
+   "fingerprint": "D448BFDE4650",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE (second pass)",
+   "object_count": 2,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-BUD-1.json",
+   "plan_file_sha256": "0de38741fbfe2fce14b04765bf6dc652d8ce534c5bb22b0ccc975589243526a3"
+  },
+  "AMB-0909-NEG-ADD-1": {
+   "fingerprint": "23BE8FF0F24C",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE (second pass)",
+   "object_count": 6,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-NEG-ADD-1.json",
+   "plan_file_sha256": "7fff9421599f8c44a90425daa3a0c2f68cdfd01fdedc181d2afc388f8ada4123"
+  },
+  "AMB-0909-NEG-RM-1": {
+   "fingerprint": "CE289F3508A2",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE (second pass)",
+   "object_count": 89,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-NEG-RM-1.json",
+   "plan_file_sha256": "53024fdd15d3d34cc5263d39f6feed117aefc38239e806ef7c422a4f1eb4583d"
+  },
+  "AMB-0909-NEG-RM-2": {
+   "fingerprint": "A435FA09AC97",
+   "status": "SUPERSEDED / DO_NOT_EXECUTE (second pass)",
+   "object_count": 18,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-NEG-RM-2.json",
+   "plan_file_sha256": "41c6b22e4ef95fd972f3f6b2405c3e7e9de7ab52c90dedf92855422cfa349aa4"
+  }
+ },
+ "retained": {
+  "AMB-0909-ADS-1": {
+   "fingerprint": "11A79347A296",
+   "status": "RETAINED, REVALIDATED, AWAITING APPROVAL",
+   "object_count": 2,
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909-ADS-1.json",
+   "plan_file_sha256": "684f40f7021d2ced4ed2e5ac0874cdddf0b1bdb7a7478cf82257f09584c1c543",
+   "revalidation_receipt": "receipts/validate-only/AMB-0909-ADS-1-2026-09-09c-revalidation.json",
+   "note": "Inert-status cleanup. Not a CTR or delivery improvement."
+  }
+ },
+ "replacements": {
+  "AMB-0909C-BUD-1": {
+   "fingerprint": "A7118436590B",
+   "status": "VALIDATED - AWAITING APPROVAL",
+   "object_count": 2,
+   "approval_class": "reversible-budget-change",
+   "supersedes": "AMB-0909B-BUD-1 (752BF95EBD7C) - SUPERSEDED, DO_NOT_EXECUTE",
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909C-BUD-1.json",
+   "plan_file_sha256": "171fd3c4a8b85c27326d12b211fac011c027631af2bf10e2ae5e36ddfed8c9cf",
+   "validate_only_receipt": "receipts/validate-only/AMB-0909C-BUD-1-2026-09-09c.json"
+  },
+  "AMB-0909C-CPC-INST-2": {
+   "fingerprint": "5D57E0EF3B70",
+   "status": "VALIDATED - AWAITING APPROVAL",
+   "object_count": 1,
+   "approval_class": "reversible-setting-change-UNVERIFIED-TEST",
+   "supersedes": "AMB-0909B-CPC-INST-1 (DE376F91F449) - SUPERSEDED, DO_NOT_EXECUTE (its rationale quoted a $141.87 CPA that mixed measurement grains)",
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909C-CPC-INST-2.json",
+   "plan_file_sha256": "2a0ed699bd1f015b828c1c6f4f2d68380d1a8cc70a68ca48b595ad4853022a9d",
+   "validate_only_receipt": "receipts/validate-only/AMB-0909C-CPC-INST-2-2026-09-09c.json"
+  },
+  "AMB-0909C-NEG-SAVAGE": {
+   "fingerprint": "10F76004E1B6",
+   "status": "VALIDATED - AWAITING APPROVAL",
+   "object_count": 5,
+   "approval_class": "DESTRUCTIVE-removal",
+   "supersedes": "part of AMB-0909B-NEG-A (18143479027D) - SUPERSEDED, DO_NOT_EXECUTE",
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909C-NEG-SAVAGE.json",
+   "plan_file_sha256": "9e7601237e39e00e4229b5937c1d472c8d625803dbd00d860b4fdcd24fcf0fed",
+   "validate_only_receipt": "receipts/validate-only/AMB-0909C-NEG-SAVAGE-2026-09-09c.json"
+  },
+  "AMB-0909C-NEG-COMMERCIAL": {
+   "fingerprint": "9F88FEE76803",
+   "status": "VALIDATED - AWAITING APPROVAL",
+   "object_count": 1,
+   "approval_class": "DESTRUCTIVE-removal-ACCOUNT-LEVEL",
+   "supersedes": "part of AMB-0909B-NEG-A (18143479027D) - SUPERSEDED, DO_NOT_EXECUTE",
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909C-NEG-COMMERCIAL.json",
+   "plan_file_sha256": "fb8c4fe122765e5a8301607e9b3dff787f6deef298eab48897d60fe9475417d3",
+   "validate_only_receipt": "receipts/validate-only/AMB-0909C-NEG-COMMERCIAL-2026-09-09c.json"
+  },
+  "AMB-0909C-COMP-1": {
+   "fingerprint": "D434D6F41747",
+   "status": "VALIDATED - AWAITING APPROVAL",
+   "object_count": 3,
+   "approval_class": "reversible-addition",
+   "supersedes": "AMB-0909B-COMP-1 (05FBCBD34B4A) - SUPERSEDED, DO_NOT_EXECUTE",
+   "plan_file": "clients\\ambient-cooling-heating\\plans\\AMB-0909C-COMP-1.json",
+   "plan_file_sha256": "4f3b342c47f77a2cc0297c72982e1469f9cc93584d499795c7de966af225805a",
+   "validate_only_receipt": "receipts/validate-only/AMB-0909C-COMP-1-2026-09-09c.json"
+  }
+ },
+ "held_no_operations": {
+  "NEG-LICENSED (5 operations, NOT drafted)": "The correction brief required proof that 'licensed' is supported advertising language. It could not be proved. Zero live ENABLED ad assets or callouts on the five campaigns contain 'licens/licenc'. All five paid landing pages return ZERO matches for licensed / licence / insured / bonded / certified / NATE. The main website's only match is the footer string 'CERTIFIED SERVICE TECHNICIAN', which is 'certified', not 'licensed and insured'. HELD pending a claim-substantiation answer from the client.",
+  "NEG-FREE (5 operations, HELD as instructed)": "Only ONE observed search-term row since launch contains 'free': 'hvac repair free estimate near me', 6 impressions, 0 clicks, $0.00, in HVAC Repair. Zero free-repair, free-service, free-parts or free-diagnostic queries were observed. Zero 'free' queries have EVER converted account-wide. There is no campaign-specific routing evidence, so the removal is not justified.",
+  "Package B - manufacturers": "NO OPERATIONS. Only YORK appears on Ambient's live website, and 'york' is not blocked at token level anywhere.",
+  "Package C - additional services": "NO OPERATIONS. Air duct cleaning, dehumidification and geothermal are advertised but have no campaign, ad group or paid landing page.",
+  "Package D - dealer and installer": "NO OPERATIONS. Brand eligibility and Spanish-language handling unverified."
+ },
+ "operation_count": {
+  "new_packages": 12,
+  "carried_forward_ads_1": 2,
+  "approval_block_total": 14,
+  "brief_expected_new": 22,
+  "brief_expected_total": 24,
+  "delta_explanation": "The brief expected 22 new + 2 = 24. The delta of 10 is exactly the 5 'licensed' and 5 'free' removals, both HELD: 'licensed' failed its required proof and 'free' has no search-term evidence. 12 new + 2 = 14."
+ },
+ "fingerprints_disjoint": true,
+ "unchanged_proof": {
+  "campaigns_non_removed": 23,
+  "campaigns_enabled": 5,
+  "campaign_negatives_enabled_on_five": 6160,
+  "account_level_set_members": 272,
+  "geo_targets_on_five": 375,
+  "ad_schedules_on_five": 30,
+  "ip_blocks": 2796,
+  "shared_sets": 17,
+  "conversion_actions_non_removed": 16,
+  "cpc_ceilings": {
+   "AC Repair": 25000000,
+   "Gas Boiler Repair": 0,
+   "HVAC Installation": 30000000,
+   "HVAC Repair": 25000000,
+   "HVAC Replacement": 0
+  },
+  "five_budgets": {
+   "15787409435": 141.45,
+   "15787409438": 42.76,
+   "15787409441": 176.15,
+   "15787409444": 78.95,
+   "15787409447": 26.32
+  },
+  "daily_total": 465.63,
+  "descriptive_name": "Ambient Cooling - Live",
+  "tracking_template_is_clickcease": true,
+  "manager_links": {
+   "2815082755": "ACTIVE",
+   "3373711342": "ACTIVE"
+  },
+  "checked_local": "2026-09-09T23:57:56.344873-04:00",
+  "mutations_executed_this_run": 0
+ }
+}

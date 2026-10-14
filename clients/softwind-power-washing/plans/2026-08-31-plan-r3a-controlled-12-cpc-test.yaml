@@ -1,0 +1,483 @@
+# PLAN-R3A - CONTROLLED $12 CPC TEST
+#
+# *** VOID - SUPERSEDED BY PLAN-R3B ON 2026-08-31 ***
+# Fingerprint B57E427D07C5 must NOT be approved, honoured or executed.
+# Replaced by clients/softwind-power-washing/plans/2026-08-31-plan-r3b-symmetric-12-cpc-control.yaml
+# The $12.00 figure was sound; the single-campaign control design was not.
+# Retained as historical evidence. See change_plan.superseded_by below.
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# Supersedes PLAN-R3 (97D8B268A80A, $22 on BOTH campaigns), which is VOID.
+# Built 2026-08-31 from the completed CPC ceiling analysis. NOT APPROVED.
+change_plan:
+  plan_id: PLAN-R3A
+  plan_title: Controlled $12.00 CPC ceiling test on campaign A only, campaign B held as control
+  approval_type: LIVE_CAMPAIGN_BIDDING
+  priority: P0
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 1
+  object_count_total: 1
+  requires_separate_enable_approval: false
+  recommended_approval_order: null
+  superseded_by:
+    plan_id: PLAN-R3B
+    file: 2026-08-31-plan-r3b-symmetric-12-cpc-control.yaml
+    on_account_local: "2026-08-31 America/New_York"
+    state: VOID - SUPERSEDED BY PLAN-R3B
+    fingerprint_of_this_plan: B57E427D07C5
+    do_not_honour: true
+    reason: >-
+      The $12.00 figure was sound; the single-campaign control design was not.
+      Campaign 24145053510 is not a valid independent control - five search terms
+      have served in BOTH campaigns at an equal bid, carrying 26.7% of valid clicks
+      and 24.8% of spend. PLAN-R3B applies the same $12.00 ceiling SYMMETRICALLY to
+      both campaigns, which removes the Ad Rank asymmetry rather than trying to
+      measure around it.
+    superseding_action: >-
+      campaign 24103511039 AND campaign 24145053510
+      target_spend.cpc_bid_ceiling_micros 30000000 -> 12000000 (2 mutations).
+    preserved_as: historical evidence - this file is retained, not deleted
+  blocking_status:
+    state: BLOCKED
+    blocker_id: R3A-CONTROL-1
+    found_on_account_local: "2026-08-31 America/New_York"
+    finding: >-
+      Campaign 24145053510 is NOT a valid independent control for this test.
+      Five search terms have already served in BOTH campaigns at an EQUAL bid,
+      carrying 26.7% of all valid clicks and 24.8% of all spend. Four of those five
+      were absorbed by a single campaign-B keyword, residential pressure washing
+      near me, which already competes for campaign A core intents including
+      power wash near me and pressure washing near me. Google close variants in
+      this account are demonstrably loose - power washing services matched
+      residential pressure washing near me as NEAR_EXACT on a single shared token
+      in five - so the plausible overlap ceiling is 96.8% of impressions and 100%
+      of clicks and spend.
+    why_it_breaks_the_test: >-
+      Only one ad from an account enters a given auction, and Ad Rank is a major
+      input to that internal selection. Setting campaign A to $12.00 while campaign
+      B stays at $30.00 gives B a 2.5x bid advantage on every shared-eligible query.
+      Campaign A post-change decline would then be a mixture of external auctions
+      lost at $12 and internal auctions ceded to B, and no Google Ads report
+      separates those two. Campaign B would also gain traffic, so it is unchanged
+      in configuration but NOT unchanged in outcome - which is not a control.
+      Worst case, STOP-1, STOP-2 or STOP-3 fires on cannibalisation rather than on
+      the ceiling, and $12.00 is recorded as proven too low when it was never
+      actually tested.
+    what_survives_unchanged: >-
+      The $12.00 figure itself, all six stop conditions, the 10-serving-day window,
+      the 150-impression and 8-valid-click thresholds, the invalid-click exclusion
+      rule, the rollback to 30000000, and the measurement dependency. Only the
+      control design is defective.
+    required_revision: >-
+      Recommended OPTION A - apply $12.00 to BOTH campaigns and evaluate the
+      account pre-versus-post. Moving both together removes the Ad Rank asymmetry,
+      so shared-query traffic does not systematically shift. That raises the action
+      count from 1 to 2 and re-scopes STOP-1, STOP-2 and STOP-3 from campaign A to
+      the account. A Google Ads experiment (OPTION B) fails on traffic volume -
+      18 valid clicks lifetime - and on contamination, because campaign B sits
+      outside any within-campaign-A experiment. OPTION C, testing campaign A alone
+      after consolidation under PLAN-R4/R6/R10/R11, is the better science but is 37
+      mutations and 3-5 weeks away.
+    evidence: clients/softwind-power-washing/audits/2026-08-31-plan-r3a-control-integrity-review.md
+    fingerprint_note: >-
+      B57E427D07C5 is NOT void and NOT superseded - its action list is untouched
+      and its fingerprint is unchanged. It is BLOCKED pending Walter's choice of
+      test design. If OPTION A is chosen the action list changes from 1 mutation to
+      2, and a NEW fingerprint must then be generated as PLAN-R3B.
+    do_not_approve_until: Walter selects a test design.
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  supersedes:
+    plan_id: PLAN-R3
+    fingerprint: 97D8B268A80A
+    state: VOID - SUPERSEDED BY PLAN-R3A
+    what_it_proposed: >-
+      Lower target_spend.cpc_bid_ceiling_micros from 30000000 to 22000000 on BOTH
+      campaigns - 2 mutations.
+    why_void: >-
+      Three reasons, all from the completed CPC ceiling analysis. (1) $22 is not
+      supported over $12 by any measured evidence: $18 and $22 clear 100% of local
+      demand and $12 clears 98.2%, a difference of a single 10/mo bucket. (2) Both
+      $12 and $22 win exactly 1 of 18 observed historical auctions, because the
+      account has no observed click between $5.71 and $22.11 - a $16.40 gap that
+      contains every candidate ceiling from $8 to $22, so the click history cannot
+      distinguish them. (3) Changing both campaigns at once destroys the control
+      group and restarts campaign B's learning window a second time.
+    do_not_honour: true
+
+  identity_gate_verified:
+    read_account_local: "2026-08-31T17:2x America/New_York"
+    descriptive_name: Softwind Power Washing - Live
+    customer_id: "1521725229"
+    manager: false
+    test_account: false
+    status: ENABLED
+    time_zone: America/New_York
+    result: PASS
+
+  # ---------------------------------------------------------------- the mutation
+  actions:
+    - action_id: R3A-01
+      priority: P0
+      resource_type: campaign
+      operation: UPDATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      resource_id: "customers/1521725229/campaigns/24103511039"
+      field_mask: target_spend.cpc_bid_ceiling_micros
+      current_value: 30000000
+      proposed_value: 12000000
+      object_count: 1
+      human_readable: >-
+        Campaign "Power Washing" (24103511039): lower the Maximize Clicks CPC
+        ceiling from $30.00 to $12.00. One field. Nothing else on this campaign or
+        anywhere else in the account may change.
+      current_value_verified: >-
+        Read fresh from campaign.target_spend.cpc_bid_ceiling_micros immediately
+        before this plan was written: 30000000. Not assumed from an earlier snapshot.
+
+  exact_counts:
+    action_count: 1
+    object_count: 1
+    google_ads_mutation_count: 1
+    website_mutation_count: 0
+    campaigns_touched: 1
+    fields_touched: 1
+    field_mask: target_spend.cpc_bid_ceiling_micros
+
+  # ------------------------------------------------------------ the control group
+  control_campaign:
+    campaign_id: "24145053510"
+    campaign_name: Power Washing #2
+    cpc_bid_ceiling_micros: 30000000
+    cpc_bid_ceiling_usd: 30.00
+    instruction: >-
+      COMPLETELY UNCHANGED. No mutation of any kind touches this campaign. It is
+      the within-account control that makes the test readable.
+    why_it_is_the_control:
+      - >-
+        It is already primary_status LEARNING with bidding_strategy_system_status
+        LEARNING_SETTING_CHANGE. A second bid change would restart that window again.
+      - >-
+        It has the STRONGER CTR of the two (13.04% vs 5.50%) and the LOWER Search
+        Lost IS to rank (28.21% vs 48.89%), so it is the campaign with less to gain
+        from a ceiling change and more to lose from disruption.
+      - >-
+        It carries 46 impressions against campaign A's 218, so it is the smaller
+        sample and the cheaper thing to hold still.
+
+  explicitly_not_touched:
+    - campaign 24145053510 - every field, every criterion, every asset link
+    - campaign_budget 15764226923 (currently 41500000 micros / $41.50)
+    - campaign_budget 15802443075 (currently 41110000 micros / $41.11)
+    - campaign.bidding_strategy_type - stays TARGET_SPEND on both campaigns
+    - campaign.status on both campaigns
+    - ad_group.status - all 30 ad groups
+    - ad_group_ad.status - all 54 ads
+    - ad_group_criterion - all 214 keywords
+    - campaign_criterion negative keywords - all 264
+    - campaign_criterion LOCATION - all 80 targets plus the Connecticut exclusion, both campaigns
+    - campaign.geo_target_type_setting - PRESENCE on both, positive and negative
+    - campaign_criterion AD_SCHEDULE - all 12 dayparts
+    - campaign_asset / customer_asset / ad_group_asset - all asset links
+    - audiences - there are none, and none is added
+    - conversion_action and campaign_conversion_goal - all four actions untouched
+    - ad_group_ad.ad.final_urls - every Final URL
+    - campaign.network_settings.target_search_network - Search Partners stays OFF
+    - campaign.network_settings.target_content_network - Display stays OFF
+    - campaign.ai_max_setting.enable_ai_max - AI Max stays OFF
+    - campaign.asset_automation_settings - both types stay OPTED_OUT
+
+  # ------------------------------------------------------------------- evidence
+  evidence:
+    - id: R3A-E1
+      finding: Local demand coverage is a threshold, not a curve
+      detail: >-
+        Share of measured local demand whose Keyword Planner top-of-page LOW the
+        ceiling clears, across the 570 searches/month of deduped buckets with
+        reportable bid data in the live 80-target footprint.
+      values:
+        - {ceiling_usd: 8, demand_per_month: 0, coverage_pct: 0.0, buckets: "0/6"}
+        - {ceiling_usd: 10, demand_per_month: 90, coverage_pct: 15.8, buckets: "1/6"}
+        - {ceiling_usd: 12, demand_per_month: 560, coverage_pct: 98.2, buckets: "5/6"}
+        - {ceiling_usd: 15, demand_per_month: 560, coverage_pct: 98.2, buckets: "5/6"}
+        - {ceiling_usd: 18, demand_per_month: 570, coverage_pct: 100.0, buckets: "6/6"}
+        - {ceiling_usd: 22, demand_per_month: 570, coverage_pct: 100.0, buckets: "6/6"}
+        - {ceiling_usd: 30, demand_per_month: 570, coverage_pct: 100.0, buckets: "6/6"}
+      reading: >-
+        $10 clears roughly 15.8% of measured local demand; $12 clears roughly
+        98.2%. The jump happens because five of the six local buckets carry a
+        top-of-page LOW between $10.46 and $11.55, and $10 lands just underneath
+        all five. $18 and $22 add one 10/mo bucket over $12 - almost no additional
+        measured keyword coverage for 50% to 83% more price headroom.
+    - id: R3A-E2
+      finding: The one bucket $10 clears is not in the account
+      detail: >-
+        The single local bucket whose top-of-page LOW is under $10 is
+        "pressure washing near me" at $8.75 and 90 searches/month. There is no
+        keyword with that text anywhere in the account. In practical terms a $10
+        ceiling clears the top-of-page range for 0% of what the account buys today.
+    - id: R3A-E3
+      finding: The click history cannot distinguish $8 from $22
+      detail: >-
+        18 valid billable clicks, sorted - 5.71, 22.11, 22.13, 26.66, 28.73, 28.73,
+        29.04, 29.32, 29.57, 29.57, 29.72, 29.91, 29.91, 35.31, 40.07, 42.67,
+        54.49, 82.22. There is NO observed click between $5.71 and $22.11, a $16.40
+        gap containing every candidate ceiling from $8 to $22. Each of them retains
+        exactly 1 of 18 observed auctions; only $30 reaches 13 of 18.
+      consequence: >-
+        This is precisely why the change is framed as a TEST rather than an
+        optimisation. The evidence identifies the lowest DEFENSIBLE ceiling; it
+        cannot predict the outcome.
+    - id: R3A-E4
+      finding: Campaign A is the right campaign to test
+      values:
+        campaign_A_24103511039:
+          impressions: 218
+          valid_clicks: 12
+          ctr_pct: 5.50
+          avg_cpc_usd: 33.59
+          search_is_pct: 48.00
+          lost_is_rank_pct: 48.89
+          abs_top_is_pct: 25.33
+          primary_status: ELIGIBLE
+        campaign_B_24145053510:
+          impressions: 46
+          valid_clicks: 6
+          ctr_pct: 13.04
+          avg_cpc_usd: 32.13
+          search_is_pct: 64.10
+          lost_is_rank_pct: 28.21
+          abs_top_is_pct: 41.03
+          primary_status: LEARNING
+      reading: >-
+        Campaign A has the WEAKER CTR (5.50% vs 13.04%) and the GREATER Search Lost
+        IS due to rank (48.89% vs 28.21%). Lost-IS-to-rank is the metric a ceiling
+        change moves most directly, so A is where the effect will be readable. A is
+        also ELIGIBLE rather than LEARNING and carries 4.7x the impressions.
+        Campaign B is stronger and mid-learning, so it stays as the control.
+    - id: R3A-E5
+      finding: The $5.00 precedent defines the downside, and it is not "delivery stops"
+      detail: >-
+        Under the $5.00 ceiling of 2026-08-07 to 2026-08-16 the account served 18
+        impressions across 6 serving days (3.0/day) and took ZERO valid clicks,
+        with Search Lost IS to rank at 76.67% and absolute-top impression share at
+        9.99%, which is Google's floor reporting value. Twelve calendar days
+        (08-05 to 08-16) produced no valid click at all.
+      consequence: >-
+        A too-low ceiling on this account does not stop delivery. It keeps serving
+        in positions that never get clicked - which is worse than silence, because
+        unclicked impressions further depress an expected-CTR signal that is
+        already BELOW_AVERAGE on all six scored keywords. Stop condition 3 exists
+        specifically to catch this signature.
+    - id: R3A-E6
+      finding: Sample size forbids treating this as a permanent decision
+      detail: >-
+        The entire history is 18 valid billable clicks and $595.87, with ZERO
+        recorded conversions. Four further clicks were retroactively invalidated by
+        Google on 2026-08-31 with $117.28 credited back, and 80.2% of all raw
+        clicks on this account are invalid.
+      consequence: >-
+        This is a controlled test, not a permanent optimisation decision. It is
+        designed to be judged, and reversed, on evidence it does not yet have.
+    - id: R3A-E7
+      finding: The New York State benchmark was deliberately NOT used to decide
+      detail: >-
+        Statewide top-of-page LOW for the same keywords is $3.59 to $5.57, against
+        $8.75 to $15.09 in the live footprint - two to three times cheaper. A
+        statewide read would have concluded that $10, or even $8, was comfortable.
+        The decision uses the current approved service area only; statewide is
+        recorded as a secondary benchmark and nothing more.
+
+  # ---------------------------------------------------------------- test design
+  test_design:
+    intended_start: >-
+      The beginning of the next full serving day, 08:00 America/New_York. NOT
+      mid-day, and NOT on 2026-08-31 with a single day left in the billing month.
+    scheduling_note: >-
+      Do NOT automate the future execution time. This plan does not schedule
+      itself. A human executes it after a separate approval, at the intended start
+      time, and re-verifies identity and the current ceiling immediately before.
+    campaign_under_test: "24103511039"
+    control_campaign: "24145053510"
+    minimum_evaluation_period_serving_days: 10
+    serving_days_definition: >-
+      The account runs Monday to Saturday 08:00-18:00 with no Sunday daypart, so
+      10 serving days is approximately 12 calendar days.
+    minimum_impressions_before_any_verdict: 150
+    minimum_valid_clicks_before_any_verdict: 8
+    early_verdict_rule: >-
+      Do not declare a result before BOTH thresholds are met, unless a stop
+      condition fires. At campaign A's current 23.0 impressions/day the impression
+      threshold arrives in roughly 7 serving days; the click threshold is the
+      binding one.
+    click_counting_rule: >-
+      EXCLUDE invalid clicks and retroactively credited clicks from every
+      evaluation. Google restates invalid clicks for hours and sometimes days
+      afterwards and it restates them DOWNWARD - on 2026-08-31 four clicks and
+      $117.28 were reversed after the fact. Never read a same-day click count as
+      settled.
+    do_not_judge_from: >-
+      One hour, one click, or one serving day. The account averages roughly one
+      valid click per serving day; a single click is noise.
+
+  stop_conditions:
+    - id: STOP-1
+      condition: Fewer than 8 impressions per serving day for 3 consecutive serving days
+      rationale: >-
+        Campaign A currently runs about 23.0 impressions/day and ran 17.2/day while
+        uncapped. The $5.00 regime collapsed to 3.0/day. A threshold of 8 sits
+        between the failure state and the working state.
+      action: Roll back to 30000000 immediately.
+    - id: STOP-2
+      condition: Search Lost IS due to rank exceeds 65% over a rolling 3-serving-day period
+      rationale: >-
+        Campaign A sits at 48.89% today. The $5.00 regime reached 76.67%. 65% is
+        the midpoint and marks the account sliding toward the failure state.
+      action: Roll back to 30000000 immediately.
+    - id: STOP-3
+      condition: Six consecutive serving days receive impressions but zero valid clicks
+      rationale: >-
+        This is the exact signature of the $5.00 ceiling - impressions continuing
+        in unclickable positions. It is the single most important trip-wire in the
+        plan.
+      action: Roll back to 30000000 immediately.
+    - id: STOP-4
+      condition: A valid click exceeds $12.50 more than four hours after implementation
+      rationale: >-
+        Bid propagation is not instant. When the $30.00 ceiling went in on
+        2026-08-27 at 12:25, two clicks above the cap appeared shortly afterwards
+        and both turned out to be PRE-ceiling. Four hours is the grace window; a
+        breach after it means the ceiling is not binding.
+      action: Investigate before rolling back - this indicates a configuration fault, not a bid outcome.
+    - id: STOP-5
+      condition: A configuration or identity mismatch is found
+      rationale: >-
+        The account owner has made manual UI changes during a prior audit window
+        (a budget change and four asset links on 2026-08-31). Any unexpected drift
+        invalidates the control.
+      action: Halt the test, re-run the drift check, reconcile before continuing.
+    - id: STOP-6
+      condition: Search-term quality materially deteriorates
+      definition: >-
+        Out-of-scope search terms exceed 20% of impressions on a rolling
+        3-serving-day basis, or any single out-of-scope term takes a billable
+        click. Current baseline is 49 of 53 distinct terms in scope.
+      rationale: >-
+        A lower ceiling can shift the account into different auctions. If it buys
+        cheaper but worse traffic, the test has failed even if CPC falls.
+      action: Roll back and review the search-term report before retrying.
+
+  success_indicators:
+    - Valid average CPC declines materially from the $33.59 campaign-A baseline.
+    - Qualified impressions continue - campaign A stays materially above 8/day.
+    - CTR does not materially deteriorate from the 5.50% campaign-A baseline.
+    - Search Lost IS due to rank remains manageable and stays below the 65% stop threshold.
+    - >-
+      Valid click volume is maintained or improves PER DOLLAR. This is the primary
+      read - more clicks for the same spend, not simply a lower price.
+    - Search terms remain BOFU and relevant, at or above the current 49-of-53 in-scope rate.
+    - >-
+      Qualified form or phone leads are recorded. See the measurement dependency
+      below - today this indicator CANNOT be read at all.
+
+  measurement_dependency:
+    state: BLOCKING FOR CPL AND CONVERSION-RATE JUDGEMENT ONLY
+    finding: >-
+      All four conversion actions carry include_in_conversions_metric = FALSE,
+      because customer_conversion_goal returns biddable = FALSE for all four
+      categories at account level. metrics.conversions is structurally incapable of
+      counting a lead. metrics.all_conversions is also 0.00 across every campaign
+      and every date, and the account has zero recorded conversions on 18 valid
+      clicks. No WhatConverts export exists for this client.
+    consequence: >-
+      This test CANNOT be judged by cost per lead or conversion rate until
+      conversion measurement is corrected or independently verified. It can only be
+      judged on impressions, valid clicks, CTR, valid CPC, clicks per dollar,
+      impression share, lost IS to rank and search-term quality.
+    the_risk_this_creates: >-
+      A cheaper CPC that produces no leads will LOOK like success on every metric
+      this test can currently read. That is the specific trap this section exists
+      to name.
+    required_before_CPL_judgement: >-
+      PLAN-R1 - measurement verification. It carries ZERO Google Ads mutations.
+    explicit_boundary: >-
+      PLAN-R3A does NOT execute, contain or authorise any conversion change. The
+      measurement fix is a separate plan with a separate approval. Nothing in this
+      plan touches conversion_action, campaign_conversion_goal or
+      customer_conversion_goal.
+
+  rollback:
+    method: >-
+      Restore campaign 24103511039 target_spend.cpc_bid_ceiling_micros from
+      12000000 to 30000000.
+    mutation_count: 1
+    field_mask: target_spend.cpc_bid_ceiling_micros
+    authorisation: >-
+      A separately authorised one-field mutation. Rollback is not pre-authorised by
+      approving this plan; it requires its own instruction from the approval owner.
+    reversibility: >-
+      Complete and immediate. No resource is created, deleted, paused or enabled,
+      so there is nothing to reconstruct.
+
+  qa_after_execution:
+    - >-
+      Read back campaign.target_spend.cpc_bid_ceiling_micros on 24103511039 and
+      assert exactly 12000000.
+    - >-
+      Read back campaign.target_spend.cpc_bid_ceiling_micros on 24145053510 and
+      assert it is STILL exactly 30000000. The control must be provably untouched.
+    - >-
+      Field-level before/after diff on both campaign resources; assert the ceiling
+      on 24103511039 is the ONLY changed field in the entire account.
+    - >-
+      Assert both campaign budgets are unchanged at 41500000 and 41110000 micros.
+    - >-
+      Assert counts unchanged - 2 campaigns, 30 ad groups, 214 keywords, 54 ads,
+      264 campaign negatives, 80 locations per campaign, 20 campaign asset links,
+      4 conversion actions.
+    - >-
+      Do NOT use change_event to corroborate. It lags by hours and returned zero
+      rows for a confirmed PLAN-K1 write two hours after execution. Corroborate
+      with a resource readback plus a field-level diff.
+
+  risk:
+    level: MEDIUM
+    why_not_low: >-
+      The account has a documented failure mode at a low ceiling. Under $5.00 it
+      served 3.0 impressions/day and took zero clicks for twelve calendar days.
+      $12.00 is well above that and clears 98.2% of measured local demand, but it
+      sits in a price band the account has never actually operated in - there is no
+      observed click between $5.71 and $22.11.
+    why_not_high: >-
+      One field, on one campaign, with an untouched control campaign, six stop
+      conditions, and a complete one-mutation rollback. Nothing is created,
+      deleted, paused or enabled. The worst realistic outcome is roughly ten
+      serving days of degraded delivery on one campaign, detected by the stop
+      conditions well before that.
+    specific_risks:
+      - Impressions on campaign A fall below the useful threshold - STOP-1 catches it.
+      - Lost IS to rank climbs toward the $5.00 regime's 76.67% - STOP-2 catches it.
+      - Impressions continue but clicks stop, the $5.00 signature - STOP-3 catches it.
+      - >-
+        Unclicked impressions further depress expected CTR, which is already
+        BELOW_AVERAGE on all six scored keywords, raising future CPC even after
+        rollback. Mitigated only by keeping the test short.
+      - >-
+        The test is judged on CPC rather than cost per lead, because measurement
+        cannot currently support the latter. Named explicitly above.
+      - >-
+        18 valid clicks is too small a base to generalise from. This is why the
+        plan is a test with a fixed evaluation window and a rollback, and not a
+        permanent setting.
+
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does NOT grant permission. This plan
+    is NOT APPROVED and must not be executed. Approving it authorises exactly one
+    field on exactly one campaign and nothing else.

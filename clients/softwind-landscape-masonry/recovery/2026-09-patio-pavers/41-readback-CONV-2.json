@@ -1,0 +1,23 @@
+{
+  "readback_at": "2026-09-03T23:48:23.328357-04:00",
+  "target": "7461619140",
+  "primary_before": true,
+  "primary_after": false,
+  "other_fields_unchanged": false,
+  "other_actions_changed": [],
+  "primary_counting_actions_after": [
+    "7461572537",
+    "7461590068",
+    "7480764700",
+    "7508686781",
+    "7635680357",
+    "7635680543"
+  ],
+  "verdict": "PASS",
+  "rollback": "set conversion_action.primary_for_goal = True on 7461619140",
+  "include_in_conversions_metric_before": true,
+  "include_in_conversions_metric_after": false,
+  "note_on_derived_field": "include_in_conversions_metric moved True->False as the DERIVED consequence of primary_for_goal=False. The executor's field mask was ['primary_for_goal'] only. Google recomputes Conversions-column membership from the goal/primary state, so this is the intended effect of the package. Every independently-settable field (status, type, category, counting_type, lookback windows, attribution model, call duration) is unchanged.",
+  "independently_settable_fields_changed": [],
+  "other_actions_with_flag_changes": []
+}

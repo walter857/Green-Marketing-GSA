@@ -1,0 +1,190 @@
+# PLAN-A1 - READ-ONLY CONVERSION INSPECTION
+#
+# SUPERSEDES the measurement portion of PLAN-A (fingerprint 701E8E5ED639, now VOID).
+#
+# NO FINGERPRINT IS REQUIRED TO EXECUTE THIS PLAN.
+# It is READ-only: SELECT queries and GET navigation only. It creates no lead, no
+# call, no customer record, no CRM record, and no Google Ads mutation of any kind.
+#
+# PLAN-A was split because it bundled three materially different risk levels under
+# one approval: a read-only inspection that creates nothing, a form test that
+# creates a real CRM lead, and a phone test that rings the client's real line.
+# Those must never share a fingerprint.
+
+change_plan:
+  plan_id: PLAN-A1
+  plan_title: Read-only conversion tracking inspection
+  approval_type: READ_ONLY_INSPECTION
+  priority: P0
+  approval_status: NOT APPROVED
+  execution_status: READ-ONLY - executable under READ mode without a fingerprint
+  fingerprint_required: false
+  fingerprint_rationale: 'The repository''s approval model requires a fingerprint for external WRITES.
+    This plan performs no write. Per docs/SAFETY_AND_APPROVALS.md the Read/audit stage requires
+    "Validated work order + exact identity match + fresh account snapshot" and "Approval: None".'
+  recommended_approval_order: NOT APPROVABLE - status EXECUTED_READ_ONLY
+  ads_mutation_count: 0
+  requires_separate_enable_approval: false
+  supersedes:
+    plan_id: PLAN-A
+    fingerprint: 701E8E5ED639
+    status: VOID
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  hard_constraints:
+    no_form_submission: true
+    no_test_phone_call: true
+    no_external_write: true
+    no_customer_or_crm_record_created: true
+    no_google_ads_mutation: true
+    methods_permitted:
+    - GAQL SELECT
+    - browser GET navigation
+    - cookie inspection
+  actions:
+  - action_id: A1-01
+    priority: P0
+    resource_type: CONVERSION_ACTION
+    operation: READ
+    customer_id: '1521725229'
+    campaign_id: null
+    ad_group_id: null
+    resource_id: conversion_action (all)
+    current_value: 4 actions known from the 2026-08-25 read
+    proposed_value: 'Re-read every conversion action fresh: id, name, status, type, category, origin,
+      primary_for_goal, counting_type, attribution model, click and view lookback windows, phone_call_duration_seconds,
+      value settings, include_in_conversions_metric, owner_customer, tag_snippets count.'
+    why: Establishes whether each action is TECHNICALLY CONFIGURED correctly, independent of whether
+      it has ever fired.
+    evidence: deep-read-2026-08-25.json conversion_actions
+    expected_effect: Configuration verdict per action.
+    risk: None.
+    rollback: Not applicable.
+    approval_required: NO - read-only
+    object_count: 1
+  - action_id: A1-02
+    priority: P0
+    resource_type: CAMPAIGN_CONVERSION_GOAL
+    operation: READ
+    customer_id: '1521725229'
+    campaign_id: 24103511039,24145053510
+    ad_group_id: null
+    resource_id: campaign_conversion_goal + customer_conversion_goal
+    current_value: 3 biddable categories per campaign
+    proposed_value: Re-read the biddable goal set on both campaigns and the account-level default
+      set.
+    why: Confirms which categories actually drive bidding, and whether GET_DIRECTIONS remains excluded.
+    evidence: drift-check-2026-08-25b.json campaign_conversion_goals_now
+    expected_effect: Bidding-isolation verdict.
+    risk: None.
+    rollback: Not applicable.
+    approval_required: NO - read-only
+    object_count: 1
+  - action_id: A1-03
+    priority: P0
+    resource_type: CONVERSION_ACTION_METRICS
+    operation: READ
+    customer_id: '1521725229'
+    campaign_id: null
+    ad_group_id: null
+    resource_id: metrics.all_conversions by conversion_action and by date
+    current_value: 0 all_conversions on every action, all time
+    proposed_value: Re-read all_conversions per action and per day for 2026-08-01 to date, plus
+      segments.conversion_action_name.
+    why: Establishes whether ANY action has ever recorded a single event.
+    evidence: metrics-2026-08-25.json conversion_action_performance
+    expected_effect: Recording verdict.
+    risk: None.
+    rollback: Not applicable.
+    approval_required: NO - read-only
+    object_count: 1
+  - action_id: A1-04
+    priority: P0
+    resource_type: CUSTOMER
+    operation: READ
+    customer_id: '1521725229'
+    campaign_id: null
+    ad_group_id: null
+    resource_id: customer.conversion_tracking_setting
+    current_value: conversion_tracking_id 18369652705, managed by self, enhanced conversions for
+      leads disabled
+    proposed_value: Re-read conversion_tracking_id, cross_account id, status, google_ads_conversion_customer,
+      enhanced conversions flag, auto-tagging.
+    why: Proves which AW identifier legitimately belongs to this account, so the foreign tag can
+      be judged.
+    evidence: identity-2026-08-25.json
+    expected_effect: Identifier-match verdict.
+    risk: None.
+    rollback: Not applicable.
+    approval_required: NO - read-only
+    object_count: 1
+  - action_id: A1-05
+    priority: P0
+    resource_type: LANDING_PAGE_TAGS
+    operation: GET_NAVIGATION
+    customer_id: '1521725229'
+    campaign_id: null
+    ad_group_id: null
+    resource_id: all live Final URLs + the two paused-SKAG URLs
+    current_value: AW-18369652705 and AW-17878095007 observed on all nine offer pages
+    proposed_value: Load each page with a synthetic gclid. Record every Google Ads conversion ID,
+      GA4 ID, GTM container, conversion-label pattern (AW-#/label), and every network request to
+      googleadservices / googleads.g.doubleclick / google.com/pagead. Determine which AW account
+      each conversion-linker or conversion event fires to, WITHOUT triggering a conversion.
+    why: Determines whether the foreign AW tag is merely present or is actively sending an event.
+    evidence: landing-pages-2026-08-25.json trackers
+    expected_effect: Foreign-tag activity verdict.
+    risk: None. GET navigation only. Page-view tags fire as they would for any visitor; no conversion
+      event is triggered because no form is submitted and no call is placed.
+    rollback: Not applicable.
+    approval_required: NO - read-only
+    object_count: 1
+  - action_id: A1-06
+    priority: P0
+    resource_type: ANALYSIS
+    operation: DERIVE
+    customer_id: '1521725229'
+    campaign_id: null
+    ad_group_id: null
+    resource_id: inspection limits
+    current_value: unstated
+    proposed_value: State explicitly what a non-converting inspection CAN and CANNOT prove, and
+      enumerate exactly what still requires a controlled live test.
+    why: Prevents the inspection being over-read as proof the setup works.
+    evidence: n/a - derived
+    expected_effect: An honest boundary on the conclusion.
+    risk: None.
+    rollback: Not applicable.
+    approval_required: NO - read-only
+    object_count: 1
+  what_this_plan_cannot_prove: A read-only inspection can prove CONFIGURATION and PRESENCE. It cannot
+    prove FIRING. A conversion that fires on form-submit or on call-connect leaves no trace in the
+    initial DOM and no trace in the Google Ads API until it has actually happened. If this inspection
+    finds everything correctly configured, the correct conclusion is "no defect found", never "tracking
+    works".
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 0
+    forms_submitted: 0
+    calls_placed: 0
+    crm_records_created: 0
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com

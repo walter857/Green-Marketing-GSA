@@ -1,0 +1,26 @@
+service_discovery:
+  client_slug: pro-green-dallas
+  business_name: Pro Green
+  account:
+    exact_child_account_name: Pro Green - Dallas - Live
+    child_customer_id: "8735782888"
+    manager_customer_id: "3373711342"
+    manager_account_name: Green Marketing
+  task:
+    type: service-discovery
+    mode: read
+    request: >-
+      Discover the services this account advertises before the full 30-day and
+      90-day performance audit. Read-only.
+  authorization:
+    read_only_service_discovery: true
+    approved_by: Green Marketing
+    granted_on: "2026-08-07"
+    notes: >-
+      Read-only service discovery only. No audit, draft, build, revamp, or
+      Google Ads write is authorized by this document. The exact service must be
+      confirmed by the user in a work order before anything else starts.
+  landing_pages:
+    fetch: true
+    max_pages: 8
+    allowed_hosts: []

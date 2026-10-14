@@ -1,0 +1,277 @@
+{
+  "slug": "softwind-landscape-masonry",
+  "customer_id": "2429758629",
+  "account_name": "Softwind Landscape & Masonry - Live",
+  "fence_reason": "exterior cleaning intent belongs to 1521725229",
+  "owner_instruction": "2026-08-28 mutual exclusion between the two Softwind accounts",
+  "match_type": "PHRASE",
+  "placement": "campaign level",
+  "negatives": [
+    {
+      "text": "power washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "power wash",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "powerwashing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "powerwash",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "power washer",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "pressure washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "pressure wash",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "pressurewashing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "pressure washer",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "soft washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "soft wash",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "softwash",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "softwashing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "house washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "house wash",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "wash my house",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "home washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "siding cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "siding washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "vinyl siding cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "roof cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "roof washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "roof wash",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "shingle cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "gutter cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "gutter cleaner",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "gutter whitening",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "window cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "window washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "deck cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "deck washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "fence cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "fence washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "driveway cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "driveway washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "concrete cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "patio cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "patio washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "paver washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "walkway cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "sidewalk cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "exterior cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "exterior washing",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "house exterior cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "mildew removal",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "algae removal",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "moss removal",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "rust removal",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "graffiti removal",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    },
+    {
+      "text": "dumpster pad cleaning",
+      "match_type": "PHRASE",
+      "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+    }
+  ],
+  "held_back": [
+    {
+      "text": "oil stain removal",
+      "reason": "blocks_own_KEEP_or_converting_term"
+    }
+  ],
+  "per_campaign_objects": 51,
+  "live_campaigns": 2,
+  "total_objects": 102,
+  "status": "READY",
+  "fingerprint": "E0632FF2EDC5"
+}

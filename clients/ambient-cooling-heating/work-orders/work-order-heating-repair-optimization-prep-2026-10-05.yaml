@@ -1,0 +1,87 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # Fresh read-only identity check required before any account read (exact name and child ID;
+    # the MCC 3373711342 is never the child).
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Heating Repair
+    related_services:
+      - Furnace Repair
+      - Gas Furnace Repair
+      - Electric Furnace Repair
+      - No Heat Repair
+      - Emergency Heating Repair
+  task:
+    type: search-terms
+    mode: read
+    request: >-
+      Green Marketing request 2026-10-05 ("Prepare the next optimization package while the $18 CPC
+      test runs"). READ / DRAFT ONLY for campaign 24257819463 'Search | NonBrand | Heating & Furnace
+      Repair | Central MD | BOFU | 2026-09'. Priority 1: search-term quality audit of the
+      'heating repair' Phrase keyword and every visible repair search term with impressions, clicks
+      or spend, classified into direct heating repair / furnace repair / no-heat / installation-
+      replacement / informational / ambiguous / clearly irrelevant, with exact or phrase negative
+      DRAFTS for clearly irrelevant terms only, and a Phrase-vs-Exact recommendation for
+      'heating repair'. Priority 2: read-only phone attribution audit of 410-705-6354, 410-914-1456,
+      410-415-9517 and 410-761-0932 against Google call records. Priority 3: the $18 test baseline
+      (09-24..09-30, 09-30 labelled old-$42 traffic) and a five-complete-serving-day comparison
+      template. Priority 4: status of developer blockers D6, D5, D7, D1 and call-path verification.
+      No Google Ads, WhatConverts, Business Profile, website or tracking write is authorized.
+    date_range: >-
+      CURRENT AS AT 2026-10-05 (account time America/New_York; 10-05 is PARTIAL and never a
+      completed day). Baseline 2026-09-24..2026-09-30 ($42 ceiling; 09-30 is old-$42 traffic because
+      the $18 change ran at 17:52 ET after scheduled serving ended at 16:00). Test: complete serving
+      days under $18 from 2026-10-01 (Mon-Fri schedule: 10-01, 10-02, 10-05, 10-06, 10-07).
+      Search-term history window: 2026-09-17 (campaign first served) .. 2026-10-04.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/hvac-repair/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    location_targets_expected: 75
+    location_option: PRESENCE
+    campaign_id: "24257819463"
+    bidding: "Maximize Clicks (TARGET_SPEND), CPC ceiling $18.00 since 2026-09-30 17:52 ET (AMB-0930-REPAIR-CPC-2 CC87C9A6F406)"
+    schedule: "Mon-Fri 08:00-16:00 America/New_York (to be re-verified live)"
+    primary_conversion_goal: "unique genuine paid heating repair lead (form or call); qualified = WhatConverts Quotable Yes"
+    target_cpl_usd: 280
+    cpl_ceiling_usd: 350
+    cpl_definition: "all ad spend in scope and period / unique genuine paid leads (click-ID or matched Google call record); QA, spam, wrong numbers, duplicates and non-paid channels excluded"
+    preserve_unchanged:
+      - "CPC ceiling"
+      - "budget"
+      - "campaign status"
+      - "ad-group status"
+      - "ads"
+      - "keywords"
+      - "match types"
+      - "landing pages"
+      - "conversions"
+      - "assets"
+      - "locations"
+      - "schedule"
+      - "phone numbers, WhatConverts configuration, Business Profile settings"
+    negative_policy_for_this_request: >-
+      DRAFT only. Exact or phrase negatives for clearly irrelevant terms only. Never auto-negative
+      near me, cost, price, pricing, quote, best, local, hire, emergency, manufacturer names or
+      location names without query-specific evidence. A separate execution plan only if an obvious,
+      high-confidence cleanup exists.
+    raw_search_terms_in_deliverable: "HVAC corpus; Green Marketing asked for every visible term to be classified (same basis as the 2026-10-01 request). Written to the report and the exports folder."
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-repair-search-terms-2026-10-01.yaml
+      - reports/ambient-cooling-heating/2026-10-01-search-terms-and-lp-activation.md
+      - reports/ambient-cooling-heating/2026-10-02-emergency-launch-search-terms-budget-pmax.md
+      - reports/ambient-cooling-heating/2026-10-02-cleanup-and-launch-execution.md
+    change_authorized: false
+  approval_owner: Green Marketing

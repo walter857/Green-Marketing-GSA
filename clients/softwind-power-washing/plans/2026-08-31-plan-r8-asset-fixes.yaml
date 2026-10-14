@@ -1,0 +1,186 @@
+# PLAN-R8 - ASSET FIXES
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# Built 2026-08-31 from the read-only forensic snapshot. NOT APPROVED.
+#
+# SUPERSEDED IN PART BY OWNER ACTION DURING THIS AUDIT. Both originally proposed
+# mutations were performed by hand in the Google Ads UI between 10:21 and 10:52
+# on 2026-08-31, while this audit was running. The plan is rewritten to zero
+# mutations rather than left standing as an approvable artifact that would
+# duplicate work already done. See asset_parity_closed_by_owner below.
+change_plan:
+  plan_id: PLAN-R8
+  plan_title: Asset parity - closed by owner action; remaining items are blocked
+  approval_type: ASSET_STATUS_RECORD_NO_MUTATION
+  priority: P2
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 0
+  object_count_total: 0
+  requires_separate_enable_approval: false
+  recommended_approval_order: 8
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  asset_parity_closed_by_owner:
+    what_happened: >-
+      The opening forensic snapshot at 10:21:20 recorded 16 non-removed
+      campaign_asset links. The closing unchanged-proof re-read at 10:52 recorded
+      20. Four links were created during the audit window. This agent made no
+      mutation of any kind; every script in this run issues SELECT statements only.
+      change_event returned only the 09:39:41 budget change, which is consistent
+      with its known multi-hour lag and is not evidence against the asset links.
+    the_four_new_links:
+      - {campaign_id: "24103511039", asset_id: "413928453094", field_type: SITELINK, text: "Free Quote", note: "this is exactly what the original R8-01 proposed"}
+      - {campaign_id: "24103511039", asset_id: "404844116658", field_type: STRUCTURED_SNIPPET, text: "Service catalog", note: "this is exactly what the original R8-02 proposed"}
+      - {campaign_id: "24103511039", asset_id: "404773124911", field_type: CALLOUT, text: "Careful Washing Methods"}
+      - {campaign_id: "24145053510", asset_id: "404773124911", field_type: CALLOUT, text: "Careful Washing Methods"}
+    consequence: >-
+      The two mutations this plan originally carried are DONE. Executing them now
+      would attempt to create campaign_asset links that already exist. The action
+      list is therefore emptied and the fingerprint regenerated. An approval phrase
+      for the earlier version of this plan must not be honoured.
+    verified_state_after: >-
+      Both campaigns now carry identical asset sets - 4 SITELINK, 4 CALLOUT,
+      1 STRUCTURED_SNIPPET, 1 CALL. Asset parity between the two campaigns is
+      complete. Re-read from campaign_asset at 2026-08-31 10:52 America/New_York.
+
+  current_asset_inventory_verified_1052:
+    campaign_24103511039_Power_Washing:
+      sitelinks: 4
+      sitelink_asset_ids: ["413928440125", "413928453094", "413998491609", "413998496058"]
+      callouts: 4
+      callout_asset_ids: ["404773122349", "404773124887", "404773124911", "404843114646"]
+      structured_snippets: 1
+      call: 1
+      images: 0
+      business_name: 0
+    campaign_24145053510_Power_Washing_2:
+      sitelinks: 4
+      callouts: 4
+      structured_snippets: 1
+      call: 1
+      images: 0
+      business_name: 0
+    account_level:
+      sitelinks: 3
+      callouts: 4
+      structured_snippets: 1
+      business_logo: 1
+    ad_group_level: 0
+
+  scope_check_on_the_new_assets: >-
+    All four newly linked assets are in scope and carry no unverified claim.
+    Callout "Careful Washing Methods" is supported by the client verified USP
+    "surface-specific cleaning method chosen for the material". Structured snippet
+    values (Pressure Washing, House Washing, Soft Washing, Patio Cleaning,
+    Driveway Cleaning) are all inside the work order services_in_scope and name no
+    excluded service. Sitelink "Free Quote" points at an offer page rendering the
+    approved (631) 502-7946. All four are policy APPROVED. No objection.
+
+  remaining_findings:
+    - id: R8-F3
+      severity: P1
+      status: BLOCKED - not proposed as an action
+      finding: >-
+        The call asset 403335872180 is scheduled MONDAY through SATURDAY
+        08:00-17:00, while both campaigns run MONDAY through SATURDAY 08:00-18:00.
+      why_it_matters: >-
+        For the last hour of every serving day the ads run with no call button.
+        The 17:00 hour has delivered 27 impressions, 2 clicks and $44.24, and is
+        the account CHEAPEST hour at $22.12 average CPC. Published hours at
+        softwindli.com/contact-us/ are Mon-Fri 08:00-18:00, so extending Monday to
+        Friday is supported by a verified fact. Saturday hours are NOT PUBLISHED
+        and must stay at 17:00 until the client confirms.
+      blocked_on: >-
+        SCHED-Q: is (631) 502-7946 answered 17:00-18:00 Monday to Friday?
+        client.yaml records can_answer_after_hours as UNKNOWN.
+      blast_radius_check_already_done: >-
+        A call asset ad schedule lives on the ASSET, not on the link, so editing it
+        rewrites the hours on every campaign the asset is linked to. Asset
+        403335872180 is linked to campaign_asset rows on 24103511039 and
+        24145053510 and to ZERO ad_group_asset rows. The account contains exactly
+        two non-removed campaigns and both are under this work order. Verified
+        against campaign_asset and ad_group_asset, not assumed.
+      when_unblocked: >-
+        One mutation, field mask call_asset.ad_schedule_targets, rewriting the six
+        dayparts as Mon-Fri 08:00-18:00 and Saturday 08:00-17:00.
+    - id: R8-F4
+      severity: P1
+      status: DIAGNOSTIC ONLY - no action proposed
+      finding: >-
+        The call asset has served 86 times (segments.click_type = CALLS) and has
+        NEVER been clicked. Zero call clicks, zero rows in call_view across the
+        entire retained log.
+      why_it_matters: >-
+        This is not an asset defect to fix by editing the asset. It is the single
+        strongest piece of evidence in the account that paid traffic is not
+        converting. It belongs to PLAN-R1, not here.
+    - id: R8-F5
+      severity: P2
+      status: BLOCKED
+      finding: >-
+        No IMAGE or MARKETING_IMAGE asset is linked anywhere, and there is no
+        BUSINESS_NAME asset. Asset type counts are TEXT 401, SITELINK 12,
+        CALLOUT 8, STRUCTURED_SNIPPET 2, CALL 1, LOCATION 1, IMAGE 1 - and the
+        single IMAGE asset is linked to nothing.
+      why_it_matters: >-
+        164 of 246 impressions are mobile, where an image extension matters most.
+        Without image and business-name assets the ad occupies less of the SERP
+        than competitors who have them.
+      blocked_on: >-
+        The client must supply project photographs they hold the rights to. The
+        client site has an Our Work gallery, but reusing those images needs the
+        client written confirmation that Softwind owns them.
+    - id: R8-F6
+      severity: P2
+      status: WATCH - no action this cycle
+      finding: >-
+        segments.click_type LOCATION_EXPANSION shows 108 impressions and 0 clicks.
+        One LOCATION asset exists in the account and is linked to nothing, so the
+        location extension is serving from a linked Business Profile asset set
+        rather than a campaign asset.
+      why_it_matters: >-
+        108 impressions with zero clicks is not automatically waste - a location
+        extension can carry real conversions, and excluding it on click data alone
+        is a known trap. But with zero conversions account-wide there is nothing to
+        defend it either.
+      action: Re-check in 30 days segmented by click_type x conversion_action.
+    - id: R8-F7
+      severity: P2
+      status: DEFERRED TO PLAN-R11
+      finding: >-
+        Three ACCOUNT-LEVEL sitelinks survive and all three point at
+        softwindli.com pages that render the untracked (631) 502-5402 -
+        403497568748 Service Areas, 403497573329 Request A Quote, 403497584582
+        Our Work.
+      why_it_matters: >-
+        Campaign-level sitelinks override account-level ones, and both campaigns
+        now carry four campaign-level sitelinks each, so these should not serve.
+        They remain a standing leak if a campaign-level link is ever removed.
+      action: >-
+        Removal is a separate approval in PLAN-R11 (R11-08 through R11-10), so that
+        removals never ride along with additions.
+    - id: R8-F8
+      severity: P3
+      status: RESOLVED
+      finding: >-
+        Asset wording across all linked callouts and snippets is in scope and
+        carries no unverified claim. No irrelevant landscaping asset, no wrong
+        phone number, no unapproved claim. All linked assets are policy APPROVED
+        and all are source ADVERTISER - there is not one automatically created
+        asset in the account.
+
+  actions: []
+
+  risk: NONE - zero mutations.
+  rollback: Not applicable.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    This plan now proposes no change. It records the asset state verified at
+    2026-08-31 10:52 and the three items that remain blocked. Any approval phrase
+    issued against the earlier two-mutation version of PLAN-R8 is void, because
+    both of those mutations have already been performed by hand.

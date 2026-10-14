@@ -1,0 +1,161 @@
+{
+ "plan": "AMB-0917-HEAT-CREATE-1",
+ "fingerprint": "7DE31D6B6A88",
+ "platform_mandated_field_added_at_execution": {
+  "field": "campaign.contains_eu_political_advertising",
+  "value": "DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING",
+  "why": "Google returns field_error REQUIRED without it; campaign creation is impossible otherwise. One truthful value for an HVAC campaign in Central Maryland. Mirrors all five existing Ambient campaigns. No effect on budget, bid, targeting, status or delivery. The approved manifest is otherwise unchanged and still recomputes to 7DE31D6B6A88."
+ },
+ "started": "2026-09-17T18:12:55.697871-04:00",
+ "customer_id": "2401959466",
+ "mcc_never_written": "3373711342",
+ "stages": [
+  {
+   "stage": "budgets",
+   "ok": true,
+   "reused": true,
+   "resources": {
+    "REPAIR": "customers/2401959466/campaignBudgets/15885327972",
+    "INSTALL": "customers/2401959466/campaignBudgets/15885327975"
+   }
+  },
+  {
+   "stage": "campaigns",
+   "ok": true,
+   "resources": {
+    "REPAIR": "customers/2401959466/campaigns/24257819463",
+    "INSTALL": "customers/2401959466/campaigns/24257819466"
+   }
+  },
+  {
+   "stage": "campaign_criteria",
+   "ok": true,
+   "count": 209
+  },
+  {
+   "stage": "ad_groups",
+   "ok": true,
+   "resources": {
+    "SKAG | Furnace Repair": "customers/2401959466/adGroups/199797580706",
+    "SKAG | Mini Split Installation": "customers/2401959466/adGroups/199797580746"
+   }
+  },
+  {
+   "stage": "keywords",
+   "ok": true,
+   "count": 18
+  },
+  {
+   "stage": "rsas",
+   "ok": true,
+   "resources": {
+    "SKAG | Furnace Repair :: RSA A - service-first, 3 pinned openers": "customers/2401959466/adGroupAds/199797580706~825056834769",
+    "SKAG | Furnace Repair :: RSA B - symptom-led, unpinned": "customers/2401959466/adGroupAds/199797580706~825056834772",
+    "SKAG | Mini Split Installation :: RSA A - service-first, 3 pinned openers": "customers/2401959466/adGroupAds/199797580746~825056834775",
+    "SKAG | Mini Split Installation :: RSA B - application-led, unpinned": "customers/2401959466/adGroupAds/199797580746~825056834778"
+   }
+  },
+  {
+   "stage": "assets",
+   "ok": true,
+   "count": 9
+  },
+  {
+   "stage": "asset_links",
+   "ok": true,
+   "count": 22
+  }
+ ],
+ "committed": {
+  "campaign_budgets": {
+   "REPAIR": "customers/2401959466/campaignBudgets/15885327972",
+   "INSTALL": "customers/2401959466/campaignBudgets/15885327975"
+  },
+  "campaign_budgets_reused_from_aborted_run": true,
+  "campaigns": {
+   "REPAIR": "customers/2401959466/campaigns/24257819463",
+   "INSTALL": "customers/2401959466/campaigns/24257819466"
+  },
+  "campaign_criteria_count": 209,
+  "ad_groups": {
+   "SKAG | Furnace Repair": "customers/2401959466/adGroups/199797580706",
+   "SKAG | Mini Split Installation": "customers/2401959466/adGroups/199797580746"
+  },
+  "keywords": [
+   "customers/2401959466/adGroupCriteria/199797580706~115636961",
+   "customers/2401959466/adGroupCriteria/199797580706~53082888326",
+   "customers/2401959466/adGroupCriteria/199797580706~301769526",
+   "customers/2401959466/adGroupCriteria/199797580706~5333029459",
+   "customers/2401959466/adGroupCriteria/199797580706~4343738631",
+   "customers/2401959466/adGroupCriteria/199797580706~4018038434",
+   "customers/2401959466/adGroupCriteria/199797580706~12678680",
+   "customers/2401959466/adGroupCriteria/199797580706~59088625593",
+   "customers/2401959466/adGroupCriteria/199797580706~136731902",
+   "customers/2401959466/adGroupCriteria/199797580706~1883846185",
+   "customers/2401959466/adGroupCriteria/199797580746~4332422790",
+   "customers/2401959466/adGroupCriteria/199797580746~13909238427",
+   "customers/2401959466/adGroupCriteria/199797580746~370736417426",
+   "customers/2401959466/adGroupCriteria/199797580746~6426742803",
+   "customers/2401959466/adGroupCriteria/199797580746~325923023261",
+   "customers/2401959466/adGroupCriteria/199797580746~6465302375",
+   "customers/2401959466/adGroupCriteria/199797580746~301160130137",
+   "customers/2401959466/adGroupCriteria/199797580746~372203737368"
+  ],
+  "rsas": {
+   "SKAG | Furnace Repair :: RSA A - service-first, 3 pinned openers": "customers/2401959466/adGroupAds/199797580706~825056834769",
+   "SKAG | Furnace Repair :: RSA B - symptom-led, unpinned": "customers/2401959466/adGroupAds/199797580706~825056834772",
+   "SKAG | Mini Split Installation :: RSA A - service-first, 3 pinned openers": "customers/2401959466/adGroupAds/199797580746~825056834775",
+   "SKAG | Mini Split Installation :: RSA B - application-led, unpinned": "customers/2401959466/adGroupAds/199797580746~825056834778"
+  },
+  "assets": [
+   {
+    "type": "CALLOUT",
+    "label": "Diagnosis Explained",
+    "resource": "customers/2401959466/assets/422577777430"
+   },
+   {
+    "type": "CALLOUT",
+    "label": "Trained Technicians",
+    "resource": "customers/2401959466/assets/422577771364"
+   },
+   {
+    "type": "CALLOUT",
+    "label": "Homes and Businesses",
+    "resource": "customers/2401959466/assets/422477374526"
+   },
+   {
+    "type": "CALLOUT",
+    "label": "Central Maryland Service",
+    "resource": "customers/2401959466/assets/422577760603"
+   },
+   {
+    "type": "CALLOUT",
+    "label": "Repair and Maintenance",
+    "resource": "customers/2401959466/assets/422577777442"
+   },
+   {
+    "type": "STRUCTURED_SNIPPET",
+    "label": "Services",
+    "resource": "customers/2401959466/assets/422477374541"
+   },
+   {
+    "type": "SITELINK",
+    "label": "Furnace Repair",
+    "resource": "customers/2401959466/assets/422577771382"
+   },
+   {
+    "type": "SITELINK",
+    "label": "Mini Splits",
+    "resource": "customers/2401959466/assets/422477374559"
+   },
+   {
+    "type": "SITELINK",
+    "label": "Heating Services",
+    "resource": "customers/2401959466/assets/422577777457"
+   }
+  ],
+  "campaign_asset_links": 22
+ },
+ "finished": "2026-09-17T18:13:04.740145-04:00",
+ "raw_resources_created": 268
+}

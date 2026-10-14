@@ -1,0 +1,74 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # IDENTITY GATE PASSED 2026-09-30 by fresh read-only API lookup, 8/8 checks.
+    # Evidence: clients/ambient-cooling-heating/snapshots/maint-eval-2026-09-30.json
+    #   descriptive_name "Ambient Cooling - Live" == expected
+    #   customer.id 2401959466 == expected (CHILD id, not the Green Marketing MCC 3373711342)
+    #   manager=false  test=false  USD  America/New_York
+    #   manager links 3373711342 Green Marketing ACTIVE; 2815082755 ClickCease ACTIVE
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Heat Pump Maintenance
+    related_services: []
+  task:
+    type: ads-assets
+    mode: draft
+    request: >-
+      Evaluate bringing the budget-deferred ad group 204129717567 'SKAG | Heat Pump Maintenance'
+      (campaign 24268690038 'Search | NonBrand | Heat Pump & Ductless Heating | Central MD | BOFU |
+      2026-09') live on https://offer.ambientcoolingandheating.com/heat-pump-maintenance/ without
+      damaging Heat Pump Repair, Installation or Replacement traffic, preserving attribution and
+      the $10,000 monthly cap. Owner/agency direction 2026-09-30.
+      PHASES 1-5 ARE READ + DRAFT ONLY: fresh identity check, snapshot, performance, landing-page QA,
+      reuse inventory, budget and cannibalization check, fingerprinted plans. No external write.
+      PHASE 6 (after approval of the exact fingerprints): execute only the approved plan(s) and read
+      back. PHASE 7 (separate explicit ENABLE approval after Phase 6 QA): enable only the approved
+      Heat Pump Maintenance resources.
+      OUT OF SCOPE unless separately authorized: ClickCease link/template, LSA, parked cooling
+      plans, the Performance Max pilot, emergency heating, oil/tankless, conversion
+      primary/secondary settings, and any other deferred service.
+    date_range: >-
+      CURRENT AS AT 2026-09-30. Last complete day = 2026-09-29. 2026-09-30 is PARTIAL and is never
+      used for a conclusion. Windows: since offer-page migration 2026-09-24..09-29; last 7 complete
+      days 09-23..09-29; last 14 complete days 09-16..09-29; month to date 09-01..09-29.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/heat-pump-maintenance/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: null
+    primary_conversion_goal: "unique qualified residential heat pump maintenance lead (form or call)"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-order.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-transition-2026-09.yaml
+      - reports/ambient-cooling-heating/HANDOFF-2026-09-30-full-account-briefing.md
+    ad_group_id: "204129717567"
+    campaign_id: "24268690038"
+    canonical_final_url: "https://offer.ambientcoolingandheating.com/heat-pump-maintenance/"
+    hard_monthly_cap_usd: 10000
+    max_enabled_daily_usd: 325.00
+    cap_basis: "daily x 30.4, never x 30"
+    budget_or_ceiling_change_requires_separate_approval: true
+    # CLIENT CPL REQUIREMENT, recorded 2026-09-30 (explicit Green Marketing instruction in the
+    # working session). Mirrors client.yaml offer.target_cpl / offer.cpl_ceiling / offer.cpl_policy.
+    target_cpl_usd: 280
+    cpl_ceiling_usd: 350
+    cpl_requirement_source: "Explicit Green Marketing instruction in the Claude Code working session"
+    cpl_requirement_recorded_on: "2026-09-30"
+    cpl_definition: "all ad spend in scope and period / unique genuine paid leads (click-ID or matched Google call record); QA, spam, wrong numbers, duplicates and non-paid channels excluded"
+    spending_limits_are_maximums_not_targets: true
+    status_2026_09_30b: "HOLD. AMB-0930-HPM-BUDGET-1 7472853C4EA9 and AMB-0930-HPM-ENABLE-1 90C7E29E61BA are WITHDRAWN, never execute. Held pending D4 copy fix, verified lead-capture/tracking QA (D5/D6/D7) and an evidence-supported, financially bounded test plan under the CPL requirement."
+    launch_authorized: false
+    enablement_authorized: false
+  approval_owner: Green Marketing

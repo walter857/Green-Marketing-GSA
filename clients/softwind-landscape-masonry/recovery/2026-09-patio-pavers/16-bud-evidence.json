@@ -1,0 +1,97 @@
+{
+  "read_at": "2026-09-03T20:02:33.829083-04:00",
+  "hard_cap": 2000.0,
+  "month": "2026-09",
+  "today": "2026-09-03",
+  "remaining_days_excluding_today": 27,
+  "account_mtd_spend": 248.36,
+  "daily_series": [
+    {
+      "date": "2026-09-01",
+      "cost": 50.53
+    },
+    {
+      "date": "2026-09-02",
+      "cost": 75.24
+    },
+    {
+      "date": "2026-09-03",
+      "cost": 122.59
+    }
+  ],
+  "avg_daily_complete_days_only": 62.88,
+  "all_campaigns": {
+    "23484545411": {
+      "name": "Hardscaping",
+      "status": "PAUSED",
+      "budget_id": "15309187404",
+      "daily_budget": 21.0,
+      "explicitly_shared": false,
+      "reference_count": 1,
+      "mtd_cost": 0.0
+    },
+    "23484806108": {
+      "name": "Patio",
+      "status": "ENABLED",
+      "budget_id": "15309303030",
+      "daily_budget": 33.0,
+      "explicitly_shared": false,
+      "reference_count": 1,
+      "mtd_cost": 111.81
+    },
+    "23489296528": {
+      "name": "Pavers",
+      "status": "ENABLED",
+      "budget_id": "15314089588",
+      "daily_budget": 33.0,
+      "explicitly_shared": false,
+      "reference_count": 1,
+      "mtd_cost": 136.55
+    },
+    "23489591905": {
+      "name": "Retaining Walls",
+      "status": "PAUSED",
+      "budget_id": "15314172625",
+      "daily_budget": 12.0,
+      "explicitly_shared": false,
+      "reference_count": 1,
+      "mtd_cost": 0.0
+    },
+    "23914857298": {
+      "name": "Paver Sealing",
+      "status": "PAUSED",
+      "budget_id": "15620811278",
+      "daily_budget": 14.0,
+      "explicitly_shared": false,
+      "reference_count": 1,
+      "mtd_cost": 0.0
+    },
+    "23914859260": {
+      "name": "Power Washing",
+      "status": "PAUSED",
+      "budget_id": "15630999052",
+      "daily_budget": 33.0,
+      "explicitly_shared": false,
+      "reference_count": 1,
+      "mtd_cost": 0.0
+    }
+  },
+  "enabled_campaign_count": 2,
+  "enabled_campaign_ids": [
+    "23484806108",
+    "23489296528"
+  ],
+  "paused_campaign_count": 4,
+  "paused_campaign_mtd_spend": 0.0,
+  "any_shared_budget": false,
+  "current_enabled_daily_total": 66.0,
+  "proposed_enabled_daily_total": 56.0,
+  "remaining_budget": 1751.64,
+  "remaining_daily_allowance": 64.88,
+  "projection_current": 2030.36,
+  "projection_proposed": 1760.36,
+  "projection_at_complete_day_run_rate": 1946.12,
+  "headroom_at_proposed": 239.64,
+  "worst_case_if_all_six_enabled_at_current_budgets": 4190.36,
+  "projection_method": "Account MTD read FROM customer for 2026-09-01..today, plus the summed daily budget of every ENABLED campaign times the days remaining AFTER today. Today's spend is already inside MTD and is still incomplete, so today is not double counted."
+}

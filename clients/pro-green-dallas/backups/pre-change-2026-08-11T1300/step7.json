@@ -1,0 +1,326 @@
+[
+  {
+    "item": "identity + authorized manager active",
+    "intended": {
+      "id": "8735782888",
+      "name": "Pro Green - Dallas - Live",
+      "cur": "USD",
+      "mgr": false,
+      "test": false,
+      "auth_mgr": true
+    },
+    "actual": {
+      "id": "8735782888",
+      "name": "Pro Green - Dallas - Live",
+      "cur": "USD",
+      "mgr": false,
+      "test": false,
+      "auth_mgr": true
+    },
+    "PASS": true
+  },
+  {
+    "item": "7717433751 Whatconverts Form -> SECONDARY",
+    "intended": {
+      "primary": false,
+      "inConv": false
+    },
+    "actual": {
+      "primary": false,
+      "inConv": false
+    },
+    "PASS": true
+  },
+  {
+    "item": "7717433754 Whatconverts Calls -> SECONDARY",
+    "intended": {
+      "primary": false,
+      "inConv": false
+    },
+    "actual": {
+      "primary": false,
+      "inConv": false
+    },
+    "PASS": true
+  },
+  {
+    "item": "6617381255 preserved primary+inConv+ENABLED",
+    "intended": {
+      "primary": true,
+      "inConv": true,
+      "status": "ENABLED"
+    },
+    "actual": {
+      "primary": true,
+      "inConv": true,
+      "status": "ENABLED"
+    },
+    "PASS": true
+  },
+  {
+    "item": "6886101052 preserved primary+inConv+ENABLED",
+    "intended": {
+      "primary": true,
+      "inConv": true,
+      "status": "ENABLED"
+    },
+    "actual": {
+      "primary": true,
+      "inConv": true,
+      "status": "ENABLED"
+    },
+    "PASS": true
+  },
+  {
+    "item": "6886103719 preserved primary+inConv+ENABLED",
+    "intended": {
+      "primary": true,
+      "inConv": true,
+      "status": "ENABLED"
+    },
+    "actual": {
+      "primary": true,
+      "inConv": true,
+      "status": "ENABLED"
+    },
+    "PASS": true
+  },
+  {
+    "item": "conversion action count still 14",
+    "intended": 14,
+    "actual": 14,
+    "PASS": true
+  },
+  {
+    "item": "7 new keywords ENABLED",
+    "intended": 7,
+    "actual": 7,
+    "PASS": true
+  },
+  {
+    "item": "1 new keyword left PAUSED (negative conflict)",
+    "intended": 1,
+    "actual": 1,
+    "PASS": true
+  },
+  {
+    "item": "no BROAD match among new keywords",
+    "intended": 0,
+    "actual": 0,
+    "PASS": true
+  },
+  {
+    "item": "total enabled keywords in campaign",
+    "intended": 51,
+    "actual": 59,
+    "PASS": false
+  },
+  {
+    "item": "3 challenger RSAs ENABLED",
+    "intended": [
+      "ENABLED",
+      "ENABLED",
+      "ENABLED"
+    ],
+    "actual": [
+      "ENABLED",
+      "ENABLED",
+      "ENABLED"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "3 control RSAs still ENABLED",
+    "intended": [
+      "ENABLED",
+      "ENABLED",
+      "ENABLED"
+    ],
+    "actual": [
+      "ENABLED",
+      "ENABLED",
+      "ENABLED"
+    ],
+    "PASS": true
+  },
+  {
+    "item": "no disapproved ad in campaign",
+    "intended": [],
+    "actual": [],
+    "PASS": true
+  },
+  {
+    "item": "SERVING final URLs byte-for-byte unchanged",
+    "intended": [
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/"
+    ],
+    "actual": [
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-a/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/",
+      "https://progreenlandscapesolutions.com/dfw/offer-sprinkler-repair-b/"
+    ],
+    "PASS": false
+  },
+  {
+    "item": "enabled RSAs per ad group <= 3",
+    "intended": true,
+    "actual": true,
+    "PASS": true
+  },
+  {
+    "item": "3 new callouts ENABLED + APPROVED",
+    "intended": [
+      [
+        "ENABLED",
+        "APPROVED"
+      ],
+      [
+        "ENABLED",
+        "APPROVED"
+      ],
+      [
+        "ENABLED",
+        "APPROVED"
+      ]
+    ],
+    "actual": [
+      [
+        "ENABLED",
+        "APPROVED"
+      ],
+      [
+        "ENABLED",
+        "APPROVED"
+      ],
+      [
+        "ENABLED",
+        "APPROVED"
+      ]
+    ],
+    "PASS": true
+  },
+  {
+    "item": "discount callout 89872309308 still PAUSED",
+    "intended": "PAUSED",
+    "actual": "PAUSED",
+    "PASS": true
+  },
+  {
+    "item": "call asset (214) 301-3385 unchanged",
+    "intended": [
+      [
+        "(214) 301-3385",
+        "ENABLED"
+      ]
+    ],
+    "actual": [
+      [
+        "(214) 301-3385",
+        "ENABLED"
+      ]
+    ],
+    "PASS": true
+  },
+  {
+    "item": "no winterization sitelink enabled",
+    "intended": 0,
+    "actual": 0,
+    "PASS": true
+  },
+  {
+    "item": "budget still $45.00",
+    "intended": 45.0,
+    "actual": 45.0,
+    "PASS": true
+  },
+  {
+    "item": "bidding still TARGET_SPEND",
+    "intended": "TARGET_SPEND",
+    "actual": "TARGET_SPEND",
+    "PASS": true
+  },
+  {
+    "item": "campaign still ENABLED",
+    "intended": "ENABLED",
+    "actual": "ENABLED",
+    "PASS": true
+  },
+  {
+    "item": "search partners off",
+    "intended": false,
+    "actual": false,
+    "PASS": true
+  },
+  {
+    "item": "display off",
+    "intended": false,
+    "actual": false,
+    "PASS": true
+  },
+  {
+    "item": "presence targeting",
+    "intended": "PRESENCE",
+    "actual": "PRESENCE",
+    "PASS": true
+  },
+  {
+    "item": "live tracking template unchanged",
+    "intended": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20315156610",
+    "actual": "{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={_campaign}&utm_id=20315156610",
+    "PASS": true
+  },
+  {
+    "item": "74 location criteria intact",
+    "intended": 74,
+    "actual": 74,
+    "PASS": true
+  },
+  {
+    "item": "desktop enabled / tablet excluded",
+    "intended": {
+      "DESKTOP": 1.0,
+      "MOBILE": null,
+      "TABLET": 0.0
+    },
+    "actual": {
+      "DESKTOP": 1.0,
+      "MOBILE": null,
+      "TABLET": 0.0
+    },
+    "PASS": true
+  },
+  {
+    "item": "schedule 7 x 08:00-20:00 unchanged",
+    "intended": [
+      7,
+      [
+        8
+      ],
+      [
+        20
+      ]
+    ],
+    "actual": [
+      7,
+      [
+        8
+      ],
+      [
+        20
+      ]
+    ],
+    "PASS": true
+  },
+  {
+    "item": "negatives still 657 (none added this batch)",
+    "intended": 657,
+    "actual": 657,
+    "PASS": true
+  }
+]

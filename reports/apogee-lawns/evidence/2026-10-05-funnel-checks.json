@@ -1,0 +1,195 @@
+{
+ "window": [
+  "2026-09-21",
+  "2026-10-05"
+ ],
+ "whatconverts": {
+  "default": {
+   "kept": 16,
+   "qa_excluded": 0,
+   "raw": 16,
+   "by_type_source_medium_landing_number_quotable_gclid_utm": [
+    [
+     "Text Message",
+     "LSA Traffic",
+     "(none)",
+     null,
+     "4022567520",
+     "Yes",
+     false,
+     false,
+     8
+    ],
+    [
+     "Phone Call",
+     "LSA Traffic",
+     "(none)",
+     null,
+     "4022567520",
+     "Yes",
+     false,
+     false,
+     3
+    ],
+    [
+     "Phone Call",
+     "GBP Traffic",
+     "(none)",
+     null,
+     "4023832673",
+     "Pending",
+     false,
+     false,
+     1
+    ],
+    [
+     "Phone Call",
+     "GBP Traffic",
+     "(none)",
+     null,
+     "4023832673",
+     "No",
+     false,
+     false,
+     1
+    ],
+    [
+     "Text Message",
+     "NextDoor Traffic",
+     "(none)",
+     null,
+     "NON_ALLOWLISTED_NUMBER",
+     "No",
+     false,
+     false,
+     1
+    ],
+    [
+     "Phone Call",
+     "GBP Traffic",
+     "(none)",
+     null,
+     "4023832673",
+     "Yes",
+     false,
+     false,
+     1
+    ],
+    [
+     "Web Form",
+     "(direct)",
+     "(none)",
+     "offer.apogeelawns.com/",
+     null,
+     "No",
+     false,
+     false,
+     1
+    ]
+   ]
+  },
+  "duplicates": {
+   "kept": 10,
+   "qa_excluded": 0,
+   "raw": 10,
+   "by_type_source_medium_landing_number_quotable_gclid_utm": [
+    [
+     "Text Message",
+     "LSA Traffic",
+     "(none)",
+     null,
+     "4022567520",
+     "Not Set",
+     false,
+     false,
+     8
+    ],
+    [
+     "Web Form",
+     "(direct)",
+     "(none)",
+     "offer.apogeelawns.com/",
+     null,
+     "No",
+     false,
+     false,
+     1
+    ],
+    [
+     "Phone Call",
+     "GBP Traffic",
+     "(none)",
+     null,
+     "4023832673",
+     "Not Set",
+     false,
+     false,
+     1
+    ]
+   ]
+  },
+  "spam": {
+   "kept": 1,
+   "qa_excluded": 0,
+   "raw": 1,
+   "by_type_source_medium_landing_number_quotable_gclid_utm": [
+    [
+     "Text Message",
+     "GBP Traffic",
+     "(none)",
+     null,
+     "4023832673",
+     "No",
+     false,
+     false,
+     1
+    ]
+   ]
+  }
+ },
+ "web": {
+  "landing_page": {
+   "status": 202,
+   "final_url": "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/",
+   "redirects": [],
+   "bytes": 209,
+   "title": null,
+   "h1": [],
+   "sg_captcha_stub": true,
+   "gtm_container": 0,
+   "whatconverts_script": false,
+   "ppc_number_occurrences": 0,
+   "gform_ids": [],
+   "datalayer_event_occurrences": 0,
+   "noindex": false,
+   "drafting_notes_found": []
+  },
+  "thank_you": {
+   "status": 202,
+   "final_url": "https://offer.apogeelawns.com/thank-you/permanent-christmas-lights/",
+   "redirects": [],
+   "bytes": 210,
+   "title": null,
+   "h1": [],
+   "sg_captcha_stub": true,
+   "gtm_container": 0,
+   "whatconverts_script": false,
+   "ppc_number_occurrences": 0,
+   "gform_ids": [],
+   "datalayer_event_occurrences": 0,
+   "noindex": false,
+   "drafting_notes_found": []
+  },
+  "gtm_published": {
+   "status": 200,
+   "bytes": 445043,
+   "version": "3",
+   "form_label": true,
+   "website_call_label": true,
+   "thank_you_path_regex": true,
+   "custom_event_name": true,
+   "conversion_linker": true,
+   "aw_id": true
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "generated_local": "2026-08-27T17:34:59.995479-04:00",
+ "customer_id": "2401959466",
+ "edits": [
+  {
+   "file": "clients\\ambient-cooling-heating\\work-order.yaml",
+   "status": "applied",
+   "why": "Records the 2026-08-27 audit scope without touching task.mode, which the schema restricts to read, draft, create-paused or enable.",
+   "before": "      remediation drafts.\n      READ AND DRAFT ONLY on this pass.",
+   "after": "      remediation drafts.\n      SUPERSEDED SCOPE, 2026-08-27: full current-month account audit of the same five\n      services. Fresh identity gate, full structural snapshot, August performance and\n      pacing, before/after review of the 2026-08-22 budget and automotive-negative\n      changes, complete search-term verdict pass, negative and shared-list conflict\n      audit, real-browser landing-page and tracking QA, and three approval-gated\n      adjustment plans: ACE80A09AC134C85 consolidated, EE6CFAD6667A95A1 conversion\n      goals, C3038EDD9E621944 destructive negative removals.\n      READ AND DRAFT ONLY on this pass."
+  },
+  {
+   "file": "clients\\ambient-cooling-heating\\work-order.yaml",
+   "status": "already applied",
+   "why": "Windows recomputed for the 2026-08-27 run and confirmed against the API."
+  },
+  {
+   "file": "clients\\ambient-cooling-heating\\client.yaml",
+   "status": "already applied",
+   "why": "Fresh customer.optimization_score read on 2026-08-27."
+  }
+ ],
+ "files": {
+  "clients\\ambient-cooling-heating\\work-order.yaml": {
+   "sha256_before": "aa56b3ef4967fef6377bd798e7a1cda823f02a3b2c6365ec523ed194845296cf",
+   "sha256_after": "91c5dcb2f4683d49d2624fd8e1b4c853516e9698045f258b4bfcc1d3fa499fc3"
+  },
+  "clients\\ambient-cooling-heating\\client.yaml": {
+   "sha256_before": "38d2206afa41b68c26817dbc48d08b72e2b483f49856f7bfd869aab23aadaad0",
+   "sha256_after": "38d2206afa41b68c26817dbc48d08b72e2b483f49856f7bfd869aab23aadaad0"
+  }
+ },
+ "revalidation": {
+  "validate_work_order": {
+   "returncode": 0,
+   "stdout": [
+    "Work order: PASS | Ambient Cooling - Live | 2401959466 | heating-cooling | AC Repair"
+   ],
+   "stderr": ""
+  },
+  "verify_setup_online": {
+   "returncode": 0,
+   "stdout": [
+    "Credential variable names: present",
+    "Connection: OK | Ambient Cooling - Live | 2401959466 | USD | America/New_York",
+    "Preflight: PASS"
+   ],
+   "stderr": ""
+  }
+ }
+}

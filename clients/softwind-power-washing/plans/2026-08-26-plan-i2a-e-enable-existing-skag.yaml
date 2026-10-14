@@ -1,0 +1,121 @@
+# PLAN-I2A-E - CATEGORY A: ENABLE THE ONE CORRECT EXISTING PAUSED SKAG
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+# Replaces PLAN-I2 (fingerprint 6AF733F709E2, now VOID).
+#
+# Enabling is a LIVE DELIVERY CHANGE and needs its own approval.
+
+change_plan:
+  plan_id: PLAN-I2A-E
+  plan_title: Enable the one correct existing paused SKAG
+  approval_type: ENABLE_EXISTING_RESOURCES
+  priority: R5-A
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  recommended_approval_order: 5
+  ads_mutation_count: 1
+  requires_separate_enable_approval: true
+  supersedes:
+    plan_id: PLAN-I2
+    fingerprint: 6AF733F709E2
+    status: VOID
+    voided_on: '2026-08-26'
+    reason: SKAG-integrity audit of all 62 keyword rows found BOTH proposed ad groups fail the one-canonical-intent
+      test. Pressure & Power Washing contains FOUR distinct canonical intents across 34 rows; Soft
+      & House Washing contains TWO across 28 rows. All 62 rows also show semantic overlap with live
+      keywords and only PARTIAL landing-page relevance. Enabling either would put mixed intent behind
+      one RSA on a generic page - the architecture the account was revamped to remove.
+    replaced_by:
+    - PLAN-I2A-E
+    - PLAN-I2A-C
+    - PLAN-I2A-EN
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  category: A - correct existing paused SKAG, enable after QA
+  selection_note: 'Of 14 paused ad groups, exactly ONE is a true SKAG that is neither a duplicate
+    of a live keyword nor a legacy mixed container: House Washing Company Near Me. One canonical
+    intent, one keyword text in Phrase + Exact, a dedicated matching landing page, and 2 approved
+    RSAs already at ENABLED status - so enabling the ad group alone makes it serve. One mutation.'
+  honest_caveat: Keyword Planner returns NO reportable local volume for 'house washing company near
+    me'. This is a zero-build, zero-risk enablement, not a volume driver. It is included because
+    it costs nothing, not because it will move the month.
+  skag_integrity_check:
+    ad_group: House Washing Company Near Me
+    ad_group_id: '198082079463'
+    campaign_id: '24145053510'
+    campaign: 'Power Washing #2'
+    keyword_texts:
+    - house washing company near me
+    distinct_canonical_intents: 1
+    CONTAINS_EXACTLY_ONE_CANONICAL_INTENT: 'YES'
+    keyword_rows: 2
+    match_types:
+    - EXACT
+    - PHRASE
+    rsa_count: 2
+    rsa_status:
+    - ENABLED
+    rsa_approval:
+    - APPROVED
+    final_url:
+    - https://offer.softwindli.com/house-washing-company/
+    landing_page_h1: House Washing Company In Islip, West Islip & Dix Hills, NY
+    landing_page_verified_200: true
+    duplicate_live_anywhere: false
+    paired_copy_must_stay_paused: 202870585910 in campaign A
+  actions:
+  - action_id: R5A-01
+    priority: R5
+    resource_type: AD_GROUP
+    operation: UPDATE_STATUS_TO_ENABLED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: '198082079463'
+    ad_group_name: House Washing Company Near Me
+    resource_id: customers/1521725229/adGroups/198082079463
+    field_mask: status
+    current_value:
+      status: PAUSED
+      keyword_rows: 2
+      rsa_count: 2
+      rsa_status:
+      - ENABLED
+    proposed_value:
+      status: ENABLED
+    keywords_that_will_begin_serving:
+    - house washing company near me [PHRASE]
+    - house washing company near me [EXACT]
+    why: The only true, non-duplicate SKAG in paused inventory. Zero build.
+    evidence: snapshots/plan-i2-keyword-audit-2026-08-26.json
+    expected_effect: Small. No reportable Planner volume; historical delivery 2 impressions.
+    risk: LOW-MEDIUM. Historical search terms included 'house cleaning services near me' and 'slate
+      roof cleaning near me'. Approve with PLAN-E2.
+    rollback: Set ad_group 198082079463 status back to PAUSED.
+    approval_required: YES - SEPARATE ENABLE APPROVAL
+    object_count: 1
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 1
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keyword_rows_that_begin_serving: 2
+    rsas_that_begin_serving: 2
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 1
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com

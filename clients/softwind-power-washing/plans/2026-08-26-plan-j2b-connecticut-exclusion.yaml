@@ -1,0 +1,110 @@
+# PLAN-J2B - CONNECTICUT EXCLUSION
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+# LIVE ON CREATION. Connecticut re-resolved fresh this run.
+
+change_plan:
+  plan_id: PLAN-J2B
+  plan_title: Connecticut exclusion
+  approval_type: LIVE_LOCATION_CRITERIA_NEGATIVE
+  priority: R4
+  approval_status: APPROVED - executed
+  execution_status: EXECUTED 2026-08-26T17:53:53.255819-04:00
+  ads_mutation_count: 2
+  requires_separate_enable_approval: false
+  supersedes:
+    plan_id: PLAN-J
+    fingerprint: B42EAD386795
+    state: VOID - SOURCE MISMATCH
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  connecticut_resolution:
+    resolved_fresh_this_run: true
+    remembered_id_cross_check: '21139'
+    resolved_id: '21139'
+    cross_check_agrees: true
+    canonical_name: Connecticut,United States
+    target_type: State
+    status: ENABLED
+    reach: 5820000
+    total_suggestions_returned: 10
+    exact_state_matches: 1
+    note: Re-resolved live via GeoTargetConstantService. The remembered ID was used only as an assertion,
+      never as the source of truth.
+  no_action_required: []
+  authorized_scope: Connecticut only, on the two named campaigns. No other location exclusion, no
+    blanket country exclusion, no other state.
+  actions:
+  - action_id: R4-J2B-01
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    current_value: 0 negative location criteria
+    proposed_value:
+      geo_target_constant_id: '21139'
+      canonical_name: Connecticut,United States
+      target_type: State
+      negative: true
+    goes_live_on_creation: true
+    rollback: Remove this negative criterion.
+    object_count: 1
+  - action_id: R4-J2B-02
+    priority: R4
+    resource_type: CAMPAIGN_CRITERION
+    operation: CREATE
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    current_value: 0 negative location criteria
+    proposed_value:
+      geo_target_constant_id: '21139'
+      canonical_name: Connecticut,United States
+      target_type: State
+      negative: true
+    goes_live_on_creation: true
+    rollback: Remove this negative criterion.
+    object_count: 1
+  change_counts:
+    negative_location_criteria_added: 2
+    positive_location_criteria_added: 0
+    locations_removed: 0
+    geo_target_type_settings_changed: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    keywords_changed: 0
+    ads_changed: 0
+    assets_changed: 0
+    google_ads_mutations_total: 2
+  readback_qa:
+  - Re-read negative LOCATION criteria on both campaigns.
+  - Assert exactly 1 negative location criterion per campaign.
+  - Assert it resolves to 21139 Connecticut,United States.
+  - Assert no other state or country criterion exists.
+  - Assert positive location criteria are unchanged in count and IDs.
+  - Assert PRESENCE is unchanged on both campaigns.
+  interaction_note: 'Under PRESENCE targeting a Connecticut-present user is already outside the
+    positive set. This exclusion''s real effect is on the ''regularly in'' half of PRESENCE: it
+    blocks Connecticut residents who regularly travel to Long Island, including anyone who owns
+    Long Island property. Confirmed by the owner and fully reversible.'
+  risks:
+  - LIVE ON CREATION - no paused state exists.
+  - Blocks a small, genuine segment as described above.
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  execution_record:
+    approved_phrase: APPROVE PLAN-J2B 2A53E12D68F0 FOR 1521725229
+    fingerprint_verified_at_execution: 2A53E12D68F0
+    dry_run: PASSED
+    atomic_partial_failure: false
+    criteria_created: 2
+    criteria_removed: 0
+    created_resource_names:
+    - customers/1521725229/campaignCriteria/24103511039~21139
+    - customers/1521725229/campaignCriteria/24145053510~21139
+    qa_passed: true
+    evidence: snapshots/j2b-execution-2026-08-26.json

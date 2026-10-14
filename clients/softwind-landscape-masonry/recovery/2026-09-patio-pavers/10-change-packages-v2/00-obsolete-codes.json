@@ -1,0 +1,25 @@
+{
+  "note": "Every code below was generated on 2026-09-03 before the pre-approval QA gate. All are OBSOLETE and must be refused if presented.",
+  "obsolete": {
+    "PLAN-SLM-BID-1": {
+      "code": "50C553579EF3",
+      "why": "blended $22 ceiling replaced by per-campaign $16/$18"
+    },
+    "PLAN-SLM-BUD-1": {
+      "code": "D82341B7238E",
+      "why": "values unchanged but the file shape was not executable"
+    },
+    "PLAN-SLM-KW-1": {
+      "code": "19FA5CBBB1E5",
+      "why": "file shape not executable; STATUS subplan did not exist"
+    },
+    "PLAN-SLM-NEG-1": {
+      "code": "0895911A8133",
+      "why": "154 rows, 49 of them redundant"
+    },
+    "PLAN-SLM-CONV-1": {
+      "code": "FB9DA2D017AD",
+      "why": "2 operations, one of them an unproven duplicate"
+    }
+  }
+}

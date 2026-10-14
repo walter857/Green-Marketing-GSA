@@ -1,0 +1,3413 @@
+{
+  "read_at": "2026-09-03T20:04:24.448278-04:00",
+  "customer_id": "2429758629",
+  "actions": {
+    "7461572537": {
+      "name": "Calls from ads",
+      "status": "ENABLED",
+      "type": "AD_CALL",
+      "category": "PHONE_CALL_LEAD",
+      "origin": "CALL_FROM_ADS",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "counting_type": "ONE_PER_CLICK",
+      "click_through_lookback_days": 30,
+      "view_through_lookback_days": 30,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 30,
+      "default_value": 0.0,
+      "always_use_default_value": true,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7461590068": {
+      "name": "Softwind - Phone Call Lead",
+      "status": "ENABLED",
+      "type": "WEBSITE_CALL",
+      "category": "PHONE_CALL_LEAD",
+      "origin": "WEBSITE",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "counting_type": "ONE_PER_CLICK",
+      "click_through_lookback_days": 30,
+      "view_through_lookback_days": 30,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 60,
+      "default_value": 0.0,
+      "always_use_default_value": true,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7461619140": {
+      "name": "Softwind Submit lead form",
+      "status": "ENABLED",
+      "type": "WEBPAGE",
+      "category": "SUBMIT_LEAD_FORM",
+      "origin": "WEBSITE",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "counting_type": "ONE_PER_CLICK",
+      "click_through_lookback_days": 30,
+      "view_through_lookback_days": 1,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 60,
+      "default_value": 0.0,
+      "always_use_default_value": true,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7461837984": {
+      "name": "Softwind Landscape & Masonry (web) close_convert_lead",
+      "status": "HIDDEN",
+      "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+      "category": "PAGE_VIEW",
+      "origin": "WEBSITE",
+      "primary_for_goal": false,
+      "include_in_conversions_metric": false,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 90,
+      "view_through_lookback_days": 1,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": false,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7461837987": {
+      "name": "Softwind Landscape & Masonry (web) qualify_lead",
+      "status": "HIDDEN",
+      "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+      "category": "PAGE_VIEW",
+      "origin": "WEBSITE",
+      "primary_for_goal": false,
+      "include_in_conversions_metric": false,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 90,
+      "view_through_lookback_days": 1,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": false,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7461837990": {
+      "name": "Softwind Landscape & Masonry (web) purchase",
+      "status": "HIDDEN",
+      "type": "GOOGLE_ANALYTICS_4_PURCHASE",
+      "category": "PURCHASE",
+      "origin": "WEBSITE",
+      "primary_for_goal": false,
+      "include_in_conversions_metric": false,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 90,
+      "view_through_lookback_days": 1,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": false,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7480749998": {
+      "name": "Softwind Landscape & Masonry (web) phone_call_click",
+      "status": "ENABLED",
+      "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+      "category": "PHONE_CALL_LEAD",
+      "origin": "WEBSITE",
+      "primary_for_goal": false,
+      "include_in_conversions_metric": false,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 90,
+      "view_through_lookback_days": 1,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": false,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7480764700": {
+      "name": "Softwind Landscape & Masonry (web) form_submission",
+      "status": "ENABLED",
+      "type": "GOOGLE_ANALYTICS_4_CUSTOM",
+      "category": "SUBMIT_LEAD_FORM",
+      "origin": "WEBSITE",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 90,
+      "view_through_lookback_days": 1,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": false,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7491907814": {
+      "name": "Local actions - Website visits",
+      "status": "ENABLED",
+      "type": "GOOGLE_HOSTED",
+      "category": "PAGE_VIEW",
+      "origin": "GOOGLE_HOSTED",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": false,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 30,
+      "view_through_lookback_days": 7,
+      "attribution_model": "GOOGLE_ADS_LAST_CLICK",
+      "data_driven_status": "NEVER_GENERATED",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": true,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7508686781": {
+      "name": "Calls from ads (1)",
+      "status": "ENABLED",
+      "type": "AD_CALL",
+      "category": "PHONE_CALL_LEAD",
+      "origin": "CALL_FROM_ADS",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 30,
+      "view_through_lookback_days": 30,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": true,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7534783908": {
+      "name": "Local actions - Other engagements",
+      "status": "ENABLED",
+      "type": "GOOGLE_HOSTED",
+      "category": "ENGAGEMENT",
+      "origin": "GOOGLE_HOSTED",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": false,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 30,
+      "view_through_lookback_days": 7,
+      "attribution_model": "GOOGLE_ADS_LAST_CLICK",
+      "data_driven_status": "NEVER_GENERATED",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": true,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7546222032": {
+      "name": "Local actions - Directions",
+      "status": "ENABLED",
+      "type": "GOOGLE_HOSTED",
+      "category": "GET_DIRECTIONS",
+      "origin": "GOOGLE_HOSTED",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": false,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 30,
+      "view_through_lookback_days": 7,
+      "attribution_model": "GOOGLE_ADS_LAST_CLICK",
+      "data_driven_status": "NEVER_GENERATED",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": true,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7559375681": {
+      "name": "Clicks to call",
+      "status": "ENABLED",
+      "type": "GOOGLE_HOSTED",
+      "category": "CONTACT",
+      "origin": "GOOGLE_HOSTED",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": false,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 30,
+      "view_through_lookback_days": 7,
+      "attribution_model": "GOOGLE_ADS_LAST_CLICK",
+      "data_driven_status": "NEVER_GENERATED",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": true,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7561175025": {
+      "name": "Local actions - Menu views",
+      "status": "ENABLED",
+      "type": "GOOGLE_HOSTED",
+      "category": "PAGE_VIEW",
+      "origin": "GOOGLE_HOSTED",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": false,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 30,
+      "view_through_lookback_days": 7,
+      "attribution_model": "GOOGLE_ADS_LAST_CLICK",
+      "data_driven_status": "NEVER_GENERATED",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": true,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7635680357": {
+      "name": "WC Leads",
+      "status": "ENABLED",
+      "type": "UPLOAD_CLICKS",
+      "category": "CONTACT",
+      "origin": "WEBSITE",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 60,
+      "view_through_lookback_days": 15,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": false,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    },
+    "7635680543": {
+      "name": "WC Call",
+      "status": "ENABLED",
+      "type": "UPLOAD_CALLS",
+      "category": "CONTACT",
+      "origin": "CALL_FROM_ADS",
+      "primary_for_goal": true,
+      "include_in_conversions_metric": true,
+      "counting_type": "MANY_PER_CLICK",
+      "click_through_lookback_days": 60,
+      "view_through_lookback_days": 30,
+      "attribution_model": "GOOGLE_SEARCH_ATTRIBUTION_DATA_DRIVEN",
+      "data_driven_status": "AVAILABLE",
+      "phone_call_duration_seconds": 60,
+      "default_value": 1.0,
+      "always_use_default_value": false,
+      "owner_customer": "customers/2429758629",
+      "app_id": null
+    }
+  },
+  "daily_detail": [
+    {
+      "date": "2026-02-03",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-02-14",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-02-21",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-11",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-11",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-12",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-03-15",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-17",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-03-17",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 10.0
+    },
+    {
+      "date": "2026-03-17",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-03-18",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-18",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-19",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-20",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 2.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-03-22",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-23",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.5,
+      "all_conversions": 0.5
+    },
+    {
+      "date": "2026-03-23",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-23",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 58.0
+    },
+    {
+      "date": "2026-03-24",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-24",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 5.0
+    },
+    {
+      "date": "2026-03-24",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-25",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-25",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-03-26",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.5,
+      "all_conversions": 0.5
+    },
+    {
+      "date": "2026-03-27",
+      "action_id": "7461619140",
+      "action": "Softwind Submit lead form",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-27",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-27",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-03-28",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-29",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-03-29",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-01",
+      "action_id": "7461619140",
+      "action": "Softwind Submit lead form",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-01",
+      "action_id": "7461619140",
+      "action": "Softwind Submit lead form",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-01",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-01",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-01",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-01",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-01",
+      "action_id": "7561175025",
+      "action": "Local actions - Menu views",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-04-02",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 2.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-02",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-04-03",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-03",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 18.0
+    },
+    {
+      "date": "2026-04-03",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-04",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-04",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-04",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-07",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-07",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-08",
+      "action_id": "7480749998",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-08",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 2.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-09",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-09",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-10",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-04-10",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-11",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-11",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 6.0
+    },
+    {
+      "date": "2026-04-11",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-13",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 2.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-13",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-13",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-14",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-15",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-15",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-15",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-15",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-15",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-04-16",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-16",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-04-17",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-04-18",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-18",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-19",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-19",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-04-19",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-20",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-21",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-23",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-23",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-23",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 7.0
+    },
+    {
+      "date": "2026-04-24",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-24",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-24",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-25",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-25",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-26",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-27",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-27",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-27",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-28",
+      "action_id": "7461590068",
+      "action": "Softwind - Phone Call Lead",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-28",
+      "action_id": "7461619140",
+      "action": "Softwind Submit lead form",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-28",
+      "action_id": "7480749998",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 2.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-04-28",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 3.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-04-28",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-04-29",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-01",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-01",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-01",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 21.0
+    },
+    {
+      "date": "2026-05-01",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-02",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 6.0
+    },
+    {
+      "date": "2026-05-02",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-05-03",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-05",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 28.0
+    },
+    {
+      "date": "2026-05-05",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-05",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-05-06",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-05-06",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.002,
+      "all_conversions": 1.002
+    },
+    {
+      "date": "2026-05-06",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-06",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-09",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-11",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-11",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-05-12",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-14",
+      "action_id": "7461619140",
+      "action": "Softwind Submit lead form",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-14",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-15",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-15",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-16",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-05-17",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-18",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-18",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-19",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-05-19",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.998,
+      "all_conversions": 0.998
+    },
+    {
+      "date": "2026-05-19",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 9.0
+    },
+    {
+      "date": "2026-05-19",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-19",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-05-21",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-21",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-22",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.002,
+      "all_conversions": 1.002
+    },
+    {
+      "date": "2026-05-23",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-05-24",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-25",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-25",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-26",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-26",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-26",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-05-26",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-27",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-27",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-30",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-05-30",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-01",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-01",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-06-01",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-01",
+      "action_id": "7635680357",
+      "action": "WC Leads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 3.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-06-03",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-03",
+      "action_id": "7508686781",
+      "action": "Calls from ads (1)",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.998,
+      "all_conversions": 0.998
+    },
+    {
+      "date": "2026-06-09",
+      "action_id": "7635680357",
+      "action": "WC Leads",
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-11",
+      "action_id": "7480749998",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-11",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-11",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-11",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-06-11",
+      "action_id": "7635680357",
+      "action": "WC Leads",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-12",
+      "action_id": "7480749998",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 3.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-06-13",
+      "action_id": "7480749998",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-15",
+      "action_id": "7480749998",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-15",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-15",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-06-15",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-16",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 7.0
+    },
+    {
+      "date": "2026-06-17",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-17",
+      "action_id": "7461590068",
+      "action": "Softwind - Phone Call Lead",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-17",
+      "action_id": "7461619140",
+      "action": "Softwind Submit lead form",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-17",
+      "action_id": "7480749998",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-06-17",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-17",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-17",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-17",
+      "action_id": "7635680357",
+      "action": "WC Leads",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-18",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-19",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-19",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-20",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.998,
+      "all_conversions": 0.998
+    },
+    {
+      "date": "2026-06-22",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-22",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-23",
+      "action_id": "7461590068",
+      "action": "Softwind - Phone Call Lead",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-23",
+      "action_id": "7480749998",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-24",
+      "action_id": "7461590068",
+      "action": "Softwind - Phone Call Lead",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-25",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-25",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-06-25",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-06-27",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-27",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-06-28",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-29",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-30",
+      "action_id": "7480749998",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-06-30",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-06-30",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 7.0
+    },
+    {
+      "date": "2026-06-30",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-06-30",
+      "action_id": "7635680357",
+      "action": "WC Leads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 3.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-07-01",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.002,
+      "all_conversions": 1.002
+    },
+    {
+      "date": "2026-07-01",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-04",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-06",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 15.0
+    },
+    {
+      "date": "2026-07-07",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 5.0
+    },
+    {
+      "date": "2026-07-08",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-08",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 16.0
+    },
+    {
+      "date": "2026-07-08",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 12.0
+    },
+    {
+      "date": "2026-07-09",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-09",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-09",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-10",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.998,
+      "all_conversions": 0.998
+    },
+    {
+      "date": "2026-07-10",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-10",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 6.0
+    },
+    {
+      "date": "2026-07-10",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 5.0
+    },
+    {
+      "date": "2026-07-11",
+      "action_id": "7480749998",
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-07-14",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-14",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-14",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action_id": "7461619140",
+      "action": "Softwind Submit lead form",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action_id": "7461619140",
+      "action": "Softwind Submit lead form",
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action_id": "7635680357",
+      "action": "WC Leads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-15",
+      "action_id": "7635680357",
+      "action": "WC Leads",
+      "campaign_id": "23914857298",
+      "campaign": "Paver Sealing",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-16",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-16",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 14.0
+    },
+    {
+      "date": "2026-07-19",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-19",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-07-20",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-20",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-20",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 8.0
+    },
+    {
+      "date": "2026-07-21",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-23",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-24",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-24",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-07-25",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-26",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-27",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-27",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-27",
+      "action_id": "7635680357",
+      "action": "WC Leads",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 4.0,
+      "all_conversions": 4.0
+    },
+    {
+      "date": "2026-07-28",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-07-28",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 8.0
+    },
+    {
+      "date": "2026-07-28",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-29",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-30",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-30",
+      "action_id": "7559375681",
+      "action": "Clicks to call",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-07-31",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-08-01",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484545411",
+      "campaign": "Hardscaping",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-01",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-02",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23914859260",
+      "campaign": "Power Washing",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-03",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-03",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-03",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489591905",
+      "campaign": "Retaining Walls",
+      "conversions": 0.0,
+      "all_conversions": 3.0
+    },
+    {
+      "date": "2026-08-06",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-07",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-08",
+      "action_id": "7480764700",
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-08",
+      "action_id": "7635680357",
+      "action": "WC Leads",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-12",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-13",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-15",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-15",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-16",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-08-17",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-20",
+      "action_id": "7461572537",
+      "action": "Calls from ads",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-21",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-08-22",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 6.0
+    },
+    {
+      "date": "2026-08-22",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 14.0
+    },
+    {
+      "date": "2026-08-22",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-22",
+      "action_id": "7635680357",
+      "action": "WC Leads",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 1.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-25",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-26",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-26",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-26",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-28",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 2.0
+    },
+    {
+      "date": "2026-08-29",
+      "action_id": "7491907814",
+      "action": "Local actions - Website visits",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-29",
+      "action_id": "7534783908",
+      "action": "Local actions - Other engagements",
+      "campaign_id": "23484806108",
+      "campaign": "Patio",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    },
+    {
+      "date": "2026-08-31",
+      "action_id": "7546222032",
+      "action": "Local actions - Directions",
+      "campaign_id": "23489296528",
+      "campaign": "Pavers",
+      "conversions": 0.0,
+      "all_conversions": 1.0
+    }
+  ],
+  "co_occurrence": {
+    "form": {
+      "demote_candidate_id": "7461619140",
+      "keep_candidate_id": "7480764700",
+      "third_action_id": "7635680357",
+      "days_demote_fired": 6,
+      "days_keep_fired": 10,
+      "days_third_fired": 9,
+      "days_both_fired": 6,
+      "days_only_demote": 0,
+      "days_only_keep": 4,
+      "same_day_matches": [
+        {
+          "date": "2026-03-27",
+          "demote_candidate": 1.0,
+          "keep_candidate": 1.0,
+          "third_action": 0.0
+        },
+        {
+          "date": "2026-04-01",
+          "demote_candidate": 2.0,
+          "keep_candidate": 2.0,
+          "third_action": 0.0
+        },
+        {
+          "date": "2026-04-28",
+          "demote_candidate": 1.0,
+          "keep_candidate": 3.0,
+          "third_action": 0.0
+        },
+        {
+          "date": "2026-05-14",
+          "demote_candidate": 1.0,
+          "keep_candidate": 1.0,
+          "third_action": 0.0
+        },
+        {
+          "date": "2026-06-17",
+          "demote_candidate": 1.0,
+          "keep_candidate": 1.0,
+          "third_action": 1.0
+        },
+        {
+          "date": "2026-07-15",
+          "demote_candidate": 2.0,
+          "keep_candidate": 2.0,
+          "third_action": 2.0
+        }
+      ],
+      "days_only_demote_detail": [],
+      "days_only_keep_detail": [
+        {
+          "date": "2026-03-23",
+          "keep_candidate": 0.5
+        },
+        {
+          "date": "2026-03-26",
+          "keep_candidate": 0.5
+        },
+        {
+          "date": "2026-03-29",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-08-08",
+          "keep_candidate": 1.0
+        }
+      ],
+      "same_day_equal_counts": 5
+    },
+    "call": {
+      "demote_candidate_id": "7508686781",
+      "keep_candidate_id": "7461572537",
+      "third_action_id": "7635680543",
+      "days_demote_fired": 19,
+      "days_keep_fired": 13,
+      "days_third_fired": 0,
+      "days_both_fired": 0,
+      "days_only_demote": 19,
+      "days_only_keep": 13,
+      "same_day_matches": [],
+      "days_only_demote_detail": [
+        {
+          "date": "2026-02-21",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-03-11",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-03-20",
+          "demote_candidate": 2.0
+        },
+        {
+          "date": "2026-04-02",
+          "demote_candidate": 2.0
+        },
+        {
+          "date": "2026-04-07",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-04-08",
+          "demote_candidate": 2.0
+        },
+        {
+          "date": "2026-04-09",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-04-13",
+          "demote_candidate": 2.0
+        },
+        {
+          "date": "2026-04-15",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-04-16",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-04-23",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-04-24",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-05-06",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-05-19",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-05-21",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-05-22",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-05-26",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-05-27",
+          "demote_candidate": 1.0
+        },
+        {
+          "date": "2026-06-03",
+          "demote_candidate": 1.0
+        }
+      ],
+      "days_only_keep_detail": [
+        {
+          "date": "2026-06-17",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-06-19",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-06-20",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-06-22",
+          "keep_candidate": 2.0
+        },
+        {
+          "date": "2026-06-29",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-07-01",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-07-08",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-07-09",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-07-10",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-07-20",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-07-27",
+          "keep_candidate": 2.0
+        },
+        {
+          "date": "2026-08-06",
+          "keep_candidate": 1.0
+        },
+        {
+          "date": "2026-08-20",
+          "keep_candidate": 1.0
+        }
+      ],
+      "same_day_equal_counts": 0
+    }
+  },
+  "conversion_lag": [
+    {
+      "action": "Calls from ads",
+      "action_id": "7461572537",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Calls from ads",
+      "action_id": "7461572537",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "Calls from ads",
+      "action_id": "7461572537",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 8.996
+    },
+    {
+      "action": "Calls from ads",
+      "action_id": "7461572537",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 2.0
+    },
+    {
+      "action": "Softwind - Phone Call Lead",
+      "action_id": "7461590068",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Softwind - Phone Call Lead",
+      "action_id": "7461590068",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "Softwind Submit lead form",
+      "action_id": "7461619140",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Softwind Submit lead form",
+      "action_id": "7461619140",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Softwind Submit lead form",
+      "action_id": "7461619140",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 4.0
+    },
+    {
+      "action": "Softwind Submit lead form",
+      "action_id": "7461619140",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Softwind Submit lead form",
+      "action_id": "7461619140",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "action_id": "7480749998",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 5.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "action_id": "7480749998",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 2.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "action_id": "7480749998",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 6.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "action_id": "7480749998",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) phone_call_click",
+      "action_id": "7480749998",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "action_id": "7480764700",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "action_id": "7480764700",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "action_id": "7480764700",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 2.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "action_id": "7480764700",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 6.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "action_id": "7480764700",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "action_id": "7480764700",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "action_id": "7480764700",
+      "lag_bucket": "SIX_TO_SEVEN_DAYS",
+      "all_conversions": 0.5
+    },
+    {
+      "action": "Softwind Landscape & Masonry (web) form_submission",
+      "action_id": "7480764700",
+      "lag_bucket": "NINE_TO_TEN_DAYS",
+      "all_conversions": 0.5
+    },
+    {
+      "action": "Local actions - Website visits",
+      "action_id": "7491907814",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 6.0
+    },
+    {
+      "action": "Local actions - Website visits",
+      "action_id": "7491907814",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 14.0
+    },
+    {
+      "action": "Local actions - Website visits",
+      "action_id": "7491907814",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 13.0
+    },
+    {
+      "action": "Local actions - Website visits",
+      "action_id": "7491907814",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 42.0
+    },
+    {
+      "action": "Local actions - Website visits",
+      "action_id": "7491907814",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "Local actions - Website visits",
+      "action_id": "7491907814",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "Local actions - Website visits",
+      "action_id": "7491907814",
+      "lag_bucket": "TWO_TO_THREE_DAYS",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Local actions - Website visits",
+      "action_id": "7491907814",
+      "lag_bucket": "NINE_TO_TEN_DAYS",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "Calls from ads (1)",
+      "action_id": "7508686781",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 2.0
+    },
+    {
+      "action": "Calls from ads (1)",
+      "action_id": "7508686781",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 19.996
+    },
+    {
+      "action": "Calls from ads (1)",
+      "action_id": "7508686781",
+      "lag_bucket": "TWO_TO_THREE_DAYS",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 9.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 37.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 78.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 208.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 2.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "ONE_TO_TWO_DAYS",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "FOUR_TO_FIVE_DAYS",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "FIVE_TO_SIX_DAYS",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "SIX_TO_SEVEN_DAYS",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "NINE_TO_TEN_DAYS",
+      "all_conversions": 8.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "THIRTEEN_TO_FOURTEEN_DAYS",
+      "all_conversions": 2.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "FOURTEEN_TO_TWENTY_ONE_DAYS",
+      "all_conversions": 7.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "FOURTEEN_TO_TWENTY_ONE_DAYS",
+      "all_conversions": 7.0
+    },
+    {
+      "action": "Local actions - Other engagements",
+      "action_id": "7534783908",
+      "lag_bucket": "TWENTY_ONE_TO_THIRTY_DAYS",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "Local actions - Directions",
+      "action_id": "7546222032",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 7.0
+    },
+    {
+      "action": "Local actions - Directions",
+      "action_id": "7546222032",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "Local actions - Directions",
+      "action_id": "7546222032",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 4.0
+    },
+    {
+      "action": "Local actions - Directions",
+      "action_id": "7546222032",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 16.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 4.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 23.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "ONE_TO_TWO_DAYS",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "TWO_TO_THREE_DAYS",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "FOUR_TO_FIVE_DAYS",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "SEVEN_TO_EIGHT_DAYS",
+      "all_conversions": 2.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "ELEVEN_TO_TWELVE_DAYS",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "THIRTEEN_TO_FOURTEEN_DAYS",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "FOURTEEN_TO_TWENTY_ONE_DAYS",
+      "all_conversions": 7.0
+    },
+    {
+      "action": "Clicks to call",
+      "action_id": "7559375681",
+      "lag_bucket": "TWENTY_ONE_TO_THIRTY_DAYS",
+      "all_conversions": 6.0
+    },
+    {
+      "action": "Local actions - Menu views",
+      "action_id": "7561175025",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "WC Leads",
+      "action_id": "7635680357",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "WC Leads",
+      "action_id": "7635680357",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "WC Leads",
+      "action_id": "7635680357",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "WC Leads",
+      "action_id": "7635680357",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 4.0
+    },
+    {
+      "action": "WC Leads",
+      "action_id": "7635680357",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 2.0
+    },
+    {
+      "action": "WC Leads",
+      "action_id": "7635680357",
+      "lag_bucket": "LESS_THAN_ONE_DAY",
+      "all_conversions": 2.0
+    },
+    {
+      "action": "WC Leads",
+      "action_id": "7635680357",
+      "lag_bucket": "THIRTEEN_TO_FOURTEEN_DAYS",
+      "all_conversions": 1.0
+    },
+    {
+      "action": "WC Leads",
+      "action_id": "7635680357",
+      "lag_bucket": "TWENTY_ONE_TO_THIRTY_DAYS",
+      "all_conversions": 3.0
+    },
+    {
+      "action": "WC Leads",
+      "action_id": "7635680357",
+      "lag_bucket": "TWENTY_ONE_TO_THIRTY_DAYS",
+      "all_conversions": 2.0
+    }
+  ],
+  "customer_goals": [
+    {
+      "category": "PHONE_CALL_LEAD",
+      "origin": "WEBSITE",
+      "biddable": true
+    },
+    {
+      "category": "SUBMIT_LEAD_FORM",
+      "origin": "WEBSITE",
+      "biddable": true
+    },
+    {
+      "category": "CONTACT",
+      "origin": "WEBSITE",
+      "biddable": true
+    },
+    {
+      "category": "PAGE_VIEW",
+      "origin": "GOOGLE_HOSTED",
+      "biddable": false
+    },
+    {
+      "category": "GET_DIRECTIONS",
+      "origin": "GOOGLE_HOSTED",
+      "biddable": false
+    },
+    {
+      "category": "CONTACT",
+      "origin": "GOOGLE_HOSTED",
+      "biddable": false
+    },
+    {
+      "category": "ENGAGEMENT",
+      "origin": "GOOGLE_HOSTED",
+      "biddable": false
+    },
+    {
+      "category": "PHONE_CALL_LEAD",
+      "origin": "CALL_FROM_ADS",
+      "biddable": true
+    },
+    {
+      "category": "CONTACT",
+      "origin": "CALL_FROM_ADS",
+      "biddable": true
+    }
+  ],
+  "errors": []
+}

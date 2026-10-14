@@ -1,0 +1,54 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Heating Maintenance
+    related_services:
+      - Furnace Maintenance
+      - Furnace Tune-Up
+      - Heating Tune-Up
+      - Heating System Inspection
+  task:
+    type: campaign-revamp
+    mode: enable
+    request: >-
+      Green Marketing instruction 2026-10-02: enable campaign 24279798229 'Search | NonBrand | Heating Maintenance & Inspection'
+      using the main-site destination https://ambientcoolingandheating.com/services/heating-services/ (supersedes the
+      2026-09-24 offer-page-only rule for this campaign). Verify the page's maintenance/tune-up/inspection content, align the ads,
+      enable the intended groups and approved keywords, reuse suitable RSAs or create two distinct RSAs per group from verified
+      facts (create paused -> read back -> enable), and enable appropriate assets.
+    date_range: "CURRENT AS AT 2026-10-02"
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://ambientcoolingandheating.com/services/heating-services/
+    url_supplied_by: "Green Marketing, 2026-10-02"
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    campaign_id: "24279798229"
+    daily_budget: null
+    monthly_allocation_usd: 1000
+    primary_conversion_goal: "unique genuine paid maintenance / inspection lead (form or call)"
+    tablets: excluded
+    test_leads: "declined by owner"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-orders/work-order-heating-transition-2026-09.yaml
+      - reports/ambient-cooling-heating/2026-09-30-maintenance-evaluation-and-plan.md
+    change_authorized: true   # staged authorization 2026-10-02
+  authorization_2026_10_02_staged:
+    source: "Green Marketing instruction in the Claude Code session, 2026-10-02 ('Complete the Account Cleanup and Launch the Approved Campaigns')"
+    sequence_authorized: "prepare + validate -> create PAUSED -> read back -> enable after successful QA, without a further confirmation between stages, for the defined scope only"
+    in_scope: "Emergency enable; Geothermal ads/sitelinks to /geothermal-heat-pump/ + enable; Heating Maintenance & Inspection on https://ambientcoolingandheating.com/services/heating-services/; complete + enable intended current resources in the 8 Search campaigns; high-confidence EXACT negatives; $1,000/month per campaign (8 Search + 2 PMax); launch the 2 PMax campaigns; tablet exclusions; policy-compatible targeting inside the approved service area"
+    excluded: "deletions; unrelated legacy campaigns or unsupported services; spend above the allocations; conversion-action, upload, tracking-number or Business Profile phone changes; Phrase/Broad negatives; test leads/forms/calls/uploads; new website deployments"
+    fingerprints_still_recorded: true
+  approval_owner: Green Marketing

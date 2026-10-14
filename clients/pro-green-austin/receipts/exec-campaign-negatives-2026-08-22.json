@@ -1,0 +1,422 @@
+{
+  "subplan": "EXISTING_RESOURCES",
+  "fingerprint": "628D3E61A9C2",
+  "customer_id": "7380491929",
+  "exact_child_account_name": "Pro Green - Austin - Live",
+  "mode": "LIVE WRITE",
+  "executed_at_utc": "2026-08-22T14:09:42.429212+00:00",
+  "approved_actions": 68,
+  "approved_objects": 68,
+  "api_operations": 68,
+  "partial_failure": false,
+  "results": [
+    {
+      "index": 0,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~359302767555",
+      "log": "CNEG-001 CREATE negative PHRASE 'allied outdoor solutions' on 24053505501"
+    },
+    {
+      "index": 1,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~359302767555",
+      "log": "CNEG-002 CREATE negative PHRASE 'allied outdoor solutions' on 24053505504"
+    },
+    {
+      "index": 2,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~66019371",
+      "log": "CNEG-003 CREATE negative PHRASE 'asphalt' on 24053505501"
+    },
+    {
+      "index": 3,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~66019371",
+      "log": "CNEG-004 CREATE negative PHRASE 'asphalt' on 24053505504"
+    },
+    {
+      "index": 4,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~612565721912",
+      "log": "CNEG-005 CREATE negative PHRASE 'biggadike' on 24053505501"
+    },
+    {
+      "index": 5,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~612565721912",
+      "log": "CNEG-006 CREATE negative PHRASE 'biggadike' on 24053505504"
+    },
+    {
+      "index": 6,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~335761771809",
+      "log": "CNEG-007 CREATE negative PHRASE 'blingle' on 24053505501"
+    },
+    {
+      "index": 7,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~335761771809",
+      "log": "CNEG-008 CREATE negative PHRASE 'blingle' on 24053505504"
+    },
+    {
+      "index": 8,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~1241444663482",
+      "log": "CNEG-009 CREATE negative PHRASE 'casas landscaping' on 24053505501"
+    },
+    {
+      "index": 9,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~1241444663482",
+      "log": "CNEG-010 CREATE negative PHRASE 'casas landscaping' on 24053505504"
+    },
+    {
+      "index": 10,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~328266504623",
+      "log": "CNEG-011 CREATE negative PHRASE 'cooper and company' on 24053505501"
+    },
+    {
+      "index": 11,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~328266504623",
+      "log": "CNEG-012 CREATE negative PHRASE 'cooper and company' on 24053505504"
+    },
+    {
+      "index": 12,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~388150676767",
+      "log": "CNEG-013 CREATE negative PHRASE 'cutters landscaping' on 24053505501"
+    },
+    {
+      "index": 13,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~388150676767",
+      "log": "CNEG-014 CREATE negative PHRASE 'cutters landscaping' on 24053505504"
+    },
+    {
+      "index": 14,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~74584220",
+      "log": "CNEG-015 CREATE negative PHRASE 'dallas' on 24053505501"
+    },
+    {
+      "index": 15,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~74584220",
+      "log": "CNEG-016 CREATE negative PHRASE 'dallas' on 24053505504"
+    },
+    {
+      "index": 16,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~362931897008",
+      "log": "CNEG-017 CREATE negative PHRASE 'design ecology' on 24053505501"
+    },
+    {
+      "index": 17,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~362931897008",
+      "log": "CNEG-018 CREATE negative PHRASE 'design ecology' on 24053505504"
+    },
+    {
+      "index": 18,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~89025437",
+      "log": "CNEG-019 CREATE negative PHRASE 'dfw' on 24053505501"
+    },
+    {
+      "index": 19,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~89025437",
+      "log": "CNEG-020 CREATE negative PHRASE 'dfw' on 24053505504"
+    },
+    {
+      "index": 20,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~305419078486",
+      "log": "CNEG-021 CREATE negative PHRASE 'dl landscaping' on 24053505501"
+    },
+    {
+      "index": 21,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~305419078486",
+      "log": "CNEG-022 CREATE negative PHRASE 'dl landscaping' on 24053505504"
+    },
+    {
+      "index": 22,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~390988445748",
+      "log": "CNEG-023 CREATE negative PHRASE 'ecotopes' on 24053505501"
+    },
+    {
+      "index": 23,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~390988445748",
+      "log": "CNEG-024 CREATE negative PHRASE 'ecotopes' on 24053505504"
+    },
+    {
+      "index": 24,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2471268867314",
+      "log": "CNEG-025 CREATE negative PHRASE 'estudio ome' on 24053505501"
+    },
+    {
+      "index": 25,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2471268867314",
+      "log": "CNEG-026 CREATE negative PHRASE 'estudio ome' on 24053505504"
+    },
+    {
+      "index": 26,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2485915434123",
+      "log": "CNEG-027 CREATE negative PHRASE 'four roots landscaping' on 24053505501"
+    },
+    {
+      "index": 27,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2485915434123",
+      "log": "CNEG-028 CREATE negative PHRASE 'four roots landscaping' on 24053505504"
+    },
+    {
+      "index": 28,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2443451601044",
+      "log": "CNEG-029 CREATE negative PHRASE 'ground and garden' on 24053505501"
+    },
+    {
+      "index": 29,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2443451601044",
+      "log": "CNEG-030 CREATE negative PHRASE 'ground and garden' on 24053505504"
+    },
+    {
+      "index": 30,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~38146933503",
+      "log": "CNEG-031 CREATE negative PHRASE 'ground guys' on 24053505501"
+    },
+    {
+      "index": 31,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~38146933503",
+      "log": "CNEG-032 CREATE negative PHRASE 'ground guys' on 24053505504"
+    },
+    {
+      "index": 32,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~13267310",
+      "log": "CNEG-033 CREATE negative PHRASE 'handrail' on 24053505501"
+    },
+    {
+      "index": 33,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~13267310",
+      "log": "CNEG-034 CREATE negative PHRASE 'handrail' on 24053505504"
+    },
+    {
+      "index": 34,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~161927918",
+      "log": "CNEG-035 CREATE negative PHRASE 'hellas' on 24053505501"
+    },
+    {
+      "index": 35,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~161927918",
+      "log": "CNEG-036 CREATE negative PHRASE 'hellas' on 24053505504"
+    },
+    {
+      "index": 36,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~93930654",
+      "log": "CNEG-037 CREATE negative PHRASE 'lubbock' on 24053505501"
+    },
+    {
+      "index": 37,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~93930654",
+      "log": "CNEG-038 CREATE negative PHRASE 'lubbock' on 24053505504"
+    },
+    {
+      "index": 38,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~998165786325",
+      "log": "CNEG-039 CREATE negative PHRASE 'magnolia turf' on 24053505501"
+    },
+    {
+      "index": 39,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~998165786325",
+      "log": "CNEG-040 CREATE negative PHRASE 'magnolia turf' on 24053505504"
+    },
+    {
+      "index": 40,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~369421311277",
+      "log": "CNEG-041 CREATE negative PHRASE 'outdoor lighting perspectives' on 24053505501"
+    },
+    {
+      "index": 41,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~369421311277",
+      "log": "CNEG-042 CREATE negative PHRASE 'outdoor lighting perspectives' on 24053505504"
+    },
+    {
+      "index": 42,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2091335612075",
+      "log": "CNEG-043 CREATE negative PHRASE 'ps landscapes' on 24053505501"
+    },
+    {
+      "index": 43,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2091335612075",
+      "log": "CNEG-044 CREATE negative PHRASE 'ps landscapes' on 24053505504"
+    },
+    {
+      "index": 44,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~366277074422",
+      "log": "CNEG-045 CREATE negative PHRASE 'ranchers landscaping' on 24053505501"
+    },
+    {
+      "index": 45,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~366277074422",
+      "log": "CNEG-046 CREATE negative PHRASE 'ranchers landscaping' on 24053505504"
+    },
+    {
+      "index": 46,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~29366591",
+      "log": "CNEG-047 CREATE negative PHRASE 'san antonio' on 24053505501"
+    },
+    {
+      "index": 47,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~29366591",
+      "log": "CNEG-048 CREATE negative PHRASE 'san antonio' on 24053505504"
+    },
+    {
+      "index": 48,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~367388504761",
+      "log": "CNEG-049 CREATE negative PHRASE 'southern turf' on 24053505501"
+    },
+    {
+      "index": 49,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~367388504761",
+      "log": "CNEG-050 CREATE negative PHRASE 'southern turf' on 24053505504"
+    },
+    {
+      "index": 50,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~304140181391",
+      "log": "CNEG-051 CREATE negative PHRASE 'terra landscaping' on 24053505501"
+    },
+    {
+      "index": 51,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~304140181391",
+      "log": "CNEG-052 CREATE negative PHRASE 'terra landscaping' on 24053505504"
+    },
+    {
+      "index": 52,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2468495283009",
+      "log": "CNEG-053 CREATE negative PHRASE 'the mark landscapes' on 24053505501"
+    },
+    {
+      "index": 53,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2468495283009",
+      "log": "CNEG-054 CREATE negative PHRASE 'the mark landscapes' on 24053505504"
+    },
+    {
+      "index": 54,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2690187491672",
+      "log": "CNEG-055 CREATE negative PHRASE 'twelve point landscaping' on 24053505501"
+    },
+    {
+      "index": 55,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2690187491672",
+      "log": "CNEG-056 CREATE negative PHRASE 'twelve point landscaping' on 24053505504"
+    },
+    {
+      "index": 56,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~33117781",
+      "log": "CNEG-057 CREATE negative PHRASE 'waco' on 24053505501"
+    },
+    {
+      "index": 57,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~33117781",
+      "log": "CNEG-058 CREATE negative PHRASE 'waco' on 24053505504"
+    },
+    {
+      "index": 58,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2690187491512",
+      "log": "CNEG-059 CREATE negative PHRASE 'waldemar landscaping' on 24053505501"
+    },
+    {
+      "index": 59,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2690187491512",
+      "log": "CNEG-060 CREATE negative PHRASE 'waldemar landscaping' on 24053505504"
+    },
+    {
+      "index": 60,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~2469633009729",
+      "log": "CNEG-061 CREATE negative PHRASE 'waterloo artificial turf' on 24053505501"
+    },
+    {
+      "index": 61,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~2469633009729",
+      "log": "CNEG-062 CREATE negative PHRASE 'waterloo artificial turf' on 24053505504"
+    },
+    {
+      "index": 62,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~1890287446545",
+      "log": "CNEG-063 CREATE negative PHRASE 'waterloo turf' on 24053505501"
+    },
+    {
+      "index": 63,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~1890287446545",
+      "log": "CNEG-064 CREATE negative PHRASE 'waterloo turf' on 24053505504"
+    },
+    {
+      "index": 64,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~660803713343",
+      "log": "CNEG-065 CREATE negative PHRASE 'yardzen' on 24053505501"
+    },
+    {
+      "index": 65,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~660803713343",
+      "log": "CNEG-066 CREATE negative PHRASE 'yardzen' on 24053505504"
+    },
+    {
+      "index": 66,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505501~670887105821",
+      "log": "CNEG-067 CREATE negative PHRASE 'zeterre' on 24053505501"
+    },
+    {
+      "index": 67,
+      "type": "campaign_criterion_result",
+      "resource_name": "customers/7380491929/campaignCriteria/24053505504~670887105821",
+      "log": "CNEG-068 CREATE negative PHRASE 'zeterre' on 24053505504"
+    }
+  ]
+}

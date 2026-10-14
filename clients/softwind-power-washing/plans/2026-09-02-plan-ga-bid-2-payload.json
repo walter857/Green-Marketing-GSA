@@ -1,0 +1,37 @@
+{
+ "plan_id": "PLAN-GA-BID-2",
+ "target": {
+  "exact_child_account_name": "Softwind Power Washing - Live",
+  "child_customer_id": "1521725229",
+  "exact_service": "Power Washing",
+  "manager_customer_id": "3373711342"
+ },
+ "actions": [
+  {
+   "action": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "customer_id": "1521725229",
+   "campaign_id": "24103511039",
+   "campaign_name": "Power Washing",
+   "resource_name": "customers/1521725229/campaigns/24103511039",
+   "field": "target_spend.cpc_bid_ceiling_micros",
+   "field_mask": "target_spend.cpc_bid_ceiling_micros",
+   "current_value_micros": 30000000,
+   "current_value_usd": 30.0,
+   "proposed_value_micros": 18000000,
+   "proposed_value_usd": 18.0
+  },
+  {
+   "action": "UPDATE_CAMPAIGN_CPC_BID_CEILING",
+   "customer_id": "1521725229",
+   "campaign_id": "24145053510",
+   "campaign_name": "Pressure Washing",
+   "resource_name": "customers/1521725229/campaigns/24145053510",
+   "field": "target_spend.cpc_bid_ceiling_micros",
+   "field_mask": "target_spend.cpc_bid_ceiling_micros",
+   "current_value_micros": 30000000,
+   "current_value_usd": 30.0,
+   "proposed_value_micros": 18000000,
+   "proposed_value_usd": 18.0
+  }
+ ]
+}

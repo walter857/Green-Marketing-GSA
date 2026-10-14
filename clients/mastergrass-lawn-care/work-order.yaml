@@ -1,0 +1,42 @@
+work_order:
+  client_slug: mastergrass-lawn-care
+  business_name: Master Grass Lawn Care
+  account:
+    exact_child_account_name: MasterGrass - Live
+    child_customer_id: "9487471092"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: landscaping
+    exact_primary_service: All services with spend (whole-account audit scope)
+    # Operator answer 2026-09-26: "Every service with spend". The per-campaign
+    # service list is recorded from the read-only snapshot, not asserted here.
+    related_services: []
+  task:
+    type: campaign-build
+    mode: create-paused
+    request: >-
+      Deep read-only audit. Why has the account produced no leads in the last 7
+      days while spending more than $300. Search terms for negative keywords,
+      RSA headlines and descriptions for CTR, conversion actions, and WhatConverts
+      leads versus Google Ads attribution. No fixes implemented.
+      2026-09-26 follow-up (owner): improve RSA headlines/descriptions with no city names; add as
+      many exact + phrase negatives as possible incl. forecast terms; reduce the Hardscaping budget;
+      build a drainage Performance Max (15 headlines, 5 long headlines, all assets, images from the
+      live website and landing page, reuse the French drain landing page) and put it live.
+      Packages MG-0926-BUD / -NEG / -RSA / -PMAX each need their own fingerprint approval; new
+      delivery resources are created PAUSED and enabling needs a second approval after readback.
+      Service for the PMax: French drain & yard drainage installation (in client.offer.services_in_scope).
+    date_range: >-
+      last_7 = 2026-09-19..2026-09-25 (plus 2026-09-26 partial), compared with
+      the previous 7, 30 and 90 days and all available history.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. landscaping is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.mastergrasslawncare.com/
+    service_area: []
+    daily_budget: null
+    primary_conversion_goal: qualified leads (form and call)
+    source_files: []
+  approval_owner: Green Marketing

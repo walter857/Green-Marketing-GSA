@@ -1,0 +1,218 @@
+{
+ "generated_local": "2026-09-10T13:23:09.304713-04:00",
+ "readback_failures": [],
+ "state": {
+  "AC Repair": {
+   "ceiling_micros": 25000000,
+   "budget_micros": 141450000,
+   "strategy": "TARGET_SPEND",
+   "status": "ENABLED"
+  },
+  "Gas Boiler Repair": {
+   "ceiling_micros": 25000000,
+   "budget_micros": 5000000,
+   "strategy": "TARGET_SPEND",
+   "status": "ENABLED"
+  },
+  "HVAC Installation": {
+   "ceiling_micros": 30000000,
+   "budget_micros": 176150000,
+   "strategy": "TARGET_SPEND",
+   "status": "ENABLED"
+  },
+  "HVAC Repair": {
+   "ceiling_micros": 25000000,
+   "budget_micros": 78950000,
+   "strategy": "TARGET_SPEND",
+   "status": "ENABLED"
+  },
+  "HVAC Replacement": {
+   "ceiling_micros": 30000000,
+   "budget_micros": 20000000,
+   "strategy": "TARGET_SPEND",
+   "status": "ENABLED"
+  }
+ },
+ "six_ad_policy_inventory": [
+  {
+   "ad_id": "820944944368",
+   "campaign": "HVAC Replacement",
+   "campaign_id": "24132507753",
+   "ad_group_id": "200159223798",
+   "ad_group": "SKAG | HVAC Replacement Near Me",
+   "ad_group_status": "ENABLED",
+   "ad_status": "PAUSED",
+   "ad_type": "RESPONSIVE_SEARCH_AD",
+   "final_urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+   ],
+   "approval_status": "DISAPPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": [],
+     "constraints": [
+      ""
+     ]
+    }
+   ]
+  },
+  {
+   "ad_id": "820944944371",
+   "campaign": "HVAC Replacement",
+   "campaign_id": "24132507753",
+   "ad_group_id": "200159223798",
+   "ad_group": "SKAG | HVAC Replacement Near Me",
+   "ad_group_status": "ENABLED",
+   "ad_status": "PAUSED",
+   "ad_type": "RESPONSIVE_SEARCH_AD",
+   "final_urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-replacement/"
+   ],
+   "approval_status": "DISAPPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": [],
+     "constraints": [
+      ""
+     ]
+    }
+   ]
+  },
+  {
+   "ad_id": "820900825428",
+   "campaign": "Gas Boiler Repair",
+   "campaign_id": "24132507744",
+   "ad_group_id": "202339087594",
+   "ad_group": "SKAG | Gas Boiler Repair",
+   "ad_group_status": "ENABLED",
+   "ad_status": "PAUSED",
+   "ad_type": "RESPONSIVE_SEARCH_AD",
+   "final_urls": [
+    "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+   ],
+   "approval_status": "DISAPPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": [],
+     "constraints": [
+      ""
+     ]
+    }
+   ]
+  },
+  {
+   "ad_id": "820900825431",
+   "campaign": "Gas Boiler Repair",
+   "campaign_id": "24132507744",
+   "ad_group_id": "202339087594",
+   "ad_group": "SKAG | Gas Boiler Repair",
+   "ad_group_status": "ENABLED",
+   "ad_status": "PAUSED",
+   "ad_type": "RESPONSIVE_SEARCH_AD",
+   "final_urls": [
+    "https://offer.ambientcoolingandheating.com/gas-boiler-repair/"
+   ],
+   "approval_status": "DISAPPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": [],
+     "constraints": [
+      ""
+     ]
+    }
+   ]
+  },
+  {
+   "ad_id": "820900825434",
+   "campaign": "HVAC Installation",
+   "campaign_id": "24132507747",
+   "ad_group_id": "202339087634",
+   "ad_group": "SKAG | HVAC Installation",
+   "ad_group_status": "ENABLED",
+   "ad_status": "PAUSED",
+   "ad_type": "RESPONSIVE_SEARCH_AD",
+   "final_urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-installation/"
+   ],
+   "approval_status": "DISAPPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": [],
+     "constraints": [
+      ""
+     ]
+    }
+   ]
+  },
+  {
+   "ad_id": "820900825437",
+   "campaign": "HVAC Installation",
+   "campaign_id": "24132507747",
+   "ad_group_id": "202339087634",
+   "ad_group": "SKAG | HVAC Installation",
+   "ad_group_status": "ENABLED",
+   "ad_status": "PAUSED",
+   "ad_type": "RESPONSIVE_SEARCH_AD",
+   "final_urls": [
+    "https://offer.ambientcoolingandheating.com/hvac-installation/"
+   ],
+   "approval_status": "DISAPPROVED",
+   "review_status": "REVIEWED",
+   "policy_topics": [
+    {
+     "topic": "CONSUMER_FINANCE",
+     "type": "FULLY_LIMITED",
+     "evidences": [],
+     "constraints": [
+      ""
+     ]
+    }
+   ]
+  }
+ ],
+ "six_ad_missing": [],
+ "delivery_cover": {
+  "200159223798": {
+   "campaign": "HVAC Replacement",
+   "ad_group_status": "ENABLED",
+   "total_ads": 4,
+   "enabled_approved": [
+    "821319509203",
+    "821319509206"
+   ]
+  },
+  "202339087594": {
+   "campaign": "Gas Boiler Repair",
+   "ad_group_status": "ENABLED",
+   "total_ads": 4,
+   "enabled_approved": [
+    "821319509209",
+    "821319509212"
+   ]
+  },
+  "202339087634": {
+   "campaign": "HVAC Installation",
+   "ad_group_status": "ENABLED",
+   "total_ads": 4,
+   "enabled_approved": [
+    "821319509197",
+    "821319509200"
+   ]
+  }
+ }
+}

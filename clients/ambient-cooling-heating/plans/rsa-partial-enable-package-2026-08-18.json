@@ -1,0 +1,106 @@
+{
+ "package": "ambient-cooling-heating-rsa-partial-enable",
+ "version": "2026-08-18",
+ "replaces_blocked_package": "80868F985D33B756",
+ "phase": "modify-existing",
+ "approval_class": "NON-DESTRUCTIVE - status change on three paused ads only",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342"
+ },
+ "blocker_that_forced_this": {
+  "error": "RESOURCE_LIMIT / RESPONSIVE_SEARCH_ADS_PER_AD_GROUP",
+  "api_detail": "limit=3, existing_count=2, enclosing_resource=ad_group",
+  "meaning": "Google Ads allows at most 3 ENABLED responsive search ads per ad group. Paused RSAs do not count: each of the three ad groups reports existing_count=2 while holding 4 non-removed RSAs (2 ENABLED originals + 2 PAUSED replacements). Enabling both replacements would make 4 enabled, which exceeds the limit.",
+  "validated_facts": [
+   "Enabling all six at once: REJECTED, 3 errors (operations 1, 3, 5 - the second ad in each group).",
+   "Enabling ONE replacement per ad group: VALIDATES OK.",
+   "Pausing the 6 originals and enabling the 6 replacements in one atomic request: VALIDATES OK."
+  ],
+  "why_the_original_sequence_was_wrong": "The enablement package 80868F985D33B756 assumed the replacements could be enabled first and the originals paused later, to guarantee no service interruption. The 3-enabled-RSA limit makes that impossible for 2 new + 2 old. The premise was also unnecessary: the six originals are DISAPPROVED and therefore cannot serve, so pausing them causes NO service interruption at all."
+ },
+ "action": "Enable ONE replacement RSA per ad group - the direct-response variant - taking each ad group to 3 enabled RSAs, exactly at the limit. No original is paused.",
+ "operations": [
+  {
+   "seq": 1,
+   "ad_id": "821319509197",
+   "service": "HVAC Installation",
+   "ad_group_id": "202339087634",
+   "campaign_id": "24132507747",
+   "approved_label": "A - direct response / service",
+   "from_status": "PAUSED",
+   "to_status": "ENABLED"
+  },
+  {
+   "seq": 2,
+   "ad_id": "821319509203",
+   "service": "HVAC Replacement",
+   "ad_group_id": "200159223798",
+   "campaign_id": "24132507753",
+   "approved_label": "A - direct response / service",
+   "from_status": "PAUSED",
+   "to_status": "ENABLED"
+  },
+  {
+   "seq": 3,
+   "ad_id": "821319509209",
+   "service": "Gas Boiler Repair",
+   "ad_group_id": "202339087594",
+   "campaign_id": "24132507744",
+   "approved_label": "A - direct response / service",
+   "from_status": "PAUSED",
+   "to_status": "ENABLED"
+  }
+ ],
+ "still_paused_after": [
+  "821319509200",
+  "821319509206",
+  "821319509212"
+ ],
+ "end_state_per_ad_group": [
+  {
+   "ad_group_id": "202339087634",
+   "service": "HVAC Installation",
+   "after": "3 ENABLED (2 DISAPPROVED-ineligible + 1 APPROVED-eligible) + 1 PAUSED APPROVED",
+   "eligible_rsas_after": 1
+  },
+  {
+   "ad_group_id": "200159223798",
+   "service": "HVAC Replacement",
+   "after": "3 ENABLED (2 DISAPPROVED-ineligible + 1 APPROVED-eligible) + 1 PAUSED APPROVED",
+   "eligible_rsas_after": 1
+  },
+  {
+   "ad_group_id": "202339087594",
+   "service": "Gas Boiler Repair",
+   "after": "3 ENABLED (2 DISAPPROVED-ineligible + 1 APPROVED-eligible) + 1 PAUSED APPROVED",
+   "eligible_rsas_after": 1
+  }
+ ],
+ "mutation_summary": {
+  "ad_group_ads_modified": 3,
+  "paused": 0,
+  "enabled": 3,
+  "field_mask": [
+   "status"
+  ],
+  "total_mutations": 3
+ },
+ "validation_evidence": "validate_only=true on this exact 3-operation request: VALIDATES OK.",
+ "tradeoff": "Ends the zero-impression state immediately with no destructive approval, but leaves each ad group at the 3-enabled ceiling with only ONE eligible ad, three replacements still paused, and six disapproved ads still occupying enabled slots. A second approval is still needed later to pause the originals and enable the remaining three, so this is two approvals instead of one and does not reach the intended end state.",
+ "readback_procedure": [
+  "1. ASSERT 821319509197, 821319509203, 821319509209 are ENABLED and still APPROVED.",
+  "2. ASSERT 821319509200, 821319509206, 821319509212 are still PAUSED.",
+  "3. ASSERT the six originals are untouched: ENABLED and DISAPPROVED.",
+  "4. ASSERT total non-removed ads is still 113.",
+  "5. ASSERT campaigns, budgets, criteria, assets, conversion actions and shared sets unchanged.",
+  "6. ASSERT both manager links ACTIVE, including ClickCease 2815082755."
+ ],
+ "rollback_plan": {
+  "method": "Set the three ad IDs back to PAUSED.",
+  "restore_mutations": 3,
+  "data_loss": "None."
+ },
+ "plan_fingerprint": "EBBD339D6773D41F"
+}

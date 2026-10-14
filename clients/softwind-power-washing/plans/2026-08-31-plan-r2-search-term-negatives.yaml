@@ -1,0 +1,260 @@
+# PLAN-R2 - SEARCH-TERM NEGATIVES
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# Built 2026-08-31 from the read-only forensic snapshot. NOT APPROVED.
+change_plan:
+  plan_id: PLAN-R2
+  plan_title: Replace an over-broad negative and add three precise ones
+  approval_type: LIVE_CAMPAIGN_NEGATIVE_KEYWORDS
+  priority: P1
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 8
+  object_count_total: 8
+  requires_separate_enable_approval: false
+  recommended_approval_order: 3
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  live_on_creation_warning: >-
+    Negative keywords have no paused state. All eight objects affect delivery the
+    moment they are created or removed. There is no create-paused / readback /
+    enable split for this resource type, so this single approval is the only gate.
+
+  headline_finding: >-
+    The account does not have a junk-traffic problem. Of 53 distinct search terms
+    across 209 corpus impressions, 49 are in scope. It has the opposite problem: a
+    bare PHRASE negative on the single word "cleaning", created 2026-08-30 as part
+    of the portfolio negative rollout, now fences off in-scope exterior-washing
+    demand and four of the account own live keywords.
+
+  corpus_coverage_caveat: >-
+    search_term_view covers 209 of 246 impressions (85.0%), 18 of 22 clicks
+    (81.8%) and $555.89 of $713.15 (77.9%). The remainder is Google withholding
+    queries below its privacy threshold plus same-day lag. Corpus percentages are
+    never account percentages.
+
+  evidence:
+    - id: R2-E1
+      fact: >-
+        The PHRASE negative "cleaning" exists on both campaigns and blocks four
+        live positive keyword texts in the account own Driveway Patio Concrete
+        Washing ad groups: concrete cleaning service, driveway cleaning service,
+        outdoor surface cleaning service, patio cleaning service. All eight
+        criteria (EXACT and PHRASE in both campaigns) are status ENABLED.
+      consequence: >-
+        Those ad groups are currently paused, so no live delivery is being lost
+        today. But the fence permanently poisons any future enablement of the
+        Driveway Patio Concrete Washing intent, which is squarely in scope.
+      status: CONFIRMED
+    - id: R2-E2
+      fact: >-
+        "deck cleaning services near me" took a $29.04 billable click on
+        2026-08-29 on 8 impressions and is now blocked by the same negative.
+        Deck washing is power washing.
+      consequence: In-scope BOFU demand is being blocked.
+      status: CONFIRMED
+    - id: R2-E3
+      fact: >-
+        "outdoor house cleaning services near me" (2 impressions) is blocked. The
+        qualifier "outdoor" resolves it unambiguously to exterior work.
+      consequence: In-scope BOFU demand is being blocked.
+      status: CONFIRMED
+    - id: R2-E4
+      fact: >-
+        "power washing repair near me" (2 impressions, 0 clicks) is pressure-washer
+        servicing, not exterior cleaning, and is NOT blocked today. The existing
+        BROAD negative "power washer repair" requires every word; the term says
+        "washing", not "washer".
+      consequence: A genuine out-of-scope intent has no fence.
+      status: CONFIRMED
+    - id: R2-E5
+      fact: >-
+        Roof cleaning is on the validated work order excluded_services list. The
+        PHRASE negative "roof washing" exists; "roof cleaning" does not. Removing
+        the bare "cleaning" negative would unblock "slate roof cleaning near me"
+        unless "roof cleaning" is added in the same operation.
+      consequence: The add MUST precede the remove. Ordering is the safety story.
+      status: CONFIRMED
+
+  collision_test:
+    method: >-
+      Every proposed negative was tested against all 55 distinct live positive
+      keyword texts using Google phrase-match and broad-match semantics with word
+      boundaries.
+    live_keywords_blocked_by_proposed_negatives: 0
+    keep_terms_blocked_by_proposed_negatives: 0
+    result: PASS
+
+  execution_order_is_mandatory: >-
+    Actions R2-01 through R2-06 (the adds) MUST complete and read back before
+    R2-07 and R2-08 (the removes). There must never be a window in which roof or
+    interior-cleaning queries are unblocked.
+
+  actions:
+    - action_id: R2-01
+      priority: P1
+      resource_type: campaign_criterion
+      operation: CREATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      resource_id: null
+      current_value: "absent"
+      proposed_value: "negative keyword PHRASE: roof cleaning"
+      object_count: 1
+      rationale: >-
+        roof cleaning is on the work order excluded_services list. Replaces the
+        coverage the bare cleaning negative currently provides for roof queries.
+    - action_id: R2-02
+      priority: P1
+      resource_type: campaign_criterion
+      operation: CREATE
+      customer_id: "1521725229"
+      campaign_id: "24145053510"
+      resource_id: null
+      current_value: "absent"
+      proposed_value: "negative keyword PHRASE: roof cleaning"
+      object_count: 1
+      rationale: mirror of R2-01 on the second campaign
+    - action_id: R2-03
+      priority: P1
+      resource_type: campaign_criterion
+      operation: CREATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      resource_id: null
+      current_value: "absent"
+      proposed_value: "negative keyword PHRASE: house cleaning services"
+      object_count: 1
+      rationale: >-
+        Interior house cleaning, out of scope. Deliberately NOT bare "house
+        cleaning" - the qualified phrase leaves "outdoor house cleaning services
+        near me" serving, which is exterior work.
+    - action_id: R2-04
+      priority: P1
+      resource_type: campaign_criterion
+      operation: CREATE
+      customer_id: "1521725229"
+      campaign_id: "24145053510"
+      resource_id: null
+      current_value: "absent"
+      proposed_value: "negative keyword PHRASE: house cleaning services"
+      object_count: 1
+      rationale: mirror of R2-03 on the second campaign
+    - action_id: R2-05
+      priority: P1
+      resource_type: campaign_criterion
+      operation: CREATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      resource_id: null
+      current_value: "absent"
+      proposed_value: "negative keyword PHRASE: power washing repair"
+      object_count: 1
+      rationale: >-
+        Pressure-washer servicing. Closes the gap the existing BROAD "power washer
+        repair" negative does not cover.
+    - action_id: R2-06
+      priority: P1
+      resource_type: campaign_criterion
+      operation: CREATE
+      customer_id: "1521725229"
+      campaign_id: "24145053510"
+      resource_id: null
+      current_value: "absent"
+      proposed_value: "negative keyword PHRASE: power washing repair"
+      object_count: 1
+      rationale: mirror of R2-05 on the second campaign
+    - action_id: R2-07
+      priority: P1
+      resource_type: campaign_criterion
+      operation: REMOVE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      resource_id: "negative keyword PHRASE: cleaning"
+      current_value: "ENABLED negative keyword PHRASE: cleaning"
+      proposed_value: "REMOVED"
+      object_count: 1
+      rationale: >-
+        Unblocks deck cleaning services near me, outdoor house cleaning services
+        near me, and four of the account own live keywords. Roof and interior
+        cleaning stay blocked by R2-01 and R2-03.
+      execute_only_after: [R2-01, R2-03, R2-05]
+    - action_id: R2-08
+      priority: P1
+      resource_type: campaign_criterion
+      operation: REMOVE
+      customer_id: "1521725229"
+      campaign_id: "24145053510"
+      resource_id: "negative keyword PHRASE: cleaning"
+      current_value: "ENABLED negative keyword PHRASE: cleaning"
+      proposed_value: "REMOVED"
+      object_count: 1
+      rationale: mirror of R2-07 on the second campaign
+      execute_only_after: [R2-02, R2-04, R2-06]
+
+  deliberately_not_included:
+    - term: gas station pressure washing near me
+      cost_usd: 35.31
+      reason: >-
+        BLOCKED on K1-W2. Commercial and industrial washing is outside the
+        verified residential scope, but the owner has not confirmed whether
+        Softwind sells commercial work. If it does, this becomes a keyword
+        opportunity that needs a commercial landing page first, because every
+        current offer page is residential.
+      branch_if_commercial_not_sold: >-
+        add "gas station" PHRASE on both campaigns (2 mutations)
+      branch_if_commercial_is_sold: >-
+        this plan gains nothing; the term becomes a NEW KEYWORD CANDIDATE gated on
+        a commercial landing page
+    - term: commercial power washing company near me
+      cost_usd: 0.00
+      reason: same K1-W2 gate
+    - terms_cost_cluster:
+        - powerwash cost
+        - average cost to power wash a house
+        - cost to power wash
+        - house wash price
+        - house soft wash cost
+        - how much does power washing a house cost
+        - how much is powerwashing a house
+        - power washing costs
+        - price to powerwash house
+      combined_cost_usd: 62.18
+      reason: >-
+        These are price research, not estimate requests, and they all arrive
+        through the keyword "house pressure washing estimate". Negativing them one
+        at a time is the wrong instrument. The right decision is structural and
+        belongs to PLAN-R4: either build a page that converts price researchers,
+        or retire the estimate keyword. Do not negative in isolation.
+    - terms_protected:
+        - near me
+        - quote
+        - estimate
+        - cost
+        - price
+        - pricing
+        - best
+        - hire
+        - local
+      reason: >-
+        Green Marketing policy forbids automatic negativing of these tokens. A
+        protected token blocks negativing the TOKEN; it never excludes the whole
+        term from review.
+
+  risk: >-
+    MEDIUM. Two removals increase exposure. The exposure they restore is in-scope
+    exterior-washing demand, and the two out-of-scope themes the removed negative
+    was covering (roof, interior cleaning) are re-fenced by R2-01 through R2-04
+    first. Worst case is that a query the bare negative was silently blocking
+    turns out to be junk; the cost of that is one click at up to the CPC ceiling.
+  rollback: >-
+    Re-create the two "cleaning" PHRASE negatives on campaigns 24103511039 and
+    24145053510, and remove the six criteria created by R2-01 through R2-06. Two
+    plus six equals eight mutations, exactly reversing this plan.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does not grant permission.

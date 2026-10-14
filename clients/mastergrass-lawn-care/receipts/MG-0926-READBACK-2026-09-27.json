@@ -1,0 +1,184 @@
+{
+ "checks": [
+  {
+   "name": "BUD Hardscaping budget 13.00",
+   "pass": true,
+   "detail": "(13.0, 'MAXIMIZE_CONVERSIONS', 'ENABLED')"
+  },
+  {
+   "name": "Landscaping untouched (132.00, MAXIMIZE_CONVERSIONS, ENABLED)",
+   "pass": true,
+   "detail": "(132.0, 'MAXIMIZE_CONVERSIONS', 'ENABLED')"
+  },
+  {
+   "name": "Hardscaping still ENABLED / MAXIMIZE_CONVERSIONS",
+   "pass": true,
+   "detail": "(13.0, 'MAXIMIZE_CONVERSIONS', 'ENABLED')"
+  },
+  {
+   "name": "NEG shared set ENABLED NEGATIVE_KEYWORDS",
+   "pass": true,
+   "detail": "GM | MasterGrass | Low-intent & off-service | 2026-09"
+  },
+  {
+   "name": "NEG members == plan (407: 379 phrase / 28 exact)",
+   "pass": true,
+   "detail": "{'PHRASE': 379, 'EXACT': 28}"
+  },
+  {
+   "name": "NEG list attached to Landscaping + Hardscaping ENABLED",
+   "pass": true,
+   "detail": "{'23905193676': 'ENABLED', '23914692658': 'ENABLED', '24287457516': 'ENABLED'}"
+  },
+  {
+   "name": "NEG 7 Hardscaping cross-negatives present",
+   "pass": true,
+   "detail": "90"
+  },
+  {
+   "name": "RSA 20 ad resources created",
+   "pass": true,
+   "detail": "20"
+  },
+  {
+   "name": "RSA text/pins/url/path/status PAUSED match plan for all 20",
+   "pass": true,
+   "detail": "mismatches 0"
+  },
+  {
+   "name": "RSA policy review states",
+   "pass": true,
+   "detail": "{('UNKNOWN', 'REVIEW_IN_PROGRESS'): 20}"
+  },
+  {
+   "name": "old RSAs untouched (10 ENABLED)",
+   "pass": true,
+   "detail": "10"
+  },
+  {
+   "name": "RSA 3 new callouts linked PAUSED on both campaigns",
+   "pass": true,
+   "detail": "{('23905193676', 'PAUSED', '4.9-Star Google Rating'): 1, ('23914692658', 'PAUSED', '4.9-Star Google Rating'): 1, ('23905193676', 'PAUSED', 'Licensed & Insured'): 1, ('23914692658', 'PAUSED', 'Licensed & Insured'): 1, ('23905193676', 'PAUSED', '80+ Google Reviews'): 1, ('23914692658', 'PAUSED', '80+ Google Reviews'): 1}"
+  },
+  {
+   "name": "PMAX campaign PAUSED / PERFORMANCE_MAX / MAXIMIZE_CONVERSIONS",
+   "pass": true,
+   "detail": "24287457516"
+  },
+  {
+   "name": "PMAX budget 20.00 non-shared",
+   "pass": true,
+   "detail": "20.0"
+  },
+  {
+   "name": "PMAX brand guidelines on, PRESENCE",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "PMAX automation opt-outs",
+   "pass": true,
+   "detail": "{'TEXT_ASSET_AUTOMATION': 'OPTED_OUT', 'FINAL_URL_EXPANSION_TEXT_ASSET_AUTOMATION': 'OPTED_OUT', 'GENERATE_IMAGE_EXTRACTION': 'OPTED_OUT', 'GENERATE_IMAGE_ENHANCEMENT': 'OPTED_OUT', 'GENERATE_DESIGN_VERSIONS_FOR_IMAGES': 'OPTED_OUT', 'GENERATE_ENHANCED_YOUTUBE_VIDEOS': 'OPTED_OUT'}"
+  },
+  {
+   "name": "PMAX geo == Landscaping (LOCATION + PROXIMITY)",
+   "pass": true,
+   "detail": "{('LANGUAGE', False): 1, ('DEVICE', False): 4, ('AD_SCHEDULE', False): 5, ('LOCATION', False): 22, ('KEYWORD', True): 24, ('PROXIMITY', False): 1}"
+  },
+  {
+   "name": "PMAX language + 5 schedule rows",
+   "pass": true,
+   "detail": "{('LANGUAGE', False): 1, ('DEVICE', False): 4, ('AD_SCHEDULE', False): 5, ('LOCATION', False): 22, ('KEYWORD', True): 24, ('PROXIMITY', False): 1}"
+  },
+  {
+   "name": "PMAX 24 cross-negatives",
+   "pass": true,
+   "detail": "24"
+  },
+  {
+   "name": "PMAX shared negative list attached",
+   "pass": true,
+   "detail": "{'23905193676': 'ENABLED', '23914692658': 'ENABLED', '24287457516': 'ENABLED'}"
+  },
+  {
+   "name": "PMAX campaign assets (1 name, 1 logo, 1 snippet, 5 sitelinks, 10 callouts)",
+   "pass": true,
+   "detail": "{'LOGO': 1, 'STRUCTURED_SNIPPET': 1, 'SITELINK': 5, 'CALLOUT': 10, 'BUSINESS_NAME': 1}"
+  },
+  {
+   "name": "PMAX 1 asset group PAUSED, drainage URL + paths",
+   "pass": true,
+   "detail": "6752116688 strength=POOR"
+  },
+  {
+   "name": "PMAX 15 H / 5 LH / 5 D text == plan",
+   "pass": true,
+   "detail": "{'CALL_TO_ACTION_SELECTION': 1, 'HEADLINE': 15, 'SQUARE_MARKETING_IMAGE': 6, 'LONG_HEADLINE': 5, 'PORTRAIT_MARKETING_IMAGE': 3, 'DESCRIPTION': 5, 'MARKETING_IMAGE': 8}"
+  },
+  {
+   "name": "PMAX images 8 L / 6 S / 3 P + CTA",
+   "pass": true,
+   "detail": "{'CALL_TO_ACTION_SELECTION': 1, 'HEADLINE': 15, 'SQUARE_MARKETING_IMAGE': 6, 'LONG_HEADLINE': 5, 'PORTRAIT_MARKETING_IMAGE': 3, 'DESCRIPTION': 5, 'MARKETING_IMAGE': 8}"
+  },
+  {
+   "name": "PMAX 20 search themes + 1 audience signal",
+   "pass": true,
+   "detail": "{'THEME': 20, 'AUDIENCE': 1}"
+  },
+  {
+   "name": "PMAX goals = account default (WC Call Lead QUALIFIED_LEAD not biddable)",
+   "pass": true,
+   "detail": "['CUSTOMER'] ['PHONE_CALL_LEAD/CALL_FROM_ADS', 'PHONE_CALL_LEAD/WEBSITE', 'SUBMIT_LEAD_FORM/WEBSITE']"
+  },
+  {
+   "name": "PMAX asset review states",
+   "pass": true,
+   "detail": "{'UNSPECIFIED': 43}"
+  }
+ ],
+ "pmax_campaign": "24287457516",
+ "asset_group": "6752116688",
+ "shared_set": "12252227573",
+ "new_rsa_ids": {
+  "195877148086": [
+   826087764168,
+   826087764171
+  ],
+  "195877148126": [
+   826087764174,
+   826087764177
+  ],
+  "195877148286": [
+   826087764180,
+   826087764183
+  ],
+  "195877148326": [
+   826087764186,
+   826087764189
+  ],
+  "194944952537": [
+   826087764192,
+   826087764195
+  ],
+  "194944952577": [
+   826087764198,
+   826087764201
+  ],
+  "194944952617": [
+   826087764204,
+   826087764207
+  ],
+  "194944952777": [
+   826087764210,
+   826087764213
+  ],
+  "194944952817": [
+   826087764216,
+   826087764219
+  ],
+  "194944952857": [
+   826087764222,
+   826087764225
+  ]
+ }
+}

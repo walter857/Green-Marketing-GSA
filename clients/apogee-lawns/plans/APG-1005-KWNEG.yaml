@@ -1,0 +1,166 @@
+plan_id: APG-1005-KWNEG
+plan_kind: keywords_and_negatives
+generated: '2026-10-05'
+external_writes_performed: NONE
+target:
+  exact_child_account_name: Apogee Lawns LLC - Live
+  child_customer_id: '8164626278'
+  manager_customer_id: '3373711342'
+  manager_never_mutated: true
+  exact_primary_service: Permanent Christmas light installation
+  vertical: similar-local-service
+  scope_approval: Walter, 2026-09-16 (recorded, not re-requested)
+  work_order: clients/apogee-lawns/work-order.yaml (validator PASS 2026-10-05)
+  campaign:
+    id: '24257151015'
+    name: S | Website Leads | Permanent Christmas Lights | Apogee Lawns | $500 | 09_2026
+    status: ENABLED (unchanged by this bundle)
+    budget_id: '15884926233'
+    daily_budget_micros: 16440000
+    monthly_cap_at_30_4_days_usd: 499.78
+    bidding: MAXIMIZE_CLICKS (TARGET_SPEND) ceiling 8000000 micros (unchanged)
+    locations_presence:
+    - '1021635'
+    - '1021647'
+    - '1021696'
+    - '1021783'
+    - '9024651'
+    - '9024671'
+    - '9024703'
+    - '9024728'
+    - '9024746'
+    - '9024748'
+    - '9024753'
+    - '9024754'
+    - '9195288'
+    - '9233865'
+    schedule: 24/7, 0 ad-schedule criteria (unchanged)
+    tablet: -100% (unchanged)
+    final_url: https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/
+    conversions: 7772803337 Primary, 7773013199 Primary, 7773043879 Secondary (unchanged)
+evidence:
+  snapshot: clients/apogee-lawns/snapshots/2026-10-05-conversion-plan-snapshot.json
+  snapshot_run_at_utc: '2026-10-05T16:14:18+00:00'
+  browser_qa: clients/apogee-lawns/audits/2026-10-05-conversion-plan/browser-qa/
+objects:
+- ordinal: 1
+  resource: ad_group_criterion
+  operation: create
+  ad_group_id: '200347713516'
+  ad_group: AG | Permanent Light Installation
+  keyword:
+    text: permanent christmas lights lincoln ne
+    match_type: EXACT
+  status: PAUSED
+  final_urls: inherit ad URL (none set)
+- ordinal: 2
+  resource: ad_group_criterion
+  operation: create
+  ad_group_id: '200347713516'
+  ad_group: AG | Permanent Light Installation
+  keyword:
+    text: permanent christmas lights installation near me
+    match_type: EXACT
+  status: PAUSED
+  final_urls: inherit ad URL (none set)
+- ordinal: 3
+  resource: ad_group_criterion
+  operation: create
+  ad_group_id: '200347713516'
+  ad_group: AG | Permanent Light Installation
+  keyword:
+    text: permanent holiday light installation near me
+    match_type: EXACT
+  status: PAUSED
+  final_urls: inherit ad URL (none set)
+- ordinal: 4
+  resource: ad_group_criterion
+  operation: create
+  ad_group_id: '200347713516'
+  ad_group: AG | Permanent Light Installation
+  keyword:
+    text: permanent lighting installation
+    match_type: EXACT
+  status: PAUSED
+  final_urls: inherit ad URL (none set)
+- ordinal: 5
+  resource: campaign_criterion
+  operation: create
+  campaign_id: '24257151015'
+  negative: true
+  keyword:
+    text: brilliant by night
+    match_type: PHRASE
+- ordinal: 6
+  resource: campaign_criterion
+  operation: create
+  campaign_id: '24257151015'
+  negative: true
+  keyword:
+    text: types of permanent outdoor christmas lights
+    match_type: EXACT
+- ordinal: 7
+  resource: campaign_criterion
+  operation: remove
+  resource_name: customers/8164626278/campaignCriteria/24257151015~296448593009
+  current:
+    text: labor only
+    match_type: PHRASE
+    negative: true
+    status: ENABLED
+- ordinal: 8
+  resource: campaign_criterion
+  operation: remove
+  resource_name: customers/8164626278/campaignCriteria/24257151015~573042878059
+  current:
+    text: customer supplied
+    match_type: PHRASE
+    negative: true
+    status: ENABLED
+- ordinal: 9
+  resource: campaign_criterion
+  operation: remove
+  resource_name: customers/8164626278/campaignCriteria/24257151015~2225874598953
+  current:
+    text: my own lights
+    match_type: PHRASE
+    negative: true
+    status: ENABLED
+mutation_counts:
+  creates: 6
+  keyword_creates_paused: 4
+  negative_creates: 2
+  removes: 3
+  updates: 0
+  enables: 0
+  status_changes: 0
+  budget_changes: 0
+  bid_changes: 0
+  geo_changes: 0
+  conversion_changes: 0
+  total_operations: 9
+preconditions_at_execution:
+- fresh identity gate PASS (exact name + child ID, not manager, not test)
+- work-order validator PASS
+- every resource name below re-read and unchanged since the snapshot; any drift = STOP
+- campaign budget 16440000 micros, ceiling 8000000 micros, 14 locations, tablet 0.0 unchanged
+readback_assertions:
+- 4 new EXACT keywords exist in ad group 200347713516 with status PAUSED
+- campaign negatives 75 -> 74 (+2 created, -3 removed); the 3 removed resource names absent
+- '''brilliant by night'' PHRASE and ''types of permanent outdoor christmas lights'' EXACT present'
+- all other 72 negatives byte-identical
+- existing 5 positive keywords unchanged
+- campaign status, budget, ceiling, locations, device rows, RSAs, assets unchanged
+qa_requirements:
+- validate_only accepted the exact operations on 2026-10-05 (see validation report)
+- no new keyword duplicates an existing keyword; no new negative blocks a positive keyword or any kept search term
+- 'protected buying words untouched: cost, price, pricing, quote, best, hire, local, near me, emergency'
+recovery_plan: 'If any operation fails, the batch is atomic (partial_failure=false) and nothing is written; if a
+  non-atomic partial success is ever observed: STOP, inventory every created/removed resource name from the response
+  and a fresh read, write a PARTIAL-FAILURE receipt, and propose a recovery plan before any retry.'
+rollback: re-add PHRASE negatives 'labor only', 'customer supplied', 'my own lights'; remove the 2 new negatives;
+  remove the 4 new keywords
+enablement: the 4 keywords stay PAUSED until a separate approval after readback (APG-1005-KWNEG-ENABLE)
+approval_grant:
+  required_line: APPROVE APG KWNEG <fingerprint>
+  fingerprint_scope: gm_gsa.safety.approval_code over this file as loaded

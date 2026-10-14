@@ -1,0 +1,60 @@
+{
+ "plan_name": "AMBIENT-D1-REMOVE-HANOVER-2026-08-28",
+ "supersedes": "the hanover item inside C3038EDD9E621944",
+ "approval_class": "DESTRUCTIVE-ACTION approval",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "object_count": 1,
+ "operations": [
+  {
+   "operation_type": "REMOVE shared_criterion (DESTRUCTIVE)",
+   "negative_text": "hanover",
+   "match_type": "BROAD",
+   "account_level_list_id": "11252984411",
+   "account_level_list_name": "account-level negative keywords list",
+   "criterion_id": "11143481",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~11143481",
+   "current_value": "'hanover' [BROAD] ACTIVE account-wide",
+   "proposed_value": "removed from the account-level negative list",
+   "affected_active_keywords": [],
+   "affected_targeted_locations": [
+    {
+     "geo_target_constant": "1018614",
+     "canonical_name": "Hanover,Maryland,United States",
+     "target_type": "City",
+     "targeted_on_campaigns": [
+      "AC Repair",
+      "Gas Boiler Repair",
+      "HVAC Installation",
+      "HVAC Repair",
+      "HVAC Replacement"
+     ]
+    }
+   ],
+   "historical_search_terms": [],
+   "conversions_on_those_terms": 0.0,
+   "measured_cost_impact_to_date": 0.0,
+   "reason": "The account explicitly targets Hanover, Maryland (geo 1018614) on all five campaigns while an account-wide BROAD negative blocks every query containing the word 'hanover'. The account is blocking its own targeted city.",
+   "no_other_negative_blocks_hanover": true,
+   "risk": "Low. Removing a negative can only ADD eligible queries. It cannot suppress anything. The added queries are Hanover-area service searches inside the targeted geography.",
+   "rollback": "Re-create a BROAD shared_criterion 'hanover' in list 11252984411. The criterion ID will differ after re-creation.",
+   "unrelated_resource_assertion": "removes exactly one shared_criterion; the other 58 members stay; no other shared set, association, campaign, keyword, ad or asset changes"
+  }
+ ],
+ "contains_only_hanover": true,
+ "blast_radius": "The list is account-wide, so removal also affects the 18 legacy campaigns. All 18 are PAUSED, so live impact is limited to the five active Search campaigns.",
+ "fingerprint": "E50EDFE7644A9B5F",
+ "validate_only": {
+  "status": "VALIDATE_OK",
+  "operations": 1,
+  "results_returned": 0
+ },
+ "executed": true,
+ "executed_local": "2026-08-27T19:28:04.702808-04:00",
+ "execution_status": "EXECUTED 2026-08-28, readback PASS. Account-level criterion 11143481 removed. Do not re-execute.",
+ "do_not_execute": true,
+ "executed_resource_names": [
+  "customers/2401959466/sharedCriteria/11252984411~11143481"
+ ],
+ "readback_pass": true
+}

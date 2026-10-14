@@ -1,0 +1,195 @@
+# PLAN-R5 - NEW ADS
+# Softwind Power Washing - Live | 1521725229 | Power Washing
+# Built 2026-08-31 from the read-only forensic snapshot. NOT APPROVED.
+change_plan:
+  plan_id: PLAN-R5
+  plan_title: Two replacement RSAs for Power Washing Near Me, created paused
+  approval_type: CREATE_PAUSED_ADS
+  priority: P1
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  ads_mutation_count: 2
+  object_count_total: 2
+  requires_separate_enable_approval: true
+  enable_plan: PLAN-R10
+  recommended_approval_order: 5
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: "1521725229"
+    manager_customer_id: "3373711342"
+    exact_service: Power Washing
+    vertical: similar-local-service
+
+  why_this_ad_group_and_only_this_one: >-
+    Power Washing Near Me (202870585390, campaign 24103511039) carries $288.07 of
+    $713.15 lifetime spend - 40.4% - and is the only ad group where Google reports
+    ad relevance BELOW_AVERAGE. Its keyword power washing near me scores Quality
+    Score 1 with BELOW_AVERAGE on all three components. Every other RSA in the
+    account is APPROVED with Ad Strength GOOD or EXCELLENT and no policy issue, so
+    a wholesale ad rewrite would be scope creep with no evidence behind it.
+
+  diagnosis_of_the_existing_copy:
+    existing_ads:
+      - ad_id: "819975939342"
+        impressions: 45
+        clicks: 1
+        ctr_pct: 2.2222
+        cost_usd: 82.22
+        ad_strength: EXCELLENT
+      - ad_id: "819975939345"
+        impressions: 36
+        clicks: 6
+        ctr_pct: 16.6667
+        cost_usd: 205.85
+        ad_strength: EXCELLENT
+    findings:
+      - >-
+        Ad Strength EXCELLENT and ad relevance BELOW_AVERAGE at the same time.
+        Ad Strength is Google asset-diversity score; ad relevance is the auction
+        signal. Optimising for Ad Strength has not fixed the auction signal.
+      - >-
+        Nine of the fifteen headlines on 819975939342 and six on 819975939345 name
+        Islip, West Islip or Dix Hills. Since PLAN-J2A on 2026-08-26 the campaign
+        targets 80 places across Nassau and Suffolk. Copy written for three
+        hamlets is now shown to searchers in Holbrook, Sayville, North Babylon,
+        West Babylon, Bay Shore and 70 others. That is a local-relevance defect
+        created by the geo expansion, not by the copy author.
+      - >-
+        Neither ad leads with the exact keyword phrase. The strongest match is
+        "Power Washing Near You", which is the correct Green Marketing wording
+        choice and should be kept, but it needs to be paired with headlines that
+        carry the literal service phrase in first position.
+      - >-
+        The 2.22% CTR ad and the 16.67% CTR ad differ mainly in that the winner
+        leads with benefit ("Restore Your Curb Appeal") rather than geography.
+    conclusion: >-
+      REWRITE, not REPLACE-because-broken. Both existing ads stay ENABLED until the
+      replacements pass readback QA and are separately approved for enablement in
+      PLAN-R10. Deciding which of the four ads survives is PLAN-R11.
+
+  copy_rules_applied:
+    - headlines max 30 characters, descriptions max 90, paths max 15
+    - no phone number in copy
+    - natural American English, "near you" rather than awkward "near me"
+    - >-
+      geography widened from the three hamlets to Long Island / Nassau and
+      Suffolk, which is verifiable from the 80 live geo_target_constant canonical
+      names (all New York, all Nassau or Suffolk County)
+    - >-
+      only verified claims: surface-specific method chosen for the material; soft
+      washing for siding, trim and fences; pressure washing for driveways, patios,
+      walkways, pavers and concrete; local Long Island service; free quote / free
+      estimate
+    - >-
+      no years in business, no review count or rating, no licensed / insured /
+      bonded, no warranty or guarantee, no response-time promise, no price,
+      discount or promotion, no same-day claim, no "best" or "#1", no fake urgency
+
+  actions:
+    - action_id: R5-01
+      priority: P1
+      resource_type: ad_group_ad
+      operation: CREATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      ad_group_id: "202870585390"
+      resource_id: null
+      current_value: "2 ENABLED RSAs in this ad group (819975939342, 819975939345)"
+      proposed_value: "RSA 1 - service, local relevance, quote intent, direct response - status PAUSED"
+      object_count: 1
+      ad:
+        status: PAUSED
+        type: RESPONSIVE_SEARCH_AD
+        final_url: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+        path1: power-washing
+        path2: free-quote
+        pinning: none
+        headlines:
+          - Power Washing Near You
+          - Local Power Washing Service
+          - Power Washing On Long Island
+          - Free Power Washing Quote
+          - Get A Free Power Wash Quote
+          - Nassau & Suffolk Power Wash
+          - Power Washing For Your Home
+          - Request Your Free Quote
+          - Book A Free Estimate
+          - Siding, Patios & Driveways
+          - Power Washing Done Locally
+          - Tell Us What Needs Cleaning
+          - Long Island Power Washing
+          - Exterior Power Washing
+          - Softwind Power Washing
+        descriptions:
+          - Local power washing for siding, patios and driveways across Long Island. Free quote.
+          - Tell us what needs cleaning and we will send a free quote. Serving Nassau and Suffolk.
+          - Power washing for homes on Long Island, with the method matched to each surface.
+          - Need power washing near you? Request a free quote from Softwind today.
+    - action_id: R5-02
+      priority: P1
+      resource_type: ad_group_ad
+      operation: CREATE
+      customer_id: "1521725229"
+      campaign_id: "24103511039"
+      ad_group_id: "202870585390"
+      resource_id: null
+      current_value: "2 ENABLED RSAs in this ad group (819975939342, 819975939345)"
+      proposed_value: "RSA 2 - cleaner exterior, surface-specific method, curb appeal, trust and process - status PAUSED"
+      object_count: 1
+      ad:
+        status: PAUSED
+        type: RESPONSIVE_SEARCH_AD
+        final_url: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+        path1: power-washing
+        path2: free-estimate
+        pinning: none
+        headlines:
+          - Restore Your Curb Appeal
+          - A Cleaner Home Exterior
+          - Surface-Specific Washing
+          - Soft Washing For Siding
+          - Pressure Washing Concrete
+          - Patio And Paver Cleaning
+          - Driveway Surface Washing
+          - Method Matched To Material
+          - Careful Exterior Cleaning
+          - See The Difference Outside
+          - Power Washing For Homes
+          - Free Exterior Estimate
+          - Long Island Exterior Care
+          - Your Home, Cleaner Outside
+          - Softwind Exterior Care
+        descriptions:
+          - We match the washing method to the material, from soft washing siding to concrete.
+          - Improve curb appeal with careful exterior cleaning and a free estimate.
+          - Siding, trim, fences, patios, walkways and driveways, each cleaned the right way.
+          - Serving Long Island homeowners with surface-specific washing and free estimates.
+
+  how_the_two_ads_differ: >-
+    RSA 1 sells the transaction: what the service is, where it is offered, and how
+    to get a price. Its headlines lead with the service phrase and the free quote.
+    RSA 2 sells the outcome and the method: a cleaner exterior, the right technique
+    per surface, curb appeal. Neither shares a headline with the other, and only
+    one description theme (surface-specific method) appears in both, phrased
+    differently. This is a genuine A/B, not two shuffles of one ad.
+
+  qa_before_enablement:
+    - character counts re-validated by scripts/softwind_0831_validate_rsas.py
+    - both ads read back from the API and confirmed status PAUSED
+    - both ads confirmed policy approval_status APPROVED with no policy topic entries
+    - final URL confirmed HTTP 200 in a real browser with GCLID and UTMs preserved
+    - >-
+      confirm the ad group still has its two original ENABLED ads, so the ad group
+      is never left with zero serving ads
+
+  risk: >-
+    LOW. Two new ads created PAUSED. They cannot serve, cannot spend, and cannot
+    affect delivery until PLAN-R10 is separately approved after readback QA.
+  rollback: >-
+    Remove ad_group_ad 202870585390~<new ad id> for each created ad. Two mutations.
+    Because the ads are created paused, rollback before enablement has zero
+    delivery impact.
+  approval_owner: Walter Correa
+  do_not_execute_note: >-
+    A fingerprint identifies an exact plan. It does not grant permission. Creating
+    these ads paused does NOT authorise enabling them.

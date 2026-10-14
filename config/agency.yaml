@@ -1,0 +1,184 @@
+agency:
+  name: Green Marketing
+  account_name_marker: "- live"
+  require_customer_id_match: true
+  require_exact_account_name_match: true
+  require_work_order_before_client_work: true
+  required_work_order_fields:
+    - child_account_name
+    - child_customer_id
+    - exact_service
+  language_for_explanations: en-US
+  default_market_language: en
+
+vertical_scope:
+  allowed:
+    - landscaping
+    - hardscaping
+    - heating-cooling
+    - similar-local-service
+  similar_local_service_requires_scope_approval: true
+  excluded:
+    - ecommerce
+    - saas
+    - legal
+    - medical
+    - financial
+    - employment
+    - education
+    - unrelated-national-lead-generation
+
+approvals:
+  create_paused_requires_plan_fingerprint: true
+  enable_requires_separate_approval: true
+  budget_change_requires_separate_approval: true
+  deletion_requires_destructive_action_approval: true
+
+# Claude operates as Green Marketing's senior Google Ads strategist and implementation lead.
+# This section governs DECISION-MAKING only. It never relaxes an external-write gate.
+# See the "Expert Autonomy and Decision Rights" section of CLAUDE.md.
+expert_autonomy:
+  enabled: true
+  choose_single_recommendation: true
+  complete_unblocked_work_before_questions: true
+  batch_questions: true
+  self_review_before_fingerprint: true
+  do_not_escalate_routine_technical_choices: true
+  agency_defaults_are_fallbacks: true
+  external_write_gates_unchanged: true
+  minimum_evidence_for_public_claims: verified_client_or_first_party
+  low_confidence_strategy_action: conservative_default
+  low_confidence_fact_action: omit_or_placeholder
+  reopen_settled_decisions_only_on_new_material_evidence: true
+
+  # Decisions Claude makes itself. Escalating these is a policy violation.
+  owned_technical_decisions:
+    - campaign_architecture
+    - ad_group_structure
+    - canonical_keyword_themes
+    - match_types_within_policy
+    - search_term_classification
+    - negative_keywords
+    - cross_negatives
+    - bidding_recommendation
+    - budget_allocation_within_approved_total
+    - ad_schedules_when_hours_verified
+    - rsa_structure_copy_pins
+    - assets_sitelinks_callouts_snippets
+    - landing_page_intent_mapping_and_cro_copy
+    - conversion_goal_architecture
+    - api_fields_masks_sequencing_readback
+    - asset_reuse_decisions
+    - mutation_necessity
+    - validation_rules
+    - qa_requirements
+    - monitoring_plans
+    - optimization_priorities
+
+  # The only reasons to stop and ask.
+  escalation_triggers:
+    - required_business_fact_unverifiable
+    - authoritative_sources_conflict
+    - account_service_location_or_budget_ambiguous
+    - public_facing_claim_needs_client_confirmation
+    - business_preference_not_technical_judgment
+    - access_or_credentials_unavailable
+    - external_write_approval_required
+    - destructive_irreversible_or_scope_expanding
+    - legal_privacy_consent_or_security_risk
+
+  evidence_hierarchy:
+    - explicit_user_instructions_and_verified_client_facts
+    - qualified_lead_sold_job_revenue_profit_attribution
+    - fresh_google_ads_account_data
+    - all_time_search_term_and_conversion_history
+    - recent_performance_windows
+    - verified_first_party_business_information
+    - official_google_ads_documentation
+    - green_marketing_agency_policy
+    - conservative_industry_practice
+
+  # Every item must pass before a plan fingerprint is generated.
+  self_review_checklist:
+    - client_truth
+    - campaign_strategy
+    - search_intent
+    - conversion_isolation
+    - mutation_necessity
+    - google_ads_api_field_validity
+    - status_handling
+    - asset_support
+    - character_limits
+    - url_mapping
+    - location_targeting
+    - budget_math
+    - landing_page_template_compliance
+    - unsupported_claims
+    - mutation_counts
+    - artifact_hashes
+    - approval_bundle_completeness
+
+search_defaults:
+  campaign_type: SEARCH
+  status: PAUSED
+  network:
+    google_search: true
+    search_partners: false
+    display: false
+  bidding:
+    initial_strategy: MAXIMIZE_CONVERSIONS
+    target_cpa: null
+  match_types:
+    - PHRASE
+    - EXACT
+  rsa_per_ad_group: 2
+  location_option: PRESENCE
+  exclude_all_other_countries: false
+  ai_max: false
+  broad_match_expansion: false
+  dynamic_search_ads: false
+  automatically_created_assets: false
+  text_customization: false
+  final_url_expansion: false
+
+  # MANDATORY on every campaign CREATE. Google Ads API v25 rejects campaign creation with a
+  # bare `field_error: REQUIRED` (the message names no field) unless this is set. Ratified by
+  # the owner 2026-09-18 after it broke AMB-0917-HEAT-CREATE-1 mid-execution: the budgets
+  # committed, the campaigns failed, and the approved manifest could not be executed as
+  # written. It is truthful for every Green Marketing local-service client, matches every
+  # existing campaign in the affected accounts, and changes no serving behaviour.
+  #
+  # REQUIREMENT: every campaign manifest must carry this field, and it must be inside the
+  # serialized payload BEFORE the approval fingerprint is computed. Adding it after approval
+  # is a manifest change and must not be treated as routine.
+  contains_eu_political_advertising: DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING
+
+required_campaign_create_fields:
+  - contains_eu_political_advertising
+
+negative_keyword_policy:
+  automatic_add: false
+  require_intent_review: true
+  protected_terms:
+    - near me
+    - quote
+    - price
+    - pricing
+    - cost
+    - best
+    - hire
+    - local
+    - emergency
+
+review_collection:
+  prohibit_review_gating: true
+  review_link_offered_to_all_customers: true
+  low_score_internal_alert_allowed: true
+
+measurement:
+  recommended_primary_actions:
+    - form_lead
+    - qualified_call
+    - qualified_or_closed_won_offline
+  deduplicate_with_lead_or_transaction_id: true
+  new_offline_conversion_route: DATA_MANAGER_API

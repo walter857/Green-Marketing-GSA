@@ -1,0 +1,775 @@
+{
+ "run_at_utc": "2026-09-29T02:33:25+00:00",
+ "identity_pass": true,
+ "campaign": {
+  "status": "ENABLED",
+  "serving": "SERVING",
+  "cap": 8.0,
+  "budget": 16.44
+ },
+ "tablet": [
+  {
+   "res": "customers/8164626278/campaignCriteria/24257151015~30002",
+   "set": true,
+   "value": 0.0
+  },
+  {
+   "res": "customers/8164626278/adGroupBidModifiers/200347713516~30002",
+   "set": true,
+   "value": 0.0
+  },
+  {
+   "res": "customers/8164626278/adGroupBidModifiers/200347713556~30002",
+   "set": true,
+   "value": 0.0
+  }
+ ],
+ "negative_count": 75,
+ "labor_only_negatives": [
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~296448593009",
+   "id": "296448593009",
+   "status": "ENABLED",
+   "text": "labor only",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~573042878059",
+   "id": "573042878059",
+   "status": "ENABLED",
+   "text": "customer supplied",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~2225874598953",
+   "id": "2225874598953",
+   "status": "ENABLED",
+   "text": "my own lights",
+   "mt": "PHRASE"
+  }
+ ],
+ "all_negatives": [
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10005011",
+   "id": "10005011",
+   "status": "ENABLED",
+   "text": "job",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10005021",
+   "id": "10005021",
+   "status": "ENABLED",
+   "text": "jobs",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10009551",
+   "id": "10009551",
+   "status": "ENABLED",
+   "text": "laser",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10013811",
+   "id": "10013811",
+   "status": "ENABLED",
+   "text": "tutorial",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10019991",
+   "id": "10019991",
+   "status": "ENABLED",
+   "text": "rent",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10020011",
+   "id": "10020011",
+   "status": "ENABLED",
+   "text": "rental",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10028331",
+   "id": "10028331",
+   "status": "ENABLED",
+   "text": "wholesale",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10057273",
+   "id": "10057273",
+   "status": "ENABLED",
+   "text": "do it yourself",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10110710",
+   "id": "10110710",
+   "status": "ENABLED",
+   "text": "costco",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10119881",
+   "id": "10119881",
+   "status": "ENABLED",
+   "text": "instructions",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10125891",
+   "id": "10125891",
+   "status": "ENABLED",
+   "text": "kit",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10154201",
+   "id": "10154201",
+   "status": "ENABLED",
+   "text": "ebay",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10165971",
+   "id": "10165971",
+   "status": "ENABLED",
+   "text": "lasers",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10182781",
+   "id": "10182781",
+   "status": "ENABLED",
+   "text": "rentals",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10198071",
+   "id": "10198071",
+   "status": "ENABLED",
+   "text": "tutorials",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10205881",
+   "id": "10205881",
+   "status": "ENABLED",
+   "text": "career",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10206571",
+   "id": "10206571",
+   "status": "ENABLED",
+   "text": "distributor",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10272261",
+   "id": "10272261",
+   "status": "ENABLED",
+   "text": "projector",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10272361",
+   "id": "10272361",
+   "status": "ENABLED",
+   "text": "projectors",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10286536",
+   "id": "10286536",
+   "status": "ENABLED",
+   "text": "walmart",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10295291",
+   "id": "10295291",
+   "status": "ENABLED",
+   "text": "inflatable",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10317231",
+   "id": "10317231",
+   "status": "ENABLED",
+   "text": "diy",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10317631",
+   "id": "10317631",
+   "status": "ENABLED",
+   "text": "careers",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10319341",
+   "id": "10319341",
+   "status": "ENABLED",
+   "text": "salary",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10534901",
+   "id": "10534901",
+   "status": "ENABLED",
+   "text": "wreath",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10549631",
+   "id": "10549631",
+   "status": "ENABLED",
+   "text": "kits",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10635691",
+   "id": "10635691",
+   "status": "ENABLED",
+   "text": "wreaths",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10661876",
+   "id": "10661876",
+   "status": "ENABLED",
+   "text": "garlands",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10667101",
+   "id": "10667101",
+   "status": "ENABLED",
+   "text": "distributors",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10837581",
+   "id": "10837581",
+   "status": "ENABLED",
+   "text": "amazon",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~10874040",
+   "id": "10874040",
+   "status": "ENABLED",
+   "text": "suppliers",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~11190766",
+   "id": "11190766",
+   "status": "ENABLED",
+   "text": "garland",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~11606761",
+   "id": "11606761",
+   "status": "ENABLED",
+   "text": "inflatables",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~12448291",
+   "id": "12448291",
+   "status": "ENABLED",
+   "text": "supplier",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~12471160",
+   "id": "12471160",
+   "status": "ENABLED",
+   "text": "how to",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~12712506",
+   "id": "12712506",
+   "status": "ENABLED",
+   "text": "indoor",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~12720276",
+   "id": "12720276",
+   "status": "ENABLED",
+   "text": "lowes",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~16848743",
+   "id": "16848743",
+   "status": "ENABLED",
+   "text": "light show",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~17273460",
+   "id": "17273460",
+   "status": "ENABLED",
+   "text": "home depot",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~17675643",
+   "id": "17675643",
+   "status": "ENABLED",
+   "text": "gemstone",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~38938952",
+   "id": "38938952",
+   "status": "ENABLED",
+   "text": "where to buy",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~43336933",
+   "id": "43336933",
+   "status": "ENABLED",
+   "text": "menards",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~146652920",
+   "id": "146652920",
+   "status": "ENABLED",
+   "text": "christmas lights for sale",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~173487103",
+   "id": "173487103",
+   "status": "ENABLED",
+   "text": "christmas parade",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~276800692",
+   "id": "276800692",
+   "status": "ENABLED",
+   "text": "jellyfish",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~287210488",
+   "id": "287210488",
+   "status": "ENABLED",
+   "text": "drive through",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~341613963",
+   "id": "341613963",
+   "status": "ENABLED",
+   "text": "replacement christmas bulbs",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~483590304",
+   "id": "483590304",
+   "status": "ENABLED",
+   "text": "temu",
+   "mt": "BROAD"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~490016994",
+   "id": "490016994",
+   "status": "ENABLED",
+   "text": "christmas light storage",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~1762401065",
+   "id": "1762401065",
+   "status": "ENABLED",
+   "text": "app download",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~11030595947",
+   "id": "11030595947",
+   "status": "ENABLED",
+   "text": "holiday lights for sale",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~13815997505",
+   "id": "13815997505",
+   "status": "ENABLED",
+   "text": "christmas light hanging service",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~18247234252",
+   "id": "18247234252",
+   "status": "ENABLED",
+   "text": "best christmas displays",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~295974718690",
+   "id": "295974718690",
+   "status": "ENABLED",
+   "text": "app not working",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~296448593009",
+   "id": "296448593009",
+   "status": "ENABLED",
+   "text": "labor only",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~297906007663",
+   "id": "297906007663",
+   "status": "ENABLED",
+   "text": "lights show",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~298017287907",
+   "id": "298017287907",
+   "status": "ENABLED",
+   "text": "christmas light repair",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~299057009899",
+   "id": "299057009899",
+   "status": "ENABLED",
+   "text": "holiday lights map",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~299562336650",
+   "id": "299562336650",
+   "status": "ENABLED",
+   "text": "zoo lights",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~300868002390",
+   "id": "300868002390",
+   "status": "ENABLED",
+   "text": "holiday event",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~300870114918",
+   "id": "300870114918",
+   "status": "ENABLED",
+   "text": "target christmas lights",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~301477363675",
+   "id": "301477363675",
+   "status": "ENABLED",
+   "text": "christmas lights map",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~313013329119",
+   "id": "313013329119",
+   "status": "ENABLED",
+   "text": "oelo",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~323199310029",
+   "id": "323199310029",
+   "status": "ENABLED",
+   "text": "christmas at the zoo",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~325789942795",
+   "id": "325789942795",
+   "status": "ENABLED",
+   "text": "christmas light removal",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~338093411457",
+   "id": "338093411457",
+   "status": "ENABLED",
+   "text": "lighting festival",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~345551175977",
+   "id": "345551175977",
+   "status": "ENABLED",
+   "text": "christmas light tour",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~349377707943",
+   "id": "349377707943",
+   "status": "ENABLED",
+   "text": "trimlight",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~374760751870",
+   "id": "374760751870",
+   "status": "ENABLED",
+   "text": "holiday light tour",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~492913282019",
+   "id": "492913282019",
+   "status": "ENABLED",
+   "text": "govee",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~573042878059",
+   "id": "573042878059",
+   "status": "ENABLED",
+   "text": "customer supplied",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~948119661333",
+   "id": "948119661333",
+   "status": "ENABLED",
+   "text": "celebright",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~1733687419372",
+   "id": "1733687419372",
+   "status": "ENABLED",
+   "text": "take down christmas lights",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~2225874598953",
+   "id": "2225874598953",
+   "status": "ENABLED",
+   "text": "my own lights",
+   "mt": "PHRASE"
+  },
+  {
+   "campaign_id": "24257151015",
+   "res": "customers/8164626278/campaignCriteria/24257151015~2356007674300",
+   "id": "2356007674300",
+   "status": "ENABLED",
+   "text": "seasonal light installation",
+   "mt": "PHRASE"
+  }
+ ],
+ "conversion_actions": [
+  {
+   "id": "7772803337",
+   "type": "WEBPAGE",
+   "primary": true,
+   "duration": 60
+  },
+  {
+   "id": "7773013199",
+   "type": "AD_CALL",
+   "primary": true,
+   "duration": 60
+  },
+  {
+   "id": "7773043879",
+   "type": "WEBSITE_CALL",
+   "primary": false,
+   "duration": 60
+  }
+ ],
+ "wc_numbers_http": 200,
+ "wc_numbers": [
+  {
+   "phone_number_id": 640641,
+   "phone_name": "Website Traffic",
+   "tracking_number": "+14027838482",
+   "swap_number": "4022027261",
+   "call_flow": "Call Flow: Apogee Lawns - ICF",
+   "trigger": "Pool: Website Traffic",
+   "source": null,
+   "medium": null,
+   "last_used": "2026-09-29T02:22:38Z",
+   "call_recording": null,
+   "voice": true,
+   "messaging": true,
+   "pending_activation": false,
+   "profile_id": 174313
+  },
+  {
+   "phone_number_id": 640643,
+   "phone_name": "GBP Traffic",
+   "tracking_number": "+14023832673",
+   "swap_number": null,
+   "call_flow": "Call Flow: Apogee Lawns - ICF",
+   "trigger": "None",
+   "source": "GBP Traffic",
+   "medium": "(none)",
+   "last_used": null,
+   "call_recording": null,
+   "voice": true,
+   "messaging": true,
+   "pending_activation": false,
+   "profile_id": 174313
+  },
+  {
+   "phone_number_id": 640645,
+   "phone_name": "LSA Traffic",
+   "tracking_number": "+14022567520",
+   "swap_number": null,
+   "call_flow": "Call Flow: Apogee Lawns - ICF",
+   "trigger": "None",
+   "source": "LSA Traffic",
+   "medium": "(none)",
+   "last_used": null,
+   "call_recording": null,
+   "voice": true,
+   "messaging": true,
+   "pending_activation": false,
+   "profile_id": 174313
+  },
+  {
+   "phone_number_id": 640646,
+   "phone_name": "GSA Traffic",
+   "tracking_number": "+14025265754",
+   "swap_number": null,
+   "call_flow": "Call Flow: Apogee Lawns - ICF",
+   "trigger": "None",
+   "source": "GSA Traffic",
+   "medium": "(none)",
+   "last_used": null,
+   "call_recording": null,
+   "voice": true,
+   "messaging": true,
+   "pending_activation": false,
+   "profile_id": 174313
+  },
+  {
+   "phone_number_id": 640647,
+   "phone_name": "FB Traffic",
+   "tracking_number": "+14027043396",
+   "swap_number": null,
+   "call_flow": "Call Flow: Apogee Lawns - ICF",
+   "trigger": "None",
+   "source": "FB Traffic",
+   "medium": "(none)",
+   "last_used": null,
+   "call_recording": null,
+   "voice": true,
+   "messaging": true,
+   "pending_activation": false,
+   "profile_id": 174313
+  },
+  {
+   "phone_number_id": 640648,
+   "phone_name": "NextDoor Traffic",
+   "tracking_number": "+14027818399",
+   "swap_number": null,
+   "call_flow": "Call Flow: Apogee Lawns - ICF",
+   "trigger": "None",
+   "source": "NextDoor Traffic",
+   "medium": "(none)",
+   "last_used": null,
+   "call_recording": null,
+   "voice": true,
+   "messaging": true,
+   "pending_activation": false,
+   "profile_id": 174313
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "generated_local": "2026-08-27T17:42:21.154154-04:00",
+ "customer_id": "2401959466",
+ "purpose": "Prove the 2026-08-27 audit changed nothing in the account.",
+ "baseline_source": "snapshots/snapshot-structure-2026-08-27.json taken at run start",
+ "checks": {
+  "non-removed campaigns": {
+   "observed": 23,
+   "expected": 23,
+   "pass": true
+  },
+  "live ad groups on the five": {
+   "observed": 5,
+   "expected": 5,
+   "pass": true
+  },
+  "live positive keywords": {
+   "observed": 10,
+   "expected": 10,
+   "pass": true
+  },
+  "non-removed ads on the five": {
+   "observed": 20,
+   "expected": 20,
+   "pass": true
+  },
+  "campaign-level negatives on the five": {
+   "observed": 3,
+   "expected": 3,
+   "pass": true
+  },
+  "their criterion ids": {
+   "observed": [
+    "10000390",
+    "10008241",
+    "10019071"
+   ],
+   "expected": [
+    "10000390",
+    "10008241",
+    "10019071"
+   ],
+   "pass": true
+  },
+  "five budgets (micros)": {
+   "observed": {
+    "15787409435": 141450000,
+    "15787409438": 42760000,
+    "15787409441": 176150000,
+    "15787409444": 78950000,
+    "15787409447": 26320000
+   },
+   "expected": {
+    "15787409435": 141450000,
+    "15787409438": 42760000,
+    "15787409441": 176150000,
+    "15787409444": 78950000,
+    "15787409447": 26320000
+   },
+   "pass": true
+  },
+  "bid ceilings still uncapped": {
+   "observed": [
+    0
+   ],
+   "expected": [
+    0
+   ],
+   "pass": true
+  },
+  "excluded parent asset sets still empty": {
+   "observed": [
+    []
+   ],
+   "expected": [
+    []
+   ],
+   "pass": true
+  },
+  "ClickCease IP exclusions": {
+   "observed": 2796,
+   "expected": 2796,
+   "pass": true
+  },
+  "account-level negative list members": {
+   "observed": 59,
+   "expected": 59,
+   "pass": true
+  },
+  "shared lists attached to the five": {
+   "observed": 0,
+   "expected": 0,
+   "pass": true
+  },
+  "non-removed conversion actions": {
+   "observed": 16,
+   "expected": 16,
+   "pass": true
+  },
+  "biddable campaign conversion goals": {
+   "observed": 25,
+   "expected": 25,
+   "pass": true
+  },
+  "ad schedule rows on the five": {
+   "observed": 30,
+   "expected": 30,
+   "pass": true
+  },
+  "location targets on the five": {
+   "observed": 375,
+   "expected": 375,
+   "pass": true
+  },
+  "manager links": {
+   "observed": {
+    "2815082755": "ACTIVE",
+    "3373711342": "ACTIVE"
+   },
+   "expected": {
+    "2815082755": "ACTIVE",
+    "3373711342": "ACTIVE"
+   },
+   "pass": true
+  },
+  "most recent change event": {
+   "observed": "2026-08-22 09:36:07.725231",
+   "expected": "2026-08-22 09:36:07.725231",
+   "pass": true
+  }
+ },
+ "overall": "PASS - the 2026-08-27 audit changed nothing in the account"
+}

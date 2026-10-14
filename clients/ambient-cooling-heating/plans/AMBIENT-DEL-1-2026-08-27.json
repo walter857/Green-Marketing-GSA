@@ -1,0 +1,135 @@
+{
+ "plan_name": "AMBIENT-DEL-1-2026-08-27",
+ "approval_class": "DESTRUCTIVE-ACTION approval - separate and explicit",
+ "generated_local": "2026-08-27T17:33:11.939414-04:00",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "target": {
+  "shared_set_id": "11252984411",
+  "shared_set_name": "account-level negative keywords list",
+  "shared_set_type": "ACCOUNT_LEVEL_NEGATIVE_KEYWORDS",
+  "member_count_reported_by_api": 0,
+  "actual_members_counted": 59,
+  "note": "ACCOUNT_LEVEL_NEGATIVE_KEYWORDS applies account-wide and never appears in campaign_shared_set. shared_set.member_count reports 0 for this type, so members must be counted from shared_criterion."
+ },
+ "operation": "REMOVE shared_criterion",
+ "object_count": 8,
+ "removals": [
+  {
+   "text": "ducane",
+   "match": "BROAD",
+   "criterion_id": "12719736",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12719736",
+   "reason": "Ducane is an HVAC equipment brand. Brand repair demand is in scope.",
+   "in_scope_service_probes_it_blocks": [],
+   "observed_terms_it_blocked": [],
+   "observed_cost_it_blocked": 0
+  },
+  {
+   "text": "ecobee",
+   "match": "BROAD",
+   "criterion_id": "4367690940",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~4367690940",
+   "reason": "Ecobee is a thermostat brand. Ecobee installation is HVAC work.",
+   "in_scope_service_probes_it_blocks": [
+    "ecobee thermostat installation"
+   ],
+   "observed_terms_it_blocked": [],
+   "observed_cost_it_blocked": 0
+  },
+  {
+   "text": "frigidaire",
+   "match": "BROAD",
+   "criterion_id": "10242046",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10242046",
+   "reason": "Frigidaire is an HVAC equipment brand. Brand repair demand is in scope.",
+   "in_scope_service_probes_it_blocks": [],
+   "observed_terms_it_blocked": [],
+   "observed_cost_it_blocked": 0
+  },
+  {
+   "text": "hanover",
+   "match": "BROAD",
+   "criterion_id": "11143481",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~11143481",
+   "reason": "Hanover, Maryland is geo target 1018614 and is an EXPLICITLY TARGETED city on all five campaigns. This negative blocks the account from its own targeted city.",
+   "in_scope_service_probes_it_blocks": [
+    "ac repair hanover md"
+   ],
+   "observed_terms_it_blocked": [],
+   "observed_cost_it_blocked": 0
+  },
+  {
+   "text": "rudd",
+   "match": "BROAD",
+   "criterion_id": "13670783",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~13670783",
+   "reason": "Common misspelling of Ruud. Same suppression.",
+   "in_scope_service_probes_it_blocks": [],
+   "observed_terms_it_blocked": [],
+   "observed_cost_it_blocked": 0
+  },
+  {
+   "text": "ruud",
+   "match": "BROAD",
+   "criterion_id": "12341163",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12341163",
+   "reason": "Ruud is an HVAC equipment brand. Ruud furnace and AC repair is HVAC Repair.",
+   "in_scope_service_probes_it_blocks": [
+    "ruud furnace repair"
+   ],
+   "observed_terms_it_blocked": [],
+   "observed_cost_it_blocked": 0
+  },
+  {
+   "text": "thermostat",
+   "match": "BROAD",
+   "criterion_id": "10624201",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10624201",
+   "reason": "Thermostat diagnosis and replacement is HVAC Repair work, one of the five approved services.",
+   "in_scope_service_probes_it_blocks": [
+    "thermostat not working hvac repair",
+    "ecobee thermostat installation"
+   ],
+   "observed_terms_it_blocked": [],
+   "observed_cost_it_blocked": 0
+  },
+  {
+   "text": "thermostats",
+   "match": "BROAD",
+   "criterion_id": "10624211",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10624211",
+   "reason": "Plural of the above. Negatives have no close variants, so both forms are present and both suppress the same demand.",
+   "in_scope_service_probes_it_blocks": [],
+   "observed_terms_it_blocked": [],
+   "observed_cost_it_blocked": 0
+  }
+ ],
+ "not_proposed": {
+  "commercial": "Blocks 'commercial ac repair' and 'commercial boiler repair'. Removing this is only correct if Ambient Cooling & Heating LLC actually serves commercial customers. That is an unverified business fact, so it is NOT proposed for removal."
+ },
+ "blast_radius": "This list applies to the whole account, so removal also affects the 18 legacy campaigns. All 18 are PAUSED, so there is no live delivery impact beyond the five active Search campaigns.",
+ "measured_loss_to_date": "$0.00. None of these eight negatives matched a term in the observed corpus, because they suppress demand before it can be measured. The case for removal is recovered qualified demand, not a recovered cost.",
+ "strongest_item": "'hanover' blocks the account from Hanover, Maryland, geo target 1018614, which is an explicitly targeted city on all five campaigns.",
+ "rollback": "Re-create the eight shared_criterion members with the same text and BROAD match. Criterion IDs will differ after re-creation.",
+ "unrelated_resource_assertions": [
+  "the other 51 members of list 11252984411 stay unchanged",
+  "no other shared set is touched",
+  "no campaign_shared_set association is created or removed",
+  "campaigns, budgets, keywords, ads, assets and conversions untouched"
+ ],
+ "fingerprint": "C3038EDD9E621944",
+ "validate_only": {
+  "status": "VALIDATE_OK",
+  "operations": 8,
+  "results_returned": 0
+ },
+ "void": true,
+ "voided_on": "2026-08-27T19:01:52.147362-04:00",
+ "void_reason": "SUPERSEDED AND VOID. Bundled the one verified removal with seven unverified ones. Split into E50EDFE7644A9B5F (hanover only) and 4D7AF1C9CFCA27F9 (equipment brands, HELD).",
+ "evidence_that_voided_it": [
+  "Only 'hanover' has a categorical, verified conflict: geo 1018614 Hanover, Maryland is explicitly targeted on all five campaigns.",
+  "The other seven have zero observed search terms and zero measured cost impact."
+ ],
+ "do_not_execute": true
+}

@@ -1,0 +1,329 @@
+{
+ "package": "ambient-cooling-heating-conversion-goals",
+ "version": "2026-08-18-v2",
+ "supersedes": "FDE2966C4695C96C",
+ "supersede_reason": "Three material findings invalidate v1. (1) 24/7 delivery means calls arrive outside 08:00-16:00 and reach voicemail, so a duration threshold alone can no longer define a qualified call - v1 proposed raising 6885576934 to 60s as the qualifying rule. (2) WhatConverts is proven live and performing dynamic number insertion, and its two upload conversion actions have recorded ZERO conversions all-time. (3) Google's own website-call swap is inert on the paid pages.",
+ "phase": "modify-existing",
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342"
+ },
+ "measurement_findings_2026_08_18": {
+  "whatconverts_is_live": "PROVEN. Blocking s.ksrndkehqnwntyxlhgto.com and process.iconnode.com reverts the mobile Call Now button from (410) 914-1456 back to the server-HTML number. WhatConverts profile script 105803.js.",
+  "whatconverts_uploads_nothing": "OBSERVED. Conversion actions 7643656075 'WC Calls' and 7643656486 'WC Lead' are both PRIMARY but have recorded 0.0 conversions in every window including all-time. They are configured and inert.",
+  "google_website_call_swap_is_inert_on_paid_pages": "OBSERVED. www.googleadservices.com/pagead/conversion/11155434808/wcm is called with dn=4104159517, a number that does not appear anywhere on the paid pages, and www.google.com/pagead/attribution/wcm returns {\"errorCode\":2,\"backoff\":3600}. Google therefore issues no forwarding number and performs no swap on offer. pages. The 19 conversions on 6885576934 in the last 365 days are attributable to the MAIN site, not to the paid landing pages.",
+  "ga4_phone_event_is_a_tap_not_a_call": "INFERRED from volume. GA4 action 7389995488 recorded 352 phone events in 365 days against 57 real ad calls on 1068114183. A 6x ratio is consistent with a tel: tap event, not a connected call. It is already Secondary and excluded from Conversions.",
+  "attribution_never_reaches_the_form": "OBSERVED. All seven Gravity Forms hidden fields stay empty on a click carrying gclid, gbraid, wbraid and five UTMs. No click ID can be returned in an offline upload."
+ },
+ "principle": "One deduplicated confirmed form submission is the Primary form action. A qualified call must be qualified by a HUMAN or CRM outcome, not by call duration, because 24/7 delivery routes out-of-hours calls to voicemail and a voicemail deposit easily exceeds any duration threshold.",
+ "voicemail_rule": {
+  "problem": "Google Ads counts an AD_CALL or WEBSITE_CALL conversion when the call connects for at least phone_call_duration_seconds. A voicemail pickup IS a connection. With ads eligible 168 hours a week and staff present roughly 40, a duration rule would count voicemail deposits as qualified calls.",
+  "rejected_approach": "Raising 6885576934 from 30s to 60s as the qualifying rule (v1).",
+  "chosen_approach": "Keep the duration-based call actions as LEAD INDICATORS, and make the authoritative qualified call an OFFLINE uploaded outcome after human or CRM review. Until that upload exists, no call action is treated as a qualified-lead source for bidding.",
+  "callback_and_later_qualification": "A voicemail is a lead, not a qualified call. The business calls back, qualifies, and the CRM stamps the outcome. That outcome is uploaded against the ORIGINAL click identifier captured at the landing page, with the original click timestamp, so the conversion is credited to the click that produced it rather than to the callback. This requires the landing-page attribution fix first."
+ },
+ "conversion_action_changes": [
+  {
+   "id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms",
+   "before": "PRIMARY, WEBPAGE, SUBMIT_LEAD_FORM, ONE_PER_CLICK, 30d, 70 conv all-time",
+   "after": "PRIMARY (unchanged) - the sole Primary form action",
+   "fields_to_change": [],
+   "mutation": false,
+   "reason": "Correct as configured and the only form action with real, recent volume."
+  },
+  {
+   "id": "6498555481",
+   "name": "Visit Thank you page - Submit Form",
+   "before": "PRIMARY, WEBPAGE, SUBMIT_LEAD_FORM, ONE_PER_CLICK, 3 conv all-time, 0 recent",
+   "after": "SECONDARY (observation only)",
+   "fields_to_change": [
+    "primary_for_goal: true -> false"
+   ],
+   "mutation": true,
+   "reason": "Duplicate SUBMIT_LEAD_FORM/WEBSITE action on the same thank-you path. Nearly dormant (3 all-time) but still able to double-count a lead."
+  },
+  {
+   "id": "6498555484",
+   "name": "Call BTN Click",
+   "before": "PRIMARY, WEBPAGE, category CONTACT, biddable, 34 conv all-time",
+   "after": "SECONDARY (observation only)",
+   "fields_to_change": [
+    "primary_for_goal: true -> false"
+   ],
+   "mutation": true,
+   "reason": "A telephone-link tap is not a completed call. Diagnostic only."
+  },
+  {
+   "id": "1068114183",
+   "name": "Calls from ads",
+   "before": "PRIMARY, AD_CALL, PHONE_CALL_LEAD, 60s, 236 all-time / 57 last-365",
+   "after": "PRIMARY retained as a LEAD INDICATOR at 60s, explicitly not a qualified-call proxy",
+   "fields_to_change": [],
+   "mutation": false,
+   "reason": "Real ad-call volume and the action the call asset resolves to. Under 24/7 delivery some of these are voicemail deposits, so it is documented as a lead indicator and reconciled against the offline qualified upload."
+  },
+  {
+   "id": "6885576934",
+   "name": "Ambient Cooling - Lp - Phone call leads",
+   "before": "PRIMARY, WEBSITE_CALL, PHONE_CALL_LEAD, 30s duration, 23 all-time",
+   "after": "PRIMARY retained at 30s - NO duration change",
+   "fields_to_change": [],
+   "mutation": false,
+   "reason": "v1 proposed 30s -> 60s. WITHDRAWN. Raising the threshold does not exclude voicemail and this action is inert on the paid pages anyway, because Google's number swap fails there. Changing it would create a false impression of a fix."
+  },
+  {
+   "id": "7643656075",
+   "name": "WC Calls",
+   "before": "PRIMARY, UPLOAD_CALLS, category CONTACT, 0 conversions all-time",
+   "after": "BLOCKED - awaiting the WhatConverts decision",
+   "fields_to_change": [],
+   "mutation": false,
+   "reason": "WhatConverts is live and swapping numbers, but this action has never received an upload. Either the integration is unfinished or it was abandoned. Do not change it until the intended call-tracking arrangement is confirmed."
+  },
+  {
+   "id": "7643656486",
+   "name": "WC Lead",
+   "before": "PRIMARY, UPLOAD_CLICKS, category CONTACT, 0 conversions all-time",
+   "after": "BLOCKED - awaiting the WhatConverts decision",
+   "fields_to_change": [],
+   "mutation": false,
+   "reason": "Same as 7643656075."
+  },
+  {
+   "id": "7389995485 / 7389995488",
+   "name": "GA4 imported form_submit / phone_call",
+   "before": "SECONDARY, excluded from Conversions",
+   "after": "unchanged",
+   "fields_to_change": [],
+   "mutation": false,
+   "reason": "Already correct as diagnostics."
+  },
+  {
+   "id": "6640721230 / 6642544931 / 6954620053 / 6642551975 / 6641739327",
+   "name": "Clicks to call + Local actions (Google-hosted)",
+   "before": "primary_for_goal true but include_in_conversions_metric false",
+   "after": "unchanged",
+   "fields_to_change": [],
+   "mutation": false,
+   "reason": "Excluded from the Conversions column; they do not contaminate Search reporting."
+  }
+ ],
+ "campaign_conversion_goal_changes": [
+  {
+   "campaign_id": "24132507741",
+   "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "before_biddable": [
+    "CONTACT/CALL_FROM_ADS",
+    "CONTACT/WEBSITE",
+    "PHONE_CALL_LEAD/CALL_FROM_ADS",
+    "PHONE_CALL_LEAD/WEBSITE",
+    "SUBMIT_LEAD_FORM/WEBSITE"
+   ],
+   "after_biddable": [
+    "SUBMIT_LEAD_FORM/WEBSITE",
+    "PHONE_CALL_LEAD/WEBSITE",
+    "PHONE_CALL_LEAD/CALL_FROM_ADS"
+   ],
+   "remove_biddable": [
+    "CONTACT/WEBSITE",
+    "CONTACT/CALL_FROM_ADS"
+   ],
+   "mutation": true,
+   "reason": "CONTACT/WEBSITE is what makes 'Call BTN Click' and 'WC Lead' biddable; CONTACT/CALL_FROM_ADS does the same for 'WC Calls'. Removing both leaves only confirmed form submissions and real calls."
+  },
+  {
+   "campaign_id": "24132507744",
+   "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+   "before_biddable": [
+    "CONTACT/CALL_FROM_ADS",
+    "CONTACT/WEBSITE",
+    "PHONE_CALL_LEAD/CALL_FROM_ADS",
+    "PHONE_CALL_LEAD/WEBSITE",
+    "SUBMIT_LEAD_FORM/WEBSITE"
+   ],
+   "after_biddable": [
+    "SUBMIT_LEAD_FORM/WEBSITE",
+    "PHONE_CALL_LEAD/WEBSITE",
+    "PHONE_CALL_LEAD/CALL_FROM_ADS"
+   ],
+   "remove_biddable": [
+    "CONTACT/WEBSITE",
+    "CONTACT/CALL_FROM_ADS"
+   ],
+   "mutation": true,
+   "reason": "CONTACT/WEBSITE is what makes 'Call BTN Click' and 'WC Lead' biddable; CONTACT/CALL_FROM_ADS does the same for 'WC Calls'. Removing both leaves only confirmed form submissions and real calls."
+  },
+  {
+   "campaign_id": "24132507747",
+   "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "before_biddable": [
+    "CONTACT/CALL_FROM_ADS",
+    "CONTACT/WEBSITE",
+    "PHONE_CALL_LEAD/CALL_FROM_ADS",
+    "PHONE_CALL_LEAD/WEBSITE",
+    "SUBMIT_LEAD_FORM/WEBSITE"
+   ],
+   "after_biddable": [
+    "SUBMIT_LEAD_FORM/WEBSITE",
+    "PHONE_CALL_LEAD/WEBSITE",
+    "PHONE_CALL_LEAD/CALL_FROM_ADS"
+   ],
+   "remove_biddable": [
+    "CONTACT/WEBSITE",
+    "CONTACT/CALL_FROM_ADS"
+   ],
+   "mutation": true,
+   "reason": "CONTACT/WEBSITE is what makes 'Call BTN Click' and 'WC Lead' biddable; CONTACT/CALL_FROM_ADS does the same for 'WC Calls'. Removing both leaves only confirmed form submissions and real calls."
+  },
+  {
+   "campaign_id": "24132507750",
+   "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+   "before_biddable": [
+    "CONTACT/CALL_FROM_ADS",
+    "CONTACT/WEBSITE",
+    "PHONE_CALL_LEAD/CALL_FROM_ADS",
+    "PHONE_CALL_LEAD/WEBSITE",
+    "SUBMIT_LEAD_FORM/WEBSITE"
+   ],
+   "after_biddable": [
+    "SUBMIT_LEAD_FORM/WEBSITE",
+    "PHONE_CALL_LEAD/WEBSITE",
+    "PHONE_CALL_LEAD/CALL_FROM_ADS"
+   ],
+   "remove_biddable": [
+    "CONTACT/WEBSITE",
+    "CONTACT/CALL_FROM_ADS"
+   ],
+   "mutation": true,
+   "reason": "CONTACT/WEBSITE is what makes 'Call BTN Click' and 'WC Lead' biddable; CONTACT/CALL_FROM_ADS does the same for 'WC Calls'. Removing both leaves only confirmed form submissions and real calls."
+  },
+  {
+   "campaign_id": "24132507753",
+   "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+   "before_biddable": [
+    "CONTACT/CALL_FROM_ADS",
+    "CONTACT/WEBSITE",
+    "PHONE_CALL_LEAD/CALL_FROM_ADS",
+    "PHONE_CALL_LEAD/WEBSITE",
+    "SUBMIT_LEAD_FORM/WEBSITE"
+   ],
+   "after_biddable": [
+    "SUBMIT_LEAD_FORM/WEBSITE",
+    "PHONE_CALL_LEAD/WEBSITE",
+    "PHONE_CALL_LEAD/CALL_FROM_ADS"
+   ],
+   "remove_biddable": [
+    "CONTACT/WEBSITE",
+    "CONTACT/CALL_FROM_ADS"
+   ],
+   "mutation": true,
+   "reason": "CONTACT/WEBSITE is what makes 'Call BTN Click' and 'WC Lead' biddable; CONTACT/CALL_FROM_ADS does the same for 'WC Calls'. Removing both leaves only confirmed form submissions and real calls."
+  }
+ ],
+ "call_asset_binding": {
+  "asset_id": "407995613637",
+  "phone": "(410) 705-6354",
+  "country_code": "US",
+  "before": "call_conversion_reporting_state = USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION",
+  "after": "USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION bound to 1068114183 'Calls from ads'",
+  "mutation": true,
+  "phone_number_must_not_change": true,
+  "reason": "Removes dependence on whatever the account default happens to be. The number itself is untouched."
+ },
+ "mutation_summary": {
+  "conversion_actions_modified": 2,
+  "campaign_conversion_goal_sets_modified": 5,
+  "call_asset_modified": 1,
+  "conversion_actions_created": 0,
+  "conversion_actions_removed": 0,
+  "total_mutations": 8,
+  "blocked_pending_answer": 2
+ },
+ "attribution_fields_to_preserve": [
+  "gclid",
+  "gbraid",
+  "wbraid",
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_term",
+  "utm_content",
+  "lead_id",
+  "campaign_id",
+  "ad_group_id",
+  "keyword",
+  "device",
+  "landing_page",
+  "consent_state",
+  "call_start_time",
+  "qualified_flag",
+  "sold_flag",
+  "sold_value"
+ ],
+ "deduplication": {
+  "form": "ONE_PER_CLICK keyed on the Gravity Forms entry ID as lead_id.",
+  "call": "Ad-call and website-call paths are mutually exclusive per session. The offline qualified-call upload is keyed on lead_id and must never be uploaded twice.",
+  "offline": "Data Manager API keyed on lead_id + gclid, with the ORIGINAL click timestamp. Maintain an uploaded-lead_id ledger and reject repeats."
+ },
+ "test_matrix": [
+  {
+   "case": "Paid click 10:00 -> form submit",
+   "expect": "1 Primary form conversion, lead_id and gclid present"
+  },
+  {
+   "case": "Paid click -> tel tap, no call",
+   "expect": "0 Primary, 1 Secondary Call BTN Click"
+  },
+  {
+   "case": "Paid click 02:00 -> call 90s to VOICEMAIL",
+   "expect": "1 lead-indicator call conversion, NOT counted as qualified until CRM review"
+  },
+  {
+   "case": "Paid click 10:00 -> call 90s answered live and qualified",
+   "expect": "1 lead indicator + 1 offline qualified upload against the original gclid"
+  },
+  {
+   "case": "Voicemail then next-day callback that qualifies",
+   "expect": "qualified upload credited to the ORIGINAL click, not the callback"
+  },
+  {
+   "case": "Form submit then refresh",
+   "expect": "still 1 conversion (ONE_PER_CLICK)"
+  },
+  {
+   "case": "Organic visit -> form submit",
+   "expect": "conversion recorded, no gclid, excluded from paid ROAS"
+  },
+  {
+   "case": "Consent denied",
+   "expect": "Consent Mode v2 modelled, no client-side identifiers stored"
+  },
+  {
+   "case": "Same lead submits twice",
+   "expect": "1 conversion; second rejected on lead_id"
+  }
+ ],
+ "blocking_prerequisites": [
+  "Landing-page attribution fix: input_9..input_15 must capture gclid/gbraid/wbraid/UTMs, otherwise no offline upload is possible and the qualified-call architecture cannot exist.",
+  "WhatConverts decision: confirm whether WhatConverts is the intended authoritative call source, or should be removed. Two Primary actions currently depend on the answer.",
+  "Confirm the destination of the WhatConverts pool number (410) 914-1456 and of the Google-configured number (410) 415-9517, neither of which is the approved paid number."
+ ],
+ "rollback_plan": {
+  "method": "Restore primary_for_goal=true on 6498555481 and 6498555484; restore CONTACT/WEBSITE and CONTACT/CALL_FROM_ADS as biddable campaign goals on all five campaigns; restore the call asset to USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION.",
+  "restore_mutations": 8,
+  "source_of_truth": "snapshots/pre-change-structure-2026-08-18.json",
+  "data_loss": "None. Changing primary_for_goal reclassifies reporting; it does not delete historical conversion data."
+ },
+ "readback_procedure": [
+  "1. SELECT conversion_action.id, primary_for_goal, phone_call_duration_seconds FROM conversion_action. ASSERT 6498555481 and 6498555484 are primary_for_goal=false and every other action is unchanged, including 6885576934 still at 30s.",
+  "2. SELECT campaign_conversion_goal for the five campaigns. ASSERT biddable = exactly SUBMIT_LEAD_FORM/WEBSITE, PHONE_CALL_LEAD/WEBSITE, PHONE_CALL_LEAD/CALL_FROM_ADS.",
+  "3. ASSERT customer_conversion_goal is UNCHANGED - this plan edits campaign goals only.",
+  "4. SELECT asset.call_asset for 407995613637. ASSERT phone_number is still (410)705-6354 and reporting state now resolves to 1068114183.",
+  "5. ASSERT the five campaigns still ENABLED / SERVING / TARGET_SPEND with unchanged budgets.",
+  "6. ASSERT no conversion action was created or removed - count is still 23.",
+  "7. ASSERT both manager links ACTIVE, including ClickCease 2815082755."
+ ],
+ "plan_fingerprint": "F066F8D4FD642AD8"
+}

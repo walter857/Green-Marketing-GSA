@@ -1,0 +1,93 @@
+{
+ "plan": "AMB-0923-CONV-2",
+ "fingerprint": "2550EA4C9BDC",
+ "when": "2026-09-23T18:29:28.999220-04:00",
+ "customer_id": "2401959466",
+ "assertions": [
+  {
+   "check": "7389995485 demoted",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "7389995485 still ENABLED",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "7643656486 demoted",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "7643656486 still ENABLED",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "7643656075 demoted",
+   "pass": true,
+   "detail": "False"
+  },
+  {
+   "check": "7643656075 still ENABLED",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "6885463625 still Primary",
+   "pass": true,
+   "detail": "True"
+  },
+  {
+   "check": "6885463625 still ENABLED",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "1068114183 still Primary",
+   "pass": true,
+   "detail": "True"
+  },
+  {
+   "check": "1068114183 still ENABLED",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "6885576934 still Primary",
+   "pass": true,
+   "detail": "True"
+  },
+  {
+   "check": "6885576934 still ENABLED",
+   "pass": true,
+   "detail": "ENABLED"
+  },
+  {
+   "check": "exactly 3 biddable paths remain",
+   "pass": true,
+   "detail": "3"
+  }
+ ],
+ "FAIL": 0,
+ "committed": [
+  "customers/2401959466/conversionActions/7389995485",
+  "customers/2401959466/conversionActions/7643656486",
+  "customers/2401959466/conversionActions/7643656075"
+ ],
+ "actually_biddable_after": [
+  {
+   "id": "1068114183",
+   "name": "Calls from ads"
+  },
+  {
+   "id": "6885463625",
+   "name": "Ambient Cooling - LP -Submit Lead Forms"
+  },
+  {
+   "id": "6885576934",
+   "name": "Ambient Cooling - Lp - Phone call leads"
+  }
+ ]
+}

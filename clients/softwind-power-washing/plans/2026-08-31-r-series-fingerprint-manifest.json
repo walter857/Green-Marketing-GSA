@@ -1,0 +1,554 @@
+{
+  "generated_account_local": "2026-08-31T19:58:23.442536-04:00",
+  "series": "R - 2026-08-31 recovery",
+  "revision": "2 - continuation reconciliation",
+  "target": {
+    "exact_child_account_name": "Softwind Power Washing - Live",
+    "child_customer_id": "1521725229",
+    "exact_service": "Power Washing",
+    "manager_customer_id": "3373711342"
+  },
+  "fingerprint_function": "gm_gsa.safety.approval_code (SHA-256 over the canonical action payload, first 12 hex, uppercase). The canonical payload covers target identity and the exact action list only - never narrative or evidence - so restating a figure does not invalidate an approval, while any change to a resource ID, value, field mask or count does.",
+  "parser": "duplicate-key-aware SafeLoader; a repeated mapping key raises",
+  "note": "A fingerprint identifies an exact plan. It does NOT grant permission. Every plan below is NOT APPROVED and must not be executed. Only plans with approval_command_allowed = true carry an approval phrase.",
+  "void_registry": [
+    {
+      "plan_id": "PLAN-R3A",
+      "fingerprint": "B57E427D07C5",
+      "version": "$12.00 on campaign 24103511039 only, 1 mutation, generated 2026-08-31 17:30",
+      "state": "VOID - SUPERSEDED BY PLAN-R3B",
+      "reason": "The $12.00 figure was sound; the single-campaign control design was not. Campaign 24145053510 is not a valid independent control - five search terms have served in BOTH campaigns at an equal bid, carrying 26.7% of valid clicks and 24.8% of spend, and four of those five were absorbed by one campaign-B keyword. Holding B at $30 while moving A to $12 would give B a 2.5x bid advantage on shared query space. PLAN-R3B applies $12.00 symmetrically to both campaigns instead.",
+      "do_not_honour": true
+    },
+    {
+      "plan_id": "PLAN-R3",
+      "fingerprint": "97D8B268A80A",
+      "version": "$22.00 ceiling on BOTH campaigns, 2 mutations, generated 2026-08-31 10:45",
+      "state": "VOID - SUPERSEDED BY PLAN-R3A",
+      "reason": "Walter did not approve a $22 ceiling. The completed CPC ceiling analysis found $12.00 to be the lowest defensible test ceiling: $10 clears ~15.8% of measured local demand, $12 clears ~98.2%, and $18/$22 add almost no additional measured keyword coverage over $12. PLAN-R3 also changed both campaigns at once, destroying the control group and restarting campaign B's learning window. Replaced by PLAN-R3A: one field, one campaign, campaign 24145053510 held at $30.00 as the control.",
+      "do_not_honour": true
+    },
+    {
+      "plan_id": "PLAN-R8",
+      "fingerprint": "DFF115FF4D26",
+      "version": "two-mutation asset-parity version, generated 2026-08-31 10:55",
+      "state": "VOID - ACTIONS ALREADY COMPLETED MANUALLY",
+      "reason": "R8-01 (link SITELINK 413928453094 to campaign 24103511039) and R8-02 (link STRUCTURED_SNIPPET 404844116658 to campaign 24103511039) were both performed by hand in the Google Ads UI between 10:21 and 10:52 on 2026-08-31, while the audit was running. Executing them now would attempt to create campaign_asset links that already exist. Verified present and ENABLED by fresh read at 16:40.",
+      "do_not_honour": true
+    }
+  ],
+  "totals": {
+    "plans": 14,
+    "approval_ready": 5,
+    "read_only_or_investigation": 1,
+    "decision_record": 1,
+    "website_separate_track": 1,
+    "no_action_closed_by_owner": 1,
+    "no_action_hold": 1,
+    "provisional": 1,
+    "blocked": 1,
+    "superseded": 2,
+    "void_fingerprints": 3,
+    "total_actions": 52,
+    "total_objects": 52,
+    "total_google_ads_mutations_all_plans": 63,
+    "google_ads_mutations_approval_ready_only": 38,
+    "total_website_actions": 9
+  },
+  "status_index": {
+    "READ-ONLY / INVESTIGATION": [
+      "PLAN-R1"
+    ],
+    "PROVISIONAL": [
+      "PLAN-R10"
+    ],
+    "BLOCKED": [
+      "PLAN-R11"
+    ],
+    "NO-ACTION - HOLD": [
+      "PLAN-R12"
+    ],
+    "APPROVAL-READY": [
+      "PLAN-R2",
+      "PLAN-R3B",
+      "PLAN-R5",
+      "PLAN-R6",
+      "PLAN-R9"
+    ],
+    "SUPERSEDED": [
+      "PLAN-R3",
+      "PLAN-R3A"
+    ],
+    "DECISION RECORD": [
+      "PLAN-R4"
+    ],
+    "WEBSITE - SEPARATE TRACK": [
+      "PLAN-R7"
+    ],
+    "NO-ACTION - CLOSED BY OWNER": [
+      "PLAN-R8"
+    ]
+  },
+  "reconciliation_assertions": [
+    {
+      "assertion": "every plan appears in exactly one status category",
+      "pass": true,
+      "detail": "14 categorised vs 14 plans"
+    },
+    {
+      "assertion": "status counts equal total plan count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "every approval-ready plan has at least one action",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "every approval-ready plan targets at least one real resource",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "no provisional placeholder is approvable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "no zero-action plan emits an approval command",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "no blocked plan emits an approval command",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "no obsolete R8 fingerprint remains approvable",
+      "pass": true,
+      "detail": "current PLAN-R8 fingerprint is C941DDCA44C6"
+    },
+    {
+      "assertion": "PLAN-R8 emits no approval command",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "PLAN-R12 emits no approval command",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "no superseded plan emits an approval command",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "every void-registry fingerprint is absent from the approvable set",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "PLAN-R3 is superseded and not approvable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "PLAN-R3B exists, is approval-ready and carries exactly 2 mutations",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "PLAN-R3A is superseded and emits no approval command",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "PLAN-R3A exists and carries exactly 1 mutation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "PLAN-R3A is SUPERSEDED (was BLOCKED) and emits no approval command",
+      "pass": true,
+      "detail": "superseded by PLAN-R3B; control design was invalid"
+    },
+    {
+      "assertion": "no duplicate-key parse failures",
+      "pass": true,
+      "detail": "all plans parsed dup-key clean"
+    },
+    {
+      "assertion": "no identity gate problems on any plan",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "assertion": "declared mutations reconcile with summed object counts",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "reconciliation_pass": true,
+  "plans": [
+    {
+      "plan_id": "PLAN-R1",
+      "plan_title": "Measurement verification and conversion-counting repair",
+      "file": "2026-08-31-plan-r1-measurement-verification.yaml",
+      "approval_type": "MEASUREMENT_VERIFICATION",
+      "priority": "P0",
+      "status_category": "READ-ONLY / INVESTIGATION",
+      "fingerprint": "98BA60C3983D",
+      "fingerprint_state": "FINAL",
+      "action_count": 0,
+      "object_count": 0,
+      "ads_mutation_count": 0,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": 1,
+      "depends_on": null,
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "98ba60c3983dae971f77ed4719718e79e5038edd8b9b4b6e8f937945f67b253c",
+      "identity_gate_problems": [],
+      "approval_command_allowed": false,
+      "approval_command_suppressed_because": "zero Google Ads mutations; the work is investigation and client-supplied inputs, which need action but not an Ads approval phrase",
+      "approval_phrase": null
+    },
+    {
+      "plan_id": "PLAN-R10",
+      "plan_title": "Enable the resources created paused by PLAN-R5 and PLAN-R6",
+      "file": "2026-08-31-plan-r10-enablement.yaml",
+      "approval_type": "ENABLE_AFTER_READBACK_QA",
+      "priority": "P1",
+      "status_category": "PROVISIONAL",
+      "fingerprint": "CE1BA19B8F5A",
+      "fingerprint_state": "PROVISIONAL - MUST BE REGENERATED",
+      "action_count": 0,
+      "object_count": 0,
+      "ads_mutation_count": 11,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": true,
+      "recommended_approval_order": 10,
+      "depends_on": [
+        "PLAN-R5",
+        "PLAN-R6"
+      ],
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "ce1ba19b8f5a4beba503efb267dcd3f644f53f65d23e47acdcf61d4126e1b27d",
+      "identity_gate_problems": [],
+      "approval_command_allowed": false,
+      "approval_command_suppressed_because": "every action names a PENDING_CREATION placeholder; the fingerprint must be regenerated against real resource IDs after PLAN-R5 and PLAN-R6 are created paused and read back",
+      "approval_phrase": null
+    },
+    {
+      "plan_id": "PLAN-R11",
+      "plan_title": "Retire the duplicated and displaced containers, after replacements are live",
+      "file": "2026-08-31-plan-r11-old-resource-pauses.yaml",
+      "approval_type": "PAUSE_AND_UNLINK_AFTER_REPLACEMENT",
+      "priority": "P1",
+      "status_category": "BLOCKED",
+      "fingerprint": "3AB271E93FC7",
+      "fingerprint_state": "FINAL",
+      "action_count": 11,
+      "object_count": 11,
+      "ads_mutation_count": 11,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": 11,
+      "depends_on": [
+        "PLAN-R4",
+        "PLAN-R6",
+        "PLAN-R10"
+      ],
+      "blocking_state": "BLOCKED",
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "3ab271e93fc735be941f46c9a031ba694613c1da9f052c904286652cc893ac3b",
+      "identity_gate_problems": [],
+      "approval_command_allowed": false,
+      "approval_command_suppressed_because": "blocked on a dependency; replacements must be created, enabled and verified serving first",
+      "approval_phrase": null
+    },
+    {
+      "plan_id": "PLAN-R12",
+      "plan_title": "Hold both budgets unchanged and record why",
+      "file": "2026-08-31-plan-r12-budget.yaml",
+      "approval_type": "LIVE_CAMPAIGN_BUDGET",
+      "priority": "P2",
+      "status_category": "NO-ACTION - HOLD",
+      "fingerprint": "A730172A41A8",
+      "fingerprint_state": "FINAL",
+      "action_count": 0,
+      "object_count": 0,
+      "ads_mutation_count": 0,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": 12,
+      "depends_on": null,
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "a730172a41a87861cca2f6107151f4adc9d28bafbd423521c8ba8a23d1c97278",
+      "identity_gate_problems": [],
+      "approval_command_allowed": false,
+      "approval_command_suppressed_because": "proposes no budget change; recording the decision not to act is not an executable change plan",
+      "approval_phrase": null
+    },
+    {
+      "plan_id": "PLAN-R2",
+      "plan_title": "Replace an over-broad negative and add three precise ones",
+      "file": "2026-08-31-plan-r2-search-term-negatives.yaml",
+      "approval_type": "LIVE_CAMPAIGN_NEGATIVE_KEYWORDS",
+      "priority": "P1",
+      "status_category": "APPROVAL-READY",
+      "fingerprint": "2A06983866C1",
+      "fingerprint_state": "FINAL",
+      "action_count": 8,
+      "object_count": 8,
+      "ads_mutation_count": 8,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": 3,
+      "depends_on": null,
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "2a06983866c1021c0d0d8b89757690fb20a53a9c267b2be8a02451c0a4334131",
+      "identity_gate_problems": [],
+      "approval_command_allowed": true,
+      "approval_command_suppressed_because": "",
+      "approval_phrase": "APPROVE PLAN-R2 2A06983866C1 FOR 1521725229"
+    },
+    {
+      "plan_id": "PLAN-R3",
+      "plan_title": "Lower the Maximize Clicks CPC ceiling from $30.00 to $22.00",
+      "file": "2026-08-31-plan-r3-bidding-control.yaml",
+      "approval_type": "LIVE_CAMPAIGN_BIDDING",
+      "priority": "P0",
+      "status_category": "SUPERSEDED",
+      "fingerprint": "97D8B268A80A",
+      "fingerprint_state": "FINAL",
+      "action_count": 2,
+      "object_count": 2,
+      "ads_mutation_count": 2,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": null,
+      "depends_on": null,
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "97d8b268a80a20925d82fe04356fdc0395ebfbea41a37b8cf79b48aecb7fbebc",
+      "identity_gate_problems": [],
+      "approval_command_allowed": false,
+      "approval_command_suppressed_because": "void - superseded by PLAN-R3A; its fingerprint must not be honoured",
+      "approval_phrase": null
+    },
+    {
+      "plan_id": "PLAN-R3A",
+      "plan_title": "Controlled $12.00 CPC ceiling test on campaign A only, campaign B held as control",
+      "file": "2026-08-31-plan-r3a-controlled-12-cpc-test.yaml",
+      "approval_type": "LIVE_CAMPAIGN_BIDDING",
+      "priority": "P0",
+      "status_category": "SUPERSEDED",
+      "fingerprint": "B57E427D07C5",
+      "fingerprint_state": "FINAL",
+      "action_count": 1,
+      "object_count": 1,
+      "ads_mutation_count": 1,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": null,
+      "depends_on": null,
+      "blocking_state": "BLOCKED",
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "b57e427d07c5aa5906f0aeb75225f0c644fa25d0734cd86e9abf4382b5f30d4b",
+      "identity_gate_problems": [],
+      "approval_command_allowed": false,
+      "approval_command_suppressed_because": "void - superseded by PLAN-R3B; its fingerprint must not be honoured",
+      "approval_phrase": null
+    },
+    {
+      "plan_id": "PLAN-R3B",
+      "plan_title": "Symmetric $12.00 Maximize Clicks CPC ceiling on both campaigns",
+      "file": "2026-08-31-plan-r3b-symmetric-12-cpc-control.yaml",
+      "approval_type": "LIVE_CAMPAIGN_BIDDING",
+      "priority": "P0",
+      "status_category": "APPROVAL-READY",
+      "fingerprint": "BC0A5A7258E2",
+      "fingerprint_state": "FINAL",
+      "action_count": 2,
+      "object_count": 2,
+      "ads_mutation_count": 2,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": 2,
+      "depends_on": null,
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "bc0a5a7258e2534af183715d7943c57146f805d2206778301e067916939cf9ee",
+      "identity_gate_problems": [],
+      "approval_command_allowed": true,
+      "approval_command_suppressed_because": "",
+      "approval_phrase": "APPROVE PLAN-R3B BC0A5A7258E2 FOR 1521725229"
+    },
+    {
+      "plan_id": "PLAN-R4",
+      "plan_title": "Core rescue structure - one campaign, five owned intents",
+      "file": "2026-08-31-plan-r4-core-campaign-structure.yaml",
+      "approval_type": "STRUCTURE_DECISION_NO_MUTATION",
+      "priority": "P1",
+      "status_category": "DECISION RECORD",
+      "fingerprint": "0E08B1CF1F16",
+      "fingerprint_state": "FINAL",
+      "action_count": 0,
+      "object_count": 0,
+      "ads_mutation_count": 0,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": 4,
+      "depends_on": null,
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "0e08b1cf1f16c88fee368e423a9ce42d236c2d0b10afb2daa5d2a488a89bb9dd",
+      "identity_gate_problems": [],
+      "approval_command_allowed": false,
+      "approval_command_suppressed_because": "structural decision record with zero mutations; it is not an execution approval and must not carry an approval command",
+      "approval_phrase": null
+    },
+    {
+      "plan_id": "PLAN-R5",
+      "plan_title": "Two replacement RSAs for Power Washing Near Me, created paused",
+      "file": "2026-08-31-plan-r5-new-rsas.yaml",
+      "approval_type": "CREATE_PAUSED_ADS",
+      "priority": "P1",
+      "status_category": "APPROVAL-READY",
+      "fingerprint": "440E0CB3FA65",
+      "fingerprint_state": "FINAL",
+      "action_count": 2,
+      "object_count": 2,
+      "ads_mutation_count": 2,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": true,
+      "recommended_approval_order": 5,
+      "depends_on": null,
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "440e0cb3fa652b31503879b850a39e70290307459d7d9a982ae604ded536fd79",
+      "identity_gate_problems": [],
+      "approval_command_allowed": true,
+      "approval_command_suppressed_because": "",
+      "approval_phrase": "APPROVE PLAN-R5 440E0CB3FA65 FOR 1521725229"
+    },
+    {
+      "plan_id": "PLAN-R6",
+      "plan_title": "Three new SKAGs in campaign A for the uncovered demand, created paused",
+      "file": "2026-08-31-plan-r6-new-skags.yaml",
+      "approval_type": "CREATE_PAUSED_AD_GROUPS_KEYWORDS_ADS",
+      "priority": "P1",
+      "status_category": "APPROVAL-READY",
+      "fingerprint": "7530A7A8CB07",
+      "fingerprint_state": "FINAL",
+      "action_count": 14,
+      "object_count": 14,
+      "ads_mutation_count": 14,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": true,
+      "recommended_approval_order": 6,
+      "depends_on": "PLAN-R4 (structure decision)",
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "7530a7a8cb077aefa8793089633baf0f19fd37b65714801cccf8127598f96cdd",
+      "identity_gate_problems": [],
+      "approval_command_allowed": true,
+      "approval_command_suppressed_because": "",
+      "approval_phrase": "APPROVE PLAN-R6 7530A7A8CB07 FOR 1521725229"
+    },
+    {
+      "plan_id": "PLAN-R7",
+      "plan_title": "Landing-page and tracking fixes on offer.softwindli.com",
+      "file": "2026-08-31-plan-r7-landing-page-fixes.yaml",
+      "approval_type": "WEBSITE_CHANGE_NO_ADS_MUTATION",
+      "priority": "P0",
+      "status_category": "WEBSITE - SEPARATE TRACK",
+      "fingerprint": "BCC32C8C9FC7",
+      "fingerprint_state": "FINAL",
+      "action_count": 0,
+      "object_count": 0,
+      "ads_mutation_count": 0,
+      "website_action_count": 9,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": 7,
+      "depends_on": null,
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "bcc32c8c9fc7fad52559b477e9241e406e792f32975d5a585f5147b9e7b48178",
+      "identity_gate_problems": [],
+      "approval_command_allowed": false,
+      "approval_command_suppressed_because": "website changes only, zero Google Ads mutations; approval belongs to whoever owns the site, on its own track",
+      "approval_phrase": null
+    },
+    {
+      "plan_id": "PLAN-R8",
+      "plan_title": "Asset parity - closed by owner action; remaining items are blocked",
+      "file": "2026-08-31-plan-r8-asset-fixes.yaml",
+      "approval_type": "ASSET_STATUS_RECORD_NO_MUTATION",
+      "priority": "P2",
+      "status_category": "NO-ACTION - CLOSED BY OWNER",
+      "fingerprint": "C941DDCA44C6",
+      "fingerprint_state": "FINAL",
+      "action_count": 0,
+      "object_count": 0,
+      "ads_mutation_count": 0,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": 8,
+      "depends_on": null,
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "c941ddca44c65604b09a93d25070d2b21b8109224113705c9d7e1689437ac94a",
+      "identity_gate_problems": [],
+      "approval_command_allowed": false,
+      "approval_command_suppressed_because": "the two proposed mutations were completed manually by the owner during the audit; a zero-action status record is not an executable change plan",
+      "approval_phrase": null
+    },
+    {
+      "plan_id": "PLAN-R9",
+      "plan_title": "Add six audience segments in OBSERVATION mode at 0% bid modifier",
+      "file": "2026-08-31-plan-r9-audience-observations.yaml",
+      "approval_type": "LIVE_CAMPAIGN_AUDIENCE_OBSERVATION",
+      "priority": "P2",
+      "status_category": "APPROVAL-READY",
+      "fingerprint": "F7C28F116329",
+      "fingerprint_state": "FINAL",
+      "action_count": 12,
+      "object_count": 12,
+      "ads_mutation_count": 12,
+      "website_action_count": 0,
+      "requires_separate_enable_approval": false,
+      "recommended_approval_order": 9,
+      "depends_on": null,
+      "blocking_state": null,
+      "approval_status": "NOT APPROVED",
+      "execution_status": "DO NOT EXECUTE",
+      "canonical_sha256_full": "f7c28f11632955775849d948f9ea56d8b454486e594a677dee53c900a60aa38b",
+      "identity_gate_problems": [],
+      "approval_command_allowed": true,
+      "approval_command_suppressed_because": "",
+      "approval_phrase": "APPROVE PLAN-R9 F7C28F116329 FOR 1521725229"
+    }
+  ]
+}

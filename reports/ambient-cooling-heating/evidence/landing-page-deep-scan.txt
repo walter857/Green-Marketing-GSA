@@ -1,0 +1,166 @@
+
+====================================================================================================
+### ac-repair
+====================================================================================================
+-- countdown configuration --
+   [countdown[^;{]{0,120}] countdown-css-css" href="https://offer.ambientcoolingandheating.com/wp-content/plugins/dynamic-offer-countdown/assets/css/countdo
+   [countdown[^;{]{0,120}] countdown-js-js" src="https://offer.ambientcoolingandheating.com/wp-content/plugins/dynamic-offer-countdown/assets/js/countdown.j
+   [countdown[^;{]{0,120}] countdown-prompt" style="color:#FFFFFF
+   [countdown[^;{]{0,120}] countdown-wrapper" id="doc-countdown-timer" data-deadline="2026-08-31T23:59:59+00:00" aria-live="polite">
+                <p clas
+   [\d{4}-\d{2}-\d{2}[T ]?] 2026-08-31T23:59
+-- urgency / offer copy in visible text --
+   'Offer Ends in'
+-- countdown digits rendered --
+   '14\nDAY'
+-- WRONG number (410) 761-0932 occurrences --
+   #1: ...t_pb_toggle_content"><p>Complete the AC repair quote form with your contact information, service location, and a short description of the cooling problem. You can also call Ambient Cooling &amp; Heating at (410) 761-0932.</p> </div></div>  <div class="et_pb_accordion_item_4 et_pb_accordion_item et_pb_toggle et_pb_module et_pb_toggle_close et_block_module"><h3 class="et_pb_toggl...
+   #2: ...et et_flex_column_24_24_phone"> <div class="et_pb_module et_pb_button_module_wrapper et_pb_button_5_wrapper"><a class="et_pb_button_5 et_pb_button et_pb_bg_layout_light et_pb_module et_flex_module" href="tel:+14107610932" data-icon="">Call Now</a></div> </div>  <div class="et_pb_column_27 et_pb_column et-last-child et_flex_column et_pb_css_mix_blend_mode_passthrough et_flex_co...
+   -> total occurrences in rendered HTML: 2
+   -> occurrences in VISIBLE TEXT: 0
+-- approved number occurrences --
+   (410) 705-6354 in visible text: 3
+-- CTA buttons (all anchors with button classes) --
+   cls='et_pb_button_0_tb_header et_pb_button et' href='tel:4107056354' text='CALL: (410) 705-6354'
+   cls='et_pb_button_0 et_pb_button et_pb_bg_lay' href='' text='Get Your Free AC Repair Quote'
+   cls='et_pb_button_1 et_pb_button et_pb_bg_lay' href='' text='Get My Free AC Repair Quote'
+   cls='et_pb_button_2 et_pb_button et_pb_bg_lay' href='#quote-form' text='Get My Free AC Repair Quote'
+   cls='et_pb_button_3 et_pb_button et_pb_bg_lay' href='#quote-form' text='Get My Free AC Repair Quote'
+   cls='et_pb_button_4 et_pb_button et_pb_bg_lay' href='' text='Get My Free AC Repair Quote'
+   cls='et_pb_button_5 et_pb_button et_pb_bg_lay' href='tel:+14107610932' text='Call Now'
+   cls='et_pb_button_6 et_pb_button et_pb_bg_lay' href='' text='Free Quote'
+-- form submit / confirmation config --
+   data-formid="1"
+
+====================================================================================================
+### hvac-repair
+====================================================================================================
+-- countdown configuration --
+   [countdown[^;{]{0,120}] countdown-css-css" href="https://offer.ambientcoolingandheating.com/wp-content/plugins/dynamic-offer-countdown/assets/css/countdo
+   [countdown[^;{]{0,120}] countdown-js-js" src="https://offer.ambientcoolingandheating.com/wp-content/plugins/dynamic-offer-countdown/assets/js/countdown.j
+   [countdown[^;{]{0,120}] countdown-prompt" style="color:#FFFFFF
+   [countdown[^;{]{0,120}] countdown-wrapper" id="doc-countdown-timer" data-deadline="2026-08-31T23:59:59+00:00" aria-live="polite">
+                <p clas
+   [\d{4}-\d{2}-\d{2}[T ]?] 2026-08-31T23:59
+-- urgency / offer copy in visible text --
+   'Offer Ends in'
+-- countdown digits rendered --
+   '14\nDAY'
+-- WRONG number (410) 761-0932 occurrences --
+   #1: ...ontent"><p>Complete the HVAC repair quote form with your contact information, service location, and a short description of the heating or cooling problem. You can also call Ambient Cooling &amp; Heating at (410) 761-0932.</p> </div></div>  <div class="et_pb_accordion_item_4 et_pb_accordion_item et_pb_toggle et_pb_module et_pb_toggle_close et_block_module"><h3 class="et_pb_toggl...
+   #2: ...et et_flex_column_24_24_phone"> <div class="et_pb_module et_pb_button_module_wrapper et_pb_button_5_wrapper"><a class="et_pb_button_5 et_pb_button et_pb_bg_layout_light et_pb_module et_flex_module" href="tel:+14107610932" data-icon="">Call Now</a></div> </div>  <div class="et_pb_column_27 et_pb_column et-last-child et_flex_column et_pb_css_mix_blend_mode_passthrough et_flex_co...
+   -> total occurrences in rendered HTML: 2
+   -> occurrences in VISIBLE TEXT: 0
+-- approved number occurrences --
+   (410) 705-6354 in visible text: 3
+-- CTA buttons (all anchors with button classes) --
+   cls='et_pb_button_0_tb_header et_pb_button et' href='tel:4107056354' text='CALL: (410) 705-6354'
+   cls='et_pb_button_0 et_pb_button et_pb_bg_lay' href='' text='Get Your Free HVAC Repair Quote'
+   cls='et_pb_button_1 et_pb_button et_pb_bg_lay' href='' text='Get My Free HVAC Repair Quote'
+   cls='et_pb_button_2 et_pb_button et_pb_bg_lay' href='#quote-form' text='Get My Free HVAC Repair Quote'
+   cls='et_pb_button_3 et_pb_button et_pb_bg_lay' href='#quote-form' text='Get My Free HVAC Repair Quote'
+   cls='et_pb_button_4 et_pb_button et_pb_bg_lay' href='' text='Get My Free HVAC Repair Quote'
+   cls='et_pb_button_5 et_pb_button et_pb_bg_lay' href='tel:+14107610932' text='Call Now'
+   cls='et_pb_button_6 et_pb_button et_pb_bg_lay' href='' text='Free Quote'
+-- form submit / confirmation config --
+   data-formid="1"
+
+====================================================================================================
+### hvac-installation
+====================================================================================================
+-- countdown configuration --
+   [countdown[^;{]{0,120}] countdown-css-css" href="https://offer.ambientcoolingandheating.com/wp-content/plugins/dynamic-offer-countdown/assets/css/countdo
+   [countdown[^;{]{0,120}] countdown-js-js" src="https://offer.ambientcoolingandheating.com/wp-content/plugins/dynamic-offer-countdown/assets/js/countdown.j
+   [countdown[^;{]{0,120}] countdown-prompt" style="color:#FFFFFF
+   [countdown[^;{]{0,120}] countdown-wrapper" id="doc-countdown-timer" data-deadline="2026-08-31T23:59:59+00:00" aria-live="polite">
+                <p clas
+   [\d{4}-\d{2}-\d{2}[T ]?] 2026-08-31T23:59
+-- urgency / offer copy in visible text --
+   'Start planning today. Tell Ambient about your property and HVAC installation needs before today ends. Free installation quote requests are available in Severn, Severna Park, Columbia, and nearby service areas.'
+   'Offer Ends in'
+-- countdown digits rendered --
+   '14\nDAY'
+-- WRONG number (410) 761-0932 occurrences --
+   #1: ...?</h3><div class="et_pb_toggle_content"><p>Complete the HVAC installation quote form with your contact information, service location, and project details. You can also call Ambient Cooling &amp; Heating at (410) 761-0932.</p> </div></div>  <div class="et_pb_accordion_item_4 et_pb_accordion_item et_pb_toggle et_pb_module et_pb_toggle_close et_block_module"><h3 class="et_pb_toggl...
+   #2: ...et et_flex_column_24_24_phone"> <div class="et_pb_module et_pb_button_module_wrapper et_pb_button_5_wrapper"><a class="et_pb_button_5 et_pb_button et_pb_bg_layout_light et_pb_module et_flex_module" href="tel:+14107610932" data-icon="">Call Now</a></div> </div>  <div class="et_pb_column_27 et_pb_column et-last-child et_flex_column et_pb_css_mix_blend_mode_passthrough et_flex_co...
+   -> total occurrences in rendered HTML: 2
+   -> occurrences in VISIBLE TEXT: 0
+-- approved number occurrences --
+   (410) 705-6354 in visible text: 3
+-- CTA buttons (all anchors with button classes) --
+   cls='et_pb_button_0_tb_header et_pb_button et' href='tel:4107056354' text='CALL: (410) 705-6354'
+   cls='et_pb_button_0 et_pb_button et_pb_bg_lay' href='' text='Get Your Free HVAC Installation Quote'
+   cls='et_pb_button_1 et_pb_button et_pb_bg_lay' href='' text='Get My Free HVAC Installation Quote'
+   cls='et_pb_button_2 et_pb_button et_pb_bg_lay' href='#quote-form' text='Get My Free HVAC Installation Quote'
+   cls='et_pb_button_3 et_pb_button et_pb_bg_lay' href='#quote-form' text='Get My Free HVAC Installation Quote'
+   cls='et_pb_button_4 et_pb_button et_pb_bg_lay' href='' text='Get My Free HVAC Installation Quote'
+   cls='et_pb_button_5 et_pb_button et_pb_bg_lay' href='tel:+14107610932' text='Call Now'
+   cls='et_pb_button_6 et_pb_button et_pb_bg_lay' href='' text='Free Quote'
+-- form submit / confirmation config --
+   data-formid="1"
+
+====================================================================================================
+### hvac-replacement
+====================================================================================================
+-- countdown configuration --
+   [countdown[^;{]{0,120}] countdown-css-css" href="https://offer.ambientcoolingandheating.com/wp-content/plugins/dynamic-offer-countdown/assets/css/countdo
+   [countdown[^;{]{0,120}] countdown-js-js" src="https://offer.ambientcoolingandheating.com/wp-content/plugins/dynamic-offer-countdown/assets/js/countdown.j
+   [countdown[^;{]{0,120}] countdown-prompt" style="color:#FFFFFF
+   [countdown[^;{]{0,120}] countdown-wrapper" id="doc-countdown-timer" data-deadline="2026-08-31T23:59:59+00:00" aria-live="polite">
+                <p clas
+   [\d{4}-\d{2}-\d{2}[T ]?] 2026-08-31T23:59
+-- urgency / offer copy in visible text --
+   'Start planning today. Tell Ambient about your current system before today ends. Free replacement quote requests are available in Severn, Severna Park, Columbia, and nearby service areas.'
+   'Offer Ends in'
+-- countdown digits rendered --
+   '14\nDAY'
+-- WRONG number (410) 761-0932 occurrences --
+   #1: ...et et_flex_column_24_24_phone"> <div class="et_pb_module et_pb_button_module_wrapper et_pb_button_5_wrapper"><a class="et_pb_button_5 et_pb_button et_pb_bg_layout_light et_pb_module et_flex_module" href="tel:+14107610932" data-icon="">Call Now</a></div> </div>  <div class="et_pb_column_27 et_pb_column et-last-child et_flex_column et_pb_css_mix_blend_mode_passthrough et_flex_co...
+   -> total occurrences in rendered HTML: 1
+   -> occurrences in VISIBLE TEXT: 0
+-- approved number occurrences --
+   (410) 705-6354 in visible text: 3
+-- CTA buttons (all anchors with button classes) --
+   cls='et_pb_button_0_tb_header et_pb_button et' href='tel:4107056354' text='CALL: (410) 705-6354'
+   cls='et_pb_button_0 et_pb_button et_pb_bg_lay' href='' text='Get Your Free HVAC Replacement Quote'
+   cls='et_pb_button_1 et_pb_button et_pb_bg_lay' href='' text='Get My Free HVAC Replacement Quote'
+   cls='et_pb_button_2 et_pb_button et_pb_bg_lay' href='#quote-form' text='Get My Free HVAC Replacement Quote'
+   cls='et_pb_button_3 et_pb_button et_pb_bg_lay' href='#quote-form' text='Get My Free HVAC Replacement Quote'
+   cls='et_pb_button_4 et_pb_button et_pb_bg_lay' href='' text='Get My Free HVAC Replacement Quote'
+   cls='et_pb_button_5 et_pb_button et_pb_bg_lay' href='tel:+14107610932' text='Call Now'
+   cls='et_pb_button_6 et_pb_button et_pb_bg_lay' href='' text='Free Quote'
+-- form submit / confirmation config --
+   data-formid="1"
+
+====================================================================================================
+### gas-boiler-repair
+====================================================================================================
+-- countdown configuration --
+   [countdown[^;{]{0,120}] countdown-css-css" href="https://offer.ambientcoolingandheating.com/wp-content/plugins/dynamic-offer-countdown/assets/css/countdo
+   [countdown[^;{]{0,120}] countdown-js-js" src="https://offer.ambientcoolingandheating.com/wp-content/plugins/dynamic-offer-countdown/assets/js/countdown.j
+   [countdown[^;{]{0,120}] countdown-prompt" style="color:#FFFFFF
+   [countdown[^;{]{0,120}] countdown-wrapper" id="doc-countdown-timer" data-deadline="2026-08-31T23:59:59+00:00" aria-live="polite">
+                <p clas
+   [\d{4}-\d{2}-\d{2}[T ]?] 2026-08-31T23:59
+-- urgency / offer copy in visible text --
+   'Tell Ambient what your boiler is doing before today ends. Free gas boiler repair quote requests are available in Severn, Severna Park, Columbia, and nearby service areas.'
+   'Offer Ends in'
+-- countdown digits rendered --
+   '14\nDAY'
+-- WRONG number (410) 761-0932 occurrences --
+   #1: ...et et_flex_column_24_24_phone"> <div class="et_pb_module et_pb_button_module_wrapper et_pb_button_5_wrapper"><a class="et_pb_button_5 et_pb_button et_pb_bg_layout_light et_pb_module et_flex_module" href="tel:+14107610932" data-icon="">Call Now</a></div> </div>  <div class="et_pb_column_27 et_pb_column et-last-child et_flex_column et_pb_css_mix_blend_mode_passthrough et_flex_co...
+   -> total occurrences in rendered HTML: 1
+   -> occurrences in VISIBLE TEXT: 0
+-- approved number occurrences --
+   (410) 705-6354 in visible text: 3
+-- CTA buttons (all anchors with button classes) --
+   cls='et_pb_button_0_tb_header et_pb_button et' href='tel:4107056354' text='CALL: (410) 705-6354'
+   cls='et_pb_button_0 et_pb_button et_pb_bg_lay' href='' text='Get Your Free Gas Boiler Repair Quote'
+   cls='et_pb_button_1 et_pb_button et_pb_bg_lay' href='' text='Get My Free Gas Boiler Repair Quote'
+   cls='et_pb_button_2 et_pb_button et_pb_bg_lay' href='#quote-form' text='Get My Free Gas Boiler Repair Quote'
+   cls='et_pb_button_3 et_pb_button et_pb_bg_lay' href='#quote-form' text='Get My Free Gas Boiler Repair Quote'
+   cls='et_pb_button_4 et_pb_button et_pb_bg_lay' href='' text='Get My Free Gas Boiler Repair Quote'
+   cls='et_pb_button_5 et_pb_button et_pb_bg_lay' href='tel:+14107610932' text='Call Now'
+   cls='et_pb_button_6 et_pb_button et_pb_bg_lay' href='' text='Free Quote'
+-- form submit / confirmation config --
+   data-formid="1"

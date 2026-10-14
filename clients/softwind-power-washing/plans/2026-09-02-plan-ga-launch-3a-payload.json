@@ -1,0 +1,429 @@
+{
+  "plan_id": "PLAN-GA-LAUNCH-3A",
+  "target": {
+    "exact_child_account_name": "Softwind Power Washing - Live",
+    "child_customer_id": "1521725229",
+    "exact_service": "Power Washing",
+    "manager_customer_id": "3373711342",
+    "campaign_id": "24103511039"
+  },
+  "actions": [
+    {
+      "type": "ad_group",
+      "resource_id": "202870585870",
+      "final_group": "Pressure Washing",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group",
+      "resource_id": "202870585910",
+      "final_group": "House Washing",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group",
+      "resource_id": "202870586110",
+      "final_group": "Driveway Pressure Washing",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group",
+      "resource_id": "202870586150",
+      "final_group": "Patio Pressure Washing",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group",
+      "resource_id": "202870586310",
+      "final_group": "Soft Washing",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870585390",
+      "resource_id": "823152917197",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870585390",
+      "resource_id": "823152917200",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870585870",
+      "resource_id": "823152917203",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870585870",
+      "resource_id": "823152917206",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870585910",
+      "resource_id": "823152917209",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870585910",
+      "resource_id": "823152917212",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870586310",
+      "resource_id": "823152917215",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870586310",
+      "resource_id": "823152917218",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870586110",
+      "resource_id": "823152917221",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870586110",
+      "resource_id": "823152917224",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870586150",
+      "resource_id": "823152917227",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_ad",
+      "ad_group_id": "202870586150",
+      "resource_id": "823152917230",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585390",
+      "resource_id": "11244351",
+      "keyword_text": "power washing",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585870",
+      "resource_id": "11244361",
+      "keyword_text": "pressure washing",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585390",
+      "resource_id": "21381541",
+      "keyword_text": "power washing",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585870",
+      "resource_id": "21381571",
+      "keyword_text": "pressure washing",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585910",
+      "resource_id": "297379283655",
+      "keyword_text": "house power washing near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585390",
+      "resource_id": "299856882403",
+      "keyword_text": "power washing services near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585390",
+      "resource_id": "300840676293",
+      "keyword_text": "power washing company near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585910",
+      "resource_id": "301057569810",
+      "keyword_text": "house washing near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585910",
+      "resource_id": "306730658772",
+      "keyword_text": "house power washing near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585910",
+      "resource_id": "315515597254",
+      "keyword_text": "house washing near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585390",
+      "resource_id": "320045208640",
+      "keyword_text": "power washing company near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870586150",
+      "resource_id": "326576934122",
+      "keyword_text": "patio power washing near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870586150",
+      "resource_id": "326576946202",
+      "keyword_text": "patio power washing near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870586110",
+      "resource_id": "328201189095",
+      "keyword_text": "driveway power washing near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870586110",
+      "resource_id": "328201199015",
+      "keyword_text": "driveway power washing near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585390",
+      "resource_id": "328994395",
+      "keyword_text": "power washing service",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870586310",
+      "resource_id": "338961202441",
+      "keyword_text": "soft washing near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870586310",
+      "resource_id": "338961203201",
+      "keyword_text": "soft washing near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585910",
+      "resource_id": "341987323402",
+      "keyword_text": "house pressure washing near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585910",
+      "resource_id": "342645727874",
+      "keyword_text": "house pressure washing near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585910",
+      "resource_id": "346845250713",
+      "keyword_text": "exterior house washing near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585910",
+      "resource_id": "394327423399",
+      "keyword_text": "exterior house washing near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870586150",
+      "resource_id": "421330015623",
+      "keyword_text": "concrete pressure washing near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585390",
+      "resource_id": "448367730",
+      "keyword_text": "power washing service",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870586150",
+      "resource_id": "449621045684",
+      "keyword_text": "concrete pressure washing near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585870",
+      "resource_id": "75294038799",
+      "keyword_text": "pressure washing near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585870",
+      "resource_id": "75298360239",
+      "keyword_text": "pressure washing near me",
+      "match_type": "EXACT",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    },
+    {
+      "type": "ad_group_criterion",
+      "ad_group_id": "202870585390",
+      "resource_id": "99754288381",
+      "keyword_text": "power washing services near me",
+      "match_type": "PHRASE",
+      "current": "PAUSED",
+      "proposed": "ENABLED",
+      "field_mask": "status"
+    }
+  ],
+  "mutation_count": 45
+}

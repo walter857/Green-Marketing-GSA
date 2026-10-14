@@ -1,0 +1,1371 @@
+{
+  "plan_id": "NEG-SOFTWIND-POWER-WASHING-2026-08-28",
+  "generated": "2026-08-28",
+  "mode": "DRAFT - read-only research and local plan. No external write performed.",
+  "target": {
+    "exact_child_account_name": "Softwind Power Washing - Live",
+    "child_customer_id": "1521725229",
+    "exact_service": "Power Washing",
+    "manager_customer_id": "3373711342"
+  },
+  "evidence": {
+    "search_term_range": "2019-01-01..2026-08-28 (all available history)",
+    "negative_verdict_terms": 5,
+    "wasted_spend_usd": 0.0,
+    "spend_the_plan_would_have_blocked_usd": 0.0,
+    "verdict_table": "reports/st-verdicts/softwind-power-washing-verdicts.csv",
+    "competitor_review_file": "reports\\st-competitors\\softwind-power-washing-competitor-candidates.csv",
+    "name_layer_file": "reports/st-names/softwind-power-washing-name-negatives.csv",
+    "name_layer_spend_usd": 0.0,
+    "name_layer_held_back": 18,
+    "cross_account_fence_file": "reports/st-cross-account/softwind-power-washing-scope-fence.json"
+  },
+  "guards_enforced": [
+    "never blocks a KEEP or WATCH term",
+    "never blocks a term that produced a conversion",
+    "never blocks a live positive keyword",
+    "never equals a Green Marketing PROTECTED phrase (near me, quote, price, cost, best, hire, local, emergency, ...)",
+    "client brand terms are exempt from negation",
+    "max 10 words and 80 characters per negative",
+    "Phrase and Exact for the term layer; BROAD only in the name layer, on explicit owner approval 2026-08-28",
+    "a name is negated only if it is NOT an English dictionary word, is not an equipment manufacturer, is not a US place name in the market region, and appears in no in-scope KEEP term",
+    "per-scope redundancy against account list, linked shared lists, campaign negatives and ad group negatives"
+  ],
+  "subplans": {
+    "NEG_CAMPAIGN_LEVEL": {
+      "fingerprint": "1D954F45E2E6",
+      "object_count": 4,
+      "scope_count": 2,
+      "summary": {
+        "target": {
+          "exact_child_account_name": "Softwind Power Washing - Live",
+          "child_customer_id": "1521725229",
+          "exact_service": "Power Washing",
+          "manager_customer_id": "3373711342"
+        },
+        "subplan": "NEG_CAMPAIGN_LEVEL",
+        "service": "CampaignCriterionService",
+        "mutation": "create",
+        "status_on_create": "ENABLED (a negative keyword has no paused state)",
+        "scopes": [
+          "24103511039",
+          "24145053510"
+        ],
+        "object_count": 4,
+        "match_types": {
+          "PHRASE": 4
+        },
+        "categories": {
+          "OUT_OF_SCOPE_NO_CORE_SERVICE": 2,
+          "EXCLUDED_SERVICE": 2
+        }
+      },
+      "detail": [
+        {
+          "campaign_id": "24103511039",
+          "campaign_name": "Power Washing",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "campaign_id": "24145053510",
+          "campaign_name": "Power Washing #2",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        }
+      ]
+    },
+    "NEG_AD_GROUP_LEVEL": {
+      "fingerprint": "CAADECCC3C0A",
+      "object_count": 24,
+      "scope_count": 12,
+      "summary": {
+        "target": {
+          "exact_child_account_name": "Softwind Power Washing - Live",
+          "child_customer_id": "1521725229",
+          "exact_service": "Power Washing",
+          "manager_customer_id": "3373711342"
+        },
+        "subplan": "NEG_AD_GROUP_LEVEL",
+        "service": "AdGroupCriterionService",
+        "mutation": "create",
+        "status_on_create": "ENABLED (a negative keyword has no paused state)",
+        "scopes": [
+          "24103511039",
+          "24103511039",
+          "24103511039",
+          "24103511039",
+          "24103511039",
+          "24103511039",
+          "24145053510",
+          "24145053510",
+          "24145053510",
+          "24145053510",
+          "24145053510",
+          "24145053510"
+        ],
+        "object_count": 24,
+        "match_types": {
+          "PHRASE": 24
+        },
+        "categories": {
+          "OUT_OF_SCOPE_NO_CORE_SERVICE": 12,
+          "EXCLUDED_SERVICE": 12
+        }
+      },
+      "detail": [
+        {
+          "ad_group_id": "202870585390",
+          "ad_group_name": "Power Washing Near Me",
+          "campaign_id": "24103511039",
+          "campaign_name": "Power Washing",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "202870585430",
+          "ad_group_name": "Power Washing Services Near Me",
+          "campaign_id": "24103511039",
+          "campaign_name": "Power Washing",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "202870585590",
+          "ad_group_name": "Power Washing Company Near Me",
+          "campaign_id": "24103511039",
+          "campaign_name": "Power Washing",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "202870585630",
+          "ad_group_name": "Power Washing Islip",
+          "campaign_id": "24103511039",
+          "campaign_name": "Power Washing",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "202870585670",
+          "ad_group_name": "Power Washing West Islip",
+          "campaign_id": "24103511039",
+          "campaign_name": "Power Washing",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "202870585830",
+          "ad_group_name": "Power Washing Dix Hills",
+          "campaign_id": "24103511039",
+          "campaign_name": "Power Washing",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "198082078703",
+          "ad_group_name": "Soft House Washing Near Me",
+          "campaign_id": "24145053510",
+          "campaign_name": "Power Washing #2",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "198082078783",
+          "ad_group_name": "Power Washing Services Near Me",
+          "campaign_id": "24145053510",
+          "campaign_name": "Power Washing #2",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "198082078983",
+          "ad_group_name": "House Pressure Washing Estimate",
+          "campaign_id": "24145053510",
+          "campaign_name": "Power Washing #2",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "198082079023",
+          "ad_group_name": "Driveway Pressure Washing Near Me",
+          "campaign_id": "24145053510",
+          "campaign_name": "Power Washing #2",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "198082079183",
+          "ad_group_name": "Patio Pressure Washing Near Me",
+          "campaign_id": "24145053510",
+          "campaign_name": "Power Washing #2",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        },
+        {
+          "ad_group_id": "198082079423",
+          "ad_group_name": "Residential Pressure Washing Near Me",
+          "campaign_id": "24145053510",
+          "campaign_name": "Power Washing #2",
+          "negatives": [
+            {
+              "text": "cleaning",
+              "match_type": "PHRASE",
+              "category": "OUT_OF_SCOPE_NO_CORE_SERVICE",
+              "evidence_hits": 2,
+              "tier": "ROOT"
+            },
+            {
+              "text": "roof washing",
+              "match_type": "PHRASE",
+              "category": "EXCLUDED_SERVICE",
+              "evidence_hits": 1,
+              "tier": "ROOT"
+            }
+          ]
+        }
+      ]
+    },
+    "NEG_CROSS_AD_GROUP": {
+      "fingerprint": "A46A0A8EB91E",
+      "object_count": 1,
+      "scope_count": 1,
+      "summary": {
+        "target": {
+          "exact_child_account_name": "Softwind Power Washing - Live",
+          "child_customer_id": "1521725229",
+          "exact_service": "Power Washing",
+          "manager_customer_id": "3373711342"
+        },
+        "subplan": "NEG_CROSS_AD_GROUP",
+        "service": "AdGroupCriterionService",
+        "mutation": "create",
+        "status_on_create": "ENABLED (a negative keyword has no paused state)",
+        "scopes": [
+          "202870585430"
+        ],
+        "object_count": 1,
+        "match_types": {
+          "PHRASE": 1
+        },
+        "categories": {
+          "CROSS_NEGATIVE_STEER": 1
+        }
+      },
+      "detail": [
+        {
+          "ad_group_id": "202870585430",
+          "ad_group_name": "Power Washing Services Near Me",
+          "campaign_name": "Power Washing",
+          "negatives": [
+            {
+              "text": "power washing company",
+              "match_type": "PHRASE",
+              "category": "CROSS_NEGATIVE_STEER",
+              "steers_to_ad_group": "Power Washing Company Near Me",
+              "observed_leak_terms": 1
+            }
+          ]
+        }
+      ]
+    },
+    "NEG_NAME_BROAD": {
+      "fingerprint": "E71C78C77203",
+      "object_count": 12,
+      "scope_count": 2,
+      "summary": {
+        "target": {
+          "exact_child_account_name": "Softwind Power Washing - Live",
+          "child_customer_id": "1521725229",
+          "exact_service": "Power Washing",
+          "manager_customer_id": "3373711342"
+        },
+        "subplan": "NEG_NAME_BROAD",
+        "service": "CampaignCriterionService",
+        "mutation": "create",
+        "status_on_create": "ENABLED (a negative keyword has no paused state)",
+        "scopes": [
+          "24103511039",
+          "24145053510"
+        ],
+        "object_count": 12,
+        "match_types": {
+          "BROAD": 12
+        },
+        "categories": {
+          "BUSINESS_ENTITY_MARKER": 12
+        }
+      },
+      "detail": [
+        {
+          "campaign_id": "24103511039",
+          "campaign_name": "Power Washing",
+          "negatives": [
+            {
+              "text": "llc",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            },
+            {
+              "text": "inc",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            },
+            {
+              "text": "corp",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            },
+            {
+              "text": "corporation",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            },
+            {
+              "text": "incorporated",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            },
+            {
+              "text": "ltd",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            }
+          ]
+        },
+        {
+          "campaign_id": "24145053510",
+          "campaign_name": "Power Washing #2",
+          "negatives": [
+            {
+              "text": "llc",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            },
+            {
+              "text": "inc",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            },
+            {
+              "text": "corp",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            },
+            {
+              "text": "corporation",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            },
+            {
+              "text": "incorporated",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            },
+            {
+              "text": "ltd",
+              "match_type": "BROAD",
+              "category": "BUSINESS_ENTITY_MARKER"
+            }
+          ]
+        }
+      ]
+    },
+    "NEG_CROSS_ACCOUNT_FENCE": {
+      "fingerprint": "D27F2802FD31",
+      "object_count": 154,
+      "scope_count": 2,
+      "summary": {
+        "target": {
+          "exact_child_account_name": "Softwind Power Washing - Live",
+          "child_customer_id": "1521725229",
+          "exact_service": "Power Washing",
+          "manager_customer_id": "3373711342"
+        },
+        "subplan": "NEG_CROSS_ACCOUNT_FENCE",
+        "service": "CampaignCriterionService",
+        "mutation": "create",
+        "status_on_create": "ENABLED (a negative keyword has no paused state)",
+        "scopes": [
+          "24103511039",
+          "24145053510"
+        ],
+        "object_count": 154,
+        "match_types": {
+          "PHRASE": 154
+        },
+        "categories": {
+          "CROSS_ACCOUNT_SCOPE_FENCE": 154
+        },
+        "fence_reason": "hardscape / masonry / landscape build intent belongs to 2429758629"
+      },
+      "detail": [
+        {
+          "campaign_id": "24103511039",
+          "campaign_name": "Power Washing",
+          "negatives": [
+            {
+              "text": "paver sealing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver seal",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "sealing pavers",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "seal pavers",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver sealer",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "sealing paver patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio sealing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "concrete sealing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "sealcoating",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "seal coating",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver installer",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "install pavers",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "pavers installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver contractor",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver patio installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver patio cost",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio installer",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "install patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio contractor",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio builder",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "build a patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "new patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio construction",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio design",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver design",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "brick patio installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "hardscape",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "hardscaping",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "retaining wall",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "retaining walls",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "walkway installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "driveway installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "driveway pavers",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver driveway",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver walkway",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "stamped concrete",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "concrete patio installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "outdoor kitchen",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "fire pit",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "firepit",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "pergola",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "outdoor living",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "pool deck installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "stone patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "flagstone patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "masonry",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "mason contractor",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "brick work",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "brickwork",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "brick repair",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "brick pointing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "repointing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "stone work",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "stonework",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "chimney repair",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "block wall",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "stucco",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "landscaping",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "landscaper",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "landscape design",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "landscape installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "landscape contractor",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "lawn care",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "lawn mowing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "lawn service",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "sod installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "mulch delivery",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "tree service",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "garden design",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "irrigation installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "sprinkler installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "grading",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "excavation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "drainage installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "artificial turf",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            }
+          ]
+        },
+        {
+          "campaign_id": "24145053510",
+          "campaign_name": "Power Washing #2",
+          "negatives": [
+            {
+              "text": "paver sealing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver seal",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "sealing pavers",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "seal pavers",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver sealer",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "sealing paver patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio sealing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "concrete sealing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "sealcoating",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "seal coating",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver installer",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "install pavers",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "pavers installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver contractor",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver patio installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver patio cost",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio installer",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "install patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio contractor",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio builder",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "build a patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "new patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio construction",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "patio design",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver design",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "brick patio installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "hardscape",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "hardscaping",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "retaining wall",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "retaining walls",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "walkway installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "driveway installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "driveway pavers",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver driveway",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "paver walkway",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "stamped concrete",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "concrete patio installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "outdoor kitchen",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "fire pit",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "firepit",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "pergola",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "outdoor living",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "pool deck installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "stone patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "flagstone patio",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "masonry",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "mason contractor",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "brick work",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "brickwork",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "brick repair",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "brick pointing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "repointing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "stone work",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "stonework",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "chimney repair",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "block wall",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "stucco",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "landscaping",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "landscaper",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "landscape design",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "landscape installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "landscape contractor",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "lawn care",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "lawn mowing",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "lawn service",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "sod installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "mulch delivery",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "tree service",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "garden design",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "irrigation installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "sprinkler installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "grading",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "excavation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "drainage installation",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            },
+            {
+              "text": "artificial turf",
+              "match_type": "PHRASE",
+              "category": "CROSS_ACCOUNT_SCOPE_FENCE"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "master_fingerprint": "4FC4392B7E29"
+}

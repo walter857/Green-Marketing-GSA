@@ -1,0 +1,918 @@
+# VOID 2026-08-26 - fingerprint D50CDC94927C
+# All four proposed SKAGs failed the corrected incrementality test. Modern Phrase Match matches the MEANING of a keyword, not its literal word sequence, so Keyword Planner volume cannot be credited as i
+
+change_plan:
+  plan_id: PLAN-I2A-C
+  plan_title: Create paused - four true SKAGs extracted from legacy demand
+  approval_type: CREATE_PAUSED
+  priority: R5-B
+  approval_status: VOID - DO NOT APPROVE
+  execution_status: VOID - DO NOT EXECUTE
+  recommended_approval_order: 6
+  ads_mutation_count: 20
+  requires_separate_enable_approval: true
+  supersedes:
+    plan_id: PLAN-I2
+    fingerprint: 6AF733F709E2
+    status: VOID
+    voided_on: '2026-08-26'
+    reason: SKAG-integrity audit of all 62 keyword rows found BOTH proposed ad groups fail the
+      one-canonical-intent test. Pressure & Power Washing contains FOUR distinct canonical intents
+      across 34 rows; Soft & House Washing contains TWO across 28 rows. All 62 rows also show
+      semantic overlap with live keywords and only PARTIAL landing-page relevance. Enabling
+      either would put mixed intent behind one RSA on a generic page - the architecture the
+      account was revamped to remove.
+    replaced_by:
+    - PLAN-I2A-E
+    - PLAN-I2A-C
+    - PLAN-I2A-EN
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  category: B - missing SKAGs that must first be created paused
+  principle: 'The legacy containers hold real demand in the wrong shape. This plan extracts
+    their strongest canonical intents into properly-structured SKAGs: one canonical intent per
+    ad group, Phrase + Exact only, no Broad Match, two matching RSAs, and the best-matched published
+    landing page for each.'
+  dormant_resource_precondition: Each of these four keyword texts already exists as a PAUSED
+    row inside a legacy container. That is a dormant resource, not a serving duplicate - and
+    this plan is explicitly CONDITIONAL on those containers remaining PERMANENTLY PAUSED (category
+    C). If a legacy container were ever enabled while these SKAGs are live, the account would
+    compete with itself. That commitment is the precondition for approving this plan.
+  skags:
+  - ad_group_name: Power Washing Service
+    campaign_id: '24103511039'
+    campaign: Power Washing
+    canonical_intent: Power Washing Service
+    phrase_keyword: power washing service
+    exact_keyword: power washing service
+    local_monthly_volume: 70
+    recent_trend_pct: 293.3
+    competition: LOW
+    top_of_page_low: 11.4
+    top_of_page_high: 26.35
+    final_url: https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+    landing_page_h1: Power Washing Service In Islip, West Islip & Dix Hills, NY
+    path1: power-washing
+    path2: service
+    why_this_intent: Highest-volume single bucket recovered from the legacy container, and the
+      fastest-growing term in the account at +293.3% over the last three months versus the prior
+      three. The live keyword is 'power washing services NEAR ME' - a query for 'power washing
+      service' does not match its Exact form and does not contain its Phrase form, so this demand
+      is genuinely uncovered.
+    duplicate_check:
+      exact_text_already_live: false
+      exact_text_in_another_real_skag: false
+      exact_text_in_permanently_paused_legacy_container: true
+      verdict: SAFE TO CREATE - text exists only inside a legacy container this plan keeps PERMANENTLY
+        PAUSED, so it is a dormant resource and never a serving duplicate
+    sibling_rsa_headline_overlap: 1 of 15
+    rsa1:
+      headlines:
+      - text: Power Washing Service
+        len: 21
+        pinned: HEADLINE_1
+      - text: Local Power Washing Service
+        len: 27
+        pinned: HEADLINE_1
+      - text: Power Washing In Islip NY
+        len: 25
+        pinned: null
+      - text: Long Island Power Washing
+        len: 25
+        pinned: null
+      - text: Free Power Washing Quote
+        len: 24
+        pinned: null
+      - text: Residential Power Washing
+        len: 25
+        pinned: null
+      - text: House, Patio And Driveway
+        len: 25
+        pinned: null
+      - text: Siding, Concrete And Pavers
+        len: 27
+        pinned: null
+      - text: Method Matched To Surface
+        len: 25
+        pinned: null
+      - text: Soft Washing For Siding
+        len: 23
+        pinned: null
+      - text: Serving Islip & West Islip
+        len: 26
+        pinned: null
+      - text: Power Washing Dix Hills
+        len: 23
+        pinned: null
+      - text: Call (631) 502-7946
+        len: 19
+        pinned: null
+      - text: Request Your Free Quote
+        len: 23
+        pinned: null
+      - text: Softwind Power Washing
+        len: 22
+        pinned: null
+      descriptions:
+      - text: A local power washing service for siding, driveways, patios and pavers.
+        len: 71
+      - text: The cleaning method is chosen for the surface, from concrete to siding.
+        len: 71
+      - text: Serving Islip, West Islip and Dix Hills homeowners. Free quote.
+        len: 63
+      - text: Power washing service on Long Island. Call (631) 502-7946 for a quote.
+        len: 70
+    rsa2:
+      headlines:
+      - text: Power Washing Service
+        len: 21
+        pinned: HEADLINE_1
+      - text: Exterior Washing Service
+        len: 24
+        pinned: HEADLINE_1
+      - text: Right Pressure, Right Surface
+        len: 29
+        pinned: null
+      - text: Low-Pressure Siding Washing
+        len: 27
+        pinned: null
+      - text: Driveway And Patio Washing
+        len: 26
+        pinned: null
+      - text: Paver And Concrete Washing
+        len: 26
+        pinned: null
+      - text: Walkway And Fence Washing
+        len: 25
+        pinned: null
+      - text: Cleaner Home Exteriors
+        len: 22
+        pinned: null
+      - text: Free Quote On Your Project
+        len: 26
+        pinned: null
+      - text: Tell Us What Needs Cleaning
+        len: 27
+        pinned: null
+      - text: Islip Power Washing
+        len: 19
+        pinned: null
+      - text: West Islip Power Washing
+        len: 24
+        pinned: null
+      - text: Dix Hills Power Washing
+        len: 23
+        pinned: null
+      - text: Local Long Island Team
+        len: 22
+        pinned: null
+      - text: Softwind Exterior Washing
+        len: 25
+        pinned: null
+      descriptions:
+      - text: We match the washing method to the material, so siding is treated gently.
+        len: 73
+      - text: Driveways, patios, walkways, pavers and concrete washed and refreshed.
+        len: 70
+      - text: Tell us what needs cleaning and where. We will send you a free quote.
+        len: 69
+      - text: A local power washing service for Long Island homes. Free quote.
+        len: 64
+  - ad_group_name: Pressure Washing Service
+    campaign_id: '24145053510'
+    campaign: 'Power Washing #2'
+    canonical_intent: Pressure Washing Service
+    phrase_keyword: pressure washing service
+    exact_keyword: pressure washing service
+    local_monthly_volume: 70
+    recent_trend_pct: 293.3
+    competition: LOW
+    top_of_page_low: 11.4
+    top_of_page_high: 26.35
+    final_url: https://offer.softwindli.com/residential-pressure-washing/
+    landing_page_h1: Residential Pressure Washing In Islip, West Islip & Dix Hills, NY
+    path1: pressure-wash
+    path2: service
+    why_this_intent: 'Shares a Keyword Planner volume bucket with ''power washing service'',
+      which means Google treats them as near-synonyms - but the SEARCHER types one or the other,
+      and the account has hard evidence that copy match decides the click: ''pressure wash''
+      phrasing has produced 15 impressions and ZERO clicks (0% CTR) while ''power wash'' phrasing
+      runs 7.25%. Eleven of those fifteen were served power-washing copy. A separate SKAG exists
+      precisely to serve matching copy, which is the whole purpose of the architecture.'
+    duplicate_check:
+      exact_text_already_live: false
+      exact_text_in_another_real_skag: false
+      exact_text_in_permanently_paused_legacy_container: true
+      verdict: SAFE TO CREATE - text exists only inside a legacy container this plan keeps PERMANENTLY
+        PAUSED, so it is a dormant resource and never a serving duplicate
+    sibling_rsa_headline_overlap: 1 of 15
+    rsa1:
+      headlines:
+      - text: Pressure Washing Service
+        len: 24
+        pinned: HEADLINE_1
+      - text: Local Pressure Washing
+        len: 22
+        pinned: HEADLINE_1
+      - text: Pressure Washing In Islip
+        len: 25
+        pinned: null
+      - text: Long Island Pressure Wash
+        len: 25
+        pinned: null
+      - text: Free Pressure Washing Quote
+        len: 27
+        pinned: null
+      - text: Residential Pressure Wash
+        len: 25
+        pinned: null
+      - text: Driveways, Patios & Siding
+        len: 26
+        pinned: null
+      - text: Pavers, Concrete & Walkways
+        len: 27
+        pinned: null
+      - text: Method Matched To Surface
+        len: 25
+        pinned: null
+      - text: Soft Washing For Siding
+        len: 23
+        pinned: null
+      - text: Serving Islip & West Islip
+        len: 26
+        pinned: null
+      - text: Pressure Washing Dix Hills
+        len: 26
+        pinned: null
+      - text: Call (631) 502-7946
+        len: 19
+        pinned: null
+      - text: Request Your Free Quote
+        len: 23
+        pinned: null
+      - text: Softwind Pressure Washing
+        len: 25
+        pinned: null
+      descriptions:
+      - text: A local pressure washing service for driveways, patios and siding.
+        len: 66
+      - text: The washing method is chosen for the surface, from concrete to siding.
+        len: 70
+      - text: Serving Islip, West Islip and Dix Hills homeowners. Free quote.
+        len: 63
+      - text: Pressure washing service on Long Island. Call (631) 502-7946.
+        len: 61
+    rsa2:
+      headlines:
+      - text: Pressure Washing Service
+        len: 24
+        pinned: HEADLINE_1
+      - text: Exterior Washing Service
+        len: 24
+        pinned: HEADLINE_1
+      - text: Right Pressure, Right Surface
+        len: 29
+        pinned: null
+      - text: Low-Pressure Siding Washing
+        len: 27
+        pinned: null
+      - text: Driveway And Patio Washing
+        len: 26
+        pinned: null
+      - text: Paver And Concrete Washing
+        len: 26
+        pinned: null
+      - text: Walkway And Fence Washing
+        len: 25
+        pinned: null
+      - text: Cleaner Home Exteriors
+        len: 22
+        pinned: null
+      - text: Free Quote On Your Project
+        len: 26
+        pinned: null
+      - text: Tell Us What Needs Cleaning
+        len: 27
+        pinned: null
+      - text: Islip Pressure Washing
+        len: 22
+        pinned: null
+      - text: West Islip Pressure Wash
+        len: 24
+        pinned: null
+      - text: Dix Hills Pressure Wash
+        len: 23
+        pinned: null
+      - text: Local Long Island Team
+        len: 22
+        pinned: null
+      - text: Softwind Exterior Washing
+        len: 25
+        pinned: null
+      descriptions:
+      - text: We match the washing method to the material, so siding is treated gently.
+        len: 73
+      - text: Driveways, patios, walkways, pavers and concrete washed and refreshed.
+        len: 70
+      - text: Tell us what needs cleaning and where. We will send you a free quote.
+        len: 69
+      - text: Residential pressure washing for Long Island homes. Free quote.
+        len: 63
+  - ad_group_name: House Washing Near Me
+    campaign_id: '24145053510'
+    campaign: 'Power Washing #2'
+    canonical_intent: House Washing Near Me
+    phrase_keyword: house washing near me
+    exact_keyword: house washing near me
+    local_monthly_volume: 40
+    recent_trend_pct: -73.3
+    competition: MEDIUM
+    top_of_page_low: 10.46
+    top_of_page_high: 32.09
+    final_url: https://offer.softwindli.com/house-washing-company/
+    landing_page_h1: House Washing Company In Islip, West Islip & Dix Hills, NY
+    path1: house-washing
+    path2: free-quote
+    why_this_intent: 'The single highest-value text inside the legacy Soft & House Washing container,
+      and the term the 2026-08-25 audit mistakenly attributed to the ''house washing company
+      near me'' ad group. Highest top-of-page ceiling in the whole set at $32.09. CAUTION: recent
+      trend is -73.3%, so this is a declining term - included on volume and bid strength, not
+      momentum.'
+    duplicate_check:
+      exact_text_already_live: false
+      exact_text_in_another_real_skag: false
+      exact_text_in_permanently_paused_legacy_container: true
+      verdict: SAFE TO CREATE - text exists only inside a legacy container this plan keeps PERMANENTLY
+        PAUSED, so it is a dormant resource and never a serving duplicate
+    sibling_rsa_headline_overlap: 1 of 15
+    rsa1:
+      headlines:
+      - text: House Washing Near You
+        len: 22
+        pinned: HEADLINE_1
+      - text: Local House Washing
+        len: 19
+        pinned: HEADLINE_1
+      - text: House Washing In Islip
+        len: 22
+        pinned: null
+      - text: Long Island House Washing
+        len: 25
+        pinned: null
+      - text: Free House Washing Quote
+        len: 24
+        pinned: null
+      - text: Siding, Trim And Fences
+        len: 23
+        pinned: null
+      - text: Gentle Low-Pressure Wash
+        len: 24
+        pinned: null
+      - text: Soft Washing For Siding
+        len: 23
+        pinned: null
+      - text: Remove Algae And Mildew
+        len: 23
+        pinned: null
+      - text: Serving Islip & West Islip
+        len: 26
+        pinned: null
+      - text: House Washing Dix Hills
+        len: 23
+        pinned: null
+      - text: Call (631) 502-7946
+        len: 19
+        pinned: null
+      - text: Request Your Free Quote
+        len: 23
+        pinned: null
+      - text: Cleaner Home Exterior
+        len: 21
+        pinned: null
+      - text: Softwind House Washing
+        len: 22
+        pinned: null
+      descriptions:
+      - text: House washing for siding, trim and fences. Request a free quote today.
+        len: 70
+      - text: A gentler low-pressure approach for materials that need care.
+        len: 61
+      - text: Serving Islip, West Islip and Dix Hills homeowners. Free quote.
+        len: 63
+      - text: House washing near you on Long Island. Call (631) 502-7946.
+        len: 59
+    rsa2:
+      headlines:
+      - text: House Washing Near You
+        len: 22
+        pinned: HEADLINE_1
+      - text: House Washing Company
+        len: 21
+        pinned: HEADLINE_1
+      - text: Soft Wash For Your Siding
+        len: 25
+        pinned: null
+      - text: Algae, Mildew And Pollen
+        len: 24
+        pinned: null
+      - text: Trim, Fences And Siding
+        len: 23
+        pinned: null
+      - text: Method Chosen For Material
+        len: 26
+        pinned: null
+      - text: Cleaner Curb Appeal
+        len: 19
+        pinned: null
+      - text: Free Exterior Cleaning Quote
+        len: 28
+        pinned: null
+      - text: Tell Us What Needs Washing
+        len: 26
+        pinned: null
+      - text: Islip House Washing
+        len: 19
+        pinned: null
+      - text: West Islip House Washing
+        len: 24
+        pinned: null
+      - text: Dix Hills House Washing
+        len: 23
+        pinned: null
+      - text: Local Long Island Team
+        len: 22
+        pinned: null
+      - text: Request A Free Estimate
+        len: 23
+        pinned: null
+      - text: Softwind Exterior Care
+        len: 22
+        pinned: null
+      descriptions:
+      - text: We choose the washing method around your siding, trim and surfaces.
+        len: 67
+      - text: Lower-pressure cleaning for surfaces that should not take force.
+        len: 64
+      - text: Tell us what needs washing and where. We will send you a free quote.
+        len: 68
+      - text: House washing for Long Island homes. Free quote at (631) 502-7946.
+        len: 66
+  - ad_group_name: Power Washing Long Island
+    campaign_id: '24103511039'
+    campaign: Power Washing
+    canonical_intent: Power Washing Long Island
+    phrase_keyword: power washing long island
+    exact_keyword: power washing long island
+    local_monthly_volume: 40
+    recent_trend_pct: 30.8
+    competition: MEDIUM
+    top_of_page_low: 8.12
+    top_of_page_high: 18.02
+    final_url: https://offer.softwindli.com/power-washing-soft-washing/
+    landing_page_h1: Power Washing & Soft Washing in Long Island
+    path1: power-washing
+    path2: long-island
+    why_this_intent: A region-level intent that no live keyword covers. Uniquely, the legacy
+      landing page /power-washing-soft-washing/ has H1 'Power Washing & Soft Washing in Long
+      Island' and mentions Long Island 17 times - it is the BEST-matched published page in the
+      account for this exact intent, which is the one place the legacy asset genuinely earns
+      its keep. Lowest bid range of any candidate at $8.12-$18.02.
+    duplicate_check:
+      exact_text_already_live: false
+      exact_text_in_another_real_skag: false
+      exact_text_in_permanently_paused_legacy_container: true
+      verdict: SAFE TO CREATE - text exists only inside a legacy container this plan keeps PERMANENTLY
+        PAUSED, so it is a dormant resource and never a serving duplicate
+    sibling_rsa_headline_overlap: 1 of 15
+    rsa1:
+      headlines:
+      - text: Power Washing Long Island
+        len: 25
+        pinned: HEADLINE_1
+      - text: Long Island Power Washing
+        len: 25
+        pinned: HEADLINE_1
+      - text: Local Power Washing
+        len: 19
+        pinned: null
+      - text: Free Power Washing Quote
+        len: 24
+        pinned: null
+      - text: House, Patio And Driveway
+        len: 25
+        pinned: null
+      - text: Siding, Concrete And Pavers
+        len: 27
+        pinned: null
+      - text: Method Matched To Surface
+        len: 25
+        pinned: null
+      - text: Soft Washing For Siding
+        len: 23
+        pinned: null
+      - text: Power Washing In Islip NY
+        len: 25
+        pinned: null
+      - text: Serving Long Island Homes
+        len: 25
+        pinned: null
+      - text: Cleaner Home Exteriors
+        len: 22
+        pinned: null
+      - text: Call (631) 502-7946
+        len: 19
+        pinned: null
+      - text: Request Your Free Quote
+        len: 23
+        pinned: null
+      - text: Exterior Washing Long Island
+        len: 28
+        pinned: null
+      - text: Softwind Power Washing
+        len: 22
+        pinned: null
+      descriptions:
+      - text: Power washing for Long Island homes. Siding, driveways, patios, pavers.
+        len: 71
+      - text: The cleaning method is chosen for the surface, from concrete to siding.
+        len: 71
+      - text: Serving Long Island homeowners. Request a free quote, no obligation.
+        len: 68
+      - text: Long Island power washing. Call (631) 502-7946 or request a quote.
+        len: 66
+    rsa2:
+      headlines:
+      - text: Power Washing Long Island
+        len: 25
+        pinned: HEADLINE_1
+      - text: Long Island Exterior Wash
+        len: 25
+        pinned: HEADLINE_1
+      - text: Right Pressure, Right Surface
+        len: 29
+        pinned: null
+      - text: Low-Pressure Siding Washing
+        len: 27
+        pinned: null
+      - text: Driveway And Patio Washing
+        len: 26
+        pinned: null
+      - text: Paver And Concrete Washing
+        len: 26
+        pinned: null
+      - text: Walkway And Fence Washing
+        len: 25
+        pinned: null
+      - text: Restore Your Curb Appeal
+        len: 24
+        pinned: null
+      - text: Free Quote On Your Project
+        len: 26
+        pinned: null
+      - text: Tell Us What Needs Cleaning
+        len: 27
+        pinned: null
+      - text: Local Long Island Team
+        len: 22
+        pinned: null
+      - text: Islip Area Power Washing
+        len: 24
+        pinned: null
+      - text: Homes Across Long Island
+        len: 24
+        pinned: null
+      - text: Request A Free Estimate
+        len: 23
+        pinned: null
+      - text: Softwind Exterior Washing
+        len: 25
+        pinned: null
+      descriptions:
+      - text: We match the washing method to the material, so siding is treated gently.
+        len: 73
+      - text: Driveways, patios, walkways, pavers and concrete washed and refreshed.
+        len: 70
+      - text: Tell us what needs cleaning and where. We will send you a free quote.
+        len: 69
+      - text: Power washing across Long Island. Free quote available.
+        len: 55
+  rsa_validation:
+    validator: scripts/softwind_build_i2a.py
+    result: ALL PASS
+    checks: 15 headlines and 4 descriptions per ad; longest headline 29; longest description
+      86; no duplicate asset within an ad; display paths within 15 characters; sibling headline
+      overlap 1 of 15 on every pair, and that single shared headline is the intentionally pinned
+      HEADLINE_1; every asset screened against a banned-claims filter covering licensing, insurance,
+      guarantees, years in business, ratings, review counts, prices, discounts, same-day and
+      24/7 promises, and out-of-scope services.
+  actions:
+  - action_id: R5C-01a
+    priority: R5
+    resource_type: AD_GROUP
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: NEW ad_group 'Power Washing Service'
+    current_value: does not exist
+    proposed_value:
+      name: Power Washing Service
+      status: PAUSED
+      type: SEARCH_STANDARD
+    why: Highest-volume single bucket recovered from the legacy container, and the fastest-growing
+      term in the account at +293.3% over the last three months versus the prior three. The
+      live keyword is 'power washing services NEAR ME' - a query for 'power washing service'
+      does not match its Exact form and does not contain its Phrase form, so this demand is
+      genuinely uncovered.
+    evidence: snapshots/i2a-skag-validation-2026-08-26.json
+    expected_effect: Creates the container. No delivery until a separate enable.
+    risk: LOW - created paused, cannot serve.
+    rollback: Remove the ad group.
+    approval_required: YES - create-paused approval
+    object_count: 1
+  - action_id: R5C-01b
+    priority: R5
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: NEW from R5C-01a
+    resource_id: NEW keywords x2
+    current_value: does not exist
+    proposed_value:
+    - text: power washing service
+      match_type: PHRASE
+    - text: power washing service
+      match_type: EXACT
+    why: Phrase + Exact per Green Marketing default. No Broad Match.
+    evidence: config/agency.yaml search_defaults.match_types
+    expected_effect: No delivery while the parent ad group is paused.
+    risk: LOW
+    rollback: Remove both criteria.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: R5C-01c
+    priority: R5
+    resource_type: AD_GROUP_AD
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: NEW from R5C-01a
+    resource_id: NEW RSAs x2
+    current_value: does not exist
+    proposed_value: Two RSAs, 15 headlines and 4 descriptions each, HEADLINE_1 pinned, Final
+      URL https://offer.softwindli.com/power-washing-services-islip-west-islip-dix-hills/
+    why: Two distinct RSAs per ad group per SOP, matched to the canonical intent.
+    evidence: scripts/softwind_build_i2a.py - all limits pass
+    expected_effect: No delivery while paused.
+    risk: LOW
+    rollback: Remove both ads.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: R5C-02a
+    priority: R5
+    resource_type: AD_GROUP
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW ad_group 'Pressure Washing Service'
+    current_value: does not exist
+    proposed_value:
+      name: Pressure Washing Service
+      status: PAUSED
+      type: SEARCH_STANDARD
+    why: 'Shares a Keyword Planner volume bucket with ''power washing service'', which means
+      Google treats them as near-synonyms - but the SEARCHER types one or the other, and the
+      account has hard evidence that copy match decides the click: ''pressure wash'' phrasing
+      has produced 15 impressions and ZERO clicks (0% CTR) while ''power wash'' phrasing runs
+      7.25%. Eleven of those fifteen were served power-washing copy. A separate SKAG exists
+      precisely to serve matching copy, which is the whole purpose of the architecture.'
+    evidence: snapshots/i2a-skag-validation-2026-08-26.json
+    expected_effect: Creates the container. No delivery until a separate enable.
+    risk: LOW - created paused, cannot serve.
+    rollback: Remove the ad group.
+    approval_required: YES - create-paused approval
+    object_count: 1
+  - action_id: R5C-02b
+    priority: R5
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: NEW from R5C-02a
+    resource_id: NEW keywords x2
+    current_value: does not exist
+    proposed_value:
+    - text: pressure washing service
+      match_type: PHRASE
+    - text: pressure washing service
+      match_type: EXACT
+    why: Phrase + Exact per Green Marketing default. No Broad Match.
+    evidence: config/agency.yaml search_defaults.match_types
+    expected_effect: No delivery while the parent ad group is paused.
+    risk: LOW
+    rollback: Remove both criteria.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: R5C-02c
+    priority: R5
+    resource_type: AD_GROUP_AD
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: NEW from R5C-02a
+    resource_id: NEW RSAs x2
+    current_value: does not exist
+    proposed_value: Two RSAs, 15 headlines and 4 descriptions each, HEADLINE_1 pinned, Final
+      URL https://offer.softwindli.com/residential-pressure-washing/
+    why: Two distinct RSAs per ad group per SOP, matched to the canonical intent.
+    evidence: scripts/softwind_build_i2a.py - all limits pass
+    expected_effect: No delivery while paused.
+    risk: LOW
+    rollback: Remove both ads.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: R5C-03a
+    priority: R5
+    resource_type: AD_GROUP
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: null
+    resource_id: NEW ad_group 'House Washing Near Me'
+    current_value: does not exist
+    proposed_value:
+      name: House Washing Near Me
+      status: PAUSED
+      type: SEARCH_STANDARD
+    why: 'The single highest-value text inside the legacy Soft & House Washing container, and
+      the term the 2026-08-25 audit mistakenly attributed to the ''house washing company near
+      me'' ad group. Highest top-of-page ceiling in the whole set at $32.09. CAUTION: recent
+      trend is -73.3%, so this is a declining term - included on volume and bid strength, not
+      momentum.'
+    evidence: snapshots/i2a-skag-validation-2026-08-26.json
+    expected_effect: Creates the container. No delivery until a separate enable.
+    risk: LOW - created paused, cannot serve.
+    rollback: Remove the ad group.
+    approval_required: YES - create-paused approval
+    object_count: 1
+  - action_id: R5C-03b
+    priority: R5
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: NEW from R5C-03a
+    resource_id: NEW keywords x2
+    current_value: does not exist
+    proposed_value:
+    - text: house washing near me
+      match_type: PHRASE
+    - text: house washing near me
+      match_type: EXACT
+    why: Phrase + Exact per Green Marketing default. No Broad Match.
+    evidence: config/agency.yaml search_defaults.match_types
+    expected_effect: No delivery while the parent ad group is paused.
+    risk: LOW
+    rollback: Remove both criteria.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: R5C-03c
+    priority: R5
+    resource_type: AD_GROUP_AD
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24145053510'
+    campaign_name: 'Power Washing #2'
+    ad_group_id: NEW from R5C-03a
+    resource_id: NEW RSAs x2
+    current_value: does not exist
+    proposed_value: Two RSAs, 15 headlines and 4 descriptions each, HEADLINE_1 pinned, Final
+      URL https://offer.softwindli.com/house-washing-company/
+    why: Two distinct RSAs per ad group per SOP, matched to the canonical intent.
+    evidence: scripts/softwind_build_i2a.py - all limits pass
+    expected_effect: No delivery while paused.
+    risk: LOW
+    rollback: Remove both ads.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: R5C-04a
+    priority: R5
+    resource_type: AD_GROUP
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: null
+    resource_id: NEW ad_group 'Power Washing Long Island'
+    current_value: does not exist
+    proposed_value:
+      name: Power Washing Long Island
+      status: PAUSED
+      type: SEARCH_STANDARD
+    why: A region-level intent that no live keyword covers. Uniquely, the legacy landing page
+      /power-washing-soft-washing/ has H1 'Power Washing & Soft Washing in Long Island' and
+      mentions Long Island 17 times - it is the BEST-matched published page in the account for
+      this exact intent, which is the one place the legacy asset genuinely earns its keep. Lowest
+      bid range of any candidate at $8.12-$18.02.
+    evidence: snapshots/i2a-skag-validation-2026-08-26.json
+    expected_effect: Creates the container. No delivery until a separate enable.
+    risk: LOW - created paused, cannot serve.
+    rollback: Remove the ad group.
+    approval_required: YES - create-paused approval
+    object_count: 1
+  - action_id: R5C-04b
+    priority: R5
+    resource_type: AD_GROUP_CRITERION
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: NEW from R5C-04a
+    resource_id: NEW keywords x2
+    current_value: does not exist
+    proposed_value:
+    - text: power washing long island
+      match_type: PHRASE
+    - text: power washing long island
+      match_type: EXACT
+    why: Phrase + Exact per Green Marketing default. No Broad Match.
+    evidence: config/agency.yaml search_defaults.match_types
+    expected_effect: No delivery while the parent ad group is paused.
+    risk: LOW
+    rollback: Remove both criteria.
+    approval_required: 'YES'
+    object_count: 2
+  - action_id: R5C-04c
+    priority: R5
+    resource_type: AD_GROUP_AD
+    operation: CREATE_PAUSED
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    campaign_name: Power Washing
+    ad_group_id: NEW from R5C-04a
+    resource_id: NEW RSAs x2
+    current_value: does not exist
+    proposed_value: Two RSAs, 15 headlines and 4 descriptions each, HEADLINE_1 pinned, Final
+      URL https://offer.softwindli.com/power-washing-soft-washing/
+    why: Two distinct RSAs per ad group per SOP, matched to the canonical intent.
+    evidence: scripts/softwind_build_i2a.py - all limits pass
+    expected_effect: No delivery while paused.
+    risk: LOW
+    rollback: Remove both ads.
+    approval_required: 'YES'
+    object_count: 2
+  post_creation_requirements:
+  - 'READBACK QA: re-read every created ad group, keyword and RSA from the API.'
+  - Record the created resource IDs.
+  - Verify match types are exactly PHRASE and EXACT.
+  - Verify 2 RSAs per ad group, 15 headlines and 4 descriptions each.
+  - Verify Final URLs and display paths.
+  - Verify policy approval status.
+  - ONLY THEN build PLAN-I2A-EN with real resource IDs and its own fingerprint.
+  - CREATION AND ENABLEMENT MUST NEVER SHARE AN APPROVAL.
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 4
+    keywords_enabled: 0
+    keywords_created_paused: 8
+    rsas_created_paused: 8
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 20
+    objects_that_can_serve_immediately: 0
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com
+  void_status:
+    state: VOID
+    voided_on: '2026-08-26'
+    fingerprint_voided: D50CDC94927C
+    reason: 'All four proposed SKAGs failed the corrected incrementality test. Modern Phrase
+      Match matches the MEANING of a keyword, not its literal word sequence, so Keyword Planner
+      volume cannot be credited as incremental. Search-term history shows enabled keywords are
+      ALREADY matching every one of these query spaces: power washing service 70 impressions,
+      power washing long island 62, pressure washing service 17, house washing near me 9. Critically,
+      NO query in the account''s entire history has ever contained the words ''long island'',
+      so that SKAG rests on zero observed demand. Creating four ad groups that add zero incremental
+      impressions would fragment a 24-impression/day pool for no gain.'

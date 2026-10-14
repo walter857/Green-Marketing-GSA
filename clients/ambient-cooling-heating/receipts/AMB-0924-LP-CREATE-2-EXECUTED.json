@@ -1,0 +1,390 @@
+{
+ "plan": "AMB-0924-LP-CREATE-2",
+ "fingerprint": "05A8D71DBBAB",
+ "started_local": "2026-09-24T17:53:54.818849-04:00",
+ "committed": {
+  "sitelink_assets": {
+   "SL_FURNACE": "424583525083",
+   "SL_NOHEAT": "424481123441",
+   "SL_HPREP": "424666378863",
+   "SL_HPINS": "424666395915",
+   "SL_HPREPL": "424481139482",
+   "SL_HPMAINT": "424481133551",
+   "SL_BOILREPL": "424666371474",
+   "SL_TREP": "424666369737",
+   "SL_TREPL": "424666395918",
+   "SL_SMART": "424666395924"
+  },
+  "sitelink_links_paused": [
+   "customers/2401959466/campaignAssets/24257819463~424583525083~SITELINK",
+   "customers/2401959466/campaignAssets/24257819463~424481123441~SITELINK",
+   "customers/2401959466/campaignAssets/24257819463~424666378863~SITELINK",
+   "customers/2401959466/campaignAssets/24257819463~410638280067~SITELINK",
+   "customers/2401959466/campaignAssets/24257819466~424666395915~SITELINK",
+   "customers/2401959466/campaignAssets/24257819466~424481139482~SITELINK",
+   "customers/2401959466/campaignAssets/24257819466~410638276380~SITELINK",
+   "customers/2401959466/campaignAssets/24257819466~410638278156~SITELINK",
+   "customers/2401959466/campaignAssets/24268690038~424666378863~SITELINK",
+   "customers/2401959466/campaignAssets/24268690038~424666395915~SITELINK",
+   "customers/2401959466/campaignAssets/24268690038~424481139482~SITELINK",
+   "customers/2401959466/campaignAssets/24268690038~424481133551~SITELINK",
+   "customers/2401959466/campaignAssets/24132507744~424666371474~SITELINK",
+   "customers/2401959466/campaignAssets/24132507744~410465469923~SITELINK",
+   "customers/2401959466/campaignAssets/24268690041~424666369737~SITELINK",
+   "customers/2401959466/campaignAssets/24268690041~424666395918~SITELINK",
+   "customers/2401959466/campaignAssets/24268690041~424666395924~SITELINK",
+   "customers/2401959466/campaignAssets/24268690041~424481123441~SITELINK"
+  ],
+  "rsas": [
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "199797580706",
+    "ad_group": "SKAG | Furnace Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+    "copy_of_ad_id": "825056834769",
+    "label": null,
+    "ad_id": "825863405484"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "199797580706",
+    "ad_group": "SKAG | Furnace Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+    "copy_of_ad_id": "825056834772",
+    "label": null,
+    "ad_id": "825863405487"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "204129717247",
+    "ad_group": "SKAG | Gas Furnace Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+    "copy_of_ad_id": "825585199601",
+    "label": null,
+    "ad_id": "825863405490"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "204129717247",
+    "ad_group": "SKAG | Gas Furnace Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+    "copy_of_ad_id": "825585199604",
+    "label": null,
+    "ad_id": "825863405493"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "204129717287",
+    "ad_group": "SKAG | Electric Furnace Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+    "copy_of_ad_id": "825585199607",
+    "label": null,
+    "ad_id": "825863405496"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "204129717287",
+    "ad_group": "SKAG | Electric Furnace Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/furnace-repair/",
+    "copy_of_ad_id": "825585199610",
+    "label": null,
+    "ad_id": "825863405499"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "204129717007",
+    "ad_group": "SKAG | Heating Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+    "copy_of_ad_id": "825585199595",
+    "label": null,
+    "ad_id": "825863405502"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "204129717007",
+    "ad_group": "SKAG | Heating Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+    "copy_of_ad_id": "825585199598",
+    "label": null,
+    "ad_id": "825863405505"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "204129717767",
+    "ad_group": "SKAG | Furnace Replacement",
+    "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+    "copy_of_ad_id": "825585199619",
+    "label": null,
+    "ad_id": "825863405508"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "204129717767",
+    "ad_group": "SKAG | Furnace Replacement",
+    "final_url": "https://offer.ambientcoolingandheating.com/hvac-replacement/",
+    "copy_of_ad_id": "825585199622",
+    "label": null,
+    "ad_id": "825863405511"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "204129718047",
+    "ad_group": "SKAG | Boiler Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+    "copy_of_ad_id": "825585199643",
+    "label": null,
+    "ad_id": "825863405514"
+   },
+   {
+    "kind": "migration_copy",
+    "ad_group_id": "204129718047",
+    "ad_group": "SKAG | Boiler Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+    "copy_of_ad_id": "825585199646",
+    "label": null,
+    "ad_id": "825863405517"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129717087",
+    "ad_group": "SKAG | No Heat Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/no-heat-repair/",
+    "copy_of_ad_id": null,
+    "label": "RSA A - service and hours led",
+    "ad_id": "825863405640"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129717087",
+    "ad_group": "SKAG | No Heat Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/no-heat-repair/",
+    "copy_of_ad_id": null,
+    "label": "RSA B - problem led",
+    "ad_id": "825863405643"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129717327",
+    "ad_group": "SKAG | Heat Pump Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-repair/",
+    "copy_of_ad_id": null,
+    "label": "RSA A - 2026-09-22 draft",
+    "ad_id": "825863405646"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129717327",
+    "ad_group": "SKAG | Heat Pump Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-repair/",
+    "copy_of_ad_id": null,
+    "label": "RSA B - 2026-09-22 draft",
+    "ad_id": "825863405649"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129717487",
+    "ad_group": "SKAG | Heat Pump Replacement",
+    "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-replacement/",
+    "copy_of_ad_id": null,
+    "label": "RSA A - 2026-09-22 draft",
+    "ad_id": "825863405652"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129717487",
+    "ad_group": "SKAG | Heat Pump Replacement",
+    "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-replacement/",
+    "copy_of_ad_id": null,
+    "label": "RSA B - 2026-09-22 draft",
+    "ad_id": "825863405655"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129717527",
+    "ad_group": "SKAG | Heat Pump Installation",
+    "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-installation/",
+    "copy_of_ad_id": null,
+    "label": "RSA A - 2026-09-22 draft",
+    "ad_id": "825863405658"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129717527",
+    "ad_group": "SKAG | Heat Pump Installation",
+    "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-installation/",
+    "copy_of_ad_id": null,
+    "label": "RSA B - 2026-09-22 draft",
+    "ad_id": "825863405661"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129717567",
+    "ad_group": "SKAG | Heat Pump Maintenance",
+    "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-maintenance/",
+    "copy_of_ad_id": null,
+    "label": "RSA A - 2026-09-22 draft",
+    "ad_id": "825863405664"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129717567",
+    "ad_group": "SKAG | Heat Pump Maintenance",
+    "final_url": "https://offer.ambientcoolingandheating.com/heat-pump-maintenance/",
+    "copy_of_ad_id": null,
+    "label": "RSA B - 2026-09-22 draft",
+    "ad_id": "825863405667"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129718207",
+    "ad_group": "SKAG | Boiler Replacement",
+    "final_url": "https://offer.ambientcoolingandheating.com/boiler-replacement/",
+    "copy_of_ad_id": null,
+    "label": "RSA A - 2026-09-22 draft",
+    "ad_id": "825863405670"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129718207",
+    "ad_group": "SKAG | Boiler Replacement",
+    "final_url": "https://offer.ambientcoolingandheating.com/boiler-replacement/",
+    "copy_of_ad_id": null,
+    "label": "RSA B - 2026-09-22 draft",
+    "ad_id": "825863405673"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129718767",
+    "ad_group": "SKAG | Thermostat Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/thermostat-repair/",
+    "copy_of_ad_id": null,
+    "label": "RSA A - 2026-09-22 draft",
+    "ad_id": "825863405676"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129718767",
+    "ad_group": "SKAG | Thermostat Repair",
+    "final_url": "https://offer.ambientcoolingandheating.com/thermostat-repair/",
+    "copy_of_ad_id": null,
+    "label": "RSA B - 2026-09-22 draft",
+    "ad_id": "825863405679"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129718927",
+    "ad_group": "SKAG | Thermostat Replacement",
+    "final_url": "https://offer.ambientcoolingandheating.com/thermostat-replacement/",
+    "copy_of_ad_id": null,
+    "label": "RSA A - 2026-09-22 draft",
+    "ad_id": "825863405682"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129718927",
+    "ad_group": "SKAG | Thermostat Replacement",
+    "final_url": "https://offer.ambientcoolingandheating.com/thermostat-replacement/",
+    "copy_of_ad_id": null,
+    "label": "RSA B - 2026-09-22 draft",
+    "ad_id": "825863405685"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129718967",
+    "ad_group": "SKAG | Smart Thermostat Installation",
+    "final_url": "https://offer.ambientcoolingandheating.com/smart-thermostat/",
+    "copy_of_ad_id": null,
+    "label": "RSA A - 2026-09-22 draft",
+    "ad_id": "825863405688"
+   },
+   {
+    "kind": "launch",
+    "ad_group_id": "204129718967",
+    "ad_group": "SKAG | Smart Thermostat Installation",
+    "final_url": "https://offer.ambientcoolingandheating.com/smart-thermostat/",
+    "copy_of_ad_id": null,
+    "label": "RSA B - 2026-09-22 draft",
+    "ad_id": "825863405691"
+   }
+  ]
+ },
+ "stages": [
+  {
+   "label": "CREATE-1 sitelink assets",
+   "ops": 10,
+   "results": [
+    "customers/2401959466/assets/424583525083",
+    "customers/2401959466/assets/424481123441",
+    "customers/2401959466/assets/424666378863",
+    "customers/2401959466/assets/424666395915",
+    "customers/2401959466/assets/424481139482",
+    "customers/2401959466/assets/424481133551",
+    "customers/2401959466/assets/424666371474",
+    "customers/2401959466/assets/424666369737",
+    "customers/2401959466/assets/424666395918",
+    "customers/2401959466/assets/424666395924"
+   ]
+  },
+  {
+   "label": "CREATE-2 sitelink links PAUSED",
+   "ops": 18,
+   "results": [
+    "customers/2401959466/campaignAssets/24257819463~424583525083~SITELINK",
+    "customers/2401959466/campaignAssets/24257819463~424481123441~SITELINK",
+    "customers/2401959466/campaignAssets/24257819463~424666378863~SITELINK",
+    "customers/2401959466/campaignAssets/24257819463~410638280067~SITELINK",
+    "customers/2401959466/campaignAssets/24257819466~424666395915~SITELINK",
+    "customers/2401959466/campaignAssets/24257819466~424481139482~SITELINK",
+    "customers/2401959466/campaignAssets/24257819466~410638276380~SITELINK",
+    "customers/2401959466/campaignAssets/24257819466~410638278156~SITELINK",
+    "customers/2401959466/campaignAssets/24268690038~424666378863~SITELINK",
+    "customers/2401959466/campaignAssets/24268690038~424666395915~SITELINK",
+    "customers/2401959466/campaignAssets/24268690038~424481139482~SITELINK",
+    "customers/2401959466/campaignAssets/24268690038~424481133551~SITELINK",
+    "customers/2401959466/campaignAssets/24132507744~424666371474~SITELINK",
+    "customers/2401959466/campaignAssets/24132507744~410465469923~SITELINK",
+    "customers/2401959466/campaignAssets/24268690041~424666369737~SITELINK",
+    "customers/2401959466/campaignAssets/24268690041~424666395918~SITELINK",
+    "customers/2401959466/campaignAssets/24268690041~424666395924~SITELINK",
+    "customers/2401959466/campaignAssets/24268690041~424481123441~SITELINK"
+   ]
+  },
+  {
+   "label": "CREATE-3 RSAs PAUSED",
+   "ops": 30,
+   "results": [
+    "customers/2401959466/adGroupAds/199797580706~825863405484",
+    "customers/2401959466/adGroupAds/199797580706~825863405487",
+    "customers/2401959466/adGroupAds/204129717247~825863405490",
+    "customers/2401959466/adGroupAds/204129717247~825863405493",
+    "customers/2401959466/adGroupAds/204129717287~825863405496",
+    "customers/2401959466/adGroupAds/204129717287~825863405499",
+    "customers/2401959466/adGroupAds/204129717007~825863405502",
+    "customers/2401959466/adGroupAds/204129717007~825863405505",
+    "customers/2401959466/adGroupAds/204129717767~825863405508",
+    "customers/2401959466/adGroupAds/204129717767~825863405511",
+    "customers/2401959466/adGroupAds/204129718047~825863405514",
+    "customers/2401959466/adGroupAds/204129718047~825863405517",
+    "customers/2401959466/adGroupAds/204129717087~825863405640",
+    "customers/2401959466/adGroupAds/204129717087~825863405643",
+    "customers/2401959466/adGroupAds/204129717327~825863405646",
+    "customers/2401959466/adGroupAds/204129717327~825863405649",
+    "customers/2401959466/adGroupAds/204129717487~825863405652",
+    "customers/2401959466/adGroupAds/204129717487~825863405655",
+    "customers/2401959466/adGroupAds/204129717527~825863405658",
+    "customers/2401959466/adGroupAds/204129717527~825863405661",
+    "customers/2401959466/adGroupAds/204129717567~825863405664",
+    "customers/2401959466/adGroupAds/204129717567~825863405667",
+    "customers/2401959466/adGroupAds/204129718207~825863405670",
+    "customers/2401959466/adGroupAds/204129718207~825863405673",
+    "customers/2401959466/adGroupAds/204129718767~825863405676",
+    "customers/2401959466/adGroupAds/204129718767~825863405679",
+    "customers/2401959466/adGroupAds/204129718927~825863405682",
+    "customers/2401959466/adGroupAds/204129718927~825863405685",
+    "customers/2401959466/adGroupAds/204129718967~825863405688",
+    "customers/2401959466/adGroupAds/204129718967~825863405691"
+   ]
+  }
+ ],
+ "finished_local": "2026-09-24T17:53:57.501812-04:00"
+}

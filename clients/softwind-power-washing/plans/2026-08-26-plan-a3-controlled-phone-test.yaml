@@ -1,0 +1,168 @@
+# PLAN-A3 - CONTROLLED PHONE TEST
+#
+# STATUS: NOT APPROVED. DO NOT EXECUTE.
+#
+# SUPERSEDES the phone-test portion of PLAN-A (fingerprint 701E8E5ED639, now VOID).
+#
+# THIS PLAN RINGS THE CLIENT'S REAL PHONE. It consumes staff time, creates a
+# billable tracked call, and adds a permanent conversion to Google Ads history.
+# Separate fingerprint so it can never ride along with anything else.
+
+change_plan:
+  plan_id: PLAN-A3
+  plan_title: Controlled single phone-call conversion test
+  approval_type: CONTROLLED_LIVE_TEST_CALL
+  priority: P0
+  approval_status: NOT APPROVED
+  execution_status: DO NOT EXECUTE
+  recommended_approval_order: 7
+  ads_mutation_count: 0
+  requires_separate_enable_approval: false
+  supersedes:
+    plan_id: PLAN-A
+    fingerprint: 701E8E5ED639
+    status: VOID
+  blocked_on:
+  - PLAN-A1 complete and its findings reviewed
+  - Client agreement on a specific call window
+  - Client confirmation of who will answer and that they expect the test
+  - Named cleanup owner agreed
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    manager_customer_id: '3373711342'
+    exact_service: Power Washing
+    vertical: similar-local-service
+  test_number:
+    number_to_dial: (631) 502-7946
+    why_this_number: 'This is the approved campaign tracking number. It is the number on the Google
+      Ads call asset 403335872180 and in the tel: links and body copy of all nine offer landing
+      pages. It is the only number a paid visitor to an offer page can reach.'
+    numbers_explicitly_NOT_to_dial:
+    - number: (631) 502-5402
+      reason: The untracked main-site number. Dialling it proves nothing about the campaign and
+        produces no conversion.
+    - number: (631) 553-5927
+      reason: 'The WhatConverts swap target discovered in the wc_swap cookie on 2026-08-26. It is
+        neither the approved tracking number nor the static number, and the DNI probe showed it
+        never actually reaches a tel: link. Dialling it would test a path no real visitor currently
+        takes.'
+    caller_id_requirement: Place the call from a number the client can recognise and that is NOT
+      a Green Marketing client-facing line, so a returned call cannot reach a real prospect queue.
+      The caller must identify as a Green Marketing test in the first sentence.
+  approved_call_window:
+    status: NOT YET SUPPLIED - MUST BE AGREED BEFORE EXECUTION
+    constraint_from_published_hours: softwindli.com/contact-us/ publishes Monday-Friday 08:00-18:00
+      America/New_York, with no Saturday or Sunday hours published.
+    constraint_from_ad_schedule: The live ad schedule runs Monday-SATURDAY 08:00-18:00. The Saturday
+      discrepancy between published hours and ad schedule is itself unresolved and is one of the
+      questions blocking PLAN-C.
+    proposed_window: A weekday between 09:00 and 16:00 America/New_York, avoiding the 12:00-13:00
+      hour, agreed with the client at least 24 hours ahead.
+    why_it_matters: A call placed outside answered hours would go unanswered, would likely fail
+      the 60-second minimum duration, and would therefore produce a FALSE NEGATIVE - the test would
+      appear to prove tracking is broken when it only proved nobody picked up.
+  minimum_duration_rule:
+    threshold_seconds: 60
+    applies_to_actions:
+    - id: '7708765130'
+      name: Softwind Power Washing | Website Phone Call Lead
+      type: WEBSITE_CALL
+    - id: '7711699090'
+      name: Softwind Power Washing | Call Asset Lead
+      type: AD_CALL
+    rule: The call MUST exceed 60 seconds of connected time. Both call conversion actions carry
+      phone_call_duration_seconds = 60, so a 59-second call records NO conversion and proves nothing.
+    instruction_to_caller: Stay connected for a minimum of 90 seconds to leave margin for connect
+      and teardown time. Do not hang up early even if the conversation finishes.
+    which_action_should_fire:
+      if_dialled_from_a_google_ad_call_extension: 7711699090 (AD_CALL, origin CALL_FROM_ADS)
+      if_dialled_from_a_landing_page_tel_link: 7708765130 (WEBSITE_CALL, origin WEBSITE)
+      note: 'These are DIFFERENT paths and only one will fire per call. To test both, two separate
+        calls would be needed - which is NOT proposed here. This plan tests ONE path. The landing-page
+        tel: path is recommended first because the call asset has recorded 35 impressions and 0
+        clicks, so it is the less-used path in practice.'
+    recommended_path_for_this_test: 'Landing-page tel: link on an offer page, arriving with a gclid,
+      so action 7708765130 is the one under test.'
+  call_record_impact:
+    systems_written_to:
+    - system: WhatConverts
+      record_created: 1 tracked call, likely with a call recording depending on client settings
+      deletable: Can be marked as a test and archived. A recording may be retained under the client's
+        retention policy.
+    - system: Client phone system / answering staff
+      record_created: 1 inbound call, staff time consumed
+      deletable: false
+    - system: Google Ads conversion history
+      record_created: 1 conversion on action 7708765130 or 7711699090
+      deletable: false
+    - system: Client CRM (UNKNOWN)
+      record_created: Possible, if WhatConverts pushes calls to a CRM
+      deletable: UNKNOWN
+    billing_impact: WhatConverts tracked calls may consume plan minutes. One call is immaterial,
+      but it is a real cost.
+    recording_and_consent_note: If call recording is enabled, the test call will be recorded. New
+      York is a one-party-consent state, and the caller is a party to the call, so recording is
+      lawful - but the caller should still state that they are a Green Marketing test at the start.
+    irreversibility_warning: As with PLAN-A2, the Google Ads conversion CANNOT be deleted and would
+      be 100% of an account that currently has zero conversions.
+  cleanup_procedure:
+    owner: To be named by the approval owner before execution.
+    deadline: Within 24 hours of verification.
+    steps:
+    - 1. Verify within 24h whether action 7708765130 (or 7711699090) incremented, and record the
+      result and the observed call duration.
+    - 2. Mark the WhatConverts call as a test and archive it so it is excluded from lead counts.
+    - 3. Request deletion of the call recording if one exists and the client wants it removed.
+    - 4. Delete or flag any CRM record created.
+    - '5. Add a Google Ads account annotation on the test date: ''GM conversion test - 1 artificial
+      call conversion - exclude from reporting''.'
+    - 6. Record the test in clients/softwind-power-washing/receipts/ with the exact conversion count
+      added and the cleanup confirmation.
+    what_cannot_be_cleaned: The Google Ads conversion, and the staff time.
+  actions:
+  - action_id: A3-01
+    priority: P0
+    resource_type: CALL_TRACKING
+    operation: PLACE_TEST_CALL
+    customer_id: '1521725229'
+    campaign_id: '24103511039'
+    ad_group_id: null
+    resource_id: '(631) 502-7946 via an offer-page tel: link'
+    current_value: '0 calls recorded. metrics.phone_calls = 0 across 107 phone impressions. CALLS
+      click type: 35 impressions, 0 clicks.'
+    proposed_value: Exactly ONE call, minimum 90 seconds connected, inside the agreed window, followed
+      by 24h verification against action 7708765130.
+    why: The only way to prove the call conversion path fires and to confirm which of the two call
+      actions receives the event.
+    evidence: deep-read-2026-08-25.json conversion_actions phone_call_duration_seconds=60; metrics
+      click_type CALLS
+    expected_effect: Proves or disproves the call conversion path.
+    risk: MEDIUM. Rings the client's real line, consumes staff time, creates a billable tracked
+      call and one permanent Google Ads conversion.
+    rollback: Cleanup procedure above. The Google Ads conversion cannot be reversed.
+    approval_required: YES - CONTROLLED LIVE TEST. Separate approval, separate fingerprint, blocked
+      behind PLAN-A1 and behind an agreed call window.
+    object_count: 1
+  change_counts:
+    campaigns_changed: 0
+    campaigns_paused: 0
+    budgets_changed: 0
+    bidding_settings_changed: 0
+    ad_schedules_changed: 0
+    ad_groups_enabled: 0
+    ad_groups_created_paused: 0
+    keywords_enabled: 0
+    keywords_created_paused: 0
+    rsas_created_paused: 0
+    ads_changed: 0
+    negatives_added: 0
+    assets_changed: 0
+    final_urls_changed: 0
+    conversion_actions_changed: 0
+    google_ads_mutations_total: 0
+    forms_submitted: 0
+    calls_placed: 1
+    permanent_google_ads_conversions_added: 1
+  approval_owner: Walter Correa
+  approver_email: access@greenmarketing.com

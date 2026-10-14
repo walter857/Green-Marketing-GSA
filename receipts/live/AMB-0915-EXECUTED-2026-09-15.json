@@ -1,0 +1,234 @@
+{
+ "stamp": "2026-09-15",
+ "started_local": "2026-09-15T18:04:21.608995-04:00",
+ "approvals": {
+  "AMB-0915-COMM-RSA-1": [
+   "6C32B210CF5B",
+   2
+  ],
+  "AMB-0915-COMM-ASSET-1": [
+   "02F6EECCCDF8",
+   7
+  ]
+ },
+ "steps": [
+  {
+   "step": "identity_gate",
+   "at": "2026-09-15T18:04:24.727961-04:00",
+   "data": {
+    "checks": {
+     "name == 'Ambient Cooling - Live'": true,
+     "id == 2401959466": true,
+     "not manager": true,
+     "not test": true,
+     "TZ America/New_York": true,
+     "USD": true,
+     "ENABLED": true,
+     "GM 3373711342 ACTIVE": true,
+     "ClickCease 2815082755 ACTIVE": true
+    },
+    "observed_name": "Ambient Cooling - Live",
+    "observed_id": "2401959466"
+   }
+  },
+  {
+   "step": "live_before_state",
+   "at": "2026-09-15T18:04:29.535900-04:00",
+   "data": {
+    "campaign_status": "ENABLED",
+    "campaign_serving": "SERVING",
+    "campaign_cpc_ceiling_usd": 30.0,
+    "campaign_budget_usd": 176.15,
+    "campaign_budget_id": "15787409441",
+    "search_partners": false,
+    "display": false,
+    "geo": "PRESENCE",
+    "ad_group_name": "SKAG | Commercial HVAC Installation",
+    "ad_group_status": "ENABLED",
+    "ad_group_cpc_bid_micros": 10000,
+    "ad_group_tracking_url_template": null,
+    "ad_group_final_url_suffix": null,
+    "keywords": [
+     "EXACT:commercial hvac installation:ENABLED:APPROVED:ELIGIBLE",
+     "PHRASE:commercial hvac installation:ENABLED:APPROVED:ELIGIBLE"
+    ],
+    "negatives_count": 17,
+    "negatives": [
+     "career",
+     "careers",
+     "course",
+     "courses",
+     "diy",
+     "homeowner",
+     "house",
+     "job",
+     "jobs",
+     "parts",
+     "residential",
+     "salaries",
+     "salary",
+     "supplier",
+     "supply",
+     "used",
+     "wholesale"
+    ],
+    "ads_count": 0,
+    "ad_group_asset_links": 0,
+    "campaign_callouts": [
+     "Clear Recommendations",
+     "Clear Service Options",
+     "Local Maryland Service",
+     "Professional Technicians",
+     "Prompt, Reliable Service"
+    ]
+   }
+  },
+  {
+   "step": "landing_page_check",
+   "at": "2026-09-15T18:04:29.943585-04:00",
+   "data": {
+    "status": 200,
+    "final_url": "https://offer.ambientcoolingandheating.com/commercial-hvac-installation/",
+    "params_sent": false
+   }
+  },
+  {
+   "step": "fingerprints",
+   "at": "2026-09-15T18:04:29.944593-04:00",
+   "data": {
+    "AMB-0915-COMM-RSA-1": "6C32B210CF5B",
+    "AMB-0915-COMM-ASSET-1": "02F6EECCCDF8"
+   }
+  },
+  {
+   "step": "drift_gate",
+   "at": "2026-09-15T18:04:29.944593-04:00",
+   "data": {
+    "ads in ad group still 0": true,
+    "ad-group negatives still 17": true,
+    "negative set unchanged": true,
+    "both keywords ENABLED+APPROVED+ELIGIBLE": true,
+    "campaign still ENABLED": true,
+    "campaign budget still $176.15": true,
+    "campaign ceiling still $30.00": true,
+    "ad group has 0 asset links": true,
+    "landing page HTTP 200": true,
+    "campaign callouts unchanged (5, no overlap)": true
+   }
+  },
+  {
+   "step": "validate_only",
+   "at": "2026-09-15T18:04:31.192525-04:00",
+   "data": {
+    "rsa": "VALIDATED_OK",
+    "assets": "VALIDATED_OK"
+   }
+  },
+  {
+   "step": "execute_rsa",
+   "at": "2026-09-15T18:04:31.939771-04:00",
+   "data": {
+    "status": "EXECUTED_OK",
+    "resources": [
+     "customers/2401959466/adGroupAds/199748801029~824781897834",
+     "customers/2401959466/adGroupAds/199748801029~824781897837"
+    ],
+    "partial_failure": true
+   }
+  },
+  {
+   "step": "execute_assets",
+   "at": "2026-09-15T18:04:32.355324-04:00",
+   "data": {
+    "status": "EXECUTED_OK",
+    "resources": [
+     "customers/2401959466/assets/421646926374",
+     "customers/2401959466/assets/421464532268",
+     "customers/2401959466/assets/421568039029",
+     "customers/2401959466/assets/421568040667",
+     "customers/2401959466/assets/421646926386",
+     "customers/2401959466/assets/421568040679",
+     "customers/2401959466/assets/421646926389"
+    ],
+    "meta": [
+     {
+      "field_type": "CALLOUT",
+      "text": "Free Consultation"
+     },
+     {
+      "field_type": "CALLOUT",
+      "text": "Flexible Scheduling"
+     },
+     {
+      "field_type": "CALLOUT",
+      "text": "Transparent Pricing"
+     },
+     {
+      "field_type": "CALLOUT",
+      "text": "Central Maryland Service"
+     },
+     {
+      "field_type": "CALLOUT",
+      "text": "Multiple System Options"
+     },
+     {
+      "field_type": "CALLOUT",
+      "text": "Commercial HVAC Team"
+     },
+     {
+      "field_type": "STRUCTURED_SNIPPET",
+      "header": "Types",
+      "values": [
+       "Rooftop Units",
+       "Packaged Systems",
+       "Heat Pumps",
+       "Central Air",
+       "HVAC Replacement"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "step": "execute_links",
+   "at": "2026-09-15T18:04:33.213437-04:00",
+   "data": {
+    "status": "EXECUTED_OK",
+    "resources": [
+     "customers/2401959466/adGroupAssets/199748801029~421646926374~CALLOUT",
+     "customers/2401959466/adGroupAssets/199748801029~421464532268~CALLOUT",
+     "customers/2401959466/adGroupAssets/199748801029~421568039029~CALLOUT",
+     "customers/2401959466/adGroupAssets/199748801029~421568040667~CALLOUT",
+     "customers/2401959466/adGroupAssets/199748801029~421646926386~CALLOUT",
+     "customers/2401959466/adGroupAssets/199748801029~421568040679~CALLOUT",
+     "customers/2401959466/adGroupAssets/199748801029~421646926389~STRUCTURED_SNIPPET"
+    ]
+   }
+  }
+ ],
+ "finished_local": "2026-09-15T18:04:33.213437-04:00",
+ "created": {
+  "ads": [
+   "customers/2401959466/adGroupAds/199748801029~824781897834",
+   "customers/2401959466/adGroupAds/199748801029~824781897837"
+  ],
+  "assets": [
+   "customers/2401959466/assets/421646926374",
+   "customers/2401959466/assets/421464532268",
+   "customers/2401959466/assets/421568039029",
+   "customers/2401959466/assets/421568040667",
+   "customers/2401959466/assets/421646926386",
+   "customers/2401959466/assets/421568040679",
+   "customers/2401959466/assets/421646926389"
+  ],
+  "links": [
+   "customers/2401959466/adGroupAssets/199748801029~421646926374~CALLOUT",
+   "customers/2401959466/adGroupAssets/199748801029~421464532268~CALLOUT",
+   "customers/2401959466/adGroupAssets/199748801029~421568039029~CALLOUT",
+   "customers/2401959466/adGroupAssets/199748801029~421568040667~CALLOUT",
+   "customers/2401959466/adGroupAssets/199748801029~421646926386~CALLOUT",
+   "customers/2401959466/adGroupAssets/199748801029~421568040679~CALLOUT",
+   "customers/2401959466/adGroupAssets/199748801029~421646926389~STRUCTURED_SNIPPET"
+  ]
+ }
+}

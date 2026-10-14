@@ -1,0 +1,91 @@
+# APG 2026-09-28 independent audit — exact proposed-change manifest.
+# LOCAL DRAFT. Nothing here has been executed. A draft is not permission to change any external system.
+change_manifest:
+  generated: "2026-09-28"
+  external_writes_performed: NONE
+  target:
+    exact_child_account_name: "Apogee Lawns LLC - Live"
+    child_customer_id: "8164626278"
+    manager_customer_id: "3373711342"
+    manager_is_never_a_target: true
+    exact_service: Permanent Christmas light installation
+    campaign_id: "24257151015"
+    campaign_status_preserved: ENABLED        # observed 2026-09-28 19:45 UTC; no plan here changes it
+
+  google_ads:
+    implementation_ready:
+      - plan_id: APG-0928-DEV-T
+        file: clients/apogee-lawns/plans/APG-0928-DEV-T.yaml
+        fingerprint: 46060B03F5C9
+        approval_line: "APPROVE APG DEVICE UPDATE 46060B03F5C9"
+        objects:
+          - {ordinal: 1, resource: "customers/8164626278/campaignCriteria/24257151015~30002", field: bid_modifier, before: 0.0, after: 1.0}
+          - {ordinal: 2, resource: "customers/8164626278/adGroupBidModifiers/200347713516~30002", field: bid_modifier, before: 0.0, after: 1.0, conditional: true}
+          - {ordinal: 3, resource: "customers/8164626278/adGroupBidModifiers/200347713556~30002", field: bid_modifier, before: 0.0, after: 1.0, conditional: true}
+        counts: {create: 0, update_min: 1, update_max: 3, remove: 0, enable: 0}
+    conditional_not_fingerprinted:
+      - plan_id: APG-0928-KW-P
+        what: "add PHRASE 'permanent christmas lights' to ad group 200347713556; add campaign negatives PHRASE reddit, PHRASE tiktok, PHRASE semi permanent, PHRASE dude dad, BROAD minleon"
+        keywords_to_add: [{text: "permanent christmas lights", match_type: PHRASE, ad_group_id: "200347713556"}]
+        negatives_to_add:
+          - {text: reddit, match_type: PHRASE}
+          - {text: tiktok, match_type: PHRASE}
+          - {text: semi permanent, match_type: PHRASE}
+          - {text: dude dad, match_type: PHRASE}
+          - {text: minleon, match_type: BROAD}
+        ads: "reuse RSAs 825023783013 and 825023783016; no new ads"
+        counts: {create: 6, update: 0, remove: 0}
+        gate: ["form conversion verified end to end", "date >= 2026-10-15", "fresh search-term read still shows buyer/local-marked queries"]
+        why_not_ready: "gated on measurement; forecast tool cannot model the new negatives"
+      - plan_id: APG-0928-NEG-H
+        what: "remove up to 3 seasonal-phrase negatives (13815997505, 2356007674300, 1733687419372); keep or remove 3 labor-only negatives per owner fact"
+        why_not_ready: "no observed volume; owner fact outstanding"
+      - plan_id: APG-0928-CONV-WC
+        what: "promote 7773043879 (website calls, 60 s) to Primary for reporting"
+        why_not_ready: "no website-call conversion has been observed; the Google forwarding-number swap is untested"
+    budget_changes: NONE          # $16.44/day x 30.4 = $499.78; approved total $500 preserved
+    cpc_ceiling_changes: NONE     # $8.00 kept; $10 = +0 forecast clicks, $12 = +6.6 at ~$19.55 each
+    geo_changes: NONE             # 14 approved targets verified; Omaha EXCLUDED (settled 2026-09-16)
+    status_changes: NONE
+    future_enablement: NONE       # campaign is already ENABLED (by the owner, 2026-09-21); nothing new would serve
+    rejected_with_reason:
+      - {change: "raise CPC ceiling to $10-$12", reason: "0 to +6.6 forecast clicks; incremental CPC ~$19.55 vs ~$5 affordable under owner planning assumptions"}
+      - {change: "raise daily budget", reason: "no forecast sensitivity; would exceed the approved $500/month"}
+      - {change: "permanent holiday lights / holiday installation ad group", reason: "installation synonyms ~0 demand; generic phrase reach is mixed intent"}
+      - {change: "buyer-modifier / local head-term ad group", reason: "1.2 forecast clicks on its own for 83 days"}
+      - {change: "permanent outdoor lights, permanent house lights", reason: "product / DIY intent (govee family)"}
+      - {change: "everlights keyword", reason: "0 forecast clicks; brand claim unconfirmed for ads"}
+      - {change: "Omaha", reason: "EXCLUDED by settled owner decision; not reopened on volume or website wording"}
+      - {change: "Broad match, Search Partners, Display, AI Max, DSA, URL/text expansion, PMax", reason: "agency defaults; no evidence to deviate"}
+
+  gtm:
+    implementation_ready: []
+    conditional_not_fingerprinted:
+      - plan_id: APG-0928-GTM-TRIG
+        what: "tighten trigger 'TR | Custom Event | apg_permanent_lights_lead' condition {{DLV | lead_id}} from '.+' to the shipped ID format, e.g. '^[1-9][0-9]{0,11}$'"
+        why_not_ready: "the developer must first confirm the lead ID format; untested publication bundles are not fingerprinted"
+    no_action:
+      - "Conversion Linker tag 10 (added in v3) is redundant with the Google tag and harmless; removing it is optional and not proposed"
+
+  developer:   # see 05_developer_repair_handoff.md
+    - D1 publish /thank-you/permanent-christmas-lights/ (noindex, GTM, no form)
+    - D2 exclude LP and thank-you from full-page cache
+    - D3 Gravity Forms confirmation redirect for accepted, non-spam entries only
+    - D4 server-rendered dataLayer push with a verified, non-PII entry ID
+    - D5 no PII in URLs or dataLayer
+    - D6 client-side click-ID capture (if the hidden fields are meant for it)
+    - D7 remove the two published drafting notes from the LP
+    - D8 de-duplicate the three form-1 instances
+    - D9 confirm WhatConverts still captures GF1
+
+  owner_items:
+    - "confirm whether Apogee installs customer-supplied lights (labor only)"
+    - "was the 2026-09-25 tablet exclusion deliberate? (decides APG-0928-DEV-T)"
+    - "test-call 402-526-5754 in answer hours; confirm it is a WhatConverts number in profile 174313 and whether WhatConverts' Google Ads integration is on"
+    - "confirm the EverLights relationship claim that the live LP already shows"
+    - "average gross profit per sold installation; CRM stage mapping for qualified and sold"
+
+  local_file_corrections_proposed_not_applied:
+    - file: clients/apogee-lawns/client.yaml
+      fields: ["website.landing_page_base_url", "integrations.call_tracking", "integrations.tag_manager", "integrations.form_platform", "integrations.analytics"]
+      reason: "stale since 2026-09-17; the live offer subdomain runs Gravity Forms, GTM v3 and WhatConverts"

@@ -1,0 +1,943 @@
+{
+ "plan_name": "AMBIENT-CONSOLIDATED-2026-08-27",
+ "generated_local": "2026-08-27T17:31:27.160224-04:00",
+ "customer_id": "2401959466",
+ "exact_child_account_name": "Ambient Cooling - Live",
+ "vertical": "heating-cooling",
+ "primary_service": "AC Repair",
+ "related_services": [
+  "HVAC Repair",
+  "HVAC Installation",
+  "HVAC Replacement",
+  "Gas Boiler Repair"
+ ],
+ "approval_owner": "Green Marketing",
+ "mode": "create-and-update, all reversible, nothing removed",
+ "packages": {
+  "ADJ-1": {
+   "title": "Competitor company-name negatives on HVAC Installation",
+   "target_campaign_id": "24132507747",
+   "target_campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "operation": "CREATE campaign_criterion (negative keyword)",
+   "match_type": "PHRASE",
+   "object_count": 24,
+   "negatives": [
+    "amazing heating",
+    "amazing plumbing",
+    "armbridge",
+    "bahr",
+    "barstow",
+    "beltway hvac",
+    "blauch",
+    "bluedot",
+    "croppmetcalfe",
+    "elmar mechanical",
+    "furr",
+    "horizon services",
+    "hugee",
+    "hvac precision services",
+    "kirkland",
+    "len the plumber",
+    "maryland mechanical",
+    "mccrea",
+    "michael & sons",
+    "michael and sons",
+    "michaels",
+    "supreme service today",
+    "total comfort",
+    "woodfin"
+   ],
+   "evidence": {
+    "mechanism": "Google phrase-match same-meaning expansion maps the keyword 'hvac installers' onto local contractor brand searches.",
+    "observed_terms": 44,
+    "observed_impressions": 189,
+    "observed_clicks": 29,
+    "observed_cost": 760.28,
+    "observed_primary_conversions": 0.0,
+    "share_of_hvac_installation_spend": "38.2% of $1,987.98"
+   }
+  },
+  "ADJ-2": {
+   "title": "Complete the vehicle-AC protection on AC Repair",
+   "target_campaign_id": "24132507741",
+   "target_campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+   "operation": "CREATE campaign_criterion (negative keyword)",
+   "match_type": "BROAD",
+   "object_count": 1,
+   "negatives": [
+    "automotive"
+   ],
+   "evidence": {
+    "mechanism": "Negative keywords have no close variants, so the live 'auto' BROAD negative does not block 'automotive'.",
+    "observed_terms": 2,
+    "observed_impressions": 3,
+    "observed_clicks": 0,
+    "observed_cost": 0.0,
+    "classification": "PROTECTION, not a measured saving. AC Repair's observed CPC is $90.49, so one leaked click would cost more than this control."
+   }
+  },
+  "ADJ-3": {
+   "title": "Stage 1 maximum CPC bid limit on all five Maximize Clicks strategies",
+   "operation": "UPDATE campaign.target_spend.cpc_bid_ceiling_micros",
+   "object_count": 5,
+   "before": {
+    "AC Repair": 0,
+    "Gas Boiler Repair": 0,
+    "HVAC Installation": 0,
+    "HVAC Repair": 0,
+    "HVAC Replacement": 0
+   },
+   "after": {
+    "AC Repair": 60000000,
+    "Gas Boiler Repair": 40000000,
+    "HVAC Installation": 40000000,
+    "HVAC Repair": 60000000,
+    "HVAC Replacement": 40000000
+   },
+   "after_dollars": {
+    "AC Repair": 60.0,
+    "Gas Boiler Repair": 40.0,
+    "HVAC Installation": 40.0,
+    "HVAC Repair": 60.0,
+    "HVAC Replacement": 40.0
+   },
+   "evidence": {
+    "account_average_cpc_launch_to_date": 42.66,
+    "ac_repair_exact_cpc": 130.42,
+    "hvac_repair_exact_cpc": 153.06,
+    "ac_repair_phrase_cpc": 72.06,
+    "hvac_repair_phrase_cpc": 77.99,
+    "hvac_installation_cpc": 25.16,
+    "hvac_replacement_cpc": 33.94,
+    "quality_scores": "AC Repair 4, HVAC Repair 2, HVAC Replacement 2",
+    "why": "TARGET_SPEND with cpc_bid_ceiling_micros = 0 is uncapped. With very low query volume and Quality Score 2-4, Maximize Clicks bids to the top of the range to spend the budget.",
+    "risk": "A ceiling can reduce impression share. Stage 1 is set above the observed mean for every campaign so only the tail is cut.",
+    "rollback": "Set cpc_bid_ceiling_micros back to 0 on all five."
+   }
+  },
+  "ADJ-4": {
+   "title": "Stop the inherited Business Profile location asset from serving on the five paid Search campaigns",
+   "operation": "UPDATE campaign.excluded_parent_asset_set_types += LOCATION_SYNC",
+   "object_count": 5,
+   "target_campaign_ids": [
+    "24132507741",
+    "24132507744",
+    "24132507747",
+    "24132507750",
+    "24132507753"
+   ],
+   "before": {
+    "AC Repair": [],
+    "Gas Boiler Repair": [],
+    "HVAC Installation": [],
+    "HVAC Repair": [],
+    "HVAC Replacement": []
+   },
+   "after": {
+    "AC Repair": [
+     "LOCATION_SYNC"
+    ],
+    "Gas Boiler Repair": [
+     "LOCATION_SYNC"
+    ],
+    "HVAC Installation": [
+     "LOCATION_SYNC"
+    ],
+    "HVAC Repair": [
+     "LOCATION_SYNC"
+    ],
+    "HVAC Replacement": [
+     "LOCATION_SYNC"
+    ]
+   },
+   "evidence": {
+    "source": "customer-level LOCATION_SYNC asset set 8620443109 'Business Profile', status ENABLED",
+    "location_expansion_clicks": 14,
+    "location_expansion_cost": 739.09,
+    "get_directions_clicks": 6,
+    "get_directions_cost": 199.88,
+    "combined_cost": 938.97,
+    "share_of_mtd_spend": "19.5% of $4,820.12",
+    "primary_conversions_produced": 0.0,
+    "hvac_repair_detail": "$534.45 of HVAC Repair's $1,010.98, or 52.9%, went to location-asset and directions clicks",
+    "why": "These clicks go to the Business Profile, not to the paid offer landing page, and only produce Google-hosted Local actions, which are excluded from the Conversions column.",
+    "scope_note": "Campaign-scoped. The account-level Business Profile link and all 18 legacy campaigns are untouched.",
+    "rollback": "Clear excluded_parent_asset_set_types on the five."
+   }
+  }
+ },
+ "negative_detail": [
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "amazing heating",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 6,
+   "clicks_covered": 2,
+   "cost_covered": 30.68,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "amazing heating and air conditioning inc reviews"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "amazing plumbing",
+   "match": "PHRASE",
+   "terms_covered": 2,
+   "impressions_covered": 5,
+   "clicks_covered": 2,
+   "cost_covered": 56.72,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "amazing plumbing heating and air",
+    "amazing plumbing heating & air"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "armbridge",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 2,
+   "clicks_covered": 1,
+   "cost_covered": 29.76,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "armbridge hvac"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "bahr",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 2,
+   "clicks_covered": 1,
+   "cost_covered": 29.36,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "d w bahr plumbing & heating co"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "barstow",
+   "match": "PHRASE",
+   "terms_covered": 2,
+   "impressions_covered": 3,
+   "clicks_covered": 1,
+   "cost_covered": 29.21,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "barstow and sons annapolis",
+    "barstow and sons hvac"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "beltway hvac",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 42,
+   "clicks_covered": 1,
+   "cost_covered": 20.9,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "beltway hvac"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "blauch",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 2,
+   "clicks_covered": 1,
+   "cost_covered": 24.5,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "blauch brothers harrisonburg va"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "bluedot",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 3,
+   "clicks_covered": 1,
+   "cost_covered": 29.39,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "bluedot hvac"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "croppmetcalfe",
+   "match": "PHRASE",
+   "terms_covered": 5,
+   "impressions_covered": 31,
+   "clicks_covered": 4,
+   "cost_covered": 105.14,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "croppmetcalfe columbia",
+    "croppmetcalfe fairfax",
+    "croppmetcalfe linthicum heights",
+    "croppmetcalfe hvac",
+    "croppmetcalfe service experts"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "elmar mechanical",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 3,
+   "clicks_covered": 1,
+   "cost_covered": 20.98,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "elmar mechanical services"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "furr",
+   "match": "PHRASE",
+   "terms_covered": 8,
+   "impressions_covered": 30,
+   "clicks_covered": 3,
+   "cost_covered": 112.98,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 1.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [
+    "fh furr delaware"
+   ],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "fh furr hvac",
+    "fh furr delaware",
+    "f h furr",
+    "f h furr plumbing heating air conditioning & electrical",
+    "furr heating and air conditioning"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "horizon services",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 3,
+   "clicks_covered": 0,
+   "cost_covered": 0.0,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "horizon services air conditioning plumbing and heating reviews"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "hugee",
+   "match": "PHRASE",
+   "terms_covered": 2,
+   "impressions_covered": 2,
+   "clicks_covered": 1,
+   "cost_covered": 17.28,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "hugee corp",
+    "hugee hvac"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "hvac precision services",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 5,
+   "clicks_covered": 1,
+   "cost_covered": 16.9,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 1.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [
+    "hvac precision services inc gaithersburg md"
+   ],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "hvac precision services inc gaithersburg md"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "kirkland",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 1,
+   "clicks_covered": 1,
+   "cost_covered": 17.57,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "w n kirkland"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "len the plumber",
+   "match": "PHRASE",
+   "terms_covered": 2,
+   "impressions_covered": 4,
+   "clicks_covered": 0,
+   "cost_covered": 0.0,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "len the plumber heating & air llc reviews",
+    "len the plumber heating & air llc beltsville"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "maryland mechanical",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 4,
+   "clicks_covered": 1,
+   "cost_covered": 50.17,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "maryland mechanical heating & cooling"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "mccrea",
+   "match": "PHRASE",
+   "terms_covered": 3,
+   "impressions_covered": 6,
+   "clicks_covered": 1,
+   "cost_covered": 22.01,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "mccrea heating and air conditioning reviews",
+    "mccrea heating and air conditioning temple hills reviews",
+    "mccrea hvac maryland"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "michael & sons",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 2,
+   "clicks_covered": 0,
+   "cost_covered": 0.0,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "michael & sons hvac"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "michael and sons",
+   "match": "PHRASE",
+   "terms_covered": 2,
+   "impressions_covered": 9,
+   "clicks_covered": 1,
+   "cost_covered": 32.44,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "michael and sons hvac",
+    "hvac michael and sons"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "michaels",
+   "match": "PHRASE",
+   "terms_covered": 3,
+   "impressions_covered": 4,
+   "clicks_covered": 2,
+   "cost_covered": 35.8,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "a j michaels company",
+    "aj michaels hvac",
+    "michaels and sons hvac"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "supreme service today",
+   "match": "PHRASE",
+   "terms_covered": 2,
+   "impressions_covered": 18,
+   "clicks_covered": 1,
+   "cost_covered": 23.56,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "supreme service today",
+    "supreme service today halethorpe"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "total comfort",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 2,
+   "clicks_covered": 1,
+   "cost_covered": 16.26,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "total comfort"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-1",
+   "campaign_id": "24132507747",
+   "campaign": "HVAC Installation",
+   "text": "woodfin",
+   "match": "PHRASE",
+   "terms_covered": 1,
+   "impressions_covered": 2,
+   "clicks_covered": 1,
+   "cost_covered": 38.67,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "woodfin heating and air"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  },
+  {
+   "package": "ADJ-2",
+   "campaign_id": "24132507741",
+   "campaign": "AC Repair",
+   "text": "automotive",
+   "match": "BROAD",
+   "terms_covered": 2,
+   "impressions_covered": 3,
+   "clicks_covered": 0,
+   "cost_covered": 0.0,
+   "primary_conversions_covered": 0.0,
+   "all_conversions_covered": 0.0,
+   "blocks_live_keywords": [],
+   "blocks_service_probes": [],
+   "blocks_a_converting_term": [],
+   "blocks_a_primary_converting_term": [],
+   "example_terms": [
+    "automotive air conditioning repair near me",
+    "automotive ac mechanic near me"
+   ],
+   "duplicate_of_existing_negative": false,
+   "already_covered_by_existing_negative": []
+  }
+ ],
+ "totals": {
+  "negatives": 25,
+  "terms_covered": 47,
+  "impressions": 194,
+  "clicks": 29,
+  "cost": 760.28,
+  "primary_conversions": 0.0,
+  "all_conversions": 2.0
+ },
+ "before_state": {
+  "campaign_level_negatives": [
+   {
+    "campaign_id": "24132507741",
+    "criterion_id": "10000390",
+    "text": "auto",
+    "match": "BROAD"
+   },
+   {
+    "campaign_id": "24132507741",
+    "criterion_id": "10019071",
+    "text": "boat",
+    "match": "BROAD"
+   },
+   {
+    "campaign_id": "24132507741",
+    "criterion_id": "10008241",
+    "text": "car",
+    "match": "BROAD"
+   }
+  ],
+  "bidding": {
+   "AC Repair": {
+    "bidding_strategy_type": "TARGET_SPEND",
+    "cpc_bid_ceiling_micros": 0,
+    "excluded_parent_asset_set_types": [],
+    "budget_id": "15787409435"
+   },
+   "Gas Boiler Repair": {
+    "bidding_strategy_type": "TARGET_SPEND",
+    "cpc_bid_ceiling_micros": 0,
+    "excluded_parent_asset_set_types": [],
+    "budget_id": "15787409438"
+   },
+   "HVAC Installation": {
+    "bidding_strategy_type": "TARGET_SPEND",
+    "cpc_bid_ceiling_micros": 0,
+    "excluded_parent_asset_set_types": [],
+    "budget_id": "15787409441"
+   },
+   "HVAC Repair": {
+    "bidding_strategy_type": "TARGET_SPEND",
+    "cpc_bid_ceiling_micros": 0,
+    "excluded_parent_asset_set_types": [],
+    "budget_id": "15787409444"
+   },
+   "HVAC Replacement": {
+    "bidding_strategy_type": "TARGET_SPEND",
+    "cpc_bid_ceiling_micros": 0,
+    "excluded_parent_asset_set_types": [],
+    "budget_id": "15787409447"
+   }
+  },
+  "budgets_micros": {
+   "15787409435": 141450000,
+   "15787409438": 42760000,
+   "15787409441": 176150000,
+   "15787409444": 78950000,
+   "15787409447": 26320000
+  },
+  "live_positive_keywords": [
+   {
+    "campaign_id": "24132507741",
+    "campaign": "AC Repair",
+    "text": "ac repair near me",
+    "match": "EXACT"
+   },
+   {
+    "campaign_id": "24132507741",
+    "campaign": "AC Repair",
+    "text": "ac repair near me",
+    "match": "PHRASE"
+   },
+   {
+    "campaign_id": "24132507744",
+    "campaign": "Gas Boiler Repair",
+    "text": "gas boiler repair",
+    "match": "EXACT"
+   },
+   {
+    "campaign_id": "24132507744",
+    "campaign": "Gas Boiler Repair",
+    "text": "gas boiler repair",
+    "match": "PHRASE"
+   },
+   {
+    "campaign_id": "24132507747",
+    "campaign": "HVAC Installation",
+    "text": "hvac installers",
+    "match": "EXACT"
+   },
+   {
+    "campaign_id": "24132507747",
+    "campaign": "HVAC Installation",
+    "text": "hvac installers",
+    "match": "PHRASE"
+   },
+   {
+    "campaign_id": "24132507750",
+    "campaign": "HVAC Repair",
+    "text": "hvac repair near me",
+    "match": "EXACT"
+   },
+   {
+    "campaign_id": "24132507750",
+    "campaign": "HVAC Repair",
+    "text": "hvac repair near me",
+    "match": "PHRASE"
+   },
+   {
+    "campaign_id": "24132507753",
+    "campaign": "HVAC Replacement",
+    "text": "hvac replacement near me",
+    "match": "EXACT"
+   },
+   {
+    "campaign_id": "24132507753",
+    "campaign": "HVAC Replacement",
+    "text": "hvac replacement near me",
+    "match": "PHRASE"
+   }
+  ]
+ },
+ "expected_object_count": {
+  "campaign_criterion_creates": 25,
+  "campaign_updates": 5,
+  "total_mutate_operations": 30
+ },
+ "unrelated_resource_assertions": [
+  "campaign count unchanged at 23",
+  "ad group count on the five unchanged",
+  "positive keyword count on the five unchanged at 10 live",
+  "ad count on the five unchanged at 20",
+  "the three AC Repair negatives car/auto/boat unchanged (criterion ids 10008241, 10000390, 10019071)",
+  "all five daily budgets unchanged",
+  "HVAC Installation budget 15787409441 stays 176150000",
+  "2796 ClickCease IP exclusions on legacy campaigns unchanged",
+  "both manager links 3373711342 and 2815082755 stay ACTIVE",
+  "zero shared negative lists attached to the five",
+  "conversion actions and conversion goals unchanged by this plan",
+  "ad schedules unchanged at 6 rows per campaign",
+  "location targets unchanged at 75 per campaign",
+  "account tracking template unchanged",
+  "no resource removed, paused, or enabled"
+ ],
+ "rollback": {
+  "ADJ-1": "REMOVE the 24 created campaign_criterion resource names.",
+  "ADJ-2": "REMOVE the 1 created campaign_criterion resource name.",
+  "ADJ-3": "Set target_spend.cpc_bid_ceiling_micros back to 0 on all five.",
+  "ADJ-4": "Clear excluded_parent_asset_set_types on all five."
+ },
+ "not_in_this_plan": [
+  "Gas Boiler keyword package 3D823A10CB3C0B25 stays BLOCKED: the live page still shows 'Your HVAC Replacement in 3 Simple Steps' as at 2026-08-27.",
+  "Landing-page deployment 93A9DF4AA19675E8 stays BLOCKED: no source, staging, backup or deploy authority in this environment.",
+  "Conversion-goal biddability correction: separate approval class.",
+  "Account-level negative removals: destructive-action approval class.",
+  "No budget change is proposed.",
+  "No campaign, ad, keyword or asset is enabled, paused or removed."
+ ],
+ "fingerprint": "ACE80A09AC134C85",
+ "fingerprint_inputs": [
+  "before_state",
+  "customer_id",
+  "expected_object_count",
+  "negative_detail",
+  "packages",
+  "plan_name"
+ ],
+ "validate_only": {
+  "ADJ-1+ADJ-2 negatives": {
+   "status": "VALIDATE_OK",
+   "operations": 25,
+   "results_returned": 0
+  },
+  "ADJ-3+ADJ-4 campaign updates": {
+   "status": "VALIDATE_OK",
+   "operations": 5,
+   "results_returned": 0
+  }
+ },
+ "fingerprint_reproduces": true,
+ "void": true,
+ "voided_on": "2026-08-27T19:01:52.147362-04:00",
+ "void_reason": "SUPERSEDED AND VOID. Bundled four unrelated change types under one fingerprint. Split into 82ACD4953536C020 (A-1), 6F2B6ABBCEB992E4 (A-2); package B (CPC ceilings) and package C (location asset) are VOID on evidence, see below.",
+ "evidence_that_voided_it": [
+  "Package B would have blocked 100% of observed converting traffic: every one of the 5 Primary-converting clicks cost $68.16-$153.06, all above the proposed $60 ceilings on AC Repair and HVAC Repair.",
+  "Package C was based on a false claim of zero Primary conversions. LOCATION_EXPANSION clicks carried 2 of the 6 platform Primary conversions (HVAC Repair/Calls from ads 1.0 and AC Repair/LP Submit Lead Forms 1.0), neither of which is the WC Lead artifact.",
+  "17 of the 25 proposed negatives fail the stricter safety rule (ambiguous name, manufacturer, equipment brand, place name, or generic service word)."
+ ],
+ "do_not_execute": true
+}

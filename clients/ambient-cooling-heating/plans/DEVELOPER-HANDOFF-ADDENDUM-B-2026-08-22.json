@@ -1,0 +1,100 @@
+{
+ "document": "DEVELOPER HANDOFF ADDENDUM B - Ambient paid landing pages",
+ "supplements": {
+  "9EE19C066DC29D57": "DEVELOPER-HANDOFF-landing-pages-2026-08-21",
+  "93A9DF4AA19675E8": "LANDING-PAGE-PRODUCTION-DEPLOYMENT-2026-08-21"
+ },
+ "generated": "2026-08-22",
+ "status": "NOT DEPLOYED. No website, GTM, WhatConverts, form or DNS change was made.",
+ "evidence_basis": "Headless Chromium renders of all five live paid pages at desktop 1440x900, mobile 412x915, and desktop with tracking parameters. 15 renders total, all HTTP 202, all 158-173 KB (well above the ~12 KB SG-Captcha stub), all first-attempt successes. Evidence: snapshots/lp-audit-2026-08-21d.json and snapshots/gas-boiler-lp-gate-2026-08-22.json. No form was submitted and no telephone link was clicked.",
+ "deployment_authority": "NOT AVAILABLE in this environment. No WordPress filesystem, no SFTP, no staging, no GTM API access, no WhatConverts admin. Credentials were not requested. Independent search of the workspace confirms no site source, theme, or deployment configuration exists locally. This addendum is a handoff, not a deployment.",
+ "DEFECT_1_gas_boiler_cross_service_heading": {
+  "severity": "P0 - blocks the approved Gas Boiler keyword package 3D823A10CB3C0B25",
+  "page": "https://offer.ambientcoolingandheating.com/gas-boiler-repair/",
+  "observed_h2": "Your HVAC Replacement in 3 Simple Steps",
+  "required_h2": "Your Gas Boiler Repair in 3 Simple Steps",
+  "still_live_at": "2026-08-22 01:30 EDT, desktop and mobile, both confirmed",
+  "root_cause_hypothesis": "The identical heading is CORRECT on /hvac-replacement/. The 3-Simple-Steps Divi block appears to have been duplicated from the HVAC Replacement layout into the Gas Boiler layout without editing the heading. Check Divi library / global modules first, because a global module would mean editing it in one place changes both pages.",
+  "acceptance": "Render both pages; /gas-boiler-repair/ must show the Gas Boiler wording and /hvac-replacement/ must still show the HVAC Replacement wording."
+ },
+ "DEFECT_2_hvac_repair_recent_work_heading": {
+  "severity": "P1 - newly found 2026-08-21, not in the original handoff",
+  "page": "https://offer.ambientcoolingandheating.com/hvac-repair/",
+  "observed_h2": "Recent AC Repair Work",
+  "required_h2": "Recent HVAC Repair Work",
+  "note": "Same duplication pattern as DEFECT_1, this time inherited from the AC Repair layout. Every other heading on the HVAC Repair page is correct.",
+  "acceptance": "Render /hvac-repair/; the recent-work heading must say HVAC Repair."
+ },
+ "DEFECT_3_phone_race_condition_root_cause_identified": {
+  "severity": "P1",
+  "previous_status": "Intermittent +14107610932 exposure, cause unknown.",
+  "NEW_EVIDENCE": "The WhatConverts swap cookie wc_swap is present on ALL FIVE paid pages with the identical value '4109141456+..+4107610932+..+230773'. The middle value is the number WhatConverts is configured to FIND, and the first value is what it SWAPS IN. This is runtime proof that +14107610932 is the configured swap SOURCE for WhatConverts profile 105803 on the paid subdomain.",
+  "why_it_appears_intermittently": "The swap is performed client-side. Any DOM read that happens before the WhatConverts script finishes sees the pre-swap source number. That is the race condition. It is not a random defect and it is not a constant defect.",
+  "recommended_fix": "Change the swap SOURCE in WhatConverts profile 105803 from 4107610932 to the approved paid base number 4107056354, and make the page markup carry 4107056354 as its hardcoded base. Then a pre-swap read exposes the approved paid number instead of the main-site number.",
+  "DO_NOT": "Do not remove WhatConverts. Do not change the DNI replacement number 4109141456, which is intentional and approved. Do not make this change without Green Marketing confirming that 4107610932 is stale rather than deliberately retained.",
+  "acceptance": "After the change, wc_swap must no longer contain 4107610932 on any of the five paid pages, and the DNI replacement must still be 4109141456."
+ },
+ "DEFECT_4_malformed_tel_links": {
+  "severity": "P2",
+  "pages": "all five",
+  "observed": [
+   "tel:(410) 705-6354",
+   "tel:4107056354",
+   "tel:+14109141456"
+  ],
+  "problem": "tel:(410) 705-6354 contains parentheses and a space. tel:4107056354 omits the country code. Only the DNI link is well formed. Malformed tel: values are handled inconsistently across mobile dialers.",
+  "required": "All hardcoded tel: hrefs must be E.164, i.e. tel:+14107056354.",
+  "caution": "Normalize the href only. Do not change the VISIBLE text and do not alter the element attributes or classes WhatConverts uses to find and swap numbers, or DNI will break.",
+  "acceptance": "Every tel: href matches ^tel:\\+1[0-9]{10}$ and DNI still swaps."
+ },
+ "DEFECT_5_three_duplicate_form_instances": {
+  "severity": "P1",
+  "pages": "all five",
+  "observed": "Each page renders THREE <form> elements, all with id='gform_1', all with the same action, each with 23 fields. 34 duplicate DOM ids per page, including field_1_1 through field_1_15, input_9 through input_15, state_1, is_submit_1 and et-boc.",
+  "why_it_matters": "Duplicate ids are invalid HTML. label[for] resolves to the first match only, so labels on the second and third instances are not programmatically associated - an accessibility failure. A GTM form-submit trigger keyed on an id or a generic form selector can bind to the wrong instance or fire more than once, which is a plausible contributor to duplicate form conversions.",
+  "required": "Prefer ONE rendered form per page. If the layout genuinely needs the form in three places, every DOM id, label for-attribute, error container id, field id and event binding must be unique per instance.",
+  "acceptance": "document.querySelectorAll('form').length is 1, OR zero duplicate ids exist. Then AT-4 and AT-10 through AT-12 must still pass."
+ },
+ "DEFECT_6_no_privacy_or_terms_links": {
+  "severity": "P1",
+  "pages": "all five",
+  "observed": "Zero links whose text or href contains privacy or terms, on every page, on desktop and mobile.",
+  "required": "Add Privacy Policy and Terms links using REAL existing Ambient URLs only. Do not invent legal text and do not invent URLs. If no published policy exists, that is a client decision, not a developer decision.",
+  "quality_score_note": "HVAC Repair and HVAC Replacement keywords currently report landing-page experience BELOW_AVERAGE. Missing legal links are a recognised trust signal and a plausible contributor, but Google does not expose per-signal attribution. Treat the link as an INFERENCE, not proven causation.",
+  "acceptance": "Both links present, resolving to real Ambient pages, on all five."
+ },
+ "verified_correct_do_not_change": {
+  "h1_per_page": {
+   "ac-repair": "AC Repair in Severn, Severna Park & Columbia, MD",
+   "hvac-repair": "HVAC Repair in Severn, Severna Park & Columbia, MD",
+   "hvac-installation": "HVAC Installers in Severn, Severna Park & Columbia, MD",
+   "hvac-replacement": "HVAC Replacement in Severn, Severna Park & Columbia, MD",
+   "gas-boiler-repair": "Gas Boiler Repair in Severn, Severna Park & Columbia, MD"
+  },
+  "h1_installers_wording_is_intentional": "The HVAC Installation page H1 says 'HVAC Installers', which MATCHES the active keyword 'hvac installers'. This is correct keyword-to-H1 alignment. Do not 'fix' it.",
+  "canonicals": "All five self-canonical and correct.",
+  "titles": "All five service-specific and correct.",
+  "gtm": "GTM-PQTPQ436 present on all five with one noscript iframe. The container id string appears 3 times per page, which is consistent with the standard snippet plus the noscript URL. Confirm there is exactly ONE gtm.js loader before changing anything.",
+  "whatconverts": "Present and functioning on all five. Profile 105803. wc_client, wc_client_current, wc_swap and wc_visitor cookies all set.",
+  "click_id_capture": "VERIFIED WORKING. With gclid and all five UTMs on the URL, wc_client captured google + cpc + testcampaign + testcontent + testterm + TESTgclid2026Ambient + landing URL. Attribution capture is not a defect.",
+  "barred_claims": "NONE PRESENT. No page contains 24/7, same-day, emergency, guaranteed, financing or 0% APR. Do not introduce any of them."
+ },
+ "clickcease_note": "The ClickCease tag is absent from the five paid landing pages, and the account tracking template routes through monitor.clickcease.com. Green Marketing has deprioritised ClickCease for this phase. Recorded as an observation only. Do not install the tag, do not change IP exclusions, and do not treat this as the cause of charged traffic.",
+ "what_the_developer_must_return": [
+  "Confirmation that a full backup exists: WordPress database, Divi child theme, Gravity Forms form 1 export, and the current published GTM container version number.",
+  "A staging URL where all six defects are fixed.",
+  "Confirmation of whether the 3-Simple-Steps block is a Divi GLOBAL module.",
+  "Confirmation of whether the three form instances are intentional.",
+  "Green Marketing confirmation that +14107610932 is stale before any WhatConverts change.",
+  "Results of the 15-test acceptance suite from 9EE19C066DC29D57 run on staging."
+ ],
+ "mutation_counts": {
+  "google_ads_mutations": 0,
+  "website_changes_made": 0,
+  "gtm_changes_made": 0,
+  "whatconverts_changes_made": 0,
+  "total_mutations": 0
+ },
+ "run_class": "DOCUMENTATION ONLY. Nothing executed, nothing published.",
+ "plan_fingerprint": "7A28BBF93AF27F8D"
+}

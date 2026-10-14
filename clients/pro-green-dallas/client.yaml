@@ -1,0 +1,84 @@
+# Confirmed identity and scope for the read-only audit.
+# Unknown values stay null or empty. Nothing here is invented.
+# Economics, targets, and conversion roles are filled in only from evidence the
+# user confirms or the audit verifies.
+
+client:
+  slug: pro-green-dallas
+  business_name: Pro Green
+  vertical: landscaping
+  primary_service: sprinkler and irrigation repair
+  google_ads:
+    child_customer_id: "8735782888"
+    exact_child_account_name: Pro Green - Dallas - Live
+    manager_customer_id: "3373711342"
+    must_contain_live_marker: true
+    currency: USD
+    timezone: America/New_York
+  website:
+    primary_url: https://progreenlandscapesolutions.com/
+    landing_page_base_url: https://progreenlandscapesolutions.com/dfw/
+    phone_display: ""
+    phone_e164: ""
+  offer:
+    services_in_scope:
+      - sprinkler and irrigation repair
+      - sprinkler repair
+      - irrigation repair
+      - sprinkler system repair
+      - leak repair
+      - valve repair
+      - sprinkler inspection
+    services_excluded:
+      - irrigation winterization
+      - irrigation installation
+      - irrigation design
+      - general landscaping
+    verified_usps: []
+    verified_offers: []
+    average_job_revenue: null
+    gross_margin_pct: null
+    close_rate_pct: null
+    target_cpl: null
+    target_cpql: null
+    target_cac: null
+  service_area:
+    country_code: US
+    target_type: unverified
+    geo_target_constant_ids: []
+    cities: []
+    postal_codes: []
+    radius:
+      latitude: null
+      longitude: null
+      distance: null
+      unit: MILES
+    exclusions: []
+    location_option: PRESENCE
+  schedule:
+    timezone: America/New_York
+    can_answer_after_hours: null
+    windows: []
+  conversions:
+    primary: []
+    secondary: []
+    call_minimum_seconds: null
+    crm_stage_mapping:
+      lead: ""
+      qualified: ""
+      sold: ""
+    offline_route: DATA_MANAGER_API
+  integrations:
+    crm: ""
+    call_tracking: ""
+    analytics: ""
+    tag_manager: ""
+    speed_to_lead: ""
+    review_url: ""
+    form_webhook_env_key: CRM_WEBHOOK_URL
+  permissions:
+    approvers: []
+    allow_create_paused: false
+    allow_enable: false
+    allow_budget_changes: false
+    allow_deletions: false

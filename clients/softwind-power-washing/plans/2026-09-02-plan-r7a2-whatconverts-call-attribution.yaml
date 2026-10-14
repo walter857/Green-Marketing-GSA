@@ -1,0 +1,76 @@
+# PLAN-R7A2-WHATCONVERTS - POWER WASHING WHATCONVERTS DNI AND CALL-ATTRIBUTION REPAIR
+#
+# STATUS: BLOCKED - NO WHATCONVERTS CREDENTIAL. NOT APPROVED. DO NOT EXECUTE.
+# NO FINGERPRINT IS GENERATED.
+
+change_plan:
+  plan_id: PLAN-R7A2-WHATCONVERTS
+  plan_title: Power Washing WhatConverts DNI and call-attribution repair
+  approval_type: WHATCONVERTS_CONFIGURATION
+  priority: P1
+  approval_status: NOT APPROVED
+  execution_status: 'BLOCKED - NO WHATCONVERTS CREDENTIAL'
+  target:
+    exact_child_account_name: Softwind Power Washing - Live
+    child_customer_id: '1521725229'
+    exact_service: Power Washing
+    whatconverts_profile_number_probable: '158931'
+
+  counts:
+    executable_action_count: 0
+    object_count: 0
+    google_ads_mutation_count: 0
+    whatconverts_mutation_count: 0
+
+  fingerprint: null
+  fingerprint_withheld_because: >-
+    Rule 18. The profile ID, number pool, source rules, selectors and destination numbers are
+    all unread, the DNI root cause was NOT determined, and the brief explicitly forbids
+    inferring that cause from cookies alone.
+
+  blocking_access_finding:
+    claim_in_brief: 'WHATCONVERTS: AUTHENTICATED ACCESS AVAILABLE'
+    verified_reality: 'NOT AVAILABLE'
+    evidence: >-
+      WHATCONVERTS_API_TOKEN exists as a key in .env but its value is EMPTY - string length 0.
+      No other WhatConverts credential, session or export exists.
+    unblock_requirement: >-
+      Populate WHATCONVERTS_API_TOKEN with a valid API token and secret pair, or supply a
+      read-only WhatConverts user login.
+
+  what_public_inspection_did_establish:
+    whatconverts_is_active: true
+    correction_to_earlier_receipts: >-
+      Earlier receipts recorded "no request to a WhatConverts host was observed" and attributed
+      the domain p.ksrndkehqnwntyxlhgto.com to ClickCease. BOTH were wrong. The WhatConverts
+      tracking script is served from s.ksrndkehqnwntyxlhgto.com/158931.js - an obfuscated
+      first-party-looking domain WhatConverts uses to survive ad blockers. ClickCease is
+      separately present at www.clickcease.com/monitor/stat.js. The /keyword/ and /lead/form
+      POSTs seen at submission were therefore WHATCONVERTS capturing the lead, not ClickCease,
+      which makes it likely the test lead WAS recorded.
+    script_source: >-
+      <script id="whatconverts-tracking-script-js" src="//s.ksrndkehqnwntyxlhgto.com/158931.js?ver=7.1">
+      plus an inline whatconverts-tracking-script-js-before config block. The -js handle and
+      ver= query are the WordPress wp_enqueue_script signature, so the script is delivered by a
+      WordPress plugin.
+    attribution_working: >-
+      wc_client carries source, medium, campaign, content, term and the GCLID. wc_visitor prefix
+      158931 matches the script number.
+    dni_not_working: >-
+      wc_swap nominates 6315025402 and 6315535927 on all 7 pages, yet the DOM renders the static
+      (631) 502-7946 in both body text and the tel: href. The replacement never executes.
+    root_cause: 'NOT DETERMINED - requires an authenticated read. Do not guess.'
+
+  candidate_causes_to_test_when_unblocked:
+    - wrong source number configured for replacement
+    - wrong replacement or destination number
+    - selector or text-matching rule does not match the rendered markup
+    - profile domain mismatch - offer.softwindli.com may not be an included domain
+    - the offer subdomain or these paths excluded
+    - source rule does not match google / cpc
+    - number pool unavailable or exhausted
+    - the plugin script loads after the replacement scan
+    - the sibling account website-call replacement runs first and wins the element
+    - the DUPLICATE form and 22 duplicate HTML IDs cause an id-bound selector to hit the wrong node
+    - consent gating blocks replacement
+  approval_owner: Walter Correa

@@ -1,0 +1,43 @@
+work_order:
+  client_slug: pro-green-dallas
+  business_name: Pro Green
+  account:
+    exact_child_account_name: Pro Green - Dallas - Live
+    child_customer_id: "8735782888"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: landscaping
+    exact_primary_service: sprinkler and irrigation repair
+    related_services:
+      - sprinkler repair
+      - irrigation repair
+      - sprinkler system repair
+      - leak repair
+      - valve repair
+      - sprinkler inspection
+  task:
+    type: audit
+    mode: read
+    request: >-
+      Complete read-only Google Ads account audit. Determine why cost per lead is
+      extremely high and whether to optimize the existing campaign, restructure it,
+      fix conversion tracking first, or build replacement campaigns paused. Audit
+      the irrigation winterization and irrigation installation/design sitelinks as
+      potentially stale or off-intent assets, not as separate service scopes.
+      General landscaping is out of scope.
+    date_range: >-
+      last_30 = 2026-07-08..2026-08-06; previous_30 = 2026-06-08..2026-07-07;
+      last_90 = 2026-05-09..2026-08-06; trend = last_30 vs previous_30
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. landscaping is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://progreenlandscapesolutions.com/dfw/
+    service_area: []
+    daily_budget: null
+    primary_conversion_goal: ""
+    source_files:
+      - clients/pro-green-dallas/service-discovery.yaml
+      - clients/pro-green-dallas/snapshots/service-discovery-2026-08-07.json
+  approval_owner: Green Marketing

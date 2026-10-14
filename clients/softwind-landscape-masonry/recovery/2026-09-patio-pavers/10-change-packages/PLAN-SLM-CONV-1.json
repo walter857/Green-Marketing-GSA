@@ -1,0 +1,64 @@
+{
+  "plan_name": "PLAN-SLM-CONV-1",
+  "version": 1,
+  "operation_class": "CONVERSION_ACTION_PRIMARY_FLAG_CHANGE",
+  "approval_label": "APPROVE-CONVERSIONS",
+  "generated_at": "2026-09-03T18:32:29.249387-04:00",
+  "source_snapshot": "2026-09-03T18:14:13.987015-04:00",
+  "target": {
+    "exact_child_account_name": "Softwind Landscape & Masonry - Live",
+    "child_customer_id": "2429758629",
+    "manager_customer_id": "3373711342",
+    "currency": "USD",
+    "time_zone": "America/New_York",
+    "identity_receipt": "snapshots/identity-gate-2026-09-03-1809.json",
+    "work_orders": [
+      "work-order-a-patio-construction.yaml (patio construction, campaign Patio)",
+      "work-order-b-paver-installation.yaml (paver installation, campaign Pavers)"
+    ]
+  },
+  "summary": "Demote the two duplicate primary conversion actions. Twelve actions are primary today and seven of them count into the Conversions column; two of those seven duplicate another.",
+  "actions": [
+    {
+      "resource_type": "conversion_action",
+      "resource_id": "7461619140",
+      "resource_name": "Softwind Submit lead form",
+      "type": "WEBPAGE",
+      "category": "SUBMIT_LEAD_FORM",
+      "field": "conversion_action.primary_for_goal",
+      "current_value": true,
+      "proposed_value": false,
+      "object_count": 1,
+      "reason": "Duplicates 'Softwind Landscape & Masonry (web) form_submission' (7480764700, GA4). Both fire on the same submission and both count: Mar 1/3, Apr 3/5, May 1/1, Jun 1/1, Jul 2/2, Aug 0/1. The GA4 action is the more complete of the two and stays primary.",
+      "verified_not_required_by_whatconverts": "WhatConverts writes to WC Leads (UPLOAD_CLICKS, 7635680357) and WC Call (UPLOAD_CALLS, 7635680543), not to either web form action."
+    },
+    {
+      "resource_type": "conversion_action",
+      "resource_id": "7508686781",
+      "resource_name": "Calls from ads (1)",
+      "type": "AD_CALL",
+      "category": "PHONE_CALL_LEAD",
+      "field": "conversion_action.primary_for_goal",
+      "current_value": true,
+      "proposed_value": false,
+      "object_count": 1,
+      "reason": "Duplicates 'Calls from ads' (7461572537). Both are AD_CALL / PHONE_CALL_LEAD and both are primary. (1) recorded Feb-Jun and has recorded nothing since June 2026; 7461572537 has carried every call credit since. In June 2026 BOTH fired - 6 and 1 - which is a duplicate-primary window that must not recur.",
+      "counting_type_conflict": "7461572537 is ONE_PER_CLICK at 30 seconds; 7508686781 is MANY_PER_CLICK at 60 seconds."
+    }
+  ],
+  "held_for_a_later_package": {
+    "WC Leads (7635680357)": "Also primary, category CONTACT, and a WhatConverts upload of the same form submissions. It is a third credit for one lead. It is NOT demoted now because it currently carries the only conversion credit the Patio campaign recorded in August, and its intended replacement - the GA4 form action - last fired 2026-08-08. Demote it only after the WhatConverts repair is verified.",
+    "WC Call (7635680543)": "Primary but has recorded ZERO conversions and zero all_conversions, in every month, on every campaign. all_conversions is not gated by goal biddability, so a zero there proves no event was ever recorded. The upload path has never worked. Fix the path before touching the flag.",
+    "Calls from ads minimum duration": "7461572537 counts a call at 30 seconds; every other action on the account uses 60. Raising it to 60 changes what counts as a lead and breaks comparability with history, so it needs the owner's answer - question SLM-Q7."
+  },
+  "explicitly_left_alone": {
+    "the five Google-hosted local actions": "Clicks to call, Directions, Menu views, Other engagements and Website visits are primary_for_goal=true but include_in_conversions_metric=false, and their customer conversion goals (PAGE_VIEW, GET_DIRECTIONS, CONTACT/GOOGLE_HOSTED, ENGAGEMENT/GOOGLE_HOSTED) are all biddable=false. They are already correctly isolated as diagnostics. 120 'Other engagements' in Jul-Aug never entered the Conversions column. No change.",
+    "include_in_conversions_metric": "Not touched anywhere. The field is deprecated and effectively immutable; primary_for_goal plus the goal layer is the real gate."
+  },
+  "risk": "Reported Conversions will fall. That is the point - the column has been counting one lead more than once. Historic months are NOT restated: a credit already counted stays in the historical column forever, so before/after comparisons must be drawn at the change date.",
+  "rollback": "Set primary_for_goal back to true on the same two action IDs.",
+  "validation": "google-ads validate_only on two conversion_action mutations",
+  "dependencies": [],
+  "unchanged": "no conversion action is deleted, renamed, recategorised or restatused; counting type, attribution model, lookback windows, value settings and call durations are all untouched; campaign and customer conversion goals are untouched",
+  "fingerprint": "FB9DA2D017AD"
+}

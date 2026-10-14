@@ -1,0 +1,99 @@
+{
+ "plan_name": "AMB-0909C-CPC-INST-2",
+ "approval_class": "reversible-setting-change-UNVERIFIED-TEST",
+ "generated_local": "2026-09-09T23:54:15.476300-04:00",
+ "supersedes": "AMB-0909B-CPC-INST-1 (DE376F91F449) - SUPERSEDED, DO_NOT_EXECUTE (its rationale quoted a $141.87 CPA that mixed measurement grains)",
+ "target": {
+  "customer_id": "2401959466",
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "manager_customer_id": "3373711342",
+  "vertical": "heating-cooling",
+  "primary_service": "AC Repair",
+  "related_services": [
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "summary": "HVAC Installation ONLY: CPC bid ceiling $30 -> $65, run as an outcome-gated test with hard spend stop-losses. No other campaign is touched.",
+ "object_count": 1,
+ "partial_failure": false,
+ "atomic": true,
+ "operations": [
+  {
+   "operation": "SET_MAXIMIZE_CLICKS_CPC_BID_CEILING",
+   "resource": "campaign",
+   "resource_id": "24132507747",
+   "resource_name": "HVAC Installation",
+   "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+   "current_state": "target_spend.cpc_bid_ceiling_micros = 30000000 ($30.00)",
+   "proposed_state": "target_spend.cpc_bid_ceiling_micros = 65000000 ($65.00)",
+   "field_mask": [
+    "target_spend.cpc_bid_ceiling_micros"
+   ],
+   "reason": "All three of this campaign's primary conversion RECORDS came from clicks priced $50.00-$62.13 on 2026-09-01. The live $30 ceiling admits 76% of historical click volume while excluding every one of those clicks. $65 covers the highest observed converting CPC with headroom.",
+   "modelled_effect": "Descriptive sensitivity test on 62 visible historical clicks, NOT an auction forecast: at $30, 47 clicks and 0 of 3 conversion records survive; at $65, 62 clicks and 3 of 3 survive.",
+   "rollback": "set target_spend.cpc_bid_ceiling_micros back to 30000000 ($30.00) - the VERIFIED pre-test value. Any other rollback amount requires separate approval.",
+   "risk": "MEDIUM - restores paid delivery and therefore spend",
+   "unrelated_resource_assertion": "AC Repair and HVAC Repair ceilings must remain 25000000; bidding stays TARGET_SPEND; budgets, geo, schedules, keywords and negatives unchanged"
+  }
+ ],
+ "notes": {
+  "supersedes": "AMB-0909B-CPC-INST-1 (DE376F91F449) - SUPERSEDED, DO_NOT_EXECUTE (its rationale quoted a $141.87 CPA that mixed measurement grains)",
+  "corrected_economics": {
+   "prior_quoted_cpa": 141.87,
+   "prior_cpa_defect": "visible-grain numerator over campaign-grain denominator",
+   "CORRECTED_campaign_level_raw_cpa": 161.33,
+   "window": "2026-08-29..2026-09-03",
+   "campaign_clicks": 10,
+   "campaign_cost": 483.98,
+   "primary_conversion_RECORDS": 3.0,
+   "label": "RAW CPA on RAW CONVERSION RECORDS. Not CPQL. Not qualified leads."
+  },
+  "unique_lead_bounding": {
+   "records": 3,
+   "unique_leads_known": false,
+   "unique_lead_range": [
+    1,
+    3
+   ],
+   "cost_per_unique_lead": {
+    "1": 483.98,
+    "2": 241.99,
+    "3": 161.33
+   },
+   "why": "All three records landed on 2026-09-01, a day with only 3 clicks - a 100% click-to-record rate. 'Ambient Cooling - LP -Submit Lead Forms' (WEBPAGE, fires on the thank-you view) and 'WC Lead' (UPLOAD_CLICKS, WhatConverts uploading the same submission back against the same GCLID) both counted that day, alongside GA4 form_submission and Clicks to call in All conversions. One interaction can produce records under several actions.",
+   "if_one_unique_lead": "cost per unique lead $483.98, which EXCEEDS the $280 target. This is the downside case and it is not excluded by the available evidence.",
+   "resolvable_from_google_ads_api": false
+  },
+  "TEST_STATUS": "UNVERIFIED. Qualified-lead outcomes are unavailable (WHATCONVERTS_API_TOKEN is empty). No CPQL compliance is claimed by this package.",
+  "outcome_based_stop_loss": {
+   "gate_1": {
+    "incremental_spend_since_execution": 280.0,
+    "requirement": "at least ONE verified unique qualified lead",
+    "verification_source": "WhatConverts, or an anonymised lead export joined on GCLID",
+    "if_not_met": "roll back to $30 immediately"
+   },
+   "gate_2": {
+    "incremental_spend_since_execution": 560.0,
+    "requirement": "at least TWO verified unique qualified leads",
+    "if_not_met": "roll back to $30 immediately"
+   },
+   "no_30_click_threshold": "The superseded plan used a 30-click rollback trigger. At a $65 ceiling 30 clicks could cost up to $1,950 before intervention. Click counts are not used as a gate.",
+   "rollback_target": "exactly 30000000 micros ($30.00), the verified pre-test value",
+   "if_outcome_data_unavailable": "the test is labelled UNVERIFIED, no CPQL claim is made, and gate 1 still applies as a hard spend stop at $280 incremental"
+  },
+  "sequencing_constraint": {
+   "rule": "Do NOT execute this CPC increase and any material HVAC Installation search-term expansion in the same change window.",
+   "separation": "at least 7 SETTLED days, or the $280 gate-1 spend threshold, whichever comes first",
+   "affected_packages": "AMB-0909C-COMP-1 adds three negatives to HVAC Installation. Negatives NARROW matching, so they do not conflict with the gate. AMB-0909C-NEG-COMMERCIAL widens matching on all five campaigns including Installation and MUST be separated from this package by the stated interval."
+  },
+  "live_keyword_verified": [
+   "hvac installers near me [PHRASE] crit 295495761070 ELIGIBLE",
+   "hvac installers near me [EXACT] crit 315030681341 ELIGIBLE"
+  ],
+  "bid_modifier_audit": "5 modifiers exist, all DEVICE/TABLET x0.0. Highest modifier anywhere is x0.0. Nothing can raise the effective bid above $65."
+ },
+ "fingerprint": "5D57E0EF3B70"
+}

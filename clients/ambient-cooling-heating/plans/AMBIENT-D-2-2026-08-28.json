@@ -1,0 +1,122 @@
+{
+ "plan_name": "AMBIENT-D2-EQUIPMENT-BRAND-NEGATIVES-2026-08-28",
+ "supersedes": "the non-hanover items inside C3038EDD9E621944",
+ "approval_class": "DESTRUCTIVE-ACTION approval",
+ "customer_id": "2401959466",
+ "object_count": 7,
+ "operations": [
+  {
+   "operation_type": "REMOVE shared_criterion (DESTRUCTIVE)",
+   "negative_text": "thermostat",
+   "match_type": "BROAD",
+   "account_level_list_id": "11252984411",
+   "criterion_id": "10624201",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10624201",
+   "affected_active_keywords": [],
+   "service_probes_it_blocks": [
+    "thermostat not working hvac repair",
+    "ecobee thermostat installation"
+   ],
+   "historical_search_terms": [],
+   "measured_cost_impact_to_date": 0.0,
+   "reason": "HVAC manufacturer, equipment brand, or thermostat term; brand-specific repair demand is inside HVAC Repair scope",
+   "rollback": "Re-create the BROAD shared_criterion in list 11252984411."
+  },
+  {
+   "operation_type": "REMOVE shared_criterion (DESTRUCTIVE)",
+   "negative_text": "thermostats",
+   "match_type": "BROAD",
+   "account_level_list_id": "11252984411",
+   "criterion_id": "10624211",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10624211",
+   "affected_active_keywords": [],
+   "service_probes_it_blocks": [],
+   "historical_search_terms": [],
+   "measured_cost_impact_to_date": 0.0,
+   "reason": "HVAC manufacturer, equipment brand, or thermostat term; brand-specific repair demand is inside HVAC Repair scope",
+   "rollback": "Re-create the BROAD shared_criterion in list 11252984411."
+  },
+  {
+   "operation_type": "REMOVE shared_criterion (DESTRUCTIVE)",
+   "negative_text": "ruud",
+   "match_type": "BROAD",
+   "account_level_list_id": "11252984411",
+   "criterion_id": "12341163",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12341163",
+   "affected_active_keywords": [],
+   "service_probes_it_blocks": [
+    "ruud furnace repair"
+   ],
+   "historical_search_terms": [],
+   "measured_cost_impact_to_date": 0.0,
+   "reason": "HVAC manufacturer, equipment brand, or thermostat term; brand-specific repair demand is inside HVAC Repair scope",
+   "rollback": "Re-create the BROAD shared_criterion in list 11252984411."
+  },
+  {
+   "operation_type": "REMOVE shared_criterion (DESTRUCTIVE)",
+   "negative_text": "rudd",
+   "match_type": "BROAD",
+   "account_level_list_id": "11252984411",
+   "criterion_id": "13670783",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~13670783",
+   "affected_active_keywords": [],
+   "service_probes_it_blocks": [],
+   "historical_search_terms": [],
+   "measured_cost_impact_to_date": 0.0,
+   "reason": "HVAC manufacturer, equipment brand, or thermostat term; brand-specific repair demand is inside HVAC Repair scope",
+   "rollback": "Re-create the BROAD shared_criterion in list 11252984411."
+  },
+  {
+   "operation_type": "REMOVE shared_criterion (DESTRUCTIVE)",
+   "negative_text": "ecobee",
+   "match_type": "BROAD",
+   "account_level_list_id": "11252984411",
+   "criterion_id": "4367690940",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~4367690940",
+   "affected_active_keywords": [],
+   "service_probes_it_blocks": [
+    "ecobee thermostat installation"
+   ],
+   "historical_search_terms": [],
+   "measured_cost_impact_to_date": 0.0,
+   "reason": "HVAC manufacturer, equipment brand, or thermostat term; brand-specific repair demand is inside HVAC Repair scope",
+   "rollback": "Re-create the BROAD shared_criterion in list 11252984411."
+  },
+  {
+   "operation_type": "REMOVE shared_criterion (DESTRUCTIVE)",
+   "negative_text": "frigidaire",
+   "match_type": "BROAD",
+   "account_level_list_id": "11252984411",
+   "criterion_id": "10242046",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~10242046",
+   "affected_active_keywords": [],
+   "service_probes_it_blocks": [],
+   "historical_search_terms": [],
+   "measured_cost_impact_to_date": 0.0,
+   "reason": "HVAC manufacturer, equipment brand, or thermostat term; brand-specific repair demand is inside HVAC Repair scope",
+   "rollback": "Re-create the BROAD shared_criterion in list 11252984411."
+  },
+  {
+   "operation_type": "REMOVE shared_criterion (DESTRUCTIVE)",
+   "negative_text": "ducane",
+   "match_type": "BROAD",
+   "account_level_list_id": "11252984411",
+   "criterion_id": "12719736",
+   "resource_name": "customers/2401959466/sharedCriteria/11252984411~12719736",
+   "affected_active_keywords": [],
+   "service_probes_it_blocks": [],
+   "historical_search_terms": [],
+   "measured_cost_impact_to_date": 0.0,
+   "reason": "HVAC manufacturer, equipment brand, or thermostat term; brand-specific repair demand is inside HVAC Repair scope",
+   "rollback": "Re-create the BROAD shared_criterion in list 11252984411."
+  }
+ ],
+ "recommendation": "HOLD",
+ "hold_reason": "Zero measured cost impact and zero observed search terms. These suppress demand that has never been measured, so the case is theoretical. Bundle with the September keyword restructure.",
+ "fingerprint": "4D7AF1C9CFCA27F9",
+ "validate_only": {
+  "status": "VALIDATE_OK",
+  "operations": 7,
+  "results_returned": 0
+ }
+}

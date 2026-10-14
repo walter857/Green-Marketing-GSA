@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Green Marketing campaign plan",
+  "type": "object",
+  "required": ["plan_version", "target", "campaigns"],
+  "properties": {
+    "plan_version": {"const": 1},
+    "target": {
+      "type": "object",
+      "required": ["child_customer_id", "exact_child_account_name", "vertical", "exact_primary_service"],
+      "properties": {
+        "child_customer_id": {"type": "string", "pattern": "^[0-9]{10}$"},
+        "exact_child_account_name": {"type": "string", "minLength": 1},
+        "vertical": {"enum": ["landscaping", "hardscaping", "heating-cooling", "similar-local-service"]},
+        "exact_primary_service": {"type": "string", "minLength": 1}
+      }
+    },
+    "campaigns": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "daily_budget", "currency", "status", "final_url", "location", "schedule", "ad_groups"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "daily_budget": {"type": "number", "exclusiveMinimum": 0},
+          "currency": {"type": "string", "pattern": "^[A-Z]{3}$"},
+          "status": {"const": "PAUSED"},
+          "final_url": {"type": "string", "format": "uri"},
+          "location": {"type": "object"},
+          "schedule": {"type": "array"},
+          "negatives": {"type": "array", "items": {"type": "string"}},
+          "ad_groups": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["name", "canonical_keyword", "keywords", "ads"],
+              "properties": {
+                "name": {"type": "string", "minLength": 1},
+                "canonical_keyword": {"type": "string", "minLength": 1},
+                "keywords": {
+                  "type": "array",
+                  "minItems": 2,
+                  "items": {
+                    "type": "object",
+                    "required": ["text", "match_type"],
+                    "properties": {
+                      "text": {"type": "string", "minLength": 1},
+                      "match_type": {"enum": ["PHRASE", "EXACT"]}
+                    }
+                  }
+                },
+                "ads": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "object",
+                    "required": ["headlines", "descriptions"],
+                    "properties": {
+                      "headlines": {"type": "array", "minItems": 3, "maxItems": 15},
+                      "descriptions": {"type": "array", "minItems": 2, "maxItems": 4}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

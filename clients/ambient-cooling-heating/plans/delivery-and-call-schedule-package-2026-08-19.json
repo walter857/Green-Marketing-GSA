@@ -1,0 +1,888 @@
+{
+ "package": "ambient-cooling-heating-PACKAGE-A-delivery-and-call-schedule",
+ "version": "2026-08-19",
+ "phase": "modify-existing",
+ "run_class": "READ + DRAFT + VALIDATE-ONLY. No mutation performed.",
+ "supersedes": {
+  "50701AE742FCDEEB": "Bundled 30 schedule removals with 5 sitelink creates and 28 sitelink unlinks. STALE. Must not be executed.",
+  "6A2DE7A6589CA2B7": "Schedule-only split of the above. STALE: it concluded the call asset needed no mutation and left it eligible 24/7, which contradicts the Mon-Fri 08:00-20:00 / Sat 08:00-13:00 call-asset requirement. Must not be executed."
+ },
+ "customer": {
+  "exact_child_account_name": "Ambient Cooling - Live",
+  "child_customer_id": "2401959466",
+  "manager_customer_id": "3373711342",
+  "manager_account_name": "Green Marketing",
+  "account_timezone": "America/New_York",
+  "currency": "USD",
+  "identity_verified_utc": "2026-08-20T01:35:52Z",
+  "identity_verified_account_local": "2026-08-19T21:35:55-04:00",
+  "services_in_scope": [
+   "AC Repair",
+   "HVAC Repair",
+   "HVAC Installation",
+   "HVAC Replacement",
+   "Gas Boiler Repair"
+  ]
+ },
+ "objective": [
+  "All five Search campaigns eligible to serve 24 hours a day, 7 days a week.",
+  "The Google call asset eligible only Mon-Fri 08:00-20:00 and Sat 08:00-13:00 America/New_York, with no Sunday row.",
+  "Form availability and form tracking unchanged and available 24/7."
+ ],
+ "timezone_handling": {
+  "rule": "AdScheduleInfo hours are interpreted in the account time zone. America/New_York is set on the customer, so EST and EDT are handled by Google. No UTC conversion is applied anywhere in this package.",
+  "verified_account_time_zone": "America/New_York"
+ },
+ "observed_state": {
+  "campaign_ad_schedule_criteria_on_the_five": 30,
+  "campaign_ad_schedule_pattern": "Mon-Fri 08:00-20:00 and Sat 08:00-13:00. No SUNDAY row on any of the five, so Sunday is 100% ineligible today.",
+  "all_thirty_are": "status ENABLED, negative false, bid_modifier 0.0 (no bid modifier is lost by removing them)",
+  "schedule_origin": "The 30 criteria were created through the Google Ads web UI on 2026-08-17 between 10:39:27 and 10:47:51 account time, three days after the 2026-08-14 13:04:40 launch. The campaigns ran 24/7 from launch until 2026-08-17 ~10:40.",
+  "ad_schedule_criteria_elsewhere_in_account": 109,
+  "ad_schedule_criteria_elsewhere_campaign_count": 19,
+  "ad_schedule_criteria_elsewhere_status": "all on PAUSED or REMOVED legacy campaigns; none is touched by this package",
+  "campaign_criterion_type_counts_per_campaign_before": {
+   "LANGUAGE": 1,
+   "DEVICE": 3,
+   "AD_SCHEDULE": 6,
+   "LOCATION": 75
+  },
+  "campaign_criterion_type_counts_per_campaign_after": {
+   "LANGUAGE": 1,
+   "DEVICE": 3,
+   "AD_SCHEDULE": 0,
+   "LOCATION": 75
+  },
+  "no_other_time_gate": "Verified fresh: every non-removed campaign_asset on the five (SITELINK, CALLOUT, STRUCTURED_SNIPPET, CALL) carries zero ad_schedule_targets and no start_date or end_date. Campaign start_date_time is 2026-08-14 13:04:40 with no end_date_time. The 30 campaign criteria are the only time restriction."
+ },
+ "call_asset_inventory": {
+  "method": "Every CALL asset in the account was enumerated, then every customer_asset, campaign_asset and ad_group_asset link of field_type CALL was resolved to its owning campaign or ad group.",
+  "call_assets_in_account": 5,
+  "assets": [
+   {
+    "asset_id": "407995613637",
+    "phone": "(410)705-6354",
+    "approval": "APPROVED",
+    "ad_schedule_targets": 0,
+    "customer_level_links": 0,
+    "ad_group_level_links": 0,
+    "campaign_links_total": 5,
+    "campaign_links_on_the_five": 5,
+    "campaign_links_outside_the_five": 0,
+    "link_status": "ENABLED on all five, campaign_asset.primary_status ELIGIBLE",
+    "verdict": "THE ONLY CALL ASSET THAT CAN SERVE WITH THE FIVE CAMPAIGNS. It is exclusive to them: it has no customer-level link, no ad-group link, and no link to any legacy campaign. Updating its schedule therefore cannot affect a legacy campaign."
+   },
+   {
+    "asset_id": "343054924787",
+    "phone": "(410) 705-6354",
+    "ad_schedule_targets": 0,
+    "campaign_links_on_the_five": 0,
+    "campaign_links_outside_the_five": 6,
+    "verdict": "Legacy only. All six links are on PAUSED or REMOVED campaigns and four of the six links are themselves REMOVED. Cannot serve with the five. NOT TOUCHED."
+   },
+   {
+    "asset_id": "80497290055",
+    "phone": "(410) 415-9517",
+    "ad_schedule_targets": 0,
+    "campaign_links_on_the_five": 0,
+    "campaign_links_outside_the_five": 10,
+    "verdict": "Legacy Google Ads call asset on the barred number. Cannot serve with the five. NOT TOUCHED."
+   },
+   {
+    "asset_id": "98498198415",
+    "phone": "(410) 415-9517",
+    "ad_schedule_targets": 7,
+    "campaign_links_on_the_five": 0,
+    "campaign_links_outside_the_five": 7,
+    "verdict": "Legacy call asset on the barred number, carrying its own 7-day 08:00-21:00 schedule. Cannot serve with the five. NOT TOUCHED."
+   },
+   {
+    "asset_id": "369249814267",
+    "phone": "4107056354",
+    "ad_schedule_targets": 7,
+    "customer_level_links": 1,
+    "customer_link_status": "REMOVED",
+    "campaign_links_total": 0,
+    "verdict": "Inert. Its only link was a customer-level link and that link is REMOVED, so it serves nowhere. NOT TOUCHED."
+   }
+  ],
+  "barred_numbers_confirmed_absent_from_the_five": {
+   "(410) 914-1456": "WhatConverts DNI pool number. Not present on any Google Ads call asset in this account.",
+   "(410) 761-0932": "Main-site number. Not present on any Google Ads call asset.",
+   "(410) 415-9517": "Legacy Google Ads call assets 80497290055 and 98498198415. Neither is linked to any of the five campaigns."
+  },
+  "shared_asset_risk": "NONE. Because 407995613637 is exclusive to the five campaigns, no dedicated duplicate call asset is required and no campaign association has to be created or removed. A duplicate asset was validated as a fallback and is NOT part of this package."
+ },
+ "approach": {
+  "chosen": "Update the ad_schedule_targets on the existing call asset 407995613637 in place, then remove all 30 campaign AD_SCHEDULE criteria.",
+  "why": "CallAsset.ad_schedule_targets lives on the Asset resource, so it is shared by every link the asset has. That is normally a reason to build a dedicated asset. Here the asset has exactly five links and all five are the campaigns in scope, so the in-place update is precisely scoped, needs one mutation instead of six, creates no duplicate phone asset, and preserves the asset's existing approval and history.",
+  "why_no_all_day_rows": "A campaign with zero AD_SCHEDULE criteria already delivers every hour of every day. This account proves it: these five campaigns carried no AD_SCHEDULE criterion from launch on 2026-08-14 until 2026-08-17 ~10:40 and served overnight and on Sunday during that window. Creating 35 all-day rows would be behaviourally identical, add 35 objects to audit, and re-introduce the pattern that caused this problem.",
+  "operation_order": "The asset schedule is applied FIRST and the campaign criteria are removed SECOND. Within one atomic request this ordering guarantees there is no instant in which the campaign is 24/7 while the call asset is still unrestricted."
+ },
+ "operations": {
+  "execution_shape": "ONE GoogleAdsService.Mutate request containing 31 mutate_operations, partial_failure=false, so the whole package is atomic across both services.",
+  "asset_update": {
+   "seq": 1,
+   "service": "AssetService (via GoogleAdsService.Mutate)",
+   "operation": "update",
+   "resource_name": "customers/2401959466/assets/407995613637",
+   "update_mask": [
+    "call_asset.ad_schedule_targets"
+   ],
+   "fields_not_touched": [
+    "call_asset.phone_number",
+    "call_asset.country_code",
+    "call_asset.call_conversion_reporting_state",
+    "call_asset.call_conversion_action",
+    "asset.name",
+    "asset.tracking_url_template",
+    "asset.final_urls"
+   ],
+   "before": {
+    "phone_number": "(410)705-6354",
+    "country_code": "US",
+    "ad_schedule_targets": [],
+    "meaning": "no asset-level schedule; eligibility inherited entirely from the campaign schedule"
+   },
+   "after": {
+    "phone_number": "(410)705-6354 (unchanged)",
+    "ad_schedule_targets": [
+     {
+      "day_of_week": "MONDAY",
+      "start_hour": 8,
+      "start_minute": "ZERO",
+      "end_hour": 20,
+      "end_minute": "ZERO",
+      "reads_as": "Monday 8:00 AM - 8:00 PM America/New_York"
+     },
+     {
+      "day_of_week": "TUESDAY",
+      "start_hour": 8,
+      "start_minute": "ZERO",
+      "end_hour": 20,
+      "end_minute": "ZERO",
+      "reads_as": "Tuesday 8:00 AM - 8:00 PM America/New_York"
+     },
+     {
+      "day_of_week": "WEDNESDAY",
+      "start_hour": 8,
+      "start_minute": "ZERO",
+      "end_hour": 20,
+      "end_minute": "ZERO",
+      "reads_as": "Wednesday 8:00 AM - 8:00 PM America/New_York"
+     },
+     {
+      "day_of_week": "THURSDAY",
+      "start_hour": 8,
+      "start_minute": "ZERO",
+      "end_hour": 20,
+      "end_minute": "ZERO",
+      "reads_as": "Thursday 8:00 AM - 8:00 PM America/New_York"
+     },
+     {
+      "day_of_week": "FRIDAY",
+      "start_hour": 8,
+      "start_minute": "ZERO",
+      "end_hour": 20,
+      "end_minute": "ZERO",
+      "reads_as": "Friday 8:00 AM - 8:00 PM America/New_York"
+     },
+     {
+      "day_of_week": "SATURDAY",
+      "start_hour": 8,
+      "start_minute": "ZERO",
+      "end_hour": 13,
+      "end_minute": "ZERO",
+      "reads_as": "Saturday 8:00 AM - 1:00 PM America/New_York"
+     }
+    ],
+    "sunday": "ABSENT BY DESIGN. No SUNDAY row is created, so the call asset is ineligible all day Sunday."
+   }
+  },
+  "criterion_removals": [
+   {
+    "seq": 2,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507741~303280",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "303280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "MONDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 3,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507741~313280",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "313280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "TUESDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 4,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507741~323280",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "323280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "WEDNESDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 5,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507741~333280",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "333280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "THURSDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 6,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507741~343280",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "343280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "FRIDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 7,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507741~353252",
+    "campaign_id": "24132507741",
+    "campaign_name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "353252",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "SATURDAY",
+     "start": "08:00",
+     "end": "13:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 8,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507744~303280",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "303280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "MONDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 9,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507744~313280",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "313280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "TUESDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 10,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507744~323280",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "323280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "WEDNESDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 11,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507744~333280",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "333280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "THURSDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 12,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507744~343280",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "343280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "FRIDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 13,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507744~353252",
+    "campaign_id": "24132507744",
+    "campaign_name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "353252",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "SATURDAY",
+     "start": "08:00",
+     "end": "13:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 14,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507747~303280",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "criterion_id": "303280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "MONDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 15,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507747~313280",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "criterion_id": "313280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "TUESDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 16,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507747~323280",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "criterion_id": "323280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "WEDNESDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 17,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507747~333280",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "criterion_id": "333280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "THURSDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 18,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507747~343280",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "criterion_id": "343280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "FRIDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 19,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507747~353252",
+    "campaign_id": "24132507747",
+    "campaign_name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "criterion_id": "353252",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "SATURDAY",
+     "start": "08:00",
+     "end": "13:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 20,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507750~303280",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "303280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "MONDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 21,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507750~313280",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "313280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "TUESDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 22,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507750~323280",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "323280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "WEDNESDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 23,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507750~333280",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "333280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "THURSDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 24,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507750~343280",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "343280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "FRIDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 25,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507750~353252",
+    "campaign_id": "24132507750",
+    "campaign_name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "criterion_id": "353252",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "SATURDAY",
+     "start": "08:00",
+     "end": "13:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 26,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507753~303280",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "criterion_id": "303280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "MONDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 27,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507753~313280",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "criterion_id": "313280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "TUESDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 28,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507753~323280",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "criterion_id": "323280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "WEDNESDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 29,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507753~333280",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "criterion_id": "333280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "THURSDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 30,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507753~343280",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "criterion_id": "343280",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "FRIDAY",
+     "start": "08:00",
+     "end": "20:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   },
+   {
+    "seq": 31,
+    "service": "CampaignCriterionService (via GoogleAdsService.Mutate)",
+    "operation": "remove",
+    "resource_name": "customers/2401959466/campaignCriteria/24132507753~353252",
+    "campaign_id": "24132507753",
+    "campaign_name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "criterion_id": "353252",
+    "criterion_type": "AD_SCHEDULE",
+    "before": {
+     "day_of_week": "SATURDAY",
+     "start": "08:00",
+     "end": "13:00",
+     "status": "ENABLED",
+     "negative": false,
+     "bid_modifier": 0.0
+    },
+    "after": "criterion does not exist"
+   }
+  ],
+  "campaign_associations_to_create": [],
+  "campaign_associations_to_remove": []
+ },
+ "mutation_counts": {
+  "creates": 0,
+  "updates": 1,
+  "removals": 30,
+  "total_mutations": 31,
+  "campaign_asset_links_created": 0,
+  "campaign_asset_links_removed": 0,
+  "new_assets_created": 0,
+  "campaigns_modified": 0,
+  "budgets_touched": 0,
+  "bids_touched": 0,
+  "keywords_touched": 0,
+  "ads_touched": 0,
+  "negatives_touched": 0,
+  "conversions_touched": 0,
+  "locations_touched": 0,
+  "manager_links_touched": 0
+ },
+ "before_and_after": {
+  "campaign_delivery_before": {
+   "eligible_hours_per_week": 65,
+   "coverage_pct": 38.7,
+   "sunday": "0 hours, no SUNDAY row exists"
+  },
+  "campaign_delivery_after": {
+   "eligible_hours_per_week": 168,
+   "coverage_pct": 100.0,
+   "sunday": "24 hours"
+  },
+  "campaign_hours_unblocked_per_week": 103,
+  "call_asset_eligibility_before": {
+   "hours_per_week": 65,
+   "note": "identical to the campaign schedule because the asset carries no schedule"
+  },
+  "call_asset_eligibility_after": {
+   "hours_per_week": 65,
+   "detail": "Mon-Fri 12h x 5 = 60h, Sat 5h, Sun 0h"
+  },
+  "net_effect": "Campaign eligibility rises from 65 to 168 hours per week while the phone number shown in the ad stays inside the same 65-hour answering window it occupies today. Outside that window the ad still serves and the landing-page form and phone button remain available."
+ },
+ "effect_on_legacy_campaigns": {
+  "campaign_criteria": "NONE. 109 AD_SCHEDULE criteria on 19 legacy campaigns are not referenced by any operation.",
+  "call_assets": "NONE. Call assets 80497290055, 98498198415, 343054924787 and 369249814267 are not referenced by any operation.",
+  "asset_407995613637": "Has zero links outside the five campaigns, so its schedule change reaches nothing else.",
+  "manager_links": "Green Marketing 3373711342 and ClickCease Client Center 2815082755 are not referenced and remain ACTIVE.",
+  "gtm_and_whatconverts": "Not referenced. No website, tag, form or call-tracking change is included."
+ },
+ "explicitly_not_included": [
+  "Any campaign status, network, bidding strategy, bid, budget, location, language, device, keyword, negative, ad, sitelink, callout, snippet, conversion or landing-page change.",
+  "Any negative-keyword, conversion, sitelink, landing-page or account-level cleanup package.",
+  "Creating a duplicate call asset (validated as a fallback, not needed, not executed).",
+  "Any change to the landing-page phone button, which stays available 24/7.",
+  "Any availability claim anywhere. No '24/7', 'emergency', 'same day' or response-time wording is added to any ad, asset or page."
+ ],
+ "form_availability": {
+  "requirement": "Forms and form tracking must stay available to paid traffic 24/7.",
+  "impact_of_this_package": "NONE. No landing page, GTM container, Gravity Forms setting, conversion action or tracking template is touched. Removing the campaign schedule increases the hours in which a paid visitor can reach the form."
+ },
+ "validate_only_result": {
+  "run_utc": "2026-08-20T01:50:51Z",
+  "shape": "GoogleAdsService.Mutate, 31 mutate_operations, partial_failure=false, validate_only=true",
+  "status": "VALIDATE_OK",
+  "errors": 0,
+  "component_probes": {
+   "30 campaign criterion removals alone": "VALIDATE_OK",
+   "asset 407995613637 update of call_asset.ad_schedule_targets": "VALIDATE_OK",
+   "fallback create of a dedicated scheduled call asset": "VALIDATE_OK (not used)"
+  },
+  "post_probe_no_change_check": {
+   "ad_schedule_criteria_total": 139,
+   "ad_schedule_criteria_on_the_five": 30,
+   "asset_407995613637_schedule_rows": 0,
+   "five_daily_budgets_usd": [
+    141.45,
+    42.76,
+    138.16,
+    78.95,
+    26.32
+   ],
+   "verdict": "Unchanged. validate_only performed no write."
+  },
+  "receipt": "clients/ambient-cooling-heating/snapshots/validate-only-atomic-2026-08-19.json"
+ },
+ "readback_verification": [
+  "SELECT campaign_criterion.resource_name FROM campaign_criterion WHERE campaign_criterion.type = 'AD_SCHEDULE' AND campaign.id IN (the five). ASSERT 0 rows.",
+  "Same query without the campaign filter. ASSERT exactly 109 rows remain, all on the 19 legacy campaigns.",
+  "SELECT asset.call_asset.ad_schedule_targets FROM asset WHERE asset.id = 407995613637. ASSERT exactly 6 rows: MONDAY-FRIDAY 8:00-20:00 and SATURDAY 8:00-13:00, every start_minute and end_minute ZERO, and ASSERT no SUNDAY row.",
+  "ASSERT asset.call_asset.phone_number is still (410)705-6354 and country_code is US.",
+  "ASSERT campaign_asset for asset 407995613637 still returns exactly the five campaigns with status ENABLED, and no sixth campaign.",
+  "ASSERT each of the five campaigns is still ENABLED, serving_status SERVING, bidding_strategy_type TARGET_SPEND, with budget unchanged at 141.45 / 42.76 / 138.16 / 78.95 / 26.32 USD unless Package B has already been approved and applied.",
+  "ASSERT per-campaign criterion type counts are LANGUAGE 1, DEVICE 3, LOCATION 75, AD_SCHEDULE 0.",
+  "ASSERT the 12 tracked ad IDs are unchanged: 821319509197, 821319509200, 821319509203, 821319509206, 821319509209, 821319509212 ENABLED and APPROVED; 820900825428, 820900825431, 820900825434, 820900825437, 820944944368, 820944944371 PAUSED.",
+  "ASSERT both manager links are still ACTIVE: 3373711342 and 2815082755.",
+  "ASSERT the mutate response returned exactly 31 resource names.",
+  "After 48 hours, segment by segments.hour and segments.day_of_week and confirm campaign impressions appear outside 08:00-20:00 and on Sunday, while call-asset impressions do not."
+ ],
+ "rollback_plan": {
+  "trigger": "Any readback assertion fails, or Green Marketing reverses the decision.",
+  "step_1_call_asset": "AssetService update on customers/2401959466/assets/407995613637 with update_mask ['call_asset.ad_schedule_targets'] and an empty ad_schedule_targets list, restoring the pre-change state of zero asset-level schedule rows.",
+  "step_2_campaign_criteria": "Re-create the same 30 criteria with CampaignCriterionService create operations using the exact day, start hour, end hour and bid_modifier 0.0 recorded in operations.criterion_removals[].before.",
+  "criterion_id_note": "Google derives ad-schedule criterion IDs deterministically from the day and time span, so the restored criteria are expected to return the same IDs (303280, 313280, 323280, 333280, 343280, 353252). Verify by resource name after rollback rather than assuming.",
+  "restore_mutations": 31,
+  "data_loss": "NONE. Ad-schedule criteria and asset schedules hold no performance history of their own. Hour-of-day and day-of-week performance stays available through segments.hour and segments.day_of_week.",
+  "pre_change_evidence": "clients/ambient-cooling-heating/snapshots/preflight-structure-2026-08-19.json holds all 30 criteria and the full call-asset inventory verbatim, captured read-only."
+ },
+ "partial_write_protocol": "Send all 31 operations in ONE GoogleAdsService.Mutate request with partial_failure=false. If it fails, STOP, re-query the 30 criteria and the asset schedule to inventory what actually changed, and produce a recovery plan. Do not blindly rerun.",
+ "interaction_with_package_B": "Package A raises eligible hours from 65 to 168 per week. That increases the impressions the same budget can buy, so it should be applied before or with Package B, and the August projection in Package B already assumes it.",
+ "open_item_not_blocking": {
+  "voicemail_path": "Confirming that (410) 705-6354 reaches the intended voicemail outside answering hours needs a real telephone call, which is not authorized. This package does NOT depend on it: the call asset is restricted to the answering window, so an out-of-hours call from the Google ad is not possible. It remains relevant only to the landing-page phone button, which is deliberately left 24/7."
+ },
+ "plan_fingerprint": "44D14DA4714BB6E8"
+}

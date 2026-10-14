@@ -1,0 +1,86 @@
+work_order:
+  client_slug: apogee-lawns
+  business_name: Apogee Lawns LLC
+  account:
+    exact_child_account_name: "Apogee Lawns LLC - Live"
+    child_customer_id: "8164626278"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: similar-local-service
+    exact_primary_service: Permanent Christmas light installation
+    related_services: []
+  task:
+    type: conversions
+    # READ for external systems (Google Ads API, public/published GTM, GTM UI view-only,
+    # public website, WhatConverts API through the sanitizer). DRAFT for local files.
+    # No external change of any kind is authorized; no historical fingerprint is approved.
+    mode: draft
+    request: >-
+      Follow-up to clients/apogee-lawns/audits/2026-09-28-independent/. Turn the audit into a
+      developer-ready form and content repair handoff, a minimal GTM delta draft with an
+      acceptance matrix, a call-routing and attribution verification plan with a controlled
+      test request, an evaluated tablet plan or documented hold, a sanitized PII incident note,
+      and an action register. Re-read only the live fields needed. Campaign status is preserved
+      as observed. Omaha stays excluded and is not researched.
+    date_range: >-
+      Baseline = the 2026-09-28 independent audit. Fresh observations timestamped in
+      America/Chicago; 2026-09-28 is a partial day and is reported separately.
+  scope_approval:
+    # Reused from clients/apogee-lawns/work-order.yaml (CONFIRMED_BY_NAMED_APPROVER, 2026-09-16).
+    approved: true
+    approved_by: "Walter"
+    reason: "it is a closely related local home-service installation service"
+  inputs:
+    website_or_final_url: "https://offer.apogeelawns.com/permanent-christmas-lights-lincoln-ne/"
+    service_area:
+      - "68372, Nebraska, United States"
+      - "68430, Nebraska, United States"
+      - "68527, Nebraska, United States"
+      - "68347, Nebraska, United States"
+      - "68526, Nebraska, United States"
+      - "68461, Nebraska, United States"
+      - "68516, Nebraska, United States"
+      - "68520, Nebraska, United States"
+      - "Waverly, Nebraska, United States"
+      - "Eagle, Nebraska, United States"
+      - "Lincoln, Nebraska, United States"
+      - "Ashland Township, Nebraska, United States"
+      - "Crete, Nebraska, United States"
+      - "Nemaha Precinct, Nebraska, United States"
+    daily_budget: 16.44
+    primary_conversion_goal: >-
+      Accepted, non-spam form submission with a unique non-PII lead ID on the dedicated
+      thank-you state; calls from ads at 60 seconds; website calls at 60 seconds (Secondary
+      until verified). A form or a 60-second call is a lead, not a qualified lead or a sale.
+    source_files:
+      - clients/apogee-lawns/audits/2026-09-28-independent/
+      - clients/apogee-lawns/IMPLEMENTATION-RECORD.md
+      - clients/apogee-lawns/plans/APG-0928-DEV-T.yaml
+      - clients/apogee-lawns/plans/APG-0917-GTM-K.yaml
+      - clients/apogee-lawns/plans/APG-0917-GTM-P.yaml
+      - clients/apogee-lawns/plans/APG-0917-CALL-Q.yaml
+      - clients/apogee-lawns/receipts/
+      - reports/apogee-lawns/evidence/
+    owner_answers_2026_09_28:
+      # Recorded verbatim as supplied by the owner in chat on 2026-09-28. Owner-provided facts, not website evidence.
+      tablets:
+        answer: "Landing pages are not tablet optimized so I excluded them."
+        decision: "Tablet exclusion (campaign 24257151015 + both ad groups) is deliberate and stays. Restoration is not an approved optimization; it would need completed tablet-layout QA and a new, separately approved plan."
+      qualified_lead_definition:
+        answer: "A qualified lead is someone who asks for the service on the form or on the call."
+        service_for_this_campaign: "permanent Christmas light installation"
+        not_added: "no appointment, estimate, budget, property-size, install-date or 60-second requirement"
+      customer_supplied_lights:
+        answer: "yes"
+        scope_note: "Owner-provided service information. Not on the website. Does not imply compatibility with every product or system, seasonal hanging/removal, product warranties on customer-owned equipment, or any other service."
+      still_unknown: ["definition of a sold installation", "average gross profit per sold installation"]
+    call_flow_screenshot_2026_09_28:
+      source: "owner-supplied screenshot, contents as stated in the owner's message (image not attached to the session)"
+      shows: "flow 'Apogee Lawns - ICF': Incoming Call -> Call Recording ('This call will be recorded for quality assurance.') -> Dial / Client -> Direct Call to 4022027261; a No Answer branch whose downstream handling is not shown; a Finish button (editor view)"
+    settled_decisions_carried_forward:
+      omaha: "EXCLUDED - not researched, drafted or asked about"
+      advertising_phone: "402-526-5754 (+14025265754); 402-202-7261 is the forwarding destination only"
+      head_term_match_type: "permanent christmas lights stays EXACT-only"
+      budget_total_usd_per_month: 500
+      tablets: "EXCLUDED - owner-confirmed 2026-09-28 (landing pages not tablet optimized)"
+  approval_owner: "Green Marketing"

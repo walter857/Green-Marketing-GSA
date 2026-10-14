@@ -1,0 +1,143 @@
+work_order:
+  client_slug: ambient-cooling-heating
+  business_name: Ambient Cooling & Heating
+  account:
+    # -------------------------------------------------------------------------
+    # IDENTITY GATE: PASSED 2026-09-15 09:35 America/New_York by fresh read-only
+    # API lookup. 10/10 checks PASS. Evidence:
+    #   clients/ambient-cooling-heating/snapshots/identity-and-structure-2026-09-15.json
+    #
+    #   descriptive_name   observed "Ambient Cooling - Live"   == expected
+    #   customer.id        observed 2401959466                 == expected
+    #   manager account    false
+    #   test account       false
+    #   status             ENABLED
+    #   currency           USD
+    #   time_zone          America/New_York
+    #   '- live' marker    present
+    #   manager 3373711342 Green Marketing  ACTIVE
+    #   manager 2815082755 ClickCease       ACTIVE  (protected, untouched)
+    #
+    # The child customer ID is NOT the MCC ID. 3373711342 is the manager.
+    # -------------------------------------------------------------------------
+    exact_child_account_name: "Ambient Cooling - Live"
+    child_customer_id: "2401959466"
+    manager_customer_id: "3373711342"
+  service:
+    vertical: heating-cooling
+    exact_primary_service: Commercial HVAC Installation
+    related_services: []
+    # Client truth: confirmed in writing by the Green Marketing approval owner on
+    # 2026-09-10 (recorded in work-order.yaml as commercial_hvac_in_paid_scope: true)
+    # and added to client.yaml client.offer.services_in_scope on 2026-09-15.
+  task:
+    type: ads-assets
+    mode: create-paused
+    request: >-
+      Complete and launch the Commercial HVAC Installation ad group inside the existing
+      HVAC Installation campaign. This work order covers: fresh identity gate; full
+      read-only before-state snapshot of the five Search campaigns and the commercial
+      ad group; real-browser desktop and mobile QA of the new commercial landing page
+      including phone, form, tracking, deduplication, privacy and policy checks;
+      verification of the 17 intended ad-group negatives; revalidation of the commercial
+      RSA package against the now-live destination; and creation of two RSAs PAUSED
+      under an exact fingerprinted approval.
+      NO campaign, budget, bid, schedule, location, network, conversion, WhatConverts,
+      GTM, CRM or website change is authorized by this work order. Enablement is a
+      separate work order and a separate approval taken only after Google returns
+      APPROVED policy status and the landing-page blockers are closed.
+      The residential routing negative (BROAD `commercial` on ad group 202339087634)
+      is explicitly deferred until the commercial route is proven capable of serving.
+    date_range: >-
+      CURRENT AS AT 2026-09-15 09:35 America/New_York. Latest fully settled day =
+      2026-09-14. 2026-09-15 is PARTIAL and is never mixed into a settled comparison.
+      Regimes used: aug_baseline = 2026-08-01..2026-08-31;
+      sep_precap = 2026-09-01..2026-09-04 (CPC ceilings created 2026-09-04 16:56);
+      postcap_preneg = 2026-09-05..2026-09-08;
+      post_0909_negatives = 2026-09-09;
+      post_0910_changes = 2026-09-10..2026-09-14;
+      settled_mtd = 2026-09-01..2026-09-14; today_partial = 2026-09-15;
+      all_history = 2019-01-01..2026-09-14.
+  scope_approval:
+    approved: false
+    approved_by: ""
+    reason: "Not required. heating-cooling is a core Green Marketing vertical."
+  inputs:
+    website_or_final_url: https://offer.ambientcoolingandheating.com/commercial-hvac-installation/
+    service_area:
+      - "Severn, Maryland, United States"
+      - "Severna Park, Maryland, United States"
+      - "Columbia, Maryland, United States"
+    daily_budget: null
+    primary_conversion_goal: "unique qualified commercial HVAC installation lead (form or call)"
+    source_files:
+      - clients/ambient-cooling-heating/client.yaml
+      - clients/ambient-cooling-heating/work-order.yaml
+
+    # ---- existing resources this work order operates inside, verified live 2026-09-15 ----
+    existing_campaign_name: "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08"
+    existing_campaign_id: "24132507747"
+    existing_campaign_status: ENABLED
+    existing_campaign_serving_status: SERVING
+    existing_ad_group_name: "SKAG | Commercial HVAC Installation"
+    existing_ad_group_id: "199748801029"
+    # DRIFT RECORDED: created PAUSED 2026-09-10 13:52:29, switched to ENABLED
+    # 2026-09-15 08:42:16 by access@greenmarketingfl.com via GOOGLE_ADS_WEB_CLIENT.
+    # change_event old_resource PAUSED -> new_resource ENABLED. Not an agency write.
+    # The ad group holds 0 ads, so it cannot serve and has never had an impression.
+    existing_ad_group_status_observed: ENABLED
+    existing_ad_group_status_at_creation: PAUSED
+    existing_ad_group_enabled_at: "2026-09-15T08:42:16 America/New_York"
+    existing_ad_group_enabled_by_client_type: GOOGLE_ADS_WEB_CLIENT
+    existing_ad_group_ads: 0
+    existing_ad_group_impressions_all_time: 0
+    keyword_phrase: '"commercial hvac installation"'
+    keyword_phrase_criterion_id: "296582962269"
+    keyword_exact: "[commercial hvac installation]"
+    keyword_exact_criterion_id: "4165114052"
+    keywords_status: "both ENABLED, APPROVED, system_serving ELIGIBLE"
+    broad_positive_keywords: 0
+    ad_group_negatives_count: 17
+    ad_group_negatives_plan: "AMB-0910-COMM-NEG-3 / 51CF5986F18A - ALREADY_EXECUTED, verified 17/17 on 2026-09-15"
+
+    # ---- inherited settings that must NOT change during this launch ----
+    inherited_locations: "75 positive Central Maryland targets, 0 exclusions, PRESENCE"
+    inherited_schedule: "Mon-Fri 08:00-20:00 + Sat 08:00-13:00 America/New_York, 6 rows, no Sunday"
+    inherited_bidding: "TARGET_SPEND (Maximize Clicks)"
+    inherited_cpc_ceiling_usd: 30.00
+    inherited_daily_budget_usd: 176.15
+    inherited_budget_id: "15787409441"
+    inherited_networks: "google_search true, search_partners false, display false, partner false"
+    inherited_call_asset_id: "407995613637"
+    inherited_call_asset_number: "410-705-6354"
+    combined_daily_budget_usd: 421.55
+    combined_planning_30_4_usd: 12815.12
+    search_monthly_maximum_usd: 13000
+    search_monthly_headroom_usd: 184.88
+
+    # ---- landing page, verified in a real JS browser desktop + mobile 2026-09-15 ----
+    landing_page_http_status: 200
+    landing_page_redirects: 0
+    landing_page_https: true
+    landing_page_h1: "Commercial HVAC Installation in Central Maryland"
+    landing_page_title: "Commercial HVAC Installation in Central Maryland | Ambient Cooling & Heating"
+    landing_page_privacy_link_present: true
+    landing_page_terms_link_present: true
+    landing_page_approved_paid_number_displayed: "(410) 705-6354"
+    landing_page_forwarding_number_leaked: false
+    landing_page_barred_claims_found: 0
+    landing_page_commercial_only: true
+    landing_page_residential_leak: false
+    landing_page_launch_blockers_open: 5
+    landing_page_gate: FAIL_FOR_ENABLEMENT_ONLY
+    landing_page_gate_note: >-
+      The destination is valid and the ads may be created PAUSED against it. Five defects
+      block ENABLEMENT, not creation: published developer instruction text in the gallery
+      section, an empty gallery, a countdown timer advertising an offer that does not
+      exist, GCLID and UTM values not captured into the form, three copies of form
+      gform_1 with 34 duplicate DOM ids, and a hidden tel:+14109141456 link. See
+      reports/ambient-cooling-heating/2026-09-15-commercial-launch-and-recovery.md.
+
+    approval_owner_source: "work-order.yaml approval_owner: Green Marketing"
+    local_services_ads_scope: OUT_OF_SCOPE_FOR_THIS_PROJECT
+  approval_owner: Green Marketing

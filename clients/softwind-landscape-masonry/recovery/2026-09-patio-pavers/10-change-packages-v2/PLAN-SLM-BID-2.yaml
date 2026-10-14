@@ -1,0 +1,162 @@
+change_plan:
+  plan_name: PLAN-SLM-BID-2
+  plan_version: 2
+  generated_at: '2026-09-03T20:10:43.051619-04:00'
+  target:
+    exact_child_account_name: Softwind Landscape & Masonry - Live
+    child_customer_id: '2429758629'
+    manager_customer_id: '3373711342'
+    currency: USD
+    time_zone: America/New_York
+    exact_service: patio construction (Patio) and paver installation (Pavers)
+    identity_receipt: clients/softwind-landscape-masonry/snapshots/identity-gate-2026-09-03-1959.json
+    baseline_snapshot: recovery/2026-09-patio-pavers/01e-baseline-2.json
+    baseline_evidence_sha256_short: 3D9E3199DD183E79
+  subplan_used: EXISTING_RESOURCES
+  subplans:
+    STATUS:
+      actions: &id001 []
+      empty_reason: not part of this package
+    BUDGET:
+      actions: *id001
+      empty_reason: not part of this package
+    EXISTING_RESOURCES:
+      actions:
+      - action_id: BID-01
+        operation: SET_MAXIMIZE_CLICKS_CPC_BID_CEILING
+        resource_type: campaign
+        resource_id: '23484806108'
+        resource_name: Patio
+        current_state: target_spend.cpc_bid_ceiling_micros = UNSET (no ceiling)
+        proposed_state: target_spend.cpc_bid_ceiling_micros = 16000000 (about $16.00)
+        rollback_state: clear target_spend.cpc_bid_ceiling_micros (back to UNSET)
+        object_count: 1
+        evidence:
+          bidding_strategy_type: TARGET_SPEND
+          portfolio_strategy: null
+          ceiling_today: NONE
+          avg_cpc_by_month:
+            '2026-05-01': 5.97
+            '2026-06-01': 7.7
+            '2026-07-01': 8.47
+            '2026-08-01': 11.04
+            '2026-09-01': 13.98
+          cvr_by_month:
+            '2026-05-01': 0.0
+            '2026-06-01': 0.0417
+            '2026-07-01': 0.0
+            '2026-08-01': 0.0116
+            '2026-09-01': 0.0
+          most_expensive_day_observed:
+            date: '2026-08-06'
+            cost: 46.67
+            clicks: 3
+            day_cpc: 15.56
+          days_with_clicks: 95
+          days_above_this_ceiling:
+            days: 0
+            share_of_days: 0.0
+            cost_on_those_days: 0
+            clicks_on_those_days: 0
+          modelled_click_retention: 0.996
+          modelled_conversion_retention: 1.0
+          converting_keyword_cpcs:
+          - avg_cpc: 8.27
+            clicks: 38
+            conversions: 3.0
+          - avg_cpc: 10.91
+            clicks: 65
+            conversions: 1.0
+        expected_effect: Caps the price of a click at $16.00. Modelled retention 99.6% of historic clicks
+          and 100% of historic conversion credits.
+        risk: Lower auction competitiveness. Monitor search_rank_lost_impression_share; if it rises sharply
+          with no gain in click volume, raise the ceiling through a new plan.
+      - action_id: BID-02
+        operation: SET_MAXIMIZE_CLICKS_CPC_BID_CEILING
+        resource_type: campaign
+        resource_id: '23489296528'
+        resource_name: Pavers
+        current_state: target_spend.cpc_bid_ceiling_micros = UNSET (no ceiling)
+        proposed_state: target_spend.cpc_bid_ceiling_micros = 18000000 (about $18.00)
+        rollback_state: clear target_spend.cpc_bid_ceiling_micros (back to UNSET)
+        object_count: 1
+        evidence:
+          bidding_strategy_type: TARGET_SPEND
+          portfolio_strategy: null
+          ceiling_today: NONE
+          avg_cpc_by_month:
+            '2026-05-01': 7.16
+            '2026-06-01': 11.16
+            '2026-07-01': 11.31
+            '2026-08-01': 21.04
+            '2026-09-01': 22.76
+          cvr_by_month:
+            '2026-05-01': 0.0
+            '2026-06-01': 0.0
+            '2026-07-01': 0.0526
+            '2026-08-01': 0.087
+            '2026-09-01': 0.0
+          most_expensive_day_observed:
+            date: '2026-08-20'
+            cost: 46.54
+            clicks: 1
+            day_cpc: 46.54
+          days_with_clicks: 84
+          days_above_this_ceiling:
+            days: 19
+            share_of_days: 0.226
+            cost_on_those_days: 869.56
+            clicks_on_those_days: 32
+          modelled_click_retention: 0.873
+          modelled_conversion_retention: 0.882
+          converting_keyword_cpcs:
+          - avg_cpc: 7.75
+            clicks: 10
+            conversions: 1.0
+          - avg_cpc: 11.09
+            clicks: 22
+            conversions: 1.0
+          - avg_cpc: 12.61
+            clicks: 37
+            conversions: 0.5
+          - avg_cpc: 13.25
+            clicks: 13
+            conversions: 1.0
+          - avg_cpc: 14.71
+            clicks: 14
+            conversions: 2.0
+          - avg_cpc: 16.75
+            clicks: 21
+            conversions: 2.0
+          - avg_cpc: 26.54
+            clicks: 5
+            conversions: 1.0
+        expected_effect: Caps the price of a click at $18.00. Modelled retention 87.3% of historic clicks
+          and 88% of historic conversion credits.
+        risk: Lower auction competitiveness. Monitor search_rank_lost_impression_share; if it rises sharply
+          with no gain in click volume, raise the ceiling through a new plan.
+    CONVERSIONS:
+      actions: *id001
+      empty_reason: not part of this package
+    CREATE_PAUSED:
+      actions: *id001
+      empty_reason: not part of this package
+    SITE_OR_TRACKING:
+      actions: *id001
+      empty_reason: not part of this package
+    ENABLE:
+      actions: *id001
+      empty_reason: not part of this package
+  summary: Set a SEPARATE CPC bid ceiling on each Maximize Clicks campaign. Neither has any ceiling today.
+  why_per_campaign: A single blended $22 was wrong. Patio has never recorded a daily average CPC above
+    $15.56 and has zero days above $16, so $22 would have been a no-op there while its CPC climbed $5.97
+    -> $13.98 across five months. Pavers retains identically at $18, $20 and $22 (87.3% of clicks, 88%
+    of credits), so $18 is strictly cheaper for the same traffic. After PLAN-SLM-KW-2 the highest-priced
+    converting keyword in Pavers is $16.75 and in Patio $10.91; the only converting keyword above $18
+    is 'local asphalt companies near me', which KW-2 pauses.
+  changes_only: target_spend.cpc_bid_ceiling_micros. The bidding strategy type stays TARGET_SPEND (Maximize
+    Clicks) on both campaigns. No budget, network, location, keyword, negative, ad, asset or conversion
+    object is touched.
+  supersedes: PLAN-SLM-BID-1 fingerprint 50C553579EF3 (OBSOLETE, $22 blended)
+  dependencies: []
+  fingerprint: 8C71888E09CC

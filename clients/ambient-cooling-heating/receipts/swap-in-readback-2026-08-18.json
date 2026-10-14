@@ -1,0 +1,145 @@
+{
+ "captured_utc": "2026-08-18T19:19:11.897994Z",
+ "approved_fingerprint": "5026CAD20F45F581",
+ "state_after": {
+  "820900825428": {
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "topics": [
+    "CONSUMER_FINANCE"
+   ],
+   "strength": "EXCELLENT",
+   "ad_group_id": "202339087594",
+   "copy_matches_fingerprint": null
+  },
+  "820900825431": {
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "topics": [
+    "CONSUMER_FINANCE"
+   ],
+   "strength": "EXCELLENT",
+   "ad_group_id": "202339087594",
+   "copy_matches_fingerprint": null
+  },
+  "820900825434": {
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "topics": [
+    "CONSUMER_FINANCE"
+   ],
+   "strength": "POOR",
+   "ad_group_id": "202339087634",
+   "copy_matches_fingerprint": null
+  },
+  "820900825437": {
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "topics": [
+    "CONSUMER_FINANCE"
+   ],
+   "strength": "EXCELLENT",
+   "ad_group_id": "202339087634",
+   "copy_matches_fingerprint": null
+  },
+  "820944944368": {
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "topics": [
+    "CONSUMER_FINANCE"
+   ],
+   "strength": "POOR",
+   "ad_group_id": "200159223798",
+   "copy_matches_fingerprint": null
+  },
+  "820944944371": {
+   "status": "PAUSED",
+   "approval": "DISAPPROVED",
+   "review": "REVIEWED",
+   "topics": [
+    "CONSUMER_FINANCE"
+   ],
+   "strength": "POOR",
+   "ad_group_id": "200159223798",
+   "copy_matches_fingerprint": null
+  },
+  "821319509197": {
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "strength": "PENDING",
+   "ad_group_id": "202339087634",
+   "copy_matches_fingerprint": true
+  },
+  "821319509200": {
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "strength": "PENDING",
+   "ad_group_id": "202339087634",
+   "copy_matches_fingerprint": true
+  },
+  "821319509203": {
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "strength": "PENDING",
+   "ad_group_id": "200159223798",
+   "copy_matches_fingerprint": true
+  },
+  "821319509206": {
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "strength": "PENDING",
+   "ad_group_id": "200159223798",
+   "copy_matches_fingerprint": true
+  },
+  "821319509209": {
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "strength": "PENDING",
+   "ad_group_id": "202339087594",
+   "copy_matches_fingerprint": true
+  },
+  "821319509212": {
+   "status": "ENABLED",
+   "approval": "APPROVED",
+   "review": "REVIEWED",
+   "topics": [],
+   "strength": "PENDING",
+   "ad_group_id": "202339087594",
+   "copy_matches_fingerprint": true
+  }
+ },
+ "verdict": {
+  "originals_all_paused": true,
+  "originals_recoverable_not_removed": true,
+  "replacements_all_enabled": true,
+  "replacements_all_approved": true,
+  "replacements_no_policy_topics": true,
+  "replacement_copy_unchanged": true,
+  "exactly_two_enabled_approved_per_ad_group": true,
+  "no_duplicate_rsa_created": true,
+  "no_ad_removed_or_deleted": true,
+  "unrelated_resources_unchanged": true,
+  "campaigns_budgets_bidding_unchanged": true,
+  "manager_links_unchanged": true,
+  "all_six_replacements_ad_level_ELIGIBLE": true,
+  "all_six_originals_ad_level_PAUSED": true,
+  "ad_group_rollup_flag_still_stale": true,
+  "rollup_note": "The ad-group primary_status still reports HAS_ADS_DISAPPROVED. This is a LAGGING ROLLUP, not a live blocker. The authoritative per-ad view shows all six replacements primary_status=ELIGIBLE with no reasons, and all six originals primary_status=PAUSED with reasons AD_GROUP_AD_PAUSED + AD_GROUP_AD_DISAPPROVED. Google recomputes the ad-group and campaign rollup on its own schedule. No action taken; re-check later.",
+  "overall": "PASS - swap complete and verified at the ad level"
+ }
+}

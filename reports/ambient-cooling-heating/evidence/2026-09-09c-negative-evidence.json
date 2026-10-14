@@ -1,0 +1,9747 @@
+{
+ "generated_local": "2026-09-09T23:50:09.411069-04:00",
+ "savage_geo_constant": {
+  "canonical": "Savage,Savage,Maryland,United States",
+  "type": "Neighborhood",
+  "status": "ENABLED"
+ },
+ "neg_core_savage_targeted": {
+  "rows": [
+   {
+    "campaign": "AC Repair",
+    "criterion_id": "1018704",
+    "status": "ENABLED",
+    "negative": false,
+    "geo_id": "1018704"
+   },
+   {
+    "campaign": "Gas Boiler Repair",
+    "criterion_id": "1018704",
+    "status": "ENABLED",
+    "negative": false,
+    "geo_id": "1018704"
+   },
+   {
+    "campaign": "HVAC Installation",
+    "criterion_id": "1018704",
+    "status": "ENABLED",
+    "negative": false,
+    "geo_id": "1018704"
+   },
+   {
+    "campaign": "HVAC Repair",
+    "criterion_id": "1018704",
+    "status": "ENABLED",
+    "negative": false,
+    "geo_id": "1018704"
+   },
+   {
+    "campaign": "HVAC Replacement",
+    "criterion_id": "1018704",
+    "status": "ENABLED",
+    "negative": false,
+    "geo_id": "1018704"
+   }
+  ],
+  "proven": true
+ },
+ "neg_core_licensed_supported": {
+  "ad_assets": [],
+  "callouts": [],
+  "proven": false
+ },
+ "all_search_terms": [
+  {
+   "camp": "AC Repair",
+   "term": "a c recharge near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "a c repair near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 256.48,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "aaa air conditioning near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac and heating company near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac car repair near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac check near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac compressor replacement cost near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac diagnostic near me",
+   "status": "NONE",
+   "impr": 13,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac emergency repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac fix",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac fix near me",
+   "status": "NONE",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac fixer",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac heat near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac heater service near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac hose repair shop near me",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac maintenance near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 1,
+   "cost": 81.66,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac maintenance near me near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac mechanic near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac recharge near me",
+   "status": "NONE",
+   "impr": 12,
+   "clicks": 1,
+   "cost": 84.12,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac recharge service near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repair",
+   "status": "NONE",
+   "impr": 19,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repair companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repair near me",
+   "status": "ADDED",
+   "impr": 174,
+   "clicks": 1,
+   "cost": 186.37,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repair near me home service",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repair near me near me",
+   "status": "NONE",
+   "impr": 10,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repair service near by me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repair service near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repair services",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repair shop near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repair tech",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac repairs",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac replacement companies near me",
+   "status": "EXCLUDED",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac replacement near me",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac service",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac service near me near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac services near me",
+   "status": "NONE",
+   "impr": 10,
+   "clicks": 1,
+   "cost": 23.01,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac tech near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac technician near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac tune up near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 1,
+   "cost": 166.23,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac unit repair",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "ac unit repairs",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "affordable hvac near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "affordable hvac repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 2,
+   "cost": 218.92,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air condition repair",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air condition repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air condition service",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioner repair",
+   "status": "NONE",
+   "impr": 15,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioner repair near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 112.63,
+   "conv": 1.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioner repair service",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioner replacement near me",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioner service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioner technician near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning and heating contractors near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning companies in my area",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 2,
+   "cost": 283.84,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning company near me near me",
+   "status": "NONE",
+   "impr": 20,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning contractor near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning recharge near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning repair",
+   "status": "NONE",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning repair around me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning repair near me",
+   "status": "NONE",
+   "impr": 14,
+   "clicks": 1,
+   "cost": 140.23,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning repair near me near me",
+   "status": "NONE",
+   "impr": 21,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning repair service",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning repair service near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning service",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning service near me for home",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air conditioning services",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air duct repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "air serv near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "airco near me",
+   "status": "EXCLUDED",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "aircon repair near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "airconditioning services",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "aire serv heating & air conditioning near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "amana air conditioner repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "auto ac repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "automotive ac mechanic near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "automotive air conditioning repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "best ac repair company",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "best ac repair company near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "best heating and air conditioning company near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "bmw ac repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "bmw car ac repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "boat air conditioner repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "car ac repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "car ac service near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "car air conditioner repair near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 2,
+   "cost": 47.78,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "carrier ac service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "central ac repair",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "cheap ac recharge near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "cheap ac repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "cheap hvac near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "cheap hvac service near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 1,
+   "cost": 68.16,
+   "conv": 1.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "cundiff heating and air near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "domestic ac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "duct replacement companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "elite air conditioning near me",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "emergency ac repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "emergency air conditioner repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "emergency air conditioning repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 2,
+   "cost": 219.74,
+   "conv": 1.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "emergency hvac repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "emergency hvac service near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "emergency hvac services near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 1,
+   "cost": 267.96,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "family heating and air near me",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "getting ac serviced",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heat and air repair",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heat pump repair near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heat pump repair near me near me",
+   "status": "NONE",
+   "impr": 19,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating & air conditioning service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating and ac companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating and air companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating and air conditioning near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating and cooling company near me near me",
+   "status": "NONE",
+   "impr": 10,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating and cooling near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating and cooling repair near me near me",
+   "status": "NONE",
+   "impr": 16,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating and cooling service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating cooling near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 25.16,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating cooling near me near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 33.4,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "heating repair near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "home air conditioner tune up near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "home hvac service near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "horizon hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "house air conditioning repair",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac companies near me open now",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac maintenance service",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 1,
+   "cost": 117.08,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac mini split service near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac near me",
+   "status": "NONE",
+   "impr": 15,
+   "clicks": 2,
+   "cost": 280.27,
+   "conv": 1.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac repair",
+   "status": "NONE",
+   "impr": 12,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac repair near",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac repair near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac repair service",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac service",
+   "status": "NONE",
+   "impr": 8,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac service contractors near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac service near me",
+   "status": "NONE",
+   "impr": 19,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac services near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac servicing",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac tech near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac technician near me",
+   "status": "NONE",
+   "impr": 12,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac technician near me near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac technician near me utm_campaign gs105607",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac tune up deals near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac tune up specials near me",
+   "status": "NONE",
+   "impr": 11,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "hvac unit repair near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 1,
+   "cost": 166.36,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "lennox hvac repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "local ac company",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "local air conditioning repair",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "local heating and air conditioning",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "mini split repair near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "most affordable hvac company near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "repair my ac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 93.09,
+   "conv": 1.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "same day hvac service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "service ac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "through the wall ac repair near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "top hvac repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "AC Repair",
+   "term": "top rated hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "Gas Boiler Repair",
+   "term": "boiler repair near me",
+   "status": "NONE",
+   "impr": 11,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "Gas Boiler Repair",
+   "term": "burnham boiler repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "Gas Boiler Repair",
+   "term": "how much does it cost to repair a boiler",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "2 ton ac unit installed price",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "2.5 ton ac unit installed price",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "5 star plumbing heating and cooling",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "a c designs st augustine",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "a j michaels company",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 1,
+   "cost": 21.23,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "a p mathews heating & air conditioning",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "a&r mechanical maryland",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "a1 heating and cooling blacksburg va",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "abc cooling & heating dundalk reviews",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "abc refrigeration ocean city md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "abm hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ac companies",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ac installation near me",
+   "status": "NONE",
+   "impr": 10,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ac replacement",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ac replacement near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ac unit replacement",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ac unit replacement cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "aciq installers near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 1,
+   "cost": 30.94,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "advanced heating and cooling owings mills md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "advanced mechanical hvac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air 1 air",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air conditioner company near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air conditioner installation prices",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air conditioning company",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air conditioning company near me near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air conditioning contractor",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air conditioning installation near me near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air duct work near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air experts maryland",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air maxx hvac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air pro heating and cooling",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air reliant",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air temp solutions newark de",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "air tron",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "airco hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "airco near me",
+   "status": "EXCLUDED",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "airmax hvac wilmington nc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "airsync hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "airtron maryland",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "airtrone",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "aj michaels hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 14.57,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "all about air hvac",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "all about comfort heating & cooling llc",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "all ways air control",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "altman's air conditioning titusville florida",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "amazing heating and air conditioning inc reviews",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 2,
+   "cost": 30.68,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "amazing hvac baltimore",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "amazing plumbing heating & air",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "amazing plumbing heating and air",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 2,
+   "cost": 56.72,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ambient hvac",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 20.14,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "american mechanical services of maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "american pride hvac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "annapolis hvac companies",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "annapolis refrigeration",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ap mathews hvac",
+   "status": "NONE",
+   "impr": 9,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "apex heating and cooling frostburg md",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "apex hvac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "apex hvac companies",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "apollo heating and cooling new york",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "arctic air berlin md",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "armbridge hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 29.76,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ars heating and cooling reviews",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ars hvac",
+   "status": "EXCLUDED",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ars hvac reviews",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 44.18,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ars rescue rooter",
+   "status": "EXCLUDED",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ars reviews",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "arundel cooling and heating",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "arundel cooling and heating reviews",
+   "status": "NONE",
+   "impr": 8,
+   "clicks": 1,
+   "cost": 20.44,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "arundel heating and cooling maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "atlantic refrigeration rehoboth beach",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "average cost to replace hvac system",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "average price for new hvac system",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "aw cooling and heating maryland",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "b and b hvac maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "b&b air conditioning",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "b&b air conditioning and heating service",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "b&b air conditioning and heating service co",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "b&b hvac services",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "baltimore trane",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "barstow and sons annapolis",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 29.21,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "barstow and sons hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "bay area heating and air conditioning",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "bay area hvac",
+   "status": "EXCLUDED",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "bayside hvac delaware",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "bbairconditioning",
+   "status": "EXCLUDED",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "belair engineering and service company inc",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "belair engineering bowie md",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "belair hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "beltway air comfort service",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "beltway air conditioning heating & plumbing reviews",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "beltway heating air plumbing",
+   "status": "EXCLUDED",
+   "impr": 14,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "beltway hvac",
+   "status": "EXCLUDED",
+   "impr": 49,
+   "clicks": 1,
+   "cost": 20.9,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "beltway hvac hanover",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "best air conditioning service",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "best hvac companies near me",
+   "status": "NONE",
+   "impr": 10,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "best hvac company near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "best hvac contractors near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "best hvac installers",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "best local hvac companies near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "best mechanical baltimore",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "bethany air edgewater",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "bge hvac replacement",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "big air heat and ac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "big wave hvac delaware",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "black owned hvac companies",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "black owned hvac companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "blauch brothers harrisonburg va",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 24.5,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "blue dot bel air md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "blue dot heating air conditioning",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "blue dot hvac",
+   "status": "NONE",
+   "impr": 9,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "blue dot services of maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "bluedot hvac",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 1,
+   "cost": 29.39,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "boiler heating system replacement cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "boiler replacement companies",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "boland trane",
+   "status": "EXCLUDED",
+   "impr": 9,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "boland trane associates inc & boland trane services inc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "boland trane largo",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "boland trane largo maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "boothe heating",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "boothe hvac",
+   "status": "EXCLUDED",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "bowers hvac",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "breeden hvac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "brett ac naples fl",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "brick street plumbing & hvac frederick reviews",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "brubaker hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "buckmaster hvac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "budderfly hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "c albert matthews cambridge md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "c albert matthews easton md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "callamazing",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "carrier 2 ton ac unit price installed",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "carrier dealers near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "carrier heat pump installers near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "central air cost to install",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cheapest mini split installation near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "chilltrol severn md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "clarksburg hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "clarksville hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "classic air waldorf md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "clean air baltimore",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "climate care crofton md",
+   "status": "EXCLUDED",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "climate control ac company",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "climate control heating and cooling",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "climate express home services",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "climate pro hvac",
+   "status": "EXCLUDED",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "climatecare services llc",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "coastal heating and air annapolis",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "coastline hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "columbia md hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "comfort air eldersburg",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "comfort air eldersburg md",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "comfort heating",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "comfort hvac",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "comfort hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "comfort hvac systems",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "comfort systems baltimore",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "constellation home hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "constellation home hvac reviews",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "constellation hvac",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cool today sarasota",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cornerstone mechanical solutions",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cornett heating & cooling 104 ritchie hwy pasadena md 21122",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cornett heating and cooling reviews",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost for hvac replacement",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost of forced air heating and cooling system",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost of geothermal heating and cooling",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost of heat pump replacement",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost of mini split system for 1 000 sq ft",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost of mini split system for 1000 sq ft",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost of mini split system for 2000 sq ft house",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost of new ac unit for 2000 sq ft house",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost of replacing air conditioner",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost to add central heat and air to old house",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost to convert home to central air",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost to install central air without existing ductwork",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost to replace furnace and ac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost to replace gas furnace with electric",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost to replace gas furnace with heat pump",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 29.27,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost to replace heat pump",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost to replace hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost to replace hvac coils",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cost to replace hvac system",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "costco hvac replacement cost",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "costco lennox installation cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "crawford services inc grand prairie tx",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "croft metcalf hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cropp and metcalfe",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cropp metcalfe dc",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "cropp metcalfe hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "croppmetcalfe columbia",
+   "status": "NONE",
+   "impr": 14,
+   "clicks": 2,
+   "cost": 57.09,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "croppmetcalfe fairfax",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 1,
+   "cost": 25.84,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "croppmetcalfe hvac",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "croppmetcalfe linthicum heights",
+   "status": "NONE",
+   "impr": 8,
+   "clicks": 1,
+   "cost": 22.21,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "croppmetcalfe service experts",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ctlp reliable air",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "custom quality plumbing and heating",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "d w bahr plumbing & heating co",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 29.36,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "daikin applied bowie md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "daikin capitol heights",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 20.78,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "daikin comfort glen burnie",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "daikin comfort near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "daikin company near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "daikin elkridge md",
+   "status": "EXCLUDED",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 19.53,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "daikin gainesville va",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "daikin hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "daikin near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "daikin rosedale",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "davis heating and air danville va",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "deals on hvac installation",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "del air daytona beach",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "del air mechanical knoxville tn",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "delta hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "duct installation company",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "duct installation near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "duct installers near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "duct replacement cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "duct work companies near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ductless ac installation cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ductless installation",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ductless mini split systems installation",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ductwork companies near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ductwork installation near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ductwork installers",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "elitaire ohio",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "elmar mechanical services",
+   "status": "EXCLUDED",
+   "impr": 3,
+   "clicks": 1,
+   "cost": 20.98,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "emcor hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "emcor hvac services",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "esa hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "exigent hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "expert air naples",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "f h furr",
+   "status": "NONE",
+   "impr": 10,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "f h furr hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "f h furr plumbing heating air conditioning & electrical",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "family hvac company",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "fh furr dc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "fh furr delaware",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 25.12,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "fh furr hvac",
+   "status": "NONE",
+   "impr": 13,
+   "clicks": 2,
+   "cost": 87.86,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "fh furr rockville",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "first charlotte air conditioning",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "fixed hvac annapolis",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "flo tron contracting inc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "florida hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "forced air oil furnace replacement cost",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "four seasons heating and air pinehurst nc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "freedom hvac austin",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "furnace company near me near me",
+   "status": "NONE",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "furnace installation near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "furr heating and air conditioning",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "gac hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "gas furnace installation",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "gentry hvac asheville",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "geothermal companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "geothermal heating and cooling cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "geothermal heating and cooling installation",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "geothermal heating and cooling near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "geothermal heating and cooling system cost",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "geothermal installation",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "geothermal installers near me",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "gilman kilmarnock va",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "grande aire services bonita springs",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "gusky hvac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "h m sweeny co landover",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "haller ent",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hamilton hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hardesty hvac",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "harris heating salem nj",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "have tech",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 2,
+   "cost": 52.26,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "havtech capitol heights",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "havtech capitol heights md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "havtech columbia",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "havtech columbia md",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "havtech pa",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hayward hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heat pump company near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heat pump installation near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heat pump installation near me near me",
+   "status": "NONE",
+   "impr": 12,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heat pump maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heat pump replacement cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heating and air conditioning cambridge",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heating and air conditioning places near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heating and cooling baltimore",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heating and cooling companies near me",
+   "status": "NONE",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heating and cooling installation near me near me",
+   "status": "NONE",
+   "impr": 10,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heating and cooling near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "heating services near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hobbs and associates maryland",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hobbs richmond",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "home comfort hvac",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "home depot mini split installation cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 17.24,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "home hvac cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "homecomfort",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "homeserve hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "honest abe heating cooling and plumbing",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "horizon hvac md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "horizon services air conditioning plumbing and heating reviews",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how long does an hvac install take",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how long does it take to install a new hvac system",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how long does it take to install an ac unit",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 27.45,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does a hvac cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does a hvac system cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does a new hvac system cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does a whole house humidifier cost installed",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does hvac system cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does it cost to add hvac to a house",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does it cost to install a humidifier",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does it cost to install an aprilaire humidifier",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does it cost to install central air",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 11.06,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does it cost to install hvac system",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 16.5,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does it cost to replace a whole hvac system",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does it cost to replace an ac unit",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does it cost to replace dampers hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does it cost to replace gas furnace",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much does new hvac system cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much for a 2 ton ac unit installed",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much is a hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much is a hvac system",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much is a mini split installed",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much is a new ac unit for 2500 sq ft house",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 21.96,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much is a new ac unit for a 1500 sq ft house",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much is a new ac unit for a 1600 sq ft house",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much is a new hvac system",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much is hvac system",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 12.35,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much is it to get a mini split installed",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much is new hvac system",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much new hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much should a new boiler installation cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much to instal a mini split",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much to install a blower motor",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much to install central ac with ductwork",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much to install central air",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much to install dehumidifier in hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much to replace a furnace",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much to replace heat pump",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "how much to replace hvac system",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hugee corp",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 17.28,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hugee hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac annapolis",
+   "status": "NONE",
+   "impr": 10,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac annapolis md",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac anne arundel county",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac arlington va",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac austin",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac baltimore",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac bel air",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac bowie md",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac business near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac cambridge md",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac cerca de mi",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 12.5,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac changeout",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac clarksville md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac columbia md",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac companies",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac companies baltimore",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac companies easton md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac companies in annapolis md",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac companies in baltimore maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 12.08,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac companies in bowie md",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac companies maryland",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac companies near me",
+   "status": "NONE",
+   "impr": 114,
+   "clicks": 4,
+   "cost": 141.31,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac companies near me near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac companies with payment plans",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac company dc",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac company in maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac company maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac company near me",
+   "status": "NONE",
+   "impr": 12,
+   "clicks": 1,
+   "cost": 59.92,
+   "conv": 2.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac company pasadena",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac compressor replacement cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac contractor near me",
+   "status": "NONE",
+   "impr": 26,
+   "clicks": 1,
+   "cost": 62.13,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac contractors",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac contractors in pittsburgh pa",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac contractors near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac direct heating & cooling",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac direct heating and cooling",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac ductwork installation near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 59.44,
+   "conv": 1.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac dundalk md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac edgewater md",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac ellicott city",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac emergency service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac fitter",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac florida",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac frederick",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac glen burnie",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac glen burnie md",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac handyman",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac heat pump installation",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac how much does it cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac in annapolis md",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac in waldorf md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac in washington dc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac in york pa",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac installation cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac installer",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac installers near me",
+   "status": "ADDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac insulation services",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac los angeles",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac michael and sons",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac near",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac near me",
+   "status": "NONE",
+   "impr": 67,
+   "clicks": 1,
+   "cost": 57.41,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac near me now",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac pasadena",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac pasadena md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac pittsfield",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac precision services inc gaithersburg md",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 1,
+   "cost": 16.9,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac punta gorda fl",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac repair columbia md",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac repair near me",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac repair pasadena md",
+   "status": "EXCLUDED",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac replacement cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac replacement cost estimator",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac replacement cost maryland",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac replacement quote",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac service",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac service contracts near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac services baltimore md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac severn md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac severna park md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac special offers",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac stevensville md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac system price",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 2,
+   "cost": 38.2,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac system replacement cost",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac tech near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac technician near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac technician near me utm_campaign gs105607",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac tune up specials near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac unit cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac unit replacement cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac washington dc",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hybrid water heater installation near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hydronic radiant floor heating installers near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 28.9,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "independent hvac contractor",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "install hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "install hvac system with ductwork",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "installing high velocity air conditioning system",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "integrity heating and air near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "interstate hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "island refrigeration key west",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "james heating and air mebane nc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "james river air conditioning",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "jms hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "john shaffer air conditioning",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "john wehn hvac",
+   "status": "EXCLUDED",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "jv mechanical heating and air services",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "kcc trane",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "kettle moraine heating and cooling",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "kodiak hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "landry's ac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "len plumber heating and air",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "len the plumber heating & air llc baltimore",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "len the plumber heating & air llc beltsville",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "len the plumber heating & air llc reviews",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 19.45,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lennox dealer",
+   "status": "EXCLUDED",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lennox dealers",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lennox dealers near me",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lennox hvac company",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 48.68,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lennox orlando",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lennox rep locator",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lighthouse hvac reviews",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lj early",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "local carrier dealer",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "local heating and cooling",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "local hvac companies",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "local hvac companies near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "local hvac company near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "longview ac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lowe's hvac installation cost",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lowes hvac installation",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ls mechanical inc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "lucas heating and cooling",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "m e flow",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "magnolia companies washington dc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "magnolia hvac dc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "maryland hvac",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "maryland mechanical heating & cooling",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 50.17,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "maryland trane",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 14.11,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "max air glen burnie",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "max air heating & a c inc",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "mbs mechanical",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "mccrea equipment company",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "mccrea heating and air conditioning reviews",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 22.01,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "mccrea heating and air conditioning temple hills reviews",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "mccrea hvac maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "mecco hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "metcalf hvac",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "metcalfe heating",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "metcalfe heating and air conditioning",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "metcalfe hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "metcalfe hvac maryland",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "meyer and depew nj",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 20.71,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "michael & sons hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "michael and son hvac",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "michael and sons hvac",
+   "status": "NONE",
+   "impr": 9,
+   "clicks": 1,
+   "cost": 32.44,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "michaels and sons hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "mid atlantic hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "mission mechanical indianapolis",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "mr cool cape coral fl",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "murrays plumbing and heating llc",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "new ac unit cost with installation",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "new heating and ac unit cost",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 54.43,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "new hvac system cost",
+   "status": "NONE",
+   "impr": 9,
+   "clicks": 1,
+   "cost": 13.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "new hvac system cost 2000 sq ft",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "nex tech hvac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "nextech hvac",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "nhs mechanical nashville tn",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "no frost ellicott city",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "o neill heating and air conditioning",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "oil furnace service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "on point hvac services",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "one hour air conditioning and heating of san antonio",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "one hour air locations",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "op hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "op hvac solutions",
+   "status": "NONE",
+   "impr": 9,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "orlando hvac companies",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "patapsco mechanical",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "penguin mechanical contractors",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "perfect temp",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "perry hall ac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "pipco hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "plumbing and hvac company",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "precision heating and cooling llc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "premier choice hvac services",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "premier hvac greencastle pa",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "premiere heating and air",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "prentice alsup heating and cooling",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "presidential hvac gaithersburg",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "quality air services rockville md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "quality heating and air wilmington delaware",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "r&d air conditioning",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "r&r mechanical near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "real chill deale",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "replacing hvac system cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "residential boiler replacement",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "rex air islamorada fl",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "rich air conditioning",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "richards heating and air falls church",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "rimco hvac services",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "rk cooling system",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "robertson hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "rocky hvac maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "s m mechanical services",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "scaran staten island",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "scardina hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "sears hvac service",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "service one ac orlando",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "shoreline comfort 1102 butterworth ct suite 100 stevensville md 21666",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "sila heating air conditioning & plumbing",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "sines and sons heating & cooling inc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "smith and rawlings hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "smith mechanical maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "south hvac services",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "southern pride hvac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "spangler and boyer mechanical",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "standard heating and ac",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "staton heating cooling & plumbing 1991 moreland pkwy annapolis md 21401",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "staton heating cooling & plumbing reviews",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "sunrise heating and air",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "sunrise hvac",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "sunrise hvac las vegas",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "superior heating and air danville va",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "superior mechanical services beltsville md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "supreme service today",
+   "status": "EXCLUDED",
+   "impr": 17,
+   "clicks": 1,
+   "cost": 23.56,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "supreme service today halethorpe",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "sutton hvac services",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "swan hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "swift services florence sc",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "synergy hvac company",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "t n bowes",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "t n bowes heating and air conditioning",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "tcs hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "teco hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ted fugent",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "the comfort guys",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "thermo direct raleigh nc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "tim kyle company inc",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "top rated hvac companies near me",
+   "status": "NONE",
+   "impr": 8,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "top rated hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "total comfort",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 16.26,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "trane 3 ton ac unit price installed",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 19.51,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "trane alexandria",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "trane authorized service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "trane boland",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "trane hvac cost",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "trane timonium",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "triple ooo rochester ny",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "united air temp",
+   "status": "EXCLUDED",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "united air temp air conditioning and heating",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "united air temp falls church va",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "united air temp maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "velocity hvac easton md",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "ventilation experts",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "vertical mechanical group sterling va",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "w l gary",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "w l staton",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "w n kirkland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 17.57,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "waldron hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "weeks hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "what does a new hvac system cost",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "what should a new hvac system cost",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "who installs whole house fans",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "who works on geothermal units near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "winters hvac leonardtown md",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "witkowski hvac",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "wl staton",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "woodfin heating and air",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 38.67,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "wright refrigeration",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "abc heating and cooling near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "ac companies in my area",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "ac furnace repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "ac guy near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "ac repair",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "ac repair near me near me",
+   "status": "NONE",
+   "impr": 25,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "ac repair shop near me near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "ac service near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "affordable hvac repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air & heating companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioner repair",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioner repair company",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioner repair near me",
+   "status": "NONE",
+   "impr": 11,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioner service",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning and heating companies near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning company near me near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning maintenance service",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning repair",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning repair near me",
+   "status": "NONE",
+   "impr": 9,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning repair near me near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning repair service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning repair service near me near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning repair shop",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning repairs near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning service",
+   "status": "NONE",
+   "impr": 8,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning service near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air conditioning service near me for home",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "air duct cleaning and repairs near me",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "aircon specialist near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "aire serv heating & air conditioning near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "amana hvac service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "ars rescue rooter near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "b&b air conditioning near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "best a c repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "best ac repair near me residential",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "best air conditioning service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "best heating and cooling near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "best home ac repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "best hvac companies in my area",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "best hvac companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "best hvac company near me",
+   "status": "NONE",
+   "impr": 9,
+   "clicks": 1,
+   "cost": 101.27,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "best hvac maintenance near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "best hvac repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "black owned hvac companies near me",
+   "status": "NONE",
+   "impr": 12,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "black owned hvac near me",
+   "status": "NONE",
+   "impr": 8,
+   "clicks": 1,
+   "cost": 54.25,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "boiler check up near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 70.05,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "bryant service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "carrier ac service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "carrier certified hvac near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "cheap hvac service near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "closest hvac",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "comfort hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "duct repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "duct replacement companies near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "ductwork repair near me",
+   "status": "NONE",
+   "impr": 11,
+   "clicks": 1,
+   "cost": 55.05,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "emergency ac repair near me",
+   "status": "NONE",
+   "impr": 16,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "emergency hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "f h furr plumbing heating air conditioning & electrical cerca de mi",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 21.72,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "fix heating and cooling",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 23.62,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "fix my ac",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "fix portable air conditioner near me",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "fixed hvac service",
+   "status": "NONE",
+   "impr": 14,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "furnace cleaning service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "furnace company near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "furnace company near me near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "furnace repair near me",
+   "status": "NONE",
+   "impr": 42,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "furnace repair near me near me",
+   "status": "NONE",
+   "impr": 45,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "geothermal hvac service near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "goodman certified technician near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heat and air repair",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 153.06,
+   "conv": 1.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heat exchanger repair near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heat pump repair near me near me",
+   "status": "NONE",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heat pump replacement cost near me",
+   "status": "EXCLUDED",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heater repair near me",
+   "status": "NONE",
+   "impr": 10,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating air conditioning near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating and ac companies near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating and air conditioning services",
+   "status": "NONE",
+   "impr": 10,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating and air near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating and cooling companies near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 1,
+   "cost": 61.91,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating and cooling company near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating and cooling company near me near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating and cooling near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating and cooling repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating and cooling repair near me near me",
+   "status": "NONE",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating contractor near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "heating repair near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "highest rated hvac companies near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "home ac repair near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "home air conditioner repair near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "honest hvac company near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "horizon heating and cooling near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac ac repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac balancing near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac close to me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac companies near",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac companies near me",
+   "status": "NONE",
+   "impr": 196,
+   "clicks": 7,
+   "cost": 492.7,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac companies near me near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac companies near me open now",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 2,
+   "cost": 306.06,
+   "conv": 2.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac company near me",
+   "status": "NONE",
+   "impr": 14,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac contractor near me",
+   "status": "NONE",
+   "impr": 43,
+   "clicks": 1,
+   "cost": 27.6,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac contractor near me near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac contractors near me",
+   "status": "NONE",
+   "impr": 36,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac contractors near me near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac duct repair near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac maintenance",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac maintenance near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac maintenance plan near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac maintenance service",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac mechanic",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac mold remediation near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 20.34,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac near me",
+   "status": "NONE",
+   "impr": 108,
+   "clicks": 1,
+   "cost": 6.16,
+   "conv": 1.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac near me near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac places near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac plumbers near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac repair",
+   "status": "NONE",
+   "impr": 11,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac repair free estimate near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac repair near me",
+   "status": "ADDED",
+   "impr": 40,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac repairs",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac service",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac service call",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac service near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac services",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac services near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "hvac technician near me utm_campaign gs105607",
+   "status": "EXCLUDED",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "independent hvac technician near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 147.1,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "larry and sons near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "local hvac companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 82.2,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "local hvac company",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "local hvac company near me",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 1,
+   "cost": 148.67,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "locally owned hvac companies",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "locally owned hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "loves hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "mitsubishi diamond contractor near me",
+   "status": "EXCLUDED",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "oil furnace repair near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "oil furnace service near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 21.46,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "oil furnace technician near me",
+   "status": "NONE",
+   "impr": 16,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "residential hvac companies near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "rheem contractors near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "same day ac repair near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "service heating and cooling",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "top 10 hvac companies near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "top hvac companies near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 23.37,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "united air temp near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Repair",
+   "term": "who services oil furnaces near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "ac replacement near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "air conditioning company near me near me",
+   "status": "NONE",
+   "impr": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "air conditioning installation near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "air conditioning installation near me near me",
+   "status": "NONE",
+   "impr": 11,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "armstrong air dealer near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "best lennox dealers near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "bosch hvac installers near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 1,
+   "cost": 28.22,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "carrier hvac authorized dealers near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "furnace company near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "furnace company near me near me",
+   "status": "NONE",
+   "impr": 23,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "furnace near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "goodman daikin near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "goodman hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "heat pump installation near me near me",
+   "status": "NONE",
+   "impr": 12,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "heating and cooling installation near me near me",
+   "status": "NONE",
+   "impr": 17,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "hvac capacitor replacement near me",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "hvac ductwork installation near me",
+   "status": "EXCLUDED",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "hvac installers near me",
+   "status": "NONE",
+   "impr": 7,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "hvac replacement",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "hvac replacement companies near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "hvac replacement near me",
+   "status": "ADDED",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "hvac system near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 1,
+   "cost": 49.69,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "lennox dealers near me",
+   "status": "EXCLUDED",
+   "impr": 7,
+   "clicks": 1,
+   "cost": 37.12,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "lennox hvac near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "midea hvac distributor near me",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "mitsubishi diamond contractor near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "replacing hvac",
+   "status": "NONE",
+   "impr": 3,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "replacing hvac system",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "spacepak dealers near me",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "trane dealers near me",
+   "status": "EXCLUDED",
+   "impr": 6,
+   "clicks": 1,
+   "cost": 15.02,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Replacement",
+   "term": "who installs goodman hvac near me",
+   "status": "NONE",
+   "impr": 2,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  }
+ ],
+ "commercial_duplicate_sweep": {
+  "account_level_set": [
+   {
+    "set_id": "11252984411",
+    "set_name": "account-level negative keywords list",
+    "set_type": "ACCOUNT_LEVEL_NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11252984411~10061081",
+    "criterion_id": "10061081",
+    "text": "commercial",
+    "match": "BROAD"
+   }
+  ],
+  "other_shared_sets": [
+   {
+    "set_id": "11807294063",
+    "set_name": "Christmas Lights Install",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11807294063~2446649966290",
+    "criterion_id": "2446649966290",
+    "text": "commercial string lights bulk",
+    "match": "PHRASE"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~331406212",
+    "criterion_id": "331406212",
+    "text": "commercial stump removal",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~875237118",
+    "criterion_id": "875237118",
+    "text": "commercial tree removal",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~875237148",
+    "criterion_id": "875237148",
+    "text": "commercial tree pruning",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~1295676171",
+    "criterion_id": "1295676171",
+    "text": "commercial tree care",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~298335028078",
+    "criterion_id": "298335028078",
+    "text": "commercial tree planting",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~311574584294",
+    "criterion_id": "311574584294",
+    "text": "commercial stone masonry",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~332895484541",
+    "criterion_id": "332895484541",
+    "text": "commercial concrete masonry",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~361110413722",
+    "criterion_id": "361110413722",
+    "text": "commercial patio install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~1269389034121",
+    "criterion_id": "1269389034121",
+    "text": "commercial tree transplanting",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~2349964579805",
+    "criterion_id": "2349964579805",
+    "text": "commercial paver install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~2399795767615",
+    "criterion_id": "2399795767615",
+    "text": "commercial outdoor kitchen install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~2399795768295",
+    "criterion_id": "2399795768295",
+    "text": "commercial outdoor steps",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~2399795769015",
+    "criterion_id": "2399795769015",
+    "text": "commercial water features install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11811255121",
+    "set_name": "Leaf Removal initial",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11811255121~2399795770295",
+    "criterion_id": "2399795770295",
+    "text": "commercial retaining wall install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~331406212",
+    "criterion_id": "331406212",
+    "text": "commercial stump removal",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~875237118",
+    "criterion_id": "875237118",
+    "text": "commercial tree removal",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~875237148",
+    "criterion_id": "875237148",
+    "text": "commercial tree pruning",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~1295676171",
+    "criterion_id": "1295676171",
+    "text": "commercial tree care",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~298335028078",
+    "criterion_id": "298335028078",
+    "text": "commercial tree planting",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~311574584294",
+    "criterion_id": "311574584294",
+    "text": "commercial stone masonry",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~332895484541",
+    "criterion_id": "332895484541",
+    "text": "commercial concrete masonry",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~361110413722",
+    "criterion_id": "361110413722",
+    "text": "commercial patio install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~1269389034121",
+    "criterion_id": "1269389034121",
+    "text": "commercial tree transplanting",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~2399795767615",
+    "criterion_id": "2399795767615",
+    "text": "commercial outdoor kitchen install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~2399795768295",
+    "criterion_id": "2399795768295",
+    "text": "commercial outdoor steps",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~2399795769015",
+    "criterion_id": "2399795769015",
+    "text": "commercial water features install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840874961",
+    "set_name": "Paver",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840874961~2399795770295",
+    "criterion_id": "2399795770295",
+    "text": "commercial retaining wall install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~331406212",
+    "criterion_id": "331406212",
+    "text": "commercial stump removal",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~875237118",
+    "criterion_id": "875237118",
+    "text": "commercial tree removal",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~875237148",
+    "criterion_id": "875237148",
+    "text": "commercial tree pruning",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~1295676171",
+    "criterion_id": "1295676171",
+    "text": "commercial tree care",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~298335028078",
+    "criterion_id": "298335028078",
+    "text": "commercial tree planting",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~311574584294",
+    "criterion_id": "311574584294",
+    "text": "commercial stone masonry",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~332895484541",
+    "criterion_id": "332895484541",
+    "text": "commercial concrete masonry",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~361110413722",
+    "criterion_id": "361110413722",
+    "text": "commercial patio install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~1269389034121",
+    "criterion_id": "1269389034121",
+    "text": "commercial tree transplanting",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~2349964579805",
+    "criterion_id": "2349964579805",
+    "text": "commercial paver install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~2399795768295",
+    "criterion_id": "2399795768295",
+    "text": "commercial outdoor steps",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~2399795769015",
+    "criterion_id": "2399795769015",
+    "text": "commercial water features install",
+    "match": "BROAD"
+   },
+   {
+    "set_id": "11840890006",
+    "set_name": "Outdoor Kitchen",
+    "set_type": "NEGATIVE_KEYWORDS",
+    "set_status": "ENABLED",
+    "resource_name": "customers/2401959466/sharedCriteria/11840890006~2399795770295",
+    "criterion_id": "2399795770295",
+    "text": "commercial retaining wall install",
+    "match": "BROAD"
+   }
+  ],
+  "campaign_level": [
+   {
+    "campaign_id": "21748348736",
+    "campaign": "Heating & Boiler Repair - Calls",
+    "campaign_status": "REMOVED",
+    "criterion_id": "309469409460",
+    "text": "commercial hvac repair near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "21748348736",
+    "campaign": "Heating & Boiler Repair - Calls",
+    "campaign_status": "REMOVED",
+    "criterion_id": "322020269496",
+    "text": "commercial express hvac",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "21748348736",
+    "campaign": "Heating & Boiler Repair - Calls",
+    "campaign_status": "REMOVED",
+    "criterion_id": "1393218750842",
+    "text": "commercial hvac installation companies near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "10061081",
+    "text": "commercial",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "17904713",
+    "text": "commercial hvac",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "25950331",
+    "text": "commercial air conditioning",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "42559431",
+    "text": "commercial air conditioning",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "116683921",
+    "text": "commercial air conditioner",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "146016600",
+    "text": "commercial air conditioner",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "268170521",
+    "text": "commercial hvac",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "483157260",
+    "text": "commercial ac",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "584442330",
+    "text": "commercial ac",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "298746449670",
+    "text": "commercial hvac near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "300957539923",
+    "text": "commercial air conditioning near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "320911783148",
+    "text": "hvac installation commercial",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "321497580652",
+    "text": "commercial air conditioning companies near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "341568715880",
+    "text": "commercial hvac contractors near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "491890533552",
+    "text": "commercial hvac company near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "517101526312",
+    "text": "commercial express hvac",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "523986905279",
+    "text": "commercial ac for restaurants",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22822619680",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "745609284843",
+    "text": "commercial ac for restaurants",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22855140165",
+    "campaign": "Leads-Performance Max-Furnace-Repair",
+    "campaign_status": "PAUSED",
+    "criterion_id": "781277465934",
+    "text": "commercial hvac companies in maryland",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23143116432",
+    "campaign": "Tankless Water Heaters",
+    "campaign_status": "PAUSED",
+    "criterion_id": "299932997010",
+    "text": "commercial bid",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23152954036",
+    "campaign": "Tankless Boilers",
+    "campaign_status": "PAUSED",
+    "criterion_id": "299914799972",
+    "text": "commercial kitchen hood",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23167679179",
+    "campaign": "Gas Boilers Installs",
+    "campaign_status": "PAUSED",
+    "criterion_id": "442368586037",
+    "text": "commercial kitchen boiler",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23333871301",
+    "campaign": "Gas Boilers Repair",
+    "campaign_status": "PAUSED",
+    "criterion_id": "442368586037",
+    "text": "commercial kitchen boiler",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "10061081",
+    "text": "commercial",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "17904713",
+    "text": "commercial hvac",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "25950331",
+    "text": "commercial air conditioning",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "42559431",
+    "text": "commercial air conditioning",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "116683921",
+    "text": "commercial air conditioner",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "146016600",
+    "text": "commercial air conditioner",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "268170521",
+    "text": "commercial hvac",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "483157260",
+    "text": "commercial ac",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "584442330",
+    "text": "commercial ac",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "298746449670",
+    "text": "commercial hvac near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "300957539923",
+    "text": "commercial air conditioning near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "320911783148",
+    "text": "hvac installation commercial",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "321497580652",
+    "text": "commercial air conditioning companies near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "341568715880",
+    "text": "commercial hvac contractors near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "491890533552",
+    "text": "commercial hvac company near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "517101526312",
+    "text": "commercial express hvac",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "523986905279",
+    "text": "commercial ac for restaurants",
+    "match": "PHRASE",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23883756382",
+    "campaign": "Leads-Performance Max-HVAC & A/C Install",
+    "campaign_status": "PAUSED",
+    "criterion_id": "745609284843",
+    "text": "commercial ac for restaurants",
+    "match": "EXACT",
+    "status": "ENABLED"
+   }
+  ],
+  "ad_group_level": [
+   {
+    "campaign_id": "20293627152",
+    "ad_group_id": "159023127588",
+    "criterion_id": "10061081",
+    "text": "commercial",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20293627152",
+    "ad_group_id": "201974220664",
+    "criterion_id": "10061081",
+    "text": "commercial",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "21884027719",
+    "ad_group_id": "170827861620",
+    "criterion_id": "17904713",
+    "text": "commercial hvac",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20513589817",
+    "ad_group_id": "153567905992",
+    "criterion_id": "1485767118",
+    "text": "commercial boiler service",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "21884027719",
+    "ad_group_id": "170827861620",
+    "criterion_id": "3153338928",
+    "text": "commercial hvac services",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20509039406",
+    "ad_group_id": "150291903062",
+    "criterion_id": "11430870593",
+    "text": "commercial furnace repair",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20293627152",
+    "ad_group_id": "159023127588",
+    "criterion_id": "298667564536",
+    "text": "commercial express",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20293627152",
+    "ad_group_id": "183898220842",
+    "criterion_id": "298667564536",
+    "text": "commercial express",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20293627152",
+    "ad_group_id": "195876689435",
+    "criterion_id": "298667564536",
+    "text": "commercial express",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23737117084",
+    "ad_group_id": "198976548150",
+    "criterion_id": "298667564536",
+    "text": "commercial express",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23737117084",
+    "ad_group_id": "198976548190",
+    "criterion_id": "298667564536",
+    "text": "commercial express",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20293627152",
+    "ad_group_id": "201974220664",
+    "criterion_id": "298667564536",
+    "text": "commercial express",
+    "match": "BROAD",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20509050656",
+    "ad_group_id": "152275492039",
+    "criterion_id": "302799699773",
+    "text": "commercial boiler replacement",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "21884027719",
+    "ad_group_id": "170827861660",
+    "criterion_id": "302799699773",
+    "text": "commercial boiler replacement",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "21884027719",
+    "ad_group_id": "189702689265",
+    "criterion_id": "302799699773",
+    "text": "commercial boiler replacement",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20509039406",
+    "ad_group_id": "150291902782",
+    "criterion_id": "309469409460",
+    "text": "commercial hvac repair near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20293627152",
+    "ad_group_id": "159023127588",
+    "criterion_id": "309469409460",
+    "text": "commercial hvac repair near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "22375264936",
+    "ad_group_id": "177433297336",
+    "criterion_id": "309469409460",
+    "text": "commercial hvac repair near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20293627152",
+    "ad_group_id": "183898220842",
+    "criterion_id": "309469409460",
+    "text": "commercial hvac repair near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20293627152",
+    "ad_group_id": "195876689435",
+    "criterion_id": "309469409460",
+    "text": "commercial hvac repair near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23737117084",
+    "ad_group_id": "198976548150",
+    "criterion_id": "309469409460",
+    "text": "commercial hvac repair near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "23737117084",
+    "ad_group_id": "198976548190",
+    "criterion_id": "309469409460",
+    "text": "commercial hvac repair near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20293627152",
+    "ad_group_id": "201974220664",
+    "criterion_id": "309469409460",
+    "text": "commercial hvac repair near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20509050656",
+    "ad_group_id": "152275492039",
+    "criterion_id": "310258499009",
+    "text": "commercial ductwork installation",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "21884027719",
+    "ad_group_id": "170827861660",
+    "criterion_id": "310258499009",
+    "text": "commercial ductwork installation",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "21884027719",
+    "ad_group_id": "189702689265",
+    "criterion_id": "310258499009",
+    "text": "commercial ductwork installation",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "21884027719",
+    "ad_group_id": "170827861620",
+    "criterion_id": "322020269496",
+    "text": "commercial express hvac",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20513589817",
+    "ad_group_id": "153567905992",
+    "criterion_id": "486716527582",
+    "text": "commercial hvac labor rates",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20509039406",
+    "ad_group_id": "150291902782",
+    "criterion_id": "1393218750842",
+    "text": "commercial hvac installation companies near me",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20513589817",
+    "ad_group_id": "153567905712",
+    "criterion_id": "2176122155258",
+    "text": "national commercial hvac service companies",
+    "match": "EXACT",
+    "status": "ENABLED"
+   },
+   {
+    "campaign_id": "20513589817",
+    "ad_group_id": "153567905712",
+    "criterion_id": "2338768789803",
+    "text": "commercial hvac labor rates per hour",
+    "match": "EXACT",
+    "status": "ENABLED"
+   }
+  ]
+ },
+ "commercial_effect_scope": {
+  "non_removed_campaigns": 23,
+  "enabled": [
+   {
+    "id": "24132507741",
+    "name": "Search | NonBrand | AC Repair | Central MD | BOFU | 2026-08",
+    "status": "ENABLED",
+    "channel": "SEARCH"
+   },
+   {
+    "id": "24132507744",
+    "name": "Search | NonBrand | Gas Boiler Repair | Central MD | BOFU | 2026-08",
+    "status": "ENABLED",
+    "channel": "SEARCH"
+   },
+   {
+    "id": "24132507747",
+    "name": "Search | NonBrand | HVAC Installation | Central MD | BOFU | 2026-08",
+    "status": "ENABLED",
+    "channel": "SEARCH"
+   },
+   {
+    "id": "24132507750",
+    "name": "Search | NonBrand | HVAC Repair | Central MD | BOFU | 2026-08",
+    "status": "ENABLED",
+    "channel": "SEARCH"
+   },
+   {
+    "id": "24132507753",
+    "name": "Search | NonBrand | HVAC Replacement | Central MD | BOFU | 2026-08",
+    "status": "ENABLED",
+    "channel": "SEARCH"
+   }
+  ],
+  "paused_count": 18
+ },
+ "commercial_historical_records": [
+  {
+   "campaign": "Mini Split",
+   "term": "commercial hvac companies near me",
+   "action": "Local actions - Website visits",
+   "primary": 0.0,
+   "all": 1.0
+  },
+  {
+   "campaign": "HVAC Install",
+   "term": "commercial ductwork installation near me",
+   "action": "Local actions - Website visits",
+   "primary": 0.0,
+   "all": 1.0
+  },
+  {
+   "campaign": "HVAC Install",
+   "term": "commercial hvac companies near me",
+   "action": "Ambient Cooling - LP -Submit Lead Forms",
+   "primary": 1.0,
+   "all": 1.0
+  },
+  {
+   "campaign": "HVAC Install",
+   "term": "commercial hvac near me",
+   "action": "Local actions - Other engagements",
+   "primary": 0.0,
+   "all": 2.0
+  },
+  {
+   "campaign": "HVAC Install",
+   "term": "commercial hvac near me",
+   "action": "Local actions - Website visits",
+   "primary": 0.0,
+   "all": 1.0
+  },
+  {
+   "campaign": "Heating Repair",
+   "term": "commercial boiler repair",
+   "action": "Call BTN Click",
+   "primary": 0.33,
+   "all": 0.33
+  },
+  {
+   "campaign": "Heating Repair",
+   "term": "commercial furnace repair",
+   "action": "Call BTN Click",
+   "primary": 1.0,
+   "all": 1.0
+  },
+  {
+   "campaign": "Heating Repair",
+   "term": "commercial radiator repair",
+   "action": "Call BTN Click",
+   "primary": 0.5,
+   "all": 0.5
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "commercial ac repair near me",
+   "action": "Calls from ads",
+   "primary": 1.0,
+   "all": 1.0
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "commercial ac repair near me",
+   "action": "Clicks to call",
+   "primary": 0.0,
+   "all": 1.0
+  },
+  {
+   "campaign": "HVAC Repair",
+   "term": "commercial ac repair near me",
+   "action": "Local actions - Other engagements",
+   "primary": 0.0,
+   "all": 1.0
+  }
+ ],
+ "free_intent_split": {
+  "free estimate / quote (SUPPORTED)": [
+   {
+    "camp": "HVAC Repair",
+    "term": "hvac repair free estimate near me",
+    "status": "NONE",
+    "impr": 6,
+    "clicks": 0,
+    "cost": 0.0,
+    "conv": 0.0
+   }
+  ]
+ },
+ "free_historical_converting": [],
+ "competitor_observed_terms": [
+  {
+   "camp": "HVAC Installation",
+   "term": "arundel cooling and heating",
+   "status": "NONE",
+   "impr": 6,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "arundel cooling and heating reviews",
+   "status": "NONE",
+   "impr": 8,
+   "clicks": 1,
+   "cost": 20.44,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "arundel heating and cooling maryland",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "hvac anne arundel county",
+   "status": "NONE",
+   "impr": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "conv": 0.0
+  },
+  {
+   "camp": "HVAC Installation",
+   "term": "maryland mechanical heating & cooling",
+   "status": "NONE",
+   "impr": 4,
+   "clicks": 1,
+   "cost": 50.17,
+   "conv": 0.0
+  }
+ ]
+}
