@@ -13,3 +13,5 @@ Follow `CLAUDE.md` as the project operating policy.
 - Run `python scripts/validate_campaign_plan.py` for any changed example plan.
 - Never read, print, commit, or expose `.env` values.
 - Update `docs/CHANGELOG.md` when behavior or safeguards change.
+
+- Never use a local fingerprint, a CLI flag, or agent-controlled YAML as production human authorization. Never execute Google Ads write-capable legacy scripts with production credentials. ENABLE is prohibited in the generic executor. Stop on identity or authorization failure.
