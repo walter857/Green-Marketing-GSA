@@ -22,12 +22,32 @@ def normalize_customer_id(value: str | int | None) -> str:
     return candidate
 
 
+class StrictLoader(yaml.SafeLoader):
+    """Safe YAML loader that refuses duplicate mapping keys."""
+
+
+def _unique_mapping(loader: StrictLoader, node: yaml.MappingNode) -> dict:
+    loader.flatten_mapping(node)
+    result = {}
+    for key_node, value_node in node.value:
+        key = loader.construct_object(key_node, deep=True)
+        if key in result:
+            raise ConfigurationError(
+                f"Duplicate YAML key {key!r} at line {key_node.start_mark.line + 1}"
+            )
+        result[key] = loader.construct_object(value_node, deep=True)
+    return result
+
+
+StrictLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _unique_mapping)
+
+
 def load_yaml(path: str | Path) -> dict[str, Any]:
     resolved = Path(path)
     if not resolved.exists():
         raise ConfigurationError(f"Configuration file does not exist: {resolved}")
     with resolved.open("r", encoding="utf-8") as handle:
-        data = yaml.safe_load(handle)
+        data = yaml.load(handle, Loader=StrictLoader)
     if not isinstance(data, dict):
         raise ConfigurationError(f"Expected a YAML mapping in {resolved}")
     return data
